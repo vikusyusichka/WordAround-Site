@@ -10,7 +10,7 @@ import { Icon } from '@/components/primitives/Icon';
 import { CREATE_ITEMS } from '@/lib/createMenu';
 
 interface CreateMenuProps {
-  /** Phase 3 wires real create flows; default just closes. */
+  /** Called with the chosen create-action id; the shell maps it to a route. */
   onSelect?: (id: string) => void;
 }
 

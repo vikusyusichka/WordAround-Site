@@ -14,6 +14,13 @@ export interface CreateItem {
   delay: number;
 }
 
+/* Destination route per create action. Missing entries are still stubs (the
+   menu just closes) until their phase lands. */
+export const CREATE_ROUTES: Partial<Record<string, string>> = {
+  folder: '/folders/new',
+  // set: '/sets/new'  (slice 3B)
+};
+
 export const CREATE_ITEMS: CreateItem[] = [
   { id: 'folder', labelKey: 'home.create.folder', icon: 'folder.fill', x: -150, y: -74, xPad: -210, yPad: -92, delay: 0.04 },
   { id: 'set', labelKey: 'home.create.set', icon: 'square.stack.3d.up.fill', x: -86, y: -144, xPad: -120, yPad: -182, delay: 0.1 },

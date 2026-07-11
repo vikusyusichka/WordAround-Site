@@ -74,6 +74,39 @@
       "library": "Library"
     }
   },
+  "folders": {
+    "create": "Create folder",
+    "loading": "Loading folders…",
+    "loadError": "Couldn't load your folders.",
+    "emptyTitle": "No folders yet",
+    "emptyBody": "Create your first folder to organize your sets.",
+    "setCount": "{{count}} sets",
+    "setCount_one": "{{count}} set",
+    "newTitle": "New folder",
+    "newSubtitle": "Group related sets together.",
+    "editTitle": "Edit folder",
+    "name": "Name",
+    "namePlaceholder": "e.g. Travel",
+    "description": "Description",
+    "descriptionPlaceholder": "Optional",
+    "color": "Color",
+    "save": "Save",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "edit": "Edit folder",
+    "delete": "Delete folder",
+    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
+    "backToFolders": "Back to folders",
+    "notFoundTitle": "Folder not found",
+    "notFoundBody": "This folder may have been deleted.",
+    "noSetsInFolder": "No sets in this folder yet.",
+    "saveError": "Couldn't save. Please try again.",
+    "error": {
+      "nameRequired": "Folder name is required.",
+      "nameTooLong": "Folder name must be under 80 characters.",
+      "descTooLong": "Description must be under 120 characters."
+    }
+  },
   "home": {
     "title": {
       "flashcards": "Flashcards",

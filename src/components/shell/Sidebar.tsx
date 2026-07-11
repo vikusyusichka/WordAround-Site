@@ -1,11 +1,12 @@
 /* App sidebar — the primary web navigation (persistent on desktop, slid into a
    drawer on mobile). Brand, a Create control, grouped nav links, and Profile
    pinned to the bottom. Active state comes from the router (<Link> isActive). */
-import { Link } from '@tanstack/react-router';
+import { Link, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import { CreateMenu } from '@/components/shell/CreateMenu';
+import { CREATE_ROUTES } from '@/lib/createMenu';
 import { NAV_GROUPS, PROFILE_NAV, type NavItem } from '@/lib/navigation';
 
 interface SidebarProps {
@@ -47,6 +48,15 @@ const NavLink = ({ item, onNavigate }: { item: NavItem; onNavigate?: () => void 
 
 export const Sidebar = ({ onNavigate }: SidebarProps) => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+
+  const handleCreate = (id: string) => {
+    const to = CREATE_ROUTES[id];
+    if (to) {
+      onNavigate?.();
+      void navigate({ to });
+    }
+  };
 
   return (
     <nav className="flex h-full flex-col gap-5 p-4" aria-label={t('nav.menu')}>
@@ -55,7 +65,7 @@ export const Sidebar = ({ onNavigate }: SidebarProps) => {
         <span className="text-[22px] font-extrabold text-(--color-auth-title)">WordAround</span>
       </div>
 
-      <CreateMenu />
+      <CreateMenu onSelect={handleCreate} />
 
       <div className="flex flex-1 flex-col gap-5 overflow-y-auto">
         {NAV_GROUPS.map((group, i) => (

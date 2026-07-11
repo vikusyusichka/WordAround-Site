@@ -3,11 +3,12 @@
    (Motion). Actions are stubs until Phase 3. Desktop uses the CreateMenu
    dropdown instead. */
 import { useEffect, useState } from 'react';
+import { useNavigate } from '@tanstack/react-router';
 import { AnimatePresence, motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
-import { CREATE_ITEMS } from '@/lib/createMenu';
+import { CREATE_ITEMS, CREATE_ROUTES } from '@/lib/createMenu';
 
 const usePad = () => {
   const [isPad, setIsPad] = useState(false);
@@ -24,11 +25,11 @@ const usePad = () => {
 interface CreateMenuOverlayProps {
   isOpen: boolean;
   onClose: () => void;
-  onSelect?: (id: string) => void;
 }
 
-export const CreateMenuOverlay = ({ isOpen, onClose, onSelect }: CreateMenuOverlayProps) => {
+export const CreateMenuOverlay = ({ isOpen, onClose }: CreateMenuOverlayProps) => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const isPad = usePad();
   const spring = { type: 'spring' as const, stiffness: 90, damping: 18, mass: 1 };
 
@@ -59,8 +60,9 @@ export const CreateMenuOverlay = ({ isOpen, onClose, onSelect }: CreateMenuOverl
                   transition={{ ...spring, delay: item.delay }}
                   onClick={(e) => {
                     e.stopPropagation();
-                    onSelect?.(item.id);
                     onClose();
+                    const to = CREATE_ROUTES[item.id];
+                    if (to) void navigate({ to });
                   }}
                 >
                   <span className="grid size-[58px] place-items-center rounded-full bg-white/98 shadow-[0_7px_12px_rgba(0,0,0,0.10)] md:size-[78px]">
