@@ -1,0 +1,296 @@
+@import 'tailwindcss';
+@import './fonts.css';
+@import './tokens.css';
+
+/* Everything below is registered inside Tailwind v4's @theme so that
+   the standard utility generator (bg-*, text-*, rounded-*, etc.) picks up
+   the WordAround design system as first-class classes. Every value here
+   is derived directly from AppColors.swift + Layout.swift. */
+@theme {
+  /* Fonts */
+  --font-sans: 'Manrope Variable', -apple-system, BlinkMacSystemFont,
+    'SF Pro Rounded', system-ui, 'Segoe UI', Roboto, sans-serif;
+  --font-rounded: var(--font-sans);
+
+  /* Breakpoints — matches Layout.swift's isPadLike / regular-min-width (700). */
+  --breakpoint-md: 700px;
+
+  /* Core palette (AppColors.swift) */
+  --color-app-bg: #f6f6fb;
+  --color-primary-blue: #2b5cfa;
+  --color-primary-blue-dark: #214ad1;
+  --color-text-secondary: #828cab;
+  --color-muted-text: #8f99b7;
+  --color-card-white: rgba(255, 255, 255, 0.95);
+
+  /* Auth palette (Onboarding/Auth/Verify screens) — deliberately LIGHTER
+     than --color-primary-blue; values from the iOS auth screens. */
+  --color-auth-blue: #408ff7;
+  --color-auth-title: #3d5299;
+  --color-auth-subtitle: #828cab;
+  --color-auth-field-border: #dbe3f2;
+  --color-auth-field-icon: #7094f2;
+  --color-auth-label: #59637d;
+  --color-auth-grad-from: #298ff7;
+  --color-auth-grad-to: #4fa3fc;
+  --color-auth-icon-from: #78b0fc;
+  --color-auth-icon-to: #3380f5;
+
+  /* Home palette (Home shell) — values computed from AppColors.swift RGB
+     triples plus the inline colors in Features/Home. Brand blue = primary-blue. */
+  --color-home-avatar-from: #b3bfd9;
+  --color-home-avatar-to: #6b7a99;
+  --color-home-notif: #ff4a3d;
+  --color-home-brand: #2b5cfa;
+  --color-home-nav-inactive: #949eb5;
+  --color-home-nav-sel-bg: #ebf0ff;
+  --color-home-side-ind-from: #3d70fc;
+  --color-home-side-ind-to: #2e5ceb;
+  --color-home-side-icon-from: #3361f0;
+  --color-home-side-icon-to: #4f80fc;
+  --color-home-side-icon-off-from: #a3abbf;
+  --color-home-side-icon-off-to: #99a1b8;
+  --color-home-side-circle-to: #f0f7ff;
+  --color-home-side-text-sel: #3361f0;
+  --color-home-side-text-off: #9ea6ba;
+  --color-home-stat1-accent: #a38afa;
+  --color-home-stat1-title: #9478fa;
+  --color-home-stat1-bg: #f5f0ff;
+  --color-home-stat1-blob: #dbcfff;
+  --color-home-stat2-accent: #6bccab;
+  --color-home-stat2-title: #54ba94;
+  --color-home-stat2-sub: #1aa861;
+  --color-home-stat2-bg: #edfcf7;
+  --color-home-stat2-blob: #c4ebd9;
+  --color-home-stat3-accent: #faad33;
+  --color-home-stat3-title: #ab5c05;
+  --color-home-stat3-bg: #fff5e3;
+  --color-home-stat3-blob: #fadb9e;
+  --color-home-goal-blob: #d1dbfa;
+  --color-home-goal-sparkle: #a8b8ff;
+
+  /* Blob accents */
+  --color-blob-blue: #d6e0fa;
+  --color-blob-yellow: #f2dba1;
+  --color-blob-green: #d1e3d9;
+  --color-blob-pink: #ebd1de;
+
+  /* Category — goal */
+  --color-goal-bg: #f2f5ff;
+  --color-goal-progress-bg: #d9e0f7;
+
+  /* Category — food / speaking */
+  --color-food-accent: #ff7375;
+  --color-food-bg: #fff0f2;
+  --color-food-title: #a11c35;
+
+  /* Category — orange / reading */
+  --color-orange-accent: #f7a310;
+  --color-orange-title: #ab6305;
+
+  /* Category — green / free speaking */
+  --color-green-accent: #29ba66;
+  --color-green-title: #128c47;
+  --color-green-soft-bg: #f0faf2;
+
+  /* Create Set palette */
+  --color-cs-bg: #fffafc;
+  --color-cs-red: #ff5759;
+  --color-cs-dark-red: #8c051e;
+  --color-cs-soft-red: #ffe8ea;
+  --color-cs-text-muted: #7a85a8;
+  --color-cs-dark-text: #213847;
+  --color-cs-border: #f2e0e5;
+  --color-cs-soft-border: #ffe0eb;
+  --color-cs-border-red: #ffc2c4;
+  --color-cs-preview-bg: #fff2f5;
+  --color-cs-image-bg: #fff5f7;
+  --color-cs-blue: #8ca1f5;
+  --color-cs-yellow: #ffc761;
+  --color-cs-green: #8cd19b;
+  --color-cs-purple: #ba82e8;
+  --color-cs-cyan: #6bc9d9;
+
+  /* Flashcard detail palette */
+  --color-fc-title: #1433b7;
+  --color-fc-text: #6b75a0;
+  --color-fc-muted: #858fb3;
+  --color-fc-card-bg: #f2f5ff;
+  --color-fc-soft-blue: #dce3ff;
+  --color-fc-divider: #e0e5f5;
+
+  /* Shadows (raw color; blur/offset applied per-utility) */
+  --shadow-color-card: rgba(0, 0, 0, 0.06);
+  --shadow-color-fc: rgba(0, 0, 0, 0.055);
+  --shadow-color-card-strong: rgba(0, 0, 0, 0.1);
+
+  /* Radii (Layout.swift) — compact defaults; regular values apply via --radius-* overrides in tokens.css */
+  --radius-card: 22px;
+  --radius-card-sm: 18px;
+  --radius-stat-card: 20px;
+  --radius-bottom-nav: 26px;
+  --radius-set-item: 22px;
+  --radius-progress-card: 22px;
+  --radius-fc-card: 28px;
+  --radius-fc-list: 22px;
+
+  /* Spacing (compact defaults) */
+  --spacing-screen-x: 22px;
+  --spacing-section: 18px;
+  --spacing-card-inner: 16px;
+  --spacing-card-inner-compact: 14px;
+
+  /* Home layout */
+  --spacing-home-sidebar: 86px;
+  --spacing-home-top: 12px;
+  --spacing-home-bottom-safe: 118px;
+  --spacing-bottom-nav-h: 84px;
+
+  /* Web app shell (sidebar/drawer + capped content). Web-native layout — not
+     from iOS. Sidebar shows ≥1024px (lg); below that a hamburger drawer. */
+  --spacing-shell-sidebar: 248px;
+  --size-content-max: 1200px;
+  --spacing-shell-gutter: 24px;
+
+  /* Home shell (Layout.swift — compact/phone defaults; ≥700 pad overrides in tokens.css) */
+  --spacing-home-x: 16px;
+  --spacing-home-content: 12px;
+  --spacing-home-header-sidebar: 8px;
+  --spacing-home-bottombar-x: 14px;
+  --spacing-home-bottombar-bottom: 10px;
+  --spacing-home-stat-gap: 8px;
+  --spacing-home-sets-gap: 10px;
+  --text-home-section-title: 22px;
+  --text-home-header-title: 29px;
+  --text-home-header-subtitle: 15px;
+  --spacing-home-avatar-circle: 54px;
+  --spacing-home-avatar-icon: 42px;
+  --spacing-home-notif-dot: 12px;
+
+  /* Typography scale (LayoutConstants.Typography — compact defaults) */
+  --text-caption-sm: 11px;
+  --text-caption: 12px;
+  --text-body-sm: 13px;
+  --text-body: 14px;
+  --text-card-title: 16px;
+  --text-title: 18px;
+  --text-large-title: 28px;
+  --text-screen-title: 32px;
+  --text-writing-title: 34px;
+
+  /* Base rounded-family weights match SwiftUI's `.rounded` — Manrope carries similar rhythm */
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+}
+
+/* CSS reset & app-wide defaults */
+@layer base {
+  html {
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-app-bg);
+    color: var(--color-primary-blue-dark);
+    font-family: var(--font-sans);
+    font-weight: 500;
+    min-height: 100dvh;
+    overscroll-behavior-y: none;
+  }
+
+  #root {
+    min-height: 100dvh;
+    isolation: isolate;
+  }
+
+  /* iOS-like disable of tap highlight */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  button {
+    font: inherit;
+    color: inherit;
+  }
+}
+
+/* Auth-flow animation keyframes (Onboarding hero + Verify pulses).
+   Plain CSS keyframes — the global prefers-reduced-motion rule in tokens.css
+   collapses them for users who opt out. */
+@keyframes wa-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wa-spin-reverse {
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* VerifyEmail hero: gradient disc scale 0.96↔1.04 */
+@keyframes wa-pulse-disc {
+  from {
+    transform: scale(0.96);
+  }
+  to {
+    transform: scale(1.04);
+  }
+}
+
+/* VerifyEmail hero: stroke ring scale 0.92↔1.10, opacity 0.55↔0.25 */
+@keyframes wa-pulse-ring {
+  from {
+    transform: scale(0.92);
+    opacity: 0.55;
+  }
+  to {
+    transform: scale(1.1);
+    opacity: 0.25;
+  }
+}
+
+/* VerifyEmail hero: envelope glyph scale 0.95↔1.05 */
+@keyframes wa-pulse-icon {
+  from {
+    transform: scale(0.95);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* VerifyEmail floating badges: collapsed center → offset position (--bx/--by),
+   mirroring the iOS repeatForever(autoreverses:) spring between states. */
+@keyframes wa-badge-float {
+  from {
+    transform: translate(-50%, -50%) translate(0, 6px) scale(0.82);
+    opacity: 0.15;
+  }
+  to {
+    transform: translate(-50%, -50%) translate(var(--bx), var(--by)) scale(1);
+    opacity: 1;
+  }
+}
+
+/* Fills any Phosphor icon's paths with the shared auth icon gradient
+   (defined once per screen by <AuthIconGradientDefs />). */
+.auth-icon-gradient path {
+  fill: url('#auth-icon-grad');
+}
+
+/* Home gradient icon fills (defined by <HomeIconGradientDefs />). */
+.home-avatar-gradient path {
+  fill: url('#home-avatar-grad');
+}
+.home-side-icon-sel path {
+  fill: url('#home-side-icon-sel-grad');
+}
+.home-side-icon-off path {
+  fill: url('#home-side-icon-off-grad');
+}

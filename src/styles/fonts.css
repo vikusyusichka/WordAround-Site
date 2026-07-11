@@ -1,0 +1,4 @@
+/* Manrope Variable — the primary SF Pro Rounded substitute for non-Apple platforms.
+   On Apple devices the CSS font stack in index.css falls back to `-apple-system` first,
+   so users on macOS/iOS keep seeing native SF Pro. */
+@import '@fontsource-variable/manrope/index.css';

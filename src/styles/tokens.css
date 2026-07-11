@@ -1,0 +1,64 @@
+/* Responsive design-token overrides.
+   Layout.swift branches virtually every constant on `isPadLike` (iPad/wide).
+   Web equivalent: media-query 700px (matches LayoutConstants.Breakpoints.regularMinWidth).
+   Overriding the CSS variables here means Tailwind utility classes and every
+   consumer automatically pick up the "regular" size — no per-component ifs. */
+
+@media (min-width: 700px) {
+  :root {
+    /* Radii */
+    --radius-card-sm: 20px;
+    --radius-bottom-nav: 34px;
+    --radius-set-item: 30px;
+    --radius-progress-card: 30px;
+    --radius-fc-card: 36px;
+    --radius-fc-list: 26px;
+
+    /* Spacing */
+    --spacing-screen-x: 34px;
+    --spacing-section: 24px;
+    --spacing-home-sidebar: 108px;
+    --spacing-home-top: 20px;
+    --spacing-home-bottom-safe: 132px;
+    --spacing-bottom-nav-h: 110px;
+
+    /* Home shell — pad values */
+    --spacing-home-x: 28px;
+    --spacing-home-content: 16px;
+    --spacing-home-header-sidebar: 14px;
+    --spacing-home-bottombar-x: 28px;
+    --spacing-home-bottombar-bottom: 20px;
+    --spacing-home-stat-gap: 14px;
+    --spacing-home-sets-gap: 14px;
+    --text-home-section-title: 34px;
+    --text-home-header-title: 34px;
+    --text-home-header-subtitle: 18px;
+    --spacing-home-avatar-circle: 62px;
+    --spacing-home-avatar-icon: 48px;
+    --spacing-home-notif-dot: 14px;
+
+    /* Typography — regular column */
+    --text-caption-sm: 13px;
+    --text-caption: 14px;
+    --text-body-sm: 15px;
+    --text-body: 16px;
+    --text-card-title: 19px;
+    --text-title: 22px;
+    --text-large-title: 34px;
+    --text-screen-title: 40px;
+    --text-writing-title: 42px;
+  }
+}
+
+/* Reduced-motion accommodation for spring animations (Motion One respects prefers-reduced-motion,
+   but decorative blob wiggles need a hint too). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

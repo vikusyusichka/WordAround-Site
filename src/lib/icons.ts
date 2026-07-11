@@ -1,0 +1,96 @@
+/* Mapping from SF Symbols (used throughout SwiftUI code) to Phosphor icons.
+   Phosphor was picked because its `bold` weight matches SF Symbols'
+   default semibold rendering, and its `fill` weight is the direct
+   equivalent of iOS `.fill` symbol variants — the visual DNA is much
+   closer than what Lucide gives us. Populated as we port screens;
+   unknown names fall back to <Question /> so gaps fail visibly. */
+import {
+  Airplane,
+  ArrowLeft,
+  ArrowRight,
+  Bell,
+  BookOpen,
+  Briefcase,
+  CaretDown,
+  CaretRight,
+  ChartBar,
+  ChatsCircle,
+  Check,
+  Circle,
+  FileText,
+  Flame,
+  Folder,
+  ForkKnife,
+  Headphones,
+  House,
+  Image as ImageIcon,
+  Microphone,
+  Pencil,
+  PencilLine,
+  Plus,
+  Question,
+  Sparkle,
+  Stack,
+  Target,
+  User,
+  UserCircle,
+  Waveform,
+  X,
+  type Icon as PhosphorIcon,
+} from '@phosphor-icons/react';
+
+/* SF-Symbol name (as written in Swift source) → Phosphor component.
+   Both outlined and .fill variants map to the same component — the Icon
+   wrapper reads the trailing `.fill` off the name to pick the weight. */
+const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
+  house: House,
+  'house.fill': House,
+  folder: Folder,
+  'folder.fill': Folder,
+  plus: Plus,
+  'square.stack.3d.up': Stack,
+  'square.stack.3d.up.fill': Stack,
+  person: User,
+  'person.fill': User,
+  'person.crop.circle.fill': UserCircle,
+  'bubble.left.and.bubble.right': ChatsCircle,
+  headphones: Headphones,
+  book: BookOpen,
+  'book.closed': BookOpen,
+  'pencil.and.scribble': PencilLine,
+  'chart.bar.fill': ChartBar,
+  target: Target,
+  'flame.fill': Flame,
+  bell: Bell,
+  circle: Circle,
+  'arrow.left': ArrowLeft,
+  'arrow.right': ArrowRight,
+  'chevron.right': CaretRight,
+  'chevron.down': CaretDown,
+  xmark: X,
+  sparkles: Sparkle,
+  sparkle: Sparkle,
+  checkmark: Check,
+  pencil: Pencil,
+  waveform: Waveform,
+  mic: Microphone,
+  'mic.fill': Microphone,
+  photo: ImageIcon,
+  'doc.text.fill': FileText,
+  /* Stub flashcard-set icons (Phase 2 demo data; real icons come from
+     set.icon in Phase 3). */
+  airplane: Airplane,
+  'fork.knife': ForkKnife,
+  'briefcase.fill': Briefcase,
+};
+
+export const iconForSFSymbol = (name: string): PhosphorIcon =>
+  SF_TO_PHOSPHOR[name] ?? Question;
+
+export type SFSymbolWeight = 'thin' | 'light' | 'regular' | 'bold' | 'fill' | 'duotone';
+
+/* SF Symbols with a `.fill` suffix render as solid on iOS. Everything else
+   we render `bold`, which is the closest match to SwiftUI's default
+   `.semibold` rendering under `.font(.system(size:weight:))`. */
+export const weightForSFSymbol = (name: string): SFSymbolWeight =>
+  name.endsWith('.fill') ? 'fill' : 'bold';

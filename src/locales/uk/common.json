@@ -1,0 +1,144 @@
+{
+  "app": {
+    "name": "WordAround",
+    "tagline": "Вивчай мови активно."
+  },
+  "onboarding": {
+    "subtitle": "Learn words in a fun and\nsimple way",
+    "start": "Let’s Start"
+  },
+  "auth": {
+    "welcomeBack": "Welcome Back",
+    "subtitle": "Sign in to continue learning",
+    "email": "Email",
+    "emailPlaceholder": "Enter your email",
+    "password": "Password",
+    "passwordPlaceholder": "Enter your password",
+    "forgotPassword": "Forgot password?",
+    "signIn": "Sign In",
+    "signingIn": "Signing In...",
+    "continueWithGoogle": "Continue with Google",
+    "createAccount": "Create Account",
+    "accountCreatedInfo": "Account created. We sent a verification email.",
+    "resetEmailSent": "Password reset email sent",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "back": "Back"
+  },
+  "verify": {
+    "title": "Verify Your Email",
+    "subtitle": "One more step before you start learning",
+    "sentTo": "We sent a verification link to",
+    "fallbackEmail": "your email",
+    "step1": "Open the email in your inbox",
+    "step2": "Tap the confirmation link",
+    "step3": "Return here and continue",
+    "checkButton": "I Verified My Email",
+    "checking": "Checking...",
+    "resend": "Resend Email",
+    "useAnotherAccount": "Use Another Account",
+    "badgeInbox": "Check inbox",
+    "badgeConfirm": "Confirm",
+    "badgeDone": "Done",
+    "resentInfo": "Verification email sent again",
+    "notVerifiedYet": "Email is not verified yet"
+  },
+  "errors": {
+    "emailRequired": "Email is required",
+    "emailInvalid": "Enter a valid email",
+    "emailFirst": "Enter your email first",
+    "passwordRequired": "Password is required",
+    "passwordTooShort": "Password must be at least 6 characters",
+    "invalidEmail": "Invalid email format",
+    "wrongPassword": "Incorrect password",
+    "userNotFound": "No account found with this email",
+    "invalidCredential": "Incorrect email or password",
+    "emailInUse": "This account already exists",
+    "weakPassword": "Password must be at least 6 characters",
+    "network": "Network error. Check your internet connection",
+    "tooManyRequests": "Too many attempts. Try again later",
+    "differentCredential": "This email is already used with another sign-in method",
+    "noActiveAccount": "No active account found",
+    "default": "Authentication failed. Please try again"
+  },
+  "nav": {
+    "home": "Home",
+    "speaking": "Speaking",
+    "listening": "Listening",
+    "reading": "Reading",
+    "writing": "Writing",
+    "folders": "Folders",
+    "sets": "Sets",
+    "profile": "Profile",
+    "create": "Create",
+    "menu": "Menu",
+    "closeMenu": "Close menu",
+    "group": {
+      "practice": "Practice",
+      "library": "Library"
+    }
+  },
+  "home": {
+    "title": {
+      "flashcards": "Flashcards",
+      "folders": "Folders",
+      "sets": "Sets",
+      "create": "Create",
+      "profile": "Profile",
+      "speaking": "Speaking",
+      "listening": "Listening",
+      "reading": "Reading",
+      "writing": "Writing"
+    },
+    "subtitle": {
+      "pickSet": "Pick a set to practice",
+      "folders": "Manage your folders",
+      "sets": "Manage your flashcard sets",
+      "create": "Build a new study set",
+      "speaking": "Practice speaking skills.",
+      "listening": "Train your ears to understand language naturally.",
+      "reading": "Read and review language materials.",
+      "writing": "Practice your language actively."
+    },
+    "category": {
+      "speaking": "SPEAKING",
+      "listening": "LISTENING",
+      "reading": "READING",
+      "writing": "WRITING"
+    },
+    "todayGoal": {
+      "title": "Today's goal",
+      "left": "{{count}} words left"
+    },
+    "stat": {
+      "learnedToday": "Learned today",
+      "words": "words",
+      "accuracy": "Accuracy",
+      "greatJob": "Great job!",
+      "streak": "Streak",
+      "days": "days"
+    },
+    "continueLearning": "Continue learning",
+    "yourSets": "Your sets",
+    "viewAll": "View all",
+    "review": "Review",
+    "sets": {
+      "emptyTitle": "No sets yet",
+      "emptyBody": "Create your first flashcard set using the Create button."
+    },
+    "create": {
+      "folder": "Folder",
+      "set": "Set",
+      "text": "Text",
+      "audio": "Audio",
+      "essay": "Essay"
+    },
+    "placeholder": {
+      "comingSoon": "{{title}} — coming soon"
+    }
+  },
+  "phase0": {
+    "title": "WordAround",
+    "subtitle": "Phase 0 працює. Дизайн-токени завантажені, Firebase підключено."
+  }
+}
