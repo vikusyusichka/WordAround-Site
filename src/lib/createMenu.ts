@@ -18,7 +18,8 @@ export interface CreateItem {
    menu just closes) until their phase lands. */
 export const CREATE_ROUTES: Partial<Record<string, string>> = {
   folder: '/folders/new',
-  // set: '/sets/new'  (slice 3B)
+  set: '/sets/new',
+  // text/audio/essay — later phases
 };
 
 export const CREATE_ITEMS: CreateItem[] = [

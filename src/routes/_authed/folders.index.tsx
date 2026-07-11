@@ -7,7 +7,7 @@ import { PageHeader } from '@/components/shell/PageHeader';
 import { FolderCard } from '@/components/folders/FolderCard';
 import { useDeleteFolder, useFoldersQuery } from '@/hooks/useFolders';
 
-export const Route = createFileRoute('/_authed/folders')({
+export const Route = createFileRoute('/_authed/folders/')({
   component: FoldersPage,
 });
 

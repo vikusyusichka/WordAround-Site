@@ -6,7 +6,26 @@ import '@/lib/i18n';
 import { StatCard } from './StatCard';
 import { ProgressCard } from './ProgressCard';
 import { SetItem } from './SetItem';
-import { STAT_CARDS, STUB_USER_SETS, TODAY_GOAL } from '@/lib/homeTypes';
+import { STAT_CARDS, TODAY_GOAL, type HomeSetPreviewItem } from '@/lib/homeTypes';
+
+const sampleSet: HomeSetPreviewItem = {
+  id: 's1',
+  title: 'Travel Essentials',
+  subtitle: '42 words',
+  iconSystemName: 'airplane',
+  currentValue: 0,
+  totalValue: 42,
+  unit: 'words',
+  progress: 0,
+  accentColor: 'var(--color-cs-blue)',
+  backgroundColor: '#eef',
+  progressBackgroundColor: '#dde',
+  titleColor: 'var(--color-cs-dark-text)',
+  valueColor: 'var(--color-cs-blue)',
+  subtitleColor: 'var(--color-text-secondary)',
+  iconBackground: 'var(--color-cs-blue)',
+  blobColor: '#dde',
+};
 
 describe('StatCard', () => {
   it('renders value + translated title/subtitle', () => {
@@ -31,7 +50,7 @@ describe('ProgressCard', () => {
     const onClick = vi.fn();
     render(
       <ProgressCard
-        item={STUB_USER_SETS[0]}
+        item={sampleSet}
         layout="action"
         title="Travel"
         subtitle="Keep going"
@@ -46,7 +65,7 @@ describe('ProgressCard', () => {
 
 describe('SetItem', () => {
   it('renders title, subtitle and trailing text', () => {
-    render(<SetItem item={STUB_USER_SETS[0]} trailingText="Review" />);
+    render(<SetItem item={sampleSet} trailingText="Review" />);
     expect(screen.getByText('Travel Essentials')).toBeInTheDocument();
     expect(screen.getByText('42 words')).toBeInTheDocument();
     expect(screen.getByText('Review')).toBeInTheDocument();

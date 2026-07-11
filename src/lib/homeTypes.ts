@@ -139,47 +139,5 @@ export const TODAY_GOAL: HomeSetPreviewItem = {
   blobColor: 'var(--color-home-goal-blob)',
 };
 
-/* Stub sets so SetItem/SetsList are exercised and Home matches the iOS demo
-   look. PHASE 3: replace with Firestore data via flashcardSetService +
-   HomeSetPreviewMapper (accentColor from set.colorHex, subtitle = card count). */
-const stubSet = (
-  id: string,
-  title: string,
-  words: number,
-  icon: string,
-  accent: string,
-): HomeSetPreviewItem => ({
-  id,
-  title,
-  subtitle: `${words} words`,
-  iconSystemName: icon,
-  currentValue: words,
-  totalValue: Math.max(words, 1),
-  unit: 'words',
-  progress: 1,
-  accentColor: accent,
-  backgroundColor: `color-mix(in srgb, ${accent} 12%, transparent)`,
-  progressBackgroundColor: `color-mix(in srgb, ${accent} 22%, transparent)`,
-  titleColor: accent,
-  valueColor: accent,
-  subtitleColor: 'var(--color-text-secondary)',
-  iconBackground: accent,
-  blobColor: `color-mix(in srgb, ${accent} 25%, transparent)`,
-});
-
-export const STUB_USER_SETS: HomeSetPreviewItem[] = [
-  stubSet('stub-travel', 'Travel Essentials', 42, 'airplane', '#2b5cfa'),
-  stubSet('stub-food', 'Food & Cooking', 28, 'fork.knife', '#ff7375'),
-  stubSet('stub-business', 'Business English', 35, 'briefcase.fill', '#29ba66'),
-];
-
-/* Continue-learning card (action layout). PHASE 3: derive from real progress. */
-export const STUB_CONTINUE_LEARNING: HomeSetPreviewItem = {
-  ...STUB_USER_SETS[0],
-  id: 'continue-travel',
-  subtitle: 'Keep practicing',
-  currentValue: 18,
-  totalValue: 42,
-  progress: 18 / 42,
-  iconBackground: STUB_USER_SETS[0].accentColor,
-};
+/* Real "Your sets" / "Continue learning" data now comes from Firestore via
+   useSetsQuery + mapSetToPreview (src/lib/setPreview.ts). */

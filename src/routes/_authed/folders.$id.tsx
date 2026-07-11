@@ -6,8 +6,11 @@ import { PencilSimple, Trash } from '@phosphor-icons/react';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { FolderForm } from '@/components/folders/FolderForm';
+import { SetItem } from '@/components/home/SetItem';
 import { Icon } from '@/components/primitives/Icon';
 import { useDeleteFolder, useFoldersQuery, useUpdateFolder } from '@/hooks/useFolders';
+import { useFolderSetsQuery } from '@/hooks/useSets';
+import { mapSetToPreview } from '@/lib/setPreview';
 import { colorIdForHex, themeForHex } from '@/lib/setColors';
 
 export const Route = createFileRoute('/_authed/folders/$id')({
@@ -117,12 +120,48 @@ function FolderDetailPage() {
         </div>
       </div>
 
-      {/* Sets in this folder — real sets arrive in slice 3B. */}
+      {/* Sets in this folder */}
+      <FolderSets folderId={folder.id} />
+    </ContentContainer>
+  );
+}
+
+function FolderSets({ folderId }: { folderId: string }) {
+  const { t } = useTranslation();
+  const navigate = useNavigate();
+  const { data: sets, isLoading } = useFolderSetsQuery(folderId);
+
+  if (isLoading) {
+    return (
+      <p className="text-[15px] font-medium text-(--color-text-secondary)">{t('sets.loading')}</p>
+    );
+  }
+
+  if (!sets || sets.length === 0) {
+    return (
       <div className="flex flex-col items-center gap-2 rounded-3xl border border-white/80 bg-white/70 px-6 py-14 text-center shadow-[0_6px_16px_rgba(0,0,0,0.04)]">
         <span className="text-[16px] font-medium text-(--color-text-secondary)">
           {t('folders.noSetsInFolder')}
         </span>
       </div>
-    </ContentContainer>
+    );
+  }
+
+  return (
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+      {sets.map((set) => (
+        <button
+          key={set.id}
+          type="button"
+          onClick={() => void navigate({ to: '/sets/$id', params: { id: set.id } })}
+          className="block text-left transition-transform hover:-translate-y-0.5 active:scale-[0.99]"
+        >
+          <SetItem
+            item={mapSetToPreview(set, t('sets.cardCount', { count: set.cards.length }))}
+            trailingText={t('home.review')}
+          />
+        </button>
+      ))}
+    </div>
   );
 }

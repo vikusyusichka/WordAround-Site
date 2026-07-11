@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from '@tanstack/react-router';
+import { createFileRoute, Link, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
@@ -6,12 +6,9 @@ import { PageHeader } from '@/components/shell/PageHeader';
 import { StatCard } from '@/components/home/StatCard';
 import { ProgressCard } from '@/components/home/ProgressCard';
 import { SetItem } from '@/components/home/SetItem';
-import {
-  STAT_CARDS,
-  STUB_CONTINUE_LEARNING,
-  STUB_USER_SETS,
-  TODAY_GOAL,
-} from '@/lib/homeTypes';
+import { useSetsQuery } from '@/hooks/useSets';
+import { mapSetToPreview } from '@/lib/setPreview';
+import { STAT_CARDS, TODAY_GOAL } from '@/lib/homeTypes';
 
 export const Route = createFileRoute('/_authed/home')({
   component: HomeDashboard,
@@ -22,6 +19,14 @@ export const Route = createFileRoute('/_authed/home')({
    (swapped for Firestore in Phase 3). */
 function HomeDashboard() {
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const { data: sets } = useSetsQuery();
+
+  const previews = (sets ?? []).map((set) => ({
+    id: set.id,
+    preview: mapSetToPreview(set, t('sets.cardCount', { count: set.cards.length })),
+  }));
+  const continueItem = previews[0];
 
   return (
     <ContentContainer fluid>
@@ -45,18 +50,23 @@ function HomeDashboard() {
               count: TODAY_GOAL.totalValue - TODAY_GOAL.currentValue,
             })}
           />
-          <div className="flex flex-col gap-3">
-            <h2 className="text-[18px] font-bold text-(--color-primary-blue-dark) lg:text-[20px]">
-              {t('home.continueLearning')}
-            </h2>
-            <ProgressCard
-              item={STUB_CONTINUE_LEARNING}
-              layout="action"
-              title={STUB_CONTINUE_LEARNING.title}
-              subtitle={STUB_CONTINUE_LEARNING.subtitle}
-              actionSystemName="arrow.right"
-            />
-          </div>
+          {continueItem && (
+            <div className="flex flex-col gap-3">
+              <h2 className="text-[18px] font-bold text-(--color-primary-blue-dark) lg:text-[20px]">
+                {t('home.continueLearning')}
+              </h2>
+              <ProgressCard
+                item={continueItem.preview}
+                layout="action"
+                title={continueItem.preview.title}
+                subtitle={t('sets.keepPracticing')}
+                actionSystemName="arrow.right"
+                onClick={() =>
+                  void navigate({ to: '/sets/$id', params: { id: continueItem.id } })
+                }
+              />
+            </div>
+          )}
         </div>
 
         {/* Your sets — responsive card grid. */}
@@ -73,7 +83,7 @@ function HomeDashboard() {
             </Link>
           </div>
 
-          {STUB_USER_SETS.length === 0 ? (
+          {previews.length === 0 ? (
             <div className="flex flex-col gap-2.5 rounded-3xl bg-white/92 p-6">
               <span className="text-[22px] font-bold text-(--color-primary-blue-dark)">
                 {t('home.sets.emptyTitle')}
@@ -84,13 +94,14 @@ function HomeDashboard() {
             </div>
           ) : (
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-              {STUB_USER_SETS.map((set) => (
+              {previews.map(({ id, preview }) => (
                 <button
-                  key={set.id}
+                  key={id}
                   type="button"
+                  onClick={() => void navigate({ to: '/sets/$id', params: { id } })}
                   className="block text-left transition-transform hover:-translate-y-0.5 active:scale-[0.99]"
                 >
-                  <SetItem item={set} trailingText={t('home.review')} />
+                  <SetItem item={preview} trailingText={t('home.review')} />
                 </button>
               ))}
             </div>
