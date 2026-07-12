@@ -9,6 +9,7 @@ import {
   ArrowLeft,
   ArrowRight,
   Bell,
+  Book,
   BookOpen,
   Brain,
   Briefcase,
@@ -29,12 +30,15 @@ import {
   House,
   Image as ImageIcon,
   Lightning,
+  Lightbulb,
   Microphone,
+  NotePencil,
   Pencil,
   PencilLine,
   Plus,
   Question,
   Sparkle,
+  SquaresFour,
   Stack,
   Star,
   Target,
@@ -102,6 +106,14 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'bolt.fill': Lightning,
   'pencil.and.outline': Pencil,
   'character.bubble.fill': Translate,
+  /* Phase 4 Writing */
+  'square.grid.2x2.fill': SquaresFour,
+  'note.text.badge.plus': NotePencil,
+  'book.pages.fill': Book,
+  lightbulb: Lightbulb,
+  'lightbulb.fill': Lightbulb,
+  'arrow.right.circle.fill': ArrowRight,
+  'arrow.uturn.backward': ArrowLeft,
 };
 
 export const iconForSFSymbol = (name: string): PhosphorIcon =>

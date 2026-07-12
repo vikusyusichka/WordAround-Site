@@ -41,6 +41,20 @@ describe('pageCopyForPath', () => {
   it('unknown path falls back to home copy', () => {
     expect(pageCopyForPath('/whatever').titleKey).toBe('home.title.flashcards');
   });
+
+  it('maps the WriteWords game route to writing-specific copy', () => {
+    expect(pageCopyForPath('/practice/writing/write-words/abc-123')).toEqual({
+      titleKey: 'writing.writeWords.title',
+      subtitleKey: 'writing.writeWords.subtitle',
+    });
+  });
+
+  it('landing /practice/writing still routes to the writing mode copy', () => {
+    expect(pageCopyForPath('/practice/writing')).toEqual({
+      titleKey: 'nav.writing',
+      subtitleKey: 'home.subtitle.writing',
+    });
+  });
 });
 
 describe('nav config', () => {

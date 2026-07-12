@@ -246,5 +246,59 @@
     "emptyPrompt": "This set has no cards yet. Add your first card.",
     "save": "Save",
     "cancel": "Cancel"
+  },
+  "writing": {
+    "today": {
+      "title": "Today progress",
+      "unit": "words",
+      "subtitle": "of writing practice"
+    },
+    "sectionTitle": "Practice modes",
+    "menu": {
+      "writeFromSets": {
+        "title": "Write from sets",
+        "subtitle": "Practice spelling and writing words from your sets."
+      },
+      "essays": {
+        "title": "Essays",
+        "subtitle": "Write texts and get AI feedback on grammar and style."
+      },
+      "grammar": {
+        "title": "Grammar notes",
+        "subtitle": "Learn grammar with clear notes, examples and mini exercises."
+      },
+      "comingSoon": "Coming soon"
+    },
+    "setSelection": {
+      "title": "Choose set",
+      "empty": {
+        "title": "No sets with words",
+        "subtitle": "Create a set with at least one card before starting writing practice."
+      },
+      "wordsCount": "{{count}} words",
+      "wordsCount_one": "{{count}} word",
+      "close": "Close"
+    },
+    "writeWords": {
+      "title": "Write from sets",
+      "subtitle": "Type the translation and press Enter.",
+      "translateHint": "Translate to your language",
+      "hint": "Hint",
+      "skip": "Skip",
+      "submit": "Check",
+      "inputPlaceholder": "Type here…",
+      "loading": "Loading set…",
+      "loadError": "Couldn't load this set.",
+      "noCards": "This set has no cards.",
+      "back": "Back",
+      "finish": {
+        "title": "Round complete",
+        "completed": "Completed",
+        "skipped": "Skipped",
+        "hints": "Hints used",
+        "restart": "Restart",
+        "exit": "Exit"
+      }
+    }
   }
 }
