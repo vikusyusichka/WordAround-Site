@@ -228,5 +228,31 @@
   "phase0": {
     "title": "WordAround",
     "subtitle": "Phase 0 працює. Дизайн-токени завантажені, Firebase підключено."
+  },
+  "study": {
+    "flip": "Flip",
+    "known": "I knew it",
+    "unknown": "Still learning",
+    "mastered": "Mastered",
+    "shuffle": "Shuffle",
+    "trackProgress": "Track progress",
+    "speak": "Speak",
+    "roundDone": "Round complete",
+    "knewCount": "You knew {{known}} of {{total}}",
+    "repeatUnknown": "Repeat {{count}} unknown",
+    "restart": "Restart",
+    "filter": {
+      "all": "All",
+      "studied": "Studied",
+      "remaining": "Remaining",
+      "mastered": "Mastered"
+    },
+    "addCard": "Add card",
+    "editCard": "Edit card",
+    "deleteCard": "Delete card",
+    "deleteCardConfirm": "Delete this card?",
+    "emptyPrompt": "This set has no cards yet. Add your first card.",
+    "save": "Save",
+    "cancel": "Cancel"
   }
 }

@@ -18,6 +18,7 @@ const fs = vi.hoisted(() => {
   return {
     Timestamp,
     setDoc: vi.fn().mockResolvedValue(undefined),
+    updateDoc: vi.fn().mockResolvedValue(undefined),
     getDocs: vi.fn(),
     deleteDoc: vi.fn().mockResolvedValue(undefined),
     collection: vi.fn((_db: unknown, ...segs: string[]) => ({ path: segs.join('/') })),
@@ -30,7 +31,7 @@ const fs = vi.hoisted(() => {
 
 vi.mock('firebase/firestore', () => fs);
 
-import { createSet, deleteSet, fetchSets } from './setService';
+import { createSet, deleteSet, fetchSets, updateSetCards } from './setService';
 import type { FlashcardSet } from './models';
 
 const set: FlashcardSet = {
@@ -88,5 +89,14 @@ describe('setService', () => {
   it('deleteSet targets the right doc', async () => {
     await deleteSet('set1', 'u1');
     expect(fs.deleteDoc.mock.calls[0][0].path).toBe('users/u1/flashcardSets/set1');
+  });
+
+  it('updateSetCards writes only cards + updatedAt', async () => {
+    await updateSetCards('u1', 'set1', set.cards);
+    const [ref, data] = fs.updateDoc.mock.calls[0];
+    expect(ref.path).toBe('users/u1/flashcardSets/set1');
+    expect(data.cards[0]).toMatchObject({ word: 'a', translation: 'b' });
+    expect(data.updatedAt).toBeInstanceOf(fs.Timestamp);
+    expect(data.title).toBeUndefined();
   });
 });

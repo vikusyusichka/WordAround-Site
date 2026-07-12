@@ -1,7 +1,15 @@
 /* Firestore flashcard-set CRUD — web port of FlashcardSetService.swift.
    Converts embedded cards, the icon enum, and Timestamps at the boundary so the
    app deals in plain objects + millis. */
-import { deleteDoc, getDocs, orderBy, query, setDoc, where } from 'firebase/firestore';
+import {
+  deleteDoc,
+  getDocs,
+  orderBy,
+  query,
+  setDoc,
+  updateDoc,
+  where,
+} from 'firebase/firestore';
 
 import type { Flashcard, FlashcardSet, SetIconType } from '@/lib/models';
 import {
@@ -90,6 +98,18 @@ export const fetchSets = async (uid: string): Promise<FlashcardSet[]> => {
 
 export const deleteSet = async (id: string, ownerUID: string): Promise<void> => {
   await deleteDoc(flashcardSetDoc(ownerUID, id));
+};
+
+/* Persist card edits only (mirrors iOS FlashcardSetDetailViewModel.persistCards). */
+export const updateSetCards = async (
+  uid: string,
+  setId: string,
+  cards: Flashcard[],
+): Promise<void> => {
+  await updateDoc(flashcardSetDoc(uid, setId), {
+    cards: cards.map(cardToFirestore),
+    updatedAt: millisToTs(Date.now()),
+  });
 };
 
 /* Folder queries sort client-side (matches iOS — avoids a composite index). */

@@ -94,3 +94,14 @@ export const useDeleteSet = () => {
     onSuccess: () => qc.invalidateQueries({ queryKey: ['sets'] }),
   });
 };
+
+/** Persist card edits (add/edit/delete) for a set. */
+export const useUpdateSetCards = () => {
+  const qc = useQueryClient();
+  const uid = useUid();
+  return useMutation({
+    mutationFn: ({ setId, cards }: { setId: string; cards: Flashcard[] }) =>
+      setService.updateSetCards(uid as string, setId, cards),
+    onSuccess: () => qc.invalidateQueries({ queryKey: ['sets'] }),
+  });
+};
