@@ -336,7 +336,58 @@
         "emptyCustomTopic": "Type a topic first.",
         "generationFailed": "Couldn't generate a topic. Please try again."
       },
-      "generating": "Generating..."
+      "generating": "Generating...",
+      "hint": {
+        "button": "Get hint",
+        "remaining": "{{remaining}}/{{limit}} left",
+        "noneLeft": "No hints left",
+        "notAvailable": "Hints not available at this level",
+        "generating": "Generating hint...",
+        "error": "Couldn't get a hint. Please try again.",
+        "category": {
+          "content": "Content",
+          "grammar": "Grammar",
+          "vocabulary": "Vocabulary",
+          "structure": "Structure"
+        }
+      },
+      "check": {
+        "button": "Check my essay",
+        "checking": "Checking...",
+        "disabled": "Write within the word range first",
+        "error": "Couldn't check your essay. Please try again."
+      },
+      "score": {
+        "title": "Essay score",
+        "quality": {
+          "excellent": "Excellent",
+          "veryGood": "Very good",
+          "good": "Good",
+          "needsWork": "Needs work"
+        },
+        "category": {
+          "grammar": "Grammar",
+          "vocabulary": "Vocabulary",
+          "length": "Length",
+          "complexity": "Complexity",
+          "relevance": "Relevance",
+          "independence": "Independence"
+        }
+      },
+      "grammar": {
+        "sectionTitle": "Grammar issues",
+        "count_one": "{{count}} issue",
+        "count_other": "{{count}} issues",
+        "empty": "No grammar issues found — great job!",
+        "original": "Original:",
+        "suggestion": "Suggestion:",
+        "reason": "Reason:",
+        "category": {
+          "grammar": "Grammar",
+          "vocabulary": "Vocabulary",
+          "style": "Style"
+        }
+      }
     }
   }
 }

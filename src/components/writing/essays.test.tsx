@@ -4,10 +4,18 @@ import { describe, expect, it, vi } from 'vitest';
 
 import '@/lib/i18n';
 import { EssayEditor } from './EssayEditor';
+import { EssayHintButton } from './EssayHintButton';
 import { EssayLanguageSelector } from './EssayLanguageSelector';
+import { EssayScoreCard } from './EssayScoreCard';
 import { EssayTopicCard } from './EssayTopicCard';
 import { EssayTopicModePicker } from './EssayTopicModePicker';
-import { ESSAY_LANGUAGES, type GeneratedEssayTask } from '@/lib/essayTypes';
+import { GrammarIssueCard } from './GrammarIssueCard';
+import {
+  ESSAY_LANGUAGES,
+  type EssayScore,
+  type GeneratedEssayTask,
+  type GrammarIssue,
+} from '@/lib/essayTypes';
 
 const task: GeneratedEssayTask = {
   id: 't-1',
@@ -84,7 +92,6 @@ describe('EssayEditor', () => {
         wordCount={0}
         validation="empty"
         onChange={onChange}
-        onReset={() => {}}
       />,
     );
     // Word-count display present.
@@ -102,7 +109,6 @@ describe('EssayEditor', () => {
         wordCount={3}
         validation="belowMinimum"
         onChange={() => {}}
-        onReset={() => {}}
       />,
     );
     expect(screen.getByText(/Keep going.*at least 90/)).toBeInTheDocument();
@@ -116,26 +122,115 @@ describe('EssayEditor', () => {
         wordCount={200}
         validation="aboveMaximum"
         onChange={() => {}}
-        onReset={() => {}}
       />,
     );
     expect(screen.getByText(/passed the limit/i)).toBeInTheDocument();
   });
 
-  it('fires onReset when Reset is clicked', async () => {
-    const user = userEvent.setup();
-    const onReset = vi.fn();
+});
+
+/* --- 4C2 additions --------------------------------------------------------- */
+
+const goodScore: EssayScore = {
+  total: 84,
+  grammar: 92, vocabulary: 78, length: 90,
+  complexity: 75, relevance: 70, independence: 100,
+  cefrLevel: 'B2',
+  qualityLabel: 'Very good',
+};
+
+const grammarIssue: GrammarIssue = {
+  id: 'g1',
+  message: 'Possible spelling mistake found.',
+  incorrectText: 'teh',
+  suggestedCorrection: 'the',
+  offset: 0,
+  length: 3,
+  category: 'grammar',
+};
+
+describe('EssayHintButton', () => {
+  it('renders remaining hint count for B1 (7 total)', () => {
     render(
-      <EssayEditor
-        task={task}
-        text="something"
-        wordCount={1}
-        validation="belowMinimum"
-        onChange={() => {}}
-        onReset={onReset}
+      <EssayHintButton
+        difficulty="B1"
+        hintsUsedCount={2}
+        isRequestingHint={false}
+        onRequest={() => {}}
       />,
     );
-    await user.click(screen.getByRole('button', { name: /reset/i }));
-    expect(onReset).toHaveBeenCalled();
+    expect(screen.getByText(/5\/7 left/i)).toBeInTheDocument();
+  });
+
+  it('disables when hints not available for this level (Native = 0)', () => {
+    render(
+      <EssayHintButton
+        difficulty="Native"
+        hintsUsedCount={0}
+        isRequestingHint={false}
+        onRequest={() => {}}
+      />,
+    );
+    expect(screen.getByRole('button')).toBeDisabled();
+    expect(screen.getByText(/not available/i)).toBeInTheDocument();
+  });
+
+  it('disables when limit spent', () => {
+    render(
+      <EssayHintButton
+        difficulty="C1"
+        hintsUsedCount={3}
+        isRequestingHint={false}
+        onRequest={() => {}}
+      />,
+    );
+    expect(screen.getByRole('button')).toBeDisabled();
+    expect(screen.getByText(/no hints left/i)).toBeInTheDocument();
+  });
+
+  it('fires onRequest when clicked', async () => {
+    const user = userEvent.setup();
+    const onRequest = vi.fn();
+    render(
+      <EssayHintButton
+        difficulty="B1"
+        hintsUsedCount={0}
+        isRequestingHint={false}
+        onRequest={onRequest}
+      />,
+    );
+    await user.click(screen.getByRole('button'));
+    expect(onRequest).toHaveBeenCalled();
+  });
+});
+
+describe('EssayScoreCard', () => {
+  it('renders total, CEFR badge, quality label, and all 6 sub-score labels', () => {
+    render(<EssayScoreCard score={goodScore} />);
+    expect(screen.getByText('84')).toBeInTheDocument();
+    expect(screen.getByText('B2')).toBeInTheDocument();
+    expect(screen.getByText('Very good')).toBeInTheDocument();
+    // 6 category labels
+    for (const label of ['Grammar', 'Vocabulary', 'Length', 'Complexity', 'Relevance', 'Independence']) {
+      expect(screen.getByText(label)).toBeInTheDocument();
+    }
+  });
+});
+
+describe('GrammarIssueCard', () => {
+  it('renders category, original, suggestion, and reason', () => {
+    render(<GrammarIssueCard issue={grammarIssue} />);
+    expect(screen.getByText(/grammar/i)).toBeInTheDocument();
+    expect(screen.getByText('teh')).toBeInTheDocument();
+    expect(screen.getByText('the')).toBeInTheDocument();
+    expect(screen.getByText(/Possible spelling mistake/)).toBeInTheDocument();
+  });
+
+  it('omits the suggestion row when suggestedCorrection is null', () => {
+    const noSuggestion: GrammarIssue = { ...grammarIssue, suggestedCorrection: null };
+    render(<GrammarIssueCard issue={noSuggestion} />);
+    expect(screen.getByText('teh')).toBeInTheDocument();
+    expect(screen.queryByText('the')).not.toBeInTheDocument();
+    expect(screen.getByText(/Possible spelling mistake/)).toBeInTheDocument();
   });
 });

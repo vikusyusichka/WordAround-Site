@@ -1,15 +1,19 @@
 /* Pure reducer for the Essays practice screen — no I/O, timing lives in the
-   hook. Web port of the topic/editor slice of EssayPracticeViewModel.swift
-   (scoring/hints/grammar-check pieces are deliberately out of 4C1 scope). */
+   hook. Web port of EssayPracticeViewModel.swift covering topic generation
+   (4C1) + AI hints + local scoring based on LanguageTool grammar issues (4C2). */
+import { scoreEssay } from '@/lib/essayScoring';
 import {
   DEFAULT_DIFFICULTY,
   DEFAULT_LANGUAGE,
   computeWordCount,
   evaluateValidation,
   type EssayDifficulty,
+  type EssayGeneratedHint,
+  type EssayScore,
   type EssayTopicMode,
   type EssayValidation,
   type GeneratedEssayTask,
+  type GrammarIssue,
   type GrammarLanguage,
 } from '@/lib/essayTypes';
 
@@ -29,6 +33,20 @@ export interface EssayState {
   selectedDifficulty: EssayDifficulty;
   /** Rolling window of the last N generated titles (most recent last). */
   usedTaskTitles: string[];
+
+  /* 4C2 — AI hints */
+  hints: EssayGeneratedHint[];
+  /** Tracked separately so scoreEssay's independence sub-score sees the count
+      even if the UI list is filtered/cleared later. */
+  hintsUsedCount: number;
+  isRequestingHint: boolean;
+  hintError: string | null;
+
+  /* 4C2 — grammar check + score */
+  grammarIssues: GrammarIssue[];
+  score: EssayScore | null;
+  isChecking: boolean;
+  checkError: string | null;
 }
 
 export type EssayAction =
@@ -40,7 +58,15 @@ export type EssayAction =
   | { type: 'GENERATION_START' }
   | { type: 'GENERATION_SUCCESS'; task: GeneratedEssayTask }
   | { type: 'GENERATION_FAIL'; error: string }
-  | { type: 'RESET_ESSAY' };
+  | { type: 'RESET_ESSAY' }
+  /* 4C2 */
+  | { type: 'HINT_START' }
+  | { type: 'HINT_SUCCESS'; hint: EssayGeneratedHint }
+  | { type: 'HINT_FAIL'; error: string }
+  | { type: 'CHECK_START' }
+  | { type: 'CHECK_SUCCESS'; issues: GrammarIssue[]; score: EssayScore }
+  | { type: 'CHECK_FAIL'; error: string }
+  | { type: 'CLEAR_FEEDBACK' };
 
 export const initialEssayState = (): EssayState => ({
   topicMode: 'suggested',
@@ -54,6 +80,31 @@ export const initialEssayState = (): EssayState => ({
   selectedLanguage: DEFAULT_LANGUAGE,
   selectedDifficulty: DEFAULT_DIFFICULTY,
   usedTaskTitles: [],
+
+  hints: [],
+  hintsUsedCount: 0,
+  isRequestingHint: false,
+  hintError: null,
+
+  grammarIssues: [],
+  score: null,
+  isChecking: false,
+  checkError: null,
+});
+
+/** Wipe every feedback-related field. Called on essay text change, new topic,
+    or explicit reset — old score is stale as soon as the input changes. */
+const clearedFeedback = (): Pick<EssayState, 'grammarIssues' | 'score' | 'checkError'> => ({
+  grammarIssues: [],
+  score: null,
+  checkError: null,
+});
+
+/** Wipe every hint-related field. Called on new topic. */
+const clearedHints = (): Pick<EssayState, 'hints' | 'hintsUsedCount' | 'hintError'> => ({
+  hints: [],
+  hintsUsedCount: 0,
+  hintError: null,
 });
 
 /* MARK: - Reducer */
@@ -62,12 +113,7 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
   switch (action.type) {
     case 'SET_TOPIC_MODE':
       if (action.mode === s.topicMode) return s;
-      return {
-        ...s,
-        topicMode: action.mode,
-        // Switching modes clears prior errors — a fresh generation is expected.
-        generationError: null,
-      };
+      return { ...s, topicMode: action.mode, generationError: null };
 
     case 'SET_CUSTOM_TOPIC':
       return { ...s, customTopicText: action.text, generationError: null };
@@ -82,11 +128,13 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
       const wordCount = computeWordCount(action.text);
       const min = s.task?.wordLimitMin ?? 0;
       const max = s.task?.wordLimitMax ?? Number.MAX_SAFE_INTEGER;
+      /* Editing invalidates the previous grammar-check + score. */
       return {
         ...s,
         essayText: action.text,
         wordCount,
         validation: evaluateValidation(wordCount, min, max),
+        ...clearedFeedback(),
       };
     }
 
@@ -101,13 +149,13 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
         task,
         isGenerating: false,
         generationError: null,
-        /* Sync UI difficulty to the AI-detected level, matching iOS
-           applyGeneratedTask (EssayPracticeViewModel.swift:805-810). */
         selectedDifficulty: task.detectedLevel,
         essayText: '',
         wordCount: 0,
         validation: 'empty',
         usedTaskTitles: nextTitles,
+        ...clearedFeedback(),
+        ...clearedHints(),
       };
     }
 
@@ -115,7 +163,62 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
       return { ...s, isGenerating: false, generationError: action.error };
 
     case 'RESET_ESSAY':
-      return { ...s, essayText: '', wordCount: 0, validation: 'empty' };
+      return {
+        ...s,
+        essayText: '',
+        wordCount: 0,
+        validation: 'empty',
+        ...clearedFeedback(),
+      };
+
+    /* 4C2 — Hints */
+
+    case 'HINT_START':
+      return { ...s, isRequestingHint: true, hintError: null };
+
+    case 'HINT_SUCCESS': {
+      const hints = [...s.hints, action.hint];
+      const hintsUsedCount = s.hintsUsedCount + 1;
+      /* If a score already exists, recompute it — independence penalty
+         depends on hintsUsedCount. iOS: recalculateScoreIfNeeded. */
+      const score = s.score && s.task
+        ? scoreEssay({
+            text: s.essayText,
+            topic: s.task.title,
+            wordLimitMin: s.task.wordLimitMin,
+            wordLimitMax: s.task.wordLimitMax,
+            grammarIssues: s.grammarIssues,
+            usedHints: hintsUsedCount,
+            usedTranslations: 0,
+            usedSynonyms: 0,
+            difficulty: s.selectedDifficulty,
+          })
+        : s.score;
+      return { ...s, hints, hintsUsedCount, isRequestingHint: false, hintError: null, score };
+    }
+
+    case 'HINT_FAIL':
+      return { ...s, isRequestingHint: false, hintError: action.error };
+
+    /* 4C2 — Check (grammar + score) */
+
+    case 'CHECK_START':
+      return { ...s, isChecking: true, checkError: null };
+
+    case 'CHECK_SUCCESS':
+      return {
+        ...s,
+        isChecking: false,
+        checkError: null,
+        grammarIssues: action.issues,
+        score: action.score,
+      };
+
+    case 'CHECK_FAIL':
+      return { ...s, isChecking: false, checkError: action.error };
+
+    case 'CLEAR_FEEDBACK':
+      return { ...s, ...clearedFeedback() };
 
     default:
       return s;

@@ -1,11 +1,17 @@
 /* Body of /practice/writing/essays. Composes topic-mode picker → topic
    generation UI (suggested button or custom input) → task card → language +
-   difficulty selectors → editor. All state lives in useEssaySession. */
+   difficulty selectors → editor → hint button + reset → hints list →
+   check button → feedback (score card + grammar issues). All state lives
+   in useEssaySession. */
 import { useTranslation } from 'react-i18next';
 
+import { EssayCheckButton } from './EssayCheckButton';
 import { EssayCustomTopicInput } from './EssayCustomTopicInput';
 import { EssayDifficultySelector } from './EssayDifficultySelector';
 import { EssayEditor } from './EssayEditor';
+import { EssayFeedbackSection } from './EssayFeedbackSection';
+import { EssayHintButton } from './EssayHintButton';
+import { EssayHintsList } from './EssayHintsList';
 import { EssayLanguageSelector } from './EssayLanguageSelector';
 import { EssayTopicCard } from './EssayTopicCard';
 import { EssayTopicModePicker } from './EssayTopicModePicker';
@@ -13,7 +19,7 @@ import { useEssaySession } from '@/hooks/useEssaySession';
 
 export const EssaysScreen = () => {
   const { t } = useTranslation();
-  const { state, dispatch, generateTopic } = useEssaySession();
+  const { state, dispatch, generateTopic, requestHint, checkEssay } = useEssaySession();
 
   const hasTask = state.task !== null;
   const busy = state.isGenerating;
@@ -72,16 +78,53 @@ export const EssaysScreen = () => {
         />
       </div>
 
-      {/* Editor */}
+      {/* Editor + action row (hint + reset) + hints list + check + feedback */}
       {state.task && (
-        <EssayEditor
-          task={state.task}
-          text={state.essayText}
-          wordCount={state.wordCount}
-          validation={state.validation}
-          onChange={(text) => dispatch({ type: 'SET_ESSAY_TEXT', text })}
-          onReset={() => dispatch({ type: 'RESET_ESSAY' })}
-        />
+        <>
+          <EssayEditor
+            task={state.task}
+            text={state.essayText}
+            wordCount={state.wordCount}
+            validation={state.validation}
+            onChange={(text) => dispatch({ type: 'SET_ESSAY_TEXT', text })}
+          />
+
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <EssayHintButton
+              difficulty={state.selectedDifficulty}
+              hintsUsedCount={state.hintsUsedCount}
+              isRequestingHint={state.isRequestingHint}
+              onRequest={() => void requestHint()}
+            />
+            <button
+              type="button"
+              onClick={() => dispatch({ type: 'RESET_ESSAY' })}
+              disabled={state.wordCount === 0}
+              className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[14px] font-semibold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 disabled:opacity-60 focus-visible:outline-none md:h-12 md:px-5 md:text-[15px]"
+            >
+              {t('writing.essays.editor.reset')}
+            </button>
+          </div>
+
+          {state.hintError && (
+            <p role="alert" className="text-[13px] font-semibold text-(--color-cs-red)">
+              {state.hintError}
+            </p>
+          )}
+
+          <EssayHintsList hints={state.hints} />
+
+          <EssayCheckButton
+            validationValid={state.validation === 'valid'}
+            isChecking={state.isChecking}
+            onCheck={() => void checkEssay()}
+            errorMessage={state.checkError}
+          />
+
+          {state.score && (
+            <EssayFeedbackSection score={state.score} issues={state.grammarIssues} />
+          )}
+        </>
       )}
     </div>
   );

@@ -124,3 +124,84 @@ export const sanitizeTask = (
 
 export const findLanguage = (id: string): GrammarLanguage =>
   ESSAY_LANGUAGES.find((l) => l.id === id) ?? DEFAULT_LANGUAGE;
+
+/* MARK: - AI hints (4C2) */
+
+export type EssayHintCategory = 'content' | 'grammar' | 'vocabulary' | 'structure';
+
+export const ESSAY_HINT_CATEGORIES: EssayHintCategory[] = [
+  'content', 'grammar', 'vocabulary', 'structure',
+];
+
+export interface EssayGeneratedHint {
+  id: string;
+  text: string;
+  category: EssayHintCategory;
+}
+
+/** Max hints per session, keyed by CEFR difficulty. Ports the extension in
+    iOS EssayDifficulty. Native = 0 = feature effectively disabled. */
+export const HINTS_LIMIT: Record<EssayDifficulty, number> = {
+  A1: 15, A2: 12, B1: 7, B2: 5, C1: 3, Native: 0,
+};
+
+/** Cap hint text at 12 words (iOS "at most 12 words" rule). */
+const clampHintText = (text: string): string => {
+  const words = text.trim().split(/\s+/).filter(Boolean);
+  return words.slice(0, 12).join(' ');
+};
+
+export const sanitizeHint = (
+  raw: Partial<EssayGeneratedHint> & { category?: string },
+): EssayGeneratedHint => {
+  const text = clampHintText(raw.text ?? '') || 'Add one clear supporting example.';
+  const category: EssayHintCategory =
+    (ESSAY_HINT_CATEGORIES as string[]).includes(raw.category ?? '')
+      ? (raw.category as EssayHintCategory)
+      : 'content';
+  return { id: raw.id ?? crypto.randomUUID(), text, category };
+};
+
+/* MARK: - Grammar issues (4C2) */
+
+export type GrammarIssueCategory = 'grammar' | 'vocabulary' | 'style';
+
+export interface GrammarIssue {
+  id: string;
+  message: string;
+  incorrectText: string;
+  suggestedCorrection: string | null;
+  offset: number;
+  length: number;
+  category: GrammarIssueCategory;
+}
+
+/** LanguageTool language codes for the 8-language subset shipped in 4C1.
+    Verbatim from iOS GrammarLanguage.languageToolCode for these ids. */
+export const LANGUAGE_TOOL_CODE: Record<string, string> = {
+  english: 'en-US',
+  spanish: 'es',
+  french: 'fr',
+  german: 'de-DE',
+  italian: 'it',
+  ukrainian: 'uk-UA',
+  polish: 'pl-PL',
+  russian: 'ru-RU',
+};
+
+/* MARK: - Essay score (4C2) */
+
+export type EssayCEFRLevel = 'A1' | 'A2' | 'B1' | 'B2' | 'C1';
+export type EssayQualityLabel = 'Needs work' | 'Good' | 'Very good' | 'Excellent';
+
+export interface EssayScore {
+  total: number;         // 0..100
+  grammar: number;
+  vocabulary: number;
+  length: number;
+  complexity: number;
+  relevance: number;
+  independence: number;
+  cefrLevel: EssayCEFRLevel;
+  qualityLabel: EssayQualityLabel;
+}
