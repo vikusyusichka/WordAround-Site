@@ -19,14 +19,17 @@ import {
   ChatsCircle,
   Check,
   Circle,
+  Confetti,
   FileText,
   Flame,
   Folder,
   ForkKnife,
+  Gear,
   Globe,
   GraduationCap,
   Headphones,
   Heart,
+  Hourglass,
   House,
   Image as ImageIcon,
   Lightning,
@@ -35,8 +38,10 @@ import {
   NotePencil,
   Pencil,
   PencilLine,
+  PersonSimpleWalk,
   Plus,
   Question,
+  Rabbit,
   Sparkle,
   SquaresFour,
   Stack,
@@ -118,6 +123,13 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   /* Phase 4C3 helper toolbar */
   'character.book.closed.fill': Translate,
   'textformat.abc.dottedunderline': TextAa,
+  /* Phase 4B WriteWords difficulty + result */
+  'hare.fill': Rabbit,
+  'figure.walk': PersonSimpleWalk,
+  'party.popper.fill': Confetti,
+  hourglass: Hourglass,
+  gearshape: Gear,
+  'gearshape.fill': Gear,
 };
 
 export const iconForSFSymbol = (name: string): PhosphorIcon =>

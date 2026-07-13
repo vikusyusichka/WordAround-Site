@@ -299,13 +299,55 @@
       "loadError": "Couldn't load this set.",
       "noCards": "This set has no cards.",
       "back": "Back",
-      "finish": {
-        "title": "Round complete",
-        "completed": "Completed",
-        "skipped": "Skipped",
-        "hints": "Hints used",
-        "restart": "Restart",
-        "exit": "Exit"
+      "settings": {
+        "title": "Settings",
+        "trainingMode": "Training mode",
+        "difficulty": "Difficulty"
+      },
+      "mode": {
+        "wordToTranslation": "Word → Translation",
+        "translationToWord": "Translation → Word"
+      },
+      "difficulty": {
+        "easy": "Easy",
+        "medium": "Medium",
+        "hard": "Hard",
+        "easyDesc": "Unlimited hints, unlimited skips",
+        "mediumDesc": "1 hint letter, max 25% skips",
+        "hardDesc": "No hints, no skips, timed"
+      },
+      "translatePrompt": {
+        "word": "Translate to your language",
+        "translation": "Write the original word"
+      },
+      "skipsLeft_one": "{{count}} skip left",
+      "skipsLeft_other": "{{count}} skips left",
+      "seconds": "{{count}}s",
+      "result": {
+        "win": {
+          "title": "Round complete!",
+          "subtitle": "Great work. You finished this writing round."
+        },
+        "timeout": {
+          "title": "Time's up",
+          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+        },
+        "wrong": {
+          "title": "Wrong answer",
+          "subtitle": "One mistake ends the round in Hard mode."
+        },
+        "perfectTitle": "Perfect round!",
+        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
+        "totalWords": "Total words",
+        "completedWords": "Completed words",
+        "skippedWords": "Skipped words",
+        "hintsUsed": "Hints used",
+        "streak": "Streak",
+        "difficultyLabel": "Difficulty",
+        "word": "Word",
+        "yourAnswer": "Your answer",
+        "correctAnswer": "Correct answer",
+        "tryAgain": "Try again"
       }
     },
     "essays": {

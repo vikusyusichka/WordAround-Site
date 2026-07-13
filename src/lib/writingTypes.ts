@@ -1,19 +1,49 @@
-/* Types + static config for Phase 4 Writing. WriteWordsExercise is derived
-   from a Flashcard for the word→translation training mode (the only mode
-   shipped in 4A; mode toggle lands in 4B). Menu items + progress-card stub
-   are static — mirror WritingViewModel.menuItems / WritingProgressSummaryCardView. */
+/* Types + static config for Phase 4 Writing. WriteWordsExercise holds the raw
+   card fields; the display direction (word→translation or translation→word)
+   is chosen by training mode at render/selector time (4B). Menu items +
+   progress-card stub are static — mirror WritingViewModel.menuItems /
+   WritingProgressSummaryCardView. */
 import type { HomeSetPreviewItem } from '@/lib/homeTypes';
 import type { Flashcard } from '@/lib/models';
 
 export interface WriteWordsExercise {
   id: string;
-  /** Prompt shown as the big word on the exercise card. */
-  displayWord: string;
-  /** Small caption above the word. */
-  displayTitle: string;
-  /** Expected typed answer (compared via normalize). */
-  correctAnswer: string;
+  /** The source-language word (front of the card). */
+  word: string;
+  /** The translation (back of the card). */
+  translation: string;
 }
+
+/* MARK: - Training mode + difficulty (4B) */
+
+export type WriteWordsTrainingMode = 'wordToTranslation' | 'translationToWord';
+
+export type WriteWordsDifficulty = 'easy' | 'medium' | 'hard';
+
+export const WRITE_WORDS_TRAINING_MODES: WriteWordsTrainingMode[] = [
+  'wordToTranslation',
+  'translationToWord',
+];
+
+export const WRITE_WORDS_DIFFICULTIES: WriteWordsDifficulty[] = ['easy', 'medium', 'hard'];
+
+/** SF-symbol per difficulty (resolved by <Icon>). Verbatim from iOS
+    WriteWordsDifficulty.icon. */
+export const DIFFICULTY_ICON: Record<WriteWordsDifficulty, string> = {
+  easy: 'hare.fill',
+  medium: 'figure.walk',
+  hard: 'flame.fill',
+};
+
+/** Per-word hard-mode countdown seconds, keyed by answer length. Verbatim
+    from iOS WriteWordsViewModel.TimerConstants. */
+export const timerDurationFor = (answer: string): number => {
+  const n = answer.trim().length;
+  if (n <= 4) return 3;
+  if (n <= 7) return 5;
+  if (n <= 10) return 7;
+  return 10;
+};
 
 export type WritingMenuAction = 'writeFromSets' | 'essays' | 'grammarNotes';
 
@@ -81,12 +111,8 @@ export const WRITING_TODAY_GOAL: HomeSetPreviewItem = {
   blobColor: '#D1DCFA',
 };
 
-export const buildWriteWordsExercise = (
-  card: Flashcard,
-  translatePrompt: string,
-): WriteWordsExercise => ({
+export const buildWriteWordsExercise = (card: Flashcard): WriteWordsExercise => ({
   id: card.id,
-  displayWord: card.word,
-  displayTitle: translatePrompt,
-  correctAnswer: card.translation,
+  word: card.word,
+  translation: card.translation,
 });

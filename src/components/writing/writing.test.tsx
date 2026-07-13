@@ -6,6 +6,9 @@ import { describe, expect, it, vi } from 'vitest';
 import '@/lib/i18n';
 import { WritingMenuGrid } from './WritingMenuGrid';
 import { WriteWordsCells } from './WriteWordsCells';
+import { WriteWordsControls } from './WriteWordsControls';
+import { WriteWordsResultScreen } from './WriteWordsResultScreen';
+import { WriteWordsSettingsSheet } from './WriteWordsSettingsSheet';
 import { SetSelectionModal } from './SetSelectionModal';
 import type { FlashcardSet } from '@/lib/models';
 
@@ -138,5 +141,124 @@ describe('SetSelectionModal', () => {
     render(withQuery(<SetSelectionModal open onClose={onClose} onSelect={() => {}} />));
     await user.click(screen.getByRole('dialog'));
     expect(onClose).toHaveBeenCalled();
+  });
+});
+
+/* --- WriteWordsControls (4B — difficulty-aware) --------------------------- */
+
+describe('WriteWordsControls', () => {
+  const baseProps = {
+    isHintAvailable: true,
+    canSkip: true,
+    skipsRemainingText: null,
+    canSubmit: true,
+    onHint: () => {},
+    onSkip: () => {},
+    onSubmit: () => {},
+  };
+
+  it('shows Hint + Skip + Check when allowed', () => {
+    render(<WriteWordsControls {...baseProps} showHint showSkip />);
+    expect(screen.getByRole('button', { name: /hint/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /skip/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /check/i })).toBeInTheDocument();
+  });
+
+  it('hides Hint + Skip in hard mode (showHint/showSkip false)', () => {
+    render(<WriteWordsControls {...baseProps} showHint={false} showSkip={false} />);
+    expect(screen.queryByRole('button', { name: /hint/i })).not.toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: /skip/i })).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /check/i })).toBeInTheDocument();
+  });
+
+  it('shows the medium "N skips left" caption', () => {
+    render(
+      <WriteWordsControls {...baseProps} showHint showSkip skipsRemainingText="1 skip left" />,
+    );
+    expect(screen.getByText('1 skip left')).toBeInTheDocument();
+  });
+});
+
+/* --- WriteWordsResultScreen (4B) ------------------------------------------ */
+
+describe('WriteWordsResultScreen', () => {
+  const stats = { total: 8, completed: 8, skipped: 0, hints: 0, streak: 8, difficulty: 'hard' as const };
+
+  it('win (hard) shows the perfect-round message', () => {
+    render(
+      <WriteWordsResultScreen
+        result="win"
+        stats={stats}
+        wrongAnswer={null}
+        onTryAgain={() => {}}
+        onExit={() => {}}
+      />,
+    );
+    expect(screen.getByText(/Round complete!/i)).toBeInTheDocument();
+    expect(screen.getByText(/Perfect round!/i)).toBeInTheDocument();
+  });
+
+  it('wrong-answer lose shows the answer detail rows', () => {
+    render(
+      <WriteWordsResultScreen
+        result="wrongAnswer"
+        stats={{ ...stats, completed: 3, streak: 3 }}
+        wrongAnswer={{ word: 'manzana', userAnswer: 'банан', correctAnswer: 'яблуко' }}
+        onTryAgain={() => {}}
+        onExit={() => {}}
+      />,
+    );
+    expect(screen.getByText(/Wrong answer/i)).toBeInTheDocument();
+    expect(screen.getByText('manzana')).toBeInTheDocument();
+    expect(screen.getByText('банан')).toBeInTheDocument();
+    expect(screen.getByText('яблуко')).toBeInTheDocument();
+  });
+
+  it('timeout lose fires Try again', async () => {
+    const user = userEvent.setup();
+    const onTryAgain = vi.fn();
+    render(
+      <WriteWordsResultScreen
+        result="timeout"
+        stats={{ ...stats, completed: 4, streak: 3 }}
+        wrongAnswer={null}
+        onTryAgain={onTryAgain}
+        onExit={() => {}}
+      />,
+    );
+    expect(screen.getByText(/Time's up/i)).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: /try again/i }));
+    expect(onTryAgain).toHaveBeenCalled();
+  });
+});
+
+/* --- WriteWordsSettingsSheet (4B) ----------------------------------------- */
+
+describe('WriteWordsSettingsSheet', () => {
+  it('renders 2 modes + 3 difficulties and fires the callbacks', async () => {
+    const user = userEvent.setup();
+    const onSelectMode = vi.fn();
+    const onSelectDifficulty = vi.fn();
+    render(
+      <WriteWordsSettingsSheet
+        open
+        trainingMode="wordToTranslation"
+        difficulty="easy"
+        onSelectMode={onSelectMode}
+        onSelectDifficulty={onSelectDifficulty}
+        onClose={() => {}}
+      />,
+    );
+    expect(screen.getByText('Word → Translation')).toBeInTheDocument();
+    expect(screen.getByText('Translation → Word')).toBeInTheDocument();
+    expect(screen.getByText('Easy')).toBeInTheDocument();
+    expect(screen.getByText('Medium')).toBeInTheDocument();
+    expect(screen.getByText('Hard')).toBeInTheDocument();
+
+    await user.click(screen.getByText('Translation → Word'));
+    expect(onSelectMode).toHaveBeenCalledWith('translationToWord');
+
+    await user.click(screen.getByText('Hard'));
+    expect(onSelectDifficulty).toHaveBeenCalledWith('hard');
   });
 });
