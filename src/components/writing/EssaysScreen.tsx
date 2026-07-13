@@ -3,26 +3,39 @@
    difficulty selectors → editor → hint button + reset → hints list →
    check button → feedback (score card + grammar issues). All state lives
    in useEssaySession. */
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { EssayAssistanceModal, type AssistanceModalType } from './EssayAssistanceModal';
 import { EssayCheckButton } from './EssayCheckButton';
 import { EssayCustomTopicInput } from './EssayCustomTopicInput';
 import { EssayDifficultySelector } from './EssayDifficultySelector';
 import { EssayEditor } from './EssayEditor';
 import { EssayFeedbackSection } from './EssayFeedbackSection';
+import { EssayHelperToolbar } from './EssayHelperToolbar';
 import { EssayHintButton } from './EssayHintButton';
 import { EssayHintsList } from './EssayHintsList';
 import { EssayLanguageSelector } from './EssayLanguageSelector';
 import { EssayTopicCard } from './EssayTopicCard';
 import { EssayTopicModePicker } from './EssayTopicModePicker';
 import { useEssaySession } from '@/hooks/useEssaySession';
+import { SYNONYM_LIMIT, TRANSLATION_LIMIT } from '@/lib/essayTypes';
 
 export const EssaysScreen = () => {
   const { t } = useTranslation();
   const { state, dispatch, generateTopic, requestHint, checkEssay } = useEssaySession();
+  const [assistModal, setAssistModal] = useState<AssistanceModalType | null>(null);
 
   const hasTask = state.task !== null;
   const busy = state.isGenerating;
+
+  const remainingFor = (type: AssistanceModalType): number => {
+    const limit = type === 'translate'
+      ? TRANSLATION_LIMIT[state.selectedDifficulty]
+      : SYNONYM_LIMIT[state.selectedDifficulty];
+    const used = type === 'translate' ? state.usedTranslations : state.usedSynonyms;
+    return Math.max(limit - used, 0);
+  };
 
   return (
     <div className="mx-auto flex w-full max-w-3xl flex-col gap-6">
@@ -114,6 +127,15 @@ export const EssaysScreen = () => {
 
           <EssayHintsList hints={state.hints} />
 
+          {/* Helper toolbar — translate + synonym */}
+          <EssayHelperToolbar
+            difficulty={state.selectedDifficulty}
+            usedTranslations={state.usedTranslations}
+            usedSynonyms={state.usedSynonyms}
+            onTranslate={() => setAssistModal('translate')}
+            onSynonym={() => setAssistModal('synonym')}
+          />
+
           <EssayCheckButton
             validationValid={state.validation === 'valid'}
             isChecking={state.isChecking}
@@ -126,6 +148,18 @@ export const EssaysScreen = () => {
           )}
         </>
       )}
+
+      {/* Assistance modal (translate / synonym) */}
+      <EssayAssistanceModal
+        open={assistModal !== null}
+        type={assistModal ?? 'translate'}
+        targetLanguage={state.selectedLanguage}
+        remaining={remainingFor(assistModal ?? 'translate')}
+        onRecord={() =>
+          dispatch({ type: assistModal === 'synonym' ? 'RECORD_SYNONYM' : 'RECORD_TRANSLATION' })
+        }
+        onClose={() => setAssistModal(null)}
+      />
     </div>
   );
 };

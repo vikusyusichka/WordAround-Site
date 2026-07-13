@@ -387,6 +387,32 @@
           "vocabulary": "Vocabulary",
           "style": "Style"
         }
+      },
+      "helper": {
+        "translate": "Translate",
+        "synonym": "Synonym",
+        "remaining": "{{remaining}} left",
+        "notAvailable": "Not available at this level"
+      },
+      "translate": {
+        "title": "Translate",
+        "placeholder": "Enter a word or short phrase",
+        "submit": "Translate",
+        "submitting": "Translating..."
+      },
+      "synonym": {
+        "title": "Synonyms",
+        "placeholder": "Enter a word",
+        "submit": "Find synonyms",
+        "submitting": "Searching..."
+      },
+      "assist": {
+        "from": "From",
+        "to": "To",
+        "close": "Close",
+        "noResult": "No result found.",
+        "sameLanguage": "Choose a different input language.",
+        "error": "The service is temporarily unavailable."
       }
     }
   }

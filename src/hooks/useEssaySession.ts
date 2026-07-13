@@ -122,8 +122,8 @@ export const useEssaySession = () => {
         wordLimitMax: state.task.wordLimitMax,
         grammarIssues: issues,
         usedHints: state.hintsUsedCount,
-        usedTranslations: 0,
-        usedSynonyms: 0,
+        usedTranslations: state.usedTranslations,
+        usedSynonyms: state.usedSynonyms,
         difficulty: state.selectedDifficulty,
       });
       dispatch({ type: 'CHECK_SUCCESS', issues, score });
@@ -135,7 +135,8 @@ export const useEssaySession = () => {
     }
   }, [
     state.task, state.validation, state.isChecking, state.essayText,
-    state.selectedLanguage, state.selectedDifficulty, state.hintsUsedCount, t,
+    state.selectedLanguage, state.selectedDifficulty, state.hintsUsedCount,
+    state.usedTranslations, state.usedSynonyms, t,
   ]);
 
   return {

@@ -4,6 +4,7 @@ import { describe, expect, it, vi } from 'vitest';
 
 import '@/lib/i18n';
 import { EssayEditor } from './EssayEditor';
+import { EssayHelperToolbar } from './EssayHelperToolbar';
 import { EssayHintButton } from './EssayHintButton';
 import { EssayLanguageSelector } from './EssayLanguageSelector';
 import { EssayScoreCard } from './EssayScoreCard';
@@ -232,5 +233,76 @@ describe('GrammarIssueCard', () => {
     expect(screen.getByText('teh')).toBeInTheDocument();
     expect(screen.queryByText('the')).not.toBeInTheDocument();
     expect(screen.getByText(/Possible spelling mistake/)).toBeInTheDocument();
+  });
+});
+
+/* --- 4C3: helper toolbar ---------------------------------------------------- */
+
+describe('EssayHelperToolbar', () => {
+  it('shows remaining translate + synonym budget for B1 (10 / 6)', () => {
+    render(
+      <EssayHelperToolbar
+        difficulty="B1"
+        usedTranslations={2}
+        usedSynonyms={1}
+        onTranslate={() => {}}
+        onSynonym={() => {}}
+      />,
+    );
+    // Translate: 10 - 2 = 8 left; Synonym: 6 - 1 = 5 left.
+    expect(screen.getByText(/8 left/)).toBeInTheDocument();
+    expect(screen.getByText(/5 left/)).toBeInTheDocument();
+  });
+
+  it('fires onTranslate / onSynonym when the buttons are clicked', async () => {
+    const user = userEvent.setup();
+    const onTranslate = vi.fn();
+    const onSynonym = vi.fn();
+    render(
+      <EssayHelperToolbar
+        difficulty="B1"
+        usedTranslations={0}
+        usedSynonyms={0}
+        onTranslate={onTranslate}
+        onSynonym={onSynonym}
+      />,
+    );
+    const buttons = screen.getAllByRole('button');
+    await user.click(buttons[0]);
+    await user.click(buttons[1]);
+    expect(onTranslate).toHaveBeenCalled();
+    expect(onSynonym).toHaveBeenCalled();
+  });
+
+  it('disables both buttons at Native (limit 0) and shows "not available"', () => {
+    render(
+      <EssayHelperToolbar
+        difficulty="Native"
+        usedTranslations={0}
+        usedSynonyms={0}
+        onTranslate={() => {}}
+        onSynonym={() => {}}
+      />,
+    );
+    const buttons = screen.getAllByRole('button');
+    expect(buttons[0]).toBeDisabled();
+    expect(buttons[1]).toBeDisabled();
+    expect(screen.getAllByText(/not available/i)).toHaveLength(2);
+  });
+
+  it('disables a tool once its budget is fully spent', () => {
+    render(
+      <EssayHelperToolbar
+        difficulty="C1"
+        usedTranslations={3}
+        usedSynonyms={0}
+        onTranslate={() => {}}
+        onSynonym={() => {}}
+      />,
+    );
+    const buttons = screen.getAllByRole('button');
+    // C1 translation limit = 3 → spent → disabled; synonym limit = 3 → 3 left → enabled.
+    expect(buttons[0]).toBeDisabled();
+    expect(buttons[1]).not.toBeDisabled();
   });
 });

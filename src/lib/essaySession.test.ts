@@ -289,3 +289,58 @@ describe('feedback invalidation', () => {
     expect(cleared.hints).toHaveLength(1);
   });
 });
+
+/* MARK: - 4C3 additions: translation + synonym usage counters */
+
+describe('RECORD_TRANSLATION / RECORD_SYNONYM', () => {
+  it('starts with zero usage counters', () => {
+    const s = init();
+    expect(s.usedTranslations).toBe(0);
+    expect(s.usedSynonyms).toBe(0);
+  });
+
+  it('RECORD_TRANSLATION increments the counter', () => {
+    const s = run(init(), { type: 'RECORD_TRANSLATION' }, { type: 'RECORD_TRANSLATION' });
+    expect(s.usedTranslations).toBe(2);
+    expect(s.usedSynonyms).toBe(0);
+  });
+
+  it('RECORD_SYNONYM increments the counter', () => {
+    const s = essayReducer(init(), { type: 'RECORD_SYNONYM' });
+    expect(s.usedSynonyms).toBe(1);
+  });
+
+  it('RECORD_TRANSLATION re-scores when a score exists (independence drops)', () => {
+    const withScore = run(
+      init(),
+      { type: 'GENERATION_SUCCESS', task: task() },
+      { type: 'SET_ESSAY_TEXT', text: Array.from({ length: 80 }, () => 'day').join(' ') },
+      { type: 'CHECK_SUCCESS', issues: [], score: dummyScore },
+    );
+    const before = withScore.score!.independence;
+    const after = essayReducer(withScore, { type: 'RECORD_TRANSLATION' });
+    expect(after.usedTranslations).toBe(1);
+    expect(after.score!.independence).toBeLessThan(before);
+  });
+
+  it('RECORD_SYNONYM does NOT re-score when no score exists', () => {
+    const s = essayReducer(init(), { type: 'RECORD_SYNONYM' });
+    expect(s.score).toBeNull();
+  });
+
+  it('GENERATION_SUCCESS resets the usage counters', () => {
+    const dirty = run(
+      init(),
+      { type: 'GENERATION_SUCCESS', task: task() },
+      { type: 'RECORD_TRANSLATION' },
+      { type: 'RECORD_SYNONYM' },
+    );
+    expect(dirty.usedTranslations).toBe(1);
+    const fresh = essayReducer(dirty, {
+      type: 'GENERATION_SUCCESS',
+      task: task({ id: 't-2', title: 'Another topic' }),
+    });
+    expect(fresh.usedTranslations).toBe(0);
+    expect(fresh.usedSynonyms).toBe(0);
+  });
+});

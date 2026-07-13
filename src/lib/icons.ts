@@ -42,6 +42,7 @@ import {
   Stack,
   Star,
   Target,
+  TextAa,
   Translate,
   User,
   UserCircle,
@@ -114,6 +115,9 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'lightbulb.fill': Lightbulb,
   'arrow.right.circle.fill': ArrowRight,
   'arrow.uturn.backward': ArrowLeft,
+  /* Phase 4C3 helper toolbar */
+  'character.book.closed.fill': Translate,
+  'textformat.abc.dottedunderline': TextAa,
 };
 
 export const iconForSFSymbol = (name: string): PhosphorIcon =>

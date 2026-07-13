@@ -47,6 +47,10 @@ export interface EssayState {
   score: EssayScore | null;
   isChecking: boolean;
   checkError: string | null;
+
+  /* 4C3 — helper toolbar usage (feeds the independence sub-score). */
+  usedTranslations: number;
+  usedSynonyms: number;
 }
 
 export type EssayAction =
@@ -66,7 +70,10 @@ export type EssayAction =
   | { type: 'CHECK_START' }
   | { type: 'CHECK_SUCCESS'; issues: GrammarIssue[]; score: EssayScore }
   | { type: 'CHECK_FAIL'; error: string }
-  | { type: 'CLEAR_FEEDBACK' };
+  | { type: 'CLEAR_FEEDBACK' }
+  /* 4C3 */
+  | { type: 'RECORD_TRANSLATION' }
+  | { type: 'RECORD_SYNONYM' };
 
 export const initialEssayState = (): EssayState => ({
   topicMode: 'suggested',
@@ -90,6 +97,9 @@ export const initialEssayState = (): EssayState => ({
   score: null,
   isChecking: false,
   checkError: null,
+
+  usedTranslations: 0,
+  usedSynonyms: 0,
 });
 
 /** Wipe every feedback-related field. Called on essay text change, new topic,
@@ -106,6 +116,32 @@ const clearedHints = (): Pick<EssayState, 'hints' | 'hintsUsedCount' | 'hintErro
   hintsUsedCount: 0,
   hintError: null,
 });
+
+/** Wipe helper-toolbar usage counters. Called on new topic. */
+const clearedAssistance = (): Pick<EssayState, 'usedTranslations' | 'usedSynonyms'> => ({
+  usedTranslations: 0,
+  usedSynonyms: 0,
+});
+
+/** Recompute the score from the current state IF one already exists. Called
+    whenever a usage counter changes (hint / translation / synonym) since the
+    independence sub-score depends on all three. Returns the prior score
+    unchanged when there's nothing to re-score. */
+const rescore = (s: EssayState, overrides: Partial<Pick<EssayState,
+  'hintsUsedCount' | 'usedTranslations' | 'usedSynonyms'>> = {}): EssayScore | null => {
+  if (!s.score || !s.task) return s.score;
+  return scoreEssay({
+    text: s.essayText,
+    topic: s.task.title,
+    wordLimitMin: s.task.wordLimitMin,
+    wordLimitMax: s.task.wordLimitMax,
+    grammarIssues: s.grammarIssues,
+    usedHints: overrides.hintsUsedCount ?? s.hintsUsedCount,
+    usedTranslations: overrides.usedTranslations ?? s.usedTranslations,
+    usedSynonyms: overrides.usedSynonyms ?? s.usedSynonyms,
+    difficulty: s.selectedDifficulty,
+  });
+};
 
 /* MARK: - Reducer */
 
@@ -156,6 +192,7 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
         usedTaskTitles: nextTitles,
         ...clearedFeedback(),
         ...clearedHints(),
+        ...clearedAssistance(),
       };
     }
 
@@ -179,21 +216,9 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
     case 'HINT_SUCCESS': {
       const hints = [...s.hints, action.hint];
       const hintsUsedCount = s.hintsUsedCount + 1;
-      /* If a score already exists, recompute it — independence penalty
-         depends on hintsUsedCount. iOS: recalculateScoreIfNeeded. */
-      const score = s.score && s.task
-        ? scoreEssay({
-            text: s.essayText,
-            topic: s.task.title,
-            wordLimitMin: s.task.wordLimitMin,
-            wordLimitMax: s.task.wordLimitMax,
-            grammarIssues: s.grammarIssues,
-            usedHints: hintsUsedCount,
-            usedTranslations: 0,
-            usedSynonyms: 0,
-            difficulty: s.selectedDifficulty,
-          })
-        : s.score;
+      /* Re-score if one exists — independence depends on hint usage.
+         iOS: recalculateScoreIfNeeded. */
+      const score = rescore(s, { hintsUsedCount });
       return { ...s, hints, hintsUsedCount, isRequestingHint: false, hintError: null, score };
     }
 
@@ -219,6 +244,18 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
 
     case 'CLEAR_FEEDBACK':
       return { ...s, ...clearedFeedback() };
+
+    /* 4C3 — helper usage counters (re-score on change). */
+
+    case 'RECORD_TRANSLATION': {
+      const usedTranslations = s.usedTranslations + 1;
+      return { ...s, usedTranslations, score: rescore(s, { usedTranslations }) };
+    }
+
+    case 'RECORD_SYNONYM': {
+      const usedSynonyms = s.usedSynonyms + 1;
+      return { ...s, usedSynonyms, score: rescore(s, { usedSynonyms }) };
+    }
 
     default:
       return s;

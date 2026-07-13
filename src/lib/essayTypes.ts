@@ -205,3 +205,31 @@ export interface EssayScore {
   cefrLevel: EssayCEFRLevel;
   qualityLabel: EssayQualityLabel;
 }
+
+/* MARK: - Helper toolbar (4C3) — translate + synonyms */
+
+export interface EssayAssistanceItem {
+  id: string;
+  /** The queried word/phrase. */
+  word: string;
+  /** The translation or synonym returned. */
+  result: string;
+  detail: string | null;
+}
+
+/** Per-CEFR translation budgets. Verbatim from iOS EssayDifficulty
+    extension. Native = 0 = feature disabled. */
+export const TRANSLATION_LIMIT: Record<EssayDifficulty, number> = {
+  A1: 20, A2: 15, B1: 10, B2: 6, C1: 3, Native: 0,
+};
+
+/** Per-CEFR synonym budgets. Verbatim from iOS. */
+export const SYNONYM_LIMIT: Record<EssayDifficulty, number> = {
+  A1: 10, A2: 8, B1: 6, B2: 5, C1: 3, Native: 0,
+};
+
+/** MyMemory / Datamuse API language code = ISO-639-1 lowercase, which
+    matches our GrammarLanguage.shortTitle lowercased (EN→en, UK→uk, …).
+    Mirrors iOS GrammarLanguage.apiCode. */
+export const apiCodeFor = (language: GrammarLanguage): string =>
+  language.shortTitle.toLowerCase();
