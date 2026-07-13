@@ -43,3 +43,62 @@ export interface FlashcardSet {
   createdAt: number;
   updatedAt: number;
 }
+
+/* --- Grammar notes (Phase 4D) — subset of the iOS GrammarNotes models.
+   Persisted under users/{uid}/grammarNoteTopics/{topicId}/notes/{noteId}. --- */
+
+export type GrammarNoteType =
+  | 'standard'
+  | 'mistake'
+  | 'rule'
+  | 'comparison'
+  | 'cheatSheet'
+  | 'exercise';
+
+export type GrammarBlockType =
+  | 'heading'
+  | 'paragraph'
+  | 'bulletList'
+  | 'rule'
+  | 'example'
+  | 'warning'
+  | 'quote'
+  | 'divider';
+
+export interface GrammarNoteBlock {
+  id: string;
+  type: GrammarBlockType;
+  text: string;
+  /** example → translation/detail; rule → sub-detail. */
+  secondaryText?: string;
+  /** bulletList entries. */
+  items: string[];
+  order: number;
+}
+
+export interface GrammarNoteTopic {
+  id: string;
+  ownerUID: string;
+  title: string;
+  description: string;
+  icon: string;
+  colorHex: string;
+  notesCount: number;
+  isPinned: boolean;
+  isMistakesTopic: boolean;
+  createdAt: number;
+  updatedAt: number;
+}
+
+export interface GrammarNote {
+  id: string;
+  ownerUID: string;
+  topicId: string;
+  title: string;
+  noteType: GrammarNoteType;
+  /** Derived from blocks on save — shown in the note-list row. */
+  previewText: string;
+  contentBlocks: GrammarNoteBlock[];
+  createdAt: number;
+  updatedAt: number;
+}

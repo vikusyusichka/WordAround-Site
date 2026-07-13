@@ -27,7 +27,7 @@ function WritingLanding() {
   const handleMenuSelect = (action: WritingMenuAction) => {
     if (action === 'writeFromSets') setSetPickerOpen(true);
     else if (action === 'essays') void navigate({ to: '/practice/writing/essays' });
-    // GrammarNotes is still disabled — never fires this callback.
+    else if (action === 'grammarNotes') void navigate({ to: '/practice/writing/grammar' });
   };
 
   return (

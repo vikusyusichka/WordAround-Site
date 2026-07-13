@@ -464,6 +464,78 @@
         "sameLanguage": "Choose a different input language.",
         "error": "The service is temporarily unavailable."
       }
+    },
+    "grammar": {
+      "title": "Grammar notes",
+      "subtitle": "Organize grammar by topic with clear, structured notes.",
+      "newTopic": "New topic",
+      "topicsEmptyTitle": "No topics yet",
+      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
+      "notesCount_one": "{{count}} note",
+      "notesCount_other": "{{count}} notes",
+      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
+      "notesEmptyTitle": "No notes yet",
+      "notesEmptyBody": "Add your first note to this topic.",
+      "newNote": "New note",
+      "deleteNoteConfirm": "Delete this note? This can't be undone.",
+      "loading": "Loading…",
+      "loadError": "Couldn't load your grammar notes.",
+      "notFoundTitle": "Not found",
+      "notFoundBody": "This item may have been deleted.",
+      "back": "Back",
+      "updated": "Updated {{date}}",
+      "form": {
+        "newTitle": "New topic",
+        "editTitle": "Edit topic",
+        "name": "Title",
+        "namePlaceholder": "e.g. Spanish verbs",
+        "description": "Description",
+        "descriptionPlaceholder": "Optional",
+        "color": "Color",
+        "icon": "Icon",
+        "save": "Save",
+        "cancel": "Cancel"
+      },
+      "noteType": {
+        "standard": "Standard",
+        "mistake": "Mistake",
+        "rule": "Rule",
+        "comparison": "Comparison",
+        "cheatSheet": "Cheat sheet",
+        "exercise": "Exercise"
+      },
+      "block": {
+        "heading": "Heading",
+        "paragraph": "Text",
+        "bulletList": "Bullet list",
+        "rule": "Rule",
+        "example": "Example",
+        "warning": "Warning",
+        "quote": "Quote",
+        "divider": "Divider",
+        "addBlock": "Add block",
+        "addItem": "Add item",
+        "moveUp": "Move up",
+        "moveDown": "Move down",
+        "remove": "Remove",
+        "secondaryPlaceholder": "Detail / translation (optional)"
+      },
+      "blockPlaceholder": {
+        "heading": "Heading",
+        "paragraph": "Write your explanation…",
+        "bulletList": "List item",
+        "rule": "Explain the grammar rule…",
+        "example": "Add an example…",
+        "warning": "Common mistake or warning…",
+        "quote": "Sentence worth remembering…"
+      },
+      "editor": {
+        "titlePlaceholder": "Note title",
+        "save": "Save note",
+        "saving": "Saving…",
+        "delete": "Delete note",
+        "saveError": "Couldn't save. Please try again."
+      }
     }
   }
 }

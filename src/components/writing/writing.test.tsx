@@ -51,7 +51,7 @@ const withQuery = (children: React.ReactNode) => {
 /* --- WritingMenuGrid ------------------------------------------------------ */
 
 describe('WritingMenuGrid', () => {
-  it('renders 3 cards; Write from sets + Essays are clickable, Grammar notes is coming-soon', async () => {
+  it('renders 3 clickable cards (all enabled) and fires each action', async () => {
     const user = userEvent.setup();
     const onSelect = vi.fn();
     render(<WritingMenuGrid onSelect={onSelect} />);
@@ -60,17 +60,17 @@ describe('WritingMenuGrid', () => {
     expect(screen.getByText('Essays')).toBeInTheDocument();
     expect(screen.getByText('Grammar notes')).toBeInTheDocument();
 
-    // Only Grammar notes is still disabled — shows a "Coming soon" chip.
-    expect(screen.getAllByText(/coming soon/i)).toHaveLength(1);
+    // All three are enabled now — no "Coming soon" chips.
+    expect(screen.queryByText(/coming soon/i)).not.toBeInTheDocument();
 
     const buttons = screen.getAllByRole('button');
-    expect(buttons).toHaveLength(2);
-    // Click Write from sets (first enabled card by iteration order).
+    expect(buttons).toHaveLength(3);
     await user.click(buttons[0]);
     expect(onSelect).toHaveBeenCalledWith('writeFromSets');
-    // Click Essays.
     await user.click(buttons[1]);
     expect(onSelect).toHaveBeenCalledWith('essays');
+    await user.click(buttons[2]);
+    expect(onSelect).toHaveBeenCalledWith('grammarNotes');
   });
 });
 

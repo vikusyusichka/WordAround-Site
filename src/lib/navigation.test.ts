@@ -62,6 +62,14 @@ describe('pageCopyForPath', () => {
       subtitleKey: 'writing.essays.subtitle',
     });
   });
+
+  it('maps /practice/writing/grammar (+ nested) to grammar copy', () => {
+    expect(pageCopyForPath('/practice/writing/grammar')).toEqual({
+      titleKey: 'writing.grammar.title',
+      subtitleKey: 'writing.grammar.subtitle',
+    });
+    expect(pageCopyForPath('/practice/writing/grammar/t1/n1').titleKey).toBe('writing.grammar.title');
+  });
 });
 
 describe('nav config', () => {

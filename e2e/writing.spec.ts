@@ -8,6 +8,7 @@ for (const route of [
   '/practice/writing',
   '/practice/writing/write-words/some-id',
   '/practice/writing/essays',
+  '/practice/writing/grammar',
 ]) {
   test(`logged-out visit to ${route} redirects to /auth`, async ({ page }) => {
     await page.addInitScript(() => localStorage.setItem('wa.onboarded', '1'));

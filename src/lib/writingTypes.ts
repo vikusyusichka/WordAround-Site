@@ -86,7 +86,7 @@ export const WRITING_MENU_ITEMS: WritingMenuItemDef[] = [
     iconSystemName: 'book.pages.fill',
     accentColor: '#F7A310',
     blobColor: '#F2DBA1',
-    enabled: false,
+    enabled: true,
   },
 ];
 
