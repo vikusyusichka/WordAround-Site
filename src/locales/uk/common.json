@@ -307,6 +307,44 @@
         "restart": "Restart",
         "exit": "Exit"
       }
+    },
+    "essays": {
+      "title": "Essays",
+      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "mode": {
+        "suggested": "Suggested",
+        "custom": "My topic"
+      },
+      "custom": {
+        "placeholder": "Write your own essay topic...",
+        "generate": "Generate task"
+      },
+      "suggested": {
+        "generate": "Generate topic",
+        "regenerate": "New topic"
+      },
+      "language": "Language",
+      "difficulty": "Difficulty",
+      "task": {
+        "time": "≈ {{count}} min",
+        "wordRange": "{{min}}-{{max}} words",
+        "quickTips": "Quick tips"
+      },
+      "editor": {
+        "placeholder": "Start writing your essay here...",
+        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "validation": {
+          "belowMinimum": "Keep going — you need at least {{min}} words.",
+          "aboveMaximum": "You've passed the limit — try to tighten it up.",
+          "valid": "Within range."
+        },
+        "reset": "Reset"
+      },
+      "error": {
+        "emptyCustomTopic": "Type a topic first.",
+        "generationFailed": "Couldn't generate a topic. Please try again."
+      },
+      "generating": "Generating..."
     }
   }
 }

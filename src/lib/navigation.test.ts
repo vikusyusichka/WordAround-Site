@@ -55,6 +55,13 @@ describe('pageCopyForPath', () => {
       subtitleKey: 'home.subtitle.writing',
     });
   });
+
+  it('maps /practice/writing/essays to essay-specific copy', () => {
+    expect(pageCopyForPath('/practice/writing/essays')).toEqual({
+      titleKey: 'writing.essays.title',
+      subtitleKey: 'writing.essays.subtitle',
+    });
+  });
 });
 
 describe('nav config', () => {

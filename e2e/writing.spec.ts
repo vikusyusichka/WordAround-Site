@@ -4,7 +4,11 @@ import { test, expect } from '@playwright/test';
    (SetSelection → WriteWords game) is verified via the browser MCP against
    the live Firebase project, not in CI. */
 
-for (const route of ['/practice/writing', '/practice/writing/write-words/some-id']) {
+for (const route of [
+  '/practice/writing',
+  '/practice/writing/write-words/some-id',
+  '/practice/writing/essays',
+]) {
   test(`logged-out visit to ${route} redirects to /auth`, async ({ page }) => {
     await page.addInitScript(() => localStorage.setItem('wa.onboarded', '1'));
     await page.goto(route);

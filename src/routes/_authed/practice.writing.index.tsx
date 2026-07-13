@@ -26,7 +26,8 @@ function WritingLanding() {
 
   const handleMenuSelect = (action: WritingMenuAction) => {
     if (action === 'writeFromSets') setSetPickerOpen(true);
-    // Essays / GrammarNotes are disabled in 4A and never fire this callback.
+    else if (action === 'essays') void navigate({ to: '/practice/writing/essays' });
+    // GrammarNotes is still disabled — never fires this callback.
   };
 
   return (

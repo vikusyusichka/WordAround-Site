@@ -47,7 +47,7 @@ export const WRITING_MENU_ITEMS: WritingMenuItemDef[] = [
     iconSystemName: 'note.text.badge.plus',
     accentColor: '#5C94FF',
     blobColor: '#D6E0FA',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 'grammarNotes',
