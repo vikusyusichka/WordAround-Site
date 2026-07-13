@@ -4,6 +4,9 @@ Web version of the WordAround iOS language-learning app. Shares the same
 Firebase project and Cloudflare AI Worker as iOS, so users and data are
 common between both platforms.
 
+Live: **https://wordaround-site.pages.dev** (auto-deploys on push to
+`main` — see [DEPLOY.md](DEPLOY.md) for setup + troubleshooting).
+
 See [MIGRATION.md](MIGRATION.md) for the full plan and phase breakdown.
 
 ## Stack
