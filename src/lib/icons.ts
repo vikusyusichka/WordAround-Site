@@ -35,13 +35,16 @@ import {
   Hourglass,
   House,
   Image as ImageIcon,
+  CheckCircle,
   Lightning,
   Lightbulb,
   ListBullets,
   ListChecks,
+  MagicWand,
   Microphone,
   Minus,
   NotePencil,
+  Play,
   Pencil,
   PencilLine,
   PersonSimpleWalk,
@@ -155,6 +158,14 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'arrow.down': ArrowDown,
   trash: Trash,
   'exclamationmark.triangle.fill': Warning,
+  /* Phase 4D2 grammar quiz */
+  'pencil.line': PencilLine,
+  'square.and.pencil': NotePencil,
+  'wand.and.stars': MagicWand,
+  'checkmark.circle': CheckCircle,
+  'checkmark.circle.fill': CheckCircle,
+  'questionmark.circle.fill': Question,
+  'play.fill': Play,
 };
 
 export const iconForSFSymbol = (name: string): PhosphorIcon =>

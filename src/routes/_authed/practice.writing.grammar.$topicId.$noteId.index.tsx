@@ -25,7 +25,7 @@ import {
 } from '@/lib/grammarNoteEditor';
 import type { GrammarNote, GrammarNoteTopic } from '@/lib/models';
 
-export const Route = createFileRoute('/_authed/practice/writing/grammar/$topicId/$noteId')({
+export const Route = createFileRoute('/_authed/practice/writing/grammar/$topicId/$noteId/')({
   component: NoteEditorRoute,
 });
 
@@ -129,6 +129,20 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
         subtitle={t('writing.grammar.newNote')}
         actions={
           <div className="flex gap-2">
+            {!isNew && existing && (
+              <button
+                type="button"
+                onClick={() =>
+                  void navigate({
+                    to: '/practice/writing/grammar/$topicId/$noteId/quiz',
+                    params: { topicId, noteId: existing.id },
+                  })
+                }
+                className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 focus-visible:outline-none md:text-[15px]"
+              >
+                {t('writing.grammar.quiz.title')}
+              </button>
+            )}
             <button
               type="button"
               onClick={handleDelete}

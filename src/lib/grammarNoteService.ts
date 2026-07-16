@@ -70,6 +70,7 @@ export const noteFromFirestore = (data: Record<string, unknown>): GrammarNote =>
     noteType,
     previewText: String(data.previewText ?? ''),
     contentBlocks: blocks,
+    hasQuiz: data.hasQuiz === true,
     createdAt: tsToMillis(data.createdAt),
     updatedAt: tsToMillis(data.updatedAt),
   };

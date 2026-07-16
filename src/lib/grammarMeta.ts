@@ -2,7 +2,7 @@
    (resolved by <Icon>) + accent colors. Values from the iOS GrammarNoteType /
    GrammarNoteBlockType enums. Kept separate so pickers, rows, and the editor
    share one source of truth. */
-import type { GrammarBlockType, GrammarNoteType } from '@/lib/models';
+import type { GrammarBlockType, GrammarNoteType, GrammarQuizQuestionType } from '@/lib/models';
 
 export const NOTE_TYPES: GrammarNoteType[] = [
   'standard', 'mistake', 'rule', 'comparison', 'cheatSheet', 'exercise',
@@ -31,4 +31,12 @@ export const BLOCK_TYPE_ICON: Record<GrammarBlockType, string> = {
   warning: 'exclamationmark.triangle.fill',
   quote: 'quote.opening',
   divider: 'minus',
+};
+
+/* Quiz question types (4D2) — icons from the iOS GrammarQuizQuestionType enum. */
+export const QUIZ_TYPE_ICON: Record<GrammarQuizQuestionType, string> = {
+  multipleChoice: 'list.bullet',
+  trueFalse: 'checkmark.circle',
+  fillGap: 'pencil.line',
+  shortAnswer: 'square.and.pencil',
 };

@@ -142,23 +142,21 @@ via the preview MCP:
 
 ## FORWARD PLAN (pick a slice → plan mode → build → gates → live → commit)
 
-### Finish deploy (small, mostly user actions) — recommended next
-Cloudflare Pages project `wordaround-site` is connected to GitHub repo
-`vikusyusichka/WordAround-Site`; env vars are already set. **Only step left:**
-Cloudflare Pages → Deployments → Retry latest so it rebuilds with env vars,
-then verify `wordaround-site.pages.dev`. Push local commits first (main is
-ahead of origin). Firebase authorized domain already added. See `DEPLOY.md`.
-Pending user action (not code): **Storage CORS** on bucket
-`wordaround-97f86.firebasestorage.app` (for flashcard + note images) via
-`gsutil cors set` — blocks image uploads only.
+### Deploy — DONE (2026-07-17)
+Pushed ec5c60e..971ab6a → Cloudflare Pages auto-built → Success; live at
+`wordaround-site.pages.dev`. Still pending user action (not code):
+**Storage CORS** on bucket `wordaround-97f86.firebasestorage.app` (for
+flashcard + note images) via `gsutil cors set` — blocks image uploads only.
 
 ### Phase 4 leftovers (GrammarNotes tail) — iOS in `Features/Writing/GrammarNotes`
-- **4D2 — AI quiz.** Generate a quiz from a note via worker task
-  `grammar_quiz_generation`; play + result screens. iOS: `Domain/GrammarQuizGenerator.swift`,
-  `Notes/Editor/Services/GrammarQuiz*`, `Views/{CreateGrammarQuizSheet,
-  GrammarNoteQuiz*,GrammarNoteQuizResultView}.swift`, `Models/GrammarQuiz*`.
-  Web: reuse `aiClient.generateJSON`; new prompt builder + `grammarQuizSession`
-  reducer + quiz route under the note.
+Approved slice plan for 4D2–4D5:
+`C:\Users\vikusyusichka\.claude\plans\parallel-sparking-sun.md`.
+- **4D2 — AI quiz. DONE (built + gates + live-verified 2026-07-17).** Files:
+  models.ts (quiz types + `hasQuiz?`), `src/lib/grammarQuiz{Generator,Prompts,
+  Validator,Session,Service}.ts`, `src/hooks/useGrammarQuizzes.ts`, route
+  rename `$noteId.tsx`→`$noteId.index.tsx` + new `$noteId.quiz.tsx`,
+  `src/components/grammar/{CreateQuizSheet,QuizCard,QuizQuestionView,
+  QuizResultView}.tsx`. Manual-authoring mode deferred.
 - **4D3 — Spaced review sessions.** iOS: `Notes/Editor/Services/GrammarReview*`,
   `ViewModels/GrammarReview*`, `Views/GrammarReview*`, `Models/GrammarReview*`.
   Web: a review-queue builder (pure) + session reducer + review route.

@@ -42,3 +42,14 @@ export const grammarNotesCollection = (
 
 export const grammarNoteDoc = (uid: string, topicId: string, id: string) =>
   doc(grammarNotesCollection(uid, topicId), id);
+
+/* Grammar quizzes (Phase 4D2): subcollection of a note. */
+export const grammarQuizzesCollection = (
+  uid: string,
+  topicId: string,
+  noteId: string,
+): CollectionReference<DocumentData> =>
+  collection(db, 'users', uid, 'grammarNoteTopics', topicId, 'notes', noteId, 'quizzes');
+
+export const grammarQuizDoc = (uid: string, topicId: string, noteId: string, id: string) =>
+  doc(grammarQuizzesCollection(uid, topicId, noteId), id);

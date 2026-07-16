@@ -527,6 +527,78 @@
         "saving": "Saving…",
         "delete": "Delete note",
         "saveError": "Couldn't save. Please try again."
+      },
+      "quiz": {
+        "title": "Quizzes",
+        "new": "New quiz",
+        "start": "Start quiz",
+        "delete": "Delete quiz",
+        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
+        "emptyTitle": "No quizzes yet",
+        "emptyBody": "Create a quiz from this note to test yourself.",
+        "loadError": "Couldn't load quizzes.",
+        "questionsCount_one": "{{count}} question",
+        "questionsCount_other": "{{count}} questions",
+        "type": {
+          "multipleChoice": "Multiple choice",
+          "trueFalse": "True / False",
+          "fillGap": "Fill gap",
+          "shortAnswer": "Short answer"
+        },
+        "sheet": {
+          "title": "Create quiz",
+          "titlePlaceholder": "Quiz title",
+          "mode": "Generation mode",
+          "modeSmart": "Smart local",
+          "modeSmartDesc": "Generate questions from note content locally.",
+          "modeAI": "AI generated",
+          "modeAIDesc": "Generate richer contextual questions using AI.",
+          "count": "Questions",
+          "types": "Question types",
+          "focus": "Focus (optional)",
+          "focusPlaceholder": "e.g. focus on irregular forms",
+          "preview": "Preview questions",
+          "regenerate": "Regenerate preview",
+          "previewTitle": "Preview",
+          "saveQuiz": "Save quiz",
+          "generateQuiz": "Generate quiz",
+          "generating": "Generating…",
+          "saving": "Saving…",
+          "useSmartInstead": "Use Smart local instead"
+        },
+        "play": {
+          "questionOf": "Question {{current}} of {{total}}",
+          "submit": "Submit answer",
+          "next": "Next",
+          "finish": "Finish",
+          "correct": "Correct!",
+          "incorrect": "Incorrect",
+          "correctAnswer": "Correct answer: {{answer}}",
+          "typeMissing": "Type the missing word",
+          "typeAnswer": "Type your answer",
+          "trueLabel": "True",
+          "falseLabel": "False"
+        },
+        "result": {
+          "scoreOf": "{{correct}} of {{total}} correct",
+          "grade": {
+            "excellent": "Excellent!",
+            "good": "Good job!",
+            "keepPracticing": "Keep practicing",
+            "reviewNote": "Review the note"
+          },
+          "incorrectSection": "Incorrect",
+          "correctSection": "Correct",
+          "yourAnswer": "Your answer: {{answer}}",
+          "tryAgain": "Try again",
+          "reviewNote": "Review note",
+          "done": "Done"
+        },
+        "errors": {
+          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
+          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
+          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+        }
       }
     }
   }

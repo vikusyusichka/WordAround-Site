@@ -80,6 +80,8 @@ describe('grammarNoteService', () => {
     expect(parsed.contentBlocks[0].secondaryText).toBeUndefined(); // null → undefined
     expect(parsed.contentBlocks[1].secondaryText).toBe('I am tall');
     expect(parsed.createdAt).toBe(5_000);
+    expect(parsed.hasQuiz).toBe(false); // absent → false
+    expect(noteFromFirestore({ ...raw, hasQuiz: true }).hasQuiz).toBe(true);
   });
 
   it('unknown noteType/blockType fall back to standard/paragraph', () => {

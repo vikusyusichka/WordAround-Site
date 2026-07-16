@@ -7,7 +7,10 @@ import { GrammarTopicCard } from './GrammarTopicCard';
 import { GrammarNoteTypePicker } from './GrammarNoteTypePicker';
 import { GrammarBlockEditor } from './GrammarBlockEditor';
 import { AddBlockMenu } from './AddBlockMenu';
-import type { GrammarNoteBlock, GrammarNoteTopic } from '@/lib/models';
+import { QuizQuestionView } from './QuizQuestionView';
+import { QuizResultView } from './QuizResultView';
+import type { AnsweredQuestion } from '@/lib/grammarQuizSession';
+import type { GrammarNoteBlock, GrammarNoteTopic, GrammarQuizQuestion } from '@/lib/models';
 
 const topic: GrammarNoteTopic = {
   id: 't1', ownerUID: 'u', title: 'Spanish verbs', description: 'ser vs estar',
@@ -83,5 +86,66 @@ describe('AddBlockMenu', () => {
     // "Example" block type option
     await user.click(screen.getByText('Example'));
     expect(onAdd).toHaveBeenCalledWith('example');
+  });
+});
+
+describe('QuizQuestionView', () => {
+  const mc: GrammarQuizQuestion = {
+    id: 'q1', type: 'multipleChoice', questionText: 'Which rule?',
+    options: ['Alpha', 'Beta'], correctAnswer: 'Alpha', explanation: 'why', order: 0,
+  };
+  const gap: GrammarQuizQuestion = {
+    id: 'q2', type: 'fillGap', questionText: 'Fill: I _____ tall',
+    options: [], correctAnswer: 'am', order: 0,
+  };
+
+  it('multiple choice: tapping an option submits + shows feedback', async () => {
+    const user = userEvent.setup();
+    const onSubmit = vi.fn();
+    const onAdvance = vi.fn();
+    render(<QuizQuestionView question={mc} isLast={false} onSubmit={onSubmit} onAdvance={onAdvance} />);
+    await user.click(screen.getByRole('button', { name: /Alpha/ }));
+    expect(onSubmit).toHaveBeenCalledWith('Alpha');
+    expect(screen.getByText('Correct!')).toBeInTheDocument();
+    await user.click(screen.getByRole('button', { name: /Next/ }));
+    expect(onAdvance).toHaveBeenCalled();
+  });
+
+  it('fill gap: typed answer submits via button; wrong shows correct answer', async () => {
+    const user = userEvent.setup();
+    const onSubmit = vi.fn();
+    render(<QuizQuestionView question={gap} isLast onSubmit={onSubmit} onAdvance={vi.fn()} />);
+    await user.type(screen.getByPlaceholderText(/missing word/i), 'is');
+    await user.click(screen.getByRole('button', { name: /Submit answer/i }));
+    expect(onSubmit).toHaveBeenCalledWith('is');
+    expect(screen.getByText('Incorrect')).toBeInTheDocument();
+    expect(screen.getByText(/Correct answer: am/)).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Finish/ })).toBeInTheDocument();
+  });
+});
+
+describe('QuizResultView', () => {
+  it('shows score, grade and incorrect/correct sections', () => {
+    const answered: AnsweredQuestion[] = [
+      {
+        question: { id: 'q1', type: 'shortAnswer', questionText: 'Q one', options: [], correctAnswer: 'a', order: 0 },
+        userAnswer: 'a', isCorrect: true,
+      },
+      {
+        question: { id: 'q2', type: 'shortAnswer', questionText: 'Q two', options: [], correctAnswer: 'b', order: 1 },
+        userAnswer: 'x', isCorrect: false,
+      },
+    ];
+    render(
+      <QuizResultView
+        score={50} correct={1} total={2} answered={answered}
+        onTryAgain={vi.fn()} onReviewNote={vi.fn()} onDone={vi.fn()}
+      />,
+    );
+    expect(screen.getByText('50%')).toBeInTheDocument();
+    expect(screen.getByText('Keep practicing')).toBeInTheDocument();
+    expect(screen.getByText('1 of 2 correct')).toBeInTheDocument();
+    expect(screen.getByText(/Your answer: x/)).toBeInTheDocument();
+    expect(screen.getByText('Q one')).toBeInTheDocument();
   });
 });
