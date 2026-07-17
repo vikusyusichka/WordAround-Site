@@ -1,7 +1,10 @@
 /* Single grammar issue card. Shows category badge, the incorrect fragment,
-   the suggested correction (if any), and the LanguageTool message. */
+   the suggested correction (if any), the LanguageTool message, and (4D5) a
+   "Save to Grammar Notes" button when the parent wires onSave. */
 import { useTranslation } from 'react-i18next';
 
+import { Icon } from '@/components/primitives/Icon';
+import type { MistakeSaveState } from '@/hooks/useSaveMistake';
 import type { GrammarIssue, GrammarIssueCategory } from '@/lib/essayTypes';
 
 const CATEGORY_COLOR: Record<GrammarIssueCategory, { bg: string; text: string }> = {
@@ -12,9 +15,11 @@ const CATEGORY_COLOR: Record<GrammarIssueCategory, { bg: string; text: string }>
 
 interface GrammarIssueCardProps {
   issue: GrammarIssue;
+  saveState?: MistakeSaveState;
+  onSave?: () => void;
 }
 
-export const GrammarIssueCard = ({ issue }: GrammarIssueCardProps) => {
+export const GrammarIssueCard = ({ issue, saveState = 'idle', onSave }: GrammarIssueCardProps) => {
   const { t } = useTranslation();
   const color = CATEGORY_COLOR[issue.category];
   return (
@@ -56,6 +61,29 @@ export const GrammarIssueCard = ({ issue }: GrammarIssueCardProps) => {
           </span>
         </div>
       </div>
+
+      {onSave && (
+        <button
+          type="button"
+          onClick={onSave}
+          disabled={saveState !== 'idle' && saveState !== 'failed'}
+          className={`flex h-10 w-fit items-center gap-2 rounded-2xl border px-3.5 text-[13px] font-semibold transition-colors md:text-[14px] ${
+            saveState === 'saved' || saveState === 'duplicate'
+              ? 'border-[#22C55E]/40 bg-[#22C55E]/8 text-[#15803D]'
+              : 'border-(--color-primary-blue)/35 bg-white text-(--color-primary-blue) hover:bg-(--color-primary-blue)/5'
+          } disabled:cursor-default`}
+        >
+          <Icon
+            name={
+              saveState === 'saved' || saveState === 'duplicate'
+                ? 'checkmark.circle.fill'
+                : 'exclamationmark.bubble.fill'
+            }
+            className="size-[15px]"
+          />
+          {t(`writing.essays.grammar.save.${saveState}`)}
+        </button>
+      )}
     </div>
   );
 };

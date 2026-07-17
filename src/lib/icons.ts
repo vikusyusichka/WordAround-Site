@@ -19,6 +19,7 @@ import {
   CaretDown,
   CaretRight,
   ChartBar,
+  ChatCircleDots,
   ChatsCircle,
   Check,
   Circle,
@@ -67,6 +68,7 @@ import {
   Translate,
   Trash,
   Tray,
+  WarningCircle,
   XCircle,
   User,
   UserCircle,
@@ -180,6 +182,9 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'clock.fill': Clock,
   'flag.fill': Flag,
   'doc.badge.plus': FilePlus,
+  /* Phase 4D5 quick mistake */
+  'exclamationmark.bubble.fill': ChatCircleDots,
+  'exclamationmark.circle.fill': WarningCircle,
 };
 
 export const iconForSFSymbol = (name: string): PhosphorIcon =>

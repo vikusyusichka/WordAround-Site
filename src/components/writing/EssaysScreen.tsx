@@ -19,12 +19,25 @@ import { EssayLanguageSelector } from './EssayLanguageSelector';
 import { EssayTopicCard } from './EssayTopicCard';
 import { EssayTopicModePicker } from './EssayTopicModePicker';
 import { useEssaySession } from '@/hooks/useEssaySession';
-import { SYNONYM_LIMIT, TRANSLATION_LIMIT } from '@/lib/essayTypes';
+import { useSaveMistake } from '@/hooks/useSaveMistake';
+import { SYNONYM_LIMIT, TRANSLATION_LIMIT, type GrammarIssue } from '@/lib/essayTypes';
 
 export const EssaysScreen = () => {
   const { t } = useTranslation();
   const { state, dispatch, generateTopic, requestHint, checkEssay } = useEssaySession();
   const [assistModal, setAssistModal] = useState<AssistanceModalType | null>(null);
+  const saveMistake = useSaveMistake();
+
+  /* iOS makeMistakeSavePayload: original = incorrectText, corrected =
+     suggestion (fallback original), explanation = the LT message. */
+  const handleSaveIssue = (issue: GrammarIssue) => {
+    void saveMistake.save(issue.id, {
+      original: issue.incorrectText,
+      corrected: issue.suggestedCorrection ?? issue.incorrectText,
+      explanation: issue.message,
+      sourceIssueId: issue.id,
+    });
+  };
 
   const hasTask = state.task !== null;
   const busy = state.isGenerating;
@@ -144,7 +157,12 @@ export const EssaysScreen = () => {
           />
 
           {state.score && (
-            <EssayFeedbackSection score={state.score} issues={state.grammarIssues} />
+            <EssayFeedbackSection
+              score={state.score}
+              issues={state.grammarIssues}
+              saveStateFor={(issue) => saveMistake.stateFor(issue.id)}
+              onSaveIssue={handleSaveIssue}
+            />
           )}
         </>
       )}

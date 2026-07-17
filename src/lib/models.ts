@@ -101,6 +101,9 @@ export interface GrammarNote {
   contentBlocks: GrammarNoteBlock[];
   /** True while the note has ≥1 saved quiz (kept in sync by grammarQuizService). */
   hasQuiz?: boolean;
+  /** Dedup key for notes saved from grammar issues (4D5) — normalized
+      pipe-join of the mistake parts; absent on regular notes. */
+  savedIssueKey?: string;
   createdAt: number;
   updatedAt: number;
 }

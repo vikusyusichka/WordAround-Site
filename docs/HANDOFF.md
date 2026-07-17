@@ -57,14 +57,16 @@ Commit messages end at the last body paragraph — no trailer.
 `npm run typecheck` · `npm run test:run` (currently ~349 passing) · `npm run lint`
 (`--max-warnings 0`) · `npm run build` · `npm run e2e` (18 passing).
 
-## The Writing module is now COMPLETE except quiz/review/templates
+## The Writing module is 100% COMPLETE (2026-07-17)
 `/practice/writing` landing → 3 cards, all enabled:
 - **Write from sets** (WriteWords game) — easy/medium/hard + timer + lose/win
   result + settings sheet + training-mode toggle. DONE.
 - **Essays** — AI topic gen, editor, AI hints, LanguageTool grammar check,
-  local 6-category scoring, translate/synonym helper toolbar. DONE.
-- **Grammar notes** — topics + notes CRUD + rich block editor. **4D1 DONE**;
-  quiz/review/templates deferred (see below).
+  local 6-category scoring, translate/synonym helper toolbar, save grammar
+  issues to Grammar Notes. DONE.
+- **Grammar notes** — topics + notes CRUD + block editor (4D1), quizzes
+  smart-local + AI (4D2), spaced review (4D3), templates library (4D4),
+  quick-mistake + Common Mistakes topic (4D5). DONE.
 
 ## Key patterns to reuse (don't reinvent)
 - **Pure reducer + hook + thin components + Vitest reducer tests.** Every
@@ -171,12 +173,14 @@ Approved slice plan for 4D2–4D5:
   `useCreateTopicFromTemplate` in `useGrammarTopics.ts`,
   `src/components/grammar/TemplateLibraryModal.tsx`; entries in the
   create-topic modal + editor "Template" button.
-- **4D5 — Quick-mistake + Essays "Save issue to Grammar Notes".** iOS:
-  `Domain/SaveQuickGrammarMistakeUseCase.swift`, `Views/{QuickGrammarMistakeSheet,
-  QuickGrammarNoteSheet,SaveGrammarMistakeConfirmationSheet}.swift`, and the
-  auto-provisioned "Common Mistakes" topic (`GrammarNoteTopic.commonMistakes`).
-  Web: wire the currently-dangling "save to notes" affordance from the Essays
-  grammar-issue cards (`src/components/writing/GrammarIssueCard.tsx`) into a note.
+- **4D5 — Quick-mistake + Essays "Save to Grammar Notes". DONE (built +
+  gates + live-verified 2026-07-17).** Files: `src/lib/grammarMistakeService.ts`,
+  `ensureMistakesTopic`/`MISTAKES_TOPIC_ID` in grammarTopicService,
+  `fetchNoteBySavedIssueKey` + `savedIssueKey` in grammarNoteService/models,
+  `src/hooks/useSaveMistake.ts`, save button on GrammarIssueCard (threaded
+  through EssayFeedbackSection/EssaysScreen), QuickMistakeSheet + header
+  button on the grammar home. Saved mistakes auto-queue spaced review (+1h).
+  **Writing module is now 100% complete.**
 - Also deferred in 4D1: pin/favorite/search/drag-reorder, cover images (needs
   Storage CORS), per-note language. Fields already exist where needed.
 

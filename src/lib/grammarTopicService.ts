@@ -69,3 +69,32 @@ export const setNotesCount = async (
 export const deleteTopic = async (id: string, ownerUID: string): Promise<void> => {
   await deleteDoc(grammarTopicDoc(ownerUID, id));
 };
+
+/* 4D5: auto-provisioned "Common Mistakes" topic — iOS
+   GrammarNoteTopic.commonMistakes + ensureDefaultMistakesTopic. Looked up by
+   the isMistakesTopic flag (not by id), created with the fixed id when
+   missing. */
+export const MISTAKES_TOPIC_ID = 'common_mistakes';
+
+export const makeMistakesTopic = (ownerUID: string, now: number = Date.now()): GrammarNoteTopic => ({
+  id: MISTAKES_TOPIC_ID,
+  ownerUID,
+  title: 'Common Mistakes',
+  description: 'Saved grammar corrections from essays and writing practice.',
+  icon: 'exclamationmark.triangle.fill',
+  colorHex: '#F4729A',
+  notesCount: 0,
+  isPinned: true,
+  isMistakesTopic: true,
+  createdAt: now,
+  updatedAt: now,
+});
+
+export const ensureMistakesTopic = async (uid: string): Promise<GrammarNoteTopic> => {
+  const topics = await fetchTopics(uid);
+  const existing = topics.find((t) => t.isMistakesTopic);
+  if (existing) return existing;
+  const topic = makeMistakesTopic(uid);
+  await createTopic(topic);
+  return topic;
+};

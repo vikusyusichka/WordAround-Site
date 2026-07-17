@@ -30,7 +30,7 @@ const fs = vi.hoisted(() => {
 
 vi.mock('firebase/firestore', () => fs);
 
-import { createTopic, deleteTopic, fetchTopics, setNotesCount } from './grammarTopicService';
+import { createTopic, deleteTopic, ensureMistakesTopic, fetchTopics, setNotesCount } from './grammarTopicService';
 import type { GrammarNoteTopic } from './models';
 
 const topic: GrammarNoteTopic = {
@@ -100,3 +100,40 @@ describe('grammarTopicService', () => {
     expect(fs.deleteDoc.mock.calls[0][0].path).toBe('users/u1/grammarNoteTopics/t1');
   });
 });
+
+describe('ensureMistakesTopic (4D5)', () => {
+  beforeEach(() => vi.clearAllMocks());
+
+  it('returns the existing mistakes topic when one is flagged', async () => {
+    fs.getDocs.mockResolvedValue({
+      docs: [
+        { data: () => ({ ...raw(), id: 'custom-id', isMistakesTopic: true, title: 'My mistakes' }) },
+      ],
+    });
+    const topic = await ensureMistakesTopic('u1');
+    expect(topic.id).toBe('custom-id');
+    expect(fs.setDoc).not.toHaveBeenCalled();
+  });
+
+  it('creates the fixed common_mistakes topic when none exists', async () => {
+    fs.getDocs.mockResolvedValue({ docs: [{ data: () => raw() }] });
+    const topic = await ensureMistakesTopic('u1');
+    expect(topic.id).toBe('common_mistakes');
+    expect(topic.title).toBe('Common Mistakes');
+    expect(topic.isPinned).toBe(true);
+    expect(topic.isMistakesTopic).toBe(true);
+    expect(topic.colorHex).toBe('#F4729A');
+    const [ref, data] = fs.setDoc.mock.calls[0];
+    expect(ref.path).toBe('users/u1/grammarNoteTopics/common_mistakes');
+    expect(data.isMistakesTopic).toBe(true);
+  });
+});
+
+function raw() {
+  return {
+    id: 't-normal', ownerUID: 'u1', title: 'Normal', description: '',
+    icon: 'book.pages.fill', colorHex: '#4F7CFF', notesCount: 0,
+    isPinned: false, isMistakesTopic: false,
+    createdAt: new fs.Timestamp(1), updatedAt: new fs.Timestamp(1),
+  };
+}

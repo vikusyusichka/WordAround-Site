@@ -428,6 +428,13 @@
           "grammar": "Grammar",
           "vocabulary": "Vocabulary",
           "style": "Style"
+        },
+        "save": {
+          "idle": "Save to Grammar notes",
+          "saving": "Saving…",
+          "saved": "Saved",
+          "duplicate": "Already saved",
+          "failed": "Retry save"
         }
       },
       "helper": {
@@ -684,6 +691,27 @@
         "use": "Use template",
         "creating": "Creating…",
         "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead."
+      },
+      "quickMistake": {
+        "button": "Quick mistake",
+        "title": "Quick mistake",
+        "original": "Original sentence",
+        "originalPlaceholder": "Example: I am agree with you",
+        "corrected": "Correction",
+        "correctedPlaceholder": "Example: I agree with you",
+        "explanation": "Explanation (optional)",
+        "explanationPlaceholder": "Why is the correction right?",
+        "validation": {
+          "original": "Add the original sentence first.",
+          "corrected": "Add the corrected sentence too."
+        },
+        "save": "Save mistake",
+        "saving": "Saving…",
+        "saved": "Saved to Grammar notes.",
+        "duplicate": "Already saved — duplicate was skipped.",
+        "failed": "Couldn't save. Please try again.",
+        "openTopic": "Open Common Mistakes",
+        "done": "Done"
       }
     }
   }

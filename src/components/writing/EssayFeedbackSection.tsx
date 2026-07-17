@@ -4,14 +4,22 @@ import { useTranslation } from 'react-i18next';
 
 import { EssayScoreCard } from './EssayScoreCard';
 import { GrammarIssueCard } from './GrammarIssueCard';
+import type { MistakeSaveState } from '@/hooks/useSaveMistake';
 import type { EssayScore, GrammarIssue } from '@/lib/essayTypes';
 
 interface EssayFeedbackSectionProps {
   score: EssayScore;
   issues: GrammarIssue[];
+  saveStateFor?: (issue: GrammarIssue) => MistakeSaveState;
+  onSaveIssue?: (issue: GrammarIssue) => void;
 }
 
-export const EssayFeedbackSection = ({ score, issues }: EssayFeedbackSectionProps) => {
+export const EssayFeedbackSection = ({
+  score,
+  issues,
+  saveStateFor,
+  onSaveIssue,
+}: EssayFeedbackSectionProps) => {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col gap-4">
@@ -36,7 +44,14 @@ export const EssayFeedbackSection = ({ score, issues }: EssayFeedbackSectionProp
             </span>
           </div>
         ) : (
-          issues.map((i) => <GrammarIssueCard key={i.id} issue={i} />)
+          issues.map((i) => (
+            <GrammarIssueCard
+              key={i.id}
+              issue={i}
+              saveState={saveStateFor?.(i)}
+              onSave={onSaveIssue ? () => onSaveIssue(i) : undefined}
+            />
+          ))
         )}
       </div>
     </div>

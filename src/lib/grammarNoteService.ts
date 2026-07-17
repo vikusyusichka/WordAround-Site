@@ -1,7 +1,7 @@
 /* Grammar-note CRUD — web port of GrammarNoteService.swift (subset).
    Notes live in a subcollection users/{uid}/grammarNoteTopics/{topicId}/notes.
    contentBlocks serialize as plain objects (no per-block timestamps in 4D1). */
-import { deleteDoc, getDocs, orderBy, query, setDoc } from 'firebase/firestore';
+import { deleteDoc, getDocs, limit, orderBy, query, setDoc, where } from 'firebase/firestore';
 
 import type { GrammarBlockType, GrammarNote, GrammarNoteBlock, GrammarNoteType } from '@/lib/models';
 import {
@@ -51,6 +51,7 @@ const toFirestore = (note: GrammarNote) => ({
   noteType: note.noteType,
   previewText: note.previewText,
   contentBlocks: note.contentBlocks.map(blockToFirestore),
+  savedIssueKey: note.savedIssueKey ?? null,
   createdAt: millisToTs(note.createdAt),
   updatedAt: millisToTs(note.updatedAt),
 });
@@ -71,6 +72,10 @@ export const noteFromFirestore = (data: Record<string, unknown>): GrammarNote =>
     previewText: String(data.previewText ?? ''),
     contentBlocks: blocks,
     hasQuiz: data.hasQuiz === true,
+    savedIssueKey:
+      typeof data.savedIssueKey === 'string' && data.savedIssueKey.length > 0
+        ? data.savedIssueKey
+        : undefined,
     createdAt: tsToMillis(data.createdAt),
     updatedAt: tsToMillis(data.updatedAt),
   };
@@ -99,4 +104,16 @@ export const deleteNote = async (
   id: string,
 ): Promise<void> => {
   await deleteDoc(grammarNoteDoc(uid, topicId, id));
+};
+
+/** 4D5 dedup: first note in the topic saved with this issue key, if any. */
+export const fetchNoteBySavedIssueKey = async (
+  uid: string,
+  topicId: string,
+  key: string,
+): Promise<GrammarNote | null> => {
+  const snapshot = await getDocs(
+    query(grammarNotesCollection(uid, topicId), where('savedIssueKey', '==', key), limit(1)),
+  );
+  return snapshot.empty ? null : noteFromFirestore(snapshot.docs[0].data());
 };

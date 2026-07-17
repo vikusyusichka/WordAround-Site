@@ -12,6 +12,7 @@ import { PageHeader } from '@/components/shell/PageHeader';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
 import { GrammarTopicCard } from '@/components/grammar/GrammarTopicCard';
 import { GrammarTopicForm } from '@/components/grammar/GrammarTopicForm';
+import { QuickMistakeSheet } from '@/components/grammar/QuickMistakeSheet';
 import { ReviewTodayCard } from '@/components/grammar/ReviewTodayCard';
 import { TemplateLibraryModal } from '@/components/grammar/TemplateLibraryModal';
 import {
@@ -21,6 +22,8 @@ import {
   useGrammarTopicsQuery,
 } from '@/hooks/useGrammarTopics';
 import { useReviewQueueQuery } from '@/hooks/useGrammarReview';
+import { useSaveMistake } from '@/hooks/useSaveMistake';
+import { MISTAKES_TOPIC_ID } from '@/lib/grammarTopicService';
 
 export const Route = createFileRoute('/_authed/practice/writing/grammar/')({
   component: GrammarHome,
@@ -36,6 +39,11 @@ function GrammarHome() {
   const deleteTopic = useDeleteTopic();
   const [formOpen, setFormOpen] = useState(false);
   const [templatesOpen, setTemplatesOpen] = useState(false);
+  /* Quick-mistake: a fresh key per open so the sheet's save state resets. */
+  const [quickMistakeSession, setQuickMistakeSession] = useState(0);
+  const [quickMistakeOpen, setQuickMistakeOpen] = useState(false);
+  const saveMistake = useSaveMistake();
+  const quickKey = `quick-${quickMistakeSession}`;
 
   const handleDelete = (id: string, title: string) => {
     if (window.confirm(t('writing.grammar.deleteTopicConfirm', { title }))) {
@@ -49,14 +57,26 @@ function GrammarHome() {
         title={t('writing.grammar.title')}
         subtitle={t('writing.grammar.subtitle')}
         actions={
-          <button
-            type="button"
-            onClick={() => setFormOpen(true)}
-            className="flex h-11 items-center gap-2 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-4 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
-          >
-            <Plus size={18} weight="bold" />
-            {t('writing.grammar.newTopic')}
-          </button>
+          <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => {
+                setQuickMistakeSession((n) => n + 1);
+                setQuickMistakeOpen(true);
+              }}
+              className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 focus-visible:outline-none md:text-[15px]"
+            >
+              {t('writing.grammar.quickMistake.button')}
+            </button>
+            <button
+              type="button"
+              onClick={() => setFormOpen(true)}
+              className="flex h-11 items-center gap-2 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-4 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
+            >
+              <Plus size={18} weight="bold" />
+              {t('writing.grammar.newTopic')}
+            </button>
+          </div>
         }
       />
 
@@ -167,6 +187,26 @@ function GrammarHome() {
           })
         }
         onClose={() => setTemplatesOpen(false)}
+      />
+
+      <QuickMistakeSheet
+        open={quickMistakeOpen}
+        saveState={saveMistake.stateFor(quickKey)}
+        onSave={(values) =>
+          void saveMistake.save(quickKey, {
+            original: values.original,
+            corrected: values.corrected,
+            explanation: values.explanation,
+          })
+        }
+        onOpenMistakesTopic={() => {
+          setQuickMistakeOpen(false);
+          void navigate({
+            to: '/practice/writing/grammar/$topicId',
+            params: { topicId: MISTAKES_TOPIC_ID },
+          });
+        }}
+        onClose={() => setQuickMistakeOpen(false)}
       />
     </ContentContainer>
   );
