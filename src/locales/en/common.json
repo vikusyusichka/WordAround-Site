@@ -616,6 +616,30 @@
           "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
         }
       },
+      "templates": {
+        "topicTitle": "Topic templates",
+        "noteTitle": "Note templates",
+        "button": "Template",
+        "startFromTemplate": "Start from a template",
+        "searchPlaceholder": "Search templates…",
+        "allLanguages": "All",
+        "anyDifficulty": "Any",
+        "language": {
+          "en": "English",
+          "es": "Spanish",
+          "fr": "French",
+          "de": "German"
+        },
+        "minutes": "{{minutes}} min",
+        "notesIncluded_one": "{{count}} note",
+        "notesIncluded_other": "{{count}} notes",
+        "blocksIncluded_one": "{{count}} block",
+        "blocksIncluded_other": "{{count}} blocks",
+        "empty": "No templates match your filters.",
+        "use": "Use template",
+        "creating": "Creating…",
+        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead."
+      },
       "review": {
         "title": "Review",
         "subtitle": "Strengthen what you've learned with spaced repetition.",

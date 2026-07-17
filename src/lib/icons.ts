@@ -36,6 +36,9 @@ import {
   House,
   Image as ImageIcon,
   CheckCircle,
+  Clock,
+  FilePlus,
+  Flag,
   Lightning,
   Lightbulb,
   ListBullets,
@@ -173,6 +176,10 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'xmark.circle.fill': XCircle,
   'checkmark.seal.fill': SealCheck,
   'tray.fill': Tray,
+  /* Phase 4D4 templates */
+  'clock.fill': Clock,
+  'flag.fill': Flag,
+  'doc.badge.plus': FilePlus,
 };
 
 export const iconForSFSymbol = (name: string): PhosphorIcon =>

@@ -13,8 +13,10 @@ import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptySt
 import { GrammarTopicCard } from '@/components/grammar/GrammarTopicCard';
 import { GrammarTopicForm } from '@/components/grammar/GrammarTopicForm';
 import { ReviewTodayCard } from '@/components/grammar/ReviewTodayCard';
+import { TemplateLibraryModal } from '@/components/grammar/TemplateLibraryModal';
 import {
   useCreateTopic,
+  useCreateTopicFromTemplate,
   useDeleteTopic,
   useGrammarTopicsQuery,
 } from '@/hooks/useGrammarTopics';
@@ -30,8 +32,10 @@ function GrammarHome() {
   const { data: topics, isLoading, isError } = useGrammarTopicsQuery();
   const { data: reviewQueue, isLoading: reviewLoading } = useReviewQueueQuery();
   const createTopic = useCreateTopic();
+  const createFromTemplate = useCreateTopicFromTemplate();
   const deleteTopic = useDeleteTopic();
   const [formOpen, setFormOpen] = useState(false);
+  const [templatesOpen, setTemplatesOpen] = useState(false);
 
   const handleDelete = (id: string, title: string) => {
     if (window.confirm(t('writing.grammar.deleteTopicConfirm', { title }))) {
@@ -116,6 +120,17 @@ function GrammarHome() {
               <h2 className="text-[19px] font-bold text-(--color-primary-blue-dark) md:text-[22px]">
                 {t('writing.grammar.form.newTitle')}
               </h2>
+              <button
+                type="button"
+                onClick={() => {
+                  setFormOpen(false);
+                  setTemplatesOpen(true);
+                }}
+                className="flex items-center gap-2 rounded-2xl border border-(--color-primary-blue)/35 bg-(--color-primary-blue)/5 px-4 py-3 text-left text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/10"
+              >
+                <Plus size={16} weight="bold" />
+                {t('writing.grammar.templates.startFromTemplate')}
+              </button>
               <GrammarTopicForm
                 isSaving={createTopic.isPending}
                 onSubmit={(values) =>
@@ -135,6 +150,24 @@ function GrammarHome() {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <TemplateLibraryModal
+        open={templatesOpen}
+        kind="topic"
+        isBusy={createFromTemplate.isPending}
+        onUseTopic={(tpl) =>
+          createFromTemplate.mutate(tpl, {
+            onSuccess: (topic) => {
+              setTemplatesOpen(false);
+              void navigate({
+                to: '/practice/writing/grammar/$topicId',
+                params: { topicId: topic.id },
+              });
+            },
+          })
+        }
+        onClose={() => setTemplatesOpen(false)}
+      />
     </ContentContainer>
   );
 }

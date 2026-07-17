@@ -165,10 +165,12 @@ Approved slice plan for 4D2–4D5:
   `{ReviewTodayCard,ReviewSessionScreen,ReviewSummaryView}.tsx`; editor
   records opened/edited recommendations; quiz <70% auto-queues review.
   Deferred: "Mistakes to Fix" / "Weak Quiz Areas" highlight rows.
-- **4D4 — Templates library.** iOS: `Notes/Editor/Services/GrammarTemplate*`,
-  `Views/GrammarTemplate*`, `Models/GrammarNoteTemplate.swift`,
-  `Topics/Models/GrammarTopicTemplate.swift`. Web: a template provider (static
-  data) + "start from template" in the create flow.
+- **4D4 — Templates library. DONE (built + gates + live-verified 2026-07-17).**
+  Files: `src/lib/grammarTemplates.ts` (7 note + 5 topic templates, iOS block
+  types mapped to the web 8), APPLY_TEMPLATE in `grammarNoteEditor.ts`,
+  `useCreateTopicFromTemplate` in `useGrammarTopics.ts`,
+  `src/components/grammar/TemplateLibraryModal.tsx`; entries in the
+  create-topic modal + editor "Template" button.
 - **4D5 — Quick-mistake + Essays "Save issue to Grammar Notes".** iOS:
   `Domain/SaveQuickGrammarMistakeUseCase.swift`, `Views/{QuickGrammarMistakeSheet,
   QuickGrammarNoteSheet,SaveGrammarMistakeConfirmationSheet}.swift`, and the

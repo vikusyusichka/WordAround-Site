@@ -2,6 +2,12 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 import * as topicService from '@/lib/grammarTopicService';
+import * as noteService from '@/lib/grammarNoteService';
+import {
+  noteFromTemplate,
+  topicFromTemplate,
+  type GrammarTopicTemplate,
+} from '@/lib/grammarTemplates';
 import type { GrammarNoteTopic } from '@/lib/models';
 import { useUid } from '@/hooks/useFolders';
 
@@ -46,6 +52,39 @@ export const useCreateTopic = () => {
       return topic;
     },
     onSuccess: () => qc.invalidateQueries({ queryKey: ['grammarTopics'] }),
+  });
+};
+
+/** 4D4: create a topic + all its template notes (best-effort per note, like
+    iOS createTopicFromTemplate — failures are skipped, notesCount reflects
+    what actually saved). */
+export const useCreateTopicFromTemplate = () => {
+  const qc = useQueryClient();
+  const uid = useUid();
+  return useMutation({
+    mutationFn: async (tpl: GrammarTopicTemplate) => {
+      const topic = topicFromTemplate(tpl, { ownerUID: uid as string });
+      await topicService.createTopic(topic);
+      let saved = 0;
+      for (const noteTpl of tpl.noteTemplates) {
+        try {
+          await noteService.createNote(
+            noteFromTemplate(noteTpl, { ownerUID: uid as string, topicId: topic.id }),
+          );
+          saved += 1;
+        } catch {
+          /* best-effort — skip failed notes */
+        }
+      }
+      if (saved > 0) {
+        await topicService.setNotesCount(uid as string, topic.id, saved).catch(() => {});
+      }
+      return topic;
+    },
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['grammarTopics'] });
+      qc.invalidateQueries({ queryKey: ['grammarNotes'] });
+    },
   });
 };
 

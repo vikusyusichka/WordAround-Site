@@ -23,7 +23,18 @@ export type EditorAction =
   | { type: 'MOVE_BLOCK'; id: string; dir: 'up' | 'down' }
   | { type: 'ADD_LIST_ITEM'; id: string }
   | { type: 'UPDATE_LIST_ITEM'; id: string; index: number; value: string }
-  | { type: 'REMOVE_LIST_ITEM'; id: string; index: number };
+  | { type: 'REMOVE_LIST_ITEM'; id: string; index: number }
+  /* 4D4 templates: blocks arrive pre-materialized (fresh ids) via
+     blocksFromTemplate. `replace` swaps everything + adopts the template's
+     noteType and title (when the editor title is empty); `append` keeps
+     what's there and adds the template blocks below. */
+  | {
+      type: 'APPLY_TEMPLATE';
+      blocks: GrammarNoteBlock[];
+      noteType: GrammarNoteType;
+      title?: string;
+      mode: 'replace' | 'append';
+    };
 
 /** New block with per-type defaults. */
 export const makeBlock = (type: GrammarBlockType, order: number): GrammarNoteBlock => ({
@@ -140,6 +151,17 @@ export const editorReducer = (state: EditorState, action: EditorAction): EditorS
           items: b.items.filter((_, i) => i !== action.index),
         })),
       };
+
+    case 'APPLY_TEMPLATE': {
+      if (action.mode === 'replace') {
+        return {
+          title: state.title.trim().length > 0 ? state.title : (action.title ?? state.title),
+          noteType: action.noteType,
+          blocks: reindex(action.blocks),
+        };
+      }
+      return { ...state, blocks: reindex([...state.blocks, ...action.blocks]) };
+    }
 
     default:
       return state;

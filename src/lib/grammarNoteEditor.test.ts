@@ -157,3 +157,45 @@ describe('isBlank + toNote', () => {
     expect(note.contentBlocks.map((b) => b.order)).toEqual(note.contentBlocks.map((_, i) => i));
   });
 });
+
+describe('APPLY_TEMPLATE (4D4)', () => {
+  const templateBlocks = [
+    makeBlock('rule', 0),
+    makeBlock('example', 1),
+  ];
+
+  it('replace swaps blocks, adopts noteType, and takes the template title only when empty', () => {
+    const dirty: EditorState = {
+      title: 'My title',
+      noteType: 'standard',
+      blocks: [makeBlock('paragraph', 0)],
+    };
+    const replaced = editorReducer(dirty, {
+      type: 'APPLY_TEMPLATE', blocks: templateBlocks, noteType: 'rule', title: 'Tpl title', mode: 'replace',
+    });
+    expect(replaced.title).toBe('My title'); // kept — was non-empty
+    expect(replaced.noteType).toBe('rule');
+    expect(replaced.blocks.map((b) => b.type)).toEqual(['rule', 'example']);
+    expect(replaced.blocks.map((b) => b.order)).toEqual([0, 1]);
+
+    const blank: EditorState = { title: '  ', noteType: 'standard', blocks: [] };
+    const seeded = editorReducer(blank, {
+      type: 'APPLY_TEMPLATE', blocks: templateBlocks, noteType: 'rule', title: 'Tpl title', mode: 'replace',
+    });
+    expect(seeded.title).toBe('Tpl title'); // adopted — was blank
+  });
+
+  it('append keeps current blocks and re-orders the combined list', () => {
+    const s: EditorState = {
+      title: 'T',
+      noteType: 'standard',
+      blocks: [makeBlock('paragraph', 0)],
+    };
+    const appended = editorReducer(s, {
+      type: 'APPLY_TEMPLATE', blocks: templateBlocks, noteType: 'rule', mode: 'append',
+    });
+    expect(appended.noteType).toBe('standard'); // unchanged on append
+    expect(appended.blocks.map((b) => b.type)).toEqual(['paragraph', 'rule', 'example']);
+    expect(appended.blocks.map((b) => b.order)).toEqual([0, 1, 2]);
+  });
+});

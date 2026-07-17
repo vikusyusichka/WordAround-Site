@@ -1,13 +1,14 @@
 /* Note editor — /practice/writing/grammar/$topicId/$noteId. `$noteId === 'new'`
    opens a blank editor that creates on first save. Existing notes seed the
    block-editor reducer from Firestore. */
-import { useEffect, useReducer } from 'react';
+import { useEffect, useReducer, useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { AddBlockMenu } from '@/components/grammar/AddBlockMenu';
+import { TemplateLibraryModal } from '@/components/grammar/TemplateLibraryModal';
 import { GrammarBlockEditor } from '@/components/grammar/GrammarBlockEditor';
 import { GrammarNoteTypePicker } from '@/components/grammar/GrammarNoteTypePicker';
 import { useGrammarTopicsQuery } from '@/hooks/useGrammarTopics';
@@ -21,8 +22,10 @@ import { useUid } from '@/hooks/useFolders';
 import {
   editorReducer,
   initialEditorState,
+  isBlank,
   toNote,
 } from '@/lib/grammarNoteEditor';
+import { blocksFromTemplate, type GrammarNoteTemplate } from '@/lib/grammarTemplates';
 import {
   forgetNote,
   recordEditedNote,
@@ -94,6 +97,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
   const createNote = useCreateNote();
   const updateNote = useUpdateNote();
   const deleteNote = useDeleteNote();
+  const [templatesOpen, setTemplatesOpen] = useState(false);
 
   /* Feed the spaced-review "recently opened" recommendation pool (4D3). */
   useEffect(() => {
@@ -153,6 +157,13 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
         subtitle={t('writing.grammar.newNote')}
         actions={
           <div className="flex gap-2">
+            <button
+              type="button"
+              onClick={() => setTemplatesOpen(true)}
+              className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 focus-visible:outline-none md:text-[15px]"
+            >
+              {t('writing.grammar.templates.button')}
+            </button>
             {!isNew && existing && (
               <button
                 type="button"
@@ -228,6 +239,28 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
           </p>
         )}
       </div>
+
+      <TemplateLibraryModal
+        open={templatesOpen}
+        kind="note"
+        onUseNote={(tpl: GrammarNoteTemplate) => {
+          /* Blank editor → silent replace; otherwise ask (OK = replace,
+             Cancel = append below the current blocks). */
+          const mode: 'replace' | 'append' =
+            isBlank(state) || window.confirm(t('writing.grammar.templates.replaceConfirm'))
+              ? 'replace'
+              : 'append';
+          dispatch({
+            type: 'APPLY_TEMPLATE',
+            blocks: blocksFromTemplate(tpl.blocks),
+            noteType: tpl.noteType,
+            title: tpl.title,
+            mode,
+          });
+          setTemplatesOpen(false);
+        }}
+        onClose={() => setTemplatesOpen(false)}
+      />
     </ContentContainer>
   );
 }
