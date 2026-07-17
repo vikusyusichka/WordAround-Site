@@ -12,11 +12,13 @@ import { PageHeader } from '@/components/shell/PageHeader';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
 import { GrammarTopicCard } from '@/components/grammar/GrammarTopicCard';
 import { GrammarTopicForm } from '@/components/grammar/GrammarTopicForm';
+import { ReviewTodayCard } from '@/components/grammar/ReviewTodayCard';
 import {
   useCreateTopic,
   useDeleteTopic,
   useGrammarTopicsQuery,
 } from '@/hooks/useGrammarTopics';
+import { useReviewQueueQuery } from '@/hooks/useGrammarReview';
 
 export const Route = createFileRoute('/_authed/practice/writing/grammar/')({
   component: GrammarHome,
@@ -26,6 +28,7 @@ function GrammarHome() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { data: topics, isLoading, isError } = useGrammarTopicsQuery();
+  const { data: reviewQueue, isLoading: reviewLoading } = useReviewQueueQuery();
   const createTopic = useCreateTopic();
   const deleteTopic = useDeleteTopic();
   const [formOpen, setFormOpen] = useState(false);
@@ -52,6 +55,14 @@ function GrammarHome() {
           </button>
         }
       />
+
+      <div className="mb-5">
+        <ReviewTodayCard
+          queue={reviewQueue}
+          isLoading={reviewLoading}
+          onStart={() => void navigate({ to: '/practice/writing/grammar/review' })}
+        />
+      </div>
 
       {isLoading ? (
         <p className="text-[15px] font-medium text-(--color-text-secondary)">

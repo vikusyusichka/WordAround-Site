@@ -1,7 +1,7 @@
 /* Note editor — /practice/writing/grammar/$topicId/$noteId. `$noteId === 'new'`
    opens a blank editor that creates on first save. Existing notes seed the
    block-editor reducer from Firestore. */
-import { useReducer } from 'react';
+import { useEffect, useReducer } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
@@ -23,6 +23,11 @@ import {
   initialEditorState,
   toNote,
 } from '@/lib/grammarNoteEditor';
+import {
+  forgetNote,
+  recordEditedNote,
+  recordOpenedNote,
+} from '@/lib/grammarRecommendations';
 import type { GrammarNote, GrammarNoteTopic } from '@/lib/models';
 
 export const Route = createFileRoute('/_authed/practice/writing/grammar/$topicId/$noteId/')({
@@ -90,6 +95,18 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
   const updateNote = useUpdateNote();
   const deleteNote = useDeleteNote();
 
+  /* Feed the spaced-review "recently opened" recommendation pool (4D3). */
+  useEffect(() => {
+    if (existing) {
+      recordOpenedNote({
+        topicId,
+        noteId: existing.id,
+        title: existing.title,
+        previewText: existing.previewText,
+      });
+    }
+  }, [existing, topicId]);
+
   const goBack = () =>
     void navigate({ to: '/practice/writing/grammar/$topicId', params: { topicId } });
 
@@ -102,6 +119,12 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
       ownerUID: uid as string,
       topicId,
       createdAt: existing?.createdAt ?? now,
+    });
+    recordEditedNote({
+      topicId,
+      noteId: note.id,
+      title: note.title,
+      previewText: note.previewText,
     });
     if (isNew) {
       const nextCount = (topic?.notesCount ?? 0) + 1;
@@ -118,6 +141,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
     }
     if (window.confirm(t('writing.grammar.deleteNoteConfirm'))) {
       const nextCount = Math.max((topic?.notesCount ?? 1) - 1, 0);
+      forgetNote(topicId, existing.id);
       deleteNote.mutate({ topicId, id: existing.id, nextCount }, { onSuccess: goBack });
     }
   };

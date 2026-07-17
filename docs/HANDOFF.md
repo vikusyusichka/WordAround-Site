@@ -157,9 +157,14 @@ Approved slice plan for 4D2–4D5:
   rename `$noteId.tsx`→`$noteId.index.tsx` + new `$noteId.quiz.tsx`,
   `src/components/grammar/{CreateQuizSheet,QuizCard,QuizQuestionView,
   QuizResultView}.tsx`. Manual-authoring mode deferred.
-- **4D3 — Spaced review sessions.** iOS: `Notes/Editor/Services/GrammarReview*`,
-  `ViewModels/GrammarReview*`, `Views/GrammarReview*`, `Models/GrammarReview*`.
-  Web: a review-queue builder (pure) + session reducer + review route.
+- **4D3 — Spaced review sessions. DONE (built + gates + live-verified
+  2026-07-17).** Files: models.ts (GrammarReviewItem + enums),
+  `src/lib/grammarReview{,Queue,Session,Service}.ts` +
+  `grammarRecommendations.ts` (localStorage), `src/hooks/useGrammarReview.ts`,
+  route `practice.writing.grammar.review.tsx`, components
+  `{ReviewTodayCard,ReviewSessionScreen,ReviewSummaryView}.tsx`; editor
+  records opened/edited recommendations; quiz <70% auto-queues review.
+  Deferred: "Mistakes to Fix" / "Weak Quiz Areas" highlight rows.
 - **4D4 — Templates library.** iOS: `Notes/Editor/Services/GrammarTemplate*`,
   `Views/GrammarTemplate*`, `Models/GrammarNoteTemplate.swift`,
   `Topics/Models/GrammarTopicTemplate.swift`. Web: a template provider (static

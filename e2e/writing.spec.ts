@@ -10,6 +10,7 @@ for (const route of [
   '/practice/writing/essays',
   '/practice/writing/grammar',
   '/practice/writing/grammar/topic-id/note-id/quiz',
+  '/practice/writing/grammar/review',
 ]) {
   test(`logged-out visit to ${route} redirects to /auth`, async ({ page }) => {
     await page.addInitScript(() => localStorage.setItem('wa.onboarded', '1'));

@@ -22,9 +22,12 @@ import {
   currentQuestion,
   initialQuizSessionState,
   isLastQuestion,
+  LOW_SCORE_REVIEW_THRESHOLD,
   quizSessionReducer,
   scorePercentage,
 } from '@/lib/grammarQuizSession';
+import { makeReviewItem, reviewItemIdForQuiz } from '@/lib/grammarReview';
+import { upsertReviewItem } from '@/lib/grammarReviewService';
 import type { GrammarNoteQuiz, GrammarQuizQuestion } from '@/lib/models';
 
 export const Route = createFileRoute(
@@ -102,6 +105,25 @@ function QuizRoute() {
     if (isLastQuestion(session)) {
       dispatch({ type: 'FINISH' });
       setScreen('result');
+      /* iOS: a low score queues the note for spaced review (4D3), high
+         priority, due in one hour. Fire-and-forget. */
+      const quiz = session.quiz;
+      if (quiz && scorePercentage(session) < LOW_SCORE_REVIEW_THRESHOLD) {
+        void upsertReviewItem(
+          makeReviewItem({
+            id: reviewItemIdForQuiz(topicId, noteId, quiz.id),
+            ownerUID: uid as string,
+            sourceType: 'quiz',
+            topicId,
+            noteId,
+            quizId: quiz.id,
+            title: quiz.title,
+            previewText: note.previewText,
+            priority: 'high',
+            dueAt: Date.now() + 60 * 60 * 1000,
+          }),
+        ).catch(() => {});
+      }
     } else {
       dispatch({ type: 'NEXT' });
     }

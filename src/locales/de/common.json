@@ -599,6 +599,67 @@
           "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
           "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
         }
+      },
+      "review": {
+        "title": "Review",
+        "subtitle": "Strengthen what you've learned with spaced repetition.",
+        "cardTitle": "Review Today",
+        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
+        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
+        "caughtUpTitle": "All caught up",
+        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
+        "start": "Start review",
+        "skip": "Skip",
+        "itemOf": "Item {{current}} of {{total}}",
+        "untitled": "Grammar note",
+        "stats": "Reviewed {{count}} times · streak {{streak}}",
+        "continueToQuestion": "Continue to question",
+        "showAnswer": "Show answer",
+        "compareTitle": "Compare your answer",
+        "referenceAnswer": "Reference: {{answer}}",
+        "openNote": "Open full note",
+        "pool": {
+          "manual_one": "{{count}} item due for review",
+          "manual_other": "{{count}} items due for review",
+          "recentlyOpened_one": "{{count}} recently opened note",
+          "recentlyOpened_other": "{{count}} recently opened notes",
+          "recentlyEdited_one": "{{count}} recently edited note",
+          "recentlyEdited_other": "{{count}} recently edited notes"
+        },
+        "sourceType": {
+          "note": "Note",
+          "mistake": "Mistake",
+          "quiz": "Quiz"
+        },
+        "phase": {
+          "source": "Study",
+          "question": "Answer",
+          "result": "Rate"
+        },
+        "rating": {
+          "forgot": "Forgot",
+          "hard": "Hard",
+          "good": "Good",
+          "easy": "Easy"
+        },
+        "interval": {
+          "plus4h": "+4 hours",
+          "plus1d": "+1 day",
+          "plus3d": "+3 days",
+          "plus7d": "+7 days"
+        },
+        "summary": {
+          "title": "Session complete",
+          "emptyTitle": "Nothing reviewed",
+          "reviewed": "Reviewed",
+          "correct": "Correct",
+          "incorrect": "Incorrect",
+          "hintForgot": "Some items are due again in 4 hours.",
+          "hintHard": "Hard items return tomorrow.",
+          "hintGood": "Good items return in 3 days.",
+          "hintEasy": "All items return in 7 days.",
+          "done": "Back to Grammar notes"
+        }
       }
     }
   }

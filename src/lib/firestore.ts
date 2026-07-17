@@ -43,6 +43,13 @@ export const grammarNotesCollection = (
 export const grammarNoteDoc = (uid: string, topicId: string, id: string) =>
   doc(grammarNotesCollection(uid, topicId), id);
 
+/* Grammar review items (Phase 4D3): flat per-user collection. */
+export const grammarReviewItemsCollection = (uid: string): CollectionReference<DocumentData> =>
+  collection(db, 'users', uid, 'grammarReviewItems');
+
+export const grammarReviewItemDoc = (uid: string, id: string) =>
+  doc(grammarReviewItemsCollection(uid), id);
+
 /* Grammar quizzes (Phase 4D2): subcollection of a note. */
 export const grammarQuizzesCollection = (
   uid: string,

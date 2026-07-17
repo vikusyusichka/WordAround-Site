@@ -52,6 +52,7 @@ import {
   Question,
   Quotes,
   Rabbit,
+  SealCheck,
   Sparkle,
   SquaresFour,
   Stack,
@@ -62,6 +63,8 @@ import {
   TextHOne,
   Translate,
   Trash,
+  Tray,
+  XCircle,
   User,
   UserCircle,
   Warning,
@@ -166,6 +169,10 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'checkmark.circle.fill': CheckCircle,
   'questionmark.circle.fill': Question,
   'play.fill': Play,
+  /* Phase 4D3 spaced review */
+  'xmark.circle.fill': XCircle,
+  'checkmark.seal.fill': SealCheck,
+  'tray.fill': Tray,
 };
 
 export const iconForSFSymbol = (name: string): PhosphorIcon =>

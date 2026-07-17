@@ -136,3 +136,35 @@ export interface GrammarNoteQuiz {
   createdAt: number;
   updatedAt: number;
 }
+
+/* --- Grammar spaced review (Phase 4D3) — port of the iOS GrammarReviewItem.
+   Persisted under users/{uid}/grammarReviewItems/{id} with deterministic ids
+   (see reviewItemId* in grammarReview.ts). --- */
+
+export type GrammarReviewSourceType = 'note' | 'mistake' | 'quiz';
+
+/** Stored for iOS parity; the queue builder never reads it. */
+export type GrammarReviewPriority = 'low' | 'normal' | 'high';
+
+export type GrammarReviewResult = 'forgot' | 'hard' | 'good' | 'easy';
+
+export interface GrammarReviewItem {
+  id: string;
+  ownerUID: string;
+  sourceType: GrammarReviewSourceType;
+  topicId: string;
+  noteId?: string;
+  quizId?: string;
+  title: string;
+  previewText: string;
+  priority: GrammarReviewPriority;
+  dueAt: number;
+  lastReviewedAt?: number;
+  nextReviewAt?: number;
+  reviewCount: number;
+  correctStreak: number;
+  incorrectStreak: number;
+  mistakeCount: number;
+  createdAt: number;
+  updatedAt: number;
+}
