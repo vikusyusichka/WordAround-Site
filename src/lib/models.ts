@@ -140,6 +140,78 @@ export interface GrammarNoteQuiz {
   updatedAt: number;
 }
 
+/* --- Reading (Phase 5) — port of the iOS ReadingLibraryItem. ONE Firestore
+   collection users/{uid}/readingItems backs every reading mode, discriminated
+   by modeID ('my-texts' | 'reading-from-sets' | 'story-mode' | 'speed-reading').
+   Shared with iOS — the Firestore field for the owner is `userId`. --- */
+
+export type ReadingSourceType =
+  | 'generated'
+  | 'pastedText'
+  | 'photoImport'
+  | 'pdfImport'
+  | 'flashcardSet'
+  | 'story'
+  | 'speedPractice'
+  | 'interactive'
+  | 'aiGenerated'
+  | 'exploredArticle';
+
+export type ReadingFocus =
+  | 'mainIdea'
+  | 'vocabulary'
+  | 'detailedComprehension'
+  | 'grammarAwareness'
+  | 'speedFluency';
+
+export type ReadingQuestionType =
+  | 'comprehension'
+  | 'trueFalse'
+  | 'fillGap'
+  | 'vocabulary'
+  | 'findEvidence'
+  | 'orderReconstruction';
+
+export type ReadingDifficulty = 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'Native';
+
+export type ReadingItemStatus = 'new' | 'inProgress' | 'completed';
+
+export interface ReadingLibraryItem {
+  id: string;
+  /** Firestore field name is `userId` (iOS parity). */
+  ownerUID: string;
+  modeID: string;
+  title: string;
+  preview: string;
+  fullText: string;
+  difficulty: ReadingDifficulty;
+  estimatedMinutes: number;
+  createdAt: number;
+  updatedAt: number;
+  lastOpenedAt?: number;
+  /** 0–1; capped at 0.99 until completed. */
+  progress: number;
+  /** 0–1 (iOS stores comprehension percent / 100). */
+  comprehensionScore?: number;
+  tags: string[];
+  sourceType: ReadingSourceType;
+  sourceId?: string;
+  status: ReadingItemStatus;
+  /** Mode/source metadata (e.g. source.topic, source.setId, config picks). */
+  selections: Record<string, string>;
+  /** Assistance toggles (highlightUnknownWords / translationOnTap /
+      vocabularyHints / readingTimer). */
+  toggles: Record<string, boolean>;
+  languageCode: string;
+  wordCount: number;
+  characterCount: number;
+  detectedDifficulty: ReadingDifficulty;
+  readingFocus: ReadingFocus;
+  enabledQuestionTypes: ReadingQuestionType[];
+  readingTimeSeconds?: number;
+  lastReadCharacterIndex: number;
+}
+
 /* --- Grammar spaced review (Phase 4D3) — port of the iOS GrammarReviewItem.
    Persisted under users/{uid}/grammarReviewItems/{id} with deterministic ids
    (see reviewItemId* in grammarReview.ts). --- */

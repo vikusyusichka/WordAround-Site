@@ -730,5 +730,274 @@
         }
       }
     }
+  },
+  "reading": {
+    "sectionTitle": "Practice modes",
+    "loading": "Loading…",
+    "loadError": "Couldn’t load your reading items.",
+    "notFound": "This item may have been deleted.",
+    "today": {
+      "title": "Today progress",
+      "subtitle": "Keep your reading streak going."
+    },
+    "menu": {
+      "comingSoon": "Coming soon",
+      "myTexts": {
+        "title": "My Texts",
+        "subtitle": "Paste your own text and read it with help."
+      },
+      "fromSets": {
+        "title": "Reading From Sets",
+        "subtitle": "Build a reading from your flashcard sets."
+      },
+      "storyMode": {
+        "title": "Story Mode",
+        "subtitle": "Read interactive stories with branching choices."
+      },
+      "speedReading": {
+        "title": "Speed Reading",
+        "subtitle": "Train faster reading with timed pacing."
+      }
+    },
+    "myTexts": {
+      "title": "My Texts",
+      "subtitle": "Your saved reading texts.",
+      "addText": "Add text",
+      "emptyTitle": "No texts yet",
+      "emptyBody": "Add your first text to start reading practice.",
+      "savedTitle": "Saved texts"
+    },
+    "status": {
+      "new": "New",
+      "inProgress": "In progress",
+      "completed": "Completed"
+    },
+    "card": {
+      "words_one": "{{count}} word",
+      "words_other": "{{count}} words",
+      "start": "Start",
+      "continue": "Continue",
+      "readAgain": "Read again",
+      "rename": "Rename",
+      "renamePrompt": "New title:",
+      "delete": "Delete",
+      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+    },
+    "continue": {
+      "eyebrow": "Continue reading",
+      "percent": "{{percent}}% complete",
+      "button": "Continue"
+    },
+    "focus": {
+      "mainIdea": "Main idea",
+      "vocabulary": "Vocabulary",
+      "detailedComprehension": "Detailed comprehension",
+      "grammarAwareness": "Grammar awareness",
+      "speedFluency": "Speed / fluency"
+    },
+    "questionType": {
+      "comprehension": "Comprehension",
+      "trueFalse": "True / False",
+      "fillGap": "Fill gap",
+      "vocabulary": "Vocabulary",
+      "findEvidence": "Find evidence",
+      "orderReconstruction": "Order"
+    },
+    "assistance": {
+      "highlightUnknownWords": "Highlight unknown words",
+      "translationOnTap": "Translate on tap",
+      "vocabularyHints": "Vocabulary hints",
+      "readingTimer": "Reading timer"
+    },
+    "addText": {
+      "title": "Add text",
+      "subtitle": "Paste a text and set up your reading practice.",
+      "untitled": "Untitled text",
+      "pastePlaceholder": "Paste or type your text here…",
+      "titleLabel": "Title",
+      "titlePlaceholder": "Optional — we can suggest one",
+      "language": "Language",
+      "difficulty": "Difficulty",
+      "autoDetect": "Auto detect",
+      "manual": "Choose manually",
+      "focus": "Reading focus",
+      "questionTypes": "Question types",
+      "assistance": "Reading assistance",
+      "stats": {
+        "words_one": "{{count}} word",
+        "words_other": "{{count}} words",
+        "chars_one": "{{count}} char",
+        "chars_other": "{{count}} chars",
+        "min": "min",
+        "detected": "Detected: {{level}}"
+      },
+      "validation": {
+        "empty": "Please add a text first.",
+        "tooShort": "Add at least 20 words."
+      },
+      "save": "Save text",
+      "saveAndStart": "Save & start",
+      "saving": "Saving…",
+      "saveError": "Couldn’t save. Please try again.",
+      "source": {
+        "pasteText": "Paste",
+        "photo": "Photo",
+        "pdf": "PDF",
+        "generate": "Generate",
+        "explore": "Explore"
+      },
+      "style": {
+        "informative": "Informative",
+        "casual": "Casual",
+        "academic": "Academic",
+        "narrative": "Narrative"
+      },
+      "length": {
+        "short": "Short",
+        "medium": "Medium",
+        "long": "Long"
+      },
+      "import": {
+        "photoHint": "Upload a photo of a page — we’ll extract the text.",
+        "chooseImage": "Choose image",
+        "recognizing": "Recognizing… {{percent}}%",
+        "imageError": "Couldn’t read text from this image.",
+        "pdfHint": "Upload a PDF — we’ll extract the text.",
+        "choosePDF": "Choose PDF",
+        "reading": "Reading PDF…",
+        "pdfError": "Couldn’t read this PDF.",
+        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
+        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
+        "generateButton": "Generate text",
+        "exploreButton": "Fetch article",
+        "working": "Working…",
+        "generateError": "Couldn’t generate the text. Try again.",
+        "exploreError": "Couldn’t find an article for this topic.",
+        "exploredFrom": "Fetched from"
+      }
+    },
+    "session": {
+      "startQuestions": "Start questions",
+      "finish": "Finish",
+      "next": "Next",
+      "questionOf": "Question {{current}} of {{total}}",
+      "closeTranslation": "Close translation",
+      "translating": "Translating…",
+      "translationError": "Couldn’t translate. Try again."
+    },
+    "result": {
+      "comprehension": "Comprehension",
+      "correct": "Correct",
+      "time": "Reading time",
+      "wpm": "WPM",
+      "mistakes": "Mistakes",
+      "mistakesTitle": "Review your mistakes",
+      "readAgain": "Read again",
+      "back": "Back to My Texts"
+    },
+    "fromSets": {
+      "title": "Reading From Sets",
+      "subtitle": "Turn a flashcard set into a reading.",
+      "pickSet": "Pick a set",
+      "changeSet": "Change set",
+      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
+      "mode": "Generation mode",
+      "modeOption": {
+        "natural": "Natural",
+        "strict": "Strict",
+        "mixed": "Mixed"
+      },
+      "length": "Reading length",
+      "generate": "Generate reading",
+      "generating": "Creating your reading…",
+      "generateError": "Couldn’t create the reading. Try again.",
+      "emptyTitle": "No readings yet",
+      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
+      "savedTitle": "Saved readings"
+    },
+    "speed": {
+      "title": "Speed Reading",
+      "subtitle": "Train faster reading with timed pacing.",
+      "section": {
+        "target": "Reading speed target",
+        "timer": "Timer style",
+        "length": "Reading length"
+      },
+      "target": {
+        "relaxed": "Relaxed",
+        "balanced": "Balanced",
+        "fast": "Fast",
+        "challenge": "Challenge"
+      },
+      "timer": {
+        "noTimer": "No timer",
+        "soft": "Soft timer",
+        "strict": "Strict timer"
+      },
+      "length": {
+        "two": "2 min",
+        "five": "5 min",
+        "ten": "10 min"
+      },
+      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
+      "start": "Start session",
+      "preparing": "Preparing your passage…",
+      "generateError": "Couldn’t create the passage. Try again.",
+      "recentTitle": "Recent sessions",
+      "chunkOf": "Part {{current}} of {{total}}",
+      "previous": "Previous part",
+      "pause": "Pause",
+      "resume": "Resume",
+      "nextChunk": "Next part",
+      "finishReading": "Finish reading",
+      "rating": {
+        "excellent": "Excellent",
+        "balanced": "On target",
+        "fast": "Almost there",
+        "tooSlow": "Too slow"
+      },
+      "result": {
+        "average": "Average WPM",
+        "target": "Target WPM",
+        "violations_one": "{{count}} timer miss",
+        "violations_other": "{{count}} timer misses"
+      },
+      "tryAgain": "Try again",
+      "backToSetup": "Back to setup"
+    },
+    "story": {
+      "title": "Story Mode",
+      "subtitle": "Read interactive stories with branching choices.",
+      "typeSection": "Story type",
+      "type": {
+        "adventure": "Adventure",
+        "fantasy": "Fantasy",
+        "mystery": "Mystery",
+        "romance": "Romance",
+        "dailyLife": "Daily Life"
+      },
+      "lengthSection": "Story length",
+      "length": {
+        "shortStory": "Short Story",
+        "multiChapter": "Multi Chapter",
+        "infinite": "Infinite Story"
+      },
+      "start": "Start story",
+      "generating": "Writing your story…",
+      "generatingNext": "Writing the next chapter…",
+      "generateError": "Couldn’t write the story. Try again.",
+      "emptyTitle": "No stories yet",
+      "emptyBody": "Start your first interactive story above.",
+      "savedTitle": "Your stories",
+      "chapterN": "Chapter {{n}}",
+      "chapterOf": "Chapter {{current}} / {{total}}",
+      "chapterScore": "Chapter score",
+      "whatNext": "What happens next?",
+      "endStory": "End story",
+      "completeTitle": "Story complete",
+      "completeBody_one": "You finished {{count}} chapter. Great reading!",
+      "completeBody_other": "You finished {{count}} chapters. Great reading!",
+      "backToStories": "Back to stories"
+    }
   }
 }

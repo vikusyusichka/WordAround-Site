@@ -82,6 +82,21 @@ const PRACTICE_COPY: Record<PracticeMode, PageCopy> = {
 export const HOME_COPY: PageCopy = { titleKey: 'home.title.flashcards', subtitleKey: 'home.subtitle.pickSet' };
 
 export const pageCopyForPath = (pathname: string): PageCopy => {
+  if (pathname.startsWith('/practice/reading/my-texts')) {
+    return { titleKey: 'reading.myTexts.title', subtitleKey: 'reading.myTexts.subtitle' };
+  }
+  if (pathname.startsWith('/practice/reading/from-sets')) {
+    return { titleKey: 'reading.fromSets.title', subtitleKey: 'reading.fromSets.subtitle' };
+  }
+  if (pathname.startsWith('/practice/reading/speed')) {
+    return { titleKey: 'reading.speed.title', subtitleKey: 'reading.speed.subtitle' };
+  }
+  if (pathname.startsWith('/practice/reading/story')) {
+    return { titleKey: 'reading.story.title', subtitleKey: 'reading.story.subtitle' };
+  }
+  if (pathname.startsWith('/practice/reading/session')) {
+    return { titleKey: 'nav.reading', subtitleKey: 'home.subtitle.reading' };
+  }
   if (pathname.startsWith('/practice/writing/grammar')) {
     return { titleKey: 'writing.grammar.title', subtitleKey: 'writing.grammar.subtitle' };
   }

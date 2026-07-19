@@ -184,7 +184,43 @@ Approved slice plan for 4D2–4D5:
 - Also deferred in 4D1: pin/favorite/search/drag-reorder, cover images (needs
   Storage CORS), per-note language. Fields already exist where needed.
 
-### Phase 5 — Reading `L` (largest module, `Features/Reading`, ~130 files)
+### Phase 5 — Reading `L` (IN PROGRESS — plan approved, 6 slices)
+Slice plan: `C:\Users\vikusyusichka\.claude\plans\parallel-sparking-sun.md`.
+- **5A — landing + data layer + My Texts library. DONE (built + gates +
+  live-verified 2026-07-18).** Files: models.ts (ReadingLibraryItem),
+  `src/lib/{readingTextAnalyzer,readingTypes,readingStorageService}.ts`,
+  `src/hooks/useReadingItems.ts`, routes `practice.reading.index` /
+  `my-texts.index` / `my-texts.new` / `my-texts.$itemId` (read-only until 5B),
+  components `src/components/reading/*`.
+- **5B — session engine. DONE (built + gates + live-verified 2026-07-18).**
+  Files: `src/lib/{readingQuestionService,readingScoring,readingSession,
+  readingHighlight}.ts`, `src/hooks/useReadingSession.ts`, session UI in
+  `src/components/reading/*`, `my-texts.$itemId` = full session.
+  5A+5B both uncommitted (user batching commits).
+- **5C — import + AI generation. DONE (built + gates + live-verified
+  2026-07-18).** Deps +tesseract.js +pdfjs-dist (lazy dynamic imports).
+  Files: `src/lib/{readingImport,readingGenerationService}.ts`; Add Text has
+  the 5-source selector (Paste/Photo OCR/PDF/Generate/Wikipedia Explore).
+  5A+5B+5C uncommitted (user batching commits).
+- **5D — Reading From Sets. DONE (built + gates + live-verified
+  2026-07-18).** Files: `src/lib/readingFromSets.ts`, route
+  `practice.reading.from-sets.index.tsx`; the 5B session route moved to
+  SHARED `practice.reading.session.$itemId.tsx` (serves any modeID, vocab
+  highlighting). 5A-5D uncommitted (user batching).
+- **5E — Speed Reading. DONE (built + gates + live-verified 2026-07-18).**
+  Files: `src/lib/speedReading.ts`, route `practice.reading.speed.index.tsx`.
+  5A-5E uncommitted (user batching).
+- **5F — Story Mode. DONE (built + gates + live-verified 2026-07-18).**
+  Files: `src/lib/storyMode.ts`, routes `practice.reading.story.index.tsx` +
+  `story.$itemId.tsx`.
+
+**READING MODULE (Phase 5) IS 100% BUILT + LIVE-VERIFIED. All of 5A-5F is
+UNCOMMITTED** — the user batched commits; when committing, one combined
+Phase-5 commit is cleaner than a per-slice split (locales + my-texts.new.tsx
+span multiple slices). Gates at completion: typecheck · 506 tests · lint 0 ·
+build · 26 e2e. Next big phase: **Phase 6 Listening**.
+
+### Phase 5 reference (original notes) — `Features/Reading`, ~130 files
 Shared: `ReadingView` grid + mode/library/setup cards + progress summary.
 Submodules: **MyTexts** (paste / OCR=`Tesseract.js` / PDF=`pdf.js`; AI question
 gen via worker `POST /`; tappable-text session where each word→translate;

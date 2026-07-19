@@ -43,6 +43,13 @@ export const grammarNotesCollection = (
 export const grammarNoteDoc = (uid: string, topicId: string, id: string) =>
   doc(grammarNotesCollection(uid, topicId), id);
 
+/* Reading items (Phase 5): one collection for every reading mode. */
+export const readingItemsCollection = (uid: string): CollectionReference<DocumentData> =>
+  collection(db, 'users', uid, 'readingItems');
+
+export const readingItemDoc = (uid: string, id: string) =>
+  doc(readingItemsCollection(uid), id);
+
 /* Grammar review items (Phase 4D3): flat per-user collection. */
 export const grammarReviewItemsCollection = (uid: string): CollectionReference<DocumentData> =>
   collection(db, 'users', uid, 'grammarReviewItems');

@@ -14,6 +14,7 @@ import {
   Bell,
   Book,
   BookOpen,
+  Books,
   Brain,
   Briefcase,
   CaretDown,
@@ -185,6 +186,8 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   /* Phase 4D5 quick mistake */
   'exclamationmark.bubble.fill': ChatCircleDots,
   'exclamationmark.circle.fill': WarningCircle,
+  /* Phase 5 Reading */
+  'books.vertical.fill': Books,
 };
 
 export const iconForSFSymbol = (name: string): PhosphorIcon =>

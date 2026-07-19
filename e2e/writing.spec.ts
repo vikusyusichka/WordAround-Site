@@ -11,6 +11,12 @@ for (const route of [
   '/practice/writing/grammar',
   '/practice/writing/grammar/topic-id/note-id/quiz',
   '/practice/writing/grammar/review',
+  '/practice/reading',
+  '/practice/reading/my-texts',
+  '/practice/reading/my-texts/new',
+  '/practice/reading/from-sets',
+  '/practice/reading/speed',
+  '/practice/reading/story',
 ]) {
   test(`logged-out visit to ${route} redirects to /auth`, async ({ page }) => {
     await page.addInitScript(() => localStorage.setItem('wa.onboarded', '1'));
