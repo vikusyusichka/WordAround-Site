@@ -251,7 +251,15 @@ Slice plan: `C:\Users\vikusyusichka\.claude\plans\parallel-sparking-sun.md`.
   Firestore set creation).** Files: `src/lib/listeningSetSaving.ts`,
   `src/components/listening/ListeningWordSheet.tsx`, route
   `practice.listening.import-video.index.tsx`.
-- 6D saved practice — last slice.
+- **6D — Saved Practice + resume. DONE (built + gates + live-verified
+  2026-07-20).** Route `practice.listening.saved.index.tsx` (continue card,
+  session cards, inline review); import-audio route gained ?sid= resume
+  (seeks to playbackPosition); from-text resumes via its existing ?sid=;
+  import-video review-only.
+
+**LISTENING MODULE (Phase 6) IS 100% BUILT + LIVE-VERIFIED.** Next big
+phase: **Phase 7 Speaking** (hardest — realtime voice, Azure STT, streaming
+worker endpoint) per the reference notes below.
 
 ### Phase 6 reference (original notes) — `Features/Listening`, 63 files
 ListenFromText (Web Speech TTS / Azure, word-sync highlight), ImportAudio

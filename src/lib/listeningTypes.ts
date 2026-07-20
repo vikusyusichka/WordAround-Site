@@ -55,7 +55,7 @@ export const LISTENING_MENU_ITEMS: ListeningMenuItemDef[] = [
     iconSystemName: 'bookmark.fill',
     accentColor: '#ED6699',
     blobColor: '#FADBE7',
-    enabled: false,
+    enabled: true,
   },
 ];
 

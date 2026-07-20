@@ -91,6 +91,9 @@ export const pageCopyForPath = (pathname: string): PageCopy => {
   if (pathname.startsWith('/practice/listening/import-video')) {
     return { titleKey: 'listening.importVideo.title', subtitleKey: 'listening.importVideo.subtitle' };
   }
+  if (pathname.startsWith('/practice/listening/saved')) {
+    return { titleKey: 'listening.saved.title', subtitleKey: 'listening.saved.subtitle' };
+  }
   if (pathname.startsWith('/practice/reading/my-texts')) {
     return { titleKey: 'reading.myTexts.title', subtitleKey: 'reading.myTexts.subtitle' };
   }

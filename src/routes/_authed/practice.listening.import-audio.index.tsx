@@ -25,6 +25,7 @@ import { makeListeningResult } from '@/lib/listeningScoring';
 import {
   deleteListeningMedia,
   getListeningMedia,
+  getListeningSession,
   saveListeningSession,
 } from '@/lib/listeningStore';
 import { transcribeMedia } from '@/lib/listeningTranscribe';
@@ -39,6 +40,8 @@ import {
 } from '@/lib/listeningTypes';
 
 export const Route = createFileRoute('/_authed/practice/listening/import-audio/')({
+  validateSearch: (search: Record<string, unknown>): { sid?: string } =>
+    typeof search.sid === 'string' && search.sid.length > 0 ? { sid: search.sid } : {},
   component: ImportAudioScreen,
 });
 
@@ -61,6 +64,7 @@ type ProcessingStep = 0 | 1 | 2;
 function ImportAudioScreen() {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const { sid } = Route.useSearch();
 
   const [screen, setScreen] = useState<Screen>('setup');
   const [media, setMedia] = useState<ImportedListeningMedia | null>(null);
@@ -90,7 +94,7 @@ function ImportAudioScreen() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const objectUrlRef = useRef<string | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
-  const sessionIdRef = useRef(crypto.randomUUID());
+  const sessionIdRef = useRef<string>(crypto.randomUUID());
 
   /* Listening-time ticker while playing. */
   useEffect(() => {
@@ -98,6 +102,52 @@ function ImportAudioScreen() {
     const id = setInterval(() => setElapsedSeconds((v) => v + 1), 1000);
     return () => clearInterval(id);
   }, [isPlaying]);
+
+  /* 6D resume: ?sid= reopens a persisted in-progress session and seeks the
+     player to the saved position (iOS restore parity). */
+  useEffect(() => {
+    if (!sid) return;
+    let cancelled = false;
+    void (async () => {
+      const session = await getListeningSession(sid);
+      if (cancelled || !session || !session.mediaKey) return;
+      const blob = await getListeningMedia(session.mediaKey);
+      if (cancelled || !blob) return;
+      sessionIdRef.current = session.id;
+      setMedia({
+        mediaKey: session.mediaKey,
+        originalName: session.title,
+        durationSeconds: session.durationSeconds,
+        fileSizeBytes: blob.size,
+      });
+      setLanguageId(session.languageId);
+      setLevel(session.level);
+      setAddQuestions(session.addQuestions);
+      setQuestions(session.questions);
+      setTranscript(session.transcript);
+      setSelectedAnswers(session.selectedAnswers);
+      setElapsedSeconds(session.elapsedSeconds);
+      setRate(session.voiceSpeed);
+      const url = URL.createObjectURL(blob);
+      objectUrlRef.current = url;
+      const audio = new Audio(url);
+      audio.preload = 'metadata';
+      audio.onloadedmetadata = () => {
+        setDuration(audio.duration || session.durationSeconds);
+        audio.currentTime = session.playbackPosition;
+        setCurrentTime(session.playbackPosition);
+      };
+      audio.ontimeupdate = () => setCurrentTime(audio.currentTime);
+      audio.onended = () => setIsPlaying(false);
+      audio.onpause = () => setIsPlaying(false);
+      audio.onplay = () => setIsPlaying(true);
+      audioRef.current = audio;
+      setScreen('session');
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [sid]);
 
   useEffect(() => {
     return () => {

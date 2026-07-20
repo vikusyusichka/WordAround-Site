@@ -1116,6 +1116,23 @@
       "setNamePlaceholder": "e.g. Video words",
       "createAndAdd": "Create & add word",
       "saved": "Saved to \"{{set}}\"."
+    },
+    "saved": {
+      "title": "Saved Practice",
+      "subtitle": "Continue sessions and review your listening mistakes.",
+      "emptyTitle": "No saved sessions",
+      "emptyBody": "Finish or pause a listening session and it will appear here.",
+      "continueEyebrow": "Continue listening",
+      "percentComplete": "{{percent}}% complete",
+      "continue": "Continue",
+      "review": "Review",
+      "delete": "Delete session",
+      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "status": {
+        "draft": "Draft",
+        "inProgress": "In progress",
+        "completed": "Completed"
+      }
     }
   }
 }
