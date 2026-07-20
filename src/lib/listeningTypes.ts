@@ -46,7 +46,7 @@ export const LISTENING_MENU_ITEMS: ListeningMenuItemDef[] = [
     iconSystemName: 'film.stack',
     accentColor: '#29A89E',
     blobColor: '#D1F2ED',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 'saved-practice',

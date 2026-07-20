@@ -20,6 +20,7 @@ for (const route of [
   '/practice/listening',
   '/practice/listening/from-text',
   '/practice/listening/import-audio',
+  '/practice/listening/import-video',
 ]) {
   test(`logged-out visit to ${route} redirects to /auth`, async ({ page }) => {
     await page.addInitScript(() => localStorage.setItem('wa.onboarded', '1'));

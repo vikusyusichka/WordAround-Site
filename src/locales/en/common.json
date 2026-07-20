@@ -1099,6 +1099,31 @@
       "tryAgain": "Try again",
       "chooseAnother": "Choose another file",
       "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+    },
+    "importVideo": {
+      "title": "Import Video",
+      "subtitle": "Upload a video, get subtitles, and practice with questions.",
+      "uploadTitle": "Upload video file",
+      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
+      "step1": "Preparing video",
+      "step2": "Transcribing speech",
+      "step3": "Building subtitles",
+      "subtitles": "Subtitles",
+      "subtitlesOn": "Subtitles on",
+      "subtitlesOff": "Subtitles off",
+      "noSubtitles": "No subtitles available for this video.",
+      "tapWord": "Tap a word to translate it.",
+      "questionsLocked": "Questions unlock after you finish watching the video."
+    },
+    "wordSheet": {
+      "title": "Translate word",
+      "pickSet": "Choose a set",
+      "createSet": "Create set",
+      "addToSet": "Add to set",
+      "noSets": "You have no sets yet. Create one below.",
+      "setNamePlaceholder": "e.g. Video words",
+      "createAndAdd": "Create & add word",
+      "saved": "Saved to \"{{set}}\"."
     }
   }
 }

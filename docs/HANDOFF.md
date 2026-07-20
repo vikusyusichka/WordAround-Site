@@ -246,7 +246,12 @@ Slice plan: `C:\Users\vikusyusichka\.claude\plans\parallel-sparking-sun.md`.
   `src/lib/listening{Transcribe,Import}.ts`, route
   `practice.listening.import-audio.index.tsx`, shared
   `ListeningQuestionList` component.
-- 6C import video · 6D saved practice — next, in order.
+- **6C — Import Video + word translate + save to set. DONE (built + gates +
+  live-verified 2026-07-20 incl. real Whisper + real MyMemory + real
+  Firestore set creation).** Files: `src/lib/listeningSetSaving.ts`,
+  `src/components/listening/ListeningWordSheet.tsx`, route
+  `practice.listening.import-video.index.tsx`.
+- 6D saved practice — last slice.
 
 ### Phase 6 reference (original notes) — `Features/Listening`, 63 files
 ListenFromText (Web Speech TTS / Azure, word-sync highlight), ImportAudio
