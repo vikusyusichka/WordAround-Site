@@ -82,6 +82,9 @@ const PRACTICE_COPY: Record<PracticeMode, PageCopy> = {
 export const HOME_COPY: PageCopy = { titleKey: 'home.title.flashcards', subtitleKey: 'home.subtitle.pickSet' };
 
 export const pageCopyForPath = (pathname: string): PageCopy => {
+  if (pathname.startsWith('/practice/listening/from-text')) {
+    return { titleKey: 'listening.fromText.title', subtitleKey: 'listening.fromText.subtitle' };
+  }
   if (pathname.startsWith('/practice/reading/my-texts')) {
     return { titleKey: 'reading.myTexts.title', subtitleKey: 'reading.myTexts.subtitle' };
   }

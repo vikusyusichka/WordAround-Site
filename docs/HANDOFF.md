@@ -231,7 +231,18 @@ streaming), **ReadingFromSets**. Firestore `users/{uid}/readingItems` filtered b
 `ReadingSessionService`. Wire the `/practice/reading` route (currently
 `PlaceholderPage` via `practice.$mode.tsx`).
 
-### Phase 6 — Listening `M` (`Features/Listening`, 63 files)
+### Phase 6 — Listening (IN PROGRESS — plan approved, 4 slices)
+Slice plan: `C:\Users\vikusyusichka\.claude\plans\parallel-sparking-sun.md`.
+- **6A — landing + local store + Listen from Text. DONE (built + gates +
+  live-verified 2026-07-20), uncommitted.** Dep +idb-keyval. Files:
+  `src/lib/listening{Types,Store,QuestionGenerator,Scoring}.ts`, speech.ts
+  extension (speakListening), routes `practice.listening.index` /
+  `from-text.index` / `from-text.session`, component
+  `src/components/listening/ListeningResultView.tsx`. ALL listening data is
+  device-local (IndexedDB) — iOS parity.
+- 6B import audio · 6C import video · 6D saved practice — next, in order.
+
+### Phase 6 reference (original notes) — `Features/Listening`, 63 files
 ListenFromText (Web Speech TTS / Azure, word-sync highlight), ImportAudio
 (→ worker `POST /api/listening/transcribe` Whisper), ImportVideo (+`<video>`+VTT),
 SavedPractice. Persistence **local** (IndexedDB, audio as Blob).

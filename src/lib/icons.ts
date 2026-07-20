@@ -13,6 +13,7 @@ import {
   ArrowUp,
   Bell,
   Book,
+  BookmarkSimple,
   BookOpen,
   Books,
   Brain,
@@ -40,6 +41,7 @@ import {
   CheckCircle,
   Clock,
   FilePlus,
+  FilmStrip,
   Flag,
   Lightning,
   Lightbulb,
@@ -188,6 +190,10 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'exclamationmark.circle.fill': WarningCircle,
   /* Phase 5 Reading */
   'books.vertical.fill': Books,
+  /* Phase 6 Listening */
+  'waveform.badge.plus': Waveform,
+  'film.stack': FilmStrip,
+  'bookmark.fill': BookmarkSimple,
 };
 
 export const iconForSFSymbol = (name: string): PhosphorIcon =>

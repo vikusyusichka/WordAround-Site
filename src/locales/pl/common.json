@@ -983,5 +983,88 @@
       "completeBody_other": "You finished {{count}} chapters. Great reading!",
       "backToStories": "Back to stories"
     }
+  },
+  "listening": {
+    "sectionTitle": "Practice modes",
+    "notFound": "This session may have been deleted.",
+    "today": {
+      "title": "Today progress",
+      "subtitle": "of listening practice"
+    },
+    "menu": {
+      "comingSoon": "Coming soon",
+      "fromText": {
+        "title": "Listen from Text",
+        "subtitle": "Paste text, listen to it, and check your understanding."
+      },
+      "importAudio": {
+        "title": "Import Audio",
+        "subtitle": "Upload your own audio and turn it into listening practice."
+      },
+      "importVideo": {
+        "title": "Import Video",
+        "subtitle": "Upload a video, get subtitles, and practice with questions."
+      },
+      "saved": {
+        "title": "Saved Practice",
+        "subtitle": "Continue previous sessions and review your mistakes."
+      }
+    },
+    "questionType": {
+      "mainIdea": "Main idea",
+      "details": "Details",
+      "vocabulary": "Vocabulary",
+      "trueFalse": "True / False"
+    },
+    "fromText": {
+      "title": "Listen from Text",
+      "subtitle": "Paste text and turn it into listening practice.",
+      "level": "Level",
+      "voiceSpeed": "Voice speed",
+      "voiceType": "Voice type",
+      "voice": {
+        "default": "Default",
+        "female": "Female",
+        "male": "Male"
+      },
+      "showText": "Show text while listening",
+      "addQuestions": "Add comprehension questions",
+      "questionCount": "Question count",
+      "questionTypes": "Question types",
+      "optionalTitle": "Optional title",
+      "titlePlaceholder": "Give your text a name",
+      "textPlaceholder": "Paste your text here...",
+      "recommended": "Recommended: 80–500 words.",
+      "words": "words",
+      "defaultTitle": "Listening Practice",
+      "start": "Start listening",
+      "validation": {
+        "empty": "Add some text to start listening.",
+        "tooShort": "Add at least 40 characters to start listening.",
+        "tooLong": "That text is too long. Please keep it under 5000 characters.",
+        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+      }
+    },
+    "session": {
+      "replay": "Replay",
+      "transcript": "Transcript",
+      "questionsTitle": "Questions",
+      "answerFirst": "Answer at least one question before checking.",
+      "checkAnswers": "Check answers",
+      "finish": "Finish practice"
+    },
+    "result": {
+      "title": "Practice Complete",
+      "comprehension": "Comprehension",
+      "correct": "Correct",
+      "time": "Listening time",
+      "speed": "Speed",
+      "mistakes": "Mistakes",
+      "mistakesTitle": "Review your mistakes",
+      "watchOnlyTitle": "Listening completed",
+      "watchOnlyBody": "You listened for {{time}}.",
+      "practiceAgain": "Practice again",
+      "back": "Back to Listening"
+    }
   }
 }
