@@ -37,7 +37,7 @@ export const LISTENING_MENU_ITEMS: ListeningMenuItemDef[] = [
     iconSystemName: 'waveform.badge.plus',
     accentColor: '#8C66EB',
     blobColor: '#E6DBFA',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 'import-video',

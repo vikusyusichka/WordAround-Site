@@ -32,7 +32,8 @@ function ListeningLanding() {
 
   const handleSelect = (mode: ListeningModeId) => {
     if (mode === 'listen-from-text') void navigate({ to: '/practice/listening/from-text' });
-    /* import-audio / import-video / saved-practice flip on in 6B-6D. */
+    else if (mode === 'import-audio') void navigate({ to: '/practice/listening/import-audio' });
+    /* import-video / saved-practice flip on in 6C-6D. */
   };
 
   return (

@@ -240,7 +240,13 @@ Slice plan: `C:\Users\vikusyusichka\.claude\plans\parallel-sparking-sun.md`.
   `from-text.index` / `from-text.session`, component
   `src/components/listening/ListeningResultView.tsx`. ALL listening data is
   device-local (IndexedDB) — iOS parity.
-- 6B import audio · 6C import video · 6D saved practice — next, in order.
+- **6B — Import Audio + transcription. DONE (built + gates + live-verified
+  2026-07-20; real worker round-trip proven with a generated WAV — verify
+  once manually with a real voice recording).** Files:
+  `src/lib/listening{Transcribe,Import}.ts`, route
+  `practice.listening.import-audio.index.tsx`, shared
+  `ListeningQuestionList` component.
+- 6C import video · 6D saved practice — next, in order.
 
 ### Phase 6 reference (original notes) — `Features/Listening`, 63 files
 ListenFromText (Web Speech TTS / Azure, word-sync highlight), ImportAudio

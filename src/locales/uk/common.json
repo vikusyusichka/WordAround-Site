@@ -1073,6 +1073,24 @@
       "watchOnlyBody": "You listened for {{time}}.",
       "practiceAgain": "Practice again",
       "back": "Back to Listening"
+    },
+    "importAudio": {
+      "title": "Import Audio",
+      "subtitle": "Turn your own audio into listening practice.",
+      "uploadTitle": "Upload audio file",
+      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
+      "chooseFile": "Choose file",
+      "clearFile": "Remove file",
+      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
+      "continue": "Continue",
+      "processingTitle": "Preparing your listening practice",
+      "step1": "Uploading audio",
+      "step2": "Transcribing speech",
+      "step3": "Creating questions",
+      "processError": "We couldn’t prepare this audio. Try again.",
+      "tryAgain": "Try again",
+      "chooseAnother": "Choose another file",
+      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
     }
   }
 }
