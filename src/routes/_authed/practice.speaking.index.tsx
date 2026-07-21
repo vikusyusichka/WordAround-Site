@@ -21,7 +21,8 @@ function SpeakingLanding() {
     if (mode === 'ai-conversation') void navigate({ to: '/practice/speaking/conversation' });
     else if (mode === 'free-speaking') void navigate({ to: '/practice/speaking/free' });
     else if (mode === 'describe-picture') void navigate({ to: '/practice/speaking/picture' });
-    /* other modes flip on in 7D-7E. */
+    else if (mode === 'debate-mode') void navigate({ to: '/practice/speaking/debate' });
+    /* shadowing + pronunciation flip on in 7E. */
   };
 
   return (

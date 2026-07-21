@@ -1229,6 +1229,28 @@
       "photoBy": "Photo by",
       "onUnsplash": "on Unsplash",
       "startDescribing": "Start describing"
+    },
+    "debate": {
+      "title": "Debate Mode",
+      "subtitle": "Argue your side against an AI opponent.",
+      "start": "Start Debate",
+      "pickSide": "Your side",
+      "preparing": "Preparing the debate topic…",
+      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "side": {
+        "agree": {
+          "title": "Agree",
+          "subtitle": "Defend the statement"
+        },
+        "disagree": {
+          "title": "Disagree",
+          "subtitle": "Argue against it"
+        },
+        "surprise": {
+          "title": "Surprise Me",
+          "subtitle": "We pick a side for you"
+        }
+      }
     }
   }
 }

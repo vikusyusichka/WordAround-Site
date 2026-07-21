@@ -37,7 +37,8 @@ Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
 
 ## Done so far (commits on `main`, newest first)
-- 7C — Speaking describe picture — (pending commit)
+- 7D — Speaking debate — (pending commit)
+- 7C — Speaking describe picture — `c5265e2`
 - 7B — Speaking free speaking — `1688b98`
 - 7A — Speaking landing + AI conversation — `b587ce2`
 - 6A–6D — Listening module (landing/from-text, import audio, import video, saved+resume) — `405232e` `e7d6cce` `45359e1` `ad76fcc`
@@ -310,8 +311,31 @@ fallback** on every mode (also drives automated verify). TTS reuses
   arrow.clockwise→ArrowClockwise). Landing card enabled. Live-verified: real
   Unsplash photo (1080×608) + credit, New photo swapped it, typed description →
   feedback 75 quoting the learner's own adjectives.
-- 7D Debate (`debate_feedback`, 7 metrics) · 7E Shadowing + Pronunciation
+- **7D DONE + LIVE-VERIFIED** — Debate. `src/lib/speakingDebate.ts`: sides
+  (agree/disagree/**surpriseMe** → `resolveConcreteSide(side, coin)`, AI always
+  `oppositeSide`), round plans (short 3 / medium 4 / long 5, iOS kind
+  sequences), pure session (`makeDebateSession` / `currentRound` /
+  `advanceSession` → `{session, didAdvance}`; `didAdvance:false` on the last
+  round ends the debate), iOS-verbatim `buildOpeningPrompt` / `buildReplyPrompt`
+  (stance verbs support/oppose, round aiInstruction, history labelled
+  Opponent/Learner, `speaking_conversation` task, history 4), fallbacks +
+  5 local hints per language. Hook `useDebate.ts` (topic → AI opening + TTS →
+  per-round reply → advance → auto-end → `debate_feedback`). Routes
+  `practice.speaking.debate.index` (side picker) + `.debate.session` (round
+  progress bar + learner prompt + chat + hint + input). Icons +3
+  (hand.thumbsup.fill→ThumbsUp, hand.thumbsdown.fill→ThumbsDown,
+  shuffle→Shuffle). Landing card enabled. Live-verified: 5-round debate
+  played to the end → AI feedback overall 70 with **all 7 metrics** (incl.
+  Argument Quality 60 / Persuasiveness 80 / Structure 80) + 5 correction cards;
+  separately the timer expiry auto-end produced the 7-metric local fallback.
+- 7E Shadowing + Pronunciation
   (Azure via `/api/speech/azure-token` — optional/last, degrades if unconfigured).
+
+**7D verify note:** navigating session→session with only different search params
+does NOT remount the route component (TanStack reuses it), so a finished session
+stays finished — navigate away and back to force a fresh one. Also the debate
+hint auto-hides after 6s (iOS parity), which is shorter than a browser-tool
+round-trip: click and assert in the SAME evaluation or it looks like a bug.
 
 **7B gotcha (bites any "fetch once on mount" effect):** guarding a mount effect
 with a `seededRef` AND cancelling in its cleanup silently drops the result under

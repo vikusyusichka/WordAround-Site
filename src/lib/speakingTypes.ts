@@ -57,7 +57,7 @@ export const SPEAKING_MENU_ITEMS: SpeakingMenuItemDef[] = [
     iconSystemName: 'person.2.fill',
     accentColor: '#ED6699',
     blobColor: '#FADBE7',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 'shadowing',
