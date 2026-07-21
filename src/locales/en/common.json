@@ -1209,6 +1209,21 @@
       "transcript": "Transcript",
       "practiceAgain": "Practice again",
       "back": "Back to Speaking"
+    },
+    "free": {
+      "title": "Free Speaking",
+      "subtitle": "Speak freely on a topic and get feedback.",
+      "preview": "Preview",
+      "autoTopic": "AI-generated topic",
+      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
+      "auto": "Auto",
+      "start": "Start Free Speaking",
+      "generating": "Generating topic…",
+      "generatingHint": "Picking something that fits your level.",
+      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
+      "transcript": "Transcript",
+      "transcriptHint": "Your transcript will appear here while you speak.",
+      "startSpeaking": "Start speaking"
     }
   }
 }

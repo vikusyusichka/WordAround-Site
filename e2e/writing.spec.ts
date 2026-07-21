@@ -24,6 +24,7 @@ for (const route of [
   '/practice/listening/saved',
   '/practice/speaking',
   '/practice/speaking/conversation',
+  '/practice/speaking/free',
 ]) {
   test(`logged-out visit to ${route} redirects to /auth`, async ({ page }) => {
     await page.addInitScript(() => localStorage.setItem('wa.onboarded', '1'));

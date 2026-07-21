@@ -39,7 +39,7 @@ export const SPEAKING_MENU_ITEMS: SpeakingMenuItemDef[] = [
     iconSystemName: 'mic.fill',
     accentColor: '#3CCF91',
     blobColor: '#D1F5E6',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 'describe-picture',

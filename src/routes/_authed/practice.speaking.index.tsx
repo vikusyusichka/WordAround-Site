@@ -19,7 +19,8 @@ function SpeakingLanding() {
 
   const handleSelect = (mode: SpeakingModeId) => {
     if (mode === 'ai-conversation') void navigate({ to: '/practice/speaking/conversation' });
-    /* other modes flip on in 7B-7E. */
+    else if (mode === 'free-speaking') void navigate({ to: '/practice/speaking/free' });
+    /* other modes flip on in 7C-7E. */
   };
 
   return (
