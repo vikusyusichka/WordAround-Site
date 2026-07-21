@@ -1134,5 +1134,73 @@
         "completed": "Completed"
       }
     }
+  },
+  "speaking": {
+    "sectionTitle": "Practice modes",
+    "today": {
+      "title": "Today progress",
+      "subtitle": "of speaking practice"
+    },
+    "menu": {
+      "comingSoon": "Coming soon",
+      "conversation": {
+        "title": "AI Conversation",
+        "subtitle": "Talk with an AI tutor in real-time."
+      },
+      "free": {
+        "title": "Free Speaking",
+        "subtitle": "Speak on generated topics and get feedback."
+      },
+      "picture": {
+        "title": "Describe Picture",
+        "subtitle": "Describe images and learn useful vocabulary."
+      },
+      "debate": {
+        "title": "Debate Mode",
+        "subtitle": "Discuss topics and build your arguments."
+      },
+      "shadowing": {
+        "title": "Shadowing",
+        "subtitle": "Repeat phrases and improve pronunciation."
+      },
+      "pronunciation": {
+        "title": "Pronunciation Trainer",
+        "subtitle": "Focus on difficult sounds and words."
+      }
+    },
+    "input": {
+      "speak": "Speak",
+      "stop": "Stop",
+      "listening": "Listening…",
+      "placeholder": "Type your answer…",
+      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+    },
+    "conversation": {
+      "title": "AI Conversation",
+      "subtitle": "Talk with an AI tutor in real-time.",
+      "topic": "Topic",
+      "scenarios": "Scenarios",
+      "autoTopic": "Surprise me",
+      "autoTopicHint": "We’ll generate a fresh topic for you.",
+      "length": "Length",
+      "min": "min",
+      "start": "Start conversation",
+      "starting": "Starting…",
+      "startError": "Couldn’t start the conversation. Try again.",
+      "end": "End",
+      "dismiss": "Dismiss",
+      "hint": "Hint",
+      "getHint": "Need a hint?",
+      "hintLoading": "Thinking…"
+    },
+    "result": {
+      "title": "Practice Complete",
+      "generating": "Analysing your speaking…",
+      "overall": "Overall score",
+      "corrections": "Corrections",
+      "transcript": "Transcript",
+      "practiceAgain": "Practice again",
+      "back": "Back to Speaking"
+    }
   }
 }

@@ -48,6 +48,7 @@ import {
   ListBullets,
   ListChecks,
   MagicWand,
+  Megaphone,
   Microphone,
   Minus,
   NotePencil,
@@ -71,6 +72,7 @@ import {
   Translate,
   Trash,
   Tray,
+  UsersThree,
   WarningCircle,
   XCircle,
   User,
@@ -194,6 +196,11 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'waveform.badge.plus': Waveform,
   'film.stack': FilmStrip,
   'bookmark.fill': BookmarkSimple,
+  /* Phase 7 Speaking */
+  'bubble.left.and.bubble.right.fill': ChatsCircle,
+  'person.2.fill': UsersThree,
+  'megaphone.fill': Megaphone,
+  'list.bullet.rectangle.fill': ListChecks,
 };
 
 export const iconForSFSymbol = (name: string): PhosphorIcon =>

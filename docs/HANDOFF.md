@@ -37,6 +37,9 @@ Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
 
 ## Done so far (commits on `main`, newest first)
+- 7A — Speaking landing + AI conversation — (pending commit)
+- 6A–6D — Listening module (landing/from-text, import audio, import video, saved+resume) — `405232e` `e7d6cce` `45359e1` `ad76fcc`
+- 5A–5F — Reading module — `d90235b`
 - 4D1 — GrammarNotes: topics + notes CRUD + block editor — `957b5c5`
 - 4B — WriteWords difficulty system (medium/hard, timer, lose, settings) — `917b444`
 - 4C3 — Essays helper toolbar (translate/synonym) — `c65dfb6`
@@ -266,10 +269,28 @@ ListenFromText (Web Speech TTS / Azure, word-sync highlight), ImportAudio
 (→ worker `POST /api/listening/transcribe` Whisper), ImportVideo (+`<video>`+VTT),
 SavedPractice. Persistence **local** (IndexedDB, audio as Blob).
 
-### Phase 7 — Speaking `L` (`Features/Speaking`, 113 files, hardest)
-AIConversation (streaming replies — add worker `POST /api/stream` SSE),
-Debate, DescribePicture (`/api/describe-picture/random-image`), FreeSpeaking.
-Voice: Azure Speech SDK via `/api/speech/azure-token`; TTS Web Speech.
+### Phase 7 — Speaking `L` (IN PROGRESS — plan approved, 5 slices)
+Plan `parallel-sparking-sun.md`. Web deviation: STT = **Web Speech API**
+(`webkitSpeechRecognition`, Chromium/Edge only) with a **first-class text-input
+fallback** on every mode (also drives automated verify). TTS reuses
+`speakListening`. No persistence (ephemeral); recent topic titles → localStorage.
+- **7A DONE + LIVE-VERIFIED** — landing + speech infra + AI Conversation.
+  `src/lib/speechRecognition.ts` (Web Speech wrapper), `speakingTypes.ts`,
+  `speakingConversation.ts` (task `speaking_conversation`, plain text, hist 4),
+  `speakingFeedback.ts` (task `speaking_feedback`/`debate_feedback` JSON + local
+  fallback formulas), `speakingTopics.ts` (`POST /api/speaking/topic` + recent
+  store). Hook `useSpeakingConversation.ts` (state machine: mic/text, timer,
+  hint 9s, End→feedback). Components `SpeakingInputBar`, `ConversationResultView`.
+  Routes `practice.speaking.index` / `.conversation.index` / `.conversation.session`.
+  Live-verified vs real worker: reply + hint + feedback (overall 75, 4 metrics).
+- 7B Free Speaking · 7C Describe Picture (`/api/describe-picture/random-image`) ·
+  7D Debate (`debate_feedback`, 7 metrics) · 7E Shadowing + Pronunciation
+  (Azure via `/api/speech/azure-token` — optional/last, degrades if unconfigured).
+
+**Verify note:** auth-gate is bypassed for preview by injecting session state:
+`import('/src/stores/sessionStore.ts').then(m=>m.useSessionStore.setState({state:{kind:'authenticated',…}}))`
+then client-nav via `window.__TSR_ROUTER__.navigate({to:…})` (full page reload
+resets auth). Screenshot tool may hang while TTS speaks — page-text is enough.
 
 ### Phase 8 — Polish `M`
 PWA (manifest + service worker, offline flashcards via IndexedDB), container-query
