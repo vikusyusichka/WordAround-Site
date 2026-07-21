@@ -37,7 +37,8 @@ Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
 
 ## Done so far (commits on `main`, newest first)
-- 7B — Speaking free speaking — (pending commit)
+- 7C — Speaking describe picture — (pending commit)
+- 7B — Speaking free speaking — `1688b98`
 - 7A — Speaking landing + AI conversation — `b587ce2`
 - 6A–6D — Listening module (landing/from-text, import audio, import video, saved+resume) — `405232e` `e7d6cce` `45359e1` `ad76fcc`
 - 5A–5F — Reading module — `d90235b`
@@ -293,8 +294,23 @@ fallback** on every mode (also drives automated verify). TTS reuses
   (setup) + `.free.session`. Reuses `SpeakingInputBar` + `ConversationResultView`.
   Landing card enabled. Live-verified vs real worker: topic "Favorite Local
   Eats" → 2 transcript chunks → feedback 85 overall.
-- 7C Describe Picture (`/api/describe-picture/random-image`) ·
-  7D Debate (`debate_feedback`, 7 metrics) · 7E Shadowing + Pronunciation
+- **7C DONE + LIVE-VERIFIED** — Describe Picture. `src/lib/describePicture.ts`:
+  `fetchRandomImage()` POST `/api/describe-picture/random-image` (20s timeout,
+  429→`rate-limited`, non-2xx→`server-error`, missing id/imageURL→`no-image`,
+  bad body→`invalid-response`, fetch reject→`network`; author defaults to
+  "Unknown"/unsplash.com), plus `PICTURE_CONTEXT` (fixed monologue topic,
+  iOS-verbatim promptContext) and `PICTURE_PROMPT_HINTS` (people/objects/
+  actions/colors/emotions). Hook `useDescribePicture.ts` (loads an image,
+  reuses the 7B transcript accumulator, "New photo" swaps image + resets
+  transcript, timer, End→`speaking_feedback` with PICTURE_CONTEXT). Component
+  `DescribePictureImageCard` (photo + **required Unsplash attribution link** +
+  prompt chips + error/retry state). Routes `practice.speaking.picture.index` +
+  `.picture.session`. Icons +5 (cube.box.fill→Cube, paintpalette.fill→Palette,
+  text.bubble.fill→ChatTeardropText, photo.fill→ImageIcon,
+  arrow.clockwise→ArrowClockwise). Landing card enabled. Live-verified: real
+  Unsplash photo (1080×608) + credit, New photo swapped it, typed description →
+  feedback 75 quoting the learner's own adjectives.
+- 7D Debate (`debate_feedback`, 7 metrics) · 7E Shadowing + Pronunciation
   (Azure via `/api/speech/azure-token` — optional/last, degrades if unconfigured).
 
 **7B gotcha (bites any "fetch once on mount" effect):** guarding a mount effect

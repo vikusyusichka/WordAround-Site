@@ -48,7 +48,7 @@ export const SPEAKING_MENU_ITEMS: SpeakingMenuItemDef[] = [
     iconSystemName: 'photo.fill',
     accentColor: '#F7A310',
     blobColor: '#F2DBA1',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 'debate-mode',

@@ -1208,6 +1208,27 @@
       "transcript": "Transcript",
       "transcriptHint": "Your transcript will appear here while you speak.",
       "startSpeaking": "Start speaking"
+    },
+    "picture": {
+      "title": "Describe Picture",
+      "subtitle": "Describe what you see and get feedback.",
+      "start": "Start Describe Picture",
+      "prompt": "Describe what you can see in this picture.",
+      "tryToMention": "Try to mention:",
+      "hints": {
+        "people": "people",
+        "objects": "objects",
+        "actions": "actions",
+        "colors": "colors",
+        "emotions": "emotions"
+      },
+      "loading": "Loading a photo…",
+      "retry": "Try again",
+      "newPhoto": "New photo",
+      "imageAlt": "Photo to describe",
+      "photoBy": "Photo by",
+      "onUnsplash": "on Unsplash",
+      "startDescribing": "Start describing"
     }
   }
 }

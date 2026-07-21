@@ -1,9 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it, vi } from 'vitest';
 
 import '@/lib/i18n';
 import { FreeSpeakingTopicCard } from './FreeSpeakingTopicCard';
 import { ConversationResultView } from './ConversationResultView';
+import { DescribePictureImageCard } from './DescribePictureImageCard';
 import type { SpeakingFeedback } from '@/lib/speakingTypes';
 
 describe('FreeSpeakingTopicCard', () => {
@@ -53,5 +54,48 @@ describe('ConversationResultView', () => {
     expect(screen.getByText('78')).toBeInTheDocument();
     expect(screen.getByText('Nice fluent answers.')).toBeInTheDocument();
     expect(screen.getByText('I went yesterday')).toBeInTheDocument();
+  });
+});
+
+describe('DescribePictureImageCard', () => {
+  const image = {
+    id: 'abc',
+    imageURL: 'https://images.unsplash.com/photo-1',
+    authorName: 'Ada Lovelace',
+    authorURL: 'https://unsplash.com/@ada',
+  };
+
+  it('renders the photo, the required Unsplash attribution link and the prompt chips', () => {
+    render(
+      <DescribePictureImageCard
+        image={image}
+        isLoading={false}
+        error={null}
+        accentColor="#F7A310"
+        onRetry={() => {}}
+      />,
+    );
+    expect(screen.getByRole('img')).toHaveAttribute('src', image.imageURL);
+    const credit = screen.getByRole('link', { name: 'Ada Lovelace' });
+    expect(credit).toHaveAttribute('href', image.authorURL);
+    expect(screen.getByText('people')).toBeInTheDocument();
+    expect(screen.getByText('emotions')).toBeInTheDocument();
+  });
+
+  it('shows the error state with a retry button and no image', () => {
+    const onRetry = vi.fn();
+    render(
+      <DescribePictureImageCard
+        image={null}
+        isLoading={false}
+        error="Too many requests. Please try again shortly."
+        accentColor="#F7A310"
+        onRetry={onRetry}
+      />,
+    );
+    expect(screen.queryByRole('img')).not.toBeInTheDocument();
+    expect(screen.getByText(/Too many requests/)).toBeInTheDocument();
+    screen.getByRole('button', { name: 'Try again' }).click();
+    expect(onRetry).toHaveBeenCalledOnce();
   });
 });
