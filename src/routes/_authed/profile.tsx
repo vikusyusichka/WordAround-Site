@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { Icon } from '@/components/primitives/Icon';
+import { LanguageSwitcher } from '@/components/shell/LanguageSwitcher';
 import { useSessionStore } from '@/stores/sessionStore';
 
 export const Route = createFileRoute('/_authed/profile')({
@@ -32,6 +33,12 @@ function ProfilePage() {
             </span>
           </div>
         </div>
+
+        <div className="h-px bg-(--color-auth-field-border)" />
+
+        <LanguageSwitcher />
+
+        <div className="h-px bg-(--color-auth-field-border)" />
 
         <button
           type="button"

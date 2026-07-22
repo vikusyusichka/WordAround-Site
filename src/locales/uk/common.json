@@ -4,1300 +4,1315 @@
     "tagline": "Вивчай мови активно."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "Вивчай слова легко\nта із задоволенням",
+    "start": "Почнімо"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back"
+    "welcomeBack": "З поверненням",
+    "subtitle": "Увійдіть, щоб продовжити навчання",
+    "email": "Ел. пошта",
+    "emailPlaceholder": "Введіть ел. пошту",
+    "password": "Пароль",
+    "passwordPlaceholder": "Введіть пароль",
+    "forgotPassword": "Забули пароль?",
+    "signIn": "Увійти",
+    "signingIn": "Вхід...",
+    "signUp": "Зареєструватися",
+    "signOut": "Вийти",
+    "continueWithGoogle": "Продовжити з Google",
+    "createAccount": "Створити акаунт",
+    "accountCreatedInfo": "Акаунт створено. Ми надіслали лист для підтвердження.",
+    "resetEmailSent": "Лист для скидання пароля надіслано",
+    "showPassword": "Показати пароль",
+    "hidePassword": "Приховати пароль",
+    "back": "Назад"
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "Return here and continue",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "Підтвердіть ел. пошту",
+    "subtitle": "Ще один крок — і можна вчитися",
+    "sentTo": "Ми надіслали посилання для підтвердження на",
+    "fallbackEmail": "вашу пошту",
+    "step1": "Відкрийте лист у своїй пошті",
+    "step2": "Натисніть посилання для підтвердження",
+    "step3": "Поверніться сюди й продовжуйте",
+    "checkButton": "Я підтвердив пошту",
+    "checking": "Перевіряємо...",
+    "resend": "Надіслати лист ще раз",
+    "useAnotherAccount": "Використати інший акаунт",
+    "badgeInbox": "Перевірте пошту",
+    "badgeConfirm": "Підтвердіть",
+    "badgeDone": "Готово",
+    "resentInfo": "Лист для підтвердження надіслано ще раз",
+    "notVerifiedYet": "Пошту ще не підтверджено"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 6 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect password",
-    "userNotFound": "No account found with this email",
-    "invalidCredential": "Incorrect email or password",
-    "emailInUse": "This account already exists",
-    "weakPassword": "Password must be at least 6 characters",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again"
+    "emailRequired": "Вкажіть ел. пошту",
+    "emailInvalid": "Введіть коректну ел. пошту",
+    "emailFirst": "Спочатку введіть ел. пошту",
+    "passwordRequired": "Вкажіть пароль",
+    "passwordTooShort": "Пароль має містити щонайменше 6 символів",
+    "invalidEmail": "Некоректний формат ел. пошти",
+    "wrongPassword": "Неправильний пароль",
+    "userNotFound": "Акаунт із такою поштою не знайдено",
+    "invalidCredential": "Неправильна пошта або пароль",
+    "emailInUse": "Такий акаунт уже існує",
+    "weakPassword": "Пароль має містити щонайменше 6 символів",
+    "network": "Помилка мережі. Перевірте інтернет-зʼєднання",
+    "tooManyRequests": "Забагато спроб. Спробуйте пізніше",
+    "differentCredential": "Ця пошта вже використовується з іншим способом входу",
+    "noActiveAccount": "Активний акаунт не знайдено",
+    "default": "Не вдалося увійти. Спробуйте ще раз"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
-    "sets": "Sets",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "home": "Головна",
+    "speaking": "Говоріння",
+    "listening": "Аудіювання",
+    "reading": "Читання",
+    "writing": "Письмо",
+    "folders": "Теки",
+    "sets": "Набори",
+    "profile": "Профіль",
+    "create": "Створити",
+    "menu": "Меню",
+    "closeMenu": "Закрити меню",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "Практика",
+      "library": "Бібліотека"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
-    "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
-    "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "create": "Створити теку",
+    "loading": "Завантаження тек…",
+    "loadError": "Не вдалося завантажити ваші теки.",
+    "emptyTitle": "Тек поки немає",
+    "emptyBody": "Створіть першу теку, щоб упорядкувати набори.",
+    "setCount": "{{count}} наборів",
+    "setCount_one": "{{count}} набір",
+    "newTitle": "Нова тека",
+    "newSubtitle": "Обʼєднайте повʼязані набори.",
+    "editTitle": "Редагувати теку",
+    "name": "Назва",
+    "namePlaceholder": "напр. Подорожі",
+    "description": "Опис",
+    "descriptionPlaceholder": "Необовʼязково",
+    "color": "Колір",
+    "save": "Зберегти",
+    "saving": "Збереження…",
+    "cancel": "Скасувати",
+    "edit": "Редагувати теку",
+    "delete": "Видалити теку",
+    "deleteConfirm": "Видалити «{{title}}»? Цю дію не можна скасувати.",
+    "backToFolders": "Назад до тек",
+    "notFoundTitle": "Теку не знайдено",
+    "notFoundBody": "Можливо, цю теку було видалено.",
+    "noSetsInFolder": "У цій теці поки немає наборів.",
+    "saveError": "Не вдалося зберегти. Спробуйте ще раз.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "Вкажіть назву теки.",
+      "nameTooLong": "Назва теки має бути коротшою за 80 символів.",
+      "descTooLong": "Опис має бути коротшим за 120 символів."
     }
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets"
+    "create": "Створити набір",
+    "loading": "Завантаження наборів…",
+    "loadError": "Не вдалося завантажити ваші набори.",
+    "emptyTitle": "Наборів поки немає",
+    "emptyBody": "Створіть перший набір карток кнопкою «Створити».",
+    "cardCount": "{{count}} карток",
+    "cardCount_one": "{{count}} картка",
+    "keepPracticing": "Продовжуйте практику",
+    "delete": "Видалити набір",
+    "deleteConfirm": "Видалити «{{title}}»? Цю дію не можна скасувати.",
+    "notFoundTitle": "Набір не знайдено",
+    "notFoundBody": "Можливо, цей набір було видалено.",
+    "backToSets": "Назад до наборів"
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
-    "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "title": "Новий набір",
+    "subtitle": "Додайте слова та налаштуйте набір.",
+    "infoSection": "Про набір",
+    "setTitle": "Назва",
+    "setTitlePlaceholder": "напр. Основи для подорожі",
+    "setDescription": "Опис",
+    "setDescriptionPlaceholder": "Необовʼязково",
+    "privacy": "Приватність",
+    "private": "Приватний",
+    "public": "Публічний",
+    "cardsSection": "Картки",
+    "addCard": "Додати картку",
+    "cardN": "Картка {{n}}",
+    "removeCard": "Видалити картку",
+    "word": "Слово",
+    "translation": "Переклад",
+    "example": "Приклад (необовʼязково)",
+    "addImage": "Додати зображення",
+    "removeImage": "Видалити зображення",
+    "customizeSection": "Оформлення",
+    "color": "Колір",
+    "icon": "Іконка",
+    "folder": "Тека",
+    "noFolder": "Без теки",
+    "previewSection": "Попередній перегляд",
+    "previewPlaceholder": "Назва набору",
+    "save": "Створити набір",
+    "saving": "Збереження…",
+    "cancel": "Скасувати",
+    "saveError": "Не вдалося зберегти. Спробуйте ще раз.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "Вкажіть назву набору.",
+      "titleTooLong": "Назва набору має бути коротшою за 150 символів.",
+      "descTooLong": "Опис має бути коротшим за 200 символів.",
+      "noValidCards": "Додайте щонайменше одну картку зі словом і перекладом.",
+      "exampleTooLong": "Приклади мають бути коротшими за 150 символів."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again."
+    "imageTimeout": "Час завантаження зображення вичерпано. Перевірте зʼєднання та спробуйте ще раз."
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
-      "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "flashcards": "Картки",
+      "folders": "Теки",
+      "sets": "Набори",
+      "create": "Створити",
+      "profile": "Профіль",
+      "speaking": "Говоріння",
+      "listening": "Аудіювання",
+      "reading": "Читання",
+      "writing": "Письмо"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "Оберіть набір для практики",
+      "folders": "Керуйте своїми теками",
+      "sets": "Керуйте своїми наборами карток",
+      "create": "Створіть новий навчальний набір",
+      "speaking": "Практикуйте усне мовлення.",
+      "listening": "Тренуйте слух, щоб розуміти мову природно.",
+      "reading": "Читайте й опрацьовуйте матеріали.",
+      "writing": "Практикуйте мову активно."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "ГОВОРІННЯ",
+      "listening": "АУДІЮВАННЯ",
+      "reading": "ЧИТАННЯ",
+      "writing": "ПИСЬМО"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "Ціль на сьогодні",
+      "left": "залишилось слів: {{count}}"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "Вивчено сьогодні",
+      "words": "слів",
+      "accuracy": "Точність",
+      "greatJob": "Чудова робота!",
+      "streak": "Серія",
+      "days": "днів"
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "Продовжити навчання",
+    "yourSets": "Ваші набори",
+    "viewAll": "Показати всі",
+    "review": "Повторити",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "Наборів поки немає",
+      "emptyBody": "Створіть перший набір карток кнопкою «Створити»."
     },
     "create": {
-      "folder": "Folder",
-      "set": "Set",
-      "text": "Text",
-      "audio": "Audio",
-      "essay": "Essay"
+      "folder": "Тека",
+      "set": "Набір",
+      "text": "Текст",
+      "audio": "Аудіо",
+      "essay": "Есе"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "{{title}} — незабаром"
     }
+  },
+  "categories": {
+    "speaking": "Говоріння",
+    "listening": "Аудіювання",
+    "reading": "Читання",
+    "writing": "Письмо"
   },
   "phase0": {
     "title": "WordAround",
-    "subtitle": "Phase 0 працює. Дизайн-токени завантажені, Firebase підключено."
+    "subtitle": "Фаза 0 працює. Токени дизайну завантажено, Firebase підключено."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "Перевернути",
+    "known": "Я знав це",
+    "unknown": "Ще вчу",
+    "mastered": "Опановано",
+    "shuffle": "Перемішати",
+    "trackProgress": "Відстежувати прогрес",
+    "speak": "Озвучити",
+    "roundDone": "Раунд завершено",
+    "knewCount": "Ви знали {{known}} з {{total}}",
+    "repeatUnknown": "Повторити невідомі: {{count}}",
+    "restart": "Почати спочатку",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "Усі",
+      "studied": "Вивчені",
+      "remaining": "Залишилось",
+      "mastered": "Опановані"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "Додати картку",
+    "editCard": "Редагувати картку",
+    "deleteCard": "Видалити картку",
+    "deleteCardConfirm": "Видалити цю картку?",
+    "emptyPrompt": "У цьому наборі ще немає карток. Додайте першу.",
+    "save": "Зберегти",
+    "cancel": "Скасувати"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "Прогрес за сьогодні",
+      "unit": "слів",
+      "subtitle": "письмової практики"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "Режими практики",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "Письмо з наборів",
+        "subtitle": "Практикуйте написання слів зі своїх наборів."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "Есе",
+        "subtitle": "Пишіть тексти й отримуйте відгук ШІ щодо граматики та стилю."
       },
       "grammar": {
-        "title": "Grammar notes",
-        "subtitle": "Learn grammar with clear notes, examples and mini exercises."
+        "title": "Нотатки з граматики",
+        "subtitle": "Вивчайте граматику з поясненнями, прикладами й міні-вправами."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "Незабаром"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "Оберіть набір",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "Немає наборів зі словами",
+        "subtitle": "Створіть набір щонайменше з однією карткою, щоб почати практику письма."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "{{count}} слів",
+      "wordsCount_one": "{{count}} слово",
+      "close": "Закрити"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "Письмо з наборів",
+      "subtitle": "Введіть переклад і натисніть Enter.",
+      "translateHint": "Перекладіть своєю мовою",
+      "hint": "Підказка",
+      "skip": "Пропустити",
+      "submit": "Перевірити",
+      "inputPlaceholder": "Введіть тут…",
+      "loading": "Завантаження набору…",
+      "loadError": "Не вдалося завантажити цей набір.",
+      "noCards": "У цьому наборі немає карток.",
+      "back": "Назад",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "Налаштування",
+        "trainingMode": "Режим тренування",
+        "difficulty": "Складність"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "Слово → Переклад",
+        "translationToWord": "Переклад → Слово"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "Легко",
+        "medium": "Середньо",
+        "hard": "Складно",
+        "easyDesc": "Необмежені підказки й пропуски",
+        "mediumDesc": "1 літера-підказка, до 25% пропусків",
+        "hardDesc": "Без підказок і пропусків, на час"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "Перекладіть своєю мовою",
+        "translation": "Напишіть оригінальне слово"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "залишився {{count}} пропуск",
+      "skipsLeft_other": "залишилось пропусків: {{count}}",
+      "seconds": "{{count}} с",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "Раунд завершено!",
+          "subtitle": "Чудова робота. Ви завершили цей раунд письма."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "Час вичерпано",
+          "subtitle": "Таймер складного режиму дійшов до нуля. Спробуйте з першого слова."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "Неправильна відповідь",
+          "subtitle": "У складному режимі одна помилка завершує раунд."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
+        "perfectTitle": "Ідеальний раунд!",
+        "perfectBody": "Ви пройшли складний режим без помилок. Без пропусків. Без підказок. Чиста майстерність.",
+        "totalWords": "Усього слів",
+        "completedWords": "Виконано слів",
+        "skippedWords": "Пропущено слів",
+        "hintsUsed": "Використано підказок",
+        "streak": "Серія",
+        "difficultyLabel": "Складність",
+        "word": "Слово",
+        "yourAnswer": "Ваша відповідь",
+        "correctAnswer": "Правильна відповідь",
+        "tryAgain": "Спробувати ще раз"
       }
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "Есе",
+      "subtitle": "Тему добирає ШІ. Пишіть — і отримайте відгук.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "Запропонована",
+        "custom": "Моя тема"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "Напишіть власну тему есе...",
+        "generate": "Створити завдання"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "Згенерувати тему",
+        "regenerate": "Нова тема"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "Мова",
+      "difficulty": "Складність",
       "task": {
-        "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips"
+        "time": "≈ {{count}} хв",
+        "wordRange": "{{min}}-{{max}} слів",
+        "quickTips": "Короткі поради"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "Почніть писати есе тут...",
+        "wordCount": "{{count}} / {{min}}-{{max}} слів",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "Продовжуйте — потрібно щонайменше {{min}} слів.",
+          "aboveMaximum": "Ви перевищили ліміт — спробуйте скоротити.",
+          "valid": "У межах норми."
         },
-        "reset": "Reset"
+        "reset": "Очистити"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "Спершу введіть тему.",
+        "generationFailed": "Не вдалося згенерувати тему. Спробуйте ще раз."
       },
-      "generating": "Generating...",
+      "generating": "Генеруємо...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "Отримати підказку",
+        "remaining": "залишилось {{remaining}}/{{limit}}",
+        "noneLeft": "Підказок не залишилось",
+        "notAvailable": "На цьому рівні підказки недоступні",
+        "generating": "Готуємо підказку...",
+        "error": "Не вдалося отримати підказку. Спробуйте ще раз.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "Зміст",
+          "grammar": "Граматика",
+          "vocabulary": "Лексика",
+          "structure": "Структура"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again."
+        "button": "Перевірити есе",
+        "checking": "Перевіряємо...",
+        "disabled": "Спершу вкладіться в діапазон слів",
+        "error": "Не вдалося перевірити есе. Спробуйте ще раз."
       },
       "score": {
-        "title": "Essay score",
+        "title": "Оцінка есе",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "Відмінно",
+          "veryGood": "Дуже добре",
+          "good": "Добре",
+          "needsWork": "Потребує роботи"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "Граматика",
+          "vocabulary": "Лексика",
+          "length": "Обсяг",
+          "complexity": "Складність",
+          "relevance": "Відповідність темі",
+          "independence": "Самостійність"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
-        "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "sectionTitle": "Граматичні зауваження",
+        "count_one": "{{count}} зауваження",
+        "count_other": "зауважень: {{count}}",
+        "empty": "Граматичних помилок не знайдено — чудова робота!",
+        "original": "Було:",
+        "suggestion": "Пропозиція:",
+        "reason": "Причина:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "Граматика",
+          "vocabulary": "Лексика",
+          "style": "Стиль"
         },
         "save": {
-          "idle": "Save to Grammar notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
+          "idle": "Зберегти в нотатки",
+          "saving": "Збереження…",
+          "saved": "Збережено",
+          "duplicate": "Уже збережено",
+          "failed": "Повторити збереження"
         }
       },
       "helper": {
-        "translate": "Translate",
-        "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "translate": "Переклад",
+        "synonym": "Синонім",
+        "remaining": "залишилось {{remaining}}",
+        "notAvailable": "Недоступно на цьому рівні"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "Переклад",
+        "placeholder": "Введіть слово або коротку фразу",
+        "submit": "Перекласти",
+        "submitting": "Перекладаємо..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "Синоніми",
+        "placeholder": "Введіть слово",
+        "submit": "Знайти синоніми",
+        "submitting": "Шукаємо..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "З",
+        "to": "На",
+        "close": "Закрити",
+        "noResult": "Нічого не знайдено.",
+        "sameLanguage": "Оберіть іншу вихідну мову.",
+        "error": "Сервіс тимчасово недоступний."
       }
     },
     "grammar": {
-      "title": "Grammar notes",
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "title": "Нотатки з граматики",
+      "subtitle": "Упорядковуйте граматику за темами з чіткими структурованими нотатками.",
+      "newTopic": "Нова тема",
+      "topicsEmptyTitle": "Тем поки немає",
+      "topicsEmptyBody": "Створіть першу тему, щоб почати збирати нотатки з граматики.",
+      "notesCount_one": "{{count}} нотатка",
+      "notesCount_other": "нотаток: {{count}}",
+      "deleteTopicConfirm": "Видалити «{{title}}» разом з усіма нотатками? Цю дію не можна скасувати.",
+      "notesEmptyTitle": "Нотаток поки немає",
+      "notesEmptyBody": "Додайте першу нотатку до цієї теми.",
+      "newNote": "Нова нотатка",
+      "deleteNoteConfirm": "Видалити цю нотатку? Цю дію не можна скасувати.",
+      "loading": "Завантаження…",
+      "loadError": "Не вдалося завантажити ваші нотатки з граматики.",
+      "notFoundTitle": "Не знайдено",
+      "notFoundBody": "Можливо, цей елемент було видалено.",
+      "back": "Назад",
+      "updated": "Оновлено {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel"
+        "newTitle": "Нова тема",
+        "editTitle": "Редагувати тему",
+        "name": "Назва",
+        "namePlaceholder": "напр. Іспанські дієслова",
+        "description": "Опис",
+        "descriptionPlaceholder": "Необовʼязково",
+        "color": "Колір",
+        "icon": "Іконка",
+        "save": "Зберегти",
+        "cancel": "Скасувати"
       },
       "noteType": {
-        "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "standard": "Звичайна",
+        "mistake": "Помилка",
+        "rule": "Правило",
+        "comparison": "Порівняння",
+        "cheatSheet": "Шпаргалка",
+        "exercise": "Вправа"
       },
       "block": {
-        "heading": "Heading",
-        "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)"
+        "heading": "Заголовок",
+        "paragraph": "Текст",
+        "bulletList": "Список",
+        "rule": "Правило",
+        "example": "Приклад",
+        "warning": "Застереження",
+        "quote": "Цитата",
+        "divider": "Роздільник",
+        "addBlock": "Додати блок",
+        "addItem": "Додати пункт",
+        "moveUp": "Вгору",
+        "moveDown": "Вниз",
+        "remove": "Видалити",
+        "secondaryPlaceholder": "Деталь / переклад (необовʼязково)"
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…"
+        "heading": "Заголовок",
+        "paragraph": "Напишіть пояснення…",
+        "bulletList": "Пункт списку",
+        "rule": "Поясніть граматичне правило…",
+        "example": "Додайте приклад…",
+        "warning": "Типова помилка або застереження…",
+        "quote": "Речення, яке варто запамʼятати…"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again."
+        "titlePlaceholder": "Назва нотатки",
+        "save": "Зберегти нотатку",
+        "saving": "Збереження…",
+        "delete": "Видалити нотатку",
+        "saveError": "Не вдалося зберегти. Спробуйте ще раз."
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "Тести",
+        "new": "Новий тест",
+        "start": "Почати тест",
+        "delete": "Видалити тест",
+        "deleteConfirm": "Видалити «{{title}}»? Цю дію не можна скасувати.",
+        "emptyTitle": "Тестів поки немає",
+        "emptyBody": "Створіть тест із цієї нотатки, щоб перевірити себе.",
+        "loadError": "Не вдалося завантажити тести.",
+        "questionsCount_one": "{{count}} питання",
+        "questionsCount_other": "питань: {{count}}",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "Вибір варіанта",
+          "trueFalse": "Правда / Неправда",
+          "fillGap": "Заповнити пропуск",
+          "shortAnswer": "Коротка відповідь"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead"
+          "title": "Створити тест",
+          "titlePlaceholder": "Назва тесту",
+          "mode": "Режим генерації",
+          "modeSmart": "Локально",
+          "modeSmartDesc": "Створити питання з тексту нотатки на пристрої.",
+          "modeAI": "Через ШІ",
+          "modeAIDesc": "Створити змістовніші контекстні питання за допомогою ШІ.",
+          "count": "Питань",
+          "types": "Типи питань",
+          "focus": "Фокус (необовʼязково)",
+          "focusPlaceholder": "напр. зосередитись на неправильних формах",
+          "preview": "Переглянути питання",
+          "regenerate": "Оновити перегляд",
+          "previewTitle": "Попередній перегляд",
+          "saveQuiz": "Зберегти тест",
+          "generateQuiz": "Згенерувати тест",
+          "generating": "Генеруємо…",
+          "saving": "Збереження…",
+          "useSmartInstead": "Створити локально"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "Питання {{current}} з {{total}}",
+          "submit": "Відповісти",
+          "next": "Далі",
+          "finish": "Завершити",
+          "correct": "Правильно!",
+          "incorrect": "Неправильно",
+          "correctAnswer": "Правильна відповідь: {{answer}}",
+          "typeMissing": "Введіть пропущене слово",
+          "typeAnswer": "Введіть відповідь",
+          "trueLabel": "Правда",
+          "falseLabel": "Неправда"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "{{correct}} з {{total}} правильно",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "Відмінно!",
+            "good": "Гарна робота!",
+            "keepPracticing": "Продовжуйте практику",
+            "reviewNote": "Перегляньте нотатку"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "Неправильні",
+          "correctSection": "Правильні",
+          "yourAnswer": "Ваша відповідь: {{answer}}",
+          "tryAgain": "Спробувати ще раз",
+          "reviewNote": "Переглянути нотатку",
+          "done": "Готово"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "Спершу додайте більше змісту — для тесту потрібно щонайменше два змістові блоки (правило, приклад, застереження, текст або цитата).",
+          "noMatchingQuestionTypes": "Недостатньо відповідного змісту для обраних типів питань. Увімкніть більше типів або додайте змісту.",
+          "aiFailed": "Не вдалося створити тест через ШІ. Спробуйте ще раз або створіть локально."
         }
-      },
-      "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
-        "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
-        },
-        "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
-          "quiz": "Quiz"
-        },
-        "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
-        },
-        "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
-        },
-        "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
-        },
-        "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
-        }
-      },
-      "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
-        "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
-        },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead."
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "Швидка помилка",
+        "title": "Швидка помилка",
+        "original": "Оригінальне речення",
+        "originalPlaceholder": "Приклад: I am agree with you",
+        "corrected": "Виправлення",
+        "correctedPlaceholder": "Приклад: I agree with you",
+        "explanation": "Пояснення (необовʼязково)",
+        "explanationPlaceholder": "Чому виправлення правильне?",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "Спершу додайте оригінальне речення.",
+          "corrected": "Додайте також виправлене речення."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done"
+        "save": "Зберегти помилку",
+        "saving": "Збереження…",
+        "saved": "Збережено в нотатки з граматики.",
+        "duplicate": "Уже збережено — дублікат пропущено.",
+        "failed": "Не вдалося зберегти. Спробуйте ще раз.",
+        "openTopic": "Відкрити «Типові помилки»",
+        "done": "Готово"
+      },
+      "templates": {
+        "topicTitle": "Шаблони тем",
+        "noteTitle": "Шаблони нотаток",
+        "button": "Шаблон",
+        "startFromTemplate": "Почати з шаблону",
+        "searchPlaceholder": "Пошук шаблонів…",
+        "allLanguages": "Усі",
+        "anyDifficulty": "Будь-яка",
+        "language": {
+          "en": "Англійська",
+          "es": "Іспанська",
+          "fr": "Французька",
+          "de": "Німецька"
+        },
+        "minutes": "{{minutes}} хв",
+        "notesIncluded_one": "{{count}} нотатка",
+        "notesIncluded_other": "нотаток: {{count}}",
+        "blocksIncluded_one": "{{count}} блок",
+        "blocksIncluded_other": "блоків: {{count}}",
+        "empty": "Немає шаблонів за вашими фільтрами.",
+        "use": "Використати шаблон",
+        "creating": "Створюємо…",
+        "replaceConfirm": "Замінити поточний вміст нотатки цим шаблоном? Натисніть «Скасувати», щоб додати шаблон нижче."
+      },
+      "review": {
+        "title": "Повторення",
+        "subtitle": "Закріплюйте вивчене за допомогою інтервального повторення.",
+        "cardTitle": "Повторити сьогодні",
+        "cardSubtitle_one": "{{count}} елемент готовий · ~{{minutes}} хв",
+        "cardSubtitle_other": "готово елементів: {{count}} · ~{{minutes}} хв",
+        "caughtUpTitle": "Усе опрацьовано",
+        "caughtUp": "Наразі все опрацьовано. Відкривайте або редагуйте нотатки, щоб зʼявились пропозиції для повторення.",
+        "start": "Почати повторення",
+        "skip": "Пропустити",
+        "itemOf": "Елемент {{current}} з {{total}}",
+        "untitled": "Нотатка з граматики",
+        "stats": "Повторень: {{count}} · серія {{streak}}",
+        "continueToQuestion": "Перейти до питання",
+        "showAnswer": "Показати відповідь",
+        "compareTitle": "Порівняйте свою відповідь",
+        "referenceAnswer": "Еталон: {{answer}}",
+        "openNote": "Відкрити повну нотатку",
+        "pool": {
+          "manual_one": "{{count}} елемент для повторення",
+          "manual_other": "елементів для повторення: {{count}}",
+          "recentlyOpened_one": "{{count}} нещодавно відкрита нотатка",
+          "recentlyOpened_other": "нещодавно відкритих нотаток: {{count}}",
+          "recentlyEdited_one": "{{count}} нещодавно змінена нотатка",
+          "recentlyEdited_other": "нещодавно змінених нотаток: {{count}}"
+        },
+        "sourceType": {
+          "note": "Нотатка",
+          "mistake": "Помилка",
+          "quiz": "Тест"
+        },
+        "phase": {
+          "source": "Вивчення",
+          "question": "Відповідь",
+          "result": "Оцінка"
+        },
+        "rating": {
+          "forgot": "Забув",
+          "hard": "Важко",
+          "good": "Добре",
+          "easy": "Легко"
+        },
+        "interval": {
+          "plus4h": "+4 години",
+          "plus1d": "+1 день",
+          "plus3d": "+3 дні",
+          "plus7d": "+7 днів"
+        },
+        "summary": {
+          "title": "Сесію завершено",
+          "emptyTitle": "Нічого не повторено",
+          "reviewed": "Повторено",
+          "correct": "Правильно",
+          "incorrect": "Неправильно",
+          "hintForgot": "Деякі елементи повернуться через 4 години.",
+          "hintHard": "Складні елементи повернуться завтра.",
+          "hintGood": "Добре засвоєні повернуться через 3 дні.",
+          "hintEasy": "Усі елементи повернуться через 7 днів.",
+          "done": "Назад до нотаток з граматики"
+        }
       }
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "Режими практики",
+    "loading": "Завантаження…",
+    "loadError": "Не вдалося завантажити ваші матеріали для читання.",
+    "notFound": "Можливо, цей матеріал було видалено.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "Прогрес за сьогодні",
+      "subtitle": "Не втрачайте серію читання."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "Незабаром",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "Мої тексти",
+        "subtitle": "Вставте свій текст і читайте з підказками."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "Читання з наборів",
+        "subtitle": "Створіть текст для читання зі своїх карток."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "Історії",
+        "subtitle": "Читайте інтерактивні історії з вибором сюжету."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "Швидкочитання",
+        "subtitle": "Тренуйте швидкість читання з таймером."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "Мої тексти",
+      "subtitle": "Ваші збережені тексти для читання.",
+      "addText": "Додати текст",
+      "emptyTitle": "Текстів поки немає",
+      "emptyBody": "Додайте перший текст, щоб почати практику читання.",
+      "savedTitle": "Збережені тексти"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "Новий",
+      "inProgress": "У процесі",
+      "completed": "Завершено"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "{{count}} слово",
+      "words_other": "{{count}} слів",
+      "start": "Почати",
+      "continue": "Продовжити",
+      "readAgain": "Прочитати ще раз",
+      "rename": "Перейменувати",
+      "renamePrompt": "Нова назва:",
+      "delete": "Видалити",
+      "deleteConfirm": "Видалити «{{title}}»? Цю дію не можна скасувати."
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "Продовжити читання",
+      "percent": "виконано {{percent}}%",
+      "button": "Продовжити"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "Головна думка",
+      "vocabulary": "Лексика",
+      "detailedComprehension": "Детальне розуміння",
+      "grammarAwareness": "Увага до граматики",
+      "speedFluency": "Швидкість / плавність"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "Розуміння",
+      "trueFalse": "Правда / Неправда",
+      "fillGap": "Заповнити пропуск",
+      "vocabulary": "Лексика",
+      "findEvidence": "Знайти підтвердження",
+      "orderReconstruction": "Порядок"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "Підсвічувати незнайомі слова",
+      "translationOnTap": "Переклад за натисканням",
+      "vocabularyHints": "Лексичні підказки",
+      "readingTimer": "Таймер читання"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "Додати текст",
+      "subtitle": "Вставте текст і налаштуйте практику читання.",
+      "untitled": "Текст без назви",
+      "pastePlaceholder": "Вставте або введіть текст сюди…",
+      "titleLabel": "Назва",
+      "titlePlaceholder": "Необовʼязково — ми можемо запропонувати",
+      "language": "Мова",
+      "difficulty": "Складність",
+      "autoDetect": "Визначити автоматично",
+      "manual": "Обрати вручну",
+      "focus": "Фокус читання",
+      "questionTypes": "Типи питань",
+      "assistance": "Допомога під час читання",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
-        "min": "min",
-        "detected": "Detected: {{level}}"
+        "words_one": "{{count}} слово",
+        "words_other": "{{count}} слів",
+        "chars_one": "{{count}} символ",
+        "chars_other": "{{count}} символів",
+        "min": "хв",
+        "detected": "Визначено: {{level}}"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "Спершу додайте текст.",
+        "tooShort": "Додайте щонайменше 20 слів."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "Зберегти текст",
+      "saveAndStart": "Зберегти й почати",
+      "saving": "Збереження…",
+      "saveError": "Не вдалося зберегти. Спробуйте ще раз.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
+        "pasteText": "Вставити",
+        "photo": "Фото",
         "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "generate": "Згенерувати",
+        "explore": "Знайти"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "Інформативний",
+        "casual": "Розмовний",
+        "academic": "Академічний",
+        "narrative": "Оповідний"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "Короткий",
+        "medium": "Середній",
+        "long": "Довгий"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "Завантажте фото сторінки — ми розпізнаємо текст.",
+        "chooseImage": "Обрати зображення",
+        "recognizing": "Розпізнавання… {{percent}}%",
+        "imageError": "Не вдалося розпізнати текст на цьому зображенні.",
+        "pdfHint": "Завантажте PDF — ми видобудемо текст.",
+        "choosePDF": "Обрати PDF",
+        "reading": "Читаємо PDF…",
+        "pdfError": "Не вдалося прочитати цей PDF.",
+        "topicPlaceholder": "Тема — напр. коралові рифи, друкарський верстат",
+        "explorePlaceholder": "Тема або ключове слово — напр. Марія Кюрі, Венеція",
+        "generateButton": "Згенерувати текст",
+        "exploreButton": "Отримати статтю",
+        "working": "Працюємо…",
+        "generateError": "Не вдалося згенерувати текст. Спробуйте ще раз.",
+        "exploreError": "Не вдалося знайти статтю за цією темою.",
+        "exploredFrom": "Джерело:"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again."
+      "startQuestions": "Перейти до питань",
+      "finish": "Завершити",
+      "next": "Далі",
+      "questionOf": "Питання {{current}} з {{total}}",
+      "closeTranslation": "Закрити переклад",
+      "translating": "Перекладаємо…",
+      "translationError": "Не вдалося перекласти. Спробуйте ще раз."
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts"
+      "comprehension": "Розуміння",
+      "correct": "Правильно",
+      "time": "Час читання",
+      "wpm": "слів/хв",
+      "mistakes": "Помилки",
+      "mistakesTitle": "Перегляньте свої помилки",
+      "readAgain": "Прочитати ще раз",
+      "back": "Назад до моїх текстів"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "Читання з наборів",
+      "subtitle": "Перетворіть набір карток на текст для читання.",
+      "pickSet": "Оберіть набір",
+      "changeSet": "Змінити набір",
+      "tooFewWords": "Для створення тексту в наборі має бути щонайменше {{count}} слів.",
+      "mode": "Режим генерації",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "Природний",
+        "strict": "Суворий",
+        "mixed": "Змішаний"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "Довжина тексту",
+      "generate": "Згенерувати текст",
+      "generating": "Створюємо ваш текст…",
+      "generateError": "Не вдалося створити текст. Спробуйте ще раз.",
+      "emptyTitle": "Текстів поки немає",
+      "emptyBody": "Оберіть набір карток — і ми перетворимо його на текст для читання.",
+      "savedTitle": "Збережені тексти"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "Швидкочитання",
+      "subtitle": "Тренуйте швидкість читання з таймером.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "Цільова швидкість",
+        "timer": "Тип таймера",
+        "length": "Довжина тексту"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "Спокійно",
+        "balanced": "Помірно",
+        "fast": "Швидко",
+        "challenge": "Виклик"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "Без таймера",
+        "soft": "Мʼякий таймер",
+        "strict": "Суворий таймер"
       },
       "length": {
-        "two": "2 min",
-        "five": "5 min",
-        "ten": "10 min"
+        "two": "2 хв",
+        "five": "5 хв",
+        "ten": "10 хв"
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
-      "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "summary": "Ціль {{wpm}} слів/хв · ~{{minutes}} хв читання",
+      "start": "Почати сесію",
+      "preparing": "Готуємо ваш уривок…",
+      "generateError": "Не вдалося створити уривок. Спробуйте ще раз.",
+      "recentTitle": "Останні сесії",
+      "chunkOf": "Частина {{current}} з {{total}}",
+      "previous": "Попередня частина",
+      "pause": "Пауза",
+      "resume": "Продовжити",
+      "nextChunk": "Наступна частина",
+      "finishReading": "Завершити читання",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "Відмінно",
+        "balanced": "У цілі",
+        "fast": "Майже вдалося",
+        "tooSlow": "Замало швидко"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "Середня швидкість",
+        "target": "Цільова швидкість",
+        "violations_one": "{{count}} пропуск таймера",
+        "violations_other": "пропусків таймера: {{count}}"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "Спробувати ще раз",
+      "backToSetup": "Назад до налаштувань"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "Історії",
+      "subtitle": "Читайте інтерактивні історії з вибором сюжету.",
+      "typeSection": "Жанр історії",
       "type": {
-        "adventure": "Adventure",
-        "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "adventure": "Пригоди",
+        "fantasy": "Фентезі",
+        "mystery": "Детектив",
+        "romance": "Романтика",
+        "dailyLife": "Повсякдення"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "Довжина історії",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "Коротка історія",
+        "multiChapter": "Кілька розділів",
+        "infinite": "Нескінченна історія"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "Почати історію",
+      "generating": "Пишемо вашу історію…",
+      "generatingNext": "Пишемо наступний розділ…",
+      "generateError": "Не вдалося написати історію. Спробуйте ще раз.",
+      "emptyTitle": "Історій поки немає",
+      "emptyBody": "Почніть свою першу інтерактивну історію вище.",
+      "savedTitle": "Ваші історії",
+      "chapterN": "Розділ {{n}}",
+      "chapterOf": "Розділ {{current}} / {{total}}",
+      "chapterScore": "Оцінка за розділ",
+      "whatNext": "Що станеться далі?",
+      "endStory": "Завершити історію",
+      "completeTitle": "Історію завершено",
+      "completeBody_one": "Ви прочитали {{count}} розділ. Чудово!",
+      "completeBody_other": "Ви прочитали розділів: {{count}}. Чудово!",
+      "backToStories": "Назад до історій"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "Режими практики",
+    "notFound": "Можливо, цю сесію було видалено.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "Прогрес за сьогодні",
+      "subtitle": "аудіювання"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "Незабаром",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "Слухати з тексту",
+        "subtitle": "Вставте текст, прослухайте його й перевірте розуміння."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "Імпорт аудіо",
+        "subtitle": "Завантажте своє аудіо й перетворіть його на практику."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "Імпорт відео",
+        "subtitle": "Завантажте відео, отримайте субтитри й практикуйтеся з питаннями."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "Збережена практика",
+        "subtitle": "Продовжуйте попередні сесії та переглядайте помилки."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
-      "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "mainIdea": "Головна думка",
+      "details": "Деталі",
+      "vocabulary": "Лексика",
+      "trueFalse": "Правда / Неправда"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "Слухати з тексту",
+      "subtitle": "Вставте текст і перетворіть його на практику аудіювання.",
+      "level": "Рівень",
+      "voiceSpeed": "Швидкість голосу",
+      "voiceType": "Тип голосу",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "Стандартний",
+        "female": "Жіночий",
+        "male": "Чоловічий"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "Показувати текст під час прослуховування",
+      "addQuestions": "Додати питання на розуміння",
+      "questionCount": "Кількість питань",
+      "questionTypes": "Типи питань",
+      "optionalTitle": "Назва (необовʼязково)",
+      "titlePlaceholder": "Дайте тексту назву",
+      "textPlaceholder": "Вставте свій текст сюди...",
+      "recommended": "Рекомендовано: 80–500 слів.",
+      "words": "слів",
+      "defaultTitle": "Практика аудіювання",
+      "start": "Почати слухати",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "Додайте текст, щоб почати слухати.",
+        "tooShort": "Додайте щонайменше 40 символів, щоб почати.",
+        "tooLong": "Текст задовгий. Будь ласка, до 5000 символів.",
+        "tooFewWords": "Додайте трохи більше тексту (близько 40+ слів), щоб ми склали гарні питання."
       }
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "Прослухати ще",
+      "transcript": "Транскрипт",
+      "questionsTitle": "Питання",
+      "answerFirst": "Дайте відповідь хоча б на одне питання перед перевіркою.",
+      "checkAnswers": "Перевірити відповіді",
+      "finish": "Завершити практику"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "Практику завершено",
+      "comprehension": "Розуміння",
+      "correct": "Правильно",
+      "time": "Час прослуховування",
+      "speed": "Швидкість",
+      "mistakes": "Помилки",
+      "mistakesTitle": "Перегляньте свої помилки",
+      "watchOnlyTitle": "Прослуховування завершено",
+      "watchOnlyBody": "Ви слухали {{time}}.",
+      "practiceAgain": "Практикувати ще",
+      "back": "Назад до аудіювання"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "Імпорт аудіо",
+      "subtitle": "Перетворіть своє аудіо на практику аудіювання.",
+      "uploadTitle": "Завантажте аудіофайл",
+      "uploadFormats": "MP3, M4A, WAV або AAC · до 50 МБ",
+      "chooseFile": "Обрати файл",
+      "clearFile": "Видалити файл",
+      "infoNote": "Ваше аудіо буде розшифровано у фоні. Транскрипт лишається прихованим під час практики.",
+      "continue": "Продовжити",
+      "processingTitle": "Готуємо вашу практику аудіювання",
+      "step1": "Завантаження аудіо",
+      "step2": "Розшифрування мовлення",
+      "step3": "Створення питань",
+      "processError": "Не вдалося підготувати це аудіо. Спробуйте ще раз.",
+      "tryAgain": "Спробувати ще раз",
+      "chooseAnother": "Обрати інший файл",
+      "transcriptHidden": "Транскрипт приховано, щоб це лишалося справжньою вправою на слух."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "Імпорт відео",
+      "subtitle": "Завантажте відео, отримайте субтитри й практикуйтеся з питаннями.",
+      "uploadTitle": "Завантажте відеофайл",
+      "uploadFormats": "MP4, MOV або M4V · до 80 МБ",
+      "step1": "Підготовка відео",
+      "step2": "Розшифрування мовлення",
+      "step3": "Створення субтитрів",
+      "subtitles": "Субтитри",
+      "subtitlesOn": "Субтитри увімкнено",
+      "subtitlesOff": "Субтитри вимкнено",
+      "noSubtitles": "Для цього відео субтитри недоступні.",
+      "tapWord": "Натисніть на слово, щоб перекласти його.",
+      "questionsLocked": "Питання відкриються після перегляду відео."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "Переклад слова",
+      "pickSet": "Оберіть набір",
+      "createSet": "Створити набір",
+      "addToSet": "Додати до набору",
+      "noSets": "У вас поки немає наборів. Створіть один нижче.",
+      "setNamePlaceholder": "напр. Слова з відео",
+      "createAndAdd": "Створити й додати слово",
+      "saved": "Збережено в «{{set}}»."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "Збережена практика",
+      "subtitle": "Продовжуйте сесії та переглядайте свої помилки.",
+      "emptyTitle": "Збережених сесій немає",
+      "emptyBody": "Завершіть або призупиніть сесію — і вона зʼявиться тут.",
+      "continueEyebrow": "Продовжити прослуховування",
+      "percentComplete": "виконано {{percent}}%",
+      "continue": "Продовжити",
+      "review": "Переглянути",
+      "delete": "Видалити сесію",
+      "deleteConfirm": "Видалити «{{title}}»? Цю дію не можна скасувати.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "Чернетка",
+        "inProgress": "У процесі",
+        "completed": "Завершено"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "Режими практики",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "Прогрес за сьогодні",
+      "subtitle": "усного мовлення"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "Незабаром",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "Розмова з ШІ",
+        "subtitle": "Спілкуйтеся з ШІ-репетитором наживо."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "Вільне мовлення",
+        "subtitle": "Говоріть на згенеровані теми й отримуйте відгук."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "Опис зображення",
+        "subtitle": "Описуйте фото й вивчайте корисну лексику."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "Дебати",
+        "subtitle": "Обговорюйте теми й будуйте аргументи."
       },
       "shadowing": {
-        "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "title": "Шедоуїнг",
+        "subtitle": "Повторюйте фрази й покращуйте вимову."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "Тренажер вимови",
+        "subtitle": "Зосередьтеся на складних звуках і словах."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "Говорити",
+      "stop": "Зупинити",
+      "listening": "Слухаю…",
+      "placeholder": "Введіть відповідь…",
+      "noVoice": "Цей браузер не підтримує голосове введення — введіть відповідь текстом."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
-      "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "title": "Розмова з ШІ",
+      "subtitle": "Спілкуйтеся з ШІ-репетитором наживо.",
+      "topic": "Тема",
+      "scenarios": "Сценарії",
+      "autoTopic": "Здивуй мене",
+      "autoTopicHint": "Ми згенеруємо для вас нову тему.",
+      "length": "Тривалість",
+      "min": "хв",
+      "start": "Почати розмову",
+      "starting": "Починаємо…",
+      "startError": "Не вдалося почати розмову. Спробуйте ще раз.",
+      "end": "Завершити",
+      "dismiss": "Закрити",
+      "hint": "Підказка",
+      "getHint": "Потрібна підказка?",
+      "hintLoading": "Думаю…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "Практику завершено",
+      "generating": "Аналізуємо ваше мовлення…",
+      "overall": "Загальна оцінка",
+      "corrections": "Виправлення",
+      "transcript": "Транскрипт",
+      "practiceAgain": "Практикувати ще",
+      "back": "Назад до говоріння"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
-      "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "title": "Вільне мовлення",
+      "subtitle": "Говоріть вільно на тему й отримайте відгук.",
+      "preview": "Попередній перегляд",
+      "autoTopic": "Тема, згенерована ШІ",
+      "autoTopicHint": "Ми підберемо нову тему для рівня {{level}} ({{language}}), коли ви почнете.",
+      "auto": "Авто",
+      "start": "Почати вільне мовлення",
+      "generating": "Генеруємо тему…",
+      "generatingHint": "Добираємо щось під ваш рівень.",
+      "fallbackTopic": "Не вдалося згенерувати тему. Використовуємо запасну.",
+      "transcript": "Транскрипт",
+      "transcriptHint": "Ваш транскрипт зʼявиться тут, поки ви говорите.",
+      "startSpeaking": "Почніть говорити"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "Опис зображення",
+      "subtitle": "Опишіть побачене й отримайте відгук.",
+      "start": "Почати опис зображення",
+      "prompt": "Опишіть, що ви бачите на цьому фото.",
+      "tryToMention": "Спробуйте згадати:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "людей",
+        "objects": "предмети",
+        "actions": "дії",
+        "colors": "кольори",
+        "emotions": "емоції"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "Завантажуємо фото…",
+      "retry": "Спробувати ще раз",
+      "newPhoto": "Нове фото",
+      "imageAlt": "Фото для опису",
+      "photoBy": "Фото:",
+      "onUnsplash": "на Unsplash",
+      "startDescribing": "Почніть описувати"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "Дебати",
+      "subtitle": "Обстоюйте свою позицію проти ШІ-опонента.",
+      "start": "Почати дебати",
+      "pickSide": "Ваша позиція",
+      "preparing": "Готуємо тему для дебатів…",
+      "roundOf": "Раунд {{current}} з {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "Погоджуюсь",
+          "subtitle": "Захищати твердження"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "Не погоджуюсь",
+          "subtitle": "Заперечувати його"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "Здивуй мене",
+          "subtitle": "Ми оберемо позицію за вас"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "Прослухати",
+      "playing": "Відтворення…",
+      "record": "Записати",
+      "stop": "Зупинити",
+      "playMine": "Мій запис",
+      "noRecording": "Цей браузер не підтримує запис — ви все одно можете слухати й повторювати."
     },
     "shadowing": {
-      "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "title": "Шедоуїнг",
+      "subtitle": "Слухайте, повторюйте й порівнюйте себе.",
+      "start": "Почати шедоуїнг",
+      "category": "Категорія",
+      "howItWorks": "Прослухайте фразу, повторіть її вголос під запис, тоді відтворіть свій запис і порівняйте ритм.",
+      "loading": "Генеруємо фрази…",
+      "phrase": "Фраза",
+      "previous": "Назад",
+      "nextPhrase": "Наступна фраза",
+      "finish": "Завершити",
+      "changeSettings": "Змінити налаштування",
+      "done": "виконано: {{count}}",
+      "allDone": "Усі фрази опрацьовано!",
+      "newSet": "Новий набір"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "Тренажер вимови",
+      "subtitle": "Зосередьтеся на складних звуках і словах.",
+      "start": "Почати тренування",
+      "focus": "Фокус",
+      "difficulty": "Складність",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "Легко",
+        "balanced": "Помірно",
+        "hard": "Складно"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "Генеруємо завдання…",
+      "sound": "Звук",
+      "scoringUnavailable": "Автоматичне оцінювання вимови ще не налаштоване на сервері, тому оцінка не показується. Прослуховування, запис і відтворення працюють."
     }
+  },
+  "profile": {
+    "interfaceLanguage": "Мова інтерфейсу"
+  },
+  "units": {
+    "min": "хв",
+    "words": "слів"
   }
 }

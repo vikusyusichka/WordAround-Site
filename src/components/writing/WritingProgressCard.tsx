@@ -13,7 +13,7 @@ export const WritingProgressCard = () => {
   const progress = useDailyProgress('writing');
   return (
     <ProgressCard
-      item={withDailyProgress(WRITING_TODAY_GOAL, progress)}
+      item={withDailyProgress(WRITING_TODAY_GOAL, progress, t('units.words'))}
       layout="goal"
       title={t('writing.today.title')}
       subtitle={t('writing.today.subtitle')}

@@ -24,14 +24,16 @@ export const useDailyProgress = (skill: DailyPracticeSkill): DailyProgress => {
   return progress;
 };
 
-/** Overlays live numbers onto a module's card template, keeping its colours. */
+/** Overlays live numbers onto a module's card template, keeping its colours.
+    `unitLabel` must come from i18n — the card shows it verbatim. */
 export const withDailyProgress = (
   template: HomeSetPreviewItem,
   progress: DailyProgress,
+  unitLabel: string,
 ): HomeSetPreviewItem => ({
   ...template,
   currentValue: progress.current,
   totalValue: progress.goal,
-  unit: progress.unit === 'words' ? 'words' : 'min',
+  unit: unitLabel,
   progress: progress.progress,
 });

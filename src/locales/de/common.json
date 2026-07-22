@@ -1,4 +1,8 @@
 {
+  "app": {
+    "name": "WordAround",
+    "tagline": "Learn languages, actively."
+  },
   "onboarding": {
     "subtitle": "Learn words in a fun and\nsimple way",
     "start": "Let’s Start"
@@ -13,6 +17,8 @@
     "forgotPassword": "Forgot password?",
     "signIn": "Sign In",
     "signingIn": "Signing In...",
+    "signUp": "Sign up",
+    "signOut": "Sign out",
     "continueWithGoogle": "Continue with Google",
     "createAccount": "Create Account",
     "accountCreatedInfo": "Account created. We sent a verification email.",
@@ -220,6 +226,16 @@
     "placeholder": {
       "comingSoon": "{{title}} — coming soon"
     }
+  },
+  "categories": {
+    "speaking": "Speaking",
+    "listening": "Listening",
+    "reading": "Reading",
+    "writing": "Writing"
+  },
+  "phase0": {
+    "title": "WordAround",
+    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
   },
   "study": {
     "flip": "Flip",
@@ -607,6 +623,51 @@
           "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
         }
       },
+      "quickMistake": {
+        "button": "Quick mistake",
+        "title": "Quick mistake",
+        "original": "Original sentence",
+        "originalPlaceholder": "Example: I am agree with you",
+        "corrected": "Correction",
+        "correctedPlaceholder": "Example: I agree with you",
+        "explanation": "Explanation (optional)",
+        "explanationPlaceholder": "Why is the correction right?",
+        "validation": {
+          "original": "Add the original sentence first.",
+          "corrected": "Add the corrected sentence too."
+        },
+        "save": "Save mistake",
+        "saving": "Saving…",
+        "saved": "Saved to Grammar notes.",
+        "duplicate": "Already saved — duplicate was skipped.",
+        "failed": "Couldn't save. Please try again.",
+        "openTopic": "Open Common Mistakes",
+        "done": "Done"
+      },
+      "templates": {
+        "topicTitle": "Topic templates",
+        "noteTitle": "Note templates",
+        "button": "Template",
+        "startFromTemplate": "Start from a template",
+        "searchPlaceholder": "Search templates…",
+        "allLanguages": "All",
+        "anyDifficulty": "Any",
+        "language": {
+          "en": "English",
+          "es": "Spanish",
+          "fr": "French",
+          "de": "German"
+        },
+        "minutes": "{{minutes}} min",
+        "notesIncluded_one": "{{count}} note",
+        "notesIncluded_other": "{{count}} notes",
+        "blocksIncluded_one": "{{count}} block",
+        "blocksIncluded_other": "{{count}} blocks",
+        "empty": "No templates match your filters.",
+        "use": "Use template",
+        "creating": "Creating…",
+        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead."
+      },
       "review": {
         "title": "Review",
         "subtitle": "Strengthen what you've learned with spaced repetition.",
@@ -667,51 +728,6 @@
           "hintEasy": "All items return in 7 days.",
           "done": "Back to Grammar notes"
         }
-      },
-      "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
-        "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
-        },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead."
-      },
-      "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
-        "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
-        },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done"
       }
     }
   },
@@ -1291,5 +1307,12 @@
       "sound": "Sound",
       "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
     }
+  },
+  "profile": {
+    "interfaceLanguage": "Anzeigesprache"
+  },
+  "units": {
+    "min": "Min.",
+    "words": "Wörter"
   }
 }

@@ -47,6 +47,7 @@ function ListeningLanding() {
             ...LISTENING_TODAY_GOAL,
             currentValue: minutes,
             totalValue: DAILY_GOAL_MINUTES,
+            unit: t('units.min'),
             progress: Math.min(minutes / DAILY_GOAL_MINUTES, 1),
           }}
           layout="goal"

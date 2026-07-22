@@ -11,7 +11,7 @@ export const ReadingProgressCard = () => {
   const progress = useDailyProgress('reading');
   return (
     <ProgressCard
-      item={withDailyProgress(READING_TODAY_GOAL, progress)}
+      item={withDailyProgress(READING_TODAY_GOAL, progress, t('units.min'))}
       layout="goal"
       title={t('reading.today.title')}
       subtitle={t('reading.today.subtitle')}

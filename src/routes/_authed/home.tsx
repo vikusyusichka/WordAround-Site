@@ -8,6 +8,7 @@ import { ProgressCard } from '@/components/home/ProgressCard';
 import { SetItem } from '@/components/home/SetItem';
 import { useSetsQuery } from '@/hooks/useSets';
 import { mapSetToPreview } from '@/lib/setPreview';
+import { useDailyProgress, withDailyProgress } from '@/hooks/useDailyProgress';
 import { STAT_CARDS, TODAY_GOAL } from '@/lib/homeTypes';
 
 export const Route = createFileRoute('/_authed/home')({
@@ -21,6 +22,7 @@ function HomeDashboard() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { data: sets } = useSetsQuery();
+  const writingProgress = useDailyProgress('writing');
 
   const previews = (sets ?? []).map((set) => ({
     id: set.id,
@@ -43,12 +45,10 @@ function HomeDashboard() {
         {/* Today's goal + continue learning, two-up on desktop. */}
         <div className="grid gap-4 lg:grid-cols-2 lg:gap-6">
           <ProgressCard
-            item={TODAY_GOAL}
+            item={withDailyProgress(TODAY_GOAL, writingProgress, t('units.words'))}
             layout="goal"
             title={t('home.todayGoal.title')}
-            subtitle={t('home.todayGoal.left', {
-              count: TODAY_GOAL.totalValue - TODAY_GOAL.currentValue,
-            })}
+            subtitle={t('home.todayGoal.left', { count: writingProgress.remaining })}
           />
           {continueItem && (
             <div className="flex flex-col gap-3">

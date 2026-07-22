@@ -34,7 +34,7 @@ function SpeakingLanding() {
 
       <div className="flex flex-col gap-8">
         <ProgressCard
-          item={withDailyProgress(SPEAKING_TODAY_GOAL, progress)}
+          item={withDailyProgress(SPEAKING_TODAY_GOAL, progress, t('units.min'))}
           layout="goal"
           title={t('speaking.today.title')}
           subtitle={t('speaking.today.subtitle')}

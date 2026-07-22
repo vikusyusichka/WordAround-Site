@@ -1307,5 +1307,12 @@
       "sound": "Sound",
       "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
     }
+  },
+  "profile": {
+    "interfaceLanguage": "Interface language"
+  },
+  "units": {
+    "min": "min",
+    "words": "words"
   }
 }
