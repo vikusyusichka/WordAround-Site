@@ -37,6 +37,7 @@ Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
 
 ## Done so far (commits on `main`, newest first)
+- PWA (installable + offline shell) — `077e1c5`
 - Ukrainian translation + language switcher — `55dc361`
 - Real daily practice stats — `6cb570f`
 - 7E — Speaking shadowing + pronunciation — `ad7762e`
@@ -389,8 +390,23 @@ resets auth). Screenshot tool may hang while TTS speaks — page-text is enough.
   it, so translations were unreachable. Also added `scripts/sync-locales.cjs` —
   non-English locales had silently lost keys; run it after adding en keys.
 
-**REMAINING:** PWA (manifest + service worker, offline flashcards via
-IndexedDB), container-query pad layout ≥700px, virtualized long lists
+- **PWA** (`077e1c5`) — `public/manifest.webmanifest`, generated icons
+  (`scripts/generate-icons.cjs`: 192/512/maskable-512/apple-touch, hand-rolled
+  PNG encoder, no image dep), hand-rolled `public/sw.js` (no Workbox), registered
+  from `src/lib/registerServiceWorker.ts` (PRODUCTION ONLY — a SW over Vite's
+  dev modules causes stale-module bugs). Caching: navigations network-first →
+  cached shell → `/offline.html`; `/assets/*` cache-first (content-hashed);
+  other same-origin static stale-while-revalidate; cross-origin never touched.
+  `_headers` serves sw.js + manifest `must-revalidate`. **Test it with
+  `npm run preview` (launch config `web-prod`, port 4173) — not `npm run dev`.**
+  **Two real bugs found and fixed during verification:** (1) `cache.match(req)`
+  silently missed because responses carry a `Vary` header → every offline
+  fallback failed; all lookups now pass `{ignoreVary: true}`. (2)
+  stale-while-revalidate only searched the asset cache, so precached
+  shell items (favicon/manifest) missed → now searches all caches.
+  Verified with the server STOPPED: the full app boots from cache.
+
+**REMAINING:** offline flashcards via IndexedDB, container-query pad layout ≥700px, virtualized long lists
 (`@tanstack/react-virtual`), perf, Firestore security-rules review before public
 launch. Polish/German are still English scaffolds (structure is in sync).
 
