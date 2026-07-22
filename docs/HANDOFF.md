@@ -410,18 +410,22 @@ resets auth). Screenshot tool may hang while TTS speaks — page-text is enough.
   shell items (favicon/manifest) missed → now searches all caches.
   Verified with the server STOPPED: the full app boots from cache.
 
-- **Firebase security rules** (`90be85f`) — `firestore.rules` + `storage.rules`
-  + `firebase.json` now in the repo; previously they existed ONLY in the Firebase
-  Console (unreviewable, no undo). Audited every Firestore/Storage path in BOTH
-  the web app and the live iOS app first: both store everything under
-  `users/{uid}/…` and nothing outside it; the Cloud Function is a stateless
-  Gemini proxy that never touches Firestore; iOS never uses Storage.
-  Ownership is enforced BY PATH, deliberately NOT by field validation (iOS/web
-  field schemas differ → a strict schema could silently break the shipped iOS
-  app). Email verification deliberately not required (would lock out existing
-  accounts). **NOT executed — the emulator needs Java 11+, this box has Java 8.**
-  `docs/SECURITY-RULES.md` has the Console publish/rollback steps in plain
-  language. ⚠️ **Still needs the user to publish them.**
+- **Firebase security rules** (`90be85f`, corrected in `8d1a7b7`) —
+  `firestore.rules` is now a VERBATIM COPY of what is live on the project.
+  **The live rules turned out to be correct and complete — no change was made
+  and none is needed.** Audited against every Firestore path in both codebases:
+  all owner-scoped, all covered (nested grammar notes/quizzes ride the
+  `grammarNoteTopics/{topicId}/{document=**}` rule). The Cloud Function never
+  touches Firestore. The real gap was that the rules lived only in the Console
+  with no history/undo — that is now fixed.
+  ⚠️ An earlier proposal to collapse everything into one
+  `users/{uid}/{document=**}` was REVERTED: it would have denied the
+  `users/{uid}` profile doc that the live rules allow — regression risk on a
+  shipped iOS app for zero security gain.
+  ⚠️ **Storage rules are still UNREVIEWED** — `storage.rules` is a proposal, not
+  a copy of live. Capture and reconcile before publishing.
+  Not executed (emulator needs Java 11+, box has Java 8); the Console's Rules
+  Playground is the practical check. See `docs/SECURITY-RULES.md`.
 
 **REMAINING:** offline flashcards via IndexedDB, container-query pad layout ≥700px, virtualized long lists
 (`@tanstack/react-virtual`), perf, Firestore security-rules review before public
