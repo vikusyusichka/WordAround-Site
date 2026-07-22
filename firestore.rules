@@ -1,0 +1,69 @@
+rules_version = '2';
+
+/* WordAround Firestore rules.
+ *
+ * IMPORTANT: this Firebase project is shared with the LIVE iOS app. These rules
+ * were written after auditing every Firestore path in BOTH codebases:
+ *
+ *   web (src/lib/firestore.ts) and iOS (Core/Services/Firebase/*.swift) both
+ *   store everything under users/{uid}/… and nothing outside it:
+ *     users/{uid}/folders/{folderId}
+ *     users/{uid}/flashcardSets/{setId}
+ *     users/{uid}/readingItems/{itemId}
+ *     users/{uid}/grammarReviewItems/{itemId}
+ *     users/{uid}/grammarNoteTopics/{topicId}
+ *     users/{uid}/grammarNoteTopics/{topicId}/notes/{noteId}
+ *     users/{uid}/grammarNoteTopics/{topicId}/notes/{noteId}/quizzes/{quizId}
+ *
+ *   The Cloud Function (functions/index.js) is a stateless Gemini proxy and
+ *   touches Firestore not at all, so nothing here can break it.
+ *
+ * Deliberate choices:
+ *
+ * - Ownership is enforced by PATH, not by validating document fields. Field
+ *   schemas differ subtly between the iOS and web writers; enforcing them in
+ *   rules risks silently breaking the shipped iOS app for real users. The path
+ *   check alone already makes it impossible to read or write anyone else's data.
+ *
+ * - Email verification is NOT required. The web auth-gate already enforces it
+ *   for password accounts, but adding it here would lock out any existing
+ *   account whose token predates that rule (and Google sign-in users).
+ *   To tighten later: add `&& request.auth.token.email_verified` to isOwner().
+ *
+ * - Sets carry a `privacy: 'public'` field, but NO code in either app ever reads
+ *   another user's data, so there is intentionally no cross-user read path here.
+ *   Public sharing needs a real feature (and its own rules) before it works —
+ *   the field is currently inert. Do not "fix" that by loosening these rules.
+ */
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    /* Everything a user owns lives under their own document. The recursive
+       wildcard covers the nested grammar notes/quizzes without needing a rule
+       per level — and keeps working if a future subcollection is added. */
+    match /users/{uid}/{document=**} {
+      allow read, write: if isOwner(uid);
+    }
+
+    /* The users/{uid} document ITSELF is not covered by the recursive match
+       above ({document=**} needs at least one further segment), and neither app
+       reads or writes it. Spelled out for the next reader — in Firestore an
+       `if false` grants nothing but also BLOCKS nothing; access is denied here
+       simply because no rule grants it. */
+    match /users/{uid} {
+      allow read, write: if false;
+    }
+
+    /* Same caveat: this does not override the allow above (Firestore grants
+       access if ANY rule matches). It states the default — anything not granted
+       by a rule is inaccessible. */
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

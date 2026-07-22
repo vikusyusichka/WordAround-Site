@@ -1,0 +1,46 @@
+rules_version = '2';
+
+/* WordAround Cloud Storage rules.
+ *
+ * Only the WEB app uses Storage (the iOS app does not touch it at all), and it
+ * writes exactly one kind of object — flashcard card images:
+ *
+ *   users/{uid}/setImages/{setId}/{cardId}.jpg
+ *     (src/lib/setImageService.ts — downscaled to max 1024px and re-encoded
+ *      as JPEG client-side before upload)
+ *
+ * Note on reads: the app stores the `getDownloadURL()` result in card.imageURL.
+ * Those URLs carry a Firebase download token that grants access to that single
+ * object regardless of these rules — that is how Firebase is designed, and it
+ * is why images keep loading in <img> tags. The read rule below still matters:
+ * it stops anyone from browsing or guessing other users' objects without a
+ * token. Treat any image whose URL leaks as effectively public.
+ */
+
+service firebase.storage {
+  match /b/{bucket}/o {
+
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+
+    function isReasonableImage() {
+      return request.resource.size < 5 * 1024 * 1024
+        && request.resource.contentType.matches('image/.*');
+    }
+
+    match /users/{uid}/setImages/{setId}/{fileName} {
+      allow read: if isOwner(uid);
+      /* Size + type are validated because this is the one path the client can
+         push arbitrary bytes to; the app always sends a downscaled JPEG well
+         under the limit, so this cannot break normal use. */
+      allow write: if isOwner(uid) && isReasonableImage();
+      allow delete: if isOwner(uid);
+    }
+
+    /* Default deny — nothing else may be read or written. */
+    match /{allPaths=**} {
+      allow read, write: if false;
+    }
+  }
+}
