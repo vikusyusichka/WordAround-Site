@@ -1251,6 +1251,45 @@
           "subtitle": "We pick a side for you"
         }
       }
+    },
+    "practice": {
+      "listen": "Listen",
+      "playing": "Playing…",
+      "record": "Record",
+      "stop": "Stop",
+      "playMine": "Play mine",
+      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+    },
+    "shadowing": {
+      "title": "Shadowing",
+      "subtitle": "Listen, repeat, and compare yourself.",
+      "start": "Start Shadowing",
+      "category": "Category",
+      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
+      "loading": "Generating phrases…",
+      "phrase": "Phrase",
+      "previous": "Previous",
+      "nextPhrase": "Next phrase",
+      "finish": "Finish",
+      "changeSettings": "Change settings",
+      "done": "{{count}} done",
+      "allDone": "All phrases practised!",
+      "newSet": "New set"
+    },
+    "pronunciation": {
+      "title": "Pronunciation Trainer",
+      "subtitle": "Focus on difficult sounds and words.",
+      "start": "Start Training",
+      "focus": "Focus",
+      "difficulty": "Difficulty",
+      "level": {
+        "easy": "Easy",
+        "balanced": "Balanced",
+        "hard": "Hard"
+      },
+      "loading": "Generating practice items…",
+      "sound": "Sound",
+      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
     }
   }
 }

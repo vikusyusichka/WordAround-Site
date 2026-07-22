@@ -22,7 +22,8 @@ function SpeakingLanding() {
     else if (mode === 'free-speaking') void navigate({ to: '/practice/speaking/free' });
     else if (mode === 'describe-picture') void navigate({ to: '/practice/speaking/picture' });
     else if (mode === 'debate-mode') void navigate({ to: '/practice/speaking/debate' });
-    /* shadowing + pronunciation flip on in 7E. */
+    else if (mode === 'shadowing') void navigate({ to: '/practice/speaking/shadowing' });
+    else if (mode === 'pronunciation') void navigate({ to: '/practice/speaking/pronunciation' });
   };
 
   return (

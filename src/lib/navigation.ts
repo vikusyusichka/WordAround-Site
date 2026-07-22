@@ -94,6 +94,12 @@ export const pageCopyForPath = (pathname: string): PageCopy => {
   if (pathname.startsWith('/practice/speaking/debate')) {
     return { titleKey: 'speaking.debate.title', subtitleKey: 'speaking.debate.subtitle' };
   }
+  if (pathname.startsWith('/practice/speaking/shadowing')) {
+    return { titleKey: 'speaking.shadowing.title', subtitleKey: 'speaking.shadowing.subtitle' };
+  }
+  if (pathname.startsWith('/practice/speaking/pronunciation')) {
+    return { titleKey: 'speaking.pronunciation.title', subtitleKey: 'speaking.pronunciation.subtitle' };
+  }
   if (pathname.startsWith('/practice/listening/from-text')) {
     return { titleKey: 'listening.fromText.title', subtitleKey: 'listening.fromText.subtitle' };
   }

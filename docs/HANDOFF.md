@@ -37,7 +37,8 @@ Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
 
 ## Done so far (commits on `main`, newest first)
-- 7D — Speaking debate — (pending commit)
+- 7E — Speaking shadowing + pronunciation — (pending commit)
+- 7D — Speaking debate — `98db9ba`
 - 7C — Speaking describe picture — `c5265e2`
 - 7B — Speaking free speaking — `1688b98`
 - 7A — Speaking landing + AI conversation — `b587ce2`
@@ -328,8 +329,28 @@ fallback** on every mode (also drives automated verify). TTS reuses
   played to the end → AI feedback overall 70 with **all 7 metrics** (incl.
   Argument Quality 60 / Persuasiveness 80 / Structure 80) + 5 correction cards;
   separately the timer expiry auto-end produced the 7-metric local fallback.
-- 7E Shadowing + Pronunciation
-  (Azure via `/api/speech/azure-token` — optional/last, degrades if unconfigured).
+- **7E DONE + LIVE-VERIFIED (degraded)** — Shadowing + Pronunciation Trainer.
+  **Worker reality check:** `/api/shadowing/phrases` ✅ and
+  `/api/pronunciation/content` ✅ both work, but **`/api/speech/azure-token`
+  returns 502 "Azure rejected the speech credentials"** → automatic pronunciation
+  SCORING is unavailable. Shipped accordingly:
+  `src/lib/azureSpeech.ts` (token fetch + 8-min cache; any non-2xx ⇒
+  `not-configured`; `isPronunciationScoringAvailable()` never throws),
+  `src/lib/audioRecorder.ts` (MediaRecorder wrapper — first supported mime of
+  webm/opus→webm→mp4→ogg, blob URL for playback, permission/unsupported/failed
+  codes), `src/lib/shadowing.ts` (phrases + localStorage recent store, cap 20 per
+  language·level·category, last-30 avoidPhrases), `src/lib/pronunciationTrainer.ts`
+  (items, focus promptValue, unknown type→`word`). Hooks `useVoiceRecorder`
+  (shared), `useShadowing`, `usePronunciationTrainer`. Component
+  `PracticeRecorderBar` (Listen / Record / Play mine). Routes
+  `practice.speaking.shadowing.index` + `.pronunciation.index` (both do
+  setup→session in one route via local state). Both landing cards enabled — the
+  Speaking grid now has **zero "Coming soon"**.
+  **The Speech SDK is deliberately NOT installed** — shipping
+  `microsoft-cognitiveservices-speech-sdk` for an endpoint that 502s would be
+  dead weight. To finish scoring later: fix the Worker's Azure credentials, then
+  add the SDK and implement `assessPronunciation()` on top of `fetchAzureToken()`
+  (the availability probe and the degraded UI are already in place).
 
 **7D verify note:** navigating session→session with only different search params
 does NOT remount the route component (TanStack reuses it), so a finished session

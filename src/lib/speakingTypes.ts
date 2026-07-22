@@ -66,7 +66,7 @@ export const SPEAKING_MENU_ITEMS: SpeakingMenuItemDef[] = [
     iconSystemName: 'headphones',
     accentColor: '#8A5CE0',
     blobColor: '#E6D6FA',
-    enabled: false,
+    enabled: true,
   },
   {
     id: 'pronunciation',
@@ -75,7 +75,7 @@ export const SPEAKING_MENU_ITEMS: SpeakingMenuItemDef[] = [
     iconSystemName: 'waveform',
     accentColor: '#2EB8CC',
     blobColor: '#CCF0F5',
-    enabled: false,
+    enabled: true,
   },
 ];
 
