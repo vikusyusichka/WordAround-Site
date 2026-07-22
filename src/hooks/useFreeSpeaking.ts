@@ -9,6 +9,7 @@ import {
   isSpeechRecognitionSupported,
   type SpeechRecognizer,
 } from '@/lib/speechRecognition';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import { generateSpeakingFeedback } from '@/lib/speakingFeedback';
 import {
   appendTranscriptChunk,
@@ -63,6 +64,7 @@ export const useFreeSpeaking = (setup: FreeSpeakingSetup) => {
   const topicRef = useRef<GeneratedConversationTopic | null>(null);
   topicRef.current = topic;
   const seededRef = useRef(false);
+  const endedRef = useRef(false);
 
   /* Auto-generate a topic once on mount. The seeded ref guards against React's
      StrictMode double-invoke; deliberately no cleanup-cancel — cancelling on the
@@ -132,6 +134,13 @@ export const useFreeSpeaking = (setup: FreeSpeakingSetup) => {
   }, [state, startListening, stopListening]);
 
   const endSession = useCallback(() => {
+    if (endedRef.current) return;
+    endedRef.current = true;
+    recordPractice({
+      skill: 'speaking',
+      value: CONVERSATION_LENGTH_MINUTES[setup.length] * 60 - remainingSeconds,
+      sourceModeID: 'free-speaking',
+    });
     recognizerRef.current?.cancel();
     stopListeningSpeech();
     setState('idle');
@@ -151,7 +160,7 @@ export const useFreeSpeaking = (setup: FreeSpeakingSetup) => {
       setFeedbackReason(result.fallbackReason);
       setIsGeneratingFeedback(false);
     });
-  }, [setup.languageId, setup.level]);
+  }, [setup.languageId, setup.level, setup.length, remainingSeconds]);
 
   /* Countdown timer → auto-end at 0. */
   useEffect(() => {

@@ -16,6 +16,7 @@ import {
   requestConversationHint,
   requestConversationReply,
 } from '@/lib/speakingConversation';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import { generateSpeakingFeedback } from '@/lib/speakingFeedback';
 import {
   CONVERSATION_LENGTH_MINUTES,
@@ -65,6 +66,7 @@ export const useSpeakingConversation = (setup: ConversationSetup) => {
   const lastSubmittedRef = useRef('');
   const lastSendAtRef = useRef(0);
   const seededRef = useRef(false);
+  const endedRef = useRef(false);
   const hintTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const speak = useCallback(
@@ -209,6 +211,13 @@ export const useSpeakingConversation = (setup: ConversationSetup) => {
   }, [state, isRequestingHint, setup]);
 
   const endConversation = useCallback(() => {
+    if (endedRef.current) return;
+    endedRef.current = true;
+    recordPractice({
+      skill: 'speaking',
+      value: CONVERSATION_LENGTH_MINUTES[setup.length] * 60 - remainingSeconds,
+      sourceModeID: 'ai-conversation',
+    });
     recognizerRef.current?.cancel();
     stopListeningSpeech();
     setState('idle');
@@ -226,7 +235,7 @@ export const useSpeakingConversation = (setup: ConversationSetup) => {
       setFeedbackReason(result.fallbackReason);
       setIsGeneratingFeedback(false);
     });
-  }, [setup]);
+  }, [setup, remainingSeconds]);
 
   /* Auto-end when the timer hits 0. */
   useEffect(() => {

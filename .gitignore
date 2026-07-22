@@ -39,3 +39,7 @@ src/routeTree.gen.ts
 
 # TypeScript
 *.tsbuildinfo
+
+# iOS source pulled in for porting reference (see HANDOFF "Fetch iOS source")
+vikusyusichka-WordAround-*/
+wa.tar.gz

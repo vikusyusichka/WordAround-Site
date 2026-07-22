@@ -6,6 +6,7 @@ import { useTranslation } from 'react-i18next';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { ProgressCard } from '@/components/home/ProgressCard';
+import { useDailyProgress, withDailyProgress } from '@/hooks/useDailyProgress';
 import { WritingMenuCard } from '@/components/writing/WritingMenuCard';
 import { SPEAKING_MENU_ITEMS, SPEAKING_TODAY_GOAL, type SpeakingModeId } from '@/lib/speakingTypes';
 
@@ -16,6 +17,7 @@ export const Route = createFileRoute('/_authed/practice/speaking/')({
 function SpeakingLanding() {
   const { t } = useTranslation();
   const navigate = useNavigate();
+  const progress = useDailyProgress('speaking');
 
   const handleSelect = (mode: SpeakingModeId) => {
     if (mode === 'ai-conversation') void navigate({ to: '/practice/speaking/conversation' });
@@ -32,7 +34,7 @@ function SpeakingLanding() {
 
       <div className="flex flex-col gap-8">
         <ProgressCard
-          item={SPEAKING_TODAY_GOAL}
+          item={withDailyProgress(SPEAKING_TODAY_GOAL, progress)}
           layout="goal"
           title={t('speaking.today.title')}
           subtitle={t('speaking.today.subtitle')}

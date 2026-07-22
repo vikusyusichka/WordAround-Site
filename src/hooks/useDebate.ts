@@ -22,6 +22,7 @@ import {
   type DebateSession,
   type DebateSide,
 } from '@/lib/speakingDebate';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import { generateSpeakingFeedback } from '@/lib/speakingFeedback';
 import { generateConversationTopic } from '@/lib/speakingTopics';
 import {
@@ -132,6 +133,11 @@ export const useDebate = (setup: DebateSetup) => {
   const endDebate = useCallback(() => {
     if (finishedRef.current) return;
     finishedRef.current = true;
+    recordPractice({
+      skill: 'speaking',
+      value: CONVERSATION_LENGTH_MINUTES[setup.length] * 60 - remainingSeconds,
+      sourceModeID: 'debate-mode',
+    });
     recognizerRef.current?.cancel();
     stopListeningSpeech();
     setState('idle');
@@ -153,7 +159,7 @@ export const useDebate = (setup: DebateSetup) => {
       setFeedbackReason(result.fallbackReason);
       setIsGeneratingFeedback(false);
     });
-  }, [setup.languageId, setup.level]);
+  }, [setup.languageId, setup.level, setup.length, remainingSeconds]);
 
   const advanceRound = useCallback(() => {
     const current = sessionRef.current;

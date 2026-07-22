@@ -5,6 +5,7 @@
 import { useCallback, useEffect, useReducer, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import { checkGrammar } from '@/lib/grammarCheck';
 import * as essayService from '@/lib/essayService';
 import { scoreEssay } from '@/lib/essayScoring';
@@ -127,6 +128,8 @@ export const useEssaySession = () => {
         difficulty: state.selectedDifficulty,
       });
       dispatch({ type: 'CHECK_SUCCESS', issues, score });
+      /* Count the checked essay towards today's writing goal (words, once per check). */
+      recordPractice({ skill: 'writing', value: state.wordCount, sourceModeID: 'essays' });
     } catch (e) {
       if (controller.signal.aborted) return;
       const message =
@@ -136,7 +139,7 @@ export const useEssaySession = () => {
   }, [
     state.task, state.validation, state.isChecking, state.essayText,
     state.selectedLanguage, state.selectedDifficulty, state.hintsUsedCount,
-    state.usedTranslations, state.usedSynonyms, t,
+    state.usedTranslations, state.usedSynonyms, state.wordCount, t,
   ]);
 
   return {

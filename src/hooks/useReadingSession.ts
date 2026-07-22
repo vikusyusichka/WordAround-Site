@@ -5,6 +5,7 @@
 import { useCallback, useEffect, useReducer, useRef, useState } from 'react';
 import { useQueryClient } from '@tanstack/react-query';
 
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import { translate } from '@/lib/essayAssistance';
 import { ESSAY_LANGUAGES, findLanguage } from '@/lib/essayTypes';
 import { generateReadingQuestions, maxQuestionsForFocus } from '@/lib/readingQuestionService';
@@ -151,6 +152,11 @@ export const useReadingSession = (item: ReadingLibraryItem) => {
   useEffect(() => {
     if (state.phase === 'completed' && state.result && !persistedRef.current) {
       persistedRef.current = true;
+      recordPractice({
+        skill: 'reading',
+        value: state.result.readingTimeSeconds,
+        sourceModeID: item.modeID,
+      });
       void markReadingCompleted(item.ownerUID, item.id, {
         readingTimeSeconds: state.result.readingTimeSeconds,
         comprehensionScore: state.result.comprehensionPercent / 100,
@@ -158,7 +164,7 @@ export const useReadingSession = (item: ReadingLibraryItem) => {
         .then(() => qc.invalidateQueries({ queryKey: ['readingItems'] }))
         .catch(() => {});
     }
-  }, [state.phase, state.result, item.id, item.ownerUID, qc]);
+  }, [state.phase, state.result, item.id, item.ownerUID, item.modeID, qc]);
 
   return {
     state,

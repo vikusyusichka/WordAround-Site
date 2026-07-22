@@ -15,6 +15,7 @@ import {
   type DescribePictureError,
   type DescribePictureImage,
 } from '@/lib/describePicture';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import { generateSpeakingFeedback } from '@/lib/speakingFeedback';
 import {
   appendTranscriptChunk,
@@ -62,6 +63,7 @@ export const useDescribePicture = (setup: DescribePictureSetup) => {
   transcriptRef.current = transcript;
   const seededRef = useRef(false);
   const loadingRef = useRef(false);
+  const endedRef = useRef(false);
 
   const loadImage = useCallback(() => {
     if (loadingRef.current) return;
@@ -148,6 +150,13 @@ export const useDescribePicture = (setup: DescribePictureSetup) => {
   }, [loadImage]);
 
   const endSession = useCallback(() => {
+    if (endedRef.current) return;
+    endedRef.current = true;
+    recordPractice({
+      skill: 'speaking',
+      value: CONVERSATION_LENGTH_MINUTES[setup.length] * 60 - remainingSeconds,
+      sourceModeID: 'describe-picture',
+    });
     recognizerRef.current?.cancel();
     stopListeningSpeech();
     setState('idle');
@@ -164,7 +173,7 @@ export const useDescribePicture = (setup: DescribePictureSetup) => {
       setFeedbackReason(result.fallbackReason);
       setIsGeneratingFeedback(false);
     });
-  }, [setup.languageId, setup.level]);
+  }, [setup.languageId, setup.level, setup.length, remainingSeconds]);
 
   useEffect(() => {
     if (finished) return;
