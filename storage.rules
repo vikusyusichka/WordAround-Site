@@ -1,6 +1,11 @@
 rules_version = '2';
 
-/* WordAround Cloud Storage rules.
+/* WordAround Cloud Storage rules — PROPOSAL, NOT YET COMPARED TO LIVE.
+ *
+ * ⚠️ Unlike firestore.rules (a verbatim copy of what is live), this file has
+ * NOT been checked against the rules currently on the project. Capture the
+ * live Storage rules from the Console first and reconcile — do not publish
+ * this blindly. See docs/SECURITY-RULES.md.
  *
  * Only the WEB app uses Storage (the iOS app does not touch it at all), and it
  * writes exactly one kind of object — flashcard card images:

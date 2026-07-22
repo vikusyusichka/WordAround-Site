@@ -2,68 +2,135 @@ rules_version = '2';
 
 /* WordAround Firestore rules.
  *
- * IMPORTANT: this Firebase project is shared with the LIVE iOS app. These rules
- * were written after auditing every Firestore path in BOTH codebases:
+ * This file is a VERBATIM copy of the rules that are live on the shared
+ * Firebase project (wordaround-97f86), captured 2026-07-22. It is kept here so
+ * the rules are reviewable and restorable — previously they existed only inside
+ * the Firebase Console, with no history and no undo.
  *
- *   web (src/lib/firestore.ts) and iOS (Core/Services/Firebase/*.swift) both
- *   store everything under users/{uid}/… and nothing outside it:
- *     users/{uid}/folders/{folderId}
- *     users/{uid}/flashcardSets/{setId}
- *     users/{uid}/readingItems/{itemId}
- *     users/{uid}/grammarReviewItems/{itemId}
- *     users/{uid}/grammarNoteTopics/{topicId}
- *     users/{uid}/grammarNoteTopics/{topicId}/notes/{noteId}
- *     users/{uid}/grammarNoteTopics/{topicId}/notes/{noteId}/quizzes/{quizId}
+ * ── Review, 2026-07-22 ──────────────────────────────────────────────────────
+ * Audited against every Firestore path in BOTH codebases (web
+ * `src/lib/firestore.ts`, iOS `Core/Services/Firebase/*.swift`). The live rules
+ * are correct and complete; no change was needed. Every path either app uses is
+ * covered and owner-scoped:
  *
- *   The Cloud Function (functions/index.js) is a stateless Gemini proxy and
- *   touches Firestore not at all, so nothing here can break it.
+ *   users/{uid}/folders/{id}                                   ✔ covered
+ *   users/{uid}/flashcardSets/{id}                             ✔ covered
+ *   users/{uid}/readingItems/{id}                              ✔ covered
+ *   users/{uid}/grammarReviewItems/{id}                        ✔ covered
+ *   users/{uid}/grammarNoteTopics/{topicId}                    ✔ covered
+ *   users/{uid}/grammarNoteTopics/{topicId}/notes/{noteId}     ✔ via the
+ *   …/notes/{noteId}/quizzes/{quizId}                            `{document=**}`
+ *                                                                rule on topics
  *
- * Deliberate choices:
+ * The Cloud Function (iOS repo, functions/index.js) is a stateless Gemini proxy
+ * and never touches Firestore, so nothing here affects it.
  *
- * - Ownership is enforced by PATH, not by validating document fields. Field
- *   schemas differ subtly between the iOS and web writers; enforcing them in
- *   rules risks silently breaking the shipped iOS app for real users. The path
- *   check alone already makes it impossible to read or write anyone else's data.
+ * `users/{uid}/grammarNotes/**` and `users/{uid}/grammarNoteQuizzes/**` are not
+ * written by the current web or iOS code — they look like an earlier, flat
+ * layout. They are owner-scoped and harmless, so they are left in place rather
+ * than removed: deleting rules for data that might still exist would make it
+ * unreachable.
  *
- * - Email verification is NOT required. The web auth-gate already enforces it
- *   for password accounts, but adding it here would lock out any existing
- *   account whose token predates that rule (and Google sign-in users).
- *   To tighten later: add `&& request.auth.token.email_verified` to isOwner().
+ * ── A rejected "improvement" ────────────────────────────────────────────────
+ * Collapsing all of this into a single `match /users/{uid}/{document=**}` was
+ * considered and REJECTED. It reads tidier, but it would also have denied the
+ * `users/{uid}` profile document, which these rules allow. No code was found
+ * that writes it — but "not found" is not "does not exist", and this project
+ * backs a shipped iOS app with real users. Not worth the risk for zero security
+ * gain.
  *
- * - Sets carry a `privacy: 'public'` field, but NO code in either app ever reads
- *   another user's data, so there is intentionally no cross-user read path here.
- *   Public sharing needs a real feature (and its own rules) before it works —
- *   the field is currently inert. Do not "fix" that by loosening these rules.
+ * Note that enumerating collections means any NEW collection is denied until it
+ * is added here. That fails closed (safe) but will look like a mysterious
+ * permission error — if a future feature adds a collection under users/{uid},
+ * add a matching rule here and publish it.
+ *
+ * To change these: see docs/SECURITY-RULES.md.
  */
 
 service cloud.firestore {
   match /databases/{database}/documents {
 
-    function isOwner(uid) {
-      return request.auth != null && request.auth.uid == uid;
+    // User profile document
+    match /users/{userId} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
     }
 
-    /* Everything a user owns lives under their own document. The recursive
-       wildcard covers the nested grammar notes/quizzes without needing a rule
-       per level — and keeps working if a future subcollection is added. */
-    match /users/{uid}/{document=**} {
-      allow read, write: if isOwner(uid);
+    // Flashcard sets
+    match /users/{userId}/flashcardSets/{setId} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
     }
 
-    /* The users/{uid} document ITSELF is not covered by the recursive match
-       above ({document=**} needs at least one further segment), and neither app
-       reads or writes it. Spelled out for the next reader — in Firestore an
-       `if false` grants nothing but also BLOCKS nothing; access is denied here
-       simply because no rule grants it. */
-    match /users/{uid} {
-      allow read, write: if false;
+    match /users/{userId}/flashcardSets/{setId}/{document=**} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
     }
 
-    /* Same caveat: this does not override the allow above (Firestore grants
-       access if ANY rule matches). It states the default — anything not granted
-       by a rule is inaccessible. */
-    match /{document=**} {
-      allow read, write: if false;
+    // Folders
+    match /users/{userId}/folders/{folderId} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    match /users/{userId}/folders/{folderId}/{document=**} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    // Grammar Topics
+    match /users/{userId}/grammarNoteTopics/{topicId} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    match /users/{userId}/grammarNoteTopics/{topicId}/{document=**} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    // Grammar Notes
+    match /users/{userId}/grammarNotes/{noteId} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    match /users/{userId}/grammarNotes/{noteId}/{document=**} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    // Grammar Quizzes
+    match /users/{userId}/grammarNoteQuizzes/{quizId} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    match /users/{userId}/grammarNoteQuizzes/{quizId}/{document=**} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    // Review Items
+    match /users/{userId}/grammarReviewItems/{reviewItemId} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    match /users/{userId}/grammarReviewItems/{reviewItemId}/{document=**} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    // Reading Items
+    match /users/{userId}/readingItems/{itemId} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    match /users/{userId}/readingItems/{itemId}/{document=**} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
     }
   }
 }

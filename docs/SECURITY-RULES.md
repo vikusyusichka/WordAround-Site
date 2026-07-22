@@ -1,100 +1,102 @@
-# Firebase security rules — what they are and how to apply them
+# Firebase security rules
 
-## Why this matters
+## Current status: ✅ nothing to do
 
-Security rules are the **only** thing stopping one user from reading another
-user's flashcards, notes and texts. They are not a nice-to-have: without correct
-rules, anyone who knows the project's public API key (which is visible in any
-browser's dev tools — that is normal and by design) could read the whole
-database.
+The Firestore rules live on the project were reviewed on **2026-07-22** against
+every path used by the web app and the live iOS app. **They are correct and
+complete. No change is needed and none was made.**
 
-Until now these rules existed **only inside the Firebase Console** and were not
-in this repository, so nobody could review them, and a wrong click could not be
-undone. `firestore.rules` and `storage.rules` now live here.
+`firestore.rules` in this repo is a verbatim copy of what is live, so the rules
+now have a history and can be restored. That — not a security hole — was the
+actual gap: they previously existed only inside the Firebase Console.
 
-## Status — please read before trusting these
+## Why they are fine
 
-The rules in this repo were written after auditing **every** Firestore and
-Storage path used by both the web app and the live iOS app.
+Every user's data lives under `users/<their uid>/…`, and each rule allows access
+only when the signed-in user's id matches that path. Anything not explicitly
+matched is denied by Firestore automatically. So:
 
-**They have NOT been executed.** Running them requires the Firebase emulator,
-which needs Java 11 or newer; this machine has Java 8, so the emulator refuses
-to start. Do not assume they are proven — validate them as described below
-before publishing.
+- you can read and write only your own data;
+- nobody else can read it, signed in or not;
+- an unauthenticated request gets nothing.
 
-## What the rules say, in plain words
+Coverage check (all present):
 
-- Every piece of data lives under `users/<your id>/…`.
-- You can read and write **only** things under your own id. Nobody else can,
-  signed in or not.
-- Nothing outside that is reachable at all.
-- Card images: only you can upload or browse them, uploads must be images under
-  5 MB.
+| Path used by the apps | Covered by |
+| --- | --- |
+| `users/{uid}/folders/{id}` | its own rule |
+| `users/{uid}/flashcardSets/{id}` | its own rule |
+| `users/{uid}/readingItems/{id}` | its own rule |
+| `users/{uid}/grammarReviewItems/{id}` | its own rule |
+| `users/{uid}/grammarNoteTopics/{topicId}` | its own rule |
+| `…/grammarNoteTopics/{topicId}/notes/{noteId}` | the `{document=**}` rule on topics |
+| `…/notes/{noteId}/quizzes/{quizId}` | same `{document=**}` rule |
 
-### One honest caveat about images
+The Cloud Function in the iOS repo is a stateless Gemini proxy and never touches
+Firestore.
 
-When the app shows a card image, it uses a Firebase "download URL" that contains
-a secret token. **Anyone who has that exact URL can open the image without
-signing in** — that is how Firebase works, and it is why images display at all.
-The rules still prevent people from browsing or guessing other users' images.
-Treat any image whose URL is shared as effectively public.
+`grammarNotes/**` and `grammarNoteQuizzes/**` appear in the rules but are not
+written by current code — they look like an earlier, flat layout. They are
+owner-scoped and harmless, and are left alone: removing rules for data that may
+still exist would make that data unreachable.
 
-### Public sets are not actually public
+## A simplification that was considered and rejected
 
-Sets have a `privacy: 'public'` field, but no code in either app ever reads
-another user's data, so the field currently does nothing. Sharing needs a real
-feature and its own rules. **Do not loosen these rules to "make it work"** —
-that would expose everyone's data.
+Collapsing everything into one `match /users/{uid}/{document=**}` reads tidier
+and would auto-cover future collections. It was **rejected**: it would also deny
+the `users/{uid}` profile document, which the live rules allow. No code was found
+that writes it — but "not found" is not "does not exist", and this project backs
+a shipped iOS app with real users. Zero security gain, real regression risk.
 
-## How to apply them (Firebase Console — recommended)
+## One thing to know when adding features
 
-The Console checks the syntax as you type and lets you test rules before
-publishing, which makes it the safest route.
+Because collections are enumerated one by one, **any new collection under
+`users/{uid}/` is denied until a rule is added for it.** That fails closed (safe)
+but shows up as a confusing "Missing or insufficient permissions" error. If you
+add a Firestore collection, add a matching rule here and publish it.
 
-1. Open the [Firebase Console](https://console.firebase.google.com/) and pick
-   the **wordaround-97f86** project.
-2. **Firestore Database → Rules** tab.
-3. **Copy what is currently there into a text file first** — that is your undo.
-4. Paste the contents of `firestore.rules`. The editor flags syntax errors
-   immediately; if it complains, do not publish.
-5. Use **Rules Playground** (in that same tab) to sanity-check, for example:
-   - a signed-in user reading `users/<their own id>/folders/abc` → **allowed**
-   - the same user reading `users/<someone else's id>/folders/abc` → **denied**
-   - a signed-out request to anything → **denied**
-6. Click **Publish**.
-7. Repeat steps 2–6 for **Storage → Rules** with `storage.rules`.
+## An honest caveat about card images
 
-Then open the app and confirm your own sets, folders and notes still load. If
-anything breaks, paste the backup from step 3 back and publish — the change is
-instant and fully reversible.
+The app stores the `getDownloadURL()` result in `card.imageURL`. Those URLs carry
+a Firebase download token that grants access to that one object **regardless of
+any rule** — that is how Firebase is designed, and it is why images display in
+`<img>` tags at all. Storage rules still stop anyone from browsing or guessing
+other users' objects. Treat any image whose URL leaks as effectively public.
 
-## Applying them from the command line (optional)
+## Verification status
 
-Requires the Firebase CLI and permission on the project:
+The rules were reviewed by reading, and cross-checked against every path in both
+codebases. They were **not executed** here: the Firebase emulator requires
+Java 11+ and this machine has Java 8, so it refuses to start.
+
+The strongest available check is the Console's own **Rules Playground**
+(Firestore Database → Rules tab), which runs a request against the live rules:
+
+- `get` on `/users/<your uid>/folders/abc`, authenticated as your uid → **Allowed**
+- the same path, authenticated as a different uid → **Denied**
+- the same path, unauthenticated → **Denied**
+
+Your uid is in **Authentication → Users → User UID**.
+
+## If you ever do need to change them
+
+1. Firebase Console → **wordaround-97f86** → **Firestore Database** → **Rules**.
+2. **Copy the current text into a file first** — that is the undo.
+3. Edit, watch for syntax errors (the editor flags them live), test in the
+   Playground, then **Publish**. It takes effect immediately.
+4. Open the web app *and* the iOS app and confirm data still loads.
+5. To roll back: paste the saved copy and Publish again.
+
+From the command line instead (needs the Firebase CLI and project access):
 
 ```bash
-npx firebase-tools login
+npx firebase-tools deploy --only firestore:rules --project wordaround-97f86
 ```
 
-```bash
-npx firebase-tools deploy --only firestore:rules,storage:rules --project wordaround-97f86
-```
+## Storage rules — still unreviewed
 
-## Running the rules against the emulator (needs Java 11+)
-
-```bash
-npx firebase-tools emulators:start --only firestore,storage --project demo-wa
-```
-
-## If you ever want to tighten them further
-
-Two options were deliberately **not** taken, because both could lock out real
-users of the shipped iOS app:
-
-- **Requiring a verified email** — add `&& request.auth.token.email_verified`
-  to `isOwner()`. This would block anyone who signed up but never confirmed
-  their address, including existing accounts.
-- **Validating document fields** (types, required keys) — the iOS and web
-  writers differ in small ways, so a strict schema risks silently breaking the
-  iOS app. Ownership is already enforced by the path, which is the part that
-  matters for privacy.
+Only the web app uses Cloud Storage, for card images at
+`users/{uid}/setImages/{setId}/{cardId}.jpg`. The live Storage rules have **not**
+been captured or reviewed yet. `storage.rules` in this repo is a *proposal*, not
+a copy of what is live — do not publish it without first comparing it to the
+Console (**Storage → Rules**) the same way.
