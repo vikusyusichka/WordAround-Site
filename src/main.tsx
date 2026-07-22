@@ -6,6 +6,7 @@ import { QueryClientProvider } from '@tanstack/react-query';
 import { routeTree } from './routeTree.gen';
 import { queryClient } from '@/lib/queryClient';
 import { Splash } from '@/components/primitives/Splash';
+import { registerServiceWorker } from '@/lib/registerServiceWorker';
 import '@/lib/i18n';
 import '@/lib/firebase';
 import '@/styles/index.css';
@@ -41,3 +42,5 @@ createRoot(rootElement).render(
     </QueryClientProvider>
   </StrictMode>,
 );
+
+registerServiceWorker();
