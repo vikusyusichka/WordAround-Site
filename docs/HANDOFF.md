@@ -31,7 +31,8 @@ Vite + React 19 + TS, Tailwind v4 (tokens in `src/styles/index.css` `@theme` +
 `tokens.css` ≥700px), TanStack Router (file-based, `src/routes/`), TanStack Query
 (reads=useQuery, mutations=invalidate), Zustand (UI state only), Firebase Web SDK
 v11 (Auth+Firestore+Storage), react-hook-form+zod, Phosphor icons via `<Icon>`
-(`src/lib/icons.ts`), i18next (en real; uk/pl/de = English scaffold), Vitest +
+(`src/lib/icons.ts`), i18next (**en + uk fully translated**; pl/de = English scaffold, structurally
+in sync via `scripts/sync-locales.cjs`), Vitest +
 Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 (`https://wordaround-gemini-proxy.vikusyusichka-ai.workers.dev`, CORS `*`,
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
@@ -56,16 +57,16 @@ Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 - 4A — Writing landing + WriteWords easy mode — `297357d`
 - Phases 0–3 (scaffold, auth, shell+home, folders, sets, study) — earlier commits.
 
-**`main` is ~4 commits ahead of `origin/main`** (4C2 + 4C3 + 4B + 4D1 unpushed).
-Push when convenient — a push also triggers a fresh Cloudflare build.
+**`main` is in sync with `origin/main`** (everything through the PWA work is
+pushed; each push triggers a fresh Cloudflare build).
 
 History was rewritten once to drop `Co-Authored-By: Claude` trailers, then
 force-pushed. **Never add that trailer** (memory `commit-attribution`).
 Commit messages end at the last body paragraph — no trailer.
 
 **Gates (must be green before every commit):**
-`npm run typecheck` · `npm run test:run` (currently ~349 passing) · `npm run lint`
-(`--max-warnings 0`) · `npm run build` · `npm run e2e` (18 passing).
+`npm run typecheck` · `npm run test:run` (currently **611** passing) · `npm run lint`
+(`--max-warnings 0`) · `npm run build` · `npm run e2e` (**38** passing).
 
 ## The Writing module is 100% COMPLETE (2026-07-17)
 `/practice/writing` landing → 3 cards, all enabled:
@@ -106,7 +107,9 @@ Commit messages end at the last body paragraph — no trailer.
   Esc/click-outside). Icons: extend the SF→Phosphor map in `src/lib/icons.ts`
   (`.fill` suffix auto-selects `weight="fill"`).
 - **i18n:** every user string via `t('ns.key')`; add keys to ALL 4
-  `src/locales/{en,uk,pl,de}/common.json` (en real, others copy the English).
+  `src/locales/{en,uk,pl,de}/common.json`, then run
+  `node scripts/sync-locales.cjs` so no locale silently loses a key. English and
+  Ukrainian are real translations; pl/de still mirror English.
 
 ## Live-verify recipe (authed + Firestore/AI features)
 The gates can't exercise authed Firestore/AI. Verify in a **fresh browser tab**
