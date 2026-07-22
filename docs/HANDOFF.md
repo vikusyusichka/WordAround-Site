@@ -38,6 +38,7 @@ Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
 
 ## Done so far (commits on `main`, newest first)
+- Firebase security rules in version control + review — `90be85f`
 - PWA (installable + offline shell) — `077e1c5`
 - Ukrainian translation + language switcher — `55dc361`
 - Real daily practice stats — `6cb570f`
@@ -408,6 +409,19 @@ resets auth). Screenshot tool may hang while TTS speaks — page-text is enough.
   stale-while-revalidate only searched the asset cache, so precached
   shell items (favicon/manifest) missed → now searches all caches.
   Verified with the server STOPPED: the full app boots from cache.
+
+- **Firebase security rules** (`90be85f`) — `firestore.rules` + `storage.rules`
+  + `firebase.json` now in the repo; previously they existed ONLY in the Firebase
+  Console (unreviewable, no undo). Audited every Firestore/Storage path in BOTH
+  the web app and the live iOS app first: both store everything under
+  `users/{uid}/…` and nothing outside it; the Cloud Function is a stateless
+  Gemini proxy that never touches Firestore; iOS never uses Storage.
+  Ownership is enforced BY PATH, deliberately NOT by field validation (iOS/web
+  field schemas differ → a strict schema could silently break the shipped iOS
+  app). Email verification deliberately not required (would lock out existing
+  accounts). **NOT executed — the emulator needs Java 11+, this box has Java 8.**
+  `docs/SECURITY-RULES.md` has the Console publish/rollback steps in plain
+  language. ⚠️ **Still needs the user to publish them.**
 
 **REMAINING:** offline flashcards via IndexedDB, container-query pad layout ≥700px, virtualized long lists
 (`@tanstack/react-virtual`), perf, Firestore security-rules review before public
