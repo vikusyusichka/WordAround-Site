@@ -37,7 +37,9 @@ Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
 
 ## Done so far (commits on `main`, newest first)
-- 7E — Speaking shadowing + pronunciation — (pending commit)
+- Ukrainian translation + language switcher — `55dc361`
+- Real daily practice stats — `6cb570f`
+- 7E — Speaking shadowing + pronunciation — `ad7762e`
 - 7D — Speaking debate — `98db9ba`
 - 7C — Speaking describe picture — `c5265e2`
 - 7B — Speaking free speaking — `1688b98`
@@ -370,10 +372,27 @@ alone (a late setState on an unmounted component is a harmless no-op in React 18
 then client-nav via `window.__TSR_ROUTER__.navigate({to:…})` (full page reload
 resets auth). Screenshot tool may hang while TTS speaks — page-text is enough.
 
-### Phase 8 — Polish `M`
-PWA (manifest + service worker, offline flashcards via IndexedDB), container-query
-pad layout ≥700px, virtualized long lists (`@tanstack/react-virtual`), perf,
-Firestore security-rules review before public launch.
+### Phase 8 — Polish `M` (IN PROGRESS)
+**DONE:**
+- **Real daily practice stats** (`6cb570f`) — `src/lib/dailyPracticeStats.ts`
+  replaces the static Today-progress stubs. localStorage log, one entry per
+  practice bout, stamped with the local day so totals reset at midnight; 90-day
+  retention. Units per iOS: speaking/listening/reading = SECONDS, writing =
+  WORDS; `totalTodayDisplay` floors seconds to whole minutes. Recorded by the 4
+  timed Speaking modes (total − remaining, guarded by an `endedRef` so End +
+  timer-expiry can't double-count), the Reading session (readingTimeSeconds) and
+  Essays (word count on check). Listening keeps its own existing real store.
+  Cards read via `useDailyProgress` (re-reads on window focus).
+- **Full Ukrainian translation + language switcher** (`55dc361`) — all 978
+  translatable strings (brand name and "PDF" stay as-is). `LanguageSwitcher` in
+  Profile: until now the language came from the browser with NO way to change
+  it, so translations were unreachable. Also added `scripts/sync-locales.cjs` —
+  non-English locales had silently lost keys; run it after adding en keys.
+
+**REMAINING:** PWA (manifest + service worker, offline flashcards via
+IndexedDB), container-query pad layout ≥700px, virtualized long lists
+(`@tanstack/react-virtual`), perf, Firestore security-rules review before public
+launch. Polish/German are still English scaffolds (structure is in sync).
 
 ## Working process (follow strictly)
 1. Big phase → **plan mode** → detailed slice plan → user approval → build.
