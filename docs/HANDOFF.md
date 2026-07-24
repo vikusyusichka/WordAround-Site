@@ -38,6 +38,11 @@ Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
 
 ## Done so far (commits on `main`, newest first)
+- Visual alignment with iOS (page content only, nav untouched) — `2a7b008` fix
+  (invisible yellow/purple swatch colours + full iOS theme + mode-card tokens),
+  `765fdd8` (mode cards, sets/folders one-column, real folder shape, themed
+  create/detail screens), `8113f8c` (10 practice setup screens → shared
+  SetupSection/OptionPill/StartButton). 624 tests. **NOT pushed.**
 - Firebase security rules in version control + review — `90be85f`
 - PWA (installable + offline shell) — `077e1c5`
 - Ukrainian translation + language switcher — `55dc361`
