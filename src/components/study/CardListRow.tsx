@@ -15,7 +15,7 @@ interface CardListRowProps {
 export const CardListRow = ({ card, index, accent, onEdit, onDelete }: CardListRowProps) => {
   const { t } = useTranslation();
   return (
-    <div className="flex items-center gap-4 rounded-2xl border border-white/80 bg-white/80 p-4 shadow-[0_4px_10px_rgba(0,0,0,0.03)]">
+    <div className="flex items-center gap-4 px-4 py-3.5">
       <span className="w-6 shrink-0 text-center text-[13px] font-bold text-(--color-cs-text-muted)">
         {index + 1}
       </span>

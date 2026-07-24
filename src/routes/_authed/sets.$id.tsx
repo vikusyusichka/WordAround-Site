@@ -97,50 +97,76 @@ function StudyScreen({ set }: { set: FlashcardSet }) {
   };
 
   const iconBtn =
-    'grid size-11 place-items-center rounded-full bg-white/90 shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:outline-none';
+    'grid size-11 place-items-center rounded-full shadow-[0_2px_6px_rgba(0,0,0,0.06)] transition-transform hover:-translate-y-0.5 focus-visible:outline-none';
 
   return (
     <ContentContainer fluid>
       {/* iOS repaints the whole detail screen in the set's color. */}
       <ThemedScreen background={theme.screenBackground} />
 
-      {/* Header */}
-      <div className="mb-6 flex items-center gap-3">
+      {/* Top bar — back on the left, session actions on the right (iOS TopBar). */}
+      <div className="mb-4 flex items-center justify-between gap-3">
         <button
           type="button"
           onClick={() => void navigate({ to: '/sets' })}
           aria-label={t('sets.backToSets')}
-          className={iconBtn + ' text-(--color-primary-blue-dark)'}
+          className={iconBtn}
+          style={{ background: theme.fieldBackground, color: theme.titleColor }}
         >
           <CaretLeft size={18} weight="bold" />
         </button>
-        <span className="grid size-11 shrink-0 place-items-center rounded-2xl" style={{ background: theme.accent }}>
+        <div className="flex items-center gap-2.5">
+          <button
+            type="button"
+            onClick={() => dispatch({ type: 'SET_TRACK_PROGRESS', value: !state.trackProgress })}
+            className="h-11 rounded-full px-4 text-[14px] font-semibold transition-colors focus-visible:outline-none"
+            style={
+              state.trackProgress
+                ? { background: theme.accent, color: '#fff' }
+                : { background: theme.fieldBackground, color: theme.mutedTextColor }
+            }
+          >
+            {t('study.trackProgress')}
+          </button>
+          <button
+            type="button"
+            onClick={() => dispatch({ type: 'SHUFFLE' })}
+            aria-label={t('study.shuffle')}
+            className={iconBtn}
+            style={{ background: theme.fieldBackground, color: theme.accent }}
+          >
+            <ArrowsClockwise size={18} weight="bold" />
+          </button>
+          <button
+            type="button"
+            onClick={handleDeleteSet}
+            aria-label={t('sets.delete')}
+            className={iconBtn}
+            style={{ background: theme.fieldBackground, color: 'var(--color-cs-red)' }}
+          >
+            <Trash size={18} weight="bold" />
+          </button>
+        </div>
+      </div>
+
+      {/* Header — big set title in the set's colour, its own line (iOS Header). */}
+      <div className="mb-6 flex items-center gap-3.5">
+        <span className="grid size-12 shrink-0 place-items-center rounded-2xl" style={{ background: theme.accent }}>
           <Icon
             name={set.icon.type === 'systemName' ? set.icon.value : 'rectangle.stack.fill'}
             className="size-6 text-white"
           />
         </span>
-        <h1 className="min-w-0 flex-1 truncate text-[24px] font-bold" style={{ color: theme.titleColor }}>
-          {set.title}
-        </h1>
-        <button
-          type="button"
-          onClick={() => dispatch({ type: 'SET_TRACK_PROGRESS', value: !state.trackProgress })}
-          className={[
-            'h-11 rounded-full px-4 text-[14px] font-semibold transition-colors focus-visible:outline-none',
-            state.trackProgress
-              ? 'bg-(--color-home-nav-sel-bg) text-(--color-home-brand)'
-              : 'bg-white text-(--color-cs-text-muted)',
-          ].join(' ')}
-        >
-          {t('study.trackProgress')}
-        </button>
-        <button type="button" onClick={() => dispatch({ type: 'SHUFFLE' })} aria-label={t('study.shuffle')} className={iconBtn + ' text-(--color-primary-blue-dark)'}>
-          <ArrowsClockwise size={18} weight="bold" />
-        </button>
-        <button type="button" onClick={handleDeleteSet} aria-label={t('sets.delete')} className={iconBtn + ' text-(--color-cs-red)'}>
-          <Trash size={18} weight="bold" />
-        </button>
+        <div className="flex min-w-0 flex-col">
+          <h1 className="truncate text-[28px] font-bold lg:text-[32px]" style={{ color: theme.titleColor }}>
+            {set.title}
+          </h1>
+          {set.description && (
+            <p className="truncate text-[15px] font-medium" style={{ color: theme.mutedTextColor }}>
+              {set.description}
+            </p>
+          )}
+        </div>
       </div>
 
       {/* Study area */}
@@ -192,16 +218,23 @@ function StudyScreen({ set }: { set: FlashcardSet }) {
           />
           <AddCardButton onClick={openAdd} />
         </div>
-        <div className="flex flex-col gap-3">
+        <div
+          className="overflow-hidden rounded-[22px]"
+          style={{ background: theme.sectionBackground, boxShadow: `0 6px 12px ${theme.shadowColor}` }}
+        >
           {filteredCards(state).map((fc, i) => (
-            <CardListRow
-              key={fc.id}
-              card={fc}
-              index={i}
-              accent={theme.accent}
-              onEdit={() => openEdit(fc)}
-              onDelete={() => handleDeleteCard(fc)}
-            />
+            <div key={fc.id}>
+              {i > 0 && (
+                <div className="mx-4 h-px" style={{ background: theme.borderColor, opacity: 0.3 }} />
+              )}
+              <CardListRow
+                card={fc}
+                index={i}
+                accent={theme.accent}
+                onEdit={() => openEdit(fc)}
+                onDelete={() => handleDeleteCard(fc)}
+              />
+            </div>
           ))}
         </div>
       </div>
