@@ -8,6 +8,9 @@ import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
+import { SetupSection } from '@/components/practice/SetupSection';
+import { OptionPillGroup } from '@/components/practice/OptionPill';
+import { StartButton } from '@/components/practice/StartButton';
 import { ReadingQuestionSection } from '@/components/reading/ReadingQuestionSection';
 import { useReadingItemsQuery, useSaveReadingItem } from '@/hooks/useReadingItems';
 import { useUid } from '@/hooks/useFolders';
@@ -39,13 +42,6 @@ import type { ReadingLibraryItem } from '@/lib/models';
 export const Route = createFileRoute('/_authed/practice/reading/speed/')({
   component: SpeedReadingScreen,
 });
-
-const pill = (selected: boolean) =>
-  `h-9 rounded-full border px-3.5 text-[13px] font-semibold transition-colors ${
-    selected
-      ? 'border-[#F26B66]/50 bg-[#F26B66]/10 text-(--color-primary-blue-dark)'
-      : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
-  }`;
 
 const RATING_COLOR: Record<string, string> = {
   excellent: '#22C55E',
@@ -190,38 +186,38 @@ function SpeedReadingScreen() {
 
         {screen === 'setup' && (
           <>
-            {(
-              [
-                ['target', SPEED_TARGETS, (v: string) => setConfig((c) => ({ ...c, target: v as SpeedConfiguration['target'] }))],
-                ['timer', SPEED_TIMER_MODES, (v: string) => setConfig((c) => ({ ...c, timer: v as SpeedConfiguration['timer'] }))],
-                ['length', SPEED_LENGTHS, (v: string) => setConfig((c) => ({ ...c, length: v as SpeedConfiguration['length'] }))],
-              ] as const
-            ).map(([section, options, onPick]) => (
-              <div key={section} className="flex flex-col gap-1.5">
-                <span className="text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)">
-                  {t(`reading.speed.section.${section}`)}
-                </span>
-                <div className="flex flex-wrap gap-1.5">
-                  {options.map((option) => (
-                    <button
-                      key={option}
-                      type="button"
-                      onClick={() => onPick(option)}
-                      className={pill(config[section] === option)}
-                    >
-                      {t(`reading.speed.${section}.${option}`)}
-                    </button>
-                  ))}
-                </div>
-              </div>
-            ))}
+            <SetupSection title={t('reading.speed.section.target')}>
+              <OptionPillGroup
+                options={SPEED_TARGETS.map((o) => ({ id: o, label: t(`reading.speed.target.${o}`) }))}
+                value={config.target}
+                onChange={(v) => setConfig((c) => ({ ...c, target: v }))}
+                columns={3}
+              />
+            </SetupSection>
 
-            <p className="text-[13px] font-medium text-(--color-text-secondary)">
-              {t('reading.speed.summary', {
+            <SetupSection title={t('reading.speed.section.timer')}>
+              <OptionPillGroup
+                options={SPEED_TIMER_MODES.map((o) => ({ id: o, label: t(`reading.speed.timer.${o}`) }))}
+                value={config.timer}
+                onChange={(v) => setConfig((c) => ({ ...c, timer: v }))}
+                columns={3}
+              />
+            </SetupSection>
+
+            <SetupSection
+              title={t('reading.speed.section.length')}
+              helper={t('reading.speed.summary', {
                 wpm: TARGET_META[config.target].wpmTarget,
                 minutes: LENGTH_META[config.length].minutes,
               })}
-            </p>
+            >
+              <OptionPillGroup
+                options={SPEED_LENGTHS.map((o) => ({ id: o, label: t(`reading.speed.length.${o}`) }))}
+                value={config.length}
+                onChange={(v) => setConfig((c) => ({ ...c, length: v }))}
+                columns={3}
+              />
+            </SetupSection>
 
             {error && (
               <p role="alert" className="text-[14px] font-semibold text-(--color-cs-red)">
@@ -229,14 +225,12 @@ function SpeedReadingScreen() {
               </p>
             )}
 
-            <button
-              type="button"
-              onClick={() => void startSession()}
+            <StartButton
+              label={isGenerating ? t('reading.speed.preparing') : t('reading.speed.start')}
+              icon="bolt.fill"
               disabled={isGenerating}
-              className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-60"
-            >
-              {isGenerating ? t('reading.speed.preparing') : t('reading.speed.start')}
-            </button>
+              onClick={() => void startSession()}
+            />
 
             {savedItems && savedItems.length > 0 && (
               <section className="flex flex-col gap-2">

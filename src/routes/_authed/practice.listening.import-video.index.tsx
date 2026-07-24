@@ -10,6 +10,9 @@ import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
+import { SetupSection } from '@/components/practice/SetupSection';
+import { OptionPill, OptionPillGroup } from '@/components/practice/OptionPill';
+import { StartButton } from '@/components/practice/StartButton';
 import { Icon } from '@/components/primitives/Icon';
 import { ListeningQuestionList } from '@/components/listening/ListeningQuestionList';
 import { ListeningResultView } from '@/components/listening/ListeningResultView';
@@ -49,16 +52,13 @@ export const Route = createFileRoute('/_authed/practice/listening/import-video/'
   component: ImportVideoScreen,
 });
 
+// Import Video mode accent (ListeningTheme.importVideoAccent / Dark).
 const ACCENT = '#29A89E';
-const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+const ACCENT_DARK = '#14736E';
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
+const subLabel = 'text-[13px] font-bold';
 
-const pill = (selected: boolean) =>
-  `h-9 rounded-full border px-3.5 text-[13px] font-semibold transition-colors ${
-    selected
-      ? 'border-[#29A89E]/50 bg-[#29A89E]/10 text-(--color-primary-blue-dark)'
-      : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
-  }`;
-
+// Small grey label kept for the in-player "subtitles" control (not a setup heading).
 const sectionTitle =
   'text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)';
 
@@ -314,28 +314,27 @@ function ImportVideoScreen() {
               </p>
             )}
 
-            <div className="flex flex-col gap-1.5">
-              <span className={sectionTitle}>{t('reading.addText.language')}</span>
-              <div className="flex flex-wrap gap-1.5">
-                {ESSAY_LANGUAGES.map((lang) => (
-                  <button key={lang.id} type="button" onClick={() => setLanguageId(lang.id)} className={pill(languageId === lang.id)}>
-                    {lang.title}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <div className="flex flex-col gap-1.5">
-              <span className={sectionTitle}>{t('listening.fromText.level')}</span>
-              <div className="flex flex-wrap gap-1.5">
-                {LEVELS.map((l) => (
-                  <button key={l} type="button" onClick={() => setLevel(l)} className={pill(level === l)}>
-                    {l}
-                  </button>
-                ))}
-              </div>
-            </div>
+            <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
+              <OptionPillGroup
+                options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
+                value={languageId}
+                onChange={setLanguageId}
+                accent={ACCENT}
+                accentDark={ACCENT_DARK}
+                columns={3}
+              />
+            </SetupSection>
+            <SetupSection title={t('listening.fromText.level')} accentDark={ACCENT_DARK}>
+              <OptionPillGroup
+                options={LEVELS.map((l) => ({ id: l, label: l }))}
+                value={level}
+                onChange={setLevel}
+                accent={ACCENT}
+                accentDark={ACCENT_DARK}
+              />
+            </SetupSection>
 
-            <div className="flex flex-col gap-3 rounded-2xl border border-(--color-auth-field-border) bg-white p-4">
+            <SetupSection title={t('listening.fromText.questions')} accentDark={ACCENT_DARK}>
               <label className="flex cursor-pointer items-center justify-between">
                 <span className="text-[14px] font-semibold text-(--color-primary-blue-dark)">
                   {t('listening.fromText.addQuestions')}
@@ -344,43 +343,50 @@ function ImportVideoScreen() {
                   type="checkbox"
                   checked={addQuestions}
                   onChange={(e) => setAddQuestions(e.target.checked)}
-                  className="size-5 accent-[#29A89E]"
+                  className="size-5"
+                  style={{ accentColor: ACCENT }}
                 />
               </label>
               {addQuestions && (
                 <>
-                  <div className="flex flex-col gap-1.5">
-                    <span className={sectionTitle}>{t('listening.fromText.questionCount')}</span>
-                    <div className="flex gap-1.5">
-                      {LISTENING_QUESTION_COUNTS.map((count) => (
-                        <button key={count} type="button" onClick={() => setQuestionCount(count)} className={pill(questionCount === count)}>
-                          {count}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-                  <div className="flex flex-col gap-1.5">
-                    <span className={sectionTitle}>{t('listening.fromText.questionTypes')}</span>
-                    <div className="flex flex-wrap gap-1.5">
-                      {LISTENING_QUESTION_TYPES.map((type) => (
-                        <button key={type} type="button" onClick={() => toggleType(type)} className={pill(questionTypes.includes(type))}>
-                          {t(`listening.questionType.${type}`)}
-                        </button>
-                      ))}
-                    </div>
+                  <span className={`mt-1 ${subLabel}`} style={{ color: ACCENT_DARK }}>
+                    {t('listening.fromText.questionCount')}
+                  </span>
+                  <OptionPillGroup
+                    options={LISTENING_QUESTION_COUNTS.map((count) => ({ id: String(count), label: String(count) }))}
+                    value={String(questionCount)}
+                    onChange={(v) => setQuestionCount(Number(v))}
+                    accent={ACCENT}
+                    accentDark={ACCENT_DARK}
+                  />
+                  <span className={`mt-1 ${subLabel}`} style={{ color: ACCENT_DARK }}>
+                    {t('listening.fromText.questionTypes')}
+                  </span>
+                  <div className="flex flex-wrap gap-2.5">
+                    {LISTENING_QUESTION_TYPES.map((type) => (
+                      <div key={type} className="min-w-[120px] flex-1">
+                        <OptionPill
+                          label={t(`listening.questionType.${type}`)}
+                          selected={questionTypes.includes(type)}
+                          accent={ACCENT}
+                          accentDark={ACCENT_DARK}
+                          onClick={() => toggleType(type)}
+                        />
+                      </div>
+                    ))}
                   </div>
                 </>
               )}
-            </div>
+            </SetupSection>
 
-            <button
-              type="button"
-              onClick={() => void startProcessing()}
+            <StartButton
+              label={t('listening.importAudio.continue')}
+              icon="waveform"
+              accent={ACCENT}
+              accentDark={ACCENT_DARK}
               disabled={!media}
-              className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50"
-            >
-              {t('listening.importAudio.continue')}
-            </button>
+              onClick={() => void startProcessing()}
+            />
           </>
         )}
 

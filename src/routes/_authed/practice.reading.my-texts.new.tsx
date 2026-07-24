@@ -66,14 +66,18 @@ const suggestTitle = (content: string): string => {
   return `${firstLine.slice(0, 45)}…`;
 };
 
-const sectionTitle =
-  'text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)';
+/* This screen is a dense multi-source form (paste / OCR / PDF / generate /
+   wikipedia) with many small labels, so it keeps local helpers rather than the
+   big SetupSection headings — but the pill and heading looks are brought in
+   line with the shared iOS setup components (bold accent-dark headings, solid
+   accent-fill selected pills). Reading's accent is the app's primary blue. */
+const sectionTitle = 'text-[15px] font-bold text-(--color-primary-blue-dark)';
 
 const pill = (selected: boolean) =>
-  `h-9 rounded-full border px-3.5 text-[13px] font-semibold transition-colors ${
+  `h-11 rounded-[18px] border px-4 text-[14px] font-bold transition-all focus-visible:outline-none ${
     selected
-      ? 'border-(--color-primary-blue)/35 bg-(--color-primary-blue)/8 text-(--color-primary-blue-dark)'
-      : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
+      ? 'border-transparent bg-[#2b5cfa] text-white shadow-[0_4px_10px_rgba(43,92,250,0.22)]'
+      : 'border-[#2b5cfa]/22 bg-[#2b5cfa]/10 text-(--color-primary-blue-dark) hover:brightness-[0.98]'
   }`;
 
 function AddTextScreen() {

@@ -1,12 +1,15 @@
 /* Shadowing — /practice/speaking/shadowing. Setup (language/level/category)
    then a phrase-by-phrase listen → record → play-yourself-back loop. */
 import { useState } from 'react';
-import { createFileRoute, useNavigate } from '@tanstack/react-router';
+import { createFileRoute } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { Icon } from '@/components/primitives/Icon';
+import { SetupSection } from '@/components/practice/SetupSection';
+import { OptionPillGroup } from '@/components/practice/OptionPill';
+import { StartButton } from '@/components/practice/StartButton';
 import { PracticeRecorderBar } from '@/components/speaking/PracticeRecorderBar';
 import { useShadowing } from '@/hooks/useShadowing';
 import { ESSAY_LANGUAGES } from '@/lib/essayTypes';
@@ -16,18 +19,11 @@ export const Route = createFileRoute('/_authed/practice/speaking/shadowing/')({
   component: ShadowingScreen,
 });
 
+// Shadowing is the purple Speaking mode.
 const ACCENT = '#8A5CE0';
-const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+const ACCENT_DARK = '#6438B8';
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 const PHRASE_COUNT = 8;
-
-const pill = (selected: boolean) =>
-  `h-9 rounded-full border px-3.5 text-[13px] font-semibold transition-colors ${
-    selected
-      ? 'border-[#8A5CE0]/60 bg-[#8A5CE0]/12 text-[#6438B8]'
-      : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
-  }`;
-
-const sectionTitle = 'text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)';
 
 function ShadowingScreen() {
   const [started, setStarted] = useState(false);
@@ -77,45 +73,34 @@ function ShadowingSetup({
   onStart: () => void;
 }) {
   const { t } = useTranslation();
-  const navigate = useNavigate();
 
   return (
     <ContentContainer fluid>
       <PageHeader title={t('speaking.shadowing.title')} subtitle={t('speaking.shadowing.subtitle')} />
 
-      <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-        <button
-          type="button"
-          onClick={() => void navigate({ to: '/practice/speaking' })}
-          className="w-fit text-[13px] font-semibold text-[#6438B8] hover:underline focus-visible:outline-none"
-        >
-          ← {t('nav.speaking')}
-        </button>
+      <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
+        <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
+          <OptionPillGroup
+            options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
+            value={languageId}
+            onChange={onLanguage}
+            accent={ACCENT}
+            accentDark={ACCENT_DARK}
+            columns={3}
+          />
+        </SetupSection>
 
-        <div className="flex flex-col gap-1.5">
-          <span className={sectionTitle}>{t('reading.addText.language')}</span>
-          <div className="flex flex-wrap gap-1.5">
-            {ESSAY_LANGUAGES.map((lang) => (
-              <button key={lang.id} type="button" onClick={() => onLanguage(lang.id)} className={pill(languageId === lang.id)}>
-                {lang.title}
-              </button>
-            ))}
-          </div>
-        </div>
+        <SetupSection title={t('listening.fromText.level')} accentDark={ACCENT_DARK}>
+          <OptionPillGroup
+            options={LEVELS.map((l) => ({ id: l, label: l }))}
+            value={level}
+            onChange={onLevel}
+            accent={ACCENT}
+            accentDark={ACCENT_DARK}
+          />
+        </SetupSection>
 
-        <div className="flex flex-col gap-1.5">
-          <span className={sectionTitle}>{t('listening.fromText.level')}</span>
-          <div className="flex flex-wrap gap-1.5">
-            {LEVELS.map((l) => (
-              <button key={l} type="button" onClick={() => onLevel(l)} className={pill(level === l)}>
-                {l}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-1.5">
-          <span className={sectionTitle}>{t('speaking.shadowing.category')}</span>
+        <SetupSection title={t('speaking.shadowing.category')} accentDark={ACCENT_DARK}>
           <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
             {SHADOWING_CATEGORIES.map((c) => {
               const selected = c.id === category;
@@ -123,31 +108,50 @@ function ShadowingSetup({
                 <button
                   key={c.id}
                   type="button"
+                  aria-pressed={selected}
                   onClick={() => onCategory(c.id)}
-                  className={`flex items-center gap-2 rounded-2xl border px-3 py-2.5 text-left transition-colors ${
-                    selected ? 'border-[#8A5CE0]/60 bg-[#8A5CE0]/8' : 'border-(--color-auth-field-border) bg-white hover:border-[#8A5CE0]/30'
-                  }`}
+                  className="flex items-center gap-2 rounded-2xl border px-3 py-2.5 text-left transition-all hover:brightness-[0.99] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+                  style={
+                    selected
+                      ? { background: ACCENT, borderColor: 'transparent' }
+                      : {
+                          background: `color-mix(in srgb, ${ACCENT} 8%, transparent)`,
+                          borderColor: `color-mix(in srgb, ${ACCENT} 20%, transparent)`,
+                        }
+                  }
                 >
-                  <Icon name={c.iconSystemName} className="size-[16px]" style={{ color: ACCENT }} />
-                  <span className="text-[13px] font-bold text-(--color-primary-blue-dark)">{c.title}</span>
+                  <Icon
+                    name={c.iconSystemName}
+                    className="size-[16px]"
+                    style={{ color: selected ? '#fff' : ACCENT }}
+                  />
+                  <span
+                    className="text-[13px] font-bold"
+                    style={{ color: selected ? '#fff' : ACCENT_DARK }}
+                  >
+                    {c.title}
+                  </span>
                 </button>
               );
             })}
           </div>
-        </div>
+        </SetupSection>
 
-        <p className="flex items-start gap-2 rounded-2xl bg-[#8A5CE0]/8 px-4 py-3 text-[13px] font-medium text-(--color-text-secondary)">
+        <p
+          className="flex items-start gap-2 rounded-2xl px-4 py-3 text-[13px] font-medium text-(--color-text-secondary)"
+          style={{ background: `color-mix(in srgb, ${ACCENT} 8%, transparent)` }}
+        >
           <Icon name="lightbulb" className="mt-0.5 size-[15px] shrink-0" style={{ color: ACCENT }} />
           {t('speaking.shadowing.howItWorks')}
         </p>
 
-        <button
-          type="button"
+        <StartButton
+          label={t('speaking.shadowing.start')}
+          icon="waveform"
+          accent={ACCENT}
+          accentDark={ACCENT_DARK}
           onClick={onStart}
-          className="h-12 w-full rounded-2xl bg-linear-to-r from-[#8A5CE0] to-[#6F44C4] text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(138,92,224,0.28)] transition-transform hover:brightness-105 active:scale-[0.98]"
-        >
-          {t('speaking.shadowing.start')}
-        </button>
+        />
       </div>
     </ContentContainer>
   );

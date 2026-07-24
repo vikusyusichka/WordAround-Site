@@ -2,12 +2,15 @@
    listen → record → play yourself back. Automatic scoring needs Azure on the
    Worker; when that is unavailable the screen says so and stays fully usable. */
 import { useState } from 'react';
-import { createFileRoute, useNavigate } from '@tanstack/react-router';
+import { createFileRoute } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { Icon } from '@/components/primitives/Icon';
+import { SetupSection } from '@/components/practice/SetupSection';
+import { OptionPillGroup } from '@/components/practice/OptionPill';
+import { StartButton } from '@/components/practice/StartButton';
 import { PracticeRecorderBar } from '@/components/speaking/PracticeRecorderBar';
 import { usePronunciationTrainer } from '@/hooks/usePronunciationTrainer';
 import { ESSAY_LANGUAGES } from '@/lib/essayTypes';
@@ -24,18 +27,11 @@ export const Route = createFileRoute('/_authed/practice/speaking/pronunciation/'
   component: PronunciationScreen,
 });
 
+// Pronunciation Trainer is the cyan Speaking mode.
 const ACCENT = '#2EB8CC';
-const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+const ACCENT_DARK = '#1B7C8C';
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 const ITEM_COUNT = 8;
-
-const pill = (selected: boolean) =>
-  `h-9 rounded-full border px-3.5 text-[13px] font-semibold transition-colors ${
-    selected
-      ? 'border-[#2EB8CC]/60 bg-[#2EB8CC]/12 text-[#1B7C8C]'
-      : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
-  }`;
-
-const sectionTitle = 'text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)';
 
 function PronunciationScreen() {
   const { t } = useTranslation();
@@ -97,42 +93,31 @@ function PronunciationSetup({
   onStart: () => void;
 }) {
   const { t } = useTranslation();
-  const navigate = useNavigate();
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-      <button
-        type="button"
-        onClick={() => void navigate({ to: '/practice/speaking' })}
-        className="w-fit text-[13px] font-semibold text-[#1B7C8C] hover:underline focus-visible:outline-none"
-      >
-        ← {t('nav.speaking')}
-      </button>
+    <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
+      <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
+        <OptionPillGroup
+          options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
+          value={languageId}
+          onChange={onLanguage}
+          accent={ACCENT}
+          accentDark={ACCENT_DARK}
+          columns={3}
+        />
+      </SetupSection>
 
-      <div className="flex flex-col gap-1.5">
-        <span className={sectionTitle}>{t('reading.addText.language')}</span>
-        <div className="flex flex-wrap gap-1.5">
-          {ESSAY_LANGUAGES.map((lang) => (
-            <button key={lang.id} type="button" onClick={() => onLanguage(lang.id)} className={pill(languageId === lang.id)}>
-              {lang.title}
-            </button>
-          ))}
-        </div>
-      </div>
+      <SetupSection title={t('listening.fromText.level')} accentDark={ACCENT_DARK}>
+        <OptionPillGroup
+          options={LEVELS.map((l) => ({ id: l, label: l }))}
+          value={level}
+          onChange={onLevel}
+          accent={ACCENT}
+          accentDark={ACCENT_DARK}
+        />
+      </SetupSection>
 
-      <div className="flex flex-col gap-1.5">
-        <span className={sectionTitle}>{t('listening.fromText.level')}</span>
-        <div className="flex flex-wrap gap-1.5">
-          {LEVELS.map((l) => (
-            <button key={l} type="button" onClick={() => onLevel(l)} className={pill(level === l)}>
-              {l}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <div className="flex flex-col gap-1.5">
-        <span className={sectionTitle}>{t('speaking.pronunciation.focus')}</span>
+      <SetupSection title={t('speaking.pronunciation.focus')} accentDark={ACCENT_DARK}>
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-3">
           {PRONUNCIATION_FOCUSES.map((f) => {
             const selected = f.id === focus;
@@ -140,37 +125,55 @@ function PronunciationSetup({
               <button
                 key={f.id}
                 type="button"
+                aria-pressed={selected}
                 onClick={() => onFocus(f.id)}
-                className={`flex items-center gap-2 rounded-2xl border px-3 py-2.5 text-left transition-colors ${
-                  selected ? 'border-[#2EB8CC]/60 bg-[#2EB8CC]/8' : 'border-(--color-auth-field-border) bg-white hover:border-[#2EB8CC]/30'
-                }`}
+                className="flex items-center gap-2 rounded-2xl border px-3 py-2.5 text-left transition-all hover:brightness-[0.99] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+                style={
+                  selected
+                    ? { background: ACCENT, borderColor: 'transparent' }
+                    : {
+                        background: `color-mix(in srgb, ${ACCENT} 8%, transparent)`,
+                        borderColor: `color-mix(in srgb, ${ACCENT} 20%, transparent)`,
+                      }
+                }
               >
-                <Icon name={f.iconSystemName} className="size-[16px]" style={{ color: ACCENT }} />
-                <span className="text-[13px] font-bold text-(--color-primary-blue-dark)">{f.title}</span>
+                <Icon
+                  name={f.iconSystemName}
+                  className="size-[16px]"
+                  style={{ color: selected ? '#fff' : ACCENT }}
+                />
+                <span
+                  className="text-[13px] font-bold"
+                  style={{ color: selected ? '#fff' : ACCENT_DARK }}
+                >
+                  {f.title}
+                </span>
               </button>
             );
           })}
         </div>
-      </div>
+      </SetupSection>
 
-      <div className="flex flex-col gap-1.5">
-        <span className={sectionTitle}>{t('speaking.pronunciation.difficulty')}</span>
-        <div className="flex gap-1.5">
-          {PRONUNCIATION_DIFFICULTIES.map((d) => (
-            <button key={d} type="button" onClick={() => onDifficulty(d)} className={pill(difficulty === d)}>
-              {t(`speaking.pronunciation.level.${d}`)}
-            </button>
-          ))}
-        </div>
-      </div>
+      <SetupSection title={t('speaking.pronunciation.difficulty')} accentDark={ACCENT_DARK}>
+        <OptionPillGroup
+          options={PRONUNCIATION_DIFFICULTIES.map((d) => ({
+            id: d,
+            label: t(`speaking.pronunciation.level.${d}`),
+          }))}
+          value={difficulty}
+          onChange={onDifficulty}
+          accent={ACCENT}
+          accentDark={ACCENT_DARK}
+        />
+      </SetupSection>
 
-      <button
-        type="button"
+      <StartButton
+        label={t('speaking.pronunciation.start')}
+        icon="waveform"
+        accent={ACCENT}
+        accentDark={ACCENT_DARK}
         onClick={onStart}
-        className="h-12 w-full rounded-2xl bg-linear-to-r from-[#2EB8CC] to-[#1F9BAD] text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(46,184,204,0.28)] transition-transform hover:brightness-105 active:scale-[0.98]"
-      >
-        {t('speaking.pronunciation.start')}
-      </button>
+      />
     </div>
   );
 }

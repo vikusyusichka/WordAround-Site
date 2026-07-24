@@ -9,6 +9,9 @@ import { Plus } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
+import { SetupSection } from '@/components/practice/SetupSection';
+import { OptionPillGroup } from '@/components/practice/OptionPill';
+import { StartButton } from '@/components/practice/StartButton';
 import { ReadingTextCard } from '@/components/reading/ReadingTextCard';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
 import { SetSelectionModal } from '@/components/writing/SetSelectionModal';
@@ -37,12 +40,9 @@ export const Route = createFileRoute('/_authed/practice/reading/from-sets/')({
   component: FromSetsScreen,
 });
 
-const pill = (selected: boolean) =>
-  `h-9 rounded-full border px-3.5 text-[13px] font-semibold transition-colors ${
-    selected
-      ? 'border-[#F7A310]/50 bg-[#F7A310]/10 text-(--color-primary-blue-dark)'
-      : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
-  }`;
+// Reading From Sets is the orange reading mode.
+const ACCENT = '#F7A310';
+const ACCENT_DARK = '#AB6305';
 
 function FromSetsScreen() {
   const { t } = useTranslation();
@@ -171,44 +171,37 @@ function FromSetsScreen() {
                     )}
                   </div>
 
-                  <div className="flex flex-col gap-1.5">
-                    <span className="text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)">
-                      {t('reading.fromSets.mode')}
-                    </span>
-                    <div className="flex flex-wrap gap-1.5">
-                      {GENERATION_STYLES.map((style) => (
-                        <button key={style} type="button" onClick={() => setMode(style)} className={pill(mode === style)}>
-                          {t(`reading.fromSets.modeOption.${style}`)}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
+                  <SetupSection title={t('reading.fromSets.mode')} accentDark={ACCENT_DARK}>
+                    <OptionPillGroup
+                      options={GENERATION_STYLES.map((style) => ({ id: style, label: t(`reading.fromSets.modeOption.${style}`) }))}
+                      value={mode}
+                      onChange={setMode}
+                      accent={ACCENT}
+                      accentDark={ACCENT_DARK}
+                      columns={2}
+                    />
+                  </SetupSection>
 
-                  <div className="flex flex-col gap-1.5">
-                    <span className="text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)">
-                      {t('reading.addText.difficulty')}
-                    </span>
-                    <div className="flex flex-wrap gap-1.5">
-                      {FROM_SET_DIFFICULTIES.map((level) => (
-                        <button key={level} type="button" onClick={() => setDifficulty(level)} className={pill(difficulty === level)}>
-                          {level}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
+                  <SetupSection title={t('reading.addText.difficulty')} accentDark={ACCENT_DARK}>
+                    <OptionPillGroup
+                      options={FROM_SET_DIFFICULTIES.map((level) => ({ id: level, label: level }))}
+                      value={difficulty}
+                      onChange={setDifficulty}
+                      accent={ACCENT}
+                      accentDark={ACCENT_DARK}
+                    />
+                  </SetupSection>
 
-                  <div className="flex flex-col gap-1.5">
-                    <span className="text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)">
-                      {t('reading.fromSets.length')}
-                    </span>
-                    <div className="flex flex-wrap gap-1.5">
-                      {FROM_SET_LENGTHS.map((l) => (
-                        <button key={l} type="button" onClick={() => setLength(l)} className={pill(length === l)}>
-                          {t(`reading.addText.length.${l}`)}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
+                  <SetupSection title={t('reading.fromSets.length')} accentDark={ACCENT_DARK}>
+                    <OptionPillGroup
+                      options={FROM_SET_LENGTHS.map((l) => ({ id: l, label: t(`reading.addText.length.${l}`) }))}
+                      value={length}
+                      onChange={setLength}
+                      accent={ACCENT}
+                      accentDark={ACCENT_DARK}
+                      columns={3}
+                    />
+                  </SetupSection>
 
                   {error && (
                     <p role="alert" className="text-[14px] font-semibold text-(--color-cs-red)">
@@ -216,16 +209,14 @@ function FromSetsScreen() {
                     </p>
                   )}
 
-                  <button
-                    type="button"
-                    onClick={() => void handleGenerate()}
+                  <StartButton
+                    label={isGenerating || saveItem.isPending ? t('reading.fromSets.generating') : t('reading.fromSets.generate')}
+                    icon="sparkles"
+                    accent={ACCENT}
+                    accentDark={ACCENT_DARK}
                     disabled={isGenerating || saveItem.isPending}
-                    className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-60"
-                  >
-                    {isGenerating || saveItem.isPending
-                      ? t('reading.fromSets.generating')
-                      : t('reading.fromSets.generate')}
-                  </button>
+                    onClick={() => void handleGenerate()}
+                  />
                 </>
               )
             )}

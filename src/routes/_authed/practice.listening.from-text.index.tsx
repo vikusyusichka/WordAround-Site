@@ -9,6 +9,9 @@ import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
+import { SetupSection } from '@/components/practice/SetupSection';
+import { OptionPill, OptionPillGroup } from '@/components/practice/OptionPill';
+import { StartButton } from '@/components/practice/StartButton';
 import { ESSAY_LANGUAGES } from '@/lib/essayTypes';
 import { saveListeningSession } from '@/lib/listeningStore';
 import {
@@ -31,17 +34,13 @@ export const Route = createFileRoute('/_authed/practice/listening/from-text/')({
   component: ListenFromTextSetup,
 });
 
-const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 
-const pill = (selected: boolean) =>
-  `h-9 rounded-full border px-3.5 text-[13px] font-semibold transition-colors ${
-    selected
-      ? 'border-[#3394D1]/50 bg-[#3394D1]/10 text-(--color-primary-blue-dark)'
-      : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
-  }`;
+// Listen-from-Text mode accent (ListeningTheme.listenFromTextAccent / Dark).
+const ACCENT = '#3394D1';
+const ACCENT_DARK = '#1F6BA3';
 
-const sectionTitle =
-  'text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)';
+const subLabel = 'text-[13px] font-bold';
 
 function ListenFromTextSetup() {
   const { t } = useTranslation();
@@ -137,60 +136,50 @@ function ListenFromTextSetup() {
         subtitle={t('listening.fromText.subtitle')}
       />
 
-      <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-        <button
-          type="button"
-          onClick={() => void navigate({ to: '/practice/listening' })}
-          className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-        >
-          ← {t('nav.listening')}
-        </button>
+      <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
+        <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
+          <OptionPillGroup
+            options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
+            value={languageId}
+            onChange={setLanguageId}
+            accent={ACCENT}
+            accentDark={ACCENT_DARK}
+            columns={3}
+          />
+        </SetupSection>
 
-        {/* Language + level */}
-        <div className="flex flex-col gap-1.5">
-          <span className={sectionTitle}>{t('reading.addText.language')}</span>
-          <div className="flex flex-wrap gap-1.5">
-            {ESSAY_LANGUAGES.map((lang) => (
-              <button key={lang.id} type="button" onClick={() => setLanguageId(lang.id)} className={pill(languageId === lang.id)}>
-                {lang.title}
-              </button>
-            ))}
-          </div>
-        </div>
-        <div className="flex flex-col gap-1.5">
-          <span className={sectionTitle}>{t('listening.fromText.level')}</span>
-          <div className="flex flex-wrap gap-1.5">
-            {LEVELS.map((l) => (
-              <button key={l} type="button" onClick={() => setLevel(l)} className={pill(level === l)}>
-                {l}
-              </button>
-            ))}
-          </div>
-        </div>
+        <SetupSection title={t('listening.fromText.level')} accentDark={ACCENT_DARK}>
+          <OptionPillGroup
+            options={LEVELS.map((l) => ({ id: l, label: l }))}
+            value={level}
+            onChange={setLevel}
+            accent={ACCENT}
+            accentDark={ACCENT_DARK}
+          />
+        </SetupSection>
 
-        {/* Voice settings */}
-        <div className="flex flex-col gap-3 rounded-2xl border border-(--color-auth-field-border) bg-white p-4">
-          <div className="flex flex-col gap-1.5">
-            <span className={sectionTitle}>{t('listening.fromText.voiceSpeed')}</span>
-            <div className="flex gap-1.5">
-              {LISTENING_VOICE_SPEEDS.map((speed) => (
-                <button key={speed} type="button" onClick={() => setVoiceSpeed(speed)} className={pill(voiceSpeed === speed)}>
-                  {VOICE_SPEED_META[speed].label}
-                </button>
-              ))}
-            </div>
-          </div>
-          <div className="flex flex-col gap-1.5">
-            <span className={sectionTitle}>{t('listening.fromText.voiceType')}</span>
-            <div className="flex gap-1.5">
-              {LISTENING_VOICE_TYPES.map((type) => (
-                <button key={type} type="button" onClick={() => setVoiceType(type)} className={pill(voiceType === type)}>
-                  {t(`listening.fromText.voice.${type}`)}
-                </button>
-              ))}
-            </div>
-          </div>
-          <label className="flex cursor-pointer items-center justify-between border-t border-(--color-auth-field-border) pt-3">
+        <SetupSection title={t('listening.fromText.voiceSettings')} accentDark={ACCENT_DARK}>
+          <span className={subLabel} style={{ color: ACCENT_DARK }}>
+            {t('listening.fromText.voiceSpeed')}
+          </span>
+          <OptionPillGroup
+            options={LISTENING_VOICE_SPEEDS.map((speed) => ({ id: speed, label: VOICE_SPEED_META[speed].label }))}
+            value={voiceSpeed}
+            onChange={setVoiceSpeed}
+            accent={ACCENT}
+            accentDark={ACCENT_DARK}
+          />
+          <span className={`mt-1 ${subLabel}`} style={{ color: ACCENT_DARK }}>
+            {t('listening.fromText.voiceType')}
+          </span>
+          <OptionPillGroup
+            options={LISTENING_VOICE_TYPES.map((type) => ({ id: type, label: t(`listening.fromText.voice.${type}`) }))}
+            value={voiceType}
+            onChange={setVoiceType}
+            accent={ACCENT}
+            accentDark={ACCENT_DARK}
+          />
+          <label className="mt-1 flex cursor-pointer items-center justify-between">
             <span className="text-[14px] font-semibold text-(--color-primary-blue-dark)">
               {t('listening.fromText.showText')}
             </span>
@@ -198,13 +187,13 @@ function ListenFromTextSetup() {
               type="checkbox"
               checked={showText}
               onChange={(e) => setShowText(e.target.checked)}
-              className="size-5 accent-[#3394D1]"
+              className="size-5"
+              style={{ accentColor: ACCENT }}
             />
           </label>
-        </div>
+        </SetupSection>
 
-        {/* Question settings */}
-        <div className="flex flex-col gap-3 rounded-2xl border border-(--color-auth-field-border) bg-white p-4">
+        <SetupSection title={t('listening.fromText.questions')} accentDark={ACCENT_DARK}>
           <label className="flex cursor-pointer items-center justify-between">
             <span className="text-[14px] font-semibold text-(--color-primary-blue-dark)">
               {t('listening.fromText.addQuestions')}
@@ -213,58 +202,65 @@ function ListenFromTextSetup() {
               type="checkbox"
               checked={addQuestions}
               onChange={(e) => setAddQuestions(e.target.checked)}
-              className="size-5 accent-[#3394D1]"
+              className="size-5"
+              style={{ accentColor: ACCENT }}
             />
           </label>
           {addQuestions && (
             <>
-              <div className="flex flex-col gap-1.5">
-                <span className={sectionTitle}>{t('listening.fromText.questionCount')}</span>
-                <div className="flex gap-1.5">
-                  {LISTENING_QUESTION_COUNTS.map((count) => (
-                    <button key={count} type="button" onClick={() => setQuestionCount(count)} className={pill(questionCount === count)}>
-                      {count}
-                    </button>
-                  ))}
-                </div>
-              </div>
-              <div className="flex flex-col gap-1.5">
-                <span className={sectionTitle}>{t('listening.fromText.questionTypes')}</span>
-                <div className="flex flex-wrap gap-1.5">
-                  {LISTENING_QUESTION_TYPES.map((type) => (
-                    <button key={type} type="button" onClick={() => toggleType(type)} className={pill(questionTypes.includes(type))}>
-                      {t(`listening.questionType.${type}`)}
-                    </button>
-                  ))}
-                </div>
+              <span className={`mt-1 ${subLabel}`} style={{ color: ACCENT_DARK }}>
+                {t('listening.fromText.questionCount')}
+              </span>
+              <OptionPillGroup
+                options={LISTENING_QUESTION_COUNTS.map((count) => ({ id: String(count), label: String(count) }))}
+                value={String(questionCount)}
+                onChange={(v) => setQuestionCount(Number(v))}
+                accent={ACCENT}
+                accentDark={ACCENT_DARK}
+              />
+              <span className={`mt-1 ${subLabel}`} style={{ color: ACCENT_DARK }}>
+                {t('listening.fromText.questionTypes')}
+              </span>
+              <div className="flex flex-wrap gap-2.5">
+                {LISTENING_QUESTION_TYPES.map((type) => (
+                  <div key={type} className="min-w-[120px] flex-1">
+                    <OptionPill
+                      label={t(`listening.questionType.${type}`)}
+                      selected={questionTypes.includes(type)}
+                      accent={ACCENT}
+                      accentDark={ACCENT_DARK}
+                      onClick={() => toggleType(type)}
+                    />
+                  </div>
+                ))}
               </div>
             </>
           )}
-        </div>
+        </SetupSection>
 
-        {/* Text input */}
-        <label className="flex flex-col gap-1.5">
-          <span className={sectionTitle}>{t('listening.fromText.optionalTitle')}</span>
+        <SetupSection title={t('listening.fromText.textInput')} accentDark={ACCENT_DARK}>
+          <span className={subLabel} style={{ color: ACCENT_DARK }}>
+            {t('listening.fromText.optionalTitle')}
+          </span>
           <input
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             placeholder={t('listening.fromText.titlePlaceholder')}
-            className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+            className="w-full rounded-2xl border bg-white px-4 py-3 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none transition-colors focus-visible:border-(--color-home-brand)"
+            style={{ borderColor: `color-mix(in srgb, ${ACCENT} 24%, transparent)` }}
           />
-        </label>
-        <div className="flex flex-col gap-1.5">
           <textarea
             value={text}
             onChange={(e) => setText(e.target.value)}
             placeholder={t('listening.fromText.textPlaceholder')}
             rows={7}
-            className="w-full resize-y rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-medium leading-relaxed text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+            className="mt-1 w-full resize-y rounded-2xl border bg-white px-4 py-3 text-[15px] font-medium leading-relaxed text-(--color-primary-blue-dark) outline-none transition-colors focus-visible:border-(--color-home-brand)"
+            style={{ borderColor: `color-mix(in srgb, ${ACCENT} 24%, transparent)` }}
           />
           <span className="text-[12px] font-medium text-(--color-muted-text)">
-            {t('listening.fromText.recommended')} · {wordCount}{' '}
-            {t('listening.fromText.words')}
+            {t('listening.fromText.recommended')} · {wordCount} {t('listening.fromText.words')}
           </span>
-        </div>
+        </SetupSection>
 
         {validation && (
           <p role="alert" className="text-[14px] font-semibold text-(--color-cs-red)">
@@ -272,14 +268,14 @@ function ListenFromTextSetup() {
           </p>
         )}
 
-        <button
-          type="button"
-          onClick={() => void startListening()}
+        <StartButton
+          label={t('listening.fromText.start')}
+          icon="headphones"
+          accent={ACCENT}
+          accentDark={ACCENT_DARK}
           disabled={isStarting}
-          className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-60"
-        >
-          {t('listening.fromText.start')}
-        </button>
+          onClick={() => void startListening()}
+        />
       </div>
     </ContentContainer>
   );

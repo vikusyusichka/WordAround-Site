@@ -7,6 +7,9 @@ import { useTranslation } from 'react-i18next';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { Icon } from '@/components/primitives/Icon';
+import { SetupSection } from '@/components/practice/SetupSection';
+import { OptionPillGroup } from '@/components/practice/OptionPill';
+import { StartButton } from '@/components/practice/StartButton';
 import { ESSAY_LANGUAGES } from '@/lib/essayTypes';
 import { PICTURE_PROMPT_HINTS } from '@/lib/describePicture';
 import {
@@ -19,17 +22,10 @@ export const Route = createFileRoute('/_authed/practice/speaking/picture/')({
   component: DescribePictureSetup,
 });
 
+// Describe Picture is the orange Speaking mode (AppColors.orangeAccent/Title).
 const ACCENT = '#F7A310';
-const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'];
-
-const pill = (selected: boolean) =>
-  `h-9 rounded-full border px-3.5 text-[13px] font-semibold transition-colors ${
-    selected
-      ? 'border-[#F7A310]/60 bg-[#F7A310]/12 text-[#A66A05]'
-      : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
-  }`;
-
-const sectionTitle = 'text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)';
+const ACCENT_DARK = '#AB6305';
+const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 
 function DescribePictureSetup() {
   const { t } = useTranslation();
@@ -43,50 +39,42 @@ function DescribePictureSetup() {
     <ContentContainer fluid>
       <PageHeader title={t('speaking.picture.title')} subtitle={t('speaking.picture.subtitle')} />
 
-      <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-        <button
-          type="button"
-          onClick={() => void navigate({ to: '/practice/speaking' })}
-          className="w-fit text-[13px] font-semibold text-[#A66A05] hover:underline focus-visible:outline-none"
-        >
-          ← {t('nav.speaking')}
-        </button>
+      <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
+        <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
+          <OptionPillGroup
+            options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
+            value={languageId}
+            onChange={setLanguageId}
+            accent={ACCENT}
+            accentDark={ACCENT_DARK}
+            columns={3}
+          />
+        </SetupSection>
 
-        <div className="flex flex-col gap-1.5">
-          <span className={sectionTitle}>{t('reading.addText.language')}</span>
-          <div className="flex flex-wrap gap-1.5">
-            {ESSAY_LANGUAGES.map((lang) => (
-              <button key={lang.id} type="button" onClick={() => setLanguageId(lang.id)} className={pill(languageId === lang.id)}>
-                {lang.title}
-              </button>
-            ))}
-          </div>
-        </div>
+        <SetupSection title={t('listening.fromText.level')} accentDark={ACCENT_DARK}>
+          <OptionPillGroup
+            options={LEVELS.map((l) => ({ id: l, label: l }))}
+            value={level}
+            onChange={setLevel}
+            accent={ACCENT}
+            accentDark={ACCENT_DARK}
+          />
+        </SetupSection>
 
-        <div className="flex flex-col gap-1.5">
-          <span className={sectionTitle}>{t('listening.fromText.level')}</span>
-          <div className="flex flex-wrap gap-1.5">
-            {LEVELS.map((l) => (
-              <button key={l} type="button" onClick={() => setLevel(l)} className={pill(level === l)}>
-                {l}
-              </button>
-            ))}
-          </div>
-        </div>
+        <SetupSection title={t('speaking.conversation.length')} accentDark={ACCENT_DARK}>
+          <OptionPillGroup
+            options={CONVERSATION_LENGTHS.map((l) => ({
+              id: l,
+              label: `${CONVERSATION_LENGTH_MINUTES[l]} ${t('speaking.conversation.min')}`,
+            }))}
+            value={length}
+            onChange={setLength}
+            accent={ACCENT}
+            accentDark={ACCENT_DARK}
+          />
+        </SetupSection>
 
-        <div className="flex flex-col gap-1.5">
-          <span className={sectionTitle}>{t('speaking.conversation.length')}</span>
-          <div className="flex gap-1.5">
-            {CONVERSATION_LENGTHS.map((l) => (
-              <button key={l} type="button" onClick={() => setLength(l)} className={pill(length === l)}>
-                {CONVERSATION_LENGTH_MINUTES[l]} {t('speaking.conversation.min')}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-1.5">
-          <span className={sectionTitle}>{t('speaking.free.preview')}</span>
+        <SetupSection title={t('speaking.free.preview')} accentDark={ACCENT_DARK}>
           <div
             className="flex flex-col gap-2.5 rounded-2xl border p-4"
             style={{ background: `${ACCENT}12`, borderColor: `${ACCENT}2E` }}
@@ -118,15 +106,15 @@ function DescribePictureSetup() {
               ))}
             </div>
           </div>
-        </div>
+        </SetupSection>
 
-        <button
-          type="button"
+        <StartButton
+          label={t('speaking.picture.start')}
+          icon="photo.fill"
+          accent={ACCENT}
+          accentDark={ACCENT_DARK}
           onClick={() => void navigate({ to: '/practice/speaking/picture/session', search: { lang: languageId, level, length } })}
-          className="h-12 w-full rounded-2xl bg-linear-to-r from-[#F7A310] to-[#E08B00] text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(247,163,16,0.28)] transition-transform hover:brightness-105 active:scale-[0.98]"
-        >
-          {t('speaking.picture.start')}
-        </button>
+        />
       </div>
     </ContentContainer>
   );
