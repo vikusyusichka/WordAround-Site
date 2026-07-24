@@ -166,8 +166,10 @@ function StudyScreen({ set }: { set: FlashcardSet }) {
           <StudyCard
             card={card}
             showTranslation={state.isShowingTranslation}
-            accent={theme.accent}
+            theme={theme}
             isMastered={state.masteredCardIDs.has(card.id)}
+            index={stats.answered + 1}
+            total={stats.total}
             onFlip={() => dispatch({ type: 'FLIP' })}
             onToggleMastered={() => dispatch({ type: 'TOGGLE_MASTERED', cardId: card.id })}
             onSpeak={speak}

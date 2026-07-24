@@ -7,9 +7,11 @@ import { StudyCard } from './StudyCard';
 import { StudyControls } from './StudyControls';
 import { FilterTabs } from './FilterTabs';
 import { CardListRow } from './CardListRow';
+import { themeForColor } from '@/lib/setColors';
 import type { Flashcard } from '@/lib/models';
 
 const card: Flashcard = { id: 'c1', word: 'hello', translation: 'привіт', example: 'hi there' };
+const theme = themeForColor('blue');
 
 describe('StudyCard', () => {
   it('renders the word and flips on click', async () => {
@@ -19,7 +21,7 @@ describe('StudyCard', () => {
       <StudyCard
         card={card}
         showTranslation={false}
-        accent="#000"
+        theme={theme}
         isMastered={false}
         onFlip={onFlip}
         onToggleMastered={() => {}}
@@ -39,7 +41,7 @@ describe('StudyCard', () => {
       <StudyCard
         card={card}
         showTranslation={false}
-        accent="#000"
+        theme={theme}
         isMastered={false}
         onFlip={() => {}}
         onToggleMastered={() => {}}
