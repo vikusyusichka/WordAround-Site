@@ -2,7 +2,7 @@
    4A; Essays / GrammarNotes render with a "Coming soon" chip. */
 import { useTranslation } from 'react-i18next';
 
-import { WritingMenuCard } from './WritingMenuCard';
+import { PracticeModeCard } from '@/components/practice/PracticeModeCard';
 import { WRITING_MENU_ITEMS, type WritingMenuAction } from '@/lib/writingTypes';
 
 interface WritingMenuGridProps {
@@ -14,9 +14,9 @@ export const WritingMenuGrid = ({ onSelect }: WritingMenuGridProps) => {
   const comingSoon = t('writing.menu.comingSoon');
 
   return (
-    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-(--spacing-mode-grid-gap) sm:grid-cols-2 lg:grid-cols-3">
       {WRITING_MENU_ITEMS.map((item) => (
-        <WritingMenuCard
+        <PracticeModeCard
           key={item.id}
           title={t(item.titleKey)}
           subtitle={t(item.subtitleKey)}

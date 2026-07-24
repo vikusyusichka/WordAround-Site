@@ -5,6 +5,7 @@ import { PencilSimple, Trash } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
+import { ThemedScreen } from '@/components/create/ThemedScreen';
 import { FolderForm } from '@/components/folders/FolderForm';
 import { SetItem } from '@/components/home/SetItem';
 import { Icon } from '@/components/primitives/Icon';
@@ -84,16 +85,18 @@ function FolderDetailPage() {
 
   return (
     <ContentContainer fluid>
+      <ThemedScreen background={theme.screenBackground} />
+
       {/* Themed header */}
       <div
-        className="mb-8 flex items-center gap-5 rounded-3xl border border-white/80 p-6 shadow-[0_6px_16px_rgba(0,0,0,0.04)]"
-        style={{ background: theme.bg }}
+        className="mb-8 flex items-center gap-5 rounded-3xl border p-6 shadow-[0_6px_16px_rgba(0,0,0,0.04)]"
+        style={{ background: theme.previewBackground, borderColor: theme.softBorderColor }}
       >
         <span className="grid size-16 shrink-0 place-items-center rounded-2xl" style={{ background: theme.accent }}>
           <Icon name="folder.fill" className="size-8 text-white" />
         </span>
         <div className="flex min-w-0 flex-1 flex-col gap-1">
-          <h1 className="truncate text-[26px] font-bold text-(--color-cs-dark-text)">{folder.title}</h1>
+          <h1 className="truncate text-[26px] font-bold" style={{ color: theme.titleColor }}>{folder.title}</h1>
           {folder.description && (
             <p className="truncate text-[15px] font-medium text-(--color-cs-text-muted)">
               {folder.description}

@@ -9,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { ProgressCard } from '@/components/home/ProgressCard';
-import { WritingMenuCard } from '@/components/writing/WritingMenuCard';
+import { PracticeModeCard } from '@/components/practice/PracticeModeCard';
 import { DAILY_GOAL_MINUTES, minutesListenedToday } from '@/lib/listeningStore';
 import {
   LISTENING_MENU_ITEMS,
@@ -59,9 +59,9 @@ function ListeningLanding() {
           <h2 className="text-[21px] font-bold text-(--color-primary-blue-dark) lg:text-[26px]">
             {t('listening.sectionTitle')}
           </h2>
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-(--spacing-mode-grid-gap) sm:grid-cols-2">
             {LISTENING_MENU_ITEMS.map((item) => (
-              <WritingMenuCard
+              <PracticeModeCard
                 key={item.id}
                 title={t(item.titleKey)}
                 subtitle={t(item.subtitleKey)}

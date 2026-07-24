@@ -20,17 +20,21 @@ export const SetPreviewCard = ({ title, iconName, colorId, cardCount }: SetPrevi
 
   return (
     <div
-      className="flex items-center gap-4 rounded-3xl border border-white/80 p-5 shadow-[0_6px_16px_rgba(0,0,0,0.04)]"
-      style={{ background: theme.bg }}
+      className="flex items-center gap-4 rounded-3xl border p-5 transition-colors"
+      style={{
+        background: theme.previewBackground,
+        borderColor: theme.softBorderColor,
+        boxShadow: `0 6px 16px ${theme.shadowColor}`,
+      }}
     >
       <span className="grid size-14 shrink-0 place-items-center rounded-2xl" style={{ background: theme.accent }}>
         <Icon name={shownIcon} className="size-7 text-white" />
       </span>
       <div className="flex min-w-0 flex-col gap-1">
-        <span className="truncate text-[18px] font-bold text-(--color-cs-dark-text)">
+        <span className="truncate text-[18px] font-bold" style={{ color: theme.titleColor }}>
           {title.trim() || t('createSet.previewPlaceholder')}
         </span>
-        <span className="text-[14px] font-medium text-(--color-cs-text-muted)">
+        <span className="text-[14px] font-medium" style={{ color: theme.mutedTextColor }}>
           {t('sets.cardCount', { count: cardCount })}
         </span>
       </div>

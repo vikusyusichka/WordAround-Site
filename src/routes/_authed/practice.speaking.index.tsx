@@ -7,7 +7,7 @@ import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { ProgressCard } from '@/components/home/ProgressCard';
 import { useDailyProgress, withDailyProgress } from '@/hooks/useDailyProgress';
-import { WritingMenuCard } from '@/components/writing/WritingMenuCard';
+import { PracticeModeCard } from '@/components/practice/PracticeModeCard';
 import { SPEAKING_MENU_ITEMS, SPEAKING_TODAY_GOAL, type SpeakingModeId } from '@/lib/speakingTypes';
 
 export const Route = createFileRoute('/_authed/practice/speaking/')({
@@ -44,9 +44,9 @@ function SpeakingLanding() {
           <h2 className="text-[21px] font-bold text-(--color-primary-blue-dark) lg:text-[26px]">
             {t('speaking.sectionTitle')}
           </h2>
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-(--spacing-mode-grid-gap) sm:grid-cols-2">
             {SPEAKING_MENU_ITEMS.map((item) => (
-              <WritingMenuCard
+              <PracticeModeCard
                 key={item.id}
                 title={t(item.titleKey)}
                 subtitle={t(item.subtitleKey)}

@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ArrowsClockwise, CaretLeft, Plus, Trash } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { ThemedScreen } from '@/components/create/ThemedScreen';
 import { Icon } from '@/components/primitives/Icon';
 import { StudyCard } from '@/components/study/StudyCard';
 import { StudyControls } from '@/components/study/StudyControls';
@@ -100,6 +101,9 @@ function StudyScreen({ set }: { set: FlashcardSet }) {
 
   return (
     <ContentContainer fluid>
+      {/* iOS repaints the whole detail screen in the set's color. */}
+      <ThemedScreen background={theme.screenBackground} />
+
       {/* Header */}
       <div className="mb-6 flex items-center gap-3">
         <button
@@ -116,7 +120,7 @@ function StudyScreen({ set }: { set: FlashcardSet }) {
             className="size-6 text-white"
           />
         </span>
-        <h1 className="min-w-0 flex-1 truncate text-[24px] font-bold text-(--color-cs-dark-text)">
+        <h1 className="min-w-0 flex-1 truncate text-[24px] font-bold" style={{ color: theme.titleColor }}>
           {set.title}
         </h1>
         <button

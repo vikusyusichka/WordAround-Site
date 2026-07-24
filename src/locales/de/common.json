@@ -111,7 +111,10 @@
       "nameRequired": "Folder name is required.",
       "nameTooLong": "Folder name must be under 80 characters.",
       "descTooLong": "Description must be under 120 characters."
-    }
+    },
+    "optional": "(optional)",
+    "preview": "Preview",
+    "previewPlaceholder": "New folder"
   },
   "sets": {
     "create": "Create set",
@@ -1059,7 +1062,10 @@
         "tooShort": "Add at least 40 characters to start listening.",
         "tooLong": "That text is too long. Please keep it under 5000 characters.",
         "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
-      }
+      },
+      "voiceSettings": "Voice Settings",
+      "questions": "Questions",
+      "textInput": "Text Input"
     },
     "session": {
       "replay": "Replay",

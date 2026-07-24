@@ -1,15 +1,22 @@
-/* Create/edit folder form. Local state + validation; the parent supplies the
-   submit handler (create or update mutation) and any save error. */
+/* Create/edit folder form — port of CreateFolderView.swift. Local state +
+   validation; the parent supplies the submit handler and any save error.
+
+   Everything recolours live with the chosen swatch: the screen wash, the
+   section card, the field borders, the labels, the button and the preview
+   card underneath. That repaint is the defining trait of this screen on iOS. */
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { ColorPicker } from '@/components/create/ColorPicker';
+import { ThemedScreen } from '@/components/create/ThemedScreen';
+import { FolderCard } from '@/components/folders/FolderCard';
+import { Icon } from '@/components/primitives/Icon';
 import {
   FOLDER_DESC_MAX,
   FOLDER_TITLE_MAX,
   validateFolder,
 } from '@/lib/folderValidation';
-import { SET_COLOR_HEX, type SetColorId } from '@/lib/setColors';
+import { SET_COLOR_HEX, themeForColor, type SetColorId } from '@/lib/setColors';
 
 interface FolderFormProps {
   initialTitle?: string;
@@ -39,6 +46,8 @@ export const FolderForm = ({
   const [color, setColor] = useState<SetColorId>(initialColor);
   const [validationKey, setValidationKey] = useState<string | null>(null);
 
+  const theme = themeForColor(color);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const error = validateFolder({ title, description });
@@ -52,69 +61,124 @@ export const FolderForm = ({
 
   const shownError = validationKey ?? errorKey ?? null;
 
+  const label = 'text-[14px] font-bold';
+  const field =
+    'w-full rounded-2xl border bg-white px-4 text-[15px] font-semibold outline-none transition-colors';
+
   return (
-    <form onSubmit={handleSubmit} className="flex max-w-xl flex-col gap-6">
-      <label className="flex flex-col gap-2">
-        <span className="flex items-center justify-between text-[14px] font-semibold text-(--color-cs-dark-text)">
-          {t('folders.name')}
-          <span className="text-[12px] font-medium text-(--color-cs-text-muted)">
-            {title.trim().length}/{FOLDER_TITLE_MAX}
-          </span>
-        </span>
-        <input
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-          placeholder={t('folders.namePlaceholder')}
-          autoFocus
-          className="h-12 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[15px] font-medium text-(--color-cs-dark-text) outline-none focus-visible:border-(--color-home-brand)"
-        />
-      </label>
+    <>
+      <ThemedScreen background={theme.screenBackground} />
 
-      <label className="flex flex-col gap-2">
-        <span className="flex items-center justify-between text-[14px] font-semibold text-(--color-cs-dark-text)">
-          {t('folders.description')}
-          <span className="text-[12px] font-medium text-(--color-cs-text-muted)">
-            {description.trim().length}/{FOLDER_DESC_MAX}
-          </span>
-        </span>
-        <textarea
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-          placeholder={t('folders.descriptionPlaceholder')}
-          rows={3}
-          className="resize-none rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-medium text-(--color-cs-dark-text) outline-none focus-visible:border-(--color-home-brand)"
-        />
-      </label>
-
-      <div className="flex flex-col gap-2.5">
-        <span className="text-[14px] font-semibold text-(--color-cs-dark-text)">
-          {t('folders.color')}
-        </span>
-        <ColorPicker value={color} onChange={setColor} />
-      </div>
-
-      {shownError && (
-        <p role="alert" className="text-[14px] font-medium text-(--color-cs-red)">
-          {t(shownError)}
-        </p>
-      )}
-
-      <div className="flex gap-3">
-        <button
-          type="submit"
-          disabled={isSaving}
-          className="h-12 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-6 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-70 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
+      <form onSubmit={handleSubmit} className="flex max-w-[560px] flex-col gap-[22px]">
+        {/* Section card — iOS: padding 18, radius 26, shadow r18 y10. */}
+        <div
+          className="flex flex-col gap-5 rounded-[26px] p-[18px] transition-colors"
+          style={{
+            background: theme.sectionBackground,
+            boxShadow: `0 10px 18px ${theme.shadowColor}`,
+          }}
         >
-          {isSaving ? t('folders.saving') : submitLabel}
-        </button>
-        <button
-          type="button"
-          onClick={onCancel}
-          className="h-12 rounded-2xl border border-(--color-auth-field-border) bg-white px-6 text-[15px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-black/[0.03] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
-        >
-          {t('folders.cancel')}
-        </button>
-      </div>
-    </form>
+          <label className="flex flex-col gap-2">
+            <span className={label} style={{ color: theme.titleColor }}>
+              {t('folders.name')}
+            </span>
+            <input
+              value={title}
+              onChange={(e) => setTitle(e.target.value)}
+              placeholder={t('folders.namePlaceholder')}
+              maxLength={FOLDER_TITLE_MAX}
+              autoFocus
+              className={`${field} h-[54px]`}
+              style={{ borderColor: theme.softBorderColor, color: theme.titleColor }}
+            />
+          </label>
+
+          <label className="flex flex-col gap-2">
+            <span className="flex items-baseline gap-1">
+              <span className={label} style={{ color: theme.titleColor }}>
+                {t('folders.description')}
+              </span>
+              <span className="text-[14px] font-medium" style={{ color: theme.mutedTextColor }}>
+                {t('folders.optional')}
+              </span>
+            </span>
+            <span className="relative block">
+              <textarea
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                placeholder={t('folders.descriptionPlaceholder')}
+                maxLength={FOLDER_DESC_MAX}
+                className={`${field} h-[120px] resize-none py-3`}
+                style={{ borderColor: theme.softBorderColor, color: theme.titleColor }}
+              />
+              <span
+                className="pointer-events-none absolute right-3 bottom-2.5 text-[11px] font-semibold"
+                style={{ color: theme.mutedTextColor }}
+              >
+                {description.length}/{FOLDER_DESC_MAX}
+              </span>
+            </span>
+          </label>
+
+          <div className="flex flex-col gap-2">
+            <span className={label} style={{ color: theme.titleColor }}>
+              {t('folders.color')}
+            </span>
+            <ColorPicker value={color} onChange={setColor} accent={theme.accent} />
+          </div>
+
+          {shownError && (
+            <p role="alert" className="text-[13px] font-semibold text-(--color-cs-red)">
+              {t(shownError)}
+            </p>
+          )}
+        </div>
+
+        {/* Live preview — the real card, so you see the folder before saving. */}
+        <div className="flex flex-col gap-2.5">
+          <span
+            className="text-center text-[13px] font-semibold"
+            style={{ color: theme.mutedTextColor }}
+          >
+            {t('folders.preview')}
+          </span>
+          <FolderCard
+            folder={{
+              id: 'preview',
+              ownerUID: '',
+              title: title.trim() || t('folders.previewPlaceholder'),
+              description: '',
+              colorHex: SET_COLOR_HEX[color],
+              createdAt: 0,
+              updatedAt: 0,
+            }}
+            setCount={0}
+            onOpen={() => {}}
+            onDelete={() => {}}
+            interactive={false}
+          />
+        </div>
+
+        <div className="flex items-center gap-3">
+          <button
+            type="submit"
+            disabled={isSaving}
+            className="flex h-14 flex-1 items-center justify-between rounded-full px-[22px] text-[16px] font-bold text-white transition-transform hover:brightness-105 active:scale-[0.99] disabled:opacity-70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+            style={{ background: theme.accent, boxShadow: `0 8px 16px ${theme.shadowColor}` }}
+          >
+            <span>{isSaving ? t('folders.saving') : submitLabel}</span>
+            {!isSaving && <Icon name="arrow.right" className="size-[15px]" />}
+          </button>
+          <button
+            type="button"
+            onClick={onCancel}
+            className="h-14 rounded-full bg-white px-6 text-[15px] font-semibold transition-colors hover:bg-black/[0.03] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+            style={{ color: theme.mutedTextColor }}
+          >
+            {t('folders.cancel')}
+          </button>
+        </div>
+      </form>
+    </>
   );
 };

@@ -56,7 +56,7 @@ function FoldersPage() {
           </span>
         </div>
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+        <div className="flex max-w-[760px] flex-col gap-(--spacing-home-content)">
           {folders.map((folder) => (
             <FolderCard
               key={folder.id}
