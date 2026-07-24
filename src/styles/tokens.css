@@ -14,6 +14,22 @@
     --radius-fc-card: 36px;
     --radius-fc-list: 26px;
 
+    /* Practice-mode card — regular column */
+    --radius-mode-card: 26px;
+    --spacing-mode-card-pad: 18px;
+    --size-mode-card-min-h: 178px;
+    --size-mode-icon-circle: 56px;
+    --size-mode-icon: 24px;
+    --text-mode-title: 18px;
+    --text-mode-subtitle: 14px;
+    --size-mode-arrow-circle: 32px;
+    --size-mode-arrow-icon: 14px;
+    --spacing-mode-grid-gap: 14px;
+    --size-mode-blob-w: 92px;
+    --size-mode-blob-h: 76px;
+    --spacing-mode-blob-x: 18px;
+    --spacing-mode-blob-y: 14px;
+
     /* Spacing */
     --spacing-screen-x: 34px;
     --spacing-section: 24px;

@@ -95,7 +95,6 @@
 
   /* Create Set palette */
   --color-cs-bg: #fffafc;
-  --color-cs-red: #ff5759;
   --color-cs-dark-red: #8c051e;
   --color-cs-soft-red: #ffe8ea;
   --color-cs-text-muted: #7a85a8;
@@ -105,11 +104,6 @@
   --color-cs-border-red: #ffc2c4;
   --color-cs-preview-bg: #fff2f5;
   --color-cs-image-bg: #fff5f7;
-  --color-cs-blue: #8ca1f5;
-  --color-cs-yellow: #ffc761;
-  --color-cs-green: #8cd19b;
-  --color-cs-purple: #ba82e8;
-  --color-cs-cyan: #6bc9d9;
 
   /* Flashcard detail palette */
   --color-fc-title: #1433b7;
@@ -133,6 +127,25 @@
   --radius-progress-card: 22px;
   --radius-fc-card: 28px;
   --radius-fc-list: 22px;
+
+  /* Practice-mode card (Layout.swift readingMode* / listeningMode* /
+     speakingMode* — all four modules share one identical set of numbers, so
+     the web deliberately renders them with one component). Compact defaults;
+     the ≥700px "regular" column lives in tokens.css. */
+  --radius-mode-card: 20px;
+  --spacing-mode-card-pad: 14px;
+  --size-mode-card-min-h: 156px;
+  --size-mode-icon-circle: 46px;
+  --size-mode-icon: 20px;
+  --text-mode-title: 15px;
+  --text-mode-subtitle: 12px;
+  --size-mode-arrow-circle: 26px;
+  --size-mode-arrow-icon: 11px;
+  --spacing-mode-grid-gap: 10px;
+  --size-mode-blob-w: 72px;
+  --size-mode-blob-h: 60px;
+  --spacing-mode-blob-x: 14px;
+  --spacing-mode-blob-y: 10px;
 
   /* Spacing (compact defaults) */
   --spacing-screen-x: 22px;
@@ -182,6 +195,24 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
   --font-weight-extrabold: 800;
+}
+
+/* The six set/folder swatch colours (SetColor / CreateSetTheme.swift).
+   These live OUTSIDE @theme on purpose: ColorPicker and setColors.ts build the
+   reference at runtime (`var(--color-cs-${id})`), which Tailwind cannot see
+   when it scans source text. Inside @theme, Tailwind v4 tree-shakes any theme
+   variable it finds no literal usage for — that silently dropped
+   --color-cs-yellow and --color-cs-purple from the build, so those swatches and
+   every yellow/purple folder and set rendered transparent. In :root they are
+   always emitted. The arbitrary-value form used across the app,
+   e.g. text-(--color-cs-red), works identically against a :root variable. */
+:root {
+  --color-cs-red: #ff5759;
+  --color-cs-blue: #8ca1f5;
+  --color-cs-yellow: #ffc761;
+  --color-cs-green: #8cd19b;
+  --color-cs-purple: #ba82e8;
+  --color-cs-cyan: #6bc9d9;
 }
 
 /* CSS reset & app-wide defaults */
