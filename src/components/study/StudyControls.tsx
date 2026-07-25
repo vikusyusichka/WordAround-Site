@@ -33,13 +33,16 @@ export const StudyControls = ({ onKnown, onUnknown, onFlip }: StudyControlsProps
   }, [onKnown, onUnknown, onFlip]);
 
   return (
-    <div className="flex items-center justify-center gap-3">
+    <div className="flex items-center justify-center gap-2.5">
+      {/* Soft rounded pills matching the card's aesthetic — no hard borders. */}
       <button
         type="button"
         onClick={onUnknown}
-        className="flex h-14 flex-1 max-w-[220px] items-center justify-center gap-2 rounded-2xl border border-(--color-cs-border-red) bg-(--color-cs-soft-red) text-[16px] font-bold text-(--color-cs-red) transition-transform hover:-translate-y-0.5 active:scale-[0.98] focus-visible:outline-none"
+        className="flex h-[54px] flex-1 max-w-[220px] items-center justify-center gap-2 rounded-full bg-(--color-cs-soft-red) text-[15px] font-bold text-(--color-cs-red) shadow-[0_4px_10px_rgba(255,87,89,0.14)] transition-transform hover:-translate-y-0.5 active:scale-[0.98] focus-visible:outline-none"
       >
-        <X size={20} weight="bold" />
+        <span className="grid size-6 place-items-center rounded-full bg-(--color-cs-red)/12">
+          <X size={14} weight="bold" />
+        </span>
         {t('study.unknown')}
       </button>
 
@@ -47,7 +50,7 @@ export const StudyControls = ({ onKnown, onUnknown, onFlip }: StudyControlsProps
         type="button"
         onClick={onFlip}
         aria-label={t('study.flip')}
-        className="grid size-12 place-items-center rounded-2xl border border-(--color-auth-field-border) bg-white text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 focus-visible:outline-none"
+        className="grid size-[54px] shrink-0 place-items-center rounded-full bg-white text-(--color-cs-text-muted) shadow-[0_4px_10px_rgba(0,0,0,0.06)] transition-transform hover:-translate-y-0.5 active:scale-[0.96] focus-visible:outline-none"
       >
         <ArrowsClockwise size={20} weight="bold" />
       </button>
@@ -55,9 +58,11 @@ export const StudyControls = ({ onKnown, onUnknown, onFlip }: StudyControlsProps
       <button
         type="button"
         onClick={onKnown}
-        className="flex h-14 flex-1 max-w-[220px] items-center justify-center gap-2 rounded-2xl border border-(--color-green-accent)/30 bg-(--color-green-soft-bg) text-[16px] font-bold text-(--color-green-title) transition-transform hover:-translate-y-0.5 active:scale-[0.98] focus-visible:outline-none"
+        className="flex h-[54px] flex-1 max-w-[220px] items-center justify-center gap-2 rounded-full bg-(--color-green-soft-bg) text-[15px] font-bold text-(--color-green-title) shadow-[0_4px_10px_rgba(41,186,102,0.14)] transition-transform hover:-translate-y-0.5 active:scale-[0.98] focus-visible:outline-none"
       >
-        <Check size={20} weight="bold" />
+        <span className="grid size-6 place-items-center rounded-full bg-(--color-green-accent)/15">
+          <Check size={14} weight="bold" />
+        </span>
         {t('study.known')}
       </button>
     </div>

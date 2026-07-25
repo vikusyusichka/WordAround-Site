@@ -48,33 +48,38 @@ export const StudyCard = ({
 }: StudyCardProps) => {
   const { t } = useTranslation();
 
-  // No `overflow-hidden` on the face: it would force `transform-style: flat`
-  // and defeat `backface-visibility`, showing both faces at once. Blobs are
-  // clipped by a separate inner wrapper instead.
+  // The face must be OPAQUE: iOS's flashcard is a solid card, and a translucent
+  // fill let the reverse face show through when backface-visibility didn't cull
+  // it (Motion's 3D transform defeats it in some browsers). An opaque fill makes
+  // bleed-through impossible regardless. `overflow-hidden` is kept off the face
+  // (it would flatten the 3D context); blobs are clipped by an inner wrapper.
   const faceClass =
-    'absolute inset-0 flex flex-col items-center justify-center gap-4 rounded-[28px] p-8 text-center [backface-visibility:hidden] md:rounded-[36px]';
+    'absolute inset-0 flex flex-col items-center justify-center gap-4 overflow-hidden rounded-[28px] p-8 text-center md:rounded-[36px]';
   const faceStyle = {
-    background: theme.sectionBackground,
+    background: theme.previewBackground,
     border: `4px solid ${theme.fieldBackground}`,
     boxShadow: `0 8px 14px ${theme.shadowColor}`,
+    backfaceVisibility: 'hidden' as const,
+    WebkitBackfaceVisibility: 'hidden' as const,
   };
 
+  // The face already clips (overflow-hidden), so the blobs are positioned
+  // directly against it — no separate clip wrapper needed.
   const decorations = (
-    <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[24px] md:rounded-[32px]">
-      {/* Two opposite corner wave-blobs + a sparkle, clipped to the card. */}
-      <div className="absolute -top-[8%] -right-[8%] h-[42%] w-[42%]">
+    <>
+      <div className="pointer-events-none absolute -top-[8%] -right-[8%] h-[42%] w-[42%]">
         <WaveBlob color={theme.softAccent} className="size-full" />
       </div>
-      <div className="absolute -bottom-[8%] -left-[8%] h-[42%] w-[42%] rotate-180">
+      <div className="pointer-events-none absolute -bottom-[8%] -left-[8%] h-[42%] w-[42%] rotate-180">
         <WaveBlob color={theme.softAccent} className="size-full" />
       </div>
       <Icon
         name="sparkle"
-        className="absolute size-[17px]"
+        className="pointer-events-none absolute size-[17px]"
         style={{ left: '78%', top: '76%', color: theme.accent, opacity: 0.3 }}
         aria-hidden
       />
-    </div>
+    </>
   );
 
   const speaker = (text: string, lang: string) => (
@@ -102,8 +107,17 @@ export const StudyCard = ({
         role="button"
         aria-label={t('study.flip')}
       >
-        {/* Front — word */}
-        <div className={faceClass} style={faceStyle}>
+        {/* Front — word. Opacity is bound to the flip state so the reverse face
+            never paints in the settled state — the guaranteed cure for the
+            coplanar z-fight when a browser fails to cull the backface. */}
+        <div
+          className={faceClass}
+          style={{
+            ...faceStyle,
+            opacity: showTranslation ? 0 : 1,
+            pointerEvents: showTranslation ? 'none' : 'auto',
+          }}
+        >
           {decorations}
           <div className="relative flex items-center gap-2.5">
             <span
@@ -125,7 +139,14 @@ export const StudyCard = ({
         </div>
 
         {/* Back — translation + example + image */}
-        <div className={`${faceClass} [transform:rotateY(180deg)]`} style={faceStyle}>
+        <div
+          className={`${faceClass} [transform:rotateY(180deg)]`}
+          style={{
+            ...faceStyle,
+            opacity: showTranslation ? 1 : 0,
+            pointerEvents: showTranslation ? 'auto' : 'none',
+          }}
+        >
           {decorations}
           <div className="relative flex items-center gap-2.5">
             <span
