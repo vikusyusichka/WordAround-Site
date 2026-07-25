@@ -55,7 +55,7 @@ function SetsPage() {
           </span>
         </div>
       ) : (
-        <div className="flex max-w-[760px] flex-col gap-(--spacing-home-content)">
+        <div className="flex max-w-[760px] flex-col gap-(--spacing-home-sets-gap)">
           {sets.map((set) => {
             const preview = mapSetToPreview(set, t('sets.cardCount', { count: set.cards.length }));
             return (
