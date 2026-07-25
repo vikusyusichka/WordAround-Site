@@ -51,7 +51,7 @@ describe('ConversationResultView', () => {
         onBack={() => {}}
       />,
     );
-    expect(screen.getByText('78')).toBeInTheDocument();
+    expect(screen.getByText('78%')).toBeInTheDocument();
     expect(screen.getByText('Nice fluent answers.')).toBeInTheDocument();
     expect(screen.getByText('I went yesterday')).toBeInTheDocument();
   });
