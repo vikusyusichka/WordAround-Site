@@ -169,6 +169,7 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'checklist.checked': ListChecks,
   checklist: ListChecks,
   'text.alignleft': TextAlignLeft,
+  'text.word.spacing': TextAlignLeft,
   'textformat.size.larger': TextHOne,
   'textformat.size': TextHOne,
   'list.bullet': ListBullets,

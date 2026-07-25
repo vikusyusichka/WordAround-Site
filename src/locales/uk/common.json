@@ -381,7 +381,8 @@
       "task": {
         "time": "≈ {{count}} хв",
         "wordRange": "{{min}}-{{max}} слів",
-        "quickTips": "Короткі поради"
+        "quickTips": "Короткі поради",
+        "taskLabel": "Завдання"
       },
       "editor": {
         "placeholder": "Почніть писати есе тут...",

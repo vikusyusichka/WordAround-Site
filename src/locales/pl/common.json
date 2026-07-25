@@ -381,7 +381,8 @@
       "task": {
         "time": "≈ {{count}} min",
         "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips"
+        "quickTips": "Quick tips",
+        "taskLabel": "Task"
       },
       "editor": {
         "placeholder": "Start writing your essay here...",

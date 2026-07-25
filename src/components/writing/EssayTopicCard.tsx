@@ -1,8 +1,10 @@
-/* Displays a GeneratedEssayTask: title, task text, CEFR badge, estimated time,
-   word range, 3 quick tips. Blob decoration. Ports EssayTopicCardView. */
+/* Generated essay task card — port of EssayTopicCardView: plain white card,
+   header with a gradient level badge + title + "N min", a "Task" label + task
+   text, a word-range pill, and light-purple tip chips. (The web regenerates a
+   topic from the mode picker, so the in-card refresh button is omitted.) */
 import { useTranslation } from 'react-i18next';
 
-import { StatBlobShape } from '@/components/home/blobs';
+import { Icon } from '@/components/primitives/Icon';
 import type { GeneratedEssayTask } from '@/lib/essayTypes';
 
 interface EssayTopicCardProps {
@@ -12,61 +14,52 @@ interface EssayTopicCardProps {
 export const EssayTopicCard = ({ task }: EssayTopicCardProps) => {
   const { t } = useTranslation();
   return (
-    <div className="relative w-full overflow-hidden rounded-[26px] border border-white/95 bg-(--color-fc-card-bg) p-5 shadow-[0_6px_14px_rgba(0,0,0,0.055)] md:rounded-[32px] md:p-7">
-      <StatBlobShape
-        color="var(--color-fc-soft-blue)"
-        opacity={0.7}
-        className="pointer-events-none absolute -top-4 -right-4 h-[80px] w-[100px] md:h-[100px] md:w-[130px]"
-      />
-
-      <div className="relative flex flex-col gap-4">
-        <div className="flex items-center gap-2">
-          <span className="rounded-full bg-(--color-primary-blue) px-3 py-1 text-[12px] font-bold text-white md:text-[13px]">
-            {task.detectedLevel}
+    <div className="flex flex-col gap-4 rounded-[22px] bg-white/95 p-5 shadow-[0_8px_14px_rgba(0,0,0,0.055)] md:p-6">
+      {/* Header — gradient level badge + title + estimated minutes. */}
+      <div className="flex items-start gap-3">
+        <span className="shrink-0 rounded-full bg-linear-to-br from-[#855CFF] to-[#5C94FF] px-2.5 py-[7px] text-[12px] font-bold text-white">
+          {task.detectedLevel}
+        </span>
+        <div className="flex min-w-0 flex-col gap-1">
+          <span className="text-[20px] font-bold leading-tight text-(--color-primary-blue-dark) md:text-[24px]">
+            {task.title}
           </span>
-          <span className="text-[13px] font-semibold text-(--color-fc-text) md:text-[14px]">
+          <span className="flex items-center gap-1.5 text-[13px] font-semibold text-(--color-text-secondary) md:text-[14px]">
+            <Icon name="clock.fill" className="size-[13px]" />
             {t('writing.essays.task.time', { count: task.estimatedTimeMinutes })}
           </span>
-          <span
-            aria-hidden
-            className="text-[13px] font-semibold text-(--color-fc-muted) md:text-[14px]"
-          >
-            ·
-          </span>
-          <span className="text-[13px] font-semibold text-(--color-fc-text) md:text-[14px]">
-            {t('writing.essays.task.wordRange', {
-              min: task.wordLimitMin,
-              max: task.wordLimitMax,
-            })}
-          </span>
         </div>
+      </div>
 
-        <h3 className="text-[22px] font-extrabold leading-tight text-(--color-fc-title) md:text-[28px]">
-          {task.title}
-        </h3>
-
-        <p className="text-[15px] font-medium leading-relaxed text-(--color-fc-text) md:text-[16px]">
+      {/* Task */}
+      <div className="flex flex-col gap-1.5">
+        <span className="text-[13px] font-bold text-(--color-primary-blue)">
+          {t('writing.essays.task.taskLabel')}
+        </span>
+        <p className="text-[15px] font-medium leading-relaxed text-(--color-text-secondary) md:text-[16px]">
           {task.task}
         </p>
-
-        {task.quickTips.length > 0 && (
-          <div className="flex flex-col gap-2">
-            <span className="text-[12px] font-semibold uppercase tracking-wide text-(--color-fc-muted) md:text-[13px]">
-              {t('writing.essays.task.quickTips')}
-            </span>
-            <div className="flex flex-wrap gap-2">
-              {task.quickTips.map((tip, i) => (
-                <span
-                  key={i}
-                  className="rounded-full bg-white/90 px-3 py-1 text-[12px] font-semibold text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.04)] md:text-[13px]"
-                >
-                  {tip}
-                </span>
-              ))}
-            </div>
-          </div>
-        )}
       </div>
+
+      {/* Word range pill */}
+      <span className="flex w-fit items-center gap-1.5 rounded-full bg-(--color-primary-blue)/8 px-3 py-2 text-[13px] font-semibold text-(--color-primary-blue) md:text-[14px]">
+        <Icon name="text.word.spacing" className="size-[13px]" />
+        {t('writing.essays.task.wordRange', { min: task.wordLimitMin, max: task.wordLimitMax })}
+      </span>
+
+      {/* Tip chips */}
+      {task.quickTips.length > 0 && (
+        <div className="flex flex-wrap gap-2">
+          {task.quickTips.map((tip, i) => (
+            <span
+              key={i}
+              className="rounded-full bg-[#EDEBFF] px-3 py-[7px] text-[12px] font-semibold text-(--color-primary-blue-dark) md:text-[13px]"
+            >
+              {tip}
+            </span>
+          ))}
+        </div>
+      )}
     </div>
   );
 };
