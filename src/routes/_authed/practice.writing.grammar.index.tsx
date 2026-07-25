@@ -102,7 +102,7 @@ function GrammarHome() {
           body={t('writing.grammar.topicsEmptyBody')}
         />
       ) : (
-        <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+        <div className="flex max-w-[760px] flex-col gap-(--spacing-home-sets-gap)">
           {topics.map((topic) => (
             <GrammarTopicCard
               key={topic.id}
