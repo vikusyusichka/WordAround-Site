@@ -97,6 +97,34 @@ export const StudyCard = ({
     </button>
   );
 
+  // iOS renders both faces identically (cardSide): the word/translation in the
+  // title colour at the same big size + a speaker, with the counter capsule.
+  const counter =
+    index != null && total != null ? (
+      <span
+        className="absolute bottom-5 left-5 rounded-full px-3 py-1.5 text-[13px] font-bold tabular-nums"
+        style={{ background: theme.fieldBackground, color: theme.mutedTextColor }}
+      >
+        {index} / {Math.max(total, 1)}
+      </span>
+    ) : null;
+
+  const cardSide = (text: string, lang: string) => (
+    <>
+      {decorations}
+      <div className="relative flex items-center gap-2.5">
+        <span
+          className="text-[42px] font-bold leading-tight md:text-[52px]"
+          style={{ color: theme.titleColor }}
+        >
+          {text}
+        </span>
+        {speaker(text, lang)}
+      </div>
+      {counter}
+    </>
+  );
+
   return (
     <div className="relative mx-auto h-[260px] w-full max-w-2xl [perspective:1600px] md:h-[320px]">
       <motion.div
@@ -118,27 +146,10 @@ export const StudyCard = ({
             pointerEvents: showTranslation ? 'none' : 'auto',
           }}
         >
-          {decorations}
-          <div className="relative flex items-center gap-2.5">
-            <span
-              className="text-[42px] font-bold md:text-[52px]"
-              style={{ color: theme.titleColor }}
-            >
-              {card.word}
-            </span>
-            {speaker(card.word, 'en-US')}
-          </div>
-          {index != null && total != null && (
-            <span
-              className="absolute bottom-5 left-5 rounded-full px-3 py-1.5 text-[13px] font-bold tabular-nums"
-              style={{ background: theme.fieldBackground, color: theme.mutedTextColor }}
-            >
-              {index} / {Math.max(total, 1)}
-            </span>
-          )}
+          {cardSide(card.word, 'en-US')}
         </div>
 
-        {/* Back — translation + example + image */}
+        {/* Back — translation, styled identically to the front (iOS cardSide). */}
         <div
           className={`${faceClass} [transform:rotateY(180deg)]`}
           style={{
@@ -147,24 +158,7 @@ export const StudyCard = ({
             pointerEvents: showTranslation ? 'auto' : 'none',
           }}
         >
-          {decorations}
-          <div className="relative flex items-center gap-2.5">
-            <span
-              className="text-[32px] font-bold md:text-[38px]"
-              style={{ color: theme.accent }}
-            >
-              {card.translation}
-            </span>
-            {speaker(card.translation, 'uk-UA')}
-          </div>
-          {card.example && (
-            <span className="text-[16px] font-medium" style={{ color: theme.mutedTextColor }}>
-              {card.example}
-            </span>
-          )}
-          {card.imageURL && (
-            <img src={card.imageURL} alt="" className="max-h-24 rounded-xl object-contain" />
-          )}
+          {cardSide(card.translation, 'uk-UA')}
         </div>
       </motion.div>
 
