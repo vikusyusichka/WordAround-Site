@@ -8,7 +8,6 @@ import { ThemedScreen } from '@/components/create/ThemedScreen';
 import { Icon } from '@/components/primitives/Icon';
 import { StudyCard } from '@/components/study/StudyCard';
 import { StudyControls } from '@/components/study/StudyControls';
-import { StudyProgress } from '@/components/study/StudyProgress';
 import { RoundFinish } from '@/components/study/RoundFinish';
 import { FilterTabs } from '@/components/study/FilterTabs';
 import { CardListRow } from '@/components/study/CardListRow';
@@ -118,18 +117,6 @@ function StudyScreen({ set }: { set: FlashcardSet }) {
         <div className="flex items-center gap-2.5">
           <button
             type="button"
-            onClick={() => dispatch({ type: 'SET_TRACK_PROGRESS', value: !state.trackProgress })}
-            className="h-11 rounded-full px-4 text-[14px] font-semibold transition-colors focus-visible:outline-none"
-            style={
-              state.trackProgress
-                ? { background: theme.accent, color: '#fff' }
-                : { background: theme.fieldBackground, color: theme.mutedTextColor }
-            }
-          >
-            {t('study.trackProgress')}
-          </button>
-          <button
-            type="button"
             onClick={() => dispatch({ type: 'SHUFFLE' })}
             aria-label={t('study.shuffle')}
             className={iconBtn}
@@ -187,8 +174,7 @@ function StudyScreen({ set }: { set: FlashcardSet }) {
           onRestart={() => dispatch({ type: 'RESTART' })}
         />
       ) : card ? (
-        <div className="flex flex-col gap-6">
-          <StudyProgress answered={stats.answered} total={stats.total} progress={stats.progress} accent={theme.accent} />
+        <div className="mx-auto flex max-w-2xl flex-col gap-6">
           <StudyCard
             card={card}
             showTranslation={state.isShowingTranslation}
@@ -205,19 +191,44 @@ function StudyScreen({ set }: { set: FlashcardSet }) {
             onUnknown={() => dispatch({ type: 'UNKNOWN' })}
             onFlip={() => dispatch({ type: 'FLIP' })}
           />
+
+          {/* Track-progress toggle row (iOS controls row). */}
+          <div className="flex items-center gap-3">
+            <span className="text-[15px] font-bold" style={{ color: theme.titleColor }}>
+              {t('study.trackProgress')}
+            </span>
+            <button
+              type="button"
+              role="switch"
+              aria-checked={state.trackProgress}
+              aria-label={t('study.trackProgress')}
+              onClick={() => dispatch({ type: 'SET_TRACK_PROGRESS', value: !state.trackProgress })}
+              className="relative h-7 w-12 shrink-0 rounded-full transition-colors focus-visible:outline-none"
+              style={{ background: state.trackProgress ? theme.accent : 'rgba(0,0,0,0.15)' }}
+            >
+              <span
+                className="absolute top-0.5 left-0.5 size-6 rounded-full bg-white shadow transition-transform"
+                style={{ transform: state.trackProgress ? 'translateX(20px)' : 'none' }}
+              />
+            </button>
+          </div>
         </div>
       ) : null}
 
-      {/* Card list */}
-      <div className="mt-10 flex flex-col gap-4">
-        <div className="flex flex-wrap items-center justify-between gap-3">
+      {/* Filter tabs + card list + add card (iOS: three stacked containers). */}
+      <div className="mx-auto mt-8 flex max-w-2xl flex-col gap-4">
+        <div
+          className="rounded-[22px] px-2 py-1"
+          style={{ background: theme.sectionBackground, boxShadow: `0 6px 12px ${theme.shadowColor}` }}
+        >
           <FilterTabs
             value={state.selectedFilter}
             counts={c}
+            accent={theme.accent}
             onChange={(filter) => dispatch({ type: 'SELECT_FILTER', filter })}
           />
-          <AddCardButton onClick={openAdd} />
         </div>
+
         <div
           className="overflow-hidden rounded-[22px]"
           style={{ background: theme.sectionBackground, boxShadow: `0 6px 12px ${theme.shadowColor}` }}
@@ -237,6 +248,8 @@ function StudyScreen({ set }: { set: FlashcardSet }) {
             </div>
           ))}
         </div>
+
+        <AddCardButton accent={theme.accent} onClick={openAdd} />
       </div>
 
       <CardEditDialog
@@ -250,13 +263,15 @@ function StudyScreen({ set }: { set: FlashcardSet }) {
   );
 }
 
-function AddCardButton({ onClick }: { onClick: () => void }) {
+function AddCardButton({ accent, onClick }: { accent?: string; onClick: () => void }) {
   const { t } = useTranslation();
+  const color = accent ?? 'var(--color-primary-blue)';
   return (
     <button
       type="button"
       onClick={onClick}
-      className="flex h-11 items-center gap-2 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-4 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
+      className="flex h-14 w-full items-center justify-center gap-2 rounded-[22px] border-2 border-dashed bg-white/60 text-[16px] font-bold transition-colors hover:bg-white focus-visible:outline-none"
+      style={{ borderColor: `color-mix(in srgb, ${color} 40%, transparent)`, color }}
     >
       <Plus size={18} weight="bold" />
       {t('study.addCard')}

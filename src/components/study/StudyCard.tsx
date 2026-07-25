@@ -48,8 +48,11 @@ export const StudyCard = ({
 }: StudyCardProps) => {
   const { t } = useTranslation();
 
+  // No `overflow-hidden` on the face: it would force `transform-style: flat`
+  // and defeat `backface-visibility`, showing both faces at once. Blobs are
+  // clipped by a separate inner wrapper instead.
   const faceClass =
-    'absolute inset-0 flex flex-col items-center justify-center gap-4 overflow-hidden rounded-[28px] p-8 text-center [backface-visibility:hidden] md:rounded-[36px]';
+    'absolute inset-0 flex flex-col items-center justify-center gap-4 rounded-[28px] p-8 text-center [backface-visibility:hidden] md:rounded-[36px]';
   const faceStyle = {
     background: theme.sectionBackground,
     border: `4px solid ${theme.fieldBackground}`,
@@ -57,21 +60,21 @@ export const StudyCard = ({
   };
 
   const decorations = (
-    <>
+    <div className="pointer-events-none absolute inset-0 overflow-hidden rounded-[24px] md:rounded-[32px]">
       {/* Two opposite corner wave-blobs + a sparkle, clipped to the card. */}
-      <div className="pointer-events-none absolute -top-[8%] -right-[8%] h-[42%] w-[42%]">
+      <div className="absolute -top-[8%] -right-[8%] h-[42%] w-[42%]">
         <WaveBlob color={theme.softAccent} className="size-full" />
       </div>
-      <div className="pointer-events-none absolute -bottom-[8%] -left-[8%] h-[42%] w-[42%] rotate-180">
+      <div className="absolute -bottom-[8%] -left-[8%] h-[42%] w-[42%] rotate-180">
         <WaveBlob color={theme.softAccent} className="size-full" />
       </div>
       <Icon
         name="sparkle"
-        className="pointer-events-none absolute size-[17px]"
+        className="absolute size-[17px]"
         style={{ left: '78%', top: '76%', color: theme.accent, opacity: 0.3 }}
         aria-hidden
       />
-    </>
+    </div>
   );
 
   const speaker = (text: string, lang: string) => (
