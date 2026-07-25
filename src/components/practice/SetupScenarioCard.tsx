@@ -40,30 +40,30 @@ export const SetupScenarioCard = ({
       type="button"
       aria-pressed={selected}
       onClick={onClick}
-      className="flex min-h-[136px] flex-col gap-2 rounded-[18px] border p-3.5 text-left transition-all hover:brightness-[0.99] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none lg:min-h-[158px] lg:rounded-[22px] lg:p-4"
+      className="flex min-h-[136px] flex-col gap-2 rounded-[18px] border p-3.5 text-left transition-all hover:brightness-[0.99] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none md:min-h-[158px] md:rounded-[22px] md:p-4"
       style={cardStyle}
     >
       {icon && (
         <span
-          className="grid size-[42px] shrink-0 place-items-center rounded-full lg:size-[50px]"
+          className="grid size-[42px] shrink-0 place-items-center rounded-full md:size-[50px]"
           style={{ background: selected ? 'rgba(255,255,255,0.22)' : withAlpha(a, 12) }}
         >
           <Icon
             name={icon}
-            className="size-[18px] lg:size-[22px]"
+            className="size-[18px] md:size-[22px]"
             style={{ color: selected ? '#fff' : a }}
           />
         </span>
       )}
 
       <span
-        className="mt-auto text-[14px] font-bold lg:text-[16px]"
+        className="mt-auto text-[14px] font-bold md:text-[16px]"
         style={{ color: selected ? '#fff' : aDark }}
       >
         {title}
       </span>
       <span
-        className="text-[12px] font-medium lg:text-[14px]"
+        className="text-[12px] font-medium md:text-[14px]"
         style={{ color: selected ? 'rgba(255,255,255,0.92)' : 'var(--color-text-secondary)' }}
       >
         {description}

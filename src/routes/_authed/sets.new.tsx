@@ -169,16 +169,16 @@ function NewSetPage() {
             type="button"
             onClick={handleSave}
             disabled={createSet.isPending}
-            className="flex h-14 flex-1 items-center justify-between rounded-full px-6 text-[16px] font-bold text-white transition-transform hover:brightness-105 active:scale-[0.99] disabled:opacity-70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
-            style={{ background: theme.accent, boxShadow: `0 8px 16px ${theme.shadowColor}` }}
+            className="flex h-14 flex-1 items-center justify-between rounded-[24px] px-6 text-[18px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.99] disabled:opacity-70 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none md:h-[66px] md:rounded-[28px] md:text-[21px]"
+            style={{ background: theme.accent, boxShadow: `0 8px 12px ${theme.shadowColor}` }}
           >
             <span>{createSet.isPending ? t('createSet.saving') : t('createSet.save')}</span>
-            {!createSet.isPending && <Icon name="arrow.right" className="size-[15px]" />}
+            {!createSet.isPending && <Icon name="arrow.right" className="size-[19px]" />}
           </button>
           <button
             type="button"
             onClick={() => void navigate({ to: '/sets' })}
-            className="h-14 rounded-full bg-white px-6 text-[15px] font-semibold transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+            className="h-14 rounded-[24px] bg-white px-6 text-[15px] font-semibold transition-colors hover:bg-black/[0.03] focus-visible:outline-none md:h-[66px]"
             style={{ color: theme.mutedTextColor }}
           >
             {t('createSet.cancel')}

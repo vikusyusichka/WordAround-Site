@@ -4,9 +4,8 @@
    helper line. Replaces the tiny grey uppercase micro-labels the web used to
    hand-roll in every setup route.
 
-   Heading is 22px, bumped to 26px at lg — the iOS phone size, nudged up on
-   desktop but kept well under the iPad's 34px so it doesn't rival the page
-   title in a web content column. */
+   Heading follows iOS homeSectionTitleSize exactly: 22px on phone, 34px at the
+   pad breakpoint (md = 700px, the project's isPadLike boundary). */
 import type { CSSProperties, ReactNode } from 'react';
 
 interface SetupSectionProps {
@@ -30,7 +29,7 @@ export const SetupSection = ({
   return (
     <section className="flex flex-col gap-3">
       <div className="flex flex-col gap-1">
-        <h2 className="text-[22px] font-bold lg:text-[26px]" style={headingStyle}>
+        <h2 className="text-[22px] font-bold md:text-[34px]" style={headingStyle}>
           {title}
         </h2>
         {subtitle && (

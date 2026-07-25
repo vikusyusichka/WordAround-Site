@@ -13,14 +13,14 @@ interface CreateSectionProps {
 
 export const CreateSection = ({ title, theme, children }: CreateSectionProps) => (
   <section
-    className="flex flex-col gap-3.5 rounded-[22px] border p-3.5 transition-colors lg:rounded-[26px] lg:p-[22px]"
+    className="flex flex-col gap-3.5 rounded-[22px] border p-3.5 transition-colors md:rounded-[26px] md:p-[22px]"
     style={{
       background: theme.sectionBackground,
       borderColor: theme.softBorderColor,
       boxShadow: `0 6px 16px ${theme.shadowColor}`,
     }}
   >
-    <h2 className="text-[13px] font-bold lg:text-[16px]" style={{ color: theme.titleColor }}>
+    <h2 className="text-[13px] font-bold md:text-[16px]" style={{ color: theme.titleColor }}>
       {title}
     </h2>
     {children}

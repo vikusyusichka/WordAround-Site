@@ -40,7 +40,7 @@ export const OptionPill = ({ label, selected, accent, accentDark, onClick }: Opt
       type="button"
       aria-pressed={selected}
       onClick={onClick}
-      className="h-11 flex-1 rounded-[18px] border text-[14px] font-bold transition-all hover:brightness-[0.98] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none lg:h-[50px] lg:rounded-[20px] lg:text-[16px]"
+      className="h-11 flex-1 rounded-[18px] border text-[14px] font-bold transition-all hover:brightness-[0.98] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none md:h-[50px] md:rounded-[20px] md:text-[16px]"
       style={style}
     >
       {label}
