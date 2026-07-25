@@ -624,7 +624,8 @@
           "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
           "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
           "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
-        }
+        },
+        "badge": "Quiz"
       },
       "quickMistake": {
         "button": "Quick mistake",
