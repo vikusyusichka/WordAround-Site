@@ -160,6 +160,10 @@ export const EssaysScreen = () => {
             <EssayFeedbackSection
               score={state.score}
               issues={state.grammarIssues}
+              wordCount={state.wordCount}
+              usedHints={state.hintsUsedCount}
+              usedTranslations={state.usedTranslations}
+              usedSynonyms={state.usedSynonyms}
               saveStateFor={(issue) => saveMistake.stateFor(issue.id)}
               onSaveIssue={handleSaveIssue}
             />

@@ -433,6 +433,14 @@
           "complexity": "Складність",
           "relevance": "Відповідність темі",
           "independence": "Самостійність"
+        },
+        "stat": {
+          "words": "Слова",
+          "grammar": "Граматика",
+          "vocabStyle": "Лексика/стиль",
+          "hints": "Підказки",
+          "translations": "Переклади",
+          "synonyms": "Синоніми"
         }
       },
       "grammar": {

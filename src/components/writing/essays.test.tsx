@@ -207,13 +207,22 @@ describe('EssayHintButton', () => {
 
 describe('EssayScoreCard', () => {
   it('renders total, CEFR badge, quality label, and all 6 sub-score labels', () => {
-    render(<EssayScoreCard score={goodScore} />);
-    expect(screen.getByText('84')).toBeInTheDocument();
+    render(
+      <EssayScoreCard
+        score={goodScore}
+        wordCount={108}
+        issues={[]}
+        usedHints={0}
+        usedTranslations={0}
+        usedSynonyms={0}
+      />,
+    );
+    expect(screen.getByText('84/100')).toBeInTheDocument();
     expect(screen.getByText('B2')).toBeInTheDocument();
     expect(screen.getByText('Very good')).toBeInTheDocument();
-    // 6 category labels
+    // 6 category labels (Grammar/Vocabulary also appear in the stats grid).
     for (const label of ['Grammar', 'Vocabulary', 'Length', 'Complexity', 'Relevance', 'Independence']) {
-      expect(screen.getByText(label)).toBeInTheDocument();
+      expect(screen.getAllByText(label).length).toBeGreaterThanOrEqual(1);
     }
   });
 });

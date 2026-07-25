@@ -10,6 +10,10 @@ import type { EssayScore, GrammarIssue } from '@/lib/essayTypes';
 interface EssayFeedbackSectionProps {
   score: EssayScore;
   issues: GrammarIssue[];
+  wordCount: number;
+  usedHints: number;
+  usedTranslations: number;
+  usedSynonyms: number;
   saveStateFor?: (issue: GrammarIssue) => MistakeSaveState;
   onSaveIssue?: (issue: GrammarIssue) => void;
 }
@@ -17,13 +21,24 @@ interface EssayFeedbackSectionProps {
 export const EssayFeedbackSection = ({
   score,
   issues,
+  wordCount,
+  usedHints,
+  usedTranslations,
+  usedSynonyms,
   saveStateFor,
   onSaveIssue,
 }: EssayFeedbackSectionProps) => {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col gap-4">
-      <EssayScoreCard score={score} />
+      <EssayScoreCard
+        score={score}
+        wordCount={wordCount}
+        issues={issues}
+        usedHints={usedHints}
+        usedTranslations={usedTranslations}
+        usedSynonyms={usedSynonyms}
+      />
 
       <div className="flex flex-col gap-3">
         <div className="flex items-baseline justify-between gap-3">

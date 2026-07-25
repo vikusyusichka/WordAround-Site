@@ -433,6 +433,14 @@
           "complexity": "Complexity",
           "relevance": "Relevance",
           "independence": "Independence"
+        },
+        "stat": {
+          "words": "Words",
+          "grammar": "Grammar",
+          "vocabStyle": "Vocab/style",
+          "hints": "Hints",
+          "translations": "Translations",
+          "synonyms": "Synonyms"
         }
       },
       "grammar": {
