@@ -228,9 +228,10 @@ describe('EssayScoreCard', () => {
 });
 
 describe('GrammarIssueCard', () => {
-  it('renders category, original, suggestion, and reason', () => {
+  it('renders original, suggestion, and reason feedback rows', () => {
     render(<GrammarIssueCard issue={grammarIssue} />);
-    expect(screen.getByText(/grammar/i)).toBeInTheDocument();
+    expect(screen.getByText('Original:')).toBeInTheDocument();
+    expect(screen.getByText('Suggestion:')).toBeInTheDocument();
     expect(screen.getByText('teh')).toBeInTheDocument();
     expect(screen.getByText('the')).toBeInTheDocument();
     expect(screen.getByText(/Possible spelling mistake/)).toBeInTheDocument();
