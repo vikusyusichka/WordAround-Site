@@ -190,7 +190,12 @@ function ReadingSessionScreen({ item, onReadAgain }: ReadingSessionScreenProps) 
         )}
 
         {state.phase === 'completed' && state.result && (
-          <ReadingResultView result={state.result} onReadAgain={onReadAgain} onBack={goBack} />
+          <ReadingResultView
+            result={state.result}
+            title={item.title}
+            onReadAgain={onReadAgain}
+            onBack={goBack}
+          />
         )}
       </div>
     </ContentContainer>
