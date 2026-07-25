@@ -886,7 +886,9 @@
       "questionOf": "Питання {{current}} з {{total}}",
       "closeTranslation": "Закрити переклад",
       "translating": "Перекладаємо…",
-      "translationError": "Не вдалося перекласти. Спробуйте ще раз."
+      "translationError": "Не вдалося перекласти. Спробуйте ще раз.",
+      "translation": "Переклад",
+      "textLabel": "Текст"
     },
     "result": {
       "comprehension": "Розуміння",

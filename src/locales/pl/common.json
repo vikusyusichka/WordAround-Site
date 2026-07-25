@@ -886,7 +886,9 @@
       "questionOf": "Question {{current}} of {{total}}",
       "closeTranslation": "Close translation",
       "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again."
+      "translationError": "Couldn’t translate. Try again.",
+      "translation": "Translation",
+      "textLabel": "Text"
     },
     "result": {
       "comprehension": "Comprehension",

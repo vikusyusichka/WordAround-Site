@@ -122,7 +122,8 @@ function ReadingSessionScreen({ item, onReadAgain }: ReadingSessionScreenProps) 
 
         {state.phase === 'reading' && (
           <>
-            <div className="rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)] md:p-6">
+            <div className="flex flex-col gap-2.5 rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)] md:p-6">
+              <span className="text-[14px] font-bold text-[#0F6A78]">{t('reading.session.textLabel')}</span>
               <ReadingTappableText
                 text={item.fullText}
                 selectedWord={state.selectedWord}
