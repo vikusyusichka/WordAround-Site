@@ -161,23 +161,36 @@ function ConversationSession({
           </div>
         )}
 
-        {/* Chat */}
-        <div className="flex flex-col gap-2.5">
-          {convo.messages.map((m, i) => (
-            <div
-              key={i}
-              className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-[14px] font-medium ${
-                m.role === 'ai'
-                  ? 'self-start bg-white text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.05)]'
-                  : 'self-end bg-[#2B5CFA] text-white'
-              }`}
-            >
-              {m.text}
-            </div>
-          ))}
+        {/* Chat — AI bubble (light blue) with an avatar circle on the left,
+            user bubble (accent) on the right. Ports ConversationMessageBubbleView. */}
+        <div className="flex flex-col gap-3">
+          {convo.messages.map((m, i) =>
+            m.role === 'ai' ? (
+              <div key={i} className="flex items-end gap-2 self-start pr-11">
+                <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#2B5CFA]/10">
+                  <Icon name="bubble.left.and.bubble.right.fill" className="size-[15px] text-[#2B5CFA]" />
+                </span>
+                <div className="rounded-2xl bg-[#EDF2FF] px-4 py-2.5 text-[14px] font-medium text-(--color-primary-blue-dark)">
+                  {m.text}
+                </div>
+              </div>
+            ) : (
+              <div
+                key={i}
+                className="max-w-[85%] self-end rounded-2xl bg-[#2B5CFA] px-4 py-2.5 text-[14px] font-medium text-white"
+              >
+                {m.text}
+              </div>
+            ),
+          )}
           {convo.state === 'processing' && (
-            <div className="self-start rounded-2xl bg-white px-4 py-2.5 text-[14px] font-medium text-(--color-muted-text) shadow-[0_2px_6px_rgba(0,0,0,0.05)]">
-              …
+            <div className="flex items-end gap-2 self-start pr-11">
+              <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#2B5CFA]/10">
+                <Icon name="bubble.left.and.bubble.right.fill" className="size-[15px] text-[#2B5CFA]" />
+              </span>
+              <div className="rounded-2xl bg-[#EDF2FF] px-4 py-2.5 text-[14px] font-medium text-(--color-muted-text)">
+                …
+              </div>
             </div>
           )}
           <div ref={bottomRef} />
