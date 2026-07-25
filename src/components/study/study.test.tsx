@@ -75,7 +75,7 @@ describe('FilterTabs', () => {
       <FilterTabs
         value="all"
         counts={{ all: 3, studied: 1, remaining: 2, mastered: 0 }}
-        accent="#000"
+        theme={theme}
         onChange={onChange}
       />,
     );
