@@ -143,46 +143,50 @@ export const WriteWordsScreen = ({ setId }: WriteWordsScreenProps) => {
           )}
         </div>
 
-        <WriteWordsCard displayTitle={displayTitle} displayWord={displayWord(state)} />
+        {/* The whole exercise lives in one white card (iOS
+            WriteWordsExerciseCardView): prompt → cells → input → controls. */}
+        <div className="flex flex-col gap-5 rounded-[28px] bg-white/96 px-6 py-8 shadow-[0_9px_16px_rgba(0,0,0,0.07)] md:rounded-[32px] md:px-8">
+          <WriteWordsCard displayTitle={displayTitle} displayWord={displayWord(state)} />
 
-        <WriteWordsCells
-          correctAnswer={answer}
-          typedAnswer={state.typedAnswer}
-          hintRevealed={state.hintRevealed}
-          validation={state.validation}
-        />
+          <WriteWordsCells
+            correctAnswer={answer}
+            typedAnswer={state.typedAnswer}
+            hintRevealed={state.hintRevealed}
+            validation={state.validation}
+          />
 
-        {/* Real text input — accepts native keyboard, mobile IMEs, paste. */}
-        <input
-          ref={inputRef}
-          value={state.typedAnswer}
-          onChange={(e) => actions.type(e.target.value)}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter') {
-              e.preventDefault();
-              actions.submit();
-            }
-          }}
-          placeholder={t('writing.writeWords.inputPlaceholder')}
-          autoComplete="off"
-          autoCapitalize="off"
-          spellCheck={false}
-          disabled={isInteractionLocked(state)}
-          aria-label={t('writing.writeWords.inputPlaceholder')}
-          className="mx-auto h-12 w-full max-w-md rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-center text-[16px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-60"
-        />
+          {/* Real text input — accepts native keyboard, mobile IMEs, paste. */}
+          <input
+            ref={inputRef}
+            value={state.typedAnswer}
+            onChange={(e) => actions.type(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                e.preventDefault();
+                actions.submit();
+              }
+            }}
+            placeholder={t('writing.writeWords.inputPlaceholder')}
+            autoComplete="off"
+            autoCapitalize="off"
+            spellCheck={false}
+            disabled={isInteractionLocked(state)}
+            aria-label={t('writing.writeWords.inputPlaceholder')}
+            className="mx-auto h-12 w-full max-w-md rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-center text-[16px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-60"
+          />
 
-        <WriteWordsControls
-          showHint={state.difficulty !== 'hard'}
-          isHintAvailable={isHintAvailable(state)}
-          showSkip={state.difficulty !== 'hard'}
-          canSkip={canSkip(state)}
-          skipsRemainingText={skipsText}
-          canSubmit={canSubmit}
-          onHint={actions.hint}
-          onSkip={actions.skip}
-          onSubmit={actions.submit}
-        />
+          <WriteWordsControls
+            showHint={state.difficulty !== 'hard'}
+            isHintAvailable={isHintAvailable(state)}
+            showSkip={state.difficulty !== 'hard'}
+            canSkip={canSkip(state)}
+            skipsRemainingText={skipsText}
+            canSubmit={canSubmit}
+            onHint={actions.hint}
+            onSkip={actions.skip}
+            onSubmit={actions.submit}
+          />
+        </div>
       </div>
 
       <WriteWordsSettingsSheet

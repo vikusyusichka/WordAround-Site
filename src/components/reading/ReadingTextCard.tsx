@@ -2,10 +2,13 @@
    title + preview, metadata chips, progress bar, action button, overflow
    (rename/delete kept as simple buttons). */
 import { useTranslation } from 'react-i18next';
-import { PencilSimple, Trash } from '@phosphor-icons/react';
+import { ArrowRight, PencilSimple, Trash } from '@phosphor-icons/react';
 
 import { findLanguage } from '@/lib/essayTypes';
 import type { ReadingLibraryItem } from '@/lib/models';
+
+// Reading My-Texts mode accent (teal).
+const ACCENT = '#21A8BD';
 
 interface ReadingTextCardProps {
   item: ReadingLibraryItem;
@@ -44,20 +47,26 @@ export const ReadingTextCard = ({ item, onOpen, onRename, onDelete }: ReadingTex
       </div>
 
       {item.progress > 0 && (
-        <div className="h-[6px] w-full overflow-hidden rounded-full bg-(--color-goal-bg)">
+        <div
+          className="h-[6px] w-full overflow-hidden rounded-full"
+          style={{ background: `color-mix(in srgb, ${ACCENT} 14%, transparent)` }}
+        >
           <div
-            className="h-full rounded-full bg-[#21A8BD]"
-            style={{ width: `${Math.max(item.progress * 100, 4)}%` }}
+            className="h-full rounded-full"
+            style={{ width: `${Math.max(item.progress * 100, 4)}%`, background: ACCENT }}
           />
         </div>
       )}
 
+      {/* iOS uses a compact teal capsule, not a full-width button. */}
       <button
         type="button"
         onClick={onOpen}
-        className="h-11 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[14px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98]"
+        className="flex h-10 w-fit items-center gap-1.5 rounded-full px-[18px] text-[14px] font-bold text-white transition-transform hover:brightness-105 active:scale-[0.98]"
+        style={{ background: ACCENT }}
       >
         {t(`reading.card.${actionKey}`)}
+        <ArrowRight size={13} weight="bold" />
       </button>
 
       <div className="absolute right-3 top-3 flex gap-1 opacity-0 transition-opacity focus-within:opacity-100 group-hover:opacity-100">
