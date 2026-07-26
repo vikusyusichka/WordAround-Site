@@ -11,7 +11,13 @@ import { SpeakingInputBar } from '@/components/speaking/SpeakingInputBar';
 import { ConversationResultView } from '@/components/speaking/ConversationResultView';
 import { useSpeakingConversation } from '@/hooks/useSpeakingConversation';
 import { findLanguage } from '@/lib/essayTypes';
-import { contextTitle, type ConversationLength, type SpeakingContext } from '@/lib/speakingTypes';
+import { ProgressBlobShape } from '@/components/home/blobs';
+import {
+  contextDescription,
+  contextTitle,
+  type ConversationLength,
+  type SpeakingContext,
+} from '@/lib/speakingTypes';
 
 const ACCENT = '#2B5CFA';
 
@@ -160,6 +166,36 @@ function ConversationSession({
             </button>
           </div>
         )}
+
+        {/* Scenario/topic card (ConversationScenarioCardView) — sits above the
+            chat and gives context, so the screen isn't an empty chat. */}
+        <div className="relative overflow-hidden rounded-[22px] border border-white/90 bg-(--color-goal-bg) p-4 shadow-[0_8px_16px_rgba(0,0,0,0.05)]">
+          <ProgressBlobShape
+            color="var(--color-blob-blue)"
+            opacity={0.35}
+            className="pointer-events-none absolute -top-2 right-0 h-[80px] w-[110px]"
+          />
+          <div className="relative flex flex-col gap-2.5">
+            <div className="flex flex-col gap-1">
+              <span className="text-[16px] font-bold text-(--color-primary-blue-dark)">
+                {contextTitle(context)}
+              </span>
+              <span className="line-clamp-3 text-[13px] font-medium text-(--color-text-secondary)">
+                {contextDescription(context)}
+              </span>
+            </div>
+            <div className="flex flex-wrap gap-1.5">
+              {[findLanguage(languageId).title, level].map((chip) => (
+                <span
+                  key={chip}
+                  className="rounded-full bg-(--color-primary-blue)/10 px-2.5 py-1 text-[11px] font-bold text-(--color-primary-blue)"
+                >
+                  {chip}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
 
         {/* Chat — AI bubble (light blue) with an avatar circle on the left,
             user bubble (accent) on the right. Ports ConversationMessageBubbleView. */}
