@@ -8,7 +8,6 @@ import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import { WriteWordsCard } from './WriteWordsCard';
-import { WriteWordsCells } from './WriteWordsCells';
 import { WriteWordsControls } from './WriteWordsControls';
 import { WriteWordsResultScreen } from './WriteWordsResultScreen';
 import { WriteWordsSettingsSheet } from './WriteWordsSettingsSheet';
@@ -16,8 +15,8 @@ import { WriteWordsTimerBar } from './WriteWordsTimerBar';
 import { useWriteWords } from '@/hooks/useWriteWords';
 import {
   canSkip,
-  correctAnswer,
   displayWord,
+  hintOverlayText,
   isHintAvailable,
   isInteractionLocked,
   isTimed,
@@ -93,7 +92,6 @@ export const WriteWordsScreen = ({ setId }: WriteWordsScreenProps) => {
     );
   }
 
-  const answer = correctAnswer(state);
   const timed = isTimed(state);
   const canSubmit = state.typedAnswer.trim().length > 0 && !isInteractionLocked(state);
   const displayTitle =
@@ -148,32 +146,38 @@ export const WriteWordsScreen = ({ setId }: WriteWordsScreenProps) => {
         <div className="flex flex-col gap-5 rounded-[28px] bg-white/96 px-6 py-8 shadow-[0_9px_16px_rgba(0,0,0,0.07)] md:rounded-[32px] md:px-8">
           <WriteWordsCard displayTitle={displayTitle} displayWord={displayWord(state)} />
 
-          <WriteWordsCells
-            correctAnswer={answer}
-            typedAnswer={state.typedAnswer}
-            hintRevealed={state.hintRevealed}
-            validation={state.validation}
-          />
-
-          {/* Real text input — accepts native keyboard, mobile IMEs, paste. */}
-          <input
-            ref={inputRef}
-            value={state.typedAnswer}
-            onChange={(e) => actions.type(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter') {
-                e.preventDefault();
-                actions.submit();
-              }
-            }}
-            placeholder={t('writing.writeWords.inputPlaceholder')}
-            autoComplete="off"
-            autoCapitalize="off"
-            spellCheck={false}
-            disabled={isInteractionLocked(state)}
-            aria-label={t('writing.writeWords.inputPlaceholder')}
-            className="mx-auto h-12 w-full max-w-md rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-center text-[16px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-60"
-          />
+          {/* iOS WriteWordsAnswerInputView — a single centred text field with a
+              revealed-hint overlay; the border goes green on a correct answer. */}
+          <div className="relative mx-auto w-full max-w-[420px]">
+            {state.typedAnswer.length === 0 && hintOverlayText(state) && (
+              <span className="pointer-events-none absolute inset-0 grid place-items-center text-[22px] font-bold text-(--color-primary-blue)/30">
+                {hintOverlayText(state)}
+              </span>
+            )}
+            <input
+              ref={inputRef}
+              value={state.typedAnswer}
+              onChange={(e) => actions.type(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') {
+                  e.preventDefault();
+                  actions.submit();
+                }
+              }}
+              autoComplete="off"
+              autoCapitalize="off"
+              spellCheck={false}
+              disabled={isInteractionLocked(state)}
+              aria-label={t('writing.writeWords.inputPlaceholder')}
+              className="h-14 w-full rounded-2xl border bg-white px-4 text-center text-[22px] font-bold text-(--color-primary-blue-dark) shadow-[0_2px_8px_rgba(0,0,0,0.035)] outline-none disabled:opacity-60"
+              style={{
+                borderColor:
+                  state.validation === 'correct'
+                    ? '#A1E0AB'
+                    : 'var(--color-auth-field-border)',
+              }}
+            />
+          </div>
 
           <WriteWordsControls
             showHint={state.difficulty !== 'hard'}

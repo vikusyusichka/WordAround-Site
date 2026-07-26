@@ -140,7 +140,7 @@ function ConversationSession({
         }
       />
 
-      <div className="mx-auto flex w-full max-w-2xl flex-col gap-4">
+      <div className="mx-auto flex min-h-[calc(100dvh-13rem)] w-full max-w-2xl flex-col gap-4">
         <div className="flex items-center justify-between">
           <button
             type="button"
@@ -197,9 +197,10 @@ function ConversationSession({
           </div>
         </div>
 
-        {/* Chat — AI bubble (light blue) with an avatar circle on the left,
-            user bubble (accent) on the right. Ports ConversationMessageBubbleView. */}
-        <div className="flex flex-col gap-3">
+        {/* Chat — grows to fill the height so the input sits at the bottom like
+            a real chat. AI bubble (light blue) with an avatar circle on the
+            left, user bubble (accent) on the right (ConversationMessageBubbleView). */}
+        <div className="flex flex-1 flex-col gap-3">
           {convo.messages.map((m, i) =>
             m.role === 'ai' ? (
               <div key={i} className="flex items-end gap-2 self-start pr-11">
