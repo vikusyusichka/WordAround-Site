@@ -317,7 +317,7 @@ function ImportAudioScreen() {
         subtitle={t('listening.importAudio.subtitle')}
       />
 
-      <div className="flex w-full max-w-2xl flex-col gap-5">
+      <div className="flex w-full flex-col gap-5">
         <button
           type="button"
           onClick={goBack}
@@ -439,7 +439,7 @@ function ImportAudioScreen() {
                   </span>
                   <div className="flex flex-wrap gap-2.5">
                     {LISTENING_QUESTION_TYPES.map((type) => (
-                      <div key={type} className="min-w-[120px] flex-1">
+                      <div key={type}>
                         <OptionPill
                           label={t(`listening.questionType.${type}`)}
                           selected={questionTypes.includes(type)}

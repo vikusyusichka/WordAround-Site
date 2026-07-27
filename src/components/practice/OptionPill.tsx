@@ -1,10 +1,7 @@
-/* Option pill + group — ports iOS ReadingOptionPill / SpeakingSetupDurationPicker.
-   Selected: solid accent fill, white text, accent glow. Unselected: accent-10%
-   fill, accent-dark text, accent-22% border. Height 44 / 50@lg, radius 18 / 20,
-   bold 14 / 16, equal width across the row. Web adds hover + focus states.
-
-   accent / accentDark are per-screen (blue Reading, green Free Speaking, …), so
-   they come in as props rather than tokens. */
+/* Option pill + group for the practice-setup screens. Web-native, responsive:
+   pills are their natural (content) width and wrap to fill the available row,
+   so a setup screen can use the full content width instead of a narrow column.
+   Selected = solid accent fill + glow; unselected = accent-10% fill + border. */
 import type { CSSProperties } from 'react';
 
 interface OptionPillProps {
@@ -27,7 +24,7 @@ export const OptionPill = ({ label, selected, accent, accentDark, onClick }: Opt
         background: a,
         color: '#fff',
         borderColor: 'transparent',
-        boxShadow: `0 4px 10px ${withAlpha(a, 22)}`,
+        boxShadow: `0 4px 12px ${withAlpha(a, 24)}`,
       }
     : {
         background: withAlpha(a, 10),
@@ -40,7 +37,7 @@ export const OptionPill = ({ label, selected, accent, accentDark, onClick }: Opt
       type="button"
       aria-pressed={selected}
       onClick={onClick}
-      className="h-11 flex-1 rounded-[16px] border text-[14px] font-bold transition-all hover:brightness-[0.98] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+      className="h-11 shrink-0 rounded-full border px-6 text-[14px] font-bold transition-all hover:brightness-[0.98] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
       style={style}
     >
       {label}
@@ -54,7 +51,7 @@ interface OptionPillGroupProps<T extends string> {
   onChange: (id: T) => void;
   accent?: string;
   accentDark?: string;
-  /** Columns for a wrapping grid; omit for a single equal-width row. */
+  /** Ignored — kept for call-site compatibility. Pills now always wrap. */
   columns?: number;
 }
 
@@ -64,24 +61,17 @@ export const OptionPillGroup = <T extends string>({
   onChange,
   accent,
   accentDark,
-  columns,
-}: OptionPillGroupProps<T>) => {
-  const style: CSSProperties = columns
-    ? { display: 'grid', gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))`, gap: 10 }
-    : { display: 'flex', gap: 10 };
-
-  return (
-    <div style={style}>
-      {options.map((opt) => (
-        <OptionPill
-          key={opt.id}
-          label={opt.label}
-          selected={opt.id === value}
-          accent={accent}
-          accentDark={accentDark}
-          onClick={() => onChange(opt.id)}
-        />
-      ))}
-    </div>
-  );
-};
+}: OptionPillGroupProps<T>) => (
+  <div className="flex flex-wrap gap-2.5">
+    {options.map((opt) => (
+      <OptionPill
+        key={opt.id}
+        label={opt.label}
+        selected={opt.id === value}
+        accent={accent}
+        accentDark={accentDark}
+        onClick={() => onChange(opt.id)}
+      />
+    ))}
+  </div>
+);

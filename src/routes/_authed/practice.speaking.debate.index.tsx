@@ -40,7 +40,7 @@ function DebateSetup() {
     <ContentContainer fluid>
       <PageHeader title={t('speaking.debate.title')} subtitle={t('speaking.debate.subtitle')} />
 
-      <div className="flex w-full max-w-2xl flex-col gap-6">
+      <div className="flex w-full flex-col gap-6">
         <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
           <OptionPillGroup
             options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
@@ -63,7 +63,7 @@ function DebateSetup() {
         </SetupSection>
 
         <SetupSection title={t('speaking.debate.pickSide')} accentDark={ACCENT_DARK}>
-          <div className="grid gap-2.5 sm:grid-cols-3">
+          <div className="grid gap-2.5 sm:grid-cols-3 lg:grid-cols-4">
             {DEBATE_SIDES.map((s) => (
               <SetupScenarioCard
                 key={s.id}
