@@ -38,10 +38,10 @@ export const StartButton = ({
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className="flex h-[52px] w-full max-w-[720px] items-center justify-center gap-2 rounded-[18px] text-[16px] font-bold text-white transition-transform hover:brightness-105 active:scale-[0.99] disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none md:h-[58px] md:rounded-[22px] md:text-[18px]"
+      className="flex h-[52px] w-full items-center justify-center gap-2 rounded-[16px] text-[16px] font-bold text-white transition-transform hover:brightness-105 active:scale-[0.99] disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
       style={style}
     >
-      <Icon name={icon} className="size-[15px] md:size-[17px]" />
+      <Icon name={icon} className="size-[15px]" />
       <span>{label}</span>
     </button>
   );

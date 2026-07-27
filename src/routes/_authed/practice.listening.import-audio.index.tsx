@@ -317,7 +317,7 @@ function ImportAudioScreen() {
         subtitle={t('listening.importAudio.subtitle')}
       />
 
-      <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
+      <div className="flex w-full max-w-2xl flex-col gap-5">
         <button
           type="button"
           onClick={goBack}

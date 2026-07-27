@@ -40,7 +40,7 @@ function DebateSetup() {
     <ContentContainer fluid>
       <PageHeader title={t('speaking.debate.title')} subtitle={t('speaking.debate.subtitle')} />
 
-      <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
+      <div className="flex w-full max-w-2xl flex-col gap-6">
         <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
           <OptionPillGroup
             options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}

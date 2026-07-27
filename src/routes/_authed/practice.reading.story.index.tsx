@@ -81,7 +81,7 @@ function StorySetupScreen() {
     <ContentContainer fluid>
       <PageHeader title={t('reading.story.title')} subtitle={t('reading.story.subtitle')} />
 
-      <div className="mx-auto flex w-full max-w-2xl flex-col gap-6">
+      <div className="flex w-full max-w-2xl flex-col gap-6">
         <SetupSection title={t('reading.story.typeSection')}>
           <OptionPillGroup
             options={STORY_TYPES.map((type) => ({ id: type, label: t(`reading.story.type.${type}`) }))}
