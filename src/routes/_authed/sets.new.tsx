@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
+import { DownloadSimple } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
@@ -10,14 +11,17 @@ import { ColorPicker } from '@/components/create/ColorPicker';
 import { CreateSection } from '@/components/create/CreateSection';
 import { FolderPicker } from '@/components/create/FolderPicker';
 import { IconPicker } from '@/components/create/IconPicker';
+import { ImportCardsScreen } from '@/components/create/ImportCardsScreen';
 import { PrivacyToggle } from '@/components/create/PrivacyToggle';
 import { SetPreviewCard } from '@/components/create/SetPreviewCard';
 import { ThemedScreen } from '@/components/create/ThemedScreen';
 import { useCreateSet } from '@/hooks/useSets';
 import { themeForColor } from '@/lib/setColors';
+import type { ParsedCard } from '@/lib/importCards';
 import {
   DESC_MAX,
   TITLE_MAX,
+  emptyCard,
   emptyDraft,
   validateCreateSet,
   type CreateSetDraft,
@@ -33,6 +37,7 @@ function NewSetPage() {
   const createSet = useCreateSet();
   const [draft, setDraft] = useState<CreateSetDraft>(emptyDraft);
   const [validationKey, setValidationKey] = useState<string | null>(null);
+  const [isImporting, setIsImporting] = useState(false);
 
   const theme = themeForColor(draft.colorId);
   const patch = (p: Partial<CreateSetDraft>) => setDraft((d) => ({ ...d, ...p }));
@@ -40,6 +45,19 @@ function NewSetPage() {
   const validCardCount = draft.cards.filter(
     (c) => c.word.trim() && c.translation.trim(),
   ).length;
+
+  /* Imported cards are appended, so anything already typed in the editor
+     survives the round trip; only the untouched blank rows are dropped. */
+  const handleImport = (imported: ParsedCard[]) => {
+    const kept = draft.cards.filter((c) => c.word.trim() || c.translation.trim());
+    const added = imported.map((c) => ({
+      ...emptyCard(),
+      word: c.term,
+      translation: c.definition,
+    }));
+    patch({ cards: [...kept, ...added] });
+    setIsImporting(false);
+  };
 
   const handleSave = () => {
     const { errorKey } = validateCreateSet(draft);
@@ -64,6 +82,16 @@ function NewSetPage() {
       ? createSet.error.message
       : 'createSet.saveError';
   const shownError = validationKey ?? (createSet.isError ? mutationErrorKey : null);
+
+  if (isImporting) {
+    return (
+      <ImportCardsScreen
+        theme={theme}
+        onCancel={() => setIsImporting(false)}
+        onImport={handleImport}
+      />
+    );
+  }
 
   return (
     <ContentContainer>
@@ -116,6 +144,16 @@ function NewSetPage() {
         </CreateSection>
 
         <CreateSection title={t('createSet.cardsSection')} theme={theme}>
+          <button
+            type="button"
+            onClick={() => setIsImporting(true)}
+            className="flex h-11 items-center gap-2 self-start rounded-2xl bg-white px-4 text-[15px] font-semibold transition-colors hover:bg-black/[0.03] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+            style={{ color: theme.accent, boxShadow: `0 4px 10px ${theme.shadowColor}` }}
+          >
+            <DownloadSimple size={18} weight="bold" />
+            {t('createSet.import.button')}
+          </button>
+
           <CardEditor cards={draft.cards} onChange={(cards) => patch({ cards })} />
         </CreateSection>
 

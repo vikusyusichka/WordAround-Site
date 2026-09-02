@@ -186,7 +186,28 @@
       "noValidCards": "Add at least one card with a word and translation.",
       "exampleTooLong": "Card examples must be under 150 characters."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again."
+    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "import": {
+      "button": "Import",
+      "title": "Import cards",
+      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
+      "close": "Close import",
+      "dataSection": "Your data",
+      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
+      "separatorsSection": "Separators",
+      "betweenTermAndDefinition": "Between word and translation",
+      "betweenCards": "Between cards",
+      "tab": "Tab",
+      "comma": "Comma",
+      "newline": "New line",
+      "semicolon": "Semicolon",
+      "custom": "Custom",
+      "customPlaceholder": "e.g. —",
+      "previewSection": "Preview",
+      "previewEmpty": "Nothing to preview yet.",
+      "noDefinition": "No translation",
+      "confirm": "Add cards"
+    }
   },
   "home": {
     "title": {
