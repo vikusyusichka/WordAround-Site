@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { useVoiceRecorder } from '@/hooks/useVoiceRecorder';
 import { isPronunciationScoringAvailable } from '@/lib/azureSpeech';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import {
   fetchPronunciationItems,
   type PronunciationDifficulty,
@@ -37,6 +38,8 @@ export const usePronunciationTrainer = (setup: PronunciationSetup) => {
   const locale = speakingLocaleFor(setup.languageId);
   const seededRef = useRef(false);
   const loadingRef = useRef(false);
+  const sessionStartedAtRef = useRef<number | null>(null);
+  const recordedRef = useRef(false);
 
   const load = useCallback(() => {
     if (loadingRef.current) return;
@@ -54,6 +57,8 @@ export const usePronunciationTrainer = (setup: PronunciationSetup) => {
         setItems(result);
         setIndex(0);
         setPractisedIds([]);
+        sessionStartedAtRef.current = Date.now();
+        recordedRef.current = false;
       })
       .catch((e: PronunciationError) => setError(e.message))
       .finally(() => {
@@ -103,6 +108,19 @@ export const usePronunciationTrainer = (setup: PronunciationSetup) => {
     setPractisedIds((prev) => (prev.includes(current.id) ? prev : [...prev, current.id]));
     if (index < items.length - 1) goTo(index + 1);
   }, [current, index, items.length, goTo]);
+
+  /* Same rule as shadowing: iOS banks the session on endSession, the web
+     banks it when the last item has been practised. */
+  useEffect(() => {
+    if (recordedRef.current || items.length === 0) return;
+    if (practisedIds.length < items.length) return;
+    const startedAt = sessionStartedAtRef.current;
+    if (startedAt === null) return;
+    const practised = Math.round((Date.now() - startedAt) / 1000);
+    if (practised <= 0) return;
+    recordedRef.current = true;
+    recordPractice({ skill: 'speaking', value: practised, sourceModeID: 'pronunciation' });
+  }, [practisedIds.length, items.length]);
 
   useEffect(() => {
     return () => stopListeningSpeech();

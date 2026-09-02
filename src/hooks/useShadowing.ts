@@ -4,6 +4,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
 import { useVoiceRecorder } from '@/hooks/useVoiceRecorder';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import {
   fetchShadowingPhrases,
   recentShadowingPhrases,
@@ -34,6 +35,8 @@ export const useShadowing = (setup: ShadowingSetup) => {
   const locale = speakingLocaleFor(setup.languageId);
   const seededRef = useRef(false);
   const loadingRef = useRef(false);
+  const sessionStartedAtRef = useRef<number | null>(null);
+  const recordedRef = useRef(false);
 
   const load = useCallback(() => {
     if (loadingRef.current) return;
@@ -51,6 +54,8 @@ export const useShadowing = (setup: ShadowingSetup) => {
         setPhrases(result);
         setIndex(0);
         setCompletedIds([]);
+        sessionStartedAtRef.current = Date.now();
+        recordedRef.current = false;
         rememberShadowingPhrases(
           setup.languageId,
           setup.level,
@@ -103,6 +108,20 @@ export const useShadowing = (setup: ShadowingSetup) => {
     setCompletedIds((prev) => (prev.includes(current.id) ? prev : [...prev, current.id]));
     if (index < phrases.length - 1) goTo(index + 1);
   }, [current, index, phrases.length, goTo]);
+
+  /* iOS records the session's wall-clock seconds from ShadowingViewModel's
+     endSession. The web screen has no end button — working through the last
+     phrase is what ends it, so that is where the practice is banked. */
+  useEffect(() => {
+    if (recordedRef.current || phrases.length === 0) return;
+    if (completedIds.length < phrases.length) return;
+    const startedAt = sessionStartedAtRef.current;
+    if (startedAt === null) return;
+    const practised = Math.round((Date.now() - startedAt) / 1000);
+    if (practised <= 0) return;
+    recordedRef.current = true;
+    recordPractice({ skill: 'speaking', value: practised, sourceModeID: 'shadowing' });
+  }, [completedIds.length, phrases.length]);
 
   useEffect(() => {
     return () => stopListeningSpeech();

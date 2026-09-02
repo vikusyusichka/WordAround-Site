@@ -15,6 +15,7 @@ import { ReadingQuestionSection } from '@/components/reading/ReadingQuestionSect
 import { useReadingItemsQuery, useSaveReadingItem } from '@/hooks/useReadingItems';
 import { useUid } from '@/hooks/useFolders';
 import { Icon } from '@/components/primitives/Icon';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import { generateReadingQuestions } from '@/lib/readingQuestionService';
 import { formatReadingTime } from '@/lib/readingScoring';
 import {
@@ -86,6 +87,13 @@ function SpeedReadingScreen() {
   useEffect(() => {
     if (session.phase !== 'results' || !session.result || persistedRef.current) return;
     persistedRef.current = true;
+    /* Bank the reading time first: it counts even when the session can't be
+       saved to the library (signed out, generation lost). */
+    recordPractice({
+      skill: 'reading',
+      value: Math.max(1, session.elapsedSeconds),
+      sourceModeID: 'speed-reading',
+    });
     const generated = generatedRef.current;
     if (!generated || !uid) return;
     const now = Date.now();
@@ -124,7 +132,7 @@ function SpeedReadingScreen() {
       lastReadCharacterIndex: 0,
     };
     saveItem.mutate(item);
-  }, [session.phase, session.result, uid, config, saveItem, t]);
+  }, [session.phase, session.result, session.elapsedSeconds, uid, config, saveItem, t]);
 
   const startSession = async (reuseText = false) => {
     setError(null);

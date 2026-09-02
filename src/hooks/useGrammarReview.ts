@@ -4,6 +4,7 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 import * as reviewService from '@/lib/grammarReviewService';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import * as noteService from '@/lib/grammarNoteService';
 import {
   recentlyEditedNotes,
@@ -65,6 +66,8 @@ export const useMarkReviewed = () => {
       result: GrammarReviewResult;
     }) => reviewService.markReviewed(item, result),
     onSuccess: () => {
+      /* One unit per reviewed card, as iOS does in the review session. */
+      recordPractice({ skill: 'writing', value: 1, sourceModeID: 'grammar-notes' });
       qc.invalidateQueries({ queryKey: ['grammarReview'] });
     },
   });

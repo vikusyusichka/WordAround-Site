@@ -5,6 +5,7 @@
 import { useEffect, useMemo, useReducer, useRef, useState } from 'react';
 
 import { useSetsQuery } from '@/hooks/useSets';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import type { FlashcardSet } from '@/lib/models';
 import {
   correctAnswer,
@@ -98,6 +99,22 @@ export const useWriteWords = (setId: string) => {
     // Re-run on card change / difficulty change / lock transitions.
     // `answer` is derived from currentIndex+mode; included for correctness.
   }, [isTimed, locked, state.currentIndex, answer]);
+
+  /* iOS banks the words the moment the round ends — whether the learner
+     finished the set or lost on a wrong answer (WriteWordsViewModel
+     recordPracticeStatsIfNeeded). */
+  const recordedRef = useRef(false);
+  useEffect(() => {
+    if (recordedRef.current) return;
+    if (!state.isRoundCompleted && !state.gameOver) return;
+    if (state.completedWords <= 0) return;
+    recordedRef.current = true;
+    recordPractice({
+      skill: 'writing',
+      value: state.completedWords,
+      sourceModeID: 'write-from-sets',
+    });
+  }, [state.isRoundCompleted, state.gameOver, state.completedWords]);
 
   return {
     state,

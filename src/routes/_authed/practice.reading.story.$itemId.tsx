@@ -2,7 +2,7 @@
    optional questions (≤6, mainIdea focus) → chapter score → choices → next
    chapter generation. Short stories end after chapter 1; infinite stories
    end via the End Story button. Web port of StorySessionView. */
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
@@ -13,6 +13,7 @@ import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptySt
 import { useReadingItemsQuery, useSaveReadingItem } from '@/hooks/useReadingItems';
 import { useUid } from '@/hooks/useFolders';
 import { generateReadingQuestions, type ReadingQuestion } from '@/lib/readingQuestionService';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import { readingParagraphs } from '@/lib/readingTextAnalyzer';
 import { scoreReadingSession } from '@/lib/readingScoring';
 import {
@@ -81,6 +82,12 @@ function StorySession({
   const [genError, setGenError] = useState<string | null>(null);
   const [storyEnded, setStoryEnded] = useState(false);
 
+  /* iOS times each chapter's reading and banks it on completion
+     (StorySessionViewModel.completeChapter). The clock restarts whenever a
+     new chapter opens in the reading phase. */
+  const chapterStartedAtRef = useRef(Date.now());
+  const readingSecondsRef = useRef(0);
+
   const config = initial.config;
   const chapter = chapters[chapters.length - 1];
   const progress = storyProgress(chapters, config.storyLength, storyEnded);
@@ -97,6 +104,10 @@ function StorySession({
   };
 
   const startQuestions = () => {
+    readingSecondsRef.current = Math.max(
+      1,
+      Math.round((Date.now() - chapterStartedAtRef.current) / 1000),
+    );
     const generated = generateReadingQuestions({
       content: chapter.text,
       title: t('reading.story.chapterN', { n: chapter.chapterIndex }),
@@ -116,6 +127,14 @@ function StorySession({
   };
 
   const completeChapter = (scorePercent: number | undefined) => {
+    if (readingSecondsRef.current > 0) {
+      recordPractice({
+        skill: 'reading',
+        value: readingSecondsRef.current,
+        sourceModeID: 'story-mode',
+      });
+      readingSecondsRef.current = 0;
+    }
     const updatedChapters = chapters.map((c, i) =>
       i === chapters.length - 1 ? { ...c, isCompleted: true, scorePercent } : c,
     );
@@ -129,10 +148,14 @@ function StorySession({
       questions,
       answers,
       wordCount: 0,
-      readingTimeSeconds: 0,
+      readingTimeSeconds: readingSecondsRef.current,
     });
     completeChapter(result.comprehensionPercent);
   };
+
+  useEffect(() => {
+    if (phase === 'reading') chapterStartedAtRef.current = Date.now();
+  }, [phase, chapters.length]);
 
   const chooseNext = async (choiceLabel: string) => {
     if (isGeneratingNext) return;
