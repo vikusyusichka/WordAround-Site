@@ -285,6 +285,24 @@
     },
     "placeholder": {
       "comingSoon": "{{title}} — coming soon"
+    },
+    "progress": {
+      "subtitle": {
+        "speaking": "of speaking practice",
+        "listening": "of listening practice",
+        "reading": "of reading practice",
+        "writing": "of writing practice"
+      }
+    },
+    "dailyGoal": {
+      "title": "Your goal for today",
+      "body": "Pick what you want to practise today — the card below counts against it.",
+      "chosenBody": "This is what today is about.",
+      "howMuch": "How much?",
+      "change": "Change"
+    },
+    "lastNote": {
+      "title": "Last note you read"
     }
   },
   "categories": {

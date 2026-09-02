@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 import { ArrowsClockwise, CaretLeft, PencilSimple, Plus, Trash } from '@phosphor-icons/react';
@@ -15,6 +15,7 @@ import { CardEditDialog } from '@/components/study/CardEditDialog';
 import { useDeleteSet, useSetsQuery } from '@/hooks/useSets';
 import { useStudySession } from '@/hooks/useStudySession';
 import { activeCard, counts, filteredCards, roundStats } from '@/lib/studySession';
+import { recordOpenedSet } from '@/lib/recentSets';
 import { speak } from '@/lib/speech';
 import { themeForHex, type SetTheme } from '@/lib/setColors';
 import type { Flashcard, FlashcardSet } from '@/lib/models';
@@ -30,6 +31,12 @@ function SetDetailPage() {
   const { data: sets, isLoading } = useSetsQuery();
 
   const set = sets?.find((s) => s.id === id);
+  const openedSetId = set?.id;
+
+  /* Remembered for the home screen's "Continue learning" card. */
+  useEffect(() => {
+    if (openedSetId) recordOpenedSet(openedSetId);
+  }, [openedSetId]);
 
   if (isLoading) {
     return (

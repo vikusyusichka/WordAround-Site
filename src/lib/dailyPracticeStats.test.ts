@@ -2,6 +2,7 @@ import { beforeEach, describe, expect, it } from 'vitest';
 
 import {
   clearPracticeStats,
+  currentStreak,
   dailyProgress,
   defaultGoal,
   fetchAllEntries,
@@ -97,5 +98,69 @@ describe('dailyProgress', () => {
     expect(dailyProgress('writing')).toMatchObject({
       current: 0, goal: 200, progress: 0, unit: 'words', remaining: 200,
     });
+  });
+});
+
+/* Past days can't be produced through recordPractice (it always stamps today),
+   so the streak tests seed the log the way the app stores it. */
+const seedPracticeDays = (daysAgo: number[]) => {
+  const entries = daysAgo.map((offset, index) => {
+    const d = new Date();
+    d.setDate(d.getDate() - offset);
+    d.setHours(0, 0, 0, 0);
+    return {
+      id: `seed-${index}`,
+      skill: 'reading' as const,
+      date: d.getTime(),
+      createdAt: d.getTime(),
+      value: 60,
+    };
+  });
+  localStorage.setItem('wa.dailyPracticeStats', JSON.stringify(entries));
+};
+
+describe('currentStreak', () => {
+  it('is zero with no practice at all', () => {
+    expect(currentStreak()).toBe(0);
+  });
+
+  it('counts consecutive days ending today', () => {
+    seedPracticeDays([0, 1, 2]);
+    expect(currentStreak()).toBe(3);
+  });
+
+  it("keeps yesterday's streak alive before today is practised", () => {
+    seedPracticeDays([1, 2]);
+    expect(currentStreak()).toBe(2);
+  });
+
+  it('stops at the first missed day', () => {
+    seedPracticeDays([0, 2, 3]);
+    expect(currentStreak()).toBe(1);
+  });
+
+  it('is zero once a whole day has been missed', () => {
+    seedPracticeDays([2, 3]);
+    expect(currentStreak()).toBe(0);
+  });
+
+  it('counts a day once however much was practised on it', () => {
+    seedPracticeDays([0, 0, 1]);
+    expect(currentStreak()).toBe(2);
+  });
+});
+
+describe('dailyProgress with a chosen goal', () => {
+  it("uses the learner's target instead of the built-in one", () => {
+    recordPractice({ skill: 'speaking', value: 15 * 60 });
+    const p = dailyProgress('speaking', new Date(), 30);
+    expect(p).toMatchObject({ current: 15, goal: 30, remaining: 15 });
+    expect(p.progress).toBeCloseTo(0.5);
+  });
+
+  it('ignores a nonsense target and falls back to the default', () => {
+    expect(dailyProgress('reading', new Date(), 0).goal).toBe(15);
+    expect(dailyProgress('reading', new Date(), -5).goal).toBe(15);
+    expect(dailyProgress('reading', new Date(), Number.NaN).goal).toBe(15);
   });
 });

@@ -125,9 +125,14 @@ export interface DailyProgress {
 export const dailyProgress = (
   skill: DailyPracticeSkill,
   now: Date = new Date(),
+  /** The learner's own goal for today, when they picked one (see dailyGoal). */
+  goalOverride?: number,
 ): DailyProgress => {
   const current = totalTodayDisplay(skill, now);
-  const goal = defaultGoal(skill);
+  const goal =
+    goalOverride !== undefined && Number.isFinite(goalOverride) && goalOverride > 0
+      ? goalOverride
+      : defaultGoal(skill);
   return {
     current,
     goal,
@@ -135,6 +140,33 @@ export const dailyProgress = (
     unit: skill === 'writing' ? 'words' : 'minutes',
     remaining: Math.max(0, goal - current),
   };
+};
+
+/** Consecutive days of practice ending today — or ending yesterday, so a
+    streak survives until the day it is actually missed. Any skill counts. */
+export const currentStreak = (now: Date = new Date()): number => {
+  const days = new Set(readAll().map((e) => e.date));
+  if (days.size === 0) return 0;
+
+  /* Calendar arithmetic, not minus-24h: on a DST change a fixed day in
+     milliseconds lands at 23:00 or 01:00 and misses the day entirely. */
+  const previousDay = (timestamp: number): number => {
+    const d = new Date(timestamp);
+    d.setDate(d.getDate() - 1);
+    d.setHours(0, 0, 0, 0);
+    return d.getTime();
+  };
+
+  const today = startOfDay(now);
+  /* Nothing done today yet is not a broken streak — the day is not over. */
+  let cursor = days.has(today) ? today : previousDay(today);
+
+  let streak = 0;
+  while (days.has(cursor)) {
+    streak += 1;
+    cursor = previousDay(cursor);
+  }
+  return streak;
 };
 
 /** Test seam / "reset my stats". */

@@ -77,6 +77,23 @@ export interface HomeSetPreviewItem {
 /* MARK: - Static placeholders (mirror HomeViewModel.staticStatCards / staticTodayGoal).
    These stay static in iOS too — no real stats backend yet. */
 
+/* The streak card, split out because the home screen renders it on its own
+   with a live value (see currentStreak in dailyPracticeStats). `value` here is
+   only the shape's placeholder — the card always overrides it. */
+export const STREAK_CARD: StatCardItem = {
+  id: 'streak',
+  titleKey: 'home.stat.streak',
+  value: '0',
+  subtitleKey: 'home.stat.days',
+  iconSystemName: 'flame.fill',
+  accentColor: 'var(--color-home-stat3-accent)',
+  titleColor: 'var(--color-home-stat3-title)',
+  valueColor: 'var(--color-home-stat3-title)',
+  subtitleColor: 'var(--color-text-secondary)',
+  backgroundColor: 'var(--color-home-stat3-bg)',
+  blobColor: 'var(--color-home-stat3-blob)',
+};
+
 export const STAT_CARDS: StatCardItem[] = [
   {
     id: 'learned-today',
@@ -104,19 +121,7 @@ export const STAT_CARDS: StatCardItem[] = [
     backgroundColor: 'var(--color-home-stat2-bg)',
     blobColor: 'var(--color-home-stat2-blob)',
   },
-  {
-    id: 'streak',
-    titleKey: 'home.stat.streak',
-    value: '5',
-    subtitleKey: 'home.stat.days',
-    iconSystemName: 'flame.fill',
-    accentColor: 'var(--color-home-stat3-accent)',
-    titleColor: 'var(--color-home-stat3-title)',
-    valueColor: 'var(--color-home-stat3-title)',
-    subtitleColor: 'var(--color-text-secondary)',
-    backgroundColor: 'var(--color-home-stat3-bg)',
-    blobColor: 'var(--color-home-stat3-blob)',
-  },
+  STREAK_CARD,
 ];
 
 /* Today's goal — layout `goal`. Static (matches HomeViewModel.staticTodayGoal). */

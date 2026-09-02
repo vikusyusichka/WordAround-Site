@@ -4,14 +4,20 @@
 import { useCallback, useEffect, useState } from 'react';
 
 import {
+  currentStreak,
   dailyProgress,
   type DailyPracticeSkill,
   type DailyProgress,
 } from '@/lib/dailyPracticeStats';
+import { goalOverrideFor } from '@/lib/dailyGoal';
 import type { HomeSetPreviewItem } from '@/lib/homeTypes';
 
 export const useDailyProgress = (skill: DailyPracticeSkill): DailyProgress => {
-  const read = useCallback(() => dailyProgress(skill), [skill]);
+  /* The learner's own target for today wins over the built-in goal. */
+  const read = useCallback(
+    () => dailyProgress(skill, new Date(), goalOverrideFor(skill)),
+    [skill],
+  );
   const [progress, setProgress] = useState<DailyProgress>(read);
 
   useEffect(() => {
@@ -37,3 +43,17 @@ export const withDailyProgress = (
   unit: unitLabel,
   progress: progress.progress,
 });
+
+/** Consecutive practice days, refreshed on focus like the progress cards. */
+export const useStreak = (): number => {
+  const [streak, setStreak] = useState<number>(() => currentStreak());
+
+  useEffect(() => {
+    const refresh = () => setStreak(currentStreak());
+    refresh();
+    window.addEventListener('focus', refresh);
+    return () => window.removeEventListener('focus', refresh);
+  }, []);
+
+  return streak;
+};
