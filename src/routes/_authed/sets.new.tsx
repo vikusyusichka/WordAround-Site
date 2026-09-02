@@ -154,7 +154,7 @@ function NewSetPage() {
             {t('createSet.import.button')}
           </button>
 
-          <CardEditor cards={draft.cards} onChange={(cards) => patch({ cards })} />
+          <CardEditor cards={draft.cards} onChange={(cards) => patch({ cards })} theme={theme} />
         </CreateSection>
 
         <CreateSection title={t('createSet.customizeSection')} theme={theme}>

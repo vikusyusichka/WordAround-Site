@@ -8,11 +8,12 @@ import { PrivacyToggle } from './PrivacyToggle';
 import { IconPicker } from './IconPicker';
 import { CardEditor } from './CardEditor';
 import { emptyCard, type DraftCard } from '@/lib/createSetValidation';
+import { themeForColor } from '@/lib/setColors';
 
 /* Stateful harness so the controlled inputs update on change (like the app). */
 function CardEditorHarness() {
   const [cards, setCards] = useState<DraftCard[]>([emptyCard()]);
-  return <CardEditor cards={cards} onChange={setCards} />;
+  return <CardEditor cards={cards} onChange={setCards} theme={themeForColor('red')} />;
 }
 
 describe('PrivacyToggle', () => {
