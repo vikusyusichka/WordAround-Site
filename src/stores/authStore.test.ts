@@ -6,6 +6,8 @@ const mocks = vi.hoisted(() => ({
     signUp: vi.fn(),
     signInWithGoogle: vi.fn(),
     sendPasswordReset: vi.fn(),
+    sendMagicLink: vi.fn(),
+    linkPassword: vi.fn(),
     resendVerification: vi.fn(),
     reloadUser: vi.fn(),
   },
@@ -63,10 +65,38 @@ describe('authStore', () => {
   it('signUp success sets the account-created info message', async () => {
     mocks.authService.signUp.mockResolvedValue({});
 
-    await useAuthStore.getState().signUp('a@b.co', 'secret1');
+    await useAuthStore.getState().signUp('Anna', 'a@b.co', 'secret123');
 
+    expect(mocks.authService.signUp).toHaveBeenCalledWith('Anna', 'a@b.co', 'secret123');
     expect(useAuthStore.getState().infoMessage).toBe('auth.accountCreatedInfo');
     expect(mocks.refreshAuthState).toHaveBeenCalled();
+  });
+
+  it('sendMagicLink success sets the link-sent info message', async () => {
+    mocks.authService.sendMagicLink.mockResolvedValue(undefined);
+
+    await useAuthStore.getState().sendMagicLink('a@b.co');
+
+    expect(mocks.authService.sendMagicLink).toHaveBeenCalledWith('a@b.co');
+    expect(useAuthStore.getState().infoMessage).toBe('link.sentInfo');
+  });
+
+  it('setPassword links the credential and refreshes the session', async () => {
+    mocks.authService.linkPassword.mockResolvedValue(undefined);
+
+    await useAuthStore.getState().setPassword('secret123');
+
+    expect(mocks.authService.linkPassword).toHaveBeenCalledWith('secret123');
+    expect(useAuthStore.getState().infoMessage).toBe('profile.password.savedInfo');
+    expect(mocks.refreshAuthState).toHaveBeenCalled();
+  });
+
+  it('setPassword surfaces the "already has a password" case', async () => {
+    mocks.authService.linkPassword.mockRejectedValue(codeError('auth/provider-already-linked'));
+
+    await useAuthStore.getState().setPassword('secret123');
+
+    expect(useAuthStore.getState().errorMessage).toBe('errors.passwordAlreadySet');
   });
 
   it('Google popup dismissal shows no error', async () => {

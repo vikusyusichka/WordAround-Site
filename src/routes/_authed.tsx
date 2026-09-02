@@ -10,7 +10,7 @@ export const Route = createFileRoute('/_authed')({
   beforeLoad: async () => {
     await waitForAuthReady();
     const state = useSessionStore.getState().state;
-    if (state.kind === 'loggedOut') throw redirect({ to: '/auth' });
+    if (state.kind === 'loggedOut') throw redirect({ to: '/auth/sign-in' });
     if (state.kind === 'emailVerificationRequired') throw redirect({ to: '/verify-email' });
   },
   component: AuthedLayout,
@@ -23,7 +23,7 @@ function AuthedLayout() {
   /* React to sign-out / session loss that happens while already inside. */
   useEffect(() => {
     if (sessionState.kind === 'loggedOut') {
-      void navigate({ to: '/auth' });
+      void navigate({ to: '/auth/sign-in' });
     } else if (sessionState.kind === 'emailVerificationRequired') {
       void navigate({ to: '/verify-email' });
     }

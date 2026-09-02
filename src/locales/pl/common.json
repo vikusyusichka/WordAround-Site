@@ -25,7 +25,16 @@
     "resetEmailSent": "Password reset email sent",
     "showPassword": "Show password",
     "hidePassword": "Hide password",
-    "back": "Back"
+    "back": "Back",
+    "signUpTitle": "Create your account",
+    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
+    "name": "Name",
+    "namePlaceholder": "What should we call you?",
+    "orWithEmail": "or with email",
+    "signUpWithGoogle": "Sign up with Google",
+    "passwordHint": "At least {{min}} characters",
+    "magicLinkCta": "Sign in with an email link",
+    "creatingAccount": "Creating account..."
   },
   "verify": {
     "title": "Verify Your Email",
@@ -34,7 +43,7 @@
     "fallbackEmail": "your email",
     "step1": "Open the email in your inbox",
     "step2": "Tap the confirmation link",
-    "step3": "Return here and continue",
+    "step3": "We'll open your learning right away — no need to come back here",
     "checkButton": "I Verified My Email",
     "checking": "Checking...",
     "resend": "Resend Email",
@@ -50,18 +59,26 @@
     "emailInvalid": "Enter a valid email",
     "emailFirst": "Enter your email first",
     "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 6 characters",
+    "passwordTooShort": "Password must be at least 8 characters",
     "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect password",
-    "userNotFound": "No account found with this email",
-    "invalidCredential": "Incorrect email or password",
+    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
+    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
+    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
     "emailInUse": "This account already exists",
-    "weakPassword": "Password must be at least 6 characters",
+    "weakPassword": "This password is too weak",
     "network": "Network error. Check your internet connection",
     "tooManyRequests": "Too many attempts. Try again later",
     "differentCredential": "This email is already used with another sign-in method",
     "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again"
+    "default": "Authentication failed. Please try again",
+    "nameRequired": "Name is required",
+    "passwordsDoNotMatch": "Passwords don't match",
+    "actionExpired": "This link has expired. Request a new one.",
+    "actionInvalid": "This link is no longer valid.",
+    "userDisabled": "This account has been disabled.",
+    "requiresRecentLogin": "For security, sign in again and then repeat this.",
+    "passwordAlreadySet": "This account already has a password.",
+    "linkNoEmail": "Enter the email the link was sent to"
   },
   "nav": {
     "home": "Home",
@@ -1329,10 +1346,44 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Język interfejsu"
+    "interfaceLanguage": "Język interfejsu",
+    "password": {
+      "title": "Create a password",
+      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
+      "save": "Save password",
+      "saving": "Saving...",
+      "savedInfo": "Password created. You can sign in with your email now too."
+    }
   },
   "units": {
     "min": "min",
     "words": "słów"
+  },
+  "link": {
+    "title": "Sign in with a link",
+    "subtitle": "We'll email you a one-time link. No password to remember.",
+    "send": "Send the link",
+    "sending": "Sending...",
+    "sentInfo": "Link sent. Check your email.",
+    "sentTitle": "Check your email",
+    "sentBody": "We sent a sign-in link to",
+    "useAnotherEmail": "Use another email",
+    "backToPassword": "Sign in with a password instead"
+  },
+  "action": {
+    "working": "One moment...",
+    "continue": "Continue",
+    "confirmEmailTitle": "Confirm your email",
+    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
+    "resetTitle": "New password",
+    "resetSubtitle": "Choose a new password for",
+    "newPassword": "New password",
+    "confirmPassword": "Repeat password",
+    "savePassword": "Save password",
+    "resetDoneTitle": "Password updated",
+    "resetDoneBody": "You can sign in with your new password now.",
+    "failedTitle": "That link didn't work",
+    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
+    "backToSignIn": "Back to sign in"
   }
 }

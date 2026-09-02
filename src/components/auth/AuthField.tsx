@@ -3,14 +3,15 @@
    fields get a show/hide eye toggle (web nicety, not in iOS). */
 import { forwardRef, useState } from 'react';
 import type { InputHTMLAttributes, ReactNode } from 'react';
-import { Envelope, Eye, EyeSlash, Lock } from '@phosphor-icons/react';
+import { Envelope, Eye, EyeSlash, Lock, User } from '@phosphor-icons/react';
 import { useTranslation } from 'react-i18next';
 
-type AuthFieldIcon = 'envelope' | 'lock';
+type AuthFieldIcon = 'envelope' | 'lock' | 'person';
 
 const FIELD_ICONS: Record<AuthFieldIcon, ReactNode> = {
   envelope: <Envelope size={20} weight="fill" />,
   lock: <Lock size={20} weight="fill" />,
+  person: <User size={20} weight="fill" />,
 };
 
 interface AuthFieldProps extends Omit<InputHTMLAttributes<HTMLInputElement>, 'className'> {
@@ -37,7 +38,9 @@ export const AuthField = forwardRef<HTMLInputElement, AuthFieldProps>(
         </label>
         <div
           className={[
-            'flex h-[58px] items-center gap-3 rounded-[20px] border bg-white/90 px-[18px]',
+            /* On lg the form sits on a white panel, where white-on-white
+               would flatten the field — tint it just enough to read. */
+            'flex h-[58px] items-center gap-3 rounded-[20px] border bg-white/90 px-[18px] lg:bg-[#F8FAFE]',
             error ? 'border-red-400' : 'border-(--color-auth-field-border)',
           ].join(' ')}
         >

@@ -1,6 +1,11 @@
 import { describe, expect, it } from 'vitest';
 
-import { isValidEmail, signInSchema, signUpSchema } from './authValidation';
+import {
+  isValidEmail,
+  setPasswordSchema,
+  signInSchema,
+  signUpSchema,
+} from './authValidation';
 
 describe('isValidEmail', () => {
   it.each([
@@ -53,20 +58,39 @@ describe('signInSchema', () => {
 });
 
 describe('signUpSchema', () => {
-  it('rejects passwords under 6 characters', () => {
-    const result = signUpSchema.safeParse({
-      email: 'user@example.com',
-      password: '12345',
-    });
+  const valid = { name: 'Anna', email: 'user@example.com', password: 'secret123' };
+
+  it('requires a name', () => {
+    const result = signUpSchema.safeParse({ ...valid, name: '  ' });
+    expect(result.success).toBe(false);
+    if (!result.success) expect(result.error.issues[0].message).toBe('errors.nameRequired');
+  });
+
+  it('rejects passwords under 8 characters', () => {
+    const result = signUpSchema.safeParse({ ...valid, password: '1234567' });
     expect(result.success).toBe(false);
     if (!result.success) {
       expect(result.error.issues[0].message).toBe('errors.passwordTooShort');
     }
   });
 
-  it('accepts a 6-character password', () => {
+  it('accepts an 8-character password', () => {
+    expect(signUpSchema.safeParse({ ...valid, password: '12345678' }).success).toBe(true);
+  });
+});
+
+describe('setPasswordSchema', () => {
+  it('rejects a mismatched confirmation', () => {
+    const result = setPasswordSchema.safeParse({ password: 'secret123', confirm: 'secret124' });
+    expect(result.success).toBe(false);
+    if (!result.success) {
+      expect(result.error.issues[0].message).toBe('errors.passwordsDoNotMatch');
+    }
+  });
+
+  it('accepts a matching pair', () => {
     expect(
-      signUpSchema.safeParse({ email: 'user@example.com', password: '123456' }).success,
+      setPasswordSchema.safeParse({ password: 'secret123', confirm: 'secret123' }).success,
     ).toBe(true);
   });
 });

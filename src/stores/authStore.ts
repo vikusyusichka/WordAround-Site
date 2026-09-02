@@ -15,10 +15,14 @@ interface AuthStoreState {
   /** i18next key of the current info message, or null. */
   infoMessage: string | null;
   clearMessages: () => void;
+  /** Shows an error that was produced outside an action (a redirect result). */
+  setErrorKey: (key: string | null) => void;
   signIn: (email: string, password: string) => Promise<void>;
-  signUp: (email: string, password: string) => Promise<void>;
+  signUp: (name: string, email: string, password: string) => Promise<void>;
   signInWithGoogle: () => Promise<void>;
   resetPassword: (email: string) => Promise<void>;
+  sendMagicLink: (email: string) => Promise<void>;
+  setPassword: (password: string) => Promise<void>;
   resendVerification: () => Promise<void>;
   checkVerification: () => Promise<void>;
 }
@@ -46,15 +50,17 @@ export const useAuthStore = create<AuthStoreState>((set) => {
 
     clearMessages: () => set({ errorMessage: null, infoMessage: null }),
 
+    setErrorKey: (key) => set({ errorMessage: key, infoMessage: null }),
+
     signIn: (email, password) =>
       run(async () => {
         await authService.signIn(email, password);
         await refreshSession();
       }),
 
-    signUp: (email, password) =>
+    signUp: (name, email, password) =>
       run(async () => {
-        await authService.signUp(email, password);
+        await authService.signUp(name, email, password);
         await refreshSession();
       }, 'auth.accountCreatedInfo'),
 
@@ -68,6 +74,18 @@ export const useAuthStore = create<AuthStoreState>((set) => {
       run(async () => {
         await authService.sendPasswordReset(email);
       }, 'auth.resetEmailSent'),
+
+    sendMagicLink: (email) =>
+      run(async () => {
+        await authService.sendMagicLink(email);
+      }, 'link.sentInfo'),
+
+    /* Attaches a password to an account that has none — the Google case. */
+    setPassword: (password) =>
+      run(async () => {
+        await authService.linkPassword(password);
+        await refreshSession();
+      }, 'profile.password.savedInfo'),
 
     resendVerification: () =>
       run(async () => {

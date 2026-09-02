@@ -38,7 +38,7 @@ function OnboardingScreen() {
 
   const handleStart = () => {
     localStorage.setItem('wa.onboarded', '1');
-    void navigate({ to: '/auth' });
+    void navigate({ to: '/auth/sign-in' });
   };
 
   return (

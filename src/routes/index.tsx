@@ -21,7 +21,7 @@ export const Route = createFileRoute('/')({
       case 'emailVerificationRequired':
         throw redirect({ to: '/verify-email' });
       default:
-        throw redirect({ to: '/auth' });
+        throw redirect({ to: '/auth/sign-in' });
     }
   },
 });
