@@ -139,7 +139,11 @@ function NewSetPage() {
             <span className="text-[14px] font-bold" style={labelStyle}>
               {t('createSet.privacy')}
             </span>
-            <PrivacyToggle value={draft.privacy} onChange={(privacy) => patch({ privacy })} />
+            <PrivacyToggle
+              value={draft.privacy}
+              onChange={(privacy) => patch({ privacy })}
+              theme={theme}
+            />
           </div>
         </CreateSection>
 
@@ -173,7 +177,11 @@ function NewSetPage() {
             <span className="text-[14px] font-bold" style={labelStyle}>
               {t('createSet.icon')}
             </span>
-            <IconPicker value={draft.iconName} onChange={(iconName) => patch({ iconName })} />
+            <IconPicker
+              value={draft.iconName}
+              onChange={(iconName) => patch({ iconName })}
+              theme={theme}
+            />
           </div>
 
           <div className="flex flex-col gap-2">
@@ -183,6 +191,7 @@ function NewSetPage() {
             <FolderPicker
               value={draft.folderID}
               onChange={(folderID, folderName) => patch({ folderID, folderName })}
+              theme={theme}
             />
           </div>
         </CreateSection>

@@ -5,7 +5,12 @@ import { useTranslation } from 'react-i18next';
 
 import { ColorPicker } from '@/components/create/ColorPicker';
 import { IconPicker } from '@/components/create/IconPicker';
-import { SET_COLOR_HEX, colorIdForHex, type SetColorId } from '@/lib/setColors';
+import {
+  SET_COLOR_HEX,
+  colorIdForHex,
+  themeForColor,
+  type SetColorId,
+} from '@/lib/setColors';
 
 export interface TopicFormValues {
   title: string;
@@ -92,7 +97,8 @@ export const GrammarTopicForm = ({
         <span className="text-[14px] font-semibold text-(--color-cs-dark-text)">
           {t('writing.grammar.form.icon')}
         </span>
-        <IconPicker value={icon} onChange={setIcon} />
+        {/* The picker paints itself with the colour chosen just above. */}
+        <IconPicker value={icon} onChange={setIcon} theme={themeForColor(color)} />
       </div>
 
       {error && (

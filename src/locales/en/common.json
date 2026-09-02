@@ -207,6 +207,25 @@
       "previewEmpty": "Nothing to preview yet.",
       "noDefinition": "No translation",
       "confirm": "Add cards"
+    },
+    "iconPicker": {
+      "open": "More icons",
+      "title": "Choose icon",
+      "search": "Search symbol",
+      "close": "Close",
+      "empty": "No icons match that name."
+    },
+    "iconGroup": {
+      "learning": "Learning",
+      "languages": "Languages",
+      "nature": "Nature",
+      "health": "Health",
+      "food": "Food",
+      "travel": "Travel",
+      "work": "Work",
+      "tech": "Tech",
+      "creativity": "Creativity",
+      "general": "General"
     }
   },
   "home": {

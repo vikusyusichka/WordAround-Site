@@ -20,7 +20,7 @@ describe('PrivacyToggle', () => {
   it('marks the active option and fires onChange', async () => {
     const user = userEvent.setup();
     const onChange = vi.fn();
-    render(<PrivacyToggle value="Private" onChange={onChange} />);
+    render(<PrivacyToggle value="Private" onChange={onChange} theme={themeForColor('red')} />);
     expect(screen.getByRole('radio', { name: /Private/ })).toHaveAttribute('aria-checked', 'true');
     await user.click(screen.getByRole('radio', { name: /Public/ }));
     expect(onChange).toHaveBeenCalledWith('Public');
@@ -31,7 +31,13 @@ describe('IconPicker', () => {
   it('fires onChange with the clicked icon', async () => {
     const user = userEvent.setup();
     const onChange = vi.fn();
-    render(<IconPicker value="rectangle.stack.fill" onChange={onChange} />);
+    render(
+      <IconPicker
+        value="rectangle.stack.fill"
+        onChange={onChange}
+        theme={themeForColor('red')}
+      />,
+    );
     await user.click(screen.getByRole('button', { name: 'star.fill' }));
     expect(onChange).toHaveBeenCalledWith('star.fill');
   });

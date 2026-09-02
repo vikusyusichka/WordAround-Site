@@ -1,15 +1,20 @@
-/* Private / Public segmented control for the set wizard. */
+/* Private / Public segmented control for the set wizard. Painted with the
+   set's chosen theme, so the selected pill follows the colour the user picked
+   instead of standing out in the app blue. */
 import { useTranslation } from 'react-i18next';
 import { Globe, LockSimple } from '@phosphor-icons/react';
+
+import type { SetTheme } from '@/lib/setColors';
 
 type Privacy = 'Private' | 'Public';
 
 interface PrivacyToggleProps {
   value: Privacy;
   onChange: (value: Privacy) => void;
+  theme: SetTheme;
 }
 
-export const PrivacyToggle = ({ value, onChange }: PrivacyToggleProps) => {
+export const PrivacyToggle = ({ value, onChange, theme }: PrivacyToggleProps) => {
   const { t } = useTranslation();
   const options: { key: Privacy; labelKey: string; icon: React.ReactNode }[] = [
     { key: 'Private', labelKey: 'createSet.private', icon: <LockSimple size={16} weight="fill" /> },
@@ -17,7 +22,11 @@ export const PrivacyToggle = ({ value, onChange }: PrivacyToggleProps) => {
   ];
 
   return (
-    <div className="inline-flex rounded-2xl border border-(--color-auth-field-border) bg-white p-1" role="radiogroup">
+    <div
+      className="inline-flex rounded-2xl border p-1 transition-colors"
+      style={{ background: theme.fieldBackground, borderColor: theme.softBorderColor }}
+      role="radiogroup"
+    >
       {options.map((opt) => {
         const selected = opt.key === value;
         return (
@@ -29,10 +38,13 @@ export const PrivacyToggle = ({ value, onChange }: PrivacyToggleProps) => {
             onClick={() => onChange(opt.key)}
             className={[
               'flex items-center gap-2 rounded-xl px-4 py-2 text-[14px] font-semibold transition-colors',
-              selected
-                ? 'bg-(--color-home-nav-sel-bg) text-(--color-home-brand)'
-                : 'text-(--color-cs-text-muted) hover:bg-black/[0.03]',
+              selected ? '' : 'hover:bg-black/[0.03]',
             ].join(' ')}
+            style={
+              selected
+                ? { background: theme.softAccent, color: theme.accent }
+                : { color: theme.mutedTextColor }
+            }
           >
             {opt.icon}
             {t(opt.labelKey)}
