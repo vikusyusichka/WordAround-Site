@@ -93,13 +93,13 @@ export const GrammarTopicForm = ({
         <ColorPicker value={color} onChange={setColor} />
       </div>
 
-      <div className="flex flex-col gap-2.5">
-        <span className="text-[14px] font-semibold text-(--color-cs-dark-text)">
-          {t('writing.grammar.form.icon')}
-        </span>
-        {/* The picker paints itself with the colour chosen just above. */}
-        <IconPicker value={icon} onChange={setIcon} theme={themeForColor(color)} />
-      </div>
+      {/* The picker paints itself with the colour chosen just above. */}
+      <IconPicker
+        value={icon}
+        onChange={setIcon}
+        theme={themeForColor(color)}
+        label={t('writing.grammar.form.icon')}
+      />
 
       {error && (
         <p role="alert" className="text-[14px] font-medium text-(--color-cs-red)">

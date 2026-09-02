@@ -173,16 +173,12 @@ function NewSetPage() {
             />
           </div>
 
-          <div className="flex flex-col gap-2">
-            <span className="text-[14px] font-bold" style={labelStyle}>
-              {t('createSet.icon')}
-            </span>
-            <IconPicker
-              value={draft.iconName}
-              onChange={(iconName) => patch({ iconName })}
-              theme={theme}
-            />
-          </div>
+          <IconPicker
+            value={draft.iconName}
+            onChange={(iconName) => patch({ iconName })}
+            theme={theme}
+            label={t('createSet.iconPicker.title')}
+          />
 
           <div className="flex flex-col gap-2">
             <span className="text-[14px] font-bold" style={labelStyle}>

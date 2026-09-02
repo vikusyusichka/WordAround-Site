@@ -36,8 +36,10 @@ describe('IconPicker', () => {
         value="rectangle.stack.fill"
         onChange={onChange}
         theme={themeForColor('red')}
+        label="Icon"
       />,
     );
+    await user.click(screen.getByRole('button', { name: 'Choose icon' }));
     await user.click(screen.getByRole('button', { name: 'star.fill' }));
     expect(onChange).toHaveBeenCalledWith('star.fill');
   });
