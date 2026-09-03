@@ -22,17 +22,39 @@ export interface GrammarLanguage {
   shortTitle: string;
 }
 
-/* 4C1 ships 8 languages to keep the picker readable; the iOS list has 30 and
-   will port when a proper searchable picker is warranted. */
+/* The full iOS GrammarLanguage list (Features/Writing/Essays/Models/
+   GrammarLanguage.swift), in the same order. */
 export const ESSAY_LANGUAGES: GrammarLanguage[] = [
   { id: 'english', title: 'English', shortTitle: 'EN' },
   { id: 'spanish', title: 'Spanish', shortTitle: 'ES' },
   { id: 'french', title: 'French', shortTitle: 'FR' },
   { id: 'german', title: 'German', shortTitle: 'DE' },
   { id: 'italian', title: 'Italian', shortTitle: 'IT' },
-  { id: 'ukrainian', title: 'Ukrainian', shortTitle: 'UK' },
+  { id: 'portuguese', title: 'Portuguese', shortTitle: 'PT' },
+  { id: 'dutch', title: 'Dutch', shortTitle: 'NL' },
+  { id: 'catalan', title: 'Catalan', shortTitle: 'CA' },
+  { id: 'galician', title: 'Galician', shortTitle: 'GL' },
+  { id: 'esperanto', title: 'Esperanto', shortTitle: 'EO' },
   { id: 'polish', title: 'Polish', shortTitle: 'PL' },
+  { id: 'ukrainian', title: 'Ukrainian', shortTitle: 'UK' },
   { id: 'russian', title: 'Russian', shortTitle: 'RU' },
+  { id: 'czech', title: 'Czech', shortTitle: 'CS' },
+  { id: 'slovak', title: 'Slovak', shortTitle: 'SK' },
+  { id: 'croatian', title: 'Croatian', shortTitle: 'HR' },
+  { id: 'serbian', title: 'Serbian', shortTitle: 'SR' },
+  { id: 'slovenian', title: 'Slovenian', shortTitle: 'SL' },
+  { id: 'bulgarian', title: 'Bulgarian', shortTitle: 'BG' },
+  { id: 'romanian', title: 'Romanian', shortTitle: 'RO' },
+  { id: 'hungarian', title: 'Hungarian', shortTitle: 'HU' },
+  { id: 'greek', title: 'Greek', shortTitle: 'EL' },
+  { id: 'turkish', title: 'Turkish', shortTitle: 'TR' },
+  { id: 'swedish', title: 'Swedish', shortTitle: 'SV' },
+  { id: 'danish', title: 'Danish', shortTitle: 'DA' },
+  { id: 'norwegian', title: 'Norwegian', shortTitle: 'NO' },
+  { id: 'finnish', title: 'Finnish', shortTitle: 'FI' },
+  { id: 'lithuanian', title: 'Lithuanian', shortTitle: 'LT' },
+  { id: 'latvian', title: 'Latvian', shortTitle: 'LV' },
+  { id: 'estonian', title: 'Estonian', shortTitle: 'ET' },
 ];
 
 export const DEFAULT_LANGUAGE: GrammarLanguage = ESSAY_LANGUAGES[0];
@@ -176,18 +198,49 @@ export interface GrammarIssue {
   category: GrammarIssueCategory;
 }
 
-/** LanguageTool language codes for the 8-language subset shipped in 4C1.
-    Verbatim from iOS GrammarLanguage.languageToolCode for these ids. */
+/** LanguageTool language codes, verbatim from iOS
+    GrammarLanguage.languageToolCode. Languages LanguageTool does not
+    support keep their ISO 639-1 code (still used by AI prompts) and are
+    listed in GRAMMAR_CHECK_UNSUPPORTED. */
 export const LANGUAGE_TOOL_CODE: Record<string, string> = {
   english: 'en-US',
   spanish: 'es',
   french: 'fr',
   german: 'de-DE',
   italian: 'it',
-  ukrainian: 'uk-UA',
+  portuguese: 'pt-PT',
+  dutch: 'nl',
+  catalan: 'ca-ES',
+  galician: 'gl-ES',
+  esperanto: 'eo',
   polish: 'pl-PL',
+  ukrainian: 'uk-UA',
   russian: 'ru-RU',
+  czech: 'cs',
+  slovak: 'sk-SK',
+  croatian: 'hr',
+  serbian: 'sr',
+  slovenian: 'sl',
+  bulgarian: 'bg',
+  romanian: 'ro-RO',
+  hungarian: 'hu',
+  greek: 'el-GR',
+  turkish: 'tr',
+  swedish: 'sv',
+  danish: 'da-DK',
+  norwegian: 'nb',
+  finnish: 'fi',
+  lithuanian: 'lt',
+  latvian: 'lv',
+  estonian: 'et',
 };
+
+/** iOS `supportsGrammarCheck == false` — the grammar check is skipped for
+    these; everything else in the essay flow still works. */
+export const GRAMMAR_CHECK_UNSUPPORTED: string[] = ['czech', 'croatian', 'serbian', 'slovenian', 'bulgarian', 'hungarian', 'turkish', 'finnish', 'lithuanian', 'latvian', 'estonian'];
+
+export const supportsGrammarCheck = (languageId: string): boolean =>
+  !GRAMMAR_CHECK_UNSUPPORTED.includes(languageId);
 
 /* MARK: - Essay score (4C2) */
 

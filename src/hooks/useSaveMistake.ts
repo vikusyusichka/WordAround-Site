@@ -21,16 +21,17 @@ export const useSaveMistake = () => {
   );
 
   const save = useCallback(
-    async (key: string, payload: MistakePayload) => {
+    async (key: string, payload: MistakePayload, options: { topicId?: string } = {}) => {
       if (!uid || inFlight.current.has(key)) return;
       inFlight.current.add(key);
       setStates((prev) => ({ ...prev, [key]: 'saving' }));
       try {
-        const outcome = await saveMistake(payload, uid);
+        const outcome = await saveMistake(payload, uid, { topicId: options.topicId });
         setStates((prev) => ({ ...prev, [key]: outcome.status }));
         qc.invalidateQueries({ queryKey: ['grammarTopics'] });
         qc.invalidateQueries({ queryKey: ['grammarNotes'] });
         qc.invalidateQueries({ queryKey: ['grammarReview'] });
+        qc.invalidateQueries({ queryKey: ['grammarHighlights'] });
         return outcome;
       } catch {
         setStates((prev) => ({ ...prev, [key]: 'failed' }));

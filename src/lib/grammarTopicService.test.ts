@@ -40,6 +40,8 @@ const topic: GrammarNoteTopic = {
   description: 'ser vs estar etc.',
   icon: 'book.pages.fill',
   colorHex: '#4F7CFF',
+  languageCode: 'spanish',
+  languageName: 'Spanish',
   notesCount: 0,
   isPinned: false,
   isMistakesTopic: false,
@@ -60,7 +62,7 @@ describe('grammarTopicService', () => {
     expect(data.notesCount).toBe(0);
   });
 
-  it('fetchTopics maps docs + converts Timestamps, ordered by createdAt desc', async () => {
+  it('fetchTopics maps docs + converts Timestamps', async () => {
     fs.getDocs.mockResolvedValue({
       docs: [
         {
@@ -84,7 +86,22 @@ describe('grammarTopicService', () => {
     expect(result).toHaveLength(1);
     expect(result[0].notesCount).toBe(3);
     expect(result[0].createdAt).toBe(5_000);
-    expect(fs.orderBy).toHaveBeenCalledWith('createdAt', 'desc');
+  });
+
+  it('fetchTopics sorts pinned, then the mistakes topic, then recently updated', async () => {
+    const doc = (id: string, patch: Record<string, unknown>) => ({
+      data: () => ({ ...topic, id, ...patch }),
+    });
+    fs.getDocs.mockResolvedValue({
+      docs: [
+        doc('plain', { updatedAt: new fs.Timestamp(10) }),
+        doc('mistakes', { isMistakesTopic: true, updatedAt: new fs.Timestamp(1) }),
+        doc('fresh', { updatedAt: new fs.Timestamp(99) }),
+        doc('pinned', { isPinned: true, updatedAt: new fs.Timestamp(1) }),
+      ],
+    });
+    const result = await fetchTopics('u1');
+    expect(result.map((tp) => tp.id)).toEqual(['pinned', 'mistakes', 'fresh', 'plain']);
   });
 
   it('setNotesCount clamps to >= 0 and writes updatedAt', async () => {

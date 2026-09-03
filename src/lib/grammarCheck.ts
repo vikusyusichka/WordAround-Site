@@ -4,7 +4,13 @@
    enabled server-side, so browser calls work without a proxy.
    Free tier: 20 requests/min, 20 KB text per request. We cap at 6000 chars
    to stay comfortably under the limit (mirrors iOS default). */
-import { LANGUAGE_TOOL_CODE, type GrammarIssue, type GrammarIssueCategory, type GrammarLanguage } from '@/lib/essayTypes';
+import {
+  LANGUAGE_TOOL_CODE,
+  supportsGrammarCheck,
+  type GrammarIssue,
+  type GrammarIssueCategory,
+  type GrammarLanguage,
+} from '@/lib/essayTypes';
 
 const ENDPOINT = 'https://api.languagetool.org/v2/check';
 const MAX_CHARS = 6000;
@@ -94,7 +100,12 @@ export const checkGrammar = async (
   }
 
   const ltCode = LANGUAGE_TOOL_CODE[language.id];
-  if (!ltCode) throw makeError('grammar/unsupported-language', `No LanguageTool code for ${language.id}`);
+  if (!ltCode || !supportsGrammarCheck(language.id)) {
+    throw makeError(
+      'grammar/unsupported-language',
+      `LanguageTool has no rules for ${language.id}`,
+    );
+  }
 
   const body = new URLSearchParams({ text: trimmed, language: ltCode }).toString();
 

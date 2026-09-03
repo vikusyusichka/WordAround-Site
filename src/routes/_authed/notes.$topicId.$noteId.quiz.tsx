@@ -13,6 +13,7 @@ import { QuizCard } from '@/components/grammar/QuizCard';
 import { QuizQuestionView } from '@/components/grammar/QuizQuestionView';
 import { QuizResultView } from '@/components/grammar/QuizResultView';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
+import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
 import { useGrammarNotesQuery } from '@/hooks/useGrammarNotes';
 import { useCreateQuiz, useDeleteQuiz, useGrammarQuizzesQuery } from '@/hooks/useGrammarQuizzes';
 import { useUid } from '@/hooks/useFolders';
@@ -28,6 +29,7 @@ import {
 } from '@/lib/grammarQuizSession';
 import { makeReviewItem, reviewItemIdForQuiz } from '@/lib/grammarReview';
 import { upsertReviewItem } from '@/lib/grammarReviewService';
+import { useGrammarSettings } from '@/stores/grammarSettingsStore';
 import type { GrammarNoteQuiz, GrammarQuizQuestion } from '@/lib/models';
 
 export const Route = createFileRoute(
@@ -50,6 +52,8 @@ function QuizRoute() {
 
   const [screen, setScreen] = useState<Screen>('list');
   const [sheetOpen, setSheetOpen] = useState(false);
+  const [pendingDelete, setPendingDelete] = useState<GrammarNoteQuiz | null>(null);
+  const allowQuickQuizzes = useGrammarSettings((st) => st.allowQuickQuizzes);
   const [session, dispatch] = useReducer(quizSessionReducer, initialQuizSessionState);
 
   const note = notes?.find((n) => n.id === noteId);
@@ -129,11 +133,7 @@ function QuizRoute() {
     }
   };
 
-  const handleDelete = (quiz: GrammarNoteQuiz) => {
-    if (window.confirm(t('writing.grammar.quiz.deleteConfirm', { title: quiz.title }))) {
-      deleteQuiz.mutate({ topicId, noteId, id: quiz.id });
-    }
-  };
+  const handleDelete = (quiz: GrammarNoteQuiz) => setPendingDelete(quiz);
 
   const question = currentQuestion(session);
   const total = session.quiz?.questions.length ?? 0;
@@ -144,7 +144,7 @@ function QuizRoute() {
         title={note.title}
         subtitle={t('writing.grammar.quiz.title')}
         actions={
-          screen === 'list' ? (
+          screen === 'list' && allowQuickQuizzes ? (
             <button
               type="button"
               onClick={() => setSheetOpen(true)}
@@ -255,6 +255,21 @@ function QuizRoute() {
         onSave={handleSaveQuiz}
         onClose={() => setSheetOpen(false)}
       />
+
+      {pendingDelete && (
+        <ConfirmDialog
+          title={t('writing.grammar.quiz.delete')}
+          body={t('writing.grammar.quiz.deleteConfirm', { title: pendingDelete.title })}
+          isBusy={deleteQuiz.isPending}
+          onConfirm={() =>
+            deleteQuiz.mutate(
+              { topicId, noteId, id: pendingDelete.id },
+              { onSuccess: () => setPendingDelete(null) },
+            )
+          }
+          onCancel={() => setPendingDelete(null)}
+        />
+      )}
     </ContentContainer>
   );
 }

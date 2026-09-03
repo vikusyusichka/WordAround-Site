@@ -1,29 +1,41 @@
-/* Notes home — /notes, reached from Library ▸ Notes in the sidebar. Topics
-   grid + create modal. `.index` so the nested $topicId routes sit below
+/* Notes home — /notes, reached from Library ▸ Notes in the sidebar. Search,
+   the review summary, the two review-highlight rows, and the topics list with
+   quick capture + reorder. `.index` so the nested $topicId routes sit below
    without turning this into a layout-without-Outlet (Phase-3 trap). */
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 import { AnimatePresence, motion } from 'motion/react';
 import { Plus } from '@phosphor-icons/react';
 
+import { Icon } from '@/components/primitives/Icon';
+import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
+import { GrammarSearchBar } from '@/components/grammar/GrammarSearchBar';
 import { GrammarTopicCard } from '@/components/grammar/GrammarTopicCard';
 import { GrammarTopicForm } from '@/components/grammar/GrammarTopicForm';
 import { QuickMistakeSheet } from '@/components/grammar/QuickMistakeSheet';
+import { QuickNoteSheet } from '@/components/grammar/QuickNoteSheet';
+import { ReviewHighlightsRow } from '@/components/grammar/ReviewHighlightsRow';
 import { ReviewTodayCard } from '@/components/grammar/ReviewTodayCard';
 import { TemplateLibraryModal } from '@/components/grammar/TemplateLibraryModal';
+import { useCreateQuickNote } from '@/hooks/useGrammarNotes';
 import {
   useCreateTopic,
   useCreateTopicFromTemplate,
   useDeleteTopic,
+  useEnsureMistakesTopic,
   useGrammarTopicsQuery,
+  useReorderTopics,
 } from '@/hooks/useGrammarTopics';
-import { useReviewQueueQuery } from '@/hooks/useGrammarReview';
+import { useReviewHighlightsQuery, useReviewQueueQuery } from '@/hooks/useGrammarReview';
 import { useSaveMistake } from '@/hooks/useSaveMistake';
 import { MISTAKES_TOPIC_ID } from '@/lib/grammarTopicService';
+import { normalizeSearchText } from '@/lib/grammarSearch';
+import { useGrammarSettings } from '@/stores/grammarSettingsStore';
+import type { GrammarNoteTopic } from '@/lib/models';
 
 export const Route = createFileRoute('/_authed/notes/')({
   component: GrammarHome,
@@ -33,22 +45,52 @@ function GrammarHome() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { data: topics, isLoading, isError } = useGrammarTopicsQuery();
-  const { data: reviewQueue, isLoading: reviewLoading } = useReviewQueueQuery();
+  const { data: reviewQueue, isLoading: reviewLoading, isError: reviewError } = useReviewQueueQuery();
+  const { data: mistakeHighlights } = useReviewHighlightsQuery('mistake');
+  const { data: quizHighlights } = useReviewHighlightsQuery('quiz');
+  const showsMistakeHighlights = useGrammarSettings((s) => s.showsMistakeHighlights);
+
+  useEnsureMistakesTopic(topics);
+
   const createTopic = useCreateTopic();
   const createFromTemplate = useCreateTopicFromTemplate();
   const deleteTopic = useDeleteTopic();
+  const reorderTopics = useReorderTopics();
+  const quickNote = useCreateQuickNote();
+  const saveMistake = useSaveMistake();
+
+  const [query, setQuery] = useState('');
   const [formOpen, setFormOpen] = useState(false);
   const [templatesOpen, setTemplatesOpen] = useState(false);
+  const [quickNoteOpen, setQuickNoteOpen] = useState(false);
+  const [isReordering, setReordering] = useState(false);
+  const [pendingDelete, setPendingDelete] = useState<GrammarNoteTopic | null>(null);
   /* Quick-mistake: a fresh key per open so the sheet's save state resets. */
   const [quickMistakeSession, setQuickMistakeSession] = useState(0);
   const [quickMistakeOpen, setQuickMistakeOpen] = useState(false);
-  const saveMistake = useSaveMistake();
   const quickKey = `quick-${quickMistakeSession}`;
 
-  const handleDelete = (id: string, title: string) => {
-    if (window.confirm(t('writing.grammar.deleteTopicConfirm', { title }))) {
-      deleteTopic.mutate(id);
-    }
+  /* iOS refreshFilteredTopics: title, description or language name. */
+  const visibleTopics = useMemo(() => {
+    const q = normalizeSearchText(query);
+    if (!topics || q.length === 0) return topics ?? [];
+    return topics.filter((topic) =>
+      [topic.title, topic.description, topic.languageName].some((field) =>
+        normalizeSearchText(field).includes(q),
+      ),
+    );
+  }, [topics, query]);
+
+  const openTopic = (topicId: string) =>
+    void navigate({ to: '/notes/$topicId', params: { topicId } });
+
+  const moveTopic = (index: number, dir: 'up' | 'down') => {
+    if (!topics) return;
+    const target = dir === 'up' ? index - 1 : index + 1;
+    if (target < 0 || target >= topics.length) return;
+    const next = [...topics];
+    [next[index], next[target]] = [next[target], next[index]];
+    reorderTopics.mutate(next.map((tp) => tp.id));
   };
 
   return (
@@ -57,7 +99,22 @@ function GrammarHome() {
         title={t('nav.notes')}
         subtitle={t('writing.grammar.subtitle')}
         actions={
-          <div className="flex gap-2">
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => void navigate({ to: '/notes/settings' })}
+              aria-label={t('writing.grammar.settings.title')}
+              className="grid size-11 place-items-center rounded-2xl border border-(--color-auth-field-border) bg-white text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+            >
+              <Icon name="gearshape.fill" className="size-5" />
+            </button>
+            <button
+              type="button"
+              onClick={() => setQuickNoteOpen(true)}
+              className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 focus-visible:outline-none md:text-[15px]"
+            >
+              {t('writing.grammar.quickNote.button')}
+            </button>
             <button
               type="button"
               onClick={() => {
@@ -80,13 +137,70 @@ function GrammarHome() {
         }
       />
 
-      <div className="mb-5">
+      <div className="mb-4">
+        <GrammarSearchBar
+          value={query}
+          placeholder={t('writing.grammar.search.topics')}
+          onChange={setQuery}
+        />
+      </div>
+
+      <div className="mb-5 flex flex-col gap-5">
         <ReviewTodayCard
           queue={reviewQueue}
           isLoading={reviewLoading}
+          isError={reviewError}
           onStart={() => void navigate({ to: '/notes/review' })}
         />
+
+        {showsMistakeHighlights && (
+          <ReviewHighlightsRow
+            title={t('writing.grammar.highlights.mistakesTitle')}
+            subtitle={t('writing.grammar.highlights.mistakesSubtitle')}
+            accent="#F4729A"
+            items={mistakeHighlights ?? []}
+            onOpen={(item) =>
+              item.noteId
+                ? void navigate({
+                    to: '/notes/$topicId/$noteId',
+                    params: { topicId: item.topicId, noteId: item.noteId },
+                  })
+                : openTopic(item.topicId)
+            }
+          />
+        )}
+
+        <ReviewHighlightsRow
+          title={t('writing.grammar.highlights.quizzesTitle')}
+          subtitle={t('writing.grammar.highlights.quizzesSubtitle')}
+          accent="#7C5CFF"
+          items={quizHighlights ?? []}
+          onOpen={(item) =>
+            item.noteId
+              ? void navigate({
+                  to: '/notes/$topicId/$noteId/quiz',
+                  params: { topicId: item.topicId, noteId: item.noteId },
+                })
+              : openTopic(item.topicId)
+          }
+        />
       </div>
+
+      {topics && topics.length > 1 && (
+        <div className="mb-3 flex items-center gap-2">
+          <h2 className="text-[15px] font-black text-(--color-primary-blue-dark) lg:text-[17px]">
+            {t('writing.grammar.topicsTitle')}
+          </h2>
+          <button
+            type="button"
+            onClick={() => setReordering((v) => !v)}
+            className="ml-auto flex h-9 items-center gap-1.5 rounded-full border border-(--color-auth-field-border) bg-white px-3 text-[13px] font-bold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+          >
+            <Icon name="arrow.up.arrow.down" className="size-[13px]" />
+            {t(isReordering ? 'writing.grammar.reorder.done' : 'writing.grammar.reorder.start')}
+          </button>
+        </div>
+      )}
 
       {isLoading ? (
         <p className="text-[15px] font-medium text-(--color-text-secondary)">
@@ -100,20 +214,26 @@ function GrammarHome() {
         <GrammarNotesEmptyState
           title={t('writing.grammar.topicsEmptyTitle')}
           body={t('writing.grammar.topicsEmptyBody')}
+          actionLabel={t('writing.grammar.newTopic')}
+          onAction={() => setFormOpen(true)}
+        />
+      ) : visibleTopics.length === 0 ? (
+        <GrammarNotesEmptyState
+          title={t('writing.grammar.search.noMatchTitle')}
+          body={t('writing.grammar.search.noMatchBody')}
         />
       ) : (
         <div className="flex max-w-[760px] flex-col gap-(--spacing-home-sets-gap)">
-          {topics.map((topic) => (
+          {visibleTopics.map((topic, index) => (
             <GrammarTopicCard
               key={topic.id}
               topic={topic}
-              onOpen={() =>
-                void navigate({
-                  to: '/notes/$topicId',
-                  params: { topicId: topic.id },
-                })
-              }
-              onDelete={() => handleDelete(topic.id, topic.title)}
+              isReordering={isReordering && query.length === 0}
+              isFirst={index === 0}
+              isLast={index === visibleTopics.length - 1}
+              onOpen={() => openTopic(topic.id)}
+              onDelete={() => setPendingDelete(topic)}
+              onMove={(dir) => moveTopic(index, dir)}
             />
           ))}
         </div>
@@ -157,10 +277,7 @@ function GrammarHome() {
                   createTopic.mutate(values, {
                     onSuccess: (topic) => {
                       setFormOpen(false);
-                      void navigate({
-                        to: '/notes/$topicId',
-                        params: { topicId: topic.id },
-                      });
+                      openTopic(topic.id);
                     },
                   })
                 }
@@ -179,14 +296,35 @@ function GrammarHome() {
           createFromTemplate.mutate(tpl, {
             onSuccess: (topic) => {
               setTemplatesOpen(false);
-              void navigate({
-                to: '/notes/$topicId',
-                params: { topicId: topic.id },
-              });
+              openTopic(topic.id);
             },
           })
         }
         onClose={() => setTemplatesOpen(false)}
+      />
+
+      <QuickNoteSheet
+        open={quickNoteOpen}
+        topics={topics ?? []}
+        isSaving={quickNote.isPending}
+        error={quickNote.isError ? t('writing.grammar.editor.saveError') : null}
+        onSave={(draft, topic, openEditor) =>
+          quickNote.mutate(
+            { draft, topic },
+            {
+              onSuccess: (note) => {
+                setQuickNoteOpen(false);
+                if (openEditor) {
+                  void navigate({
+                    to: '/notes/$topicId/$noteId',
+                    params: { topicId: topic.id, noteId: note.id },
+                  });
+                }
+              },
+            },
+          )
+        }
+        onClose={() => setQuickNoteOpen(false)}
       />
 
       <QuickMistakeSheet
@@ -201,13 +339,23 @@ function GrammarHome() {
         }
         onOpenMistakesTopic={() => {
           setQuickMistakeOpen(false);
-          void navigate({
-            to: '/notes/$topicId',
-            params: { topicId: MISTAKES_TOPIC_ID },
-          });
+          const mistakes = topics?.find((tp) => tp.isMistakesTopic);
+          openTopic(mistakes?.id ?? MISTAKES_TOPIC_ID);
         }}
         onClose={() => setQuickMistakeOpen(false)}
       />
+
+      {pendingDelete && (
+        <ConfirmDialog
+          title={t('writing.grammar.deleteTopicTitle')}
+          body={t('writing.grammar.deleteTopicConfirm', { title: pendingDelete.title })}
+          isBusy={deleteTopic.isPending}
+          onConfirm={() =>
+            deleteTopic.mutate(pendingDelete.id, { onSuccess: () => setPendingDelete(null) })
+          }
+          onCancel={() => setPendingDelete(null)}
+        />
+      )}
     </ContentContainer>
   );
 }

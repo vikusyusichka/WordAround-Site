@@ -11,11 +11,23 @@ import type { GrammarNoteTopic } from '@/lib/models';
 
 interface GrammarTopicCardProps {
   topic: GrammarNoteTopic;
+  isReordering?: boolean;
+  isFirst?: boolean;
+  isLast?: boolean;
   onOpen: () => void;
   onDelete: () => void;
+  onMove?: (dir: 'up' | 'down') => void;
 }
 
-export const GrammarTopicCard = ({ topic, onOpen, onDelete }: GrammarTopicCardProps) => {
+export const GrammarTopicCard = ({
+  topic,
+  isReordering = false,
+  isFirst = false,
+  isLast = false,
+  onOpen,
+  onDelete,
+  onMove,
+}: GrammarTopicCardProps) => {
   const { t } = useTranslation();
   const theme = themeForHex(topic.colorHex);
 
@@ -93,6 +105,19 @@ export const GrammarTopicCard = ({ topic, onOpen, onDelete }: GrammarTopicCardPr
                 <Icon name="doc.text.fill" className="size-[10px]" />
                 {t('writing.grammar.notesCount', { count: topic.notesCount })}
               </span>
+              {topic.languageName && (
+                <span
+                  className="flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[10px] font-bold"
+                  style={{
+                    background: theme.fieldBackground,
+                    borderColor: theme.softBorderColor,
+                    color: theme.mutedTextColor,
+                  }}
+                >
+                  <Icon name="globe" className="size-[10px]" />
+                  {topic.languageName}
+                </span>
+              )}
             </span>
           </div>
 
@@ -104,14 +129,39 @@ export const GrammarTopicCard = ({ topic, onOpen, onDelete }: GrammarTopicCardPr
         </div>
       </button>
 
-      <button
-        type="button"
-        onClick={onDelete}
-        aria-label={t('writing.grammar.form.cancel')}
-        className="absolute top-3 right-3 grid size-8 place-items-center rounded-full bg-white/90 text-(--color-cs-red) opacity-0 shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-opacity group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none"
-      >
-        <Trash size={16} weight="bold" />
-      </button>
+      {isReordering ? (
+        <div className="absolute top-3 right-3 flex gap-1">
+          <button
+            type="button"
+            onClick={() => onMove?.('up')}
+            disabled={isFirst}
+            aria-label={t('writing.grammar.reorder.up')}
+            className="grid size-8 place-items-center rounded-full bg-white/90 text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] disabled:opacity-30 focus-visible:outline-none"
+          >
+            <Icon name="arrow.up" className="size-4" />
+          </button>
+          <button
+            type="button"
+            onClick={() => onMove?.('down')}
+            disabled={isLast}
+            aria-label={t('writing.grammar.reorder.down')}
+            className="grid size-8 place-items-center rounded-full bg-white/90 text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] disabled:opacity-30 focus-visible:outline-none"
+          >
+            <Icon name="arrow.down" className="size-4" />
+          </button>
+        </div>
+      ) : (
+        !topic.isMistakesTopic && (
+          <button
+            type="button"
+            onClick={onDelete}
+            aria-label={t('writing.grammar.deleteTopic')}
+            className="absolute top-3 right-3 grid size-8 place-items-center rounded-full bg-white/90 text-(--color-cs-red) opacity-0 shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-opacity group-focus-within:opacity-100 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none"
+          >
+            <Trash size={16} weight="bold" />
+          </button>
+        )
+      )}
     </div>
   );
 };

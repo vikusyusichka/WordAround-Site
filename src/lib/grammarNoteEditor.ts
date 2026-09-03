@@ -1,6 +1,9 @@
 /* Pure reducer for the grammar-note block editor. Holds the note being
-   written (title + type + ordered content blocks); the route hook wraps it
-   and persists on Save. No I/O here, so it's fully unit-testable. */
+   written (title + type + tags + language + ordered content blocks); the route
+   hook wraps it and persists on Save. No I/O here, so it's fully
+   unit-testable. */
+import { isListBlock, SECONDARY_BLOCK_TYPES } from '@/lib/grammarMeta';
+import { makePlainText, makeSearchableText } from '@/lib/grammarSearch';
 import type {
   GrammarBlockType,
   GrammarNote,
@@ -12,13 +15,27 @@ export interface EditorState {
   title: string;
   noteType: GrammarNoteType;
   blocks: GrammarNoteBlock[];
+  tags: string[];
+  languageCode: string;
+  languageName: string;
+  isPinned: boolean;
+  isFavorite: boolean;
 }
 
 export type EditorAction =
   | { type: 'SET_TITLE'; value: string }
   | { type: 'SET_NOTE_TYPE'; value: GrammarNoteType }
+  | { type: 'SET_LANGUAGE'; code: string; name: string }
+  | { type: 'ADD_TAG'; value: string }
+  | { type: 'REMOVE_TAG'; value: string }
+  | { type: 'TOGGLE_PINNED' }
+  | { type: 'TOGGLE_FAVORITE' }
   | { type: 'ADD_BLOCK'; blockType: GrammarBlockType }
-  | { type: 'UPDATE_BLOCK'; id: string; patch: Partial<Pick<GrammarNoteBlock, 'text' | 'secondaryText'>> }
+  | {
+      type: 'UPDATE_BLOCK';
+      id: string;
+      patch: Partial<Pick<GrammarNoteBlock, 'text' | 'secondaryText' | 'imageURL' | 'imageCaption'>>;
+    }
   | { type: 'DELETE_BLOCK'; id: string }
   | { type: 'MOVE_BLOCK'; id: string; dir: 'up' | 'down' }
   | { type: 'ADD_LIST_ITEM'; id: string }
@@ -33,6 +50,7 @@ export type EditorAction =
       blocks: GrammarNoteBlock[];
       noteType: GrammarNoteType;
       title?: string;
+      tags?: string[];
       mode: 'replace' | 'append';
     };
 
@@ -41,18 +59,33 @@ export const makeBlock = (type: GrammarBlockType, order: number): GrammarNoteBlo
   id: crypto.randomUUID(),
   type,
   text: '',
-  secondaryText: type === 'example' || type === 'rule' ? '' : undefined,
-  items: type === 'bulletList' ? [''] : [],
+  secondaryText: SECONDARY_BLOCK_TYPES.includes(type) ? '' : undefined,
+  items: isListBlock(type) ? [''] : [],
+  imageCaption: type === 'image' ? '' : undefined,
   order,
 });
 
 export const initialEditorState = (note?: GrammarNote): EditorState =>
   note
-    ? { title: note.title, noteType: note.noteType, blocks: [...note.contentBlocks] }
+    ? {
+        title: note.title,
+        noteType: note.noteType,
+        blocks: [...note.contentBlocks],
+        tags: [...note.tags],
+        languageCode: note.languageCode,
+        languageName: note.languageName,
+        isPinned: note.isPinned,
+        isFavorite: note.isFavorite,
+      }
     : {
         title: '',
         noteType: 'standard',
         blocks: [makeBlock('heading', 0), makeBlock('paragraph', 1)],
+        tags: [],
+        languageCode: '',
+        languageName: '',
+        isPinned: false,
+        isFavorite: false,
       };
 
 /* MARK: - Selectors */
@@ -62,7 +95,9 @@ export const initialEditorState = (note?: GrammarNote): EditorState =>
 export const derivePreviewText = (state: EditorState): string => {
   const source =
     state.blocks.find(
-      (b) => (b.type === 'paragraph' || b.type === 'heading' || b.type === 'rule') && b.text.trim().length > 0,
+      (b) =>
+        (b.type === 'paragraph' || b.type === 'heading' || b.type === 'rule') &&
+        b.text.trim().length > 0,
     )?.text ?? state.title;
   const clean = source.trim().replace(/\s+/g, ' ');
   return clean.length > 140 ? `${clean.slice(0, 139)}…` : clean;
@@ -71,21 +106,51 @@ export const derivePreviewText = (state: EditorState): string => {
 export const isBlank = (state: EditorState): boolean =>
   state.title.trim().length === 0 &&
   state.blocks.every(
-    (b) => b.text.trim().length === 0 && b.items.every((i) => i.trim().length === 0),
+    (b) =>
+      b.text.trim().length === 0 &&
+      b.items.every((i) => i.trim().length === 0) &&
+      !b.imageURL,
   );
 
-/** Rebuild the persisted note from editor state (order re-indexed). */
+/** Rebuild the persisted note from editor state (order re-indexed, search
+    index and plain text regenerated — iOS does both on every save). */
 export const toNote = (
   state: EditorState,
-  base: Pick<GrammarNote, 'id' | 'ownerUID' | 'topicId' | 'createdAt'>,
-): GrammarNote => ({
-  ...base,
-  title: state.title.trim() || 'Untitled note',
-  noteType: state.noteType,
-  previewText: derivePreviewText(state),
-  contentBlocks: state.blocks.map((b, i) => ({ ...b, order: i })),
-  updatedAt: Date.now(),
-});
+  base: Pick<GrammarNote, 'id' | 'ownerUID' | 'topicId' | 'createdAt'> &
+    Partial<Pick<GrammarNote, 'hasQuiz' | 'savedIssueKey' | 'sortIndex' | 'templateId'>>,
+  now: number = Date.now(),
+): GrammarNote => {
+  const blocks = state.blocks.map((b, i) => ({ ...b, order: i }));
+  const title = state.title.trim() || 'Untitled note';
+  const previewText = derivePreviewText(state);
+  const tags = state.tags.map((tg) => tg.trim()).filter((tg) => tg.length > 0);
+  const plainTextContent = makePlainText(blocks);
+  return {
+    ...base,
+    title,
+    noteType: state.noteType,
+    previewText,
+    contentBlocks: blocks,
+    tags,
+    isPinned: state.isPinned,
+    isFavorite: state.isFavorite,
+    isMistakeNote: state.noteType === 'mistake',
+    languageCode: state.languageCode,
+    languageName: state.languageName,
+    plainTextContent,
+    searchableText: makeSearchableText({
+      title,
+      previewText,
+      tags,
+      noteType: state.noteType,
+      blocks,
+      plainTextContent,
+    }),
+    hasQuiz: base.hasQuiz ?? blocks.some((b) => b.type === 'quiz'),
+    updatedAt: now,
+    lastEditedAt: now,
+  };
+};
 
 /* MARK: - Reducer */
 
@@ -105,6 +170,24 @@ export const editorReducer = (state: EditorState, action: EditorAction): EditorS
 
     case 'SET_NOTE_TYPE':
       return { ...state, noteType: action.value };
+
+    case 'SET_LANGUAGE':
+      return { ...state, languageCode: action.code, languageName: action.name };
+
+    case 'ADD_TAG': {
+      const tag = action.value.trim();
+      if (tag.length === 0 || state.tags.includes(tag)) return state;
+      return { ...state, tags: [...state.tags, tag] };
+    }
+
+    case 'REMOVE_TAG':
+      return { ...state, tags: state.tags.filter((tg) => tg !== action.value) };
+
+    case 'TOGGLE_PINNED':
+      return { ...state, isPinned: !state.isPinned };
+
+    case 'TOGGLE_FAVORITE':
+      return { ...state, isFavorite: !state.isFavorite };
 
     case 'ADD_BLOCK':
       return { ...state, blocks: [...state.blocks, makeBlock(action.blockType, state.blocks.length)] };
@@ -153,14 +236,17 @@ export const editorReducer = (state: EditorState, action: EditorAction): EditorS
       };
 
     case 'APPLY_TEMPLATE': {
+      const tags = action.tags ? [...new Set([...state.tags, ...action.tags])] : state.tags;
       if (action.mode === 'replace') {
         return {
+          ...state,
           title: state.title.trim().length > 0 ? state.title : (action.title ?? state.title),
           noteType: action.noteType,
+          tags,
           blocks: reindex(action.blocks),
         };
       }
-      return { ...state, blocks: reindex([...state.blocks, ...action.blocks]) };
+      return { ...state, tags, blocks: reindex([...state.blocks, ...action.blocks]) };
     }
 
     default:

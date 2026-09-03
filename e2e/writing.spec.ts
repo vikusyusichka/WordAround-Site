@@ -9,6 +9,7 @@ for (const route of [
   '/practice/writing/write-words/some-id',
   '/practice/writing/essays',
   '/notes',
+  '/notes/settings',
   '/notes/topic-id/note-id/quiz',
   '/notes/review',
   '/practice/reading',

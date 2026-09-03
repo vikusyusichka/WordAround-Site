@@ -55,24 +55,35 @@ export type GrammarNoteType =
   | 'cheatSheet'
   | 'exercise';
 
+/* All 15 iOS GrammarNoteBlockType cases. */
 export type GrammarBlockType =
   | 'heading'
+  | 'subheading'
   | 'paragraph'
   | 'bulletList'
+  | 'numberedList'
+  | 'checklist'
   | 'rule'
   | 'example'
   | 'warning'
+  | 'comparison'
+  | 'exercise'
   | 'quote'
+  | 'quiz'
+  | 'image'
   | 'divider';
 
 export interface GrammarNoteBlock {
   id: string;
   type: GrammarBlockType;
   text: string;
-  /** example → translation/detail; rule → sub-detail. */
+  /** example → translation/detail; rule → sub-detail; comparison → side B. */
   secondaryText?: string;
-  /** bulletList entries. */
+  /** bulletList / numberedList / checklist entries. */
   items: string[];
+  /** image blocks: uploaded picture + its caption. */
+  imageURL?: string;
+  imageCaption?: string;
   order: number;
 }
 
@@ -83,9 +94,14 @@ export interface GrammarNoteTopic {
   description: string;
   icon: string;
   colorHex: string;
+  /** Language this topic is about (iOS GrammarLanguage raw value + title). */
+  languageCode: string;
+  languageName: string;
   notesCount: number;
   isPinned: boolean;
   isMistakesTopic: boolean;
+  /** Manual order set by dragging in the list; absent = never reordered. */
+  sortIndex?: number;
   createdAt: number;
   updatedAt: number;
 }
@@ -99,13 +115,31 @@ export interface GrammarNote {
   /** Derived from blocks on save — shown in the note-list row. */
   previewText: string;
   contentBlocks: GrammarNoteBlock[];
+  /** Free-form labels (iOS `tags`) — searchable, shown on the note row. */
+  tags: string[];
+  isPinned: boolean;
+  isFavorite: boolean;
+  /** Saved from a correction (quick mistake / essay issue). */
+  isMistakeNote: boolean;
+  /** Language of the note (inherited from the topic unless overridden). */
+  languageCode: string;
+  languageName: string;
+  /** Every block's text joined — the body of the search index. */
+  plainTextContent: string;
+  /** Normalized search blob (iOS GrammarNoteSearchIndexer). */
+  searchableText: string;
   /** True while the note has ≥1 saved quiz (kept in sync by grammarQuizService). */
   hasQuiz?: boolean;
   /** Dedup key for notes saved from grammar issues (4D5) — normalized
       pipe-join of the mistake parts; absent on regular notes. */
   savedIssueKey?: string;
+  /** Manual order set by dragging in the list; absent = never reordered. */
+  sortIndex?: number;
+  /** Id of the template this note was created from, when any. */
+  templateId?: string;
   createdAt: number;
   updatedAt: number;
+  lastEditedAt: number;
 }
 
 /* --- Grammar quizzes (Phase 4D2) — port of the iOS GrammarNoteQuiz models.

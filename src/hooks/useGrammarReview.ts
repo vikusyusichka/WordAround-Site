@@ -12,7 +12,13 @@ import {
   recommendationToReviewItem,
 } from '@/lib/grammarRecommendations';
 import { buildReviewQueue, type GrammarReviewQueue } from '@/lib/grammarReviewQueue';
-import type { GrammarNote, GrammarReviewItem, GrammarReviewResult } from '@/lib/models';
+import { makeReviewItem, reviewItemIdForNote } from '@/lib/grammarReview';
+import type {
+  GrammarNote,
+  GrammarReviewItem,
+  GrammarReviewResult,
+  GrammarReviewSourceType,
+} from '@/lib/models';
 import { useUid } from '@/hooks/useFolders';
 
 export const grammarReviewKey = (uid: string | null) => ['grammarReview', uid] as const;
@@ -49,9 +55,50 @@ export const useReviewQueueQuery = () => {
     queryKey: grammarReviewKey(uid),
     queryFn: () => buildQueue(uid as string),
     enabled: !!uid,
-    /* The queue is time-sensitive (dueAt); don't serve a stale one after
-       ratings pushed items into the future. */
-    staleTime: 30_000,
+    /* The queue is time-sensitive: dueAt moves after every rating, and the
+       recommendation pool changes the moment a note is opened or edited. Note
+       mutations invalidate this key, so caching it past the current render
+       only shows a stale "all caught up". */
+    staleTime: 0,
+  });
+};
+
+/** "Mistakes to fix" / "Weak quiz areas" rows on the Notes home — iOS
+    GrammarReviewViewModel.loadHighlights. */
+export const grammarHighlightsKey = (uid: string | null, sourceType: GrammarReviewSourceType) =>
+  ['grammarHighlights', uid, sourceType] as const;
+
+export const useReviewHighlightsQuery = (sourceType: GrammarReviewSourceType, max = 5) => {
+  const uid = useUid();
+  return useQuery({
+    queryKey: grammarHighlightsKey(uid, sourceType),
+    queryFn: () => reviewService.fetchItemsBySource(uid as string, sourceType, max),
+    enabled: !!uid,
+  });
+};
+
+/** "Add to review" from the note editor (iOS GrammarNoteEditorViewModel
+    .addToReview) - an upsert, so re-adding never resets learning history. */
+export const useAddNoteToReview = () => {
+  const qc = useQueryClient();
+  const uid = useUid();
+  return useMutation({
+    mutationFn: (note: GrammarNote) =>
+      reviewService.upsertReviewItem(
+        makeReviewItem({
+          id: reviewItemIdForNote(note.topicId, note.id),
+          ownerUID: uid as string,
+          sourceType: 'note',
+          topicId: note.topicId,
+          noteId: note.id,
+          title: note.title,
+          previewText: note.previewText,
+        }),
+      ),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['grammarReview'] });
+      qc.invalidateQueries({ queryKey: ['grammarHighlights'] });
+    },
   });
 };
 
@@ -69,6 +116,7 @@ export const useMarkReviewed = () => {
       /* One unit per reviewed card, as iOS does in the review session. */
       recordPractice({ skill: 'writing', value: 1, sourceModeID: 'grammar-notes' });
       qc.invalidateQueries({ queryKey: ['grammarReview'] });
+      qc.invalidateQueries({ queryKey: ['grammarHighlights'] });
     },
   });
 };

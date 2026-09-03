@@ -3,20 +3,32 @@ import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
 
 import '@/lib/i18n';
+import { GrammarNoteRow } from './GrammarNoteRow';
 import { GrammarTopicCard } from './GrammarTopicCard';
+import { NoteFilterChips } from './NoteFilterChips';
 import { GrammarNoteTypePicker } from './GrammarNoteTypePicker';
 import { GrammarBlockEditor } from './GrammarBlockEditor';
 import { AddBlockMenu } from './AddBlockMenu';
 import { QuizQuestionView } from './QuizQuestionView';
 import { QuizResultView } from './QuizResultView';
 import type { AnsweredQuestion } from '@/lib/grammarQuizSession';
-import type { GrammarNoteBlock, GrammarNoteTopic, GrammarQuizQuestion } from '@/lib/models';
+import { makeGrammarNote, makeGrammarTopic } from '@/lib/grammarFactories';
+import type {
+  GrammarNote,
+  GrammarNoteBlock,
+  GrammarNoteTopic,
+  GrammarQuizQuestion,
+} from '@/lib/models';
 
-const topic: GrammarNoteTopic = {
-  id: 't1', ownerUID: 'u', title: 'Spanish verbs', description: 'ser vs estar',
-  icon: 'book.pages.fill', colorHex: '#4F7CFF', notesCount: 3,
-  isPinned: false, isMistakesTopic: false, createdAt: 0, updatedAt: 0,
-};
+const topic: GrammarNoteTopic = makeGrammarTopic({
+  id: 't1',
+  ownerUID: 'u',
+  title: 'Spanish verbs',
+  description: 'ser vs estar',
+  colorHex: '#4F7CFF',
+  notesCount: 3,
+  now: 0,
+});
 
 describe('GrammarTopicCard', () => {
   it('renders title, description, note count; fires open + delete', async () => {
@@ -147,5 +159,108 @@ describe('QuizResultView', () => {
     expect(screen.getByText('1 of 2 correct')).toBeInTheDocument();
     expect(screen.getByText(/Your answer: x/)).toBeInTheDocument();
     expect(screen.getByText('Q one')).toBeInTheDocument();
+  });
+});
+
+/* --- 4E: note row (pin / favorite / tags) + filter chips ------------------ */
+
+const note: GrammarNote = makeGrammarNote({
+  id: 'n1',
+  ownerUID: 'u',
+  topicId: 't1',
+  title: 'Ser vs Estar',
+  previewText: 'Identity vs state',
+  noteType: 'rule',
+  tags: ['A1', 'verbs'],
+  hasQuiz: true,
+  now: 0,
+});
+
+describe('GrammarNoteRow', () => {
+  const renderRow = (patch: Partial<GrammarNote> = {}, handlers = {}) => {
+    const props = {
+      onOpen: vi.fn(),
+      onDelete: vi.fn(),
+      onTogglePinned: vi.fn(),
+      onToggleFavorite: vi.fn(),
+      ...handlers,
+    };
+    render(<GrammarNoteRow note={{ ...note, ...patch }} {...props} />);
+    return props;
+  };
+
+  it('shows the title, preview, tags and the quiz badge', () => {
+    renderRow();
+    expect(screen.getByText('Ser vs Estar')).toBeInTheDocument();
+    expect(screen.getByText('Identity vs state')).toBeInTheDocument();
+    expect(screen.getByText('#A1')).toBeInTheDocument();
+    expect(screen.getByText('Quiz')).toBeInTheDocument();
+  });
+
+  it('prefers the search snippet over the preview', () => {
+    render(
+      <GrammarNoteRow
+        note={note}
+        snippet="…estar for state…"
+        onOpen={vi.fn()}
+        onDelete={vi.fn()}
+        onTogglePinned={vi.fn()}
+        onToggleFavorite={vi.fn()}
+      />,
+    );
+    expect(screen.getByText('…estar for state…')).toBeInTheDocument();
+    expect(screen.queryByText('Identity vs state')).not.toBeInTheDocument();
+  });
+
+  it('fires pin and favorite from the row actions', async () => {
+    const user = userEvent.setup();
+    const props = renderRow();
+    await user.click(screen.getByRole('button', { name: 'Pin note' }));
+    expect(props.onTogglePinned).toHaveBeenCalled();
+    await user.click(screen.getByRole('button', { name: 'Add to favorites' }));
+    expect(props.onToggleFavorite).toHaveBeenCalled();
+  });
+
+  it('labels the actions by current state', () => {
+    renderRow({ isPinned: true, isFavorite: true });
+    expect(screen.getByRole('button', { name: 'Unpin note' })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Remove from favorites' })).toBeInTheDocument();
+  });
+
+  it('swaps the actions for move arrows while reordering', async () => {
+    const user = userEvent.setup();
+    const onMove = vi.fn();
+    render(
+      <GrammarNoteRow
+        note={note}
+        isReordering
+        isFirst
+        onOpen={vi.fn()}
+        onDelete={vi.fn()}
+        onTogglePinned={vi.fn()}
+        onToggleFavorite={vi.fn()}
+        onMove={onMove}
+      />,
+    );
+    expect(screen.queryByRole('button', { name: 'Pin note' })).not.toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Move up' })).toBeDisabled();
+    await user.click(screen.getByRole('button', { name: 'Move down' }));
+    expect(onMove).toHaveBeenCalledWith('down');
+  });
+});
+
+describe('NoteFilterChips', () => {
+  it('renders the five filters with counts and reports the choice', async () => {
+    const user = userEvent.setup();
+    const onChange = vi.fn();
+    render(
+      <NoteFilterChips value="all" counts={{ all: 4, pinned: 1 }} onChange={onChange} />,
+    );
+    for (const label of ['All', 'Pinned', 'Favorites', 'Mistakes', 'Quizzes']) {
+      expect(screen.getByRole('tab', { name: new RegExp(label) })).toBeInTheDocument();
+    }
+    expect(screen.getByRole('tab', { name: /All/ })).toHaveAttribute('aria-selected', 'true');
+    await user.click(screen.getByRole('tab', { name: /Mistakes/ }));
+    expect(onChange).toHaveBeenCalledWith('mistakes');
   });
 });

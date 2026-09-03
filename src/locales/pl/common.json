@@ -495,7 +495,8 @@
         "button": "Check my essay",
         "checking": "Checking...",
         "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again."
+        "error": "Couldn't check your essay. Please try again.",
+        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
       },
       "score": {
         "title": "Essay score",
@@ -536,7 +537,7 @@
           "style": "Style"
         },
         "save": {
-          "idle": "Save to Grammar notes",
+          "idle": "Save to Notes",
           "saving": "Saving…",
           "saved": "Saved",
           "duplicate": "Already saved",
@@ -568,7 +569,9 @@
         "noResult": "No result found.",
         "sameLanguage": "Choose a different input language.",
         "error": "The service is temporarily unavailable."
-      }
+      },
+      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
+      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”."
     },
     "grammar": {
       "subtitle": "Organize grammar by topic with clear, structured notes.",
@@ -598,7 +601,9 @@
         "color": "Color",
         "icon": "Icon",
         "save": "Save",
-        "cancel": "Cancel"
+        "cancel": "Cancel",
+        "language": "Language",
+        "languageNone": "Not set"
       },
       "noteType": {
         "standard": "Standard",
@@ -622,7 +627,19 @@
         "moveUp": "Move up",
         "moveDown": "Move down",
         "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)"
+        "secondaryPlaceholder": "Detail / translation (optional)",
+        "subheading": "Subheading",
+        "numberedList": "Numbered list",
+        "checklist": "Checklist",
+        "comparison": "Comparison",
+        "exercise": "Exercise",
+        "quiz": "Quiz",
+        "image": "Image",
+        "comparisonSecondary": "Second side",
+        "imageAdd": "Add / replace image",
+        "imageUploading": "Uploading…",
+        "imageFailed": "Couldn't upload the image.",
+        "imageSaveFirst": "Sign in to upload images."
       },
       "blockPlaceholder": {
         "heading": "Heading",
@@ -631,14 +648,31 @@
         "rule": "Explain the grammar rule…",
         "example": "Add an example…",
         "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…"
+        "quote": "Sentence worth remembering…",
+        "subheading": "Subheading",
+        "numberedList": "List item",
+        "checklist": "Checklist item",
+        "comparison": "First side",
+        "exercise": "Practice instruction…",
+        "quiz": "Question",
+        "image": "Image caption"
       },
       "editor": {
         "titlePlaceholder": "Note title",
         "save": "Save note",
         "saving": "Saving…",
         "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again."
+        "saveError": "Couldn't save. Please try again.",
+        "subtitle": "Edit note",
+        "tags": "Tags",
+        "tagsPlaceholder": "Add a tag…",
+        "removeTag": "Remove tag {{tag}}",
+        "addToReview": "Add to review",
+        "addedToReview": "Added to your review queue.",
+        "unsavedTitle": "Leave without saving?",
+        "unsavedBody": "This note has changes that have not been saved yet.",
+        "discard": "Discard changes",
+        "saveAndLeave": "Save and leave"
       },
       "quiz": {
         "title": "Quizzes",
@@ -676,7 +710,10 @@
           "generateQuiz": "Generate quiz",
           "generating": "Generating…",
           "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead"
+          "useSmartInstead": "Use Smart local instead",
+          "modeManual": "Manual",
+          "modeManualDesc": "Write your own questions.",
+          "createQuiz": "Create quiz"
         },
         "play": {
           "questionOf": "Question {{current}} of {{total}}",
@@ -711,7 +748,24 @@
           "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
           "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
         },
-        "badge": "Quiz"
+        "badge": "Quiz",
+        "manual": {
+          "questions_one": "{{count}} question",
+          "questions_other": "{{count}} questions",
+          "add": "Add question",
+          "questionPlaceholder": "Question text",
+          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
+          "optionPlaceholder": "Option {{index}}",
+          "answerPlaceholder": "Correct answer",
+          "explanationPlaceholder": "Explanation (optional)",
+          "error": {
+            "questionRequired": "Question text is required.",
+            "optionsRequired": "Multiple choice needs at least 2 options.",
+            "answerRequired": "Enter the correct answer.",
+            "answerNotAnOption": "The correct answer must match one of the options.",
+            "blankRequired": "Add a blank (e.g. _____) inside the question."
+          }
+        }
       },
       "quickMistake": {
         "button": "Quick mistake",
@@ -756,7 +810,11 @@
         "empty": "No templates match your filters.",
         "use": "Use template",
         "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead."
+        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
+        "applyTitle": "Apply “{{title}}”?",
+        "applyBody": "This note already has content. Choose how to apply the template.",
+        "applyReplace": "Replace content",
+        "applyAppend": "Append blocks"
       },
       "review": {
         "title": "Review",
@@ -817,9 +875,166 @@
           "hintGood": "Good items return in 3 days.",
           "hintEasy": "All items return in 7 days.",
           "done": "Back to Grammar notes"
+        },
+        "loadError": "Couldn't load your review queue.",
+        "mistakeCount_one": "{{count}} mistake",
+        "mistakeCount_other": "{{count}} mistakes"
+      },
+      "mistakesBadge": "Mistakes",
+      "topicsTitle": "Topics",
+      "deleteTopic": "Delete topic",
+      "deleteTopicTitle": "Delete this topic?",
+      "deleteNoteTitle": "Delete this note?",
+      "pin": "Pin note",
+      "unpin": "Unpin note",
+      "favorite": "Add to favorites",
+      "unfavorite": "Remove from favorites",
+      "search": {
+        "topics": "Search topics…",
+        "notes": "Search notes…",
+        "clear": "Clear search",
+        "noMatchTitle": "No matches",
+        "noMatchBody": "Try another keyword."
+      },
+      "filter": {
+        "label": "Filter notes",
+        "all": "All",
+        "pinned": "Pinned",
+        "favorites": "Favorites",
+        "mistakes": "Mistakes",
+        "quizzes": "Quizzes",
+        "empty": {
+          "all": {
+            "title": "No grammar notes yet",
+            "body": "Create your first grammar note for this topic."
+          },
+          "pinned": {
+            "title": "No pinned notes yet",
+            "body": "Pin notes from the list to find them quickly."
+          },
+          "favorites": {
+            "title": "No favorite notes yet",
+            "body": "Favorite notes to keep them handy."
+          },
+          "mistakes": {
+            "title": "No saved mistakes yet",
+            "body": "Save grammar mistakes to review them here."
+          },
+          "quizzes": {
+            "title": "No quiz notes yet",
+            "body": "Add a quiz to a note to see it here."
+          }
         }
       },
-      "mistakesBadge": "Mistakes"
+      "reorder": {
+        "start": "Reorder",
+        "done": "Done",
+        "up": "Move up",
+        "down": "Move down"
+      },
+      "highlights": {
+        "mistakesTitle": "Mistakes to fix",
+        "mistakesSubtitle": "Recent corrections waiting for review.",
+        "quizzesTitle": "Weak quiz areas",
+        "quizzesSubtitle": "Quizzes worth re-taking soon."
+      },
+      "quickNote": {
+        "button": "Quick note",
+        "title": "Quick note",
+        "subtitle": "Capture a grammar idea without opening the full editor.",
+        "noteTitle": "Title",
+        "titlePlaceholder": "Example: Ser vs Estar",
+        "text": "Note",
+        "textPlaceholder": "Write the useful part here",
+        "noteType": "Note type",
+        "topic": "Topic",
+        "openEditor": "Open editor after saving",
+        "openEditorHint": "Useful when the quick version grows into a full note.",
+        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
+        "validation": "Add a title or some text first.",
+        "save": "Save quick note",
+        "saving": "Saving…"
+      },
+      "settings": {
+        "title": "Notes settings",
+        "subtitle": "How quick capture, mistakes and the notes list behave.",
+        "reset": "Reset to defaults",
+        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "quickCapture": {
+          "title": "Quick capture",
+          "subtitle": "Make fast notes and mistakes feel instant."
+        },
+        "mistakeNotes": {
+          "title": "Mistake notes",
+          "subtitle": "What gets saved when you capture a quick mistake."
+        },
+        "essays": {
+          "title": "Essays",
+          "subtitle": "What happens to grammar issues found in your essays."
+        },
+        "appearance": {
+          "title": "Notes appearance",
+          "subtitle": "How the notes list is ordered and sized."
+        },
+        "helpers": {
+          "title": "Learning helpers",
+          "subtitle": "Small nudges inside empty states and quick sheets."
+        },
+        "defaultType": {
+          "title": "Default note type",
+          "subtitle": "What a new quick note starts as."
+        },
+        "toggle": {
+          "opensEditorAfterQuickSave": {
+            "title": "Open editor after quick save",
+            "subtitle": "After saving a quick note, jump straight into the full editor."
+          },
+          "allowQuickQuizzes": {
+            "title": "Allow quizzes in notes",
+            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+          },
+          "showsMistakeHighlights": {
+            "title": "Highlight mistake notes",
+            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+          },
+          "includeOriginalSentence": {
+            "title": "Include original sentence",
+            "subtitle": "Save the wrong version as a quote block in the note."
+          },
+          "includeCorrectedSentence": {
+            "title": "Include corrected sentence",
+            "subtitle": "Save the fixed version as an example block."
+          },
+          "createMistakeNotesWithExplanation": {
+            "title": "Include explanation",
+            "subtitle": "Add your explanation as a paragraph block below."
+          },
+          "groupMistakesByTopic": {
+            "title": "Group mistakes by topic",
+            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+          },
+          "askBeforeSavingMistakes": {
+            "title": "Ask before saving mistakes",
+            "subtitle": "Confirm before an essay issue becomes a note."
+          },
+          "saveGrammarMistakesAutomatically": {
+            "title": "Save essay mistakes automatically",
+            "subtitle": "Every grammar issue found in an essay becomes a note."
+          },
+          "groupsPinnedNotesFirst": {
+            "title": "Pinned notes first",
+            "subtitle": "Keep important rules at the top of each topic."
+          },
+          "usesCompactCards": {
+            "title": "Compact note cards",
+            "subtitle": "Show tighter cards when you want more notes on screen."
+          },
+          "showsHelperTips": {
+            "title": "Show helper tips",
+            "subtitle": "Display short contextual hints while creating notes."
+          }
+        }
+      }
     }
   },
   "reading": {

@@ -1,20 +1,21 @@
 import { describe, expect, it } from 'vitest';
 
+import { makeGrammarNote } from './grammarFactories';
 import { makeReviewItem } from './grammarReview';
 import { buildReviewQueue, REVIEW_QUEUE_LIMIT } from './grammarReviewQueue';
 import type { GrammarNote, GrammarReviewItem } from './models';
 
-const note = (id: string, blocks: GrammarNote['contentBlocks'] = []): GrammarNote => ({
-  id,
-  ownerUID: 'u',
-  topicId: 't',
-  title: `Note ${id}`,
-  noteType: 'rule',
-  previewText: `Preview of ${id}`,
-  contentBlocks: blocks,
-  createdAt: 0,
-  updatedAt: 0,
-});
+const note = (id: string, blocks: GrammarNote['contentBlocks'] = []): GrammarNote =>
+  makeGrammarNote({
+    id,
+    ownerUID: 'u',
+    topicId: 't',
+    title: `Note ${id}`,
+    noteType: 'rule',
+    previewText: `Preview of ${id}`,
+    contentBlocks: blocks,
+    now: 0,
+  });
 
 const item = (noteId: string, overrides?: Partial<GrammarReviewItem>): GrammarReviewItem => ({
   ...makeReviewItem({

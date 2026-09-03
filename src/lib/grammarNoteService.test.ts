@@ -44,8 +44,17 @@ const note: GrammarNote = {
     { id: 'b2', type: 'example', text: 'Soy alto', secondaryText: 'I am tall', items: [], order: 1 },
     { id: 'b3', type: 'bulletList', text: '', items: ['ser = identity', 'estar = state'], order: 2 },
   ],
+  tags: ['a1'],
+  isPinned: false,
+  isFavorite: false,
+  isMistakeNote: false,
+  languageCode: 'spanish',
+  languageName: 'Spanish',
+  plainTextContent: '',
+  searchableText: '',
   createdAt: 1_000,
   updatedAt: 2_000,
+  lastEditedAt: 2_000,
 };
 
 describe('grammarNoteService', () => {
@@ -93,10 +102,20 @@ describe('grammarNoteService', () => {
     expect(parsed.contentBlocks[0].type).toBe('paragraph');
   });
 
-  it('fetchNotes orders by updatedAt desc', async () => {
-    fs.getDocs.mockResolvedValue({ docs: [] });
-    await fetchNotes('u1', 't1');
-    expect(fs.orderBy).toHaveBeenCalledWith('updatedAt', 'desc');
+  it('fetchNotes sorts pinned, then favorites, then most recently updated', async () => {
+    const doc = (id: string, patch: Record<string, unknown>) => ({
+      data: () => ({ ...note, id, contentBlocks: [], ...patch }),
+    });
+    fs.getDocs.mockResolvedValue({
+      docs: [
+        doc('plain', { updatedAt: 10 }),
+        doc('fresh', { updatedAt: 99 }),
+        doc('fav', { isFavorite: true, updatedAt: 1 }),
+        doc('pin', { isPinned: true, updatedAt: 1 }),
+      ],
+    });
+    const result = await fetchNotes('u1', 't1');
+    expect(result.map((n) => n.id)).toEqual(['pin', 'fav', 'fresh', 'plain']);
   });
 
   it('deleteNote targets the right subcollection doc', async () => {

@@ -1,9 +1,9 @@
 /* Built-in templates — web port of GrammarNoteTemplateProvider (7 note
-   templates) + GrammarTemplateProvider (5 topic templates). iOS block types
-   the web editor doesn't have are mapped down: numberedList/checklist →
-   bulletList, comparison → example (text/secondaryText kept), exercise →
-   paragraph; quiz + image blocks are dropped. All texts are iOS-verbatim. */
-import { derivePreviewText } from '@/lib/grammarNoteEditor';
+   templates) + GrammarTemplateProvider (5 topic templates). Block types and
+   texts are iOS-verbatim, including the quiz and image blocks. */
+import { derivePreviewText, initialEditorState } from '@/lib/grammarNoteEditor';
+import { isListBlock } from '@/lib/grammarMeta';
+import { makePlainText, makeSearchableText } from '@/lib/grammarSearch';
 import type {
   GrammarBlockType,
   GrammarNote,
@@ -17,6 +17,7 @@ export interface TemplateBlock {
   text?: string;
   secondaryText?: string;
   items?: string[];
+  imageCaption?: string;
 }
 
 export interface GrammarNoteTemplate {
@@ -59,7 +60,7 @@ export const NOTE_TEMPLATES: GrammarNoteTemplate[] = [
       { type: 'rule', text: 'When do we use this rule?', secondaryText: 'Formula / pattern' },
       { type: 'example', text: 'Correct example', secondaryText: 'Translation or explanation' },
       { type: 'warning', text: 'Common mistake to avoid' },
-      { type: 'paragraph', text: 'Write 3 sentences using this rule.' },
+      { type: 'exercise', text: 'Write 3 sentences using this rule.' },
     ],
     estimatedMinutes: 8,
     difficulty: 'A1',
@@ -76,7 +77,7 @@ export const NOTE_TEMPLATES: GrammarNoteTemplate[] = [
       { type: 'rule', text: 'Corrected sentence', secondaryText: 'Why this correction is correct' },
       { type: 'example', text: 'More correct examples' },
       {
-        type: 'bulletList',
+        type: 'checklist',
         items: ['I understand the mistake', 'I can make a similar sentence', 'I reviewed it later'],
       },
     ],
@@ -91,10 +92,10 @@ export const NOTE_TEMPLATES: GrammarNoteTemplate[] = [
     tags: ['comparison', 'contrast'],
     blocks: [
       { type: 'heading', text: 'A vs B' },
-      { type: 'example', text: 'Form A: meaning and use', secondaryText: 'Form B: meaning and use' },
+      { type: 'comparison', text: 'Form A: meaning and use', secondaryText: 'Form B: meaning and use' },
       { type: 'example', text: 'Example for A', secondaryText: 'Example for B' },
       { type: 'warning', text: 'When learners usually mix them up' },
-      { type: 'paragraph', text: 'Choose A or B in 5 sentences.' },
+      { type: 'exercise', text: 'Choose A or B in 5 sentences.' },
     ],
     estimatedMinutes: 10,
     difficulty: 'A2',
@@ -123,9 +124,9 @@ export const NOTE_TEMPLATES: GrammarNoteTemplate[] = [
     blocks: [
       { type: 'heading', text: 'Tense name' },
       { type: 'rule', text: 'When to use it', secondaryText: 'Structure / conjugation pattern' },
-      { type: 'bulletList', items: ['Subject + verb form', 'Negative form', 'Question form'] },
+      { type: 'numberedList', items: ['Subject + verb form', 'Negative form', 'Question form'] },
       { type: 'example', text: 'Example sentences' },
-      { type: 'paragraph', text: 'Write your own sentence in this tense.' },
+      { type: 'exercise', text: 'Write your own sentence in this tense.' },
     ],
     estimatedMinutes: 12,
     difficulty: 'A2',
@@ -140,6 +141,7 @@ export const NOTE_TEMPLATES: GrammarNoteTemplate[] = [
       { type: 'heading', text: 'Rule to quiz' },
       { type: 'rule', text: 'Key rule one-liner', secondaryText: 'Why it matters' },
       { type: 'example', text: 'Example to recall' },
+      { type: 'quiz', text: 'What is the correct form? Tap to add options later.' },
     ],
     estimatedMinutes: 7,
     difficulty: 'A2',
@@ -152,6 +154,7 @@ export const NOTE_TEMPLATES: GrammarNoteTemplate[] = [
     tags: ['image', 'visual'],
     blocks: [
       { type: 'heading', text: 'Note title' },
+      { type: 'image', text: '', imageCaption: 'Add a chart, table or screenshot' },
       { type: 'paragraph', text: 'Explain what the image shows and why it matters.' },
       { type: 'example', text: 'Concrete example using the rule from the image.' },
     ],
@@ -196,7 +199,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             secondaryText: 'Ser = essence. Estar = state.',
           },
           {
-            type: 'example',
+            type: 'comparison',
             text: 'Ser: Soy estudiante. (I am a student — identity)',
             secondaryText: 'Estar: Estoy cansado. (I am tired — state)',
           },
@@ -209,7 +212,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             type: 'warning',
             text: "Don't use estar for nationality, profession or material — those stay with ser.",
           },
-          { type: 'paragraph', text: 'Fill in: Ella _____ profesora. / Hoy _____ lloviendo.' },
+          { type: 'exercise', text: 'Fill in: Ella _____ profesora. / Hoy _____ lloviendo.' },
         ],
       }),
       note({
@@ -232,7 +235,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             items: ['el libro (the book)', 'la mesa (the table)', 'un coche (a car)', 'una casa (a house)'],
           },
           { type: 'warning', text: 'Watch the exceptions: el día, la mano, el problema, el mapa.' },
-          { type: 'paragraph', text: 'Add the right article: ___ agua, ___ programa, ___ universidad.' },
+          { type: 'exercise', text: 'Add the right article: ___ agua, ___ programa, ___ universidad.' },
         ],
       }),
       note({
@@ -251,7 +254,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             secondaryText: 'hablar → habl- / comer → com- / vivir → viv-',
           },
           {
-            type: 'bulletList',
+            type: 'numberedList',
             items: [
               'yo hablo / como / vivo',
               'tú hablas / comes / vives',
@@ -261,7 +264,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             ],
           },
           { type: 'example', text: 'Hablo español todos los días.' },
-          { type: 'paragraph', text: 'Conjugate: trabajar, leer, escribir for yo/tú/nosotros.' },
+          { type: 'exercise', text: 'Conjugate: trabajar, leer, escribir for yo/tú/nosotros.' },
         ],
       }),
       note({
@@ -280,13 +283,13 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             secondaryText: 'Hay + indefinite/quantity. Está + definite article.',
           },
           {
-            type: 'example',
+            type: 'comparison',
             text: 'Hay un banco en la calle. (There is a bank…)',
             secondaryText: 'El banco está en la calle. (The bank is on the street.)',
           },
           { type: 'warning', text: "Don't say 'Hay el coche' — use 'está' with the definite article." },
           {
-            type: 'paragraph',
+            type: 'exercise',
             text: 'Choose hay/está: ___ tres libros en la mesa. / Mi llave ___ en la mochila.',
           },
         ],
@@ -308,7 +311,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
           },
           { type: 'example', text: '¿Hablas inglés?', secondaryText: '¿Dónde vives?' },
           { type: 'warning', text: "Spanish opens questions with ¿ — don't forget the inverted mark." },
-          { type: 'paragraph', text: 'Turn into questions: Vives en Madrid. / Tiene un perro.' },
+          { type: 'exercise', text: 'Turn into questions: Vives en Madrid. / Tiene un perro.' },
         ],
       }),
     ],
@@ -341,7 +344,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             secondaryText: 'Subject + base verb (+ s for he/she/it)',
           },
           {
-            type: 'bulletList',
+            type: 'numberedList',
             items: [
               'I work / You work / He works',
               'Negative: do/does + not + base',
@@ -349,7 +352,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             ],
           },
           { type: 'example', text: 'She speaks three languages. / The train leaves at 7.' },
-          { type: 'paragraph', text: 'Write 3 sentences about your daily routine.' },
+          { type: 'exercise', text: 'Write 3 sentences about your daily routine.' },
         ],
       }),
       note({
@@ -369,7 +372,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
           },
           { type: 'example', text: "I am studying right now. / She's working from home this week." },
           { type: 'warning', text: 'Avoid with stative verbs: know, like, want, believe.' },
-          { type: 'paragraph', text: 'Describe what 3 people in your room are doing.' },
+          { type: 'exercise', text: 'Describe what 3 people in your room are doing.' },
         ],
       }),
       note({
@@ -389,7 +392,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
           },
           { type: 'example', text: 'I visited Rome last year. / She went home early.' },
           { type: 'warning', text: 'Watch irregular forms: go→went, have→had, see→saw, do→did.' },
-          { type: 'paragraph', text: 'Write 5 sentences about yesterday.' },
+          { type: 'exercise', text: 'Write 5 sentences about yesterday.' },
         ],
       }),
       note({
@@ -409,11 +412,11 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
           },
           { type: 'example', text: 'I have lived here for 5 years. / She has just arrived.' },
           {
-            type: 'example',
+            type: 'comparison',
             text: 'Past simple: I saw it yesterday.',
             secondaryText: 'Present perfect: I have seen it. (any time before now)',
           },
-          { type: 'paragraph', text: 'Choose past simple vs present perfect in 5 sentences.' },
+          { type: 'exercise', text: 'Choose past simple vs present perfect in 5 sentences.' },
         ],
       }),
       note({
@@ -433,12 +436,12 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
               'will (decision now / prediction), be going to (plan / evidence), present continuous (fixed arrangement)',
           },
           {
-            type: 'example',
+            type: 'comparison',
             text: "I'll help you. (decision now)",
             secondaryText: "I'm going to study tonight. (plan)",
           },
           { type: 'example', text: "I'm meeting Anna at 6. (arrangement)" },
-          { type: 'paragraph', text: 'Match: decision / plan / arrangement to 6 sentences.' },
+          { type: 'exercise', text: 'Match: decision / plan / arrangement to 6 sentences.' },
         ],
       }),
     ],
@@ -475,7 +478,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             type: 'warning',
             text: 'The subject can be a noun phrase, a pronoun, or a name — always Nominativ.',
           },
-          { type: 'paragraph', text: 'Identify the Nominativ in: Die Frau liest ein Buch.' },
+          { type: 'exercise', text: 'Identify the Nominativ in: Die Frau liest ein Buch.' },
         ],
       }),
       note({
@@ -495,7 +498,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
           },
           { type: 'example', text: 'Ich sehe den Mann. / Sie liest das Buch.' },
           { type: 'warning', text: 'Prepositions that always take Akkusativ: durch, für, gegen, ohne, um.' },
-          { type: 'paragraph', text: 'Translate: I have a brother. I see the woman.' },
+          { type: 'exercise', text: 'Translate: I have a brother. I see the woman.' },
         ],
       }),
       note({
@@ -516,7 +519,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
           { type: 'example', text: 'Ich gebe dem Kind ein Geschenk.' },
           { type: 'warning', text: 'Dativ prepositions: aus, bei, mit, nach, seit, von, zu.' },
           {
-            type: 'paragraph',
+            type: 'exercise',
             text: 'Mark Nominativ/Akkusativ/Dativ in: Der Mann gibt der Frau das Buch.',
           },
         ],
@@ -538,7 +541,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
           },
           { type: 'example', text: 'Das Auto meines Vaters. / Die Farbe des Hauses.' },
           { type: 'warning', text: 'Genitiv prepositions: während, trotz, wegen, statt — formal use.' },
-          { type: 'paragraph', text: "Rewrite using 'von + Dativ': Das Buch des Lehrers." },
+          { type: 'exercise', text: "Rewrite using 'von + Dativ': Das Buch des Lehrers." },
         ],
       }),
       note({
@@ -594,7 +597,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             secondaryText: "je suis / tu es / il est | j'ai / tu as / il a",
           },
           {
-            type: 'example',
+            type: 'comparison',
             text: 'Je suis fatigué. (I am tired.)',
             secondaryText: "J'ai faim. (I am hungry — literally: I have hunger.)",
           },
@@ -602,7 +605,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             type: 'warning',
             text: "French uses avoir where English uses 'to be': age, hunger, thirst, fear.",
           },
-          { type: 'paragraph', text: 'Translate: I am happy. I am 25. I am hungry. I have a brother.' },
+          { type: 'exercise', text: 'Translate: I am happy. I am 25. I am hungry. I have a brother.' },
         ],
       }),
       note({
@@ -625,7 +628,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             items: ["le livre / la table / l'ami / les enfants", 'un livre / une table / des amis'],
           },
           { type: 'warning', text: "Both le/la become l' before a vowel or silent h." },
-          { type: 'paragraph', text: 'Add the right article: ___ chat, ___ école, ___ étudiants.' },
+          { type: 'exercise', text: 'Add the right article: ___ chat, ___ école, ___ étudiants.' },
         ],
       }),
       note({
@@ -645,7 +648,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
           },
           { type: 'example', text: "Je ne parle pas français. / Il n'aime pas le café." },
           { type: 'warning', text: "In spoken French, 'ne' is often dropped: 'Je parle pas.'" },
-          { type: 'paragraph', text: "Make negative: J'aime le thé. / Nous parlons espagnol." },
+          { type: 'exercise', text: "Make negative: J'aime le thé. / Nous parlons espagnol." },
         ],
       }),
       note({
@@ -666,7 +669,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
           },
           { type: 'example', text: "Où est-ce que tu habites? / Comment t'appelles-tu?" },
           { type: 'warning', text: 'Inversion is formal — use est-ce que in everyday speech.' },
-          { type: 'paragraph', text: 'Turn into questions: Tu aimes la pizza. / Il travaille ici.' },
+          { type: 'exercise', text: 'Turn into questions: Tu aimes la pizza. / Il travaille ici.' },
         ],
       }),
       note({
@@ -689,7 +692,7 @@ export const TOPIC_TEMPLATES: GrammarTopicTemplate[] = [
             text: 'un petit chat / une petite chatte / des petits chats / des petites chattes',
           },
           { type: 'warning', text: 'Watch irregular adjectives: beau/belle, vieux/vieille, nouveau/nouvelle.' },
-          { type: 'paragraph', text: 'Agree the adjective (grand): ___ maison, ___ enfants, ___ amies.' },
+          { type: 'exercise', text: 'Agree the adjective (grand): ___ maison, ___ enfants, ___ amies.' },
         ],
       }),
     ],
@@ -753,26 +756,72 @@ export const blocksFromTemplate = (blocks: TemplateBlock[]): GrammarNoteBlock[] 
     type: b.type,
     text: b.text ?? '',
     secondaryText: b.secondaryText,
-    items: b.items ?? (b.type === 'bulletList' ? [''] : []),
+    items: b.items ?? (isListBlock(b.type) ? [''] : []),
+    imageCaption: b.imageCaption,
     order: index,
   }));
 
+/** Templates that contain quiz blocks lose them when quick quizzes are off
+    (iOS `template.withoutQuizBlocks()`). */
+export const templateWithoutQuizBlocks = <T extends { blocks: TemplateBlock[] }>(tpl: T): T => ({
+  ...tpl,
+  blocks: tpl.blocks.filter((b) => b.type !== 'quiz'),
+});
+
+export const topicTemplateWithoutQuizBlocks = (
+  tpl: GrammarTopicTemplate,
+): GrammarTopicTemplate => ({
+  ...tpl,
+  noteTemplates: tpl.noteTemplates.map(templateWithoutQuizBlocks),
+});
+
 export const noteFromTemplate = (
   tpl: GrammarNoteTemplate,
-  params: { ownerUID: string; topicId: string; now?: number },
+  params: {
+    ownerUID: string;
+    topicId: string;
+    languageCode?: string;
+    languageName?: string;
+    now?: number;
+  },
 ): GrammarNote => {
   const now = params.now ?? Date.now();
   const contentBlocks = blocksFromTemplate(tpl.blocks);
+  const previewText = derivePreviewText({
+    ...initialEditorState(),
+    title: tpl.title,
+    noteType: tpl.noteType,
+    blocks: contentBlocks,
+  });
+  const plainTextContent = makePlainText(contentBlocks);
   return {
     id: crypto.randomUUID(),
     ownerUID: params.ownerUID,
     topicId: params.topicId,
     title: tpl.title,
     noteType: tpl.noteType,
-    previewText: derivePreviewText({ title: tpl.title, noteType: tpl.noteType, blocks: contentBlocks }),
+    previewText,
     contentBlocks,
+    tags: tpl.tags,
+    isPinned: false,
+    isFavorite: false,
+    isMistakeNote: tpl.noteType === 'mistake',
+    languageCode: params.languageCode ?? tpl.languageCode ?? '',
+    languageName: params.languageName ?? '',
+    plainTextContent,
+    searchableText: makeSearchableText({
+      title: tpl.title,
+      previewText,
+      tags: tpl.tags,
+      noteType: tpl.noteType,
+      blocks: contentBlocks,
+      plainTextContent,
+    }),
+    hasQuiz: contentBlocks.some((b) => b.type === 'quiz'),
+    templateId: tpl.id,
     createdAt: now,
     updatedAt: now,
+    lastEditedAt: now,
   };
 };
 
@@ -788,6 +837,8 @@ export const topicFromTemplate = (
     description: tpl.description,
     icon: tpl.icon,
     colorHex: tpl.colorHex,
+    languageCode: tpl.languageCode ?? '',
+    languageName: tpl.languageName ?? '',
     notesCount: 0,
     isPinned: false,
     isMistakesTopic: false,

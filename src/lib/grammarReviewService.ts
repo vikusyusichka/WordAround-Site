@@ -83,6 +83,24 @@ export const fetchDueReviewItems = async (
   return snapshot.docs.map((d) => reviewItemFromFirestore(d.data()));
 };
 
+/** Items of one source kind, most overdue first — feeds the "Mistakes to
+    fix" / "Weak quiz areas" rows on the Notes home (iOS fetchItemsBySource). */
+export const fetchItemsBySource = async (
+  uid: string,
+  sourceType: GrammarReviewSourceType,
+  max: number = 5,
+): Promise<GrammarReviewItem[]> => {
+  const snapshot = await getDocs(
+    query(
+      grammarReviewItemsCollection(uid),
+      where('sourceType', '==', sourceType),
+      orderBy('dueAt', 'asc'),
+      limit(max),
+    ),
+  );
+  return snapshot.docs.map((d) => reviewItemFromFirestore(d.data()));
+};
+
 /** Upsert that preserves learning history on existing docs (iOS
     createOrUpdateReviewItem). */
 export const upsertReviewItem = async (item: GrammarReviewItem): Promise<GrammarReviewItem> => {

@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
+import { makeGrammarNote } from './grammarFactories';
 import {
   derivePreviewText,
   editorReducer,
@@ -13,6 +14,14 @@ import {
 const run = (s: EditorState, ...actions: Parameters<typeof editorReducer>[1][]) =>
   actions.reduce((acc, a) => editorReducer(acc, a), s);
 
+/** A blank state with the given fields overridden — keeps the fixtures short
+    as EditorState grows. */
+const state = (patch: Partial<EditorState>): EditorState => ({
+  ...initialEditorState(),
+  blocks: [],
+  ...patch,
+});
+
 describe('initialEditorState', () => {
   it('blank state seeds a heading + a paragraph', () => {
     const s = initialEditorState();
@@ -22,10 +31,17 @@ describe('initialEditorState', () => {
   });
 
   it('seeds from an existing note', () => {
-    const s = initialEditorState({
-      id: 'n', ownerUID: 'u', topicId: 't', title: 'T', noteType: 'rule',
-      previewText: '', contentBlocks: [makeBlock('quote', 0)], createdAt: 0, updatedAt: 0,
-    });
+    const s = initialEditorState(
+      makeGrammarNote({
+        id: 'n',
+        ownerUID: 'u',
+        topicId: 't',
+        title: 'T',
+        noteType: 'rule',
+        contentBlocks: [makeBlock('quote', 0)],
+        now: 0,
+      }),
+    );
     expect(s.title).toBe('T');
     expect(s.noteType).toBe('rule');
     expect(s.blocks).toHaveLength(1);
@@ -52,7 +68,7 @@ describe('title + type', () => {
 });
 
 describe('block CRUD', () => {
-  const base = () => ({ title: '', noteType: 'standard' as const, blocks: [makeBlock('paragraph', 0)] });
+  const base = () => state({ blocks: [makeBlock('paragraph', 0)] });
 
   it('ADD_BLOCK appends with the right order', () => {
     const s = editorReducer(base(), { type: 'ADD_BLOCK', blockType: 'example' });
@@ -96,8 +112,8 @@ describe('block CRUD', () => {
 });
 
 describe('list items', () => {
-  const withList = () => ({
-    title: '', noteType: 'standard' as const, blocks: [makeBlock('bulletList', 0)],
+  const withList = () => state({
+    blocks: [makeBlock('bulletList', 0)],
   });
 
   it('ADD/UPDATE/REMOVE list item', () => {
@@ -114,24 +130,24 @@ describe('list items', () => {
 
 describe('derivePreviewText', () => {
   it('uses the first non-empty paragraph/heading/rule text', () => {
-    const s: EditorState = {
-      title: 'T', noteType: 'standard',
+    const s = state({
+      title: 'T',
       blocks: [
         { ...makeBlock('heading', 0), text: '' },
         { ...makeBlock('paragraph', 1), text: 'Use ser for identity and estar for state.' },
       ],
-    };
+    });
     expect(derivePreviewText(s)).toBe('Use ser for identity and estar for state.');
   });
 
   it('falls back to the title when all blocks are empty', () => {
-    const s: EditorState = { title: 'My title', noteType: 'standard', blocks: [makeBlock('paragraph', 0)] };
+    const s = state({ title: 'My title', blocks: [makeBlock('paragraph', 0)] });
     expect(derivePreviewText(s)).toBe('My title');
   });
 
   it('truncates long text to ~140 chars with an ellipsis', () => {
     const long = 'a'.repeat(200);
-    const s: EditorState = { title: '', noteType: 'standard', blocks: [{ ...makeBlock('paragraph', 0), text: long }] };
+    const s = state({ blocks: [{ ...makeBlock('paragraph', 0), text: long }] });
     const out = derivePreviewText(s);
     expect(out.length).toBe(140);
     expect(out.endsWith('…')).toBe(true);
@@ -165,11 +181,7 @@ describe('APPLY_TEMPLATE (4D4)', () => {
   ];
 
   it('replace swaps blocks, adopts noteType, and takes the template title only when empty', () => {
-    const dirty: EditorState = {
-      title: 'My title',
-      noteType: 'standard',
-      blocks: [makeBlock('paragraph', 0)],
-    };
+    const dirty = state({ title: 'My title', blocks: [makeBlock('paragraph', 0)] });
     const replaced = editorReducer(dirty, {
       type: 'APPLY_TEMPLATE', blocks: templateBlocks, noteType: 'rule', title: 'Tpl title', mode: 'replace',
     });
@@ -178,7 +190,7 @@ describe('APPLY_TEMPLATE (4D4)', () => {
     expect(replaced.blocks.map((b) => b.type)).toEqual(['rule', 'example']);
     expect(replaced.blocks.map((b) => b.order)).toEqual([0, 1]);
 
-    const blank: EditorState = { title: '  ', noteType: 'standard', blocks: [] };
+    const blank = state({ title: '  ' });
     const seeded = editorReducer(blank, {
       type: 'APPLY_TEMPLATE', blocks: templateBlocks, noteType: 'rule', title: 'Tpl title', mode: 'replace',
     });
@@ -186,11 +198,7 @@ describe('APPLY_TEMPLATE (4D4)', () => {
   });
 
   it('append keeps current blocks and re-orders the combined list', () => {
-    const s: EditorState = {
-      title: 'T',
-      noteType: 'standard',
-      blocks: [makeBlock('paragraph', 0)],
-    };
+    const s = state({ title: 'T', blocks: [makeBlock('paragraph', 0)] });
     const appended = editorReducer(s, {
       type: 'APPLY_TEMPLATE', blocks: templateBlocks, noteType: 'rule', mode: 'append',
     });

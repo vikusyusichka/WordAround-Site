@@ -5,6 +5,10 @@ import { useTranslation } from 'react-i18next';
 interface EssayCheckButtonProps {
   validationValid: boolean;
   isChecking: boolean;
+  /** LanguageTool has no rules for the chosen language (iOS
+      supportsGrammarCheck == false) — the button stays off. */
+  languageUnsupported?: boolean;
+  languageName?: string;
   onCheck: () => void;
   errorMessage: string | null;
 }
@@ -12,11 +16,13 @@ interface EssayCheckButtonProps {
 export const EssayCheckButton = ({
   validationValid,
   isChecking,
+  languageUnsupported = false,
+  languageName,
   onCheck,
   errorMessage,
 }: EssayCheckButtonProps) => {
   const { t } = useTranslation();
-  const disabled = !validationValid || isChecking;
+  const disabled = !validationValid || isChecking || languageUnsupported;
 
   return (
     <div className="flex flex-col gap-2">
@@ -28,7 +34,12 @@ export const EssayCheckButton = ({
       >
         {isChecking ? t('writing.essays.check.checking') : t('writing.essays.check.button')}
       </button>
-      {!validationValid && !isChecking && (
+      {languageUnsupported && (
+        <span className="text-center text-[12px] font-medium text-(--color-text-secondary) md:text-[13px]">
+          {t('writing.essays.check.languageUnsupported', { language: languageName })}
+        </span>
+      )}
+      {!languageUnsupported && !validationValid && !isChecking && (
         <span className="text-center text-[12px] font-medium text-(--color-text-secondary) md:text-[13px]">
           {t('writing.essays.check.disabled')}
         </span>

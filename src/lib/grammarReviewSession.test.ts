@@ -10,12 +10,18 @@ import {
   reviewSessionReducer,
   type ReviewSessionState,
 } from './grammarReviewSession';
+import { makeGrammarNote } from './grammarFactories';
 import type { GrammarNote, GrammarQuizQuestionType } from './models';
 
-const note: GrammarNote = {
-  id: 'n1', ownerUID: 'u', topicId: 't', title: 'N', noteType: 'rule',
-  previewText: 'p', contentBlocks: [], createdAt: 0, updatedAt: 0,
-};
+const note: GrammarNote = makeGrammarNote({
+  id: 'n1',
+  ownerUID: 'u',
+  topicId: 't',
+  title: 'N',
+  noteType: 'rule',
+  previewText: 'p',
+  now: 0,
+});
 
 const card = (id: string, questionType: GrammarQuizQuestionType): GrammarReviewCard => ({
   id,

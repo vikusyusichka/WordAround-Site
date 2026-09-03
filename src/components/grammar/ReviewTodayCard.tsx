@@ -9,13 +9,20 @@ import type { GrammarReviewQueue } from '@/lib/grammarReviewQueue';
 interface ReviewTodayCardProps {
   queue: GrammarReviewQueue | undefined;
   isLoading: boolean;
+  /** A failed queue build must not read as "all caught up". */
+  isError?: boolean;
   onStart: () => void;
 }
 
-export const ReviewTodayCard = ({ queue, isLoading, onStart }: ReviewTodayCardProps) => {
+export const ReviewTodayCard = ({
+  queue,
+  isLoading,
+  isError = false,
+  onStart,
+}: ReviewTodayCardProps) => {
   const { t } = useTranslation();
   const count = queue?.cards.length ?? 0;
-  const ready = !isLoading && count > 0;
+  const ready = !isLoading && !isError && count > 0;
 
   return (
     <section className="flex flex-col gap-3 rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
@@ -30,7 +37,9 @@ export const ReviewTodayCard = ({ queue, isLoading, onStart }: ReviewTodayCardPr
           <p className="text-[13px] font-medium text-(--color-text-secondary)">
             {isLoading
               ? t('writing.grammar.loading')
-              : ready
+              : isError
+                ? t('writing.grammar.review.loadError')
+                : ready
                 ? t('writing.grammar.review.cardSubtitle', {
                     count,
                     minutes: queue?.estimatedMinutes ?? 1,

@@ -54,7 +54,7 @@ export const EssayLanguageSelector = ({
         <div
           role="listbox"
           aria-label={t('writing.essays.language')}
-          className="flex flex-col gap-1.5 rounded-2xl border border-white bg-white/98 p-2 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
+          className="flex max-h-[320px] flex-col gap-1.5 overflow-y-auto rounded-2xl border border-white bg-white/98 p-2 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
         >
           {ESSAY_LANGUAGES.map((lang) => {
             const active = lang.id === value.id;

@@ -3,7 +3,7 @@
    difficulty selectors → editor → hint button + reset → hints list →
    check button → feedback (score card + grammar issues). All state lives
    in useEssaySession. */
-import { useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { EssayAssistanceModal, type AssistanceModalType } from './EssayAssistanceModal';
@@ -20,24 +20,60 @@ import { EssayTopicCard } from './EssayTopicCard';
 import { EssayTopicModePicker } from './EssayTopicModePicker';
 import { useEssaySession } from '@/hooks/useEssaySession';
 import { useSaveMistake } from '@/hooks/useSaveMistake';
-import { SYNONYM_LIMIT, TRANSLATION_LIMIT, type GrammarIssue } from '@/lib/essayTypes';
+import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
+import { useGrammarSettings } from '@/stores/grammarSettingsStore';
+import {
+  supportsGrammarCheck,
+  SYNONYM_LIMIT,
+  TRANSLATION_LIMIT,
+  type GrammarIssue,
+} from '@/lib/essayTypes';
 
 export const EssaysScreen = () => {
   const { t } = useTranslation();
   const { state, dispatch, generateTopic, requestHint, checkEssay } = useEssaySession();
   const [assistModal, setAssistModal] = useState<AssistanceModalType | null>(null);
   const saveMistake = useSaveMistake();
+  /* Notes settings drive what happens to a grammar issue (iOS
+     EssayPracticeViewModel.requestSaveGrammarIssue / auto-save). */
+  const askBeforeSaving = useGrammarSettings((st) => st.askBeforeSavingMistakes);
+  const autoSaveMistakes = useGrammarSettings((st) => st.saveGrammarMistakesAutomatically);
+  const [pendingIssue, setPendingIssue] = useState<GrammarIssue | null>(null);
+  const autoSavedRef = useRef<string | null>(null);
 
   /* iOS makeMistakeSavePayload: original = incorrectText, corrected =
      suggestion (fallback original), explanation = the LT message. */
+  const saveIssue = useCallback(
+    (issue: GrammarIssue) => {
+      const state = saveMistake.stateFor(issue.id);
+      if (state === 'saving' || state === 'saved' || state === 'duplicate') return;
+      void saveMistake.save(issue.id, {
+        original: issue.incorrectText,
+        corrected: issue.suggestedCorrection ?? issue.incorrectText,
+        explanation: issue.message,
+        sourceIssueId: issue.id,
+      });
+    },
+    [saveMistake],
+  );
+
   const handleSaveIssue = (issue: GrammarIssue) => {
-    void saveMistake.save(issue.id, {
-      original: issue.incorrectText,
-      corrected: issue.suggestedCorrection ?? issue.incorrectText,
-      explanation: issue.message,
-      sourceIssueId: issue.id,
-    });
+    if (askBeforeSaving) {
+      setPendingIssue(issue);
+      return;
+    }
+    saveIssue(issue);
   };
+
+  /* "Save essay mistakes automatically": every issue from a check becomes a
+     note, once per check (iOS triggerAutoSaveIfEnabled). */
+  useEffect(() => {
+    if (!autoSaveMistakes || state.grammarIssues.length === 0) return;
+    const checkKey = state.grammarIssues.map((issue) => issue.id).join('|');
+    if (autoSavedRef.current === checkKey) return;
+    autoSavedRef.current = checkKey;
+    for (const issue of state.grammarIssues) saveIssue(issue);
+  }, [autoSaveMistakes, state.grammarIssues, saveIssue]);
 
   const hasTask = state.task !== null;
   const busy = state.isGenerating;
@@ -152,6 +188,8 @@ export const EssaysScreen = () => {
           <EssayCheckButton
             validationValid={state.validation === 'valid'}
             isChecking={state.isChecking}
+            languageUnsupported={!supportsGrammarCheck(state.selectedLanguage.id)}
+            languageName={state.selectedLanguage.title}
             onCheck={() => void checkEssay()}
             errorMessage={state.checkError}
           />
@@ -169,6 +207,21 @@ export const EssaysScreen = () => {
             />
           )}
         </>
+      )}
+
+      {pendingIssue && (
+        <ConfirmDialog
+          title={t('writing.essays.saveMistakeConfirmTitle')}
+          body={t('writing.essays.saveMistakeConfirmBody', {
+            correction: pendingIssue.suggestedCorrection ?? pendingIssue.incorrectText,
+          })}
+          confirmLabel={t('writing.essays.grammar.save.idle')}
+          onConfirm={() => {
+            saveIssue(pendingIssue);
+            setPendingIssue(null);
+          }}
+          onCancel={() => setPendingIssue(null)}
+        />
       )}
 
       {/* Assistance modal (translate / synonym) */}

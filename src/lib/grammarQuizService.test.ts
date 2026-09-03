@@ -39,6 +39,7 @@ import {
   generateQuizQuestions,
   quizFromFirestore,
 } from './grammarQuizService';
+import { makeGrammarNote } from './grammarFactories';
 import type { GrammarNote, GrammarNoteQuiz } from './models';
 
 const quiz: GrammarNoteQuiz = {
@@ -58,13 +59,17 @@ const quiz: GrammarNoteQuiz = {
   updatedAt: 2_000,
 };
 
-const note: GrammarNote = {
-  id: 'n1', ownerUID: 'u1', topicId: 't1', title: 'Ser vs Estar', noteType: 'rule',
-  previewText: '', createdAt: 0, updatedAt: 0,
+const note: GrammarNote = makeGrammarNote({
+  id: 'n1',
+  ownerUID: 'u1',
+  topicId: 't1',
+  title: 'Ser vs Estar',
+  noteType: 'rule',
   contentBlocks: [
     { id: 'b1', type: 'rule', text: 'Use ser for identity', items: [], order: 0 },
   ],
-};
+  now: 0,
+});
 
 describe('grammarQuizService', () => {
   beforeEach(() => vi.clearAllMocks());

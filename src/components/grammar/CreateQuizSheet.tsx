@@ -1,5 +1,5 @@
 /* Bottom-sheet to create a quiz from a note — web port of
-   CreateGrammarQuizSheet (minus the Manual mode, deferred). Smart Local
+   CreateGrammarQuizSheet. Manual writes the questions by hand; Smart Local
    generates deterministically from note blocks with a preview step; AI
    Generated calls the worker on submit. The sheet owns the AI request
    lifecycle (AbortController), like EssayAssistanceModal. */
@@ -8,6 +8,7 @@ import { AnimatePresence, motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
+import { ManualQuestionForm } from '@/components/grammar/ManualQuestionForm';
 import { QUIZ_TYPE_ICON } from '@/lib/grammarMeta';
 import { generateLocalQuestions, GrammarQuizGeneratorError } from '@/lib/grammarQuizGenerator';
 import { QUIZ_QUESTION_TYPES } from '@/lib/grammarQuizPrompts';
@@ -15,14 +16,22 @@ import { generateQuizQuestions } from '@/lib/grammarQuizService';
 import { validateQuizQuestions } from '@/lib/grammarQuizValidator';
 import type { GrammarNote, GrammarQuizQuestion, GrammarQuizQuestionType } from '@/lib/models';
 
-export type QuizCreationMode = 'smartLocal' | 'aiGenerated';
+export type QuizCreationMode = 'manual' | 'smartLocal' | 'aiGenerated';
 
 const COUNTS = [3, 5, 10] as const;
 const DEFAULT_TYPES: GrammarQuizQuestionType[] = ['multipleChoice', 'shortAnswer', 'fillGap'];
 
 const MODE_ICON: Record<QuizCreationMode, string> = {
+  manual: 'square.and.pencil',
   smartLocal: 'wand.and.stars',
   aiGenerated: 'sparkles',
+};
+
+/** Suffix of the i18n keys for each mode's label + description. */
+const MODE_KEY: Record<QuizCreationMode, string> = {
+  manual: 'Manual',
+  smartLocal: 'Smart',
+  aiGenerated: 'AI',
 };
 
 interface CreateQuizSheetProps {
@@ -41,6 +50,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
   const [selectedTypes, setSelectedTypes] = useState<GrammarQuizQuestionType[]>(DEFAULT_TYPES);
   const [focus, setFocus] = useState('');
   const [preview, setPreview] = useState<GrammarQuizQuestion[] | null>(null);
+  const [manualQuestions, setManualQuestions] = useState<GrammarQuizQuestion[]>([]);
   const [isGenerating, setIsGenerating] = useState(false);
   const [error, setError] = useState<'notEnoughContent' | 'noMatchingQuestionTypes' | 'aiFailed' | null>(null);
   const abortRef = useRef<AbortController | null>(null);
@@ -54,6 +64,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
     setSelectedTypes(DEFAULT_TYPES);
     setFocus('');
     setPreview(null);
+    setManualQuestions([]);
     setError(null);
     setIsGenerating(false);
   }, [open, note.title]);
@@ -100,6 +111,15 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
     const trimmedTitle = title.trim();
     if (trimmedTitle.length === 0 || isSaving || isGenerating) return;
 
+    if (mode === 'manual') {
+      if (manualQuestions.length === 0) return;
+      onSave(
+        trimmedTitle,
+        manualQuestions.map((q, order) => ({ ...q, order })),
+      );
+      return;
+    }
+
     if (mode === 'smartLocal') {
       if (!preview || preview.length === 0) return;
       onSave(trimmedTitle, preview);
@@ -135,15 +155,18 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
     title.trim().length > 0 &&
     !isSaving &&
     !isGenerating &&
-    (mode === 'aiGenerated' || (preview !== null && preview.length > 0));
+    (mode === 'aiGenerated' ||
+      (mode === 'manual' ? manualQuestions.length > 0 : preview !== null && preview.length > 0));
 
   const ctaLabel = isGenerating
     ? t('writing.grammar.quiz.sheet.generating')
     : isSaving
       ? t('writing.grammar.quiz.sheet.saving')
-      : mode === 'smartLocal'
-        ? t('writing.grammar.quiz.sheet.saveQuiz')
-        : t('writing.grammar.quiz.sheet.generateQuiz');
+      : mode === 'aiGenerated'
+        ? t('writing.grammar.quiz.sheet.generateQuiz')
+        : mode === 'manual'
+          ? t('writing.grammar.quiz.sheet.createQuiz')
+          : t('writing.grammar.quiz.sheet.saveQuiz');
 
   return (
     <AnimatePresence>
@@ -195,7 +218,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
               <h3 className="text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)">
                 {t('writing.grammar.quiz.sheet.mode')}
               </h3>
-              {(['smartLocal', 'aiGenerated'] as const).map((m) => {
+              {(['manual', 'smartLocal', 'aiGenerated'] as const).map((m) => {
                 const selected = m === mode;
                 return (
                   <button
@@ -226,10 +249,10 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
                           selected ? 'text-(--color-primary-blue-dark)' : 'text-(--color-text-secondary)'
                         }`}
                       >
-                        {t(`writing.grammar.quiz.sheet.mode${m === 'smartLocal' ? 'Smart' : 'AI'}`)}
+                        {t(`writing.grammar.quiz.sheet.mode${MODE_KEY[m]}`)}
                       </span>
                       <span className="text-[12px] font-medium text-(--color-muted-text) md:text-[13px]">
-                        {t(`writing.grammar.quiz.sheet.mode${m === 'smartLocal' ? 'Smart' : 'AI'}Desc`)}
+                        {t(`writing.grammar.quiz.sheet.mode${MODE_KEY[m]}Desc`)}
                       </span>
                     </div>
                   </button>
@@ -238,6 +261,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
             </section>
 
             {/* Question count */}
+            {mode !== 'manual' && (
             <section className="flex flex-col gap-2.5">
               <h3 className="text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)">
                 {t('writing.grammar.quiz.sheet.count')}
@@ -262,8 +286,10 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
                 ))}
               </div>
             </section>
+            )}
 
             {/* Question types */}
+            {mode !== 'manual' && (
             <section className="flex flex-col gap-2.5">
               <h3 className="text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)">
                 {t('writing.grammar.quiz.sheet.types')}
@@ -300,6 +326,51 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
                 })}
               </div>
             </section>
+            )}
+
+            {/* Manual questions */}
+            {mode === 'manual' && (
+              <section className="flex flex-col gap-2.5">
+                <h3 className="text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)">
+                  {t('writing.grammar.quiz.manual.questions', { count: manualQuestions.length })}
+                </h3>
+                {manualQuestions.length > 0 && (
+                  <ol className="flex flex-col gap-2">
+                    {manualQuestions.map((q, i) => (
+                      <li
+                        key={q.id}
+                        className="flex items-start gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-2.5"
+                      >
+                        <span className="flex min-w-0 flex-col">
+                          <span className="flex items-center gap-2 text-[12px] font-bold uppercase tracking-wide text-(--color-muted-text)">
+                            <Icon name={QUIZ_TYPE_ICON[q.type]} className="size-[13px]" />
+                            {t(`writing.grammar.quiz.type.${q.type}`)}
+                          </span>
+                          <span className="mt-1 text-[14px] font-medium text-(--color-primary-blue-dark)">
+                            {i + 1}. {q.questionText}
+                          </span>
+                        </span>
+                        <button
+                          type="button"
+                          onClick={() =>
+                            setManualQuestions((prev) => prev.filter((item) => item.id !== q.id))
+                          }
+                          aria-label={t('writing.grammar.block.remove')}
+                          className="ml-auto grid size-8 shrink-0 place-items-center rounded-full text-(--color-muted-text) hover:text-(--color-cs-red) focus-visible:outline-none"
+                        >
+                          <Icon name="trash" className="size-4" />
+                        </button>
+                      </li>
+                    ))}
+                  </ol>
+                )}
+                <ManualQuestionForm
+                  key={manualQuestions.length}
+                  order={manualQuestions.length}
+                  onAdd={(question) => setManualQuestions((prev) => [...prev, question])}
+                />
+              </section>
+            )}
 
             {/* AI focus */}
             {mode === 'aiGenerated' && (

@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { ColorPicker } from '@/components/create/ColorPicker';
+import { LanguageSelect } from '@/components/grammar/LanguageSelect';
 import { IconPicker } from '@/components/create/IconPicker';
 import {
   SET_COLOR_HEX,
@@ -17,6 +18,8 @@ export interface TopicFormValues {
   description: string;
   colorHex: string;
   icon: string;
+  languageCode: string;
+  languageName: string;
 }
 
 interface GrammarTopicFormProps {
@@ -39,6 +42,8 @@ export const GrammarTopicForm = ({
     initial?.colorHex ? colorIdForHex(initial.colorHex) : 'blue',
   );
   const [icon, setIcon] = useState(initial?.icon ?? 'book.pages.fill');
+  const [languageCode, setLanguageCode] = useState(initial?.languageCode ?? '');
+  const [languageName, setLanguageName] = useState(initial?.languageName ?? '');
   const [error, setError] = useState(false);
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -52,6 +57,8 @@ export const GrammarTopicForm = ({
       description: description.trim(),
       colorHex: SET_COLOR_HEX[color],
       icon,
+      languageCode,
+      languageName,
     });
   };
 
@@ -83,6 +90,19 @@ export const GrammarTopicForm = ({
           placeholder={t('writing.grammar.form.descriptionPlaceholder')}
           rows={2}
           className="resize-none rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-medium text-(--color-cs-dark-text) outline-none focus-visible:border-(--color-home-brand)"
+        />
+      </label>
+
+      <label className="flex flex-col gap-2">
+        <span className="text-[14px] font-semibold text-(--color-cs-dark-text)">
+          {t('writing.grammar.form.language')}
+        </span>
+        <LanguageSelect
+          value={languageCode}
+          onChange={(code, name) => {
+            setLanguageCode(code);
+            setLanguageName(name);
+          }}
         />
       </label>
 
