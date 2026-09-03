@@ -131,7 +131,13 @@
     },
     "optional": "(optional)",
     "preview": "Preview",
-    "previewPlaceholder": "New folder"
+    "previewPlaceholder": "New folder",
+    "deleteConfirmTitle": "Delete this folder?",
+    "view": {
+      "label": "Folder view",
+      "rows": "List",
+      "grid": "Grid"
+    }
   },
   "sets": {
     "create": "Create set",
@@ -1443,5 +1449,9 @@
     "failedTitle": "That link didn't work",
     "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
     "backToSignIn": "Back to sign in"
+  },
+  "common": {
+    "cancel": "Cancel",
+    "delete": "Delete"
   }
 }

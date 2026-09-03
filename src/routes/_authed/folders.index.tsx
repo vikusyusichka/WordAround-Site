@@ -1,26 +1,59 @@
+import { useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
-import { Plus } from '@phosphor-icons/react';
+import { Plus, Rows, SquaresFour } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
-import { FolderCard } from '@/components/folders/FolderCard';
+import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
+import { FolderCard, type FolderCardVariant } from '@/components/folders/FolderCard';
 import { useDeleteFolder, useFoldersQuery } from '@/hooks/useFolders';
+import { useSetsQuery } from '@/hooks/useSets';
+import type { Folder } from '@/lib/models';
 
 export const Route = createFileRoute('/_authed/folders/')({
   component: FoldersPage,
 });
 
+const VIEW_KEY = 'wa.foldersView';
+
+const readView = (): FolderCardVariant => {
+  try {
+    return localStorage.getItem(VIEW_KEY) === 'tile' ? 'tile' : 'row';
+  } catch {
+    return 'row';
+  }
+};
+
 function FoldersPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { data: folders, isLoading, isError } = useFoldersQuery();
+  const { data: sets } = useSetsQuery();
   const deleteFolder = useDeleteFolder();
 
-  const handleDelete = (id: string, title: string) => {
-    if (window.confirm(t('folders.deleteConfirm', { title }))) {
-      deleteFolder.mutate(id);
+  const [view, setView] = useState<FolderCardVariant>(readView);
+  const [pendingDelete, setPendingDelete] = useState<Folder | null>(null);
+
+  const chooseView = (next: FolderCardVariant) => {
+    setView(next);
+    try {
+      localStorage.setItem(VIEW_KEY, next);
+    } catch {
+      /* a view preference is not worth failing over */
     }
+  };
+
+  /* One sets query for the whole list rather than one per folder. */
+  const setsPerFolder = new Map<string, number>();
+  for (const set of sets ?? []) {
+    if (!set.folderID) continue;
+    setsPerFolder.set(set.folderID, (setsPerFolder.get(set.folderID) ?? 0) + 1);
+  }
+
+  const confirmDelete = () => {
+    if (!pendingDelete) return;
+    deleteFolder.mutate(pendingDelete.id, { onSettled: () => setPendingDelete(null) });
   };
 
   return (
@@ -29,19 +62,42 @@ function FoldersPage() {
         title={t('home.title.folders')}
         subtitle={t('home.subtitle.folders')}
         actions={
-          <button
-            type="button"
-            onClick={() => void navigate({ to: '/folders/new' })}
-            className="flex h-11 items-center gap-2 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-4 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
-          >
-            <Plus size={18} weight="bold" />
-            {t('folders.create')}
-          </button>
+          <>
+            <div
+              role="radiogroup"
+              aria-label={t('folders.view.label')}
+              className="flex gap-1 rounded-2xl bg-white/90 p-1 shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
+            >
+              <ViewButton
+                icon={<Rows size={17} weight="bold" />}
+                label={t('folders.view.rows')}
+                isActive={view === 'row'}
+                onClick={() => chooseView('row')}
+              />
+              <ViewButton
+                icon={<SquaresFour size={17} weight="bold" />}
+                label={t('folders.view.grid')}
+                isActive={view === 'tile'}
+                onClick={() => chooseView('tile')}
+              />
+            </div>
+
+            <button
+              type="button"
+              onClick={() => void navigate({ to: '/folders/new' })}
+              className="flex h-11 items-center gap-2 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-4 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
+            >
+              <Plus size={18} weight="bold" />
+              {t('folders.create')}
+            </button>
+          </>
         }
       />
 
       {isLoading ? (
-        <p className="text-[15px] font-medium text-(--color-text-secondary)">{t('folders.loading')}</p>
+        <p className="text-[15px] font-medium text-(--color-text-secondary)">
+          {t('folders.loading')}
+        </p>
       ) : isError ? (
         <p role="alert" className="text-[15px] font-medium text-(--color-cs-red)">
           {t('folders.loadError')}
@@ -56,18 +112,67 @@ function FoldersPage() {
           </span>
         </div>
       ) : (
-        <div className="flex max-w-[760px] flex-col gap-(--spacing-home-sets-gap)">
+        <div
+          className={
+            view === 'tile'
+              ? 'grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5 xl:grid-cols-4 2xl:grid-cols-5'
+              : 'flex flex-col gap-(--spacing-home-sets-gap)'
+          }
+        >
           {folders.map((folder) => (
             <FolderCard
               key={folder.id}
               folder={folder}
-              setCount={0}
+              setCount={setsPerFolder.get(folder.id) ?? 0}
+              variant={view}
               onOpen={() => void navigate({ to: '/folders/$id', params: { id: folder.id } })}
-              onDelete={() => handleDelete(folder.id, folder.title)}
+              onEdit={() =>
+                void navigate({
+                  to: '/folders/$id',
+                  params: { id: folder.id },
+                  search: { edit: true },
+                })
+              }
+              onDelete={() => setPendingDelete(folder)}
             />
           ))}
         </div>
       )}
+
+      {pendingDelete && (
+        <ConfirmDialog
+          title={t('folders.deleteConfirmTitle')}
+          body={t('folders.deleteConfirm', { title: pendingDelete.title })}
+          isBusy={deleteFolder.isPending}
+          onConfirm={confirmDelete}
+          onCancel={() => setPendingDelete(null)}
+        />
+      )}
     </ContentContainer>
   );
 }
+
+interface ViewButtonProps {
+  icon: React.ReactNode;
+  label: string;
+  isActive: boolean;
+  onClick: () => void;
+}
+
+const ViewButton = ({ icon, label, isActive, onClick }: ViewButtonProps) => (
+  <button
+    type="button"
+    role="radio"
+    aria-checked={isActive}
+    aria-label={label}
+    title={label}
+    onClick={onClick}
+    className={`grid size-9 place-items-center rounded-xl transition-colors focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none ${
+      isActive
+        ? 'bg-(--color-home-nav-sel-bg) text-(--color-primary-blue)'
+        : 'text-(--color-cs-text-muted) hover:bg-black/[0.03]'
+    }`}
+  >
+    {icon}
+  </button>
+);

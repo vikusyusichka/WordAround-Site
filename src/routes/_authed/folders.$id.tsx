@@ -5,6 +5,7 @@ import { PencilSimple, Trash } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
+import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
 import { ThemedScreen } from '@/components/create/ThemedScreen';
 import { FolderForm } from '@/components/folders/FolderForm';
 import { SetItem } from '@/components/home/SetItem';
@@ -15,6 +16,11 @@ import { mapSetToPreview } from '@/lib/setPreview';
 import { colorIdForHex, themeForHex } from '@/lib/setColors';
 
 export const Route = createFileRoute('/_authed/folders/$id')({
+  /* ?edit=true opens straight into the form — that is how the pencil on a
+     folder card gets here without duplicating the form on the list screen. */
+  validateSearch: (search: Record<string, unknown>): { edit?: boolean } => ({
+    edit: search.edit === true || search.edit === 'true' ? true : undefined,
+  }),
   component: FolderDetailPage,
 });
 
@@ -25,7 +31,16 @@ function FolderDetailPage() {
   const { data: folders, isLoading } = useFoldersQuery();
   const updateFolder = useUpdateFolder();
   const deleteFolder = useDeleteFolder();
-  const [isEditing, setIsEditing] = useState(false);
+  const { edit } = Route.useSearch();
+  const [isEditing, setIsEditing] = useState(edit === true);
+  const [isConfirmingDelete, setIsConfirmingDelete] = useState(false);
+
+  /* Drop the flag once the form is open, so a later reload lands on the
+     folder itself rather than reopening the editor. */
+  const closeEditor = () => {
+    setIsEditing(false);
+    void navigate({ to: '/folders/$id', params: { id }, search: {}, replace: true });
+  };
 
   const folder = folders?.find((f) => f.id === id);
 
@@ -55,9 +70,10 @@ function FolderDetailPage() {
   const theme = themeForHex(folder.colorHex);
 
   const handleDelete = () => {
-    if (window.confirm(t('folders.deleteConfirm', { title: folder.title }))) {
-      deleteFolder.mutate(folder.id, { onSuccess: () => void navigate({ to: '/folders' }) });
-    }
+    deleteFolder.mutate(folder.id, {
+      onSuccess: () => void navigate({ to: '/folders' }),
+      onError: () => setIsConfirmingDelete(false),
+    });
   };
 
   if (isEditing) {
@@ -74,10 +90,10 @@ function FolderDetailPage() {
           onSubmit={(values) =>
             updateFolder.mutate(
               { ...folder, title: values.title, description: values.description, colorHex: values.colorHex },
-              { onSuccess: () => setIsEditing(false) },
+              { onSuccess: closeEditor },
             )
           }
-          onCancel={() => setIsEditing(false)}
+          onCancel={closeEditor}
         />
       </ContentContainer>
     );
@@ -114,7 +130,7 @@ function FolderDetailPage() {
           </button>
           <button
             type="button"
-            onClick={handleDelete}
+            onClick={() => setIsConfirmingDelete(true)}
             aria-label={t('folders.delete')}
             className="grid size-11 place-items-center rounded-full bg-white/90 text-(--color-cs-red) shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
           >
@@ -125,6 +141,16 @@ function FolderDetailPage() {
 
       {/* Sets in this folder */}
       <FolderSets folderId={folder.id} />
+
+      {isConfirmingDelete && (
+        <ConfirmDialog
+          title={t('folders.deleteConfirmTitle')}
+          body={t('folders.deleteConfirm', { title: folder.title })}
+          isBusy={deleteFolder.isPending}
+          onConfirm={handleDelete}
+          onCancel={() => setIsConfirmingDelete(false)}
+        />
+      )}
     </ContentContainer>
   );
 }
