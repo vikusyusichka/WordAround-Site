@@ -17,9 +17,9 @@ export const StatCard = ({ item }: StatCardProps) => {
   const { t } = useTranslation();
 
   return (
-    <div className="w-full">
+    <div className="h-full w-full">
       <div
-        className="relative min-h-[122px] w-full overflow-hidden rounded-[20px] border border-white/95 shadow-[0_6px_10px_rgba(0,0,0,0.08)]"
+        className="relative h-full min-h-[122px] w-full overflow-hidden rounded-[20px] border border-white/95 shadow-[0_6px_10px_rgba(0,0,0,0.08)]"
         style={{ background: item.backgroundColor }}
       >
         {/* Decorative blob — bottom-trailing. small 64×54 / large 78×66. */}
