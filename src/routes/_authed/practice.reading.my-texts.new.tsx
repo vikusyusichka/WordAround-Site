@@ -268,7 +268,7 @@ function AddTextScreen() {
   };
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer fluid className="max-w-(--size-setup-max)">
       <PageHeader
         title={t('reading.addText.title')}
         subtitle={t('reading.addText.subtitle')}

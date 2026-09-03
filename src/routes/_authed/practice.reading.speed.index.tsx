@@ -167,7 +167,7 @@ function SpeedReadingScreen() {
   const limit = chunkSeconds(session.config);
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer fluid className="max-w-(--size-setup-max)">
       <PageHeader
         title={t('reading.speed.title')}
         subtitle={t('reading.speed.subtitle')}

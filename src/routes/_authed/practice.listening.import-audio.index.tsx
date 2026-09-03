@@ -11,12 +11,13 @@ import { useTranslation } from 'react-i18next';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { Icon } from '@/components/primitives/Icon';
+import { LanguagePicker } from '@/components/practice/LanguagePicker';
 import { SetupSection } from '@/components/practice/SetupSection';
 import { OptionPill, OptionPillGroup } from '@/components/practice/OptionPill';
 import { StartButton } from '@/components/practice/StartButton';
 import { ListeningQuestionList } from '@/components/listening/ListeningQuestionList';
 import { ListeningResultView } from '@/components/listening/ListeningResultView';
-import { ESSAY_LANGUAGES, findLanguage } from '@/lib/essayTypes';
+import { findLanguage } from '@/lib/essayTypes';
 import {
   formatDuration,
   formatFileSize,
@@ -311,7 +312,7 @@ function ImportAudioScreen() {
   ];
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer fluid className="max-w-(--size-setup-max)">
       <PageHeader
         title={t('listening.importAudio.title')}
         subtitle={t('listening.importAudio.subtitle')}
@@ -389,14 +390,13 @@ function ImportAudioScreen() {
 
             {/* Language + level */}
             <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
-              <OptionPillGroup
-                options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
-                value={languageId}
-                onChange={setLanguageId}
-                accent={ACCENT}
-                accentDark={ACCENT_DARK}
-                columns={3}
-              />
+              <LanguagePicker
+            value={languageId}
+            onChange={setLanguageId}
+            accent={ACCENT}
+            accentDark={ACCENT_DARK}
+            warnMissingVoice
+            />
             </SetupSection>
             <SetupSection title={t('listening.fromText.level')} accentDark={ACCENT_DARK}>
               <OptionPillGroup

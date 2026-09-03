@@ -7,10 +7,11 @@ import { useTranslation } from 'react-i18next';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { SetupSection } from '@/components/practice/SetupSection';
+import { LanguagePicker } from '@/components/practice/LanguagePicker';
 import { OptionPillGroup } from '@/components/practice/OptionPill';
 import { StartButton } from '@/components/practice/StartButton';
 import { FreeSpeakingTopicCard } from '@/components/speaking/FreeSpeakingTopicCard';
-import { ESSAY_LANGUAGES, findLanguage } from '@/lib/essayTypes';
+import { findLanguage } from '@/lib/essayTypes';
 import {
   CONVERSATION_LENGTHS,
   CONVERSATION_LENGTH_MINUTES,
@@ -35,19 +36,18 @@ function FreeSpeakingSetup() {
   const [length, setLength] = useState<ConversationLength>('short');
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer fluid className="max-w-(--size-setup-max)">
       <PageHeader title={t('speaking.free.title')} subtitle={t('speaking.free.subtitle')} />
 
       <div className="flex w-full max-w-(--size-setup-max) flex-col gap-6">
         <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
-          <OptionPillGroup
-            options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
+          <LanguagePicker
             value={languageId}
             onChange={setLanguageId}
             accent={ACCENT}
             accentDark={ACCENT_DARK}
-            columns={3}
-          />
+            warnMissingVoice
+            />
         </SetupSection>
 
         <SetupSection title={t('listening.fromText.level')} accentDark={ACCENT_DARK}>

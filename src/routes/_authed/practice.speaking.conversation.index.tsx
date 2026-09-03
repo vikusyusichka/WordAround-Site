@@ -9,10 +9,10 @@ import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { Icon } from '@/components/primitives/Icon';
 import { SetupSection } from '@/components/practice/SetupSection';
+import { LanguagePicker } from '@/components/practice/LanguagePicker';
 import { OptionPillGroup } from '@/components/practice/OptionPill';
 import { SetupScenarioCard } from '@/components/practice/SetupScenarioCard';
 import { StartButton } from '@/components/practice/StartButton';
-import { ESSAY_LANGUAGES } from '@/lib/essayTypes';
 import { generateConversationTopic, recentTopicTitles } from '@/lib/speakingTopics';
 import {
   CONVERSATION_LENGTHS,
@@ -68,7 +68,7 @@ function ConversationSetup() {
   };
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer fluid className="max-w-(--size-setup-max)">
       <PageHeader
         title={t('speaking.conversation.title')}
         subtitle={t('speaking.conversation.subtitle')}
@@ -76,12 +76,11 @@ function ConversationSetup() {
 
       <div className="flex w-full max-w-(--size-setup-max) flex-col gap-6">
         <SetupSection title={t('reading.addText.language')}>
-          <OptionPillGroup
-            options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
+          <LanguagePicker
             value={languageId}
             onChange={setLanguageId}
-            columns={3}
-          />
+            warnMissingVoice
+            />
         </SetupSection>
 
         <SetupSection title={t('listening.fromText.level')}>

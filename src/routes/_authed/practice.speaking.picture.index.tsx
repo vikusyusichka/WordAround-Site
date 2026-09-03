@@ -8,9 +8,9 @@ import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { Icon } from '@/components/primitives/Icon';
 import { SetupSection } from '@/components/practice/SetupSection';
+import { LanguagePicker } from '@/components/practice/LanguagePicker';
 import { OptionPillGroup } from '@/components/practice/OptionPill';
 import { StartButton } from '@/components/practice/StartButton';
-import { ESSAY_LANGUAGES } from '@/lib/essayTypes';
 import { PICTURE_PROMPT_HINTS } from '@/lib/describePicture';
 import {
   CONVERSATION_LENGTHS,
@@ -36,19 +36,18 @@ function DescribePictureSetup() {
   const [length, setLength] = useState<ConversationLength>('short');
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer fluid className="max-w-(--size-setup-max)">
       <PageHeader title={t('speaking.picture.title')} subtitle={t('speaking.picture.subtitle')} />
 
       <div className="flex w-full max-w-(--size-setup-max) flex-col gap-6">
         <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
-          <OptionPillGroup
-            options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
+          <LanguagePicker
             value={languageId}
             onChange={setLanguageId}
             accent={ACCENT}
             accentDark={ACCENT_DARK}
-            columns={3}
-          />
+            warnMissingVoice
+            />
         </SetupSection>
 
         <SetupSection title={t('listening.fromText.level')} accentDark={ACCENT_DARK}>

@@ -1664,5 +1664,13 @@
   "common": {
     "cancel": "Cancel",
     "delete": "Delete"
+  },
+  "practice": {
+    "language": {
+      "label": "Language",
+      "search": "Search a language",
+      "noMatch": "No language matches that.",
+      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+    }
   }
 }
