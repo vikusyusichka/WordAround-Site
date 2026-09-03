@@ -88,6 +88,7 @@
     "writing": "Writing",
     "folders": "Folders",
     "sets": "Sets",
+    "notes": "Notes",
     "profile": "Profile",
     "create": "Create",
     "menu": "Menu",
@@ -363,10 +364,6 @@
         "title": "Essays",
         "subtitle": "Write texts and get AI feedback on grammar and style."
       },
-      "grammar": {
-        "title": "Grammar notes",
-        "subtitle": "Learn grammar with clear notes, examples and mini exercises."
-      },
       "comingSoon": "Coming soon"
     },
     "setSelection": {
@@ -574,7 +571,6 @@
       }
     },
     "grammar": {
-      "title": "Grammar notes",
       "subtitle": "Organize grammar by topic with clear, structured notes.",
       "newTopic": "New topic",
       "topicsEmptyTitle": "No topics yet",

@@ -1,4 +1,4 @@
-/* Note editor — /practice/writing/grammar/$topicId/$noteId. `$noteId === 'new'`
+/* Note editor — /notes/$topicId/$noteId. `$noteId === 'new'`
    opens a blank editor that creates on first save. Existing notes seed the
    block-editor reducer from Firestore. */
 import { useEffect, useReducer, useState } from 'react';
@@ -33,7 +33,7 @@ import {
 } from '@/lib/grammarRecommendations';
 import type { GrammarNote, GrammarNoteTopic } from '@/lib/models';
 
-export const Route = createFileRoute('/_authed/practice/writing/grammar/$topicId/$noteId/')({
+export const Route = createFileRoute('/_authed/notes/$topicId/$noteId/')({
   component: NoteEditorRoute,
 });
 
@@ -112,7 +112,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
   }, [existing, topicId]);
 
   const goBack = () =>
-    void navigate({ to: '/practice/writing/grammar/$topicId', params: { topicId } });
+    void navigate({ to: '/notes/$topicId', params: { topicId } });
 
   const isSaving = createNote.isPending || updateNote.isPending;
 
@@ -153,7 +153,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
   return (
     <ContentContainer fluid>
       <PageHeader
-        title={topic?.title ?? t('writing.grammar.title')}
+        title={topic?.title ?? t('nav.notes')}
         subtitle={t('writing.grammar.newNote')}
         actions={
           <div className="flex gap-2">
@@ -169,7 +169,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
                 type="button"
                 onClick={() =>
                   void navigate({
-                    to: '/practice/writing/grammar/$topicId/$noteId/quiz',
+                    to: '/notes/$topicId/$noteId/quiz',
                     params: { topicId, noteId: existing.id },
                   })
                 }
@@ -203,7 +203,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
           onClick={goBack}
           className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
         >
-          ← {topic?.title ?? t('writing.grammar.title')}
+          ← {topic?.title ?? t('nav.notes')}
         </button>
 
         <input

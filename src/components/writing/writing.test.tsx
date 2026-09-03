@@ -51,26 +51,25 @@ const withQuery = (children: React.ReactNode) => {
 /* --- WritingMenuGrid ------------------------------------------------------ */
 
 describe('WritingMenuGrid', () => {
-  it('renders 3 clickable cards (all enabled) and fires each action', async () => {
+  it('renders 2 clickable cards (all enabled) and fires each action', async () => {
     const user = userEvent.setup();
     const onSelect = vi.fn();
     render(<WritingMenuGrid onSelect={onSelect} />);
 
     expect(screen.getByText('Write from sets')).toBeInTheDocument();
     expect(screen.getByText('Essays')).toBeInTheDocument();
-    expect(screen.getByText('Grammar notes')).toBeInTheDocument();
+    // Notes moved out of Writing into the Library section of the sidebar.
+    expect(screen.queryByText('Grammar notes')).not.toBeInTheDocument();
 
-    // All three are enabled now — no "Coming soon" chips.
+    // Both are enabled now — no "Coming soon" chips.
     expect(screen.queryByText(/coming soon/i)).not.toBeInTheDocument();
 
     const buttons = screen.getAllByRole('button');
-    expect(buttons).toHaveLength(3);
+    expect(buttons).toHaveLength(2);
     await user.click(buttons[0]);
     expect(onSelect).toHaveBeenCalledWith('writeFromSets');
     await user.click(buttons[1]);
     expect(onSelect).toHaveBeenCalledWith('essays');
-    await user.click(buttons[2]);
-    expect(onSelect).toHaveBeenCalledWith('grammarNotes');
   });
 });
 

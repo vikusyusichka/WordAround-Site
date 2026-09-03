@@ -44,6 +44,7 @@ export const NAV_GROUPS: NavGroup[] = [
     items: [
       { id: 'folders', to: '/folders', labelKey: 'nav.folders', icon: 'folder', iconActive: 'folder.fill' },
       { id: 'sets', to: '/sets', labelKey: 'nav.sets', icon: 'square.stack.3d.up' },
+      { id: 'notes', to: '/notes', labelKey: 'nav.notes', icon: 'note.text', iconActive: 'note.text.fill' },
     ],
   },
 ];
@@ -127,9 +128,6 @@ export const pageCopyForPath = (pathname: string): PageCopy => {
   if (pathname.startsWith('/practice/reading/session')) {
     return { titleKey: 'nav.reading', subtitleKey: 'home.subtitle.reading' };
   }
-  if (pathname.startsWith('/practice/writing/grammar')) {
-    return { titleKey: 'writing.grammar.title', subtitleKey: 'writing.grammar.subtitle' };
-  }
   if (pathname.startsWith('/practice/writing/essays')) {
     return { titleKey: 'writing.essays.title', subtitleKey: 'writing.essays.subtitle' };
   }
@@ -142,6 +140,7 @@ export const pageCopyForPath = (pathname: string): PageCopy => {
   }
   if (pathname.startsWith('/folders')) return { titleKey: 'home.title.folders', subtitleKey: 'home.subtitle.folders' };
   if (pathname.startsWith('/sets')) return { titleKey: 'home.title.sets', subtitleKey: 'home.subtitle.sets' };
+  if (pathname.startsWith('/notes')) return { titleKey: 'nav.notes', subtitleKey: 'writing.grammar.subtitle' };
   if (pathname.startsWith('/profile')) return { titleKey: 'home.title.profile', subtitleKey: null };
   return HOME_COPY;
 };

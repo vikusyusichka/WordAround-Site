@@ -1,4 +1,4 @@
-/* Spaced-review session — /practice/writing/grammar/review (static segment
+/* Spaced-review session — /notes/review (static segment
    wins over $topicId). Queue comes from useReviewQueueQuery; play state lives
    in the pure reviewSessionReducer; each rating persists via markReviewed
    (recommendation cards become real review items on first rating, like iOS). */
@@ -20,7 +20,7 @@ import {
 } from '@/lib/grammarReviewSession';
 import type { GrammarReviewResult } from '@/lib/models';
 
-export const Route = createFileRoute('/_authed/practice/writing/grammar/review')({
+export const Route = createFileRoute('/_authed/notes/review')({
   component: ReviewRoute,
 });
 
@@ -38,7 +38,7 @@ function ReviewRoute() {
     }
   }, [queue, session.cards.length]);
 
-  const goHome = () => void navigate({ to: '/practice/writing/grammar' });
+  const goHome = () => void navigate({ to: '/notes' });
 
   const card = currentCard(session);
 
@@ -71,7 +71,7 @@ function ReviewRoute() {
           onClick={goHome}
           className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
         >
-          ← {t('writing.grammar.title')}
+          ← {t('nav.notes')}
         </button>
 
         {isLoading && (
@@ -124,7 +124,7 @@ function ReviewRoute() {
               onRate={handleRate}
               onOpenNote={() =>
                 void navigate({
-                  to: '/practice/writing/grammar/$topicId/$noteId',
+                  to: '/notes/$topicId/$noteId',
                   params: { topicId: card.reviewItem.topicId, noteId: card.reviewItem.noteId ?? '' },
                 })
               }

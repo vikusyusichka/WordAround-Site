@@ -63,12 +63,12 @@ describe('pageCopyForPath', () => {
     });
   });
 
-  it('maps /practice/writing/grammar (+ nested) to grammar copy', () => {
-    expect(pageCopyForPath('/practice/writing/grammar')).toEqual({
-      titleKey: 'writing.grammar.title',
+  it('maps /notes (+ nested) to the Notes copy', () => {
+    expect(pageCopyForPath('/notes')).toEqual({
+      titleKey: 'nav.notes',
       subtitleKey: 'writing.grammar.subtitle',
     });
-    expect(pageCopyForPath('/practice/writing/grammar/t1/n1').titleKey).toBe('writing.grammar.title');
+    expect(pageCopyForPath('/notes/t1/n1').titleKey).toBe('nav.notes');
   });
 });
 
@@ -83,6 +83,7 @@ describe('nav config', () => {
       'writing',
       'folders',
       'sets',
+      'notes',
     ]);
     expect(PROFILE_NAV.to).toBe('/profile');
   });

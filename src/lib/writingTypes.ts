@@ -45,7 +45,7 @@ export const timerDurationFor = (answer: string): number => {
   return 10;
 };
 
-export type WritingMenuAction = 'writeFromSets' | 'essays' | 'grammarNotes';
+export type WritingMenuAction = 'writeFromSets' | 'essays';
 
 export interface WritingMenuItemDef {
   id: WritingMenuAction;
@@ -77,15 +77,6 @@ export const WRITING_MENU_ITEMS: WritingMenuItemDef[] = [
     iconSystemName: 'note.text.badge.plus',
     accentColor: '#5C94FF',
     blobColor: '#D6E0FA',
-    enabled: true,
-  },
-  {
-    id: 'grammarNotes',
-    titleKey: 'writing.menu.grammar.title',
-    subtitleKey: 'writing.menu.grammar.subtitle',
-    iconSystemName: 'book.pages.fill',
-    accentColor: '#F7A310',
-    blobColor: '#F2DBA1',
     enabled: true,
   },
 ];

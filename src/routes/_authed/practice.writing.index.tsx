@@ -27,7 +27,6 @@ function WritingLanding() {
   const handleMenuSelect = (action: WritingMenuAction) => {
     if (action === 'writeFromSets') setSetPickerOpen(true);
     else if (action === 'essays') void navigate({ to: '/practice/writing/essays' });
-    else if (action === 'grammarNotes') void navigate({ to: '/practice/writing/grammar' });
   };
 
   return (

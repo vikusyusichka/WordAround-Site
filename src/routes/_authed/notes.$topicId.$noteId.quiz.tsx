@@ -1,4 +1,4 @@
-/* Quiz screen for one note — /practice/writing/grammar/$topicId/$noteId/quiz.
+/* Quiz screen for one note — /notes/$topicId/$noteId/quiz.
    iOS-style screen machine (GrammarNoteQuizListView.Screen): list → taking →
    result. Quiz creation happens in CreateQuizSheet; play state lives in the
    pure quizSessionReducer. */
@@ -31,7 +31,7 @@ import { upsertReviewItem } from '@/lib/grammarReviewService';
 import type { GrammarNoteQuiz, GrammarQuizQuestion } from '@/lib/models';
 
 export const Route = createFileRoute(
-  '/_authed/practice/writing/grammar/$topicId/$noteId/quiz',
+  '/_authed/notes/$topicId/$noteId/quiz',
 )({
   component: QuizRoute,
 });
@@ -56,7 +56,7 @@ function QuizRoute() {
 
   const goToEditor = () =>
     void navigate({
-      to: '/practice/writing/grammar/$topicId/$noteId',
+      to: '/notes/$topicId/$noteId',
       params: { topicId, noteId },
     });
 

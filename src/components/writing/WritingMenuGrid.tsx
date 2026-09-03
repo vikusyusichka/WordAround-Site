@@ -1,5 +1,6 @@
-/* 2-column grid of the 3 Writing menu cards. Only writeFromSets is enabled in
-   4A; Essays / GrammarNotes render with a "Coming soon" chip. */
+/* Grid of the Writing menu cards (write-from-sets + essays). Notes moved out
+   of Writing and now live under Library ▸ Notes in the sidebar. Disabled items
+   would render with a "Coming soon" chip. */
 import { useTranslation } from 'react-i18next';
 
 import { PracticeModeCard } from '@/components/practice/PracticeModeCard';
@@ -14,7 +15,7 @@ export const WritingMenuGrid = ({ onSelect }: WritingMenuGridProps) => {
   const comingSoon = t('writing.menu.comingSoon');
 
   return (
-    <div className="grid gap-(--spacing-mode-grid-gap) sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid gap-(--spacing-mode-grid-gap) sm:grid-cols-2">
       {WRITING_MENU_ITEMS.map((item) => (
         <PracticeModeCard
           key={item.id}

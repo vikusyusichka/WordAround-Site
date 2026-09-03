@@ -1,6 +1,6 @@
-/* Grammar notes home — /practice/writing/grammar. Topics grid + create modal.
-   `.index` so the nested $topicId routes sit below without turning this into
-   a layout-without-Outlet (Phase-3 trap). */
+/* Notes home — /notes, reached from Library ▸ Notes in the sidebar. Topics
+   grid + create modal. `.index` so the nested $topicId routes sit below
+   without turning this into a layout-without-Outlet (Phase-3 trap). */
 import { useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
@@ -25,7 +25,7 @@ import { useReviewQueueQuery } from '@/hooks/useGrammarReview';
 import { useSaveMistake } from '@/hooks/useSaveMistake';
 import { MISTAKES_TOPIC_ID } from '@/lib/grammarTopicService';
 
-export const Route = createFileRoute('/_authed/practice/writing/grammar/')({
+export const Route = createFileRoute('/_authed/notes/')({
   component: GrammarHome,
 });
 
@@ -54,7 +54,7 @@ function GrammarHome() {
   return (
     <ContentContainer fluid>
       <PageHeader
-        title={t('writing.grammar.title')}
+        title={t('nav.notes')}
         subtitle={t('writing.grammar.subtitle')}
         actions={
           <div className="flex gap-2">
@@ -84,7 +84,7 @@ function GrammarHome() {
         <ReviewTodayCard
           queue={reviewQueue}
           isLoading={reviewLoading}
-          onStart={() => void navigate({ to: '/practice/writing/grammar/review' })}
+          onStart={() => void navigate({ to: '/notes/review' })}
         />
       </div>
 
@@ -109,7 +109,7 @@ function GrammarHome() {
               topic={topic}
               onOpen={() =>
                 void navigate({
-                  to: '/practice/writing/grammar/$topicId',
+                  to: '/notes/$topicId',
                   params: { topicId: topic.id },
                 })
               }
@@ -158,7 +158,7 @@ function GrammarHome() {
                     onSuccess: (topic) => {
                       setFormOpen(false);
                       void navigate({
-                        to: '/practice/writing/grammar/$topicId',
+                        to: '/notes/$topicId',
                         params: { topicId: topic.id },
                       });
                     },
@@ -180,7 +180,7 @@ function GrammarHome() {
             onSuccess: (topic) => {
               setTemplatesOpen(false);
               void navigate({
-                to: '/practice/writing/grammar/$topicId',
+                to: '/notes/$topicId',
                 params: { topicId: topic.id },
               });
             },
@@ -202,7 +202,7 @@ function GrammarHome() {
         onOpenMistakesTopic={() => {
           setQuickMistakeOpen(false);
           void navigate({
-            to: '/practice/writing/grammar/$topicId',
+            to: '/notes/$topicId',
             params: { topicId: MISTAKES_TOPIC_ID },
           });
         }}

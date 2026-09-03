@@ -19,7 +19,7 @@ export const LastNoteCard = ({ note }: LastNoteCardProps) => {
 
   return (
     <Link
-      to="/practice/writing/grammar/$topicId/$noteId"
+      to="/notes/$topicId/$noteId"
       params={{ topicId: note.topicId, noteId: note.noteId }}
       className="block w-full transition-transform hover:-translate-y-0.5 active:scale-[0.99]"
     >

@@ -274,6 +274,7 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'list.bullet.rectangle.fill': ListChecks,
   /* Set-icon catalog (mirrors iOS SFSymbolCatalog) — Learning */
   'note.text': Note,
+  'note.text.fill': Note,
   'clipboard.fill': Clipboard,
   /* Languages */
   globe: Globe,

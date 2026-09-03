@@ -1,4 +1,4 @@
-/* Topic detail — /practice/writing/grammar/$topicId. Notes list for one topic
+/* Topic detail — /notes/$topicId. Notes list for one topic
    + "New note". `.index` so the $noteId editor route nests below. */
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
@@ -11,7 +11,7 @@ import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptySt
 import { useGrammarTopicsQuery } from '@/hooks/useGrammarTopics';
 import { useDeleteNote, useGrammarNotesQuery } from '@/hooks/useGrammarNotes';
 
-export const Route = createFileRoute('/_authed/practice/writing/grammar/$topicId/')({
+export const Route = createFileRoute('/_authed/notes/$topicId/')({
   component: GrammarTopicDetail,
 });
 
@@ -34,14 +34,14 @@ function GrammarTopicDetail() {
 
   const openNote = (noteId: string) =>
     void navigate({
-      to: '/practice/writing/grammar/$topicId/$noteId',
+      to: '/notes/$topicId/$noteId',
       params: { topicId, noteId },
     });
 
   return (
     <ContentContainer fluid>
       <PageHeader
-        title={topic?.title ?? t('writing.grammar.title')}
+        title={topic?.title ?? t('nav.notes')}
         subtitle={topic?.description || undefined}
         actions={
           <button
@@ -57,10 +57,10 @@ function GrammarTopicDetail() {
 
       <button
         type="button"
-        onClick={() => void navigate({ to: '/practice/writing/grammar' })}
+        onClick={() => void navigate({ to: '/notes' })}
         className="mb-4 w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
       >
-        ← {t('writing.grammar.title')}
+        ← {t('nav.notes')}
       </button>
 
       {isLoading ? (
