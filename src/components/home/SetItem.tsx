@@ -11,10 +11,58 @@ interface SetItemProps {
   /** Optional trailing label (e.g. "Review"). */
   trailingText?: string;
   showsArrow?: boolean;
+  /** `tile` stacks the same content for the grid view on the sets screen. */
+  variant?: 'row' | 'tile';
 }
 
-export const SetItem = ({ item, trailingText, showsArrow = true }: SetItemProps) => {
+export const SetItem = ({
+  item,
+  trailingText,
+  showsArrow = true,
+  variant = 'row',
+}: SetItemProps) => {
   const { t } = useTranslation();
+
+  if (variant === 'tile') {
+    return (
+      <div
+        className="relative h-[178px] w-full overflow-hidden rounded-[22px] border border-white/95 shadow-[0_6px_10px_rgba(0,0,0,0.04)] md:rounded-[26px]"
+        style={{ background: item.backgroundColor }}
+      >
+        <div className="absolute inset-y-0 right-0 flex items-center">
+          <SetCardBlobShape
+            color={item.blobColor}
+            opacity={0.85}
+            className="h-[86px] w-[130px] translate-x-[28px] translate-y-[34px]"
+          />
+        </div>
+
+        <div className="relative flex h-full flex-col justify-end gap-2.5 px-5 pt-5 pb-5">
+          <div
+            className="grid size-[46px] shrink-0 place-items-center rounded-full"
+            style={{ background: item.accentColor, opacity: 0.95 }}
+          >
+            <Icon name={item.iconSystemName} className="size-[18px] text-white" />
+          </div>
+
+          <div className="flex min-w-0 flex-col gap-1.5">
+            <span
+              className="truncate text-[19px] font-bold"
+              style={{ color: item.titleColor }}
+            >
+              {item.title}
+            </span>
+            <span
+              className="truncate text-[14px] font-medium"
+              style={{ color: item.accentColor }}
+            >
+              {item.subtitle}
+            </span>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div

@@ -255,6 +255,25 @@
 /* Auth-flow animation keyframes (Onboarding hero + Verify pulses).
    Plain CSS keyframes — the global prefers-reduced-motion rule in tokens.css
    collapses them for users who opt out. */
+/* Row actions (edit / delete on a card). Hidden until the card is hovered
+   where hovering exists; always visible where it does not, because a touch
+   screen has no hover and an invisible control is an absent one. */
+.wa-hover-actions {
+  opacity: 1;
+}
+
+@media (hover: hover) {
+  .wa-hover-actions {
+    opacity: 0;
+    transition: opacity 0.18s ease;
+  }
+
+  .group:hover .wa-hover-actions,
+  .group:focus-within .wa-hover-actions {
+    opacity: 1;
+  }
+}
+
 /* Setup screens: sections settle in rather than snapping into place. Purely
    decorative, so it steps aside for anyone who asked for less motion. */
 @keyframes wa-rise {

@@ -1,12 +1,18 @@
+import { useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
-import { Plus, Trash } from '@phosphor-icons/react';
+import { Plus } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
+import { CardActions } from '@/components/shell/CardActions';
+import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
+import { ViewToggle } from '@/components/shell/ViewToggle';
+import { cardGridClass, useCardView } from '@/lib/cardView';
 import { SetItem } from '@/components/home/SetItem';
 import { useDeleteSet, useSetsQuery } from '@/hooks/useSets';
 import { mapSetToPreview } from '@/lib/setPreview';
+import type { FlashcardSet } from '@/lib/models';
 
 export const Route = createFileRoute('/_authed/sets/')({
   component: SetsPage,
@@ -18,8 +24,12 @@ function SetsPage() {
   const { data: sets, isLoading, isError } = useSetsQuery();
   const deleteSet = useDeleteSet();
 
-  const handleDelete = (id: string, title: string) => {
-    if (window.confirm(t('sets.deleteConfirm', { title }))) deleteSet.mutate(id);
+  const [view, chooseView] = useCardView('sets');
+  const [pendingDelete, setPendingDelete] = useState<FlashcardSet | null>(null);
+
+  const confirmDelete = () => {
+    if (!pendingDelete) return;
+    deleteSet.mutate(pendingDelete.id, { onSettled: () => setPendingDelete(null) });
   };
 
   return (
@@ -28,14 +38,18 @@ function SetsPage() {
         title={t('home.title.sets')}
         subtitle={t('home.subtitle.sets')}
         actions={
-          <button
+          <>
+            <ViewToggle value={view} onChange={chooseView} />
+
+            <button
             type="button"
             onClick={() => void navigate({ to: '/sets/new' })}
             className="flex h-11 items-center gap-2 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-4 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
           >
             <Plus size={18} weight="bold" />
             {t('sets.create')}
-          </button>
+            </button>
+          </>
         }
       />
 
@@ -55,7 +69,7 @@ function SetsPage() {
           </span>
         </div>
       ) : (
-        <div className="flex max-w-[760px] flex-col gap-(--spacing-home-sets-gap)">
+        <div className={cardGridClass(view)}>
           {sets.map((set) => {
             const preview = mapSetToPreview(set, t('sets.cardCount', { count: set.cards.length }));
             return (
@@ -65,20 +79,33 @@ function SetsPage() {
                   onClick={() => void navigate({ to: '/sets/$id', params: { id: set.id } })}
                   className="block w-full text-left transition-transform hover:-translate-y-0.5 active:scale-[0.99]"
                 >
-                  <SetItem item={preview} trailingText={t('home.review')} />
+                  <SetItem
+                    item={preview}
+                    trailingText={view === 'row' ? t('home.review') : undefined}
+                    showsArrow={view === 'row'}
+                    variant={view}
+                  />
                 </button>
-                <button
-                  type="button"
-                  onClick={() => handleDelete(set.id, set.title)}
-                  aria-label={t('sets.delete')}
-                  className="absolute top-3 right-3 grid size-8 place-items-center rounded-full bg-white/90 text-(--color-cs-red) opacity-0 shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-opacity group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none"
-                >
-                  <Trash size={16} weight="bold" />
-                </button>
+                {/* No pencil: a set has no edit screen — title, colour and icon
+                    are only settable while creating it. */}
+                <CardActions
+                  onDelete={() => setPendingDelete(set)}
+                  editLabel={t('sets.edit')}
+                  deleteLabel={t('sets.delete')}
+                />
               </div>
             );
           })}
         </div>
+      )}
+      {pendingDelete && (
+        <ConfirmDialog
+          title={t('sets.deleteConfirmTitle')}
+          body={t('sets.deleteConfirm', { title: pendingDelete.title })}
+          isBusy={deleteSet.isPending}
+          onConfirm={confirmDelete}
+          onCancel={() => setPendingDelete(null)}
+        />
       )}
     </ContentContainer>
   );

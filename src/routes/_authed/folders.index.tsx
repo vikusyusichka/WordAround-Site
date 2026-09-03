@@ -1,12 +1,14 @@
 import { useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
-import { Plus, Rows, SquaresFour } from '@phosphor-icons/react';
+import { Plus } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
-import { FolderCard, type FolderCardVariant } from '@/components/folders/FolderCard';
+import { FolderCard } from '@/components/folders/FolderCard';
+import { ViewToggle } from '@/components/shell/ViewToggle';
+import { cardGridClass, useCardView } from '@/lib/cardView';
 import { useDeleteFolder, useFoldersQuery } from '@/hooks/useFolders';
 import { useSetsQuery } from '@/hooks/useSets';
 import type { Folder } from '@/lib/models';
@@ -15,16 +17,6 @@ export const Route = createFileRoute('/_authed/folders/')({
   component: FoldersPage,
 });
 
-const VIEW_KEY = 'wa.foldersView';
-
-const readView = (): FolderCardVariant => {
-  try {
-    return localStorage.getItem(VIEW_KEY) === 'tile' ? 'tile' : 'row';
-  } catch {
-    return 'row';
-  }
-};
-
 function FoldersPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
@@ -32,17 +24,8 @@ function FoldersPage() {
   const { data: sets } = useSetsQuery();
   const deleteFolder = useDeleteFolder();
 
-  const [view, setView] = useState<FolderCardVariant>(readView);
+  const [view, chooseView] = useCardView('folders');
   const [pendingDelete, setPendingDelete] = useState<Folder | null>(null);
-
-  const chooseView = (next: FolderCardVariant) => {
-    setView(next);
-    try {
-      localStorage.setItem(VIEW_KEY, next);
-    } catch {
-      /* a view preference is not worth failing over */
-    }
-  };
 
   /* One sets query for the whole list rather than one per folder. */
   const setsPerFolder = new Map<string, number>();
@@ -63,24 +46,7 @@ function FoldersPage() {
         subtitle={t('home.subtitle.folders')}
         actions={
           <>
-            <div
-              role="radiogroup"
-              aria-label={t('folders.view.label')}
-              className="flex gap-1 rounded-2xl bg-white/90 p-1 shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
-            >
-              <ViewButton
-                icon={<Rows size={17} weight="bold" />}
-                label={t('folders.view.rows')}
-                isActive={view === 'row'}
-                onClick={() => chooseView('row')}
-              />
-              <ViewButton
-                icon={<SquaresFour size={17} weight="bold" />}
-                label={t('folders.view.grid')}
-                isActive={view === 'tile'}
-                onClick={() => chooseView('tile')}
-              />
-            </div>
+            <ViewToggle value={view} onChange={chooseView} />
 
             <button
               type="button"
@@ -112,13 +78,7 @@ function FoldersPage() {
           </span>
         </div>
       ) : (
-        <div
-          className={
-            view === 'tile'
-              ? 'grid gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5 xl:grid-cols-4 2xl:grid-cols-5'
-              : 'flex flex-col gap-(--spacing-home-sets-gap)'
-          }
-        >
+        <div className={cardGridClass(view)}>
           {folders.map((folder) => (
             <FolderCard
               key={folder.id}
@@ -151,28 +111,3 @@ function FoldersPage() {
     </ContentContainer>
   );
 }
-
-interface ViewButtonProps {
-  icon: React.ReactNode;
-  label: string;
-  isActive: boolean;
-  onClick: () => void;
-}
-
-const ViewButton = ({ icon, label, isActive, onClick }: ViewButtonProps) => (
-  <button
-    type="button"
-    role="radio"
-    aria-checked={isActive}
-    aria-label={label}
-    title={label}
-    onClick={onClick}
-    className={`grid size-9 place-items-center rounded-xl transition-colors focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none ${
-      isActive
-        ? 'bg-(--color-home-nav-sel-bg) text-(--color-primary-blue)'
-        : 'text-(--color-cs-text-muted) hover:bg-black/[0.03]'
-    }`}
-  >
-    {icon}
-  </button>
-);

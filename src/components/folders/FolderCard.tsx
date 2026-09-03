@@ -6,8 +6,8 @@
    from the same path — only the height and the content flow differ.
 
    Web addition: edit and delete sit on the card itself, so neither needs the
-   folder to be opened first. They are dimmed rather than hidden, because a
-   hover-only control does not exist on a touch screen.
+   folder to be opened first — revealed on hover, and permanently visible on a
+   touch screen, which has no hover to reveal them with.
 
    The iOS shape mixes absolute values (18pt corner, 26pt tab) with a
    proportional one (tab = 32% of width), so the path needs the real pixel
@@ -15,9 +15,8 @@
    would distort the corners on wide cards. */
 import { useLayoutEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { PencilSimple, Trash } from '@phosphor-icons/react';
-
 import { Icon } from '@/components/primitives/Icon';
+import { CardActions } from '@/components/shell/CardActions';
 import { folderPath, wavePath } from './FolderShape';
 import { themeForHex } from '@/lib/setColors';
 import type { Folder } from '@/lib/models';
@@ -188,27 +187,13 @@ export const FolderCard = ({
       {/* Actions sit outside the surface — a button inside a button is invalid
           markup and swallows the click. */}
       {interactive && (
-        <div className="absolute top-3 right-3 flex gap-1.5 opacity-60 transition-opacity group-hover:opacity-100 group-focus-within:opacity-100">
-          {onEdit && (
-            <button
-              type="button"
-              onClick={onEdit}
-              aria-label={t('folders.edit')}
-              className="grid size-8 place-items-center rounded-full bg-white/90 shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
-              style={{ color: theme.titleColor }}
-            >
-              <PencilSimple size={15} weight="bold" />
-            </button>
-          )}
-          <button
-            type="button"
-            onClick={onDelete}
-            aria-label={t('folders.delete')}
-            className="grid size-8 place-items-center rounded-full bg-white/90 text-(--color-cs-red) shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
-          >
-            <Trash size={15} weight="bold" />
-          </button>
-        </div>
+        <CardActions
+          onEdit={onEdit}
+          onDelete={onDelete}
+          editLabel={t('folders.edit')}
+          deleteLabel={t('folders.delete')}
+          editColor={theme.titleColor}
+        />
       )}
     </div>
   );

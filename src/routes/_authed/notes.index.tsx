@@ -15,6 +15,8 @@ import { PageHeader } from '@/components/shell/PageHeader';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
 import { GrammarSearchBar } from '@/components/grammar/GrammarSearchBar';
 import { GrammarTopicCard } from '@/components/grammar/GrammarTopicCard';
+import { ViewToggle } from '@/components/shell/ViewToggle';
+import { cardGridClass, useCardView } from '@/lib/cardView';
 import { GrammarTopicForm } from '@/components/grammar/GrammarTopicForm';
 import { QuickMistakeSheet } from '@/components/grammar/QuickMistakeSheet';
 import { QuickNoteSheet } from '@/components/grammar/QuickNoteSheet';
@@ -25,6 +27,7 @@ import { useCreateQuickNote } from '@/hooks/useGrammarNotes';
 import {
   useCreateTopic,
   useCreateTopicFromTemplate,
+  useUpdateTopic,
   useDeleteTopic,
   useEnsureMistakesTopic,
   useGrammarTopicsQuery,
@@ -53,6 +56,7 @@ function GrammarHome() {
   useEnsureMistakesTopic(topics);
 
   const createTopic = useCreateTopic();
+  const updateTopic = useUpdateTopic();
   const createFromTemplate = useCreateTopicFromTemplate();
   const deleteTopic = useDeleteTopic();
   const reorderTopics = useReorderTopics();
@@ -64,6 +68,10 @@ function GrammarHome() {
   const [templatesOpen, setTemplatesOpen] = useState(false);
   const [quickNoteOpen, setQuickNoteOpen] = useState(false);
   const [isReordering, setReordering] = useState(false);
+  const [view, chooseView] = useCardView('notes');
+  /* The same sheet serves both jobs — an edit form that looked different from
+     the create form would be two designs for one thing. */
+  const [editingTopic, setEditingTopic] = useState<GrammarNoteTopic | null>(null);
   const [pendingDelete, setPendingDelete] = useState<GrammarNoteTopic | null>(null);
   /* Quick-mistake: a fresh key per open so the sheet's save state resets. */
   const [quickMistakeSession, setQuickMistakeSession] = useState(0);
@@ -80,6 +88,11 @@ function GrammarHome() {
       ),
     );
   }, [topics, query]);
+
+  const closeTopicSheet = () => {
+    setFormOpen(false);
+    setEditingTopic(null);
+  };
 
   const openTopic = (topicId: string) =>
     void navigate({ to: '/notes/$topicId', params: { topicId } });
@@ -199,6 +212,7 @@ function GrammarHome() {
             <Icon name="arrow.up.arrow.down" className="size-[13px]" />
             {t(isReordering ? 'writing.grammar.reorder.done' : 'writing.grammar.reorder.start')}
           </button>
+          <ViewToggle value={view} onChange={chooseView} />
         </div>
       )}
 
@@ -223,16 +237,18 @@ function GrammarHome() {
           body={t('writing.grammar.search.noMatchBody')}
         />
       ) : (
-        <div className="flex max-w-[760px] flex-col gap-(--spacing-home-sets-gap)">
+        <div className={cardGridClass(view)}>
           {visibleTopics.map((topic, index) => (
             <GrammarTopicCard
               key={topic.id}
               topic={topic}
+              variant={view}
               isReordering={isReordering && query.length === 0}
               isFirst={index === 0}
               isLast={index === visibleTopics.length - 1}
               onOpen={() => openTopic(topic.id)}
               onDelete={() => setPendingDelete(topic)}
+              onEdit={() => setEditingTopic(topic)}
               onMove={(dir) => moveTopic(index, dir)}
             />
           ))}
@@ -240,13 +256,13 @@ function GrammarHome() {
       )}
 
       <AnimatePresence>
-        {formOpen && (
+        {(formOpen || editingTopic) && (
           <motion.div
             className="fixed inset-0 z-50 flex items-end justify-center bg-black/30 p-0 backdrop-blur-sm md:items-center md:p-4"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setFormOpen(false)}
+            onClick={closeTopicSheet}
             role="dialog"
             aria-modal="true"
           >
@@ -258,8 +274,9 @@ function GrammarHome() {
               onClick={(e) => e.stopPropagation()}
             >
               <h2 className="text-[19px] font-bold text-(--color-primary-blue-dark) md:text-[22px]">
-                {t('writing.grammar.form.newTitle')}
+                {t(editingTopic ? 'writing.grammar.form.editTitle' : 'writing.grammar.form.newTitle')}
               </h2>
+              {!editingTopic && (
               <button
                 type="button"
                 onClick={() => {
@@ -271,17 +288,26 @@ function GrammarHome() {
                 <Plus size={16} weight="bold" />
                 {t('writing.grammar.templates.startFromTemplate')}
               </button>
+              )}
               <GrammarTopicForm
-                isSaving={createTopic.isPending}
-                onSubmit={(values) =>
+                initial={editingTopic ?? undefined}
+                isSaving={editingTopic ? updateTopic.isPending : createTopic.isPending}
+                onSubmit={(values) => {
+                  if (editingTopic) {
+                    updateTopic.mutate(
+                      { ...editingTopic, ...values },
+                      { onSuccess: closeTopicSheet },
+                    );
+                    return;
+                  }
                   createTopic.mutate(values, {
                     onSuccess: (topic) => {
                       setFormOpen(false);
                       openTopic(topic.id);
                     },
-                  })
-                }
-                onCancel={() => setFormOpen(false)}
+                  });
+                }}
+                onCancel={closeTopicSheet}
               />
             </motion.div>
           </motion.div>

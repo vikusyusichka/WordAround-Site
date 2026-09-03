@@ -133,12 +133,7 @@
     "optional": "(optional)",
     "preview": "Preview",
     "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?",
-    "view": {
-      "label": "Folder view",
-      "rows": "List",
-      "grid": "Grid"
-    }
+    "deleteConfirmTitle": "Delete this folder?"
   },
   "sets": {
     "create": "Create set",
@@ -153,7 +148,9 @@
     "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
     "notFoundTitle": "Set not found",
     "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets"
+    "backToSets": "Back to sets",
+    "edit": "Edit set",
+    "deleteConfirmTitle": "Delete this set?"
   },
   "createSet": {
     "title": "New set",
@@ -1034,7 +1031,8 @@
             "subtitle": "Display short contextual hints while creating notes."
           }
         }
-      }
+      },
+      "editTopic": "Edit topic"
     }
   },
   "reading": {
@@ -1663,7 +1661,12 @@
   },
   "common": {
     "cancel": "Cancel",
-    "delete": "Delete"
+    "delete": "Delete",
+    "view": {
+      "label": "View",
+      "rows": "List",
+      "grid": "Grid"
+    }
   },
   "practice": {
     "language": {

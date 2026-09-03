@@ -3,9 +3,9 @@
    title (+ pin / Mistakes badge), description, a "N notes" meta pill, a chevron,
    and a soft-accent blob bleeding out of the top-right corner. */
 import { useTranslation } from 'react-i18next';
-import { Trash } from '@phosphor-icons/react';
 
 import { Icon } from '@/components/primitives/Icon';
+import { CardActions } from '@/components/shell/CardActions';
 import { themeForHex } from '@/lib/setColors';
 import type { GrammarNoteTopic } from '@/lib/models';
 
@@ -16,7 +16,10 @@ interface GrammarTopicCardProps {
   isLast?: boolean;
   onOpen: () => void;
   onDelete: () => void;
+  onEdit?: () => void;
   onMove?: (dir: 'up' | 'down') => void;
+  /** `tile` stacks the same content for the grid view. */
+  variant?: 'row' | 'tile';
 }
 
 export const GrammarTopicCard = ({
@@ -26,10 +29,13 @@ export const GrammarTopicCard = ({
   isLast = false,
   onOpen,
   onDelete,
+  onEdit,
   onMove,
+  variant = 'row',
 }: GrammarTopicCardProps) => {
   const { t } = useTranslation();
   const theme = themeForHex(topic.colorHex);
+  const isTile = variant === 'tile';
 
   return (
     <div className="group relative">
@@ -37,7 +43,9 @@ export const GrammarTopicCard = ({
         type="button"
         onClick={onOpen}
         aria-label={topic.title}
-        className="relative block w-full overflow-hidden rounded-[24px] border p-4 pl-[18px] text-left transition-transform hover:-translate-y-0.5 focus-visible:outline-none"
+        className={`relative block w-full overflow-hidden rounded-[24px] border p-4 text-left transition-transform hover:-translate-y-0.5 focus-visible:outline-none ${
+          isTile ? 'h-[178px]' : 'pl-[18px]'
+        }`}
         style={{
           background: topic.isMistakesTopic ? theme.previewBackground : theme.sectionBackground,
           borderColor: topic.isMistakesTopic ? theme.borderColor : theme.softBorderColor,
@@ -51,7 +59,13 @@ export const GrammarTopicCard = ({
           aria-hidden
         />
 
-        <div className="relative flex items-center gap-3.5">
+        <div
+          className={
+            isTile
+              ? 'relative flex h-full flex-col justify-end gap-2.5'
+              : 'relative flex items-center gap-3.5'
+          }
+        >
           <span
             className="grid size-[50px] shrink-0 place-items-center rounded-full"
             style={{ background: theme.softAccent }}
@@ -121,11 +135,13 @@ export const GrammarTopicCard = ({
             </span>
           </div>
 
-          <Icon
-            name="chevron.right"
-            className="ml-auto size-[14px] shrink-0"
-            style={{ color: theme.mutedTextColor, opacity: 0.78 }}
-          />
+          {!isTile && (
+            <Icon
+              name="chevron.right"
+              className="ml-auto size-[14px] shrink-0"
+              style={{ color: theme.mutedTextColor, opacity: 0.78 }}
+            />
+          )}
         </div>
       </button>
 
@@ -151,15 +167,16 @@ export const GrammarTopicCard = ({
           </button>
         </div>
       ) : (
+        /* The Mistakes topic is created and maintained by the app, so it may
+           be recoloured but not deleted. */
         !topic.isMistakesTopic && (
-          <button
-            type="button"
-            onClick={onDelete}
-            aria-label={t('writing.grammar.deleteTopic')}
-            className="absolute top-3 right-3 grid size-8 place-items-center rounded-full bg-white/90 text-(--color-cs-red) opacity-0 shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-opacity group-focus-within:opacity-100 group-hover:opacity-100 focus-visible:opacity-100 focus-visible:outline-none"
-          >
-            <Trash size={16} weight="bold" />
-          </button>
+          <CardActions
+            onEdit={onEdit}
+            onDelete={onDelete}
+            editLabel={t('writing.grammar.editTopic')}
+            deleteLabel={t('writing.grammar.deleteTopic')}
+            editColor={theme.titleColor}
+          />
         )
       )}
     </div>
