@@ -63,7 +63,7 @@ const SKILLS: SkillConfig[] = [
 ];
 
 export const SkillProgressGrid = () => (
-  <div className="grid gap-4 md:grid-cols-2 lg:gap-6">
+  <div className="grid gap-4 md:grid-cols-2 lg:gap-6 xl:grid-cols-4">
     {SKILLS.map((config) => (
       <SkillProgressCard key={config.skill} config={config} />
     ))}
@@ -82,6 +82,7 @@ const SkillProgressCard = ({ config }: { config: SkillConfig }) => {
       layout="goal"
       title={t(config.labelKey)}
       subtitle={t(`home.progress.subtitle.${config.skill}`)}
+      dense
       onClick={() => void navigate({ to: config.to })}
     />
   );
