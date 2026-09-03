@@ -123,7 +123,7 @@ function FromSetsScreen() {
         }
       />
 
-      <div className="flex flex-col gap-6">
+      <div className="flex max-w-(--size-setup-max) flex-col gap-6">
         <button
           type="button"
           onClick={() => void navigate({ to: '/practice/reading' })}

@@ -78,7 +78,7 @@ function ShadowingSetup({
     <ContentContainer fluid>
       <PageHeader title={t('speaking.shadowing.title')} subtitle={t('speaking.shadowing.subtitle')} />
 
-      <div className="flex w-full flex-col gap-6">
+      <div className="flex w-full max-w-(--size-setup-max) flex-col gap-6">
         <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
           <OptionPillGroup
             options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
@@ -101,7 +101,7 @@ function ShadowingSetup({
         </SetupSection>
 
         <SetupSection title={t('speaking.shadowing.category')} accentDark={ACCENT_DARK}>
-          <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
+          <div className="grid grid-cols-2 gap-2 sm:grid-cols-[repeat(auto-fill,minmax(150px,1fr))]">
             {SHADOWING_CATEGORIES.map((c) => {
               const selected = c.id === category;
               return (

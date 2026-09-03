@@ -181,7 +181,7 @@ function SpeedReadingScreen() {
         }
       />
 
-      <div className="flex w-full flex-col gap-5">
+      <div className="flex w-full max-w-(--size-setup-max) flex-col gap-5">
         <button
           type="button"
           onClick={() =>

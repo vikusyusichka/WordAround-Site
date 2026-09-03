@@ -40,7 +40,7 @@ export const SetupScenarioCard = ({
       type="button"
       aria-pressed={selected}
       onClick={onClick}
-      className="flex min-h-[136px] flex-col gap-2 rounded-[18px] border p-3.5 text-left transition-all hover:brightness-[0.99] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none "
+      className="flex min-h-[136px] flex-col gap-2 rounded-[18px] border p-3.5 text-left transition-all duration-200 hover:-translate-y-0.5 hover:brightness-[0.99] active:translate-y-0 active:scale-[0.99] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
       style={cardStyle}
     >
       {icon && (

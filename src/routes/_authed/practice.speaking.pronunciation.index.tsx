@@ -95,7 +95,7 @@ function PronunciationSetup({
   const { t } = useTranslation();
 
   return (
-    <div className="flex w-full flex-col gap-6">
+    <div className="flex w-full max-w-(--size-setup-max) flex-col gap-6">
       <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
         <OptionPillGroup
           options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
@@ -118,7 +118,7 @@ function PronunciationSetup({
       </SetupSection>
 
       <SetupSection title={t('speaking.pronunciation.focus')} accentDark={ACCENT_DARK}>
-        <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
+        <div className="grid grid-cols-2 gap-2 sm:grid-cols-[repeat(auto-fill,minmax(150px,1fr))]">
           {PRONUNCIATION_FOCUSES.map((f) => {
             const selected = f.id === focus;
             return (

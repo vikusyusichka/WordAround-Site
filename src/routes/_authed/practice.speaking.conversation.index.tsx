@@ -74,7 +74,7 @@ function ConversationSetup() {
         subtitle={t('speaking.conversation.subtitle')}
       />
 
-      <div className="flex w-full flex-col gap-6">
+      <div className="flex w-full max-w-(--size-setup-max) flex-col gap-6">
         <SetupSection title={t('reading.addText.language')}>
           <OptionPillGroup
             options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}
@@ -102,7 +102,7 @@ function ConversationSetup() {
             onChange={(id) => setUseAutoTopic(id === 'auto')}
           />
           {!useAutoTopic && (
-            <div className="mt-2 grid grid-cols-2 gap-2.5 sm:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-6">
+            <div className="mt-2 grid grid-cols-2 gap-2.5 sm:grid-cols-[repeat(auto-fill,minmax(190px,1fr))]">
               {SPEAKING_SCENARIOS.map((s) => (
                 <SetupScenarioCard
                   key={s.id}

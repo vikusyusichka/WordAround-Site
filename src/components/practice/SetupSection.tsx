@@ -28,7 +28,7 @@ export const SetupSection = ({
   const headingStyle: CSSProperties = { color: accentDark ?? 'var(--color-primary-blue-dark)' };
 
   return (
-    <section className="flex flex-col gap-3">
+    <section className="wa-rise flex flex-col gap-3">
       <div className="flex flex-col gap-1">
         <h2 className="text-[20px] font-bold lg:text-[22px]" style={headingStyle}>
           {title}

@@ -136,7 +136,7 @@ function ListenFromTextSetup() {
         subtitle={t('listening.fromText.subtitle')}
       />
 
-      <div className="flex w-full flex-col gap-6">
+      <div className="flex w-full max-w-(--size-setup-max) flex-col gap-6">
         <SetupSection title={t('reading.addText.language')} accentDark={ACCENT_DARK}>
           <OptionPillGroup
             options={ESSAY_LANGUAGES.map((l) => ({ id: l.id, label: l.title }))}

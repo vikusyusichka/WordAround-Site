@@ -1,5 +1,5 @@
 /* Setup start button — ports iOS SpeakingSetupStartButton: full-width (capped
-   720px), height 52 / 58@lg, radius 18 / 22, bold 16 / 18 label with a leading
+   to the setup column), height 52 / 58@lg, radius 18 / 22, bold 16 / 18 label with a leading
    icon, an accent→accentDark gradient and an accent-30% drop shadow. */
 import type { CSSProperties } from 'react';
 
@@ -38,7 +38,7 @@ export const StartButton = ({
       type="button"
       onClick={onClick}
       disabled={disabled}
-      className="flex h-[52px] w-full items-center justify-center gap-2 rounded-[16px] text-[16px] font-bold text-white transition-transform hover:brightness-105 active:scale-[0.99] disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+      className="flex h-[52px] w-full max-w-(--size-setup-max) items-center justify-center gap-2 rounded-[16px] text-[16px] font-bold text-white transition-transform hover:brightness-105 active:scale-[0.99] disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
       style={style}
     >
       <Icon name={icon} className="size-[15px]" />

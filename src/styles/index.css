@@ -163,6 +163,9 @@
      from iOS. Sidebar shows ≥1024px (lg); below that a hamburger drawer. */
   --spacing-shell-sidebar: 248px;
   --size-content-max: 1200px;
+  /* A practice-setup form is a column of choices, not a page of content: past
+     roughly this width the eye travels further than the controls are worth. */
+  --size-setup-max: 760px;
   --spacing-shell-gutter: 24px;
 
   /* Home shell (Layout.swift — compact/phone defaults; ≥700 pad overrides in tokens.css) */
@@ -252,6 +255,29 @@
 /* Auth-flow animation keyframes (Onboarding hero + Verify pulses).
    Plain CSS keyframes — the global prefers-reduced-motion rule in tokens.css
    collapses them for users who opt out. */
+/* Setup screens: sections settle in rather than snapping into place. Purely
+   decorative, so it steps aside for anyone who asked for less motion. */
+@keyframes wa-rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.wa-rise {
+  animation: wa-rise 0.34s cubic-bezier(0.22, 0.8, 0.3, 1) both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wa-rise {
+    animation: none;
+  }
+}
+
 @keyframes wa-spin {
   to {
     transform: rotate(360deg);
