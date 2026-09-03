@@ -1,11 +1,12 @@
 rules_version = '2';
 
-/* WordAround Cloud Storage rules — PROPOSAL, NOT YET COMPARED TO LIVE.
+/* WordAround Cloud Storage rules — RECONCILED WITH LIVE.
  *
- * ⚠️ Unlike firestore.rules (a verbatim copy of what is live), this file has
- * NOT been checked against the rules currently on the project. Capture the
- * live Storage rules from the Console first and reconcile — do not publish
- * this blindly. See docs/SECURITY-RULES.md.
+ * Checked against the project on the day Storage was first enabled: the live
+ * rules were Firebase's default lock (deny everything), so this file replaces
+ * them wholesale with nothing lost. Storage did not exist on the project until
+ * then — which is why card-image upload had never worked, and why the CORS
+ * theory in DEPLOY.md was a misdiagnosis.
  *
  * Only the WEB app uses Storage (the iOS app does not touch it at all), and it
  * writes two kinds of object — flashcard card images and note-block images:
@@ -16,8 +17,10 @@ rules_version = '2';
  *
  *   users/{uid}/noteImages/{topicId}/{noteId}/{blockId}.jpg
  *     (src/lib/noteImageService.ts — image blocks inside grammar notes,
- *      downscaled to max 1400px. NOT YET PUBLISHED: image blocks stay
- *      read-only until these rules go live.)
+ *      downscaled to max 1400px)
+ *
+ * Bucket: wordaround-97f86.firebasestorage.app, us-east1 (the no-cost
+ * location). The region is permanent; moving it means a new bucket.
  *
  * Note on reads: the app stores the `getDownloadURL()` result in card.imageURL.
  * Those URLs carry a Firebase download token that grants access to that single

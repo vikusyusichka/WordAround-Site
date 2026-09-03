@@ -177,11 +177,14 @@ Cloudflare CDN кешує агресивно. Ctrl+Shift+R (hard refresh) у б�
 
 ## Незакриті питання (post-deploy, не блокери)
 
-- **Storage CORS** для завантаження фото карток. Флешкартка без фото
-  працює одразу; з фото — має 30-секундний timeout, а потім падає.
-  Виправляється командою `gsutil cors set cors.json gs://wordaround-97f86.firebasestorage.app`
-  через Google Cloud SDK. Зроблю окремим кроком, коли ти будеш готова
-  встановити `gcloud CLI`.
+- ~~**Storage CORS** для завантаження фото карток.~~ **Хибний діагноз, закрито.**
+  Фото падало з 30-секундним таймаутом не через CORS, а тому що Storage у
+  проєкті **взагалі не був увімкнений** — консоль показувала «To use Storage,
+  upgrade your project's pricing plan». Тобто запит ішов у сховище, якого не
+  існує. `gsutil cors set` не допоміг би.
+  Полагоджено: проєкт переведено на Blaze, створено бакет
+  `wordaround-97f86.firebasestorage.app` у локації **us-east1** (безкоштовна;
+  локацію потім не змінити), і опубліковано правила з `storage.rules`.
 - **Кастомний домен** (замість `wordaround-site.pages.dev` — свій
   типу `wordaround.app`). Cloudflare Pages → проєкт → **Custom
   domains** → додати CNAME. Робимо пізніше, як буде готовий домен.
