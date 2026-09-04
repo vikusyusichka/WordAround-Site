@@ -247,6 +247,7 @@ function GrammarHome() {
         <GrammarNotesEmptyState
           title={t('writing.grammar.topicsEmptyTitle')}
           body={t('writing.grammar.topicsEmptyBody')}
+          tip={t('writing.grammar.topicsEmptyTip')}
           actionLabel={t('writing.grammar.newTopic')}
           onAction={() => setFormOpen(true)}
         />

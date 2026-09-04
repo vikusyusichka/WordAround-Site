@@ -792,7 +792,8 @@
         "duplicate": "Already saved — duplicate was skipped.",
         "failed": "Couldn't save. Please try again.",
         "openTopic": "Open Common Mistakes",
-        "done": "Done"
+        "done": "Done",
+        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
       },
       "templates": {
         "topicTitle": "Topic templates",
@@ -1076,7 +1077,9 @@
         "cards_few": "{{count}} cards",
         "cards_many": "{{count}} cards",
         "cards_other": "{{count}} cards"
-      }
+      },
+      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
+      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
     }
   },
   "reading": {

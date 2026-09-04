@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import type { MistakeSaveState } from '@/hooks/useSaveMistake';
+import { useGrammarSettings } from '@/stores/grammarSettingsStore';
 
 interface QuickMistakeSheetProps {
   open: boolean;
@@ -24,6 +25,7 @@ export const QuickMistakeSheet = ({
   onClose,
 }: QuickMistakeSheetProps) => {
   const { t } = useTranslation();
+  const showsHelperTips = useGrammarSettings((st) => st.showsHelperTips);
   const [original, setOriginal] = useState('');
   const [corrected, setCorrected] = useState('');
   const [explanation, setExplanation] = useState('');
@@ -147,6 +149,12 @@ export const QuickMistakeSheet = ({
                 className={`${fieldClass} resize-none`}
               />
             </label>
+
+            {showsHelperTips && !isDone && (
+              <p className="rounded-2xl bg-(--color-goal-bg) px-4 py-3 text-[12px] font-semibold text-(--color-text-secondary)">
+                {t('writing.grammar.quickMistake.tip')}
+              </p>
+            )}
 
             {validation && (
               <p role="alert" className="text-[14px] font-semibold text-(--color-cs-red)">

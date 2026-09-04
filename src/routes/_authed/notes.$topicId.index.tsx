@@ -179,6 +179,7 @@ function GrammarTopicDetail() {
         <GrammarNotesEmptyState
           title={t('writing.grammar.notesEmptyTitle')}
           body={t('writing.grammar.notesEmptyBody')}
+          tip={t('writing.grammar.notesEmptyTip')}
           actionLabel={t('writing.grammar.newNote')}
           onAction={() => openNote('new')}
         />
