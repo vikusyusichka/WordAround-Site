@@ -387,3 +387,35 @@ describe('GrammarNoteRow review pill', () => {
     expect(screen.getByText('Due')).toBeInTheDocument();
   });
 });
+
+describe('GrammarNoteRow as a search hit', () => {
+  const hit = makeGrammarNote({ ownerUID: 'u', topicId: 't1', title: 'Verb note' });
+
+  /* A global search result can be opened but not pinned, favourited or
+     deleted from where it is shown, so it must not sprout buttons that lead
+     nowhere. */
+  it('shows no actions when none are given', () => {
+    render(<GrammarNoteRow note={hit} onOpen={vi.fn()} />);
+    const buttons = screen.getAllByRole('button');
+    expect(buttons).toHaveLength(1);
+    expect(buttons[0]).toHaveAttribute('aria-label', 'Verb note');
+  });
+
+  it('still shows actions for a row that has them', () => {
+    render(
+      <GrammarNoteRow
+        note={hit}
+        onOpen={vi.fn()}
+        onDelete={vi.fn()}
+        onTogglePinned={vi.fn()}
+        onToggleFavorite={vi.fn()}
+      />,
+    );
+    expect(screen.getAllByRole('button').length).toBeGreaterThan(1);
+  });
+
+  it('names the topic when the list spans topics', () => {
+    render(<GrammarNoteRow note={hit} onOpen={vi.fn()} topicLabel="Spanish verbs" />);
+    expect(screen.getByText('Spanish verbs')).toBeInTheDocument();
+  });
+});

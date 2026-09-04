@@ -923,7 +923,12 @@
         "notes": "Пошук нотаток…",
         "clear": "Очистити пошук",
         "noMatchTitle": "Нічого не знайдено",
-        "noMatchBody": "Спробуйте інше слово."
+        "noMatchBody": "Спробуйте інше слово.",
+        "notesSection_one": "Нотатки ({{count}})",
+        "notesSection_few": "Нотатки ({{count}})",
+        "notesSection_many": "Нотатки ({{count}})",
+        "notesSection_other": "Нотатки ({{count}})",
+        "noNoteMatches": "Жодна нотатка не збігається з пошуком."
       },
       "filter": {
         "label": "Фільтр нотаток",

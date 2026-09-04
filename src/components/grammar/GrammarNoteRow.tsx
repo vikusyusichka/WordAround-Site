@@ -25,14 +25,19 @@ interface GrammarNoteRowProps {
   isFirst?: boolean;
   isLast?: boolean;
   onOpen: () => void;
-  onDelete: () => void;
-  onTogglePinned: () => void;
-  onToggleFavorite: () => void;
+  /* The three actions are optional together: a row that only exists to be
+     opened — a global search hit, say — should not show buttons that lead
+     nowhere. Omit all three and the hover actions disappear. */
+  onDelete?: () => void;
+  onTogglePinned?: () => void;
+  onToggleFavorite?: () => void;
   onMove?: (dir: 'up' | 'down') => void;
   /** `tile` stacks the same content for the grid view. */
   variant?: 'row' | 'tile';
   /** The note's spaced-review card, when it has one. Absent = not in review. */
   reviewItem?: GrammarReviewItem;
+  /** Which topic the note lives in — shown when the list spans topics. */
+  topicLabel?: string;
 }
 
 /** The spaced-review purple, shared with ReviewTodayCard. */
@@ -63,6 +68,7 @@ export const GrammarNoteRow = ({
   onMove,
   variant = 'row',
   reviewItem,
+  topicLabel,
 }: GrammarNoteRowProps) => {
   const { t, i18n } = useTranslation();
   const compact = useGrammarSettings((s) => s.usesCompactCards);
@@ -73,6 +79,8 @@ export const GrammarNoteRow = ({
      the review pill only when it is asking for something — i.e. when due. */
   const isDue = reviewItem !== undefined && reviewItem.dueAt <= Date.now();
   const showsReviewPill = reviewItem !== undefined && (!isTile || isDue);
+  const hasActions =
+    onDelete !== undefined || onTogglePinned !== undefined || onToggleFavorite !== undefined;
   const pill = 'flex items-center gap-1 rounded-full px-2 py-1 text-[10px] font-bold';
   const isMistake = note.isMistakeNote || note.noteType === 'mistake';
   const warmTint = isMistake && highlightMistakes;
@@ -123,6 +131,12 @@ export const GrammarNoteRow = ({
           </span>
 
           <div className={`flex min-w-0 flex-col gap-2 ${isTile ? 'w-full flex-1' : ''}`}>
+            {topicLabel && (
+              <span className="truncate text-[10px] font-bold tracking-wide text-(--color-muted-text) uppercase">
+                {topicLabel}
+              </span>
+            )}
+
             <span className={`flex gap-1.5 ${isTile ? 'items-start' : 'items-center'}`}>
               <span
                 className={`text-[16px] font-bold text-(--color-primary-blue-dark) ${
@@ -228,7 +242,7 @@ export const GrammarNoteRow = ({
             <Icon name="arrow.down" className="size-4" />
           </button>
         </div>
-      ) : (
+      ) : hasActions ? (
         <div className="absolute top-3 right-3 flex gap-1 opacity-0 transition-opacity group-focus-within:opacity-100 group-hover:opacity-100">
           <button
             type="button"
@@ -257,7 +271,7 @@ export const GrammarNoteRow = ({
             <Trash size={16} weight="bold" />
           </button>
         </div>
-      )}
+      ) : null}
     </div>
   );
 };

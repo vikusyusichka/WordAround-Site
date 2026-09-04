@@ -13,6 +13,7 @@ import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
+import { GrammarNoteRow } from '@/components/grammar/GrammarNoteRow';
 import { GrammarSearchBar } from '@/components/grammar/GrammarSearchBar';
 import { GrammarTopicCard } from '@/components/grammar/GrammarTopicCard';
 import { ViewToggle } from '@/components/shell/ViewToggle';
@@ -24,7 +25,7 @@ import { QuickNoteSheet } from '@/components/grammar/QuickNoteSheet';
 import { ReviewHighlightsRow } from '@/components/grammar/ReviewHighlightsRow';
 import { ReviewTodayCard } from '@/components/grammar/ReviewTodayCard';
 import { TemplateLibraryModal } from '@/components/grammar/TemplateLibraryModal';
-import { useCreateQuickNote } from '@/hooks/useGrammarNotes';
+import { useAllNotesQuery, useCreateQuickNote } from '@/hooks/useGrammarNotes';
 import {
   useCreateTopic,
   useCreateTopicFromTemplate,
@@ -34,10 +35,15 @@ import {
   useGrammarTopicsQuery,
   useReorderTopics,
 } from '@/hooks/useGrammarTopics';
-import { useReviewHighlightsQuery, useReviewQueueQuery } from '@/hooks/useGrammarReview';
+import {
+  useReviewHighlightsQuery,
+  useReviewItemsQuery,
+  useReviewQueueQuery,
+} from '@/hooks/useGrammarReview';
 import { useSaveMistake } from '@/hooks/useSaveMistake';
 import { MISTAKES_TOPIC_ID } from '@/lib/grammarTopicService';
-import { normalizeSearchText } from '@/lib/grammarSearch';
+import { noteMatchesQuery, normalizeSearchText, searchSnippet } from '@/lib/grammarSearch';
+import { reviewItemForNote } from '@/lib/grammarFilters';
 import { useGrammarSettings } from '@/stores/grammarSettingsStore';
 import type { GrammarNoteTopic } from '@/lib/models';
 
@@ -89,6 +95,28 @@ function GrammarHome() {
       ),
     );
   }, [topics, query]);
+
+  /* Searching the whole library, not just topic titles: the full-text index
+     and its snippets already existed (grammarSearch) but were reachable only
+     from inside a single topic, so a learner had to remember which topic a
+     note was in before they could find it. */
+  const isSearching = query.trim().length > 0;
+  const topicIds = useMemo(() => (topics ?? []).map((tp) => tp.id), [topics]);
+  const { data: allNotes, isLoading: notesSearchLoading } = useAllNotesQuery(
+    topicIds,
+    isSearching,
+  );
+  const { data: reviewItems } = useReviewItemsQuery();
+
+  const matchingNotes = useMemo(() => {
+    if (!isSearching || !allNotes) return [];
+    return allNotes.filter((note) => noteMatchesQuery(note, query));
+  }, [allNotes, isSearching, query]);
+
+  const topicTitleById = useMemo(
+    () => new Map((topics ?? []).map((tp) => [tp.id, tp.title])),
+    [topics],
+  );
 
   const closeTopicSheet = () => {
     setFormOpen(false);
@@ -244,6 +272,43 @@ function GrammarHome() {
             />
           ))}
         </div>
+      )}
+
+      {isSearching && (
+        <section className="mt-6 flex flex-col gap-3">
+          <h2 className="text-[15px] font-black text-(--color-primary-blue-dark) lg:text-[17px]">
+            {t('writing.grammar.search.notesSection', { count: matchingNotes.length })}
+          </h2>
+
+          {notesSearchLoading ? (
+            <p className="text-[15px] font-medium text-(--color-text-secondary)">
+              {t('writing.grammar.loading')}
+            </p>
+          ) : matchingNotes.length === 0 ? (
+            <p className="text-[15px] font-medium text-(--color-text-secondary)">
+              {t('writing.grammar.search.noNoteMatches')}
+            </p>
+          ) : (
+            <div className={cardGridClass(view)}>
+              {matchingNotes.map((note) => (
+                <GrammarNoteRow
+                  key={`${note.topicId}/${note.id}`}
+                  note={note}
+                  variant={view}
+                  snippet={searchSnippet(note, query)}
+                  topicLabel={topicTitleById.get(note.topicId)}
+                  reviewItem={reviewItemForNote(note, reviewItems)}
+                  onOpen={() =>
+                    void navigate({
+                      to: '/notes/$topicId/$noteId',
+                      params: { topicId: note.topicId, noteId: note.id },
+                    })
+                  }
+                />
+              ))}
+            </div>
+          )}
+        </section>
       )}
 
       <AnimatePresence>

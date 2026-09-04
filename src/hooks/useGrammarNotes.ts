@@ -29,8 +29,41 @@ export const useGrammarNotesQuery = (topicId: string) => {
   });
 };
 
-const invalidate = (qc: ReturnType<typeof useQueryClient>) => {
+/** Every note across every topic, for searching the whole library rather than
+    one topic at a time.
+
+    Gated behind `enabled` because it fans out one read per topic: the notes
+    home should not pay for that on every visit, only while someone is
+    actually searching. */
+export const grammarAllNotesKey = (uid: string | null, topicIds: string[]) =>
+  ['grammarAllNotes', uid, [...topicIds].sort().join(',')] as const;
+
+export const useAllNotesQuery = (topicIds: string[], enabled: boolean) => {
+  const uid = useUid();
+  return useQuery({
+    queryKey: grammarAllNotesKey(uid, topicIds),
+    queryFn: async () => {
+      const perTopic = await Promise.all(
+        topicIds.map((topicId) => noteService.fetchNotes(uid as string, topicId).catch(() => [])),
+      );
+      return perTopic.flat();
+    },
+    enabled: !!uid && enabled && topicIds.length > 0,
+    /* Typing a query re-renders on every keystroke; without this the fan-out
+       would refire constantly while someone types. */
+    staleTime: 60_000,
+  });
+};
+
+/* Both note caches, since 'grammarNotes' is not a prefix of 'grammarAllNotes'
+   and a note changed here has to change in a search result too. */
+const invalidateNoteLists = (qc: ReturnType<typeof useQueryClient>) => {
   qc.invalidateQueries({ queryKey: ['grammarNotes'] });
+  qc.invalidateQueries({ queryKey: ['grammarAllNotes'] });
+};
+
+const invalidate = (qc: ReturnType<typeof useQueryClient>) => {
+  invalidateNoteLists(qc);
   qc.invalidateQueries({ queryKey: ['grammarTopics'] });
   /* Opening/saving/deleting a note changes the review recommendation pool. */
   qc.invalidateQueries({ queryKey: ['grammarReview'] });
@@ -130,7 +163,7 @@ export const useToggleNotePinned = () => {
     mutationFn: async (note: GrammarNote) => {
       await noteService.setNotePinned(uid as string, note.topicId, note.id, !note.isPinned);
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: ['grammarNotes'] }),
+    onSuccess: () => invalidateNoteLists(qc),
   });
 };
 
@@ -142,7 +175,7 @@ export const useToggleNoteFavorite = () => {
     mutationFn: async (note: GrammarNote) => {
       await noteService.setNoteFavorite(uid as string, note.topicId, note.id, !note.isFavorite);
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: ['grammarNotes'] }),
+    onSuccess: () => invalidateNoteLists(qc),
   });
 };
 
@@ -158,7 +191,7 @@ export const useReorderNotes = () => {
         orderedIds.map((id, sortIndex) => ({ id, sortIndex })),
       );
     },
-    onSuccess: () => qc.invalidateQueries({ queryKey: ['grammarNotes'] }),
+    onSuccess: () => invalidateNoteLists(qc),
   });
 };
 

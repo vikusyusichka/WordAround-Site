@@ -903,7 +903,12 @@
         "notes": "Search notes…",
         "clear": "Clear search",
         "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword."
+        "noMatchBody": "Try another keyword.",
+        "notesSection_one": "Notes ({{count}})",
+        "notesSection_few": "Notes ({{count}})",
+        "notesSection_many": "Notes ({{count}})",
+        "notesSection_other": "Notes ({{count}})",
+        "noNoteMatches": "No notes match this search."
       },
       "filter": {
         "label": "Filter notes",
