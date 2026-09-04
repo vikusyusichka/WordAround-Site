@@ -1062,7 +1062,21 @@
           }
         }
       },
-      "editTopic": "Edit topic"
+      "editTopic": "Edit topic",
+      "toSet": {
+        "title": "Make a set from this note",
+        "subtitle": "Pick the pairs to turn into flashcards.",
+        "setTitle": "Set title",
+        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
+        "button": "Make a set",
+        "create": "Create set",
+        "creating": "Creating…",
+        "error": "Couldn't create the set. Try again.",
+        "cards_one": "{{count}} card",
+        "cards_few": "{{count}} cards",
+        "cards_many": "{{count}} cards",
+        "cards_other": "{{count}} cards"
+      }
     }
   },
   "reading": {

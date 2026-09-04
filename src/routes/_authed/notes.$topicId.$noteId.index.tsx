@@ -16,6 +16,7 @@ import { GrammarBlockEditor } from '@/components/grammar/GrammarBlockEditor';
 import { GrammarNoteTypePicker } from '@/components/grammar/GrammarNoteTypePicker';
 import { LanguageSelect } from '@/components/grammar/LanguageSelect';
 import { TagsInput } from '@/components/grammar/TagsInput';
+import { NoteToSetSheet } from '@/components/grammar/NoteToSetSheet';
 import { TemplateLibraryModal } from '@/components/grammar/TemplateLibraryModal';
 import { useUid } from '@/hooks/useFolders';
 import {
@@ -38,6 +39,9 @@ import {
   type EditorState,
 } from '@/lib/grammarNoteEditor';
 import { blocksFromTemplate, type GrammarNoteTemplate } from '@/lib/grammarTemplates';
+import { extractCardPairs, type CardPair } from '@/lib/grammarNoteToCards';
+import { useCreateSet } from '@/hooks/useSets';
+import { DEFAULT_SET_ICON } from '@/lib/iconSuggester';
 import {
   forgetNote,
   recordEditedNote,
@@ -120,7 +124,9 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
   const addToReview = useAddNoteToReview();
   const removeFromReview = useRemoveNoteFromReview();
   const { data: reviewItems } = useReviewItemsQuery();
+  const createSet = useCreateSet();
   const [templatesOpen, setTemplatesOpen] = useState(false);
+  const [toSetOpen, setToSetOpen] = useState(false);
   const [pendingDelete, setPendingDelete] = useState(false);
   const [pendingTemplate, setPendingTemplate] = useState<GrammarNoteTemplate | null>(null);
   const [reviewToast, setReviewToast] = useState<string | null>(null);
@@ -217,6 +223,36 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
     });
   };
 
+  const cardPairs = useMemo(() => (existing ? extractCardPairs(existing) : []), [existing]);
+
+  const handleCreateSet = (title: string, pairs: CardPair[]) => {
+    createSet.mutate(
+      {
+        title,
+        description: '',
+        privacy: 'Private',
+        folderID: null,
+        folderName: null,
+        colorId: 'blue',
+        iconName: DEFAULT_SET_ICON,
+        cards: pairs.map((pair) => ({
+          id: crypto.randomUUID(),
+          word: pair.word,
+          translation: pair.translation,
+          example: pair.example,
+          imageFile: null,
+          imageURL: null,
+        })),
+      },
+      {
+        onSuccess: (set) => {
+          setToSetOpen(false);
+          void navigate({ to: '/sets/$id', params: { id: set.id } });
+        },
+      },
+    );
+  };
+
   /* "In review · in 3 days", or "Due for review" once the date has passed. */
   const reviewButtonLabel = (): string => {
     if (!reviewItem) return t('writing.grammar.editor.addToReview');
@@ -297,6 +333,15 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
                 className={secondaryButton}
               >
                 {t('writing.grammar.quiz.title')}
+              </button>
+            )}
+            {!isNew && existing && (
+              <button
+                type="button"
+                onClick={() => setToSetOpen(true)}
+                className={secondaryButton}
+              >
+                {t('writing.grammar.toSet.button')}
               </button>
             )}
             <button
@@ -397,6 +442,16 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
           {reviewToast}
         </div>
       )}
+
+      <NoteToSetSheet
+        open={toSetOpen}
+        pairs={cardPairs}
+        defaultTitle={existing?.title ?? state.title}
+        isSaving={createSet.isPending}
+        error={createSet.isError ? t('writing.grammar.toSet.error') : null}
+        onCreate={handleCreateSet}
+        onClose={() => setToSetOpen(false)}
+      />
 
       <TemplateLibraryModal
         open={templatesOpen}
