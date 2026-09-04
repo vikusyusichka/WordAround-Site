@@ -83,6 +83,15 @@ export const fetchDueReviewItems = async (
   return snapshot.docs.map((d) => reviewItemFromFirestore(d.data()));
 };
 
+/** Every review item the learner has, for showing a note's review state next
+    to the note itself. One unfiltered collection read — no index, and no
+    per-note round trip, since ids are deterministic (`note_<topic>_<note>`)
+    and the caller looks them up by key. */
+export const fetchAllReviewItems = async (uid: string): Promise<GrammarReviewItem[]> => {
+  const snapshot = await getDocs(grammarReviewItemsCollection(uid));
+  return snapshot.docs.map((d) => reviewItemFromFirestore(d.data()));
+};
+
 /** Items of one source kind, most overdue first — feeds the "Mistakes to
     fix" / "Weak quiz areas" rows on the Notes home (iOS fetchItemsBySource). */
 export const fetchItemsBySource = async (

@@ -14,6 +14,7 @@ import { QuizResultView } from './QuizResultView';
 import { ReviewTodayCard } from './ReviewTodayCard';
 import type { AnsweredQuestion } from '@/lib/grammarQuizSession';
 import type { GrammarReviewQueue } from '@/lib/grammarReviewQueue';
+import { makeReviewItem, reviewItemIdForNote } from '@/lib/grammarReview';
 import { makeGrammarNote, makeGrammarTopic } from '@/lib/grammarFactories';
 import type {
   GrammarNote,
@@ -313,5 +314,76 @@ describe('ReviewTodayCard', () => {
   it('a failed build does not read as caught up', () => {
     render(<ReviewTodayCard queue={undefined} isLoading={false} isError onStart={vi.fn()} />);
     expect(screen.getByText("Couldn't load your review queue.")).toBeInTheDocument();
+  });
+});
+
+describe('GrammarNoteRow review pill', () => {
+  const rowProps = {
+    onOpen: vi.fn(),
+    onDelete: vi.fn(),
+    onTogglePinned: vi.fn(),
+    onToggleFavorite: vi.fn(),
+  };
+
+  const itemDue = (dueAt: number) =>
+    makeReviewItem({
+      id: reviewItemIdForNote('t1', 'n1'),
+      ownerUID: 'u',
+      sourceType: 'note' as const,
+      topicId: 't1',
+      noteId: 'n1',
+      title: 'n',
+      previewText: '',
+      dueAt,
+    });
+
+  const reviewNote = makeGrammarNote({ ownerUID: 'u', topicId: 't1', title: 'Verb note' });
+
+  it('says nothing when the note is not in review', () => {
+    render(<GrammarNoteRow note={reviewNote} {...rowProps} />);
+    expect(screen.queryByText('Due')).not.toBeInTheDocument();
+  });
+
+  it('marks a note whose review has come due', () => {
+    render(
+      <GrammarNoteRow note={reviewNote} {...rowProps} reviewItem={itemDue(Date.now() - 1000)} />,
+    );
+    expect(screen.getByText('Due')).toBeInTheDocument();
+  });
+
+  it('shows when a scheduled note comes back', () => {
+    render(
+      <GrammarNoteRow
+        note={reviewNote}
+        {...rowProps}
+        reviewItem={itemDue(Date.now() + 3 * 86_400_000)}
+      />,
+    );
+    expect(screen.getByText('in 3 days')).toBeInTheDocument();
+    expect(screen.queryByText('Due')).not.toBeInTheDocument();
+  });
+
+  /* A tile has room for the type and quiz pills and little else, so it only
+     speaks up when the note is actually asking to be reviewed. */
+  it('a tile stays quiet about a note that is merely scheduled', () => {
+    const { rerender } = render(
+      <GrammarNoteRow
+        note={reviewNote}
+        {...rowProps}
+        variant="tile"
+        reviewItem={itemDue(Date.now() + 3 * 86_400_000)}
+      />,
+    );
+    expect(screen.queryByText('in 3 days')).not.toBeInTheDocument();
+
+    rerender(
+      <GrammarNoteRow
+        note={reviewNote}
+        {...rowProps}
+        variant="tile"
+        reviewItem={itemDue(Date.now() - 1000)}
+      />,
+    );
+    expect(screen.getByText('Due')).toBeInTheDocument();
   });
 });

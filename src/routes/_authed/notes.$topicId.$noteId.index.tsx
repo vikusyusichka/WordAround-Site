@@ -25,7 +25,11 @@ import {
   useUpdateNote,
 } from '@/hooks/useGrammarNotes';
 import { useGrammarTopicsQuery } from '@/hooks/useGrammarTopics';
-import { useAddNoteToReview } from '@/hooks/useGrammarReview';
+import {
+  useAddNoteToReview,
+  useRemoveNoteFromReview,
+  useReviewItemsQuery,
+} from '@/hooks/useGrammarReview';
 import {
   editorReducer,
   initialEditorState,
@@ -39,6 +43,7 @@ import {
   recordEditedNote,
   recordOpenedNote,
 } from '@/lib/grammarRecommendations';
+import { reviewItemForNote } from '@/lib/grammarFilters';
 import { useGrammarSettings } from '@/stores/grammarSettingsStore';
 import type { GrammarNote, GrammarNoteTopic } from '@/lib/models';
 
@@ -95,7 +100,7 @@ interface NoteEditorProps {
 }
 
 function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const navigate = useNavigate();
   const uid = useUid();
   const allowQuickQuizzes = useGrammarSettings((s) => s.allowQuickQuizzes);
@@ -113,6 +118,8 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
   const updateNote = useUpdateNote();
   const deleteNote = useDeleteNote();
   const addToReview = useAddNoteToReview();
+  const removeFromReview = useRemoveNoteFromReview();
+  const { data: reviewItems } = useReviewItemsQuery();
   const [templatesOpen, setTemplatesOpen] = useState(false);
   const [pendingDelete, setPendingDelete] = useState(false);
   const [pendingTemplate, setPendingTemplate] = useState<GrammarNoteTemplate | null>(null);
@@ -193,9 +200,32 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
     setTemplatesOpen(false);
   };
 
-  const handleAddToReview = () => {
+  /* Undefined until the note exists — a note being written has no review
+     card yet, and `reviewItems` may still be loading. */
+  const reviewItem = existing ? reviewItemForNote(existing, reviewItems) : undefined;
+
+  const handleToggleReview = () => {
+    if (reviewItem && existing) {
+      removeFromReview.mutate(
+        { id: existing.id, topicId },
+        { onSuccess: () => setReviewToast(t('writing.grammar.editor.removedFromReview')) },
+      );
+      return;
+    }
     addToReview.mutate(buildNote(), {
       onSuccess: () => setReviewToast(t('writing.grammar.editor.addedToReview')),
+    });
+  };
+
+  /* "In review · in 3 days", or "Due for review" once the date has passed. */
+  const reviewButtonLabel = (): string => {
+    if (!reviewItem) return t('writing.grammar.editor.addToReview');
+    if (reviewItem.dueAt <= Date.now()) return t('writing.grammar.editor.inReviewDue');
+    const days = Math.round((reviewItem.dueAt - Date.now()) / 86_400_000);
+    const hours = Math.round((reviewItem.dueAt - Date.now()) / 3_600_000);
+    const rtf = new Intl.RelativeTimeFormat(i18n.language, { style: 'short' });
+    return t('writing.grammar.editor.inReview', {
+      when: Math.abs(hours) < 24 ? rtf.format(hours, 'hour') : rtf.format(days, 'day'),
     });
   };
 
@@ -210,6 +240,11 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
 
   const secondaryButton =
     'h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 disabled:opacity-60 focus-visible:outline-none md:text-[15px]';
+
+  /* A note already in review gets the queue's purple, so the button reports a
+     state rather than offering the same action twice. */
+  const reviewButtonActive =
+    'h-11 rounded-2xl border border-[#7C5CFF]/35 bg-[#7C5CFF]/10 px-4 text-[14px] font-semibold text-[#5B3FD1] transition-colors hover:bg-[#7C5CFF]/20 disabled:opacity-60 focus-visible:outline-none md:text-[15px]';
 
   return (
     <ContentContainer fluid>
@@ -243,11 +278,12 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
             </button>
             <button
               type="button"
-              onClick={handleAddToReview}
-              disabled={addToReview.isPending || isNew}
-              className={secondaryButton}
+              onClick={handleToggleReview}
+              disabled={addToReview.isPending || removeFromReview.isPending || isNew}
+              aria-pressed={reviewItem !== undefined}
+              className={reviewItem ? reviewButtonActive : secondaryButton}
             >
-              {t('writing.grammar.editor.addToReview')}
+              {reviewButtonLabel()}
             </button>
             {!isNew && existing && allowQuickQuizzes && (
               <button

@@ -63,6 +63,39 @@ export const useReviewQueueQuery = () => {
   });
 };
 
+/** Every review item, keyed by id, so a note list can show which of its notes
+    are in review and when each is next due. Keyed by id rather than noteId
+    because a note and a quiz on that note are separate items. */
+export const grammarReviewItemsKey = (uid: string | null) => ['grammarReviewItems', uid] as const;
+
+export const useReviewItemsQuery = () => {
+  const uid = useUid();
+  return useQuery({
+    queryKey: grammarReviewItemsKey(uid),
+    queryFn: async () => {
+      const items = await reviewService.fetchAllReviewItems(uid as string);
+      return new Map(items.map((item) => [item.id, item]));
+    },
+    enabled: !!uid,
+  });
+};
+
+/** Take a note out of spaced review. Until this existed the queue was a
+    one-way door: notes could be added and never removed. */
+export const useRemoveNoteFromReview = () => {
+  const qc = useQueryClient();
+  const uid = useUid();
+  return useMutation({
+    mutationFn: (note: Pick<GrammarNote, 'id' | 'topicId'>) =>
+      reviewService.deleteReviewItem(uid as string, reviewItemIdForNote(note.topicId, note.id)),
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['grammarReview'] });
+      qc.invalidateQueries({ queryKey: ['grammarReviewItems'] });
+      qc.invalidateQueries({ queryKey: ['grammarHighlights'] });
+    },
+  });
+};
+
 /** "Mistakes to fix" / "Weak quiz areas" rows on the Notes home — iOS
     GrammarReviewViewModel.loadHighlights. */
 export const grammarHighlightsKey = (uid: string | null, sourceType: GrammarReviewSourceType) =>
@@ -97,6 +130,7 @@ export const useAddNoteToReview = () => {
       ),
     onSuccess: () => {
       qc.invalidateQueries({ queryKey: ['grammarReview'] });
+      qc.invalidateQueries({ queryKey: ['grammarReviewItems'] });
       qc.invalidateQueries({ queryKey: ['grammarHighlights'] });
     },
   });
@@ -116,6 +150,8 @@ export const useMarkReviewed = () => {
       /* One unit per reviewed card, as iOS does in the review session. */
       recordPractice({ skill: 'writing', value: 1, sourceModeID: 'grammar-notes' });
       qc.invalidateQueries({ queryKey: ['grammarReview'] });
+      /* A rating moves dueAt, so the "due in 3 days" pills go stale too. */
+      qc.invalidateQueries({ queryKey: ['grammarReviewItems'] });
       qc.invalidateQueries({ queryKey: ['grammarHighlights'] });
     },
   });

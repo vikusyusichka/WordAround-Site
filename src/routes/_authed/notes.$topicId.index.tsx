@@ -29,7 +29,13 @@ import {
   useToggleNotePinned,
 } from '@/hooks/useGrammarNotes';
 import { useSaveMistake } from '@/hooks/useSaveMistake';
-import { NOTE_FILTERS, noteMatchesFilter, type NoteFilter } from '@/lib/grammarFilters';
+import { useReviewItemsQuery } from '@/hooks/useGrammarReview';
+import {
+  NOTE_FILTERS,
+  noteMatchesFilter,
+  reviewItemForNote,
+  type NoteFilter,
+} from '@/lib/grammarFilters';
 import { noteMatchesQuery, searchSnippet } from '@/lib/grammarSearch';
 import { sortNotes } from '@/lib/grammarNoteService';
 import { useGrammarSettings } from '@/stores/grammarSettingsStore';
@@ -45,6 +51,7 @@ function GrammarTopicDetail() {
   const { topicId } = Route.useParams();
   const { data: topics } = useGrammarTopicsQuery();
   const { data: notes, isLoading, isError } = useGrammarNotesQuery(topicId);
+  const { data: reviewItems } = useReviewItemsQuery();
   const groupsPinnedNotesFirst = useGrammarSettings((s) => s.groupsPinnedNotesFirst);
 
   const deleteNote = useDeleteNote();
@@ -71,18 +78,23 @@ function GrammarTopicDetail() {
     [notes, groupsPinnedNotesFirst],
   );
 
+  const filterContext = useMemo(() => ({ reviewItems }), [reviewItems]);
+
   const visibleNotes = useMemo(
-    () => ordered.filter((note) => noteMatchesFilter(note, filter) && noteMatchesQuery(note, query)),
-    [ordered, filter, query],
+    () =>
+      ordered.filter(
+        (note) => noteMatchesFilter(note, filter, filterContext) && noteMatchesQuery(note, query),
+      ),
+    [ordered, filter, query, filterContext],
   );
 
   const counts = useMemo(() => {
     const result: Partial<Record<NoteFilter, number>> = {};
     for (const f of NOTE_FILTERS) {
-      result[f] = ordered.filter((note) => noteMatchesFilter(note, f)).length;
+      result[f] = ordered.filter((note) => noteMatchesFilter(note, f, filterContext)).length;
     }
     return result;
-  }, [ordered]);
+  }, [ordered, filterContext]);
 
   const openNote = (noteId: string) =>
     void navigate({ to: '/notes/$topicId/$noteId', params: { topicId, noteId } });
@@ -190,6 +202,7 @@ function GrammarTopicDetail() {
               key={note.id}
               note={note}
               variant={view}
+              reviewItem={reviewItemForNote(note, reviewItems)}
               snippet={searchSnippet(note, query)}
               isReordering={isReordering && !isFiltering}
               isFirst={index === 0}

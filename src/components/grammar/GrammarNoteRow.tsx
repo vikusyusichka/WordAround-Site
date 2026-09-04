@@ -14,7 +14,7 @@ import { Trash } from '@phosphor-icons/react';
 
 import { Icon } from '@/components/primitives/Icon';
 import { NOTE_TYPE_META } from '@/lib/grammarMeta';
-import type { GrammarNote } from '@/lib/models';
+import type { GrammarNote, GrammarReviewItem } from '@/lib/models';
 import { useGrammarSettings } from '@/stores/grammarSettingsStore';
 
 interface GrammarNoteRowProps {
@@ -31,8 +31,15 @@ interface GrammarNoteRowProps {
   onMove?: (dir: 'up' | 'down') => void;
   /** `tile` stacks the same content for the grid view. */
   variant?: 'row' | 'tile';
+  /** The note's spaced-review card, when it has one. Absent = not in review. */
+  reviewItem?: GrammarReviewItem;
 }
 
+/** The spaced-review purple, shared with ReviewTodayCard. */
+const REVIEW_TINT = '#7C5CFF';
+
+/* Signed, so the same helper reads both ways: a past timestamp gives
+   "17 hours ago", a future due date gives "in 3 days". */
 const relativeUpdated = (millis: number, locale: string): string => {
   const diff = millis - Date.now();
   const rtf = new Intl.RelativeTimeFormat(locale, { style: 'short' });
@@ -55,12 +62,17 @@ export const GrammarNoteRow = ({
   onToggleFavorite,
   onMove,
   variant = 'row',
+  reviewItem,
 }: GrammarNoteRowProps) => {
   const { t, i18n } = useTranslation();
   const compact = useGrammarSettings((s) => s.usesCompactCards);
   const highlightMistakes = useGrammarSettings((s) => s.showsMistakeHighlights);
   const meta = NOTE_TYPE_META[note.noteType];
   const isTile = variant === 'tile';
+  /* A tile has room for the type and quiz pills and little else, so it shows
+     the review pill only when it is asking for something — i.e. when due. */
+  const isDue = reviewItem !== undefined && reviewItem.dueAt <= Date.now();
+  const showsReviewPill = reviewItem !== undefined && (!isTile || isDue);
   const pill = 'flex items-center gap-1 rounded-full px-2 py-1 text-[10px] font-bold';
   const isMistake = note.isMistakeNote || note.noteType === 'mistake';
   const warmTint = isMistake && highlightMistakes;
@@ -160,6 +172,24 @@ export const GrammarNoteRow = ({
                 <span className={pill} style={{ background: `${meta.color}1C`, color: meta.color }}>
                   <Icon name="questionmark.circle.fill" className="size-[9px]" />
                   {t('writing.grammar.quiz.badge')}
+                </span>
+              )}
+
+              {/* Review state, in the queue's own purple rather than the note
+                  type's colour — it says something about the schedule, not
+                  about what kind of note this is. */}
+              {showsReviewPill && (
+                <span
+                  className={pill}
+                  style={{
+                    background: isDue ? `${REVIEW_TINT}26` : `${REVIEW_TINT}14`,
+                    color: REVIEW_TINT,
+                  }}
+                >
+                  <Icon name="brain.head.profile" className="size-[9px]" />
+                  {isDue
+                    ? t('writing.grammar.review.dueBadge')
+                    : relativeUpdated(reviewItem.dueAt, i18n.language)}
                 </span>
               )}
               <span className="ml-auto shrink-0 text-[10px] font-bold text-(--color-muted-text)">
