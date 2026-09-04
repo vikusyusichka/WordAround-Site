@@ -36,6 +36,8 @@ playwright/.cache
 
 # TanStack Router generated file
 src/routeTree.gen.ts
+# TanStack Router's dev cache, written by `npm run dev`
+.tanstack/
 
 # TypeScript
 *.tsbuildinfo
