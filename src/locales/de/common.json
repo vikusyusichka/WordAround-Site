@@ -827,6 +827,8 @@
         "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
         "caughtUpTitle": "All caught up",
         "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
+        "refreshBody": "Gerade ist nichts fällig — du kannst aber wiederholen, was du zuletzt gelesen hast.",
+        "refreshStart": "Zuletzt Gelesenes wiederholen",
         "start": "Start review",
         "skip": "Skip",
         "itemOf": "Item {{current}} of {{total}}",

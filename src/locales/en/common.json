@@ -827,6 +827,8 @@
         "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
         "caughtUpTitle": "All caught up",
         "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
+        "refreshBody": "Nothing is due right now — you can still refresh what you read lately.",
+        "refreshStart": "Refresh recent notes",
         "start": "Start review",
         "skip": "Skip",
         "itemOf": "Item {{current}} of {{total}}",

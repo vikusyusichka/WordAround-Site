@@ -11,7 +11,9 @@ import { GrammarBlockEditor } from './GrammarBlockEditor';
 import { AddBlockMenu } from './AddBlockMenu';
 import { QuizQuestionView } from './QuizQuestionView';
 import { QuizResultView } from './QuizResultView';
+import { ReviewTodayCard } from './ReviewTodayCard';
 import type { AnsweredQuestion } from '@/lib/grammarQuizSession';
+import type { GrammarReviewQueue } from '@/lib/grammarReviewQueue';
 import { makeGrammarNote, makeGrammarTopic } from '@/lib/grammarFactories';
 import type {
   GrammarNote,
@@ -262,5 +264,54 @@ describe('NoteFilterChips', () => {
     expect(screen.getByRole('tab', { name: /All/ })).toHaveAttribute('aria-selected', 'true');
     await user.click(screen.getByRole('tab', { name: /Mistakes/ }));
     expect(onChange).toHaveBeenCalledWith('mistakes');
+  });
+});
+
+describe('ReviewTodayCard', () => {
+  /* Cards are only read for their count here, so a bare length stands in. */
+  const queueOf = (
+    pool: GrammarReviewQueue['pool'],
+    count: number,
+  ): GrammarReviewQueue => ({
+    cards: Array.from({ length: count }, () => ({}) as GrammarReviewQueue['cards'][number]),
+    pool,
+    estimatedMinutes: count * 2,
+  });
+
+  it('due work gets the primary Start button', () => {
+    render(
+      <ReviewTodayCard queue={queueOf('manual', 3)} isLoading={false} onStart={vi.fn()} />,
+    );
+    expect(screen.getByText('Review Today')).toBeInTheDocument();
+    expect(screen.getByText('3 items ready · ~6 min')).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: 'Start review' })).toBeInTheDocument();
+  });
+
+  /* The regression this card exists for: a fallback queue used to render as
+     "3 items ready" over the same Start button, so "all caught up" never
+     showed and the learner was told they owed work they did not owe. */
+  it('a fallback queue reads as caught up, and refreshing is optional', () => {
+    render(
+      <ReviewTodayCard
+        queue={queueOf('recentlyOpened', 3)}
+        isLoading={false}
+        onStart={vi.fn()}
+      />,
+    );
+    expect(screen.getByText('All caught up')).toBeInTheDocument();
+    expect(screen.queryByRole('button', { name: 'Start review' })).not.toBeInTheDocument();
+    expect(
+      screen.getByRole('button', { name: 'Refresh recent notes' }),
+    ).toBeInTheDocument();
+  });
+
+  it('an empty queue offers no button at all', () => {
+    render(<ReviewTodayCard queue={queueOf(null, 0)} isLoading={false} onStart={vi.fn()} />);
+    expect(screen.queryAllByRole('button')).toHaveLength(0);
+  });
+
+  it('a failed build does not read as caught up', () => {
+    render(<ReviewTodayCard queue={undefined} isLoading={false} isError onStart={vi.fn()} />);
+    expect(screen.getByText("Couldn't load your review queue.")).toBeInTheDocument();
   });
 });
