@@ -5,8 +5,15 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 import * as noteService from '@/lib/grammarNoteService';
+import * as reviewService from '@/lib/grammarReviewService';
 import * as topicService from '@/lib/grammarTopicService';
 import { saveQuickNote, type QuickNoteDraft } from '@/lib/grammarQuickNoteService';
+import {
+  FIRST_REVIEW_INTERVAL_MS,
+  makeReviewItem,
+  reviewItemIdForNote,
+} from '@/lib/grammarReview';
+import { grammarSettingsSnapshot } from '@/stores/grammarSettingsStore';
 import type { GrammarNote, GrammarNoteTopic } from '@/lib/models';
 import { useUid } from '@/hooks/useFolders';
 
@@ -27,6 +34,32 @@ const invalidate = (qc: ReturnType<typeof useQueryClient>) => {
   qc.invalidateQueries({ queryKey: ['grammarTopics'] });
   /* Opening/saving/deleting a note changes the review recommendation pool. */
   qc.invalidateQueries({ queryKey: ['grammarReview'] });
+  qc.invalidateQueries({ queryKey: ['grammarReviewItems'] });
+};
+
+/* A note joins the review queue the moment it is written, unless the learner
+   switched that off. Without this the spaced-review engine only ever held
+   mistakes and failed quizzes — notes reached it solely through the editor's
+   "Add to review" button, so a topic full of notes reviewed nothing.
+
+   Best-effort on purpose: a note that saved must not report failure because
+   its review card did not. */
+const enrolInReview = async (uid: string, note: GrammarNote) => {
+  if (!grammarSettingsSnapshot().autoAddNotesToReview) return;
+  await reviewService
+    .upsertReviewItem(
+      makeReviewItem({
+        id: reviewItemIdForNote(note.topicId, note.id),
+        ownerUID: uid,
+        sourceType: 'note',
+        topicId: note.topicId,
+        noteId: note.id,
+        title: note.title,
+        previewText: note.previewText,
+        dueAt: Date.now() + FIRST_REVIEW_INTERVAL_MS,
+      }),
+    )
+    .catch(() => {});
 };
 
 /** Re-read the topic's notes and write the real count back (best-effort). */
@@ -43,6 +76,7 @@ export const useCreateNote = () => {
     mutationFn: async (note: GrammarNote) => {
       await noteService.createNote(note);
       await syncNotesCount(uid as string, note.topicId);
+      await enrolInReview(uid as string, note);
       return note;
     },
     onSuccess: () => invalidate(qc),
@@ -51,11 +85,20 @@ export const useCreateNote = () => {
 
 export const useUpdateNote = () => {
   const qc = useQueryClient();
+  const uid = useUid();
   return useMutation({
     mutationFn: async (note: GrammarNote) => {
       const now = Date.now();
       const updated = { ...note, updatedAt: now, lastEditedAt: now };
       await noteService.updateNote(updated);
+      /* Retitling a note must retitle its review card — but never reschedule
+         it, and never enrol a note the learner kept out of review. */
+      await reviewService
+        .updateReviewItemMeta(uid as string, reviewItemIdForNote(updated.topicId, updated.id), {
+          title: updated.title,
+          previewText: updated.previewText,
+        })
+        .catch(() => {});
       return updated;
     },
     onSuccess: () => invalidate(qc),
@@ -69,6 +112,11 @@ export const useDeleteNote = () => {
     mutationFn: async ({ topicId, id }: { topicId: string; id: string }) => {
       await noteService.deleteNote(uid as string, topicId, id);
       await syncNotesCount(uid as string, topicId);
+      /* Otherwise the queue keeps serving a card for a note that is gone —
+         buildCard drops it silently, so the learner just sees a short queue. */
+      await reviewService
+        .deleteReviewItem(uid as string, reviewItemIdForNote(topicId, id))
+        .catch(() => {});
     },
     onSuccess: () => invalidate(qc),
   });
@@ -119,8 +167,11 @@ export const useCreateQuickNote = () => {
   const qc = useQueryClient();
   const uid = useUid();
   return useMutation({
-    mutationFn: ({ draft, topic }: { draft: QuickNoteDraft; topic: GrammarNoteTopic }) =>
-      saveQuickNote(draft, { uid: uid as string, topic }),
+    mutationFn: async ({ draft, topic }: { draft: QuickNoteDraft; topic: GrammarNoteTopic }) => {
+      const note = await saveQuickNote(draft, { uid: uid as string, topic });
+      await enrolInReview(uid as string, note);
+      return note;
+    },
     onSuccess: () => invalidate(qc),
   });
 };

@@ -31,6 +31,8 @@ export interface GrammarSettings {
   usesCompactCards: boolean;
   /** Contextual hints inside quick sheets and empty states. */
   showsHelperTips: boolean;
+  /** Every saved note joins the spaced-review queue on its own. */
+  autoAddNotesToReview: boolean;
   /** Note type a new quick note starts with. */
   defaultNoteType: GrammarNoteType;
 }
@@ -48,6 +50,7 @@ export const GRAMMAR_SETTINGS_DEFAULTS: GrammarSettings = {
   groupsPinnedNotesFirst: true,
   usesCompactCards: false,
   showsHelperTips: true,
+  autoAddNotesToReview: true,
   defaultNoteType: 'standard',
 };
 
@@ -65,6 +68,8 @@ const STORAGE_KEY: Record<keyof GrammarSettings, string> = {
   groupsPinnedNotesFirst: 'grammarNotes.groupsPinnedNotesFirst',
   usesCompactCards: 'grammarNotes.usesCompactCards',
   showsHelperTips: 'grammarNotes.showsHelperTips',
+  /* Web-only: iOS has no such key, because iOS never auto-enrols either. */
+  autoAddNotesToReview: 'grammarNotes.autoAddNotesToReview',
   defaultNoteType: 'grammarNotes.defaultNoteType',
 };
 
@@ -139,6 +144,7 @@ export const grammarSettingsSnapshot = (): GrammarSettings => {
     groupsPinnedNotesFirst: state.groupsPinnedNotesFirst,
     usesCompactCards: state.usesCompactCards,
     showsHelperTips: state.showsHelperTips,
+    autoAddNotesToReview: state.autoAddNotesToReview,
     defaultNoteType: state.defaultNoteType,
   };
 };

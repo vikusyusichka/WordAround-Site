@@ -137,6 +137,29 @@ export const markReviewed = async (
   return updated;
 };
 
+/* Keep a review card's wording in step with the note it came from, WITHOUT
+   touching the schedule.
+
+   `upsertReviewItem` cannot do this job: it preserves the counters but takes
+   `dueAt` from the object passed in, so calling it on every save would drag a
+   note that is due in a week back to today. Hence this narrow merge — and a
+   no-op when the note was never enrolled, so editing a note does not quietly
+   add it to review behind the learner's back. */
+export const updateReviewItemMeta = async (
+  uid: string,
+  id: string,
+  meta: { title: string; previewText: string },
+): Promise<void> => {
+  const ref = grammarReviewItemDoc(uid, id);
+  const existing = await getDoc(ref);
+  if (!existing.exists()) return;
+  await setDoc(
+    ref,
+    { title: meta.title, previewText: meta.previewText, updatedAt: millisToTs(Date.now()) },
+    { merge: true },
+  );
+};
+
 export const deleteReviewItem = async (uid: string, id: string): Promise<void> => {
   await deleteDoc(grammarReviewItemDoc(uid, id));
 };

@@ -15,6 +15,12 @@ export const REVIEW_INTERVAL_MS: Record<GrammarReviewResult, number> = {
 
 export const REVIEW_RESULTS: GrammarReviewResult[] = ['forgot', 'hard', 'good', 'easy'];
 
+/* When a note enrols itself on save. A day, not the +1h that mistakes and
+   failed quizzes use: those name something the learner just got wrong, while
+   a note they just wrote is still fresh — asking an hour later tests nothing
+   but short-term memory. */
+export const FIRST_REVIEW_INTERVAL_MS = DAY;
+
 export const isCorrectResult = (result: GrammarReviewResult) =>
   result === 'easy' || result === 'good';
 

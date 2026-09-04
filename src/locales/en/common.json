@@ -975,6 +975,10 @@
           "title": "Essays",
           "subtitle": "What happens to grammar issues found in your essays."
         },
+        "review": {
+          "title": "Spaced review",
+          "subtitle": "How notes reach the review queue."
+        },
         "appearance": {
           "title": "Notes appearance",
           "subtitle": "How the notes list is ordered and sized."
@@ -1035,6 +1039,10 @@
           "showsHelperTips": {
             "title": "Show helper tips",
             "subtitle": "Display short contextual hints while creating notes."
+          },
+          "autoAddNotesToReview": {
+            "title": "Add new notes to review",
+            "subtitle": "Every note you save joins the review queue, due a day later."
           }
         }
       },

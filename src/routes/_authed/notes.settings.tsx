@@ -59,6 +59,12 @@ const SECTIONS: SectionDef[] = [
     ],
   },
   {
+    id: 'review',
+    icon: 'brain.head.profile',
+    tint: '#7C5CFF',
+    toggles: [{ key: 'autoAddNotesToReview', icon: 'brain.head.profile', tint: '#7C5CFF' }],
+  },
+  {
     id: 'appearance',
     icon: 'list.bullet.rectangle.fill',
     tint: '#7C5CFF',

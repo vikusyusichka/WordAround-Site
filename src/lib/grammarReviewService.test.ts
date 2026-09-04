@@ -37,6 +37,7 @@ import {
   fetchDueReviewItems,
   markReviewed,
   reviewItemFromFirestore,
+  updateReviewItemMeta,
   upsertReviewItem,
 } from './grammarReviewService';
 
@@ -123,5 +124,26 @@ describe('grammarReviewService', () => {
     expect(parsed.noteId).toBeUndefined();
     expect(parsed.lastReviewedAt).toBeUndefined();
     expect(parsed.reviewCount).toBe(0);
+  });
+
+  /* The reason updateReviewItemMeta exists: upsertReviewItem preserves the
+     counters but takes dueAt from the object handed to it, so reusing it on
+     every note save would drag a note due next week back to today. */
+  it('updateReviewItemMeta rewrites the wording and nothing else', async () => {
+    fs.getDoc.mockResolvedValue({ exists: () => true });
+    await updateReviewItemMeta('u1', 'note_t_n', { title: 'New', previewText: 'New preview' });
+    const [ref, data] = fs.setDoc.mock.calls[0];
+    expect(ref.path).toBe('users/u1/grammarReviewItems/note_t_n');
+    expect(data.title).toBe('New');
+    expect(data.previewText).toBe('New preview');
+    expect(data).not.toHaveProperty('dueAt');
+    expect(data).not.toHaveProperty('nextReviewAt');
+    expect(data).not.toHaveProperty('reviewCount');
+  });
+
+  it('updateReviewItemMeta does not enrol a note that was never in review', async () => {
+    fs.getDoc.mockResolvedValue({ exists: () => false });
+    await updateReviewItemMeta('u1', 'note_t_n', { title: 'New', previewText: 'p' });
+    expect(fs.setDoc).not.toHaveBeenCalled();
   });
 });
