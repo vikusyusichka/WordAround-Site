@@ -18,6 +18,7 @@ import { GrammarTopicCard } from '@/components/grammar/GrammarTopicCard';
 import { ViewToggle } from '@/components/shell/ViewToggle';
 import { cardGridClass, useCardView } from '@/lib/cardView';
 import { GrammarTopicForm } from '@/components/grammar/GrammarTopicForm';
+import { QuickCaptureButtons } from '@/components/grammar/QuickCaptureButtons';
 import { QuickMistakeSheet } from '@/components/grammar/QuickMistakeSheet';
 import { QuickNoteSheet } from '@/components/grammar/QuickNoteSheet';
 import { ReviewHighlightsRow } from '@/components/grammar/ReviewHighlightsRow';
@@ -121,23 +122,13 @@ function GrammarHome() {
             >
               <Icon name="gearshape.fill" className="size-5" />
             </button>
-            <button
-              type="button"
-              onClick={() => setQuickNoteOpen(true)}
-              className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 focus-visible:outline-none md:text-[15px]"
-            >
-              {t('writing.grammar.quickNote.button')}
-            </button>
-            <button
-              type="button"
-              onClick={() => {
+            <QuickCaptureButtons
+              onQuickNote={() => setQuickNoteOpen(true)}
+              onQuickMistake={() => {
                 setQuickMistakeSession((n) => n + 1);
                 setQuickMistakeOpen(true);
               }}
-              className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 focus-visible:outline-none md:text-[15px]"
-            >
-              {t('writing.grammar.quickMistake.button')}
-            </button>
+            />
             <button
               type="button"
               onClick={() => setFormOpen(true)}

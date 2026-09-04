@@ -16,6 +16,7 @@ import { GrammarNoteRow } from '@/components/grammar/GrammarNoteRow';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
 import { GrammarSearchBar } from '@/components/grammar/GrammarSearchBar';
 import { NoteFilterChips } from '@/components/grammar/NoteFilterChips';
+import { QuickCaptureButtons } from '@/components/grammar/QuickCaptureButtons';
 import { QuickMistakeSheet } from '@/components/grammar/QuickMistakeSheet';
 import { QuickNoteSheet } from '@/components/grammar/QuickNoteSheet';
 import { useGrammarTopicsQuery } from '@/hooks/useGrammarTopics';
@@ -103,23 +104,13 @@ function GrammarTopicDetail() {
         subtitle={topic?.description || undefined}
         actions={
           <div className="flex flex-wrap gap-2">
-            <button
-              type="button"
-              onClick={() => setQuickNoteOpen(true)}
-              className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 focus-visible:outline-none md:text-[15px]"
-            >
-              {t('writing.grammar.quickNote.button')}
-            </button>
-            <button
-              type="button"
-              onClick={() => {
+            <QuickCaptureButtons
+              onQuickNote={() => setQuickNoteOpen(true)}
+              onQuickMistake={() => {
                 setQuickMistakeSession((n) => n + 1);
                 setQuickMistakeOpen(true);
               }}
-              className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 focus-visible:outline-none md:text-[15px]"
-            >
-              {t('writing.grammar.quickMistake.button')}
-            </button>
+            />
             <button
               type="button"
               onClick={() => openNote('new')}
