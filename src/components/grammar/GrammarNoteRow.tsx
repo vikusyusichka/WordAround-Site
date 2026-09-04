@@ -4,7 +4,11 @@
    note-type-tinted blob in the top-right corner. Mistake notes get the warm
    tint when "highlight mistake notes" is on; "compact note cards" drops the
    preview and tightens the padding; reorder mode swaps the actions for
-   up/down arrows. */
+   up/down arrows.
+
+   Web addition: a `tile` variant for the grid view, stacking the same content
+   the way folder, set and topic tiles do, so the whole library switches
+   between a full-width list and a grid of squares with one control. */
 import { useTranslation } from 'react-i18next';
 import { Trash } from '@phosphor-icons/react';
 
@@ -25,6 +29,8 @@ interface GrammarNoteRowProps {
   onTogglePinned: () => void;
   onToggleFavorite: () => void;
   onMove?: (dir: 'up' | 'down') => void;
+  /** `tile` stacks the same content for the grid view. */
+  variant?: 'row' | 'tile';
 }
 
 const relativeUpdated = (millis: number, locale: string): string => {
@@ -48,11 +54,13 @@ export const GrammarNoteRow = ({
   onTogglePinned,
   onToggleFavorite,
   onMove,
+  variant = 'row',
 }: GrammarNoteRowProps) => {
   const { t, i18n } = useTranslation();
   const compact = useGrammarSettings((s) => s.usesCompactCards);
   const highlightMistakes = useGrammarSettings((s) => s.showsMistakeHighlights);
   const meta = NOTE_TYPE_META[note.noteType];
+  const isTile = variant === 'tile';
   const pill = 'flex items-center gap-1 rounded-full px-2 py-1 text-[10px] font-bold';
   const isMistake = note.isMistakeNote || note.noteType === 'mistake';
   const warmTint = isMistake && highlightMistakes;
@@ -69,6 +77,9 @@ export const GrammarNoteRow = ({
         className={[
           'relative block w-full overflow-hidden rounded-[22px] border text-left shadow-[0_8px_14px_rgba(0,0,0,0.055)] transition-transform hover:-translate-y-px focus-visible:outline-none',
           compact ? 'p-3' : 'p-4',
+          /* A fixed height keeps a row of tiles even however long the titles
+             run; compact cards drop the preview, so they need less of it. */
+          isTile ? (compact ? 'h-[148px]' : 'h-[206px]') : '',
         ].join(' ')}
         style={{
           background: warmTint ? `${meta.color}0F` : 'rgba(255,255,255,0.92)',
@@ -82,7 +93,13 @@ export const GrammarNoteRow = ({
           aria-hidden
         />
 
-        <div className="relative flex items-center gap-3">
+        <div
+          className={
+            isTile
+              ? 'relative flex h-full flex-col gap-3'
+              : 'relative flex items-center gap-3'
+          }
+        >
           <span
             className={[
               'grid shrink-0 place-items-center rounded-full',
@@ -93,9 +110,13 @@ export const GrammarNoteRow = ({
             <Icon name={meta.icon} className="size-[18px]" style={{ color: meta.color }} />
           </span>
 
-          <div className="flex min-w-0 flex-col gap-2">
-            <span className="flex items-center gap-1.5">
-              <span className="truncate text-[16px] font-bold text-(--color-primary-blue-dark)">
+          <div className={`flex min-w-0 flex-col gap-2 ${isTile ? 'w-full flex-1' : ''}`}>
+            <span className={`flex gap-1.5 ${isTile ? 'items-start' : 'items-center'}`}>
+              <span
+                className={`text-[16px] font-bold text-(--color-primary-blue-dark) ${
+                  isTile ? 'line-clamp-2 leading-snug' : 'truncate'
+                }`}
+              >
                 {note.title}
               </span>
               {note.isPinned && (
@@ -112,7 +133,10 @@ export const GrammarNoteRow = ({
               </span>
             )}
 
-            {!compact && note.tags.length > 0 && (
+            {/* Tags are the first thing a tile gives up: with a title that may
+                wrap to two lines they push the meta row past the fixed
+                height, and they stay one row away in the list view. */}
+            {!compact && !isTile && note.tags.length > 0 && (
               <span className="flex flex-wrap gap-1.5">
                 {note.tags.slice(0, 4).map((tag) => (
                   <span
@@ -125,7 +149,9 @@ export const GrammarNoteRow = ({
               </span>
             )}
 
-            <span className="flex flex-wrap items-center gap-1.5">
+            <span
+              className={`flex flex-wrap items-center gap-1.5 ${isTile ? 'mt-auto' : ''}`}
+            >
               <span className={pill} style={{ background: `${meta.color}1C`, color: meta.color }}>
                 <Icon name={meta.icon} className="size-[9px]" />
                 {t(`writing.grammar.noteType.${note.noteType}`)}
@@ -142,10 +168,12 @@ export const GrammarNoteRow = ({
             </span>
           </div>
 
-          <Icon
-            name="chevron.right"
-            className="ml-auto size-[14px] shrink-0 text-(--color-muted-text)"
-          />
+          {!isTile && (
+            <Icon
+              name="chevron.right"
+              className="ml-auto size-[14px] shrink-0 text-(--color-muted-text)"
+            />
+          )}
         </div>
       </button>
 

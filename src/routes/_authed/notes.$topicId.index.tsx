@@ -10,6 +10,8 @@ import { Icon } from '@/components/primitives/Icon';
 import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
+import { ViewToggle } from '@/components/shell/ViewToggle';
+import { cardGridClass, useCardView } from '@/lib/cardView';
 import { GrammarNoteRow } from '@/components/grammar/GrammarNoteRow';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
 import { GrammarSearchBar } from '@/components/grammar/GrammarSearchBar';
@@ -54,6 +56,7 @@ function GrammarTopicDetail() {
   const [query, setQuery] = useState('');
   const [filter, setFilter] = useState<NoteFilter>('all');
   const [isReordering, setReordering] = useState(false);
+  const [view, chooseView] = useCardView('topic-notes');
   const [pendingDelete, setPendingDelete] = useState<GrammarNote | null>(null);
   const [quickNoteOpen, setQuickNoteOpen] = useState(false);
   const [quickMistakeSession, setQuickMistakeSession] = useState(0);
@@ -145,16 +148,19 @@ function GrammarTopicDetail() {
         />
         <div className="flex items-center gap-2">
           <NoteFilterChips value={filter} counts={counts} onChange={setFilter} />
-          {ordered.length > 1 && (
-            <button
-              type="button"
-              onClick={() => setReordering((v) => !v)}
-              className="ml-auto flex h-9 shrink-0 items-center gap-1.5 rounded-full border border-(--color-auth-field-border) bg-white px-3 text-[13px] font-bold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
-            >
-              <Icon name="arrow.up.arrow.down" className="size-[13px]" />
-              {t(isReordering ? 'writing.grammar.reorder.done' : 'writing.grammar.reorder.start')}
-            </button>
-          )}
+          <div className="ml-auto flex shrink-0 items-center gap-2">
+            {ordered.length > 1 && (
+              <button
+                type="button"
+                onClick={() => setReordering((v) => !v)}
+                className="flex h-9 shrink-0 items-center gap-1.5 rounded-full border border-(--color-auth-field-border) bg-white px-3 text-[13px] font-bold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+              >
+                <Icon name="arrow.up.arrow.down" className="size-[13px]" />
+                {t(isReordering ? 'writing.grammar.reorder.done' : 'writing.grammar.reorder.start')}
+              </button>
+            )}
+            <ViewToggle value={view} onChange={chooseView} />
+          </div>
         </div>
       </div>
 
@@ -187,11 +193,12 @@ function GrammarTopicDetail() {
           )}
         />
       ) : (
-        <div className="flex flex-col gap-3">
+        <div className={cardGridClass(view)}>
           {visibleNotes.map((note, index) => (
             <GrammarNoteRow
               key={note.id}
               note={note}
+              variant={view}
               snippet={searchSnippet(note, query)}
               isReordering={isReordering && !isFiltering}
               isFirst={index === 0}
