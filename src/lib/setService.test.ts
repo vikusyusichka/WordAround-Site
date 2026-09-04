@@ -31,7 +31,7 @@ const fs = vi.hoisted(() => {
 
 vi.mock('firebase/firestore', () => fs);
 
-import { createSet, deleteSet, fetchSets, updateSetCards } from './setService';
+import { createSet, deleteSet, fetchSets, updateSetCards, updateSetInfo } from './setService';
 import type { FlashcardSet } from './models';
 
 const set: FlashcardSet = {
@@ -98,5 +98,24 @@ describe('setService', () => {
     expect(data.cards[0]).toMatchObject({ word: 'a', translation: 'b' });
     expect(data.updatedAt).toBeInstanceOf(fs.Timestamp);
     expect(data.title).toBeUndefined();
+  });
+
+  it('updateSetInfo writes the info fields + updatedAt and leaves the cards alone', async () => {
+    await updateSetInfo('u1', 'set1', {
+      title: 'Renamed',
+      description: 'New',
+      privacy: 'Public',
+      folderID: null,
+      folderName: null,
+      colorHex: '#22C55E',
+      icon: { type: 'systemName', value: 'airplane' },
+    });
+    const [ref, data] = fs.updateDoc.mock.calls[0];
+    expect(ref.path).toBe('users/u1/flashcardSets/set1');
+    expect(data.title).toBe('Renamed');
+    expect(data.colorHex).toBe('#22C55E');
+    expect(data.icon).toEqual({ type: 'systemName', value: 'airplane' });
+    expect(data.updatedAt).toBeInstanceOf(fs.Timestamp);
+    expect(data.cards).toBeUndefined();
   });
 });

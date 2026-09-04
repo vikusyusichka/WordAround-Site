@@ -14,15 +14,19 @@ export interface DraftCard {
   imageURL: string | null;
 }
 
-export interface CreateSetDraft {
+/** Everything about a set except its cards — the part the edit screen owns. */
+export interface SetInfoValues {
   title: string;
   description: string;
   privacy: 'Private' | 'Public';
-  cards: DraftCard[];
   folderID: string | null;
   folderName: string | null;
   colorId: SetColorId;
   iconName: string;
+}
+
+export interface CreateSetDraft extends SetInfoValues {
+  cards: DraftCard[];
 }
 
 export const TITLE_MAX = 150;
@@ -54,14 +58,21 @@ export interface ValidationResult {
   validCards: DraftCard[];
 }
 
-export const validateCreateSet = (draft: CreateSetDraft): ValidationResult => {
-  const title = draft.title.trim();
-  const description = draft.description.trim();
+/* Title and description only, so the edit screen — which never touches the
+   cards — can reuse the same rules and the same error keys. */
+export const validateSetInfo = (values: SetInfoValues): string | null => {
+  const title = values.title.trim();
+  const description = values.description.trim();
 
-  if (title.length === 0) return { errorKey: 'createSet.error.emptyTitle', validCards: [] };
-  if (title.length > TITLE_MAX) return { errorKey: 'createSet.error.titleTooLong', validCards: [] };
-  if (description.length > DESC_MAX)
-    return { errorKey: 'createSet.error.descTooLong', validCards: [] };
+  if (title.length === 0) return 'createSet.error.emptyTitle';
+  if (title.length > TITLE_MAX) return 'createSet.error.titleTooLong';
+  if (description.length > DESC_MAX) return 'createSet.error.descTooLong';
+  return null;
+};
+
+export const validateCreateSet = (draft: CreateSetDraft): ValidationResult => {
+  const infoError = validateSetInfo(draft);
+  if (infoError) return { errorKey: infoError, validCards: [] };
 
   const validCards = draft.cards.filter(
     (c) => c.word.trim().length > 0 && c.translation.trim().length > 0,

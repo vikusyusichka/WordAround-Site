@@ -150,7 +150,13 @@
     "notFoundBody": "This set may have been deleted.",
     "backToSets": "Back to sets",
     "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?"
+    "deleteConfirmTitle": "Delete this set?",
+    "editTitle": "Edit set",
+    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
+    "save": "Save changes",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "saveError": "Couldn't save. Please try again."
   },
   "createSet": {
     "title": "New set",

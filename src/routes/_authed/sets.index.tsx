@@ -86,9 +86,14 @@ function SetsPage() {
                     variant={view}
                   />
                 </button>
-                {/* No pencil: a set has no edit screen — title, colour and icon
-                    are only settable while creating it. */}
                 <CardActions
+                  onEdit={() =>
+                    void navigate({
+                      to: '/sets/$id',
+                      params: { id: set.id },
+                      search: { edit: true },
+                    })
+                  }
                   onDelete={() => setPendingDelete(set)}
                   editLabel={t('sets.edit')}
                   deleteLabel={t('sets.delete')}

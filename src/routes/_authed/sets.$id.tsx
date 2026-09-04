@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ArrowsClockwise, CaretLeft, PencilSimple, Plus, Trash } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { EditSetScreen } from '@/components/create/EditSetScreen';
 import { ThemedScreen } from '@/components/create/ThemedScreen';
 import { Icon } from '@/components/primitives/Icon';
 import { StudyCard } from '@/components/study/StudyCard';
@@ -21,6 +22,11 @@ import { themeForHex, type SetTheme } from '@/lib/setColors';
 import type { Flashcard, FlashcardSet } from '@/lib/models';
 
 export const Route = createFileRoute('/_authed/sets/$id')({
+  /* ?edit=true opens straight into the form, so the pencil on a set card can
+     get here without a second copy of the form on the list screen. */
+  validateSearch: (search: Record<string, unknown>): { edit?: boolean } => ({
+    edit: search.edit === true || search.edit === 'true' ? true : undefined,
+  }),
   component: SetDetailPage,
 });
 
@@ -29,6 +35,8 @@ function SetDetailPage() {
   const navigate = useNavigate();
   const { id } = Route.useParams();
   const { data: sets, isLoading } = useSetsQuery();
+  const { edit } = Route.useSearch();
+  const [isEditing, setIsEditing] = useState(edit === true);
 
   const set = sets?.find((s) => s.id === id);
   const openedSetId = set?.id;
@@ -63,11 +71,20 @@ function SetDetailPage() {
     );
   }
 
+  /* Drop the flag once the form is open, so a later reload lands on the set
+     itself rather than reopening the editor. */
+  const closeEditor = () => {
+    setIsEditing(false);
+    void navigate({ to: '/sets/$id', params: { id }, search: {}, replace: true });
+  };
+
+  if (isEditing) return <EditSetScreen set={set} onClose={closeEditor} />;
+
   /* Keyed by set.id so the study session re-seeds only when the set changes. */
-  return <StudyScreen key={set.id} set={set} />;
+  return <StudyScreen key={set.id} set={set} onEdit={() => setIsEditing(true)} />;
 }
 
-function StudyScreen({ set }: { set: FlashcardSet }) {
+function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const deleteSet = useDeleteSet();
@@ -121,15 +138,26 @@ function StudyScreen({ set }: { set: FlashcardSet }) {
         >
           <CaretLeft size={18} weight="bold" />
         </button>
-        <button
-          type="button"
-          onClick={handleDeleteSet}
-          aria-label={t('sets.delete')}
-          className={iconBtn}
-          style={{ background: theme.fieldBackground, color: 'var(--color-cs-red)' }}
-        >
-          <Trash size={18} weight="bold" />
-        </button>
+        <div className="flex gap-2">
+          <button
+            type="button"
+            onClick={onEdit}
+            aria-label={t('sets.edit')}
+            className={iconBtn}
+            style={{ background: theme.fieldBackground, color: theme.titleColor }}
+          >
+            <PencilSimple size={18} weight="bold" />
+          </button>
+          <button
+            type="button"
+            onClick={handleDeleteSet}
+            aria-label={t('sets.delete')}
+            className={iconBtn}
+            style={{ background: theme.fieldBackground, color: 'var(--color-cs-red)' }}
+          >
+            <Trash size={18} weight="bold" />
+          </button>
+        </div>
       </div>
 
       {/* Header — big set title in the set's colour, its own line (iOS Header). */}

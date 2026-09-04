@@ -7,20 +7,15 @@ import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { Icon } from '@/components/primitives/Icon';
 import { CardEditor } from '@/components/create/CardEditor';
-import { ColorPicker } from '@/components/create/ColorPicker';
 import { CreateSection } from '@/components/create/CreateSection';
-import { FolderPicker } from '@/components/create/FolderPicker';
-import { IconPicker } from '@/components/create/IconPicker';
 import { ImportCardsScreen } from '@/components/create/ImportCardsScreen';
-import { PrivacyToggle } from '@/components/create/PrivacyToggle';
+import { SetInfoFields } from '@/components/create/SetInfoFields';
 import { SetPreviewCard } from '@/components/create/SetPreviewCard';
 import { ThemedScreen } from '@/components/create/ThemedScreen';
 import { useCreateSet } from '@/hooks/useSets';
 import { themeForColor } from '@/lib/setColors';
 import type { ParsedCard } from '@/lib/importCards';
 import {
-  DESC_MAX,
-  TITLE_MAX,
   emptyCard,
   emptyDraft,
   validateCreateSet,
@@ -71,12 +66,6 @@ function NewSetPage() {
     });
   };
 
-  const field =
-    'w-full rounded-2xl border bg-white px-4 text-[15px] font-semibold outline-none transition-colors';
-  const fieldStyle = { borderColor: theme.softBorderColor, color: theme.titleColor };
-  const labelStyle = { color: theme.titleColor };
-  const counterStyle = { color: theme.mutedTextColor };
-
   const mutationErrorKey =
     createSet.error instanceof Error && createSet.error.message.startsWith('createSet.')
       ? createSet.error.message
@@ -99,98 +88,21 @@ function NewSetPage() {
       <PageHeader title={t('createSet.title')} subtitle={t('createSet.subtitle')} />
 
       <div className="flex flex-col gap-3.5 lg:gap-[18px]">
-        <CreateSection title={t('createSet.infoSection')} theme={theme}>
-          <label className="flex flex-col gap-1.5">
-            <span className="flex items-center justify-between text-[14px] font-bold" style={labelStyle}>
-              {t('createSet.setTitle')}
-              <span className="text-[12px] font-medium" style={counterStyle}>
-                {draft.title.trim().length}/{TITLE_MAX}
-              </span>
-            </span>
-            <input
-              value={draft.title}
-              onChange={(e) => patch({ title: e.target.value })}
-              placeholder={t('createSet.setTitlePlaceholder')}
-              maxLength={TITLE_MAX}
-              className={`h-12 ${field}`}
-              style={fieldStyle}
-            />
-          </label>
+        <SetInfoFields values={draft} onChange={patch} theme={theme}>
+          <CreateSection title={t('createSet.cardsSection')} theme={theme}>
+            <button
+              type="button"
+              onClick={() => setIsImporting(true)}
+              className="flex h-11 items-center gap-2 self-start rounded-2xl bg-white px-4 text-[15px] font-semibold transition-colors hover:bg-black/[0.03] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+              style={{ color: theme.accent, boxShadow: `0 4px 10px ${theme.shadowColor}` }}
+            >
+              <DownloadSimple size={18} weight="bold" />
+              {t('createSet.import.button')}
+            </button>
 
-          <label className="flex flex-col gap-1.5">
-            <span className="flex items-center justify-between text-[14px] font-bold" style={labelStyle}>
-              {t('createSet.setDescription')}
-              <span className="text-[12px] font-medium" style={counterStyle}>
-                {draft.description.trim().length}/{DESC_MAX}
-              </span>
-            </span>
-            <textarea
-              value={draft.description}
-              onChange={(e) => patch({ description: e.target.value })}
-              placeholder={t('createSet.setDescriptionPlaceholder')}
-              rows={2}
-              maxLength={DESC_MAX}
-              className={`resize-none py-3 ${field}`}
-              style={fieldStyle}
-            />
-          </label>
-
-          <div className="flex flex-col gap-2">
-            <span className="text-[14px] font-bold" style={labelStyle}>
-              {t('createSet.privacy')}
-            </span>
-            <PrivacyToggle
-              value={draft.privacy}
-              onChange={(privacy) => patch({ privacy })}
-              theme={theme}
-            />
-          </div>
-        </CreateSection>
-
-        <CreateSection title={t('createSet.cardsSection')} theme={theme}>
-          <button
-            type="button"
-            onClick={() => setIsImporting(true)}
-            className="flex h-11 items-center gap-2 self-start rounded-2xl bg-white px-4 text-[15px] font-semibold transition-colors hover:bg-black/[0.03] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
-            style={{ color: theme.accent, boxShadow: `0 4px 10px ${theme.shadowColor}` }}
-          >
-            <DownloadSimple size={18} weight="bold" />
-            {t('createSet.import.button')}
-          </button>
-
-          <CardEditor cards={draft.cards} onChange={(cards) => patch({ cards })} theme={theme} />
-        </CreateSection>
-
-        <CreateSection title={t('createSet.customizeSection')} theme={theme}>
-          <div className="flex flex-col gap-2">
-            <span className="text-[14px] font-bold" style={labelStyle}>
-              {t('createSet.color')}
-            </span>
-            <ColorPicker
-              value={draft.colorId}
-              onChange={(colorId) => patch({ colorId })}
-              accent={theme.accent}
-            />
-          </div>
-
-          <IconPicker
-            value={draft.iconName}
-            onChange={(iconName) => patch({ iconName })}
-            theme={theme}
-            label={t('createSet.iconPicker.title')}
-          />
-
-          <div className="flex flex-col gap-2">
-            <span className="text-[14px] font-bold" style={labelStyle}>
-              {t('createSet.folder')}
-            </span>
-            <FolderPicker
-              value={draft.folderID}
-              onChange={(folderID, folderName) => patch({ folderID, folderName })}
-              theme={theme}
-            />
-          </div>
-        </CreateSection>
+            <CardEditor cards={draft.cards} onChange={(cards) => patch({ cards })} theme={theme} />
+          </CreateSection>
+        </SetInfoFields>
 
         <CreateSection title={t('createSet.previewSection')} theme={theme}>
           <SetPreviewCard

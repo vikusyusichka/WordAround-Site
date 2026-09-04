@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { emptyCard, emptyDraft, validateCreateSet } from './createSetValidation';
+import { emptyCard, emptyDraft, validateCreateSet, validateSetInfo } from './createSetValidation';
 
 const draftWith = (over: Partial<ReturnType<typeof emptyDraft>>) => ({ ...emptyDraft(), ...over });
 
@@ -42,5 +42,20 @@ describe('validateCreateSet', () => {
     const result = validateCreateSet(d);
     expect(result.errorKey).toBeNull();
     expect(result.validCards).toHaveLength(2);
+  });
+});
+
+describe('validateSetInfo', () => {
+  /* The edit screen never sees the cards, so only title and description count. */
+  it('applies the title and description rules without asking for cards', () => {
+    const base = { ...emptyDraft(), title: 'T', cards: [] };
+    expect(validateSetInfo(base)).toBeNull();
+    expect(validateSetInfo({ ...base, title: ' ' })).toBe('createSet.error.emptyTitle');
+    expect(validateSetInfo({ ...base, title: 'x'.repeat(151) })).toBe(
+      'createSet.error.titleTooLong',
+    );
+    expect(validateSetInfo({ ...base, description: 'y'.repeat(201) })).toBe(
+      'createSet.error.descTooLong',
+    );
   });
 });

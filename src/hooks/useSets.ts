@@ -6,7 +6,12 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { auth } from '@/lib/firebase';
 import * as setService from '@/lib/setService';
 import { uploadCardImage } from '@/lib/setImageService';
-import { validateCreateSet, type CreateSetDraft } from '@/lib/createSetValidation';
+import {
+  validateCreateSet,
+  validateSetInfo,
+  type CreateSetDraft,
+  type SetInfoValues,
+} from '@/lib/createSetValidation';
 import { resolveIcon } from '@/lib/iconSuggester';
 import { SET_COLOR_HEX } from '@/lib/setColors';
 import type { Flashcard, FlashcardSet } from '@/lib/models';
@@ -81,6 +86,32 @@ export const useCreateSet = () => {
 
       await setService.createSet(set);
       return set;
+    },
+    onSuccess: () => qc.invalidateQueries({ queryKey: ['sets'] }),
+  });
+};
+
+/* Title, description, privacy, colour, icon and folder — the cards have their
+   own editor on the set screen, so this deliberately leaves them alone. */
+export const useUpdateSet = () => {
+  const qc = useQueryClient();
+  const uid = useUid();
+  return useMutation({
+    mutationFn: async ({ setId, values }: { setId: string; values: SetInfoValues }) => {
+      const errorKey = validateSetInfo(values);
+      if (errorKey) throw new CreateSetError(errorKey);
+
+      await setService.updateSetInfo(uid as string, setId, {
+        title: values.title.trim(),
+        description: values.description.trim(),
+        privacy: values.privacy,
+        folderID: values.folderID,
+        folderName: values.folderName,
+        colorHex: SET_COLOR_HEX[values.colorId],
+        /* resolveIcon as on create, so what the preview card shows is what
+           gets stored — the default icon still means "suggest from the title". */
+        icon: { type: 'systemName', value: resolveIcon(values.iconName, values.title) },
+      });
     },
     onSuccess: () => qc.invalidateQueries({ queryKey: ['sets'] }),
   });

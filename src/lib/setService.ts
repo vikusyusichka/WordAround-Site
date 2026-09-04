@@ -112,6 +112,35 @@ export const updateSetCards = async (
   });
 };
 
+/* Everything except the cards (mirrors the web edit screen, which leaves the
+   cards to the study screen's own editor). */
+export interface SetInfoUpdate {
+  title: string;
+  description: string;
+  privacy: string;
+  folderID: string | null;
+  folderName: string | null;
+  colorHex: string;
+  icon: SetIconType;
+}
+
+export const updateSetInfo = async (
+  uid: string,
+  setId: string,
+  info: SetInfoUpdate,
+): Promise<void> => {
+  await updateDoc(flashcardSetDoc(uid, setId), {
+    title: info.title,
+    description: info.description,
+    privacy: info.privacy,
+    folderID: info.folderID ?? null,
+    folderName: info.folderName ?? null,
+    colorHex: info.colorHex,
+    icon: { type: info.icon.type, value: info.icon.value },
+    updatedAt: millisToTs(Date.now()),
+  });
+};
+
 /* Folder queries sort client-side (matches iOS — avoids a composite index). */
 export const fetchSetsByFolder = async (
   folderID: string,
