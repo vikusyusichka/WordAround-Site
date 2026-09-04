@@ -6,6 +6,7 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import * as reviewService from '@/lib/grammarReviewService';
 import { recordPractice } from '@/lib/dailyPracticeStats';
 import * as noteService from '@/lib/grammarNoteService';
+import * as quizService from '@/lib/grammarQuizService';
 import {
   recentlyEditedNotes,
   recentlyOpenedNotes,
@@ -15,6 +16,7 @@ import { buildReviewQueue, type GrammarReviewQueue } from '@/lib/grammarReviewQu
 import { makeReviewItem, reviewItemIdForNote } from '@/lib/grammarReview';
 import type {
   GrammarNote,
+  GrammarNoteQuiz,
   GrammarReviewItem,
   GrammarReviewResult,
   GrammarReviewSourceType,
@@ -36,6 +38,37 @@ const fetchNotesForItems = async (
   return byId;
 };
 
+/* Only quiz-sourced items need their quiz; a queue of plain notes does no
+   extra reads at all. Failures are swallowed per note — a missing quiz costs
+   that card its original question, not the whole session. */
+const fetchQuizzesForItems = async (
+  uid: string,
+  items: GrammarReviewItem[],
+): Promise<Map<string, GrammarNoteQuiz>> => {
+  const targets = items.filter(
+    (i) => i.sourceType === 'quiz' && i.quizId && i.noteId && i.topicId.length > 0,
+  );
+  if (targets.length === 0) return new Map();
+
+  /* One read per note, not per quiz: fetchQuizzes returns a note's quizzes
+     together, and several failed quizzes can share a note. Deduped through
+     nested maps rather than a joined string key — document ids are opaque, so
+     any separator chosen here could turn up inside one. */
+  const notesByTopic = new Map<string, Set<string>>();
+  for (const item of targets) {
+    const forTopic = notesByTopic.get(item.topicId) ?? new Set<string>();
+    forTopic.add(item.noteId as string);
+    notesByTopic.set(item.topicId, forTopic);
+  }
+
+  const perNote = await Promise.all(
+    [...notesByTopic].flatMap(([topicId, noteIds]) =>
+      [...noteIds].map((noteId) => quizService.fetchQuizzes(uid, topicId, noteId).catch(() => [])),
+    ),
+  );
+  return new Map(perNote.flat().map((quiz) => [quiz.id, quiz]));
+};
+
 const buildQueue = async (uid: string): Promise<GrammarReviewQueue> => {
   const manualItems = await reviewService.fetchDueReviewItems(uid);
   const recentlyOpened = recentlyOpenedNotes().map((r) => recommendationToReviewItem(r, uid));
@@ -44,9 +77,18 @@ const buildQueue = async (uid: string): Promise<GrammarReviewQueue> => {
   /* Only the winning pool's notes are needed (strict precedence). */
   const selected =
     manualItems.length > 0 ? manualItems : recentlyOpened.length > 0 ? recentlyOpened : recentlyEdited;
-  const notesById = await fetchNotesForItems(uid, selected);
+  const [notesById, quizzesById] = await Promise.all([
+    fetchNotesForItems(uid, selected),
+    fetchQuizzesForItems(uid, selected),
+  ]);
 
-  return buildReviewQueue({ manualItems, recentlyOpened, recentlyEdited, notesById });
+  return buildReviewQueue({
+    manualItems,
+    recentlyOpened,
+    recentlyEdited,
+    notesById,
+    quizzesById,
+  });
 };
 
 export const useReviewQueueQuery = () => {

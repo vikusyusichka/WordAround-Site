@@ -8,6 +8,7 @@ import type {
   GrammarBlockType,
   GrammarNote,
   GrammarNoteBlock,
+  GrammarNoteQuiz,
   GrammarQuizQuestion,
   GrammarReviewItem,
 } from '@/lib/models';
@@ -107,6 +108,24 @@ const ultimateFallbackQuestion = (
   order: 0,
 });
 
+/* A quiz item is in the queue because the learner failed that quiz, so the
+   card has to ask what they got wrong. Generating a fresh question from the
+   note instead — which is what this did before quizzesById existed — quietly
+   reviewed something else and called it the same thing. Falls through to
+   generation when the quiz is gone or empty. */
+const questionFromQuiz = (
+  item: GrammarReviewItem,
+  quizzesById: Map<string, GrammarNoteQuiz>,
+): GrammarQuizQuestion | null => {
+  if (item.sourceType !== 'quiz' || !item.quizId) return null;
+  const quiz = quizzesById.get(item.quizId);
+  if (!quiz || quiz.questions.length === 0) return null;
+  /* Deterministic: reviewCount walks the quiz question by question, so a
+     repeatedly failed quiz is not the same question every time. */
+  const ordered = [...quiz.questions].sort((a, b) => a.order - b.order);
+  return ordered[item.reviewCount % ordered.length];
+};
+
 const generateQuestion = (
   item: GrammarReviewItem,
   note: GrammarNote,
@@ -142,6 +161,7 @@ const buildCard = (
   item: GrammarReviewItem,
   pool: GrammarReviewSourcePool,
   notesById: Map<string, GrammarNote>,
+  quizzesById: Map<string, GrammarNoteQuiz>,
 ): GrammarReviewCard | null => {
   if (!item.noteId || item.noteId.length === 0 || item.topicId.length === 0) return null;
   const note = notesById.get(item.noteId);
@@ -155,7 +175,7 @@ const buildCard = (
     sourceText: pickSourceText(item, note, block),
     sourceSecondaryText: block?.secondaryText?.trim() || undefined,
     sourceBlockType: block?.type,
-    question: generateQuestion(item, note, block),
+    question: questionFromQuiz(item, quizzesById) ?? generateQuestion(item, note, block),
   };
 };
 
@@ -164,6 +184,8 @@ export const buildReviewQueue = (params: {
   recentlyOpened: GrammarReviewItem[];
   recentlyEdited: GrammarReviewItem[];
   notesById: Map<string, GrammarNote>;
+  /** Saved quizzes, keyed by quiz id — only quiz-sourced items consult this. */
+  quizzesById?: Map<string, GrammarNoteQuiz>;
   limit?: number;
 }): GrammarReviewQueue => {
   const limit = params.limit ?? REVIEW_QUEUE_LIMIT;
@@ -184,9 +206,12 @@ export const buildReviewQueue = (params: {
     return { cards: [], pool: null, estimatedMinutes: 0 };
   }
 
+  const quizzesById = params.quizzesById ?? new Map<string, GrammarNoteQuiz>();
   const cards = selected
     .slice(0, limit)
-    .map((item) => buildCard(item, pool as GrammarReviewSourcePool, params.notesById))
+    .map((item) =>
+      buildCard(item, pool as GrammarReviewSourcePool, params.notesById, quizzesById),
+    )
     .filter((c): c is GrammarReviewCard => c !== null);
 
   return {
