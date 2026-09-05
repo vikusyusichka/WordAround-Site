@@ -6,7 +6,7 @@
    i18next fell through to English and a Ukrainian learner saw "5 items ready"
    in the middle of a Ukrainian screen. Every count from 2 to 20 was affected.
 
-   Only Ukrainian is asserted: `pl` and `de` are still English copies, so
+   Only Ukrainian is asserted here: `pl` and `de` are still English copies, so
    demanding Slavic plural categories of them would fail on strings nobody has
    translated yet. When either is really translated, add it here. */
 import { describe, expect, it } from 'vitest';
@@ -39,13 +39,8 @@ describe('locales', () => {
     expect(pluralBases.length).toBeGreaterThan(0);
   });
 
-  it('uk covers every plural category the notes section needs', () => {
-    /* Scoped to the notes section: the rest of the app has the same gap, and
-       widening this test is the job of the change that fixes them. */
-    const notesBases = pluralBases.filter((b) => b.startsWith('writing.grammar'));
-    expect(notesBases.length).toBeGreaterThan(0);
-
-    const missing = notesBases.flatMap((base) =>
+  it('uk covers every plural category, everywhere', () => {
+    const missing = pluralBases.flatMap((base) =>
       ['_one', '_few', '_many', '_other']
         .filter((suffix) => ukFlat[`${base}${suffix}`] === undefined)
         .map((suffix) => `${base}${suffix}`),
@@ -57,7 +52,7 @@ describe('locales', () => {
     const placeholders = (value: string) =>
       [...value.matchAll(/\{\{(\w+)\}\}/g)].map((m) => m[1]).sort();
 
-    for (const base of pluralBases.filter((b) => b.startsWith('writing.grammar'))) {
+    for (const base of pluralBases) {
       const expected = placeholders(enFlat[`${base}_one`]);
       for (const suffix of ['_one', '_few', '_many', '_other']) {
         const value = ukFlat[`${base}${suffix}`];
