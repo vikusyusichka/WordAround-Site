@@ -4,6 +4,7 @@ import {
   essayReducer,
   initialEssayState,
   type EssayState,
+  autoSaveActionFor,
 } from './essaySession';
 import { ESSAY_LANGUAGES, type EssayScore, type GeneratedEssayTask, type GrammarIssue } from './essayTypes';
 
@@ -342,5 +343,30 @@ describe('RECORD_TRANSLATION / RECORD_SYNONYM', () => {
     });
     expect(fresh.usedTranslations).toBe(0);
     expect(fresh.usedSynonyms).toBe(0);
+  });
+});
+
+describe('autoSaveActionFor', () => {
+  const call = (autoSave: boolean, askFirst: boolean, issueCount = 3) =>
+    autoSaveActionFor({ autoSave, askFirst, issueCount });
+
+  it('does nothing while automatic saving is off', () => {
+    expect(call(false, false)).toBe('ignore');
+    expect(call(false, true)).toBe('ignore');
+  });
+
+  it('saves the batch outright when only automatic saving is on', () => {
+    expect(call(true, false)).toBe('saveAll');
+  });
+
+  /* The rule this function exists for: asking outranks automatic. With both
+     on, iOS saved silently and "ask before saving" looked broken. */
+  it('asks first when both settings are on', () => {
+    expect(call(true, true)).toBe('confirmAll');
+  });
+
+  it('stays quiet when a check found nothing', () => {
+    expect(call(true, false, 0)).toBe('ignore');
+    expect(call(true, true, 0)).toBe('ignore');
   });
 });

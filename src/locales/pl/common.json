@@ -574,7 +574,12 @@
         "error": "The service is temporarily unavailable."
       },
       "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”."
+      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
+      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
+      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
+      "autoSaveConfirmBody_few": "This check found {{count}} mistakes. Saving turns them into notes that come back for review.",
+      "autoSaveConfirmBody_many": "This check found {{count}} mistakes. Saving turns them into notes that come back for review.",
+      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
     },
     "grammar": {
       "subtitle": "Organize grammar by topic with clear, structured notes.",
@@ -1039,11 +1044,11 @@
           },
           "askBeforeSavingMistakes": {
             "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note."
+            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
           },
           "saveGrammarMistakesAutomatically": {
             "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note."
+            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
           },
           "groupsPinnedNotesFirst": {
             "title": "Pinned notes first",

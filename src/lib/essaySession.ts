@@ -261,3 +261,22 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
       return s;
   }
 };
+
+/* What to do with the grammar issues a check produced, given the two notes
+   settings that govern saving them.
+
+   The precedence is the whole point of this living in one named place:
+   "ask before saving" outranks "save automatically". iOS runs the two
+   independently, so switching both on saved silently and the asking setting
+   appeared to be broken. Automatic still means the learner does not pick
+   issues one by one — it asks once for the batch. */
+export type EssayAutoSaveAction = 'ignore' | 'saveAll' | 'confirmAll';
+
+export const autoSaveActionFor = (params: {
+  autoSave: boolean;
+  askFirst: boolean;
+  issueCount: number;
+}): EssayAutoSaveAction => {
+  if (!params.autoSave || params.issueCount === 0) return 'ignore';
+  return params.askFirst ? 'confirmAll' : 'saveAll';
+};

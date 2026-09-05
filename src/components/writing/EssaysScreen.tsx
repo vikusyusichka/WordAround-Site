@@ -18,6 +18,7 @@ import { EssayHintsList } from './EssayHintsList';
 import { EssayLanguageSelector } from './EssayLanguageSelector';
 import { EssayTopicCard } from './EssayTopicCard';
 import { EssayTopicModePicker } from './EssayTopicModePicker';
+import { autoSaveActionFor } from '@/lib/essaySession';
 import { useEssaySession } from '@/hooks/useEssaySession';
 import { useSaveMistake } from '@/hooks/useSaveMistake';
 import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
@@ -39,6 +40,8 @@ export const EssaysScreen = () => {
   const askBeforeSaving = useGrammarSettings((st) => st.askBeforeSavingMistakes);
   const autoSaveMistakes = useGrammarSettings((st) => st.saveGrammarMistakesAutomatically);
   const [pendingIssue, setPendingIssue] = useState<GrammarIssue | null>(null);
+  /* The whole batch from one check, waiting on a single confirmation. */
+  const [pendingAutoSave, setPendingAutoSave] = useState<GrammarIssue[] | null>(null);
   const autoSavedRef = useRef<string | null>(null);
 
   /* iOS makeMistakeSavePayload: original = incorrectText, corrected =
@@ -66,14 +69,33 @@ export const EssaysScreen = () => {
   };
 
   /* "Save essay mistakes automatically": every issue from a check becomes a
-     note, once per check (iOS triggerAutoSaveIfEnabled). */
+     note, once per check (iOS triggerAutoSaveIfEnabled).
+
+     "Ask before saving" wins over it. iOS runs the two independently, so
+     switching both on saved silently and the asking setting appeared to do
+     nothing — two switches where the quieter one won. Here the batch still
+     happens automatically, but it asks once for the whole check rather than
+     once per mistake, which would be a queue of dialogs. */
   useEffect(() => {
     if (!autoSaveMistakes || state.grammarIssues.length === 0) return;
     const checkKey = state.grammarIssues.map((issue) => issue.id).join('|');
     if (autoSavedRef.current === checkKey) return;
+    /* Marked before either branch: a declined batch must not re-prompt for
+       the same check either. */
     autoSavedRef.current = checkKey;
-    for (const issue of state.grammarIssues) saveIssue(issue);
-  }, [autoSaveMistakes, state.grammarIssues, saveIssue]);
+    const action = autoSaveActionFor({
+      autoSave: autoSaveMistakes,
+      askFirst: askBeforeSaving,
+      issueCount: state.grammarIssues.length,
+    });
+    if (action === 'confirmAll') {
+      setPendingAutoSave(state.grammarIssues);
+      return;
+    }
+    if (action === 'saveAll') {
+      for (const issue of state.grammarIssues) saveIssue(issue);
+    }
+  }, [autoSaveMistakes, askBeforeSaving, state.grammarIssues, saveIssue]);
 
   const hasTask = state.task !== null;
   const busy = state.isGenerating;
@@ -207,6 +229,19 @@ export const EssaysScreen = () => {
             />
           )}
         </>
+      )}
+
+      {pendingAutoSave && (
+        <ConfirmDialog
+          title={t('writing.essays.autoSaveConfirmTitle')}
+          body={t('writing.essays.autoSaveConfirmBody', { count: pendingAutoSave.length })}
+          confirmLabel={t('writing.essays.grammar.save.idle')}
+          onConfirm={() => {
+            for (const issue of pendingAutoSave) saveIssue(issue);
+            setPendingAutoSave(null);
+          }}
+          onCancel={() => setPendingAutoSave(null)}
+        />
       )}
 
       {pendingIssue && (
