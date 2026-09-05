@@ -577,8 +577,6 @@
       "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
       "autoSaveConfirmTitle": "Save these mistakes to your notes?",
       "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_few": "This check found {{count}} mistakes. Saving turns them into notes that come back for review.",
-      "autoSaveConfirmBody_many": "This check found {{count}} mistakes. Saving turns them into notes that come back for review.",
       "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
     },
     "grammar": {
@@ -911,8 +909,6 @@
         "noMatchTitle": "No matches",
         "noMatchBody": "Try another keyword.",
         "notesSection_one": "Notes ({{count}})",
-        "notesSection_few": "Notes ({{count}})",
-        "notesSection_many": "Notes ({{count}})",
         "notesSection_other": "Notes ({{count}})",
         "noNoteMatches": "No notes match this search."
       },
@@ -1079,8 +1075,6 @@
         "creating": "Creating…",
         "error": "Couldn't create the set. Try again.",
         "cards_one": "{{count}} card",
-        "cards_few": "{{count}} cards",
-        "cards_many": "{{count}} cards",
         "cards_other": "{{count}} cards"
       },
       "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",

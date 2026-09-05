@@ -1,1683 +1,1680 @@
 {
   "app": {
     "name": "WordAround",
-    "tagline": "Learn languages, actively."
+    "tagline": "Sprachen aktiv lernen."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "Lerne Wörter auf schöne und\neinfache Weise",
+    "start": "Los geht’s"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back",
-    "signUpTitle": "Create your account",
-    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
+    "welcomeBack": "Willkommen zurück",
+    "subtitle": "Melde dich an, um weiterzulernen",
+    "email": "E-Mail",
+    "emailPlaceholder": "Gib deine E-Mail ein",
+    "password": "Passwort",
+    "passwordPlaceholder": "Gib dein Passwort ein",
+    "forgotPassword": "Passwort vergessen?",
+    "signIn": "Anmelden",
+    "signingIn": "Anmeldung...",
+    "signUp": "Registrieren",
+    "signOut": "Abmelden",
+    "continueWithGoogle": "Mit Google fortfahren",
+    "createAccount": "Konto erstellen",
+    "accountCreatedInfo": "Konto erstellt. Wir haben dir eine Bestätigungs-E-Mail geschickt.",
+    "resetEmailSent": "E-Mail zum Zurücksetzen des Passworts gesendet",
+    "showPassword": "Passwort anzeigen",
+    "hidePassword": "Passwort verbergen",
+    "back": "Zurück",
+    "signUpTitle": "Erstelle dein Konto",
+    "signUpSubtitle": "Ein paar Minuten am Tag und dein Wortschatz wächst",
     "name": "Name",
-    "namePlaceholder": "What should we call you?",
-    "orWithEmail": "or with email",
-    "signUpWithGoogle": "Sign up with Google",
-    "passwordHint": "At least {{min}} characters",
-    "magicLinkCta": "Sign in with an email link",
-    "creatingAccount": "Creating account..."
+    "namePlaceholder": "Wie sollen wir dich nennen?",
+    "orWithEmail": "oder mit E-Mail",
+    "signUpWithGoogle": "Mit Google registrieren",
+    "passwordHint": "Mindestens {{min}} Zeichen",
+    "magicLinkCta": "Mit E-Mail-Link anmelden",
+    "creatingAccount": "Konto wird erstellt..."
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "We'll open your learning right away — no need to come back here",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "Bestätige deine E-Mail",
+    "subtitle": "Nur noch ein Schritt bis zum Lernen",
+    "sentTo": "Wir haben einen Bestätigungslink geschickt an",
+    "fallbackEmail": "deine E-Mail",
+    "step1": "Öffne die E-Mail in deinem Postfach",
+    "step2": "Tippe auf den Bestätigungslink",
+    "step3": "Wir öffnen dein Lernen sofort — du musst nicht hierher zurück",
+    "checkButton": "Ich habe meine E-Mail bestätigt",
+    "checking": "Wird geprüft...",
+    "resend": "E-Mail erneut senden",
+    "useAnotherAccount": "Anderes Konto verwenden",
+    "badgeInbox": "Postfach prüfen",
+    "badgeConfirm": "Bestätigen",
+    "badgeDone": "Fertig",
+    "resentInfo": "Bestätigungs-E-Mail erneut gesendet",
+    "notVerifiedYet": "E-Mail ist noch nicht bestätigt"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 8 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "emailInUse": "This account already exists",
-    "weakPassword": "This password is too weak",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again",
-    "nameRequired": "Name is required",
-    "passwordsDoNotMatch": "Passwords don't match",
-    "actionExpired": "This link has expired. Request a new one.",
-    "actionInvalid": "This link is no longer valid.",
-    "userDisabled": "This account has been disabled.",
-    "requiresRecentLogin": "For security, sign in again and then repeat this.",
-    "passwordAlreadySet": "This account already has a password.",
-    "linkNoEmail": "Enter the email the link was sent to"
+    "emailRequired": "E-Mail ist erforderlich",
+    "emailInvalid": "Gib eine gültige E-Mail ein",
+    "emailFirst": "Gib zuerst deine E-Mail ein",
+    "passwordRequired": "Passwort ist erforderlich",
+    "passwordTooShort": "Das Passwort muss mindestens 8 Zeichen haben",
+    "invalidEmail": "Ungültiges E-Mail-Format",
+    "wrongPassword": "Falsche E-Mail oder falsches Passwort. Wenn du dich mit Google registriert hast, nutze die Google-Schaltfläche.",
+    "userNotFound": "Falsche E-Mail oder falsches Passwort. Wenn du dich mit Google registriert hast, nutze die Google-Schaltfläche.",
+    "invalidCredential": "Falsche E-Mail oder falsches Passwort. Wenn du dich mit Google registriert hast, nutze die Google-Schaltfläche.",
+    "emailInUse": "Dieses Konto existiert bereits",
+    "weakPassword": "Dieses Passwort ist zu schwach",
+    "network": "Netzwerkfehler. Prüfe deine Internetverbindung",
+    "tooManyRequests": "Zu viele Versuche. Versuche es später erneut",
+    "differentCredential": "Diese E-Mail wird bereits mit einer anderen Anmeldemethode verwendet",
+    "noActiveAccount": "Kein aktives Konto gefunden",
+    "default": "Anmeldung fehlgeschlagen. Bitte versuche es erneut",
+    "nameRequired": "Name ist erforderlich",
+    "passwordsDoNotMatch": "Die Passwörter stimmen nicht überein",
+    "actionExpired": "Dieser Link ist abgelaufen. Fordere einen neuen an.",
+    "actionInvalid": "Dieser Link ist nicht mehr gültig.",
+    "userDisabled": "Dieses Konto wurde deaktiviert.",
+    "requiresRecentLogin": "Melde dich aus Sicherheitsgründen erneut an und wiederhole das.",
+    "passwordAlreadySet": "Dieses Konto hat bereits ein Passwort.",
+    "linkNoEmail": "Gib die E-Mail ein, an die der Link gesendet wurde"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
+    "home": "Start",
+    "speaking": "Sprechen",
+    "listening": "Hören",
+    "reading": "Lesen",
+    "writing": "Schreiben",
+    "folders": "Ordner",
     "sets": "Sets",
-    "notes": "Notes",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "notes": "Notizen",
+    "profile": "Profil",
+    "create": "Erstellen",
+    "menu": "Menü",
+    "closeMenu": "Menü schließen",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "Üben",
+      "library": "Bibliothek"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
+    "create": "Ordner erstellen",
+    "loading": "Ordner werden geladen…",
+    "loadError": "Deine Ordner konnten nicht geladen werden.",
+    "emptyTitle": "Noch keine Ordner",
+    "emptyBody": "Erstelle deinen ersten Ordner, um deine Sets zu ordnen.",
+    "setCount": "{{count}} Sets",
+    "setCount_one": "{{count}} Set",
+    "newTitle": "Neuer Ordner",
+    "newSubtitle": "Fasse verwandte Sets zusammen.",
+    "editTitle": "Ordner bearbeiten",
     "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
+    "namePlaceholder": "z. B. Reisen",
+    "description": "Beschreibung",
     "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "color": "Farbe",
+    "save": "Speichern",
+    "saving": "Wird gespeichert…",
+    "cancel": "Abbrechen",
+    "edit": "Ordner bearbeiten",
+    "delete": "Ordner löschen",
+    "deleteConfirm": "„{{title}}“ löschen? Das lässt sich nicht rückgängig machen.",
+    "backToFolders": "Zurück zu den Ordnern",
+    "notFoundTitle": "Ordner nicht gefunden",
+    "notFoundBody": "Dieser Ordner wurde möglicherweise gelöscht.",
+    "noSetsInFolder": "In diesem Ordner sind noch keine Sets.",
+    "saveError": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "Der Ordnername ist erforderlich.",
+      "nameTooLong": "Der Ordnername muss unter 80 Zeichen liegen.",
+      "descTooLong": "Die Beschreibung muss unter 120 Zeichen liegen."
     },
     "optional": "(optional)",
-    "preview": "Preview",
-    "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "preview": "Vorschau",
+    "previewPlaceholder": "Neuer Ordner",
+    "deleteConfirmTitle": "Diesen Ordner löschen?",
+    "setCount_other": "{{count}} Sets"
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets",
-    "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?",
-    "editTitle": "Edit set",
-    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
-    "save": "Save changes",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "create": "Set erstellen",
+    "loading": "Sets werden geladen…",
+    "loadError": "Deine Sets konnten nicht geladen werden.",
+    "emptyTitle": "Noch keine Sets",
+    "emptyBody": "Erstelle dein erstes Karteikarten-Set über die Schaltfläche Erstellen.",
+    "cardCount": "{{count}} Karten",
+    "cardCount_one": "{{count}} Karte",
+    "keepPracticing": "Weiter üben",
+    "delete": "Set löschen",
+    "deleteConfirm": "„{{title}}“ löschen? Das lässt sich nicht rückgängig machen.",
+    "notFoundTitle": "Set nicht gefunden",
+    "notFoundBody": "Dieses Set wurde möglicherweise gelöscht.",
+    "backToSets": "Zurück zu den Sets",
+    "edit": "Set bearbeiten",
+    "deleteConfirmTitle": "Dieses Set löschen?",
+    "editTitle": "Set bearbeiten",
+    "editSubtitle": "Ändere Titel, Farbe, Symbol oder Ordner. Die Karten bleiben, wo sie sind.",
+    "save": "Änderungen speichern",
+    "saving": "Wird gespeichert…",
+    "cancel": "Abbrechen",
+    "saveError": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
+    "cardCount_other": "{{count}} Karten"
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
+    "title": "Neues Set",
+    "subtitle": "Füge Wörter hinzu und gestalte dein Set.",
+    "infoSection": "Set-Infos",
+    "setTitle": "Titel",
+    "setTitlePlaceholder": "z. B. Reise-Basics",
+    "setDescription": "Beschreibung",
     "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "privacy": "Sichtbarkeit",
+    "private": "Privat",
+    "public": "Öffentlich",
+    "cardsSection": "Karten",
+    "addCard": "Karte hinzufügen",
+    "cardN": "Karte {{n}}",
+    "removeCard": "Karte entfernen",
+    "word": "Wort",
+    "translation": "Übersetzung",
+    "example": "Beispiel (optional)",
+    "addImage": "Bild hinzufügen",
+    "removeImage": "Bild entfernen",
+    "customizeSection": "Anpassen",
+    "color": "Farbe",
+    "icon": "Symbol",
+    "folder": "Ordner",
+    "noFolder": "Kein Ordner",
+    "previewSection": "Vorschau",
+    "previewPlaceholder": "Set-Titel",
+    "save": "Set erstellen",
+    "saving": "Wird gespeichert…",
+    "cancel": "Abbrechen",
+    "saveError": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "Der Set-Titel ist erforderlich.",
+      "titleTooLong": "Der Set-Titel muss unter 150 Zeichen liegen.",
+      "descTooLong": "Die Beschreibung muss unter 200 Zeichen liegen.",
+      "noValidCards": "Füge mindestens eine Karte mit Wort und Übersetzung hinzu.",
+      "exampleTooLong": "Beispiele auf Karten müssen unter 150 Zeichen liegen."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "imageTimeout": "Zeitüberschreitung beim Hochladen des Bildes. Prüfe deine Verbindung und versuche es erneut.",
     "import": {
-      "button": "Import",
-      "title": "Import cards",
-      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
-      "close": "Close import",
-      "dataSection": "Your data",
-      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
-      "separatorsSection": "Separators",
-      "betweenTermAndDefinition": "Between word and translation",
-      "betweenCards": "Between cards",
-      "tab": "Tab",
-      "comma": "Comma",
-      "newline": "New line",
-      "semicolon": "Semicolon",
-      "custom": "Custom",
-      "customPlaceholder": "e.g. —",
-      "previewSection": "Preview",
-      "previewEmpty": "Nothing to preview yet.",
-      "noDefinition": "No translation",
-      "confirm": "Add cards"
+      "button": "Importieren",
+      "title": "Karten importieren",
+      "subtitle": "Kopiere deine Daten und füge sie ein — aus Word, Excel, Google Docs und Ähnlichem.",
+      "close": "Import schließen",
+      "dataSection": "Deine Daten",
+      "placeholder": "Wort 1\tDefinition 1\nWort 2\tDefinition 2\nWort 3\tDefinition 3",
+      "separatorsSection": "Trennzeichen",
+      "betweenTermAndDefinition": "Zwischen Wort und Übersetzung",
+      "betweenCards": "Zwischen Karten",
+      "tab": "Tabulator",
+      "comma": "Komma",
+      "newline": "Neue Zeile",
+      "semicolon": "Semikolon",
+      "custom": "Eigenes",
+      "customPlaceholder": "z. B. —",
+      "previewSection": "Vorschau",
+      "previewEmpty": "Noch nichts zum Anzeigen.",
+      "noDefinition": "Keine Übersetzung",
+      "confirm": "Karten hinzufügen"
     },
     "iconPicker": {
-      "open": "More icons",
-      "title": "Choose icon",
-      "search": "Search symbol",
-      "close": "Close",
-      "empty": "No icons match that name."
+      "open": "Mehr Symbole",
+      "title": "Symbol wählen",
+      "search": "Symbol suchen",
+      "close": "Schließen",
+      "empty": "Kein Symbol passt zu diesem Namen."
     },
     "iconGroup": {
-      "learning": "Learning",
-      "languages": "Languages",
-      "nature": "Nature",
-      "health": "Health",
-      "food": "Food",
-      "travel": "Travel",
-      "work": "Work",
-      "tech": "Tech",
-      "creativity": "Creativity",
-      "general": "General"
+      "learning": "Lernen",
+      "languages": "Sprachen",
+      "nature": "Natur",
+      "health": "Gesundheit",
+      "food": "Essen",
+      "travel": "Reisen",
+      "work": "Arbeit",
+      "tech": "Technik",
+      "creativity": "Kreativität",
+      "general": "Allgemein"
     }
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
+      "flashcards": "Karteikarten",
+      "folders": "Ordner",
       "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "create": "Erstellen",
+      "profile": "Profil",
+      "speaking": "Sprechen",
+      "listening": "Hören",
+      "reading": "Lesen",
+      "writing": "Schreiben"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "Wähle ein Set zum Üben",
+      "folders": "Verwalte deine Ordner",
+      "sets": "Verwalte deine Karteikarten-Sets",
+      "create": "Baue ein neues Lernset",
+      "speaking": "Übe das Sprechen.",
+      "listening": "Gewöhne dein Ohr an natürliche Sprache.",
+      "reading": "Lies und wiederhole Sprachmaterial.",
+      "writing": "Übe deine Sprache aktiv."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "SPRECHEN",
+      "listening": "HÖREN",
+      "reading": "LESEN",
+      "writing": "SCHREIBEN"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "Heutiges Ziel",
+      "left": "Noch {{count}} Wörter"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "Heute gelernt",
+      "words": "Wörter",
+      "accuracy": "Trefferquote",
+      "greatJob": "Gut gemacht!",
+      "streak": "Serie",
+      "days": "Tage"
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "Weiterlernen",
+    "yourSets": "Deine Sets",
+    "viewAll": "Alle ansehen",
+    "review": "Wiederholen",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "Noch keine Sets",
+      "emptyBody": "Erstelle dein erstes Karteikarten-Set über die Schaltfläche Erstellen."
     },
     "create": {
-      "folder": "Folder",
+      "folder": "Ordner",
       "set": "Set",
       "text": "Text",
       "audio": "Audio",
-      "essay": "Essay"
+      "essay": "Aufsatz"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "{{title}} — bald verfügbar"
     },
     "progress": {
       "subtitle": {
-        "speaking": "of speaking practice",
-        "listening": "of listening practice",
-        "reading": "of reading practice",
-        "writing": "of writing practice"
+        "speaking": "Sprechübung",
+        "listening": "Hörübung",
+        "reading": "Leseübung",
+        "writing": "Schreibübung"
       }
     },
     "dailyGoal": {
-      "title": "Your goal for today",
-      "body": "Pick what you want to practise today — the card below counts against it.",
-      "chosenBody": "This is what today is about.",
-      "howMuch": "How much?",
-      "change": "Change"
+      "title": "Dein Ziel für heute",
+      "body": "Wähle, was du heute üben willst — die Karte unten zählt darauf ein.",
+      "chosenBody": "Darum geht es heute.",
+      "howMuch": "Wie viel?",
+      "change": "Ändern"
     },
     "lastNote": {
-      "title": "Last note you read"
+      "title": "Zuletzt gelesene Notiz"
     }
   },
   "categories": {
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing"
+    "speaking": "Sprechen",
+    "listening": "Hören",
+    "reading": "Lesen",
+    "writing": "Schreiben"
   },
   "phase0": {
     "title": "WordAround",
-    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
+    "subtitle": "Phase 0 läuft. Design-Tokens geladen, Firebase verbunden."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "Umdrehen",
+    "known": "Wusste ich",
+    "unknown": "Lerne ich noch",
+    "mastered": "Beherrscht",
+    "shuffle": "Mischen",
+    "trackProgress": "Fortschritt verfolgen",
+    "speak": "Vorlesen",
+    "roundDone": "Runde beendet",
+    "knewCount": "Du wusstest {{known}} von {{total}}",
+    "repeatUnknown": "{{count}} unbekannte wiederholen",
+    "restart": "Neu starten",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "Alle",
+      "studied": "Gelernt",
+      "remaining": "Übrig",
+      "mastered": "Beherrscht"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "Karte hinzufügen",
+    "editCard": "Karte bearbeiten",
+    "deleteCard": "Karte löschen",
+    "deleteCardConfirm": "Diese Karte löschen?",
+    "emptyPrompt": "Dieses Set hat noch keine Karten. Füge deine erste hinzu.",
+    "save": "Speichern",
+    "cancel": "Abbrechen"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "Heutiger Fortschritt",
+      "unit": "Wörter",
+      "subtitle": "Schreibübung"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "Übungsmodi",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "Aus Sets schreiben",
+        "subtitle": "Übe Rechtschreibung und das Schreiben von Wörtern aus deinen Sets."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "Aufsätze",
+        "subtitle": "Schreibe Texte und erhalte KI-Rückmeldung zu Grammatik und Stil."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "Bald verfügbar"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "Set wählen",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "Keine Sets mit Wörtern",
+        "subtitle": "Erstelle ein Set mit mindestens einer Karte, bevor du mit dem Schreibtraining beginnst."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "{{count}} Wörter",
+      "wordsCount_one": "{{count}} Wort",
+      "close": "Schließen",
+      "wordsCount_other": "{{count}} Wörter"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "Aus Sets schreiben",
+      "subtitle": "Tippe die Übersetzung und drücke Enter.",
+      "translateHint": "Übersetze in deine Sprache",
+      "hint": "Tipp",
+      "skip": "Überspringen",
+      "submit": "Prüfen",
+      "inputPlaceholder": "Hier tippen…",
+      "loading": "Set wird geladen…",
+      "loadError": "Dieses Set konnte nicht geladen werden.",
+      "noCards": "Dieses Set hat keine Karten.",
+      "back": "Zurück",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "Einstellungen",
+        "trainingMode": "Trainingsmodus",
+        "difficulty": "Schwierigkeit"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "Wort → Übersetzung",
+        "translationToWord": "Übersetzung → Wort"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "Leicht",
+        "medium": "Mittel",
+        "hard": "Schwer",
+        "easyDesc": "Unbegrenzte Tipps, unbegrenztes Überspringen",
+        "mediumDesc": "1 Buchstabe als Tipp, max. 25% überspringen",
+        "hardDesc": "Keine Tipps, kein Überspringen, auf Zeit"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "Übersetze in deine Sprache",
+        "translation": "Schreibe das Originalwort"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "Noch {{count}} Übersprung",
+      "skipsLeft_other": "Noch {{count}} Übersprünge",
+      "seconds": "{{count}} s",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "Runde abgeschlossen!",
+          "subtitle": "Gut gemacht. Du hast diese Schreibrunde beendet."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "Zeit abgelaufen",
+          "subtitle": "Der Timer im schweren Modus ist bei null. Versuche es ab dem ersten Wort erneut."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "Falsche Antwort",
+          "subtitle": "Im schweren Modus beendet ein Fehler die Runde."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
+        "perfectTitle": "Perfekte Runde!",
+        "perfectBody": "Du hast den schweren Modus ohne Fehler geschafft. Kein Überspringen. Keine Tipps. Nur Können.",
+        "totalWords": "Wörter gesamt",
+        "completedWords": "Geschaffte Wörter",
+        "skippedWords": "Übersprungene Wörter",
+        "hintsUsed": "Genutzte Tipps",
+        "streak": "Serie",
+        "difficultyLabel": "Schwierigkeit",
+        "word": "Wort",
+        "yourAnswer": "Deine Antwort",
+        "correctAnswer": "Richtige Antwort",
+        "tryAgain": "Erneut versuchen"
       }
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "Aufsätze",
+      "subtitle": "Thema von der KI. Schreibe, dann erhalte Rückmeldung.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "Vorgeschlagen",
+        "custom": "Mein Thema"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "Schreibe dein eigenes Aufsatzthema...",
+        "generate": "Aufgabe erzeugen"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "Thema erzeugen",
+        "regenerate": "Neues Thema"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "Sprache",
+      "difficulty": "Schwierigkeit",
       "task": {
-        "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips",
-        "taskLabel": "Task"
+        "time": "≈ {{count}} Min.",
+        "wordRange": "{{min}}-{{max}} Wörter",
+        "quickTips": "Kurze Tipps",
+        "taskLabel": "Aufgabe"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "Beginne hier deinen Aufsatz...",
+        "wordCount": "{{count}} / {{min}}-{{max}} Wörter",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "Schreib weiter — du brauchst mindestens {{min}} Wörter.",
+          "aboveMaximum": "Du bist über dem Limit — versuche zu kürzen.",
+          "valid": "Im Rahmen."
         },
-        "reset": "Reset"
+        "reset": "Zurücksetzen"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "Gib zuerst ein Thema ein.",
+        "generationFailed": "Es konnte kein Thema erzeugt werden. Bitte versuche es erneut."
       },
-      "generating": "Generating...",
+      "generating": "Wird erzeugt...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "Tipp holen",
+        "remaining": "noch {{remaining}}/{{limit}}",
+        "noneLeft": "Keine Tipps mehr",
+        "notAvailable": "Auf diesem Niveau keine Tipps",
+        "generating": "Tipp wird erzeugt...",
+        "error": "Es konnte kein Tipp geholt werden. Bitte versuche es erneut.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "Inhalt",
+          "grammar": "Grammatik",
+          "vocabulary": "Wortschatz",
+          "structure": "Aufbau"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again.",
-        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
+        "button": "Meinen Aufsatz prüfen",
+        "checking": "Wird geprüft...",
+        "disabled": "Schreibe zuerst im vorgegebenen Wortbereich",
+        "error": "Dein Aufsatz konnte nicht geprüft werden. Bitte versuche es erneut.",
+        "languageUnsupported": "Die Grammatikprüfung ist für {{language}} noch nicht verfügbar."
       },
       "score": {
-        "title": "Essay score",
+        "title": "Aufsatzbewertung",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "Ausgezeichnet",
+          "veryGood": "Sehr gut",
+          "good": "Gut",
+          "needsWork": "Ausbaufähig"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "Grammatik",
+          "vocabulary": "Wortschatz",
+          "length": "Länge",
+          "complexity": "Komplexität",
+          "relevance": "Themenbezug",
+          "independence": "Eigenständigkeit"
         },
         "stat": {
-          "words": "Words",
-          "grammar": "Grammar",
-          "vocabStyle": "Vocab/style",
-          "hints": "Hints",
-          "translations": "Translations",
-          "synonyms": "Synonyms"
+          "words": "Wörter",
+          "grammar": "Grammatik",
+          "vocabStyle": "Wortschatz/Stil",
+          "hints": "Tipps",
+          "translations": "Übersetzungen",
+          "synonyms": "Synonyme"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
+        "sectionTitle": "Grammatikhinweise",
+        "count_one": "{{count}} Hinweis",
+        "count_other": "{{count}} Hinweise",
+        "empty": "Keine Grammatikfehler gefunden — gut gemacht!",
         "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "suggestion": "Vorschlag:",
+        "reason": "Grund:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "Grammatik",
+          "vocabulary": "Wortschatz",
+          "style": "Stil"
         },
         "save": {
-          "idle": "Save to Notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
+          "idle": "In Notizen speichern",
+          "saving": "Wird gespeichert…",
+          "saved": "Gespeichert",
+          "duplicate": "Bereits gespeichert",
+          "failed": "Speichern wiederholen"
         }
       },
       "helper": {
-        "translate": "Translate",
+        "translate": "Übersetzen",
         "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "remaining": "noch {{remaining}}",
+        "notAvailable": "Auf diesem Niveau nicht verfügbar"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "Übersetzen",
+        "placeholder": "Gib ein Wort oder eine kurze Wendung ein",
+        "submit": "Übersetzen",
+        "submitting": "Wird übersetzt..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "Synonyme",
+        "placeholder": "Gib ein Wort ein",
+        "submit": "Synonyme finden",
+        "submitting": "Wird gesucht..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "Von",
+        "to": "Nach",
+        "close": "Schließen",
+        "noResult": "Kein Ergebnis gefunden.",
+        "sameLanguage": "Wähle eine andere Eingabesprache.",
+        "error": "Der Dienst ist vorübergehend nicht verfügbar."
       },
-      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
-      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
-      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_few": "This check found {{count}} mistakes. Saving turns them into notes that come back for review.",
-      "autoSaveConfirmBody_many": "This check found {{count}} mistakes. Saving turns them into notes that come back for review.",
-      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
+      "saveMistakeConfirmTitle": "Diesen Fehler in den Notizen speichern?",
+      "saveMistakeConfirmBody": "Er wird als Fehlernotiz mit der Korrektur „{{correction}}“ gespeichert.",
+      "autoSaveConfirmTitle": "Diese Fehler in deinen Notizen speichern?",
+      "autoSaveConfirmBody_one": "Diese Prüfung hat {{count}} Fehler gefunden. Beim Speichern wird daraus eine Notiz, die zur Wiederholung zurückkommt.",
+      "autoSaveConfirmBody_other": "Diese Prüfung hat {{count}} Fehler gefunden. Beim Speichern werden daraus Notizen, die zur Wiederholung zurückkommen."
     },
     "grammar": {
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "subtitle": "Ordne Grammatik nach Themen mit klaren, strukturierten Notizen.",
+      "newTopic": "Neues Thema",
+      "topicsEmptyTitle": "Noch keine Themen",
+      "topicsEmptyBody": "Erstelle dein erstes Thema, um Grammatiknotizen zu sammeln.",
+      "notesCount_one": "{{count}} Notiz",
+      "notesCount_other": "{{count}} Notizen",
+      "deleteTopicConfirm": "„{{title}}“ und alle zugehörigen Notizen löschen? Das lässt sich nicht rückgängig machen.",
+      "notesEmptyTitle": "Noch keine Notizen",
+      "notesEmptyBody": "Füge diesem Thema deine erste Notiz hinzu.",
+      "newNote": "Neue Notiz",
+      "deleteNoteConfirm": "Diese Notiz löschen? Das lässt sich nicht rückgängig machen.",
+      "loading": "Wird geladen…",
+      "loadError": "Deine Grammatiknotizen konnten nicht geladen werden.",
+      "notFoundTitle": "Nicht gefunden",
+      "notFoundBody": "Dieser Eintrag wurde möglicherweise gelöscht.",
+      "back": "Zurück",
+      "updated": "Aktualisiert {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
+        "newTitle": "Neues Thema",
+        "editTitle": "Thema bearbeiten",
+        "name": "Titel",
+        "namePlaceholder": "z. B. Spanische Verben",
+        "description": "Beschreibung",
         "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel",
-        "language": "Language",
-        "languageNone": "Not set"
+        "color": "Farbe",
+        "icon": "Symbol",
+        "save": "Speichern",
+        "cancel": "Abbrechen",
+        "language": "Sprache",
+        "languageNone": "Nicht gesetzt"
       },
       "noteType": {
         "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "mistake": "Fehler",
+        "rule": "Regel",
+        "comparison": "Vergleich",
+        "cheatSheet": "Spickzettel",
+        "exercise": "Übung"
       },
       "block": {
-        "heading": "Heading",
+        "heading": "Überschrift",
         "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)",
-        "subheading": "Subheading",
-        "numberedList": "Numbered list",
-        "checklist": "Checklist",
-        "comparison": "Comparison",
-        "exercise": "Exercise",
+        "bulletList": "Aufzählung",
+        "rule": "Regel",
+        "example": "Beispiel",
+        "warning": "Warnung",
+        "quote": "Zitat",
+        "divider": "Trennlinie",
+        "addBlock": "Block hinzufügen",
+        "addItem": "Eintrag hinzufügen",
+        "moveUp": "Nach oben",
+        "moveDown": "Nach unten",
+        "remove": "Entfernen",
+        "secondaryPlaceholder": "Detail / Übersetzung (optional)",
+        "subheading": "Zwischenüberschrift",
+        "numberedList": "Nummerierte Liste",
+        "checklist": "Checkliste",
+        "comparison": "Vergleich",
+        "exercise": "Übung",
         "quiz": "Quiz",
-        "image": "Image",
-        "comparisonSecondary": "Second side",
-        "imageAdd": "Add / replace image",
-        "imageUploading": "Uploading…",
-        "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images."
+        "image": "Bild",
+        "comparisonSecondary": "Zweite Seite",
+        "imageAdd": "Bild hinzufügen / ersetzen",
+        "imageUploading": "Wird hochgeladen…",
+        "imageFailed": "Das Bild konnte nicht hochgeladen werden.",
+        "imageSaveFirst": "Melde dich an, um Bilder hochzuladen."
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…",
-        "subheading": "Subheading",
-        "numberedList": "List item",
-        "checklist": "Checklist item",
-        "comparison": "First side",
-        "exercise": "Practice instruction…",
-        "quiz": "Question",
-        "image": "Image caption"
+        "heading": "Überschrift",
+        "paragraph": "Schreibe deine Erklärung…",
+        "bulletList": "Listeneintrag",
+        "rule": "Erkläre die Grammatikregel…",
+        "example": "Füge ein Beispiel hinzu…",
+        "warning": "Häufiger Fehler oder Warnung…",
+        "quote": "Merkenswerter Satz…",
+        "subheading": "Zwischenüberschrift",
+        "numberedList": "Listeneintrag",
+        "checklist": "Checklisteneintrag",
+        "comparison": "Erste Seite",
+        "exercise": "Übungsanweisung…",
+        "quiz": "Frage",
+        "image": "Bildunterschrift"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again.",
-        "subtitle": "Edit note",
+        "titlePlaceholder": "Notiztitel",
+        "save": "Notiz speichern",
+        "saving": "Wird gespeichert…",
+        "delete": "Notiz löschen",
+        "saveError": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
+        "subtitle": "Notiz bearbeiten",
         "tags": "Tags",
-        "tagsPlaceholder": "Add a tag…",
-        "removeTag": "Remove tag {{tag}}",
-        "addToReview": "Add to review",
-        "addedToReview": "Added to your review queue.",
-        "inReview": "In review · {{when}}",
-        "inReviewDue": "Due for review",
-        "removedFromReview": "Removed from your review queue.",
-        "unsavedTitle": "Leave without saving?",
-        "unsavedBody": "This note has changes that have not been saved yet.",
-        "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "tagsPlaceholder": "Tag hinzufügen…",
+        "removeTag": "Tag {{tag}} entfernen",
+        "addToReview": "Zur Wiederholung",
+        "addedToReview": "Zu deiner Wiederholungsliste hinzugefügt.",
+        "inReview": "In Wiederholung · {{when}}",
+        "inReviewDue": "Zur Wiederholung fällig",
+        "removedFromReview": "Aus deiner Wiederholungsliste entfernt.",
+        "unsavedTitle": "Ohne Speichern verlassen?",
+        "unsavedBody": "Diese Notiz hat Änderungen, die noch nicht gespeichert sind.",
+        "discard": "Änderungen verwerfen",
+        "saveAndLeave": "Speichern und verlassen"
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "Quiz",
+        "new": "Neues Quiz",
+        "start": "Quiz starten",
+        "delete": "Quiz löschen",
+        "deleteConfirm": "„{{title}}“ löschen? Das lässt sich nicht rückgängig machen.",
+        "emptyTitle": "Noch keine Quiz",
+        "emptyBody": "Erstelle aus dieser Notiz ein Quiz, um dich zu testen.",
+        "loadError": "Die Quiz konnten nicht geladen werden.",
+        "questionsCount_one": "{{count}} Frage",
+        "questionsCount_other": "{{count}} Fragen",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "Multiple Choice",
+          "trueFalse": "Richtig / Falsch",
+          "fillGap": "Lücke füllen",
+          "shortAnswer": "Kurze Antwort"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead",
-          "modeManual": "Manual",
-          "modeManualDesc": "Write your own questions.",
-          "createQuiz": "Create quiz"
+          "title": "Quiz erstellen",
+          "titlePlaceholder": "Quiz-Titel",
+          "mode": "Erzeugungsmodus",
+          "modeSmart": "Lokal und schlau",
+          "modeSmartDesc": "Erzeuge Fragen lokal aus dem Inhalt der Notiz.",
+          "modeAI": "Von der KI erzeugt",
+          "modeAIDesc": "Erzeuge reichhaltigere Fragen mit Kontext per KI.",
+          "count": "Fragen",
+          "types": "Fragetypen",
+          "focus": "Schwerpunkt (optional)",
+          "focusPlaceholder": "z. B. Schwerpunkt auf unregelmäßigen Formen",
+          "preview": "Fragen ansehen",
+          "regenerate": "Vorschau neu erzeugen",
+          "previewTitle": "Vorschau",
+          "saveQuiz": "Quiz speichern",
+          "generateQuiz": "Quiz erzeugen",
+          "generating": "Wird erzeugt…",
+          "saving": "Wird gespeichert…",
+          "useSmartInstead": "Stattdessen lokal erzeugen",
+          "modeManual": "Manuell",
+          "modeManualDesc": "Schreibe deine eigenen Fragen.",
+          "createQuiz": "Quiz erstellen"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "Frage {{current}} von {{total}}",
+          "submit": "Antwort abschicken",
+          "next": "Weiter",
+          "finish": "Beenden",
+          "correct": "Richtig!",
+          "incorrect": "Falsch",
+          "correctAnswer": "Richtige Antwort: {{answer}}",
+          "typeMissing": "Tippe das fehlende Wort",
+          "typeAnswer": "Tippe deine Antwort",
+          "trueLabel": "Richtig",
+          "falseLabel": "Falsch"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "{{correct}} von {{total}} richtig",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "Ausgezeichnet!",
+            "good": "Gut gemacht!",
+            "keepPracticing": "Weiter üben",
+            "reviewNote": "Sieh dir die Notiz an"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "Falsch",
+          "correctSection": "Richtig",
+          "yourAnswer": "Deine Antwort: {{answer}}",
+          "tryAgain": "Erneut versuchen",
+          "reviewNote": "Notiz ansehen",
+          "done": "Fertig"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "Füge zuerst mehr Inhalt hinzu — ein Quiz braucht mindestens zwei Inhaltsblöcke (Regel, Beispiel, Warnung, Text oder Zitat).",
+          "noMatchingQuestionTypes": "Zu wenig passender Inhalt für die gewählten Fragetypen. Aktiviere mehr Typen oder füge Inhalt hinzu.",
+          "aiFailed": "Das Quiz konnte nicht per KI erzeugt werden. Versuche es erneut oder nutze den lokalen Modus."
         },
         "badge": "Quiz",
         "manual": {
-          "questions_one": "{{count}} question",
-          "questions_other": "{{count}} questions",
-          "add": "Add question",
-          "questionPlaceholder": "Question text",
-          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
+          "questions_one": "{{count}} Frage",
+          "questions_other": "{{count}} Fragen",
+          "add": "Frage hinzufügen",
+          "questionPlaceholder": "Fragetext",
+          "questionGapPlaceholder": "Frage mit Lücke, z. B. Ich _____ zur Schule",
           "optionPlaceholder": "Option {{index}}",
-          "answerPlaceholder": "Correct answer",
-          "explanationPlaceholder": "Explanation (optional)",
+          "answerPlaceholder": "Richtige Antwort",
+          "explanationPlaceholder": "Erklärung (optional)",
           "error": {
-            "questionRequired": "Question text is required.",
-            "optionsRequired": "Multiple choice needs at least 2 options.",
-            "answerRequired": "Enter the correct answer.",
-            "answerNotAnOption": "The correct answer must match one of the options.",
-            "blankRequired": "Add a blank (e.g. _____) inside the question."
+            "questionRequired": "Der Fragetext ist erforderlich.",
+            "optionsRequired": "Multiple Choice braucht mindestens 2 Optionen.",
+            "answerRequired": "Gib die richtige Antwort ein.",
+            "answerNotAnOption": "Die richtige Antwort muss einer der Optionen entsprechen.",
+            "blankRequired": "Füge eine Lücke (z. B. _____) in die Frage ein."
           }
         }
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "Schnellfehler",
+        "title": "Schnellfehler",
+        "original": "Ursprünglicher Satz",
+        "originalPlaceholder": "Beispiel: I am agree with you",
+        "corrected": "Korrektur",
+        "correctedPlaceholder": "Beispiel: I agree with you",
+        "explanation": "Erklärung (optional)",
+        "explanationPlaceholder": "Warum ist die Korrektur richtig?",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "Füge zuerst den ursprünglichen Satz hinzu.",
+          "corrected": "Füge auch den korrigierten Satz hinzu."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done",
-        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
+        "save": "Fehler speichern",
+        "saving": "Wird gespeichert…",
+        "saved": "In den Grammatiknotizen gespeichert.",
+        "duplicate": "Bereits gespeichert — Duplikat übersprungen.",
+        "failed": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
+        "openTopic": "Häufige Fehler öffnen",
+        "done": "Fertig",
+        "tip": "Gespeicherte Korrekturen kommen automatisch in die Wiederholung, sodass das, was du immer wieder falsch machst, zuerst zurückkommt."
       },
       "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
+        "topicTitle": "Themenvorlagen",
+        "noteTitle": "Notizvorlagen",
+        "button": "Vorlage",
+        "startFromTemplate": "Mit einer Vorlage beginnen",
+        "searchPlaceholder": "Vorlagen suchen…",
+        "allLanguages": "Alle",
+        "anyDifficulty": "Beliebig",
         "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
+          "en": "Englisch",
+          "es": "Spanisch",
+          "fr": "Französisch",
+          "de": "Deutsch"
         },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
-        "applyTitle": "Apply “{{title}}”?",
-        "applyBody": "This note already has content. Choose how to apply the template.",
-        "applyReplace": "Replace content",
-        "applyAppend": "Append blocks"
+        "minutes": "{{minutes}} Min.",
+        "notesIncluded_one": "{{count}} Notiz",
+        "notesIncluded_other": "{{count}} Notizen",
+        "blocksIncluded_one": "{{count}} Block",
+        "blocksIncluded_other": "{{count}} Blöcke",
+        "empty": "Keine Vorlage passt zu deinen Filtern.",
+        "use": "Vorlage verwenden",
+        "creating": "Wird erstellt…",
+        "replaceConfirm": "Den aktuellen Inhalt der Notiz durch diese Vorlage ersetzen? Drücke Abbrechen, um die Vorlage stattdessen unten anzuhängen.",
+        "applyTitle": "“{{title}}” anwenden?",
+        "applyBody": "Diese Notiz hat bereits Inhalt. Wähle, wie die Vorlage angewendet wird.",
+        "applyReplace": "Inhalt ersetzen",
+        "applyAppend": "Blöcke anhängen"
       },
       "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "dueBadge": "Due",
+        "title": "Wiederholung",
+        "subtitle": "Festige mit verteilter Wiederholung, was du gelernt hast.",
+        "cardTitle": "Heute wiederholen",
+        "cardSubtitle_one": "{{count}} Karte bereit · ca. {{minutes}} Min.",
+        "cardSubtitle_other": "{{count}} Karten bereit · ca. {{minutes}} Min.",
+        "caughtUpTitle": "Alles erledigt",
+        "caughtUp": "Du bist auf dem Stand. Öffne oder bearbeite Notizen, um Wiederholungsvorschläge zu bekommen.",
+        "dueBadge": "Fällig",
         "refreshBody": "Gerade ist nichts fällig — du kannst aber wiederholen, was du zuletzt gelesen hast.",
         "refreshStart": "Zuletzt Gelesenes wiederholen",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
+        "start": "Wiederholung starten",
+        "skip": "Überspringen",
+        "itemOf": "Eintrag {{current}} von {{total}}",
+        "untitled": "Grammatiknotiz",
+        "stats": "{{count}}-mal wiederholt · Serie {{streak}}",
+        "continueToQuestion": "Weiter zur Frage",
+        "showAnswer": "Antwort zeigen",
+        "compareTitle": "Vergleiche deine Antwort",
+        "referenceAnswer": "Referenz: {{answer}}",
+        "openNote": "Ganze Notiz öffnen",
         "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
+          "manual_one": "{{count}} Eintrag zur Wiederholung fällig",
+          "manual_other": "{{count}} Einträge zur Wiederholung fällig",
+          "recentlyOpened_one": "{{count}} zuletzt geöffnete Notiz",
+          "recentlyOpened_other": "{{count}} zuletzt geöffnete Notizen",
+          "recentlyEdited_one": "{{count}} zuletzt bearbeitete Notiz",
+          "recentlyEdited_other": "{{count}} zuletzt bearbeitete Notizen"
         },
         "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
+          "note": "Notiz",
+          "mistake": "Fehler",
           "quiz": "Quiz"
         },
         "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
+          "source": "Lernen",
+          "question": "Antworten",
+          "result": "Bewerten"
         },
         "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
+          "forgot": "Vergessen",
+          "hard": "Schwer",
+          "good": "Gut",
+          "easy": "Leicht"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "plus4h": "+4 Stunden",
+          "plus1d": "+1 Tag",
+          "plus3d": "+3 Tage",
+          "plus7d": "+7 Tage"
         },
         "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "title": "Sitzung abgeschlossen",
+          "emptyTitle": "Nichts wiederholt",
+          "reviewed": "Wiederholt",
+          "correct": "Richtig",
+          "incorrect": "Falsch",
+          "hintForgot": "Einige Einträge sind in 4 Stunden wieder fällig.",
+          "hintHard": "Schwere Einträge kommen morgen zurück.",
+          "hintGood": "Gute Einträge kommen in 3 Tagen zurück.",
+          "hintEasy": "Alle Einträge kommen in 7 Tagen zurück.",
+          "done": "Zurück zu den Grammatiknotizen"
         },
-        "loadError": "Couldn't load your review queue.",
-        "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "loadError": "Deine Wiederholungsliste konnte nicht geladen werden.",
+        "mistakeCount_one": "{{count}} Fehler",
+        "mistakeCount_other": "{{count}} Fehler"
       },
-      "mistakesBadge": "Mistakes",
-      "topicsTitle": "Topics",
-      "deleteTopic": "Delete topic",
-      "deleteTopicTitle": "Delete this topic?",
-      "deleteNoteTitle": "Delete this note?",
-      "pin": "Pin note",
-      "unpin": "Unpin note",
-      "favorite": "Add to favorites",
-      "unfavorite": "Remove from favorites",
+      "mistakesBadge": "Fehler",
+      "topicsTitle": "Themen",
+      "deleteTopic": "Thema löschen",
+      "deleteTopicTitle": "Dieses Thema löschen?",
+      "deleteNoteTitle": "Diese Notiz löschen?",
+      "pin": "Notiz anheften",
+      "unpin": "Notiz lösen",
+      "favorite": "Zu Favoriten hinzufügen",
+      "unfavorite": "Aus Favoriten entfernen",
       "search": {
-        "topics": "Search topics…",
-        "notes": "Search notes…",
-        "clear": "Clear search",
-        "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword.",
-        "notesSection_one": "Notes ({{count}})",
-        "notesSection_few": "Notes ({{count}})",
-        "notesSection_many": "Notes ({{count}})",
-        "notesSection_other": "Notes ({{count}})",
-        "noNoteMatches": "No notes match this search."
+        "topics": "Themen suchen…",
+        "notes": "Notizen suchen…",
+        "clear": "Suche löschen",
+        "noMatchTitle": "Keine Treffer",
+        "noMatchBody": "Versuche ein anderes Stichwort.",
+        "notesSection_one": "Notizen ({{count}})",
+        "notesSection_other": "Notizen ({{count}})",
+        "noNoteMatches": "Keine Notiz passt zu dieser Suche."
       },
       "filter": {
-        "label": "Filter notes",
-        "all": "All",
-        "pinned": "Pinned",
-        "favorites": "Favorites",
-        "mistakes": "Mistakes",
-        "quizzes": "Quizzes",
-        "review": "Due",
+        "label": "Notizen filtern",
+        "all": "Alle",
+        "pinned": "Angeheftet",
+        "favorites": "Favoriten",
+        "mistakes": "Fehler",
+        "quizzes": "Quiz",
+        "review": "Fällig",
         "empty": {
           "all": {
-            "title": "No grammar notes yet",
-            "body": "Create your first grammar note for this topic."
+            "title": "Noch keine Grammatiknotizen",
+            "body": "Erstelle deine erste Grammatiknotiz für dieses Thema."
           },
           "pinned": {
-            "title": "No pinned notes yet",
-            "body": "Pin notes from the list to find them quickly."
+            "title": "Noch keine angehefteten Notizen",
+            "body": "Hefte Notizen aus der Liste an, um sie schnell zu finden."
           },
           "favorites": {
-            "title": "No favorite notes yet",
-            "body": "Favorite notes to keep them handy."
+            "title": "Noch keine Lieblingsnotizen",
+            "body": "Markiere Notizen als Favorit, um sie griffbereit zu haben."
           },
           "mistakes": {
-            "title": "No saved mistakes yet",
-            "body": "Save grammar mistakes to review them here."
+            "title": "Noch keine gespeicherten Fehler",
+            "body": "Speichere Grammatikfehler, um sie hier durchzugehen."
           },
           "quizzes": {
-            "title": "No quiz notes yet",
-            "body": "Add a quiz to a note to see it here."
+            "title": "Noch keine Notizen mit Quiz",
+            "body": "Füge einer Notiz ein Quiz hinzu, damit sie hier erscheint."
           },
           "review": {
-            "title": "Nothing due right now",
-            "body": "Notes come back here when their next review is due."
+            "title": "Gerade ist nichts fällig",
+            "body": "Notizen kommen hierher zurück, wenn ihre nächste Wiederholung ansteht."
           }
         }
       },
       "reorder": {
-        "start": "Reorder",
-        "done": "Done",
-        "up": "Move up",
-        "down": "Move down"
+        "start": "Umsortieren",
+        "done": "Fertig",
+        "up": "Nach oben",
+        "down": "Nach unten"
       },
       "highlights": {
-        "mistakesTitle": "Mistakes to fix",
-        "mistakesSubtitle": "Recent corrections waiting for review.",
-        "quizzesTitle": "Weak quiz areas",
-        "quizzesSubtitle": "Quizzes worth re-taking soon."
+        "mistakesTitle": "Fehler zum Beheben",
+        "mistakesSubtitle": "Neue Korrekturen, die auf Wiederholung warten.",
+        "quizzesTitle": "Schwache Quiz-Bereiche",
+        "quizzesSubtitle": "Quiz, die sich bald zu wiederholen lohnen."
       },
       "quickNote": {
-        "button": "Quick note",
-        "title": "Quick note",
-        "subtitle": "Capture a grammar idea without opening the full editor.",
-        "noteTitle": "Title",
-        "titlePlaceholder": "Example: Ser vs Estar",
-        "text": "Note",
-        "textPlaceholder": "Write the useful part here",
-        "noteType": "Note type",
-        "topic": "Topic",
-        "openEditor": "Open editor after saving",
-        "openEditorHint": "Useful when the quick version grows into a full note.",
-        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
-        "validation": "Add a title or some text first.",
-        "save": "Save quick note",
-        "saving": "Saving…"
+        "button": "Schnellnotiz",
+        "title": "Schnellnotiz",
+        "subtitle": "Halte einen Grammatikgedanken fest, ohne den vollen Editor zu öffnen.",
+        "noteTitle": "Titel",
+        "titlePlaceholder": "Beispiel: Ser vs Estar",
+        "text": "Notiz",
+        "textPlaceholder": "Schreib hier das Nützliche hin",
+        "noteType": "Notiztyp",
+        "topic": "Thema",
+        "openEditor": "Editor nach dem Speichern öffnen",
+        "openEditorHint": "Nützlich, wenn aus der schnellen Version eine ganze Notiz wird.",
+        "tip": "Schnellnotizen sind für den Gedanken, den du sonst in zehn Minuten vergisst.",
+        "validation": "Füge zuerst einen Titel oder etwas Text hinzu.",
+        "save": "Schnellnotiz speichern",
+        "saving": "Wird gespeichert…"
       },
       "settings": {
-        "title": "Notes settings",
-        "subtitle": "How quick capture, mistakes and the notes list behave.",
-        "reset": "Reset to defaults",
-        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "title": "Notizeinstellungen",
+        "subtitle": "Wie sich Schnellerfassung, Fehler und die Notizliste verhalten.",
+        "reset": "Auf Standard zurücksetzen",
+        "tip": "Nutze Schnellfehler für Sätze, die du wirklich falsch geschrieben hast — die sind nützlicher als lehrbuchperfekte Beispiele.",
         "quickCapture": {
-          "title": "Quick capture",
-          "subtitle": "Make fast notes and mistakes feel instant."
+          "title": "Schnellerfassung",
+          "subtitle": "Lass schnelle Notizen und Fehler sofort wirken."
         },
         "mistakeNotes": {
-          "title": "Mistake notes",
-          "subtitle": "What gets saved when you capture a quick mistake."
+          "title": "Fehlernotizen",
+          "subtitle": "Was gespeichert wird, wenn du einen Schnellfehler erfasst."
         },
         "essays": {
-          "title": "Essays",
-          "subtitle": "What happens to grammar issues found in your essays."
+          "title": "Aufsätze",
+          "subtitle": "Was mit Grammatikfehlern aus deinen Aufsätzen passiert."
         },
         "review": {
           "title": "Wiederholung",
           "subtitle": "Wie Notizen in die Wiederholungsliste kommen."
         },
         "appearance": {
-          "title": "Notes appearance",
-          "subtitle": "How the notes list is ordered and sized."
+          "title": "Aussehen der Notizen",
+          "subtitle": "Wie die Notizliste sortiert und wie groß sie ist."
         },
         "helpers": {
-          "title": "Learning helpers",
-          "subtitle": "Small nudges inside empty states and quick sheets."
+          "title": "Lernhilfen",
+          "subtitle": "Kleine Hinweise in leeren Ansichten und Schnellformularen."
         },
         "defaultType": {
-          "title": "Default note type",
-          "subtitle": "What a new quick note starts as."
+          "title": "Standard-Notiztyp",
+          "subtitle": "Womit eine neue Schnellnotiz beginnt."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "Open editor after quick save",
-            "subtitle": "After saving a quick note, jump straight into the full editor."
+            "title": "Editor nach Schnellspeichern öffnen",
+            "subtitle": "Springe nach dem Speichern einer Schnellnotiz direkt in den vollen Editor."
           },
           "allowQuickQuizzes": {
-            "title": "Allow quizzes in notes",
-            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+            "title": "Quiz in Notizen erlauben",
+            "subtitle": "Biete Quiz-Blöcke und das Erstellen von Quiz in Notizen an."
           },
           "showsMistakeHighlights": {
-            "title": "Highlight mistake notes",
-            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+            "title": "Fehlernotizen hervorheben",
+            "subtitle": "Färbe Fehlerkarten warm ein und zeige die Fehlerzeile."
           },
           "includeOriginalSentence": {
-            "title": "Include original sentence",
-            "subtitle": "Save the wrong version as a quote block in the note."
+            "title": "Ursprünglichen Satz aufnehmen",
+            "subtitle": "Speichere die falsche Fassung als Zitatblock in der Notiz."
           },
           "includeCorrectedSentence": {
-            "title": "Include corrected sentence",
-            "subtitle": "Save the fixed version as an example block."
+            "title": "Korrigierten Satz aufnehmen",
+            "subtitle": "Speichere die korrigierte Fassung als Beispielblock."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "Include explanation",
-            "subtitle": "Add your explanation as a paragraph block below."
+            "title": "Erklärung aufnehmen",
+            "subtitle": "Füge deine Erklärung als Textblock darunter hinzu."
           },
           "groupMistakesByTopic": {
-            "title": "Group mistakes by topic",
-            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+            "title": "Fehler nach Thema gruppieren",
+            "subtitle": "Speichere Schnellfehler im aktuellen Thema statt unter Häufige Fehler."
           },
           "askBeforeSavingMistakes": {
-            "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
+            "title": "Vor dem Speichern von Fehlern fragen",
+            "subtitle": "Bestätige, bevor ein Aufsatzfehler zur Notiz wird. Das hat Vorrang vor dem automatischen Speichern."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
+            "title": "Aufsatzfehler automatisch speichern",
+            "subtitle": "Jeder in einem Aufsatz gefundene Grammatikfehler wird zur Notiz. Mit „Vor dem Speichern fragen“ fragt es einmal für die ganze Prüfung."
           },
           "groupsPinnedNotesFirst": {
-            "title": "Pinned notes first",
-            "subtitle": "Keep important rules at the top of each topic."
+            "title": "Angeheftete Notizen zuerst",
+            "subtitle": "Halte wichtige Regeln oben in jedem Thema."
           },
           "usesCompactCards": {
-            "title": "Compact note cards",
-            "subtitle": "Show tighter cards when you want more notes on screen."
+            "title": "Kompakte Notizkarten",
+            "subtitle": "Zeige engere Karten, wenn mehr Notizen auf den Bildschirm sollen."
           },
           "showsHelperTips": {
-            "title": "Show helper tips",
-            "subtitle": "Display short contextual hints while creating notes."
+            "title": "Hilfetipps anzeigen",
+            "subtitle": "Zeige kurze Hinweise passend zum Zusammenhang beim Erstellen von Notizen."
           },
           "autoAddNotesToReview": {
             "title": "Neue Notizen zur Wiederholung hinzufügen",
-            "subtitle": "Jede gespeicherte Notiz kommt in die Wiederholungsliste — fällig einen Tag später."
+            "subtitle": "Jede gespeicherte Notiz kommt in die Wiederholungsliste, fällig einen Tag später."
           }
         }
       },
-      "editTopic": "Edit topic",
+      "editTopic": "Thema bearbeiten",
       "toSet": {
-        "title": "Make a set from this note",
-        "subtitle": "Pick the pairs to turn into flashcards.",
-        "setTitle": "Set title",
-        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
-        "button": "Make a set",
-        "create": "Create set",
-        "creating": "Creating…",
-        "error": "Couldn't create the set. Try again.",
-        "cards_one": "{{count}} card",
-        "cards_few": "{{count}} cards",
-        "cards_many": "{{count}} cards",
-        "cards_other": "{{count}} cards"
+        "title": "Aus dieser Notiz ein Set machen",
+        "subtitle": "Wähle die Paare, die zu Karteikarten werden.",
+        "setTitle": "Set-Titel",
+        "empty": "Aus dieser Notiz lassen sich noch keine Karten machen. Vergleichs-, Beispiel- und Regelblöcke gehen direkt über, und Listeneinträge werden am Gedankenstrich getrennt — etwa “hacer — machen”.",
+        "button": "Set erstellen",
+        "create": "Set erstellen",
+        "creating": "Wird erstellt…",
+        "error": "Das Set konnte nicht erstellt werden. Versuche es erneut.",
+        "cards_one": "{{count}} Karte",
+        "cards_other": "{{count}} Karten"
       },
-      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "topicsEmptyTip": "Ein Thema ist ein Ordner für Notizen — eines pro Sprache oder eines pro Sache, die dir immer wieder danebengeht.",
+      "notesEmptyTip": "Jede gespeicherte Notiz kommt in die Wiederholungsliste, es reicht also, sie aufzuschreiben, um mit dem Üben zu beginnen."
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "Übungsmodi",
+    "loading": "Wird geladen…",
+    "loadError": "Deine Lesetexte konnten nicht geladen werden.",
+    "notFound": "Dieser Eintrag wurde möglicherweise gelöscht.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "Heutiger Fortschritt",
+      "subtitle": "Halte deine Leseserie am Laufen."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "Bald verfügbar",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "Meine Texte",
+        "subtitle": "Füge eigenen Text ein und lies ihn mit Hilfe."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "Lesen aus Sets",
+        "subtitle": "Baue einen Lesetext aus deinen Karteikarten."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "Story-Modus",
+        "subtitle": "Lies interaktive Geschichten mit Entscheidungen."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "Schnelllesen",
+        "subtitle": "Trainiere schnelleres Lesen mit Zeitvorgabe."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "Meine Texte",
+      "subtitle": "Deine gespeicherten Lesetexte.",
+      "addText": "Text hinzufügen",
+      "emptyTitle": "Noch keine Texte",
+      "emptyBody": "Füge deinen ersten Text hinzu, um mit dem Lesetraining zu beginnen.",
+      "savedTitle": "Gespeicherte Texte"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "Neu",
+      "inProgress": "Läuft",
+      "completed": "Abgeschlossen"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "{{count}} Wort",
+      "words_other": "{{count}} Wörter",
+      "start": "Starten",
+      "continue": "Fortsetzen",
+      "readAgain": "Nochmal lesen",
+      "rename": "Umbenennen",
+      "renamePrompt": "Neuer Titel:",
+      "delete": "Löschen",
+      "deleteConfirm": "„{{title}}“ löschen? Das lässt sich nicht rückgängig machen."
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "Weiterlesen",
+      "percent": "{{percent}}% abgeschlossen",
+      "button": "Fortsetzen"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "Hauptaussage",
+      "vocabulary": "Wortschatz",
+      "detailedComprehension": "Detailverständnis",
+      "grammarAwareness": "Grammatikbewusstsein",
+      "speedFluency": "Tempo / Flüssigkeit"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "Verständnis",
+      "trueFalse": "Richtig / Falsch",
+      "fillGap": "Lücke füllen",
+      "vocabulary": "Wortschatz",
+      "findEvidence": "Beleg finden",
+      "orderReconstruction": "Reihenfolge"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "Unbekannte Wörter hervorheben",
+      "translationOnTap": "Beim Antippen übersetzen",
+      "vocabularyHints": "Wortschatz-Tipps",
+      "readingTimer": "Lese-Timer"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "Text hinzufügen",
+      "subtitle": "Füge einen Text ein und richte dein Lesetraining ein.",
+      "untitled": "Text ohne Titel",
+      "pastePlaceholder": "Füge hier deinen Text ein oder tippe ihn…",
+      "titleLabel": "Titel",
+      "titlePlaceholder": "Optional — wir können einen vorschlagen",
+      "language": "Sprache",
+      "difficulty": "Schwierigkeit",
+      "autoDetect": "Automatisch erkennen",
+      "manual": "Selbst wählen",
+      "focus": "Leseschwerpunkt",
+      "questionTypes": "Fragetypen",
+      "assistance": "Lesehilfen",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
-        "min": "min",
-        "detected": "Detected: {{level}}"
+        "words_one": "{{count}} Wort",
+        "words_other": "{{count}} Wörter",
+        "chars_one": "{{count}} Zeichen",
+        "chars_other": "{{count}} Zeichen",
+        "min": "Min.",
+        "detected": "Erkannt: {{level}}"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "Füge bitte zuerst einen Text hinzu.",
+        "tooShort": "Füge mindestens 20 Wörter hinzu."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "Text speichern",
+      "saveAndStart": "Speichern und starten",
+      "saving": "Wird gespeichert…",
+      "saveError": "Speichern fehlgeschlagen. Bitte versuche es erneut.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
+        "pasteText": "Einfügen",
+        "photo": "Foto",
         "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "generate": "Erzeugen",
+        "explore": "Entdecken"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "Informativ",
+        "casual": "Locker",
+        "academic": "Akademisch",
+        "narrative": "Erzählend"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "Kurz",
+        "medium": "Mittel",
+        "long": "Lang"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "Lade ein Foto einer Seite hoch — wir holen den Text heraus.",
+        "chooseImage": "Bild wählen",
+        "recognizing": "Wird erkannt… {{percent}}%",
+        "imageError": "Aus diesem Bild konnte kein Text gelesen werden.",
+        "pdfHint": "Lade ein PDF hoch — wir holen den Text heraus.",
+        "choosePDF": "PDF wählen",
+        "reading": "PDF wird gelesen…",
+        "pdfError": "Dieses PDF konnte nicht gelesen werden.",
+        "topicPlaceholder": "Thema — z. B. Korallenriffe, der Buchdruck",
+        "explorePlaceholder": "Thema oder Stichwort — z. B. Marie Curie, Venedig",
+        "generateButton": "Text erzeugen",
+        "exploreButton": "Artikel holen",
+        "working": "Einen Moment…",
+        "generateError": "Der Text konnte nicht erzeugt werden. Versuche es erneut.",
+        "exploreError": "Zu diesem Thema wurde kein Artikel gefunden.",
+        "exploredFrom": "Geholt von"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again.",
-      "translation": "Translation",
+      "startQuestions": "Fragen starten",
+      "finish": "Beenden",
+      "next": "Weiter",
+      "questionOf": "Frage {{current}} von {{total}}",
+      "closeTranslation": "Übersetzung schließen",
+      "translating": "Wird übersetzt…",
+      "translationError": "Übersetzen fehlgeschlagen. Versuche es erneut.",
+      "translation": "Übersetzung",
       "textLabel": "Text"
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts",
-      "complete": "Practice Complete"
+      "comprehension": "Verständnis",
+      "correct": "Richtig",
+      "time": "Lesezeit",
+      "wpm": "WpM",
+      "mistakes": "Fehler",
+      "mistakesTitle": "Sieh dir deine Fehler an",
+      "readAgain": "Nochmal lesen",
+      "back": "Zurück zu Meine Texte",
+      "complete": "Übung abgeschlossen"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "Lesen aus Sets",
+      "subtitle": "Mache aus einem Karteikarten-Set einen Lesetext.",
+      "pickSet": "Set wählen",
+      "changeSet": "Set wechseln",
+      "tooFewWords": "Dieses Set braucht mindestens {{count}} Wörter für einen Lesetext.",
+      "mode": "Erzeugungsmodus",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "Natürlich",
+        "strict": "Streng",
+        "mixed": "Gemischt"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "Textlänge",
+      "generate": "Lesetext erzeugen",
+      "generating": "Dein Lesetext wird erstellt…",
+      "generateError": "Der Lesetext konnte nicht erstellt werden. Versuche es erneut.",
+      "emptyTitle": "Noch keine Lesetexte",
+      "emptyBody": "Wähle ein Karteikarten-Set, und wir machen einen Lesetext daraus.",
+      "savedTitle": "Gespeicherte Lesetexte"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "Schnelllesen",
+      "subtitle": "Trainiere schnelleres Lesen mit Zeitvorgabe.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "Ziel-Lesetempo",
+        "timer": "Timer-Art",
+        "length": "Lesedauer"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "Entspannt",
+        "balanced": "Ausgewogen",
+        "fast": "Schnell",
+        "challenge": "Herausforderung"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "Kein Timer",
+        "soft": "Sanfter Timer",
+        "strict": "Strenger Timer"
       },
       "length": {
-        "two": "2 min",
-        "five": "5 min",
-        "ten": "10 min"
+        "two": "2 Min.",
+        "five": "5 Min.",
+        "ten": "10 Min."
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
+      "summary": "Ziel {{wpm}} WpM — ca. {{minutes}} Min. Lesen",
+      "start": "Sitzung starten",
+      "preparing": "Dein Textabschnitt wird vorbereitet…",
+      "generateError": "Der Abschnitt konnte nicht erstellt werden. Versuche es erneut.",
+      "recentTitle": "Letzte Sitzungen",
+      "chunkOf": "Teil {{current}} von {{total}}",
+      "previous": "Vorheriger Teil",
       "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "resume": "Fortsetzen",
+      "nextChunk": "Nächster Teil",
+      "finishReading": "Lesen beenden",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "Ausgezeichnet",
+        "balanced": "Im Ziel",
+        "fast": "Fast geschafft",
+        "tooSlow": "Zu langsam"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "Durchschnittliche WpM",
+        "target": "Ziel-WpM",
+        "violations_one": "{{count}} Zeitüberschreitung",
+        "violations_other": "{{count}} Zeitüberschreitungen"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "Erneut versuchen",
+      "backToSetup": "Zurück zur Einrichtung"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "Story-Modus",
+      "subtitle": "Lies interaktive Geschichten mit Entscheidungen.",
+      "typeSection": "Art der Geschichte",
       "type": {
-        "adventure": "Adventure",
+        "adventure": "Abenteuer",
         "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "mystery": "Krimi",
+        "romance": "Romanze",
+        "dailyLife": "Alltag"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "Länge der Geschichte",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "Kurzgeschichte",
+        "multiChapter": "Mehrere Kapitel",
+        "infinite": "Endlose Geschichte"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "Geschichte starten",
+      "generating": "Deine Geschichte wird geschrieben…",
+      "generatingNext": "Das nächste Kapitel wird geschrieben…",
+      "generateError": "Die Geschichte konnte nicht geschrieben werden. Versuche es erneut.",
+      "emptyTitle": "Noch keine Geschichten",
+      "emptyBody": "Starte oben deine erste interaktive Geschichte.",
+      "savedTitle": "Deine Geschichten",
+      "chapterN": "Kapitel {{n}}",
+      "chapterOf": "Kapitel {{current}} / {{total}}",
+      "chapterScore": "Kapitelergebnis",
+      "whatNext": "Wie geht es weiter?",
+      "endStory": "Geschichte beenden",
+      "completeTitle": "Geschichte abgeschlossen",
+      "completeBody_one": "Du hast {{count}} Kapitel geschafft. Tolles Lesen!",
+      "completeBody_other": "Du hast {{count}} Kapitel geschafft. Tolles Lesen!",
+      "backToStories": "Zurück zu den Geschichten"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "Übungsmodi",
+    "notFound": "Diese Sitzung wurde möglicherweise gelöscht.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "Heutiger Fortschritt",
+      "subtitle": "Hörübung"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "Bald verfügbar",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "Aus Text hören",
+        "subtitle": "Text einfügen, anhören und dein Verständnis prüfen."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "Audio importieren",
+        "subtitle": "Lade eigenes Audio hoch und mache daraus eine Hörübung."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "Video importieren",
+        "subtitle": "Lade ein Video hoch, erhalte Untertitel und übe mit Fragen."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "Gespeicherte Übungen",
+        "subtitle": "Setze frühere Sitzungen fort und sieh dir deine Fehler an."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
+      "mainIdea": "Hauptaussage",
       "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "vocabulary": "Wortschatz",
+      "trueFalse": "Richtig / Falsch"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "Aus Text hören",
+      "subtitle": "Füge Text ein und mache daraus eine Hörübung.",
+      "level": "Niveau",
+      "voiceSpeed": "Sprechtempo",
+      "voiceType": "Stimmtyp",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "Standard",
+        "female": "Weiblich",
+        "male": "Männlich"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "Text beim Hören anzeigen",
+      "addQuestions": "Verständnisfragen hinzufügen",
+      "questionCount": "Anzahl der Fragen",
+      "questionTypes": "Fragetypen",
+      "optionalTitle": "Titel (optional)",
+      "titlePlaceholder": "Gib deinem Text einen Namen",
+      "textPlaceholder": "Füge hier deinen Text ein...",
+      "recommended": "Empfohlen: 80–500 Wörter.",
+      "words": "Wörter",
+      "defaultTitle": "Hörübung",
+      "start": "Hören starten",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "Füge Text hinzu, um mit dem Hören zu beginnen.",
+        "tooShort": "Füge mindestens 40 Zeichen hinzu, um mit dem Hören zu beginnen.",
+        "tooLong": "Dieser Text ist zu lang. Bitte bleibe unter 5000 Zeichen.",
+        "tooFewWords": "Füge etwas mehr Text hinzu (etwa 40 Wörter), damit wir gute Fragen erstellen können."
       },
-      "voiceSettings": "Voice Settings",
-      "questions": "Questions",
-      "textInput": "Text Input"
+      "voiceSettings": "Stimmeinstellungen",
+      "questions": "Fragen",
+      "textInput": "Texteingabe"
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "Erneut abspielen",
+      "transcript": "Transkript",
+      "questionsTitle": "Fragen",
+      "answerFirst": "Beantworte mindestens eine Frage, bevor du prüfst.",
+      "checkAnswers": "Antworten prüfen",
+      "finish": "Übung beenden"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "Übung abgeschlossen",
+      "comprehension": "Verständnis",
+      "correct": "Richtig",
+      "time": "Hörzeit",
+      "speed": "Tempo",
+      "mistakes": "Fehler",
+      "mistakesTitle": "Sieh dir deine Fehler an",
+      "watchOnlyTitle": "Hören abgeschlossen",
+      "watchOnlyBody": "Du hast {{time}} zugehört.",
+      "practiceAgain": "Nochmal üben",
+      "back": "Zurück zum Hören"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "Audio importieren",
+      "subtitle": "Mache aus eigenem Audio eine Hörübung.",
+      "uploadTitle": "Audiodatei hochladen",
+      "uploadFormats": "MP3, M4A, WAV oder AAC — unter 50 MB",
+      "chooseFile": "Datei wählen",
+      "clearFile": "Datei entfernen",
+      "infoNote": "Dein Audio wird im Hintergrund transkribiert. Das Transkript bleibt während der Übung verborgen.",
+      "continue": "Weiter",
+      "processingTitle": "Deine Hörübung wird vorbereitet",
+      "step1": "Audio wird hochgeladen",
+      "step2": "Sprache wird transkribiert",
+      "step3": "Fragen werden erstellt",
+      "processError": "Wir konnten dieses Audio nicht vorbereiten. Versuche es erneut.",
+      "tryAgain": "Erneut versuchen",
+      "chooseAnother": "Andere Datei wählen",
+      "transcriptHidden": "Das Transkript ist verborgen, damit dies eine echte Hörübung bleibt."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "Video importieren",
+      "subtitle": "Lade ein Video hoch, erhalte Untertitel und übe mit Fragen.",
+      "uploadTitle": "Videodatei hochladen",
+      "uploadFormats": "MP4, MOV oder M4V — unter 80 MB",
+      "step1": "Video wird vorbereitet",
+      "step2": "Sprache wird transkribiert",
+      "step3": "Untertitel werden erstellt",
+      "subtitles": "Untertitel",
+      "subtitlesOn": "Untertitel an",
+      "subtitlesOff": "Untertitel aus",
+      "noSubtitles": "Für dieses Video sind keine Untertitel verfügbar.",
+      "tapWord": "Tippe ein Wort an, um es zu übersetzen.",
+      "questionsLocked": "Die Fragen werden frei, wenn du das Video zu Ende gesehen hast."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "Wort übersetzen",
+      "pickSet": "Set wählen",
+      "createSet": "Set erstellen",
+      "addToSet": "Zum Set hinzufügen",
+      "noSets": "Du hast noch keine Sets. Erstelle unten eines.",
+      "setNamePlaceholder": "z. B. Wörter aus Videos",
+      "createAndAdd": "Erstellen und Wort hinzufügen",
+      "saved": "In „{{set}}“ gespeichert."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "Gespeicherte Übungen",
+      "subtitle": "Setze Sitzungen fort und sieh dir deine Hörfehler an.",
+      "emptyTitle": "Keine gespeicherten Sitzungen",
+      "emptyBody": "Beende oder pausiere eine Hörsitzung, dann erscheint sie hier.",
+      "continueEyebrow": "Weiter hören",
+      "percentComplete": "{{percent}}% abgeschlossen",
+      "continue": "Fortsetzen",
+      "review": "Ansehen",
+      "delete": "Sitzung löschen",
+      "deleteConfirm": "„{{title}}“ löschen? Das lässt sich nicht rückgängig machen.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "Entwurf",
+        "inProgress": "Läuft",
+        "completed": "Abgeschlossen"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "Übungsmodi",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "Heutiger Fortschritt",
+      "subtitle": "Sprechübung"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "Bald verfügbar",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "KI-Gespräch",
+        "subtitle": "Sprich in Echtzeit mit einem KI-Tutor."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "Freies Sprechen",
+        "subtitle": "Sprich über generierte Themen und erhalte Rückmeldung."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "Bild beschreiben",
+        "subtitle": "Beschreibe Bilder und lerne nützlichen Wortschatz."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "Debattenmodus",
+        "subtitle": "Diskutiere Themen und baue deine Argumente auf."
       },
       "shadowing": {
         "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "subtitle": "Wiederhole Sätze und verbessere deine Aussprache."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "Aussprachetrainer",
+        "subtitle": "Konzentriere dich auf schwierige Laute und Wörter."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "Sprechen",
+      "stop": "Stopp",
+      "listening": "Ich höre zu…",
+      "placeholder": "Tippe deine Antwort…",
+      "noVoice": "Spracheingabe wird in diesem Browser nicht unterstützt — tippe deine Antwort stattdessen."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
-      "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "title": "KI-Gespräch",
+      "subtitle": "Sprich in Echtzeit mit einem KI-Tutor.",
+      "topic": "Thema",
+      "scenarios": "Szenarien",
+      "autoTopic": "Überrasche mich",
+      "autoTopicHint": "Wir erzeugen ein frisches Thema für dich.",
+      "length": "Dauer",
+      "min": "Min.",
+      "start": "Gespräch starten",
+      "starting": "Wird gestartet…",
+      "startError": "Das Gespräch konnte nicht gestartet werden. Versuche es erneut.",
+      "end": "Beenden",
+      "dismiss": "Schließen",
+      "hint": "Tipp",
+      "getHint": "Brauchst du einen Tipp?",
+      "hintLoading": "Denke nach…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "Übung abgeschlossen",
+      "generating": "Dein Sprechen wird ausgewertet…",
+      "overall": "Gesamtergebnis",
+      "corrections": "Korrekturen",
+      "transcript": "Transkript",
+      "practiceAgain": "Nochmal üben",
+      "back": "Zurück zum Sprechen"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
+      "title": "Freies Sprechen",
+      "subtitle": "Sprich frei über ein Thema und erhalte Rückmeldung.",
+      "preview": "Vorschau",
+      "autoTopic": "KI-generiertes Thema",
+      "autoTopicHint": "Beim Start wählen wir ein frisches Thema für {{language}} — {{level}}.",
       "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "start": "Freies Sprechen starten",
+      "generating": "Thema wird erzeugt…",
+      "generatingHint": "Wir wählen etwas, das zu deinem Niveau passt.",
+      "fallbackTopic": "Es konnte kein Thema erzeugt werden. Wir nutzen ein Ersatzthema.",
+      "transcript": "Transkript",
+      "transcriptHint": "Dein Transkript erscheint hier, während du sprichst.",
+      "startSpeaking": "Sprechen beginnen"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "Bild beschreiben",
+      "subtitle": "Beschreibe, was du siehst, und erhalte Rückmeldung.",
+      "start": "Bildbeschreibung starten",
+      "prompt": "Beschreibe, was du auf diesem Bild siehst.",
+      "tryToMention": "Versuche zu erwähnen:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "Personen",
+        "objects": "Gegenstände",
+        "actions": "Handlungen",
+        "colors": "Farben",
+        "emotions": "Gefühle"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "Foto wird geladen…",
+      "retry": "Erneut versuchen",
+      "newPhoto": "Neues Foto",
+      "imageAlt": "Foto zum Beschreiben",
+      "photoBy": "Foto von",
+      "onUnsplash": "auf Unsplash",
+      "startDescribing": "Beschreibung beginnen"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "Debattenmodus",
+      "subtitle": "Verteidige deine Seite gegen einen KI-Gegner.",
+      "start": "Debatte starten",
+      "pickSide": "Deine Seite",
+      "preparing": "Debattenthema wird vorbereitet…",
+      "roundOf": "Runde {{current}} von {{total}} — {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "Zustimmen",
+          "subtitle": "Verteidige die These"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "Widersprechen",
+          "subtitle": "Argumentiere dagegen"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "Überrasche mich",
+          "subtitle": "Wir wählen eine Seite für dich"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "Anhören",
+      "playing": "Wird abgespielt…",
+      "record": "Aufnehmen",
+      "stop": "Stopp",
+      "playMine": "Meine Aufnahme",
+      "noRecording": "Aufnahme wird in diesem Browser nicht unterstützt — du kannst trotzdem hören und nachsprechen."
     },
     "shadowing": {
       "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "subtitle": "Hören, nachsprechen und dich vergleichen.",
+      "start": "Shadowing starten",
+      "category": "Kategorie",
+      "howItWorks": "Höre dir den Satz an, sprich ihn laut nach, während du aufnimmst, spiele deine Aufnahme ab und vergleiche den Rhythmus.",
+      "loading": "Sätze werden erzeugt…",
+      "phrase": "Satz",
+      "previous": "Zurück",
+      "nextPhrase": "Nächster Satz",
+      "finish": "Beenden",
+      "changeSettings": "Einstellungen ändern",
+      "done": "{{count}} geschafft",
+      "allDone": "Alle Sätze geübt!",
+      "newSet": "Neues Set"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "Aussprachetrainer",
+      "subtitle": "Konzentriere dich auf schwierige Laute und Wörter.",
+      "start": "Training starten",
+      "focus": "Schwerpunkt",
+      "difficulty": "Schwierigkeit",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "Leicht",
+        "balanced": "Ausgewogen",
+        "hard": "Schwer"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "Übungen werden erzeugt…",
+      "sound": "Laut",
+      "scoringUnavailable": "Die automatische Aussprachebewertung ist auf dem Server noch nicht eingerichtet, daher wird kein Ergebnis angezeigt. Hören, Aufnehmen und Abspielen funktionieren."
     }
   },
   "profile": {
-    "interfaceLanguage": "Anzeigesprache",
+    "interfaceLanguage": "Sprache der Oberfläche",
     "password": {
-      "title": "Create a password",
-      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
-      "save": "Save password",
-      "saving": "Saving...",
-      "savedInfo": "Password created. You can sign in with your email now too."
+      "title": "Passwort erstellen",
+      "body": "Dein Konto wurde mit Google erstellt und hat daher kein Passwort — die Felder für E-Mail und Passwort können dich nicht anmelden. Lege eines an, dann funktionieren beide Wege.",
+      "save": "Passwort speichern",
+      "saving": "Wird gespeichert...",
+      "savedInfo": "Passwort erstellt. Du kannst dich jetzt auch mit deiner E-Mail anmelden."
     }
   },
   "units": {
@@ -1685,47 +1682,47 @@
     "words": "Wörter"
   },
   "link": {
-    "title": "Sign in with a link",
-    "subtitle": "We'll email you a one-time link. No password to remember.",
-    "send": "Send the link",
-    "sending": "Sending...",
-    "sentInfo": "Link sent. Check your email.",
-    "sentTitle": "Check your email",
-    "sentBody": "We sent a sign-in link to",
-    "useAnotherEmail": "Use another email",
-    "backToPassword": "Sign in with a password instead"
+    "title": "Mit einem Link anmelden",
+    "subtitle": "Wir schicken dir einen einmaligen Link per E-Mail. Kein Passwort zu merken.",
+    "send": "Link senden",
+    "sending": "Wird gesendet...",
+    "sentInfo": "Link gesendet. Sieh in deine E-Mails.",
+    "sentTitle": "Sieh in deine E-Mails",
+    "sentBody": "Wir haben einen Anmeldelink geschickt an",
+    "useAnotherEmail": "Andere E-Mail verwenden",
+    "backToPassword": "Stattdessen mit Passwort anmelden"
   },
   "action": {
-    "working": "One moment...",
-    "continue": "Continue",
-    "confirmEmailTitle": "Confirm your email",
-    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
-    "resetTitle": "New password",
-    "resetSubtitle": "Choose a new password for",
-    "newPassword": "New password",
-    "confirmPassword": "Repeat password",
-    "savePassword": "Save password",
-    "resetDoneTitle": "Password updated",
-    "resetDoneBody": "You can sign in with your new password now.",
-    "failedTitle": "That link didn't work",
-    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
-    "backToSignIn": "Back to sign in"
+    "working": "Einen Moment...",
+    "continue": "Weiter",
+    "confirmEmailTitle": "Bestätige deine E-Mail",
+    "confirmEmailBody": "Dieser Link wurde in einem anderen Browser geöffnet. Gib die Adresse ein, an die er geschickt wurde, dann schließen wir die Anmeldung ab.",
+    "resetTitle": "Neues Passwort",
+    "resetSubtitle": "Wähle ein neues Passwort für",
+    "newPassword": "Neues Passwort",
+    "confirmPassword": "Passwort wiederholen",
+    "savePassword": "Passwort speichern",
+    "resetDoneTitle": "Passwort aktualisiert",
+    "resetDoneBody": "Du kannst dich jetzt mit deinem neuen Passwort anmelden.",
+    "failedTitle": "Dieser Link hat nicht funktioniert",
+    "failedBody": "Er wurde vielleicht schon benutzt oder ist abgelaufen. Fordere auf dem Anmeldebildschirm einen neuen an.",
+    "backToSignIn": "Zurück zur Anmeldung"
   },
   "common": {
-    "cancel": "Cancel",
-    "delete": "Delete",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
     "view": {
-      "label": "View",
-      "rows": "List",
-      "grid": "Grid"
+      "label": "Ansicht",
+      "rows": "Liste",
+      "grid": "Raster"
     }
   },
   "practice": {
     "language": {
-      "label": "Language",
-      "search": "Search a language",
-      "noMatch": "No language matches that.",
-      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+      "label": "Sprache",
+      "search": "Sprache suchen",
+      "noMatch": "Keine Sprache passt dazu.",
+      "noVoice": "Dein Browser hat keine Stimme für {{language}}, daher spricht der Tutor diese Sprache nicht. Füge das Sprachpaket in den Systemeinstellungen hinzu oder wähle eine andere Sprache."
     }
   }
 }
