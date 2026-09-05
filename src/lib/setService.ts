@@ -67,8 +67,13 @@ const toFirestore = (set: FlashcardSet): Record<string, unknown> => ({
   updatedAt: millisToTs(set.updatedAt),
 });
 
-const fromFirestore = (data: Record<string, unknown>): FlashcardSet => ({
-  id: String(data.id ?? ''),
+/* The document id is the authoritative one: a stored `id` field can be
+   missing or empty, and every path built from an empty id is invalid — which
+   is how a mistake save died with `invalid-argument` on a topic document
+   whose `id` field had gone missing. The field is still read as a fallback so
+   nothing regresses for documents that carry it. */
+const fromFirestore = (data: Record<string, unknown>, docId?: string): FlashcardSet => ({
+  id: docId ?? String(data.id ?? ''),
   ownerUID: String(data.ownerUID ?? ''),
   ownerEmail: String(data.ownerEmail ?? ''),
   title: String(data.title ?? ''),
@@ -93,7 +98,7 @@ export const fetchSets = async (uid: string): Promise<FlashcardSet[]> => {
   const snapshot = await getDocs(
     query(flashcardSetsCollection(uid), orderBy('createdAt', 'desc')),
   );
-  return snapshot.docs.map((d) => fromFirestore(d.data()));
+  return snapshot.docs.map((d) => fromFirestore(d.data(), d.id));
 };
 
 export const deleteSet = async (id: string, ownerUID: string): Promise<void> => {
@@ -149,7 +154,7 @@ export const fetchSetsByFolder = async (
   const snapshot = await getDocs(
     query(flashcardSetsCollection(uid), where('folderID', '==', folderID)),
   );
-  return snapshot.docs.map((d) => fromFirestore(d.data())).sort((a, b) => b.createdAt - a.createdAt);
+  return snapshot.docs.map((d) => fromFirestore(d.data(), d.id)).sort((a, b) => b.createdAt - a.createdAt);
 };
 
 export const fetchSetsByFolderName = async (
@@ -159,5 +164,5 @@ export const fetchSetsByFolderName = async (
   const snapshot = await getDocs(
     query(flashcardSetsCollection(uid), where('folderName', '==', folderName)),
   );
-  return snapshot.docs.map((d) => fromFirestore(d.data())).sort((a, b) => b.createdAt - a.createdAt);
+  return snapshot.docs.map((d) => fromFirestore(d.data(), d.id)).sort((a, b) => b.createdAt - a.createdAt);
 };

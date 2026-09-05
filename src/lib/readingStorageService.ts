@@ -65,11 +65,19 @@ const toFirestore = (item: ReadingLibraryItem) => ({
   lastReadCharacterIndex: item.lastReadCharacterIndex,
 });
 
-export const readingItemFromFirestore = (data: Record<string, unknown>): ReadingLibraryItem => {
+/* The document id is the authoritative one: a stored `id` field can be
+   missing or empty, and every path built from an empty id is invalid — which
+   is how a mistake save died with `invalid-argument` on a topic document
+   whose `id` field had gone missing. The field is still read as a fallback so
+   nothing regresses for documents that carry it. */
+export const readingItemFromFirestore = (
+  data: Record<string, unknown>,
+  docId?: string,
+): ReadingLibraryItem => {
   const selections = (data.selections ?? {}) as Record<string, unknown>;
   const toggles = (data.toggles ?? {}) as Record<string, unknown>;
   return {
-    id: String(data.id ?? ''),
+    id: docId ?? String(data.id ?? ''),
     ownerUID: String(data.userId ?? ''),
     modeID: String(data.modeID ?? ''),
     title: String(data.title ?? ''),
@@ -136,7 +144,7 @@ export const fetchReadingItems = async (
 ): Promise<ReadingLibraryItem[]> => {
   const ref = readingItemsCollection(uid);
   const snapshot = await getDocs(modeID ? query(ref, where('modeID', '==', modeID)) : ref);
-  return sortItems(snapshot.docs.map((d) => readingItemFromFirestore(d.data())));
+  return sortItems(snapshot.docs.map((d) => readingItemFromFirestore(d.data(), d.id)));
 };
 
 export const saveReadingItem = async (item: ReadingLibraryItem): Promise<void> => {

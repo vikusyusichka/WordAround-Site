@@ -30,8 +30,16 @@ const toFirestore = (topic: GrammarNoteTopic) => ({
   updatedAt: millisToTs(topic.updatedAt),
 });
 
-export const topicFromFirestore = (data: Record<string, unknown>): GrammarNoteTopic => ({
-  id: String(data.id ?? ''),
+/* The document id is the authoritative one: a stored `id` field can be
+   missing or empty, and every path built from an empty id is invalid — which
+   is how a mistake save died with `invalid-argument` on a topic document
+   whose `id` field had gone missing. The field is still read as a fallback so
+   nothing regresses for documents that carry it. */
+export const topicFromFirestore = (
+  data: Record<string, unknown>,
+  docId?: string,
+): GrammarNoteTopic => ({
+  id: docId ?? String(data.id ?? ''),
   ownerUID: String(data.ownerUID ?? ''),
   title: String(data.title ?? ''),
   description: String(data.description ?? ''),
@@ -67,7 +75,7 @@ export const createTopic = async (topic: GrammarNoteTopic): Promise<void> => {
 
 export const fetchTopics = async (uid: string): Promise<GrammarNoteTopic[]> => {
   const snapshot = await getDocs(grammarTopicsCollection(uid));
-  return sortTopics(snapshot.docs.map((d) => topicFromFirestore(d.data())));
+  return sortTopics(snapshot.docs.map((d) => topicFromFirestore(d.data(), d.id)));
 };
 
 export const updateTopic = async (topic: GrammarNoteTopic): Promise<void> => {

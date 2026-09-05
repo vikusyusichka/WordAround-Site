@@ -42,8 +42,16 @@ const toFirestore = (item: GrammarReviewItem) => ({
   updatedAt: millisToTs(item.updatedAt),
 });
 
-export const reviewItemFromFirestore = (data: Record<string, unknown>): GrammarReviewItem => ({
-  id: String(data.id ?? ''),
+/* The document id is the authoritative one: a stored `id` field can be
+   missing or empty, and every path built from an empty id is invalid — which
+   is how a mistake save died with `invalid-argument` on a topic document
+   whose `id` field had gone missing. The field is still read as a fallback so
+   nothing regresses for documents that carry it. */
+export const reviewItemFromFirestore = (
+  data: Record<string, unknown>,
+  docId?: string,
+): GrammarReviewItem => ({
+  id: docId ?? String(data.id ?? ''),
   ownerUID: String(data.ownerUID ?? ''),
   sourceType: SOURCE_TYPES.includes(data.sourceType as GrammarReviewSourceType)
     ? (data.sourceType as GrammarReviewSourceType)
@@ -80,7 +88,7 @@ export const fetchDueReviewItems = async (
       limit(max),
     ),
   );
-  return snapshot.docs.map((d) => reviewItemFromFirestore(d.data()));
+  return snapshot.docs.map((d) => reviewItemFromFirestore(d.data(), d.id));
 };
 
 /** Every review item the learner has, for showing a note's review state next
@@ -89,7 +97,7 @@ export const fetchDueReviewItems = async (
     and the caller looks them up by key. */
 export const fetchAllReviewItems = async (uid: string): Promise<GrammarReviewItem[]> => {
   const snapshot = await getDocs(grammarReviewItemsCollection(uid));
-  return snapshot.docs.map((d) => reviewItemFromFirestore(d.data()));
+  return snapshot.docs.map((d) => reviewItemFromFirestore(d.data(), d.id));
 };
 
 /** Items of one source kind, most overdue first — feeds the "Mistakes to
@@ -107,7 +115,7 @@ export const fetchItemsBySource = async (
       limit(max),
     ),
   );
-  return snapshot.docs.map((d) => reviewItemFromFirestore(d.data()));
+  return snapshot.docs.map((d) => reviewItemFromFirestore(d.data(), d.id));
 };
 
 /** Upsert that preserves learning history on existing docs (iOS
@@ -117,7 +125,7 @@ export const upsertReviewItem = async (item: GrammarReviewItem): Promise<Grammar
   const existing = await getDoc(ref);
   let merged = item;
   if (existing.exists()) {
-    const prev = reviewItemFromFirestore(existing.data() as Record<string, unknown>);
+    const prev = reviewItemFromFirestore(existing.data() as Record<string, unknown>, existing.id);
     merged = {
       ...item,
       reviewCount: prev.reviewCount,

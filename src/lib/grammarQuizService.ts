@@ -67,8 +67,16 @@ const toFirestore = (quiz: GrammarNoteQuiz) => ({
   updatedAt: millisToTs(quiz.updatedAt),
 });
 
-export const quizFromFirestore = (data: Record<string, unknown>): GrammarNoteQuiz => ({
-  id: String(data.id ?? ''),
+/* The document id is the authoritative one: a stored `id` field can be
+   missing or empty, and every path built from an empty id is invalid — which
+   is how a mistake save died with `invalid-argument` on a topic document
+   whose `id` field had gone missing. The field is still read as a fallback so
+   nothing regresses for documents that carry it. */
+export const quizFromFirestore = (
+  data: Record<string, unknown>,
+  docId?: string,
+): GrammarNoteQuiz => ({
+  id: docId ?? String(data.id ?? ''),
   ownerUID: String(data.ownerUID ?? ''),
   topicId: String(data.topicId ?? ''),
   noteId: String(data.noteId ?? ''),
@@ -90,7 +98,7 @@ export const fetchQuizzes = async (
 ): Promise<GrammarNoteQuiz[]> => {
   const snapshot = await getDocs(grammarQuizzesCollection(uid, topicId, noteId));
   return snapshot.docs
-    .map((d) => quizFromFirestore(d.data()))
+    .map((d) => quizFromFirestore(d.data(), d.id))
     .sort((a, b) => b.updatedAt - a.updatedAt);
 };
 

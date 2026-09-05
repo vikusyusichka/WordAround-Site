@@ -89,7 +89,15 @@ const toFirestore = (note: GrammarNote) => ({
   lastEditedAt: millisToTs(note.lastEditedAt),
 });
 
-export const noteFromFirestore = (data: Record<string, unknown>): GrammarNote => {
+/* The document id is the authoritative one: a stored `id` field can be
+   missing or empty, and every path built from an empty id is invalid — which
+   is how a mistake save died with `invalid-argument` on a topic document
+   whose `id` field had gone missing. The field is still read as a fallback so
+   nothing regresses for documents that carry it. */
+export const noteFromFirestore = (
+  data: Record<string, unknown>,
+  docId?: string,
+): GrammarNote => {
   const noteType = NOTE_TYPES.includes(data.noteType as GrammarNoteType)
     ? (data.noteType as GrammarNoteType)
     : 'standard';
@@ -105,7 +113,7 @@ export const noteFromFirestore = (data: Record<string, unknown>): GrammarNote =>
       : makePlainText(blocks);
   const updatedAt = tsToMillis(data.updatedAt);
   return {
-    id: String(data.id ?? ''),
+    id: docId ?? String(data.id ?? ''),
     ownerUID: String(data.ownerUID ?? ''),
     topicId: String(data.topicId ?? ''),
     title,
@@ -166,7 +174,7 @@ export const updateNote = async (note: GrammarNote): Promise<void> => {
 
 export const fetchNotes = async (uid: string, topicId: string): Promise<GrammarNote[]> => {
   const snapshot = await getDocs(grammarNotesCollection(uid, topicId));
-  return sortNotes(snapshot.docs.map((d) => noteFromFirestore(d.data())));
+  return sortNotes(snapshot.docs.map((d) => noteFromFirestore(d.data(), d.id)));
 };
 
 export const deleteNote = async (
@@ -226,5 +234,7 @@ export const fetchNoteBySavedIssueKey = async (
   const snapshot = await getDocs(
     query(grammarNotesCollection(uid, topicId), where('savedIssueKey', '==', key), limit(1)),
   );
-  return snapshot.empty ? null : noteFromFirestore(snapshot.docs[0].data());
+  return snapshot.empty
+    ? null
+    : noteFromFirestore(snapshot.docs[0].data(), snapshot.docs[0].id);
 };

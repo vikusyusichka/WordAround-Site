@@ -21,8 +21,13 @@ const toFirestore = (folder: Folder) => ({
   updatedAt: millisToTs(folder.updatedAt),
 });
 
-const fromFirestore = (data: Record<string, unknown>): Folder => ({
-  id: String(data.id ?? ''),
+/* The document id is the authoritative one: a stored `id` field can be
+   missing or empty, and every path built from an empty id is invalid — which
+   is how a mistake save died with `invalid-argument` on a topic document
+   whose `id` field had gone missing. The field is still read as a fallback so
+   nothing regresses for documents that carry it. */
+const fromFirestore = (data: Record<string, unknown>, docId?: string): Folder => ({
+  id: docId ?? String(data.id ?? ''),
   ownerUID: String(data.ownerUID ?? ''),
   title: String(data.title ?? ''),
   description: String(data.description ?? ''),
@@ -37,7 +42,7 @@ export const createFolder = async (folder: Folder): Promise<void> => {
 
 export const fetchFolders = async (uid: string): Promise<Folder[]> => {
   const snapshot = await getDocs(query(foldersCollection(uid), orderBy('createdAt', 'desc')));
-  return snapshot.docs.map((d) => fromFirestore(d.data()));
+  return snapshot.docs.map((d) => fromFirestore(d.data(), d.id));
 };
 
 export const updateFolder = async (folder: Folder): Promise<void> => {
