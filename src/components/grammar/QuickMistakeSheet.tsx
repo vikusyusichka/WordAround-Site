@@ -12,6 +12,8 @@ import { useGrammarSettings } from '@/stores/grammarSettingsStore';
 interface QuickMistakeSheetProps {
   open: boolean;
   saveState: MistakeSaveState;
+  /** Error code behind a failed save, shown small under the message. */
+  saveReason?: string | null;
   onSave: (values: { original: string; corrected: string; explanation: string }) => void;
   onOpenMistakesTopic: () => void;
   onClose: () => void;
@@ -20,6 +22,7 @@ interface QuickMistakeSheetProps {
 export const QuickMistakeSheet = ({
   open,
   saveState,
+  saveReason = null,
   onSave,
   onOpenMistakesTopic,
   onClose,
@@ -162,9 +165,16 @@ export const QuickMistakeSheet = ({
               </p>
             )}
             {saveState === 'failed' && (
-              <p role="alert" className="text-[14px] font-semibold text-(--color-cs-red)">
-                {t('writing.grammar.quickMistake.failed')}
-              </p>
+              <div role="alert" className="flex flex-col gap-0.5">
+                <p className="text-[14px] font-semibold text-(--color-cs-red)">
+                  {t('writing.grammar.quickMistake.failed')}
+                </p>
+                {saveReason && (
+                  <p className="text-[12px] font-semibold text-(--color-muted-text)">
+                    {saveReason}
+                  </p>
+                )}
+              </div>
             )}
             {isDone && (
               <div className="flex flex-col gap-1.5 rounded-2xl border border-[#22C55E]/40 bg-[#22C55E]/8 px-4 py-3">

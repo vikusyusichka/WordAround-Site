@@ -413,6 +413,7 @@ function GrammarHome() {
       <QuickMistakeSheet
         open={quickMistakeOpen}
         saveState={saveMistake.stateFor(quickKey)}
+        saveReason={saveMistake.reasonFor(quickKey)}
         onSave={(values) =>
           void saveMistake.save(quickKey, {
             original: values.original,
