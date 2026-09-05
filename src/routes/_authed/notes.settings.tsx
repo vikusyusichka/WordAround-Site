@@ -6,6 +6,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
+import { BackLink } from '@/components/shell/BackLink';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { NOTE_TYPES, NOTE_TYPE_META } from '@/lib/grammarMeta';
@@ -102,13 +103,11 @@ function NotesSettings() {
         }
       />
 
-      <button
-        type="button"
+      <BackLink
+        label={t('nav.notes')}
         onClick={() => void navigate({ to: '/notes' })}
-        className="mb-4 w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-      >
-        ← {t('nav.notes')}
-      </button>
+        className="mb-4"
+      />
 
       <div className="flex max-w-[760px] flex-col gap-5">
         {SECTIONS.map((section) => (

@@ -8,6 +8,7 @@ import { Plus } from '@phosphor-icons/react';
 
 import { Icon } from '@/components/primitives/Icon';
 import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
+import { BackLink } from '@/components/shell/BackLink';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { ViewToggle } from '@/components/shell/ViewToggle';
@@ -135,13 +136,11 @@ function GrammarTopicDetail() {
         }
       />
 
-      <button
-        type="button"
+      <BackLink
+        label={t('nav.notes')}
         onClick={() => void navigate({ to: '/notes' })}
-        className="mb-4 w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-      >
-        ← {t('nav.notes')}
-      </button>
+        className="mb-4"
+      />
 
       <div className="mb-4 flex flex-col gap-3">
         <GrammarSearchBar

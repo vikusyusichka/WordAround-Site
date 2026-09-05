@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
+import { BackLink } from '@/components/shell/BackLink';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { AddBlockMenu } from '@/components/grammar/AddBlockMenu';
@@ -364,13 +365,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
       />
 
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-        <button
-          type="button"
-          onClick={goBack}
-          className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-        >
-          ← {topic?.title ?? t('nav.notes')}
-        </button>
+        <BackLink label={topic?.title ?? t('nav.notes')} onClick={goBack} />
 
         <input
           value={state.title}

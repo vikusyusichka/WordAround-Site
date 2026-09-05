@@ -6,6 +6,7 @@ import { useEffect, useReducer } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
+import { BackLink } from '@/components/shell/BackLink';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { ReviewSessionScreen } from '@/components/grammar/ReviewSessionScreen';
@@ -66,13 +67,7 @@ function ReviewRoute() {
       />
 
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-        <button
-          type="button"
-          onClick={goHome}
-          className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-        >
-          ← {t('nav.notes')}
-        </button>
+        <BackLink label={t('nav.notes')} onClick={goHome} />
 
         {isLoading && (
           <p className="py-10 text-center text-[15px] font-medium text-(--color-text-secondary)">

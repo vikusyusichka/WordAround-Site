@@ -6,6 +6,7 @@ import { useReducer, useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
+import { BackLink } from '@/components/shell/BackLink';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { CreateQuizSheet } from '@/components/grammar/CreateQuizSheet';
@@ -157,8 +158,8 @@ function QuizRoute() {
       />
 
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-        <button
-          type="button"
+        <BackLink
+          label={screen === 'list' ? note.title : t('writing.grammar.quiz.title')}
           onClick={() => {
             if (screen === 'list') {
               goToEditor();
@@ -166,10 +167,7 @@ function QuizRoute() {
               setScreen('list');
             }
           }}
-          className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-        >
-          ← {screen === 'list' ? note.title : t('writing.grammar.quiz.title')}
-        </button>
+        />
 
         {screen === 'list' && (
           <>
