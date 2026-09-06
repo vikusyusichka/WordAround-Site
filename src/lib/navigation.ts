@@ -65,6 +65,21 @@ export const PRACTICE_MODES: PracticeMode[] = ['speaking', 'listening', 'reading
 export const isPracticeMode = (v: string): v is PracticeMode =>
   (PRACTICE_MODES as string[]).includes(v);
 
+/* The mobile create FAB (bottom-center "+") is a library shortcut: it only
+   creates a folder or a set, and it floats over whatever sits at the bottom of
+   the screen. So it belongs to the library hubs only — every focused screen (a
+   practice mode or session, an open set, an editor, profile) hides it, because
+   there it just covers the page's own bottom controls. Allow-list, so a new
+   focused route is hidden by default. */
+const CREATE_FAB_HUBS = ['/home', '/folders', '/sets', '/notes'];
+
+export const showsCreateFab = (pathname: string): boolean => {
+  const path = pathname.replace(/\/+$/, '') || '/';
+  if (CREATE_FAB_HUBS.includes(path)) return true;
+  /* A folder's contents is a library listing too (but /folders/new is a form). */
+  return path.startsWith('/folders/') && path !== '/folders/new';
+};
+
 /* Page header copy, keyed by route. Ports HomeViewModel.headerTitle /
    headerSubtitle. Returns i18n keys; the profile subtitle is the live email,
    handled by the caller (returns `subtitleKey: null`). */

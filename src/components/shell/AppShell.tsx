@@ -3,6 +3,7 @@
    brand feel. Pages render their own ContentContainer + PageHeader inside the
    <Outlet/>. */
 import type { ReactNode } from 'react';
+import { useRouterState } from '@tanstack/react-router';
 import { motion } from 'motion/react';
 
 import { HomeBackground } from '@/components/home/HomeBackground';
@@ -11,6 +12,7 @@ import { Icon } from '@/components/primitives/Icon';
 import { CreateMenuOverlay } from '@/components/shell/CreateMenuOverlay';
 import { MobileNav } from '@/components/shell/MobileNav';
 import { Sidebar } from '@/components/shell/Sidebar';
+import { showsCreateFab } from '@/lib/navigation';
 import { useUiStore } from '@/stores/uiStore';
 
 interface AppShellProps {
@@ -18,9 +20,16 @@ interface AppShellProps {
 }
 
 export const AppShell = ({ children }: AppShellProps) => {
+  const pathname = useRouterState({ select: (s) => s.location.pathname });
+  const isDrawerOpen = useUiStore((s) => s.isDrawerOpen);
   const isCreateMenuOpen = useUiStore((s) => s.isCreateMenuOpen);
   const toggleCreateMenu = useUiStore((s) => s.toggleCreateMenu);
   const closeCreateMenu = useUiStore((s) => s.closeCreateMenu);
+
+  /* The create FAB only belongs to the library hubs (see showsCreateFab), and
+     it steps aside while the drawer is open. Where it does show, the main
+     column reserves room for it so it never covers the last row of content. */
+  const showFab = showsCreateFab(pathname) && !isDrawerOpen;
 
   return (
     <div className="relative flex min-h-dvh bg-(--color-app-bg)">
@@ -42,25 +51,27 @@ export const AppShell = ({ children }: AppShellProps) => {
         <div className="lg:hidden">
           <MobileNav />
         </div>
-        <main className="flex-1">{children}</main>
+        <main className={`flex-1 ${showFab ? 'pb-24 lg:pb-0' : ''}`}>{children}</main>
       </div>
 
       {/* Mobile create — signature radial "fan" (desktop uses the sidebar dropdown). */}
-      <button
-        type="button"
-        onClick={toggleCreateMenu}
-        aria-label="Create"
-        aria-expanded={isCreateMenuOpen}
-        className="fixed bottom-6 left-1/2 z-[60] grid size-[60px] -translate-x-1/2 place-items-center rounded-full bg-(--color-home-brand) shadow-[0_6px_14px_rgba(43,92,250,0.32)] lg:hidden"
-      >
-        <motion.span
-          className="grid place-items-center"
-          animate={{ rotate: isCreateMenuOpen ? 45 : 0 }}
-          transition={{ type: 'spring', stiffness: 320, damping: 22 }}
+      {showFab && (
+        <button
+          type="button"
+          onClick={toggleCreateMenu}
+          aria-label="Create"
+          aria-expanded={isCreateMenuOpen}
+          className="fixed bottom-6 left-1/2 z-[60] grid size-[60px] -translate-x-1/2 place-items-center rounded-full bg-(--color-home-brand) shadow-[0_6px_14px_rgba(43,92,250,0.32)] lg:hidden"
         >
-          <Icon name="plus" className="size-[30px] text-white" />
-        </motion.span>
-      </button>
+          <motion.span
+            className="grid place-items-center"
+            animate={{ rotate: isCreateMenuOpen ? 45 : 0 }}
+            transition={{ type: 'spring', stiffness: 320, damping: 22 }}
+          >
+            <Icon name="plus" className="size-[30px] text-white" />
+          </motion.span>
+        </button>
+      )}
 
       <CreateMenuOverlay isOpen={isCreateMenuOpen} onClose={closeCreateMenu} />
     </div>

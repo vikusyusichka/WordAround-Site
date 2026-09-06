@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 
-import { isPracticeMode, pageCopyForPath, NAV_GROUPS, PROFILE_NAV } from './navigation';
+import { isPracticeMode, pageCopyForPath, showsCreateFab, NAV_GROUPS, PROFILE_NAV } from './navigation';
 
 describe('isPracticeMode', () => {
   it.each(['speaking', 'listening', 'reading', 'writing'])('accepts %s', (m) => {
@@ -69,6 +69,29 @@ describe('pageCopyForPath', () => {
       subtitleKey: 'writing.grammar.subtitle',
     });
     expect(pageCopyForPath('/notes/t1/n1').titleKey).toBe('nav.notes');
+  });
+});
+
+describe('showsCreateFab', () => {
+  it.each(['/home', '/folders', '/sets', '/notes', '/folders/abc-123', '/sets/'])(
+    'shows the FAB on the library hub %s',
+    (path) => {
+      expect(showsCreateFab(path)).toBe(true);
+    },
+  );
+
+  it.each([
+    '/practice/speaking',
+    '/practice/speaking/conversation/session',
+    '/practice/writing/write-words/abc-123',
+    '/sets/abc-123',
+    '/sets/new',
+    '/folders/new',
+    '/notes/t1/n1',
+    '/notes/review',
+    '/profile',
+  ])('hides the FAB on the focused screen %s', (path) => {
+    expect(showsCreateFab(path)).toBe(false);
   });
 });
 
