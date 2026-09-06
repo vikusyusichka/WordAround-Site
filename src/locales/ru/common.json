@@ -1,1725 +1,1774 @@
 {
   "app": {
-    "name": "WordAround",
-    "tagline": "Learn languages, actively."
+    "name": "1|WordAround",
+    "tagline": "2|Учите языки активно."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "3|Учите слова легко\\nи с удовольствием",
+    "start": "4|Начнём"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back",
-    "signUpTitle": "Create your account",
-    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
-    "name": "Name",
-    "namePlaceholder": "What should we call you?",
-    "orWithEmail": "or with email",
-    "signUpWithGoogle": "Sign up with Google",
-    "passwordHint": "At least {{min}} characters",
-    "magicLinkCta": "Sign in with an email link",
-    "creatingAccount": "Creating account..."
+    "welcomeBack": "5|С возвращением",
+    "subtitle": "6|Войдите, чтобы продолжить обучение",
+    "email": "7|Эл. почта",
+    "emailPlaceholder": "8|Введите вашу почту",
+    "password": "9|Пароль",
+    "passwordPlaceholder": "10|Введите ваш пароль",
+    "forgotPassword": "11|Забыли пароль?",
+    "signIn": "12|Войти",
+    "signingIn": "13|Выполняется вход...",
+    "signUp": "14|Зарегистрироваться",
+    "signOut": "15|Выйти",
+    "continueWithGoogle": "16|Продолжить с Google",
+    "createAccount": "17|Создать аккаунт",
+    "accountCreatedInfo": "18|Аккаунт создан. Мы отправили письмо для подтверждения.",
+    "resetEmailSent": "19|Письмо для сброса пароля отправлено",
+    "showPassword": "20|Показать пароль",
+    "hidePassword": "21|Скрыть пароль",
+    "back": "22|Назад",
+    "signUpTitle": "23|Создайте аккаунт",
+    "signUpSubtitle": "24|Несколько минут в день — и словарный запас растёт",
+    "name": "25|Имя",
+    "namePlaceholder": "26|Как к вам обращаться?",
+    "orWithEmail": "27|или по эл. почте",
+    "signUpWithGoogle": "28|Зарегистрироваться через Google",
+    "passwordHint": "29|Не менее {{min}} символов",
+    "magicLinkCta": "30|Войти по ссылке из письма",
+    "creatingAccount": "31|Создаём аккаунт..."
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "We'll open your learning right away — no need to come back here",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "32|Подтвердите почту",
+    "subtitle": "33|Ещё один шаг до начала обучения",
+    "sentTo": "34|Мы отправили ссылку для подтверждения на",
+    "fallbackEmail": "35|вашу почту",
+    "step1": "36|Откройте письмо во входящих",
+    "step2": "37|Нажмите на ссылку подтверждения",
+    "step3": "38|Мы сразу откроем ваше обучение — возвращаться сюда не нужно",
+    "checkButton": "39|Я подтвердил почту",
+    "checking": "40|Проверяем...",
+    "resend": "41|Отправить письмо ещё раз",
+    "useAnotherAccount": "42|Использовать другой аккаунт",
+    "badgeInbox": "43|Проверьте почту",
+    "badgeConfirm": "44|Подтвердите",
+    "badgeDone": "45|Готово",
+    "resentInfo": "46|Письмо для подтверждения отправлено снова",
+    "notVerifiedYet": "47|Почта ещё не подтверждена"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 8 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "emailInUse": "This account already exists",
-    "weakPassword": "This password is too weak",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again",
-    "nameRequired": "Name is required",
-    "passwordsDoNotMatch": "Passwords don't match",
-    "actionExpired": "This link has expired. Request a new one.",
-    "actionInvalid": "This link is no longer valid.",
-    "userDisabled": "This account has been disabled.",
-    "requiresRecentLogin": "For security, sign in again and then repeat this.",
-    "passwordAlreadySet": "This account already has a password.",
-    "linkNoEmail": "Enter the email the link was sent to"
+    "emailRequired": "48|Укажите эл. почту",
+    "emailInvalid": "49|Введите корректную почту",
+    "emailFirst": "50|Сначала введите вашу почту",
+    "passwordRequired": "51|Укажите пароль",
+    "passwordTooShort": "52|Пароль должен содержать не менее 8 символов",
+    "invalidEmail": "53|Неверный формат почты",
+    "wrongPassword": "54|Неверная почта или пароль. Если вы регистрировались через Google, используйте кнопку Google.",
+    "userNotFound": "55|Неверная почта или пароль. Если вы регистрировались через Google, используйте кнопку Google.",
+    "invalidCredential": "56|Неверная почта или пароль. Если вы регистрировались через Google, используйте кнопку Google.",
+    "emailInUse": "57|Такой аккаунт уже существует",
+    "weakPassword": "58|Этот пароль слишком простой",
+    "network": "59|Ошибка сети. Проверьте подключение к интернету",
+    "tooManyRequests": "60|Слишком много попыток. Повторите позже",
+    "differentCredential": "61|Эта почта уже используется с другим способом входа",
+    "noActiveAccount": "62|Активный аккаунт не найден",
+    "default": "63|Не удалось выполнить вход. Попробуйте ещё раз",
+    "nameRequired": "64|Укажите имя",
+    "passwordsDoNotMatch": "65|Пароли не совпадают",
+    "actionExpired": "66|Срок действия ссылки истёк. Запросите новую.",
+    "actionInvalid": "67|Эта ссылка больше не действует.",
+    "userDisabled": "68|Этот аккаунт отключён.",
+    "requiresRecentLogin": "69|В целях безопасности войдите ещё раз и повторите действие.",
+    "passwordAlreadySet": "70|У этого аккаунта уже есть пароль.",
+    "linkNoEmail": "71|Введите почту, на которую пришла ссылка"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
-    "sets": "Sets",
-    "notes": "Notes",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "home": "72|Главная",
+    "speaking": "73|Говорение",
+    "listening": "74|Аудирование",
+    "reading": "75|Чтение",
+    "writing": "76|Письмо",
+    "folders": "77|Папки",
+    "sets": "78|Наборы",
+    "notes": "79|Заметки",
+    "profile": "80|Профиль",
+    "create": "81|Создать",
+    "menu": "82|Меню",
+    "closeMenu": "83|Закрыть меню",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "84|Практика",
+      "library": "85|Библиотека"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
-    "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
-    "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "create": "86|Создать папку",
+    "loading": "87|Загружаем папки…",
+    "loadError": "88|Не удалось загрузить ваши папки.",
+    "emptyTitle": "89|Папок пока нет",
+    "emptyBody": "90|Создайте первую папку, чтобы упорядочить наборы.",
+    "setCount": "91|{{count}} наборов",
+    "setCount_one": "92|{{count}} набор",
+    "newTitle": "93|Новая папка",
+    "newSubtitle": "94|Соберите связанные наборы вместе.",
+    "editTitle": "95|Изменить папку",
+    "name": "96|Название",
+    "namePlaceholder": "97|напр. Путешествия",
+    "description": "98|Описание",
+    "descriptionPlaceholder": "99|Необязательно",
+    "color": "100|Цвет",
+    "save": "101|Сохранить",
+    "saving": "102|Сохраняем…",
+    "cancel": "103|Отмена",
+    "edit": "104|Изменить папку",
+    "delete": "105|Удалить папку",
+    "deleteConfirm": "106|Удалить «{{title}}»? Это действие нельзя отменить.",
+    "backToFolders": "107|Назад к папкам",
+    "notFoundTitle": "108|Папка не найдена",
+    "notFoundBody": "109|Возможно, эта папка была удалена.",
+    "noSetsInFolder": "110|В этой папке пока нет наборов.",
+    "saveError": "111|Не удалось сохранить. Попробуйте ещё раз.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "112|Укажите название папки.",
+      "nameTooLong": "113|Название папки должно быть короче 80 символов.",
+      "descTooLong": "114|Описание должно быть короче 120 символов."
     },
-    "optional": "(optional)",
-    "preview": "Preview",
-    "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "optional": "115|(необязательно)",
+    "preview": "116|Предпросмотр",
+    "previewPlaceholder": "117|Новая папка",
+    "deleteConfirmTitle": "118|Удалить эту папку?",
+    "setCount_few": "{{count}} набора",
+    "setCount_many": "{{count}} наборов",
+    "setCount_other": "{{count}} набора"
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets",
-    "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?",
-    "editTitle": "Edit set",
-    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
-    "save": "Save changes",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "create": "119|Создать набор",
+    "loading": "120|Загружаем наборы…",
+    "loadError": "121|Не удалось загрузить ваши наборы.",
+    "emptyTitle": "122|Наборов пока нет",
+    "emptyBody": "123|Создайте первый набор карточек с помощью кнопки «Создать».",
+    "cardCount": "124|{{count}} карточек",
+    "cardCount_one": "125|{{count}} карточка",
+    "keepPracticing": "126|Продолжайте практиковаться",
+    "delete": "127|Удалить набор",
+    "deleteConfirm": "128|Удалить «{{title}}»? Это действие нельзя отменить.",
+    "notFoundTitle": "129|Набор не найден",
+    "notFoundBody": "130|Возможно, этот набор был удалён.",
+    "backToSets": "131|Назад к наборам",
+    "edit": "132|Изменить набор",
+    "deleteConfirmTitle": "133|Удалить этот набор?",
+    "editTitle": "134|Изменить набор",
+    "editSubtitle": "135|Измените название, цвет, значок или папку. Карточки останутся на месте.",
+    "save": "136|Сохранить изменения",
+    "saving": "137|Сохраняем…",
+    "cancel": "138|Отмена",
+    "saveError": "139|Не удалось сохранить. Попробуйте ещё раз.",
+    "cardCount_few": "{{count}} карточки",
+    "cardCount_many": "{{count}} карточек",
+    "cardCount_other": "{{count}} карточки"
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
-    "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "title": "140|Новый набор",
+    "subtitle": "141|Добавьте слова и настройте набор.",
+    "infoSection": "142|О наборе",
+    "setTitle": "143|Название",
+    "setTitlePlaceholder": "144|напр. Всё нужное в поездке",
+    "setDescription": "145|Описание",
+    "setDescriptionPlaceholder": "146|Необязательно",
+    "privacy": "147|Приватность",
+    "private": "148|Приватный",
+    "public": "149|Публичный",
+    "cardsSection": "150|Карточки",
+    "addCard": "151|Добавить карточку",
+    "cardN": "152|Карточка {{n}}",
+    "removeCard": "153|Убрать карточку",
+    "word": "154|Слово",
+    "translation": "155|Перевод",
+    "example": "156|Пример (необязательно)",
+    "addImage": "157|Добавить изображение",
+    "removeImage": "158|Убрать изображение",
+    "customizeSection": "159|Оформление",
+    "color": "160|Цвет",
+    "icon": "161|Значок",
+    "folder": "162|Папка",
+    "noFolder": "163|Без папки",
+    "previewSection": "164|Предпросмотр",
+    "previewPlaceholder": "165|Название набора",
+    "save": "166|Создать набор",
+    "saving": "167|Сохраняем…",
+    "cancel": "168|Отмена",
+    "saveError": "169|Не удалось сохранить. Попробуйте ещё раз.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "170|Укажите название набора.",
+      "titleTooLong": "171|Название набора должно быть короче 150 символов.",
+      "descTooLong": "172|Описание должно быть короче 200 символов.",
+      "noValidCards": "173|Добавьте хотя бы одну карточку со словом и переводом.",
+      "exampleTooLong": "174|Примеры на карточках должны быть короче 150 символов."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "imageTimeout": "175|Время загрузки изображения истекло. Проверьте соединение и попробуйте снова.",
     "import": {
-      "button": "Import",
-      "title": "Import cards",
-      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
-      "close": "Close import",
-      "dataSection": "Your data",
-      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
-      "separatorsSection": "Separators",
-      "betweenTermAndDefinition": "Between word and translation",
-      "betweenCards": "Between cards",
-      "tab": "Tab",
-      "comma": "Comma",
-      "newline": "New line",
-      "semicolon": "Semicolon",
-      "custom": "Custom",
-      "customPlaceholder": "e.g. —",
-      "previewSection": "Preview",
-      "previewEmpty": "Nothing to preview yet.",
-      "noDefinition": "No translation",
-      "confirm": "Add cards"
+      "button": "176|Импорт",
+      "title": "177|Импорт карточек",
+      "subtitle": "178|Скопируйте и вставьте свои данные — из Word, Excel, Google Docs и подобных.",
+      "close": "179|Закрыть импорт",
+      "dataSection": "180|Ваши данные",
+      "placeholder": "181|Слово 1\\tОпределение 1\\nСлово 2\\tОпределение 2\\nСлово 3\\tОпределение 3",
+      "separatorsSection": "182|Разделители",
+      "betweenTermAndDefinition": "183|Между словом и переводом",
+      "betweenCards": "184|Между карточками",
+      "tab": "185|Табуляция",
+      "comma": "186|Запятая",
+      "newline": "187|Новая строка",
+      "semicolon": "188|Точка с запятой",
+      "custom": "189|Свой вариант",
+      "customPlaceholder": "190|напр. —",
+      "previewSection": "191|Предпросмотр",
+      "previewEmpty": "192|Пока нечего показать.",
+      "noDefinition": "193|Без перевода",
+      "confirm": "194|Добавить карточки"
     },
     "iconPicker": {
-      "open": "More icons",
-      "title": "Choose icon",
-      "search": "Search symbol",
-      "close": "Close",
-      "empty": "No icons match that name."
+      "open": "195|Больше значков",
+      "title": "196|Выберите значок",
+      "search": "197|Поиск символа",
+      "close": "198|Закрыть",
+      "empty": "199|Нет значков с таким названием."
     },
     "iconGroup": {
-      "learning": "Learning",
-      "languages": "Languages",
-      "nature": "Nature",
-      "health": "Health",
-      "food": "Food",
-      "travel": "Travel",
-      "work": "Work",
-      "tech": "Tech",
-      "creativity": "Creativity",
-      "general": "General"
+      "learning": "200|Учёба",
+      "languages": "201|Языки",
+      "nature": "202|Природа",
+      "health": "203|Здоровье",
+      "food": "204|Еда",
+      "travel": "205|Путешествия",
+      "work": "206|Работа",
+      "tech": "207|Технологии",
+      "creativity": "208|Творчество",
+      "general": "209|Общее"
     }
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
-      "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "flashcards": "210|Карточки",
+      "folders": "211|Папки",
+      "sets": "212|Наборы",
+      "create": "213|Создать",
+      "profile": "214|Профиль",
+      "speaking": "215|Говорение",
+      "listening": "216|Аудирование",
+      "reading": "217|Чтение",
+      "writing": "218|Письмо"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "219|Выберите набор для практики",
+      "folders": "220|Управляйте своими папками",
+      "sets": "221|Управляйте своими наборами карточек",
+      "create": "222|Создайте новый учебный набор",
+      "speaking": "223|Тренируйте разговорную речь.",
+      "listening": "224|Тренируйте слух, чтобы понимать язык естественно.",
+      "reading": "225|Читайте и повторяйте материалы на языке.",
+      "writing": "226|Практикуйте язык активно."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "227|ГОВОРЕНИЕ",
+      "listening": "228|АУДИРОВАНИЕ",
+      "reading": "229|ЧТЕНИЕ",
+      "writing": "230|ПИСЬМО"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "231|Цель на сегодня",
+      "left": "232|Осталось {{count}} слов"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "233|Выучено сегодня",
+      "words": "234|слов",
+      "accuracy": "235|Точность",
+      "greatJob": "236|Отличная работа!",
+      "streak": "237|Серия",
+      "days": "238|дней"
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "239|Продолжить обучение",
+    "yourSets": "240|Ваши наборы",
+    "viewAll": "241|Показать все",
+    "review": "242|Повторить",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "243|Наборов пока нет",
+      "emptyBody": "244|Создайте первый набор карточек с помощью кнопки «Создать»."
     },
     "create": {
-      "folder": "Folder",
-      "set": "Set",
-      "text": "Text",
-      "audio": "Audio",
-      "essay": "Essay"
+      "folder": "245|Папка",
+      "set": "246|Набор",
+      "text": "247|Текст",
+      "audio": "248|Аудио",
+      "essay": "249|Эссе"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "250|{{title}} — скоро"
     },
     "progress": {
       "subtitle": {
-        "speaking": "of speaking practice",
-        "listening": "of listening practice",
-        "reading": "of reading practice",
-        "writing": "of writing practice"
+        "speaking": "251|практики говорения",
+        "listening": "252|практики аудирования",
+        "reading": "253|практики чтения",
+        "writing": "254|практики письма"
       }
     },
     "dailyGoal": {
-      "title": "Your goal for today",
-      "body": "Pick what you want to practise today — the card below counts against it.",
-      "chosenBody": "This is what today is about.",
-      "howMuch": "How much?",
-      "change": "Change"
+      "title": "255|Ваша цель на сегодня",
+      "body": "256|Выберите, что хотите потренировать сегодня — карточка ниже засчитывается в эту цель.",
+      "chosenBody": "257|Вот о чём сегодняшний день.",
+      "howMuch": "258|Сколько?",
+      "change": "259|Изменить"
     },
     "lastNote": {
-      "title": "Last note you read"
+      "title": "260|Последняя прочитанная заметка"
     }
   },
   "categories": {
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing"
+    "speaking": "261|Говорение",
+    "listening": "262|Аудирование",
+    "reading": "263|Чтение",
+    "writing": "264|Письмо"
   },
   "phase0": {
-    "title": "WordAround",
-    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
+    "title": "265|WordAround",
+    "subtitle": "266|Фаза 0 запущена. Токены дизайна загружены, Firebase подключён."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "267|Перевернуть",
+    "known": "268|Я знал",
+    "unknown": "269|Ещё учу",
+    "mastered": "270|Освоено",
+    "shuffle": "271|Перемешать",
+    "trackProgress": "272|Отслеживать прогресс",
+    "speak": "273|Произнести",
+    "roundDone": "274|Раунд завершён",
+    "knewCount": "275|Вы знали {{known}} из {{total}}",
+    "repeatUnknown": "276|Повторить {{count}} невыученных",
+    "restart": "277|Начать заново",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "278|Все",
+      "studied": "279|Изученные",
+      "remaining": "280|Оставшиеся",
+      "mastered": "281|Освоенные"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "282|Добавить карточку",
+    "editCard": "283|Изменить карточку",
+    "deleteCard": "284|Удалить карточку",
+    "deleteCardConfirm": "285|Удалить эту карточку?",
+    "emptyPrompt": "286|В этом наборе пока нет карточек. Добавьте первую.",
+    "save": "287|Сохранить",
+    "cancel": "288|Отмена"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "289|Прогресс за сегодня",
+      "unit": "290|слов",
+      "subtitle": "291|практики письма"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "292|Режимы практики",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "293|Письмо по наборам",
+        "subtitle": "294|Тренируйте написание и правописание слов из ваших наборов."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "295|Эссе",
+        "subtitle": "296|Пишите тексты и получайте отзыв ИИ о грамматике и стиле."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "297|Скоро"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "298|Выберите набор",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "299|Нет наборов со словами",
+        "subtitle": "300|Создайте набор хотя бы с одной карточкой, прежде чем начинать практику письма."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "301|{{count}} слов",
+      "wordsCount_one": "302|{{count}} слово",
+      "close": "303|Закрыть",
+      "wordsCount_few": "{{count}} слова",
+      "wordsCount_many": "{{count}} слов",
+      "wordsCount_other": "{{count}} слова"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "304|Письмо по наборам",
+      "subtitle": "305|Введите перевод и нажмите Enter.",
+      "translateHint": "306|Переведите на свой язык",
+      "hint": "307|Подсказка",
+      "skip": "308|Пропустить",
+      "submit": "309|Проверить",
+      "inputPlaceholder": "310|Пишите здесь…",
+      "loading": "311|Загружаем набор…",
+      "loadError": "312|Не удалось загрузить этот набор.",
+      "noCards": "313|В этом наборе нет карточек.",
+      "back": "314|Назад",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "315|Настройки",
+        "trainingMode": "316|Режим тренировки",
+        "difficulty": "317|Сложность"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "318|Слово → Перевод",
+        "translationToWord": "319|Перевод → Слово"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "320|Лёгкая",
+        "medium": "321|Средняя",
+        "hard": "322|Сложная",
+        "easyDesc": "323|Неограниченные подсказки и пропуски",
+        "mediumDesc": "324|1 буква подсказки, максимум 25 % пропусков",
+        "hardDesc": "325|Без подсказок, без пропусков, на время"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "326|Переведите на свой язык",
+        "translation": "327|Напишите исходное слово"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "328|Остался {{count}} пропуск",
+      "skipsLeft_other": "329|Осталось {{count}} пропусков",
+      "seconds": "330|{{count}} с",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "331|Раунд завершён!",
+          "subtitle": "332|Отличная работа. Вы прошли этот раунд письма."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "333|Время вышло",
+          "subtitle": "334|Таймер сложного режима дошёл до нуля. Начните заново с первого слова."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "335|Неверный ответ",
+          "subtitle": "336|В сложном режиме одна ошибка завершает раунд."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
-      }
+        "perfectTitle": "337|Идеальный раунд!",
+        "perfectBody": "338|Вы прошли сложный режим без ошибок. Без пропусков. Без подсказок. Только мастерство.",
+        "totalWords": "339|Всего слов",
+        "completedWords": "340|Пройдено слов",
+        "skippedWords": "341|Пропущено слов",
+        "hintsUsed": "342|Использовано подсказок",
+        "streak": "343|Серия",
+        "difficultyLabel": "344|Сложность",
+        "word": "345|Слово",
+        "yourAnswer": "346|Ваш ответ",
+        "correctAnswer": "347|Правильный ответ",
+        "tryAgain": "348|Попробовать снова"
+      },
+      "skipsLeft_few": "Осталось {{count}} пропуска",
+      "skipsLeft_many": "Осталось {{count}} пропусков"
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "349|Эссе",
+      "subtitle": "350|Тему выбирает ИИ. Пишите, а потом получите отзыв.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "351|Предложенная",
+        "custom": "352|Своя тема"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "353|Напишите свою тему эссе...",
+        "generate": "354|Сгенерировать задание"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "355|Сгенерировать тему",
+        "regenerate": "356|Другая тема"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "357|Язык",
+      "difficulty": "358|Сложность",
       "task": {
-        "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips",
-        "taskLabel": "Task"
+        "time": "359|≈ {{count}} мин",
+        "wordRange": "360|{{min}}-{{max}} слов",
+        "quickTips": "361|Быстрые советы",
+        "taskLabel": "362|Задание"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "363|Начните писать эссе здесь...",
+        "wordCount": "364|{{count}} / {{min}}-{{max}} слов",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "365|Продолжайте — нужно минимум {{min}} слов.",
+          "aboveMaximum": "366|Вы превысили лимит — постарайтесь сократить.",
+          "valid": "367|В пределах нормы."
         },
-        "reset": "Reset"
+        "reset": "368|Сбросить"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "369|Сначала введите тему.",
+        "generationFailed": "370|Не удалось сгенерировать тему. Попробуйте ещё раз."
       },
-      "generating": "Generating...",
+      "generating": "371|Генерируем...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "372|Получить подсказку",
+        "remaining": "373|Осталось {{remaining}}/{{limit}}",
+        "noneLeft": "374|Подсказок не осталось",
+        "notAvailable": "375|На этом уровне подсказки недоступны",
+        "generating": "376|Генерируем подсказку...",
+        "error": "377|Не удалось получить подсказку. Попробуйте ещё раз.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "378|Содержание",
+          "grammar": "379|Грамматика",
+          "vocabulary": "380|Лексика",
+          "structure": "381|Структура"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again.",
-        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
+        "button": "382|Проверить эссе",
+        "checking": "383|Проверяем...",
+        "disabled": "384|Сначала уложитесь в диапазон слов",
+        "error": "385|Не удалось проверить ваше эссе. Попробуйте ещё раз.",
+        "languageUnsupported": "386|Проверка грамматики для языка {{language}} пока недоступна."
       },
       "score": {
-        "title": "Essay score",
+        "title": "387|Оценка эссе",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "388|Отлично",
+          "veryGood": "389|Очень хорошо",
+          "good": "390|Хорошо",
+          "needsWork": "391|Нужно доработать"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "392|Грамматика",
+          "vocabulary": "393|Лексика",
+          "length": "394|Объём",
+          "complexity": "395|Сложность",
+          "relevance": "396|Соответствие теме",
+          "independence": "397|Самостоятельность"
         },
         "stat": {
-          "words": "Words",
-          "grammar": "Grammar",
-          "vocabStyle": "Vocab/style",
-          "hints": "Hints",
-          "translations": "Translations",
-          "synonyms": "Synonyms"
+          "words": "398|Слова",
+          "grammar": "399|Грамматика",
+          "vocabStyle": "400|Лексика и стиль",
+          "hints": "401|Подсказки",
+          "translations": "402|Переводы",
+          "synonyms": "403|Синонимы"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
-        "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "sectionTitle": "404|Грамматические ошибки",
+        "count_one": "405|{{count}} ошибка",
+        "count_other": "406|{{count}} ошибок",
+        "empty": "407|Грамматических ошибок не найдено — отличная работа!",
+        "original": "408|Оригинал:",
+        "suggestion": "409|Предложение:",
+        "reason": "410|Причина:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "411|Грамматика",
+          "vocabulary": "412|Лексика",
+          "style": "413|Стиль"
         },
         "save": {
-          "idle": "Save to Notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
-        }
+          "idle": "414|Сохранить в заметки",
+          "saving": "415|Сохраняем…",
+          "saved": "416|Сохранено",
+          "duplicate": "417|Уже сохранено",
+          "failed": "418|Повторить сохранение"
+        },
+        "count_few": "{{count}} ошибки",
+        "count_many": "{{count}} ошибок"
       },
       "helper": {
-        "translate": "Translate",
-        "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "translate": "419|Перевести",
+        "synonym": "420|Синоним",
+        "remaining": "421|Осталось {{remaining}}",
+        "notAvailable": "422|Недоступно на этом уровне"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "423|Перевести",
+        "placeholder": "424|Введите слово или короткую фразу",
+        "submit": "425|Перевести",
+        "submitting": "426|Переводим..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "427|Синонимы",
+        "placeholder": "428|Введите слово",
+        "submit": "429|Найти синонимы",
+        "submitting": "430|Ищем..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "431|С",
+        "to": "432|На",
+        "close": "433|Закрыть",
+        "noResult": "434|Ничего не найдено.",
+        "sameLanguage": "435|Выберите другой исходный язык.",
+        "error": "436|Сервис временно недоступен."
       },
-      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
-      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
-      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
+      "saveMistakeConfirmTitle": "437|Сохранить эту ошибку в заметки?",
+      "saveMistakeConfirmBody": "438|Она сохранится как заметка об ошибке с исправлением «{{correction}}».",
+      "autoSaveConfirmTitle": "439|Сохранить эти ошибки в ваши заметки?",
+      "autoSaveConfirmBody_one": "440|Эта проверка нашла {{count}} ошибку. После сохранения она станет заметкой, которая вернётся на повторение.",
+      "autoSaveConfirmBody_other": "441|Эта проверка нашла {{count}} ошибок. После сохранения они станут заметками, которые вернутся на повторение.",
+      "autoSaveConfirmBody_few": "Эта проверка нашла {{count}} ошибки. После сохранения они станут заметками, которые вернутся на повторение.",
+      "autoSaveConfirmBody_many": "Эта проверка нашла {{count}} ошибок. После сохранения они станут заметками, которые вернутся на повторение."
     },
     "grammar": {
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "subtitle": "442|Раскладывайте грамматику по темам в понятных структурированных заметках.",
+      "newTopic": "443|Новая тема",
+      "topicsEmptyTitle": "444|Тем пока нет",
+      "topicsEmptyBody": "445|Создайте первую тему, чтобы начать собирать заметки по грамматике.",
+      "notesCount_one": "446|{{count}} заметка",
+      "notesCount_other": "447|{{count}} заметок",
+      "deleteTopicConfirm": "448|Удалить «{{title}}» и все её заметки? Это действие нельзя отменить.",
+      "notesEmptyTitle": "449|Заметок пока нет",
+      "notesEmptyBody": "450|Добавьте первую заметку в эту тему.",
+      "newNote": "451|Новая заметка",
+      "deleteNoteConfirm": "452|Удалить эту заметку? Это действие нельзя отменить.",
+      "loading": "453|Загружаем…",
+      "loadError": "454|Не удалось загрузить ваши заметки по грамматике.",
+      "notFoundTitle": "455|Не найдено",
+      "notFoundBody": "456|Возможно, этот элемент был удалён.",
+      "back": "457|Назад",
+      "updated": "458|Обновлено {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel",
-        "language": "Language",
-        "languageNone": "Not set"
+        "newTitle": "459|Новая тема",
+        "editTitle": "460|Изменить тему",
+        "name": "461|Название",
+        "namePlaceholder": "462|напр. Испанские глаголы",
+        "description": "463|Описание",
+        "descriptionPlaceholder": "464|Необязательно",
+        "color": "465|Цвет",
+        "icon": "466|Значок",
+        "save": "467|Сохранить",
+        "cancel": "468|Отмена",
+        "language": "469|Язык",
+        "languageNone": "470|Не задан"
       },
       "noteType": {
-        "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "standard": "471|Обычная",
+        "mistake": "472|Ошибка",
+        "rule": "473|Правило",
+        "comparison": "474|Сравнение",
+        "cheatSheet": "475|Шпаргалка",
+        "exercise": "476|Упражнение"
       },
       "block": {
-        "heading": "Heading",
-        "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)",
-        "subheading": "Subheading",
-        "numberedList": "Numbered list",
-        "checklist": "Checklist",
-        "comparison": "Comparison",
-        "exercise": "Exercise",
-        "quiz": "Quiz",
-        "image": "Image",
-        "comparisonSecondary": "Second side",
-        "imageAdd": "Add / replace image",
-        "imageUploading": "Uploading…",
-        "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images."
+        "heading": "477|Заголовок",
+        "paragraph": "478|Текст",
+        "bulletList": "479|Маркированный список",
+        "rule": "480|Правило",
+        "example": "481|Пример",
+        "warning": "482|Предупреждение",
+        "quote": "483|Цитата",
+        "divider": "484|Разделитель",
+        "addBlock": "485|Добавить блок",
+        "addItem": "486|Добавить пункт",
+        "moveUp": "487|Вверх",
+        "moveDown": "488|Вниз",
+        "remove": "489|Убрать",
+        "secondaryPlaceholder": "490|Уточнение / перевод (необязательно)",
+        "subheading": "491|Подзаголовок",
+        "numberedList": "492|Нумерованный список",
+        "checklist": "493|Чек-лист",
+        "comparison": "494|Сравнение",
+        "exercise": "495|Упражнение",
+        "quiz": "496|Тест",
+        "image": "497|Изображение",
+        "comparisonSecondary": "498|Вторая сторона",
+        "imageAdd": "499|Добавить / заменить изображение",
+        "imageUploading": "500|Загружаем…",
+        "imageFailed": "501|Не удалось загрузить изображение.",
+        "imageSaveFirst": "502|Войдите, чтобы загружать изображения."
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…",
-        "subheading": "Subheading",
-        "numberedList": "List item",
-        "checklist": "Checklist item",
-        "comparison": "First side",
-        "exercise": "Practice instruction…",
-        "quiz": "Question",
-        "image": "Image caption"
+        "heading": "503|Заголовок",
+        "paragraph": "504|Напишите объяснение…",
+        "bulletList": "505|Пункт списка",
+        "rule": "506|Объясните правило грамматики…",
+        "example": "507|Добавьте пример…",
+        "warning": "508|Частая ошибка или предупреждение…",
+        "quote": "509|Фраза, которую стоит запомнить…",
+        "subheading": "510|Подзаголовок",
+        "numberedList": "511|Пункт списка",
+        "checklist": "512|Пункт чек-листа",
+        "comparison": "513|Первая сторона",
+        "exercise": "514|Инструкция к упражнению…",
+        "quiz": "515|Вопрос",
+        "image": "516|Подпись к изображению"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again.",
-        "subtitle": "Edit note",
-        "tags": "Tags",
-        "tagsPlaceholder": "Add a tag…",
-        "removeTag": "Remove tag {{tag}}",
-        "addToReview": "Add to review",
-        "addedToReview": "Added to your review queue.",
-        "inReview": "In review · {{when}}",
-        "inReviewDue": "Due for review",
-        "removedFromReview": "Removed from your review queue.",
-        "unsavedTitle": "Leave without saving?",
-        "unsavedBody": "This note has changes that have not been saved yet.",
-        "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "titlePlaceholder": "517|Название заметки",
+        "save": "518|Сохранить заметку",
+        "saving": "519|Сохраняем…",
+        "delete": "520|Удалить заметку",
+        "saveError": "521|Не удалось сохранить. Попробуйте ещё раз.",
+        "subtitle": "522|Изменить заметку",
+        "tags": "523|Теги",
+        "tagsPlaceholder": "524|Добавить тег…",
+        "removeTag": "525|Убрать тег {{tag}}",
+        "addToReview": "526|Добавить на повторение",
+        "addedToReview": "527|Добавлено в вашу очередь повторения.",
+        "inReview": "528|На повторении · {{when}}",
+        "inReviewDue": "529|Пора повторить",
+        "removedFromReview": "530|Убрано из вашей очереди повторения.",
+        "unsavedTitle": "531|Выйти без сохранения?",
+        "unsavedBody": "532|В этой заметке есть несохранённые изменения.",
+        "discard": "533|Отменить изменения",
+        "saveAndLeave": "534|Сохранить и выйти"
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "535|Тесты",
+        "new": "536|Новый тест",
+        "start": "537|Начать тест",
+        "delete": "538|Удалить тест",
+        "deleteConfirm": "539|Удалить «{{title}}»? Это действие нельзя отменить.",
+        "emptyTitle": "540|Тестов пока нет",
+        "emptyBody": "541|Создайте тест по этой заметке, чтобы себя проверить.",
+        "loadError": "542|Не удалось загрузить тесты.",
+        "questionsCount_one": "543|{{count}} вопрос",
+        "questionsCount_other": "544|{{count}} вопросов",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "545|Выбор ответа",
+          "trueFalse": "546|Верно / Неверно",
+          "fillGap": "547|Заполнить пропуск",
+          "shortAnswer": "548|Короткий ответ"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead",
-          "modeManual": "Manual",
-          "modeManualDesc": "Write your own questions.",
-          "createQuiz": "Create quiz"
+          "title": "549|Создать тест",
+          "titlePlaceholder": "550|Название теста",
+          "mode": "551|Режим генерации",
+          "modeSmart": "552|Умный локальный",
+          "modeSmartDesc": "553|Создаёт вопросы из содержимого заметки прямо на устройстве.",
+          "modeAI": "554|Сгенерировано ИИ",
+          "modeAIDesc": "555|Создаёт более содержательные вопросы с помощью ИИ.",
+          "count": "556|Вопросы",
+          "types": "557|Типы вопросов",
+          "focus": "558|Фокус (необязательно)",
+          "focusPlaceholder": "559|напр. сосредоточиться на неправильных формах",
+          "preview": "560|Предпросмотр вопросов",
+          "regenerate": "561|Обновить предпросмотр",
+          "previewTitle": "562|Предпросмотр",
+          "saveQuiz": "563|Сохранить тест",
+          "generateQuiz": "564|Сгенерировать тест",
+          "generating": "565|Генерируем…",
+          "saving": "566|Сохраняем…",
+          "useSmartInstead": "567|Использовать умный локальный",
+          "modeManual": "568|Вручную",
+          "modeManualDesc": "569|Напишите свои вопросы.",
+          "createQuiz": "570|Создать тест"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "571|Вопрос {{current}} из {{total}}",
+          "submit": "572|Ответить",
+          "next": "573|Далее",
+          "finish": "574|Завершить",
+          "correct": "575|Верно!",
+          "incorrect": "576|Неверно",
+          "correctAnswer": "577|Правильный ответ: {{answer}}",
+          "typeMissing": "578|Введите пропущенное слово",
+          "typeAnswer": "579|Введите ваш ответ",
+          "trueLabel": "580|Верно",
+          "falseLabel": "581|Неверно"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "582|{{correct}} из {{total}} верно",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "583|Отлично!",
+            "good": "584|Отличная работа!",
+            "keepPracticing": "585|Продолжайте практиковаться",
+            "reviewNote": "586|Повторите заметку"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "587|Неверные",
+          "correctSection": "588|Верные",
+          "yourAnswer": "589|Ваш ответ: {{answer}}",
+          "tryAgain": "590|Попробовать снова",
+          "reviewNote": "591|Открыть заметку",
+          "done": "592|Готово"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "593|Сначала добавьте больше содержания в заметку — для теста нужно минимум два блока (правило, пример, предупреждение, абзац или цитата).",
+          "noMatchingQuestionTypes": "594|Недостаточно подходящего содержания для выбранных типов вопросов. Включите больше типов или добавьте содержания.",
+          "aiFailed": "595|Не удалось сгенерировать тест с помощью ИИ. Попробуйте ещё раз или используйте умный локальный режим."
         },
-        "badge": "Quiz",
+        "badge": "596|Тест",
         "manual": {
-          "questions_one": "{{count}} question",
-          "questions_other": "{{count}} questions",
-          "add": "Add question",
-          "questionPlaceholder": "Question text",
-          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
-          "optionPlaceholder": "Option {{index}}",
-          "answerPlaceholder": "Correct answer",
-          "explanationPlaceholder": "Explanation (optional)",
+          "questions_one": "597|{{count}} вопрос",
+          "questions_other": "598|{{count}} вопросов",
+          "add": "599|Добавить вопрос",
+          "questionPlaceholder": "600|Текст вопроса",
+          "questionGapPlaceholder": "601|Вопрос с пропуском, напр. Я _____ в школу",
+          "optionPlaceholder": "602|Вариант {{index}}",
+          "answerPlaceholder": "603|Правильный ответ",
+          "explanationPlaceholder": "604|Пояснение (необязательно)",
           "error": {
-            "questionRequired": "Question text is required.",
-            "optionsRequired": "Multiple choice needs at least 2 options.",
-            "answerRequired": "Enter the correct answer.",
-            "answerNotAnOption": "The correct answer must match one of the options.",
-            "blankRequired": "Add a blank (e.g. _____) inside the question."
-          }
-        }
+            "questionRequired": "605|Укажите текст вопроса.",
+            "optionsRequired": "606|Для выбора ответа нужно минимум 2 варианта.",
+            "answerRequired": "607|Введите правильный ответ.",
+            "answerNotAnOption": "608|Правильный ответ должен совпадать с одним из вариантов.",
+            "blankRequired": "609|Добавьте пропуск (напр. _____) внутри вопроса."
+          },
+          "questions_few": "{{count}} вопроса",
+          "questions_many": "{{count}} вопросов"
+        },
+        "questionsCount_few": "{{count}} вопроса",
+        "questionsCount_many": "{{count}} вопросов"
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "610|Быстрая ошибка",
+        "title": "611|Быстрая ошибка",
+        "original": "612|Исходное предложение",
+        "originalPlaceholder": "613|Пример: Я есть согласен с тобой",
+        "corrected": "614|Исправление",
+        "correctedPlaceholder": "615|Пример: Я согласен с тобой",
+        "explanation": "616|Пояснение (необязательно)",
+        "explanationPlaceholder": "617|Почему исправление верное?",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "618|Сначала добавьте исходное предложение.",
+          "corrected": "619|Добавьте также исправленное предложение."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done",
-        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
+        "save": "620|Сохранить ошибку",
+        "saving": "621|Сохраняем…",
+        "saved": "622|Сохранено в заметки по грамматике.",
+        "duplicate": "623|Уже сохранено — дубликат пропущен.",
+        "failed": "624|Не удалось сохранить. Попробуйте ещё раз.",
+        "openTopic": "625|Открыть «Частые ошибки»",
+        "done": "626|Готово",
+        "tip": "627|Сохранённые исправления попадают на повторение автоматически, поэтому те, в которых вы постоянно ошибаетесь, возвращаются первыми."
       },
       "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
+        "topicTitle": "628|Шаблоны тем",
+        "noteTitle": "629|Шаблоны заметок",
+        "button": "630|Шаблон",
+        "startFromTemplate": "631|Начать с шаблона",
+        "searchPlaceholder": "632|Поиск шаблонов…",
+        "allLanguages": "633|Все",
+        "anyDifficulty": "634|Любая",
         "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
+          "en": "635|Английский",
+          "es": "636|Испанский",
+          "fr": "637|Французский",
+          "de": "638|Немецкий"
         },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
-        "applyTitle": "Apply “{{title}}”?",
-        "applyBody": "This note already has content. Choose how to apply the template.",
-        "applyReplace": "Replace content",
-        "applyAppend": "Append blocks"
+        "minutes": "639|{{minutes}} мин",
+        "notesIncluded_one": "640|{{count}} заметка",
+        "notesIncluded_other": "641|{{count}} заметок",
+        "blocksIncluded_one": "642|{{count}} блок",
+        "blocksIncluded_other": "643|{{count}} блоков",
+        "empty": "644|Под ваши фильтры не подходит ни один шаблон.",
+        "use": "645|Использовать шаблон",
+        "creating": "646|Создаём…",
+        "replaceConfirm": "647|Заменить текущее содержимое заметки этим шаблоном? Нажмите «Отмена», чтобы добавить шаблон ниже.",
+        "applyTitle": "648|Применить «{{title}}»?",
+        "applyBody": "649|В этой заметке уже есть содержимое. Выберите, как применить шаблон.",
+        "applyReplace": "650|Заменить содержимое",
+        "applyAppend": "651|Добавить блоки в конец",
+        "notesIncluded_few": "{{count}} заметки",
+        "notesIncluded_many": "{{count}} заметок",
+        "blocksIncluded_few": "{{count}} блока",
+        "blocksIncluded_many": "{{count}} блоков"
       },
       "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "dueBadge": "Due",
-        "refreshBody": "Nothing is due right now — you can still refresh what you read lately.",
-        "refreshStart": "Refresh recent notes",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
+        "title": "652|Повторение",
+        "subtitle": "653|Закрепляйте выученное с помощью интервального повторения.",
+        "cardTitle": "654|Повторить сегодня",
+        "cardSubtitle_one": "655|{{count}} элемент готов · ~{{minutes}} мин",
+        "cardSubtitle_other": "656|{{count}} элементов готово · ~{{minutes}} мин",
+        "caughtUpTitle": "657|Всё повторено",
+        "caughtUp": "658|Вы всё повторили. Открывайте или редактируйте заметки, чтобы получить предложения для повторения.",
+        "dueBadge": "659|Пора",
+        "refreshBody": "660|Сейчас ничего не запланировано — но можно освежить то, что вы читали недавно.",
+        "refreshStart": "661|Освежить недавние заметки",
+        "start": "662|Начать повторение",
+        "skip": "663|Пропустить",
+        "itemOf": "664|Элемент {{current}} из {{total}}",
+        "untitled": "665|Заметка по грамматике",
+        "stats": "666|Повторено раз: {{count}} · серия {{streak}}",
+        "continueToQuestion": "667|Перейти к вопросу",
+        "showAnswer": "668|Показать ответ",
+        "compareTitle": "669|Сравните свой ответ",
+        "referenceAnswer": "670|Образец: {{answer}}",
+        "openNote": "671|Открыть заметку целиком",
         "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
+          "manual_one": "672|{{count}} элемент ждёт повторения",
+          "manual_other": "673|{{count}} элементов ждут повторения",
+          "recentlyOpened_one": "674|{{count}} недавно открытая заметка",
+          "recentlyOpened_other": "675|{{count}} недавно открытых заметок",
+          "recentlyEdited_one": "676|{{count}} недавно изменённая заметка",
+          "recentlyEdited_other": "677|{{count}} недавно изменённых заметок",
+          "manual_few": "{{count}} элемента ждут повторения",
+          "manual_many": "{{count}} элементов ждут повторения",
+          "recentlyOpened_few": "{{count}} недавно открытые заметки",
+          "recentlyOpened_many": "{{count}} недавно открытых заметок",
+          "recentlyEdited_few": "{{count}} недавно изменённые заметки",
+          "recentlyEdited_many": "{{count}} недавно изменённых заметок"
         },
         "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
-          "quiz": "Quiz"
+          "note": "678|Заметка",
+          "mistake": "679|Ошибка",
+          "quiz": "680|Тест"
         },
         "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
+          "source": "681|Изучение",
+          "question": "682|Ответ",
+          "result": "683|Оценка"
         },
         "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
+          "forgot": "684|Забыл",
+          "hard": "685|Сложно",
+          "good": "686|Хорошо",
+          "easy": "687|Легко"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "plus4h": "688|+4 часа",
+          "plus1d": "689|+1 день",
+          "plus3d": "690|+3 дня",
+          "plus7d": "691|+7 дней"
         },
         "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "title": "692|Сессия завершена",
+          "emptyTitle": "693|Ничего не повторено",
+          "reviewed": "694|Повторено",
+          "correct": "695|Верно",
+          "incorrect": "696|Неверно",
+          "hintForgot": "697|Некоторые элементы вернутся через 4 часа.",
+          "hintHard": "698|Сложные элементы вернутся завтра.",
+          "hintGood": "699|Хорошие элементы вернутся через 3 дня.",
+          "hintEasy": "700|Все элементы вернутся через 7 дней.",
+          "done": "701|Назад к заметкам по грамматике"
         },
-        "loadError": "Couldn't load your review queue.",
-        "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "loadError": "702|Не удалось загрузить вашу очередь повторения.",
+        "mistakeCount_one": "703|{{count}} ошибка",
+        "mistakeCount_other": "704|{{count}} ошибок",
+        "cardSubtitle_few": "{{count}} элемента готово · ~{{minutes}} мин",
+        "cardSubtitle_many": "{{count}} элементов готово · ~{{minutes}} мин",
+        "mistakeCount_few": "{{count}} ошибки",
+        "mistakeCount_many": "{{count}} ошибок"
       },
-      "mistakesBadge": "Mistakes",
-      "topicsTitle": "Topics",
-      "deleteTopic": "Delete topic",
-      "deleteTopicTitle": "Delete this topic?",
-      "deleteNoteTitle": "Delete this note?",
-      "pin": "Pin note",
-      "unpin": "Unpin note",
-      "favorite": "Add to favorites",
-      "unfavorite": "Remove from favorites",
+      "mistakesBadge": "705|Ошибки",
+      "topicsTitle": "706|Темы",
+      "deleteTopic": "707|Удалить тему",
+      "deleteTopicTitle": "708|Удалить эту тему?",
+      "deleteNoteTitle": "709|Удалить эту заметку?",
+      "pin": "710|Закрепить заметку",
+      "unpin": "711|Открепить заметку",
+      "favorite": "712|Добавить в избранное",
+      "unfavorite": "713|Убрать из избранного",
       "search": {
-        "topics": "Search topics…",
-        "notes": "Search notes…",
-        "clear": "Clear search",
-        "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword.",
-        "notesSection_one": "Notes ({{count}})",
-        "notesSection_other": "Notes ({{count}})",
-        "noNoteMatches": "No notes match this search."
+        "topics": "714|Поиск тем…",
+        "notes": "715|Поиск заметок…",
+        "clear": "716|Очистить поиск",
+        "noMatchTitle": "717|Совпадений нет",
+        "noMatchBody": "718|Попробуйте другое слово.",
+        "notesSection_one": "719|Заметки ({{count}})",
+        "notesSection_other": "720|Заметки ({{count}})",
+        "noNoteMatches": "721|Под этот запрос не подходит ни одна заметка.",
+        "notesSection_few": "Заметки ({{count}})",
+        "notesSection_many": "Заметки ({{count}})"
       },
       "filter": {
-        "label": "Filter notes",
-        "all": "All",
-        "pinned": "Pinned",
-        "favorites": "Favorites",
-        "mistakes": "Mistakes",
-        "quizzes": "Quizzes",
-        "review": "Due",
+        "label": "722|Фильтр заметок",
+        "all": "723|Все",
+        "pinned": "724|Закреплённые",
+        "favorites": "725|Избранные",
+        "mistakes": "726|Ошибки",
+        "quizzes": "727|Тесты",
+        "review": "728|К повторению",
         "empty": {
           "all": {
-            "title": "No grammar notes yet",
-            "body": "Create your first grammar note for this topic."
+            "title": "729|Заметок по грамматике пока нет",
+            "body": "730|Создайте первую заметку по грамматике для этой темы."
           },
           "pinned": {
-            "title": "No pinned notes yet",
-            "body": "Pin notes from the list to find them quickly."
+            "title": "731|Закреплённых заметок пока нет",
+            "body": "732|Закрепляйте заметки из списка, чтобы быстро их находить."
           },
           "favorites": {
-            "title": "No favorite notes yet",
-            "body": "Favorite notes to keep them handy."
+            "title": "733|Избранных заметок пока нет",
+            "body": "734|Добавляйте заметки в избранное, чтобы они были под рукой."
           },
           "mistakes": {
-            "title": "No saved mistakes yet",
-            "body": "Save grammar mistakes to review them here."
+            "title": "735|Сохранённых ошибок пока нет",
+            "body": "736|Сохраняйте грамматические ошибки, чтобы повторять их здесь."
           },
           "quizzes": {
-            "title": "No quiz notes yet",
-            "body": "Add a quiz to a note to see it here."
+            "title": "737|Заметок с тестами пока нет",
+            "body": "738|Добавьте тест к заметке, чтобы увидеть её здесь."
           },
           "review": {
-            "title": "Nothing due right now",
-            "body": "Notes come back here when their next review is due."
+            "title": "739|Сейчас ничего не запланировано",
+            "body": "740|Заметки возвращаются сюда, когда приходит время следующего повторения."
           }
         }
       },
       "reorder": {
-        "start": "Reorder",
-        "done": "Done",
-        "up": "Move up",
-        "down": "Move down"
+        "start": "741|Изменить порядок",
+        "done": "742|Готово",
+        "up": "743|Вверх",
+        "down": "744|Вниз"
       },
       "highlights": {
-        "mistakesTitle": "Mistakes to fix",
-        "mistakesSubtitle": "Recent corrections waiting for review.",
-        "quizzesTitle": "Weak quiz areas",
-        "quizzesSubtitle": "Quizzes worth re-taking soon."
+        "mistakesTitle": "745|Ошибки для исправления",
+        "mistakesSubtitle": "746|Недавние исправления ждут повторения.",
+        "quizzesTitle": "747|Слабые темы тестов",
+        "quizzesSubtitle": "748|Тесты, которые стоит пройти снова."
       },
       "quickNote": {
-        "button": "Quick note",
-        "title": "Quick note",
-        "subtitle": "Capture a grammar idea without opening the full editor.",
-        "noteTitle": "Title",
-        "titlePlaceholder": "Example: Ser vs Estar",
-        "text": "Note",
-        "textPlaceholder": "Write the useful part here",
-        "noteType": "Note type",
-        "topic": "Topic",
-        "openEditor": "Open editor after saving",
-        "openEditorHint": "Useful when the quick version grows into a full note.",
-        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
-        "validation": "Add a title or some text first.",
-        "save": "Save quick note",
-        "saving": "Saving…"
+        "button": "749|Быстрая заметка",
+        "title": "750|Быстрая заметка",
+        "subtitle": "751|Запишите идею по грамматике, не открывая полный редактор.",
+        "noteTitle": "752|Название",
+        "titlePlaceholder": "753|Пример: Ser vs Estar",
+        "text": "754|Заметка",
+        "textPlaceholder": "755|Напишите здесь самое полезное",
+        "noteType": "756|Тип заметки",
+        "topic": "757|Тема",
+        "openEditor": "758|Открыть редактор после сохранения",
+        "openEditorHint": "759|Полезно, когда быстрая заметка вырастает в полноценную.",
+        "tip": "760|Быстрые заметки — для идеи, которую вы иначе забудете через десять минут.",
+        "validation": "761|Сначала добавьте название или немного текста.",
+        "save": "762|Сохранить быструю заметку",
+        "saving": "763|Сохраняем…"
       },
       "settings": {
-        "title": "Notes settings",
-        "subtitle": "How quick capture, mistakes and the notes list behave.",
-        "reset": "Reset to defaults",
-        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "title": "764|Настройки заметок",
+        "subtitle": "765|Как работают быстрая запись, ошибки и список заметок.",
+        "reset": "766|Сбросить к настройкам по умолчанию",
+        "tip": "767|Записывайте быстрые ошибки для фраз, которые вы действительно написали неправильно — они полезнее идеальных примеров из учебника.",
         "quickCapture": {
-          "title": "Quick capture",
-          "subtitle": "Make fast notes and mistakes feel instant."
+          "title": "768|Быстрая запись",
+          "subtitle": "769|Сделайте быстрые заметки и ошибки мгновенными."
         },
         "mistakeNotes": {
-          "title": "Mistake notes",
-          "subtitle": "What gets saved when you capture a quick mistake."
+          "title": "770|Заметки об ошибках",
+          "subtitle": "771|Что сохраняется, когда вы записываете быструю ошибку."
         },
         "essays": {
-          "title": "Essays",
-          "subtitle": "What happens to grammar issues found in your essays."
+          "title": "772|Эссе",
+          "subtitle": "773|Что происходит с грамматическими ошибками из ваших эссе."
         },
         "review": {
-          "title": "Spaced review",
-          "subtitle": "How notes reach the review queue."
+          "title": "774|Интервальное повторение",
+          "subtitle": "775|Как заметки попадают в очередь повторения."
         },
         "appearance": {
-          "title": "Notes appearance",
-          "subtitle": "How the notes list is ordered and sized."
+          "title": "776|Вид заметок",
+          "subtitle": "777|Как список заметок сортируется и отображается."
         },
         "helpers": {
-          "title": "Learning helpers",
-          "subtitle": "Small nudges inside empty states and quick sheets."
+          "title": "778|Помощь в обучении",
+          "subtitle": "779|Небольшие подсказки в пустых экранах и быстрых формах."
         },
         "defaultType": {
-          "title": "Default note type",
-          "subtitle": "What a new quick note starts as."
+          "title": "780|Тип заметки по умолчанию",
+          "subtitle": "781|С какого типа начинается новая быстрая заметка."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "Open editor after quick save",
-            "subtitle": "After saving a quick note, jump straight into the full editor."
+            "title": "782|Открывать редактор после быстрого сохранения",
+            "subtitle": "783|После сохранения быстрой заметки сразу переходить в полный редактор."
           },
           "allowQuickQuizzes": {
-            "title": "Allow quizzes in notes",
-            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+            "title": "784|Разрешить тесты в заметках",
+            "subtitle": "785|Показывать блоки тестов и создание тестов внутри заметок."
           },
           "showsMistakeHighlights": {
-            "title": "Highlight mistake notes",
-            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+            "title": "786|Выделять заметки об ошибках",
+            "subtitle": "787|Использовать тёплый оттенок для карточек ошибок и показывать строку ошибок."
           },
           "includeOriginalSentence": {
-            "title": "Include original sentence",
-            "subtitle": "Save the wrong version as a quote block in the note."
+            "title": "788|Включать исходное предложение",
+            "subtitle": "789|Сохранять неверный вариант как блок цитаты в заметке."
           },
           "includeCorrectedSentence": {
-            "title": "Include corrected sentence",
-            "subtitle": "Save the fixed version as an example block."
+            "title": "790|Включать исправленное предложение",
+            "subtitle": "791|Сохранять исправленный вариант как блок примера."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "Include explanation",
-            "subtitle": "Add your explanation as a paragraph block below."
+            "title": "792|Включать пояснение",
+            "subtitle": "793|Добавлять ваше пояснение отдельным абзацем ниже."
           },
           "groupMistakesByTopic": {
-            "title": "Group mistakes by topic",
-            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+            "title": "794|Группировать ошибки по темам",
+            "subtitle": "795|Сохранять быстрые ошибки в текущую тему, а не в «Частые ошибки»."
           },
           "askBeforeSavingMistakes": {
-            "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
+            "title": "796|Спрашивать перед сохранением ошибок",
+            "subtitle": "797|Подтверждать, прежде чем ошибка из эссе станет заметкой. Это важнее автоматического сохранения."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
+            "title": "798|Автоматически сохранять ошибки из эссе",
+            "subtitle": "799|Каждая найденная в эссе грамматическая ошибка становится заметкой. Если включено «Спрашивать перед сохранением», вопрос задаётся один раз на всю проверку."
           },
           "groupsPinnedNotesFirst": {
-            "title": "Pinned notes first",
-            "subtitle": "Keep important rules at the top of each topic."
+            "title": "800|Закреплённые заметки первыми",
+            "subtitle": "801|Держите важные правила вверху каждой темы."
           },
           "usesCompactCards": {
-            "title": "Compact note cards",
-            "subtitle": "Show tighter cards when you want more notes on screen."
+            "title": "802|Компактные карточки заметок",
+            "subtitle": "803|Более плотные карточки, когда хочется видеть больше заметок на экране."
           },
           "showsHelperTips": {
-            "title": "Show helper tips",
-            "subtitle": "Display short contextual hints while creating notes."
+            "title": "804|Показывать подсказки",
+            "subtitle": "805|Показывать короткие контекстные подсказки при создании заметок."
           },
           "autoAddNotesToReview": {
-            "title": "Add new notes to review",
-            "subtitle": "Every note you save joins the review queue, due a day later."
+            "title": "806|Добавлять новые заметки на повторение",
+            "subtitle": "807|Каждая сохранённая заметка попадает в очередь повторения — на следующий день."
           }
         }
       },
-      "editTopic": "Edit topic",
+      "editTopic": "808|Изменить тему",
       "toSet": {
-        "title": "Make a set from this note",
-        "subtitle": "Pick the pairs to turn into flashcards.",
-        "setTitle": "Set title",
-        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
-        "button": "Make a set",
-        "create": "Create set",
-        "creating": "Creating…",
-        "error": "Couldn't create the set. Try again.",
-        "cards_one": "{{count}} card",
-        "cards_other": "{{count}} cards"
+        "title": "809|Создать набор из этой заметки",
+        "subtitle": "810|Выберите пары, которые станут карточками.",
+        "setTitle": "811|Название набора",
+        "empty": "812|В этой заметке пока нечего превращать в карточки. Блоки сравнения, примера и правила переносятся напрямую, а пункты списка делятся по тире — например «hacer — делать».",
+        "button": "813|Создать набор",
+        "create": "814|Создать набор",
+        "creating": "815|Создаём…",
+        "error": "816|Не удалось создать набор. Попробуйте ещё раз.",
+        "cards_one": "817|{{count}} карточка",
+        "cards_other": "818|{{count}} карточек",
+        "cards_few": "{{count}} карточки",
+        "cards_many": "{{count}} карточек"
       },
-      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "topicsEmptyTip": "819|Тема — это папка для заметок: по одной на язык или по одной на то, в чём вы постоянно ошибаетесь.",
+      "notesEmptyTip": "820|Каждая сохранённая заметка попадает в очередь повторения, так что записать её — уже начать её отрабатывать.",
+      "notesCount_few": "{{count}} заметки",
+      "notesCount_many": "{{count}} заметок"
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "821|Режимы практики",
+    "loading": "822|Загружаем…",
+    "loadError": "823|Не удалось загрузить ваши материалы для чтения.",
+    "notFound": "824|Возможно, этот элемент был удалён.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "825|Прогресс за сегодня",
+      "subtitle": "826|Не прерывайте серию чтения."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "827|Скоро",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "828|Мои тексты",
+        "subtitle": "829|Вставьте свой текст и читайте его с подсказками."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "830|Чтение по наборам",
+        "subtitle": "831|Соберите текст для чтения из ваших наборов карточек."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "832|Режим истории",
+        "subtitle": "833|Читайте интерактивные истории с ветвящимся сюжетом."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "834|Скорочтение",
+        "subtitle": "835|Тренируйте скорость чтения с заданным темпом."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "836|Мои тексты",
+      "subtitle": "837|Ваши сохранённые тексты для чтения.",
+      "addText": "838|Добавить текст",
+      "emptyTitle": "839|Текстов пока нет",
+      "emptyBody": "840|Добавьте первый текст, чтобы начать практику чтения.",
+      "savedTitle": "841|Сохранённые тексты"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "842|Новый",
+      "inProgress": "843|В процессе",
+      "completed": "844|Завершён"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "845|{{count}} слово",
+      "words_other": "846|{{count}} слов",
+      "start": "847|Начать",
+      "continue": "848|Продолжить",
+      "readAgain": "849|Прочитать снова",
+      "rename": "850|Переименовать",
+      "renamePrompt": "851|Новое название:",
+      "delete": "852|Удалить",
+      "deleteConfirm": "853|Удалить «{{title}}»? Это действие нельзя отменить.",
+      "words_few": "{{count}} слова",
+      "words_many": "{{count}} слов"
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "854|Продолжить чтение",
+      "percent": "855|{{percent}} % пройдено",
+      "button": "856|Продолжить"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "857|Основная мысль",
+      "vocabulary": "858|Лексика",
+      "detailedComprehension": "859|Детальное понимание",
+      "grammarAwareness": "860|Внимание к грамматике",
+      "speedFluency": "861|Скорость / беглость"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "862|Понимание",
+      "trueFalse": "863|Верно / Неверно",
+      "fillGap": "864|Заполнить пропуск",
+      "vocabulary": "865|Лексика",
+      "findEvidence": "866|Найти подтверждение",
+      "orderReconstruction": "867|Порядок"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "868|Подсвечивать незнакомые слова",
+      "translationOnTap": "869|Перевод по нажатию",
+      "vocabularyHints": "870|Подсказки по лексике",
+      "readingTimer": "871|Таймер чтения"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "872|Добавить текст",
+      "subtitle": "873|Вставьте текст и настройте практику чтения.",
+      "untitled": "874|Текст без названия",
+      "pastePlaceholder": "875|Вставьте или напишите текст здесь…",
+      "titleLabel": "876|Название",
+      "titlePlaceholder": "877|Необязательно — мы можем предложить",
+      "language": "878|Язык",
+      "difficulty": "879|Сложность",
+      "autoDetect": "880|Определить автоматически",
+      "manual": "881|Выбрать вручную",
+      "focus": "882|Фокус чтения",
+      "questionTypes": "883|Типы вопросов",
+      "assistance": "884|Помощь при чтении",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
-        "min": "min",
-        "detected": "Detected: {{level}}"
+        "words_one": "885|{{count}} слово",
+        "words_other": "886|{{count}} слов",
+        "chars_one": "887|{{count}} символ",
+        "chars_other": "888|{{count}} символов",
+        "min": "889|мин",
+        "detected": "890|Определено: {{level}}",
+        "words_few": "{{count}} слова",
+        "words_many": "{{count}} слов",
+        "chars_few": "{{count}} символа",
+        "chars_many": "{{count}} символов"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "891|Сначала добавьте текст.",
+        "tooShort": "892|Добавьте минимум 20 слов."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "893|Сохранить текст",
+      "saveAndStart": "894|Сохранить и начать",
+      "saving": "895|Сохраняем…",
+      "saveError": "896|Не удалось сохранить. Попробуйте ещё раз.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
-        "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "pasteText": "897|Вставить",
+        "photo": "898|Фото",
+        "pdf": "899|PDF",
+        "generate": "900|Сгенерировать",
+        "explore": "901|Найти"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "902|Информативный",
+        "casual": "903|Разговорный",
+        "academic": "904|Академический",
+        "narrative": "905|Повествовательный"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "906|Короткий",
+        "medium": "907|Средний",
+        "long": "908|Длинный"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "909|Загрузите фото страницы — мы распознаем текст.",
+        "chooseImage": "910|Выбрать изображение",
+        "recognizing": "911|Распознаём… {{percent}} %",
+        "imageError": "912|Не удалось распознать текст на этом изображении.",
+        "pdfHint": "913|Загрузите PDF — мы извлечём текст.",
+        "choosePDF": "914|Выбрать PDF",
+        "reading": "915|Читаем PDF…",
+        "pdfError": "916|Не удалось прочитать этот PDF.",
+        "topicPlaceholder": "917|Тема — напр. коралловые рифы, книгопечатание",
+        "explorePlaceholder": "918|Тема или ключевое слово — напр. Мария Кюри, Венеция",
+        "generateButton": "919|Сгенерировать текст",
+        "exploreButton": "920|Найти статью",
+        "working": "921|Работаем…",
+        "generateError": "922|Не удалось сгенерировать текст. Попробуйте ещё раз.",
+        "exploreError": "923|Статью по этой теме найти не удалось.",
+        "exploredFrom": "924|Источник"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again.",
-      "translation": "Translation",
-      "textLabel": "Text"
+      "startQuestions": "925|Перейти к вопросам",
+      "finish": "926|Завершить",
+      "next": "927|Далее",
+      "questionOf": "928|Вопрос {{current}} из {{total}}",
+      "closeTranslation": "929|Закрыть перевод",
+      "translating": "930|Переводим…",
+      "translationError": "931|Не удалось перевести. Попробуйте ещё раз.",
+      "translation": "932|Перевод",
+      "textLabel": "933|Текст"
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts",
-      "complete": "Practice Complete"
+      "comprehension": "934|Понимание",
+      "correct": "935|Верно",
+      "time": "936|Время чтения",
+      "wpm": "937|слов/мин",
+      "mistakes": "938|Ошибки",
+      "mistakesTitle": "939|Разберите свои ошибки",
+      "readAgain": "940|Прочитать снова",
+      "back": "941|Назад к «Моим текстам»",
+      "complete": "942|Практика завершена"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "943|Чтение по наборам",
+      "subtitle": "944|Превратите набор карточек в текст для чтения.",
+      "pickSet": "945|Выберите набор",
+      "changeSet": "946|Сменить набор",
+      "tooFewWords": "947|Для текста нужно минимум {{count}} слов в наборе.",
+      "mode": "948|Режим генерации",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "949|Естественный",
+        "strict": "950|Строгий",
+        "mixed": "951|Смешанный"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "952|Длина текста",
+      "generate": "953|Сгенерировать текст",
+      "generating": "954|Создаём ваш текст…",
+      "generateError": "955|Не удалось создать текст. Попробуйте ещё раз.",
+      "emptyTitle": "956|Текстов пока нет",
+      "emptyBody": "957|Выберите набор карточек, и мы превратим его в текст для чтения.",
+      "savedTitle": "958|Сохранённые тексты"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "959|Скорочтение",
+      "subtitle": "960|Тренируйте скорость чтения с заданным темпом.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "961|Целевая скорость чтения",
+        "timer": "962|Тип таймера",
+        "length": "963|Длина текста"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "964|Спокойная",
+        "balanced": "965|Сбалансированная",
+        "fast": "966|Быстрая",
+        "challenge": "967|Вызов"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "968|Без таймера",
+        "soft": "969|Мягкий таймер",
+        "strict": "970|Строгий таймер"
       },
       "length": {
-        "two": "2 min",
-        "five": "5 min",
-        "ten": "10 min"
+        "two": "971|2 мин",
+        "five": "972|5 мин",
+        "ten": "973|10 мин"
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
-      "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "summary": "974|Цель {{wpm}} слов/мин · ~{{minutes}} мин чтения",
+      "start": "975|Начать сессию",
+      "preparing": "976|Готовим ваш отрывок…",
+      "generateError": "977|Не удалось создать отрывок. Попробуйте ещё раз.",
+      "recentTitle": "978|Недавние сессии",
+      "chunkOf": "979|Часть {{current}} из {{total}}",
+      "previous": "980|Предыдущая часть",
+      "pause": "981|Пауза",
+      "resume": "982|Продолжить",
+      "nextChunk": "983|Следующая часть",
+      "finishReading": "984|Завершить чтение",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "985|Отлично",
+        "balanced": "986|В цель",
+        "fast": "987|Почти получилось",
+        "tooSlow": "988|Слишком медленно"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "989|Средняя скорость",
+        "target": "990|Целевая скорость",
+        "violations_one": "991|{{count}} нарушение времени",
+        "violations_other": "992|{{count}} нарушений времени",
+        "violations_few": "{{count}} нарушения времени",
+        "violations_many": "{{count}} нарушений времени"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "993|Попробовать снова",
+      "backToSetup": "994|Назад к настройкам"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "995|Режим истории",
+      "subtitle": "996|Читайте интерактивные истории с ветвящимся сюжетом.",
+      "typeSection": "997|Тип истории",
       "type": {
-        "adventure": "Adventure",
-        "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "adventure": "998|Приключение",
+        "fantasy": "999|Фэнтези",
+        "mystery": "1000|Детектив",
+        "romance": "1001|Романтика",
+        "dailyLife": "1002|Повседневность"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "1003|Длина истории",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "1004|Короткая история",
+        "multiChapter": "1005|Несколько глав",
+        "infinite": "1006|Бесконечная история"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "1007|Начать историю",
+      "generating": "1008|Пишем вашу историю…",
+      "generatingNext": "1009|Пишем следующую главу…",
+      "generateError": "1010|Не удалось написать историю. Попробуйте ещё раз.",
+      "emptyTitle": "1011|Историй пока нет",
+      "emptyBody": "1012|Начните первую интерактивную историю выше.",
+      "savedTitle": "1013|Ваши истории",
+      "chapterN": "1014|Глава {{n}}",
+      "chapterOf": "1015|Глава {{current}} / {{total}}",
+      "chapterScore": "1016|Оценка за главу",
+      "whatNext": "1017|Что будет дальше?",
+      "endStory": "1018|Завершить историю",
+      "completeTitle": "1019|История завершена",
+      "completeBody_one": "1020|Вы прочитали {{count}} главу. Отличное чтение!",
+      "completeBody_other": "1021|Вы прочитали {{count}} глав. Отличное чтение!",
+      "backToStories": "1022|Назад к историям",
+      "completeBody_few": "Вы прочитали {{count}} главы. Отличное чтение!",
+      "completeBody_many": "Вы прочитали {{count}} глав. Отличное чтение!"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "1023|Режимы практики",
+    "notFound": "1024|Возможно, эта сессия была удалена.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "1025|Прогресс за сегодня",
+      "subtitle": "1026|практики аудирования"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1027|Скоро",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "1028|Слушать текст",
+        "subtitle": "1029|Вставьте текст, послушайте его и проверьте понимание."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "1030|Импорт аудио",
+        "subtitle": "1031|Загрузите своё аудио и превратите его в практику аудирования."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "1032|Импорт видео",
+        "subtitle": "1033|Загрузите видео, получите субтитры и потренируйтесь с вопросами."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "1034|Сохранённая практика",
+        "subtitle": "1035|Продолжайте прежние сессии и разбирайте свои ошибки."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
-      "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "mainIdea": "1036|Основная мысль",
+      "details": "1037|Детали",
+      "vocabulary": "1038|Лексика",
+      "trueFalse": "1039|Верно / Неверно"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "1040|Слушать текст",
+      "subtitle": "1041|Вставьте текст и превратите его в практику аудирования.",
+      "level": "1042|Уровень",
+      "voiceSpeed": "1043|Скорость речи",
+      "voiceType": "1044|Тип голоса",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "1045|По умолчанию",
+        "female": "1046|Женский",
+        "male": "1047|Мужской"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "1048|Показывать текст во время прослушивания",
+      "addQuestions": "1049|Добавить вопросы на понимание",
+      "questionCount": "1050|Количество вопросов",
+      "questionTypes": "1051|Типы вопросов",
+      "optionalTitle": "1052|Название (необязательно)",
+      "titlePlaceholder": "1053|Дайте тексту название",
+      "textPlaceholder": "1054|Вставьте текст сюда...",
+      "recommended": "1055|Рекомендуем: 80–500 слов.",
+      "words": "1056|слов",
+      "defaultTitle": "1057|Практика аудирования",
+      "start": "1058|Начать прослушивание",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "1059|Добавьте текст, чтобы начать слушать.",
+        "tooShort": "1060|Добавьте минимум 40 символов, чтобы начать слушать.",
+        "tooLong": "1061|Этот текст слишком длинный. Уложитесь в 5000 символов.",
+        "tooFewWords": "1062|Добавьте немного больше текста (примерно от 40 слов), чтобы мы составили хорошие вопросы."
       },
-      "voiceSettings": "Voice Settings",
-      "questions": "Questions",
-      "textInput": "Text Input"
+      "voiceSettings": "1063|Настройки голоса",
+      "questions": "1064|Вопросы",
+      "textInput": "1065|Ввод текста"
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "1066|Прослушать снова",
+      "transcript": "1067|Расшифровка",
+      "questionsTitle": "1068|Вопросы",
+      "answerFirst": "1069|Ответьте хотя бы на один вопрос перед проверкой.",
+      "checkAnswers": "1070|Проверить ответы",
+      "finish": "1071|Завершить практику"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "1072|Практика завершена",
+      "comprehension": "1073|Понимание",
+      "correct": "1074|Верно",
+      "time": "1075|Время прослушивания",
+      "speed": "1076|Скорость",
+      "mistakes": "1077|Ошибки",
+      "mistakesTitle": "1078|Разберите свои ошибки",
+      "watchOnlyTitle": "1079|Прослушивание завершено",
+      "watchOnlyBody": "1080|Вы слушали {{time}}.",
+      "practiceAgain": "1081|Практиковаться снова",
+      "back": "1082|Назад к аудированию"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "1083|Импорт аудио",
+      "subtitle": "1084|Превратите своё аудио в практику аудирования.",
+      "uploadTitle": "1085|Загрузить аудиофайл",
+      "uploadFormats": "1086|MP3, M4A, WAV или AAC · до 50 МБ",
+      "chooseFile": "1087|Выбрать файл",
+      "clearFile": "1088|Убрать файл",
+      "infoNote": "1089|Ваше аудио будет расшифровано в фоне. Во время практики расшифровка скрыта.",
+      "continue": "1090|Продолжить",
+      "processingTitle": "1091|Готовим вашу практику аудирования",
+      "step1": "1092|Загружаем аудио",
+      "step2": "1093|Расшифровываем речь",
+      "step3": "1094|Составляем вопросы",
+      "processError": "1095|Не удалось подготовить это аудио. Попробуйте ещё раз.",
+      "tryAgain": "1096|Попробовать снова",
+      "chooseAnother": "1097|Выбрать другой файл",
+      "transcriptHidden": "1098|Расшифровка скрыта, чтобы это осталось настоящим упражнением на слух."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "1099|Импорт видео",
+      "subtitle": "1100|Загрузите видео, получите субтитры и потренируйтесь с вопросами.",
+      "uploadTitle": "1101|Загрузить видеофайл",
+      "uploadFormats": "1102|MP4, MOV или M4V · до 80 МБ",
+      "step1": "1103|Готовим видео",
+      "step2": "1104|Расшифровываем речь",
+      "step3": "1105|Создаём субтитры",
+      "subtitles": "1106|Субтитры",
+      "subtitlesOn": "1107|Субтитры включены",
+      "subtitlesOff": "1108|Субтитры выключены",
+      "noSubtitles": "1109|Для этого видео нет субтитров.",
+      "tapWord": "1110|Нажмите на слово, чтобы перевести его.",
+      "questionsLocked": "1111|Вопросы откроются, когда вы досмотрите видео."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "1112|Перевести слово",
+      "pickSet": "1113|Выберите набор",
+      "createSet": "1114|Создать набор",
+      "addToSet": "1115|Добавить в набор",
+      "noSets": "1116|У вас пока нет наборов. Создайте его ниже.",
+      "setNamePlaceholder": "1117|напр. Слова из видео",
+      "createAndAdd": "1118|Создать и добавить слово",
+      "saved": "1119|Сохранено в «{{set}}»."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "1120|Сохранённая практика",
+      "subtitle": "1121|Продолжайте сессии и разбирайте свои ошибки в аудировании.",
+      "emptyTitle": "1122|Сохранённых сессий нет",
+      "emptyBody": "1123|Завершите или поставьте на паузу сессию аудирования — и она появится здесь.",
+      "continueEyebrow": "1124|Продолжить прослушивание",
+      "percentComplete": "1125|{{percent}} % пройдено",
+      "continue": "1126|Продолжить",
+      "review": "1127|Разбор",
+      "delete": "1128|Удалить сессию",
+      "deleteConfirm": "1129|Удалить «{{title}}»? Это действие нельзя отменить.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "1130|Черновик",
+        "inProgress": "1131|В процессе",
+        "completed": "1132|Завершена"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "1133|Режимы практики",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "1134|Прогресс за сегодня",
+      "subtitle": "1135|практики говорения"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1136|Скоро",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "1137|Разговор с ИИ",
+        "subtitle": "1138|Общайтесь с ИИ-репетитором в реальном времени."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "1139|Свободная речь",
+        "subtitle": "1140|Говорите на сгенерированные темы и получайте отзыв."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "1141|Описание картинки",
+        "subtitle": "1142|Описывайте изображения и учите полезные слова."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "1143|Режим дебатов",
+        "subtitle": "1144|Обсуждайте темы и выстраивайте аргументы."
       },
       "shadowing": {
-        "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "title": "1145|Шэдоуинг",
+        "subtitle": "1146|Повторяйте фразы и улучшайте произношение."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "1147|Тренажёр произношения",
+        "subtitle": "1148|Сосредоточьтесь на сложных звуках и словах."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "1149|Говорить",
+      "stop": "1150|Стоп",
+      "listening": "1151|Слушаем…",
+      "placeholder": "1152|Напишите ваш ответ…",
+      "noVoice": "1153|Голосовой ввод не поддерживается в этом браузере — напишите ответ."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
-      "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "title": "1154|Разговор с ИИ",
+      "subtitle": "1155|Общайтесь с ИИ-репетитором в реальном времени.",
+      "topic": "1156|Тема",
+      "scenarios": "1157|Сценарии",
+      "autoTopic": "1158|Удиви меня",
+      "autoTopicHint": "1159|Мы придумаем для вас новую тему.",
+      "length": "1160|Длительность",
+      "min": "1161|мин",
+      "start": "1162|Начать разговор",
+      "starting": "1163|Начинаем…",
+      "startError": "1164|Не удалось начать разговор. Попробуйте ещё раз.",
+      "end": "1165|Завершить",
+      "dismiss": "1166|Скрыть",
+      "hint": "1167|Подсказка",
+      "getHint": "1168|Нужна подсказка?",
+      "hintLoading": "1169|Думаем…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "1170|Практика завершена",
+      "generating": "1171|Анализируем вашу речь…",
+      "overall": "1172|Общая оценка",
+      "corrections": "1173|Исправления",
+      "transcript": "1174|Расшифровка",
+      "practiceAgain": "1175|Практиковаться снова",
+      "back": "1176|Назад к говорению"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
-      "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "title": "1177|Свободная речь",
+      "subtitle": "1178|Говорите свободно на тему и получайте отзыв.",
+      "preview": "1179|Предпросмотр",
+      "autoTopic": "1180|Тема, созданная ИИ",
+      "autoTopicHint": "1181|Мы подберём новую тему для {{language}} · {{level}}, когда вы начнёте.",
+      "auto": "1182|Авто",
+      "start": "1183|Начать свободную речь",
+      "generating": "1184|Генерируем тему…",
+      "generatingHint": "1185|Подбираем что-то под ваш уровень.",
+      "fallbackTopic": "1186|Не удалось сгенерировать тему. Используем запасную.",
+      "transcript": "1187|Расшифровка",
+      "transcriptHint": "1188|Расшифровка появится здесь, пока вы говорите.",
+      "startSpeaking": "1189|Начать говорить"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "1190|Описание картинки",
+      "subtitle": "1191|Опишите то, что видите, и получите отзыв.",
+      "start": "1192|Начать описание картинки",
+      "prompt": "1193|Опишите, что вы видите на этой картинке.",
+      "tryToMention": "1194|Постарайтесь упомянуть:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "1195|людей",
+        "objects": "1196|предметы",
+        "actions": "1197|действия",
+        "colors": "1198|цвета",
+        "emotions": "1199|эмоции"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "1200|Загружаем фото…",
+      "retry": "1201|Попробовать снова",
+      "newPhoto": "1202|Другое фото",
+      "imageAlt": "1203|Фото для описания",
+      "photoBy": "1204|Фото:",
+      "onUnsplash": "1205|на Unsplash",
+      "startDescribing": "1206|Начать описывать"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "1207|Режим дебатов",
+      "subtitle": "1208|Отстаивайте свою позицию против ИИ-оппонента.",
+      "start": "1209|Начать дебаты",
+      "pickSide": "1210|Ваша сторона",
+      "preparing": "1211|Готовим тему дебатов…",
+      "roundOf": "1212|Раунд {{current}} из {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "1213|За",
+          "subtitle": "1214|Защищайте утверждение"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "1215|Против",
+          "subtitle": "1216|Спорьте с утверждением"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "1217|Удиви меня",
+          "subtitle": "1218|Мы выберем сторону за вас"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "1219|Слушать",
+      "playing": "1220|Воспроизводим…",
+      "record": "1221|Записать",
+      "stop": "1222|Стоп",
+      "playMine": "1223|Прослушать себя",
+      "noRecording": "1224|Запись не поддерживается в этом браузере — но слушать и повторять можно."
     },
     "shadowing": {
-      "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "title": "1225|Шэдоуинг",
+      "subtitle": "1226|Слушайте, повторяйте и сравнивайте себя.",
+      "start": "1227|Начать шэдоуинг",
+      "category": "1228|Категория",
+      "howItWorks": "1229|Послушайте фразу, повторите её вслух с записью, затем прослушайте себя и сравните ритм.",
+      "loading": "1230|Генерируем фразы…",
+      "phrase": "1231|Фраза",
+      "previous": "1232|Предыдущая",
+      "nextPhrase": "1233|Следующая фраза",
+      "finish": "1234|Завершить",
+      "changeSettings": "1235|Изменить настройки",
+      "done": "1236|Сделано: {{count}}",
+      "allDone": "1237|Все фразы отработаны!",
+      "newSet": "1238|Новый набор"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "1239|Тренажёр произношения",
+      "subtitle": "1240|Сосредоточьтесь на сложных звуках и словах.",
+      "start": "1241|Начать тренировку",
+      "focus": "1242|Фокус",
+      "difficulty": "1243|Сложность",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "1244|Лёгкая",
+        "balanced": "1245|Сбалансированная",
+        "hard": "1246|Сложная"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "1247|Готовим задания…",
+      "sound": "1248|Звук",
+      "scoringUnavailable": "1249|Автоматическая оценка произношения на сервере пока не настроена, поэтому оценка не показывается. Прослушивание, запись и воспроизведение работают."
     }
   },
   "profile": {
-    "interfaceLanguage": "Interface language",
+    "interfaceLanguage": "1250|Язык интерфейса",
     "password": {
-      "title": "Create a password",
-      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
-      "save": "Save password",
-      "saving": "Saving...",
-      "savedInfo": "Password created. You can sign in with your email now too."
+      "title": "1251|Создайте пароль",
+      "body": "1252|Ваш аккаунт создан через Google, поэтому пароля у него нет — войти по почте и паролю не получится. Задайте пароль, и оба способа заработают.",
+      "save": "1253|Сохранить пароль",
+      "saving": "1254|Сохраняем...",
+      "savedInfo": "1255|Пароль создан. Теперь можно входить и по почте."
     }
   },
   "units": {
-    "min": "min",
-    "words": "words"
+    "min": "1256|мин",
+    "words": "1257|слов"
   },
   "link": {
-    "title": "Sign in with a link",
-    "subtitle": "We'll email you a one-time link. No password to remember.",
-    "send": "Send the link",
-    "sending": "Sending...",
-    "sentInfo": "Link sent. Check your email.",
-    "sentTitle": "Check your email",
-    "sentBody": "We sent a sign-in link to",
-    "useAnotherEmail": "Use another email",
-    "backToPassword": "Sign in with a password instead"
+    "title": "1258|Вход по ссылке",
+    "subtitle": "1259|Мы пришлём на почту одноразовую ссылку. Пароль запоминать не нужно.",
+    "send": "1260|Отправить ссылку",
+    "sending": "1261|Отправляем...",
+    "sentInfo": "1262|Ссылка отправлена. Проверьте почту.",
+    "sentTitle": "1263|Проверьте почту",
+    "sentBody": "1264|Мы отправили ссылку для входа на",
+    "useAnotherEmail": "1265|Использовать другую почту",
+    "backToPassword": "1266|Войти по паролю"
   },
   "action": {
-    "working": "One moment...",
-    "continue": "Continue",
-    "confirmEmailTitle": "Confirm your email",
-    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
-    "resetTitle": "New password",
-    "resetSubtitle": "Choose a new password for",
-    "newPassword": "New password",
-    "confirmPassword": "Repeat password",
-    "savePassword": "Save password",
-    "resetDoneTitle": "Password updated",
-    "resetDoneBody": "You can sign in with your new password now.",
-    "failedTitle": "That link didn't work",
-    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
-    "backToSignIn": "Back to sign in"
+    "working": "1267|Одну минуту...",
+    "continue": "1268|Продолжить",
+    "confirmEmailTitle": "1269|Подтвердите почту",
+    "confirmEmailBody": "1270|Эта ссылка открыта в другом браузере. Введите адрес, на который она пришла, и мы завершим вход.",
+    "resetTitle": "1271|Новый пароль",
+    "resetSubtitle": "1272|Выберите новый пароль для",
+    "newPassword": "1273|Новый пароль",
+    "confirmPassword": "1274|Повторите пароль",
+    "savePassword": "1275|Сохранить пароль",
+    "resetDoneTitle": "1276|Пароль обновлён",
+    "resetDoneBody": "1277|Теперь можно входить с новым паролем.",
+    "failedTitle": "1278|Эта ссылка не сработала",
+    "failedBody": "1279|Возможно, её уже использовали или срок действия истёк. Запросите новую на экране входа.",
+    "backToSignIn": "1280|Назад ко входу"
   },
   "common": {
-    "cancel": "Cancel",
-    "delete": "Delete",
+    "cancel": "1281|Отмена",
+    "delete": "1282|Удалить",
     "view": {
-      "label": "View",
-      "rows": "List",
-      "grid": "Grid"
+      "label": "1283|Вид",
+      "rows": "1284|Список",
+      "grid": "1285|Сетка"
     }
   },
   "practice": {
     "language": {
-      "label": "Language",
-      "search": "Search a language",
-      "noMatch": "No language matches that.",
-      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+      "label": "1286|Язык",
+      "search": "1287|Поиск языка",
+      "noMatch": "1288|Подходящих языков нет.",
+      "noVoice": "1289|В вашем браузере нет голоса для языка {{language}}, поэтому репетитор не будет говорить на нём. Добавьте языковой пакет в настройках системы или выберите другой язык."
     }
   }
 }
