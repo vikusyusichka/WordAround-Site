@@ -1,1725 +1,1748 @@
 {
   "app": {
-    "name": "WordAround",
-    "tagline": "Learn languages, actively."
+    "name": "1|WordAround",
+    "tagline": "2|Učite jezike aktivno."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "3|Učite riječi zabavno\\ni jednostavno",
+    "start": "4|Krenimo"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back",
-    "signUpTitle": "Create your account",
-    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
-    "name": "Name",
-    "namePlaceholder": "What should we call you?",
-    "orWithEmail": "or with email",
-    "signUpWithGoogle": "Sign up with Google",
-    "passwordHint": "At least {{min}} characters",
-    "magicLinkCta": "Sign in with an email link",
-    "creatingAccount": "Creating account..."
+    "welcomeBack": "5|Dobro došli natrag",
+    "subtitle": "6|Prijavite se i nastavite učiti",
+    "email": "7|E-pošta",
+    "emailPlaceholder": "8|Unesite svoju e-poštu",
+    "password": "9|Lozinka",
+    "passwordPlaceholder": "10|Unesite svoju lozinku",
+    "forgotPassword": "11|Zaboravili ste lozinku?",
+    "signIn": "12|Prijava",
+    "signingIn": "13|Prijavljivanje...",
+    "signUp": "14|Registracija",
+    "signOut": "15|Odjava",
+    "continueWithGoogle": "16|Nastavi s Googleom",
+    "createAccount": "17|Otvori račun",
+    "accountCreatedInfo": "18|Račun je otvoren. Poslali smo e-poruku za potvrdu.",
+    "resetEmailSent": "19|Poslana je e-poruka za promjenu lozinke",
+    "showPassword": "20|Prikaži lozinku",
+    "hidePassword": "21|Sakrij lozinku",
+    "back": "22|Natrag",
+    "signUpTitle": "23|Otvorite svoj račun",
+    "signUpSubtitle": "24|Nekoliko minuta dnevno i rječnik vam raste",
+    "name": "25|Ime",
+    "namePlaceholder": "26|Kako da vas zovemo?",
+    "orWithEmail": "27|ili e-poštom",
+    "signUpWithGoogle": "28|Registriraj se Googleom",
+    "passwordHint": "29|Najmanje {{min}} znakova",
+    "magicLinkCta": "30|Prijavi se poveznicom iz e-pošte",
+    "creatingAccount": "31|Otvaramo račun..."
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "We'll open your learning right away — no need to come back here",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "32|Potvrdite svoju e-poštu",
+    "subtitle": "33|Još jedan korak prije nego počnete učiti",
+    "sentTo": "34|Poveznicu za potvrdu poslali smo na",
+    "fallbackEmail": "35|vašu e-poštu",
+    "step1": "36|Otvorite e-poruku u pristigloj pošti",
+    "step2": "37|Dodirnite poveznicu za potvrdu",
+    "step3": "38|Odmah ćemo otvoriti vaše učenje — ne morate se vraćati ovamo",
+    "checkButton": "39|Potvrdio/la sam e-poštu",
+    "checking": "40|Provjeravamo...",
+    "resend": "41|Pošalji e-poruku ponovno",
+    "useAnotherAccount": "42|Koristi drugi račun",
+    "badgeInbox": "43|Provjerite poštu",
+    "badgeConfirm": "44|Potvrdite",
+    "badgeDone": "45|Gotovo",
+    "resentInfo": "46|E-poruka za potvrdu poslana je ponovno",
+    "notVerifiedYet": "47|E-pošta još nije potvrđena"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 8 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "emailInUse": "This account already exists",
-    "weakPassword": "This password is too weak",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again",
-    "nameRequired": "Name is required",
-    "passwordsDoNotMatch": "Passwords don't match",
-    "actionExpired": "This link has expired. Request a new one.",
-    "actionInvalid": "This link is no longer valid.",
-    "userDisabled": "This account has been disabled.",
-    "requiresRecentLogin": "For security, sign in again and then repeat this.",
-    "passwordAlreadySet": "This account already has a password.",
-    "linkNoEmail": "Enter the email the link was sent to"
+    "emailRequired": "48|E-pošta je obavezna",
+    "emailInvalid": "49|Unesite ispravnu e-poštu",
+    "emailFirst": "50|Najprije unesite svoju e-poštu",
+    "passwordRequired": "51|Lozinka je obavezna",
+    "passwordTooShort": "52|Lozinka mora imati najmanje 8 znakova",
+    "invalidEmail": "53|Neispravan oblik e-pošte",
+    "wrongPassword": "54|Netočna e-pošta ili lozinka. Ako ste se registrirali Googleom, upotrijebite gumb Google.",
+    "userNotFound": "55|Netočna e-pošta ili lozinka. Ako ste se registrirali Googleom, upotrijebite gumb Google.",
+    "invalidCredential": "56|Netočna e-pošta ili lozinka. Ako ste se registrirali Googleom, upotrijebite gumb Google.",
+    "emailInUse": "57|Ovaj račun već postoji",
+    "weakPassword": "58|Ova je lozinka preslaba",
+    "network": "59|Mrežna pogreška. Provjerite internetsku vezu",
+    "tooManyRequests": "60|Previše pokušaja. Pokušajte kasnije",
+    "differentCredential": "61|Ova se e-pošta već koristi s drugim načinom prijave",
+    "noActiveAccount": "62|Nije pronađen nijedan aktivan račun",
+    "default": "63|Prijava nije uspjela. Pokušajte ponovno",
+    "nameRequired": "64|Ime je obavezno",
+    "passwordsDoNotMatch": "65|Lozinke se ne podudaraju",
+    "actionExpired": "66|Ova je poveznica istekla. Zatražite novu.",
+    "actionInvalid": "67|Ova poveznica više ne vrijedi.",
+    "userDisabled": "68|Ovaj je račun onemogućen.",
+    "requiresRecentLogin": "69|Radi sigurnosti se ponovno prijavite pa ponovite ovo.",
+    "passwordAlreadySet": "70|Ovaj račun već ima lozinku.",
+    "linkNoEmail": "71|Unesite e-poštu na koju je poveznica poslana"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
-    "sets": "Sets",
-    "notes": "Notes",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "home": "72|Početna",
+    "speaking": "73|Govor",
+    "listening": "74|Slušanje",
+    "reading": "75|Čitanje",
+    "writing": "76|Pisanje",
+    "folders": "77|Mape",
+    "sets": "78|Setovi",
+    "notes": "79|Bilješke",
+    "profile": "80|Profil",
+    "create": "81|Novo",
+    "menu": "82|Izbornik",
+    "closeMenu": "83|Zatvori izbornik",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "84|Vježbanje",
+      "library": "85|Knjižnica"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
-    "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
-    "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "create": "86|Nova mapa",
+    "loading": "87|Učitavamo mape…",
+    "loadError": "88|Nismo mogli učitati vaše mape.",
+    "emptyTitle": "89|Još nema mapa",
+    "emptyBody": "90|Napravite prvu mapu da posložite svoje setove.",
+    "setCount": "91|{{count}} setova",
+    "setCount_one": "92|{{count}} set",
+    "newTitle": "93|Nova mapa",
+    "newSubtitle": "94|Skupite povezane setove na jedno mjesto.",
+    "editTitle": "95|Uredi mapu",
+    "name": "96|Naziv",
+    "namePlaceholder": "97|npr. Putovanja",
+    "description": "98|Opis",
+    "descriptionPlaceholder": "99|Neobavezno",
+    "color": "100|Boja",
+    "save": "101|Spremi",
+    "saving": "102|Spremamo…",
+    "cancel": "103|Odustani",
+    "edit": "104|Uredi mapu",
+    "delete": "105|Izbriši mapu",
+    "deleteConfirm": "106|Izbrisati „{{title}}”? Ovo se ne može poništiti.",
+    "backToFolders": "107|Natrag na mape",
+    "notFoundTitle": "108|Mapa nije pronađena",
+    "notFoundBody": "109|Ova je mapa možda izbrisana.",
+    "noSetsInFolder": "110|U ovoj mapi još nema setova.",
+    "saveError": "111|Spremanje nije uspjelo. Pokušajte ponovno.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "112|Naziv mape je obavezan.",
+      "nameTooLong": "113|Naziv mape mora imati manje od 80 znakova.",
+      "descTooLong": "114|Opis mora imati manje od 120 znakova."
     },
-    "optional": "(optional)",
-    "preview": "Preview",
-    "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "optional": "115|(neobavezno)",
+    "preview": "116|Pregled",
+    "previewPlaceholder": "117|Nova mapa",
+    "deleteConfirmTitle": "118|Izbrisati ovu mapu?",
+    "setCount_few": "{{count}} seta"
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets",
-    "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?",
-    "editTitle": "Edit set",
-    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
-    "save": "Save changes",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "create": "119|Novi set",
+    "loading": "120|Učitavamo setove…",
+    "loadError": "121|Nismo mogli učitati vaše setove.",
+    "emptyTitle": "122|Još nema setova",
+    "emptyBody": "123|Napravite prvi set kartica gumbom Novo.",
+    "cardCount": "124|{{count}} kartica",
+    "cardCount_one": "125|{{count}} kartica",
+    "keepPracticing": "126|Nastavite vježbati",
+    "delete": "127|Izbriši set",
+    "deleteConfirm": "128|Izbrisati „{{title}}”? Ovo se ne može poništiti.",
+    "notFoundTitle": "129|Set nije pronađen",
+    "notFoundBody": "130|Ovaj je set možda izbrisan.",
+    "backToSets": "131|Natrag na setove",
+    "edit": "132|Uredi set",
+    "deleteConfirmTitle": "133|Izbrisati ovaj set?",
+    "editTitle": "134|Uredi set",
+    "editSubtitle": "135|Promijenite naziv, boju, ikonu ili mapu. Kartice ostaju gdje jesu.",
+    "save": "136|Spremi promjene",
+    "saving": "137|Spremamo…",
+    "cancel": "138|Odustani",
+    "saveError": "139|Spremanje nije uspjelo. Pokušajte ponovno.",
+    "cardCount_few": "{{count}} kartice"
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
-    "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "title": "140|Novi set",
+    "subtitle": "141|Dodajte riječi i prilagodite svoj set.",
+    "infoSection": "142|Podaci o setu",
+    "setTitle": "143|Naziv",
+    "setTitlePlaceholder": "144|npr. Osnovno za put",
+    "setDescription": "145|Opis",
+    "setDescriptionPlaceholder": "146|Neobavezno",
+    "privacy": "147|Privatnost",
+    "private": "148|Privatan",
+    "public": "149|Javan",
+    "cardsSection": "150|Kartice",
+    "addCard": "151|Dodaj karticu",
+    "cardN": "152|Kartica {{n}}",
+    "removeCard": "153|Ukloni karticu",
+    "word": "154|Riječ",
+    "translation": "155|Prijevod",
+    "example": "156|Primjer (neobavezno)",
+    "addImage": "157|Dodaj sliku",
+    "removeImage": "158|Ukloni sliku",
+    "customizeSection": "159|Prilagodba",
+    "color": "160|Boja",
+    "icon": "161|Ikona",
+    "folder": "162|Mapa",
+    "noFolder": "163|Bez mape",
+    "previewSection": "164|Pregled",
+    "previewPlaceholder": "165|Naziv seta",
+    "save": "166|Napravi set",
+    "saving": "167|Spremamo…",
+    "cancel": "168|Odustani",
+    "saveError": "169|Spremanje nije uspjelo. Pokušajte ponovno.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "170|Naziv seta je obavezan.",
+      "titleTooLong": "171|Naziv seta mora imati manje od 150 znakova.",
+      "descTooLong": "172|Opis mora imati manje od 200 znakova.",
+      "noValidCards": "173|Dodajte barem jednu karticu s riječju i prijevodom.",
+      "exampleTooLong": "174|Primjeri na karticama moraju imati manje od 150 znakova."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "imageTimeout": "175|Isteklo je vrijeme za prijenos slike. Provjerite vezu i pokušajte ponovno.",
     "import": {
-      "button": "Import",
-      "title": "Import cards",
-      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
-      "close": "Close import",
-      "dataSection": "Your data",
-      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
-      "separatorsSection": "Separators",
-      "betweenTermAndDefinition": "Between word and translation",
-      "betweenCards": "Between cards",
-      "tab": "Tab",
-      "comma": "Comma",
-      "newline": "New line",
-      "semicolon": "Semicolon",
-      "custom": "Custom",
-      "customPlaceholder": "e.g. —",
-      "previewSection": "Preview",
-      "previewEmpty": "Nothing to preview yet.",
-      "noDefinition": "No translation",
-      "confirm": "Add cards"
+      "button": "176|Uvoz",
+      "title": "177|Uvoz kartica",
+      "subtitle": "178|Kopirajte i zalijepite svoje podatke — iz Worda, Excela, Google Docsa i slično.",
+      "close": "179|Zatvori uvoz",
+      "dataSection": "180|Vaši podaci",
+      "placeholder": "181|Riječ 1\\tDefinicija 1\\nRiječ 2\\tDefinicija 2\\nRiječ 3\\tDefinicija 3",
+      "separatorsSection": "182|Razdjelnici",
+      "betweenTermAndDefinition": "183|Između riječi i prijevoda",
+      "betweenCards": "184|Između kartica",
+      "tab": "185|Tabulator",
+      "comma": "186|Zarez",
+      "newline": "187|Novi redak",
+      "semicolon": "188|Točka sa zarezom",
+      "custom": "189|Prilagođeno",
+      "customPlaceholder": "190|npr. —",
+      "previewSection": "191|Pregled",
+      "previewEmpty": "192|Još nema što prikazati.",
+      "noDefinition": "193|Bez prijevoda",
+      "confirm": "194|Dodaj kartice"
     },
     "iconPicker": {
-      "open": "More icons",
-      "title": "Choose icon",
-      "search": "Search symbol",
-      "close": "Close",
-      "empty": "No icons match that name."
+      "open": "195|Više ikona",
+      "title": "196|Odaberite ikonu",
+      "search": "197|Traži simbol",
+      "close": "198|Zatvori",
+      "empty": "199|Nijedna ikona ne odgovara tom nazivu."
     },
     "iconGroup": {
-      "learning": "Learning",
-      "languages": "Languages",
-      "nature": "Nature",
-      "health": "Health",
-      "food": "Food",
-      "travel": "Travel",
-      "work": "Work",
-      "tech": "Tech",
-      "creativity": "Creativity",
-      "general": "General"
+      "learning": "200|Učenje",
+      "languages": "201|Jezici",
+      "nature": "202|Priroda",
+      "health": "203|Zdravlje",
+      "food": "204|Hrana",
+      "travel": "205|Putovanja",
+      "work": "206|Posao",
+      "tech": "207|Tehnologija",
+      "creativity": "208|Kreativnost",
+      "general": "209|Općenito"
     }
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
-      "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "flashcards": "210|Kartice",
+      "folders": "211|Mape",
+      "sets": "212|Setovi",
+      "create": "213|Novo",
+      "profile": "214|Profil",
+      "speaking": "215|Govor",
+      "listening": "216|Slušanje",
+      "reading": "217|Čitanje",
+      "writing": "218|Pisanje"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "219|Odaberite set za vježbu",
+      "folders": "220|Upravljajte svojim mapama",
+      "sets": "221|Upravljajte svojim setovima kartica",
+      "create": "222|Napravite novi set za učenje",
+      "speaking": "223|Vježbajte govorne vještine.",
+      "listening": "224|Uvježbajte uho da jezik razumije prirodno.",
+      "reading": "225|Čitajte i ponavljajte materijale na jeziku.",
+      "writing": "226|Vježbajte jezik aktivno."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "227|GOVOR",
+      "listening": "228|SLUŠANJE",
+      "reading": "229|ČITANJE",
+      "writing": "230|PISANJE"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "231|Današnji cilj",
+      "left": "232|Preostalo {{count}} riječi"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "233|Naučeno danas",
+      "words": "234|riječi",
+      "accuracy": "235|Točnost",
+      "greatJob": "236|Odličan posao!",
+      "streak": "237|Niz",
+      "days": "238|dana"
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "239|Nastavi učiti",
+    "yourSets": "240|Vaši setovi",
+    "viewAll": "241|Prikaži sve",
+    "review": "242|Ponovi",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "243|Još nema setova",
+      "emptyBody": "244|Napravite prvi set kartica gumbom Novo."
     },
     "create": {
-      "folder": "Folder",
-      "set": "Set",
-      "text": "Text",
-      "audio": "Audio",
-      "essay": "Essay"
+      "folder": "245|Mapa",
+      "set": "246|Set",
+      "text": "247|Tekst",
+      "audio": "248|Zvuk",
+      "essay": "249|Esej"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "250|{{title}} — uskoro"
     },
     "progress": {
       "subtitle": {
-        "speaking": "of speaking practice",
-        "listening": "of listening practice",
-        "reading": "of reading practice",
-        "writing": "of writing practice"
+        "speaking": "251|vježbe govora",
+        "listening": "252|vježbe slušanja",
+        "reading": "253|vježbe čitanja",
+        "writing": "254|vježbe pisanja"
       }
     },
     "dailyGoal": {
-      "title": "Your goal for today",
-      "body": "Pick what you want to practise today — the card below counts against it.",
-      "chosenBody": "This is what today is about.",
-      "howMuch": "How much?",
-      "change": "Change"
+      "title": "255|Vaš cilj za danas",
+      "body": "256|Odaberite što danas želite vježbati — kartica ispod se u to broji.",
+      "chosenBody": "257|O tome je današnji dan.",
+      "howMuch": "258|Koliko?",
+      "change": "259|Promijeni"
     },
     "lastNote": {
-      "title": "Last note you read"
+      "title": "260|Zadnja pročitana bilješka"
     }
   },
   "categories": {
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing"
+    "speaking": "261|Govor",
+    "listening": "262|Slušanje",
+    "reading": "263|Čitanje",
+    "writing": "264|Pisanje"
   },
   "phase0": {
-    "title": "WordAround",
-    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
+    "title": "265|WordAround",
+    "subtitle": "266|Faza 0 radi. Dizajnerski tokeni učitani, Firebase povezan."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "267|Okreni",
+    "known": "268|Znao/la sam",
+    "unknown": "269|Još učim",
+    "mastered": "270|Savladano",
+    "shuffle": "271|Izmiješaj",
+    "trackProgress": "272|Prati napredak",
+    "speak": "273|Izgovori",
+    "roundDone": "274|Runda gotova",
+    "knewCount": "275|Znali ste {{known}} od {{total}}",
+    "repeatUnknown": "276|Ponovi {{count}} nepoznatih",
+    "restart": "277|Počni ispočetka",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "278|Sve",
+      "studied": "279|Naučene",
+      "remaining": "280|Preostale",
+      "mastered": "281|Savladane"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "282|Dodaj karticu",
+    "editCard": "283|Uredi karticu",
+    "deleteCard": "284|Izbriši karticu",
+    "deleteCardConfirm": "285|Izbrisati ovu karticu?",
+    "emptyPrompt": "286|Ovaj set još nema kartica. Dodajte prvu.",
+    "save": "287|Spremi",
+    "cancel": "288|Odustani"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "289|Današnji napredak",
+      "unit": "290|riječi",
+      "subtitle": "291|vježbe pisanja"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "292|Načini vježbanja",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "293|Pisanje iz setova",
+        "subtitle": "294|Vježbajte pravopis i pisanje riječi iz svojih setova."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "295|Eseji",
+        "subtitle": "296|Pišite tekstove i dobijte povratnu informaciju AI-ja o gramatici i stilu."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "297|Uskoro"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "298|Odaberite set",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "299|Nema setova s riječima",
+        "subtitle": "300|Prije nego počnete vježbati pisanje, napravite set s barem jednom karticom."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "301|{{count}} riječi",
+      "wordsCount_one": "302|{{count}} riječ",
+      "close": "303|Zatvori",
+      "wordsCount_few": "{{count}} riječi"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "304|Pisanje iz setova",
+      "subtitle": "305|Upišite prijevod i pritisnite Enter.",
+      "translateHint": "306|Prevedite na svoj jezik",
+      "hint": "307|Pomoć",
+      "skip": "308|Preskoči",
+      "submit": "309|Provjeri",
+      "inputPlaceholder": "310|Pišite ovdje…",
+      "loading": "311|Učitavamo set…",
+      "loadError": "312|Nismo mogli učitati ovaj set.",
+      "noCards": "313|Ovaj set nema kartica.",
+      "back": "314|Natrag",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "315|Postavke",
+        "trainingMode": "316|Način treniranja",
+        "difficulty": "317|Težina"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "318|Riječ → Prijevod",
+        "translationToWord": "319|Prijevod → Riječ"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "320|Lako",
+        "medium": "321|Srednje",
+        "hard": "322|Teško",
+        "easyDesc": "323|Neograničene pomoći, neograničena preskakanja",
+        "mediumDesc": "324|1 slovo pomoći, najviše 25 % preskakanja",
+        "hardDesc": "325|Bez pomoći, bez preskakanja, na vrijeme"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "326|Prevedite na svoj jezik",
+        "translation": "327|Napišite izvornu riječ"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "328|Preostalo {{count}} preskakanje",
+      "skipsLeft_other": "329|Preostalo {{count}} preskakanja",
+      "seconds": "330|{{count}} s",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "331|Runda gotova!",
+          "subtitle": "332|Odličan posao. Ovu ste rundu pisanja završili."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "333|Vrijeme je isteklo",
+          "subtitle": "334|Odbrojavanje teškog načina došlo je do nule. Pokušajte ponovno od prve riječi."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "335|Netočan odgovor",
+          "subtitle": "336|U teškom načinu jedna pogreška završava rundu."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
-      }
+        "perfectTitle": "337|Savršena runda!",
+        "perfectBody": "338|Prošli ste teški način bez pogreške. Bez preskakanja. Bez pomoći. Čista vještina.",
+        "totalWords": "339|Ukupno riječi",
+        "completedWords": "340|Riješene riječi",
+        "skippedWords": "341|Preskočene riječi",
+        "hintsUsed": "342|Iskorištene pomoći",
+        "streak": "343|Niz",
+        "difficultyLabel": "344|Težina",
+        "word": "345|Riječ",
+        "yourAnswer": "346|Vaš odgovor",
+        "correctAnswer": "347|Točan odgovor",
+        "tryAgain": "348|Pokušaj ponovno"
+      },
+      "skipsLeft_few": "Preostalo {{count}} preskakanja"
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "349|Eseji",
+      "subtitle": "350|Temu bira AI. Napišite tekst pa dobijte povratnu informaciju.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "351|Predloženo",
+        "custom": "352|Moja tema"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "353|Napišite vlastitu temu eseja...",
+        "generate": "354|Generiraj zadatak"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "355|Generiraj temu",
+        "regenerate": "356|Nova tema"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "357|Jezik",
+      "difficulty": "358|Težina",
       "task": {
-        "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips",
-        "taskLabel": "Task"
+        "time": "359|≈ {{count}} min",
+        "wordRange": "360|{{min}}-{{max}} riječi",
+        "quickTips": "361|Brzi savjeti",
+        "taskLabel": "362|Zadatak"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "363|Ovdje počnite pisati svoj esej...",
+        "wordCount": "364|{{count}} / {{min}}-{{max}} riječi",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "365|Samo nastavite — treba vam najmanje {{min}} riječi.",
+          "aboveMaximum": "366|Prešli ste granicu — pokušajte skratiti.",
+          "valid": "367|Unutar raspona."
         },
-        "reset": "Reset"
+        "reset": "368|Poništi"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "369|Najprije upišite temu.",
+        "generationFailed": "370|Temu nije bilo moguće generirati. Pokušajte ponovno."
       },
-      "generating": "Generating...",
+      "generating": "371|Generiramo...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "372|Zatraži pomoć",
+        "remaining": "373|Preostalo {{remaining}}/{{limit}}",
+        "noneLeft": "374|Nema više pomoći",
+        "notAvailable": "375|Na ovoj razini pomoć nije dostupna",
+        "generating": "376|Generiramo pomoć...",
+        "error": "377|Pomoć nije bilo moguće dohvatiti. Pokušajte ponovno.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "378|Sadržaj",
+          "grammar": "379|Gramatika",
+          "vocabulary": "380|Rječnik",
+          "structure": "381|Struktura"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again.",
-        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
+        "button": "382|Provjeri moj esej",
+        "checking": "383|Provjeravamo...",
+        "disabled": "384|Najprije se uklopite u raspon riječi",
+        "error": "385|Nismo mogli provjeriti vaš esej. Pokušajte ponovno.",
+        "languageUnsupported": "386|Provjera gramatike za jezik {{language}} još nije dostupna."
       },
       "score": {
-        "title": "Essay score",
+        "title": "387|Ocjena eseja",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "388|Izvrsno",
+          "veryGood": "389|Vrlo dobro",
+          "good": "390|Dobro",
+          "needsWork": "391|Treba doraditi"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "392|Gramatika",
+          "vocabulary": "393|Rječnik",
+          "length": "394|Duljina",
+          "complexity": "395|Složenost",
+          "relevance": "396|Povezanost s temom",
+          "independence": "397|Samostalnost"
         },
         "stat": {
-          "words": "Words",
-          "grammar": "Grammar",
-          "vocabStyle": "Vocab/style",
-          "hints": "Hints",
-          "translations": "Translations",
-          "synonyms": "Synonyms"
+          "words": "398|Riječi",
+          "grammar": "399|Gramatika",
+          "vocabStyle": "400|Rječnik/stil",
+          "hints": "401|Pomoći",
+          "translations": "402|Prijevodi",
+          "synonyms": "403|Sinonimi"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
-        "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "sectionTitle": "404|Gramatičke pogreške",
+        "count_one": "405|{{count}} pogreška",
+        "count_other": "406|{{count}} pogrešaka",
+        "empty": "407|Nema gramatičkih pogrešaka — odličan posao!",
+        "original": "408|Izvorno:",
+        "suggestion": "409|Prijedlog:",
+        "reason": "410|Razlog:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "411|Gramatika",
+          "vocabulary": "412|Rječnik",
+          "style": "413|Stil"
         },
         "save": {
-          "idle": "Save to Notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
-        }
+          "idle": "414|Spremi u bilješke",
+          "saving": "415|Spremamo…",
+          "saved": "416|Spremljeno",
+          "duplicate": "417|Već spremljeno",
+          "failed": "418|Pokušaj spremiti ponovno"
+        },
+        "count_few": "{{count}} pogreške"
       },
       "helper": {
-        "translate": "Translate",
-        "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "translate": "419|Prevedi",
+        "synonym": "420|Sinonim",
+        "remaining": "421|Preostalo {{remaining}}",
+        "notAvailable": "422|Nije dostupno na ovoj razini"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "423|Prevedi",
+        "placeholder": "424|Unesite riječ ili kratki izraz",
+        "submit": "425|Prevedi",
+        "submitting": "426|Prevodimo..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "427|Sinonimi",
+        "placeholder": "428|Unesite riječ",
+        "submit": "429|Pronađi sinonime",
+        "submitting": "430|Tražimo..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "431|S",
+        "to": "432|Na",
+        "close": "433|Zatvori",
+        "noResult": "434|Ništa nije pronađeno.",
+        "sameLanguage": "435|Odaberite drugi ulazni jezik.",
+        "error": "436|Usluga je privremeno nedostupna."
       },
-      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
-      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
-      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
+      "saveMistakeConfirmTitle": "437|Spremiti ovu pogrešku u bilješke?",
+      "saveMistakeConfirmBody": "438|Spremit će se kao bilješka o pogrešci s ispravkom „{{correction}}”.",
+      "autoSaveConfirmTitle": "439|Spremiti ove pogreške u svoje bilješke?",
+      "autoSaveConfirmBody_one": "440|Ova je provjera pronašla {{count}} pogrešku. Spremanjem postaje bilješka koja se vraća na ponavljanje.",
+      "autoSaveConfirmBody_other": "441|Ova je provjera pronašla {{count}} pogrešaka. Spremanjem postaju bilješke koje se vraćaju na ponavljanje.",
+      "autoSaveConfirmBody_few": "Ova je provjera pronašla {{count}} pogreške. Spremanjem postaju bilješke koje se vraćaju na ponavljanje."
     },
     "grammar": {
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "subtitle": "442|Posložite gramatiku po temama u jasne, strukturirane bilješke.",
+      "newTopic": "443|Nova tema",
+      "topicsEmptyTitle": "444|Još nema tema",
+      "topicsEmptyBody": "445|Napravite prvu temu i počnite skupljati bilješke iz gramatike.",
+      "notesCount_one": "446|{{count}} bilješka",
+      "notesCount_other": "447|{{count}} bilježaka",
+      "deleteTopicConfirm": "448|Izbrisati „{{title}}” i sve njezine bilješke? Ovo se ne može poništiti.",
+      "notesEmptyTitle": "449|Još nema bilježaka",
+      "notesEmptyBody": "450|Dodajte prvu bilješku u ovu temu.",
+      "newNote": "451|Nova bilješka",
+      "deleteNoteConfirm": "452|Izbrisati ovu bilješku? Ovo se ne može poništiti.",
+      "loading": "453|Učitavamo…",
+      "loadError": "454|Nismo mogli učitati vaše bilješke iz gramatike.",
+      "notFoundTitle": "455|Nije pronađeno",
+      "notFoundBody": "456|Ova je stavka možda izbrisana.",
+      "back": "457|Natrag",
+      "updated": "458|Ažurirano {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel",
-        "language": "Language",
-        "languageNone": "Not set"
+        "newTitle": "459|Nova tema",
+        "editTitle": "460|Uredi temu",
+        "name": "461|Naziv",
+        "namePlaceholder": "462|npr. Španjolski glagoli",
+        "description": "463|Opis",
+        "descriptionPlaceholder": "464|Neobavezno",
+        "color": "465|Boja",
+        "icon": "466|Ikona",
+        "save": "467|Spremi",
+        "cancel": "468|Odustani",
+        "language": "469|Jezik",
+        "languageNone": "470|Nije postavljeno"
       },
       "noteType": {
-        "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "standard": "471|Standardna",
+        "mistake": "472|Pogreška",
+        "rule": "473|Pravilo",
+        "comparison": "474|Usporedba",
+        "cheatSheet": "475|Podsjetnik",
+        "exercise": "476|Vježba"
       },
       "block": {
-        "heading": "Heading",
-        "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)",
-        "subheading": "Subheading",
-        "numberedList": "Numbered list",
-        "checklist": "Checklist",
-        "comparison": "Comparison",
-        "exercise": "Exercise",
-        "quiz": "Quiz",
-        "image": "Image",
-        "comparisonSecondary": "Second side",
-        "imageAdd": "Add / replace image",
-        "imageUploading": "Uploading…",
-        "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images."
+        "heading": "477|Naslov",
+        "paragraph": "478|Tekst",
+        "bulletList": "479|Popis s grafičkim oznakama",
+        "rule": "480|Pravilo",
+        "example": "481|Primjer",
+        "warning": "482|Upozorenje",
+        "quote": "483|Citat",
+        "divider": "484|Razdjelnik",
+        "addBlock": "485|Dodaj blok",
+        "addItem": "486|Dodaj stavku",
+        "moveUp": "487|Pomakni gore",
+        "moveDown": "488|Pomakni dolje",
+        "remove": "489|Ukloni",
+        "secondaryPlaceholder": "490|Detalj / prijevod (neobavezno)",
+        "subheading": "491|Podnaslov",
+        "numberedList": "492|Numerirani popis",
+        "checklist": "493|Popis za provjeru",
+        "comparison": "494|Usporedba",
+        "exercise": "495|Vježba",
+        "quiz": "496|Kviz",
+        "image": "497|Slika",
+        "comparisonSecondary": "498|Druga strana",
+        "imageAdd": "499|Dodaj / zamijeni sliku",
+        "imageUploading": "500|Prenosimo…",
+        "imageFailed": "501|Sliku nije bilo moguće prenijeti.",
+        "imageSaveFirst": "502|Prijavite se da biste prenosili slike."
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…",
-        "subheading": "Subheading",
-        "numberedList": "List item",
-        "checklist": "Checklist item",
-        "comparison": "First side",
-        "exercise": "Practice instruction…",
-        "quiz": "Question",
-        "image": "Image caption"
+        "heading": "503|Naslov",
+        "paragraph": "504|Napišite svoje objašnjenje…",
+        "bulletList": "505|Stavka popisa",
+        "rule": "506|Objasnite gramatičko pravilo…",
+        "example": "507|Dodajte primjer…",
+        "warning": "508|Česta pogreška ili upozorenje…",
+        "quote": "509|Rečenica koju vrijedi zapamtiti…",
+        "subheading": "510|Podnaslov",
+        "numberedList": "511|Stavka popisa",
+        "checklist": "512|Stavka popisa za provjeru",
+        "comparison": "513|Prva strana",
+        "exercise": "514|Uputa za vježbu…",
+        "quiz": "515|Pitanje",
+        "image": "516|Opis slike"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again.",
-        "subtitle": "Edit note",
-        "tags": "Tags",
-        "tagsPlaceholder": "Add a tag…",
-        "removeTag": "Remove tag {{tag}}",
-        "addToReview": "Add to review",
-        "addedToReview": "Added to your review queue.",
-        "inReview": "In review · {{when}}",
-        "inReviewDue": "Due for review",
-        "removedFromReview": "Removed from your review queue.",
-        "unsavedTitle": "Leave without saving?",
-        "unsavedBody": "This note has changes that have not been saved yet.",
-        "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "titlePlaceholder": "517|Naslov bilješke",
+        "save": "518|Spremi bilješku",
+        "saving": "519|Spremamo…",
+        "delete": "520|Izbriši bilješku",
+        "saveError": "521|Spremanje nije uspjelo. Pokušajte ponovno.",
+        "subtitle": "522|Uredi bilješku",
+        "tags": "523|Oznake",
+        "tagsPlaceholder": "524|Dodaj oznaku…",
+        "removeTag": "525|Ukloni oznaku {{tag}}",
+        "addToReview": "526|Dodaj na ponavljanje",
+        "addedToReview": "527|Dodano u vaš red za ponavljanje.",
+        "inReview": "528|Na ponavljanju · {{when}}",
+        "inReviewDue": "529|Vrijeme za ponavljanje",
+        "removedFromReview": "530|Uklonjeno iz vašeg reda za ponavljanje.",
+        "unsavedTitle": "531|Izaći bez spremanja?",
+        "unsavedBody": "532|Ova bilješka ima nespremljene promjene.",
+        "discard": "533|Odbaci promjene",
+        "saveAndLeave": "534|Spremi i izađi"
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "535|Kvizovi",
+        "new": "536|Novi kviz",
+        "start": "537|Pokreni kviz",
+        "delete": "538|Izbriši kviz",
+        "deleteConfirm": "539|Izbrisati „{{title}}”? Ovo se ne može poništiti.",
+        "emptyTitle": "540|Još nema kvizova",
+        "emptyBody": "541|Napravite kviz iz ove bilješke i provjerite se.",
+        "loadError": "542|Kvizove nije bilo moguće učitati.",
+        "questionsCount_one": "543|{{count}} pitanje",
+        "questionsCount_other": "544|{{count}} pitanja",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "545|Višestruki izbor",
+          "trueFalse": "546|Točno / Netočno",
+          "fillGap": "547|Popuni prazninu",
+          "shortAnswer": "548|Kratak odgovor"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead",
-          "modeManual": "Manual",
-          "modeManualDesc": "Write your own questions.",
-          "createQuiz": "Create quiz"
+          "title": "549|Napravi kviz",
+          "titlePlaceholder": "550|Naziv kviza",
+          "mode": "551|Način generiranja",
+          "modeSmart": "552|Pametno lokalno",
+          "modeSmartDesc": "553|Stvara pitanja iz sadržaja bilješke, na uređaju.",
+          "modeAI": "554|Generirano AI-jem",
+          "modeAIDesc": "555|Stvara bogatija, kontekstualna pitanja uz pomoć AI-ja.",
+          "count": "556|Pitanja",
+          "types": "557|Vrste pitanja",
+          "focus": "558|Fokus (neobavezno)",
+          "focusPlaceholder": "559|npr. usredotoči se na nepravilne oblike",
+          "preview": "560|Pregled pitanja",
+          "regenerate": "561|Ponovno generiraj pregled",
+          "previewTitle": "562|Pregled",
+          "saveQuiz": "563|Spremi kviz",
+          "generateQuiz": "564|Generiraj kviz",
+          "generating": "565|Generiramo…",
+          "saving": "566|Spremamo…",
+          "useSmartInstead": "567|Radije upotrijebi Pametno lokalno",
+          "modeManual": "568|Ručno",
+          "modeManualDesc": "569|Napišite vlastita pitanja.",
+          "createQuiz": "570|Napravi kviz"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "571|Pitanje {{current}} od {{total}}",
+          "submit": "572|Pošalji odgovor",
+          "next": "573|Dalje",
+          "finish": "574|Završi",
+          "correct": "575|Točno!",
+          "incorrect": "576|Netočno",
+          "correctAnswer": "577|Točan odgovor: {{answer}}",
+          "typeMissing": "578|Upišite riječ koja nedostaje",
+          "typeAnswer": "579|Upišite svoj odgovor",
+          "trueLabel": "580|Točno",
+          "falseLabel": "581|Netočno"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "582|{{correct}} od {{total}} točno",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "583|Izvrsno!",
+            "good": "584|Odličan posao!",
+            "keepPracticing": "585|Nastavite vježbati",
+            "reviewNote": "586|Ponovite bilješku"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "587|Netočno",
+          "correctSection": "588|Točno",
+          "yourAnswer": "589|Vaš odgovor: {{answer}}",
+          "tryAgain": "590|Pokušaj ponovno",
+          "reviewNote": "591|Otvori bilješku",
+          "done": "592|Gotovo"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "593|Najprije dodajte više sadržaja u bilješku — kvizu trebaju barem dva sadržajna bloka (pravilo, primjer, upozorenje, odlomak ili citat).",
+          "noMatchingQuestionTypes": "594|Nema dovoljno odgovarajućeg sadržaja za odabrane vrste pitanja. Uključite više vrsta ili dodajte sadržaj.",
+          "aiFailed": "595|Kviz nije bilo moguće generirati AI-jem. Pokušajte ponovno ili upotrijebite Pametno lokalno."
         },
-        "badge": "Quiz",
+        "badge": "596|Kviz",
         "manual": {
-          "questions_one": "{{count}} question",
-          "questions_other": "{{count}} questions",
-          "add": "Add question",
-          "questionPlaceholder": "Question text",
-          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
-          "optionPlaceholder": "Option {{index}}",
-          "answerPlaceholder": "Correct answer",
-          "explanationPlaceholder": "Explanation (optional)",
+          "questions_one": "597|{{count}} pitanje",
+          "questions_other": "598|{{count}} pitanja",
+          "add": "599|Dodaj pitanje",
+          "questionPlaceholder": "600|Tekst pitanja",
+          "questionGapPlaceholder": "601|Pitanje s prazninom, npr. Ja _____ u školu",
+          "optionPlaceholder": "602|Mogućnost {{index}}",
+          "answerPlaceholder": "603|Točan odgovor",
+          "explanationPlaceholder": "604|Objašnjenje (neobavezno)",
           "error": {
-            "questionRequired": "Question text is required.",
-            "optionsRequired": "Multiple choice needs at least 2 options.",
-            "answerRequired": "Enter the correct answer.",
-            "answerNotAnOption": "The correct answer must match one of the options.",
-            "blankRequired": "Add a blank (e.g. _____) inside the question."
-          }
-        }
+            "questionRequired": "605|Tekst pitanja je obavezan.",
+            "optionsRequired": "606|Za višestruki izbor trebaju barem 2 mogućnosti.",
+            "answerRequired": "607|Unesite točan odgovor.",
+            "answerNotAnOption": "608|Točan odgovor mora odgovarati jednoj od mogućnosti.",
+            "blankRequired": "609|Dodajte prazninu (npr. _____) unutar pitanja."
+          },
+          "questions_few": "{{count}} pitanja"
+        },
+        "questionsCount_few": "{{count}} pitanja"
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "610|Brza pogreška",
+        "title": "611|Brza pogreška",
+        "original": "612|Izvorna rečenica",
+        "originalPlaceholder": "613|Primjer: Ja sam se slažem s tobom",
+        "corrected": "614|Ispravak",
+        "correctedPlaceholder": "615|Primjer: Slažem se s tobom",
+        "explanation": "616|Objašnjenje (neobavezno)",
+        "explanationPlaceholder": "617|Zašto je ispravak točan?",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "618|Najprije dodajte izvornu rečenicu.",
+          "corrected": "619|Dodajte i ispravljenu rečenicu."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done",
-        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
+        "save": "620|Spremi pogrešku",
+        "saving": "621|Spremamo…",
+        "saved": "622|Spremljeno u bilješke iz gramatike.",
+        "duplicate": "623|Već spremljeno — duplikat je preskočen.",
+        "failed": "624|Spremanje nije uspjelo. Pokušajte ponovno.",
+        "openTopic": "625|Otvori Česte pogreške",
+        "done": "626|Gotovo",
+        "tip": "627|Spremljeni ispravci automatski idu na ponavljanje, pa se oni u kojima stalno griješite vraćaju prvi."
       },
       "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
+        "topicTitle": "628|Predlošci tema",
+        "noteTitle": "629|Predlošci bilježaka",
+        "button": "630|Predložak",
+        "startFromTemplate": "631|Počni od predloška",
+        "searchPlaceholder": "632|Traži predloške…",
+        "allLanguages": "633|Svi",
+        "anyDifficulty": "634|Bilo koja",
         "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
+          "en": "635|Engleski",
+          "es": "636|Španjolski",
+          "fr": "637|Francuski",
+          "de": "638|Njemački"
         },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
-        "applyTitle": "Apply “{{title}}”?",
-        "applyBody": "This note already has content. Choose how to apply the template.",
-        "applyReplace": "Replace content",
-        "applyAppend": "Append blocks"
+        "minutes": "639|{{minutes}} min",
+        "notesIncluded_one": "640|{{count}} bilješka",
+        "notesIncluded_other": "641|{{count}} bilježaka",
+        "blocksIncluded_one": "642|{{count}} blok",
+        "blocksIncluded_other": "643|{{count}} blokova",
+        "empty": "644|Nijedan predložak ne odgovara vašim filtrima.",
+        "use": "645|Upotrijebi predložak",
+        "creating": "646|Stvaramo…",
+        "replaceConfirm": "647|Zamijeniti trenutačni sadržaj bilješke ovim predloškom? Pritisnite Odustani da se predložak doda ispod.",
+        "applyTitle": "648|Primijeniti „{{title}}”?",
+        "applyBody": "649|Ova bilješka već ima sadržaj. Odaberite kako primijeniti predložak.",
+        "applyReplace": "650|Zamijeni sadržaj",
+        "applyAppend": "651|Dodaj blokove na kraj",
+        "notesIncluded_few": "{{count}} bilješke",
+        "blocksIncluded_few": "{{count}} bloka"
       },
       "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "dueBadge": "Due",
-        "refreshBody": "Nothing is due right now — you can still refresh what you read lately.",
-        "refreshStart": "Refresh recent notes",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
+        "title": "652|Ponavljanje",
+        "subtitle": "653|Učvrstite naučeno razmaknutim ponavljanjem.",
+        "cardTitle": "654|Ponovi danas",
+        "cardSubtitle_one": "655|{{count}} stavka spremna · ~{{minutes}} min",
+        "cardSubtitle_other": "656|{{count}} stavki spremno · ~{{minutes}} min",
+        "caughtUpTitle": "657|Sve je odrađeno",
+        "caughtUp": "658|Sve ste odradili. Otvorite ili uredite bilješke da dobijete prijedloge za ponavljanje.",
+        "dueBadge": "659|Na redu",
+        "refreshBody": "660|Trenutačno ništa nije na redu — svejedno možete osvježiti ono što ste čitali zadnje.",
+        "refreshStart": "661|Osvježi nedavne bilješke",
+        "start": "662|Počni ponavljanje",
+        "skip": "663|Preskoči",
+        "itemOf": "664|Stavka {{current}} od {{total}}",
+        "untitled": "665|Bilješka iz gramatike",
+        "stats": "666|Ponovljeno {{count}} puta · niz {{streak}}",
+        "continueToQuestion": "667|Prijeđi na pitanje",
+        "showAnswer": "668|Prikaži odgovor",
+        "compareTitle": "669|Usporedite svoj odgovor",
+        "referenceAnswer": "670|Referentni odgovor: {{answer}}",
+        "openNote": "671|Otvori cijelu bilješku",
         "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
+          "manual_one": "672|{{count}} stavka čeka ponavljanje",
+          "manual_other": "673|{{count}} stavki čeka ponavljanje",
+          "recentlyOpened_one": "674|{{count}} nedavno otvorena bilješka",
+          "recentlyOpened_other": "675|{{count}} nedavno otvorenih bilježaka",
+          "recentlyEdited_one": "676|{{count}} nedavno uređena bilješka",
+          "recentlyEdited_other": "677|{{count}} nedavno uređenih bilježaka",
+          "manual_few": "{{count}} stavke čekaju ponavljanje",
+          "recentlyOpened_few": "{{count}} nedavno otvorene bilješke",
+          "recentlyEdited_few": "{{count}} nedavno uređene bilješke"
         },
         "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
-          "quiz": "Quiz"
+          "note": "678|Bilješka",
+          "mistake": "679|Pogreška",
+          "quiz": "680|Kviz"
         },
         "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
+          "source": "681|Učenje",
+          "question": "682|Odgovor",
+          "result": "683|Ocjena"
         },
         "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
+          "forgot": "684|Zaboravio/la sam",
+          "hard": "685|Teško",
+          "good": "686|Dobro",
+          "easy": "687|Lako"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "plus4h": "688|+4 sata",
+          "plus1d": "689|+1 dan",
+          "plus3d": "690|+3 dana",
+          "plus7d": "691|+7 dana"
         },
         "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "title": "692|Sesija je gotova",
+          "emptyTitle": "693|Ništa nije ponovljeno",
+          "reviewed": "694|Ponovljeno",
+          "correct": "695|Točno",
+          "incorrect": "696|Netočno",
+          "hintForgot": "697|Neke se stavke vraćaju za 4 sata.",
+          "hintHard": "698|Teške se stavke vraćaju sutra.",
+          "hintGood": "699|Dobre se stavke vraćaju za 3 dana.",
+          "hintEasy": "700|Sve se stavke vraćaju za 7 dana.",
+          "done": "701|Natrag na bilješke iz gramatike"
         },
-        "loadError": "Couldn't load your review queue.",
-        "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "loadError": "702|Nismo mogli učitati vaš red za ponavljanje.",
+        "mistakeCount_one": "703|{{count}} pogreška",
+        "mistakeCount_other": "704|{{count}} pogrešaka",
+        "cardSubtitle_few": "{{count}} stavke spremne · ~{{minutes}} min",
+        "mistakeCount_few": "{{count}} pogreške"
       },
-      "mistakesBadge": "Mistakes",
-      "topicsTitle": "Topics",
-      "deleteTopic": "Delete topic",
-      "deleteTopicTitle": "Delete this topic?",
-      "deleteNoteTitle": "Delete this note?",
-      "pin": "Pin note",
-      "unpin": "Unpin note",
-      "favorite": "Add to favorites",
-      "unfavorite": "Remove from favorites",
+      "mistakesBadge": "705|Pogreške",
+      "topicsTitle": "706|Teme",
+      "deleteTopic": "707|Izbriši temu",
+      "deleteTopicTitle": "708|Izbrisati ovu temu?",
+      "deleteNoteTitle": "709|Izbrisati ovu bilješku?",
+      "pin": "710|Prikvači bilješku",
+      "unpin": "711|Otkvači bilješku",
+      "favorite": "712|Dodaj u favorite",
+      "unfavorite": "713|Ukloni iz favorita",
       "search": {
-        "topics": "Search topics…",
-        "notes": "Search notes…",
-        "clear": "Clear search",
-        "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword.",
-        "notesSection_one": "Notes ({{count}})",
-        "notesSection_other": "Notes ({{count}})",
-        "noNoteMatches": "No notes match this search."
+        "topics": "714|Traži teme…",
+        "notes": "715|Traži bilješke…",
+        "clear": "716|Očisti pretragu",
+        "noMatchTitle": "717|Nema podudaranja",
+        "noMatchBody": "718|Pokušajte s drugom riječi.",
+        "notesSection_one": "719|Bilješke ({{count}})",
+        "notesSection_other": "720|Bilješke ({{count}})",
+        "noNoteMatches": "721|Nijedna bilješka ne odgovara ovoj pretrazi.",
+        "notesSection_few": "Bilješke ({{count}})"
       },
       "filter": {
-        "label": "Filter notes",
-        "all": "All",
-        "pinned": "Pinned",
-        "favorites": "Favorites",
-        "mistakes": "Mistakes",
-        "quizzes": "Quizzes",
-        "review": "Due",
+        "label": "722|Filtriraj bilješke",
+        "all": "723|Sve",
+        "pinned": "724|Prikvačene",
+        "favorites": "725|Favoriti",
+        "mistakes": "726|Pogreške",
+        "quizzes": "727|Kvizovi",
+        "review": "728|Na redu",
         "empty": {
           "all": {
-            "title": "No grammar notes yet",
-            "body": "Create your first grammar note for this topic."
+            "title": "729|Još nema bilježaka iz gramatike",
+            "body": "730|Napravite prvu bilješku iz gramatike za ovu temu."
           },
           "pinned": {
-            "title": "No pinned notes yet",
-            "body": "Pin notes from the list to find them quickly."
+            "title": "731|Još nema prikvačenih bilježaka",
+            "body": "732|Prikvačite bilješke s popisa da ih brzo nađete."
           },
           "favorites": {
-            "title": "No favorite notes yet",
-            "body": "Favorite notes to keep them handy."
+            "title": "733|Još nema omiljenih bilježaka",
+            "body": "734|Označite bilješke kao favorite da vam budu pri ruci."
           },
           "mistakes": {
-            "title": "No saved mistakes yet",
-            "body": "Save grammar mistakes to review them here."
+            "title": "735|Još nema spremljenih pogrešaka",
+            "body": "736|Spremajte gramatičke pogreške da ih ovdje ponavljate."
           },
           "quizzes": {
-            "title": "No quiz notes yet",
-            "body": "Add a quiz to a note to see it here."
+            "title": "737|Još nema bilježaka s kvizom",
+            "body": "738|Dodajte kviz bilješci da je vidite ovdje."
           },
           "review": {
-            "title": "Nothing due right now",
-            "body": "Notes come back here when their next review is due."
+            "title": "739|Trenutačno ništa nije na redu",
+            "body": "740|Bilješke se vraćaju ovamo kad dođe vrijeme za sljedeće ponavljanje."
           }
         }
       },
       "reorder": {
-        "start": "Reorder",
-        "done": "Done",
-        "up": "Move up",
-        "down": "Move down"
+        "start": "741|Promijeni redoslijed",
+        "done": "742|Gotovo",
+        "up": "743|Pomakni gore",
+        "down": "744|Pomakni dolje"
       },
       "highlights": {
-        "mistakesTitle": "Mistakes to fix",
-        "mistakesSubtitle": "Recent corrections waiting for review.",
-        "quizzesTitle": "Weak quiz areas",
-        "quizzesSubtitle": "Quizzes worth re-taking soon."
+        "mistakesTitle": "745|Pogreške za ispraviti",
+        "mistakesSubtitle": "746|Nedavni ispravci čekaju ponavljanje.",
+        "quizzesTitle": "747|Slaba mjesta u kvizovima",
+        "quizzesSubtitle": "748|Kvizovi koje vrijedi uskoro ponoviti."
       },
       "quickNote": {
-        "button": "Quick note",
-        "title": "Quick note",
-        "subtitle": "Capture a grammar idea without opening the full editor.",
-        "noteTitle": "Title",
-        "titlePlaceholder": "Example: Ser vs Estar",
-        "text": "Note",
-        "textPlaceholder": "Write the useful part here",
-        "noteType": "Note type",
-        "topic": "Topic",
-        "openEditor": "Open editor after saving",
-        "openEditorHint": "Useful when the quick version grows into a full note.",
-        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
-        "validation": "Add a title or some text first.",
-        "save": "Save quick note",
-        "saving": "Saving…"
+        "button": "749|Brza bilješka",
+        "title": "750|Brza bilješka",
+        "subtitle": "751|Zabilježite gramatičku ideju bez otvaranja cijelog uređivača.",
+        "noteTitle": "752|Naslov",
+        "titlePlaceholder": "753|Primjer: Ser vs Estar",
+        "text": "754|Bilješka",
+        "textPlaceholder": "755|Ovdje napišite ono korisno",
+        "noteType": "756|Vrsta bilješke",
+        "topic": "757|Tema",
+        "openEditor": "758|Otvori uređivač nakon spremanja",
+        "openEditorHint": "759|Korisno kad brza verzija naraste u punu bilješku.",
+        "tip": "760|Brze su bilješke za ideju koju biste inače zaboravili za deset minuta.",
+        "validation": "761|Najprije dodajte naslov ili nešto teksta.",
+        "save": "762|Spremi brzu bilješku",
+        "saving": "763|Spremamo…"
       },
       "settings": {
-        "title": "Notes settings",
-        "subtitle": "How quick capture, mistakes and the notes list behave.",
-        "reset": "Reset to defaults",
-        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "title": "764|Postavke bilježaka",
+        "subtitle": "765|Kako se ponašaju brzo bilježenje, pogreške i popis bilježaka.",
+        "reset": "766|Vrati na zadano",
+        "tip": "767|Brze pogreške koristite za rečenice koje ste stvarno napisali krivo — korisnije su od savršenih primjera iz udžbenika.",
         "quickCapture": {
-          "title": "Quick capture",
-          "subtitle": "Make fast notes and mistakes feel instant."
+          "title": "768|Brzo bilježenje",
+          "subtitle": "769|Neka brze bilješke i pogreške budu trenutačne."
         },
         "mistakeNotes": {
-          "title": "Mistake notes",
-          "subtitle": "What gets saved when you capture a quick mistake."
+          "title": "770|Bilješke o pogreškama",
+          "subtitle": "771|Što se sprema kad zabilježite brzu pogrešku."
         },
         "essays": {
-          "title": "Essays",
-          "subtitle": "What happens to grammar issues found in your essays."
+          "title": "772|Eseji",
+          "subtitle": "773|Što se događa s gramatičkim pogreškama iz vaših eseja."
         },
         "review": {
-          "title": "Spaced review",
-          "subtitle": "How notes reach the review queue."
+          "title": "774|Razmaknuto ponavljanje",
+          "subtitle": "775|Kako bilješke dolaze u red za ponavljanje."
         },
         "appearance": {
-          "title": "Notes appearance",
-          "subtitle": "How the notes list is ordered and sized."
+          "title": "776|Izgled bilježaka",
+          "subtitle": "777|Kako je popis bilježaka poredan i koliko je velik."
         },
         "helpers": {
-          "title": "Learning helpers",
-          "subtitle": "Small nudges inside empty states and quick sheets."
+          "title": "778|Pomoć pri učenju",
+          "subtitle": "779|Mali poticaji u praznim zaslonima i brzim obrascima."
         },
         "defaultType": {
-          "title": "Default note type",
-          "subtitle": "What a new quick note starts as."
+          "title": "780|Zadana vrsta bilješke",
+          "subtitle": "781|S kojom vrstom počinje nova brza bilješka."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "Open editor after quick save",
-            "subtitle": "After saving a quick note, jump straight into the full editor."
+            "title": "782|Otvori uređivač nakon brzog spremanja",
+            "subtitle": "783|Nakon spremanja brze bilješke odmah prijeđi u cijeli uređivač."
           },
           "allowQuickQuizzes": {
-            "title": "Allow quizzes in notes",
-            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+            "title": "784|Dopusti kvizove u bilješkama",
+            "subtitle": "785|Nudi blokove kvizova i izradu kvizova unutar bilježaka."
           },
           "showsMistakeHighlights": {
-            "title": "Highlight mistake notes",
-            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+            "title": "786|Istakni bilješke o pogreškama",
+            "subtitle": "787|Koristi topli ton za kartice pogrešaka i prikaži redak s pogreškama."
           },
           "includeOriginalSentence": {
-            "title": "Include original sentence",
-            "subtitle": "Save the wrong version as a quote block in the note."
+            "title": "788|Uključi izvornu rečenicu",
+            "subtitle": "789|Spremi krivu verziju u bilješku kao blok citata."
           },
           "includeCorrectedSentence": {
-            "title": "Include corrected sentence",
-            "subtitle": "Save the fixed version as an example block."
+            "title": "790|Uključi ispravljenu rečenicu",
+            "subtitle": "791|Spremi ispravljenu verziju kao blok primjera."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "Include explanation",
-            "subtitle": "Add your explanation as a paragraph block below."
+            "title": "792|Uključi objašnjenje",
+            "subtitle": "793|Dodaj vaše objašnjenje ispod kao odlomak."
           },
           "groupMistakesByTopic": {
-            "title": "Group mistakes by topic",
-            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+            "title": "794|Grupiraj pogreške po temama",
+            "subtitle": "795|Spremaj brze pogreške u trenutačnu temu umjesto u Česte pogreške."
           },
           "askBeforeSavingMistakes": {
-            "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
+            "title": "796|Pitaj prije spremanja pogrešaka",
+            "subtitle": "797|Potvrdi prije nego pogreška iz eseja postane bilješka. Ovo ima prednost pred automatskim spremanjem."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
+            "title": "798|Automatski spremaj pogreške iz eseja",
+            "subtitle": "799|Svaka gramatička pogreška pronađena u eseju postaje bilješka. Uz uključeno „Pitaj prije spremanja” pita jednom za cijelu provjeru."
           },
           "groupsPinnedNotesFirst": {
-            "title": "Pinned notes first",
-            "subtitle": "Keep important rules at the top of each topic."
+            "title": "800|Prikvačene bilješke prve",
+            "subtitle": "801|Držite važna pravila na vrhu svake teme."
           },
           "usesCompactCards": {
-            "title": "Compact note cards",
-            "subtitle": "Show tighter cards when you want more notes on screen."
+            "title": "802|Kompaktne kartice bilježaka",
+            "subtitle": "803|Prikaži zbijenije kartice kad želite više bilježaka na zaslonu."
           },
           "showsHelperTips": {
-            "title": "Show helper tips",
-            "subtitle": "Display short contextual hints while creating notes."
+            "title": "804|Prikaži savjete",
+            "subtitle": "805|Prikazuj kratke kontekstualne savjete dok stvarate bilješke."
           },
           "autoAddNotesToReview": {
-            "title": "Add new notes to review",
-            "subtitle": "Every note you save joins the review queue, due a day later."
+            "title": "806|Dodaj nove bilješke na ponavljanje",
+            "subtitle": "807|Svaka spremljena bilješka ulazi u red za ponavljanje, na redu je sljedeći dan."
           }
         }
       },
-      "editTopic": "Edit topic",
+      "editTopic": "808|Uredi temu",
       "toSet": {
-        "title": "Make a set from this note",
-        "subtitle": "Pick the pairs to turn into flashcards.",
-        "setTitle": "Set title",
-        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
-        "button": "Make a set",
-        "create": "Create set",
-        "creating": "Creating…",
-        "error": "Couldn't create the set. Try again.",
-        "cards_one": "{{count}} card",
-        "cards_other": "{{count}} cards"
+        "title": "809|Napravi set iz ove bilješke",
+        "subtitle": "810|Odaberite parove koji će postati kartice.",
+        "setTitle": "811|Naziv seta",
+        "empty": "812|Iz ove bilješke još nema što pretvoriti u kartice. Blokovi usporedbe, primjera i pravila pretvaraju se izravno, a stavke popisa dijele se na crtici — poput „hacer — raditi”.",
+        "button": "813|Napravi set",
+        "create": "814|Napravi set",
+        "creating": "815|Stvaramo…",
+        "error": "816|Set nije bilo moguće napraviti. Pokušajte ponovno.",
+        "cards_one": "817|{{count}} kartica",
+        "cards_other": "818|{{count}} kartica",
+        "cards_few": "{{count}} kartice"
       },
-      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "topicsEmptyTip": "819|Tema je mapa za bilješke — jedna po jeziku ili jedna po stvari u kojoj stalno griješite.",
+      "notesEmptyTip": "820|Svaka spremljena bilješka ulazi u red za ponavljanje, pa je zapisati je već znači početi je vježbati.",
+      "notesCount_few": "{{count}} bilješke"
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "821|Načini vježbanja",
+    "loading": "822|Učitavamo…",
+    "loadError": "823|Nismo mogli učitati vaše tekstove za čitanje.",
+    "notFound": "824|Ova je stavka možda izbrisana.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "825|Današnji napredak",
+      "subtitle": "826|Održite svoj niz čitanja."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "827|Uskoro",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "828|Moji tekstovi",
+        "subtitle": "829|Zalijepite vlastiti tekst i čitajte ga uz pomoć."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "830|Čitanje iz setova",
+        "subtitle": "831|Napravite tekst za čitanje iz svojih setova kartica."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "832|Način priče",
+        "subtitle": "833|Čitajte interaktivne priče s granjem odluka."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "834|Brzo čitanje",
+        "subtitle": "835|Trenirajte brže čitanje uz mjereni tempo."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "836|Moji tekstovi",
+      "subtitle": "837|Vaši spremljeni tekstovi za čitanje.",
+      "addText": "838|Dodaj tekst",
+      "emptyTitle": "839|Još nema tekstova",
+      "emptyBody": "840|Dodajte prvi tekst i počnite vježbati čitanje.",
+      "savedTitle": "841|Spremljeni tekstovi"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "842|Novo",
+      "inProgress": "843|U tijeku",
+      "completed": "844|Završeno"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "845|{{count}} riječ",
+      "words_other": "846|{{count}} riječi",
+      "start": "847|Počni",
+      "continue": "848|Nastavi",
+      "readAgain": "849|Pročitaj ponovno",
+      "rename": "850|Preimenuj",
+      "renamePrompt": "851|Novi naziv:",
+      "delete": "852|Izbriši",
+      "deleteConfirm": "853|Izbrisati „{{title}}”? Ovo se ne može poništiti.",
+      "words_few": "{{count}} riječi"
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "854|Nastavi čitati",
+      "percent": "855|{{percent}} % gotovo",
+      "button": "856|Nastavi"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "857|Glavna misao",
+      "vocabulary": "858|Rječnik",
+      "detailedComprehension": "859|Detaljno razumijevanje",
+      "grammarAwareness": "860|Pozornost na gramatiku",
+      "speedFluency": "861|Brzina / tečnost"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "862|Razumijevanje",
+      "trueFalse": "863|Točno / Netočno",
+      "fillGap": "864|Popuni prazninu",
+      "vocabulary": "865|Rječnik",
+      "findEvidence": "866|Pronađi dokaz",
+      "orderReconstruction": "867|Redoslijed"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "868|Istakni nepoznate riječi",
+      "translationOnTap": "869|Prijevod dodirom",
+      "vocabularyHints": "870|Pomoć s rječnikom",
+      "readingTimer": "871|Mjerač vremena čitanja"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "872|Dodaj tekst",
+      "subtitle": "873|Zalijepite tekst i postavite svoju vježbu čitanja.",
+      "untitled": "874|Tekst bez naziva",
+      "pastePlaceholder": "875|Zalijepite ili upišite svoj tekst ovdje…",
+      "titleLabel": "876|Naziv",
+      "titlePlaceholder": "877|Neobavezno — možemo ga predložiti",
+      "language": "878|Jezik",
+      "difficulty": "879|Težina",
+      "autoDetect": "880|Automatski prepoznaj",
+      "manual": "881|Odaberi ručno",
+      "focus": "882|Fokus čitanja",
+      "questionTypes": "883|Vrste pitanja",
+      "assistance": "884|Pomoć pri čitanju",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
-        "min": "min",
-        "detected": "Detected: {{level}}"
+        "words_one": "885|{{count}} riječ",
+        "words_other": "886|{{count}} riječi",
+        "chars_one": "887|{{count}} znak",
+        "chars_other": "888|{{count}} znakova",
+        "min": "889|min",
+        "detected": "890|Prepoznato: {{level}}",
+        "words_few": "{{count}} riječi",
+        "chars_few": "{{count}} znaka"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "891|Najprije dodajte tekst.",
+        "tooShort": "892|Dodajte barem 20 riječi."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "893|Spremi tekst",
+      "saveAndStart": "894|Spremi i počni",
+      "saving": "895|Spremamo…",
+      "saveError": "896|Spremanje nije uspjelo. Pokušajte ponovno.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
-        "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "pasteText": "897|Zalijepi",
+        "photo": "898|Fotografija",
+        "pdf": "899|PDF",
+        "generate": "900|Generiraj",
+        "explore": "901|Istraži"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "902|Informativan",
+        "casual": "903|Ležeran",
+        "academic": "904|Akademski",
+        "narrative": "905|Pripovjedni"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "906|Kratak",
+        "medium": "907|Srednji",
+        "long": "908|Dug"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "909|Prenesite fotografiju stranice — izvući ćemo tekst.",
+        "chooseImage": "910|Odaberi sliku",
+        "recognizing": "911|Prepoznajemo… {{percent}} %",
+        "imageError": "912|Iz ove slike nismo mogli pročitati tekst.",
+        "pdfHint": "913|Prenesite PDF — izvući ćemo tekst.",
+        "choosePDF": "914|Odaberi PDF",
+        "reading": "915|Čitamo PDF…",
+        "pdfError": "916|Ovaj PDF nismo mogli pročitati.",
+        "topicPlaceholder": "917|Tema — npr. koraljni grebeni, tiskarski stroj",
+        "explorePlaceholder": "918|Tema ili ključna riječ — npr. Marie Curie, Venecija",
+        "generateButton": "919|Generiraj tekst",
+        "exploreButton": "920|Dohvati članak",
+        "working": "921|Radimo…",
+        "generateError": "922|Tekst nije bilo moguće generirati. Pokušajte ponovno.",
+        "exploreError": "923|Za ovu temu nismo našli članak.",
+        "exploredFrom": "924|Dohvaćeno s"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again.",
-      "translation": "Translation",
-      "textLabel": "Text"
+      "startQuestions": "925|Prijeđi na pitanja",
+      "finish": "926|Završi",
+      "next": "927|Dalje",
+      "questionOf": "928|Pitanje {{current}} od {{total}}",
+      "closeTranslation": "929|Zatvori prijevod",
+      "translating": "930|Prevodimo…",
+      "translationError": "931|Prijevod nije uspio. Pokušajte ponovno.",
+      "translation": "932|Prijevod",
+      "textLabel": "933|Tekst"
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts",
-      "complete": "Practice Complete"
+      "comprehension": "934|Razumijevanje",
+      "correct": "935|Točno",
+      "time": "936|Vrijeme čitanja",
+      "wpm": "937|riječi/min",
+      "mistakes": "938|Pogreške",
+      "mistakesTitle": "939|Pregledajte svoje pogreške",
+      "readAgain": "940|Pročitaj ponovno",
+      "back": "941|Natrag na Moje tekstove",
+      "complete": "942|Vježba je gotova"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "943|Čitanje iz setova",
+      "subtitle": "944|Pretvorite set kartica u tekst za čitanje.",
+      "pickSet": "945|Odaberite set",
+      "changeSet": "946|Promijeni set",
+      "tooFewWords": "947|Ovom setu treba barem {{count}} riječi za izradu teksta.",
+      "mode": "948|Način generiranja",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "949|Prirodan",
+        "strict": "950|Strog",
+        "mixed": "951|Mješovit"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "952|Duljina teksta",
+      "generate": "953|Generiraj tekst",
+      "generating": "954|Stvaramo vaš tekst…",
+      "generateError": "955|Tekst nije bilo moguće stvoriti. Pokušajte ponovno.",
+      "emptyTitle": "956|Još nema tekstova",
+      "emptyBody": "957|Odaberite set kartica i pretvorit ćemo ga u tekst za čitanje.",
+      "savedTitle": "958|Spremljeni tekstovi"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "959|Brzo čitanje",
+      "subtitle": "960|Trenirajte brže čitanje uz mjereni tempo.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "961|Ciljana brzina čitanja",
+        "timer": "962|Vrsta mjerača vremena",
+        "length": "963|Duljina teksta"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "964|Opuštena",
+        "balanced": "965|Uravnotežena",
+        "fast": "966|Brza",
+        "challenge": "967|Izazov"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "968|Bez mjerača vremena",
+        "soft": "969|Blagi mjerač vremena",
+        "strict": "970|Strogi mjerač vremena"
       },
       "length": {
-        "two": "2 min",
-        "five": "5 min",
-        "ten": "10 min"
+        "two": "971|2 min",
+        "five": "972|5 min",
+        "ten": "973|10 min"
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
-      "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "summary": "974|Cilj {{wpm}} riječi/min · ~{{minutes}} min čitanja",
+      "start": "975|Pokreni sesiju",
+      "preparing": "976|Pripremamo vaš odlomak…",
+      "generateError": "977|Odlomak nije bilo moguće stvoriti. Pokušajte ponovno.",
+      "recentTitle": "978|Nedavne sesije",
+      "chunkOf": "979|Dio {{current}} od {{total}}",
+      "previous": "980|Prethodni dio",
+      "pause": "981|Pauza",
+      "resume": "982|Nastavi",
+      "nextChunk": "983|Sljedeći dio",
+      "finishReading": "984|Završi čitanje",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "985|Izvrsno",
+        "balanced": "986|Na cilju",
+        "fast": "987|Skoro pa tu",
+        "tooSlow": "988|Presporo"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "989|Prosjek riječi/min",
+        "target": "990|Cilj riječi/min",
+        "violations_one": "991|{{count}} prekoračenje vremena",
+        "violations_other": "992|{{count}} prekoračenja vremena",
+        "violations_few": "{{count}} prekoračenja vremena"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "993|Pokušaj ponovno",
+      "backToSetup": "994|Natrag na postavke"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "995|Način priče",
+      "subtitle": "996|Čitajte interaktivne priče s granjem odluka.",
+      "typeSection": "997|Vrsta priče",
       "type": {
-        "adventure": "Adventure",
-        "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "adventure": "998|Avantura",
+        "fantasy": "999|Fantastika",
+        "mystery": "1000|Misterija",
+        "romance": "1001|Romansa",
+        "dailyLife": "1002|Svakodnevni život"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "1003|Duljina priče",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "1004|Kratka priča",
+        "multiChapter": "1005|Više poglavlja",
+        "infinite": "1006|Beskonačna priča"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "1007|Počni priču",
+      "generating": "1008|Pišemo vašu priču…",
+      "generatingNext": "1009|Pišemo sljedeće poglavlje…",
+      "generateError": "1010|Priču nije bilo moguće napisati. Pokušajte ponovno.",
+      "emptyTitle": "1011|Još nema priča",
+      "emptyBody": "1012|Započnite gore svoju prvu interaktivnu priču.",
+      "savedTitle": "1013|Vaše priče",
+      "chapterN": "1014|Poglavlje {{n}}",
+      "chapterOf": "1015|Poglavlje {{current}} / {{total}}",
+      "chapterScore": "1016|Ocjena poglavlja",
+      "whatNext": "1017|Što se događa dalje?",
+      "endStory": "1018|Završi priču",
+      "completeTitle": "1019|Priča je gotova",
+      "completeBody_one": "1020|Pročitali ste {{count}} poglavlje. Odlično čitanje!",
+      "completeBody_other": "1021|Pročitali ste {{count}} poglavlja. Odlično čitanje!",
+      "backToStories": "1022|Natrag na priče",
+      "completeBody_few": "Pročitali ste {{count}} poglavlja. Odlično čitanje!"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "1023|Načini vježbanja",
+    "notFound": "1024|Ova je sesija možda izbrisana.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "1025|Današnji napredak",
+      "subtitle": "1026|vježbe slušanja"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1027|Uskoro",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "1028|Slušanje iz teksta",
+        "subtitle": "1029|Zalijepite tekst, poslušajte ga i provjerite razumijevanje."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "1030|Uvoz zvuka",
+        "subtitle": "1031|Prenesite vlastiti zvuk i pretvorite ga u vježbu slušanja."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "1032|Uvoz videozapisa",
+        "subtitle": "1033|Prenesite videozapis, dobijte titlove i vježbajte uz pitanja."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "1034|Spremljene vježbe",
+        "subtitle": "1035|Nastavite ranije sesije i pregledajte svoje pogreške."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
-      "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "mainIdea": "1036|Glavna misao",
+      "details": "1037|Detalji",
+      "vocabulary": "1038|Rječnik",
+      "trueFalse": "1039|Točno / Netočno"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "1040|Slušanje iz teksta",
+      "subtitle": "1041|Zalijepite tekst i pretvorite ga u vježbu slušanja.",
+      "level": "1042|Razina",
+      "voiceSpeed": "1043|Brzina glasa",
+      "voiceType": "1044|Vrsta glasa",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "1045|Zadani",
+        "female": "1046|Ženski",
+        "male": "1047|Muški"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "1048|Prikaži tekst tijekom slušanja",
+      "addQuestions": "1049|Dodaj pitanja za razumijevanje",
+      "questionCount": "1050|Broj pitanja",
+      "questionTypes": "1051|Vrste pitanja",
+      "optionalTitle": "1052|Neobavezan naziv",
+      "titlePlaceholder": "1053|Dajte svom tekstu ime",
+      "textPlaceholder": "1054|Zalijepite svoj tekst ovdje...",
+      "recommended": "1055|Preporučeno: 80–500 riječi.",
+      "words": "1056|riječi",
+      "defaultTitle": "1057|Vježba slušanja",
+      "start": "1058|Počni slušati",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "1059|Dodajte tekst da počnete slušati.",
+        "tooShort": "1060|Dodajte barem 40 znakova da počnete slušati.",
+        "tooLong": "1061|Taj je tekst predug. Ostanite ispod 5000 znakova.",
+        "tooFewWords": "1062|Dodajte malo više teksta (oko 40 riječi ili više) da možemo napraviti dobra pitanja."
       },
-      "voiceSettings": "Voice Settings",
-      "questions": "Questions",
-      "textInput": "Text Input"
+      "voiceSettings": "1063|Postavke glasa",
+      "questions": "1064|Pitanja",
+      "textInput": "1065|Unos teksta"
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "1066|Pusti ponovno",
+      "transcript": "1067|Transkript",
+      "questionsTitle": "1068|Pitanja",
+      "answerFirst": "1069|Prije provjere odgovorite barem na jedno pitanje.",
+      "checkAnswers": "1070|Provjeri odgovore",
+      "finish": "1071|Završi vježbu"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "1072|Vježba je gotova",
+      "comprehension": "1073|Razumijevanje",
+      "correct": "1074|Točno",
+      "time": "1075|Vrijeme slušanja",
+      "speed": "1076|Brzina",
+      "mistakes": "1077|Pogreške",
+      "mistakesTitle": "1078|Pregledajte svoje pogreške",
+      "watchOnlyTitle": "1079|Slušanje je gotovo",
+      "watchOnlyBody": "1080|Slušali ste {{time}}.",
+      "practiceAgain": "1081|Vježbaj ponovno",
+      "back": "1082|Natrag na slušanje"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "1083|Uvoz zvuka",
+      "subtitle": "1084|Pretvorite vlastiti zvuk u vježbu slušanja.",
+      "uploadTitle": "1085|Prenesi zvučnu datoteku",
+      "uploadFormats": "1086|MP3, M4A, WAV ili AAC · do 50 MB",
+      "chooseFile": "1087|Odaberi datoteku",
+      "clearFile": "1088|Ukloni datoteku",
+      "infoNote": "1089|Vaš će se zvuk transkribirati u pozadini. Transkript ostaje skriven tijekom vježbe.",
+      "continue": "1090|Nastavi",
+      "processingTitle": "1091|Pripremamo vašu vježbu slušanja",
+      "step1": "1092|Prenosimo zvuk",
+      "step2": "1093|Transkribiramo govor",
+      "step3": "1094|Stvaramo pitanja",
+      "processError": "1095|Ovaj zvuk nismo mogli pripremiti. Pokušajte ponovno.",
+      "tryAgain": "1096|Pokušaj ponovno",
+      "chooseAnother": "1097|Odaberi drugu datoteku",
+      "transcriptHidden": "1098|Transkript je skriven da ovo ostane prava vježba slušanja."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "1099|Uvoz videozapisa",
+      "subtitle": "1100|Prenesite videozapis, dobijte titlove i vježbajte uz pitanja.",
+      "uploadTitle": "1101|Prenesi videodatoteku",
+      "uploadFormats": "1102|MP4, MOV ili M4V · do 80 MB",
+      "step1": "1103|Pripremamo videozapis",
+      "step2": "1104|Transkribiramo govor",
+      "step3": "1105|Slažemo titlove",
+      "subtitles": "1106|Titlovi",
+      "subtitlesOn": "1107|Titlovi uključeni",
+      "subtitlesOff": "1108|Titlovi isključeni",
+      "noSubtitles": "1109|Za ovaj videozapis nema titlova.",
+      "tapWord": "1110|Dodirnite riječ da je prevedete.",
+      "questionsLocked": "1111|Pitanja se otključavaju kad odgledate videozapis."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "1112|Prevedi riječ",
+      "pickSet": "1113|Odaberite set",
+      "createSet": "1114|Napravi set",
+      "addToSet": "1115|Dodaj u set",
+      "noSets": "1116|Još nemate setova. Napravite ga ispod.",
+      "setNamePlaceholder": "1117|npr. Riječi iz videozapisa",
+      "createAndAdd": "1118|Napravi set i dodaj riječ",
+      "saved": "1119|Spremljeno u „{{set}}”."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "1120|Spremljene vježbe",
+      "subtitle": "1121|Nastavite sesije i pregledajte svoje pogreške u slušanju.",
+      "emptyTitle": "1122|Nema spremljenih sesija",
+      "emptyBody": "1123|Završite ili pauzirajte sesiju slušanja i pojavit će se ovdje.",
+      "continueEyebrow": "1124|Nastavi slušati",
+      "percentComplete": "1125|{{percent}} % gotovo",
+      "continue": "1126|Nastavi",
+      "review": "1127|Pregled",
+      "delete": "1128|Izbriši sesiju",
+      "deleteConfirm": "1129|Izbrisati „{{title}}”? Ovo se ne može poništiti.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "1130|Skica",
+        "inProgress": "1131|U tijeku",
+        "completed": "1132|Završena"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "1133|Načini vježbanja",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "1134|Današnji napredak",
+      "subtitle": "1135|vježbe govora"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1136|Uskoro",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "1137|Razgovor s AI-jem",
+        "subtitle": "1138|Razgovarajte s AI mentorom u stvarnom vremenu."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "1139|Slobodan govor",
+        "subtitle": "1140|Govorite na generirane teme i dobijte povratnu informaciju."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "1141|Opis slike",
+        "subtitle": "1142|Opisujte slike i učite korisne riječi."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "1143|Način rasprave",
+        "subtitle": "1144|Raspravljajte o temama i gradite argumente."
       },
       "shadowing": {
-        "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "title": "1145|Shadowing",
+        "subtitle": "1146|Ponavljajte fraze i poboljšajte izgovor."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "1147|Trener izgovora",
+        "subtitle": "1148|Usredotočite se na teške glasove i riječi."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "1149|Govori",
+      "stop": "1150|Zaustavi",
+      "listening": "1151|Slušamo…",
+      "placeholder": "1152|Upišite svoj odgovor…",
+      "noVoice": "1153|Ovaj preglednik ne podržava glasovni unos — upišite odgovor."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
-      "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "title": "1154|Razgovor s AI-jem",
+      "subtitle": "1155|Razgovarajte s AI mentorom u stvarnom vremenu.",
+      "topic": "1156|Tema",
+      "scenarios": "1157|Scenariji",
+      "autoTopic": "1158|Iznenadi me",
+      "autoTopicHint": "1159|Generirat ćemo novu temu za vas.",
+      "length": "1160|Trajanje",
+      "min": "1161|min",
+      "start": "1162|Počni razgovor",
+      "starting": "1163|Pokrećemo…",
+      "startError": "1164|Razgovor nije bilo moguće pokrenuti. Pokušajte ponovno.",
+      "end": "1165|Završi",
+      "dismiss": "1166|Odbaci",
+      "hint": "1167|Pomoć",
+      "getHint": "1168|Treba vam pomoć?",
+      "hintLoading": "1169|Razmišljamo…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "1170|Vježba je gotova",
+      "generating": "1171|Analiziramo vaš govor…",
+      "overall": "1172|Ukupna ocjena",
+      "corrections": "1173|Ispravci",
+      "transcript": "1174|Transkript",
+      "practiceAgain": "1175|Vježbaj ponovno",
+      "back": "1176|Natrag na govor"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
-      "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "title": "1177|Slobodan govor",
+      "subtitle": "1178|Govorite slobodno o temi i dobijte povratnu informaciju.",
+      "preview": "1179|Pregled",
+      "autoTopic": "1180|Tema koju je generirao AI",
+      "autoTopicHint": "1181|Kad počnete, odabrat ćemo novu temu za {{language}} · {{level}}.",
+      "auto": "1182|Automatski",
+      "start": "1183|Pokreni Slobodan govor",
+      "generating": "1184|Generiramo temu…",
+      "generatingHint": "1185|Biramo nešto što odgovara vašoj razini.",
+      "fallbackTopic": "1186|Temu nije bilo moguće generirati. Koristimo rezervnu.",
+      "transcript": "1187|Transkript",
+      "transcriptHint": "1188|Vaš će se transkript pojaviti ovdje dok govorite.",
+      "startSpeaking": "1189|Počni govoriti"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "1190|Opis slike",
+      "subtitle": "1191|Opišite što vidite i dobijte povratnu informaciju.",
+      "start": "1192|Pokreni Opis slike",
+      "prompt": "1193|Opišite što vidite na ovoj slici.",
+      "tryToMention": "1194|Pokušajte spomenuti:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "1195|ljude",
+        "objects": "1196|predmete",
+        "actions": "1197|radnje",
+        "colors": "1198|boje",
+        "emotions": "1199|osjećaje"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "1200|Učitavamo fotografiju…",
+      "retry": "1201|Pokušaj ponovno",
+      "newPhoto": "1202|Nova fotografija",
+      "imageAlt": "1203|Fotografija za opis",
+      "photoBy": "1204|Fotografija:",
+      "onUnsplash": "1205|na Unsplashu",
+      "startDescribing": "1206|Počni opisivati"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "1207|Način rasprave",
+      "subtitle": "1208|Branite svoju stranu protiv AI protivnika.",
+      "start": "1209|Počni raspravu",
+      "pickSide": "1210|Vaša strana",
+      "preparing": "1211|Pripremamo temu rasprave…",
+      "roundOf": "1212|Runda {{current}} od {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "1213|Za",
+          "subtitle": "1214|Branite tvrdnju"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "1215|Protiv",
+          "subtitle": "1216|Argumentirajte protiv"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "1217|Iznenadi me",
+          "subtitle": "1218|Mi biramo stranu za vas"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "1219|Poslušaj",
+      "playing": "1220|Reproduciramo…",
+      "record": "1221|Snimi",
+      "stop": "1222|Zaustavi",
+      "playMine": "1223|Pusti moju snimku",
+      "noRecording": "1224|Ovaj preglednik ne podržava snimanje — možete ipak slušati i ponavljati."
     },
     "shadowing": {
-      "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "title": "1225|Shadowing",
+      "subtitle": "1226|Slušajte, ponavljajte i usporedite se.",
+      "start": "1227|Pokreni Shadowing",
+      "category": "1228|Kategorija",
+      "howItWorks": "1229|Poslušajte frazu, ponovite je naglas dok snimate, pa pustite svoju snimku i usporedite ritam.",
+      "loading": "1230|Generiramo fraze…",
+      "phrase": "1231|Fraza",
+      "previous": "1232|Prethodna",
+      "nextPhrase": "1233|Sljedeća fraza",
+      "finish": "1234|Završi",
+      "changeSettings": "1235|Promijeni postavke",
+      "done": "1236|Gotovo: {{count}}",
+      "allDone": "1237|Sve su fraze uvježbane!",
+      "newSet": "1238|Novi set"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "1239|Trener izgovora",
+      "subtitle": "1240|Usredotočite se na teške glasove i riječi.",
+      "start": "1241|Pokreni trening",
+      "focus": "1242|Fokus",
+      "difficulty": "1243|Težina",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "1244|Lako",
+        "balanced": "1245|Uravnoteženo",
+        "hard": "1246|Teško"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "1247|Generiramo vježbe…",
+      "sound": "1248|Glas",
+      "scoringUnavailable": "1249|Automatsko ocjenjivanje izgovora još nije postavljeno na poslužitelju, pa se ocjena ne prikazuje. Slušanje, snimanje i reprodukcija rade."
     }
   },
   "profile": {
-    "interfaceLanguage": "Interface language",
+    "interfaceLanguage": "1250|Jezik sučelja",
     "password": {
-      "title": "Create a password",
-      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
-      "save": "Save password",
-      "saving": "Saving...",
-      "savedInfo": "Password created. You can sign in with your email now too."
+      "title": "1251|Napravite lozinku",
+      "body": "1252|Vaš je račun otvoren Googleom pa nema lozinku — poljima e-pošte i lozinke ne možete se prijaviti. Postavite lozinku i radit će oba načina.",
+      "save": "1253|Spremi lozinku",
+      "saving": "1254|Spremamo...",
+      "savedInfo": "1255|Lozinka je napravljena. Sad se možete prijaviti i e-poštom."
     }
   },
   "units": {
-    "min": "min",
-    "words": "words"
+    "min": "1256|min",
+    "words": "1257|riječi"
   },
   "link": {
-    "title": "Sign in with a link",
-    "subtitle": "We'll email you a one-time link. No password to remember.",
-    "send": "Send the link",
-    "sending": "Sending...",
-    "sentInfo": "Link sent. Check your email.",
-    "sentTitle": "Check your email",
-    "sentBody": "We sent a sign-in link to",
-    "useAnotherEmail": "Use another email",
-    "backToPassword": "Sign in with a password instead"
+    "title": "1258|Prijava poveznicom",
+    "subtitle": "1259|Poslat ćemo vam e-poštom jednokratnu poveznicu. Nema lozinke za pamćenje.",
+    "send": "1260|Pošalji poveznicu",
+    "sending": "1261|Šaljemo...",
+    "sentInfo": "1262|Poveznica je poslana. Provjerite e-poštu.",
+    "sentTitle": "1263|Provjerite e-poštu",
+    "sentBody": "1264|Poveznicu za prijavu poslali smo na",
+    "useAnotherEmail": "1265|Koristi drugu e-poštu",
+    "backToPassword": "1266|Radije se prijavi lozinkom"
   },
   "action": {
-    "working": "One moment...",
-    "continue": "Continue",
-    "confirmEmailTitle": "Confirm your email",
-    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
-    "resetTitle": "New password",
-    "resetSubtitle": "Choose a new password for",
-    "newPassword": "New password",
-    "confirmPassword": "Repeat password",
-    "savePassword": "Save password",
-    "resetDoneTitle": "Password updated",
-    "resetDoneBody": "You can sign in with your new password now.",
-    "failedTitle": "That link didn't work",
-    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
-    "backToSignIn": "Back to sign in"
+    "working": "1267|Trenutak...",
+    "continue": "1268|Nastavi",
+    "confirmEmailTitle": "1269|Potvrdite svoju e-poštu",
+    "confirmEmailBody": "1270|Ova je poveznica otvorena u drugom pregledniku. Unesite adresu na koju je poslana i dovršit ćemo prijavu.",
+    "resetTitle": "1271|Nova lozinka",
+    "resetSubtitle": "1272|Odaberite novu lozinku za",
+    "newPassword": "1273|Nova lozinka",
+    "confirmPassword": "1274|Ponovite lozinku",
+    "savePassword": "1275|Spremi lozinku",
+    "resetDoneTitle": "1276|Lozinka je ažurirana",
+    "resetDoneBody": "1277|Sad se možete prijaviti novom lozinkom.",
+    "failedTitle": "1278|Ta poveznica nije radila",
+    "failedBody": "1279|Možda je već iskorištena ili je istekla. Zatražite novu na zaslonu za prijavu.",
+    "backToSignIn": "1280|Natrag na prijavu"
   },
   "common": {
-    "cancel": "Cancel",
-    "delete": "Delete",
+    "cancel": "1281|Odustani",
+    "delete": "1282|Izbriši",
     "view": {
-      "label": "View",
-      "rows": "List",
-      "grid": "Grid"
+      "label": "1283|Prikaz",
+      "rows": "1284|Popis",
+      "grid": "1285|Mreža"
     }
   },
   "practice": {
     "language": {
-      "label": "Language",
-      "search": "Search a language",
-      "noMatch": "No language matches that.",
-      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+      "label": "1286|Jezik",
+      "search": "1287|Traži jezik",
+      "noMatch": "1288|Nijedan jezik ne odgovara.",
+      "noVoice": "1289|Vaš preglednik nema glas za jezik {{language}} pa mentor neće govoriti ovim jezikom. Dodajte jezični paket u postavkama sustava ili odaberite drugi jezik."
     }
   }
 }
