@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "WordAround",
-    "tagline": "Learn languages, actively."
+    "name": "1|WordAround",
+    "tagline": "2|Aprèn idiomes de manera activa."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "3|Aprèn paraules d'una manera divertida\\ni senzilla",
+    "start": "4|Comencem"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back",
-    "signUpTitle": "Create your account",
-    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
-    "name": "Name",
-    "namePlaceholder": "What should we call you?",
-    "orWithEmail": "or with email",
-    "signUpWithGoogle": "Sign up with Google",
-    "passwordHint": "At least {{min}} characters",
-    "magicLinkCta": "Sign in with an email link",
-    "creatingAccount": "Creating account..."
+    "welcomeBack": "5|Ens tornem a veure",
+    "subtitle": "6|Inicia la sessió per continuar aprenent",
+    "email": "7|Correu electrònic",
+    "emailPlaceholder": "8|Introdueix el teu correu",
+    "password": "9|Contrasenya",
+    "passwordPlaceholder": "10|Introdueix la teva contrasenya",
+    "forgotPassword": "11|Has oblidat la contrasenya?",
+    "signIn": "12|Inicia la sessió",
+    "signingIn": "13|Iniciant la sessió...",
+    "signUp": "14|Registra't",
+    "signOut": "15|Tanca la sessió",
+    "continueWithGoogle": "16|Continua amb Google",
+    "createAccount": "17|Crea un compte",
+    "accountCreatedInfo": "18|Compte creat. T'hem enviat un correu de verificació.",
+    "resetEmailSent": "19|Correu de restabliment enviat",
+    "showPassword": "20|Mostra la contrasenya",
+    "hidePassword": "21|Amaga la contrasenya",
+    "back": "22|Enrere",
+    "signUpTitle": "23|Crea el teu compte",
+    "signUpSubtitle": "24|Uns minuts al dia i el teu vocabulari creix",
+    "name": "25|Nom",
+    "namePlaceholder": "26|Com t'hem de dir?",
+    "orWithEmail": "27|o amb correu electrònic",
+    "signUpWithGoogle": "28|Registra't amb Google",
+    "passwordHint": "29|Com a mínim {{min}} caràcters",
+    "magicLinkCta": "30|Inicia la sessió amb un enllaç per correu",
+    "creatingAccount": "31|Creant el compte..."
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "We'll open your learning right away — no need to come back here",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "32|Verifica el teu correu",
+    "subtitle": "33|Un pas més abans de començar a aprendre",
+    "sentTo": "34|Hem enviat un enllaç de verificació a",
+    "fallbackEmail": "35|el teu correu",
+    "step1": "36|Obre el correu a la teva safata d'entrada",
+    "step2": "37|Toca l'enllaç de confirmació",
+    "step3": "38|Obrirem el teu aprenentatge de seguida: no cal que tornis aquí",
+    "checkButton": "39|Ja he verificat el meu correu",
+    "checking": "40|Comprovant...",
+    "resend": "41|Torna a enviar el correu",
+    "useAnotherAccount": "42|Fes servir un altre compte",
+    "badgeInbox": "43|Mira la safata",
+    "badgeConfirm": "44|Confirma",
+    "badgeDone": "45|Fet",
+    "resentInfo": "46|Correu de verificació enviat de nou",
+    "notVerifiedYet": "47|El correu encara no està verificat"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 8 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "emailInUse": "This account already exists",
-    "weakPassword": "This password is too weak",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again",
-    "nameRequired": "Name is required",
-    "passwordsDoNotMatch": "Passwords don't match",
-    "actionExpired": "This link has expired. Request a new one.",
-    "actionInvalid": "This link is no longer valid.",
-    "userDisabled": "This account has been disabled.",
-    "requiresRecentLogin": "For security, sign in again and then repeat this.",
-    "passwordAlreadySet": "This account already has a password.",
-    "linkNoEmail": "Enter the email the link was sent to"
+    "emailRequired": "48|El correu és obligatori",
+    "emailInvalid": "49|Introdueix un correu vàlid",
+    "emailFirst": "50|Introdueix primer el teu correu",
+    "passwordRequired": "51|La contrasenya és obligatòria",
+    "passwordTooShort": "52|La contrasenya ha de tenir com a mínim 8 caràcters",
+    "invalidEmail": "53|Format de correu no vàlid",
+    "wrongPassword": "54|Correu o contrasenya incorrectes. Si t'has registrat amb Google, fes servir el botó de Google.",
+    "userNotFound": "55|Correu o contrasenya incorrectes. Si t'has registrat amb Google, fes servir el botó de Google.",
+    "invalidCredential": "56|Correu o contrasenya incorrectes. Si t'has registrat amb Google, fes servir el botó de Google.",
+    "emailInUse": "57|Aquest compte ja existeix",
+    "weakPassword": "58|Aquesta contrasenya és massa feble",
+    "network": "59|Error de xarxa. Comprova la connexió a internet",
+    "tooManyRequests": "60|Massa intents. Torna-ho a provar més tard",
+    "differentCredential": "61|Aquest correu ja s'utilitza amb un altre mètode d'inici de sessió",
+    "noActiveAccount": "62|No s'ha trobat cap compte actiu",
+    "default": "63|L'autenticació ha fallat. Torna-ho a provar",
+    "nameRequired": "64|El nom és obligatori",
+    "passwordsDoNotMatch": "65|Les contrasenyes no coincideixen",
+    "actionExpired": "66|Aquest enllaç ha caducat. Demana'n un de nou.",
+    "actionInvalid": "67|Aquest enllaç ja no és vàlid.",
+    "userDisabled": "68|Aquest compte s'ha desactivat.",
+    "requiresRecentLogin": "69|Per seguretat, torna a iniciar la sessió i repeteix-ho.",
+    "passwordAlreadySet": "70|Aquest compte ja té una contrasenya.",
+    "linkNoEmail": "71|Introdueix el correu al qual s'ha enviat l'enllaç"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
-    "sets": "Sets",
-    "notes": "Notes",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "home": "72|Inici",
+    "speaking": "73|Expressió oral",
+    "listening": "74|Comprensió oral",
+    "reading": "75|Lectura",
+    "writing": "76|Escriptura",
+    "folders": "77|Carpetes",
+    "sets": "78|Conjunts",
+    "notes": "79|Notes",
+    "profile": "80|Perfil",
+    "create": "81|Crea",
+    "menu": "82|Menú",
+    "closeMenu": "83|Tanca el menú",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "84|Pràctica",
+      "library": "85|Biblioteca"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
-    "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
-    "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "create": "86|Crea una carpeta",
+    "loading": "87|Carregant les carpetes…",
+    "loadError": "88|No hem pogut carregar les teves carpetes.",
+    "emptyTitle": "89|Encara no hi ha carpetes",
+    "emptyBody": "90|Crea la teva primera carpeta per organitzar els conjunts.",
+    "setCount": "91|{{count}} conjunts",
+    "setCount_one": "92|{{count}} conjunt",
+    "newTitle": "93|Carpeta nova",
+    "newSubtitle": "94|Agrupa els conjunts relacionats.",
+    "editTitle": "95|Edita la carpeta",
+    "name": "96|Nom",
+    "namePlaceholder": "97|p. ex. Viatges",
+    "description": "98|Descripció",
+    "descriptionPlaceholder": "99|Opcional",
+    "color": "100|Color",
+    "save": "101|Desa",
+    "saving": "102|Desant…",
+    "cancel": "103|Cancel·la",
+    "edit": "104|Edita la carpeta",
+    "delete": "105|Elimina la carpeta",
+    "deleteConfirm": "106|Vols eliminar \"{{title}}\"? No es pot desfer.",
+    "backToFolders": "107|Torna a les carpetes",
+    "notFoundTitle": "108|Carpeta no trobada",
+    "notFoundBody": "109|Pot ser que aquesta carpeta s'hagi eliminat.",
+    "noSetsInFolder": "110|Encara no hi ha conjunts en aquesta carpeta.",
+    "saveError": "111|No s'ha pogut desar. Torna-ho a provar.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "112|El nom de la carpeta és obligatori.",
+      "nameTooLong": "113|El nom de la carpeta ha de tenir menys de 80 caràcters.",
+      "descTooLong": "114|La descripció ha de tenir menys de 120 caràcters."
     },
-    "optional": "(optional)",
-    "preview": "Preview",
-    "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "optional": "115|(opcional)",
+    "preview": "116|Vista prèvia",
+    "previewPlaceholder": "117|Carpeta nova",
+    "deleteConfirmTitle": "118|Vols eliminar aquesta carpeta?"
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets",
-    "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?",
-    "editTitle": "Edit set",
-    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
-    "save": "Save changes",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "create": "119|Crea un conjunt",
+    "loading": "120|Carregant els conjunts…",
+    "loadError": "121|No hem pogut carregar els teus conjunts.",
+    "emptyTitle": "122|Encara no hi ha conjunts",
+    "emptyBody": "123|Crea el teu primer conjunt de targetes amb el botó Crea.",
+    "cardCount": "124|{{count}} targetes",
+    "cardCount_one": "125|{{count}} targeta",
+    "keepPracticing": "126|Continua practicant",
+    "delete": "127|Elimina el conjunt",
+    "deleteConfirm": "128|Vols eliminar \"{{title}}\"? No es pot desfer.",
+    "notFoundTitle": "129|Conjunt no trobat",
+    "notFoundBody": "130|Pot ser que aquest conjunt s'hagi eliminat.",
+    "backToSets": "131|Torna als conjunts",
+    "edit": "132|Edita el conjunt",
+    "deleteConfirmTitle": "133|Vols eliminar aquest conjunt?",
+    "editTitle": "134|Edita el conjunt",
+    "editSubtitle": "135|Canvia el títol, el color, la icona o la carpeta. Les targetes es queden on són.",
+    "save": "136|Desa els canvis",
+    "saving": "137|Desant…",
+    "cancel": "138|Cancel·la",
+    "saveError": "139|No s'ha pogut desar. Torna-ho a provar."
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
-    "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "title": "140|Conjunt nou",
+    "subtitle": "141|Afegeix paraules i personalitza el teu conjunt.",
+    "infoSection": "142|Dades del conjunt",
+    "setTitle": "143|Títol",
+    "setTitlePlaceholder": "144|p. ex. Imprescindibles de viatge",
+    "setDescription": "145|Descripció",
+    "setDescriptionPlaceholder": "146|Opcional",
+    "privacy": "147|Privadesa",
+    "private": "148|Privat",
+    "public": "149|Públic",
+    "cardsSection": "150|Targetes",
+    "addCard": "151|Afegeix una targeta",
+    "cardN": "152|Targeta {{n}}",
+    "removeCard": "153|Treu la targeta",
+    "word": "154|Paraula",
+    "translation": "155|Traducció",
+    "example": "156|Exemple (opcional)",
+    "addImage": "157|Afegeix una imatge",
+    "removeImage": "158|Treu la imatge",
+    "customizeSection": "159|Personalitza",
+    "color": "160|Color",
+    "icon": "161|Icona",
+    "folder": "162|Carpeta",
+    "noFolder": "163|Cap carpeta",
+    "previewSection": "164|Vista prèvia",
+    "previewPlaceholder": "165|Títol del conjunt",
+    "save": "166|Crea el conjunt",
+    "saving": "167|Desant…",
+    "cancel": "168|Cancel·la",
+    "saveError": "169|No s'ha pogut desar. Torna-ho a provar.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "170|El títol del conjunt és obligatori.",
+      "titleTooLong": "171|El títol del conjunt ha de tenir menys de 150 caràcters.",
+      "descTooLong": "172|La descripció ha de tenir menys de 200 caràcters.",
+      "noValidCards": "173|Afegeix com a mínim una targeta amb paraula i traducció.",
+      "exampleTooLong": "174|Els exemples de les targetes han de tenir menys de 150 caràcters."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "imageTimeout": "175|S'ha esgotat el temps en pujar la imatge. Comprova la connexió i torna-ho a provar.",
     "import": {
-      "button": "Import",
-      "title": "Import cards",
-      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
-      "close": "Close import",
-      "dataSection": "Your data",
-      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
-      "separatorsSection": "Separators",
-      "betweenTermAndDefinition": "Between word and translation",
-      "betweenCards": "Between cards",
-      "tab": "Tab",
-      "comma": "Comma",
-      "newline": "New line",
-      "semicolon": "Semicolon",
-      "custom": "Custom",
-      "customPlaceholder": "e.g. —",
-      "previewSection": "Preview",
-      "previewEmpty": "Nothing to preview yet.",
-      "noDefinition": "No translation",
-      "confirm": "Add cards"
+      "button": "176|Importa",
+      "title": "177|Importa targetes",
+      "subtitle": "178|Copia i enganxa les teves dades: del Word, l'Excel, Google Docs i similars.",
+      "close": "179|Tanca la importació",
+      "dataSection": "180|Les teves dades",
+      "placeholder": "181|Paraula 1\\tDefinició 1\\nParaula 2\\tDefinició 2\\nParaula 3\\tDefinició 3",
+      "separatorsSection": "182|Separadors",
+      "betweenTermAndDefinition": "183|Entre paraula i traducció",
+      "betweenCards": "184|Entre targetes",
+      "tab": "185|Tabulador",
+      "comma": "186|Coma",
+      "newline": "187|Salt de línia",
+      "semicolon": "188|Punt i coma",
+      "custom": "189|Personalitzat",
+      "customPlaceholder": "190|p. ex. —",
+      "previewSection": "191|Vista prèvia",
+      "previewEmpty": "192|Encara no hi ha res per mostrar.",
+      "noDefinition": "193|Sense traducció",
+      "confirm": "194|Afegeix les targetes"
     },
     "iconPicker": {
-      "open": "More icons",
-      "title": "Choose icon",
-      "search": "Search symbol",
-      "close": "Close",
-      "empty": "No icons match that name."
+      "open": "195|Més icones",
+      "title": "196|Tria una icona",
+      "search": "197|Cerca un símbol",
+      "close": "198|Tanca",
+      "empty": "199|Cap icona coincideix amb aquest nom."
     },
     "iconGroup": {
-      "learning": "Learning",
-      "languages": "Languages",
-      "nature": "Nature",
-      "health": "Health",
-      "food": "Food",
-      "travel": "Travel",
-      "work": "Work",
-      "tech": "Tech",
-      "creativity": "Creativity",
-      "general": "General"
+      "learning": "200|Aprenentatge",
+      "languages": "201|Idiomes",
+      "nature": "202|Natura",
+      "health": "203|Salut",
+      "food": "204|Menjar",
+      "travel": "205|Viatges",
+      "work": "206|Feina",
+      "tech": "207|Tecnologia",
+      "creativity": "208|Creativitat",
+      "general": "209|General"
     }
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
-      "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "flashcards": "210|Targetes",
+      "folders": "211|Carpetes",
+      "sets": "212|Conjunts",
+      "create": "213|Crea",
+      "profile": "214|Perfil",
+      "speaking": "215|Expressió oral",
+      "listening": "216|Comprensió oral",
+      "reading": "217|Lectura",
+      "writing": "218|Escriptura"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "219|Tria un conjunt per practicar",
+      "folders": "220|Gestiona les teves carpetes",
+      "sets": "221|Gestiona els teus conjunts de targetes",
+      "create": "222|Crea un conjunt d'estudi nou",
+      "speaking": "223|Practica l'expressió oral.",
+      "listening": "224|Entrena l'orella per entendre l'idioma amb naturalitat.",
+      "reading": "225|Llegeix i repassa materials de l'idioma.",
+      "writing": "226|Practica l'idioma de manera activa."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "227|EXPRESSIÓ ORAL",
+      "listening": "228|COMPRENSIÓ ORAL",
+      "reading": "229|LECTURA",
+      "writing": "230|ESCRIPTURA"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "231|Objectiu d'avui",
+      "left": "232|Queden {{count}} paraules"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "233|Apreses avui",
+      "words": "234|paraules",
+      "accuracy": "235|Precisió",
+      "greatJob": "236|Bona feina!",
+      "streak": "237|Ratxa",
+      "days": "238|dies"
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "239|Continua aprenent",
+    "yourSets": "240|Els teus conjunts",
+    "viewAll": "241|Mostra'ls tots",
+    "review": "242|Repassa",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "243|Encara no hi ha conjunts",
+      "emptyBody": "244|Crea el teu primer conjunt de targetes amb el botó Crea."
     },
     "create": {
-      "folder": "Folder",
-      "set": "Set",
-      "text": "Text",
-      "audio": "Audio",
-      "essay": "Essay"
+      "folder": "245|Carpeta",
+      "set": "246|Conjunt",
+      "text": "247|Text",
+      "audio": "248|Àudio",
+      "essay": "249|Redacció"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "250|{{title}} — ben aviat"
     },
     "progress": {
       "subtitle": {
-        "speaking": "of speaking practice",
-        "listening": "of listening practice",
-        "reading": "of reading practice",
-        "writing": "of writing practice"
+        "speaking": "251|de pràctica oral",
+        "listening": "252|de pràctica de comprensió oral",
+        "reading": "253|de pràctica de lectura",
+        "writing": "254|de pràctica d'escriptura"
       }
     },
     "dailyGoal": {
-      "title": "Your goal for today",
-      "body": "Pick what you want to practise today — the card below counts against it.",
-      "chosenBody": "This is what today is about.",
-      "howMuch": "How much?",
-      "change": "Change"
+      "title": "255|El teu objectiu d'avui",
+      "body": "256|Tria què vols practicar avui: la targeta de sota hi compta.",
+      "chosenBody": "257|D'això va el dia d'avui.",
+      "howMuch": "258|Quant?",
+      "change": "259|Canvia"
     },
     "lastNote": {
-      "title": "Last note you read"
+      "title": "260|Última nota que has llegit"
     }
   },
   "categories": {
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing"
+    "speaking": "261|Expressió oral",
+    "listening": "262|Comprensió oral",
+    "reading": "263|Lectura",
+    "writing": "264|Escriptura"
   },
   "phase0": {
-    "title": "WordAround",
-    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
+    "title": "265|WordAround",
+    "subtitle": "266|La fase 0 és activa. Tokens de disseny carregats, Firebase connectat."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "267|Gira",
+    "known": "268|Ho sabia",
+    "unknown": "269|Encara ho estic aprenent",
+    "mastered": "270|Dominada",
+    "shuffle": "271|Barreja",
+    "trackProgress": "272|Registra el progrés",
+    "speak": "273|Pronuncia",
+    "roundDone": "274|Ronda completada",
+    "knewCount": "275|N'has encertat {{known}} de {{total}}",
+    "repeatUnknown": "276|Repeteix {{count}} sense saber",
+    "restart": "277|Torna a començar",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "278|Totes",
+      "studied": "279|Estudiades",
+      "remaining": "280|Pendents",
+      "mastered": "281|Dominades"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "282|Afegeix una targeta",
+    "editCard": "283|Edita la targeta",
+    "deleteCard": "284|Elimina la targeta",
+    "deleteCardConfirm": "285|Vols eliminar aquesta targeta?",
+    "emptyPrompt": "286|Aquest conjunt encara no té targetes. Afegeix-ne la primera.",
+    "save": "287|Desa",
+    "cancel": "288|Cancel·la"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "289|Progrés d'avui",
+      "unit": "290|paraules",
+      "subtitle": "291|de pràctica d'escriptura"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "292|Modes de pràctica",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "293|Escriu des dels conjunts",
+        "subtitle": "294|Practica l'ortografia i l'escriptura de les paraules dels teus conjunts."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "295|Redaccions",
+        "subtitle": "296|Escriu textos i rep comentaris de la IA sobre gramàtica i estil."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "297|Ben aviat"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "298|Tria un conjunt",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "299|Cap conjunt amb paraules",
+        "subtitle": "300|Crea un conjunt amb com a mínim una targeta abans de començar la pràctica d'escriptura."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "301|{{count}} paraules",
+      "wordsCount_one": "302|{{count}} paraula",
+      "close": "303|Tanca"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "304|Escriu des dels conjunts",
+      "subtitle": "305|Escriu la traducció i prem Retorn.",
+      "translateHint": "306|Tradueix al teu idioma",
+      "hint": "307|Pista",
+      "skip": "308|Salta",
+      "submit": "309|Comprova",
+      "inputPlaceholder": "310|Escriu aquí…",
+      "loading": "311|Carregant el conjunt…",
+      "loadError": "312|No hem pogut carregar aquest conjunt.",
+      "noCards": "313|Aquest conjunt no té targetes.",
+      "back": "314|Enrere",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "315|Configuració",
+        "trainingMode": "316|Mode d'entrenament",
+        "difficulty": "317|Dificultat"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "318|Paraula → Traducció",
+        "translationToWord": "319|Traducció → Paraula"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "320|Fàcil",
+        "medium": "321|Mitjana",
+        "hard": "322|Difícil",
+        "easyDesc": "323|Pistes il·limitades, salts il·limitats",
+        "mediumDesc": "324|1 lletra de pista, màx. 25 % de salts",
+        "hardDesc": "325|Sense pistes, sense salts, amb temps"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "326|Tradueix al teu idioma",
+        "translation": "327|Escriu la paraula original"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "328|Queda {{count}} salt",
+      "skipsLeft_other": "329|Queden {{count}} salts",
+      "seconds": "330|{{count}} s",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "331|Ronda completada!",
+          "subtitle": "332|Bona feina. Has acabat aquesta ronda d'escriptura."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "333|S'ha acabat el temps",
+          "subtitle": "334|El comptador del mode difícil ha arribat a zero. Torna-ho a provar des de la primera paraula."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "335|Resposta incorrecta",
+          "subtitle": "336|En mode difícil, un error acaba la ronda."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
+        "perfectTitle": "337|Ronda perfecta!",
+        "perfectBody": "338|Has completat el mode difícil sense errors. Sense salts. Sense pistes. Només traça.",
+        "totalWords": "339|Paraules totals",
+        "completedWords": "340|Paraules completades",
+        "skippedWords": "341|Paraules saltades",
+        "hintsUsed": "342|Pistes utilitzades",
+        "streak": "343|Ratxa",
+        "difficultyLabel": "344|Dificultat",
+        "word": "345|Paraula",
+        "yourAnswer": "346|La teva resposta",
+        "correctAnswer": "347|Resposta correcta",
+        "tryAgain": "348|Torna-ho a provar"
       }
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "349|Redaccions",
+      "subtitle": "350|Tema triat per la IA. Escriu i després rep comentaris.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "351|Suggerit",
+        "custom": "352|El meu tema"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "353|Escriu el teu propi tema de redacció...",
+        "generate": "354|Genera la tasca"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "355|Genera un tema",
+        "regenerate": "356|Tema nou"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "357|Idioma",
+      "difficulty": "358|Dificultat",
       "task": {
-        "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips",
-        "taskLabel": "Task"
+        "time": "359|≈ {{count}} min",
+        "wordRange": "360|{{min}}-{{max}} paraules",
+        "quickTips": "361|Consells ràpids",
+        "taskLabel": "362|Tasca"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "363|Comença a escriure la teva redacció aquí...",
+        "wordCount": "364|{{count}} / {{min}}-{{max}} paraules",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "365|Continua: et calen com a mínim {{min}} paraules.",
+          "aboveMaximum": "366|Has passat del límit: prova de reduir-ho.",
+          "valid": "367|Dins del rang."
         },
-        "reset": "Reset"
+        "reset": "368|Restableix"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "369|Escriu primer un tema.",
+        "generationFailed": "370|No s'ha pogut generar cap tema. Torna-ho a provar."
       },
-      "generating": "Generating...",
+      "generating": "371|Generant...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "372|Demana una pista",
+        "remaining": "373|En queden {{remaining}}/{{limit}}",
+        "noneLeft": "374|No queden pistes",
+        "notAvailable": "375|Les pistes no estan disponibles en aquest nivell",
+        "generating": "376|Generant la pista...",
+        "error": "377|No s'ha pogut obtenir cap pista. Torna-ho a provar.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "378|Contingut",
+          "grammar": "379|Gramàtica",
+          "vocabulary": "380|Vocabulari",
+          "structure": "381|Estructura"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again.",
-        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
+        "button": "382|Revisa la meva redacció",
+        "checking": "383|Revisant...",
+        "disabled": "384|Escriu primer dins del rang de paraules",
+        "error": "385|No hem pogut revisar la teva redacció. Torna-ho a provar.",
+        "languageUnsupported": "386|La revisió gramatical encara no està disponible per a {{language}}."
       },
       "score": {
-        "title": "Essay score",
+        "title": "387|Puntuació de la redacció",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "388|Excel·lent",
+          "veryGood": "389|Molt bé",
+          "good": "390|Bé",
+          "needsWork": "391|Cal millorar-ho"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "392|Gramàtica",
+          "vocabulary": "393|Vocabulari",
+          "length": "394|Extensió",
+          "complexity": "395|Complexitat",
+          "relevance": "396|Rellevància",
+          "independence": "397|Autonomia"
         },
         "stat": {
-          "words": "Words",
-          "grammar": "Grammar",
-          "vocabStyle": "Vocab/style",
-          "hints": "Hints",
-          "translations": "Translations",
-          "synonyms": "Synonyms"
+          "words": "398|Paraules",
+          "grammar": "399|Gramàtica",
+          "vocabStyle": "400|Vocabulari/estil",
+          "hints": "401|Pistes",
+          "translations": "402|Traduccions",
+          "synonyms": "403|Sinònims"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
-        "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "sectionTitle": "404|Problemes de gramàtica",
+        "count_one": "405|{{count}} problema",
+        "count_other": "406|{{count}} problemes",
+        "empty": "407|No s'ha trobat cap problema de gramàtica: bona feina!",
+        "original": "408|Original:",
+        "suggestion": "409|Suggeriment:",
+        "reason": "410|Motiu:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "411|Gramàtica",
+          "vocabulary": "412|Vocabulari",
+          "style": "413|Estil"
         },
         "save": {
-          "idle": "Save to Notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
+          "idle": "414|Desa a Notes",
+          "saving": "415|Desant…",
+          "saved": "416|Desat",
+          "duplicate": "417|Ja està desat",
+          "failed": "418|Torna a provar de desar"
         }
       },
       "helper": {
-        "translate": "Translate",
-        "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "translate": "419|Tradueix",
+        "synonym": "420|Sinònim",
+        "remaining": "421|En queden {{remaining}}",
+        "notAvailable": "422|No disponible en aquest nivell"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "423|Tradueix",
+        "placeholder": "424|Introdueix una paraula o una frase curta",
+        "submit": "425|Tradueix",
+        "submitting": "426|Traduint..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "427|Sinònims",
+        "placeholder": "428|Introdueix una paraula",
+        "submit": "429|Cerca sinònims",
+        "submitting": "430|Cercant..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "431|De",
+        "to": "432|A",
+        "close": "433|Tanca",
+        "noResult": "434|No s'ha trobat cap resultat.",
+        "sameLanguage": "435|Tria un altre idioma d'entrada.",
+        "error": "436|El servei no està disponible temporalment."
       },
-      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
-      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
-      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
+      "saveMistakeConfirmTitle": "437|Vols desar aquest error a Notes?",
+      "saveMistakeConfirmBody": "438|Es desarà com a nota d'error amb la correcció “{{correction}}”.",
+      "autoSaveConfirmTitle": "439|Vols desar aquests errors a les teves notes?",
+      "autoSaveConfirmBody_one": "440|Aquesta revisió ha trobat {{count}} error. En desar-lo es converteix en una nota que torna per repassar.",
+      "autoSaveConfirmBody_other": "441|Aquesta revisió ha trobat {{count}} errors. En desar-los es converteixen en notes que tornen per repassar."
     },
     "grammar": {
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "subtitle": "442|Organitza la gramàtica per temes amb notes clares i estructurades.",
+      "newTopic": "443|Tema nou",
+      "topicsEmptyTitle": "444|Encara no hi ha temes",
+      "topicsEmptyBody": "445|Crea el teu primer tema per començar a reunir notes de gramàtica.",
+      "notesCount_one": "446|{{count}} nota",
+      "notesCount_other": "447|{{count}} notes",
+      "deleteTopicConfirm": "448|Vols eliminar \"{{title}}\" i totes les seves notes? No es pot desfer.",
+      "notesEmptyTitle": "449|Encara no hi ha notes",
+      "notesEmptyBody": "450|Afegeix la teva primera nota a aquest tema.",
+      "newNote": "451|Nota nova",
+      "deleteNoteConfirm": "452|Vols eliminar aquesta nota? No es pot desfer.",
+      "loading": "453|Carregant…",
+      "loadError": "454|No hem pogut carregar les teves notes de gramàtica.",
+      "notFoundTitle": "455|No s'ha trobat",
+      "notFoundBody": "456|Pot ser que aquest element s'hagi eliminat.",
+      "back": "457|Enrere",
+      "updated": "458|Actualitzat el {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel",
-        "language": "Language",
-        "languageNone": "Not set"
+        "newTitle": "459|Tema nou",
+        "editTitle": "460|Edita el tema",
+        "name": "461|Títol",
+        "namePlaceholder": "462|p. ex. Verbs castellans",
+        "description": "463|Descripció",
+        "descriptionPlaceholder": "464|Opcional",
+        "color": "465|Color",
+        "icon": "466|Icona",
+        "save": "467|Desa",
+        "cancel": "468|Cancel·la",
+        "language": "469|Idioma",
+        "languageNone": "470|Sense definir"
       },
       "noteType": {
-        "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "standard": "471|Estàndard",
+        "mistake": "472|Error",
+        "rule": "473|Regla",
+        "comparison": "474|Comparació",
+        "cheatSheet": "475|Full de consulta",
+        "exercise": "476|Exercici"
       },
       "block": {
-        "heading": "Heading",
-        "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)",
-        "subheading": "Subheading",
-        "numberedList": "Numbered list",
-        "checklist": "Checklist",
-        "comparison": "Comparison",
-        "exercise": "Exercise",
-        "quiz": "Quiz",
-        "image": "Image",
-        "comparisonSecondary": "Second side",
-        "imageAdd": "Add / replace image",
-        "imageUploading": "Uploading…",
-        "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images."
+        "heading": "477|Encapçalament",
+        "paragraph": "478|Text",
+        "bulletList": "479|Llista amb pics",
+        "rule": "480|Regla",
+        "example": "481|Exemple",
+        "warning": "482|Advertiment",
+        "quote": "483|Citació",
+        "divider": "484|Separador",
+        "addBlock": "485|Afegeix un bloc",
+        "addItem": "486|Afegeix un element",
+        "moveUp": "487|Mou amunt",
+        "moveDown": "488|Mou avall",
+        "remove": "489|Treu",
+        "secondaryPlaceholder": "490|Detall / traducció (opcional)",
+        "subheading": "491|Subtítol",
+        "numberedList": "492|Llista numerada",
+        "checklist": "493|Llista de comprovació",
+        "comparison": "494|Comparació",
+        "exercise": "495|Exercici",
+        "quiz": "496|Qüestionari",
+        "image": "497|Imatge",
+        "comparisonSecondary": "498|Segona banda",
+        "imageAdd": "499|Afegeix / substitueix la imatge",
+        "imageUploading": "500|Pujant…",
+        "imageFailed": "501|No s'ha pogut pujar la imatge.",
+        "imageSaveFirst": "502|Inicia la sessió per pujar imatges."
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…",
-        "subheading": "Subheading",
-        "numberedList": "List item",
-        "checklist": "Checklist item",
-        "comparison": "First side",
-        "exercise": "Practice instruction…",
-        "quiz": "Question",
-        "image": "Image caption"
+        "heading": "503|Encapçalament",
+        "paragraph": "504|Escriu la teva explicació…",
+        "bulletList": "505|Element de la llista",
+        "rule": "506|Explica la regla gramatical…",
+        "example": "507|Afegeix un exemple…",
+        "warning": "508|Error habitual o advertiment…",
+        "quote": "509|Frase que val la pena recordar…",
+        "subheading": "510|Subtítol",
+        "numberedList": "511|Element de la llista",
+        "checklist": "512|Element de la llista de comprovació",
+        "comparison": "513|Primera banda",
+        "exercise": "514|Instrucció de pràctica…",
+        "quiz": "515|Pregunta",
+        "image": "516|Peu de la imatge"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again.",
-        "subtitle": "Edit note",
-        "tags": "Tags",
-        "tagsPlaceholder": "Add a tag…",
-        "removeTag": "Remove tag {{tag}}",
-        "addToReview": "Add to review",
-        "addedToReview": "Added to your review queue.",
-        "inReview": "In review · {{when}}",
-        "inReviewDue": "Due for review",
-        "removedFromReview": "Removed from your review queue.",
-        "unsavedTitle": "Leave without saving?",
-        "unsavedBody": "This note has changes that have not been saved yet.",
-        "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "titlePlaceholder": "517|Títol de la nota",
+        "save": "518|Desa la nota",
+        "saving": "519|Desant…",
+        "delete": "520|Elimina la nota",
+        "saveError": "521|No s'ha pogut desar. Torna-ho a provar.",
+        "subtitle": "522|Edita la nota",
+        "tags": "523|Etiquetes",
+        "tagsPlaceholder": "524|Afegeix una etiqueta…",
+        "removeTag": "525|Treu l'etiqueta {{tag}}",
+        "addToReview": "526|Afegeix al repàs",
+        "addedToReview": "527|Afegida a la teva cua de repàs.",
+        "inReview": "528|En repàs · {{when}}",
+        "inReviewDue": "529|Toca repassar-la",
+        "removedFromReview": "530|Treta de la teva cua de repàs.",
+        "unsavedTitle": "531|Vols sortir sense desar?",
+        "unsavedBody": "532|Aquesta nota té canvis que encara no s'han desat.",
+        "discard": "533|Descarta els canvis",
+        "saveAndLeave": "534|Desa i surt"
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "535|Qüestionaris",
+        "new": "536|Qüestionari nou",
+        "start": "537|Comença el qüestionari",
+        "delete": "538|Elimina el qüestionari",
+        "deleteConfirm": "539|Vols eliminar \"{{title}}\"? No es pot desfer.",
+        "emptyTitle": "540|Encara no hi ha qüestionaris",
+        "emptyBody": "541|Crea un qüestionari a partir d'aquesta nota per posar-te a prova.",
+        "loadError": "542|No s'han pogut carregar els qüestionaris.",
+        "questionsCount_one": "543|{{count}} pregunta",
+        "questionsCount_other": "544|{{count}} preguntes",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "545|Opció múltiple",
+          "trueFalse": "546|Vertader / Fals",
+          "fillGap": "547|Omple el buit",
+          "shortAnswer": "548|Resposta curta"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead",
-          "modeManual": "Manual",
-          "modeManualDesc": "Write your own questions.",
-          "createQuiz": "Create quiz"
+          "title": "549|Crea un qüestionari",
+          "titlePlaceholder": "550|Títol del qüestionari",
+          "mode": "551|Mode de generació",
+          "modeSmart": "552|Local intel·ligent",
+          "modeSmartDesc": "553|Genera preguntes a partir del contingut de la nota, al dispositiu.",
+          "modeAI": "554|Generat amb IA",
+          "modeAIDesc": "555|Genera preguntes més riques i contextuals amb IA.",
+          "count": "556|Preguntes",
+          "types": "557|Tipus de pregunta",
+          "focus": "558|Focus (opcional)",
+          "focusPlaceholder": "559|p. ex. centra't en les formes irregulars",
+          "preview": "560|Previsualitza les preguntes",
+          "regenerate": "561|Torna a generar la vista prèvia",
+          "previewTitle": "562|Vista prèvia",
+          "saveQuiz": "563|Desa el qüestionari",
+          "generateQuiz": "564|Genera el qüestionari",
+          "generating": "565|Generant…",
+          "saving": "566|Desant…",
+          "useSmartInstead": "567|Fes servir Local intel·ligent",
+          "modeManual": "568|Manual",
+          "modeManualDesc": "569|Escriu les teves pròpies preguntes.",
+          "createQuiz": "570|Crea el qüestionari"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "571|Pregunta {{current}} de {{total}}",
+          "submit": "572|Envia la resposta",
+          "next": "573|Següent",
+          "finish": "574|Acaba",
+          "correct": "575|Correcte!",
+          "incorrect": "576|Incorrecte",
+          "correctAnswer": "577|Resposta correcta: {{answer}}",
+          "typeMissing": "578|Escriu la paraula que falta",
+          "typeAnswer": "579|Escriu la teva resposta",
+          "trueLabel": "580|Vertader",
+          "falseLabel": "581|Fals"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "582|{{correct}} de {{total}} correctes",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "583|Excel·lent!",
+            "good": "584|Bona feina!",
+            "keepPracticing": "585|Continua practicant",
+            "reviewNote": "586|Repassa la nota"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "587|Incorrectes",
+          "correctSection": "588|Correctes",
+          "yourAnswer": "589|La teva resposta: {{answer}}",
+          "tryAgain": "590|Torna-ho a provar",
+          "reviewNote": "591|Repassa la nota",
+          "done": "592|Fet"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "593|Afegeix primer més contingut a la nota: un qüestionari necessita com a mínim dos blocs de contingut (regla, exemple, advertiment, paràgraf o citació).",
+          "noMatchingQuestionTypes": "594|No hi ha prou contingut per als tipus de pregunta triats. Activa'n més o afegeix més contingut.",
+          "aiFailed": "595|No s'ha pogut generar el qüestionari amb IA. Torna-ho a provar o fes servir Local intel·ligent."
         },
-        "badge": "Quiz",
+        "badge": "596|Qüestionari",
         "manual": {
-          "questions_one": "{{count}} question",
-          "questions_other": "{{count}} questions",
-          "add": "Add question",
-          "questionPlaceholder": "Question text",
-          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
-          "optionPlaceholder": "Option {{index}}",
-          "answerPlaceholder": "Correct answer",
-          "explanationPlaceholder": "Explanation (optional)",
+          "questions_one": "597|{{count}} pregunta",
+          "questions_other": "598|{{count}} preguntes",
+          "add": "599|Afegeix una pregunta",
+          "questionPlaceholder": "600|Text de la pregunta",
+          "questionGapPlaceholder": "601|Pregunta amb un buit, p. ex. Jo _____ a l'escola",
+          "optionPlaceholder": "602|Opció {{index}}",
+          "answerPlaceholder": "603|Resposta correcta",
+          "explanationPlaceholder": "604|Explicació (opcional)",
           "error": {
-            "questionRequired": "Question text is required.",
-            "optionsRequired": "Multiple choice needs at least 2 options.",
-            "answerRequired": "Enter the correct answer.",
-            "answerNotAnOption": "The correct answer must match one of the options.",
-            "blankRequired": "Add a blank (e.g. _____) inside the question."
+            "questionRequired": "605|El text de la pregunta és obligatori.",
+            "optionsRequired": "606|L'opció múltiple necessita com a mínim 2 opcions.",
+            "answerRequired": "607|Introdueix la resposta correcta.",
+            "answerNotAnOption": "608|La resposta correcta ha de coincidir amb una de les opcions.",
+            "blankRequired": "609|Afegeix un buit (p. ex. _____) dins de la pregunta."
           }
         }
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "610|Error ràpid",
+        "title": "611|Error ràpid",
+        "original": "612|Frase original",
+        "originalPlaceholder": "613|Exemple: Jo estic d'acord amb tu",
+        "corrected": "614|Correcció",
+        "correctedPlaceholder": "615|Exemple: Estic d'acord amb tu",
+        "explanation": "616|Explicació (opcional)",
+        "explanationPlaceholder": "617|Per què és correcta la correcció?",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "618|Afegeix primer la frase original.",
+          "corrected": "619|Afegeix també la frase corregida."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done",
-        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
+        "save": "620|Desa l'error",
+        "saving": "621|Desant…",
+        "saved": "622|Desat a Notes de gramàtica.",
+        "duplicate": "623|Ja estava desat: s'ha omès el duplicat.",
+        "failed": "624|No s'ha pogut desar. Torna-ho a provar.",
+        "openTopic": "625|Obre Errors habituals",
+        "done": "626|Fet",
+        "tip": "627|Les correccions desades entren al repàs automàticament, així que les que falles sempre tornen primer."
       },
       "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
+        "topicTitle": "628|Plantilles de tema",
+        "noteTitle": "629|Plantilles de nota",
+        "button": "630|Plantilla",
+        "startFromTemplate": "631|Comença amb una plantilla",
+        "searchPlaceholder": "632|Cerca plantilles…",
+        "allLanguages": "633|Tots",
+        "anyDifficulty": "634|Qualsevol",
         "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
+          "en": "635|Anglès",
+          "es": "636|Castellà",
+          "fr": "637|Francès",
+          "de": "638|Alemany"
         },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
-        "applyTitle": "Apply “{{title}}”?",
-        "applyBody": "This note already has content. Choose how to apply the template.",
-        "applyReplace": "Replace content",
-        "applyAppend": "Append blocks"
+        "minutes": "639|{{minutes}} min",
+        "notesIncluded_one": "640|{{count}} nota",
+        "notesIncluded_other": "641|{{count}} notes",
+        "blocksIncluded_one": "642|{{count}} bloc",
+        "blocksIncluded_other": "643|{{count}} blocs",
+        "empty": "644|Cap plantilla coincideix amb els teus filtres.",
+        "use": "645|Fes servir la plantilla",
+        "creating": "646|Creant…",
+        "replaceConfirm": "647|Vols substituir el contingut actual de la nota per aquesta plantilla? Prem Cancel·la per afegir la plantilla a sota.",
+        "applyTitle": "648|Vols aplicar “{{title}}”?",
+        "applyBody": "649|Aquesta nota ja té contingut. Tria com aplicar la plantilla.",
+        "applyReplace": "650|Substitueix el contingut",
+        "applyAppend": "651|Afegeix els blocs al final"
       },
       "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "dueBadge": "Due",
-        "refreshBody": "Nothing is due right now — you can still refresh what you read lately.",
-        "refreshStart": "Refresh recent notes",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
+        "title": "652|Repàs",
+        "subtitle": "653|Reforça el que has après amb repetició espaiada.",
+        "cardTitle": "654|Repassa avui",
+        "cardSubtitle_one": "655|{{count}} element a punt · ~{{minutes}} min",
+        "cardSubtitle_other": "656|{{count}} elements a punt · ~{{minutes}} min",
+        "caughtUpTitle": "657|Tot al dia",
+        "caughtUp": "658|Estàs al dia. Obre o edita notes per rebre suggeriments de repàs.",
+        "dueBadge": "659|Pendent",
+        "refreshBody": "660|Ara mateix no hi ha res pendent, però pots refrescar el que has llegit últimament.",
+        "refreshStart": "661|Refresca les notes recents",
+        "start": "662|Comença el repàs",
+        "skip": "663|Salta",
+        "itemOf": "664|Element {{current}} de {{total}}",
+        "untitled": "665|Nota de gramàtica",
+        "stats": "666|Repassada {{count}} vegades · ratxa {{streak}}",
+        "continueToQuestion": "667|Ves a la pregunta",
+        "showAnswer": "668|Mostra la resposta",
+        "compareTitle": "669|Compara la teva resposta",
+        "referenceAnswer": "670|Referència: {{answer}}",
+        "openNote": "671|Obre la nota sencera",
         "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
+          "manual_one": "672|{{count}} element pendent de repàs",
+          "manual_other": "673|{{count}} elements pendents de repàs",
+          "recentlyOpened_one": "674|{{count}} nota oberta recentment",
+          "recentlyOpened_other": "675|{{count}} notes obertes recentment",
+          "recentlyEdited_one": "676|{{count}} nota editada recentment",
+          "recentlyEdited_other": "677|{{count}} notes editades recentment"
         },
         "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
-          "quiz": "Quiz"
+          "note": "678|Nota",
+          "mistake": "679|Error",
+          "quiz": "680|Qüestionari"
         },
         "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
+          "source": "681|Estudia",
+          "question": "682|Respon",
+          "result": "683|Valora"
         },
         "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
+          "forgot": "684|Ho he oblidat",
+          "hard": "685|Difícil",
+          "good": "686|Bé",
+          "easy": "687|Fàcil"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "plus4h": "688|+4 hores",
+          "plus1d": "689|+1 dia",
+          "plus3d": "690|+3 dies",
+          "plus7d": "691|+7 dies"
         },
         "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "title": "692|Sessió completada",
+          "emptyTitle": "693|No s'ha repassat res",
+          "reviewed": "694|Repassats",
+          "correct": "695|Correctes",
+          "incorrect": "696|Incorrectes",
+          "hintForgot": "697|Alguns elements tornen d'aquí a 4 hores.",
+          "hintHard": "698|Els elements difícils tornen demà.",
+          "hintGood": "699|Els elements correctes tornen d'aquí a 3 dies.",
+          "hintEasy": "700|Tots els elements tornen d'aquí a 7 dies.",
+          "done": "701|Torna a Notes de gramàtica"
         },
-        "loadError": "Couldn't load your review queue.",
-        "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "loadError": "702|No hem pogut carregar la teva cua de repàs.",
+        "mistakeCount_one": "703|{{count}} error",
+        "mistakeCount_other": "704|{{count}} errors"
       },
-      "mistakesBadge": "Mistakes",
-      "topicsTitle": "Topics",
-      "deleteTopic": "Delete topic",
-      "deleteTopicTitle": "Delete this topic?",
-      "deleteNoteTitle": "Delete this note?",
-      "pin": "Pin note",
-      "unpin": "Unpin note",
-      "favorite": "Add to favorites",
-      "unfavorite": "Remove from favorites",
+      "mistakesBadge": "705|Errors",
+      "topicsTitle": "706|Temes",
+      "deleteTopic": "707|Elimina el tema",
+      "deleteTopicTitle": "708|Vols eliminar aquest tema?",
+      "deleteNoteTitle": "709|Vols eliminar aquesta nota?",
+      "pin": "710|Fixa la nota",
+      "unpin": "711|Deixa de fixar-la",
+      "favorite": "712|Afegeix als preferits",
+      "unfavorite": "713|Treu dels preferits",
       "search": {
-        "topics": "Search topics…",
-        "notes": "Search notes…",
-        "clear": "Clear search",
-        "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword.",
-        "notesSection_one": "Notes ({{count}})",
-        "notesSection_other": "Notes ({{count}})",
-        "noNoteMatches": "No notes match this search."
+        "topics": "714|Cerca temes…",
+        "notes": "715|Cerca notes…",
+        "clear": "716|Esborra la cerca",
+        "noMatchTitle": "717|Cap coincidència",
+        "noMatchBody": "718|Prova amb una altra paraula.",
+        "notesSection_one": "719|Notes ({{count}})",
+        "notesSection_other": "720|Notes ({{count}})",
+        "noNoteMatches": "721|Cap nota coincideix amb aquesta cerca."
       },
       "filter": {
-        "label": "Filter notes",
-        "all": "All",
-        "pinned": "Pinned",
-        "favorites": "Favorites",
-        "mistakes": "Mistakes",
-        "quizzes": "Quizzes",
-        "review": "Due",
+        "label": "722|Filtra les notes",
+        "all": "723|Totes",
+        "pinned": "724|Fixades",
+        "favorites": "725|Preferides",
+        "mistakes": "726|Errors",
+        "quizzes": "727|Qüestionaris",
+        "review": "728|Pendents",
         "empty": {
           "all": {
-            "title": "No grammar notes yet",
-            "body": "Create your first grammar note for this topic."
+            "title": "729|Encara no hi ha notes de gramàtica",
+            "body": "730|Crea la teva primera nota de gramàtica per a aquest tema."
           },
           "pinned": {
-            "title": "No pinned notes yet",
-            "body": "Pin notes from the list to find them quickly."
+            "title": "731|Encara no hi ha notes fixades",
+            "body": "732|Fixa notes de la llista per trobar-les de seguida."
           },
           "favorites": {
-            "title": "No favorite notes yet",
-            "body": "Favorite notes to keep them handy."
+            "title": "733|Encara no hi ha notes preferides",
+            "body": "734|Marca notes com a preferides per tenir-les a mà."
           },
           "mistakes": {
-            "title": "No saved mistakes yet",
-            "body": "Save grammar mistakes to review them here."
+            "title": "735|Encara no hi ha errors desats",
+            "body": "736|Desa errors de gramàtica per repassar-los aquí."
           },
           "quizzes": {
-            "title": "No quiz notes yet",
-            "body": "Add a quiz to a note to see it here."
+            "title": "737|Encara no hi ha notes amb qüestionari",
+            "body": "738|Afegeix un qüestionari a una nota per veure-la aquí."
           },
           "review": {
-            "title": "Nothing due right now",
-            "body": "Notes come back here when their next review is due."
+            "title": "739|Ara mateix no hi ha res pendent",
+            "body": "740|Les notes tornen aquí quan toca repassar-les."
           }
         }
       },
       "reorder": {
-        "start": "Reorder",
-        "done": "Done",
-        "up": "Move up",
-        "down": "Move down"
+        "start": "741|Reordena",
+        "done": "742|Fet",
+        "up": "743|Mou amunt",
+        "down": "744|Mou avall"
       },
       "highlights": {
-        "mistakesTitle": "Mistakes to fix",
-        "mistakesSubtitle": "Recent corrections waiting for review.",
-        "quizzesTitle": "Weak quiz areas",
-        "quizzesSubtitle": "Quizzes worth re-taking soon."
+        "mistakesTitle": "745|Errors per corregir",
+        "mistakesSubtitle": "746|Correccions recents que esperen repàs.",
+        "quizzesTitle": "747|Qüestionaris fluixos",
+        "quizzesSubtitle": "748|Qüestionaris que val la pena repetir aviat."
       },
       "quickNote": {
-        "button": "Quick note",
-        "title": "Quick note",
-        "subtitle": "Capture a grammar idea without opening the full editor.",
-        "noteTitle": "Title",
-        "titlePlaceholder": "Example: Ser vs Estar",
-        "text": "Note",
-        "textPlaceholder": "Write the useful part here",
-        "noteType": "Note type",
-        "topic": "Topic",
-        "openEditor": "Open editor after saving",
-        "openEditorHint": "Useful when the quick version grows into a full note.",
-        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
-        "validation": "Add a title or some text first.",
-        "save": "Save quick note",
-        "saving": "Saving…"
+        "button": "749|Nota ràpida",
+        "title": "750|Nota ràpida",
+        "subtitle": "751|Apunta una idea de gramàtica sense obrir l'editor sencer.",
+        "noteTitle": "752|Títol",
+        "titlePlaceholder": "753|Exemple: Ser vs Estar",
+        "text": "754|Nota",
+        "textPlaceholder": "755|Escriu aquí la part útil",
+        "noteType": "756|Tipus de nota",
+        "topic": "757|Tema",
+        "openEditor": "758|Obre l'editor en desar",
+        "openEditorHint": "759|Útil quan la versió ràpida creix fins a ser una nota sencera.",
+        "tip": "760|Les notes ràpides són per a aquella idea que si no oblidaries d'aquí a deu minuts.",
+        "validation": "761|Afegeix primer un títol o una mica de text.",
+        "save": "762|Desa la nota ràpida",
+        "saving": "763|Desant…"
       },
       "settings": {
-        "title": "Notes settings",
-        "subtitle": "How quick capture, mistakes and the notes list behave.",
-        "reset": "Reset to defaults",
-        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "title": "764|Configuració de les notes",
+        "subtitle": "765|Com funcionen la captura ràpida, els errors i la llista de notes.",
+        "reset": "766|Restableix els valors per defecte",
+        "tip": "767|Fes servir els errors ràpids per a frases que has escrit malament de debò: són més útils que els exemples perfectes dels llibres.",
         "quickCapture": {
-          "title": "Quick capture",
-          "subtitle": "Make fast notes and mistakes feel instant."
+          "title": "768|Captura ràpida",
+          "subtitle": "769|Fes que les notes i els errors ràpids siguin instantanis."
         },
         "mistakeNotes": {
-          "title": "Mistake notes",
-          "subtitle": "What gets saved when you capture a quick mistake."
+          "title": "770|Notes d'error",
+          "subtitle": "771|Què es desa quan captures un error ràpid."
         },
         "essays": {
-          "title": "Essays",
-          "subtitle": "What happens to grammar issues found in your essays."
+          "title": "772|Redaccions",
+          "subtitle": "773|Què passa amb els problemes de gramàtica de les teves redaccions."
         },
         "review": {
-          "title": "Spaced review",
-          "subtitle": "How notes reach the review queue."
+          "title": "774|Repàs espaiat",
+          "subtitle": "775|Com arriben les notes a la cua de repàs."
         },
         "appearance": {
-          "title": "Notes appearance",
-          "subtitle": "How the notes list is ordered and sized."
+          "title": "776|Aparença de les notes",
+          "subtitle": "777|Com s'ordena i es mostra la llista de notes."
         },
         "helpers": {
-          "title": "Learning helpers",
-          "subtitle": "Small nudges inside empty states and quick sheets."
+          "title": "778|Ajudes d'aprenentatge",
+          "subtitle": "779|Petites empentes als estats buits i als fulls ràpids."
         },
         "defaultType": {
-          "title": "Default note type",
-          "subtitle": "What a new quick note starts as."
+          "title": "780|Tipus de nota per defecte",
+          "subtitle": "781|Amb quin tipus comença una nota ràpida nova."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "Open editor after quick save",
-            "subtitle": "After saving a quick note, jump straight into the full editor."
+            "title": "782|Obre l'editor després de desar ràpidament",
+            "subtitle": "783|En desar una nota ràpida, ves directament a l'editor sencer."
           },
           "allowQuickQuizzes": {
-            "title": "Allow quizzes in notes",
-            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+            "title": "784|Permet qüestionaris a les notes",
+            "subtitle": "785|Ofereix blocs de qüestionari i creació de qüestionaris dins de les notes."
           },
           "showsMistakeHighlights": {
-            "title": "Highlight mistake notes",
-            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+            "title": "786|Destaca les notes d'error",
+            "subtitle": "787|Fes servir un to càlid per a les targetes d'error i mostra la fila d'errors."
           },
           "includeOriginalSentence": {
-            "title": "Include original sentence",
-            "subtitle": "Save the wrong version as a quote block in the note."
+            "title": "788|Inclou la frase original",
+            "subtitle": "789|Desa la versió incorrecta com a bloc de citació a la nota."
           },
           "includeCorrectedSentence": {
-            "title": "Include corrected sentence",
-            "subtitle": "Save the fixed version as an example block."
+            "title": "790|Inclou la frase corregida",
+            "subtitle": "791|Desa la versió corregida com a bloc d'exemple."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "Include explanation",
-            "subtitle": "Add your explanation as a paragraph block below."
+            "title": "792|Inclou l'explicació",
+            "subtitle": "793|Afegeix la teva explicació com a bloc de paràgraf a sota."
           },
           "groupMistakesByTopic": {
-            "title": "Group mistakes by topic",
-            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+            "title": "794|Agrupa els errors per tema",
+            "subtitle": "795|Desa els errors ràpids al tema actual en comptes d'a Errors habituals."
           },
           "askBeforeSavingMistakes": {
-            "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
+            "title": "796|Pregunta abans de desar els errors",
+            "subtitle": "797|Confirma abans que un problema d'una redacció es converteixi en nota. Això mana sobre el desament automàtic."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
+            "title": "798|Desa automàticament els errors de les redaccions",
+            "subtitle": "799|Cada problema de gramàtica trobat en una redacció es converteix en nota. Amb \"Pregunta abans de desar\" activat, ho pregunta un cop per a tota la revisió."
           },
           "groupsPinnedNotesFirst": {
-            "title": "Pinned notes first",
-            "subtitle": "Keep important rules at the top of each topic."
+            "title": "800|Notes fixades primer",
+            "subtitle": "801|Mantén les regles importants a dalt de cada tema."
           },
           "usesCompactCards": {
-            "title": "Compact note cards",
-            "subtitle": "Show tighter cards when you want more notes on screen."
+            "title": "802|Targetes de nota compactes",
+            "subtitle": "803|Mostra targetes més juntes quan vulguis més notes a la pantalla."
           },
           "showsHelperTips": {
-            "title": "Show helper tips",
-            "subtitle": "Display short contextual hints while creating notes."
+            "title": "804|Mostra els consells",
+            "subtitle": "805|Mostra pistes breus i contextuals mentre crees notes."
           },
           "autoAddNotesToReview": {
-            "title": "Add new notes to review",
-            "subtitle": "Every note you save joins the review queue, due a day later."
+            "title": "806|Afegeix les notes noves al repàs",
+            "subtitle": "807|Cada nota que deses entra a la cua de repàs, pendent l'endemà."
           }
         }
       },
-      "editTopic": "Edit topic",
+      "editTopic": "808|Edita el tema",
       "toSet": {
-        "title": "Make a set from this note",
-        "subtitle": "Pick the pairs to turn into flashcards.",
-        "setTitle": "Set title",
-        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
-        "button": "Make a set",
-        "create": "Create set",
-        "creating": "Creating…",
-        "error": "Couldn't create the set. Try again.",
-        "cards_one": "{{count}} card",
-        "cards_other": "{{count}} cards"
+        "title": "809|Crea un conjunt a partir d'aquesta nota",
+        "subtitle": "810|Tria les parelles que es convertiran en targetes.",
+        "setTitle": "811|Títol del conjunt",
+        "empty": "812|Aquesta nota encara no té res per convertir en targetes. Els blocs de comparació, exemple i regla es converteixen directament, i els elements de llista es parteixen per un guionet, com “hacer — fer”.",
+        "button": "813|Crea un conjunt",
+        "create": "814|Crea el conjunt",
+        "creating": "815|Creant…",
+        "error": "816|No s'ha pogut crear el conjunt. Torna-ho a provar.",
+        "cards_one": "817|{{count}} targeta",
+        "cards_other": "818|{{count}} targetes"
       },
-      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "topicsEmptyTip": "819|Un tema és una carpeta per a notes: un per idioma, o un per cada cosa que continues fallant.",
+      "notesEmptyTip": "820|Cada nota que deses entra a la cua de repàs, així que escriure-la ja és començar a practicar-la."
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "821|Modes de pràctica",
+    "loading": "822|Carregant…",
+    "loadError": "823|No hem pogut carregar les teves lectures.",
+    "notFound": "824|Pot ser que aquest element s'hagi eliminat.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "825|Progrés d'avui",
+      "subtitle": "826|Mantén viva la teva ratxa de lectura."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "827|Ben aviat",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "828|Els meus textos",
+        "subtitle": "829|Enganxa el teu propi text i llegeix-lo amb ajuda."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "830|Lectura des dels conjunts",
+        "subtitle": "831|Crea una lectura a partir dels teus conjunts de targetes."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "832|Mode història",
+        "subtitle": "833|Llegeix històries interactives amb decisions ramificades."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "834|Lectura ràpida",
+        "subtitle": "835|Entrena't per llegir més de pressa amb un ritme cronometrat."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "836|Els meus textos",
+      "subtitle": "837|Els teus textos de lectura desats.",
+      "addText": "838|Afegeix un text",
+      "emptyTitle": "839|Encara no hi ha textos",
+      "emptyBody": "840|Afegeix el teu primer text per començar a practicar la lectura.",
+      "savedTitle": "841|Textos desats"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "842|Nou",
+      "inProgress": "843|En curs",
+      "completed": "844|Completat"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "845|{{count}} paraula",
+      "words_other": "846|{{count}} paraules",
+      "start": "847|Comença",
+      "continue": "848|Continua",
+      "readAgain": "849|Torna a llegir",
+      "rename": "850|Reanomena",
+      "renamePrompt": "851|Títol nou:",
+      "delete": "852|Elimina",
+      "deleteConfirm": "853|Vols eliminar \"{{title}}\"? No es pot desfer."
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "854|Continua llegint",
+      "percent": "855|{{percent}} % completat",
+      "button": "856|Continua"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "857|Idea principal",
+      "vocabulary": "858|Vocabulari",
+      "detailedComprehension": "859|Comprensió detallada",
+      "grammarAwareness": "860|Atenció a la gramàtica",
+      "speedFluency": "861|Velocitat / fluïdesa"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "862|Comprensió",
+      "trueFalse": "863|Vertader / Fals",
+      "fillGap": "864|Omple el buit",
+      "vocabulary": "865|Vocabulari",
+      "findEvidence": "866|Troba la prova",
+      "orderReconstruction": "867|Ordena"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "868|Ressalta les paraules desconegudes",
+      "translationOnTap": "869|Tradueix en tocar",
+      "vocabularyHints": "870|Pistes de vocabulari",
+      "readingTimer": "871|Cronòmetre de lectura"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "872|Afegeix un text",
+      "subtitle": "873|Enganxa un text i configura la teva pràctica de lectura.",
+      "untitled": "874|Text sense títol",
+      "pastePlaceholder": "875|Enganxa o escriu el teu text aquí…",
+      "titleLabel": "876|Títol",
+      "titlePlaceholder": "877|Opcional: te'n podem suggerir un",
+      "language": "878|Idioma",
+      "difficulty": "879|Dificultat",
+      "autoDetect": "880|Detecció automàtica",
+      "manual": "881|Tria'l manualment",
+      "focus": "882|Focus de lectura",
+      "questionTypes": "883|Tipus de pregunta",
+      "assistance": "884|Ajudes de lectura",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
-        "min": "min",
-        "detected": "Detected: {{level}}"
+        "words_one": "885|{{count}} paraula",
+        "words_other": "886|{{count}} paraules",
+        "chars_one": "887|{{count}} caràcter",
+        "chars_other": "888|{{count}} caràcters",
+        "min": "889|min",
+        "detected": "890|Detectat: {{level}}"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "891|Afegeix primer un text.",
+        "tooShort": "892|Afegeix com a mínim 20 paraules."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "893|Desa el text",
+      "saveAndStart": "894|Desa i comença",
+      "saving": "895|Desant…",
+      "saveError": "896|No s'ha pogut desar. Torna-ho a provar.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
-        "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "pasteText": "897|Enganxa",
+        "photo": "898|Foto",
+        "pdf": "899|PDF",
+        "generate": "900|Genera",
+        "explore": "901|Explora"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "902|Informatiu",
+        "casual": "903|Informal",
+        "academic": "904|Acadèmic",
+        "narrative": "905|Narratiu"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "906|Curt",
+        "medium": "907|Mitjà",
+        "long": "908|Llarg"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "909|Puja una foto d'una pàgina i n'extraurem el text.",
+        "chooseImage": "910|Tria una imatge",
+        "recognizing": "911|Reconeixent… {{percent}} %",
+        "imageError": "912|No s'ha pogut llegir el text d'aquesta imatge.",
+        "pdfHint": "913|Puja un PDF i n'extraurem el text.",
+        "choosePDF": "914|Tria un PDF",
+        "reading": "915|Llegint el PDF…",
+        "pdfError": "916|No s'ha pogut llegir aquest PDF.",
+        "topicPlaceholder": "917|Tema: p. ex. esculls de corall, la impremta",
+        "explorePlaceholder": "918|Tema o paraula clau: p. ex. Marie Curie, Venècia",
+        "generateButton": "919|Genera el text",
+        "exploreButton": "920|Recupera un article",
+        "working": "921|Treballant…",
+        "generateError": "922|No s'ha pogut generar el text. Torna-ho a provar.",
+        "exploreError": "923|No s'ha trobat cap article sobre aquest tema.",
+        "exploredFrom": "924|Recuperat de"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again.",
-      "translation": "Translation",
-      "textLabel": "Text"
+      "startQuestions": "925|Comença les preguntes",
+      "finish": "926|Acaba",
+      "next": "927|Següent",
+      "questionOf": "928|Pregunta {{current}} de {{total}}",
+      "closeTranslation": "929|Tanca la traducció",
+      "translating": "930|Traduint…",
+      "translationError": "931|No s'ha pogut traduir. Torna-ho a provar.",
+      "translation": "932|Traducció",
+      "textLabel": "933|Text"
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts",
-      "complete": "Practice Complete"
+      "comprehension": "934|Comprensió",
+      "correct": "935|Correctes",
+      "time": "936|Temps de lectura",
+      "wpm": "937|PPM",
+      "mistakes": "938|Errors",
+      "mistakesTitle": "939|Repassa els teus errors",
+      "readAgain": "940|Torna a llegir",
+      "back": "941|Torna a Els meus textos",
+      "complete": "942|Pràctica completada"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "943|Lectura des dels conjunts",
+      "subtitle": "944|Converteix un conjunt de targetes en una lectura.",
+      "pickSet": "945|Tria un conjunt",
+      "changeSet": "946|Canvia de conjunt",
+      "tooFewWords": "947|Aquest conjunt necessita com a mínim {{count}} paraules per crear una lectura.",
+      "mode": "948|Mode de generació",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "949|Natural",
+        "strict": "950|Estricte",
+        "mixed": "951|Mixt"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "952|Extensió de la lectura",
+      "generate": "953|Genera la lectura",
+      "generating": "954|Creant la teva lectura…",
+      "generateError": "955|No s'ha pogut crear la lectura. Torna-ho a provar.",
+      "emptyTitle": "956|Encara no hi ha lectures",
+      "emptyBody": "957|Tria un conjunt de targetes i el convertirem en un text de lectura.",
+      "savedTitle": "958|Lectures desades"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "959|Lectura ràpida",
+      "subtitle": "960|Entrena't per llegir més de pressa amb un ritme cronometrat.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "961|Velocitat de lectura objectiu",
+        "timer": "962|Estil de cronòmetre",
+        "length": "963|Extensió de la lectura"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "964|Relaxada",
+        "balanced": "965|Equilibrada",
+        "fast": "966|Ràpida",
+        "challenge": "967|Repte"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "968|Sense cronòmetre",
+        "soft": "969|Cronòmetre suau",
+        "strict": "970|Cronòmetre estricte"
       },
       "length": {
-        "two": "2 min",
-        "five": "5 min",
-        "ten": "10 min"
+        "two": "971|2 min",
+        "five": "972|5 min",
+        "ten": "973|10 min"
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
-      "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "summary": "974|Objectiu {{wpm}} PPM · ~{{minutes}} min de lectura",
+      "start": "975|Comença la sessió",
+      "preparing": "976|Preparant el teu fragment…",
+      "generateError": "977|No s'ha pogut crear el fragment. Torna-ho a provar.",
+      "recentTitle": "978|Sessions recents",
+      "chunkOf": "979|Part {{current}} de {{total}}",
+      "previous": "980|Part anterior",
+      "pause": "981|Pausa",
+      "resume": "982|Reprèn",
+      "nextChunk": "983|Part següent",
+      "finishReading": "984|Acaba la lectura",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "985|Excel·lent",
+        "balanced": "986|A l'objectiu",
+        "fast": "987|Gairebé hi ets",
+        "tooSlow": "988|Massa lenta"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "989|PPM mitjanes",
+        "target": "990|PPM objectiu",
+        "violations_one": "991|{{count}} incompliment de temps",
+        "violations_other": "992|{{count}} incompliments de temps"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "993|Torna-ho a provar",
+      "backToSetup": "994|Torna a la configuració"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "995|Mode història",
+      "subtitle": "996|Llegeix històries interactives amb decisions ramificades.",
+      "typeSection": "997|Tipus d'història",
       "type": {
-        "adventure": "Adventure",
-        "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "adventure": "998|Aventura",
+        "fantasy": "999|Fantasia",
+        "mystery": "1000|Misteri",
+        "romance": "1001|Romàntica",
+        "dailyLife": "1002|Vida quotidiana"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "1003|Extensió de la història",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "1004|Història curta",
+        "multiChapter": "1005|Diversos capítols",
+        "infinite": "1006|Història infinita"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "1007|Comença la història",
+      "generating": "1008|Escrivint la teva història…",
+      "generatingNext": "1009|Escrivint el capítol següent…",
+      "generateError": "1010|No s'ha pogut escriure la història. Torna-ho a provar.",
+      "emptyTitle": "1011|Encara no hi ha històries",
+      "emptyBody": "1012|Comença a dalt la teva primera història interactiva.",
+      "savedTitle": "1013|Les teves històries",
+      "chapterN": "1014|Capítol {{n}}",
+      "chapterOf": "1015|Capítol {{current}} / {{total}}",
+      "chapterScore": "1016|Puntuació del capítol",
+      "whatNext": "1017|Què passa ara?",
+      "endStory": "1018|Acaba la història",
+      "completeTitle": "1019|Història completada",
+      "completeBody_one": "1020|Has acabat {{count}} capítol. Bona lectura!",
+      "completeBody_other": "1021|Has acabat {{count}} capítols. Bona lectura!",
+      "backToStories": "1022|Torna a les històries"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "1023|Modes de pràctica",
+    "notFound": "1024|Pot ser que aquesta sessió s'hagi eliminat.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "1025|Progrés d'avui",
+      "subtitle": "1026|de pràctica de comprensió oral"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1027|Ben aviat",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "1028|Escolta des d'un text",
+        "subtitle": "1029|Enganxa un text, escolta'l i comprova la teva comprensió."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "1030|Importa àudio",
+        "subtitle": "1031|Puja el teu propi àudio i converteix-lo en pràctica de comprensió oral."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "1032|Importa vídeo",
+        "subtitle": "1033|Puja un vídeo, obtén subtítols i practica amb preguntes."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "1034|Pràctica desada",
+        "subtitle": "1035|Continua sessions anteriors i repassa els teus errors."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
-      "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "mainIdea": "1036|Idea principal",
+      "details": "1037|Detalls",
+      "vocabulary": "1038|Vocabulari",
+      "trueFalse": "1039|Vertader / Fals"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "1040|Escolta des d'un text",
+      "subtitle": "1041|Enganxa un text i converteix-lo en pràctica de comprensió oral.",
+      "level": "1042|Nivell",
+      "voiceSpeed": "1043|Velocitat de la veu",
+      "voiceType": "1044|Tipus de veu",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "1045|Per defecte",
+        "female": "1046|Femenina",
+        "male": "1047|Masculina"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "1048|Mostra el text mentre escolto",
+      "addQuestions": "1049|Afegeix preguntes de comprensió",
+      "questionCount": "1050|Nombre de preguntes",
+      "questionTypes": "1051|Tipus de pregunta",
+      "optionalTitle": "1052|Títol opcional",
+      "titlePlaceholder": "1053|Posa un nom al teu text",
+      "textPlaceholder": "1054|Enganxa el teu text aquí...",
+      "recommended": "1055|Recomanat: 80–500 paraules.",
+      "words": "1056|paraules",
+      "defaultTitle": "1057|Pràctica de comprensió oral",
+      "start": "1058|Comença a escoltar",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "1059|Afegeix text per començar a escoltar.",
+        "tooShort": "1060|Afegeix com a mínim 40 caràcters per començar a escoltar.",
+        "tooLong": "1061|Aquest text és massa llarg. Mantén-lo per sota dels 5000 caràcters.",
+        "tooFewWords": "1062|Afegeix una mica més de text (unes 40 paraules o més) perquè puguem crear bones preguntes."
       },
-      "voiceSettings": "Voice Settings",
-      "questions": "Questions",
-      "textInput": "Text Input"
+      "voiceSettings": "1063|Configuració de la veu",
+      "questions": "1064|Preguntes",
+      "textInput": "1065|Entrada de text"
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "1066|Torna a escoltar",
+      "transcript": "1067|Transcripció",
+      "questionsTitle": "1068|Preguntes",
+      "answerFirst": "1069|Respon com a mínim una pregunta abans de comprovar.",
+      "checkAnswers": "1070|Comprova les respostes",
+      "finish": "1071|Acaba la pràctica"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "1072|Pràctica completada",
+      "comprehension": "1073|Comprensió",
+      "correct": "1074|Correctes",
+      "time": "1075|Temps d'escolta",
+      "speed": "1076|Velocitat",
+      "mistakes": "1077|Errors",
+      "mistakesTitle": "1078|Repassa els teus errors",
+      "watchOnlyTitle": "1079|Escolta completada",
+      "watchOnlyBody": "1080|Has escoltat durant {{time}}.",
+      "practiceAgain": "1081|Practica de nou",
+      "back": "1082|Torna a Comprensió oral"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "1083|Importa àudio",
+      "subtitle": "1084|Converteix el teu propi àudio en pràctica de comprensió oral.",
+      "uploadTitle": "1085|Puja un fitxer d'àudio",
+      "uploadFormats": "1086|MP3, M4A, WAV o AAC · menys de 50 MB",
+      "chooseFile": "1087|Tria un fitxer",
+      "clearFile": "1088|Treu el fitxer",
+      "infoNote": "1089|El teu àudio es transcriurà en segon pla. La transcripció es manté amagada durant la pràctica.",
+      "continue": "1090|Continua",
+      "processingTitle": "1091|Preparant la teva pràctica de comprensió oral",
+      "step1": "1092|Pujant l'àudio",
+      "step2": "1093|Transcrivint la veu",
+      "step3": "1094|Creant les preguntes",
+      "processError": "1095|No hem pogut preparar aquest àudio. Torna-ho a provar.",
+      "tryAgain": "1096|Torna-ho a provar",
+      "chooseAnother": "1097|Tria un altre fitxer",
+      "transcriptHidden": "1098|La transcripció està amagada perquè això sigui un exercici d'escolta de debò."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "1099|Importa vídeo",
+      "subtitle": "1100|Puja un vídeo, obtén subtítols i practica amb preguntes.",
+      "uploadTitle": "1101|Puja un fitxer de vídeo",
+      "uploadFormats": "1102|MP4, MOV o M4V · menys de 80 MB",
+      "step1": "1103|Preparant el vídeo",
+      "step2": "1104|Transcrivint la veu",
+      "step3": "1105|Creant els subtítols",
+      "subtitles": "1106|Subtítols",
+      "subtitlesOn": "1107|Subtítols activats",
+      "subtitlesOff": "1108|Subtítols desactivats",
+      "noSubtitles": "1109|No hi ha subtítols disponibles per a aquest vídeo.",
+      "tapWord": "1110|Toca una paraula per traduir-la.",
+      "questionsLocked": "1111|Les preguntes es desbloquegen quan acabis de mirar el vídeo."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "1112|Tradueix la paraula",
+      "pickSet": "1113|Tria un conjunt",
+      "createSet": "1114|Crea un conjunt",
+      "addToSet": "1115|Afegeix al conjunt",
+      "noSets": "1116|Encara no tens cap conjunt. Crea'n un a sota.",
+      "setNamePlaceholder": "1117|p. ex. Paraules del vídeo",
+      "createAndAdd": "1118|Crea i afegeix la paraula",
+      "saved": "1119|Desat a \"{{set}}\"."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "1120|Pràctica desada",
+      "subtitle": "1121|Continua sessions i repassa els teus errors de comprensió oral.",
+      "emptyTitle": "1122|Cap sessió desada",
+      "emptyBody": "1123|Acaba o posa en pausa una sessió d'escolta i apareixerà aquí.",
+      "continueEyebrow": "1124|Continua escoltant",
+      "percentComplete": "1125|{{percent}} % completat",
+      "continue": "1126|Continua",
+      "review": "1127|Repassa",
+      "delete": "1128|Elimina la sessió",
+      "deleteConfirm": "1129|Vols eliminar \"{{title}}\"? No es pot desfer.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "1130|Esborrany",
+        "inProgress": "1131|En curs",
+        "completed": "1132|Completada"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "1133|Modes de pràctica",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "1134|Progrés d'avui",
+      "subtitle": "1135|de pràctica oral"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1136|Ben aviat",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "1137|Conversa amb IA",
+        "subtitle": "1138|Parla amb un tutor d'IA en temps real."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "1139|Parla lliure",
+        "subtitle": "1140|Parla sobre temes generats i rep comentaris."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "1141|Descriu una imatge",
+        "subtitle": "1142|Descriu imatges i aprèn vocabulari útil."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "1143|Mode debat",
+        "subtitle": "1144|Debat temes i construeix els teus arguments."
       },
       "shadowing": {
-        "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "title": "1145|Shadowing",
+        "subtitle": "1146|Repeteix frases i millora la pronunciació."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "1147|Entrenador de pronunciació",
+        "subtitle": "1148|Centra't en els sons i les paraules difícils."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "1149|Parla",
+      "stop": "1150|Atura",
+      "listening": "1151|Escoltant…",
+      "placeholder": "1152|Escriu la teva resposta…",
+      "noVoice": "1153|Aquest navegador no admet l'entrada de veu: escriu la teva resposta."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
-      "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "title": "1154|Conversa amb IA",
+      "subtitle": "1155|Parla amb un tutor d'IA en temps real.",
+      "topic": "1156|Tema",
+      "scenarios": "1157|Escenaris",
+      "autoTopic": "1158|Sorprèn-me",
+      "autoTopicHint": "1159|Generarem un tema nou per a tu.",
+      "length": "1160|Durada",
+      "min": "1161|min",
+      "start": "1162|Comença la conversa",
+      "starting": "1163|Començant…",
+      "startError": "1164|No s'ha pogut començar la conversa. Torna-ho a provar.",
+      "end": "1165|Acaba",
+      "dismiss": "1166|Descarta",
+      "hint": "1167|Pista",
+      "getHint": "1168|Necessites una pista?",
+      "hintLoading": "1169|Pensant…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "1170|Pràctica completada",
+      "generating": "1171|Analitzant la teva expressió oral…",
+      "overall": "1172|Puntuació global",
+      "corrections": "1173|Correccions",
+      "transcript": "1174|Transcripció",
+      "practiceAgain": "1175|Practica de nou",
+      "back": "1176|Torna a Expressió oral"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
-      "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "title": "1177|Parla lliure",
+      "subtitle": "1178|Parla lliurement sobre un tema i rep comentaris.",
+      "preview": "1179|Vista prèvia",
+      "autoTopic": "1180|Tema generat per IA",
+      "autoTopicHint": "1181|Triarem un tema nou per a {{language}} · {{level}} quan comencis.",
+      "auto": "1182|Automàtic",
+      "start": "1183|Comença Parla lliure",
+      "generating": "1184|Generant el tema…",
+      "generatingHint": "1185|Buscant alguna cosa que encaixi amb el teu nivell.",
+      "fallbackTopic": "1186|No s'ha pogut generar cap tema. Fem servir un tema de reserva.",
+      "transcript": "1187|Transcripció",
+      "transcriptHint": "1188|La teva transcripció apareixerà aquí mentre parles.",
+      "startSpeaking": "1189|Comença a parlar"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "1190|Descriu una imatge",
+      "subtitle": "1191|Descriu el que veus i rep comentaris.",
+      "start": "1192|Comença Descriu una imatge",
+      "prompt": "1193|Descriu el que veus en aquesta imatge.",
+      "tryToMention": "1194|Prova de mencionar:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "1195|persones",
+        "objects": "1196|objectes",
+        "actions": "1197|accions",
+        "colors": "1198|colors",
+        "emotions": "1199|emocions"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "1200|Carregant una foto…",
+      "retry": "1201|Torna-ho a provar",
+      "newPhoto": "1202|Una altra foto",
+      "imageAlt": "1203|Foto per descriure",
+      "photoBy": "1204|Foto de",
+      "onUnsplash": "1205|a Unsplash",
+      "startDescribing": "1206|Comença a descriure"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "1207|Mode debat",
+      "subtitle": "1208|Defensa la teva postura contra un rival d'IA.",
+      "start": "1209|Comença el debat",
+      "pickSide": "1210|La teva postura",
+      "preparing": "1211|Preparant el tema del debat…",
+      "roundOf": "1212|Ronda {{current}} de {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "1213|A favor",
+          "subtitle": "1214|Defensa l'afirmació"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "1215|En contra",
+          "subtitle": "1216|Argumenta-hi en contra"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "1217|Sorprèn-me",
+          "subtitle": "1218|Triem una postura per tu"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "1219|Escolta",
+      "playing": "1220|Reproduint…",
+      "record": "1221|Grava",
+      "stop": "1222|Atura",
+      "playMine": "1223|Escolta la meva",
+      "noRecording": "1224|Aquest navegador no admet la gravació: encara pots escoltar i repetir."
     },
     "shadowing": {
-      "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "title": "1225|Shadowing",
+      "subtitle": "1226|Escolta, repeteix i compara't.",
+      "start": "1227|Comença el Shadowing",
+      "category": "1228|Categoria",
+      "howItWorks": "1229|Escolta la frase, repeteix-la en veu alta mentre graves i després reprodueix la teva versió per comparar el ritme.",
+      "loading": "1230|Generant frases…",
+      "phrase": "1231|Frase",
+      "previous": "1232|Anterior",
+      "nextPhrase": "1233|Frase següent",
+      "finish": "1234|Acaba",
+      "changeSettings": "1235|Canvia la configuració",
+      "done": "1236|{{count}} fetes",
+      "allDone": "1237|Has practicat totes les frases!",
+      "newSet": "1238|Grup nou"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "1239|Entrenador de pronunciació",
+      "subtitle": "1240|Centra't en els sons i les paraules difícils.",
+      "start": "1241|Comença l'entrenament",
+      "focus": "1242|Focus",
+      "difficulty": "1243|Dificultat",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "1244|Fàcil",
+        "balanced": "1245|Equilibrada",
+        "hard": "1246|Difícil"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "1247|Generant els exercicis…",
+      "sound": "1248|So",
+      "scoringUnavailable": "1249|La puntuació automàtica de la pronunciació encara no està configurada al servidor, així que no es mostra cap nota. Escoltar, gravar i reproduir funcionen."
     }
   },
   "profile": {
-    "interfaceLanguage": "Interface language",
+    "interfaceLanguage": "1250|Idioma de la interfície",
     "password": {
-      "title": "Create a password",
-      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
-      "save": "Save password",
-      "saving": "Saving...",
-      "savedInfo": "Password created. You can sign in with your email now too."
+      "title": "1251|Crea una contrasenya",
+      "body": "1252|El teu compte es va crear amb Google, així que no té contrasenya: els camps de correu i contrasenya no poden iniciar-te la sessió. Afegeix-ne una i funcionaran les dues maneres.",
+      "save": "1253|Desa la contrasenya",
+      "saving": "1254|Desant...",
+      "savedInfo": "1255|Contrasenya creada. Ara també pots iniciar la sessió amb el teu correu."
     }
   },
   "units": {
-    "min": "min",
-    "words": "words"
+    "min": "1256|min",
+    "words": "1257|paraules"
   },
   "link": {
-    "title": "Sign in with a link",
-    "subtitle": "We'll email you a one-time link. No password to remember.",
-    "send": "Send the link",
-    "sending": "Sending...",
-    "sentInfo": "Link sent. Check your email.",
-    "sentTitle": "Check your email",
-    "sentBody": "We sent a sign-in link to",
-    "useAnotherEmail": "Use another email",
-    "backToPassword": "Sign in with a password instead"
+    "title": "1258|Inicia la sessió amb un enllaç",
+    "subtitle": "1259|T'enviarem per correu un enllaç d'un sol ús. Cap contrasenya per recordar.",
+    "send": "1260|Envia l'enllaç",
+    "sending": "1261|Enviant...",
+    "sentInfo": "1262|Enllaç enviat. Mira el teu correu.",
+    "sentTitle": "1263|Mira el teu correu",
+    "sentBody": "1264|Hem enviat un enllaç d'accés a",
+    "useAnotherEmail": "1265|Fes servir un altre correu",
+    "backToPassword": "1266|Inicia la sessió amb contrasenya"
   },
   "action": {
-    "working": "One moment...",
-    "continue": "Continue",
-    "confirmEmailTitle": "Confirm your email",
-    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
-    "resetTitle": "New password",
-    "resetSubtitle": "Choose a new password for",
-    "newPassword": "New password",
-    "confirmPassword": "Repeat password",
-    "savePassword": "Save password",
-    "resetDoneTitle": "Password updated",
-    "resetDoneBody": "You can sign in with your new password now.",
-    "failedTitle": "That link didn't work",
-    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
-    "backToSignIn": "Back to sign in"
+    "working": "1267|Un moment...",
+    "continue": "1268|Continua",
+    "confirmEmailTitle": "1269|Confirma el teu correu",
+    "confirmEmailBody": "1270|Aquest enllaç s'ha obert en un altre navegador. Introdueix l'adreça a la qual es va enviar i acabarem d'iniciar-te la sessió.",
+    "resetTitle": "1271|Contrasenya nova",
+    "resetSubtitle": "1272|Tria una contrasenya nova per a",
+    "newPassword": "1273|Contrasenya nova",
+    "confirmPassword": "1274|Repeteix la contrasenya",
+    "savePassword": "1275|Desa la contrasenya",
+    "resetDoneTitle": "1276|Contrasenya actualitzada",
+    "resetDoneBody": "1277|Ja pots iniciar la sessió amb la teva contrasenya nova.",
+    "failedTitle": "1278|Aquest enllaç no ha funcionat",
+    "failedBody": "1279|Pot ser que ja s'hagi fet servir o que hagi caducat. Demana'n un de nou des de la pantalla d'inici de sessió.",
+    "backToSignIn": "1280|Torna a l'inici de sessió"
   },
   "common": {
-    "cancel": "Cancel",
-    "delete": "Delete",
+    "cancel": "1281|Cancel·la",
+    "delete": "1282|Elimina",
     "view": {
-      "label": "View",
-      "rows": "List",
-      "grid": "Grid"
+      "label": "1283|Vista",
+      "rows": "1284|Llista",
+      "grid": "1285|Graella"
     }
   },
   "practice": {
     "language": {
-      "label": "Language",
-      "search": "Search a language",
-      "noMatch": "No language matches that.",
-      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+      "label": "1286|Idioma",
+      "search": "1287|Cerca un idioma",
+      "noMatch": "1288|Cap idioma coincideix.",
+      "noVoice": "1289|El teu navegador no té veu en {{language}}, així que el tutor no parlarà aquest idioma. Afegeix el paquet d'idioma a la configuració del sistema o tria un altre idioma."
     }
   }
 }

@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "WordAround",
-    "tagline": "Learn languages, actively."
+    "name": "1|WordAround",
+    "tagline": "2|Lernu lingvojn, aktive."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "3|Lernu vortojn amuze\\nkaj simple",
+    "start": "4|Ni komencu"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back",
-    "signUpTitle": "Create your account",
-    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
-    "name": "Name",
-    "namePlaceholder": "What should we call you?",
-    "orWithEmail": "or with email",
-    "signUpWithGoogle": "Sign up with Google",
-    "passwordHint": "At least {{min}} characters",
-    "magicLinkCta": "Sign in with an email link",
-    "creatingAccount": "Creating account..."
+    "welcomeBack": "5|Bonvenon reen",
+    "subtitle": "6|Ensalutu por daŭrigi la lernadon",
+    "email": "7|Retpoŝto",
+    "emailPlaceholder": "8|Enigu vian retadreson",
+    "password": "9|Pasvorto",
+    "passwordPlaceholder": "10|Enigu vian pasvorton",
+    "forgotPassword": "11|Ĉu vi forgesis la pasvorton?",
+    "signIn": "12|Ensaluti",
+    "signingIn": "13|Ensalutante...",
+    "signUp": "14|Registriĝi",
+    "signOut": "15|Elsaluti",
+    "continueWithGoogle": "16|Daŭrigi per Google",
+    "createAccount": "17|Krei konton",
+    "accountCreatedInfo": "18|Konto kreita. Ni sendis kontrolmesaĝon.",
+    "resetEmailSent": "19|Mesaĝo por restarigi la pasvorton sendita",
+    "showPassword": "20|Montri la pasvorton",
+    "hidePassword": "21|Kaŝi la pasvorton",
+    "back": "22|Reen",
+    "signUpTitle": "23|Kreu vian konton",
+    "signUpSubtitle": "24|Kelkaj minutoj tage kaj via vortprovizo kreskas",
+    "name": "25|Nomo",
+    "namePlaceholder": "26|Kiel ni nomu vin?",
+    "orWithEmail": "27|aŭ per retpoŝto",
+    "signUpWithGoogle": "28|Registriĝi per Google",
+    "passwordHint": "29|Almenaŭ {{min}} signoj",
+    "magicLinkCta": "30|Ensaluti per retpoŝta ligilo",
+    "creatingAccount": "31|Kreante la konton..."
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "We'll open your learning right away — no need to come back here",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "32|Kontrolu vian retpoŝton",
+    "subtitle": "33|Ankoraŭ unu paŝo antaŭ ol vi komencas lerni",
+    "sentTo": "34|Ni sendis kontrolligilon al",
+    "fallbackEmail": "35|via retadreso",
+    "step1": "36|Malfermu la mesaĝon en via enirkesto",
+    "step2": "37|Tuŝu la konfirman ligilon",
+    "step3": "38|Ni tuj malfermos vian lernadon — ne necesas reveni ĉi tien",
+    "checkButton": "39|Mi kontrolis mian retpoŝton",
+    "checking": "40|Kontrolante...",
+    "resend": "41|Resendi la mesaĝon",
+    "useAnotherAccount": "42|Uzi alian konton",
+    "badgeInbox": "43|Kontrolu la enirkeston",
+    "badgeConfirm": "44|Konfirmu",
+    "badgeDone": "45|Farite",
+    "resentInfo": "46|Kontrolmesaĝo denove sendita",
+    "notVerifiedYet": "47|La retadreso ankoraŭ ne estas kontrolita"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 8 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "emailInUse": "This account already exists",
-    "weakPassword": "This password is too weak",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again",
-    "nameRequired": "Name is required",
-    "passwordsDoNotMatch": "Passwords don't match",
-    "actionExpired": "This link has expired. Request a new one.",
-    "actionInvalid": "This link is no longer valid.",
-    "userDisabled": "This account has been disabled.",
-    "requiresRecentLogin": "For security, sign in again and then repeat this.",
-    "passwordAlreadySet": "This account already has a password.",
-    "linkNoEmail": "Enter the email the link was sent to"
+    "emailRequired": "48|Retadreso estas deviga",
+    "emailInvalid": "49|Enigu validan retadreson",
+    "emailFirst": "50|Unue enigu vian retadreson",
+    "passwordRequired": "51|Pasvorto estas deviga",
+    "passwordTooShort": "52|La pasvorto devas havi almenaŭ 8 signojn",
+    "invalidEmail": "53|Nevalida formo de retadreso",
+    "wrongPassword": "54|Malĝusta retadreso aŭ pasvorto. Se vi registriĝis per Google, uzu la Google-butonon.",
+    "userNotFound": "55|Malĝusta retadreso aŭ pasvorto. Se vi registriĝis per Google, uzu la Google-butonon.",
+    "invalidCredential": "56|Malĝusta retadreso aŭ pasvorto. Se vi registriĝis per Google, uzu la Google-butonon.",
+    "emailInUse": "57|Ĉi tiu konto jam ekzistas",
+    "weakPassword": "58|Ĉi tiu pasvorto estas tro malforta",
+    "network": "59|Reta eraro. Kontrolu vian interretan konekton",
+    "tooManyRequests": "60|Tro multaj provoj. Provu denove poste",
+    "differentCredential": "61|Ĉi tiu retadreso jam estas uzata kun alia ensaluta metodo",
+    "noActiveAccount": "62|Neniu aktiva konto trovita",
+    "default": "63|Aŭtentigo malsukcesis. Bonvolu provi denove",
+    "nameRequired": "64|Nomo estas deviga",
+    "passwordsDoNotMatch": "65|La pasvortoj ne kongruas",
+    "actionExpired": "66|Ĉi tiu ligilo eksvalidiĝis. Petu novan.",
+    "actionInvalid": "67|Ĉi tiu ligilo ne plu validas.",
+    "userDisabled": "68|Ĉi tiu konto estas malŝaltita.",
+    "requiresRecentLogin": "69|Pro sekureco, ensalutu denove kaj poste ripetu tion.",
+    "passwordAlreadySet": "70|Ĉi tiu konto jam havas pasvorton.",
+    "linkNoEmail": "71|Enigu la retadreson al kiu la ligilo estis sendita"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
-    "sets": "Sets",
-    "notes": "Notes",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "home": "72|Hejmo",
+    "speaking": "73|Parolado",
+    "listening": "74|Aŭskultado",
+    "reading": "75|Legado",
+    "writing": "76|Skribado",
+    "folders": "77|Dosierujoj",
+    "sets": "78|Aroj",
+    "notes": "79|Notoj",
+    "profile": "80|Profilo",
+    "create": "81|Krei",
+    "menu": "82|Menuo",
+    "closeMenu": "83|Fermi la menuon",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "84|Ekzercado",
+      "library": "85|Biblioteko"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
-    "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
-    "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "create": "86|Krei dosierujon",
+    "loading": "87|Ŝargante la dosierujojn…",
+    "loadError": "88|Ni ne povis ŝargi viajn dosierujojn.",
+    "emptyTitle": "89|Ankoraŭ neniu dosierujo",
+    "emptyBody": "90|Kreu vian unuan dosierujon por ordigi viajn arojn.",
+    "setCount": "91|{{count}} aroj",
+    "setCount_one": "92|{{count}} aro",
+    "newTitle": "93|Nova dosierujo",
+    "newSubtitle": "94|Kunigu rilatajn arojn.",
+    "editTitle": "95|Redakti la dosierujon",
+    "name": "96|Nomo",
+    "namePlaceholder": "97|ekz. Vojaĝoj",
+    "description": "98|Priskribo",
+    "descriptionPlaceholder": "99|Nedeviga",
+    "color": "100|Koloro",
+    "save": "101|Konservi",
+    "saving": "102|Konservante…",
+    "cancel": "103|Nuligi",
+    "edit": "104|Redakti la dosierujon",
+    "delete": "105|Forigi la dosierujon",
+    "deleteConfirm": "106|Ĉu forigi \"{{title}}\"? Tio ne estas malfarebla.",
+    "backToFolders": "107|Reen al la dosierujoj",
+    "notFoundTitle": "108|Dosierujo ne trovita",
+    "notFoundBody": "109|Eble ĉi tiu dosierujo estis forigita.",
+    "noSetsInFolder": "110|Ankoraŭ neniuj aroj en ĉi tiu dosierujo.",
+    "saveError": "111|Ne eblis konservi. Bonvolu provi denove.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "112|Nomo de la dosierujo estas deviga.",
+      "nameTooLong": "113|La nomo de la dosierujo devas esti sub 80 signoj.",
+      "descTooLong": "114|La priskribo devas esti sub 120 signoj."
     },
-    "optional": "(optional)",
-    "preview": "Preview",
-    "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "optional": "115|(nedeviga)",
+    "preview": "116|Antaŭrigardo",
+    "previewPlaceholder": "117|Nova dosierujo",
+    "deleteConfirmTitle": "118|Ĉu forigi ĉi tiun dosierujon?"
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets",
-    "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?",
-    "editTitle": "Edit set",
-    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
-    "save": "Save changes",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "create": "119|Krei aron",
+    "loading": "120|Ŝargante la arojn…",
+    "loadError": "121|Ni ne povis ŝargi viajn arojn.",
+    "emptyTitle": "122|Ankoraŭ neniu aro",
+    "emptyBody": "123|Kreu vian unuan kartaron per la butono Krei.",
+    "cardCount": "124|{{count}} kartoj",
+    "cardCount_one": "125|{{count}} karto",
+    "keepPracticing": "126|Daŭrigu la ekzercadon",
+    "delete": "127|Forigi la aron",
+    "deleteConfirm": "128|Ĉu forigi \"{{title}}\"? Tio ne estas malfarebla.",
+    "notFoundTitle": "129|Aro ne trovita",
+    "notFoundBody": "130|Eble ĉi tiu aro estis forigita.",
+    "backToSets": "131|Reen al la aroj",
+    "edit": "132|Redakti la aron",
+    "deleteConfirmTitle": "133|Ĉu forigi ĉi tiun aron?",
+    "editTitle": "134|Redakti la aron",
+    "editSubtitle": "135|Ŝanĝu la titolon, koloron, piktogramon aŭ dosierujon. La kartoj restas kie ili estas.",
+    "save": "136|Konservi la ŝanĝojn",
+    "saving": "137|Konservante…",
+    "cancel": "138|Nuligi",
+    "saveError": "139|Ne eblis konservi. Bonvolu provi denove."
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
-    "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "title": "140|Nova aro",
+    "subtitle": "141|Aldonu vortojn kaj agordu vian aron.",
+    "infoSection": "142|Informoj pri la aro",
+    "setTitle": "143|Titolo",
+    "setTitlePlaceholder": "144|ekz. Nepraĵoj por vojaĝo",
+    "setDescription": "145|Priskribo",
+    "setDescriptionPlaceholder": "146|Nedeviga",
+    "privacy": "147|Privateco",
+    "private": "148|Privata",
+    "public": "149|Publika",
+    "cardsSection": "150|Kartoj",
+    "addCard": "151|Aldoni karton",
+    "cardN": "152|Karto {{n}}",
+    "removeCard": "153|Forigi la karton",
+    "word": "154|Vorto",
+    "translation": "155|Traduko",
+    "example": "156|Ekzemplo (nedeviga)",
+    "addImage": "157|Aldoni bildon",
+    "removeImage": "158|Forigi la bildon",
+    "customizeSection": "159|Agordi",
+    "color": "160|Koloro",
+    "icon": "161|Piktogramo",
+    "folder": "162|Dosierujo",
+    "noFolder": "163|Neniu dosierujo",
+    "previewSection": "164|Antaŭrigardo",
+    "previewPlaceholder": "165|Titolo de la aro",
+    "save": "166|Krei la aron",
+    "saving": "167|Konservante…",
+    "cancel": "168|Nuligi",
+    "saveError": "169|Ne eblis konservi. Bonvolu provi denove.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "170|Titolo de la aro estas deviga.",
+      "titleTooLong": "171|La titolo de la aro devas esti sub 150 signoj.",
+      "descTooLong": "172|La priskribo devas esti sub 200 signoj.",
+      "noValidCards": "173|Aldonu almenaŭ unu karton kun vorto kaj traduko.",
+      "exampleTooLong": "174|La ekzemploj de la kartoj devas esti sub 150 signoj."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "imageTimeout": "175|La alŝuto de la bildo eltempiĝis. Kontrolu vian konekton kaj provu denove.",
     "import": {
-      "button": "Import",
-      "title": "Import cards",
-      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
-      "close": "Close import",
-      "dataSection": "Your data",
-      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
-      "separatorsSection": "Separators",
-      "betweenTermAndDefinition": "Between word and translation",
-      "betweenCards": "Between cards",
-      "tab": "Tab",
-      "comma": "Comma",
-      "newline": "New line",
-      "semicolon": "Semicolon",
-      "custom": "Custom",
-      "customPlaceholder": "e.g. —",
-      "previewSection": "Preview",
-      "previewEmpty": "Nothing to preview yet.",
-      "noDefinition": "No translation",
-      "confirm": "Add cards"
+      "button": "176|Importi",
+      "title": "177|Importi kartojn",
+      "subtitle": "178|Kopiu kaj algluu viajn datumojn — el Word, Excel, Google Docs kaj similaj.",
+      "close": "179|Fermi la importon",
+      "dataSection": "180|Viaj datumoj",
+      "placeholder": "181|Vorto 1\\tDifino 1\\nVorto 2\\tDifino 2\\nVorto 3\\tDifino 3",
+      "separatorsSection": "182|Disigiloj",
+      "betweenTermAndDefinition": "183|Inter vorto kaj traduko",
+      "betweenCards": "184|Inter kartoj",
+      "tab": "185|Tabo",
+      "comma": "186|Komo",
+      "newline": "187|Nova linio",
+      "semicolon": "188|Punktokomo",
+      "custom": "189|Propra",
+      "customPlaceholder": "190|ekz. —",
+      "previewSection": "191|Antaŭrigardo",
+      "previewEmpty": "192|Ankoraŭ nenio por antaŭrigardi.",
+      "noDefinition": "193|Neniu traduko",
+      "confirm": "194|Aldoni la kartojn"
     },
     "iconPicker": {
-      "open": "More icons",
-      "title": "Choose icon",
-      "search": "Search symbol",
-      "close": "Close",
-      "empty": "No icons match that name."
+      "open": "195|Pli da piktogramoj",
+      "title": "196|Elektu piktogramon",
+      "search": "197|Serĉi simbolon",
+      "close": "198|Fermi",
+      "empty": "199|Neniu piktogramo kongruas kun tiu nomo."
     },
     "iconGroup": {
-      "learning": "Learning",
-      "languages": "Languages",
-      "nature": "Nature",
-      "health": "Health",
-      "food": "Food",
-      "travel": "Travel",
-      "work": "Work",
-      "tech": "Tech",
-      "creativity": "Creativity",
-      "general": "General"
+      "learning": "200|Lernado",
+      "languages": "201|Lingvoj",
+      "nature": "202|Naturo",
+      "health": "203|Sano",
+      "food": "204|Manĝo",
+      "travel": "205|Vojaĝo",
+      "work": "206|Laboro",
+      "tech": "207|Teknologio",
+      "creativity": "208|Kreemo",
+      "general": "209|Ĝenerala"
     }
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
-      "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "flashcards": "210|Kartoj",
+      "folders": "211|Dosierujoj",
+      "sets": "212|Aroj",
+      "create": "213|Krei",
+      "profile": "214|Profilo",
+      "speaking": "215|Parolado",
+      "listening": "216|Aŭskultado",
+      "reading": "217|Legado",
+      "writing": "218|Skribado"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "219|Elektu aron por ekzerci",
+      "folders": "220|Administru viajn dosierujojn",
+      "sets": "221|Administru viajn kartarojn",
+      "create": "222|Kreu novan lernaron",
+      "speaking": "223|Ekzercu viajn parolkapablojn.",
+      "listening": "224|Trejnu vian orelon por kompreni la lingvon nature.",
+      "reading": "225|Legu kaj revizias materialojn en la lingvo.",
+      "writing": "226|Ekzercu vian lingvon aktive."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "227|PAROLADO",
+      "listening": "228|AŬSKULTADO",
+      "reading": "229|LEGADO",
+      "writing": "230|SKRIBADO"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "231|Hodiaŭa celo",
+      "left": "232|Restas {{count}} vortoj"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "233|Lernitaj hodiaŭ",
+      "words": "234|vortoj",
+      "accuracy": "235|Precizeco",
+      "greatJob": "236|Bonega laboro!",
+      "streak": "237|Serio",
+      "days": "238|tagoj"
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "239|Daŭrigi la lernadon",
+    "yourSets": "240|Viaj aroj",
+    "viewAll": "241|Vidi ĉiujn",
+    "review": "242|Revizii",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "243|Ankoraŭ neniu aro",
+      "emptyBody": "244|Kreu vian unuan kartaron per la butono Krei."
     },
     "create": {
-      "folder": "Folder",
-      "set": "Set",
-      "text": "Text",
-      "audio": "Audio",
-      "essay": "Essay"
+      "folder": "245|Dosierujo",
+      "set": "246|Aro",
+      "text": "247|Teksto",
+      "audio": "248|Aŭdio",
+      "essay": "249|Eseo"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "250|{{title}} — baldaŭ"
     },
     "progress": {
       "subtitle": {
-        "speaking": "of speaking practice",
-        "listening": "of listening practice",
-        "reading": "of reading practice",
-        "writing": "of writing practice"
+        "speaking": "251|da parola ekzercado",
+        "listening": "252|da aŭskulta ekzercado",
+        "reading": "253|da lega ekzercado",
+        "writing": "254|da skriba ekzercado"
       }
     },
     "dailyGoal": {
-      "title": "Your goal for today",
-      "body": "Pick what you want to practise today — the card below counts against it.",
-      "chosenBody": "This is what today is about.",
-      "howMuch": "How much?",
-      "change": "Change"
+      "title": "255|Via celo por hodiaŭ",
+      "body": "256|Elektu kion vi volas ekzerci hodiaŭ — la suba karto kalkuliĝas por ĝi.",
+      "chosenBody": "257|Pri tio temas la hodiaŭa tago.",
+      "howMuch": "258|Kiom?",
+      "change": "259|Ŝanĝi"
     },
     "lastNote": {
-      "title": "Last note you read"
+      "title": "260|Lasta noto kiun vi legis"
     }
   },
   "categories": {
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing"
+    "speaking": "261|Parolado",
+    "listening": "262|Aŭskultado",
+    "reading": "263|Legado",
+    "writing": "264|Skribado"
   },
   "phase0": {
-    "title": "WordAround",
-    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
+    "title": "265|WordAround",
+    "subtitle": "266|Fazo 0 funkcias. Dezajnaj ĵetonoj ŝargitaj, Firebase konektita."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "267|Turni",
+    "known": "268|Mi sciis ĝin",
+    "unknown": "269|Ankoraŭ lernata",
+    "mastered": "270|Regata",
+    "shuffle": "271|Miksi",
+    "trackProgress": "272|Sekvi la progreson",
+    "speak": "273|Prononci",
+    "roundDone": "274|Rondo finita",
+    "knewCount": "275|Vi sciis {{known}} el {{total}}",
+    "repeatUnknown": "276|Ripeti {{count}} nesciatajn",
+    "restart": "277|Rekomenci",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "278|Ĉiuj",
+      "studied": "279|Studitaj",
+      "remaining": "280|Restantaj",
+      "mastered": "281|Regataj"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "282|Aldoni karton",
+    "editCard": "283|Redakti la karton",
+    "deleteCard": "284|Forigi la karton",
+    "deleteCardConfirm": "285|Ĉu forigi ĉi tiun karton?",
+    "emptyPrompt": "286|Ĉi tiu aro ankoraŭ ne havas kartojn. Aldonu vian unuan karton.",
+    "save": "287|Konservi",
+    "cancel": "288|Nuligi"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "289|Hodiaŭa progreso",
+      "unit": "290|vortoj",
+      "subtitle": "291|da skriba ekzercado"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "292|Ekzercaj reĝimoj",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "293|Skribi el la aroj",
+        "subtitle": "294|Ekzercu la ortografion kaj skribadon de la vortoj el viaj aroj."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "295|Eseoj",
+        "subtitle": "296|Skribu tekstojn kaj ricevu AI-komentojn pri gramatiko kaj stilo."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "297|Baldaŭ"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "298|Elektu aron",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "299|Neniu aro kun vortoj",
+        "subtitle": "300|Kreu aron kun almenaŭ unu karto antaŭ ol komenci la skriban ekzercadon."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "301|{{count}} vortoj",
+      "wordsCount_one": "302|{{count}} vorto",
+      "close": "303|Fermi"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "304|Skribi el la aroj",
+      "subtitle": "305|Tajpu la tradukon kaj premu Enen.",
+      "translateHint": "306|Traduku al via lingvo",
+      "hint": "307|Helpindiko",
+      "skip": "308|Preterlasi",
+      "submit": "309|Kontroli",
+      "inputPlaceholder": "310|Tajpu ĉi tie…",
+      "loading": "311|Ŝargante la aron…",
+      "loadError": "312|Ni ne povis ŝargi ĉi tiun aron.",
+      "noCards": "313|Ĉi tiu aro ne havas kartojn.",
+      "back": "314|Reen",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "315|Agordoj",
+        "trainingMode": "316|Trejna reĝimo",
+        "difficulty": "317|Malfacileco"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "318|Vorto → Traduko",
+        "translationToWord": "319|Traduko → Vorto"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "320|Facila",
+        "medium": "321|Meza",
+        "hard": "322|Malfacila",
+        "easyDesc": "323|Senlimaj helpindikoj, senlimaj preterlasoj",
+        "mediumDesc": "324|1 helpa litero, maks. 25 % preterlasoj",
+        "hardDesc": "325|Neniuj helpindikoj, neniuj preterlasoj, kun tempolimo"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "326|Traduku al via lingvo",
+        "translation": "327|Skribu la originalan vorton"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "328|Restas {{count}} preterlaso",
+      "skipsLeft_other": "329|Restas {{count}} preterlasoj",
+      "seconds": "330|{{count}} s",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "331|Rondo finita!",
+          "subtitle": "332|Bonega laboro. Vi finis ĉi tiun skriban rondon."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "333|La tempo finiĝis",
+          "subtitle": "334|La horloĝo de la malfacila reĝimo atingis nulon. Provu denove ekde la unua vorto."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "335|Malĝusta respondo",
+          "subtitle": "336|En la malfacila reĝimo unu eraro finas la rondon."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
+        "perfectTitle": "337|Perfekta rondo!",
+        "perfectBody": "338|Vi finis la malfacilan reĝimon sen eraroj. Sen preterlasoj. Sen helpindikoj. Nur lerteco.",
+        "totalWords": "339|Vortoj entute",
+        "completedWords": "340|Finitaj vortoj",
+        "skippedWords": "341|Preterlasitaj vortoj",
+        "hintsUsed": "342|Uzitaj helpindikoj",
+        "streak": "343|Serio",
+        "difficultyLabel": "344|Malfacileco",
+        "word": "345|Vorto",
+        "yourAnswer": "346|Via respondo",
+        "correctAnswer": "347|Ĝusta respondo",
+        "tryAgain": "348|Provi denove"
       }
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "349|Eseoj",
+      "subtitle": "350|Temo elektita de AI. Skribu, poste ricevu komentojn.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "351|Proponita",
+        "custom": "352|Mia temo"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "353|Skribu vian propran eseotemon...",
+        "generate": "354|Generi taskon"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "355|Generi temon",
+        "regenerate": "356|Nova temo"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "357|Lingvo",
+      "difficulty": "358|Malfacileco",
       "task": {
-        "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips",
-        "taskLabel": "Task"
+        "time": "359|≈ {{count}} min",
+        "wordRange": "360|{{min}}-{{max}} vortoj",
+        "quickTips": "361|Rapidaj konsiloj",
+        "taskLabel": "362|Tasko"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "363|Komencu skribi vian eseon ĉi tie...",
+        "wordCount": "364|{{count}} / {{min}}-{{max}} vortoj",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "365|Daŭrigu — vi bezonas almenaŭ {{min}} vortojn.",
+          "aboveMaximum": "366|Vi transpasis la limon — provu mallongigi.",
+          "valid": "367|Ene de la intervalo."
         },
-        "reset": "Reset"
+        "reset": "368|Restarigi"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "369|Unue tajpu temon.",
+        "generationFailed": "370|Ne eblis generi temon. Bonvolu provi denove."
       },
-      "generating": "Generating...",
+      "generating": "371|Generante...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "372|Peti helpindikon",
+        "remaining": "373|Restas {{remaining}}/{{limit}}",
+        "noneLeft": "374|Neniu helpindiko restas",
+        "notAvailable": "375|Helpindikoj ne disponeblas ĉe ĉi tiu nivelo",
+        "generating": "376|Generante la helpindikon...",
+        "error": "377|Ne eblis akiri helpindikon. Bonvolu provi denove.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "378|Enhavo",
+          "grammar": "379|Gramatiko",
+          "vocabulary": "380|Vortprovizo",
+          "structure": "381|Strukturo"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again.",
-        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
+        "button": "382|Kontroli mian eseon",
+        "checking": "383|Kontrolante...",
+        "disabled": "384|Unue skribu ene de la vortintervalo",
+        "error": "385|Ni ne povis kontroli vian eseon. Bonvolu provi denove.",
+        "languageUnsupported": "386|Gramatika kontrolo ankoraŭ ne disponeblas por {{language}}."
       },
       "score": {
-        "title": "Essay score",
+        "title": "387|Poentaro de la eseo",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "388|Bonega",
+          "veryGood": "389|Tre bona",
+          "good": "390|Bona",
+          "needsWork": "391|Bezonas plibonigon"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "392|Gramatiko",
+          "vocabulary": "393|Vortprovizo",
+          "length": "394|Longeco",
+          "complexity": "395|Komplekseco",
+          "relevance": "396|Rilateco",
+          "independence": "397|Sendependeco"
         },
         "stat": {
-          "words": "Words",
-          "grammar": "Grammar",
-          "vocabStyle": "Vocab/style",
-          "hints": "Hints",
-          "translations": "Translations",
-          "synonyms": "Synonyms"
+          "words": "398|Vortoj",
+          "grammar": "399|Gramatiko",
+          "vocabStyle": "400|Vortprovizo/stilo",
+          "hints": "401|Helpindikoj",
+          "translations": "402|Tradukoj",
+          "synonyms": "403|Sinonimoj"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
-        "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "sectionTitle": "404|Gramatikaj problemoj",
+        "count_one": "405|{{count}} problemo",
+        "count_other": "406|{{count}} problemoj",
+        "empty": "407|Neniu gramatika problemo trovita — bonega laboro!",
+        "original": "408|Originalo:",
+        "suggestion": "409|Propono:",
+        "reason": "410|Kialo:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "411|Gramatiko",
+          "vocabulary": "412|Vortprovizo",
+          "style": "413|Stilo"
         },
         "save": {
-          "idle": "Save to Notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
+          "idle": "414|Konservi en Notoj",
+          "saving": "415|Konservante…",
+          "saved": "416|Konservita",
+          "duplicate": "417|Jam konservita",
+          "failed": "418|Reprovi konservi"
         }
       },
       "helper": {
-        "translate": "Translate",
-        "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "translate": "419|Traduki",
+        "synonym": "420|Sinonimo",
+        "remaining": "421|Restas {{remaining}}",
+        "notAvailable": "422|Ne disponebla ĉe ĉi tiu nivelo"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "423|Traduki",
+        "placeholder": "424|Enigu vorton aŭ mallongan frazon",
+        "submit": "425|Traduki",
+        "submitting": "426|Tradukante..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "427|Sinonimoj",
+        "placeholder": "428|Enigu vorton",
+        "submit": "429|Trovi sinonimojn",
+        "submitting": "430|Serĉante..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "431|El",
+        "to": "432|Al",
+        "close": "433|Fermi",
+        "noResult": "434|Neniu rezulto trovita.",
+        "sameLanguage": "435|Elektu alian enigan lingvon.",
+        "error": "436|La servo estas provizore nedisponebla."
       },
-      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
-      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
-      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
+      "saveMistakeConfirmTitle": "437|Ĉu konservi ĉi tiun eraron en Notoj?",
+      "saveMistakeConfirmBody": "438|Ĝi estos konservita kiel eraro-noto kun la korekto “{{correction}}”.",
+      "autoSaveConfirmTitle": "439|Ĉu konservi ĉi tiujn erarojn en viaj notoj?",
+      "autoSaveConfirmBody_one": "440|Ĉi tiu kontrolo trovis {{count}} eraron. Konservi ĝin faras el ĝi noton kiu revenas por revizio.",
+      "autoSaveConfirmBody_other": "441|Ĉi tiu kontrolo trovis {{count}} erarojn. Konservi ilin faras el ili notojn kiuj revenas por revizio."
     },
     "grammar": {
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "subtitle": "442|Ordigu la gramatikon laŭ temoj per klaraj, strukturitaj notoj.",
+      "newTopic": "443|Nova temo",
+      "topicsEmptyTitle": "444|Ankoraŭ neniu temo",
+      "topicsEmptyBody": "445|Kreu vian unuan temon por komenci kolekti gramatikajn notojn.",
+      "notesCount_one": "446|{{count}} noto",
+      "notesCount_other": "447|{{count}} notoj",
+      "deleteTopicConfirm": "448|Ĉu forigi \"{{title}}\" kaj ĉiujn ĝiajn notojn? Tio ne estas malfarebla.",
+      "notesEmptyTitle": "449|Ankoraŭ neniu noto",
+      "notesEmptyBody": "450|Aldonu vian unuan noton al ĉi tiu temo.",
+      "newNote": "451|Nova noto",
+      "deleteNoteConfirm": "452|Ĉu forigi ĉi tiun noton? Tio ne estas malfarebla.",
+      "loading": "453|Ŝargante…",
+      "loadError": "454|Ni ne povis ŝargi viajn gramatikajn notojn.",
+      "notFoundTitle": "455|Ne trovita",
+      "notFoundBody": "456|Eble ĉi tiu ero estis forigita.",
+      "back": "457|Reen",
+      "updated": "458|Ĝisdatigita je {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel",
-        "language": "Language",
-        "languageNone": "Not set"
+        "newTitle": "459|Nova temo",
+        "editTitle": "460|Redakti la temon",
+        "name": "461|Titolo",
+        "namePlaceholder": "462|ekz. Hispanaj verboj",
+        "description": "463|Priskribo",
+        "descriptionPlaceholder": "464|Nedeviga",
+        "color": "465|Koloro",
+        "icon": "466|Piktogramo",
+        "save": "467|Konservi",
+        "cancel": "468|Nuligi",
+        "language": "469|Lingvo",
+        "languageNone": "470|Ne agordita"
       },
       "noteType": {
-        "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "standard": "471|Norma",
+        "mistake": "472|Eraro",
+        "rule": "473|Regulo",
+        "comparison": "474|Komparo",
+        "cheatSheet": "475|Memorfolio",
+        "exercise": "476|Ekzerco"
       },
       "block": {
-        "heading": "Heading",
-        "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)",
-        "subheading": "Subheading",
-        "numberedList": "Numbered list",
-        "checklist": "Checklist",
-        "comparison": "Comparison",
-        "exercise": "Exercise",
-        "quiz": "Quiz",
-        "image": "Image",
-        "comparisonSecondary": "Second side",
-        "imageAdd": "Add / replace image",
-        "imageUploading": "Uploading…",
-        "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images."
+        "heading": "477|Titolo",
+        "paragraph": "478|Teksto",
+        "bulletList": "479|Bula listo",
+        "rule": "480|Regulo",
+        "example": "481|Ekzemplo",
+        "warning": "482|Averto",
+        "quote": "483|Citaĵo",
+        "divider": "484|Disigilo",
+        "addBlock": "485|Aldoni blokon",
+        "addItem": "486|Aldoni eron",
+        "moveUp": "487|Movi supren",
+        "moveDown": "488|Movi malsupren",
+        "remove": "489|Forigi",
+        "secondaryPlaceholder": "490|Detalo / traduko (nedeviga)",
+        "subheading": "491|Subtitolo",
+        "numberedList": "492|Numerita listo",
+        "checklist": "493|Kontrollisto",
+        "comparison": "494|Komparo",
+        "exercise": "495|Ekzerco",
+        "quiz": "496|Kvizo",
+        "image": "497|Bildo",
+        "comparisonSecondary": "498|Dua flanko",
+        "imageAdd": "499|Aldoni / anstataŭigi bildon",
+        "imageUploading": "500|Alŝutante…",
+        "imageFailed": "501|Ne eblis alŝuti la bildon.",
+        "imageSaveFirst": "502|Ensalutu por alŝuti bildojn."
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…",
-        "subheading": "Subheading",
-        "numberedList": "List item",
-        "checklist": "Checklist item",
-        "comparison": "First side",
-        "exercise": "Practice instruction…",
-        "quiz": "Question",
-        "image": "Image caption"
+        "heading": "503|Titolo",
+        "paragraph": "504|Skribu vian klarigon…",
+        "bulletList": "505|Listero",
+        "rule": "506|Klarigu la gramatikan regulon…",
+        "example": "507|Aldonu ekzemplon…",
+        "warning": "508|Ofta eraro aŭ averto…",
+        "quote": "509|Frazo indas memori…",
+        "subheading": "510|Subtitolo",
+        "numberedList": "511|Listero",
+        "checklist": "512|Kontrollistero",
+        "comparison": "513|Unua flanko",
+        "exercise": "514|Ekzerca instrukcio…",
+        "quiz": "515|Demando",
+        "image": "516|Bildoteksto"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again.",
-        "subtitle": "Edit note",
-        "tags": "Tags",
-        "tagsPlaceholder": "Add a tag…",
-        "removeTag": "Remove tag {{tag}}",
-        "addToReview": "Add to review",
-        "addedToReview": "Added to your review queue.",
-        "inReview": "In review · {{when}}",
-        "inReviewDue": "Due for review",
-        "removedFromReview": "Removed from your review queue.",
-        "unsavedTitle": "Leave without saving?",
-        "unsavedBody": "This note has changes that have not been saved yet.",
-        "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "titlePlaceholder": "517|Titolo de la noto",
+        "save": "518|Konservi la noton",
+        "saving": "519|Konservante…",
+        "delete": "520|Forigi la noton",
+        "saveError": "521|Ne eblis konservi. Bonvolu provi denove.",
+        "subtitle": "522|Redakti la noton",
+        "tags": "523|Etikedoj",
+        "tagsPlaceholder": "524|Aldoni etikedon…",
+        "removeTag": "525|Forigi la etikedon {{tag}}",
+        "addToReview": "526|Aldoni al revizio",
+        "addedToReview": "527|Aldonita al via revizia atendovico.",
+        "inReview": "528|En revizio · {{when}}",
+        "inReviewDue": "529|Preta por revizio",
+        "removedFromReview": "530|Forigita el via revizia atendovico.",
+        "unsavedTitle": "531|Ĉu foriri sen konservi?",
+        "unsavedBody": "532|Ĉi tiu noto havas ŝanĝojn kiuj ankoraŭ ne estas konservitaj.",
+        "discard": "533|Forĵeti la ŝanĝojn",
+        "saveAndLeave": "534|Konservi kaj foriri"
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "535|Kvizoj",
+        "new": "536|Nova kvizo",
+        "start": "537|Komenci la kvizon",
+        "delete": "538|Forigi la kvizon",
+        "deleteConfirm": "539|Ĉu forigi \"{{title}}\"? Tio ne estas malfarebla.",
+        "emptyTitle": "540|Ankoraŭ neniu kvizo",
+        "emptyBody": "541|Kreu kvizon el ĉi tiu noto por testi vin mem.",
+        "loadError": "542|Ne eblis ŝargi la kvizojn.",
+        "questionsCount_one": "543|{{count}} demando",
+        "questionsCount_other": "544|{{count}} demandoj",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "545|Plurelekta",
+          "trueFalse": "546|Vera / Malvera",
+          "fillGap": "547|Plenigi la breĉon",
+          "shortAnswer": "548|Mallonga respondo"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead",
-          "modeManual": "Manual",
-          "modeManualDesc": "Write your own questions.",
-          "createQuiz": "Create quiz"
+          "title": "549|Krei kvizon",
+          "titlePlaceholder": "550|Titolo de la kvizo",
+          "mode": "551|Genera reĝimo",
+          "modeSmart": "552|Loka inteligenta",
+          "modeSmartDesc": "553|Generas demandojn el la enhavo de la noto, loke.",
+          "modeAI": "554|Generita de AI",
+          "modeAIDesc": "555|Generas pli riĉajn, kuntekstajn demandojn per AI.",
+          "count": "556|Demandoj",
+          "types": "557|Tipoj de demando",
+          "focus": "558|Fokuso (nedeviga)",
+          "focusPlaceholder": "559|ekz. fokusu je neregulaj formoj",
+          "preview": "560|Antaŭrigardi la demandojn",
+          "regenerate": "561|Regeneri la antaŭrigardon",
+          "previewTitle": "562|Antaŭrigardo",
+          "saveQuiz": "563|Konservi la kvizon",
+          "generateQuiz": "564|Generi la kvizon",
+          "generating": "565|Generante…",
+          "saving": "566|Konservante…",
+          "useSmartInstead": "567|Uzi anstataŭe Lokan inteligentan",
+          "modeManual": "568|Permana",
+          "modeManualDesc": "569|Skribu viajn proprajn demandojn.",
+          "createQuiz": "570|Krei la kvizon"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "571|Demando {{current}} el {{total}}",
+          "submit": "572|Sendi la respondon",
+          "next": "573|Sekva",
+          "finish": "574|Fini",
+          "correct": "575|Ĝuste!",
+          "incorrect": "576|Malĝuste",
+          "correctAnswer": "577|Ĝusta respondo: {{answer}}",
+          "typeMissing": "578|Tajpu la mankantan vorton",
+          "typeAnswer": "579|Tajpu vian respondon",
+          "trueLabel": "580|Vera",
+          "falseLabel": "581|Malvera"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "582|{{correct}} el {{total}} ĝustaj",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "583|Bonege!",
+            "good": "584|Bonega laboro!",
+            "keepPracticing": "585|Daŭrigu la ekzercadon",
+            "reviewNote": "586|Reviziu la noton"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "587|Malĝustaj",
+          "correctSection": "588|Ĝustaj",
+          "yourAnswer": "589|Via respondo: {{answer}}",
+          "tryAgain": "590|Provi denove",
+          "reviewNote": "591|Revizii la noton",
+          "done": "592|Farite"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "593|Unue aldonu pli da enhavo al la noto — kvizo bezonas almenaŭ du enhavajn blokojn (regulo, ekzemplo, averto, alineo aŭ citaĵo).",
+          "noMatchingQuestionTypes": "594|Ne sufiĉas kongrua enhavo por la elektitaj tipoj de demando. Ŝaltu pli da tipoj aŭ aldonu pli da enhavo.",
+          "aiFailed": "595|Ne eblis generi la kvizon per AI. Provu denove aŭ uzu Lokan inteligentan."
         },
-        "badge": "Quiz",
+        "badge": "596|Kvizo",
         "manual": {
-          "questions_one": "{{count}} question",
-          "questions_other": "{{count}} questions",
-          "add": "Add question",
-          "questionPlaceholder": "Question text",
-          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
-          "optionPlaceholder": "Option {{index}}",
-          "answerPlaceholder": "Correct answer",
-          "explanationPlaceholder": "Explanation (optional)",
+          "questions_one": "597|{{count}} demando",
+          "questions_other": "598|{{count}} demandoj",
+          "add": "599|Aldoni demandon",
+          "questionPlaceholder": "600|Teksto de la demando",
+          "questionGapPlaceholder": "601|Demando kun breĉo, ekz. Mi _____ al la lernejo",
+          "optionPlaceholder": "602|Elekto {{index}}",
+          "answerPlaceholder": "603|Ĝusta respondo",
+          "explanationPlaceholder": "604|Klarigo (nedeviga)",
           "error": {
-            "questionRequired": "Question text is required.",
-            "optionsRequired": "Multiple choice needs at least 2 options.",
-            "answerRequired": "Enter the correct answer.",
-            "answerNotAnOption": "The correct answer must match one of the options.",
-            "blankRequired": "Add a blank (e.g. _____) inside the question."
+            "questionRequired": "605|Teksto de la demando estas deviga.",
+            "optionsRequired": "606|Plurelekta demando bezonas almenaŭ 2 elektojn.",
+            "answerRequired": "607|Enigu la ĝustan respondon.",
+            "answerNotAnOption": "608|La ĝusta respondo devas kongrui kun unu el la elektoj.",
+            "blankRequired": "609|Aldonu breĉon (ekz. _____) ene de la demando."
           }
         }
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "610|Rapida eraro",
+        "title": "611|Rapida eraro",
+        "original": "612|Originala frazo",
+        "originalPlaceholder": "613|Ekzemplo: Mi estas konsentas kun vi",
+        "corrected": "614|Korekto",
+        "correctedPlaceholder": "615|Ekzemplo: Mi konsentas kun vi",
+        "explanation": "616|Klarigo (nedeviga)",
+        "explanationPlaceholder": "617|Kial la korekto estas ĝusta?",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "618|Unue aldonu la originalan frazon.",
+          "corrected": "619|Aldonu ankaŭ la korektitan frazon."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done",
-        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
+        "save": "620|Konservi la eraron",
+        "saving": "621|Konservante…",
+        "saved": "622|Konservita en Gramatikaj notoj.",
+        "duplicate": "623|Jam konservita — la duplikato estis preterlasita.",
+        "failed": "624|Ne eblis konservi. Bonvolu provi denove.",
+        "openTopic": "625|Malfermi Oftajn erarojn",
+        "done": "626|Farite",
+        "tip": "627|Konservitaj korektoj aŭtomate eniras la revizion, do tiuj kiujn vi daŭre eraras revenas unue."
       },
       "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
+        "topicTitle": "628|Temaj ŝablonoj",
+        "noteTitle": "629|Notaj ŝablonoj",
+        "button": "630|Ŝablono",
+        "startFromTemplate": "631|Komenci per ŝablono",
+        "searchPlaceholder": "632|Serĉi ŝablonojn…",
+        "allLanguages": "633|Ĉiuj",
+        "anyDifficulty": "634|Iu ajn",
         "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
+          "en": "635|Angla",
+          "es": "636|Hispana",
+          "fr": "637|Franca",
+          "de": "638|Germana"
         },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
-        "applyTitle": "Apply “{{title}}”?",
-        "applyBody": "This note already has content. Choose how to apply the template.",
-        "applyReplace": "Replace content",
-        "applyAppend": "Append blocks"
+        "minutes": "639|{{minutes}} min",
+        "notesIncluded_one": "640|{{count}} noto",
+        "notesIncluded_other": "641|{{count}} notoj",
+        "blocksIncluded_one": "642|{{count}} bloko",
+        "blocksIncluded_other": "643|{{count}} blokoj",
+        "empty": "644|Neniu ŝablono kongruas kun viaj filtriloj.",
+        "use": "645|Uzi la ŝablonon",
+        "creating": "646|Kreante…",
+        "replaceConfirm": "647|Ĉu anstataŭigi la nunan enhavon de la noto per ĉi tiu ŝablono? Premu Nuligi por aldoni la ŝablonon sube.",
+        "applyTitle": "648|Ĉu apliki “{{title}}”?",
+        "applyBody": "649|Ĉi tiu noto jam havas enhavon. Elektu kiel apliki la ŝablonon.",
+        "applyReplace": "650|Anstataŭigi la enhavon",
+        "applyAppend": "651|Aldoni la blokojn fine"
       },
       "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "dueBadge": "Due",
-        "refreshBody": "Nothing is due right now — you can still refresh what you read lately.",
-        "refreshStart": "Refresh recent notes",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
+        "title": "652|Revizio",
+        "subtitle": "653|Firmigu tion kion vi lernis per intervala ripetado.",
+        "cardTitle": "654|Revizii hodiaŭ",
+        "cardSubtitle_one": "655|{{count}} ero preta · ~{{minutes}} min",
+        "cardSubtitle_other": "656|{{count}} eroj pretaj · ~{{minutes}} min",
+        "caughtUpTitle": "657|Ĉio ĝisdatas",
+        "caughtUp": "658|Vi estas tute ĝisdata. Malfermu aŭ redaktu notojn por ricevi reviziajn proponojn.",
+        "dueBadge": "659|Pritraktenda",
+        "refreshBody": "660|Nun nenio atendas — vi tamen povas refreŝigi tion kion vi legis lastatempe.",
+        "refreshStart": "661|Refreŝigi la lastajn notojn",
+        "start": "662|Komenci la revizion",
+        "skip": "663|Preterlasi",
+        "itemOf": "664|Ero {{current}} el {{total}}",
+        "untitled": "665|Gramatika noto",
+        "stats": "666|Reviziita {{count}} fojojn · serio {{streak}}",
+        "continueToQuestion": "667|Iri al la demando",
+        "showAnswer": "668|Montri la respondon",
+        "compareTitle": "669|Komparu vian respondon",
+        "referenceAnswer": "670|Referenco: {{answer}}",
+        "openNote": "671|Malfermi la plenan noton",
         "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
+          "manual_one": "672|{{count}} ero atendas revizion",
+          "manual_other": "673|{{count}} eroj atendas revizion",
+          "recentlyOpened_one": "674|{{count}} lastatempe malfermita noto",
+          "recentlyOpened_other": "675|{{count}} lastatempe malfermitaj notoj",
+          "recentlyEdited_one": "676|{{count}} lastatempe redaktita noto",
+          "recentlyEdited_other": "677|{{count}} lastatempe redaktitaj notoj"
         },
         "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
-          "quiz": "Quiz"
+          "note": "678|Noto",
+          "mistake": "679|Eraro",
+          "quiz": "680|Kvizo"
         },
         "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
+          "source": "681|Studi",
+          "question": "682|Respondi",
+          "result": "683|Taksi"
         },
         "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
+          "forgot": "684|Forgesis",
+          "hard": "685|Malfacila",
+          "good": "686|Bona",
+          "easy": "687|Facila"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "plus4h": "688|+4 horoj",
+          "plus1d": "689|+1 tago",
+          "plus3d": "690|+3 tagoj",
+          "plus7d": "691|+7 tagoj"
         },
         "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "title": "692|Seanco finita",
+          "emptyTitle": "693|Nenio reviziita",
+          "reviewed": "694|Reviziitaj",
+          "correct": "695|Ĝustaj",
+          "incorrect": "696|Malĝustaj",
+          "hintForgot": "697|Kelkaj eroj revenas post 4 horoj.",
+          "hintHard": "698|Malfacilaj eroj revenas morgaŭ.",
+          "hintGood": "699|Bonaj eroj revenas post 3 tagoj.",
+          "hintEasy": "700|Ĉiuj eroj revenas post 7 tagoj.",
+          "done": "701|Reen al Gramatikaj notoj"
         },
-        "loadError": "Couldn't load your review queue.",
-        "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "loadError": "702|Ni ne povis ŝargi vian reviziajn atendovicon.",
+        "mistakeCount_one": "703|{{count}} eraro",
+        "mistakeCount_other": "704|{{count}} eraroj"
       },
-      "mistakesBadge": "Mistakes",
-      "topicsTitle": "Topics",
-      "deleteTopic": "Delete topic",
-      "deleteTopicTitle": "Delete this topic?",
-      "deleteNoteTitle": "Delete this note?",
-      "pin": "Pin note",
-      "unpin": "Unpin note",
-      "favorite": "Add to favorites",
-      "unfavorite": "Remove from favorites",
+      "mistakesBadge": "705|Eraroj",
+      "topicsTitle": "706|Temoj",
+      "deleteTopic": "707|Forigi la temon",
+      "deleteTopicTitle": "708|Ĉu forigi ĉi tiun temon?",
+      "deleteNoteTitle": "709|Ĉu forigi ĉi tiun noton?",
+      "pin": "710|Fiksi la noton",
+      "unpin": "711|Malfiksi la noton",
+      "favorite": "712|Aldoni al preferataj",
+      "unfavorite": "713|Forigi el preferataj",
       "search": {
-        "topics": "Search topics…",
-        "notes": "Search notes…",
-        "clear": "Clear search",
-        "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword.",
-        "notesSection_one": "Notes ({{count}})",
-        "notesSection_other": "Notes ({{count}})",
-        "noNoteMatches": "No notes match this search."
+        "topics": "714|Serĉi temojn…",
+        "notes": "715|Serĉi notojn…",
+        "clear": "716|Forigi la serĉon",
+        "noMatchTitle": "717|Neniu kongruo",
+        "noMatchBody": "718|Provu alian ŝlosilvorton.",
+        "notesSection_one": "719|Notoj ({{count}})",
+        "notesSection_other": "720|Notoj ({{count}})",
+        "noNoteMatches": "721|Neniu noto kongruas kun ĉi tiu serĉo."
       },
       "filter": {
-        "label": "Filter notes",
-        "all": "All",
-        "pinned": "Pinned",
-        "favorites": "Favorites",
-        "mistakes": "Mistakes",
-        "quizzes": "Quizzes",
-        "review": "Due",
+        "label": "722|Filtri la notojn",
+        "all": "723|Ĉiuj",
+        "pinned": "724|Fiksitaj",
+        "favorites": "725|Preferataj",
+        "mistakes": "726|Eraroj",
+        "quizzes": "727|Kvizoj",
+        "review": "728|Pritraktendaj",
         "empty": {
           "all": {
-            "title": "No grammar notes yet",
-            "body": "Create your first grammar note for this topic."
+            "title": "729|Ankoraŭ neniu gramatika noto",
+            "body": "730|Kreu vian unuan gramatikan noton por ĉi tiu temo."
           },
           "pinned": {
-            "title": "No pinned notes yet",
-            "body": "Pin notes from the list to find them quickly."
+            "title": "731|Ankoraŭ neniu fiksita noto",
+            "body": "732|Fiksu notojn el la listo por trovi ilin rapide."
           },
           "favorites": {
-            "title": "No favorite notes yet",
-            "body": "Favorite notes to keep them handy."
+            "title": "733|Ankoraŭ neniu preferata noto",
+            "body": "734|Marku notojn kiel preferatajn por teni ilin ĉemane."
           },
           "mistakes": {
-            "title": "No saved mistakes yet",
-            "body": "Save grammar mistakes to review them here."
+            "title": "735|Ankoraŭ neniu konservita eraro",
+            "body": "736|Konservu gramatikajn erarojn por revizii ilin ĉi tie."
           },
           "quizzes": {
-            "title": "No quiz notes yet",
-            "body": "Add a quiz to a note to see it here."
+            "title": "737|Ankoraŭ neniu noto kun kvizo",
+            "body": "738|Aldonu kvizon al noto por vidi ĝin ĉi tie."
           },
           "review": {
-            "title": "Nothing due right now",
-            "body": "Notes come back here when their next review is due."
+            "title": "739|Nun nenio atendas",
+            "body": "740|Notoj revenas ĉi tien kiam ilia sekva revizio venas."
           }
         }
       },
       "reorder": {
-        "start": "Reorder",
-        "done": "Done",
-        "up": "Move up",
-        "down": "Move down"
+        "start": "741|Reordigi",
+        "done": "742|Farite",
+        "up": "743|Movi supren",
+        "down": "744|Movi malsupren"
       },
       "highlights": {
-        "mistakesTitle": "Mistakes to fix",
-        "mistakesSubtitle": "Recent corrections waiting for review.",
-        "quizzesTitle": "Weak quiz areas",
-        "quizzesSubtitle": "Quizzes worth re-taking soon."
+        "mistakesTitle": "745|Eraroj por korekti",
+        "mistakesSubtitle": "746|Lastatempaj korektoj atendantaj revizion.",
+        "quizzesTitle": "747|Malfortaj kvizaj partoj",
+        "quizzesSubtitle": "748|Kvizoj kiujn indas refari baldaŭ."
       },
       "quickNote": {
-        "button": "Quick note",
-        "title": "Quick note",
-        "subtitle": "Capture a grammar idea without opening the full editor.",
-        "noteTitle": "Title",
-        "titlePlaceholder": "Example: Ser vs Estar",
-        "text": "Note",
-        "textPlaceholder": "Write the useful part here",
-        "noteType": "Note type",
-        "topic": "Topic",
-        "openEditor": "Open editor after saving",
-        "openEditorHint": "Useful when the quick version grows into a full note.",
-        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
-        "validation": "Add a title or some text first.",
-        "save": "Save quick note",
-        "saving": "Saving…"
+        "button": "749|Rapida noto",
+        "title": "750|Rapida noto",
+        "subtitle": "751|Kaptu gramatikan ideon sen malfermi la plenan redaktilon.",
+        "noteTitle": "752|Titolo",
+        "titlePlaceholder": "753|Ekzemplo: Ser vs Estar",
+        "text": "754|Noto",
+        "textPlaceholder": "755|Skribu ĉi tie la utilan parton",
+        "noteType": "756|Tipo de noto",
+        "topic": "757|Temo",
+        "openEditor": "758|Malfermi la redaktilon post konservado",
+        "openEditorHint": "759|Utila kiam la rapida versio kreskas ĝis plena noto.",
+        "tip": "760|Rapidaj notoj estas por la ideo kiun vi alie forgesus post dek minutoj.",
+        "validation": "761|Unue aldonu titolon aŭ iom da teksto.",
+        "save": "762|Konservi la rapidan noton",
+        "saving": "763|Konservante…"
       },
       "settings": {
-        "title": "Notes settings",
-        "subtitle": "How quick capture, mistakes and the notes list behave.",
-        "reset": "Reset to defaults",
-        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "title": "764|Agordoj de la notoj",
+        "subtitle": "765|Kiel kondutas la rapida kapto, la eraroj kaj la notolisto.",
+        "reset": "766|Restarigi la defaŭltojn",
+        "tip": "767|Uzu rapidajn erarojn por frazoj kiujn vi vere skribis malĝuste — ili estas pli utilaj ol perfektaj lernolibraj ekzemploj.",
         "quickCapture": {
-          "title": "Quick capture",
-          "subtitle": "Make fast notes and mistakes feel instant."
+          "title": "768|Rapida kapto",
+          "subtitle": "769|Faru rapidajn notojn kaj erarojn tujaj."
         },
         "mistakeNotes": {
-          "title": "Mistake notes",
-          "subtitle": "What gets saved when you capture a quick mistake."
+          "title": "770|Eraro-notoj",
+          "subtitle": "771|Kio konserviĝas kiam vi kaptas rapidan eraron."
         },
         "essays": {
-          "title": "Essays",
-          "subtitle": "What happens to grammar issues found in your essays."
+          "title": "772|Eseoj",
+          "subtitle": "773|Kio okazas al la gramatikaj problemoj trovitaj en viaj eseoj."
         },
         "review": {
-          "title": "Spaced review",
-          "subtitle": "How notes reach the review queue."
+          "title": "774|Intervala revizio",
+          "subtitle": "775|Kiel notoj atingas la revizian atendovicon."
         },
         "appearance": {
-          "title": "Notes appearance",
-          "subtitle": "How the notes list is ordered and sized."
+          "title": "776|Aspekto de la notoj",
+          "subtitle": "777|Kiel la notolisto estas ordigita kaj grandigita."
         },
         "helpers": {
-          "title": "Learning helpers",
-          "subtitle": "Small nudges inside empty states and quick sheets."
+          "title": "778|Lernaj helpiloj",
+          "subtitle": "779|Etaj puŝetoj en malplenaj statoj kaj rapidaj folioj."
         },
         "defaultType": {
-          "title": "Default note type",
-          "subtitle": "What a new quick note starts as."
+          "title": "780|Defaŭlta tipo de noto",
+          "subtitle": "781|Kiel komenciĝas nova rapida noto."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "Open editor after quick save",
-            "subtitle": "After saving a quick note, jump straight into the full editor."
+            "title": "782|Malfermi la redaktilon post rapida konservo",
+            "subtitle": "783|Post konservi rapidan noton, salti rekte al la plena redaktilo."
           },
           "allowQuickQuizzes": {
-            "title": "Allow quizzes in notes",
-            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+            "title": "784|Permesi kvizojn en la notoj",
+            "subtitle": "785|Proponi kvizajn blokojn kaj kvizokreadon ene de la notoj."
           },
           "showsMistakeHighlights": {
-            "title": "Highlight mistake notes",
-            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+            "title": "786|Emfazi la eraro-notojn",
+            "subtitle": "787|Uzi varman nuancon por eraro-kartoj kaj montri la eraro-vicon."
           },
           "includeOriginalSentence": {
-            "title": "Include original sentence",
-            "subtitle": "Save the wrong version as a quote block in the note."
+            "title": "788|Inkluzivi la originalan frazon",
+            "subtitle": "789|Konservi la malĝustan version kiel citaĵan blokon en la noto."
           },
           "includeCorrectedSentence": {
-            "title": "Include corrected sentence",
-            "subtitle": "Save the fixed version as an example block."
+            "title": "790|Inkluzivi la korektitan frazon",
+            "subtitle": "791|Konservi la korektitan version kiel ekzemplan blokon."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "Include explanation",
-            "subtitle": "Add your explanation as a paragraph block below."
+            "title": "792|Inkluzivi la klarigon",
+            "subtitle": "793|Aldoni vian klarigon kiel alinean blokon sube."
           },
           "groupMistakesByTopic": {
-            "title": "Group mistakes by topic",
-            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+            "title": "794|Grupigi la erarojn laŭ temo",
+            "subtitle": "795|Konservi rapidajn erarojn en la nuna temo anstataŭ en Oftaj eraroj."
           },
           "askBeforeSavingMistakes": {
-            "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
+            "title": "796|Demandi antaŭ konservi erarojn",
+            "subtitle": "797|Konfirmi antaŭ ol eseo-problemo iĝas noto. Tio superas la aŭtomatan konservadon."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
+            "title": "798|Aŭtomate konservi eseo-erarojn",
+            "subtitle": "799|Ĉiu gramatika problemo trovita en eseo iĝas noto. Kun \"Demandi antaŭ konservi\" ŝaltita, ĝi demandas unufoje por la tuta kontrolo."
           },
           "groupsPinnedNotesFirst": {
-            "title": "Pinned notes first",
-            "subtitle": "Keep important rules at the top of each topic."
+            "title": "800|Fiksitaj notoj unue",
+            "subtitle": "801|Tenu la gravajn regulojn supre en ĉiu temo."
           },
           "usesCompactCards": {
-            "title": "Compact note cards",
-            "subtitle": "Show tighter cards when you want more notes on screen."
+            "title": "802|Kompaktaj notaj kartoj",
+            "subtitle": "803|Montri pli densajn kartojn kiam vi volas pli da notoj sur la ekrano."
           },
           "showsHelperTips": {
-            "title": "Show helper tips",
-            "subtitle": "Display short contextual hints while creating notes."
+            "title": "804|Montri helpajn konsiletojn",
+            "subtitle": "805|Montri mallongajn kuntekstajn indikojn dum vi kreas notojn."
           },
           "autoAddNotesToReview": {
-            "title": "Add new notes to review",
-            "subtitle": "Every note you save joins the review queue, due a day later."
+            "title": "806|Aldoni novajn notojn al la revizio",
+            "subtitle": "807|Ĉiu noto kiun vi konservas eniras la revizian atendovicon, pritraktenda unu tagon poste."
           }
         }
       },
-      "editTopic": "Edit topic",
+      "editTopic": "808|Redakti la temon",
       "toSet": {
-        "title": "Make a set from this note",
-        "subtitle": "Pick the pairs to turn into flashcards.",
-        "setTitle": "Set title",
-        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
-        "button": "Make a set",
-        "create": "Create set",
-        "creating": "Creating…",
-        "error": "Couldn't create the set. Try again.",
-        "cards_one": "{{count}} card",
-        "cards_other": "{{count}} cards"
+        "title": "809|Krei aron el ĉi tiu noto",
+        "subtitle": "810|Elektu la parojn kiuj iĝos kartoj.",
+        "setTitle": "811|Titolo de la aro",
+        "empty": "812|Ĉi tiu noto ankoraŭ havas nenion por iĝi kartoj. Komparaj, ekzemplaj kaj regulaj blokoj konvertiĝas rekte, kaj listeroj disiĝas ĉe streketo — kiel “hacer — fari”.",
+        "button": "813|Krei aron",
+        "create": "814|Krei la aron",
+        "creating": "815|Kreante…",
+        "error": "816|Ne eblis krei la aron. Provu denove.",
+        "cards_one": "817|{{count}} karto",
+        "cards_other": "818|{{count}} kartoj"
       },
-      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "topicsEmptyTip": "819|Temo estas dosierujo por notoj — unu por ĉiu lingvo, aŭ unu por ĉiu afero kiun vi daŭre eraras.",
+      "notesEmptyTip": "820|Ĉiu noto kiun vi konservas eniras la revizian atendovicon, do skribi ĝin jam sufiĉas por komenci ekzerci ĝin."
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "821|Ekzercaj reĝimoj",
+    "loading": "822|Ŝargante…",
+    "loadError": "823|Ni ne povis ŝargi viajn legaĵojn.",
+    "notFound": "824|Eble ĉi tiu ero estis forigita.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "825|Hodiaŭa progreso",
+      "subtitle": "826|Tenu vivanta vian legan serion."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "827|Baldaŭ",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "828|Miaj tekstoj",
+        "subtitle": "829|Algluu vian propran tekston kaj legu ĝin kun helpo."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "830|Legado el la aroj",
+        "subtitle": "831|Kreu legaĵon el viaj kartaroj."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "832|Rakonta reĝimo",
+        "subtitle": "833|Legu interagajn rakontojn kun disbranĉiĝantaj elektoj."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "834|Rapida legado",
+        "subtitle": "835|Trejnu pli rapidan legadon per tempigita ritmo."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "836|Miaj tekstoj",
+      "subtitle": "837|Viaj konservitaj legotekstoj.",
+      "addText": "838|Aldoni tekston",
+      "emptyTitle": "839|Ankoraŭ neniu teksto",
+      "emptyBody": "840|Aldonu vian unuan tekston por komenci la legan ekzercadon.",
+      "savedTitle": "841|Konservitaj tekstoj"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "842|Nova",
+      "inProgress": "843|Survoje",
+      "completed": "844|Finita"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "845|{{count}} vorto",
+      "words_other": "846|{{count}} vortoj",
+      "start": "847|Komenci",
+      "continue": "848|Daŭrigi",
+      "readAgain": "849|Legi denove",
+      "rename": "850|Renomi",
+      "renamePrompt": "851|Nova titolo:",
+      "delete": "852|Forigi",
+      "deleteConfirm": "853|Ĉu forigi \"{{title}}\"? Tio ne estas malfarebla."
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "854|Daŭrigi la legadon",
+      "percent": "855|{{percent}} % finita",
+      "button": "856|Daŭrigi"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "857|Ĉefa ideo",
+      "vocabulary": "858|Vortprovizo",
+      "detailedComprehension": "859|Detala kompreno",
+      "grammarAwareness": "860|Atento al la gramatiko",
+      "speedFluency": "861|Rapideco / flueco"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "862|Kompreno",
+      "trueFalse": "863|Vera / Malvera",
+      "fillGap": "864|Plenigi la breĉon",
+      "vocabulary": "865|Vortprovizo",
+      "findEvidence": "866|Trovi la pruvon",
+      "orderReconstruction": "867|Ordigo"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "868|Emfazi nekonatajn vortojn",
+      "translationOnTap": "869|Traduki per tuŝo",
+      "vocabularyHints": "870|Vortprovizaj indikoj",
+      "readingTimer": "871|Lega horloĝo"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "872|Aldoni tekston",
+      "subtitle": "873|Algluu tekston kaj agordu vian legan ekzercadon.",
+      "untitled": "874|Sentitola teksto",
+      "pastePlaceholder": "875|Algluu aŭ tajpu vian tekston ĉi tie…",
+      "titleLabel": "876|Titolo",
+      "titlePlaceholder": "877|Nedeviga — ni povas proponi unu",
+      "language": "878|Lingvo",
+      "difficulty": "879|Malfacileco",
+      "autoDetect": "880|Aŭtomata detekto",
+      "manual": "881|Elekti permane",
+      "focus": "882|Lega fokuso",
+      "questionTypes": "883|Tipoj de demando",
+      "assistance": "884|Legaj helpiloj",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
-        "min": "min",
-        "detected": "Detected: {{level}}"
+        "words_one": "885|{{count}} vorto",
+        "words_other": "886|{{count}} vortoj",
+        "chars_one": "887|{{count}} signo",
+        "chars_other": "888|{{count}} signoj",
+        "min": "889|min",
+        "detected": "890|Detektita: {{level}}"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "891|Bonvolu unue aldoni tekston.",
+        "tooShort": "892|Aldonu almenaŭ 20 vortojn."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "893|Konservi la tekston",
+      "saveAndStart": "894|Konservi kaj komenci",
+      "saving": "895|Konservante…",
+      "saveError": "896|Ne eblis konservi. Bonvolu provi denove.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
-        "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "pasteText": "897|Alglui",
+        "photo": "898|Foto",
+        "pdf": "899|PDF",
+        "generate": "900|Generi",
+        "explore": "901|Esplori"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "902|Informa",
+        "casual": "903|Neformala",
+        "academic": "904|Akademia",
+        "narrative": "905|Rakonta"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "906|Mallonga",
+        "medium": "907|Meza",
+        "long": "908|Longa"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "909|Alŝutu foton de paĝo — ni eltiros la tekston.",
+        "chooseImage": "910|Elekti bildon",
+        "recognizing": "911|Rekonante… {{percent}} %",
+        "imageError": "912|Ne eblis legi tekston el ĉi tiu bildo.",
+        "pdfHint": "913|Alŝutu PDF-on — ni eltiros la tekston.",
+        "choosePDF": "914|Elekti PDF-on",
+        "reading": "915|Legante la PDF-on…",
+        "pdfError": "916|Ne eblis legi ĉi tiun PDF-on.",
+        "topicPlaceholder": "917|Temo — ekz. koralrifoj, la presarto",
+        "explorePlaceholder": "918|Temo aŭ ŝlosilvorto — ekz. Marie Curie, Venecio",
+        "generateButton": "919|Generi tekston",
+        "exploreButton": "920|Alporti artikolon",
+        "working": "921|Laborante…",
+        "generateError": "922|Ne eblis generi la tekston. Provu denove.",
+        "exploreError": "923|Neniu artikolo trovita pri ĉi tiu temo.",
+        "exploredFrom": "924|Alportita el"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again.",
-      "translation": "Translation",
-      "textLabel": "Text"
+      "startQuestions": "925|Komenci la demandojn",
+      "finish": "926|Fini",
+      "next": "927|Sekva",
+      "questionOf": "928|Demando {{current}} el {{total}}",
+      "closeTranslation": "929|Fermi la tradukon",
+      "translating": "930|Tradukante…",
+      "translationError": "931|Ne eblis traduki. Provu denove.",
+      "translation": "932|Traduko",
+      "textLabel": "933|Teksto"
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts",
-      "complete": "Practice Complete"
+      "comprehension": "934|Kompreno",
+      "correct": "935|Ĝustaj",
+      "time": "936|Lega tempo",
+      "wpm": "937|VPM",
+      "mistakes": "938|Eraroj",
+      "mistakesTitle": "939|Reviziu viajn erarojn",
+      "readAgain": "940|Legi denove",
+      "back": "941|Reen al Miaj tekstoj",
+      "complete": "942|Ekzercado finita"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "943|Legado el la aroj",
+      "subtitle": "944|Transformu kartaron en legaĵon.",
+      "pickSet": "945|Elektu aron",
+      "changeSet": "946|Ŝanĝi la aron",
+      "tooFewWords": "947|Ĉi tiu aro bezonas almenaŭ {{count}} vortojn por krei legaĵon.",
+      "mode": "948|Genera reĝimo",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "949|Natura",
+        "strict": "950|Strikta",
+        "mixed": "951|Miksita"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "952|Longeco de la legaĵo",
+      "generate": "953|Generi la legaĵon",
+      "generating": "954|Kreante vian legaĵon…",
+      "generateError": "955|Ne eblis krei la legaĵon. Provu denove.",
+      "emptyTitle": "956|Ankoraŭ neniu legaĵo",
+      "emptyBody": "957|Elektu kartaron kaj ni transformos ĝin en legotekston.",
+      "savedTitle": "958|Konservitaj legaĵoj"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "959|Rapida legado",
+      "subtitle": "960|Trejnu pli rapidan legadon per tempigita ritmo.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "961|Cela lega rapideco",
+        "timer": "962|Stilo de la horloĝo",
+        "length": "963|Longeco de la legaĵo"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "964|Malstreĉa",
+        "balanced": "965|Ekvilibra",
+        "fast": "966|Rapida",
+        "challenge": "967|Defio"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "968|Sen horloĝo",
+        "soft": "969|Milda horloĝo",
+        "strict": "970|Strikta horloĝo"
       },
       "length": {
-        "two": "2 min",
-        "five": "5 min",
-        "ten": "10 min"
+        "two": "971|2 min",
+        "five": "972|5 min",
+        "ten": "973|10 min"
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
-      "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "summary": "974|Celo {{wpm}} VPM · ~{{minutes}} min da legado",
+      "start": "975|Komenci la seancon",
+      "preparing": "976|Preparante vian tekstopecon…",
+      "generateError": "977|Ne eblis krei la tekstopecon. Provu denove.",
+      "recentTitle": "978|Lastaj seancoj",
+      "chunkOf": "979|Parto {{current}} el {{total}}",
+      "previous": "980|Antaŭa parto",
+      "pause": "981|Paŭzi",
+      "resume": "982|Daŭrigi",
+      "nextChunk": "983|Sekva parto",
+      "finishReading": "984|Fini la legadon",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "985|Bonege",
+        "balanced": "986|Ĉe la celo",
+        "fast": "987|Preskaŭ tie",
+        "tooSlow": "988|Tro malrapida"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "989|Meza VPM",
+        "target": "990|Cela VPM",
+        "violations_one": "991|{{count}} tempa maltrafo",
+        "violations_other": "992|{{count}} tempaj maltrafoj"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "993|Provi denove",
+      "backToSetup": "994|Reen al la agordo"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "995|Rakonta reĝimo",
+      "subtitle": "996|Legu interagajn rakontojn kun disbranĉiĝantaj elektoj.",
+      "typeSection": "997|Tipo de rakonto",
       "type": {
-        "adventure": "Adventure",
-        "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "adventure": "998|Aventuro",
+        "fantasy": "999|Fantazio",
+        "mystery": "1000|Mistero",
+        "romance": "1001|Amrakonto",
+        "dailyLife": "1002|Ĉiutaga vivo"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "1003|Longeco de la rakonto",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "1004|Novelo",
+        "multiChapter": "1005|Plurĉapitra",
+        "infinite": "1006|Senfina rakonto"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "1007|Komenci la rakonton",
+      "generating": "1008|Skribante vian rakonton…",
+      "generatingNext": "1009|Skribante la sekvan ĉapitron…",
+      "generateError": "1010|Ne eblis skribi la rakonton. Provu denove.",
+      "emptyTitle": "1011|Ankoraŭ neniu rakonto",
+      "emptyBody": "1012|Komencu supre vian unuan interagan rakonton.",
+      "savedTitle": "1013|Viaj rakontoj",
+      "chapterN": "1014|Ĉapitro {{n}}",
+      "chapterOf": "1015|Ĉapitro {{current}} / {{total}}",
+      "chapterScore": "1016|Poentaro de la ĉapitro",
+      "whatNext": "1017|Kio okazas poste?",
+      "endStory": "1018|Fini la rakonton",
+      "completeTitle": "1019|Rakonto finita",
+      "completeBody_one": "1020|Vi finis {{count}} ĉapitron. Bona legado!",
+      "completeBody_other": "1021|Vi finis {{count}} ĉapitrojn. Bona legado!",
+      "backToStories": "1022|Reen al la rakontoj"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "1023|Ekzercaj reĝimoj",
+    "notFound": "1024|Eble ĉi tiu seanco estis forigita.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "1025|Hodiaŭa progreso",
+      "subtitle": "1026|da aŭskulta ekzercado"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1027|Baldaŭ",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "1028|Aŭskulti el teksto",
+        "subtitle": "1029|Algluu tekston, aŭskultu ĝin kaj kontrolu vian komprenon."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "1030|Importi aŭdion",
+        "subtitle": "1031|Alŝutu vian propran aŭdion kaj faru el ĝi aŭskultan ekzercon."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "1032|Importi videon",
+        "subtitle": "1033|Alŝutu videon, ricevu subtekstojn kaj ekzercu per demandoj."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "1034|Konservitaj ekzercoj",
+        "subtitle": "1035|Daŭrigu antaŭajn seancojn kaj reviziu viajn erarojn."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
-      "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "mainIdea": "1036|Ĉefa ideo",
+      "details": "1037|Detaloj",
+      "vocabulary": "1038|Vortprovizo",
+      "trueFalse": "1039|Vera / Malvera"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "1040|Aŭskulti el teksto",
+      "subtitle": "1041|Algluu tekston kaj faru el ĝi aŭskultan ekzercon.",
+      "level": "1042|Nivelo",
+      "voiceSpeed": "1043|Rapideco de la voĉo",
+      "voiceType": "1044|Tipo de voĉo",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "1045|Defaŭlta",
+        "female": "1046|Ina",
+        "male": "1047|Vira"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "1048|Montri la tekston dum aŭskultado",
+      "addQuestions": "1049|Aldoni komprenajn demandojn",
+      "questionCount": "1050|Nombro da demandoj",
+      "questionTypes": "1051|Tipoj de demando",
+      "optionalTitle": "1052|Nedeviga titolo",
+      "titlePlaceholder": "1053|Donu nomon al via teksto",
+      "textPlaceholder": "1054|Algluu vian tekston ĉi tie...",
+      "recommended": "1055|Rekomendite: 80–500 vortoj.",
+      "words": "1056|vortoj",
+      "defaultTitle": "1057|Aŭskulta ekzerco",
+      "start": "1058|Komenci aŭskulti",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "1059|Aldonu iom da teksto por komenci aŭskulti.",
+        "tooShort": "1060|Aldonu almenaŭ 40 signojn por komenci aŭskulti.",
+        "tooLong": "1061|Tiu teksto estas tro longa. Bonvolu teni ĝin sub 5000 signoj.",
+        "tooFewWords": "1062|Aldonu iom pli da teksto (ĉirkaŭ 40 vortoj aŭ pli) por ke ni povu krei bonajn demandojn."
       },
-      "voiceSettings": "Voice Settings",
-      "questions": "Questions",
-      "textInput": "Text Input"
+      "voiceSettings": "1063|Agordoj de la voĉo",
+      "questions": "1064|Demandoj",
+      "textInput": "1065|Teksta enigo"
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "1066|Reaŭdigi",
+      "transcript": "1067|Transskribo",
+      "questionsTitle": "1068|Demandoj",
+      "answerFirst": "1069|Respondu almenaŭ unu demandon antaŭ ol kontroli.",
+      "checkAnswers": "1070|Kontroli la respondojn",
+      "finish": "1071|Fini la ekzercon"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "1072|Ekzercado finita",
+      "comprehension": "1073|Kompreno",
+      "correct": "1074|Ĝustaj",
+      "time": "1075|Aŭskulta tempo",
+      "speed": "1076|Rapideco",
+      "mistakes": "1077|Eraroj",
+      "mistakesTitle": "1078|Reviziu viajn erarojn",
+      "watchOnlyTitle": "1079|Aŭskultado finita",
+      "watchOnlyBody": "1080|Vi aŭskultis dum {{time}}.",
+      "practiceAgain": "1081|Ekzerci denove",
+      "back": "1082|Reen al Aŭskultado"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "1083|Importi aŭdion",
+      "subtitle": "1084|Faru el via propra aŭdio aŭskultan ekzercon.",
+      "uploadTitle": "1085|Alŝuti aŭdian dosieron",
+      "uploadFormats": "1086|MP3, M4A, WAV aŭ AAC · sub 50 MB",
+      "chooseFile": "1087|Elekti dosieron",
+      "clearFile": "1088|Forigi la dosieron",
+      "infoNote": "1089|Via aŭdio estos transskribita fone. La transskribo restas kaŝita dum la ekzerco.",
+      "continue": "1090|Daŭrigi",
+      "processingTitle": "1091|Preparante vian aŭskultan ekzercon",
+      "step1": "1092|Alŝutante la aŭdion",
+      "step2": "1093|Transskribante la parolon",
+      "step3": "1094|Kreante la demandojn",
+      "processError": "1095|Ni ne povis prepari ĉi tiun aŭdion. Provu denove.",
+      "tryAgain": "1096|Provi denove",
+      "chooseAnother": "1097|Elekti alian dosieron",
+      "transcriptHidden": "1098|La transskribo estas kaŝita por ke tio restu vera aŭskulta ekzerco."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "1099|Importi videon",
+      "subtitle": "1100|Alŝutu videon, ricevu subtekstojn kaj ekzercu per demandoj.",
+      "uploadTitle": "1101|Alŝuti videan dosieron",
+      "uploadFormats": "1102|MP4, MOV aŭ M4V · sub 80 MB",
+      "step1": "1103|Preparante la videon",
+      "step2": "1104|Transskribante la parolon",
+      "step3": "1105|Konstruante la subtekstojn",
+      "subtitles": "1106|Subtekstoj",
+      "subtitlesOn": "1107|Subtekstoj ŝaltitaj",
+      "subtitlesOff": "1108|Subtekstoj malŝaltitaj",
+      "noSubtitles": "1109|Neniuj subtekstoj disponeblas por ĉi tiu video.",
+      "tapWord": "1110|Tuŝu vorton por traduki ĝin.",
+      "questionsLocked": "1111|La demandoj malŝlosiĝas kiam vi finas spekti la videon."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "1112|Traduki vorton",
+      "pickSet": "1113|Elektu aron",
+      "createSet": "1114|Krei aron",
+      "addToSet": "1115|Aldoni al la aro",
+      "noSets": "1116|Vi ankoraŭ ne havas arojn. Kreu unu sube.",
+      "setNamePlaceholder": "1117|ekz. Vortoj el la video",
+      "createAndAdd": "1118|Krei kaj aldoni la vorton",
+      "saved": "1119|Konservita en \"{{set}}\"."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "1120|Konservitaj ekzercoj",
+      "subtitle": "1121|Daŭrigu seancojn kaj reviziu viajn aŭskultajn erarojn.",
+      "emptyTitle": "1122|Neniu konservita seanco",
+      "emptyBody": "1123|Finu aŭ paŭzu aŭskultan seancon kaj ĝi aperos ĉi tie.",
+      "continueEyebrow": "1124|Daŭrigi la aŭskultadon",
+      "percentComplete": "1125|{{percent}} % finita",
+      "continue": "1126|Daŭrigi",
+      "review": "1127|Revizii",
+      "delete": "1128|Forigi la seancon",
+      "deleteConfirm": "1129|Ĉu forigi \"{{title}}\"? Tio ne estas malfarebla.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "1130|Malneto",
+        "inProgress": "1131|Survoje",
+        "completed": "1132|Finita"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "1133|Ekzercaj reĝimoj",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "1134|Hodiaŭa progreso",
+      "subtitle": "1135|da parola ekzercado"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1136|Baldaŭ",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "1137|AI-konversacio",
+        "subtitle": "1138|Parolu kun AI-instruisto en reala tempo."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "1139|Libera parolado",
+        "subtitle": "1140|Parolu pri generitaj temoj kaj ricevu komentojn."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "1141|Priskribi bildon",
+        "subtitle": "1142|Priskribu bildojn kaj lernu utilan vortprovizon."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "1143|Debata reĝimo",
+        "subtitle": "1144|Diskutu temojn kaj konstruu viajn argumentojn."
       },
       "shadowing": {
-        "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "title": "1145|Ombrado",
+        "subtitle": "1146|Ripetu frazojn kaj plibonigu vian prononcon."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "1147|Prononca trejnilo",
+        "subtitle": "1148|Fokusu je malfacilaj sonoj kaj vortoj."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "1149|Paroli",
+      "stop": "1150|Halti",
+      "listening": "1151|Aŭskultante…",
+      "placeholder": "1152|Tajpu vian respondon…",
+      "noVoice": "1153|Voĉa enigo ne estas subtenata en ĉi tiu retumilo — tajpu vian respondon anstataŭe."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
-      "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "title": "1154|AI-konversacio",
+      "subtitle": "1155|Parolu kun AI-instruisto en reala tempo.",
+      "topic": "1156|Temo",
+      "scenarios": "1157|Scenaroj",
+      "autoTopic": "1158|Surprizu min",
+      "autoTopicHint": "1159|Ni generos freŝan temon por vi.",
+      "length": "1160|Daŭro",
+      "min": "1161|min",
+      "start": "1162|Komenci la konversacion",
+      "starting": "1163|Komencante…",
+      "startError": "1164|Ne eblis komenci la konversacion. Provu denove.",
+      "end": "1165|Fini",
+      "dismiss": "1166|Forigi",
+      "hint": "1167|Helpindiko",
+      "getHint": "1168|Ĉu vi bezonas helpindikon?",
+      "hintLoading": "1169|Pensante…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "1170|Ekzercado finita",
+      "generating": "1171|Analizante vian paroladon…",
+      "overall": "1172|Ĝenerala poentaro",
+      "corrections": "1173|Korektoj",
+      "transcript": "1174|Transskribo",
+      "practiceAgain": "1175|Ekzerci denove",
+      "back": "1176|Reen al Parolado"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
-      "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "title": "1177|Libera parolado",
+      "subtitle": "1178|Parolu libere pri temo kaj ricevu komentojn.",
+      "preview": "1179|Antaŭrigardo",
+      "autoTopic": "1180|Temo generita de AI",
+      "autoTopicHint": "1181|Ni elektos freŝan temon por {{language}} · {{level}} kiam vi komencos.",
+      "auto": "1182|Aŭtomata",
+      "start": "1183|Komenci Liberan paroladon",
+      "generating": "1184|Generante la temon…",
+      "generatingHint": "1185|Ni elektas ion kio taŭgas por via nivelo.",
+      "fallbackTopic": "1186|Ne eblis generi temon. Ni uzas rezervan temon.",
+      "transcript": "1187|Transskribo",
+      "transcriptHint": "1188|Via transskribo aperos ĉi tie dum vi parolas.",
+      "startSpeaking": "1189|Komenci paroli"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "1190|Priskribi bildon",
+      "subtitle": "1191|Priskribu tion kion vi vidas kaj ricevu komentojn.",
+      "start": "1192|Komenci Priskribi bildon",
+      "prompt": "1193|Priskribu tion kion vi vidas sur ĉi tiu bildo.",
+      "tryToMention": "1194|Provu mencii:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "1195|homojn",
+        "objects": "1196|objektojn",
+        "actions": "1197|agojn",
+        "colors": "1198|kolorojn",
+        "emotions": "1199|emociojn"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "1200|Ŝargante foton…",
+      "retry": "1201|Provi denove",
+      "newPhoto": "1202|Nova foto",
+      "imageAlt": "1203|Foto por priskribi",
+      "photoBy": "1204|Foto de",
+      "onUnsplash": "1205|ĉe Unsplash",
+      "startDescribing": "1206|Komenci priskribi"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "1207|Debata reĝimo",
+      "subtitle": "1208|Defendu vian flankon kontraŭ AI-kontraŭulo.",
+      "start": "1209|Komenci la debaton",
+      "pickSide": "1210|Via flanko",
+      "preparing": "1211|Preparante la debatan temon…",
+      "roundOf": "1212|Rondo {{current}} el {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "1213|Konsenti",
+          "subtitle": "1214|Defendu la aserton"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "1215|Malkonsenti",
+          "subtitle": "1216|Argumentu kontraŭ ĝi"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "1217|Surprizu min",
+          "subtitle": "1218|Ni elektas flankon por vi"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "1219|Aŭskulti",
+      "playing": "1220|Ludante…",
+      "record": "1221|Registri",
+      "stop": "1222|Halti",
+      "playMine": "1223|Aŭdigi la mian",
+      "noRecording": "1224|Registrado ne estas subtenata en ĉi tiu retumilo — vi tamen povas aŭskulti kaj ripeti."
     },
     "shadowing": {
-      "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "title": "1225|Ombrado",
+      "subtitle": "1226|Aŭskultu, ripetu kaj komparu vin mem.",
+      "start": "1227|Komenci la Ombradon",
+      "category": "1228|Kategorio",
+      "howItWorks": "1229|Aŭskultu la frazon, ripetu ĝin laŭtvoĉe dum vi registras, poste aŭdigu vian version kaj komparu la ritmon.",
+      "loading": "1230|Generante frazojn…",
+      "phrase": "1231|Frazo",
+      "previous": "1232|Antaŭa",
+      "nextPhrase": "1233|Sekva frazo",
+      "finish": "1234|Fini",
+      "changeSettings": "1235|Ŝanĝi la agordojn",
+      "done": "1236|{{count}} faritaj",
+      "allDone": "1237|Ĉiuj frazoj ekzercitaj!",
+      "newSet": "1238|Nova aro"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "1239|Prononca trejnilo",
+      "subtitle": "1240|Fokusu je malfacilaj sonoj kaj vortoj.",
+      "start": "1241|Komenci la trejnadon",
+      "focus": "1242|Fokuso",
+      "difficulty": "1243|Malfacileco",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "1244|Facila",
+        "balanced": "1245|Ekvilibra",
+        "hard": "1246|Malfacila"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "1247|Generante ekzercajn erojn…",
+      "sound": "1248|Sono",
+      "scoringUnavailable": "1249|Aŭtomata pritakso de la prononco ankoraŭ ne estas agordita ĉe la servilo, do neniu poentaro montriĝas. Aŭskultado, registrado kaj reaŭdigo funkcias."
     }
   },
   "profile": {
-    "interfaceLanguage": "Interface language",
+    "interfaceLanguage": "1250|Lingvo de la interfaco",
     "password": {
-      "title": "Create a password",
-      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
-      "save": "Save password",
-      "saving": "Saving...",
-      "savedInfo": "Password created. You can sign in with your email now too."
+      "title": "1251|Kreu pasvorton",
+      "body": "1252|Via konto estis kreita per Google, do ĝi ne havas pasvorton — la kampoj de retadreso kaj pasvorto ne povas ensalutigi vin. Aldonu unu kaj ambaŭ manieroj funkcios.",
+      "save": "1253|Konservi la pasvorton",
+      "saving": "1254|Konservante...",
+      "savedInfo": "1255|Pasvorto kreita. Nun vi povas ensaluti ankaŭ per via retadreso."
     }
   },
   "units": {
-    "min": "min",
-    "words": "words"
+    "min": "1256|min",
+    "words": "1257|vortoj"
   },
   "link": {
-    "title": "Sign in with a link",
-    "subtitle": "We'll email you a one-time link. No password to remember.",
-    "send": "Send the link",
-    "sending": "Sending...",
-    "sentInfo": "Link sent. Check your email.",
-    "sentTitle": "Check your email",
-    "sentBody": "We sent a sign-in link to",
-    "useAnotherEmail": "Use another email",
-    "backToPassword": "Sign in with a password instead"
+    "title": "1258|Ensaluti per ligilo",
+    "subtitle": "1259|Ni sendos al vi unufojan ligilon retpoŝte. Neniu pasvorto por memori.",
+    "send": "1260|Sendi la ligilon",
+    "sending": "1261|Sendante...",
+    "sentInfo": "1262|Ligilo sendita. Kontrolu vian retpoŝton.",
+    "sentTitle": "1263|Kontrolu vian retpoŝton",
+    "sentBody": "1264|Ni sendis ensalutan ligilon al",
+    "useAnotherEmail": "1265|Uzi alian retadreson",
+    "backToPassword": "1266|Ensaluti per pasvorto anstataŭe"
   },
   "action": {
-    "working": "One moment...",
-    "continue": "Continue",
-    "confirmEmailTitle": "Confirm your email",
-    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
-    "resetTitle": "New password",
-    "resetSubtitle": "Choose a new password for",
-    "newPassword": "New password",
-    "confirmPassword": "Repeat password",
-    "savePassword": "Save password",
-    "resetDoneTitle": "Password updated",
-    "resetDoneBody": "You can sign in with your new password now.",
-    "failedTitle": "That link didn't work",
-    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
-    "backToSignIn": "Back to sign in"
+    "working": "1267|Momenton...",
+    "continue": "1268|Daŭrigi",
+    "confirmEmailTitle": "1269|Konfirmu vian retadreson",
+    "confirmEmailBody": "1270|Ĉi tiu ligilo estis malfermita en alia retumilo. Enigu la adreson al kiu ĝi estis sendita kaj ni finos vian ensaluton.",
+    "resetTitle": "1271|Nova pasvorto",
+    "resetSubtitle": "1272|Elektu novan pasvorton por",
+    "newPassword": "1273|Nova pasvorto",
+    "confirmPassword": "1274|Ripetu la pasvorton",
+    "savePassword": "1275|Konservi la pasvorton",
+    "resetDoneTitle": "1276|Pasvorto ĝisdatigita",
+    "resetDoneBody": "1277|Vi nun povas ensaluti per via nova pasvorto.",
+    "failedTitle": "1278|Tiu ligilo ne funkciis",
+    "failedBody": "1279|Eble ĝi jam estis uzita, aŭ ĝi eksvalidiĝis. Petu novan ĉe la ensaluta ekrano.",
+    "backToSignIn": "1280|Reen al la ensaluto"
   },
   "common": {
-    "cancel": "Cancel",
-    "delete": "Delete",
+    "cancel": "1281|Nuligi",
+    "delete": "1282|Forigi",
     "view": {
-      "label": "View",
-      "rows": "List",
-      "grid": "Grid"
+      "label": "1283|Vido",
+      "rows": "1284|Listo",
+      "grid": "1285|Krado"
     }
   },
   "practice": {
     "language": {
-      "label": "Language",
-      "search": "Search a language",
-      "noMatch": "No language matches that.",
-      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+      "label": "1286|Lingvo",
+      "search": "1287|Serĉi lingvon",
+      "noMatch": "1288|Neniu lingvo kongruas.",
+      "noVoice": "1289|Via retumilo ne havas voĉon por {{language}}, do la instruisto ne parolos ĉi tiun lingvon. Aldonu la lingvopakon en viaj sistemaj agordoj, aŭ elektu alian lingvon."
     }
   }
 }
