@@ -7,7 +7,7 @@ import { routeTree } from './routeTree.gen';
 import { queryClient } from '@/lib/queryClient';
 import { Splash } from '@/components/primitives/Splash';
 import { registerServiceWorker } from '@/lib/registerServiceWorker';
-import '@/lib/i18n';
+import { i18nReady } from '@/lib/i18n';
 import '@/lib/firebase';
 import '@/styles/index.css';
 
@@ -35,12 +35,16 @@ if (!rootElement) {
   throw new Error('Root element #root not found in index.html');
 }
 
-createRoot(rootElement).render(
-  <StrictMode>
-    <QueryClientProvider client={queryClient}>
-      <RouterProvider router={router} />
-    </QueryClientProvider>
-  </StrictMode>,
-);
+/* Wait for the stored interface language before the first paint — otherwise a
+   reader who picked, say, Greek sees a flash of English on every load. */
+void i18nReady.then(() => {
+  createRoot(rootElement).render(
+    <StrictMode>
+      <QueryClientProvider client={queryClient}>
+        <RouterProvider router={router} />
+      </QueryClientProvider>
+    </StrictMode>,
+  );
 
-registerServiceWorker();
+  registerServiceWorker();
+});

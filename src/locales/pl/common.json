@@ -590,9 +590,9 @@
       "saveMistakeConfirmBody": "Zostanie zapisany jako notatka o błędzie z poprawką „{{correction}}”.",
       "autoSaveConfirmTitle": "Zapisać te błędy w notatkach?",
       "autoSaveConfirmBody_one": "To sprawdzenie znalazło {{count}} błąd. Zapis zamieni go w notatkę, która wróci na powtórkę.",
+      "autoSaveConfirmBody_other": "To sprawdzenie znalazło {{count}} błędów. Zapis zamieni je w notatki, które wrócą na powtórkę.",
       "autoSaveConfirmBody_few": "To sprawdzenie znalazło {{count}} błędy. Zapis zamieni je w notatki, które wrócą na powtórkę.",
-      "autoSaveConfirmBody_many": "To sprawdzenie znalazło {{count}} błędów. Zapis zamieni je w notatki, które wrócą na powtórkę.",
-      "autoSaveConfirmBody_other": "To sprawdzenie znalazło {{count}} błędów. Zapis zamieni je w notatki, które wrócą na powtórkę."
+      "autoSaveConfirmBody_many": "To sprawdzenie znalazło {{count}} błędów. Zapis zamieni je w notatki, które wrócą na powtórkę."
     },
     "grammar": {
       "subtitle": "Porządkuj gramatykę tematami dzięki jasnym, uporządkowanym notatkom.",
@@ -942,10 +942,10 @@
         "noMatchTitle": "Brak wyników",
         "noMatchBody": "Spróbuj innego słowa.",
         "notesSection_one": "Notatki ({{count}})",
-        "notesSection_few": "Notatki ({{count}})",
-        "notesSection_many": "Notatki ({{count}})",
         "notesSection_other": "Notatki ({{count}})",
-        "noNoteMatches": "Żadna notatka nie pasuje do wyszukiwania."
+        "noNoteMatches": "Żadna notatka nie pasuje do wyszukiwania.",
+        "notesSection_few": "Notatki ({{count}})",
+        "notesSection_many": "Notatki ({{count}})"
       },
       "filter": {
         "label": "Filtruj notatki",
@@ -1110,9 +1110,9 @@
         "creating": "Tworzenie…",
         "error": "Nie udało się utworzyć zestawu. Spróbuj ponownie.",
         "cards_one": "{{count}} fiszka",
+        "cards_other": "{{count}} fiszek",
         "cards_few": "{{count}} fiszki",
-        "cards_many": "{{count}} fiszek",
-        "cards_other": "{{count}} fiszek"
+        "cards_many": "{{count}} fiszek"
       },
       "topicsEmptyTip": "Temat to folder na notatki — jeden na język albo jeden na to, w czym ciągle się mylisz.",
       "notesEmptyTip": "Każda zapisana notatka trafia do kolejki powtórek, więc wystarczy ją zapisać, aby zacząć się jej uczyć.",

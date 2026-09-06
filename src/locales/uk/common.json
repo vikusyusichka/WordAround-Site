@@ -106,9 +106,6 @@
     "emptyBody": "Створіть першу теку, щоб упорядкувати набори.",
     "setCount": "{{count}} наборів",
     "setCount_one": "{{count}} набір",
-    "setCount_few": "{{count}} набори",
-    "setCount_many": "{{count}} наборів",
-    "setCount_other": "{{count}} наборів",
     "newTitle": "Нова тека",
     "newSubtitle": "Обʼєднайте повʼязані набори.",
     "editTitle": "Редагувати теку",
@@ -136,7 +133,10 @@
     "optional": "(необовʼязково)",
     "preview": "Попередній перегляд",
     "previewPlaceholder": "Нова папка",
-    "deleteConfirmTitle": "Видалити цю теку?"
+    "deleteConfirmTitle": "Видалити цю теку?",
+    "setCount_few": "{{count}} набори",
+    "setCount_many": "{{count}} наборів",
+    "setCount_other": "{{count}} наборів"
   },
   "sets": {
     "create": "Створити набір",
@@ -146,9 +146,6 @@
     "emptyBody": "Створіть перший набір карток кнопкою «Створити».",
     "cardCount": "{{count}} карток",
     "cardCount_one": "{{count}} картка",
-    "cardCount_few": "{{count}} картки",
-    "cardCount_many": "{{count}} карток",
-    "cardCount_other": "{{count}} карток",
     "keepPracticing": "Продовжуйте практику",
     "delete": "Видалити набір",
     "deleteConfirm": "Видалити «{{title}}»? Цю дію не можна скасувати.",
@@ -162,7 +159,10 @@
     "save": "Зберегти зміни",
     "saving": "Збереження…",
     "cancel": "Скасувати",
-    "saveError": "Не вдалося зберегти. Спробуйте ще раз."
+    "saveError": "Не вдалося зберегти. Спробуйте ще раз.",
+    "cardCount_few": "{{count}} картки",
+    "cardCount_many": "{{count}} карток",
+    "cardCount_other": "{{count}} карток"
   },
   "createSet": {
     "title": "Новий набір",
@@ -383,10 +383,10 @@
       },
       "wordsCount": "{{count}} слів",
       "wordsCount_one": "{{count}} слово",
+      "close": "Закрити",
       "wordsCount_few": "{{count}} слова",
       "wordsCount_many": "{{count}} слів",
-      "wordsCount_other": "{{count}} слів",
-      "close": "Закрити"
+      "wordsCount_other": "{{count}} слів"
     },
     "writeWords": {
       "title": "Письмо з наборів",
@@ -422,8 +422,6 @@
         "translation": "Напишіть оригінальне слово"
       },
       "skipsLeft_one": "Залишився {{count}} пропуск",
-      "skipsLeft_few": "Залишилося {{count}} пропуски",
-      "skipsLeft_many": "Залишилося {{count}} пропусків",
       "skipsLeft_other": "Залишилося {{count}} пропусків",
       "seconds": "{{count}} с",
       "result": {
@@ -451,7 +449,9 @@
         "yourAnswer": "Ваша відповідь",
         "correctAnswer": "Правильна відповідь",
         "tryAgain": "Спробувати ще раз"
-      }
+      },
+      "skipsLeft_few": "Залишилося {{count}} пропуски",
+      "skipsLeft_many": "Залишилося {{count}} пропусків"
     },
     "essays": {
       "title": "Есе",
@@ -540,8 +540,6 @@
       "grammar": {
         "sectionTitle": "Граматичні зауваження",
         "count_one": "{{count}} зауваження",
-        "count_few": "{{count}} зауваження",
-        "count_many": "{{count}} зауважень",
         "count_other": "{{count}} зауважень",
         "empty": "Граматичних помилок не знайдено — чудова робота!",
         "original": "Було:",
@@ -558,7 +556,9 @@
           "saved": "Збережено",
           "duplicate": "Уже збережено",
           "failed": "Повторити збереження"
-        }
+        },
+        "count_few": "{{count}} зауваження",
+        "count_many": "{{count}} зауважень"
       },
       "helper": {
         "translate": "Переклад",
@@ -590,9 +590,9 @@
       "saveMistakeConfirmBody": "Її буде збережено як нотатку-помилку з виправленням «{{correction}}».",
       "autoSaveConfirmTitle": "Зберегти ці помилки в нотатки?",
       "autoSaveConfirmBody_one": "Ця перевірка знайшла {{count}} помилку. Збереження зробить із неї нотатку, яка повернеться на повторення.",
+      "autoSaveConfirmBody_other": "Ця перевірка знайшла {{count}} помилок. Збереження зробить із них нотатки, які повернуться на повторення.",
       "autoSaveConfirmBody_few": "Ця перевірка знайшла {{count}} помилки. Збереження зробить із них нотатки, які повернуться на повторення.",
-      "autoSaveConfirmBody_many": "Ця перевірка знайшла {{count}} помилок. Збереження зробить із них нотатки, які повернуться на повторення.",
-      "autoSaveConfirmBody_other": "Ця перевірка знайшла {{count}} помилок. Збереження зробить із них нотатки, які повернуться на повторення."
+      "autoSaveConfirmBody_many": "Ця перевірка знайшла {{count}} помилок. Збереження зробить із них нотатки, які повернуться на повторення."
     },
     "grammar": {
       "subtitle": "Упорядковуйте граматику за темами з чіткими структурованими нотатками.",
@@ -600,8 +600,6 @@
       "topicsEmptyTitle": "Тем поки немає",
       "topicsEmptyBody": "Створіть першу тему, щоб почати збирати нотатки з граматики.",
       "notesCount_one": "{{count}} нотатка",
-      "notesCount_few": "{{count}} нотатки",
-      "notesCount_many": "{{count}} нотаток",
       "notesCount_other": "{{count}} нотаток",
       "deleteTopicConfirm": "Видалити «{{title}}» разом з усіма нотатками? Цю дію не можна скасувати.",
       "notesEmptyTitle": "Нотаток поки немає",
@@ -710,8 +708,6 @@
         "emptyBody": "Створіть тест із цієї нотатки, щоб перевірити себе.",
         "loadError": "Не вдалося завантажити тести.",
         "questionsCount_one": "{{count}} питання",
-        "questionsCount_few": "{{count}} питання",
-        "questionsCount_many": "{{count}} питань",
         "questionsCount_other": "{{count}} питань",
         "type": {
           "multipleChoice": "Вибір варіанта",
@@ -779,8 +775,6 @@
         "badge": "Квіз",
         "manual": {
           "questions_one": "{{count}} питання",
-          "questions_few": "{{count}} питання",
-          "questions_many": "{{count}} питань",
           "questions_other": "{{count}} питань",
           "add": "Додати питання",
           "questionPlaceholder": "Текст питання",
@@ -794,8 +788,12 @@
             "answerRequired": "Вкажіть правильну відповідь.",
             "answerNotAnOption": "Правильна відповідь має збігатися з одним із варіантів.",
             "blankRequired": "Додайте пропуск (напр. _____) у питання."
-          }
-        }
+          },
+          "questions_few": "{{count}} питання",
+          "questions_many": "{{count}} питань"
+        },
+        "questionsCount_few": "{{count}} питання",
+        "questionsCount_many": "{{count}} питань"
       },
       "quickMistake": {
         "button": "Швидка помилка",
@@ -835,12 +833,8 @@
         },
         "minutes": "{{minutes}} хв",
         "notesIncluded_one": "{{count}} нотатка",
-        "notesIncluded_few": "{{count}} нотатки",
-        "notesIncluded_many": "{{count}} нотаток",
         "notesIncluded_other": "{{count}} нотаток",
         "blocksIncluded_one": "{{count}} блок",
-        "blocksIncluded_few": "{{count}} блоки",
-        "blocksIncluded_many": "{{count}} блоків",
         "blocksIncluded_other": "{{count}} блоків",
         "empty": "Немає шаблонів за вашими фільтрами.",
         "use": "Використати шаблон",
@@ -849,15 +843,17 @@
         "applyTitle": "Застосувати «{{title}}»?",
         "applyBody": "У цій нотатці вже є вміст. Оберіть, як застосувати шаблон.",
         "applyReplace": "Замінити вміст",
-        "applyAppend": "Додати блоки"
+        "applyAppend": "Додати блоки",
+        "notesIncluded_few": "{{count}} нотатки",
+        "notesIncluded_many": "{{count}} нотаток",
+        "blocksIncluded_few": "{{count}} блоки",
+        "blocksIncluded_many": "{{count}} блоків"
       },
       "review": {
         "title": "Повторення",
         "subtitle": "Закріплюйте вивчене за допомогою інтервального повторення.",
         "cardTitle": "Повторити сьогодні",
         "cardSubtitle_one": "{{count}} картка готова · ~{{minutes}} хв",
-        "cardSubtitle_few": "{{count}} картки готові · ~{{minutes}} хв",
-        "cardSubtitle_many": "{{count}} карток готово · ~{{minutes}} хв",
         "cardSubtitle_other": "{{count}} карток готово · ~{{minutes}} хв",
         "caughtUpTitle": "Усе опрацьовано",
         "caughtUp": "Наразі все опрацьовано. Відкривайте або редагуйте нотатки, щоб зʼявились пропозиції для повторення.",
@@ -876,17 +872,17 @@
         "openNote": "Відкрити повну нотатку",
         "pool": {
           "manual_one": "{{count}} картка на повторення",
-          "manual_few": "{{count}} картки на повторення",
-          "manual_many": "{{count}} карток на повторення",
           "manual_other": "{{count}} карток на повторення",
           "recentlyOpened_one": "{{count}} нещодавно відкрита нотатка",
-          "recentlyOpened_few": "{{count}} нещодавно відкриті нотатки",
-          "recentlyOpened_many": "{{count}} нещодавно відкритих нотаток",
           "recentlyOpened_other": "{{count}} нещодавно відкритих нотаток",
           "recentlyEdited_one": "{{count}} нещодавно змінена нотатка",
+          "recentlyEdited_other": "{{count}} нещодавно змінених нотаток",
+          "manual_few": "{{count}} картки на повторення",
+          "manual_many": "{{count}} карток на повторення",
+          "recentlyOpened_few": "{{count}} нещодавно відкриті нотатки",
+          "recentlyOpened_many": "{{count}} нещодавно відкритих нотаток",
           "recentlyEdited_few": "{{count}} нещодавно змінені нотатки",
-          "recentlyEdited_many": "{{count}} нещодавно змінених нотаток",
-          "recentlyEdited_other": "{{count}} нещодавно змінених нотаток"
+          "recentlyEdited_many": "{{count}} нещодавно змінених нотаток"
         },
         "sourceType": {
           "note": "Нотатка",
@@ -924,9 +920,11 @@
         },
         "loadError": "Не вдалося завантажити чергу повторення.",
         "mistakeCount_one": "{{count}} помилка",
+        "mistakeCount_other": "{{count}} помилок",
+        "cardSubtitle_few": "{{count}} картки готові · ~{{minutes}} хв",
+        "cardSubtitle_many": "{{count}} карток готово · ~{{minutes}} хв",
         "mistakeCount_few": "{{count}} помилки",
-        "mistakeCount_many": "{{count}} помилок",
-        "mistakeCount_other": "{{count}} помилок"
+        "mistakeCount_many": "{{count}} помилок"
       },
       "mistakesBadge": "Помилки",
       "topicsTitle": "Теми",
@@ -944,10 +942,10 @@
         "noMatchTitle": "Нічого не знайдено",
         "noMatchBody": "Спробуйте інше слово.",
         "notesSection_one": "Нотатки ({{count}})",
-        "notesSection_few": "Нотатки ({{count}})",
-        "notesSection_many": "Нотатки ({{count}})",
         "notesSection_other": "Нотатки ({{count}})",
-        "noNoteMatches": "Жодна нотатка не збігається з пошуком."
+        "noNoteMatches": "Жодна нотатка не збігається з пошуком.",
+        "notesSection_few": "Нотатки ({{count}})",
+        "notesSection_many": "Нотатки ({{count}})"
       },
       "filter": {
         "label": "Фільтр нотаток",
@@ -1112,12 +1110,14 @@
         "creating": "Створення…",
         "error": "Не вдалося створити набір. Спробуйте ще раз.",
         "cards_one": "{{count}} картка",
+        "cards_other": "{{count}} карток",
         "cards_few": "{{count}} картки",
-        "cards_many": "{{count}} карток",
-        "cards_other": "{{count}} карток"
+        "cards_many": "{{count}} карток"
       },
       "topicsEmptyTip": "Тема — це тека для нотаток: одна на мову або одна на те, у чому постійно плутаєтесь.",
-      "notesEmptyTip": "Кожна збережена нотатка потрапляє в чергу повторення, тож досить її записати — і ви вже її вчите."
+      "notesEmptyTip": "Кожна збережена нотатка потрапляє в чергу повторення, тож досить її записати — і ви вже її вчите.",
+      "notesCount_few": "{{count}} нотатки",
+      "notesCount_many": "{{count}} нотаток"
     }
   },
   "reading": {
@@ -1163,8 +1163,6 @@
     },
     "card": {
       "words_one": "{{count}} слово",
-      "words_few": "{{count}} слова",
-      "words_many": "{{count}} слів",
       "words_other": "{{count}} слів",
       "start": "Почати",
       "continue": "Продовжити",
@@ -1172,7 +1170,9 @@
       "rename": "Перейменувати",
       "renamePrompt": "Нова назва:",
       "delete": "Видалити",
-      "deleteConfirm": "Видалити «{{title}}»? Цю дію не можна скасувати."
+      "deleteConfirm": "Видалити «{{title}}»? Цю дію не можна скасувати.",
+      "words_few": "{{count}} слова",
+      "words_many": "{{count}} слів"
     },
     "continue": {
       "eyebrow": "Продовжити читання",
@@ -1216,15 +1216,15 @@
       "assistance": "Допомога під час читання",
       "stats": {
         "words_one": "{{count}} слово",
-        "words_few": "{{count}} слова",
-        "words_many": "{{count}} слів",
         "words_other": "{{count}} слів",
         "chars_one": "{{count}} символ",
-        "chars_few": "{{count}} символи",
-        "chars_many": "{{count}} символів",
         "chars_other": "{{count}} символів",
         "min": "хв",
-        "detected": "Визначено: {{level}}"
+        "detected": "Визначено: {{level}}",
+        "words_few": "{{count}} слова",
+        "words_many": "{{count}} слів",
+        "chars_few": "{{count}} символи",
+        "chars_many": "{{count}} символів"
       },
       "validation": {
         "empty": "Спершу додайте текст.",
@@ -1358,9 +1358,9 @@
         "average": "Середня швидкість",
         "target": "Цільова швидкість",
         "violations_one": "{{count}} промах таймера",
+        "violations_other": "{{count}} промахів таймера",
         "violations_few": "{{count}} промахи таймера",
-        "violations_many": "{{count}} промахів таймера",
-        "violations_other": "{{count}} промахів таймера"
+        "violations_many": "{{count}} промахів таймера"
       },
       "tryAgain": "Спробувати ще раз",
       "backToSetup": "Назад до налаштувань"
@@ -1396,10 +1396,10 @@
       "endStory": "Завершити історію",
       "completeTitle": "Історію завершено",
       "completeBody_one": "Ви завершили {{count}} розділ. Чудове читання!",
-      "completeBody_few": "Ви завершили {{count}} розділи. Чудове читання!",
-      "completeBody_many": "Ви завершили {{count}} розділів. Чудове читання!",
       "completeBody_other": "Ви завершили {{count}} розділів. Чудове читання!",
-      "backToStories": "Назад до історій"
+      "backToStories": "Назад до історій",
+      "completeBody_few": "Ви завершили {{count}} розділи. Чудове читання!",
+      "completeBody_many": "Ви завершили {{count}} розділів. Чудове читання!"
     }
   },
   "listening": {
