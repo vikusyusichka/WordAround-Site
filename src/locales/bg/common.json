@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "WordAround",
-    "tagline": "Learn languages, actively."
+    "name": "1|WordAround",
+    "tagline": "2|Учете езици активно."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "3|Учете думи забавно\\nи лесно",
+    "start": "4|Да започваме"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back",
-    "signUpTitle": "Create your account",
-    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
-    "name": "Name",
-    "namePlaceholder": "What should we call you?",
-    "orWithEmail": "or with email",
-    "signUpWithGoogle": "Sign up with Google",
-    "passwordHint": "At least {{min}} characters",
-    "magicLinkCta": "Sign in with an email link",
-    "creatingAccount": "Creating account..."
+    "welcomeBack": "5|Добре дошли отново",
+    "subtitle": "6|Влезте, за да продължите да учите",
+    "email": "7|Имейл",
+    "emailPlaceholder": "8|Въведете своя имейл",
+    "password": "9|Парола",
+    "passwordPlaceholder": "10|Въведете своята парола",
+    "forgotPassword": "11|Забравена парола?",
+    "signIn": "12|Вход",
+    "signingIn": "13|Влизане...",
+    "signUp": "14|Регистрация",
+    "signOut": "15|Изход",
+    "continueWithGoogle": "16|Продължи с Google",
+    "createAccount": "17|Създай акаунт",
+    "accountCreatedInfo": "18|Акаунтът е създаден. Изпратихме имейл за потвърждение.",
+    "resetEmailSent": "19|Изпратен е имейл за смяна на паролата",
+    "showPassword": "20|Покажи паролата",
+    "hidePassword": "21|Скрий паролата",
+    "back": "22|Назад",
+    "signUpTitle": "23|Създайте своя акаунт",
+    "signUpSubtitle": "24|Няколко минути на ден и речникът ви расте",
+    "name": "25|Име",
+    "namePlaceholder": "26|Как да ви наричаме?",
+    "orWithEmail": "27|или с имейл",
+    "signUpWithGoogle": "28|Регистрирай се с Google",
+    "passwordHint": "29|Поне {{min}} знака",
+    "magicLinkCta": "30|Влизане с връзка от имейл",
+    "creatingAccount": "31|Създаваме акаунта..."
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "We'll open your learning right away — no need to come back here",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "32|Потвърдете имейла си",
+    "subtitle": "33|Още една стъпка, преди да започнете да учите",
+    "sentTo": "34|Изпратихме връзка за потвърждение на",
+    "fallbackEmail": "35|вашия имейл",
+    "step1": "36|Отворете имейла във входящата си поща",
+    "step2": "37|Докоснете връзката за потвърждение",
+    "step3": "38|Ще отворим ученето ви веднага — няма нужда да се връщате тук",
+    "checkButton": "39|Потвърдих имейла си",
+    "checking": "40|Проверяваме...",
+    "resend": "41|Изпрати имейла отново",
+    "useAnotherAccount": "42|Използвай друг акаунт",
+    "badgeInbox": "43|Проверете пощата",
+    "badgeConfirm": "44|Потвърдете",
+    "badgeDone": "45|Готово",
+    "resentInfo": "46|Имейлът за потвърждение е изпратен отново",
+    "notVerifiedYet": "47|Имейлът още не е потвърден"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 8 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "emailInUse": "This account already exists",
-    "weakPassword": "This password is too weak",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again",
-    "nameRequired": "Name is required",
-    "passwordsDoNotMatch": "Passwords don't match",
-    "actionExpired": "This link has expired. Request a new one.",
-    "actionInvalid": "This link is no longer valid.",
-    "userDisabled": "This account has been disabled.",
-    "requiresRecentLogin": "For security, sign in again and then repeat this.",
-    "passwordAlreadySet": "This account already has a password.",
-    "linkNoEmail": "Enter the email the link was sent to"
+    "emailRequired": "48|Имейлът е задължителен",
+    "emailInvalid": "49|Въведете валиден имейл",
+    "emailFirst": "50|Първо въведете своя имейл",
+    "passwordRequired": "51|Паролата е задължителна",
+    "passwordTooShort": "52|Паролата трябва да е поне 8 знака",
+    "invalidEmail": "53|Невалиден формат на имейл",
+    "wrongPassword": "54|Грешен имейл или парола. Ако сте се регистрирали с Google, използвайте бутона Google.",
+    "userNotFound": "55|Грешен имейл или парола. Ако сте се регистрирали с Google, използвайте бутона Google.",
+    "invalidCredential": "56|Грешен имейл или парола. Ако сте се регистрирали с Google, използвайте бутона Google.",
+    "emailInUse": "57|Този акаунт вече съществува",
+    "weakPassword": "58|Тази парола е твърде слаба",
+    "network": "59|Мрежова грешка. Проверете интернет връзката си",
+    "tooManyRequests": "60|Твърде много опити. Опитайте по-късно",
+    "differentCredential": "61|Този имейл вече се използва с друг начин на вход",
+    "noActiveAccount": "62|Не е намерен активен акаунт",
+    "default": "63|Влизането не бе успешно. Опитайте отново",
+    "nameRequired": "64|Името е задължително",
+    "passwordsDoNotMatch": "65|Паролите не съвпадат",
+    "actionExpired": "66|Тази връзка е изтекла. Заявете нова.",
+    "actionInvalid": "67|Тази връзка вече не е валидна.",
+    "userDisabled": "68|Този акаунт е деактивиран.",
+    "requiresRecentLogin": "69|За сигурност влезте отново и повторете това.",
+    "passwordAlreadySet": "70|Този акаунт вече има парола.",
+    "linkNoEmail": "71|Въведете имейла, на който е изпратена връзката"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
-    "sets": "Sets",
-    "notes": "Notes",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "home": "72|Начало",
+    "speaking": "73|Говорене",
+    "listening": "74|Слушане",
+    "reading": "75|Четене",
+    "writing": "76|Писане",
+    "folders": "77|Папки",
+    "sets": "78|Комплекти",
+    "notes": "79|Бележки",
+    "profile": "80|Профил",
+    "create": "81|Ново",
+    "menu": "82|Меню",
+    "closeMenu": "83|Затвори менюто",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "84|Упражнения",
+      "library": "85|Библиотека"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
-    "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
-    "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "create": "86|Нова папка",
+    "loading": "87|Зареждаме папките…",
+    "loadError": "88|Не успяхме да заредим папките ви.",
+    "emptyTitle": "89|Още няма папки",
+    "emptyBody": "90|Създайте първата си папка, за да подредите комплектите.",
+    "setCount": "91|{{count}} комплекта",
+    "setCount_one": "92|{{count}} комплект",
+    "newTitle": "93|Нова папка",
+    "newSubtitle": "94|Съберете свързаните комплекти заедно.",
+    "editTitle": "95|Редактирай папката",
+    "name": "96|Име",
+    "namePlaceholder": "97|напр. Пътувания",
+    "description": "98|Описание",
+    "descriptionPlaceholder": "99|По избор",
+    "color": "100|Цвят",
+    "save": "101|Запази",
+    "saving": "102|Запазваме…",
+    "cancel": "103|Отказ",
+    "edit": "104|Редактирай папката",
+    "delete": "105|Изтрий папката",
+    "deleteConfirm": "106|Да се изтрие ли „{{title}}“? Това не може да се върне.",
+    "backToFolders": "107|Назад към папките",
+    "notFoundTitle": "108|Папката не е намерена",
+    "notFoundBody": "109|Тази папка може да е била изтрита.",
+    "noSetsInFolder": "110|В тази папка още няма комплекти.",
+    "saveError": "111|Запазването не бе успешно. Опитайте отново.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "112|Името на папката е задължително.",
+      "nameTooLong": "113|Името на папката трябва да е под 80 знака.",
+      "descTooLong": "114|Описанието трябва да е под 120 знака."
     },
-    "optional": "(optional)",
-    "preview": "Preview",
-    "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "optional": "115|(по избор)",
+    "preview": "116|Преглед",
+    "previewPlaceholder": "117|Нова папка",
+    "deleteConfirmTitle": "118|Да се изтрие ли тази папка?"
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets",
-    "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?",
-    "editTitle": "Edit set",
-    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
-    "save": "Save changes",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "create": "119|Нов комплект",
+    "loading": "120|Зареждаме комплектите…",
+    "loadError": "121|Не успяхме да заредим комплектите ви.",
+    "emptyTitle": "122|Още няма комплекти",
+    "emptyBody": "123|Създайте първия си комплект карти с бутона Ново.",
+    "cardCount": "124|{{count}} карти",
+    "cardCount_one": "125|{{count}} карта",
+    "keepPracticing": "126|Продължавайте да се упражнявате",
+    "delete": "127|Изтрий комплекта",
+    "deleteConfirm": "128|Да се изтрие ли „{{title}}“? Това не може да се върне.",
+    "notFoundTitle": "129|Комплектът не е намерен",
+    "notFoundBody": "130|Този комплект може да е бил изтрит.",
+    "backToSets": "131|Назад към комплектите",
+    "edit": "132|Редактирай комплекта",
+    "deleteConfirmTitle": "133|Да се изтрие ли този комплект?",
+    "editTitle": "134|Редактирай комплекта",
+    "editSubtitle": "135|Променете заглавието, цвета, иконата или папката. Картите си остават на място.",
+    "save": "136|Запази промените",
+    "saving": "137|Запазваме…",
+    "cancel": "138|Отказ",
+    "saveError": "139|Запазването не бе успешно. Опитайте отново."
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
-    "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "title": "140|Нов комплект",
+    "subtitle": "141|Добавете думи и настройте своя комплект.",
+    "infoSection": "142|Данни за комплекта",
+    "setTitle": "143|Заглавие",
+    "setTitlePlaceholder": "144|напр. Основни думи за път",
+    "setDescription": "145|Описание",
+    "setDescriptionPlaceholder": "146|По избор",
+    "privacy": "147|Поверителност",
+    "private": "148|Личен",
+    "public": "149|Публичен",
+    "cardsSection": "150|Карти",
+    "addCard": "151|Добави карта",
+    "cardN": "152|Карта {{n}}",
+    "removeCard": "153|Премахни картата",
+    "word": "154|Дума",
+    "translation": "155|Превод",
+    "example": "156|Пример (по избор)",
+    "addImage": "157|Добави изображение",
+    "removeImage": "158|Премахни изображението",
+    "customizeSection": "159|Оформление",
+    "color": "160|Цвят",
+    "icon": "161|Икона",
+    "folder": "162|Папка",
+    "noFolder": "163|Без папка",
+    "previewSection": "164|Преглед",
+    "previewPlaceholder": "165|Заглавие на комплекта",
+    "save": "166|Създай комплект",
+    "saving": "167|Запазваме…",
+    "cancel": "168|Отказ",
+    "saveError": "169|Запазването не бе успешно. Опитайте отново.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "170|Заглавието на комплекта е задължително.",
+      "titleTooLong": "171|Заглавието на комплекта трябва да е под 150 знака.",
+      "descTooLong": "172|Описанието трябва да е под 200 знака.",
+      "noValidCards": "173|Добавете поне една карта с дума и превод.",
+      "exampleTooLong": "174|Примерите в картите трябва да са под 150 знака."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "imageTimeout": "175|Времето за качване на изображението изтече. Проверете връзката и опитайте отново.",
     "import": {
-      "button": "Import",
-      "title": "Import cards",
-      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
-      "close": "Close import",
-      "dataSection": "Your data",
-      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
-      "separatorsSection": "Separators",
-      "betweenTermAndDefinition": "Between word and translation",
-      "betweenCards": "Between cards",
-      "tab": "Tab",
-      "comma": "Comma",
-      "newline": "New line",
-      "semicolon": "Semicolon",
-      "custom": "Custom",
-      "customPlaceholder": "e.g. —",
-      "previewSection": "Preview",
-      "previewEmpty": "Nothing to preview yet.",
-      "noDefinition": "No translation",
-      "confirm": "Add cards"
+      "button": "176|Импорт",
+      "title": "177|Импорт на карти",
+      "subtitle": "178|Копирайте и поставете данните си — от Word, Excel, Google Docs и подобни.",
+      "close": "179|Затвори импорта",
+      "dataSection": "180|Вашите данни",
+      "placeholder": "181|Дума 1\\tОпределение 1\\nДума 2\\tОпределение 2\\nДума 3\\tОпределение 3",
+      "separatorsSection": "182|Разделители",
+      "betweenTermAndDefinition": "183|Между дума и превод",
+      "betweenCards": "184|Между картите",
+      "tab": "185|Табулация",
+      "comma": "186|Запетая",
+      "newline": "187|Нов ред",
+      "semicolon": "188|Точка и запетая",
+      "custom": "189|Собствен",
+      "customPlaceholder": "190|напр. —",
+      "previewSection": "191|Преглед",
+      "previewEmpty": "192|Още няма какво да се покаже.",
+      "noDefinition": "193|Без превод",
+      "confirm": "194|Добави картите"
     },
     "iconPicker": {
-      "open": "More icons",
-      "title": "Choose icon",
-      "search": "Search symbol",
-      "close": "Close",
-      "empty": "No icons match that name."
+      "open": "195|Още икони",
+      "title": "196|Изберете икона",
+      "search": "197|Търсене на символ",
+      "close": "198|Затвори",
+      "empty": "199|Няма икона с такова име."
     },
     "iconGroup": {
-      "learning": "Learning",
-      "languages": "Languages",
-      "nature": "Nature",
-      "health": "Health",
-      "food": "Food",
-      "travel": "Travel",
-      "work": "Work",
-      "tech": "Tech",
-      "creativity": "Creativity",
-      "general": "General"
+      "learning": "200|Учене",
+      "languages": "201|Езици",
+      "nature": "202|Природа",
+      "health": "203|Здраве",
+      "food": "204|Храна",
+      "travel": "205|Пътуване",
+      "work": "206|Работа",
+      "tech": "207|Технологии",
+      "creativity": "208|Творчество",
+      "general": "209|Общи"
     }
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
-      "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "flashcards": "210|Карти",
+      "folders": "211|Папки",
+      "sets": "212|Комплекти",
+      "create": "213|Ново",
+      "profile": "214|Профил",
+      "speaking": "215|Говорене",
+      "listening": "216|Слушане",
+      "reading": "217|Четене",
+      "writing": "218|Писане"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "219|Изберете комплект за упражнение",
+      "folders": "220|Управлявайте папките си",
+      "sets": "221|Управлявайте комплектите си с карти",
+      "create": "222|Създайте нов комплект за учене",
+      "speaking": "223|Упражнявайте говоренето.",
+      "listening": "224|Тренирайте ухото си да разбира езика естествено.",
+      "reading": "225|Четете и преговаряйте материали на езика.",
+      "writing": "226|Упражнявайте езика активно."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "227|ГОВОРЕНЕ",
+      "listening": "228|СЛУШАНЕ",
+      "reading": "229|ЧЕТЕНЕ",
+      "writing": "230|ПИСАНЕ"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "231|Днешна цел",
+      "left": "232|Остават {{count}} думи"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "233|Научени днес",
+      "words": "234|думи",
+      "accuracy": "235|Точност",
+      "greatJob": "236|Отлична работа!",
+      "streak": "237|Серия",
+      "days": "238|дни"
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "239|Продължи ученето",
+    "yourSets": "240|Вашите комплекти",
+    "viewAll": "241|Виж всички",
+    "review": "242|Преговор",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "243|Още няма комплекти",
+      "emptyBody": "244|Създайте първия си комплект карти с бутона Ново."
     },
     "create": {
-      "folder": "Folder",
-      "set": "Set",
-      "text": "Text",
-      "audio": "Audio",
-      "essay": "Essay"
+      "folder": "245|Папка",
+      "set": "246|Комплект",
+      "text": "247|Текст",
+      "audio": "248|Аудио",
+      "essay": "249|Есе"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "250|{{title}} — скоро"
     },
     "progress": {
       "subtitle": {
-        "speaking": "of speaking practice",
-        "listening": "of listening practice",
-        "reading": "of reading practice",
-        "writing": "of writing practice"
+        "speaking": "251|упражнения по говорене",
+        "listening": "252|упражнения по слушане",
+        "reading": "253|упражнения по четене",
+        "writing": "254|упражнения по писане"
       }
     },
     "dailyGoal": {
-      "title": "Your goal for today",
-      "body": "Pick what you want to practise today — the card below counts against it.",
-      "chosenBody": "This is what today is about.",
-      "howMuch": "How much?",
-      "change": "Change"
+      "title": "255|Вашата цел за днес",
+      "body": "256|Изберете какво искате да упражнявате днес — картата отдолу се брои за нея.",
+      "chosenBody": "257|Ето за какво е днешният ден.",
+      "howMuch": "258|Колко?",
+      "change": "259|Промени"
     },
     "lastNote": {
-      "title": "Last note you read"
+      "title": "260|Последна прочетена бележка"
     }
   },
   "categories": {
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing"
+    "speaking": "261|Говорене",
+    "listening": "262|Слушане",
+    "reading": "263|Четене",
+    "writing": "264|Писане"
   },
   "phase0": {
-    "title": "WordAround",
-    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
+    "title": "265|WordAround",
+    "subtitle": "266|Фаза 0 работи. Дизайн токените са заредени, Firebase е свързан."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "267|Обърни",
+    "known": "268|Знаех я",
+    "unknown": "269|Още я уча",
+    "mastered": "270|Усвоена",
+    "shuffle": "271|Разбъркай",
+    "trackProgress": "272|Следи напредъка",
+    "speak": "273|Произнеси",
+    "roundDone": "274|Кръгът е завършен",
+    "knewCount": "275|Знаехте {{known}} от {{total}}",
+    "repeatUnknown": "276|Повтори {{count}} незнайни",
+    "restart": "277|Започни отначало",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "278|Всички",
+      "studied": "279|Учени",
+      "remaining": "280|Оставащи",
+      "mastered": "281|Усвоени"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "282|Добави карта",
+    "editCard": "283|Редактирай картата",
+    "deleteCard": "284|Изтрий картата",
+    "deleteCardConfirm": "285|Да се изтрие ли тази карта?",
+    "emptyPrompt": "286|Този комплект още няма карти. Добавете първата.",
+    "save": "287|Запази",
+    "cancel": "288|Отказ"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "289|Днешен напредък",
+      "unit": "290|думи",
+      "subtitle": "291|упражнения по писане"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "292|Режими за упражнение",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "293|Писане от комплектите",
+        "subtitle": "294|Упражнявайте правописа и писането на думите от вашите комплекти."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "295|Есета",
+        "subtitle": "296|Пишете текстове и получавайте обратна връзка от ИИ за граматика и стил."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "297|Скоро"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "298|Изберете комплект",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "299|Няма комплекти с думи",
+        "subtitle": "300|Създайте комплект с поне една карта, преди да започнете упражнения по писане."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "301|{{count}} думи",
+      "wordsCount_one": "302|{{count}} дума",
+      "close": "303|Затвори"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "304|Писане от комплектите",
+      "subtitle": "305|Напишете превода и натиснете Enter.",
+      "translateHint": "306|Преведете на своя език",
+      "hint": "307|Подсказка",
+      "skip": "308|Пропусни",
+      "submit": "309|Провери",
+      "inputPlaceholder": "310|Пишете тук…",
+      "loading": "311|Зареждаме комплекта…",
+      "loadError": "312|Не успяхме да заредим този комплект.",
+      "noCards": "313|Този комплект няма карти.",
+      "back": "314|Назад",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "315|Настройки",
+        "trainingMode": "316|Режим на тренировка",
+        "difficulty": "317|Трудност"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "318|Дума → Превод",
+        "translationToWord": "319|Превод → Дума"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "320|Лесно",
+        "medium": "321|Средно",
+        "hard": "322|Трудно",
+        "easyDesc": "323|Неограничени подсказки, неограничени пропускания",
+        "mediumDesc": "324|1 буква подсказка, максимум 25 % пропускания",
+        "hardDesc": "325|Без подсказки, без пропускания, с време"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "326|Преведете на своя език",
+        "translation": "327|Напишете оригиналната дума"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "328|Остава {{count}} пропускане",
+      "skipsLeft_other": "329|Остават {{count}} пропускания",
+      "seconds": "330|{{count}} с",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "331|Кръгът е завършен!",
+          "subtitle": "332|Отлична работа. Завършихте този кръг по писане."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "333|Времето изтече",
+          "subtitle": "334|Таймерът на трудния режим стигна до нула. Опитайте отново от първата дума."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "335|Грешен отговор",
+          "subtitle": "336|В труден режим една грешка приключва кръга."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
+        "perfectTitle": "337|Перфектен кръг!",
+        "perfectBody": "338|Завършихте трудния режим без грешка. Без пропускания. Без подсказки. Само умение.",
+        "totalWords": "339|Общо думи",
+        "completedWords": "340|Завършени думи",
+        "skippedWords": "341|Пропуснати думи",
+        "hintsUsed": "342|Използвани подсказки",
+        "streak": "343|Серия",
+        "difficultyLabel": "344|Трудност",
+        "word": "345|Дума",
+        "yourAnswer": "346|Вашият отговор",
+        "correctAnswer": "347|Верен отговор",
+        "tryAgain": "348|Опитай отново"
       }
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "349|Есета",
+      "subtitle": "350|Темата се избира от ИИ. Пишете, после получавате обратна връзка.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "351|Предложена",
+        "custom": "352|Моя тема"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "353|Напишете своя тема за есе...",
+        "generate": "354|Генерирай задание"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "355|Генерирай тема",
+        "regenerate": "356|Нова тема"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "357|Език",
+      "difficulty": "358|Трудност",
       "task": {
-        "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips",
-        "taskLabel": "Task"
+        "time": "359|≈ {{count}} мин",
+        "wordRange": "360|{{min}}-{{max}} думи",
+        "quickTips": "361|Бързи съвети",
+        "taskLabel": "362|Задание"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "363|Започнете да пишете есето си тук...",
+        "wordCount": "364|{{count}} / {{min}}-{{max}} думи",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "365|Продължавайте — трябват ви поне {{min}} думи.",
+          "aboveMaximum": "366|Надхвърлихте лимита — опитайте да съкратите.",
+          "valid": "367|В границите."
         },
-        "reset": "Reset"
+        "reset": "368|Нулирай"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "369|Първо напишете тема.",
+        "generationFailed": "370|Не успяхме да генерираме тема. Опитайте отново."
       },
-      "generating": "Generating...",
+      "generating": "371|Генерираме...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "372|Поискай подсказка",
+        "remaining": "373|Остават {{remaining}}/{{limit}}",
+        "noneLeft": "374|Няма повече подсказки",
+        "notAvailable": "375|На това ниво подсказките не са налични",
+        "generating": "376|Генерираме подсказка...",
+        "error": "377|Не успяхме да вземем подсказка. Опитайте отново.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "378|Съдържание",
+          "grammar": "379|Граматика",
+          "vocabulary": "380|Лексика",
+          "structure": "381|Структура"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again.",
-        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
+        "button": "382|Провери есето ми",
+        "checking": "383|Проверяваме...",
+        "disabled": "384|Първо се поберете в диапазона от думи",
+        "error": "385|Не успяхме да проверим есето ви. Опитайте отново.",
+        "languageUnsupported": "386|Проверката на граматиката за {{language}} още не е налична."
       },
       "score": {
-        "title": "Essay score",
+        "title": "387|Оценка на есето",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "388|Отлично",
+          "veryGood": "389|Много добре",
+          "good": "390|Добре",
+          "needsWork": "391|Има какво да се подобри"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "392|Граматика",
+          "vocabulary": "393|Лексика",
+          "length": "394|Дължина",
+          "complexity": "395|Сложност",
+          "relevance": "396|Съответствие с темата",
+          "independence": "397|Самостоятелност"
         },
         "stat": {
-          "words": "Words",
-          "grammar": "Grammar",
-          "vocabStyle": "Vocab/style",
-          "hints": "Hints",
-          "translations": "Translations",
-          "synonyms": "Synonyms"
+          "words": "398|Думи",
+          "grammar": "399|Граматика",
+          "vocabStyle": "400|Лексика/стил",
+          "hints": "401|Подсказки",
+          "translations": "402|Преводи",
+          "synonyms": "403|Синоними"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
-        "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "sectionTitle": "404|Граматически грешки",
+        "count_one": "405|{{count}} грешка",
+        "count_other": "406|{{count}} грешки",
+        "empty": "407|Няма граматически грешки — отлична работа!",
+        "original": "408|Оригинал:",
+        "suggestion": "409|Предложение:",
+        "reason": "410|Причина:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "411|Граматика",
+          "vocabulary": "412|Лексика",
+          "style": "413|Стил"
         },
         "save": {
-          "idle": "Save to Notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
+          "idle": "414|Запази в бележките",
+          "saving": "415|Запазваме…",
+          "saved": "416|Запазено",
+          "duplicate": "417|Вече е запазено",
+          "failed": "418|Опитай да запазиш отново"
         }
       },
       "helper": {
-        "translate": "Translate",
-        "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "translate": "419|Преведи",
+        "synonym": "420|Синоним",
+        "remaining": "421|Остават {{remaining}}",
+        "notAvailable": "422|Не е налично на това ниво"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "423|Преведи",
+        "placeholder": "424|Въведете дума или кратък израз",
+        "submit": "425|Преведи",
+        "submitting": "426|Превеждаме..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "427|Синоними",
+        "placeholder": "428|Въведете дума",
+        "submit": "429|Намери синоними",
+        "submitting": "430|Търсим..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "431|От",
+        "to": "432|На",
+        "close": "433|Затвори",
+        "noResult": "434|Няма намерен резултат.",
+        "sameLanguage": "435|Изберете друг изходен език.",
+        "error": "436|Услугата временно не е достъпна."
       },
-      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
-      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
-      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
+      "saveMistakeConfirmTitle": "437|Да се запази ли тази грешка в бележките?",
+      "saveMistakeConfirmBody": "438|Ще бъде запазена като бележка за грешка с корекцията „{{correction}}“.",
+      "autoSaveConfirmTitle": "439|Да се запазят ли тези грешки в бележките ви?",
+      "autoSaveConfirmBody_one": "440|Тази проверка намери {{count}} грешка. Ако я запазите, тя става бележка, която се връща за преговор.",
+      "autoSaveConfirmBody_other": "441|Тази проверка намери {{count}} грешки. Ако ги запазите, те стават бележки, които се връщат за преговор."
     },
     "grammar": {
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "subtitle": "442|Подредете граматиката по теми с ясни, структурирани бележки.",
+      "newTopic": "443|Нова тема",
+      "topicsEmptyTitle": "444|Още няма теми",
+      "topicsEmptyBody": "445|Създайте първата си тема, за да започнете да събирате бележки по граматика.",
+      "notesCount_one": "446|{{count}} бележка",
+      "notesCount_other": "447|{{count}} бележки",
+      "deleteTopicConfirm": "448|Да се изтрие ли „{{title}}“ и всички нейни бележки? Това не може да се върне.",
+      "notesEmptyTitle": "449|Още няма бележки",
+      "notesEmptyBody": "450|Добавете първата си бележка към тази тема.",
+      "newNote": "451|Нова бележка",
+      "deleteNoteConfirm": "452|Да се изтрие ли тази бележка? Това не може да се върне.",
+      "loading": "453|Зареждаме…",
+      "loadError": "454|Не успяхме да заредим бележките ви по граматика.",
+      "notFoundTitle": "455|Не е намерено",
+      "notFoundBody": "456|Този елемент може да е бил изтрит.",
+      "back": "457|Назад",
+      "updated": "458|Обновено на {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel",
-        "language": "Language",
-        "languageNone": "Not set"
+        "newTitle": "459|Нова тема",
+        "editTitle": "460|Редактирай темата",
+        "name": "461|Заглавие",
+        "namePlaceholder": "462|напр. Испански глаголи",
+        "description": "463|Описание",
+        "descriptionPlaceholder": "464|По избор",
+        "color": "465|Цвят",
+        "icon": "466|Икона",
+        "save": "467|Запази",
+        "cancel": "468|Отказ",
+        "language": "469|Език",
+        "languageNone": "470|Не е зададен"
       },
       "noteType": {
-        "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "standard": "471|Стандартна",
+        "mistake": "472|Грешка",
+        "rule": "473|Правило",
+        "comparison": "474|Сравнение",
+        "cheatSheet": "475|Кратък справочник",
+        "exercise": "476|Упражнение"
       },
       "block": {
-        "heading": "Heading",
-        "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)",
-        "subheading": "Subheading",
-        "numberedList": "Numbered list",
-        "checklist": "Checklist",
-        "comparison": "Comparison",
-        "exercise": "Exercise",
-        "quiz": "Quiz",
-        "image": "Image",
-        "comparisonSecondary": "Second side",
-        "imageAdd": "Add / replace image",
-        "imageUploading": "Uploading…",
-        "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images."
+        "heading": "477|Заглавие",
+        "paragraph": "478|Текст",
+        "bulletList": "479|Списък с точки",
+        "rule": "480|Правило",
+        "example": "481|Пример",
+        "warning": "482|Предупреждение",
+        "quote": "483|Цитат",
+        "divider": "484|Разделител",
+        "addBlock": "485|Добави блок",
+        "addItem": "486|Добави елемент",
+        "moveUp": "487|Нагоре",
+        "moveDown": "488|Надолу",
+        "remove": "489|Премахни",
+        "secondaryPlaceholder": "490|Детайл / превод (по избор)",
+        "subheading": "491|Подзаглавие",
+        "numberedList": "492|Номериран списък",
+        "checklist": "493|Списък за отметки",
+        "comparison": "494|Сравнение",
+        "exercise": "495|Упражнение",
+        "quiz": "496|Тест",
+        "image": "497|Изображение",
+        "comparisonSecondary": "498|Втора страна",
+        "imageAdd": "499|Добави / замени изображение",
+        "imageUploading": "500|Качваме…",
+        "imageFailed": "501|Изображението не можа да се качи.",
+        "imageSaveFirst": "502|Влезте, за да качвате изображения."
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…",
-        "subheading": "Subheading",
-        "numberedList": "List item",
-        "checklist": "Checklist item",
-        "comparison": "First side",
-        "exercise": "Practice instruction…",
-        "quiz": "Question",
-        "image": "Image caption"
+        "heading": "503|Заглавие",
+        "paragraph": "504|Напишете своето обяснение…",
+        "bulletList": "505|Елемент от списъка",
+        "rule": "506|Обяснете граматическото правило…",
+        "example": "507|Добавете пример…",
+        "warning": "508|Честа грешка или предупреждение…",
+        "quote": "509|Изречение, което си струва да се запомни…",
+        "subheading": "510|Подзаглавие",
+        "numberedList": "511|Елемент от списъка",
+        "checklist": "512|Елемент за отметка",
+        "comparison": "513|Първа страна",
+        "exercise": "514|Указание за упражнението…",
+        "quiz": "515|Въпрос",
+        "image": "516|Надпис на изображението"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again.",
-        "subtitle": "Edit note",
-        "tags": "Tags",
-        "tagsPlaceholder": "Add a tag…",
-        "removeTag": "Remove tag {{tag}}",
-        "addToReview": "Add to review",
-        "addedToReview": "Added to your review queue.",
-        "inReview": "In review · {{when}}",
-        "inReviewDue": "Due for review",
-        "removedFromReview": "Removed from your review queue.",
-        "unsavedTitle": "Leave without saving?",
-        "unsavedBody": "This note has changes that have not been saved yet.",
-        "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "titlePlaceholder": "517|Заглавие на бележката",
+        "save": "518|Запази бележката",
+        "saving": "519|Запазваме…",
+        "delete": "520|Изтрий бележката",
+        "saveError": "521|Запазването не бе успешно. Опитайте отново.",
+        "subtitle": "522|Редактирай бележката",
+        "tags": "523|Етикети",
+        "tagsPlaceholder": "524|Добави етикет…",
+        "removeTag": "525|Премахни етикета {{tag}}",
+        "addToReview": "526|Добави за преговор",
+        "addedToReview": "527|Добавено към опашката ви за преговор.",
+        "inReview": "528|За преговор · {{when}}",
+        "inReviewDue": "529|Време за преговор",
+        "removedFromReview": "530|Премахнато от опашката ви за преговор.",
+        "unsavedTitle": "531|Да излезете ли без запазване?",
+        "unsavedBody": "532|Тази бележка има незапазени промени.",
+        "discard": "533|Отхвърли промените",
+        "saveAndLeave": "534|Запази и излез"
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "535|Тестове",
+        "new": "536|Нов тест",
+        "start": "537|Започни теста",
+        "delete": "538|Изтрий теста",
+        "deleteConfirm": "539|Да се изтрие ли „{{title}}“? Това не може да се върне.",
+        "emptyTitle": "540|Още няма тестове",
+        "emptyBody": "541|Създайте тест от тази бележка, за да се проверите.",
+        "loadError": "542|Тестовете не можаха да се заредят.",
+        "questionsCount_one": "543|{{count}} въпрос",
+        "questionsCount_other": "544|{{count}} въпроса",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "545|Множествен избор",
+          "trueFalse": "546|Вярно / Невярно",
+          "fillGap": "547|Попълни празното",
+          "shortAnswer": "548|Кратък отговор"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead",
-          "modeManual": "Manual",
-          "modeManualDesc": "Write your own questions.",
-          "createQuiz": "Create quiz"
+          "title": "549|Създай тест",
+          "titlePlaceholder": "550|Заглавие на теста",
+          "mode": "551|Режим на генериране",
+          "modeSmart": "552|Умен локален",
+          "modeSmartDesc": "553|Създава въпроси от съдържанието на бележката, на устройството.",
+          "modeAI": "554|Генерирано с ИИ",
+          "modeAIDesc": "555|Създава по-богати, контекстни въпроси с ИИ.",
+          "count": "556|Въпроси",
+          "types": "557|Видове въпроси",
+          "focus": "558|Фокус (по избор)",
+          "focusPlaceholder": "559|напр. фокус върху неправилните форми",
+          "preview": "560|Преглед на въпросите",
+          "regenerate": "561|Генерирай прегледа отново",
+          "previewTitle": "562|Преглед",
+          "saveQuiz": "563|Запази теста",
+          "generateQuiz": "564|Генерирай тест",
+          "generating": "565|Генерираме…",
+          "saving": "566|Запазваме…",
+          "useSmartInstead": "567|По-добре използвай Умен локален",
+          "modeManual": "568|Ръчно",
+          "modeManualDesc": "569|Напишете свои въпроси.",
+          "createQuiz": "570|Създай тест"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "571|Въпрос {{current}} от {{total}}",
+          "submit": "572|Изпрати отговора",
+          "next": "573|Напред",
+          "finish": "574|Приключи",
+          "correct": "575|Вярно!",
+          "incorrect": "576|Грешно",
+          "correctAnswer": "577|Верен отговор: {{answer}}",
+          "typeMissing": "578|Напишете липсващата дума",
+          "typeAnswer": "579|Напишете отговора си",
+          "trueLabel": "580|Вярно",
+          "falseLabel": "581|Невярно"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "582|{{correct}} от {{total}} верни",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "583|Отлично!",
+            "good": "584|Отлична работа!",
+            "keepPracticing": "585|Продължавайте да се упражнявате",
+            "reviewNote": "586|Прегледайте бележката"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "587|Грешни",
+          "correctSection": "588|Верни",
+          "yourAnswer": "589|Вашият отговор: {{answer}}",
+          "tryAgain": "590|Опитай отново",
+          "reviewNote": "591|Отвори бележката",
+          "done": "592|Готово"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "593|Първо добавете още съдържание в бележката — за тест трябват поне два блока съдържание (правило, пример, предупреждение, абзац или цитат).",
+          "noMatchingQuestionTypes": "594|Няма достатъчно подходящо съдържание за избраните видове въпроси. Включете още видове или добавете съдържание.",
+          "aiFailed": "595|Тестът не можа да се генерира с ИИ. Опитайте отново или използвайте Умен локален."
         },
-        "badge": "Quiz",
+        "badge": "596|Тест",
         "manual": {
-          "questions_one": "{{count}} question",
-          "questions_other": "{{count}} questions",
-          "add": "Add question",
-          "questionPlaceholder": "Question text",
-          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
-          "optionPlaceholder": "Option {{index}}",
-          "answerPlaceholder": "Correct answer",
-          "explanationPlaceholder": "Explanation (optional)",
+          "questions_one": "597|{{count}} въпрос",
+          "questions_other": "598|{{count}} въпроса",
+          "add": "599|Добави въпрос",
+          "questionPlaceholder": "600|Текст на въпроса",
+          "questionGapPlaceholder": "601|Въпрос с празно място, напр. Аз _____ на училище",
+          "optionPlaceholder": "602|Вариант {{index}}",
+          "answerPlaceholder": "603|Верен отговор",
+          "explanationPlaceholder": "604|Обяснение (по избор)",
           "error": {
-            "questionRequired": "Question text is required.",
-            "optionsRequired": "Multiple choice needs at least 2 options.",
-            "answerRequired": "Enter the correct answer.",
-            "answerNotAnOption": "The correct answer must match one of the options.",
-            "blankRequired": "Add a blank (e.g. _____) inside the question."
+            "questionRequired": "605|Текстът на въпроса е задължителен.",
+            "optionsRequired": "606|Множественият избор изисква поне 2 варианта.",
+            "answerRequired": "607|Въведете верния отговор.",
+            "answerNotAnOption": "608|Верният отговор трябва да съвпада с един от вариантите.",
+            "blankRequired": "609|Добавете празно място (напр. _____) във въпроса."
           }
         }
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "610|Бърза грешка",
+        "title": "611|Бърза грешка",
+        "original": "612|Оригинално изречение",
+        "originalPlaceholder": "613|Пример: Аз съм съгласен с теб",
+        "corrected": "614|Корекция",
+        "correctedPlaceholder": "615|Пример: Съгласен съм с теб",
+        "explanation": "616|Обяснение (по избор)",
+        "explanationPlaceholder": "617|Защо корекцията е вярна?",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "618|Първо добавете оригиналното изречение.",
+          "corrected": "619|Добавете и поправеното изречение."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done",
-        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
+        "save": "620|Запази грешката",
+        "saving": "621|Запазваме…",
+        "saved": "622|Запазено в бележките по граматика.",
+        "duplicate": "623|Вече е запазено — дубликатът е пропуснат.",
+        "failed": "624|Запазването не бе успешно. Опитайте отново.",
+        "openTopic": "625|Отвори Чести грешки",
+        "done": "626|Готово",
+        "tip": "627|Запазените корекции влизат в преговора автоматично, така че тези, в които постоянно грешите, се връщат първи."
       },
       "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
+        "topicTitle": "628|Шаблони за теми",
+        "noteTitle": "629|Шаблони за бележки",
+        "button": "630|Шаблон",
+        "startFromTemplate": "631|Започни от шаблон",
+        "searchPlaceholder": "632|Търсене на шаблони…",
+        "allLanguages": "633|Всички",
+        "anyDifficulty": "634|Всякаква",
         "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
+          "en": "635|Английски",
+          "es": "636|Испански",
+          "fr": "637|Френски",
+          "de": "638|Немски"
         },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
-        "applyTitle": "Apply “{{title}}”?",
-        "applyBody": "This note already has content. Choose how to apply the template.",
-        "applyReplace": "Replace content",
-        "applyAppend": "Append blocks"
+        "minutes": "639|{{minutes}} мин",
+        "notesIncluded_one": "640|{{count}} бележка",
+        "notesIncluded_other": "641|{{count}} бележки",
+        "blocksIncluded_one": "642|{{count}} блок",
+        "blocksIncluded_other": "643|{{count}} блока",
+        "empty": "644|Нито един шаблон не отговаря на филтрите ви.",
+        "use": "645|Използвай шаблона",
+        "creating": "646|Създаваме…",
+        "replaceConfirm": "647|Да се замени ли текущото съдържание на бележката с този шаблон? Натиснете Отказ, за да добавите шаблона отдолу.",
+        "applyTitle": "648|Да се приложи ли „{{title}}“?",
+        "applyBody": "649|Тази бележка вече има съдържание. Изберете как да приложите шаблона.",
+        "applyReplace": "650|Замени съдържанието",
+        "applyAppend": "651|Добави блоковете накрая"
       },
       "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "dueBadge": "Due",
-        "refreshBody": "Nothing is due right now — you can still refresh what you read lately.",
-        "refreshStart": "Refresh recent notes",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
+        "title": "652|Преговор",
+        "subtitle": "653|Затвърдете наученото с разсрочено повторение.",
+        "cardTitle": "654|Преговор днес",
+        "cardSubtitle_one": "655|{{count}} елемент е готов · ~{{minutes}} мин",
+        "cardSubtitle_other": "656|{{count}} елемента са готови · ~{{minutes}} мин",
+        "caughtUpTitle": "657|Всичко е наред",
+        "caughtUp": "658|Всичко сте преговорили. Отворете или редактирайте бележки, за да получите предложения за преговор.",
+        "dueBadge": "659|За преговор",
+        "refreshBody": "660|В момента няма нищо за преговор — все пак можете да освежите каквото сте чели наскоро.",
+        "refreshStart": "661|Освежи скорошните бележки",
+        "start": "662|Започни преговора",
+        "skip": "663|Пропусни",
+        "itemOf": "664|Елемент {{current}} от {{total}}",
+        "untitled": "665|Бележка по граматика",
+        "stats": "666|Преговорена {{count}} пъти · серия {{streak}}",
+        "continueToQuestion": "667|Към въпроса",
+        "showAnswer": "668|Покажи отговора",
+        "compareTitle": "669|Сравнете своя отговор",
+        "referenceAnswer": "670|Еталон: {{answer}}",
+        "openNote": "671|Отвори цялата бележка",
         "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
+          "manual_one": "672|{{count}} елемент чака преговор",
+          "manual_other": "673|{{count}} елемента чакат преговор",
+          "recentlyOpened_one": "674|{{count}} наскоро отворена бележка",
+          "recentlyOpened_other": "675|{{count}} наскоро отворени бележки",
+          "recentlyEdited_one": "676|{{count}} наскоро редактирана бележка",
+          "recentlyEdited_other": "677|{{count}} наскоро редактирани бележки"
         },
         "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
-          "quiz": "Quiz"
+          "note": "678|Бележка",
+          "mistake": "679|Грешка",
+          "quiz": "680|Тест"
         },
         "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
+          "source": "681|Учене",
+          "question": "682|Отговор",
+          "result": "683|Оценка"
         },
         "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
+          "forgot": "684|Забравих",
+          "hard": "685|Трудно",
+          "good": "686|Добре",
+          "easy": "687|Лесно"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "plus4h": "688|+4 часа",
+          "plus1d": "689|+1 ден",
+          "plus3d": "690|+3 дни",
+          "plus7d": "691|+7 дни"
         },
         "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "title": "692|Сесията приключи",
+          "emptyTitle": "693|Нищо не е преговорено",
+          "reviewed": "694|Преговорени",
+          "correct": "695|Верни",
+          "incorrect": "696|Грешни",
+          "hintForgot": "697|Някои елементи се връщат след 4 часа.",
+          "hintHard": "698|Трудните елементи се връщат утре.",
+          "hintGood": "699|Добрите елементи се връщат след 3 дни.",
+          "hintEasy": "700|Всички елементи се връщат след 7 дни.",
+          "done": "701|Назад към бележките по граматика"
         },
-        "loadError": "Couldn't load your review queue.",
-        "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "loadError": "702|Не успяхме да заредим опашката ви за преговор.",
+        "mistakeCount_one": "703|{{count}} грешка",
+        "mistakeCount_other": "704|{{count}} грешки"
       },
-      "mistakesBadge": "Mistakes",
-      "topicsTitle": "Topics",
-      "deleteTopic": "Delete topic",
-      "deleteTopicTitle": "Delete this topic?",
-      "deleteNoteTitle": "Delete this note?",
-      "pin": "Pin note",
-      "unpin": "Unpin note",
-      "favorite": "Add to favorites",
-      "unfavorite": "Remove from favorites",
+      "mistakesBadge": "705|Грешки",
+      "topicsTitle": "706|Теми",
+      "deleteTopic": "707|Изтрий темата",
+      "deleteTopicTitle": "708|Да се изтрие ли тази тема?",
+      "deleteNoteTitle": "709|Да се изтрие ли тази бележка?",
+      "pin": "710|Закачи бележката",
+      "unpin": "711|Откачи бележката",
+      "favorite": "712|Добави в любими",
+      "unfavorite": "713|Премахни от любими",
       "search": {
-        "topics": "Search topics…",
-        "notes": "Search notes…",
-        "clear": "Clear search",
-        "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword.",
-        "notesSection_one": "Notes ({{count}})",
-        "notesSection_other": "Notes ({{count}})",
-        "noNoteMatches": "No notes match this search."
+        "topics": "714|Търсене на теми…",
+        "notes": "715|Търсене на бележки…",
+        "clear": "716|Изчисти търсенето",
+        "noMatchTitle": "717|Няма съвпадения",
+        "noMatchBody": "718|Опитайте с друга дума.",
+        "notesSection_one": "719|Бележки ({{count}})",
+        "notesSection_other": "720|Бележки ({{count}})",
+        "noNoteMatches": "721|Нито една бележка не отговаря на това търсене."
       },
       "filter": {
-        "label": "Filter notes",
-        "all": "All",
-        "pinned": "Pinned",
-        "favorites": "Favorites",
-        "mistakes": "Mistakes",
-        "quizzes": "Quizzes",
-        "review": "Due",
+        "label": "722|Филтрирай бележките",
+        "all": "723|Всички",
+        "pinned": "724|Закачени",
+        "favorites": "725|Любими",
+        "mistakes": "726|Грешки",
+        "quizzes": "727|Тестове",
+        "review": "728|За преговор",
         "empty": {
           "all": {
-            "title": "No grammar notes yet",
-            "body": "Create your first grammar note for this topic."
+            "title": "729|Още няма бележки по граматика",
+            "body": "730|Създайте първата си бележка по граматика за тази тема."
           },
           "pinned": {
-            "title": "No pinned notes yet",
-            "body": "Pin notes from the list to find them quickly."
+            "title": "731|Още няма закачени бележки",
+            "body": "732|Закачайте бележки от списъка, за да ги намирате бързо."
           },
           "favorites": {
-            "title": "No favorite notes yet",
-            "body": "Favorite notes to keep them handy."
+            "title": "733|Още няма любими бележки",
+            "body": "734|Отбележете бележки като любими, за да са ви под ръка."
           },
           "mistakes": {
-            "title": "No saved mistakes yet",
-            "body": "Save grammar mistakes to review them here."
+            "title": "735|Още няма запазени грешки",
+            "body": "736|Запазвайте граматически грешки, за да ги преговаряте тук."
           },
           "quizzes": {
-            "title": "No quiz notes yet",
-            "body": "Add a quiz to a note to see it here."
+            "title": "737|Още няма бележки с тест",
+            "body": "738|Добавете тест към бележка, за да я видите тук."
           },
           "review": {
-            "title": "Nothing due right now",
-            "body": "Notes come back here when their next review is due."
+            "title": "739|В момента няма нищо за преговор",
+            "body": "740|Бележките се връщат тук, когато дойде време за следващия преговор."
           }
         }
       },
       "reorder": {
-        "start": "Reorder",
-        "done": "Done",
-        "up": "Move up",
-        "down": "Move down"
+        "start": "741|Пренареди",
+        "done": "742|Готово",
+        "up": "743|Нагоре",
+        "down": "744|Надолу"
       },
       "highlights": {
-        "mistakesTitle": "Mistakes to fix",
-        "mistakesSubtitle": "Recent corrections waiting for review.",
-        "quizzesTitle": "Weak quiz areas",
-        "quizzesSubtitle": "Quizzes worth re-taking soon."
+        "mistakesTitle": "745|Грешки за поправяне",
+        "mistakesSubtitle": "746|Скорошни корекции чакат преговор.",
+        "quizzesTitle": "747|Слаби места в тестовете",
+        "quizzesSubtitle": "748|Тестове, които си струва да се направят пак скоро."
       },
       "quickNote": {
-        "button": "Quick note",
-        "title": "Quick note",
-        "subtitle": "Capture a grammar idea without opening the full editor.",
-        "noteTitle": "Title",
-        "titlePlaceholder": "Example: Ser vs Estar",
-        "text": "Note",
-        "textPlaceholder": "Write the useful part here",
-        "noteType": "Note type",
-        "topic": "Topic",
-        "openEditor": "Open editor after saving",
-        "openEditorHint": "Useful when the quick version grows into a full note.",
-        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
-        "validation": "Add a title or some text first.",
-        "save": "Save quick note",
-        "saving": "Saving…"
+        "button": "749|Бърза бележка",
+        "title": "750|Бърза бележка",
+        "subtitle": "751|Запишете граматическа идея, без да отваряте пълния редактор.",
+        "noteTitle": "752|Заглавие",
+        "titlePlaceholder": "753|Пример: Ser vs Estar",
+        "text": "754|Бележка",
+        "textPlaceholder": "755|Напишете тук полезното",
+        "noteType": "756|Вид бележка",
+        "topic": "757|Тема",
+        "openEditor": "758|Отвори редактора след запазване",
+        "openEditorHint": "759|Полезно, когато бързата версия прерасне в пълна бележка.",
+        "tip": "760|Бързите бележки са за идеята, която иначе ще забравите след десет минути.",
+        "validation": "761|Първо добавете заглавие или малко текст.",
+        "save": "762|Запази бързата бележка",
+        "saving": "763|Запазваме…"
       },
       "settings": {
-        "title": "Notes settings",
-        "subtitle": "How quick capture, mistakes and the notes list behave.",
-        "reset": "Reset to defaults",
-        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "title": "764|Настройки на бележките",
+        "subtitle": "765|Как работят бързото записване, грешките и списъкът с бележки.",
+        "reset": "766|Върни към стандартните",
+        "tip": "767|Използвайте бързите грешки за изречения, които наистина сте написали грешно — те са по-полезни от идеалните учебникарски примери.",
         "quickCapture": {
-          "title": "Quick capture",
-          "subtitle": "Make fast notes and mistakes feel instant."
+          "title": "768|Бързо записване",
+          "subtitle": "769|Нека бързите бележки и грешки са мигновени."
         },
         "mistakeNotes": {
-          "title": "Mistake notes",
-          "subtitle": "What gets saved when you capture a quick mistake."
+          "title": "770|Бележки за грешки",
+          "subtitle": "771|Какво се запазва, когато записвате бърза грешка."
         },
         "essays": {
-          "title": "Essays",
-          "subtitle": "What happens to grammar issues found in your essays."
+          "title": "772|Есета",
+          "subtitle": "773|Какво става с граматическите грешки от вашите есета."
         },
         "review": {
-          "title": "Spaced review",
-          "subtitle": "How notes reach the review queue."
+          "title": "774|Разсрочен преговор",
+          "subtitle": "775|Как бележките попадат в опашката за преговор."
         },
         "appearance": {
-          "title": "Notes appearance",
-          "subtitle": "How the notes list is ordered and sized."
+          "title": "776|Външен вид на бележките",
+          "subtitle": "777|Как е подреден и оразмерен списъкът с бележки."
         },
         "helpers": {
-          "title": "Learning helpers",
-          "subtitle": "Small nudges inside empty states and quick sheets."
+          "title": "778|Помощници за учене",
+          "subtitle": "779|Малки подсещания в празните екрани и бързите форми."
         },
         "defaultType": {
-          "title": "Default note type",
-          "subtitle": "What a new quick note starts as."
+          "title": "780|Стандартен вид бележка",
+          "subtitle": "781|С какъв вид започва нова бърза бележка."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "Open editor after quick save",
-            "subtitle": "After saving a quick note, jump straight into the full editor."
+            "title": "782|Отвори редактора след бързо запазване",
+            "subtitle": "783|След запазване на бърза бележка минавай направо в пълния редактор."
           },
           "allowQuickQuizzes": {
-            "title": "Allow quizzes in notes",
-            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+            "title": "784|Позволи тестове в бележките",
+            "subtitle": "785|Предлагай блокове с тестове и създаване на тестове в бележките."
           },
           "showsMistakeHighlights": {
-            "title": "Highlight mistake notes",
-            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+            "title": "786|Открой бележките за грешки",
+            "subtitle": "787|Използвай топъл оттенък за картите с грешки и показвай реда с грешки."
           },
           "includeOriginalSentence": {
-            "title": "Include original sentence",
-            "subtitle": "Save the wrong version as a quote block in the note."
+            "title": "788|Включи оригиналното изречение",
+            "subtitle": "789|Запазвай грешния вариант в бележката като блок с цитат."
           },
           "includeCorrectedSentence": {
-            "title": "Include corrected sentence",
-            "subtitle": "Save the fixed version as an example block."
+            "title": "790|Включи поправеното изречение",
+            "subtitle": "791|Запазвай поправения вариант като блок с пример."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "Include explanation",
-            "subtitle": "Add your explanation as a paragraph block below."
+            "title": "792|Включи обяснението",
+            "subtitle": "793|Добавяй обяснението ви отдолу като абзац."
           },
           "groupMistakesByTopic": {
-            "title": "Group mistakes by topic",
-            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+            "title": "794|Групирай грешките по теми",
+            "subtitle": "795|Запазвай бързите грешки в текущата тема вместо в Чести грешки."
           },
           "askBeforeSavingMistakes": {
-            "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
+            "title": "796|Питай преди запазване на грешки",
+            "subtitle": "797|Потвърждавай, преди грешка от есе да стане бележка. Това има предимство пред автоматичното запазване."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
+            "title": "798|Автоматично запазвай грешките от есетата",
+            "subtitle": "799|Всяка граматическа грешка, намерена в есе, става бележка. При включено „Питай преди запазване“ пита веднъж за цялата проверка."
           },
           "groupsPinnedNotesFirst": {
-            "title": "Pinned notes first",
-            "subtitle": "Keep important rules at the top of each topic."
+            "title": "800|Закачените бележки първи",
+            "subtitle": "801|Дръжте важните правила най-отгоре във всяка тема."
           },
           "usesCompactCards": {
-            "title": "Compact note cards",
-            "subtitle": "Show tighter cards when you want more notes on screen."
+            "title": "802|Компактни карти за бележки",
+            "subtitle": "803|Показвай по-стегнати карти, когато искате повече бележки на екрана."
           },
           "showsHelperTips": {
-            "title": "Show helper tips",
-            "subtitle": "Display short contextual hints while creating notes."
+            "title": "804|Показвай съвети",
+            "subtitle": "805|Показвай кратки контекстни съвети, докато създавате бележки."
           },
           "autoAddNotesToReview": {
-            "title": "Add new notes to review",
-            "subtitle": "Every note you save joins the review queue, due a day later."
+            "title": "806|Добавяй новите бележки за преговор",
+            "subtitle": "807|Всяка запазена бележка влиза в опашката за преговор — на ред е на следващия ден."
           }
         }
       },
-      "editTopic": "Edit topic",
+      "editTopic": "808|Редактирай темата",
       "toSet": {
-        "title": "Make a set from this note",
-        "subtitle": "Pick the pairs to turn into flashcards.",
-        "setTitle": "Set title",
-        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
-        "button": "Make a set",
-        "create": "Create set",
-        "creating": "Creating…",
-        "error": "Couldn't create the set. Try again.",
-        "cards_one": "{{count}} card",
-        "cards_other": "{{count}} cards"
+        "title": "809|Създай комплект от тази бележка",
+        "subtitle": "810|Изберете двойките, които ще станат карти.",
+        "setTitle": "811|Заглавие на комплекта",
+        "empty": "812|В тази бележка още няма какво да се превърне в карти. Блоковете сравнение, пример и правило се преобразуват директно, а елементите от списък се разделят при тире — като „hacer — правя“.",
+        "button": "813|Създай комплект",
+        "create": "814|Създай комплект",
+        "creating": "815|Създаваме…",
+        "error": "816|Комплектът не можа да се създаде. Опитайте отново.",
+        "cards_one": "817|{{count}} карта",
+        "cards_other": "818|{{count}} карти"
       },
-      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "topicsEmptyTip": "819|Темата е папка за бележки — по една за език или по една за нещо, в което постоянно грешите.",
+      "notesEmptyTip": "820|Всяка запазена бележка влиза в опашката за преговор, така че да я запишете вече значи да започнете да я упражнявате."
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "821|Режими за упражнение",
+    "loading": "822|Зареждаме…",
+    "loadError": "823|Не успяхме да заредим текстовете ви за четене.",
+    "notFound": "824|Този елемент може да е бил изтрит.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "825|Днешен напредък",
+      "subtitle": "826|Поддържайте серията си по четене."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "827|Скоро",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "828|Моите текстове",
+        "subtitle": "829|Поставете свой текст и го четете с помощ."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "830|Четене от комплектите",
+        "subtitle": "831|Създайте текст за четене от вашите комплекти карти."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "832|Режим история",
+        "subtitle": "833|Четете интерактивни истории с разклоняващи се избори."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "834|Бързо четене",
+        "subtitle": "835|Тренирайте по-бързо четене с измерено темпо."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "836|Моите текстове",
+      "subtitle": "837|Вашите запазени текстове за четене.",
+      "addText": "838|Добави текст",
+      "emptyTitle": "839|Още няма текстове",
+      "emptyBody": "840|Добавете първия си текст, за да започнете упражнения по четене.",
+      "savedTitle": "841|Запазени текстове"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "842|Нов",
+      "inProgress": "843|В процес",
+      "completed": "844|Завършен"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "845|{{count}} дума",
+      "words_other": "846|{{count}} думи",
+      "start": "847|Започни",
+      "continue": "848|Продължи",
+      "readAgain": "849|Прочети отново",
+      "rename": "850|Преименувай",
+      "renamePrompt": "851|Ново заглавие:",
+      "delete": "852|Изтрий",
+      "deleteConfirm": "853|Да се изтрие ли „{{title}}“? Това не може да се върне."
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "854|Продължи четенето",
+      "percent": "855|{{percent}} % завършено",
+      "button": "856|Продължи"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "857|Основна идея",
+      "vocabulary": "858|Лексика",
+      "detailedComprehension": "859|Подробно разбиране",
+      "grammarAwareness": "860|Внимание към граматиката",
+      "speedFluency": "861|Скорост / плавност"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "862|Разбиране",
+      "trueFalse": "863|Вярно / Невярно",
+      "fillGap": "864|Попълни празното",
+      "vocabulary": "865|Лексика",
+      "findEvidence": "866|Намери доказателство",
+      "orderReconstruction": "867|Подреждане"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "868|Открой непознатите думи",
+      "translationOnTap": "869|Превод при докосване",
+      "vocabularyHints": "870|Подсказки за лексика",
+      "readingTimer": "871|Таймер за четене"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "872|Добави текст",
+      "subtitle": "873|Поставете текст и настройте упражнението си по четене.",
+      "untitled": "874|Текст без заглавие",
+      "pastePlaceholder": "875|Поставете или напишете текста си тук…",
+      "titleLabel": "876|Заглавие",
+      "titlePlaceholder": "877|По избор — можем да предложим",
+      "language": "878|Език",
+      "difficulty": "879|Трудност",
+      "autoDetect": "880|Разпознай автоматично",
+      "manual": "881|Избери ръчно",
+      "focus": "882|Фокус на четенето",
+      "questionTypes": "883|Видове въпроси",
+      "assistance": "884|Помощ при четене",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
-        "min": "min",
-        "detected": "Detected: {{level}}"
+        "words_one": "885|{{count}} дума",
+        "words_other": "886|{{count}} думи",
+        "chars_one": "887|{{count}} знак",
+        "chars_other": "888|{{count}} знака",
+        "min": "889|мин",
+        "detected": "890|Разпознато: {{level}}"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "891|Първо добавете текст.",
+        "tooShort": "892|Добавете поне 20 думи."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "893|Запази текста",
+      "saveAndStart": "894|Запази и започни",
+      "saving": "895|Запазваме…",
+      "saveError": "896|Запазването не бе успешно. Опитайте отново.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
-        "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "pasteText": "897|Постави",
+        "photo": "898|Снимка",
+        "pdf": "899|PDF",
+        "generate": "900|Генерирай",
+        "explore": "901|Проучи"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "902|Информативен",
+        "casual": "903|Непринуден",
+        "academic": "904|Академичен",
+        "narrative": "905|Разказвателен"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "906|Кратък",
+        "medium": "907|Среден",
+        "long": "908|Дълъг"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "909|Качете снимка на страница — ще извлечем текста.",
+        "chooseImage": "910|Избери изображение",
+        "recognizing": "911|Разпознаваме… {{percent}} %",
+        "imageError": "912|Не успяхме да разчетем текст от това изображение.",
+        "pdfHint": "913|Качете PDF — ще извлечем текста.",
+        "choosePDF": "914|Избери PDF",
+        "reading": "915|Четем PDF…",
+        "pdfError": "916|Не успяхме да разчетем този PDF.",
+        "topicPlaceholder": "917|Тема — напр. коралови рифове, книгопечатането",
+        "explorePlaceholder": "918|Тема или ключова дума — напр. Мария Кюри, Венеция",
+        "generateButton": "919|Генерирай текст",
+        "exploreButton": "920|Вземи статия",
+        "working": "921|Работим…",
+        "generateError": "922|Текстът не можа да се генерира. Опитайте отново.",
+        "exploreError": "923|Не намерихме статия по тази тема.",
+        "exploredFrom": "924|Взето от"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again.",
-      "translation": "Translation",
-      "textLabel": "Text"
+      "startQuestions": "925|Към въпросите",
+      "finish": "926|Приключи",
+      "next": "927|Напред",
+      "questionOf": "928|Въпрос {{current}} от {{total}}",
+      "closeTranslation": "929|Затвори превода",
+      "translating": "930|Превеждаме…",
+      "translationError": "931|Преводът не бе успешен. Опитайте отново.",
+      "translation": "932|Превод",
+      "textLabel": "933|Текст"
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts",
-      "complete": "Practice Complete"
+      "comprehension": "934|Разбиране",
+      "correct": "935|Верни",
+      "time": "936|Време за четене",
+      "wpm": "937|думи/мин",
+      "mistakes": "938|Грешки",
+      "mistakesTitle": "939|Прегледайте грешките си",
+      "readAgain": "940|Прочети отново",
+      "back": "941|Назад към Моите текстове",
+      "complete": "942|Упражнението приключи"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "943|Четене от комплектите",
+      "subtitle": "944|Превърнете комплект карти в текст за четене.",
+      "pickSet": "945|Изберете комплект",
+      "changeSet": "946|Смени комплекта",
+      "tooFewWords": "947|На този комплект му трябват поне {{count}} думи, за да се създаде текст.",
+      "mode": "948|Режим на генериране",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "949|Естествен",
+        "strict": "950|Строг",
+        "mixed": "951|Смесен"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "952|Дължина на текста",
+      "generate": "953|Генерирай текст",
+      "generating": "954|Създаваме вашия текст…",
+      "generateError": "955|Текстът не можа да се създаде. Опитайте отново.",
+      "emptyTitle": "956|Още няма текстове",
+      "emptyBody": "957|Изберете комплект карти и ще го превърнем в текст за четене.",
+      "savedTitle": "958|Запазени текстове"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "959|Бързо четене",
+      "subtitle": "960|Тренирайте по-бързо четене с измерено темпо.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "961|Целева скорост на четене",
+        "timer": "962|Вид таймер",
+        "length": "963|Дължина на текста"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "964|Спокойна",
+        "balanced": "965|Балансирана",
+        "fast": "966|Бърза",
+        "challenge": "967|Предизвикателство"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "968|Без таймер",
+        "soft": "969|Мек таймер",
+        "strict": "970|Строг таймер"
       },
       "length": {
-        "two": "2 min",
-        "five": "5 min",
-        "ten": "10 min"
+        "two": "971|2 мин",
+        "five": "972|5 мин",
+        "ten": "973|10 мин"
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
-      "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "summary": "974|Цел {{wpm}} думи/мин · ~{{minutes}} мин четене",
+      "start": "975|Започни сесия",
+      "preparing": "976|Подготвяме вашия откъс…",
+      "generateError": "977|Откъсът не можа да се създаде. Опитайте отново.",
+      "recentTitle": "978|Скорошни сесии",
+      "chunkOf": "979|Част {{current}} от {{total}}",
+      "previous": "980|Предишна част",
+      "pause": "981|Пауза",
+      "resume": "982|Продължи",
+      "nextChunk": "983|Следваща част",
+      "finishReading": "984|Приключи четенето",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "985|Отлично",
+        "balanced": "986|В целта",
+        "fast": "987|Почти",
+        "tooSlow": "988|Твърде бавно"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "989|Средно думи/мин",
+        "target": "990|Цел думи/мин",
+        "violations_one": "991|{{count}} просрочване",
+        "violations_other": "992|{{count}} просрочвания"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "993|Опитай отново",
+      "backToSetup": "994|Назад към настройките"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "995|Режим история",
+      "subtitle": "996|Четете интерактивни истории с разклоняващи се избори.",
+      "typeSection": "997|Вид история",
       "type": {
-        "adventure": "Adventure",
-        "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "adventure": "998|Приключение",
+        "fantasy": "999|Фентъзи",
+        "mystery": "1000|Мистерия",
+        "romance": "1001|Романтика",
+        "dailyLife": "1002|Ежедневие"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "1003|Дължина на историята",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "1004|Кратка история",
+        "multiChapter": "1005|Няколко глави",
+        "infinite": "1006|Безкрайна история"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "1007|Започни историята",
+      "generating": "1008|Пишем вашата история…",
+      "generatingNext": "1009|Пишем следващата глава…",
+      "generateError": "1010|Историята не можа да се напише. Опитайте отново.",
+      "emptyTitle": "1011|Още няма истории",
+      "emptyBody": "1012|Започнете първата си интерактивна история отгоре.",
+      "savedTitle": "1013|Вашите истории",
+      "chapterN": "1014|Глава {{n}}",
+      "chapterOf": "1015|Глава {{current}} / {{total}}",
+      "chapterScore": "1016|Оценка за главата",
+      "whatNext": "1017|Какво става после?",
+      "endStory": "1018|Приключи историята",
+      "completeTitle": "1019|Историята е завършена",
+      "completeBody_one": "1020|Прочетохте {{count}} глава. Отлично четене!",
+      "completeBody_other": "1021|Прочетохте {{count}} глави. Отлично четене!",
+      "backToStories": "1022|Назад към историите"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "1023|Режими за упражнение",
+    "notFound": "1024|Тази сесия може да е била изтрита.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "1025|Днешен напредък",
+      "subtitle": "1026|упражнения по слушане"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1027|Скоро",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "1028|Слушане от текст",
+        "subtitle": "1029|Поставете текст, чуйте го и проверете разбирането си."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "1030|Импорт на аудио",
+        "subtitle": "1031|Качете свое аудио и го превърнете в упражнение по слушане."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "1032|Импорт на видео",
+        "subtitle": "1033|Качете видео, вземете субтитри и се упражнявайте с въпроси."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "1034|Запазени упражнения",
+        "subtitle": "1035|Продължете предишни сесии и прегледайте грешките си."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
-      "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "mainIdea": "1036|Основна идея",
+      "details": "1037|Подробности",
+      "vocabulary": "1038|Лексика",
+      "trueFalse": "1039|Вярно / Невярно"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "1040|Слушане от текст",
+      "subtitle": "1041|Поставете текст и го превърнете в упражнение по слушане.",
+      "level": "1042|Ниво",
+      "voiceSpeed": "1043|Скорост на гласа",
+      "voiceType": "1044|Вид глас",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "1045|Стандартен",
+        "female": "1046|Женски",
+        "male": "1047|Мъжки"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "1048|Показвай текста по време на слушане",
+      "addQuestions": "1049|Добави въпроси за разбиране",
+      "questionCount": "1050|Брой въпроси",
+      "questionTypes": "1051|Видове въпроси",
+      "optionalTitle": "1052|Заглавие (по избор)",
+      "titlePlaceholder": "1053|Дайте име на текста си",
+      "textPlaceholder": "1054|Поставете текста си тук...",
+      "recommended": "1055|Препоръчително: 80–500 думи.",
+      "words": "1056|думи",
+      "defaultTitle": "1057|Упражнение по слушане",
+      "start": "1058|Започни слушането",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "1059|Добавете текст, за да започнете да слушате.",
+        "tooShort": "1060|Добавете поне 40 знака, за да започнете да слушате.",
+        "tooLong": "1061|Този текст е твърде дълъг. Дръжте го под 5000 знака.",
+        "tooFewWords": "1062|Добавете малко повече текст (около 40 думи или повече), за да съставим добри въпроси."
       },
-      "voiceSettings": "Voice Settings",
-      "questions": "Questions",
-      "textInput": "Text Input"
+      "voiceSettings": "1063|Настройки на гласа",
+      "questions": "1064|Въпроси",
+      "textInput": "1065|Въвеждане на текст"
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "1066|Пусни отново",
+      "transcript": "1067|Транскрипция",
+      "questionsTitle": "1068|Въпроси",
+      "answerFirst": "1069|Преди проверката отговорете поне на един въпрос.",
+      "checkAnswers": "1070|Провери отговорите",
+      "finish": "1071|Приключи упражнението"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "1072|Упражнението приключи",
+      "comprehension": "1073|Разбиране",
+      "correct": "1074|Верни",
+      "time": "1075|Време за слушане",
+      "speed": "1076|Скорост",
+      "mistakes": "1077|Грешки",
+      "mistakesTitle": "1078|Прегледайте грешките си",
+      "watchOnlyTitle": "1079|Слушането приключи",
+      "watchOnlyBody": "1080|Слушахте {{time}}.",
+      "practiceAgain": "1081|Упражни се отново",
+      "back": "1082|Назад към слушането"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "1083|Импорт на аудио",
+      "subtitle": "1084|Превърнете своето аудио в упражнение по слушане.",
+      "uploadTitle": "1085|Качи аудио файл",
+      "uploadFormats": "1086|MP3, M4A, WAV или AAC · до 50 МБ",
+      "chooseFile": "1087|Избери файл",
+      "clearFile": "1088|Премахни файла",
+      "infoNote": "1089|Аудиото ви ще бъде транскрибирано на заден план. По време на упражнението транскрипцията остава скрита.",
+      "continue": "1090|Продължи",
+      "processingTitle": "1091|Подготвяме вашето упражнение по слушане",
+      "step1": "1092|Качваме аудиото",
+      "step2": "1093|Транскрибираме речта",
+      "step3": "1094|Създаваме въпросите",
+      "processError": "1095|Не успяхме да подготвим това аудио. Опитайте отново.",
+      "tryAgain": "1096|Опитай отново",
+      "chooseAnother": "1097|Избери друг файл",
+      "transcriptHidden": "1098|Транскрипцията е скрита, за да остане това истинско упражнение по слушане."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "1099|Импорт на видео",
+      "subtitle": "1100|Качете видео, вземете субтитри и се упражнявайте с въпроси.",
+      "uploadTitle": "1101|Качи видео файл",
+      "uploadFormats": "1102|MP4, MOV или M4V · до 80 МБ",
+      "step1": "1103|Подготвяме видеото",
+      "step2": "1104|Транскрибираме речта",
+      "step3": "1105|Съставяме субтитрите",
+      "subtitles": "1106|Субтитри",
+      "subtitlesOn": "1107|Субтитрите са включени",
+      "subtitlesOff": "1108|Субтитрите са изключени",
+      "noSubtitles": "1109|За това видео няма субтитри.",
+      "tapWord": "1110|Докоснете дума, за да я преведете.",
+      "questionsLocked": "1111|Въпросите се отключват, след като изгледате видеото."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "1112|Преведи думата",
+      "pickSet": "1113|Изберете комплект",
+      "createSet": "1114|Създай комплект",
+      "addToSet": "1115|Добави в комплекта",
+      "noSets": "1116|Още нямате комплекти. Създайте един отдолу.",
+      "setNamePlaceholder": "1117|напр. Думи от видеото",
+      "createAndAdd": "1118|Създай и добави думата",
+      "saved": "1119|Запазено в „{{set}}“."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "1120|Запазени упражнения",
+      "subtitle": "1121|Продължете сесиите и прегледайте грешките си при слушане.",
+      "emptyTitle": "1122|Няма запазени сесии",
+      "emptyBody": "1123|Завършете или поставете на пауза сесия по слушане и тя ще се появи тук.",
+      "continueEyebrow": "1124|Продължи слушането",
+      "percentComplete": "1125|{{percent}} % завършено",
+      "continue": "1126|Продължи",
+      "review": "1127|Преглед",
+      "delete": "1128|Изтрий сесията",
+      "deleteConfirm": "1129|Да се изтрие ли „{{title}}“? Това не може да се върне.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "1130|Чернова",
+        "inProgress": "1131|В процес",
+        "completed": "1132|Завършена"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "1133|Режими за упражнение",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "1134|Днешен напредък",
+      "subtitle": "1135|упражнения по говорене"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1136|Скоро",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "1137|Разговор с ИИ",
+        "subtitle": "1138|Говорете с ИИ преподавател в реално време."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "1139|Свободно говорене",
+        "subtitle": "1140|Говорете по генерирани теми и получавайте обратна връзка."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "1141|Опиши картинка",
+        "subtitle": "1142|Описвайте изображения и учете полезни думи."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "1143|Режим дебат",
+        "subtitle": "1144|Обсъждайте теми и градете аргументите си."
       },
       "shadowing": {
-        "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "title": "1145|Shadowing",
+        "subtitle": "1146|Повтаряйте фрази и подобрявайте произношението."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "1147|Треньор по произношение",
+        "subtitle": "1148|Съсредоточете се върху трудните звуци и думи."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "1149|Говори",
+      "stop": "1150|Спри",
+      "listening": "1151|Слушаме…",
+      "placeholder": "1152|Напишете отговора си…",
+      "noVoice": "1153|Този браузър не поддържа гласов вход — напишете отговора си."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
-      "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "title": "1154|Разговор с ИИ",
+      "subtitle": "1155|Говорете с ИИ преподавател в реално време.",
+      "topic": "1156|Тема",
+      "scenarios": "1157|Сценарии",
+      "autoTopic": "1158|Изненадай ме",
+      "autoTopicHint": "1159|Ще генерираме нова тема за вас.",
+      "length": "1160|Времетраене",
+      "min": "1161|мин",
+      "start": "1162|Започни разговора",
+      "starting": "1163|Започваме…",
+      "startError": "1164|Разговорът не можа да започне. Опитайте отново.",
+      "end": "1165|Приключи",
+      "dismiss": "1166|Скрий",
+      "hint": "1167|Подсказка",
+      "getHint": "1168|Нужна ли ви е подсказка?",
+      "hintLoading": "1169|Мислим…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "1170|Упражнението приключи",
+      "generating": "1171|Анализираме говоренето ви…",
+      "overall": "1172|Обща оценка",
+      "corrections": "1173|Корекции",
+      "transcript": "1174|Транскрипция",
+      "practiceAgain": "1175|Упражни се отново",
+      "back": "1176|Назад към говоренето"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
-      "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "title": "1177|Свободно говорене",
+      "subtitle": "1178|Говорете свободно по тема и получете обратна връзка.",
+      "preview": "1179|Преглед",
+      "autoTopic": "1180|Тема, генерирана от ИИ",
+      "autoTopicHint": "1181|Когато започнете, ще изберем нова тема за {{language}} · {{level}}.",
+      "auto": "1182|Автоматично",
+      "start": "1183|Започни Свободно говорене",
+      "generating": "1184|Генерираме темата…",
+      "generatingHint": "1185|Избираме нещо, което отговаря на нивото ви.",
+      "fallbackTopic": "1186|Темата не можа да се генерира. Използваме резервна.",
+      "transcript": "1187|Транскрипция",
+      "transcriptHint": "1188|Транскрипцията ви ще се появи тук, докато говорите.",
+      "startSpeaking": "1189|Започни да говориш"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "1190|Опиши картинка",
+      "subtitle": "1191|Опишете какво виждате и получете обратна връзка.",
+      "start": "1192|Започни Опиши картинка",
+      "prompt": "1193|Опишете какво виждате на тази картинка.",
+      "tryToMention": "1194|Опитайте да споменете:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "1195|хора",
+        "objects": "1196|предмети",
+        "actions": "1197|действия",
+        "colors": "1198|цветове",
+        "emotions": "1199|емоции"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "1200|Зареждаме снимка…",
+      "retry": "1201|Опитай отново",
+      "newPhoto": "1202|Друга снимка",
+      "imageAlt": "1203|Снимка за описване",
+      "photoBy": "1204|Снимка от",
+      "onUnsplash": "1205|в Unsplash",
+      "startDescribing": "1206|Започни да описваш"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "1207|Режим дебат",
+      "subtitle": "1208|Защитавайте своята страна срещу ИИ опонент.",
+      "start": "1209|Започни дебата",
+      "pickSide": "1210|Вашата страна",
+      "preparing": "1211|Подготвяме темата на дебата…",
+      "roundOf": "1212|Рунд {{current}} от {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "1213|За",
+          "subtitle": "1214|Защитавайте твърдението"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "1215|Против",
+          "subtitle": "1216|Аргументирайте се против"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "1217|Изненадай ме",
+          "subtitle": "1218|Ние избираме страна вместо вас"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "1219|Чуй",
+      "playing": "1220|Възпроизвеждаме…",
+      "record": "1221|Запиши",
+      "stop": "1222|Спри",
+      "playMine": "1223|Чуй моя запис",
+      "noRecording": "1224|Този браузър не поддържа запис — но можете да слушате и повтаряте."
     },
     "shadowing": {
-      "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "title": "1225|Shadowing",
+      "subtitle": "1226|Слушайте, повтаряйте и се сравнявайте.",
+      "start": "1227|Започни Shadowing",
+      "category": "1228|Категория",
+      "howItWorks": "1229|Чуйте фразата, повторете я на глас, докато записвате, после пуснете своя запис и сравнете ритъма.",
+      "loading": "1230|Генерираме фрази…",
+      "phrase": "1231|Фраза",
+      "previous": "1232|Предишна",
+      "nextPhrase": "1233|Следваща фраза",
+      "finish": "1234|Приключи",
+      "changeSettings": "1235|Смени настройките",
+      "done": "1236|Готови: {{count}}",
+      "allDone": "1237|Всички фрази са упражнени!",
+      "newSet": "1238|Нов комплект"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "1239|Треньор по произношение",
+      "subtitle": "1240|Съсредоточете се върху трудните звуци и думи.",
+      "start": "1241|Започни тренировката",
+      "focus": "1242|Фокус",
+      "difficulty": "1243|Трудност",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "1244|Лесно",
+        "balanced": "1245|Балансирано",
+        "hard": "1246|Трудно"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "1247|Генерираме упражнения…",
+      "sound": "1248|Звук",
+      "scoringUnavailable": "1249|Автоматичното оценяване на произношението още не е настроено на сървъра, затова оценка не се показва. Слушането, записът и възпроизвеждането работят."
     }
   },
   "profile": {
-    "interfaceLanguage": "Interface language",
+    "interfaceLanguage": "1250|Език на интерфейса",
     "password": {
-      "title": "Create a password",
-      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
-      "save": "Save password",
-      "saving": "Saving...",
-      "savedInfo": "Password created. You can sign in with your email now too."
+      "title": "1251|Създайте парола",
+      "body": "1252|Акаунтът ви е създаден с Google, затова няма парола — с полетата за имейл и парола не можете да влезете. Задайте парола и ще работят и двата начина.",
+      "save": "1253|Запази паролата",
+      "saving": "1254|Запазваме...",
+      "savedInfo": "1255|Паролата е създадена. Сега можете да влизате и с имейла си."
     }
   },
   "units": {
-    "min": "min",
-    "words": "words"
+    "min": "1256|мин",
+    "words": "1257|думи"
   },
   "link": {
-    "title": "Sign in with a link",
-    "subtitle": "We'll email you a one-time link. No password to remember.",
-    "send": "Send the link",
-    "sending": "Sending...",
-    "sentInfo": "Link sent. Check your email.",
-    "sentTitle": "Check your email",
-    "sentBody": "We sent a sign-in link to",
-    "useAnotherEmail": "Use another email",
-    "backToPassword": "Sign in with a password instead"
+    "title": "1258|Вход с връзка",
+    "subtitle": "1259|Ще ви изпратим по имейл еднократна връзка. Няма парола за помнене.",
+    "send": "1260|Изпрати връзката",
+    "sending": "1261|Изпращаме...",
+    "sentInfo": "1262|Връзката е изпратена. Проверете имейла си.",
+    "sentTitle": "1263|Проверете имейла си",
+    "sentBody": "1264|Изпратихме връзка за вход на",
+    "useAnotherEmail": "1265|Използвай друг имейл",
+    "backToPassword": "1266|По-добре вход с парола"
   },
   "action": {
-    "working": "One moment...",
-    "continue": "Continue",
-    "confirmEmailTitle": "Confirm your email",
-    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
-    "resetTitle": "New password",
-    "resetSubtitle": "Choose a new password for",
-    "newPassword": "New password",
-    "confirmPassword": "Repeat password",
-    "savePassword": "Save password",
-    "resetDoneTitle": "Password updated",
-    "resetDoneBody": "You can sign in with your new password now.",
-    "failedTitle": "That link didn't work",
-    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
-    "backToSignIn": "Back to sign in"
+    "working": "1267|Момент...",
+    "continue": "1268|Продължи",
+    "confirmEmailTitle": "1269|Потвърдете имейла си",
+    "confirmEmailBody": "1270|Тази връзка е отворена в друг браузър. Въведете адреса, на който е изпратена, и ще довършим влизането.",
+    "resetTitle": "1271|Нова парола",
+    "resetSubtitle": "1272|Изберете нова парола за",
+    "newPassword": "1273|Нова парола",
+    "confirmPassword": "1274|Повторете паролата",
+    "savePassword": "1275|Запази паролата",
+    "resetDoneTitle": "1276|Паролата е обновена",
+    "resetDoneBody": "1277|Сега можете да влезете с новата си парола.",
+    "failedTitle": "1278|Тази връзка не проработи",
+    "failedBody": "1279|Възможно е вече да е използвана или да е изтекла. Заявете нова от екрана за вход.",
+    "backToSignIn": "1280|Назад към входа"
   },
   "common": {
-    "cancel": "Cancel",
-    "delete": "Delete",
+    "cancel": "1281|Отказ",
+    "delete": "1282|Изтрий",
     "view": {
-      "label": "View",
-      "rows": "List",
-      "grid": "Grid"
+      "label": "1283|Изглед",
+      "rows": "1284|Списък",
+      "grid": "1285|Мрежа"
     }
   },
   "practice": {
     "language": {
-      "label": "Language",
-      "search": "Search a language",
-      "noMatch": "No language matches that.",
-      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+      "label": "1286|Език",
+      "search": "1287|Търсене на език",
+      "noMatch": "1288|Няма съвпадащ език.",
+      "noVoice": "1289|Браузърът ви няма глас за {{language}}, затова преподавателят няма да говори на този език. Добавете езиковия пакет в системните настройки или изберете друг език."
     }
   }
 }
