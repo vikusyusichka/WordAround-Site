@@ -4,7 +4,7 @@
     "tagline": "Leer talen, actief."
   },
   "onboarding": {
-    "subtitle": "Leer woorden op een leuke\\nen simpele manier",
+    "subtitle": "Leer woorden op een leuke\nen simpele manier",
     "start": "Laten we beginnen"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Kopieer en plak je gegevens — uit Word, Excel, Google Docs en dergelijke.",
       "close": "Importeren sluiten",
       "dataSection": "Jouw gegevens",
-      "placeholder": "Woord 1\\tDefinitie 1\\nWoord 2\\tDefinitie 2\\nWoord 3\\tDefinitie 3",
+      "placeholder": "Woord 1\tDefinitie 1\nWoord 2\tDefinitie 2\nWoord 3\tDefinitie 3",
       "separatorsSection": "Scheidingstekens",
       "betweenTermAndDefinition": "Tussen woord en vertaling",
       "betweenCards": "Tussen kaarten",

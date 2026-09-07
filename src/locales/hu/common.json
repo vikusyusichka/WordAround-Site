@@ -4,7 +4,7 @@
     "tagline": "Tanulj nyelveket aktívan."
   },
   "onboarding": {
-    "subtitle": "Tanulj szavakat játékosan\\nés egyszerűen",
+    "subtitle": "Tanulj szavakat játékosan\nés egyszerűen",
     "start": "Kezdjük"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Másold és illeszd be az adataidat — Wordből, Excelből, Google Docsból és hasonlókból.",
       "close": "Importálás bezárása",
       "dataSection": "Az adataid",
-      "placeholder": "1. szó\\t1. jelentés\\n2. szó\\t2. jelentés\\n3. szó\\t3. jelentés",
+      "placeholder": "1. szó\t1. jelentés\n2. szó\t2. jelentés\n3. szó\t3. jelentés",
       "separatorsSection": "Elválasztók",
       "betweenTermAndDefinition": "Szó és fordítás között",
       "betweenCards": "Kártyák között",

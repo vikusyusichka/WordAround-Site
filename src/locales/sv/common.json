@@ -4,7 +4,7 @@
     "tagline": "Lär dig språk aktivt."
   },
   "onboarding": {
-    "subtitle": "Lär dig ord på ett roligt\\noch enkelt sätt",
+    "subtitle": "Lär dig ord på ett roligt\noch enkelt sätt",
     "start": "Nu kör vi"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Kopiera och klistra in dina data — från Word, Excel, Google Docs och liknande.",
       "close": "Stäng importen",
       "dataSection": "Dina data",
-      "placeholder": "Ord 1\\tDefinition 1\\nOrd 2\\tDefinition 2\\nOrd 3\\tDefinition 3",
+      "placeholder": "Ord 1\tDefinition 1\nOrd 2\tDefinition 2\nOrd 3\tDefinition 3",
       "separatorsSection": "Avgränsare",
       "betweenTermAndDefinition": "Mellan ord och översättning",
       "betweenCards": "Mellan kort",

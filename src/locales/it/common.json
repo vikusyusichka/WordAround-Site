@@ -4,7 +4,7 @@
     "tagline": "Impara le lingue in modo attivo."
   },
   "onboarding": {
-    "subtitle": "Impara le parole in modo divertente\\ne semplice",
+    "subtitle": "Impara le parole in modo divertente\ne semplice",
     "start": "Iniziamo"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Copia e incolla i tuoi dati: da Word, Excel, Google Docs e simili.",
       "close": "Chiudi l'importazione",
       "dataSection": "I tuoi dati",
-      "placeholder": "Parola 1\\tDefinizione 1\\nParola 2\\tDefinizione 2\\nParola 3\\tDefinizione 3",
+      "placeholder": "Parola 1\tDefinizione 1\nParola 2\tDefinizione 2\nParola 3\tDefinizione 3",
       "separatorsSection": "Separatori",
       "betweenTermAndDefinition": "Tra parola e traduzione",
       "betweenCards": "Tra le carte",

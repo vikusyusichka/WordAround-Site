@@ -4,7 +4,7 @@
     "tagline": "Aprèn idiomes de manera activa."
   },
   "onboarding": {
-    "subtitle": "Aprèn paraules d'una manera divertida\\ni senzilla",
+    "subtitle": "Aprèn paraules d'una manera divertida\ni senzilla",
     "start": "Comencem"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Copia i enganxa les teves dades: del Word, l'Excel, Google Docs i similars.",
       "close": "Tanca la importació",
       "dataSection": "Les teves dades",
-      "placeholder": "Paraula 1\\tDefinició 1\\nParaula 2\\tDefinició 2\\nParaula 3\\tDefinició 3",
+      "placeholder": "Paraula 1\tDefinició 1\nParaula 2\tDefinició 2\nParaula 3\tDefinició 3",
       "separatorsSection": "Separadors",
       "betweenTermAndDefinition": "Entre paraula i traducció",
       "betweenCards": "Entre targetes",

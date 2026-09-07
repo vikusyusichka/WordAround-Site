@@ -4,7 +4,7 @@
     "tagline": "Aprende idiomas de forma activa."
   },
   "onboarding": {
-    "subtitle": "Aprende palabras dun xeito divertido\\ne sinxelo",
+    "subtitle": "Aprende palabras dun xeito divertido\ne sinxelo",
     "start": "Comecemos"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Copia e pega os teus datos: de Word, Excel, Google Docs e similares.",
       "close": "Pechar a importación",
       "dataSection": "Os teus datos",
-      "placeholder": "Palabra 1\\tDefinición 1\\nPalabra 2\\tDefinición 2\\nPalabra 3\\tDefinición 3",
+      "placeholder": "Palabra 1\tDefinición 1\nPalabra 2\tDefinición 2\nPalabra 3\tDefinición 3",
       "separatorsSection": "Separadores",
       "betweenTermAndDefinition": "Entre palabra e tradución",
       "betweenCards": "Entre tarxetas",

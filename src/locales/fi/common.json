@@ -4,7 +4,7 @@
     "tagline": "Opi kieliä aktiivisesti."
   },
   "onboarding": {
-    "subtitle": "Opi sanoja hauskasti\\nja helposti",
+    "subtitle": "Opi sanoja hauskasti\nja helposti",
     "start": "Aloitetaan"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Kopioi ja liitä tietosi — Wordista, Excelistä, Google Docsista ja vastaavista.",
       "close": "Sulje tuonti",
       "dataSection": "Tietosi",
-      "placeholder": "Sana 1\\tMerkitys 1\\nSana 2\\tMerkitys 2\\nSana 3\\tMerkitys 3",
+      "placeholder": "Sana 1\tMerkitys 1\nSana 2\tMerkitys 2\nSana 3\tMerkitys 3",
       "separatorsSection": "Erottimet",
       "betweenTermAndDefinition": "Sanan ja käännöksen välissä",
       "betweenCards": "Korttien välissä",

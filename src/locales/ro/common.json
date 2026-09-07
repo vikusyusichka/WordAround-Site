@@ -4,7 +4,7 @@
     "tagline": "Învață limbi străine activ."
   },
   "onboarding": {
-    "subtitle": "Învață cuvinte distractiv\\nși simplu",
+    "subtitle": "Învață cuvinte distractiv\nși simplu",
     "start": "Să începem"
   },
   "auth": {
@@ -205,7 +205,7 @@
       "subtitle": "Copiază și lipește datele tale — din Word, Excel, Google Docs și altele asemenea.",
       "close": "Închide importul",
       "dataSection": "Datele tale",
-      "placeholder": "Cuvânt 1\\tDefiniție 1\\nCuvânt 2\\tDefiniție 2\\nCuvânt 3\\tDefiniție 3",
+      "placeholder": "Cuvânt 1\tDefiniție 1\nCuvânt 2\tDefiniție 2\nCuvânt 3\tDefiniție 3",
       "separatorsSection": "Separatori",
       "betweenTermAndDefinition": "Între cuvânt și traducere",
       "betweenCards": "Între cartonașe",

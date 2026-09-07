@@ -4,7 +4,7 @@
     "tagline": "Učte se jazyky aktivně."
   },
   "onboarding": {
-    "subtitle": "Učte se slovíčka zábavně\\na jednoduše",
+    "subtitle": "Učte se slovíčka zábavně\na jednoduše",
     "start": "Pojďme na to"
   },
   "auth": {
@@ -207,7 +207,7 @@
       "subtitle": "Zkopírujte a vložte svá data — z Wordu, Excelu, Google Docs a podobně.",
       "close": "Zavřít import",
       "dataSection": "Vaše data",
-      "placeholder": "Slovo 1\\tDefinice 1\\nSlovo 2\\tDefinice 2\\nSlovo 3\\tDefinice 3",
+      "placeholder": "Slovo 1\tDefinice 1\nSlovo 2\tDefinice 2\nSlovo 3\tDefinice 3",
       "separatorsSection": "Oddělovače",
       "betweenTermAndDefinition": "Mezi slovem a překladem",
       "betweenCards": "Mezi kartičkami",

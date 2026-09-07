@@ -4,7 +4,7 @@
     "tagline": "Učite jezike aktivno."
   },
   "onboarding": {
-    "subtitle": "Učite riječi zabavno\\ni jednostavno",
+    "subtitle": "Učite riječi zabavno\ni jednostavno",
     "start": "Krenimo"
   },
   "auth": {
@@ -205,7 +205,7 @@
       "subtitle": "Kopirajte i zalijepite svoje podatke — iz Worda, Excela, Google Docsa i slično.",
       "close": "Zatvori uvoz",
       "dataSection": "Vaši podaci",
-      "placeholder": "Riječ 1\\tDefinicija 1\\nRiječ 2\\tDefinicija 2\\nRiječ 3\\tDefinicija 3",
+      "placeholder": "Riječ 1\tDefinicija 1\nRiječ 2\tDefinicija 2\nRiječ 3\tDefinicija 3",
       "separatorsSection": "Razdjelnici",
       "betweenTermAndDefinition": "Između riječi i prijevoda",
       "betweenCards": "Između kartica",

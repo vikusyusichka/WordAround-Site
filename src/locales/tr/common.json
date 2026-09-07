@@ -4,7 +4,7 @@
     "tagline": "Dilleri aktif biçimde öğren."
   },
   "onboarding": {
-    "subtitle": "Kelimeleri eğlenceli\\nve basit şekilde öğren",
+    "subtitle": "Kelimeleri eğlenceli\nve basit şekilde öğren",
     "start": "Hadi başlayalım"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Verilerini kopyalayıp yapıştır — Word, Excel, Google Docs ve benzerlerinden.",
       "close": "İçe aktarmayı kapat",
       "dataSection": "Verilerin",
-      "placeholder": "Kelime 1\\tTanım 1\\nKelime 2\\tTanım 2\\nKelime 3\\tTanım 3",
+      "placeholder": "Kelime 1\tTanım 1\nKelime 2\tTanım 2\nKelime 3\tTanım 3",
       "separatorsSection": "Ayırıcılar",
       "betweenTermAndDefinition": "Kelime ile çeviri arasında",
       "betweenCards": "Kartlar arasında",

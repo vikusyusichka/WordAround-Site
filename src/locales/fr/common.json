@@ -4,7 +4,7 @@
     "tagline": "Apprenez les langues activement."
   },
   "onboarding": {
-    "subtitle": "Apprenez des mots de façon ludique\\net simple",
+    "subtitle": "Apprenez des mots de façon ludique\net simple",
     "start": "C'est parti"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Copiez-collez vos données — depuis Word, Excel, Google Docs et compagnie.",
       "close": "Fermer l'import",
       "dataSection": "Vos données",
-      "placeholder": "Mot 1\\tDéfinition 1\\nMot 2\\tDéfinition 2\\nMot 3\\tDéfinition 3",
+      "placeholder": "Mot 1\tDéfinition 1\nMot 2\tDéfinition 2\nMot 3\tDéfinition 3",
       "separatorsSection": "Séparateurs",
       "betweenTermAndDefinition": "Entre le mot et la traduction",
       "betweenCards": "Entre les cartes",

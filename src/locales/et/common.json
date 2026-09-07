@@ -4,7 +4,7 @@
     "tagline": "Õpi keeli aktiivselt."
   },
   "onboarding": {
-    "subtitle": "Õpi sõnu lõbusalt\\nja lihtsalt",
+    "subtitle": "Õpi sõnu lõbusalt\nja lihtsalt",
     "start": "Alustame"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Kopeeri ja kleebi oma andmed — Wordist, Excelist, Google Docsist ja muust sarnasest.",
       "close": "Sulge import",
       "dataSection": "Sinu andmed",
-      "placeholder": "Sõna 1\\tTähendus 1\\nSõna 2\\tTähendus 2\\nSõna 3\\tTähendus 3",
+      "placeholder": "Sõna 1\tTähendus 1\nSõna 2\tTähendus 2\nSõna 3\tTähendus 3",
       "separatorsSection": "Eraldajad",
       "betweenTermAndDefinition": "Sõna ja tõlke vahel",
       "betweenCards": "Kaartide vahel",

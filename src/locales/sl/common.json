@@ -4,7 +4,7 @@
     "tagline": "Učite se jezikov aktivno."
   },
   "onboarding": {
-    "subtitle": "Učite se besed zabavno\\nin preprosto",
+    "subtitle": "Učite se besed zabavno\nin preprosto",
     "start": "Začnimo"
   },
   "auth": {
@@ -207,7 +207,7 @@
       "subtitle": "Kopirajte in prilepite svoje podatke — iz Worda, Excela, Google Docsov in podobnega.",
       "close": "Zapri uvoz",
       "dataSection": "Vaši podatki",
-      "placeholder": "Beseda 1\\tRazlaga 1\\nBeseda 2\\tRazlaga 2\\nBeseda 3\\tRazlaga 3",
+      "placeholder": "Beseda 1\tRazlaga 1\nBeseda 2\tRazlaga 2\nBeseda 3\tRazlaga 3",
       "separatorsSection": "Ločila",
       "betweenTermAndDefinition": "Med besedo in prevodom",
       "betweenCards": "Med karticami",

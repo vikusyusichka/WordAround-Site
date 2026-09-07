@@ -4,7 +4,7 @@
     "tagline": "Lær språk aktivt."
   },
   "onboarding": {
-    "subtitle": "Lær ord på en morsom\\nog enkel måte",
+    "subtitle": "Lær ord på en morsom\nog enkel måte",
     "start": "La oss begynne"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Kopier og lim inn dataene dine — fra Word, Excel, Google Docs og lignende.",
       "close": "Lukk importen",
       "dataSection": "Dataene dine",
-      "placeholder": "Ord 1\\tDefinisjon 1\\nOrd 2\\tDefinisjon 2\\nOrd 3\\tDefinisjon 3",
+      "placeholder": "Ord 1\tDefinisjon 1\nOrd 2\tDefinisjon 2\nOrd 3\tDefinisjon 3",
       "separatorsSection": "Skilletegn",
       "betweenTermAndDefinition": "Mellom ord og oversettelse",
       "betweenCards": "Mellom kort",

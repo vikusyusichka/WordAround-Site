@@ -4,7 +4,7 @@
     "tagline": "Lernu lingvojn, aktive."
   },
   "onboarding": {
-    "subtitle": "Lernu vortojn amuze\\nkaj simple",
+    "subtitle": "Lernu vortojn amuze\nkaj simple",
     "start": "Ni komencu"
   },
   "auth": {
@@ -203,7 +203,7 @@
       "subtitle": "Kopiu kaj algluu viajn datumojn — el Word, Excel, Google Docs kaj similaj.",
       "close": "Fermi la importon",
       "dataSection": "Viaj datumoj",
-      "placeholder": "Vorto 1\\tDifino 1\\nVorto 2\\tDifino 2\\nVorto 3\\tDifino 3",
+      "placeholder": "Vorto 1\tDifino 1\nVorto 2\tDifino 2\nVorto 3\tDifino 3",
       "separatorsSection": "Disigiloj",
       "betweenTermAndDefinition": "Inter vorto kaj traduko",
       "betweenCards": "Inter kartoj",

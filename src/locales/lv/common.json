@@ -4,7 +4,7 @@
     "tagline": "Mācieties valodas aktīvi."
   },
   "onboarding": {
-    "subtitle": "Mācieties vārdus jautri\\nun vienkārši",
+    "subtitle": "Mācieties vārdus jautri\nun vienkārši",
     "start": "Sāksim"
   },
   "auth": {
@@ -205,7 +205,7 @@
       "subtitle": "Nokopējiet un ielīmējiet savus datus – no Word, Excel, Google Docs un līdzīgiem.",
       "close": "Aizvērt importu",
       "dataSection": "Jūsu dati",
-      "placeholder": "1. vārds\\t1. skaidrojums\\n2. vārds\\t2. skaidrojums\\n3. vārds\\t3. skaidrojums",
+      "placeholder": "1. vārds\t1. skaidrojums\n2. vārds\t2. skaidrojums\n3. vārds\t3. skaidrojums",
       "separatorsSection": "Atdalītāji",
       "betweenTermAndDefinition": "Starp vārdu un tulkojumu",
       "betweenCards": "Starp kartītēm",
