@@ -1,1748 +1,1751 @@
 {
   "app": {
-    "name": "1|WordAround",
-    "tagline": "2|Învață limbi străine activ."
+    "name": "WordAround",
+    "tagline": "Învață limbi străine activ."
   },
   "onboarding": {
-    "subtitle": "3|Învață cuvinte distractiv\\nși simplu",
-    "start": "4|Să începem"
+    "subtitle": "Învață cuvinte distractiv\\nși simplu",
+    "start": "Să începem"
   },
   "auth": {
-    "welcomeBack": "5|Bine ai revenit",
-    "subtitle": "6|Conectează-te ca să continui să înveți",
-    "email": "7|E-mail",
-    "emailPlaceholder": "8|Introdu adresa ta de e-mail",
-    "password": "9|Parolă",
-    "passwordPlaceholder": "10|Introdu parola ta",
-    "forgotPassword": "11|Ai uitat parola?",
-    "signIn": "12|Conectare",
-    "signingIn": "13|Se conectează...",
-    "signUp": "14|Înregistrare",
-    "signOut": "15|Deconectare",
-    "continueWithGoogle": "16|Continuă cu Google",
-    "createAccount": "17|Creează cont",
-    "accountCreatedInfo": "18|Contul a fost creat. Am trimis un e-mail de verificare.",
-    "resetEmailSent": "19|E-mailul de resetare a parolei a fost trimis",
-    "showPassword": "20|Arată parola",
-    "hidePassword": "21|Ascunde parola",
-    "back": "22|Înapoi",
-    "signUpTitle": "23|Creează-ți contul",
-    "signUpSubtitle": "24|Câteva minute pe zi și vocabularul tău crește",
-    "name": "25|Nume",
-    "namePlaceholder": "26|Cum să-ți spunem?",
-    "orWithEmail": "27|sau cu e-mail",
-    "signUpWithGoogle": "28|Înregistrează-te cu Google",
-    "passwordHint": "29|Cel puțin {{min}} caractere",
-    "magicLinkCta": "30|Conectare cu un link primit pe e-mail",
-    "creatingAccount": "31|Se creează contul..."
+    "welcomeBack": "Bine ai revenit",
+    "subtitle": "Conectează-te ca să continui să înveți",
+    "email": "E-mail",
+    "emailPlaceholder": "Introdu adresa ta de e-mail",
+    "password": "Parolă",
+    "passwordPlaceholder": "Introdu parola ta",
+    "forgotPassword": "Ai uitat parola?",
+    "signIn": "Conectare",
+    "signingIn": "Se conectează...",
+    "signUp": "Înregistrare",
+    "signOut": "Deconectare",
+    "continueWithGoogle": "Continuă cu Google",
+    "createAccount": "Creează cont",
+    "accountCreatedInfo": "Contul a fost creat. Am trimis un e-mail de verificare.",
+    "resetEmailSent": "E-mailul de resetare a parolei a fost trimis",
+    "showPassword": "Arată parola",
+    "hidePassword": "Ascunde parola",
+    "back": "Înapoi",
+    "signUpTitle": "Creează-ți contul",
+    "signUpSubtitle": "Câteva minute pe zi și vocabularul tău crește",
+    "name": "Nume",
+    "namePlaceholder": "Cum să-ți spunem?",
+    "orWithEmail": "sau cu e-mail",
+    "signUpWithGoogle": "Înregistrează-te cu Google",
+    "passwordHint": "Cel puțin {{min}} caractere",
+    "magicLinkCta": "Conectare cu un link primit pe e-mail",
+    "creatingAccount": "Se creează contul..."
   },
   "verify": {
-    "title": "32|Verifică-ți e-mailul",
-    "subtitle": "33|Încă un pas înainte să începi să înveți",
-    "sentTo": "34|Am trimis un link de verificare la",
-    "fallbackEmail": "35|adresa ta de e-mail",
-    "step1": "36|Deschide e-mailul din inbox",
-    "step2": "37|Atinge linkul de confirmare",
-    "step3": "38|Îți deschidem imediat învățarea — nu trebuie să revii aici",
-    "checkButton": "39|Mi-am verificat e-mailul",
-    "checking": "40|Se verifică...",
-    "resend": "41|Trimite e-mailul din nou",
-    "useAnotherAccount": "42|Folosește alt cont",
-    "badgeInbox": "43|Verifică inboxul",
-    "badgeConfirm": "44|Confirmă",
-    "badgeDone": "45|Gata",
-    "resentInfo": "46|E-mailul de verificare a fost trimis din nou",
-    "notVerifiedYet": "47|E-mailul nu este încă verificat"
+    "title": "Verifică-ți e-mailul",
+    "subtitle": "Încă un pas înainte să începi să înveți",
+    "sentTo": "Am trimis un link de verificare la",
+    "fallbackEmail": "adresa ta de e-mail",
+    "step1": "Deschide e-mailul din inbox",
+    "step2": "Atinge linkul de confirmare",
+    "step3": "Îți deschidem imediat învățarea — nu trebuie să revii aici",
+    "checkButton": "Mi-am verificat e-mailul",
+    "checking": "Se verifică...",
+    "resend": "Trimite e-mailul din nou",
+    "useAnotherAccount": "Folosește alt cont",
+    "badgeInbox": "Verifică inboxul",
+    "badgeConfirm": "Confirmă",
+    "badgeDone": "Gata",
+    "resentInfo": "E-mailul de verificare a fost trimis din nou",
+    "notVerifiedYet": "E-mailul nu este încă verificat"
   },
   "errors": {
-    "emailRequired": "48|E-mailul este obligatoriu",
-    "emailInvalid": "49|Introdu un e-mail valid",
-    "emailFirst": "50|Introdu mai întâi adresa ta de e-mail",
-    "passwordRequired": "51|Parola este obligatorie",
-    "passwordTooShort": "52|Parola trebuie să aibă cel puțin 8 caractere",
-    "invalidEmail": "53|Format de e-mail nevalid",
-    "wrongPassword": "54|E-mail sau parolă greșite. Dacă te-ai înregistrat cu Google, folosește butonul Google.",
-    "userNotFound": "55|E-mail sau parolă greșite. Dacă te-ai înregistrat cu Google, folosește butonul Google.",
-    "invalidCredential": "56|E-mail sau parolă greșite. Dacă te-ai înregistrat cu Google, folosește butonul Google.",
-    "emailInUse": "57|Acest cont există deja",
-    "weakPassword": "58|Această parolă este prea slabă",
-    "network": "59|Eroare de rețea. Verifică-ți conexiunea la internet",
-    "tooManyRequests": "60|Prea multe încercări. Încearcă mai târziu",
-    "differentCredential": "61|Acest e-mail este deja folosit cu altă metodă de conectare",
-    "noActiveAccount": "62|Nu a fost găsit niciun cont activ",
-    "default": "63|Autentificarea a eșuat. Încearcă din nou",
-    "nameRequired": "64|Numele este obligatoriu",
-    "passwordsDoNotMatch": "65|Parolele nu se potrivesc",
-    "actionExpired": "66|Acest link a expirat. Cere unul nou.",
-    "actionInvalid": "67|Acest link nu mai este valabil.",
-    "userDisabled": "68|Acest cont a fost dezactivat.",
-    "requiresRecentLogin": "69|Din motive de siguranță, conectează-te din nou și repetă acțiunea.",
-    "passwordAlreadySet": "70|Acest cont are deja o parolă.",
-    "linkNoEmail": "71|Introdu e-mailul la care a fost trimis linkul"
+    "emailRequired": "E-mailul este obligatoriu",
+    "emailInvalid": "Introdu un e-mail valid",
+    "emailFirst": "Introdu mai întâi adresa ta de e-mail",
+    "passwordRequired": "Parola este obligatorie",
+    "passwordTooShort": "Parola trebuie să aibă cel puțin 8 caractere",
+    "invalidEmail": "Format de e-mail nevalid",
+    "wrongPassword": "E-mail sau parolă greșite. Dacă te-ai înregistrat cu Google, folosește butonul Google.",
+    "userNotFound": "E-mail sau parolă greșite. Dacă te-ai înregistrat cu Google, folosește butonul Google.",
+    "invalidCredential": "E-mail sau parolă greșite. Dacă te-ai înregistrat cu Google, folosește butonul Google.",
+    "emailInUse": "Acest cont există deja",
+    "weakPassword": "Această parolă este prea slabă",
+    "network": "Eroare de rețea. Verifică-ți conexiunea la internet",
+    "tooManyRequests": "Prea multe încercări. Încearcă mai târziu",
+    "differentCredential": "Acest e-mail este deja folosit cu altă metodă de conectare",
+    "noActiveAccount": "Nu a fost găsit niciun cont activ",
+    "default": "Autentificarea a eșuat. Încearcă din nou",
+    "nameRequired": "Numele este obligatoriu",
+    "passwordsDoNotMatch": "Parolele nu se potrivesc",
+    "actionExpired": "Acest link a expirat. Cere unul nou.",
+    "actionInvalid": "Acest link nu mai este valabil.",
+    "userDisabled": "Acest cont a fost dezactivat.",
+    "requiresRecentLogin": "Din motive de siguranță, conectează-te din nou și repetă acțiunea.",
+    "passwordAlreadySet": "Acest cont are deja o parolă.",
+    "linkNoEmail": "Introdu e-mailul la care a fost trimis linkul"
   },
   "nav": {
-    "home": "72|Acasă",
-    "speaking": "73|Vorbire",
-    "listening": "74|Ascultare",
-    "reading": "75|Citire",
-    "writing": "76|Scriere",
-    "folders": "77|Foldere",
-    "sets": "78|Seturi",
-    "notes": "79|Notițe",
-    "profile": "80|Profil",
-    "create": "81|Creează",
-    "menu": "82|Meniu",
-    "closeMenu": "83|Închide meniul",
+    "home": "Acasă",
+    "speaking": "Vorbire",
+    "listening": "Ascultare",
+    "reading": "Citire",
+    "writing": "Scriere",
+    "folders": "Foldere",
+    "sets": "Seturi",
+    "notes": "Notițe",
+    "profile": "Profil",
+    "create": "Creează",
+    "menu": "Meniu",
+    "closeMenu": "Închide meniul",
     "group": {
-      "practice": "84|Exersare",
-      "library": "85|Bibliotecă"
+      "practice": "Exersare",
+      "library": "Bibliotecă"
     }
   },
   "folders": {
-    "create": "86|Creează folder",
-    "loading": "87|Se încarcă folderele…",
-    "loadError": "88|Nu am putut încărca folderele tale.",
-    "emptyTitle": "89|Încă nu ai foldere",
-    "emptyBody": "90|Creează primul folder ca să-ți organizezi seturile.",
-    "setCount": "91|{{count}} de seturi",
-    "setCount_one": "92|{{count}} set",
-    "newTitle": "93|Folder nou",
-    "newSubtitle": "94|Adună la un loc seturile înrudite.",
-    "editTitle": "95|Editează folderul",
-    "name": "96|Nume",
-    "namePlaceholder": "97|de ex. Călătorii",
-    "description": "98|Descriere",
-    "descriptionPlaceholder": "99|Opțional",
-    "color": "100|Culoare",
-    "save": "101|Salvează",
-    "saving": "102|Se salvează…",
-    "cancel": "103|Anulează",
-    "edit": "104|Editează folderul",
-    "delete": "105|Șterge folderul",
-    "deleteConfirm": "106|Ștergi „{{title}}”? Acțiunea nu poate fi anulată.",
-    "backToFolders": "107|Înapoi la foldere",
-    "notFoundTitle": "108|Folderul nu a fost găsit",
-    "notFoundBody": "109|Este posibil ca acest folder să fi fost șters.",
-    "noSetsInFolder": "110|Încă nu sunt seturi în acest folder.",
-    "saveError": "111|Salvarea nu a reușit. Încearcă din nou.",
+    "create": "Creează folder",
+    "loading": "Se încarcă folderele…",
+    "loadError": "Nu am putut încărca folderele tale.",
+    "emptyTitle": "Încă nu ai foldere",
+    "emptyBody": "Creează primul folder ca să-ți organizezi seturile.",
+    "setCount": "{{count}} de seturi",
+    "setCount_one": "{{count}} set",
+    "newTitle": "Folder nou",
+    "newSubtitle": "Adună la un loc seturile înrudite.",
+    "editTitle": "Editează folderul",
+    "name": "Nume",
+    "namePlaceholder": "de ex. Călătorii",
+    "description": "Descriere",
+    "descriptionPlaceholder": "Opțional",
+    "color": "Culoare",
+    "save": "Salvează",
+    "saving": "Se salvează…",
+    "cancel": "Anulează",
+    "edit": "Editează folderul",
+    "delete": "Șterge folderul",
+    "deleteConfirm": "Ștergi „{{title}}”? Acțiunea nu poate fi anulată.",
+    "backToFolders": "Înapoi la foldere",
+    "notFoundTitle": "Folderul nu a fost găsit",
+    "notFoundBody": "Este posibil ca acest folder să fi fost șters.",
+    "noSetsInFolder": "Încă nu sunt seturi în acest folder.",
+    "saveError": "Salvarea nu a reușit. Încearcă din nou.",
     "error": {
-      "nameRequired": "112|Numele folderului este obligatoriu.",
-      "nameTooLong": "113|Numele folderului trebuie să aibă sub 80 de caractere.",
-      "descTooLong": "114|Descrierea trebuie să aibă sub 120 de caractere."
+      "nameRequired": "Numele folderului este obligatoriu.",
+      "nameTooLong": "Numele folderului trebuie să aibă sub 80 de caractere.",
+      "descTooLong": "Descrierea trebuie să aibă sub 120 de caractere."
     },
-    "optional": "115|(opțional)",
-    "preview": "116|Previzualizare",
-    "previewPlaceholder": "117|Folder nou",
-    "deleteConfirmTitle": "118|Ștergi acest folder?",
+    "optional": "(opțional)",
+    "preview": "Previzualizare",
+    "previewPlaceholder": "Folder nou",
+    "deleteConfirmTitle": "Ștergi acest folder?",
     "setCount_few": "{{count}} seturi"
   },
   "sets": {
-    "create": "119|Creează set",
-    "loading": "120|Se încarcă seturile…",
-    "loadError": "121|Nu am putut încărca seturile tale.",
-    "emptyTitle": "122|Încă nu ai seturi",
-    "emptyBody": "123|Creează primul set de cartonașe cu butonul Creează.",
-    "cardCount": "124|{{count}} de cartonașe",
-    "cardCount_one": "125|{{count}} cartonaș",
-    "keepPracticing": "126|Continuă să exersezi",
-    "delete": "127|Șterge setul",
-    "deleteConfirm": "128|Ștergi „{{title}}”? Acțiunea nu poate fi anulată.",
-    "notFoundTitle": "129|Setul nu a fost găsit",
-    "notFoundBody": "130|Este posibil ca acest set să fi fost șters.",
-    "backToSets": "131|Înapoi la seturi",
-    "edit": "132|Editează setul",
-    "deleteConfirmTitle": "133|Ștergi acest set?",
-    "editTitle": "134|Editează setul",
-    "editSubtitle": "135|Schimbă titlul, culoarea, pictograma sau folderul. Cartonașele rămân unde sunt.",
-    "save": "136|Salvează modificările",
-    "saving": "137|Se salvează…",
-    "cancel": "138|Anulează",
-    "saveError": "139|Salvarea nu a reușit. Încearcă din nou.",
+    "create": "Creează set",
+    "loading": "Se încarcă seturile…",
+    "loadError": "Nu am putut încărca seturile tale.",
+    "emptyTitle": "Încă nu ai seturi",
+    "emptyBody": "Creează primul set de cartonașe cu butonul Creează.",
+    "cardCount": "{{count}} de cartonașe",
+    "cardCount_one": "{{count}} cartonaș",
+    "keepPracticing": "Continuă să exersezi",
+    "delete": "Șterge setul",
+    "deleteConfirm": "Ștergi „{{title}}”? Acțiunea nu poate fi anulată.",
+    "notFoundTitle": "Setul nu a fost găsit",
+    "notFoundBody": "Este posibil ca acest set să fi fost șters.",
+    "backToSets": "Înapoi la seturi",
+    "edit": "Editează setul",
+    "deleteConfirmTitle": "Ștergi acest set?",
+    "editTitle": "Editează setul",
+    "editSubtitle": "Schimbă titlul, culoarea, pictograma sau folderul. Cartonașele rămân unde sunt.",
+    "save": "Salvează modificările",
+    "saving": "Se salvează…",
+    "cancel": "Anulează",
+    "saveError": "Salvarea nu a reușit. Încearcă din nou.",
     "cardCount_few": "{{count}} cartonașe"
   },
   "createSet": {
-    "title": "140|Set nou",
-    "subtitle": "141|Adaugă cuvinte și personalizează-ți setul.",
-    "infoSection": "142|Detalii despre set",
-    "setTitle": "143|Titlu",
-    "setTitlePlaceholder": "144|de ex. Esențiale pentru călătorie",
-    "setDescription": "145|Descriere",
-    "setDescriptionPlaceholder": "146|Opțional",
-    "privacy": "147|Confidențialitate",
-    "private": "148|Privat",
-    "public": "149|Public",
-    "cardsSection": "150|Cartonașe",
-    "addCard": "151|Adaugă cartonaș",
-    "cardN": "152|Cartonașul {{n}}",
-    "removeCard": "153|Elimină cartonașul",
-    "word": "154|Cuvânt",
-    "translation": "155|Traducere",
-    "example": "156|Exemplu (opțional)",
-    "addImage": "157|Adaugă imagine",
-    "removeImage": "158|Elimină imaginea",
-    "customizeSection": "159|Personalizare",
-    "color": "160|Culoare",
-    "icon": "161|Pictogramă",
-    "folder": "162|Folder",
-    "noFolder": "163|Fără folder",
-    "previewSection": "164|Previzualizare",
-    "previewPlaceholder": "165|Titlul setului",
-    "save": "166|Creează setul",
-    "saving": "167|Se salvează…",
-    "cancel": "168|Anulează",
-    "saveError": "169|Salvarea nu a reușit. Încearcă din nou.",
+    "title": "Set nou",
+    "subtitle": "Adaugă cuvinte și personalizează-ți setul.",
+    "infoSection": "Detalii despre set",
+    "setTitle": "Titlu",
+    "setTitlePlaceholder": "de ex. Esențiale pentru călătorie",
+    "setDescription": "Descriere",
+    "setDescriptionPlaceholder": "Opțional",
+    "privacy": "Confidențialitate",
+    "private": "Privat",
+    "public": "Public",
+    "cardsSection": "Cartonașe",
+    "addCard": "Adaugă cartonaș",
+    "cardN": "Cartonașul {{n}}",
+    "removeCard": "Elimină cartonașul",
+    "word": "Cuvânt",
+    "translation": "Traducere",
+    "example": "Exemplu (opțional)",
+    "addImage": "Adaugă imagine",
+    "removeImage": "Elimină imaginea",
+    "customizeSection": "Personalizare",
+    "color": "Culoare",
+    "icon": "Pictogramă",
+    "folder": "Folder",
+    "noFolder": "Fără folder",
+    "previewSection": "Previzualizare",
+    "previewPlaceholder": "Titlul setului",
+    "save": "Creează setul",
+    "saving": "Se salvează…",
+    "cancel": "Anulează",
+    "saveError": "Salvarea nu a reușit. Încearcă din nou.",
     "error": {
-      "emptyTitle": "170|Titlul setului este obligatoriu.",
-      "titleTooLong": "171|Titlul setului trebuie să aibă sub 150 de caractere.",
-      "descTooLong": "172|Descrierea trebuie să aibă sub 200 de caractere.",
-      "noValidCards": "173|Adaugă cel puțin un cartonaș cu cuvânt și traducere.",
-      "exampleTooLong": "174|Exemplele de pe cartonașe trebuie să aibă sub 150 de caractere."
+      "emptyTitle": "Titlul setului este obligatoriu.",
+      "titleTooLong": "Titlul setului trebuie să aibă sub 150 de caractere.",
+      "descTooLong": "Descrierea trebuie să aibă sub 200 de caractere.",
+      "noValidCards": "Adaugă cel puțin un cartonaș cu cuvânt și traducere.",
+      "exampleTooLong": "Exemplele de pe cartonașe trebuie să aibă sub 150 de caractere."
     },
-    "imageTimeout": "175|Încărcarea imaginii a expirat. Verifică-ți conexiunea și încearcă din nou.",
+    "imageTimeout": "Încărcarea imaginii a expirat. Verifică-ți conexiunea și încearcă din nou.",
     "import": {
-      "button": "176|Import",
-      "title": "177|Importă cartonașe",
-      "subtitle": "178|Copiază și lipește datele tale — din Word, Excel, Google Docs și altele asemenea.",
-      "close": "179|Închide importul",
-      "dataSection": "180|Datele tale",
-      "placeholder": "181|Cuvânt 1\\tDefiniție 1\\nCuvânt 2\\tDefiniție 2\\nCuvânt 3\\tDefiniție 3",
-      "separatorsSection": "182|Separatori",
-      "betweenTermAndDefinition": "183|Între cuvânt și traducere",
-      "betweenCards": "184|Între cartonașe",
-      "tab": "185|Tab",
-      "comma": "186|Virgulă",
-      "newline": "187|Rând nou",
-      "semicolon": "188|Punct și virgulă",
-      "custom": "189|Personalizat",
-      "customPlaceholder": "190|de ex. —",
-      "previewSection": "191|Previzualizare",
-      "previewEmpty": "192|Încă nu e nimic de previzualizat.",
-      "noDefinition": "193|Fără traducere",
-      "confirm": "194|Adaugă cartonașele"
+      "button": "Import",
+      "title": "Importă cartonașe",
+      "subtitle": "Copiază și lipește datele tale — din Word, Excel, Google Docs și altele asemenea.",
+      "close": "Închide importul",
+      "dataSection": "Datele tale",
+      "placeholder": "Cuvânt 1\\tDefiniție 1\\nCuvânt 2\\tDefiniție 2\\nCuvânt 3\\tDefiniție 3",
+      "separatorsSection": "Separatori",
+      "betweenTermAndDefinition": "Între cuvânt și traducere",
+      "betweenCards": "Între cartonașe",
+      "tab": "Tab",
+      "comma": "Virgulă",
+      "newline": "Rând nou",
+      "semicolon": "Punct și virgulă",
+      "custom": "Personalizat",
+      "customPlaceholder": "de ex. —",
+      "previewSection": "Previzualizare",
+      "previewEmpty": "Încă nu e nimic de previzualizat.",
+      "noDefinition": "Fără traducere",
+      "confirm": "Adaugă cartonașele"
     },
     "iconPicker": {
-      "open": "195|Mai multe pictograme",
-      "title": "196|Alege o pictogramă",
-      "search": "197|Caută simbol",
-      "close": "198|Închide",
-      "empty": "199|Nicio pictogramă nu se potrivește cu acest nume."
+      "open": "Mai multe pictograme",
+      "title": "Alege o pictogramă",
+      "search": "Caută simbol",
+      "close": "Închide",
+      "empty": "Nicio pictogramă nu se potrivește cu acest nume."
     },
     "iconGroup": {
-      "learning": "200|Învățare",
-      "languages": "201|Limbi",
-      "nature": "202|Natură",
-      "health": "203|Sănătate",
-      "food": "204|Mâncare",
-      "travel": "205|Călătorii",
-      "work": "206|Muncă",
-      "tech": "207|Tehnologie",
-      "creativity": "208|Creativitate",
-      "general": "209|General"
+      "learning": "Învățare",
+      "languages": "Limbi",
+      "nature": "Natură",
+      "health": "Sănătate",
+      "food": "Mâncare",
+      "travel": "Călătorii",
+      "work": "Muncă",
+      "tech": "Tehnologie",
+      "creativity": "Creativitate",
+      "general": "General"
     }
   },
   "home": {
     "title": {
-      "flashcards": "210|Cartonașe",
-      "folders": "211|Foldere",
-      "sets": "212|Seturi",
-      "create": "213|Creează",
-      "profile": "214|Profil",
-      "speaking": "215|Vorbire",
-      "listening": "216|Ascultare",
-      "reading": "217|Citire",
-      "writing": "218|Scriere"
+      "flashcards": "Cartonașe",
+      "folders": "Foldere",
+      "sets": "Seturi",
+      "create": "Creează",
+      "profile": "Profil",
+      "speaking": "Vorbire",
+      "listening": "Ascultare",
+      "reading": "Citire",
+      "writing": "Scriere"
     },
     "subtitle": {
-      "pickSet": "219|Alege un set pentru exersare",
-      "folders": "220|Gestionează-ți folderele",
-      "sets": "221|Gestionează-ți seturile de cartonașe",
-      "create": "222|Creează un set nou de studiu",
-      "speaking": "223|Exersează-ți abilitățile de vorbire.",
-      "listening": "224|Antrenează-ți urechea să înțeleagă limba în mod natural.",
-      "reading": "225|Citește și recapitulează materiale în limba respectivă.",
-      "writing": "226|Exersează limba activ."
+      "pickSet": "Alege un set pentru exersare",
+      "folders": "Gestionează-ți folderele",
+      "sets": "Gestionează-ți seturile de cartonașe",
+      "create": "Creează un set nou de studiu",
+      "speaking": "Exersează-ți abilitățile de vorbire.",
+      "listening": "Antrenează-ți urechea să înțeleagă limba în mod natural.",
+      "reading": "Citește și recapitulează materiale în limba respectivă.",
+      "writing": "Exersează limba activ."
     },
     "category": {
-      "speaking": "227|VORBIRE",
-      "listening": "228|ASCULTARE",
-      "reading": "229|CITIRE",
-      "writing": "230|SCRIERE"
+      "speaking": "VORBIRE",
+      "listening": "ASCULTARE",
+      "reading": "CITIRE",
+      "writing": "SCRIERE"
     },
     "todayGoal": {
-      "title": "231|Obiectivul de azi",
-      "left": "232|Au mai rămas {{count}} de cuvinte"
+      "title": "Obiectivul de azi",
+      "left": "Au mai rămas {{count}} cuvinte",
+      "left_one": "A mai rămas {{count}} cuvânt",
+      "left_few": "Au mai rămas {{count}} cuvinte",
+      "left_other": "Au mai rămas {{count}} de cuvinte"
     },
     "stat": {
-      "learnedToday": "233|Învățate azi",
-      "words": "234|cuvinte",
-      "accuracy": "235|Acuratețe",
-      "greatJob": "236|Bravo!",
-      "streak": "237|Serie",
-      "days": "238|zile"
+      "learnedToday": "Învățate azi",
+      "words": "cuvinte",
+      "accuracy": "Acuratețe",
+      "greatJob": "Bravo!",
+      "streak": "Serie",
+      "days": "zile"
     },
-    "continueLearning": "239|Continuă să înveți",
-    "yourSets": "240|Seturile tale",
-    "viewAll": "241|Vezi toate",
-    "review": "242|Recapitulare",
+    "continueLearning": "Continuă să înveți",
+    "yourSets": "Seturile tale",
+    "viewAll": "Vezi toate",
+    "review": "Recapitulare",
     "sets": {
-      "emptyTitle": "243|Încă nu ai seturi",
-      "emptyBody": "244|Creează primul set de cartonașe cu butonul Creează."
+      "emptyTitle": "Încă nu ai seturi",
+      "emptyBody": "Creează primul set de cartonașe cu butonul Creează."
     },
     "create": {
-      "folder": "245|Folder",
-      "set": "246|Set",
-      "text": "247|Text",
-      "audio": "248|Audio",
-      "essay": "249|Eseu"
+      "folder": "Folder",
+      "set": "Set",
+      "text": "Text",
+      "audio": "Audio",
+      "essay": "Eseu"
     },
     "placeholder": {
-      "comingSoon": "250|{{title}} — în curând"
+      "comingSoon": "{{title}} — în curând"
     },
     "progress": {
       "subtitle": {
-        "speaking": "251|de exersare a vorbirii",
-        "listening": "252|de exersare a ascultării",
-        "reading": "253|de exersare a citirii",
-        "writing": "254|de exersare a scrierii"
+        "speaking": "de exersare a vorbirii",
+        "listening": "de exersare a ascultării",
+        "reading": "de exersare a citirii",
+        "writing": "de exersare a scrierii"
       }
     },
     "dailyGoal": {
-      "title": "255|Obiectivul tău pentru azi",
-      "body": "256|Alege ce vrei să exersezi azi — cartonașul de mai jos se contorizează pentru el.",
-      "chosenBody": "257|Despre asta e ziua de azi.",
-      "howMuch": "258|Cât?",
-      "change": "259|Schimbă"
+      "title": "Obiectivul tău pentru azi",
+      "body": "Alege ce vrei să exersezi azi — cartonașul de mai jos se contorizează pentru el.",
+      "chosenBody": "Despre asta e ziua de azi.",
+      "howMuch": "Cât?",
+      "change": "Schimbă"
     },
     "lastNote": {
-      "title": "260|Ultima notiță citită"
+      "title": "Ultima notiță citită"
     }
   },
   "categories": {
-    "speaking": "261|Vorbire",
-    "listening": "262|Ascultare",
-    "reading": "263|Citire",
-    "writing": "264|Scriere"
+    "speaking": "Vorbire",
+    "listening": "Ascultare",
+    "reading": "Citire",
+    "writing": "Scriere"
   },
   "phase0": {
-    "title": "265|WordAround",
-    "subtitle": "266|Faza 0 rulează. Tokenurile de design sunt încărcate, Firebase este conectat."
+    "title": "WordAround",
+    "subtitle": "Faza 0 rulează. Tokenurile de design sunt încărcate, Firebase este conectat."
   },
   "study": {
-    "flip": "267|Întoarce",
-    "known": "268|Îl știam",
-    "unknown": "269|Încă îl învăț",
-    "mastered": "270|Stăpânit",
-    "shuffle": "271|Amestecă",
-    "trackProgress": "272|Urmărește progresul",
-    "speak": "273|Pronunță",
-    "roundDone": "274|Rundă încheiată",
-    "knewCount": "275|Ai știut {{known}} din {{total}}",
-    "repeatUnknown": "276|Repetă {{count}} neștiute",
-    "restart": "277|Ia-o de la capăt",
+    "flip": "Întoarce",
+    "known": "Îl știam",
+    "unknown": "Încă îl învăț",
+    "mastered": "Stăpânit",
+    "shuffle": "Amestecă",
+    "trackProgress": "Urmărește progresul",
+    "speak": "Pronunță",
+    "roundDone": "Rundă încheiată",
+    "knewCount": "Ai știut {{known}} din {{total}}",
+    "repeatUnknown": "Repetă {{count}} neștiute",
+    "restart": "Ia-o de la capăt",
     "filter": {
-      "all": "278|Toate",
-      "studied": "279|Studiate",
-      "remaining": "280|Rămase",
-      "mastered": "281|Stăpânite"
+      "all": "Toate",
+      "studied": "Studiate",
+      "remaining": "Rămase",
+      "mastered": "Stăpânite"
     },
-    "addCard": "282|Adaugă cartonaș",
-    "editCard": "283|Editează cartonașul",
-    "deleteCard": "284|Șterge cartonașul",
-    "deleteCardConfirm": "285|Ștergi acest cartonaș?",
-    "emptyPrompt": "286|Acest set nu are încă cartonașe. Adaugă-l pe primul.",
-    "save": "287|Salvează",
-    "cancel": "288|Anulează"
+    "addCard": "Adaugă cartonaș",
+    "editCard": "Editează cartonașul",
+    "deleteCard": "Șterge cartonașul",
+    "deleteCardConfirm": "Ștergi acest cartonaș?",
+    "emptyPrompt": "Acest set nu are încă cartonașe. Adaugă-l pe primul.",
+    "save": "Salvează",
+    "cancel": "Anulează"
   },
   "writing": {
     "today": {
-      "title": "289|Progresul de azi",
-      "unit": "290|cuvinte",
-      "subtitle": "291|de exersare a scrierii"
+      "title": "Progresul de azi",
+      "unit": "cuvinte",
+      "subtitle": "de exersare a scrierii"
     },
-    "sectionTitle": "292|Moduri de exersare",
+    "sectionTitle": "Moduri de exersare",
     "menu": {
       "writeFromSets": {
-        "title": "293|Scriere din seturi",
-        "subtitle": "294|Exersează ortografia și scrierea cuvintelor din seturile tale."
+        "title": "Scriere din seturi",
+        "subtitle": "Exersează ortografia și scrierea cuvintelor din seturile tale."
       },
       "essays": {
-        "title": "295|Eseuri",
-        "subtitle": "296|Scrie texte și primește feedback de la AI despre gramatică și stil."
+        "title": "Eseuri",
+        "subtitle": "Scrie texte și primește feedback de la AI despre gramatică și stil."
       },
-      "comingSoon": "297|În curând"
+      "comingSoon": "În curând"
     },
     "setSelection": {
-      "title": "298|Alege setul",
+      "title": "Alege setul",
       "empty": {
-        "title": "299|Niciun set cu cuvinte",
-        "subtitle": "300|Creează un set cu cel puțin un cartonaș înainte să începi exersarea scrierii."
+        "title": "Niciun set cu cuvinte",
+        "subtitle": "Creează un set cu cel puțin un cartonaș înainte să începi exersarea scrierii."
       },
-      "wordsCount": "301|{{count}} de cuvinte",
-      "wordsCount_one": "302|{{count}} cuvânt",
-      "close": "303|Închide",
+      "wordsCount": "{{count}} de cuvinte",
+      "wordsCount_one": "{{count}} cuvânt",
+      "close": "Închide",
       "wordsCount_few": "{{count}} cuvinte"
     },
     "writeWords": {
-      "title": "304|Scriere din seturi",
-      "subtitle": "305|Scrie traducerea și apasă Enter.",
-      "translateHint": "306|Tradu în limba ta",
-      "hint": "307|Indiciu",
-      "skip": "308|Sari peste",
-      "submit": "309|Verifică",
-      "inputPlaceholder": "310|Scrie aici…",
-      "loading": "311|Se încarcă setul…",
-      "loadError": "312|Nu am putut încărca acest set.",
-      "noCards": "313|Acest set nu are cartonașe.",
-      "back": "314|Înapoi",
+      "title": "Scriere din seturi",
+      "subtitle": "Scrie traducerea și apasă Enter.",
+      "translateHint": "Tradu în limba ta",
+      "hint": "Indiciu",
+      "skip": "Sari peste",
+      "submit": "Verifică",
+      "inputPlaceholder": "Scrie aici…",
+      "loading": "Se încarcă setul…",
+      "loadError": "Nu am putut încărca acest set.",
+      "noCards": "Acest set nu are cartonașe.",
+      "back": "Înapoi",
       "settings": {
-        "title": "315|Setări",
-        "trainingMode": "316|Mod de antrenament",
-        "difficulty": "317|Dificultate"
+        "title": "Setări",
+        "trainingMode": "Mod de antrenament",
+        "difficulty": "Dificultate"
       },
       "mode": {
-        "wordToTranslation": "318|Cuvânt → Traducere",
-        "translationToWord": "319|Traducere → Cuvânt"
+        "wordToTranslation": "Cuvânt → Traducere",
+        "translationToWord": "Traducere → Cuvânt"
       },
       "difficulty": {
-        "easy": "320|Ușor",
-        "medium": "321|Mediu",
-        "hard": "322|Greu",
-        "easyDesc": "323|Indicii nelimitate, sărituri nelimitate",
-        "mediumDesc": "324|1 literă indiciu, maximum 25 % sărituri",
-        "hardDesc": "325|Fără indicii, fără sărituri, contra cronometru"
+        "easy": "Ușor",
+        "medium": "Mediu",
+        "hard": "Greu",
+        "easyDesc": "Indicii nelimitate, sărituri nelimitate",
+        "mediumDesc": "1 literă indiciu, maximum 25 % sărituri",
+        "hardDesc": "Fără indicii, fără sărituri, contra cronometru"
       },
       "translatePrompt": {
-        "word": "326|Tradu în limba ta",
-        "translation": "327|Scrie cuvântul original"
+        "word": "Tradu în limba ta",
+        "translation": "Scrie cuvântul original"
       },
-      "skipsLeft_one": "328|A mai rămas {{count}} săritură",
-      "skipsLeft_other": "329|Au mai rămas {{count}} de sărituri",
-      "seconds": "330|{{count}} s",
+      "skipsLeft_one": "A mai rămas {{count}} săritură",
+      "skipsLeft_other": "Au mai rămas {{count}} de sărituri",
+      "seconds": "{{count}} s",
       "result": {
         "win": {
-          "title": "331|Rundă încheiată!",
-          "subtitle": "332|Bravo. Ai terminat această rundă de scriere."
+          "title": "Rundă încheiată!",
+          "subtitle": "Bravo. Ai terminat această rundă de scriere."
         },
         "timeout": {
-          "title": "333|Timpul a expirat",
-          "subtitle": "334|Cronometrul modului greu a ajuns la zero. Încearcă din nou de la primul cuvânt."
+          "title": "Timpul a expirat",
+          "subtitle": "Cronometrul modului greu a ajuns la zero. Încearcă din nou de la primul cuvânt."
         },
         "wrong": {
-          "title": "335|Răspuns greșit",
-          "subtitle": "336|În modul greu, o singură greșeală încheie runda."
+          "title": "Răspuns greșit",
+          "subtitle": "În modul greu, o singură greșeală încheie runda."
         },
-        "perfectTitle": "337|Rundă perfectă!",
-        "perfectBody": "338|Ai terminat modul greu fără greșeli. Fără sărituri. Fără indicii. Doar pricepere.",
-        "totalWords": "339|Total cuvinte",
-        "completedWords": "340|Cuvinte rezolvate",
-        "skippedWords": "341|Cuvinte sărite",
-        "hintsUsed": "342|Indicii folosite",
-        "streak": "343|Serie",
-        "difficultyLabel": "344|Dificultate",
-        "word": "345|Cuvânt",
-        "yourAnswer": "346|Răspunsul tău",
-        "correctAnswer": "347|Răspuns corect",
-        "tryAgain": "348|Încearcă din nou"
+        "perfectTitle": "Rundă perfectă!",
+        "perfectBody": "Ai terminat modul greu fără greșeli. Fără sărituri. Fără indicii. Doar pricepere.",
+        "totalWords": "Total cuvinte",
+        "completedWords": "Cuvinte rezolvate",
+        "skippedWords": "Cuvinte sărite",
+        "hintsUsed": "Indicii folosite",
+        "streak": "Serie",
+        "difficultyLabel": "Dificultate",
+        "word": "Cuvânt",
+        "yourAnswer": "Răspunsul tău",
+        "correctAnswer": "Răspuns corect",
+        "tryAgain": "Încearcă din nou"
       },
       "skipsLeft_few": "Au mai rămas {{count}} sărituri"
     },
     "essays": {
-      "title": "349|Eseuri",
-      "subtitle": "350|Subiectul e ales de AI. Scrie, apoi primești feedback.",
+      "title": "Eseuri",
+      "subtitle": "Subiectul e ales de AI. Scrie, apoi primești feedback.",
       "mode": {
-        "suggested": "351|Sugerat",
-        "custom": "352|Subiectul meu"
+        "suggested": "Sugerat",
+        "custom": "Subiectul meu"
       },
       "custom": {
-        "placeholder": "353|Scrie propriul subiect de eseu...",
-        "generate": "354|Generează cerința"
+        "placeholder": "Scrie propriul subiect de eseu...",
+        "generate": "Generează cerința"
       },
       "suggested": {
-        "generate": "355|Generează subiect",
-        "regenerate": "356|Alt subiect"
+        "generate": "Generează subiect",
+        "regenerate": "Alt subiect"
       },
-      "language": "357|Limbă",
-      "difficulty": "358|Dificultate",
+      "language": "Limbă",
+      "difficulty": "Dificultate",
       "task": {
-        "time": "359|≈ {{count}} min",
-        "wordRange": "360|{{min}}-{{max}} cuvinte",
-        "quickTips": "361|Sfaturi rapide",
-        "taskLabel": "362|Cerință"
+        "time": "≈ {{count}} min",
+        "wordRange": "{{min}}-{{max}} cuvinte",
+        "quickTips": "Sfaturi rapide",
+        "taskLabel": "Cerință"
       },
       "editor": {
-        "placeholder": "363|Începe să-ți scrii eseul aici...",
-        "wordCount": "364|{{count}} / {{min}}-{{max}} cuvinte",
+        "placeholder": "Începe să-ți scrii eseul aici...",
+        "wordCount": "{{count}} / {{min}}-{{max}} cuvinte",
         "validation": {
-          "belowMinimum": "365|Continuă — îți trebuie cel puțin {{min}} cuvinte.",
-          "aboveMaximum": "366|Ai depășit limita — încearcă să condensezi.",
-          "valid": "367|În interval."
+          "belowMinimum": "Continuă — îți trebuie cel puțin {{min}} cuvinte.",
+          "aboveMaximum": "Ai depășit limita — încearcă să condensezi.",
+          "valid": "În interval."
         },
-        "reset": "368|Resetează"
+        "reset": "Resetează"
       },
       "error": {
-        "emptyCustomTopic": "369|Scrie mai întâi un subiect.",
-        "generationFailed": "370|Nu am putut genera un subiect. Încearcă din nou."
+        "emptyCustomTopic": "Scrie mai întâi un subiect.",
+        "generationFailed": "Nu am putut genera un subiect. Încearcă din nou."
       },
-      "generating": "371|Se generează...",
+      "generating": "Se generează...",
       "hint": {
-        "button": "372|Cere un indiciu",
-        "remaining": "373|Au mai rămas {{remaining}}/{{limit}}",
-        "noneLeft": "374|Nu mai ai indicii",
-        "notAvailable": "375|Indiciile nu sunt disponibile la acest nivel",
-        "generating": "376|Se generează indiciul...",
-        "error": "377|Nu am putut obține un indiciu. Încearcă din nou.",
+        "button": "Cere un indiciu",
+        "remaining": "Au mai rămas {{remaining}}/{{limit}}",
+        "noneLeft": "Nu mai ai indicii",
+        "notAvailable": "Indiciile nu sunt disponibile la acest nivel",
+        "generating": "Se generează indiciul...",
+        "error": "Nu am putut obține un indiciu. Încearcă din nou.",
         "category": {
-          "content": "378|Conținut",
-          "grammar": "379|Gramatică",
-          "vocabulary": "380|Vocabular",
-          "structure": "381|Structură"
+          "content": "Conținut",
+          "grammar": "Gramatică",
+          "vocabulary": "Vocabular",
+          "structure": "Structură"
         }
       },
       "check": {
-        "button": "382|Verifică-mi eseul",
-        "checking": "383|Se verifică...",
-        "disabled": "384|Încadrează-te mai întâi în intervalul de cuvinte",
-        "error": "385|Nu am putut verifica eseul tău. Încearcă din nou.",
-        "languageUnsupported": "386|Verificarea gramaticii pentru {{language}} nu este încă disponibilă."
+        "button": "Verifică-mi eseul",
+        "checking": "Se verifică...",
+        "disabled": "Încadrează-te mai întâi în intervalul de cuvinte",
+        "error": "Nu am putut verifica eseul tău. Încearcă din nou.",
+        "languageUnsupported": "Verificarea gramaticii pentru {{language}} nu este încă disponibilă."
       },
       "score": {
-        "title": "387|Punctajul eseului",
+        "title": "Punctajul eseului",
         "quality": {
-          "excellent": "388|Excelent",
-          "veryGood": "389|Foarte bine",
-          "good": "390|Bine",
-          "needsWork": "391|Mai are nevoie de lucru"
+          "excellent": "Excelent",
+          "veryGood": "Foarte bine",
+          "good": "Bine",
+          "needsWork": "Mai are nevoie de lucru"
         },
         "category": {
-          "grammar": "392|Gramatică",
-          "vocabulary": "393|Vocabular",
-          "length": "394|Lungime",
-          "complexity": "395|Complexitate",
-          "relevance": "396|Relevanță",
-          "independence": "397|Autonomie"
+          "grammar": "Gramatică",
+          "vocabulary": "Vocabular",
+          "length": "Lungime",
+          "complexity": "Complexitate",
+          "relevance": "Relevanță",
+          "independence": "Autonomie"
         },
         "stat": {
-          "words": "398|Cuvinte",
-          "grammar": "399|Gramatică",
-          "vocabStyle": "400|Vocabular/stil",
-          "hints": "401|Indicii",
-          "translations": "402|Traduceri",
-          "synonyms": "403|Sinonime"
+          "words": "Cuvinte",
+          "grammar": "Gramatică",
+          "vocabStyle": "Vocabular/stil",
+          "hints": "Indicii",
+          "translations": "Traduceri",
+          "synonyms": "Sinonime"
         }
       },
       "grammar": {
-        "sectionTitle": "404|Probleme de gramatică",
-        "count_one": "405|{{count}} problemă",
-        "count_other": "406|{{count}} de probleme",
-        "empty": "407|Nicio problemă de gramatică — bravo!",
-        "original": "408|Original:",
-        "suggestion": "409|Sugestie:",
-        "reason": "410|Motiv:",
+        "sectionTitle": "Probleme de gramatică",
+        "count_one": "{{count}} problemă",
+        "count_other": "{{count}} de probleme",
+        "empty": "Nicio problemă de gramatică — bravo!",
+        "original": "Original:",
+        "suggestion": "Sugestie:",
+        "reason": "Motiv:",
         "category": {
-          "grammar": "411|Gramatică",
-          "vocabulary": "412|Vocabular",
-          "style": "413|Stil"
+          "grammar": "Gramatică",
+          "vocabulary": "Vocabular",
+          "style": "Stil"
         },
         "save": {
-          "idle": "414|Salvează în Notițe",
-          "saving": "415|Se salvează…",
-          "saved": "416|Salvat",
-          "duplicate": "417|Deja salvat",
-          "failed": "418|Încearcă să salvezi din nou"
+          "idle": "Salvează în Notițe",
+          "saving": "Se salvează…",
+          "saved": "Salvat",
+          "duplicate": "Deja salvat",
+          "failed": "Încearcă să salvezi din nou"
         },
         "count_few": "{{count}} probleme"
       },
       "helper": {
-        "translate": "419|Tradu",
-        "synonym": "420|Sinonim",
-        "remaining": "421|Au mai rămas {{remaining}}",
-        "notAvailable": "422|Indisponibil la acest nivel"
+        "translate": "Tradu",
+        "synonym": "Sinonim",
+        "remaining": "Au mai rămas {{remaining}}",
+        "notAvailable": "Indisponibil la acest nivel"
       },
       "translate": {
-        "title": "423|Tradu",
-        "placeholder": "424|Introdu un cuvânt sau o expresie scurtă",
-        "submit": "425|Tradu",
-        "submitting": "426|Se traduce..."
+        "title": "Tradu",
+        "placeholder": "Introdu un cuvânt sau o expresie scurtă",
+        "submit": "Tradu",
+        "submitting": "Se traduce..."
       },
       "synonym": {
-        "title": "427|Sinonime",
-        "placeholder": "428|Introdu un cuvânt",
-        "submit": "429|Găsește sinonime",
-        "submitting": "430|Se caută..."
+        "title": "Sinonime",
+        "placeholder": "Introdu un cuvânt",
+        "submit": "Găsește sinonime",
+        "submitting": "Se caută..."
       },
       "assist": {
-        "from": "431|Din",
-        "to": "432|În",
-        "close": "433|Închide",
-        "noResult": "434|Niciun rezultat găsit.",
-        "sameLanguage": "435|Alege altă limbă de intrare.",
-        "error": "436|Serviciul este temporar indisponibil."
+        "from": "Din",
+        "to": "În",
+        "close": "Închide",
+        "noResult": "Niciun rezultat găsit.",
+        "sameLanguage": "Alege altă limbă de intrare.",
+        "error": "Serviciul este temporar indisponibil."
       },
-      "saveMistakeConfirmTitle": "437|Salvezi această greșeală în Notițe?",
-      "saveMistakeConfirmBody": "438|Va fi salvată ca notiță de greșeală cu corectura „{{correction}}”.",
-      "autoSaveConfirmTitle": "439|Salvezi aceste greșeli în notițele tale?",
-      "autoSaveConfirmBody_one": "440|Această verificare a găsit {{count}} greșeală. Dacă o salvezi, devine o notiță care revine la recapitulare.",
-      "autoSaveConfirmBody_other": "441|Această verificare a găsit {{count}} de greșeli. Dacă le salvezi, devin notițe care revin la recapitulare.",
+      "saveMistakeConfirmTitle": "Salvezi această greșeală în Notițe?",
+      "saveMistakeConfirmBody": "Va fi salvată ca notiță de greșeală cu corectura „{{correction}}”.",
+      "autoSaveConfirmTitle": "Salvezi aceste greșeli în notițele tale?",
+      "autoSaveConfirmBody_one": "Această verificare a găsit {{count}} greșeală. Dacă o salvezi, devine o notiță care revine la recapitulare.",
+      "autoSaveConfirmBody_other": "Această verificare a găsit {{count}} de greșeli. Dacă le salvezi, devin notițe care revin la recapitulare.",
       "autoSaveConfirmBody_few": "Această verificare a găsit {{count}} greșeli. Dacă le salvezi, devin notițe care revin la recapitulare."
     },
     "grammar": {
-      "subtitle": "442|Organizează gramatica pe teme, cu notițe clare și structurate.",
-      "newTopic": "443|Temă nouă",
-      "topicsEmptyTitle": "444|Încă nu ai teme",
-      "topicsEmptyBody": "445|Creează prima temă ca să începi să aduni notițe de gramatică.",
-      "notesCount_one": "446|{{count}} notiță",
-      "notesCount_other": "447|{{count}} de notițe",
-      "deleteTopicConfirm": "448|Ștergi „{{title}}” și toate notițele ei? Acțiunea nu poate fi anulată.",
-      "notesEmptyTitle": "449|Încă nu ai notițe",
-      "notesEmptyBody": "450|Adaugă prima notiță la această temă.",
-      "newNote": "451|Notiță nouă",
-      "deleteNoteConfirm": "452|Ștergi această notiță? Acțiunea nu poate fi anulată.",
-      "loading": "453|Se încarcă…",
-      "loadError": "454|Nu am putut încărca notițele tale de gramatică.",
-      "notFoundTitle": "455|Negăsit",
-      "notFoundBody": "456|Este posibil ca acest element să fi fost șters.",
-      "back": "457|Înapoi",
-      "updated": "458|Actualizat la {{date}}",
+      "subtitle": "Organizează gramatica pe teme, cu notițe clare și structurate.",
+      "newTopic": "Temă nouă",
+      "topicsEmptyTitle": "Încă nu ai teme",
+      "topicsEmptyBody": "Creează prima temă ca să începi să aduni notițe de gramatică.",
+      "notesCount_one": "{{count}} notiță",
+      "notesCount_other": "{{count}} de notițe",
+      "deleteTopicConfirm": "Ștergi „{{title}}” și toate notițele ei? Acțiunea nu poate fi anulată.",
+      "notesEmptyTitle": "Încă nu ai notițe",
+      "notesEmptyBody": "Adaugă prima notiță la această temă.",
+      "newNote": "Notiță nouă",
+      "deleteNoteConfirm": "Ștergi această notiță? Acțiunea nu poate fi anulată.",
+      "loading": "Se încarcă…",
+      "loadError": "Nu am putut încărca notițele tale de gramatică.",
+      "notFoundTitle": "Negăsit",
+      "notFoundBody": "Este posibil ca acest element să fi fost șters.",
+      "back": "Înapoi",
+      "updated": "Actualizat la {{date}}",
       "form": {
-        "newTitle": "459|Temă nouă",
-        "editTitle": "460|Editează tema",
-        "name": "461|Titlu",
-        "namePlaceholder": "462|de ex. Verbe spaniole",
-        "description": "463|Descriere",
-        "descriptionPlaceholder": "464|Opțional",
-        "color": "465|Culoare",
-        "icon": "466|Pictogramă",
-        "save": "467|Salvează",
-        "cancel": "468|Anulează",
-        "language": "469|Limbă",
-        "languageNone": "470|Nesetată"
+        "newTitle": "Temă nouă",
+        "editTitle": "Editează tema",
+        "name": "Titlu",
+        "namePlaceholder": "de ex. Verbe spaniole",
+        "description": "Descriere",
+        "descriptionPlaceholder": "Opțional",
+        "color": "Culoare",
+        "icon": "Pictogramă",
+        "save": "Salvează",
+        "cancel": "Anulează",
+        "language": "Limbă",
+        "languageNone": "Nesetată"
       },
       "noteType": {
-        "standard": "471|Standard",
-        "mistake": "472|Greșeală",
-        "rule": "473|Regulă",
-        "comparison": "474|Comparație",
-        "cheatSheet": "475|Fișă de sinteză",
-        "exercise": "476|Exercițiu"
+        "standard": "Standard",
+        "mistake": "Greșeală",
+        "rule": "Regulă",
+        "comparison": "Comparație",
+        "cheatSheet": "Fișă de sinteză",
+        "exercise": "Exercițiu"
       },
       "block": {
-        "heading": "477|Titlu",
-        "paragraph": "478|Text",
-        "bulletList": "479|Listă cu marcatori",
-        "rule": "480|Regulă",
-        "example": "481|Exemplu",
-        "warning": "482|Avertisment",
-        "quote": "483|Citat",
-        "divider": "484|Separator",
-        "addBlock": "485|Adaugă bloc",
-        "addItem": "486|Adaugă element",
-        "moveUp": "487|Mută mai sus",
-        "moveDown": "488|Mută mai jos",
-        "remove": "489|Elimină",
-        "secondaryPlaceholder": "490|Detaliu / traducere (opțional)",
-        "subheading": "491|Subtitlu",
-        "numberedList": "492|Listă numerotată",
-        "checklist": "493|Listă de verificare",
-        "comparison": "494|Comparație",
-        "exercise": "495|Exercițiu",
-        "quiz": "496|Test",
-        "image": "497|Imagine",
-        "comparisonSecondary": "498|A doua parte",
-        "imageAdd": "499|Adaugă / înlocuiește imaginea",
-        "imageUploading": "500|Se încarcă…",
-        "imageFailed": "501|Imaginea nu a putut fi încărcată.",
-        "imageSaveFirst": "502|Conectează-te ca să încarci imagini."
+        "heading": "Titlu",
+        "paragraph": "Text",
+        "bulletList": "Listă cu marcatori",
+        "rule": "Regulă",
+        "example": "Exemplu",
+        "warning": "Avertisment",
+        "quote": "Citat",
+        "divider": "Separator",
+        "addBlock": "Adaugă bloc",
+        "addItem": "Adaugă element",
+        "moveUp": "Mută mai sus",
+        "moveDown": "Mută mai jos",
+        "remove": "Elimină",
+        "secondaryPlaceholder": "Detaliu / traducere (opțional)",
+        "subheading": "Subtitlu",
+        "numberedList": "Listă numerotată",
+        "checklist": "Listă de verificare",
+        "comparison": "Comparație",
+        "exercise": "Exercițiu",
+        "quiz": "Test",
+        "image": "Imagine",
+        "comparisonSecondary": "A doua parte",
+        "imageAdd": "Adaugă / înlocuiește imaginea",
+        "imageUploading": "Se încarcă…",
+        "imageFailed": "Imaginea nu a putut fi încărcată.",
+        "imageSaveFirst": "Conectează-te ca să încarci imagini."
       },
       "blockPlaceholder": {
-        "heading": "503|Titlu",
-        "paragraph": "504|Scrie explicația ta…",
-        "bulletList": "505|Element de listă",
-        "rule": "506|Explică regula gramaticală…",
-        "example": "507|Adaugă un exemplu…",
-        "warning": "508|Greșeală frecventă sau avertisment…",
-        "quote": "509|Propoziție care merită reținută…",
-        "subheading": "510|Subtitlu",
-        "numberedList": "511|Element de listă",
-        "checklist": "512|Element din lista de verificare",
-        "comparison": "513|Prima parte",
-        "exercise": "514|Instrucțiune pentru exercițiu…",
-        "quiz": "515|Întrebare",
-        "image": "516|Legendă imagine"
+        "heading": "Titlu",
+        "paragraph": "Scrie explicația ta…",
+        "bulletList": "Element de listă",
+        "rule": "Explică regula gramaticală…",
+        "example": "Adaugă un exemplu…",
+        "warning": "Greșeală frecventă sau avertisment…",
+        "quote": "Propoziție care merită reținută…",
+        "subheading": "Subtitlu",
+        "numberedList": "Element de listă",
+        "checklist": "Element din lista de verificare",
+        "comparison": "Prima parte",
+        "exercise": "Instrucțiune pentru exercițiu…",
+        "quiz": "Întrebare",
+        "image": "Legendă imagine"
       },
       "editor": {
-        "titlePlaceholder": "517|Titlul notiței",
-        "save": "518|Salvează notița",
-        "saving": "519|Se salvează…",
-        "delete": "520|Șterge notița",
-        "saveError": "521|Salvarea nu a reușit. Încearcă din nou.",
-        "subtitle": "522|Editează notița",
-        "tags": "523|Etichete",
-        "tagsPlaceholder": "524|Adaugă o etichetă…",
-        "removeTag": "525|Elimină eticheta {{tag}}",
-        "addToReview": "526|Adaugă la recapitulare",
-        "addedToReview": "527|Adăugată în coada ta de recapitulare.",
-        "inReview": "528|La recapitulare · {{when}}",
-        "inReviewDue": "529|E timpul pentru recapitulare",
-        "removedFromReview": "530|Eliminată din coada ta de recapitulare.",
-        "unsavedTitle": "531|Ieși fără să salvezi?",
-        "unsavedBody": "532|Această notiță are modificări nesalvate.",
-        "discard": "533|Renunță la modificări",
-        "saveAndLeave": "534|Salvează și ieși"
+        "titlePlaceholder": "Titlul notiței",
+        "save": "Salvează notița",
+        "saving": "Se salvează…",
+        "delete": "Șterge notița",
+        "saveError": "Salvarea nu a reușit. Încearcă din nou.",
+        "subtitle": "Editează notița",
+        "tags": "Etichete",
+        "tagsPlaceholder": "Adaugă o etichetă…",
+        "removeTag": "Elimină eticheta {{tag}}",
+        "addToReview": "Adaugă la recapitulare",
+        "addedToReview": "Adăugată în coada ta de recapitulare.",
+        "inReview": "La recapitulare · {{when}}",
+        "inReviewDue": "E timpul pentru recapitulare",
+        "removedFromReview": "Eliminată din coada ta de recapitulare.",
+        "unsavedTitle": "Ieși fără să salvezi?",
+        "unsavedBody": "Această notiță are modificări nesalvate.",
+        "discard": "Renunță la modificări",
+        "saveAndLeave": "Salvează și ieși"
       },
       "quiz": {
-        "title": "535|Teste",
-        "new": "536|Test nou",
-        "start": "537|Începe testul",
-        "delete": "538|Șterge testul",
-        "deleteConfirm": "539|Ștergi „{{title}}”? Acțiunea nu poate fi anulată.",
-        "emptyTitle": "540|Încă nu ai teste",
-        "emptyBody": "541|Creează un test din această notiță ca să te verifici.",
-        "loadError": "542|Testele nu au putut fi încărcate.",
-        "questionsCount_one": "543|{{count}} întrebare",
-        "questionsCount_other": "544|{{count}} de întrebări",
+        "title": "Teste",
+        "new": "Test nou",
+        "start": "Începe testul",
+        "delete": "Șterge testul",
+        "deleteConfirm": "Ștergi „{{title}}”? Acțiunea nu poate fi anulată.",
+        "emptyTitle": "Încă nu ai teste",
+        "emptyBody": "Creează un test din această notiță ca să te verifici.",
+        "loadError": "Testele nu au putut fi încărcate.",
+        "questionsCount_one": "{{count}} întrebare",
+        "questionsCount_other": "{{count}} de întrebări",
         "type": {
-          "multipleChoice": "545|Alegere multiplă",
-          "trueFalse": "546|Adevărat / Fals",
-          "fillGap": "547|Completează spațiul",
-          "shortAnswer": "548|Răspuns scurt"
+          "multipleChoice": "Alegere multiplă",
+          "trueFalse": "Adevărat / Fals",
+          "fillGap": "Completează spațiul",
+          "shortAnswer": "Răspuns scurt"
         },
         "sheet": {
-          "title": "549|Creează test",
-          "titlePlaceholder": "550|Titlul testului",
-          "mode": "551|Mod de generare",
-          "modeSmart": "552|Local inteligent",
-          "modeSmartDesc": "553|Creează întrebări din conținutul notiței, pe dispozitiv.",
-          "modeAI": "554|Generat cu AI",
-          "modeAIDesc": "555|Creează întrebări mai bogate și contextuale cu AI.",
-          "count": "556|Întrebări",
-          "types": "557|Tipuri de întrebări",
-          "focus": "558|Focus (opțional)",
-          "focusPlaceholder": "559|de ex. concentrează-te pe formele neregulate",
-          "preview": "560|Previzualizează întrebările",
-          "regenerate": "561|Regenerează previzualizarea",
-          "previewTitle": "562|Previzualizare",
-          "saveQuiz": "563|Salvează testul",
-          "generateQuiz": "564|Generează testul",
-          "generating": "565|Se generează…",
-          "saving": "566|Se salvează…",
-          "useSmartInstead": "567|Folosește mai bine Local inteligent",
-          "modeManual": "568|Manual",
-          "modeManualDesc": "569|Scrie-ți propriile întrebări.",
-          "createQuiz": "570|Creează testul"
+          "title": "Creează test",
+          "titlePlaceholder": "Titlul testului",
+          "mode": "Mod de generare",
+          "modeSmart": "Local inteligent",
+          "modeSmartDesc": "Creează întrebări din conținutul notiței, pe dispozitiv.",
+          "modeAI": "Generat cu AI",
+          "modeAIDesc": "Creează întrebări mai bogate și contextuale cu AI.",
+          "count": "Întrebări",
+          "types": "Tipuri de întrebări",
+          "focus": "Focus (opțional)",
+          "focusPlaceholder": "de ex. concentrează-te pe formele neregulate",
+          "preview": "Previzualizează întrebările",
+          "regenerate": "Regenerează previzualizarea",
+          "previewTitle": "Previzualizare",
+          "saveQuiz": "Salvează testul",
+          "generateQuiz": "Generează testul",
+          "generating": "Se generează…",
+          "saving": "Se salvează…",
+          "useSmartInstead": "Folosește mai bine Local inteligent",
+          "modeManual": "Manual",
+          "modeManualDesc": "Scrie-ți propriile întrebări.",
+          "createQuiz": "Creează testul"
         },
         "play": {
-          "questionOf": "571|Întrebarea {{current}} din {{total}}",
-          "submit": "572|Trimite răspunsul",
-          "next": "573|Înainte",
-          "finish": "574|Termină",
-          "correct": "575|Corect!",
-          "incorrect": "576|Greșit",
-          "correctAnswer": "577|Răspuns corect: {{answer}}",
-          "typeMissing": "578|Scrie cuvântul lipsă",
-          "typeAnswer": "579|Scrie răspunsul tău",
-          "trueLabel": "580|Adevărat",
-          "falseLabel": "581|Fals"
+          "questionOf": "Întrebarea {{current}} din {{total}}",
+          "submit": "Trimite răspunsul",
+          "next": "Înainte",
+          "finish": "Termină",
+          "correct": "Corect!",
+          "incorrect": "Greșit",
+          "correctAnswer": "Răspuns corect: {{answer}}",
+          "typeMissing": "Scrie cuvântul lipsă",
+          "typeAnswer": "Scrie răspunsul tău",
+          "trueLabel": "Adevărat",
+          "falseLabel": "Fals"
         },
         "result": {
-          "scoreOf": "582|{{correct}} din {{total}} corecte",
+          "scoreOf": "{{correct}} din {{total}} corecte",
           "grade": {
-            "excellent": "583|Excelent!",
-            "good": "584|Bravo!",
-            "keepPracticing": "585|Continuă să exersezi",
-            "reviewNote": "586|Recitește notița"
+            "excellent": "Excelent!",
+            "good": "Bravo!",
+            "keepPracticing": "Continuă să exersezi",
+            "reviewNote": "Recitește notița"
           },
-          "incorrectSection": "587|Greșite",
-          "correctSection": "588|Corecte",
-          "yourAnswer": "589|Răspunsul tău: {{answer}}",
-          "tryAgain": "590|Încearcă din nou",
-          "reviewNote": "591|Deschide notița",
-          "done": "592|Gata"
+          "incorrectSection": "Greșite",
+          "correctSection": "Corecte",
+          "yourAnswer": "Răspunsul tău: {{answer}}",
+          "tryAgain": "Încearcă din nou",
+          "reviewNote": "Deschide notița",
+          "done": "Gata"
         },
         "errors": {
-          "notEnoughContent": "593|Adaugă mai întâi mai mult conținut în notiță — un test are nevoie de cel puțin două blocuri de conținut (regulă, exemplu, avertisment, paragraf sau citat).",
-          "noMatchingQuestionTypes": "594|Nu e destul conținut potrivit pentru tipurile de întrebări alese. Activează mai multe tipuri sau adaugă conținut.",
-          "aiFailed": "595|Testul nu a putut fi generat cu AI. Încearcă din nou sau folosește Local inteligent."
+          "notEnoughContent": "Adaugă mai întâi mai mult conținut în notiță — un test are nevoie de cel puțin două blocuri de conținut (regulă, exemplu, avertisment, paragraf sau citat).",
+          "noMatchingQuestionTypes": "Nu e destul conținut potrivit pentru tipurile de întrebări alese. Activează mai multe tipuri sau adaugă conținut.",
+          "aiFailed": "Testul nu a putut fi generat cu AI. Încearcă din nou sau folosește Local inteligent."
         },
-        "badge": "596|Test",
+        "badge": "Test",
         "manual": {
-          "questions_one": "597|{{count}} întrebare",
-          "questions_other": "598|{{count}} de întrebări",
-          "add": "599|Adaugă întrebare",
-          "questionPlaceholder": "600|Textul întrebării",
-          "questionGapPlaceholder": "601|Întrebare cu spațiu liber, de ex. Eu _____ la școală",
-          "optionPlaceholder": "602|Varianta {{index}}",
-          "answerPlaceholder": "603|Răspuns corect",
-          "explanationPlaceholder": "604|Explicație (opțional)",
+          "questions_one": "{{count}} întrebare",
+          "questions_other": "{{count}} de întrebări",
+          "add": "Adaugă întrebare",
+          "questionPlaceholder": "Textul întrebării",
+          "questionGapPlaceholder": "Întrebare cu spațiu liber, de ex. Eu _____ la școală",
+          "optionPlaceholder": "Varianta {{index}}",
+          "answerPlaceholder": "Răspuns corect",
+          "explanationPlaceholder": "Explicație (opțional)",
           "error": {
-            "questionRequired": "605|Textul întrebării este obligatoriu.",
-            "optionsRequired": "606|Alegerea multiplă are nevoie de cel puțin 2 variante.",
-            "answerRequired": "607|Introdu răspunsul corect.",
-            "answerNotAnOption": "608|Răspunsul corect trebuie să corespundă uneia dintre variante.",
-            "blankRequired": "609|Adaugă un spațiu liber (de ex. _____) în întrebare."
+            "questionRequired": "Textul întrebării este obligatoriu.",
+            "optionsRequired": "Alegerea multiplă are nevoie de cel puțin 2 variante.",
+            "answerRequired": "Introdu răspunsul corect.",
+            "answerNotAnOption": "Răspunsul corect trebuie să corespundă uneia dintre variante.",
+            "blankRequired": "Adaugă un spațiu liber (de ex. _____) în întrebare."
           },
           "questions_few": "{{count}} întrebări"
         },
         "questionsCount_few": "{{count}} întrebări"
       },
       "quickMistake": {
-        "button": "610|Greșeală rapidă",
-        "title": "611|Greșeală rapidă",
-        "original": "612|Propoziția originală",
-        "originalPlaceholder": "613|Exemplu: Eu sunt de acord cu tine",
-        "corrected": "614|Corectură",
-        "correctedPlaceholder": "615|Exemplu: Sunt de acord cu tine",
-        "explanation": "616|Explicație (opțional)",
-        "explanationPlaceholder": "617|De ce este corectă corectura?",
+        "button": "Greșeală rapidă",
+        "title": "Greșeală rapidă",
+        "original": "Propoziția originală",
+        "originalPlaceholder": "Exemplu: Eu sunt de acord cu tine",
+        "corrected": "Corectură",
+        "correctedPlaceholder": "Exemplu: Sunt de acord cu tine",
+        "explanation": "Explicație (opțional)",
+        "explanationPlaceholder": "De ce este corectă corectura?",
         "validation": {
-          "original": "618|Adaugă mai întâi propoziția originală.",
-          "corrected": "619|Adaugă și propoziția corectată."
+          "original": "Adaugă mai întâi propoziția originală.",
+          "corrected": "Adaugă și propoziția corectată."
         },
-        "save": "620|Salvează greșeala",
-        "saving": "621|Se salvează…",
-        "saved": "622|Salvat în Notițe de gramatică.",
-        "duplicate": "623|Deja salvat — duplicatul a fost ignorat.",
-        "failed": "624|Salvarea nu a reușit. Încearcă din nou.",
-        "openTopic": "625|Deschide Greșeli frecvente",
-        "done": "626|Gata",
-        "tip": "627|Corecturile salvate intră automat la recapitulare, așa că acelea la care greșești mereu revin primele."
+        "save": "Salvează greșeala",
+        "saving": "Se salvează…",
+        "saved": "Salvat în Notițe de gramatică.",
+        "duplicate": "Deja salvat — duplicatul a fost ignorat.",
+        "failed": "Salvarea nu a reușit. Încearcă din nou.",
+        "openTopic": "Deschide Greșeli frecvente",
+        "done": "Gata",
+        "tip": "Corecturile salvate intră automat la recapitulare, așa că acelea la care greșești mereu revin primele."
       },
       "templates": {
-        "topicTitle": "628|Șabloane de teme",
-        "noteTitle": "629|Șabloane de notițe",
-        "button": "630|Șablon",
-        "startFromTemplate": "631|Începe de la un șablon",
-        "searchPlaceholder": "632|Caută șabloane…",
-        "allLanguages": "633|Toate",
-        "anyDifficulty": "634|Oricare",
+        "topicTitle": "Șabloane de teme",
+        "noteTitle": "Șabloane de notițe",
+        "button": "Șablon",
+        "startFromTemplate": "Începe de la un șablon",
+        "searchPlaceholder": "Caută șabloane…",
+        "allLanguages": "Toate",
+        "anyDifficulty": "Oricare",
         "language": {
-          "en": "635|Engleză",
-          "es": "636|Spaniolă",
-          "fr": "637|Franceză",
-          "de": "638|Germană"
+          "en": "Engleză",
+          "es": "Spaniolă",
+          "fr": "Franceză",
+          "de": "Germană"
         },
-        "minutes": "639|{{minutes}} min",
-        "notesIncluded_one": "640|{{count}} notiță",
-        "notesIncluded_other": "641|{{count}} de notițe",
-        "blocksIncluded_one": "642|{{count}} bloc",
-        "blocksIncluded_other": "643|{{count}} de blocuri",
-        "empty": "644|Niciun șablon nu se potrivește cu filtrele tale.",
-        "use": "645|Folosește șablonul",
-        "creating": "646|Se creează…",
-        "replaceConfirm": "647|Înlocuiești conținutul actual al notiței cu acest șablon? Apasă Anulează ca să adaugi șablonul dedesubt.",
-        "applyTitle": "648|Aplici „{{title}}”?",
-        "applyBody": "649|Această notiță are deja conținut. Alege cum să aplici șablonul.",
-        "applyReplace": "650|Înlocuiește conținutul",
-        "applyAppend": "651|Adaugă blocurile la final",
+        "minutes": "{{minutes}} min",
+        "notesIncluded_one": "{{count}} notiță",
+        "notesIncluded_other": "{{count}} de notițe",
+        "blocksIncluded_one": "{{count}} bloc",
+        "blocksIncluded_other": "{{count}} de blocuri",
+        "empty": "Niciun șablon nu se potrivește cu filtrele tale.",
+        "use": "Folosește șablonul",
+        "creating": "Se creează…",
+        "replaceConfirm": "Înlocuiești conținutul actual al notiței cu acest șablon? Apasă Anulează ca să adaugi șablonul dedesubt.",
+        "applyTitle": "Aplici „{{title}}”?",
+        "applyBody": "Această notiță are deja conținut. Alege cum să aplici șablonul.",
+        "applyReplace": "Înlocuiește conținutul",
+        "applyAppend": "Adaugă blocurile la final",
         "notesIncluded_few": "{{count}} notițe",
         "blocksIncluded_few": "{{count}} blocuri"
       },
       "review": {
-        "title": "652|Recapitulare",
-        "subtitle": "653|Consolidează ce ai învățat prin repetiție eșalonată.",
-        "cardTitle": "654|Recapitulează azi",
-        "cardSubtitle_one": "655|{{count}} element pregătit · ~{{minutes}} min",
-        "cardSubtitle_other": "656|{{count}} de elemente pregătite · ~{{minutes}} min",
-        "caughtUpTitle": "657|Ești la zi",
-        "caughtUp": "658|Ești la zi. Deschide sau editează notițe ca să primești sugestii de recapitulare.",
-        "dueBadge": "659|De recapitulat",
-        "refreshBody": "660|Acum nu e nimic de recapitulat — poți totuși împrospăta ce ai citit recent.",
-        "refreshStart": "661|Împrospătează notițele recente",
-        "start": "662|Începe recapitularea",
-        "skip": "663|Sari peste",
-        "itemOf": "664|Elementul {{current}} din {{total}}",
-        "untitled": "665|Notiță de gramatică",
-        "stats": "666|Recapitulată de {{count}} ori · serie {{streak}}",
-        "continueToQuestion": "667|Treci la întrebare",
-        "showAnswer": "668|Arată răspunsul",
-        "compareTitle": "669|Compară-ți răspunsul",
-        "referenceAnswer": "670|Referință: {{answer}}",
-        "openNote": "671|Deschide notița întreagă",
+        "title": "Recapitulare",
+        "subtitle": "Consolidează ce ai învățat prin repetiție eșalonată.",
+        "cardTitle": "Recapitulează azi",
+        "cardSubtitle_one": "{{count}} element pregătit · ~{{minutes}} min",
+        "cardSubtitle_other": "{{count}} de elemente pregătite · ~{{minutes}} min",
+        "caughtUpTitle": "Ești la zi",
+        "caughtUp": "Ești la zi. Deschide sau editează notițe ca să primești sugestii de recapitulare.",
+        "dueBadge": "De recapitulat",
+        "refreshBody": "Acum nu e nimic de recapitulat — poți totuși împrospăta ce ai citit recent.",
+        "refreshStart": "Împrospătează notițele recente",
+        "start": "Începe recapitularea",
+        "skip": "Sari peste",
+        "itemOf": "Elementul {{current}} din {{total}}",
+        "untitled": "Notiță de gramatică",
+        "stats": "Recapitulată de {{count}} ori · serie {{streak}}",
+        "continueToQuestion": "Treci la întrebare",
+        "showAnswer": "Arată răspunsul",
+        "compareTitle": "Compară-ți răspunsul",
+        "referenceAnswer": "Referință: {{answer}}",
+        "openNote": "Deschide notița întreagă",
         "pool": {
-          "manual_one": "672|{{count}} element așteaptă recapitularea",
-          "manual_other": "673|{{count}} de elemente așteaptă recapitularea",
-          "recentlyOpened_one": "674|{{count}} notiță deschisă recent",
-          "recentlyOpened_other": "675|{{count}} de notițe deschise recent",
-          "recentlyEdited_one": "676|{{count}} notiță editată recent",
-          "recentlyEdited_other": "677|{{count}} de notițe editate recent",
+          "manual_one": "{{count}} element așteaptă recapitularea",
+          "manual_other": "{{count}} de elemente așteaptă recapitularea",
+          "recentlyOpened_one": "{{count}} notiță deschisă recent",
+          "recentlyOpened_other": "{{count}} de notițe deschise recent",
+          "recentlyEdited_one": "{{count}} notiță editată recent",
+          "recentlyEdited_other": "{{count}} de notițe editate recent",
           "manual_few": "{{count}} elemente așteaptă recapitularea",
           "recentlyOpened_few": "{{count}} notițe deschise recent",
           "recentlyEdited_few": "{{count}} notițe editate recent"
         },
         "sourceType": {
-          "note": "678|Notiță",
-          "mistake": "679|Greșeală",
-          "quiz": "680|Test"
+          "note": "Notiță",
+          "mistake": "Greșeală",
+          "quiz": "Test"
         },
         "phase": {
-          "source": "681|Studiu",
-          "question": "682|Răspuns",
-          "result": "683|Evaluare"
+          "source": "Studiu",
+          "question": "Răspuns",
+          "result": "Evaluare"
         },
         "rating": {
-          "forgot": "684|Am uitat",
-          "hard": "685|Greu",
-          "good": "686|Bine",
-          "easy": "687|Ușor"
+          "forgot": "Am uitat",
+          "hard": "Greu",
+          "good": "Bine",
+          "easy": "Ușor"
         },
         "interval": {
-          "plus4h": "688|+4 ore",
-          "plus1d": "689|+1 zi",
-          "plus3d": "690|+3 zile",
-          "plus7d": "691|+7 zile"
+          "plus4h": "+4 ore",
+          "plus1d": "+1 zi",
+          "plus3d": "+3 zile",
+          "plus7d": "+7 zile"
         },
         "summary": {
-          "title": "692|Sesiune încheiată",
-          "emptyTitle": "693|Nimic recapitulat",
-          "reviewed": "694|Recapitulate",
-          "correct": "695|Corecte",
-          "incorrect": "696|Greșite",
-          "hintForgot": "697|Unele elemente revin peste 4 ore.",
-          "hintHard": "698|Elementele grele revin mâine.",
-          "hintGood": "699|Elementele bune revin peste 3 zile.",
-          "hintEasy": "700|Toate elementele revin peste 7 zile.",
-          "done": "701|Înapoi la Notițe de gramatică"
+          "title": "Sesiune încheiată",
+          "emptyTitle": "Nimic recapitulat",
+          "reviewed": "Recapitulate",
+          "correct": "Corecte",
+          "incorrect": "Greșite",
+          "hintForgot": "Unele elemente revin peste 4 ore.",
+          "hintHard": "Elementele grele revin mâine.",
+          "hintGood": "Elementele bune revin peste 3 zile.",
+          "hintEasy": "Toate elementele revin peste 7 zile.",
+          "done": "Înapoi la Notițe de gramatică"
         },
-        "loadError": "702|Nu am putut încărca coada ta de recapitulare.",
-        "mistakeCount_one": "703|{{count}} greșeală",
-        "mistakeCount_other": "704|{{count}} de greșeli",
+        "loadError": "Nu am putut încărca coada ta de recapitulare.",
+        "mistakeCount_one": "{{count}} greșeală",
+        "mistakeCount_other": "{{count}} de greșeli",
         "cardSubtitle_few": "{{count}} elemente pregătite · ~{{minutes}} min",
         "mistakeCount_few": "{{count}} greșeli"
       },
-      "mistakesBadge": "705|Greșeli",
-      "topicsTitle": "706|Teme",
-      "deleteTopic": "707|Șterge tema",
-      "deleteTopicTitle": "708|Ștergi această temă?",
-      "deleteNoteTitle": "709|Ștergi această notiță?",
-      "pin": "710|Fixează notița",
-      "unpin": "711|Anulează fixarea",
-      "favorite": "712|Adaugă la favorite",
-      "unfavorite": "713|Elimină de la favorite",
+      "mistakesBadge": "Greșeli",
+      "topicsTitle": "Teme",
+      "deleteTopic": "Șterge tema",
+      "deleteTopicTitle": "Ștergi această temă?",
+      "deleteNoteTitle": "Ștergi această notiță?",
+      "pin": "Fixează notița",
+      "unpin": "Anulează fixarea",
+      "favorite": "Adaugă la favorite",
+      "unfavorite": "Elimină de la favorite",
       "search": {
-        "topics": "714|Caută teme…",
-        "notes": "715|Caută notițe…",
-        "clear": "716|Șterge căutarea",
-        "noMatchTitle": "717|Nicio potrivire",
-        "noMatchBody": "718|Încearcă alt cuvânt-cheie.",
-        "notesSection_one": "719|Notițe ({{count}})",
-        "notesSection_other": "720|Notițe ({{count}})",
-        "noNoteMatches": "721|Nicio notiță nu corespunde acestei căutări.",
+        "topics": "Caută teme…",
+        "notes": "Caută notițe…",
+        "clear": "Șterge căutarea",
+        "noMatchTitle": "Nicio potrivire",
+        "noMatchBody": "Încearcă alt cuvânt-cheie.",
+        "notesSection_one": "Notițe ({{count}})",
+        "notesSection_other": "Notițe ({{count}})",
+        "noNoteMatches": "Nicio notiță nu corespunde acestei căutări.",
         "notesSection_few": "Notițe ({{count}})"
       },
       "filter": {
-        "label": "722|Filtrează notițele",
-        "all": "723|Toate",
-        "pinned": "724|Fixate",
-        "favorites": "725|Favorite",
-        "mistakes": "726|Greșeli",
-        "quizzes": "727|Teste",
-        "review": "728|De recapitulat",
+        "label": "Filtrează notițele",
+        "all": "Toate",
+        "pinned": "Fixate",
+        "favorites": "Favorite",
+        "mistakes": "Greșeli",
+        "quizzes": "Teste",
+        "review": "De recapitulat",
         "empty": {
           "all": {
-            "title": "729|Încă nu ai notițe de gramatică",
-            "body": "730|Creează prima notiță de gramatică pentru această temă."
+            "title": "Încă nu ai notițe de gramatică",
+            "body": "Creează prima notiță de gramatică pentru această temă."
           },
           "pinned": {
-            "title": "731|Încă nu ai notițe fixate",
-            "body": "732|Fixează notițe din listă ca să le găsești repede."
+            "title": "Încă nu ai notițe fixate",
+            "body": "Fixează notițe din listă ca să le găsești repede."
           },
           "favorites": {
-            "title": "733|Încă nu ai notițe favorite",
-            "body": "734|Marchează notițe ca favorite ca să le ai la îndemână."
+            "title": "Încă nu ai notițe favorite",
+            "body": "Marchează notițe ca favorite ca să le ai la îndemână."
           },
           "mistakes": {
-            "title": "735|Încă nu ai greșeli salvate",
-            "body": "736|Salvează greșeli de gramatică ca să le recapitulezi aici."
+            "title": "Încă nu ai greșeli salvate",
+            "body": "Salvează greșeli de gramatică ca să le recapitulezi aici."
           },
           "quizzes": {
-            "title": "737|Încă nu ai notițe cu test",
-            "body": "738|Adaugă un test la o notiță ca să o vezi aici."
+            "title": "Încă nu ai notițe cu test",
+            "body": "Adaugă un test la o notiță ca să o vezi aici."
           },
           "review": {
-            "title": "739|Acum nu e nimic de recapitulat",
-            "body": "740|Notițele revin aici când vine timpul următoarei recapitulări."
+            "title": "Acum nu e nimic de recapitulat",
+            "body": "Notițele revin aici când vine timpul următoarei recapitulări."
           }
         }
       },
       "reorder": {
-        "start": "741|Reordonează",
-        "done": "742|Gata",
-        "up": "743|Mută mai sus",
-        "down": "744|Mută mai jos"
+        "start": "Reordonează",
+        "done": "Gata",
+        "up": "Mută mai sus",
+        "down": "Mută mai jos"
       },
       "highlights": {
-        "mistakesTitle": "745|Greșeli de corectat",
-        "mistakesSubtitle": "746|Corecturi recente care așteaptă recapitularea.",
-        "quizzesTitle": "747|Puncte slabe la teste",
-        "quizzesSubtitle": "748|Teste pe care merită să le reiei curând."
+        "mistakesTitle": "Greșeli de corectat",
+        "mistakesSubtitle": "Corecturi recente care așteaptă recapitularea.",
+        "quizzesTitle": "Puncte slabe la teste",
+        "quizzesSubtitle": "Teste pe care merită să le reiei curând."
       },
       "quickNote": {
-        "button": "749|Notiță rapidă",
-        "title": "750|Notiță rapidă",
-        "subtitle": "751|Notează o idee de gramatică fără să deschizi editorul complet.",
-        "noteTitle": "752|Titlu",
-        "titlePlaceholder": "753|Exemplu: Ser vs Estar",
-        "text": "754|Notiță",
-        "textPlaceholder": "755|Scrie aici partea utilă",
-        "noteType": "756|Tipul notiței",
-        "topic": "757|Temă",
-        "openEditor": "758|Deschide editorul după salvare",
-        "openEditorHint": "759|Util când versiunea rapidă se transformă într-o notiță completă.",
-        "tip": "760|Notițele rapide sunt pentru ideea pe care altfel ai uita-o în zece minute.",
-        "validation": "761|Adaugă mai întâi un titlu sau ceva text.",
-        "save": "762|Salvează notița rapidă",
-        "saving": "763|Se salvează…"
+        "button": "Notiță rapidă",
+        "title": "Notiță rapidă",
+        "subtitle": "Notează o idee de gramatică fără să deschizi editorul complet.",
+        "noteTitle": "Titlu",
+        "titlePlaceholder": "Exemplu: Ser vs Estar",
+        "text": "Notiță",
+        "textPlaceholder": "Scrie aici partea utilă",
+        "noteType": "Tipul notiței",
+        "topic": "Temă",
+        "openEditor": "Deschide editorul după salvare",
+        "openEditorHint": "Util când versiunea rapidă se transformă într-o notiță completă.",
+        "tip": "Notițele rapide sunt pentru ideea pe care altfel ai uita-o în zece minute.",
+        "validation": "Adaugă mai întâi un titlu sau ceva text.",
+        "save": "Salvează notița rapidă",
+        "saving": "Se salvează…"
       },
       "settings": {
-        "title": "764|Setări pentru notițe",
-        "subtitle": "765|Cum se comportă notarea rapidă, greșelile și lista de notițe.",
-        "reset": "766|Revino la valorile implicite",
-        "tip": "767|Folosește greșelile rapide pentru propoziții pe care chiar le-ai scris greșit — sunt mai utile decât exemplele perfecte din manual.",
+        "title": "Setări pentru notițe",
+        "subtitle": "Cum se comportă notarea rapidă, greșelile și lista de notițe.",
+        "reset": "Revino la valorile implicite",
+        "tip": "Folosește greșelile rapide pentru propoziții pe care chiar le-ai scris greșit — sunt mai utile decât exemplele perfecte din manual.",
         "quickCapture": {
-          "title": "768|Notare rapidă",
-          "subtitle": "769|Fă ca notițele și greșelile rapide să fie instantanee."
+          "title": "Notare rapidă",
+          "subtitle": "Fă ca notițele și greșelile rapide să fie instantanee."
         },
         "mistakeNotes": {
-          "title": "770|Notițe de greșeli",
-          "subtitle": "771|Ce se salvează când notezi o greșeală rapidă."
+          "title": "Notițe de greșeli",
+          "subtitle": "Ce se salvează când notezi o greșeală rapidă."
         },
         "essays": {
-          "title": "772|Eseuri",
-          "subtitle": "773|Ce se întâmplă cu problemele de gramatică din eseurile tale."
+          "title": "Eseuri",
+          "subtitle": "Ce se întâmplă cu problemele de gramatică din eseurile tale."
         },
         "review": {
-          "title": "774|Recapitulare eșalonată",
-          "subtitle": "775|Cum ajung notițele în coada de recapitulare."
+          "title": "Recapitulare eșalonată",
+          "subtitle": "Cum ajung notițele în coada de recapitulare."
         },
         "appearance": {
-          "title": "776|Aspectul notițelor",
-          "subtitle": "777|Cum este ordonată și dimensionată lista de notițe."
+          "title": "Aspectul notițelor",
+          "subtitle": "Cum este ordonată și dimensionată lista de notițe."
         },
         "helpers": {
-          "title": "778|Ajutoare de învățare",
-          "subtitle": "779|Mici indicii în ecranele goale și în formularele rapide."
+          "title": "Ajutoare de învățare",
+          "subtitle": "Mici indicii în ecranele goale și în formularele rapide."
         },
         "defaultType": {
-          "title": "780|Tipul implicit de notiță",
-          "subtitle": "781|Cu ce tip începe o notiță rapidă nouă."
+          "title": "Tipul implicit de notiță",
+          "subtitle": "Cu ce tip începe o notiță rapidă nouă."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "782|Deschide editorul după salvarea rapidă",
-            "subtitle": "783|După ce salvezi o notiță rapidă, treci direct în editorul complet."
+            "title": "Deschide editorul după salvarea rapidă",
+            "subtitle": "După ce salvezi o notiță rapidă, treci direct în editorul complet."
           },
           "allowQuickQuizzes": {
-            "title": "784|Permite teste în notițe",
-            "subtitle": "785|Oferă blocuri de test și crearea de teste în notițe."
+            "title": "Permite teste în notițe",
+            "subtitle": "Oferă blocuri de test și crearea de teste în notițe."
           },
           "showsMistakeHighlights": {
-            "title": "786|Evidențiază notițele de greșeli",
-            "subtitle": "787|Folosește o nuanță caldă pentru cartonașele de greșeli și arată rândul cu greșeli."
+            "title": "Evidențiază notițele de greșeli",
+            "subtitle": "Folosește o nuanță caldă pentru cartonașele de greșeli și arată rândul cu greșeli."
           },
           "includeOriginalSentence": {
-            "title": "788|Include propoziția originală",
-            "subtitle": "789|Salvează varianta greșită în notiță ca bloc de citat."
+            "title": "Include propoziția originală",
+            "subtitle": "Salvează varianta greșită în notiță ca bloc de citat."
           },
           "includeCorrectedSentence": {
-            "title": "790|Include propoziția corectată",
-            "subtitle": "791|Salvează varianta corectată ca bloc de exemplu."
+            "title": "Include propoziția corectată",
+            "subtitle": "Salvează varianta corectată ca bloc de exemplu."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "792|Include explicația",
-            "subtitle": "793|Adaugă explicația ta mai jos, ca paragraf."
+            "title": "Include explicația",
+            "subtitle": "Adaugă explicația ta mai jos, ca paragraf."
           },
           "groupMistakesByTopic": {
-            "title": "794|Grupează greșelile pe teme",
-            "subtitle": "795|Salvează greșelile rapide în tema curentă, nu în Greșeli frecvente."
+            "title": "Grupează greșelile pe teme",
+            "subtitle": "Salvează greșelile rapide în tema curentă, nu în Greșeli frecvente."
           },
           "askBeforeSavingMistakes": {
-            "title": "796|Întreabă înainte de salvarea greșelilor",
-            "subtitle": "797|Confirmă înainte ca o problemă dintr-un eseu să devină notiță. Această opțiune are prioritate față de salvarea automată."
+            "title": "Întreabă înainte de salvarea greșelilor",
+            "subtitle": "Confirmă înainte ca o problemă dintr-un eseu să devină notiță. Această opțiune are prioritate față de salvarea automată."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "798|Salvează automat greșelile din eseuri",
-            "subtitle": "799|Fiecare problemă de gramatică găsită într-un eseu devine notiță. Cu „Întreabă înainte de salvare” activat, întreabă o singură dată pentru toată verificarea."
+            "title": "Salvează automat greșelile din eseuri",
+            "subtitle": "Fiecare problemă de gramatică găsită într-un eseu devine notiță. Cu „Întreabă înainte de salvare” activat, întreabă o singură dată pentru toată verificarea."
           },
           "groupsPinnedNotesFirst": {
-            "title": "800|Notițele fixate primele",
-            "subtitle": "801|Ține regulile importante în capul fiecărei teme."
+            "title": "Notițele fixate primele",
+            "subtitle": "Ține regulile importante în capul fiecărei teme."
           },
           "usesCompactCards": {
-            "title": "802|Cartonașe compacte pentru notițe",
-            "subtitle": "803|Arată cartonașe mai strânse când vrei mai multe notițe pe ecran."
+            "title": "Cartonașe compacte pentru notițe",
+            "subtitle": "Arată cartonașe mai strânse când vrei mai multe notițe pe ecran."
           },
           "showsHelperTips": {
-            "title": "804|Arată sfaturile",
-            "subtitle": "805|Afișează sfaturi scurte și contextuale în timp ce creezi notițe."
+            "title": "Arată sfaturile",
+            "subtitle": "Afișează sfaturi scurte și contextuale în timp ce creezi notițe."
           },
           "autoAddNotesToReview": {
-            "title": "806|Adaugă notițele noi la recapitulare",
-            "subtitle": "807|Fiecare notiță salvată intră în coada de recapitulare, programată a doua zi."
+            "title": "Adaugă notițele noi la recapitulare",
+            "subtitle": "Fiecare notiță salvată intră în coada de recapitulare, programată a doua zi."
           }
         }
       },
-      "editTopic": "808|Editează tema",
+      "editTopic": "Editează tema",
       "toSet": {
-        "title": "809|Creează un set din această notiță",
-        "subtitle": "810|Alege perechile care vor deveni cartonașe.",
-        "setTitle": "811|Titlul setului",
-        "empty": "812|Din această notiță încă nu e nimic de transformat în cartonașe. Blocurile de comparație, exemplu și regulă se convertesc direct, iar elementele de listă se împart la linia de dialog — cum ar fi „hacer — a face”.",
-        "button": "813|Creează un set",
-        "create": "814|Creează setul",
-        "creating": "815|Se creează…",
-        "error": "816|Setul nu a putut fi creat. Încearcă din nou.",
-        "cards_one": "817|{{count}} cartonaș",
-        "cards_other": "818|{{count}} de cartonașe",
+        "title": "Creează un set din această notiță",
+        "subtitle": "Alege perechile care vor deveni cartonașe.",
+        "setTitle": "Titlul setului",
+        "empty": "Din această notiță încă nu e nimic de transformat în cartonașe. Blocurile de comparație, exemplu și regulă se convertesc direct, iar elementele de listă se împart la linia de dialog — cum ar fi „hacer — a face”.",
+        "button": "Creează un set",
+        "create": "Creează setul",
+        "creating": "Se creează…",
+        "error": "Setul nu a putut fi creat. Încearcă din nou.",
+        "cards_one": "{{count}} cartonaș",
+        "cards_other": "{{count}} de cartonașe",
         "cards_few": "{{count}} cartonașe"
       },
-      "topicsEmptyTip": "819|O temă e un folder pentru notițe — una pentru fiecare limbă sau una pentru fiecare lucru la care greșești mereu.",
-      "notesEmptyTip": "820|Fiecare notiță salvată intră în coada de recapitulare, așa că a o scrie înseamnă deja a începe să o exersezi.",
+      "topicsEmptyTip": "O temă e un folder pentru notițe — una pentru fiecare limbă sau una pentru fiecare lucru la care greșești mereu.",
+      "notesEmptyTip": "Fiecare notiță salvată intră în coada de recapitulare, așa că a o scrie înseamnă deja a începe să o exersezi.",
       "notesCount_few": "{{count}} notițe"
     }
   },
   "reading": {
-    "sectionTitle": "821|Moduri de exersare",
-    "loading": "822|Se încarcă…",
-    "loadError": "823|Nu am putut încărca textele tale de citire.",
-    "notFound": "824|Este posibil ca acest element să fi fost șters.",
+    "sectionTitle": "Moduri de exersare",
+    "loading": "Se încarcă…",
+    "loadError": "Nu am putut încărca textele tale de citire.",
+    "notFound": "Este posibil ca acest element să fi fost șters.",
     "today": {
-      "title": "825|Progresul de azi",
-      "subtitle": "826|Menține-ți seria de citire."
+      "title": "Progresul de azi",
+      "subtitle": "Menține-ți seria de citire."
     },
     "menu": {
-      "comingSoon": "827|În curând",
+      "comingSoon": "În curând",
       "myTexts": {
-        "title": "828|Textele mele",
-        "subtitle": "829|Lipește propriul text și citește-l cu ajutor."
+        "title": "Textele mele",
+        "subtitle": "Lipește propriul text și citește-l cu ajutor."
       },
       "fromSets": {
-        "title": "830|Citire din seturi",
-        "subtitle": "831|Creează un text de citire din seturile tale de cartonașe."
+        "title": "Citire din seturi",
+        "subtitle": "Creează un text de citire din seturile tale de cartonașe."
       },
       "storyMode": {
-        "title": "832|Mod poveste",
-        "subtitle": "833|Citește povești interactive cu alegeri ramificate."
+        "title": "Mod poveste",
+        "subtitle": "Citește povești interactive cu alegeri ramificate."
       },
       "speedReading": {
-        "title": "834|Citire rapidă",
-        "subtitle": "835|Antrenează-te să citești mai repede, cu ritm cronometrat."
+        "title": "Citire rapidă",
+        "subtitle": "Antrenează-te să citești mai repede, cu ritm cronometrat."
       }
     },
     "myTexts": {
-      "title": "836|Textele mele",
-      "subtitle": "837|Textele tale de citire salvate.",
-      "addText": "838|Adaugă text",
-      "emptyTitle": "839|Încă nu ai texte",
-      "emptyBody": "840|Adaugă primul text ca să începi exersarea citirii.",
-      "savedTitle": "841|Texte salvate"
+      "title": "Textele mele",
+      "subtitle": "Textele tale de citire salvate.",
+      "addText": "Adaugă text",
+      "emptyTitle": "Încă nu ai texte",
+      "emptyBody": "Adaugă primul text ca să începi exersarea citirii.",
+      "savedTitle": "Texte salvate"
     },
     "status": {
-      "new": "842|Nou",
-      "inProgress": "843|În curs",
-      "completed": "844|Terminat"
+      "new": "Nou",
+      "inProgress": "În curs",
+      "completed": "Terminat"
     },
     "card": {
-      "words_one": "845|{{count}} cuvânt",
-      "words_other": "846|{{count}} de cuvinte",
-      "start": "847|Începe",
-      "continue": "848|Continuă",
-      "readAgain": "849|Citește din nou",
-      "rename": "850|Redenumește",
-      "renamePrompt": "851|Titlu nou:",
-      "delete": "852|Șterge",
-      "deleteConfirm": "853|Ștergi „{{title}}”? Acțiunea nu poate fi anulată.",
+      "words_one": "{{count}} cuvânt",
+      "words_other": "{{count}} de cuvinte",
+      "start": "Începe",
+      "continue": "Continuă",
+      "readAgain": "Citește din nou",
+      "rename": "Redenumește",
+      "renamePrompt": "Titlu nou:",
+      "delete": "Șterge",
+      "deleteConfirm": "Ștergi „{{title}}”? Acțiunea nu poate fi anulată.",
       "words_few": "{{count}} cuvinte"
     },
     "continue": {
-      "eyebrow": "854|Continuă lectura",
-      "percent": "855|{{percent}} % terminat",
-      "button": "856|Continuă"
+      "eyebrow": "Continuă lectura",
+      "percent": "{{percent}} % terminat",
+      "button": "Continuă"
     },
     "focus": {
-      "mainIdea": "857|Ideea principală",
-      "vocabulary": "858|Vocabular",
-      "detailedComprehension": "859|Înțelegere detaliată",
-      "grammarAwareness": "860|Atenție la gramatică",
-      "speedFluency": "861|Viteză / fluență"
+      "mainIdea": "Ideea principală",
+      "vocabulary": "Vocabular",
+      "detailedComprehension": "Înțelegere detaliată",
+      "grammarAwareness": "Atenție la gramatică",
+      "speedFluency": "Viteză / fluență"
     },
     "questionType": {
-      "comprehension": "862|Înțelegere",
-      "trueFalse": "863|Adevărat / Fals",
-      "fillGap": "864|Completează spațiul",
-      "vocabulary": "865|Vocabular",
-      "findEvidence": "866|Găsește dovada",
-      "orderReconstruction": "867|Ordonare"
+      "comprehension": "Înțelegere",
+      "trueFalse": "Adevărat / Fals",
+      "fillGap": "Completează spațiul",
+      "vocabulary": "Vocabular",
+      "findEvidence": "Găsește dovada",
+      "orderReconstruction": "Ordonare"
     },
     "assistance": {
-      "highlightUnknownWords": "868|Evidențiază cuvintele necunoscute",
-      "translationOnTap": "869|Traducere la atingere",
-      "vocabularyHints": "870|Indicii de vocabular",
-      "readingTimer": "871|Cronometru de citire"
+      "highlightUnknownWords": "Evidențiază cuvintele necunoscute",
+      "translationOnTap": "Traducere la atingere",
+      "vocabularyHints": "Indicii de vocabular",
+      "readingTimer": "Cronometru de citire"
     },
     "addText": {
-      "title": "872|Adaugă text",
-      "subtitle": "873|Lipește un text și configurează-ți exersarea citirii.",
-      "untitled": "874|Text fără titlu",
-      "pastePlaceholder": "875|Lipește sau scrie textul tău aici…",
-      "titleLabel": "876|Titlu",
-      "titlePlaceholder": "877|Opțional — putem sugera noi unul",
-      "language": "878|Limbă",
-      "difficulty": "879|Dificultate",
-      "autoDetect": "880|Detectare automată",
-      "manual": "881|Alege manual",
-      "focus": "882|Focusul citirii",
-      "questionTypes": "883|Tipuri de întrebări",
-      "assistance": "884|Ajutoare la citire",
+      "title": "Adaugă text",
+      "subtitle": "Lipește un text și configurează-ți exersarea citirii.",
+      "untitled": "Text fără titlu",
+      "pastePlaceholder": "Lipește sau scrie textul tău aici…",
+      "titleLabel": "Titlu",
+      "titlePlaceholder": "Opțional — putem sugera noi unul",
+      "language": "Limbă",
+      "difficulty": "Dificultate",
+      "autoDetect": "Detectare automată",
+      "manual": "Alege manual",
+      "focus": "Focusul citirii",
+      "questionTypes": "Tipuri de întrebări",
+      "assistance": "Ajutoare la citire",
       "stats": {
-        "words_one": "885|{{count}} cuvânt",
-        "words_other": "886|{{count}} de cuvinte",
-        "chars_one": "887|{{count}} caracter",
-        "chars_other": "888|{{count}} de caractere",
-        "min": "889|min",
-        "detected": "890|Detectat: {{level}}",
+        "words_one": "{{count}} cuvânt",
+        "words_other": "{{count}} de cuvinte",
+        "chars_one": "{{count}} caracter",
+        "chars_other": "{{count}} de caractere",
+        "min": "min",
+        "detected": "Detectat: {{level}}",
         "words_few": "{{count}} cuvinte",
         "chars_few": "{{count}} caractere"
       },
       "validation": {
-        "empty": "891|Adaugă mai întâi un text.",
-        "tooShort": "892|Adaugă cel puțin 20 de cuvinte."
+        "empty": "Adaugă mai întâi un text.",
+        "tooShort": "Adaugă cel puțin 20 de cuvinte."
       },
-      "save": "893|Salvează textul",
-      "saveAndStart": "894|Salvează și începe",
-      "saving": "895|Se salvează…",
-      "saveError": "896|Salvarea nu a reușit. Încearcă din nou.",
+      "save": "Salvează textul",
+      "saveAndStart": "Salvează și începe",
+      "saving": "Se salvează…",
+      "saveError": "Salvarea nu a reușit. Încearcă din nou.",
       "source": {
-        "pasteText": "897|Lipește",
-        "photo": "898|Fotografie",
-        "pdf": "899|PDF",
-        "generate": "900|Generează",
-        "explore": "901|Explorează"
+        "pasteText": "Lipește",
+        "photo": "Fotografie",
+        "pdf": "PDF",
+        "generate": "Generează",
+        "explore": "Explorează"
       },
       "style": {
-        "informative": "902|Informativ",
-        "casual": "903|Relaxat",
-        "academic": "904|Academic",
-        "narrative": "905|Narativ"
+        "informative": "Informativ",
+        "casual": "Relaxat",
+        "academic": "Academic",
+        "narrative": "Narativ"
       },
       "length": {
-        "short": "906|Scurt",
-        "medium": "907|Mediu",
-        "long": "908|Lung"
+        "short": "Scurt",
+        "medium": "Mediu",
+        "long": "Lung"
       },
       "import": {
-        "photoHint": "909|Încarcă o fotografie a unei pagini — extragem noi textul.",
-        "chooseImage": "910|Alege imaginea",
-        "recognizing": "911|Se recunoaște… {{percent}} %",
-        "imageError": "912|Nu am putut citi text din această imagine.",
-        "pdfHint": "913|Încarcă un PDF — extragem noi textul.",
-        "choosePDF": "914|Alege PDF",
-        "reading": "915|Se citește PDF-ul…",
-        "pdfError": "916|Nu am putut citi acest PDF.",
-        "topicPlaceholder": "917|Subiect — de ex. recifele de corali, tiparul",
-        "explorePlaceholder": "918|Subiect sau cuvânt-cheie — de ex. Marie Curie, Veneția",
-        "generateButton": "919|Generează textul",
-        "exploreButton": "920|Adu un articol",
-        "working": "921|Se lucrează…",
-        "generateError": "922|Textul nu a putut fi generat. Încearcă din nou.",
-        "exploreError": "923|Nu am găsit un articol pe acest subiect.",
-        "exploredFrom": "924|Preluat de la"
+        "photoHint": "Încarcă o fotografie a unei pagini — extragem noi textul.",
+        "chooseImage": "Alege imaginea",
+        "recognizing": "Se recunoaște… {{percent}} %",
+        "imageError": "Nu am putut citi text din această imagine.",
+        "pdfHint": "Încarcă un PDF — extragem noi textul.",
+        "choosePDF": "Alege PDF",
+        "reading": "Se citește PDF-ul…",
+        "pdfError": "Nu am putut citi acest PDF.",
+        "topicPlaceholder": "Subiect — de ex. recifele de corali, tiparul",
+        "explorePlaceholder": "Subiect sau cuvânt-cheie — de ex. Marie Curie, Veneția",
+        "generateButton": "Generează textul",
+        "exploreButton": "Adu un articol",
+        "working": "Se lucrează…",
+        "generateError": "Textul nu a putut fi generat. Încearcă din nou.",
+        "exploreError": "Nu am găsit un articol pe acest subiect.",
+        "exploredFrom": "Preluat de la"
       }
     },
     "session": {
-      "startQuestions": "925|Treci la întrebări",
-      "finish": "926|Termină",
-      "next": "927|Înainte",
-      "questionOf": "928|Întrebarea {{current}} din {{total}}",
-      "closeTranslation": "929|Închide traducerea",
-      "translating": "930|Se traduce…",
-      "translationError": "931|Traducerea nu a reușit. Încearcă din nou.",
-      "translation": "932|Traducere",
-      "textLabel": "933|Text"
+      "startQuestions": "Treci la întrebări",
+      "finish": "Termină",
+      "next": "Înainte",
+      "questionOf": "Întrebarea {{current}} din {{total}}",
+      "closeTranslation": "Închide traducerea",
+      "translating": "Se traduce…",
+      "translationError": "Traducerea nu a reușit. Încearcă din nou.",
+      "translation": "Traducere",
+      "textLabel": "Text"
     },
     "result": {
-      "comprehension": "934|Înțelegere",
-      "correct": "935|Corecte",
-      "time": "936|Timp de citire",
-      "wpm": "937|cuvinte/min",
-      "mistakes": "938|Greșeli",
-      "mistakesTitle": "939|Revezi-ți greșelile",
-      "readAgain": "940|Citește din nou",
-      "back": "941|Înapoi la Textele mele",
-      "complete": "942|Exersare încheiată"
+      "comprehension": "Înțelegere",
+      "correct": "Corecte",
+      "time": "Timp de citire",
+      "wpm": "cuvinte/min",
+      "mistakes": "Greșeli",
+      "mistakesTitle": "Revezi-ți greșelile",
+      "readAgain": "Citește din nou",
+      "back": "Înapoi la Textele mele",
+      "complete": "Exersare încheiată"
     },
     "fromSets": {
-      "title": "943|Citire din seturi",
-      "subtitle": "944|Transformă un set de cartonașe într-un text de citire.",
-      "pickSet": "945|Alege un set",
-      "changeSet": "946|Schimbă setul",
-      "tooFewWords": "947|Acest set are nevoie de cel puțin {{count}} cuvinte ca să creăm un text.",
-      "mode": "948|Mod de generare",
+      "title": "Citire din seturi",
+      "subtitle": "Transformă un set de cartonașe într-un text de citire.",
+      "pickSet": "Alege un set",
+      "changeSet": "Schimbă setul",
+      "tooFewWords": "Acest set are nevoie de cel puțin {{count}} cuvinte ca să creăm un text.",
+      "mode": "Mod de generare",
       "modeOption": {
-        "natural": "949|Natural",
-        "strict": "950|Strict",
-        "mixed": "951|Mixt"
+        "natural": "Natural",
+        "strict": "Strict",
+        "mixed": "Mixt"
       },
-      "length": "952|Lungimea textului",
-      "generate": "953|Generează textul",
-      "generating": "954|Îți creăm textul…",
-      "generateError": "955|Textul nu a putut fi creat. Încearcă din nou.",
-      "emptyTitle": "956|Încă nu ai texte",
-      "emptyBody": "957|Alege un set de cartonașe și îl transformăm într-un text de citire.",
-      "savedTitle": "958|Texte salvate"
+      "length": "Lungimea textului",
+      "generate": "Generează textul",
+      "generating": "Îți creăm textul…",
+      "generateError": "Textul nu a putut fi creat. Încearcă din nou.",
+      "emptyTitle": "Încă nu ai texte",
+      "emptyBody": "Alege un set de cartonașe și îl transformăm într-un text de citire.",
+      "savedTitle": "Texte salvate"
     },
     "speed": {
-      "title": "959|Citire rapidă",
-      "subtitle": "960|Antrenează-te să citești mai repede, cu ritm cronometrat.",
+      "title": "Citire rapidă",
+      "subtitle": "Antrenează-te să citești mai repede, cu ritm cronometrat.",
       "section": {
-        "target": "961|Viteza de citire țintă",
-        "timer": "962|Stilul cronometrului",
-        "length": "963|Lungimea textului"
+        "target": "Viteza de citire țintă",
+        "timer": "Stilul cronometrului",
+        "length": "Lungimea textului"
       },
       "target": {
-        "relaxed": "964|Relaxată",
-        "balanced": "965|Echilibrată",
-        "fast": "966|Rapidă",
-        "challenge": "967|Provocare"
+        "relaxed": "Relaxată",
+        "balanced": "Echilibrată",
+        "fast": "Rapidă",
+        "challenge": "Provocare"
       },
       "timer": {
-        "noTimer": "968|Fără cronometru",
-        "soft": "969|Cronometru blând",
-        "strict": "970|Cronometru strict"
+        "noTimer": "Fără cronometru",
+        "soft": "Cronometru blând",
+        "strict": "Cronometru strict"
       },
       "length": {
-        "two": "971|2 min",
-        "five": "972|5 min",
-        "ten": "973|10 min"
+        "two": "2 min",
+        "five": "5 min",
+        "ten": "10 min"
       },
-      "summary": "974|Țintă {{wpm}} cuvinte/min · ~{{minutes}} min de citit",
-      "start": "975|Începe sesiunea",
-      "preparing": "976|Îți pregătim fragmentul…",
-      "generateError": "977|Fragmentul nu a putut fi creat. Încearcă din nou.",
-      "recentTitle": "978|Sesiuni recente",
-      "chunkOf": "979|Partea {{current}} din {{total}}",
-      "previous": "980|Partea anterioară",
-      "pause": "981|Pauză",
-      "resume": "982|Reia",
-      "nextChunk": "983|Partea următoare",
-      "finishReading": "984|Termină lectura",
+      "summary": "Țintă {{wpm}} cuvinte/min · ~{{minutes}} min de citit",
+      "start": "Începe sesiunea",
+      "preparing": "Îți pregătim fragmentul…",
+      "generateError": "Fragmentul nu a putut fi creat. Încearcă din nou.",
+      "recentTitle": "Sesiuni recente",
+      "chunkOf": "Partea {{current}} din {{total}}",
+      "previous": "Partea anterioară",
+      "pause": "Pauză",
+      "resume": "Reia",
+      "nextChunk": "Partea următoare",
+      "finishReading": "Termină lectura",
       "rating": {
-        "excellent": "985|Excelent",
-        "balanced": "986|La țintă",
-        "fast": "987|Aproape",
-        "tooSlow": "988|Prea încet"
+        "excellent": "Excelent",
+        "balanced": "La țintă",
+        "fast": "Aproape",
+        "tooSlow": "Prea încet"
       },
       "result": {
-        "average": "989|Medie cuvinte/min",
-        "target": "990|Țintă cuvinte/min",
-        "violations_one": "991|{{count}} depășire de timp",
-        "violations_other": "992|{{count}} de depășiri de timp",
+        "average": "Medie cuvinte/min",
+        "target": "Țintă cuvinte/min",
+        "violations_one": "{{count}} depășire de timp",
+        "violations_other": "{{count}} de depășiri de timp",
         "violations_few": "{{count}} depășiri de timp"
       },
-      "tryAgain": "993|Încearcă din nou",
-      "backToSetup": "994|Înapoi la setări"
+      "tryAgain": "Încearcă din nou",
+      "backToSetup": "Înapoi la setări"
     },
     "story": {
-      "title": "995|Mod poveste",
-      "subtitle": "996|Citește povești interactive cu alegeri ramificate.",
-      "typeSection": "997|Tipul poveștii",
+      "title": "Mod poveste",
+      "subtitle": "Citește povești interactive cu alegeri ramificate.",
+      "typeSection": "Tipul poveștii",
       "type": {
-        "adventure": "998|Aventură",
-        "fantasy": "999|Fantezie",
-        "mystery": "1000|Mister",
-        "romance": "1001|Romantic",
-        "dailyLife": "1002|Viața de zi cu zi"
+        "adventure": "Aventură",
+        "fantasy": "Fantezie",
+        "mystery": "Mister",
+        "romance": "Romantic",
+        "dailyLife": "Viața de zi cu zi"
       },
-      "lengthSection": "1003|Lungimea poveștii",
+      "lengthSection": "Lungimea poveștii",
       "length": {
-        "shortStory": "1004|Poveste scurtă",
-        "multiChapter": "1005|Mai multe capitole",
-        "infinite": "1006|Poveste infinită"
+        "shortStory": "Poveste scurtă",
+        "multiChapter": "Mai multe capitole",
+        "infinite": "Poveste infinită"
       },
-      "start": "1007|Începe povestea",
-      "generating": "1008|Îți scriem povestea…",
-      "generatingNext": "1009|Scriem capitolul următor…",
-      "generateError": "1010|Povestea nu a putut fi scrisă. Încearcă din nou.",
-      "emptyTitle": "1011|Încă nu ai povești",
-      "emptyBody": "1012|Începe mai sus prima ta poveste interactivă.",
-      "savedTitle": "1013|Poveștile tale",
-      "chapterN": "1014|Capitolul {{n}}",
-      "chapterOf": "1015|Capitolul {{current}} / {{total}}",
-      "chapterScore": "1016|Punctajul capitolului",
-      "whatNext": "1017|Ce se întâmplă mai departe?",
-      "endStory": "1018|Încheie povestea",
-      "completeTitle": "1019|Poveste încheiată",
-      "completeBody_one": "1020|Ai terminat {{count}} capitol. Lectură pe cinste!",
-      "completeBody_other": "1021|Ai terminat {{count}} de capitole. Lectură pe cinste!",
-      "backToStories": "1022|Înapoi la povești",
+      "start": "Începe povestea",
+      "generating": "Îți scriem povestea…",
+      "generatingNext": "Scriem capitolul următor…",
+      "generateError": "Povestea nu a putut fi scrisă. Încearcă din nou.",
+      "emptyTitle": "Încă nu ai povești",
+      "emptyBody": "Începe mai sus prima ta poveste interactivă.",
+      "savedTitle": "Poveștile tale",
+      "chapterN": "Capitolul {{n}}",
+      "chapterOf": "Capitolul {{current}} / {{total}}",
+      "chapterScore": "Punctajul capitolului",
+      "whatNext": "Ce se întâmplă mai departe?",
+      "endStory": "Încheie povestea",
+      "completeTitle": "Poveste încheiată",
+      "completeBody_one": "Ai terminat {{count}} capitol. Lectură pe cinste!",
+      "completeBody_other": "Ai terminat {{count}} de capitole. Lectură pe cinste!",
+      "backToStories": "Înapoi la povești",
       "completeBody_few": "Ai terminat {{count}} capitole. Lectură pe cinste!"
     }
   },
   "listening": {
-    "sectionTitle": "1023|Moduri de exersare",
-    "notFound": "1024|Este posibil ca această sesiune să fi fost ștearsă.",
+    "sectionTitle": "Moduri de exersare",
+    "notFound": "Este posibil ca această sesiune să fi fost ștearsă.",
     "today": {
-      "title": "1025|Progresul de azi",
-      "subtitle": "1026|de exersare a ascultării"
+      "title": "Progresul de azi",
+      "subtitle": "de exersare a ascultării"
     },
     "menu": {
-      "comingSoon": "1027|În curând",
+      "comingSoon": "În curând",
       "fromText": {
-        "title": "1028|Ascultare din text",
-        "subtitle": "1029|Lipește un text, ascultă-l și verifică-ți înțelegerea."
+        "title": "Ascultare din text",
+        "subtitle": "Lipește un text, ascultă-l și verifică-ți înțelegerea."
       },
       "importAudio": {
-        "title": "1030|Importă audio",
-        "subtitle": "1031|Încarcă propriul audio și transformă-l în exercițiu de ascultare."
+        "title": "Importă audio",
+        "subtitle": "Încarcă propriul audio și transformă-l în exercițiu de ascultare."
       },
       "importVideo": {
-        "title": "1032|Importă video",
-        "subtitle": "1033|Încarcă un videoclip, primești subtitrări și exersezi cu întrebări."
+        "title": "Importă video",
+        "subtitle": "Încarcă un videoclip, primești subtitrări și exersezi cu întrebări."
       },
       "saved": {
-        "title": "1034|Exerciții salvate",
-        "subtitle": "1035|Continuă sesiunile anterioare și revezi-ți greșelile."
+        "title": "Exerciții salvate",
+        "subtitle": "Continuă sesiunile anterioare și revezi-ți greșelile."
       }
     },
     "questionType": {
-      "mainIdea": "1036|Ideea principală",
-      "details": "1037|Detalii",
-      "vocabulary": "1038|Vocabular",
-      "trueFalse": "1039|Adevărat / Fals"
+      "mainIdea": "Ideea principală",
+      "details": "Detalii",
+      "vocabulary": "Vocabular",
+      "trueFalse": "Adevărat / Fals"
     },
     "fromText": {
-      "title": "1040|Ascultare din text",
-      "subtitle": "1041|Lipește un text și transformă-l în exercițiu de ascultare.",
-      "level": "1042|Nivel",
-      "voiceSpeed": "1043|Viteza vocii",
-      "voiceType": "1044|Tipul vocii",
+      "title": "Ascultare din text",
+      "subtitle": "Lipește un text și transformă-l în exercițiu de ascultare.",
+      "level": "Nivel",
+      "voiceSpeed": "Viteza vocii",
+      "voiceType": "Tipul vocii",
       "voice": {
-        "default": "1045|Implicită",
-        "female": "1046|Feminină",
-        "male": "1047|Masculină"
+        "default": "Implicită",
+        "female": "Feminină",
+        "male": "Masculină"
       },
-      "showText": "1048|Arată textul în timpul ascultării",
-      "addQuestions": "1049|Adaugă întrebări de înțelegere",
-      "questionCount": "1050|Numărul de întrebări",
-      "questionTypes": "1051|Tipuri de întrebări",
-      "optionalTitle": "1052|Titlu opțional",
-      "titlePlaceholder": "1053|Dă-i un nume textului tău",
-      "textPlaceholder": "1054|Lipește textul tău aici...",
-      "recommended": "1055|Recomandat: 80–500 de cuvinte.",
-      "words": "1056|cuvinte",
-      "defaultTitle": "1057|Exercițiu de ascultare",
-      "start": "1058|Începe ascultarea",
+      "showText": "Arată textul în timpul ascultării",
+      "addQuestions": "Adaugă întrebări de înțelegere",
+      "questionCount": "Numărul de întrebări",
+      "questionTypes": "Tipuri de întrebări",
+      "optionalTitle": "Titlu opțional",
+      "titlePlaceholder": "Dă-i un nume textului tău",
+      "textPlaceholder": "Lipește textul tău aici...",
+      "recommended": "Recomandat: 80–500 de cuvinte.",
+      "words": "cuvinte",
+      "defaultTitle": "Exercițiu de ascultare",
+      "start": "Începe ascultarea",
       "validation": {
-        "empty": "1059|Adaugă text ca să începi să asculți.",
-        "tooShort": "1060|Adaugă cel puțin 40 de caractere ca să începi să asculți.",
-        "tooLong": "1061|Textul este prea lung. Te rugăm să-l ții sub 5000 de caractere.",
-        "tooFewWords": "1062|Adaugă puțin mai mult text (aproximativ 40 de cuvinte sau mai mult) ca să putem crea întrebări bune."
+        "empty": "Adaugă text ca să începi să asculți.",
+        "tooShort": "Adaugă cel puțin 40 de caractere ca să începi să asculți.",
+        "tooLong": "Textul este prea lung. Te rugăm să-l ții sub 5000 de caractere.",
+        "tooFewWords": "Adaugă puțin mai mult text (aproximativ 40 de cuvinte sau mai mult) ca să putem crea întrebări bune."
       },
-      "voiceSettings": "1063|Setări de voce",
-      "questions": "1064|Întrebări",
-      "textInput": "1065|Introducerea textului"
+      "voiceSettings": "Setări de voce",
+      "questions": "Întrebări",
+      "textInput": "Introducerea textului"
     },
     "session": {
-      "replay": "1066|Redă din nou",
-      "transcript": "1067|Transcriere",
-      "questionsTitle": "1068|Întrebări",
-      "answerFirst": "1069|Răspunde la cel puțin o întrebare înainte de verificare.",
-      "checkAnswers": "1070|Verifică răspunsurile",
-      "finish": "1071|Termină exercițiul"
+      "replay": "Redă din nou",
+      "transcript": "Transcriere",
+      "questionsTitle": "Întrebări",
+      "answerFirst": "Răspunde la cel puțin o întrebare înainte de verificare.",
+      "checkAnswers": "Verifică răspunsurile",
+      "finish": "Termină exercițiul"
     },
     "result": {
-      "title": "1072|Exersare încheiată",
-      "comprehension": "1073|Înțelegere",
-      "correct": "1074|Corecte",
-      "time": "1075|Timp de ascultare",
-      "speed": "1076|Viteză",
-      "mistakes": "1077|Greșeli",
-      "mistakesTitle": "1078|Revezi-ți greșelile",
-      "watchOnlyTitle": "1079|Ascultare încheiată",
-      "watchOnlyBody": "1080|Ai ascultat {{time}}.",
-      "practiceAgain": "1081|Exersează din nou",
-      "back": "1082|Înapoi la Ascultare"
+      "title": "Exersare încheiată",
+      "comprehension": "Înțelegere",
+      "correct": "Corecte",
+      "time": "Timp de ascultare",
+      "speed": "Viteză",
+      "mistakes": "Greșeli",
+      "mistakesTitle": "Revezi-ți greșelile",
+      "watchOnlyTitle": "Ascultare încheiată",
+      "watchOnlyBody": "Ai ascultat {{time}}.",
+      "practiceAgain": "Exersează din nou",
+      "back": "Înapoi la Ascultare"
     },
     "importAudio": {
-      "title": "1083|Importă audio",
-      "subtitle": "1084|Transformă propriul audio într-un exercițiu de ascultare.",
-      "uploadTitle": "1085|Încarcă fișier audio",
-      "uploadFormats": "1086|MP3, M4A, WAV sau AAC · sub 50 MB",
-      "chooseFile": "1087|Alege fișierul",
-      "clearFile": "1088|Elimină fișierul",
-      "infoNote": "1089|Audio-ul tău va fi transcris în fundal. Transcrierea rămâne ascunsă în timpul exercițiului.",
-      "continue": "1090|Continuă",
-      "processingTitle": "1091|Îți pregătim exercițiul de ascultare",
-      "step1": "1092|Se încarcă audio-ul",
-      "step2": "1093|Se transcrie vorbirea",
-      "step3": "1094|Se creează întrebările",
-      "processError": "1095|Nu am putut pregăti acest audio. Încearcă din nou.",
-      "tryAgain": "1096|Încearcă din nou",
-      "chooseAnother": "1097|Alege alt fișier",
-      "transcriptHidden": "1098|Transcrierea este ascunsă ca să rămână un exercițiu real de ascultare."
+      "title": "Importă audio",
+      "subtitle": "Transformă propriul audio într-un exercițiu de ascultare.",
+      "uploadTitle": "Încarcă fișier audio",
+      "uploadFormats": "MP3, M4A, WAV sau AAC · sub 50 MB",
+      "chooseFile": "Alege fișierul",
+      "clearFile": "Elimină fișierul",
+      "infoNote": "Audio-ul tău va fi transcris în fundal. Transcrierea rămâne ascunsă în timpul exercițiului.",
+      "continue": "Continuă",
+      "processingTitle": "Îți pregătim exercițiul de ascultare",
+      "step1": "Se încarcă audio-ul",
+      "step2": "Se transcrie vorbirea",
+      "step3": "Se creează întrebările",
+      "processError": "Nu am putut pregăti acest audio. Încearcă din nou.",
+      "tryAgain": "Încearcă din nou",
+      "chooseAnother": "Alege alt fișier",
+      "transcriptHidden": "Transcrierea este ascunsă ca să rămână un exercițiu real de ascultare."
     },
     "importVideo": {
-      "title": "1099|Importă video",
-      "subtitle": "1100|Încarcă un videoclip, primești subtitrări și exersezi cu întrebări.",
-      "uploadTitle": "1101|Încarcă fișier video",
-      "uploadFormats": "1102|MP4, MOV sau M4V · sub 80 MB",
-      "step1": "1103|Se pregătește videoclipul",
-      "step2": "1104|Se transcrie vorbirea",
-      "step3": "1105|Se construiesc subtitrările",
-      "subtitles": "1106|Subtitrări",
-      "subtitlesOn": "1107|Subtitrări pornite",
-      "subtitlesOff": "1108|Subtitrări oprite",
-      "noSubtitles": "1109|Nu există subtitrări pentru acest videoclip.",
-      "tapWord": "1110|Atinge un cuvânt ca să-l traduci.",
-      "questionsLocked": "1111|Întrebările se deblochează după ce termini de vizionat videoclipul."
+      "title": "Importă video",
+      "subtitle": "Încarcă un videoclip, primești subtitrări și exersezi cu întrebări.",
+      "uploadTitle": "Încarcă fișier video",
+      "uploadFormats": "MP4, MOV sau M4V · sub 80 MB",
+      "step1": "Se pregătește videoclipul",
+      "step2": "Se transcrie vorbirea",
+      "step3": "Se construiesc subtitrările",
+      "subtitles": "Subtitrări",
+      "subtitlesOn": "Subtitrări pornite",
+      "subtitlesOff": "Subtitrări oprite",
+      "noSubtitles": "Nu există subtitrări pentru acest videoclip.",
+      "tapWord": "Atinge un cuvânt ca să-l traduci.",
+      "questionsLocked": "Întrebările se deblochează după ce termini de vizionat videoclipul."
     },
     "wordSheet": {
-      "title": "1112|Tradu cuvântul",
-      "pickSet": "1113|Alege un set",
-      "createSet": "1114|Creează set",
-      "addToSet": "1115|Adaugă în set",
-      "noSets": "1116|Încă nu ai seturi. Creează unul mai jos.",
-      "setNamePlaceholder": "1117|de ex. Cuvinte din videoclip",
-      "createAndAdd": "1118|Creează și adaugă cuvântul",
-      "saved": "1119|Salvat în „{{set}}”."
+      "title": "Tradu cuvântul",
+      "pickSet": "Alege un set",
+      "createSet": "Creează set",
+      "addToSet": "Adaugă în set",
+      "noSets": "Încă nu ai seturi. Creează unul mai jos.",
+      "setNamePlaceholder": "de ex. Cuvinte din videoclip",
+      "createAndAdd": "Creează și adaugă cuvântul",
+      "saved": "Salvat în „{{set}}”."
     },
     "saved": {
-      "title": "1120|Exerciții salvate",
-      "subtitle": "1121|Continuă sesiunile și revezi-ți greșelile de ascultare.",
-      "emptyTitle": "1122|Nicio sesiune salvată",
-      "emptyBody": "1123|Termină sau pune pe pauză o sesiune de ascultare și va apărea aici.",
-      "continueEyebrow": "1124|Continuă ascultarea",
-      "percentComplete": "1125|{{percent}} % terminat",
-      "continue": "1126|Continuă",
-      "review": "1127|Recapitulare",
-      "delete": "1128|Șterge sesiunea",
-      "deleteConfirm": "1129|Ștergi „{{title}}”? Acțiunea nu poate fi anulată.",
+      "title": "Exerciții salvate",
+      "subtitle": "Continuă sesiunile și revezi-ți greșelile de ascultare.",
+      "emptyTitle": "Nicio sesiune salvată",
+      "emptyBody": "Termină sau pune pe pauză o sesiune de ascultare și va apărea aici.",
+      "continueEyebrow": "Continuă ascultarea",
+      "percentComplete": "{{percent}} % terminat",
+      "continue": "Continuă",
+      "review": "Recapitulare",
+      "delete": "Șterge sesiunea",
+      "deleteConfirm": "Ștergi „{{title}}”? Acțiunea nu poate fi anulată.",
       "status": {
-        "draft": "1130|Ciornă",
-        "inProgress": "1131|În curs",
-        "completed": "1132|Terminată"
+        "draft": "Ciornă",
+        "inProgress": "În curs",
+        "completed": "Terminată"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "1133|Moduri de exersare",
+    "sectionTitle": "Moduri de exersare",
     "today": {
-      "title": "1134|Progresul de azi",
-      "subtitle": "1135|de exersare a vorbirii"
+      "title": "Progresul de azi",
+      "subtitle": "de exersare a vorbirii"
     },
     "menu": {
-      "comingSoon": "1136|În curând",
+      "comingSoon": "În curând",
       "conversation": {
-        "title": "1137|Conversație cu AI",
-        "subtitle": "1138|Vorbește în timp real cu un tutore AI."
+        "title": "Conversație cu AI",
+        "subtitle": "Vorbește în timp real cu un tutore AI."
       },
       "free": {
-        "title": "1139|Vorbire liberă",
-        "subtitle": "1140|Vorbește pe subiecte generate și primește feedback."
+        "title": "Vorbire liberă",
+        "subtitle": "Vorbește pe subiecte generate și primește feedback."
       },
       "picture": {
-        "title": "1141|Descrie imaginea",
-        "subtitle": "1142|Descrie imagini și învață vocabular util."
+        "title": "Descrie imaginea",
+        "subtitle": "Descrie imagini și învață vocabular util."
       },
       "debate": {
-        "title": "1143|Mod dezbatere",
-        "subtitle": "1144|Discută subiecte și îți construiești argumentele."
+        "title": "Mod dezbatere",
+        "subtitle": "Discută subiecte și îți construiești argumentele."
       },
       "shadowing": {
-        "title": "1145|Shadowing",
-        "subtitle": "1146|Repetă fraze și îți îmbunătățești pronunția."
+        "title": "Shadowing",
+        "subtitle": "Repetă fraze și îți îmbunătățești pronunția."
       },
       "pronunciation": {
-        "title": "1147|Antrenor de pronunție",
-        "subtitle": "1148|Concentrează-te pe sunetele și cuvintele dificile."
+        "title": "Antrenor de pronunție",
+        "subtitle": "Concentrează-te pe sunetele și cuvintele dificile."
       }
     },
     "input": {
-      "speak": "1149|Vorbește",
-      "stop": "1150|Oprește",
-      "listening": "1151|Ascultăm…",
-      "placeholder": "1152|Scrie răspunsul tău…",
-      "noVoice": "1153|Acest browser nu acceptă introducerea vocală — scrie răspunsul."
+      "speak": "Vorbește",
+      "stop": "Oprește",
+      "listening": "Ascultăm…",
+      "placeholder": "Scrie răspunsul tău…",
+      "noVoice": "Acest browser nu acceptă introducerea vocală — scrie răspunsul."
     },
     "conversation": {
-      "title": "1154|Conversație cu AI",
-      "subtitle": "1155|Vorbește în timp real cu un tutore AI.",
-      "topic": "1156|Subiect",
-      "scenarios": "1157|Scenarii",
-      "autoTopic": "1158|Surprinde-mă",
-      "autoTopicHint": "1159|Vom genera un subiect nou pentru tine.",
-      "length": "1160|Durată",
-      "min": "1161|min",
-      "start": "1162|Începe conversația",
-      "starting": "1163|Se pornește…",
-      "startError": "1164|Conversația nu a putut începe. Încearcă din nou.",
-      "end": "1165|Termină",
-      "dismiss": "1166|Închide",
-      "hint": "1167|Indiciu",
-      "getHint": "1168|Ai nevoie de un indiciu?",
-      "hintLoading": "1169|Se gândește…"
+      "title": "Conversație cu AI",
+      "subtitle": "Vorbește în timp real cu un tutore AI.",
+      "topic": "Subiect",
+      "scenarios": "Scenarii",
+      "autoTopic": "Surprinde-mă",
+      "autoTopicHint": "Vom genera un subiect nou pentru tine.",
+      "length": "Durată",
+      "min": "min",
+      "start": "Începe conversația",
+      "starting": "Se pornește…",
+      "startError": "Conversația nu a putut începe. Încearcă din nou.",
+      "end": "Termină",
+      "dismiss": "Închide",
+      "hint": "Indiciu",
+      "getHint": "Ai nevoie de un indiciu?",
+      "hintLoading": "Se gândește…"
     },
     "result": {
-      "title": "1170|Exersare încheiată",
-      "generating": "1171|Îți analizăm vorbirea…",
-      "overall": "1172|Punctaj general",
-      "corrections": "1173|Corecturi",
-      "transcript": "1174|Transcriere",
-      "practiceAgain": "1175|Exersează din nou",
-      "back": "1176|Înapoi la Vorbire"
+      "title": "Exersare încheiată",
+      "generating": "Îți analizăm vorbirea…",
+      "overall": "Punctaj general",
+      "corrections": "Corecturi",
+      "transcript": "Transcriere",
+      "practiceAgain": "Exersează din nou",
+      "back": "Înapoi la Vorbire"
     },
     "free": {
-      "title": "1177|Vorbire liberă",
-      "subtitle": "1178|Vorbește liber despre un subiect și primește feedback.",
-      "preview": "1179|Previzualizare",
-      "autoTopic": "1180|Subiect generat de AI",
-      "autoTopicHint": "1181|Când începi, alegem un subiect nou pentru {{language}} · {{level}}.",
-      "auto": "1182|Auto",
-      "start": "1183|Începe Vorbirea liberă",
-      "generating": "1184|Se generează subiectul…",
-      "generatingHint": "1185|Alegem ceva potrivit nivelului tău.",
-      "fallbackTopic": "1186|Nu am putut genera un subiect. Folosim unul de rezervă.",
-      "transcript": "1187|Transcriere",
-      "transcriptHint": "1188|Transcrierea ta va apărea aici în timp ce vorbești.",
-      "startSpeaking": "1189|Începe să vorbești"
+      "title": "Vorbire liberă",
+      "subtitle": "Vorbește liber despre un subiect și primește feedback.",
+      "preview": "Previzualizare",
+      "autoTopic": "Subiect generat de AI",
+      "autoTopicHint": "Când începi, alegem un subiect nou pentru {{language}} · {{level}}.",
+      "auto": "Auto",
+      "start": "Începe Vorbirea liberă",
+      "generating": "Se generează subiectul…",
+      "generatingHint": "Alegem ceva potrivit nivelului tău.",
+      "fallbackTopic": "Nu am putut genera un subiect. Folosim unul de rezervă.",
+      "transcript": "Transcriere",
+      "transcriptHint": "Transcrierea ta va apărea aici în timp ce vorbești.",
+      "startSpeaking": "Începe să vorbești"
     },
     "picture": {
-      "title": "1190|Descrie imaginea",
-      "subtitle": "1191|Descrie ce vezi și primește feedback.",
-      "start": "1192|Începe Descrie imaginea",
-      "prompt": "1193|Descrie ce vezi în această imagine.",
-      "tryToMention": "1194|Încearcă să menționezi:",
+      "title": "Descrie imaginea",
+      "subtitle": "Descrie ce vezi și primește feedback.",
+      "start": "Începe Descrie imaginea",
+      "prompt": "Descrie ce vezi în această imagine.",
+      "tryToMention": "Încearcă să menționezi:",
       "hints": {
-        "people": "1195|persoane",
-        "objects": "1196|obiecte",
-        "actions": "1197|acțiuni",
-        "colors": "1198|culori",
-        "emotions": "1199|emoții"
+        "people": "persoane",
+        "objects": "obiecte",
+        "actions": "acțiuni",
+        "colors": "culori",
+        "emotions": "emoții"
       },
-      "loading": "1200|Se încarcă o fotografie…",
-      "retry": "1201|Încearcă din nou",
-      "newPhoto": "1202|Altă fotografie",
-      "imageAlt": "1203|Fotografie de descris",
-      "photoBy": "1204|Fotografie de",
-      "onUnsplash": "1205|pe Unsplash",
-      "startDescribing": "1206|Începe să descrii"
+      "loading": "Se încarcă o fotografie…",
+      "retry": "Încearcă din nou",
+      "newPhoto": "Altă fotografie",
+      "imageAlt": "Fotografie de descris",
+      "photoBy": "Fotografie de",
+      "onUnsplash": "pe Unsplash",
+      "startDescribing": "Începe să descrii"
     },
     "debate": {
-      "title": "1207|Mod dezbatere",
-      "subtitle": "1208|Apără-ți tabăra în fața unui adversar AI.",
-      "start": "1209|Începe dezbaterea",
-      "pickSide": "1210|Tabăra ta",
-      "preparing": "1211|Se pregătește subiectul dezbaterii…",
-      "roundOf": "1212|Runda {{current}} din {{total}} · {{label}}",
+      "title": "Mod dezbatere",
+      "subtitle": "Apără-ți tabăra în fața unui adversar AI.",
+      "start": "Începe dezbaterea",
+      "pickSide": "Tabăra ta",
+      "preparing": "Se pregătește subiectul dezbaterii…",
+      "roundOf": "Runda {{current}} din {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "1213|De acord",
-          "subtitle": "1214|Apără afirmația"
+          "title": "De acord",
+          "subtitle": "Apără afirmația"
         },
         "disagree": {
-          "title": "1215|Împotrivă",
-          "subtitle": "1216|Argumentează împotrivă"
+          "title": "Împotrivă",
+          "subtitle": "Argumentează împotrivă"
         },
         "surprise": {
-          "title": "1217|Surprinde-mă",
-          "subtitle": "1218|Alegem noi o tabără pentru tine"
+          "title": "Surprinde-mă",
+          "subtitle": "Alegem noi o tabără pentru tine"
         }
       }
     },
     "practice": {
-      "listen": "1219|Ascultă",
-      "playing": "1220|Se redă…",
-      "record": "1221|Înregistrează",
-      "stop": "1222|Oprește",
-      "playMine": "1223|Redă înregistrarea mea",
-      "noRecording": "1224|Acest browser nu acceptă înregistrarea — dar poți asculta și repeta."
+      "listen": "Ascultă",
+      "playing": "Se redă…",
+      "record": "Înregistrează",
+      "stop": "Oprește",
+      "playMine": "Redă înregistrarea mea",
+      "noRecording": "Acest browser nu acceptă înregistrarea — dar poți asculta și repeta."
     },
     "shadowing": {
-      "title": "1225|Shadowing",
-      "subtitle": "1226|Ascultă, repetă și compară-te.",
-      "start": "1227|Începe Shadowing",
-      "category": "1228|Categorie",
-      "howItWorks": "1229|Ascultă fraza, repet-o cu voce tare în timp ce înregistrezi, apoi redă înregistrarea ta și compară ritmul.",
-      "loading": "1230|Se generează frazele…",
-      "phrase": "1231|Frază",
-      "previous": "1232|Anterioara",
-      "nextPhrase": "1233|Fraza următoare",
-      "finish": "1234|Termină",
-      "changeSettings": "1235|Schimbă setările",
-      "done": "1236|{{count}} gata",
-      "allDone": "1237|Toate frazele au fost exersate!",
-      "newSet": "1238|Set nou"
+      "title": "Shadowing",
+      "subtitle": "Ascultă, repetă și compară-te.",
+      "start": "Începe Shadowing",
+      "category": "Categorie",
+      "howItWorks": "Ascultă fraza, repet-o cu voce tare în timp ce înregistrezi, apoi redă înregistrarea ta și compară ritmul.",
+      "loading": "Se generează frazele…",
+      "phrase": "Frază",
+      "previous": "Anterioara",
+      "nextPhrase": "Fraza următoare",
+      "finish": "Termină",
+      "changeSettings": "Schimbă setările",
+      "done": "{{count}} gata",
+      "allDone": "Toate frazele au fost exersate!",
+      "newSet": "Set nou"
     },
     "pronunciation": {
-      "title": "1239|Antrenor de pronunție",
-      "subtitle": "1240|Concentrează-te pe sunetele și cuvintele dificile.",
-      "start": "1241|Începe antrenamentul",
-      "focus": "1242|Focus",
-      "difficulty": "1243|Dificultate",
+      "title": "Antrenor de pronunție",
+      "subtitle": "Concentrează-te pe sunetele și cuvintele dificile.",
+      "start": "Începe antrenamentul",
+      "focus": "Focus",
+      "difficulty": "Dificultate",
       "level": {
-        "easy": "1244|Ușor",
-        "balanced": "1245|Echilibrat",
-        "hard": "1246|Greu"
+        "easy": "Ușor",
+        "balanced": "Echilibrat",
+        "hard": "Greu"
       },
-      "loading": "1247|Se generează exercițiile…",
-      "sound": "1248|Sunet",
-      "scoringUnavailable": "1249|Evaluarea automată a pronunției nu este încă configurată pe server, așa că nu se afișează niciun punctaj. Ascultarea, înregistrarea și redarea funcționează."
+      "loading": "Se generează exercițiile…",
+      "sound": "Sunet",
+      "scoringUnavailable": "Evaluarea automată a pronunției nu este încă configurată pe server, așa că nu se afișează niciun punctaj. Ascultarea, înregistrarea și redarea funcționează."
     }
   },
   "profile": {
-    "interfaceLanguage": "1250|Limba interfeței",
+    "interfaceLanguage": "Limba interfeței",
     "password": {
-      "title": "1251|Creează o parolă",
-      "body": "1252|Contul tău a fost creat cu Google, deci nu are parolă — cu câmpurile de e-mail și parolă nu te poți conecta. Adaugă una și vor funcționa ambele metode.",
-      "save": "1253|Salvează parola",
-      "saving": "1254|Se salvează...",
-      "savedInfo": "1255|Parola a fost creată. Acum te poți conecta și cu e-mailul."
+      "title": "Creează o parolă",
+      "body": "Contul tău a fost creat cu Google, deci nu are parolă — cu câmpurile de e-mail și parolă nu te poți conecta. Adaugă una și vor funcționa ambele metode.",
+      "save": "Salvează parola",
+      "saving": "Se salvează...",
+      "savedInfo": "Parola a fost creată. Acum te poți conecta și cu e-mailul."
     }
   },
   "units": {
-    "min": "1256|min",
-    "words": "1257|cuvinte"
+    "min": "min",
+    "words": "cuvinte"
   },
   "link": {
-    "title": "1258|Conectare cu un link",
-    "subtitle": "1259|Îți trimitem pe e-mail un link de unică folosință. Nicio parolă de ținut minte.",
-    "send": "1260|Trimite linkul",
-    "sending": "1261|Se trimite...",
-    "sentInfo": "1262|Link trimis. Verifică-ți e-mailul.",
-    "sentTitle": "1263|Verifică-ți e-mailul",
-    "sentBody": "1264|Am trimis un link de conectare la",
-    "useAnotherEmail": "1265|Folosește alt e-mail",
-    "backToPassword": "1266|Conectează-te cu o parolă"
+    "title": "Conectare cu un link",
+    "subtitle": "Îți trimitem pe e-mail un link de unică folosință. Nicio parolă de ținut minte.",
+    "send": "Trimite linkul",
+    "sending": "Se trimite...",
+    "sentInfo": "Link trimis. Verifică-ți e-mailul.",
+    "sentTitle": "Verifică-ți e-mailul",
+    "sentBody": "Am trimis un link de conectare la",
+    "useAnotherEmail": "Folosește alt e-mail",
+    "backToPassword": "Conectează-te cu o parolă"
   },
   "action": {
-    "working": "1267|Un moment...",
-    "continue": "1268|Continuă",
-    "confirmEmailTitle": "1269|Confirmă-ți e-mailul",
-    "confirmEmailBody": "1270|Acest link a fost deschis în alt browser. Introdu adresa la care a fost trimis și îți finalizăm conectarea.",
-    "resetTitle": "1271|Parolă nouă",
-    "resetSubtitle": "1272|Alege o parolă nouă pentru",
-    "newPassword": "1273|Parolă nouă",
-    "confirmPassword": "1274|Repetă parola",
-    "savePassword": "1275|Salvează parola",
-    "resetDoneTitle": "1276|Parola a fost actualizată",
-    "resetDoneBody": "1277|Acum te poți conecta cu noua parolă.",
-    "failedTitle": "1278|Linkul acela nu a funcționat",
-    "failedBody": "1279|Poate a fost deja folosit sau a expirat. Cere unul nou din ecranul de conectare.",
-    "backToSignIn": "1280|Înapoi la conectare"
+    "working": "Un moment...",
+    "continue": "Continuă",
+    "confirmEmailTitle": "Confirmă-ți e-mailul",
+    "confirmEmailBody": "Acest link a fost deschis în alt browser. Introdu adresa la care a fost trimis și îți finalizăm conectarea.",
+    "resetTitle": "Parolă nouă",
+    "resetSubtitle": "Alege o parolă nouă pentru",
+    "newPassword": "Parolă nouă",
+    "confirmPassword": "Repetă parola",
+    "savePassword": "Salvează parola",
+    "resetDoneTitle": "Parola a fost actualizată",
+    "resetDoneBody": "Acum te poți conecta cu noua parolă.",
+    "failedTitle": "Linkul acela nu a funcționat",
+    "failedBody": "Poate a fost deja folosit sau a expirat. Cere unul nou din ecranul de conectare.",
+    "backToSignIn": "Înapoi la conectare"
   },
   "common": {
-    "cancel": "1281|Anulează",
-    "delete": "1282|Șterge",
+    "cancel": "Anulează",
+    "delete": "Șterge",
     "view": {
-      "label": "1283|Vizualizare",
-      "rows": "1284|Listă",
-      "grid": "1285|Grilă"
+      "label": "Vizualizare",
+      "rows": "Listă",
+      "grid": "Grilă"
     }
   },
   "practice": {
     "language": {
-      "label": "1286|Limbă",
-      "search": "1287|Caută o limbă",
-      "noMatch": "1288|Nicio limbă nu se potrivește.",
-      "noVoice": "1289|Browserul tău nu are voce pentru {{language}}, așa că tutorele nu va vorbi această limbă. Adaugă pachetul de limbă în setările sistemului sau alege altă limbă."
+      "label": "Limbă",
+      "search": "Caută o limbă",
+      "noMatch": "Nicio limbă nu se potrivește.",
+      "noVoice": "Browserul tău nu are voce pentru {{language}}, așa că tutorele nu va vorbi această limbă. Adaugă pachetul de limbă în setările sistemului sau alege altă limbă."
     }
   }
 }

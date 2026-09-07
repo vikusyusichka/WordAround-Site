@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "1|WordAround",
-    "tagline": "2|Dilleri aktif biçimde öğren."
+    "name": "WordAround",
+    "tagline": "Dilleri aktif biçimde öğren."
   },
   "onboarding": {
-    "subtitle": "3|Kelimeleri eğlenceli\\nve basit şekilde öğren",
-    "start": "4|Hadi başlayalım"
+    "subtitle": "Kelimeleri eğlenceli\\nve basit şekilde öğren",
+    "start": "Hadi başlayalım"
   },
   "auth": {
-    "welcomeBack": "5|Tekrar hoş geldin",
-    "subtitle": "6|Öğrenmeye devam etmek için giriş yap",
-    "email": "7|E-posta",
-    "emailPlaceholder": "8|E-postanı gir",
-    "password": "9|Şifre",
-    "passwordPlaceholder": "10|Şifreni gir",
-    "forgotPassword": "11|Şifreni mi unuttun?",
-    "signIn": "12|Giriş yap",
-    "signingIn": "13|Giriş yapılıyor...",
-    "signUp": "14|Kaydol",
-    "signOut": "15|Çıkış yap",
-    "continueWithGoogle": "16|Google ile devam et",
-    "createAccount": "17|Hesap oluştur",
-    "accountCreatedInfo": "18|Hesap oluşturuldu. Doğrulama e-postası gönderdik.",
-    "resetEmailSent": "19|Şifre sıfırlama e-postası gönderildi",
-    "showPassword": "20|Şifreyi göster",
-    "hidePassword": "21|Şifreyi gizle",
-    "back": "22|Geri",
-    "signUpTitle": "23|Hesabını oluştur",
-    "signUpSubtitle": "24|Günde birkaç dakika ve kelime dağarcığın büyür",
-    "name": "25|Ad",
-    "namePlaceholder": "26|Sana nasıl hitap edelim?",
-    "orWithEmail": "27|veya e-posta ile",
-    "signUpWithGoogle": "28|Google ile kaydol",
-    "passwordHint": "29|En az {{min}} karakter",
-    "magicLinkCta": "30|E-postayla gelen bağlantıyla giriş yap",
-    "creatingAccount": "31|Hesap oluşturuluyor..."
+    "welcomeBack": "Tekrar hoş geldin",
+    "subtitle": "Öğrenmeye devam etmek için giriş yap",
+    "email": "E-posta",
+    "emailPlaceholder": "E-postanı gir",
+    "password": "Şifre",
+    "passwordPlaceholder": "Şifreni gir",
+    "forgotPassword": "Şifreni mi unuttun?",
+    "signIn": "Giriş yap",
+    "signingIn": "Giriş yapılıyor...",
+    "signUp": "Kaydol",
+    "signOut": "Çıkış yap",
+    "continueWithGoogle": "Google ile devam et",
+    "createAccount": "Hesap oluştur",
+    "accountCreatedInfo": "Hesap oluşturuldu. Doğrulama e-postası gönderdik.",
+    "resetEmailSent": "Şifre sıfırlama e-postası gönderildi",
+    "showPassword": "Şifreyi göster",
+    "hidePassword": "Şifreyi gizle",
+    "back": "Geri",
+    "signUpTitle": "Hesabını oluştur",
+    "signUpSubtitle": "Günde birkaç dakika ve kelime dağarcığın büyür",
+    "name": "Ad",
+    "namePlaceholder": "Sana nasıl hitap edelim?",
+    "orWithEmail": "veya e-posta ile",
+    "signUpWithGoogle": "Google ile kaydol",
+    "passwordHint": "En az {{min}} karakter",
+    "magicLinkCta": "E-postayla gelen bağlantıyla giriş yap",
+    "creatingAccount": "Hesap oluşturuluyor..."
   },
   "verify": {
-    "title": "32|E-postanı doğrula",
-    "subtitle": "33|Öğrenmeye başlamadan önce bir adım daha",
-    "sentTo": "34|Doğrulama bağlantısını şuraya gönderdik:",
-    "fallbackEmail": "35|e-posta adresine",
-    "step1": "36|E-postayı gelen kutunda aç",
-    "step2": "37|Onay bağlantısına dokun",
-    "step3": "38|Öğrenme ekranını hemen açacağız — buraya dönmene gerek yok",
-    "checkButton": "39|E-postamı doğruladım",
-    "checking": "40|Kontrol ediliyor...",
-    "resend": "41|E-postayı tekrar gönder",
-    "useAnotherAccount": "42|Başka hesap kullan",
-    "badgeInbox": "43|Gelen kutusuna bak",
-    "badgeConfirm": "44|Onayla",
-    "badgeDone": "45|Tamam",
-    "resentInfo": "46|Doğrulama e-postası tekrar gönderildi",
-    "notVerifiedYet": "47|E-posta henüz doğrulanmadı"
+    "title": "E-postanı doğrula",
+    "subtitle": "Öğrenmeye başlamadan önce bir adım daha",
+    "sentTo": "Doğrulama bağlantısını şuraya gönderdik:",
+    "fallbackEmail": "e-posta adresine",
+    "step1": "E-postayı gelen kutunda aç",
+    "step2": "Onay bağlantısına dokun",
+    "step3": "Öğrenme ekranını hemen açacağız — buraya dönmene gerek yok",
+    "checkButton": "E-postamı doğruladım",
+    "checking": "Kontrol ediliyor...",
+    "resend": "E-postayı tekrar gönder",
+    "useAnotherAccount": "Başka hesap kullan",
+    "badgeInbox": "Gelen kutusuna bak",
+    "badgeConfirm": "Onayla",
+    "badgeDone": "Tamam",
+    "resentInfo": "Doğrulama e-postası tekrar gönderildi",
+    "notVerifiedYet": "E-posta henüz doğrulanmadı"
   },
   "errors": {
-    "emailRequired": "48|E-posta zorunlu",
-    "emailInvalid": "49|Geçerli bir e-posta gir",
-    "emailFirst": "50|Önce e-postanı gir",
-    "passwordRequired": "51|Şifre zorunlu",
-    "passwordTooShort": "52|Şifre en az 8 karakter olmalı",
-    "invalidEmail": "53|Geçersiz e-posta biçimi",
-    "wrongPassword": "54|E-posta veya şifre hatalı. Google ile kaydolduysan Google düğmesini kullan.",
-    "userNotFound": "55|E-posta veya şifre hatalı. Google ile kaydolduysan Google düğmesini kullan.",
-    "invalidCredential": "56|E-posta veya şifre hatalı. Google ile kaydolduysan Google düğmesini kullan.",
-    "emailInUse": "57|Bu hesap zaten var",
-    "weakPassword": "58|Bu şifre çok zayıf",
-    "network": "59|Ağ hatası. İnternet bağlantını kontrol et",
-    "tooManyRequests": "60|Çok fazla deneme. Daha sonra tekrar dene",
-    "differentCredential": "61|Bu e-posta başka bir giriş yöntemiyle kullanılıyor",
-    "noActiveAccount": "62|Etkin hesap bulunamadı",
-    "default": "63|Kimlik doğrulama başarısız. Lütfen tekrar dene",
-    "nameRequired": "64|Ad zorunlu",
-    "passwordsDoNotMatch": "65|Şifreler eşleşmiyor",
-    "actionExpired": "66|Bu bağlantının süresi doldu. Yenisini iste.",
-    "actionInvalid": "67|Bu bağlantı artık geçerli değil.",
-    "userDisabled": "68|Bu hesap devre dışı bırakıldı.",
-    "requiresRecentLogin": "69|Güvenlik için tekrar giriş yap ve bunu yinele.",
-    "passwordAlreadySet": "70|Bu hesabın zaten bir şifresi var.",
-    "linkNoEmail": "71|Bağlantının gönderildiği e-postayı gir"
+    "emailRequired": "E-posta zorunlu",
+    "emailInvalid": "Geçerli bir e-posta gir",
+    "emailFirst": "Önce e-postanı gir",
+    "passwordRequired": "Şifre zorunlu",
+    "passwordTooShort": "Şifre en az 8 karakter olmalı",
+    "invalidEmail": "Geçersiz e-posta biçimi",
+    "wrongPassword": "E-posta veya şifre hatalı. Google ile kaydolduysan Google düğmesini kullan.",
+    "userNotFound": "E-posta veya şifre hatalı. Google ile kaydolduysan Google düğmesini kullan.",
+    "invalidCredential": "E-posta veya şifre hatalı. Google ile kaydolduysan Google düğmesini kullan.",
+    "emailInUse": "Bu hesap zaten var",
+    "weakPassword": "Bu şifre çok zayıf",
+    "network": "Ağ hatası. İnternet bağlantını kontrol et",
+    "tooManyRequests": "Çok fazla deneme. Daha sonra tekrar dene",
+    "differentCredential": "Bu e-posta başka bir giriş yöntemiyle kullanılıyor",
+    "noActiveAccount": "Etkin hesap bulunamadı",
+    "default": "Kimlik doğrulama başarısız. Lütfen tekrar dene",
+    "nameRequired": "Ad zorunlu",
+    "passwordsDoNotMatch": "Şifreler eşleşmiyor",
+    "actionExpired": "Bu bağlantının süresi doldu. Yenisini iste.",
+    "actionInvalid": "Bu bağlantı artık geçerli değil.",
+    "userDisabled": "Bu hesap devre dışı bırakıldı.",
+    "requiresRecentLogin": "Güvenlik için tekrar giriş yap ve bunu yinele.",
+    "passwordAlreadySet": "Bu hesabın zaten bir şifresi var.",
+    "linkNoEmail": "Bağlantının gönderildiği e-postayı gir"
   },
   "nav": {
-    "home": "72|Ana sayfa",
-    "speaking": "73|Konuşma",
-    "listening": "74|Dinleme",
-    "reading": "75|Okuma",
-    "writing": "76|Yazma",
-    "folders": "77|Klasörler",
-    "sets": "78|Setler",
-    "notes": "79|Notlar",
-    "profile": "80|Profil",
-    "create": "81|Yeni",
-    "menu": "82|Menü",
-    "closeMenu": "83|Menüyü kapat",
+    "home": "Ana sayfa",
+    "speaking": "Konuşma",
+    "listening": "Dinleme",
+    "reading": "Okuma",
+    "writing": "Yazma",
+    "folders": "Klasörler",
+    "sets": "Setler",
+    "notes": "Notlar",
+    "profile": "Profil",
+    "create": "Yeni",
+    "menu": "Menü",
+    "closeMenu": "Menüyü kapat",
     "group": {
-      "practice": "84|Pratik",
-      "library": "85|Kitaplık"
+      "practice": "Pratik",
+      "library": "Kitaplık"
     }
   },
   "folders": {
-    "create": "86|Klasör oluştur",
-    "loading": "87|Klasörler yükleniyor…",
-    "loadError": "88|Klasörlerini yükleyemedik.",
-    "emptyTitle": "89|Henüz klasör yok",
-    "emptyBody": "90|Setlerini düzenlemek için ilk klasörünü oluştur.",
-    "setCount": "91|{{count}} set",
-    "setCount_one": "92|{{count}} set",
-    "newTitle": "93|Yeni klasör",
-    "newSubtitle": "94|İlgili setleri bir araya topla.",
-    "editTitle": "95|Klasörü düzenle",
-    "name": "96|Ad",
-    "namePlaceholder": "97|örn. Seyahat",
-    "description": "98|Açıklama",
-    "descriptionPlaceholder": "99|İsteğe bağlı",
-    "color": "100|Renk",
-    "save": "101|Kaydet",
-    "saving": "102|Kaydediliyor…",
-    "cancel": "103|Vazgeç",
-    "edit": "104|Klasörü düzenle",
-    "delete": "105|Klasörü sil",
-    "deleteConfirm": "106|„{{title}}” silinsin mi? Bu işlem geri alınamaz.",
-    "backToFolders": "107|Klasörlere dön",
-    "notFoundTitle": "108|Klasör bulunamadı",
-    "notFoundBody": "109|Bu klasör silinmiş olabilir.",
-    "noSetsInFolder": "110|Bu klasörde henüz set yok.",
-    "saveError": "111|Kaydedilemedi. Lütfen tekrar dene.",
+    "create": "Klasör oluştur",
+    "loading": "Klasörler yükleniyor…",
+    "loadError": "Klasörlerini yükleyemedik.",
+    "emptyTitle": "Henüz klasör yok",
+    "emptyBody": "Setlerini düzenlemek için ilk klasörünü oluştur.",
+    "setCount": "{{count}} set",
+    "setCount_one": "{{count}} set",
+    "newTitle": "Yeni klasör",
+    "newSubtitle": "İlgili setleri bir araya topla.",
+    "editTitle": "Klasörü düzenle",
+    "name": "Ad",
+    "namePlaceholder": "örn. Seyahat",
+    "description": "Açıklama",
+    "descriptionPlaceholder": "İsteğe bağlı",
+    "color": "Renk",
+    "save": "Kaydet",
+    "saving": "Kaydediliyor…",
+    "cancel": "Vazgeç",
+    "edit": "Klasörü düzenle",
+    "delete": "Klasörü sil",
+    "deleteConfirm": "„{{title}}” silinsin mi? Bu işlem geri alınamaz.",
+    "backToFolders": "Klasörlere dön",
+    "notFoundTitle": "Klasör bulunamadı",
+    "notFoundBody": "Bu klasör silinmiş olabilir.",
+    "noSetsInFolder": "Bu klasörde henüz set yok.",
+    "saveError": "Kaydedilemedi. Lütfen tekrar dene.",
     "error": {
-      "nameRequired": "112|Klasör adı zorunlu.",
-      "nameTooLong": "113|Klasör adı 80 karakterden kısa olmalı.",
-      "descTooLong": "114|Açıklama 120 karakterden kısa olmalı."
+      "nameRequired": "Klasör adı zorunlu.",
+      "nameTooLong": "Klasör adı 80 karakterden kısa olmalı.",
+      "descTooLong": "Açıklama 120 karakterden kısa olmalı."
     },
-    "optional": "115|(isteğe bağlı)",
-    "preview": "116|Önizleme",
-    "previewPlaceholder": "117|Yeni klasör",
-    "deleteConfirmTitle": "118|Bu klasör silinsin mi?"
+    "optional": "(isteğe bağlı)",
+    "preview": "Önizleme",
+    "previewPlaceholder": "Yeni klasör",
+    "deleteConfirmTitle": "Bu klasör silinsin mi?"
   },
   "sets": {
-    "create": "119|Set oluştur",
-    "loading": "120|Setler yükleniyor…",
-    "loadError": "121|Setlerini yükleyemedik.",
-    "emptyTitle": "122|Henüz set yok",
-    "emptyBody": "123|Yeni düğmesiyle ilk kart setini oluştur.",
-    "cardCount": "124|{{count}} kart",
-    "cardCount_one": "125|{{count}} kart",
-    "keepPracticing": "126|Pratik yapmaya devam et",
-    "delete": "127|Seti sil",
-    "deleteConfirm": "128|„{{title}}” silinsin mi? Bu işlem geri alınamaz.",
-    "notFoundTitle": "129|Set bulunamadı",
-    "notFoundBody": "130|Bu set silinmiş olabilir.",
-    "backToSets": "131|Setlere dön",
-    "edit": "132|Seti düzenle",
-    "deleteConfirmTitle": "133|Bu set silinsin mi?",
-    "editTitle": "134|Seti düzenle",
-    "editSubtitle": "135|Başlığı, rengi, simgeyi veya klasörü değiştir. Kartlar yerinde kalır.",
-    "save": "136|Değişiklikleri kaydet",
-    "saving": "137|Kaydediliyor…",
-    "cancel": "138|Vazgeç",
-    "saveError": "139|Kaydedilemedi. Lütfen tekrar dene."
+    "create": "Set oluştur",
+    "loading": "Setler yükleniyor…",
+    "loadError": "Setlerini yükleyemedik.",
+    "emptyTitle": "Henüz set yok",
+    "emptyBody": "Yeni düğmesiyle ilk kart setini oluştur.",
+    "cardCount": "{{count}} kart",
+    "cardCount_one": "{{count}} kart",
+    "keepPracticing": "Pratik yapmaya devam et",
+    "delete": "Seti sil",
+    "deleteConfirm": "„{{title}}” silinsin mi? Bu işlem geri alınamaz.",
+    "notFoundTitle": "Set bulunamadı",
+    "notFoundBody": "Bu set silinmiş olabilir.",
+    "backToSets": "Setlere dön",
+    "edit": "Seti düzenle",
+    "deleteConfirmTitle": "Bu set silinsin mi?",
+    "editTitle": "Seti düzenle",
+    "editSubtitle": "Başlığı, rengi, simgeyi veya klasörü değiştir. Kartlar yerinde kalır.",
+    "save": "Değişiklikleri kaydet",
+    "saving": "Kaydediliyor…",
+    "cancel": "Vazgeç",
+    "saveError": "Kaydedilemedi. Lütfen tekrar dene."
   },
   "createSet": {
-    "title": "140|Yeni set",
-    "subtitle": "141|Kelimeler ekle ve setini kişiselleştir.",
-    "infoSection": "142|Set bilgileri",
-    "setTitle": "143|Başlık",
-    "setTitlePlaceholder": "144|örn. Seyahat için temel kelimeler",
-    "setDescription": "145|Açıklama",
-    "setDescriptionPlaceholder": "146|İsteğe bağlı",
-    "privacy": "147|Gizlilik",
-    "private": "148|Özel",
-    "public": "149|Herkese açık",
-    "cardsSection": "150|Kartlar",
-    "addCard": "151|Kart ekle",
-    "cardN": "152|Kart {{n}}",
-    "removeCard": "153|Kartı kaldır",
-    "word": "154|Kelime",
-    "translation": "155|Çeviri",
-    "example": "156|Örnek (isteğe bağlı)",
-    "addImage": "157|Görsel ekle",
-    "removeImage": "158|Görseli kaldır",
-    "customizeSection": "159|Kişiselleştir",
-    "color": "160|Renk",
-    "icon": "161|Simge",
-    "folder": "162|Klasör",
-    "noFolder": "163|Klasör yok",
-    "previewSection": "164|Önizleme",
-    "previewPlaceholder": "165|Set başlığı",
-    "save": "166|Set oluştur",
-    "saving": "167|Kaydediliyor…",
-    "cancel": "168|Vazgeç",
-    "saveError": "169|Kaydedilemedi. Lütfen tekrar dene.",
+    "title": "Yeni set",
+    "subtitle": "Kelimeler ekle ve setini kişiselleştir.",
+    "infoSection": "Set bilgileri",
+    "setTitle": "Başlık",
+    "setTitlePlaceholder": "örn. Seyahat için temel kelimeler",
+    "setDescription": "Açıklama",
+    "setDescriptionPlaceholder": "İsteğe bağlı",
+    "privacy": "Gizlilik",
+    "private": "Özel",
+    "public": "Herkese açık",
+    "cardsSection": "Kartlar",
+    "addCard": "Kart ekle",
+    "cardN": "Kart {{n}}",
+    "removeCard": "Kartı kaldır",
+    "word": "Kelime",
+    "translation": "Çeviri",
+    "example": "Örnek (isteğe bağlı)",
+    "addImage": "Görsel ekle",
+    "removeImage": "Görseli kaldır",
+    "customizeSection": "Kişiselleştir",
+    "color": "Renk",
+    "icon": "Simge",
+    "folder": "Klasör",
+    "noFolder": "Klasör yok",
+    "previewSection": "Önizleme",
+    "previewPlaceholder": "Set başlığı",
+    "save": "Set oluştur",
+    "saving": "Kaydediliyor…",
+    "cancel": "Vazgeç",
+    "saveError": "Kaydedilemedi. Lütfen tekrar dene.",
     "error": {
-      "emptyTitle": "170|Set başlığı zorunlu.",
-      "titleTooLong": "171|Set başlığı 150 karakterden kısa olmalı.",
-      "descTooLong": "172|Açıklama 200 karakterden kısa olmalı.",
-      "noValidCards": "173|Kelime ve çeviri içeren en az bir kart ekle.",
-      "exampleTooLong": "174|Karttaki örnekler 150 karakterden kısa olmalı."
+      "emptyTitle": "Set başlığı zorunlu.",
+      "titleTooLong": "Set başlığı 150 karakterden kısa olmalı.",
+      "descTooLong": "Açıklama 200 karakterden kısa olmalı.",
+      "noValidCards": "Kelime ve çeviri içeren en az bir kart ekle.",
+      "exampleTooLong": "Karttaki örnekler 150 karakterden kısa olmalı."
     },
-    "imageTimeout": "175|Görsel yükleme zaman aşımına uğradı. Bağlantını kontrol edip tekrar dene.",
+    "imageTimeout": "Görsel yükleme zaman aşımına uğradı. Bağlantını kontrol edip tekrar dene.",
     "import": {
-      "button": "176|İçe aktar",
-      "title": "177|Kartları içe aktar",
-      "subtitle": "178|Verilerini kopyalayıp yapıştır — Word, Excel, Google Docs ve benzerlerinden.",
-      "close": "179|İçe aktarmayı kapat",
-      "dataSection": "180|Verilerin",
-      "placeholder": "181|Kelime 1\\tTanım 1\\nKelime 2\\tTanım 2\\nKelime 3\\tTanım 3",
-      "separatorsSection": "182|Ayırıcılar",
-      "betweenTermAndDefinition": "183|Kelime ile çeviri arasında",
-      "betweenCards": "184|Kartlar arasında",
-      "tab": "185|Sekme",
-      "comma": "186|Virgül",
-      "newline": "187|Yeni satır",
-      "semicolon": "188|Noktalı virgül",
-      "custom": "189|Özel",
-      "customPlaceholder": "190|örn. —",
-      "previewSection": "191|Önizleme",
-      "previewEmpty": "192|Henüz önizlenecek bir şey yok.",
-      "noDefinition": "193|Çeviri yok",
-      "confirm": "194|Kartları ekle"
+      "button": "İçe aktar",
+      "title": "Kartları içe aktar",
+      "subtitle": "Verilerini kopyalayıp yapıştır — Word, Excel, Google Docs ve benzerlerinden.",
+      "close": "İçe aktarmayı kapat",
+      "dataSection": "Verilerin",
+      "placeholder": "Kelime 1\\tTanım 1\\nKelime 2\\tTanım 2\\nKelime 3\\tTanım 3",
+      "separatorsSection": "Ayırıcılar",
+      "betweenTermAndDefinition": "Kelime ile çeviri arasında",
+      "betweenCards": "Kartlar arasında",
+      "tab": "Sekme",
+      "comma": "Virgül",
+      "newline": "Yeni satır",
+      "semicolon": "Noktalı virgül",
+      "custom": "Özel",
+      "customPlaceholder": "örn. —",
+      "previewSection": "Önizleme",
+      "previewEmpty": "Henüz önizlenecek bir şey yok.",
+      "noDefinition": "Çeviri yok",
+      "confirm": "Kartları ekle"
     },
     "iconPicker": {
-      "open": "195|Daha fazla simge",
-      "title": "196|Simge seç",
-      "search": "197|Sembol ara",
-      "close": "198|Kapat",
-      "empty": "199|Bu ada uyan simge yok."
+      "open": "Daha fazla simge",
+      "title": "Simge seç",
+      "search": "Sembol ara",
+      "close": "Kapat",
+      "empty": "Bu ada uyan simge yok."
     },
     "iconGroup": {
-      "learning": "200|Öğrenme",
-      "languages": "201|Diller",
-      "nature": "202|Doğa",
-      "health": "203|Sağlık",
-      "food": "204|Yemek",
-      "travel": "205|Seyahat",
-      "work": "206|İş",
-      "tech": "207|Teknoloji",
-      "creativity": "208|Yaratıcılık",
-      "general": "209|Genel"
+      "learning": "Öğrenme",
+      "languages": "Diller",
+      "nature": "Doğa",
+      "health": "Sağlık",
+      "food": "Yemek",
+      "travel": "Seyahat",
+      "work": "İş",
+      "tech": "Teknoloji",
+      "creativity": "Yaratıcılık",
+      "general": "Genel"
     }
   },
   "home": {
     "title": {
-      "flashcards": "210|Kartlar",
-      "folders": "211|Klasörler",
-      "sets": "212|Setler",
-      "create": "213|Yeni",
-      "profile": "214|Profil",
-      "speaking": "215|Konuşma",
-      "listening": "216|Dinleme",
-      "reading": "217|Okuma",
-      "writing": "218|Yazma"
+      "flashcards": "Kartlar",
+      "folders": "Klasörler",
+      "sets": "Setler",
+      "create": "Yeni",
+      "profile": "Profil",
+      "speaking": "Konuşma",
+      "listening": "Dinleme",
+      "reading": "Okuma",
+      "writing": "Yazma"
     },
     "subtitle": {
-      "pickSet": "219|Pratik için bir set seç",
-      "folders": "220|Klasörlerini yönet",
-      "sets": "221|Kart setlerini yönet",
-      "create": "222|Yeni bir çalışma seti oluştur",
-      "speaking": "223|Konuşma becerini geliştir.",
-      "listening": "224|Kulağını dili doğal şekilde anlamaya alıştır.",
-      "reading": "225|O dildeki materyalleri oku ve tekrar et.",
-      "writing": "226|Dili aktif biçimde kullan."
+      "pickSet": "Pratik için bir set seç",
+      "folders": "Klasörlerini yönet",
+      "sets": "Kart setlerini yönet",
+      "create": "Yeni bir çalışma seti oluştur",
+      "speaking": "Konuşma becerini geliştir.",
+      "listening": "Kulağını dili doğal şekilde anlamaya alıştır.",
+      "reading": "O dildeki materyalleri oku ve tekrar et.",
+      "writing": "Dili aktif biçimde kullan."
     },
     "category": {
-      "speaking": "227|KONUŞMA",
-      "listening": "228|DİNLEME",
-      "reading": "229|OKUMA",
-      "writing": "230|YAZMA"
+      "speaking": "KONUŞMA",
+      "listening": "DİNLEME",
+      "reading": "OKUMA",
+      "writing": "YAZMA"
     },
     "todayGoal": {
-      "title": "231|Bugünün hedefi",
-      "left": "232|{{count}} kelime kaldı"
+      "title": "Bugünün hedefi",
+      "left": "{{count}} kelime kaldı"
     },
     "stat": {
-      "learnedToday": "233|Bugün öğrenilen",
-      "words": "234|kelime",
-      "accuracy": "235|Doğruluk",
-      "greatJob": "236|Harika iş!",
-      "streak": "237|Seri",
-      "days": "238|gün"
+      "learnedToday": "Bugün öğrenilen",
+      "words": "kelime",
+      "accuracy": "Doğruluk",
+      "greatJob": "Harika iş!",
+      "streak": "Seri",
+      "days": "gün"
     },
-    "continueLearning": "239|Öğrenmeye devam et",
-    "yourSets": "240|Setlerin",
-    "viewAll": "241|Tümünü gör",
-    "review": "242|Tekrar et",
+    "continueLearning": "Öğrenmeye devam et",
+    "yourSets": "Setlerin",
+    "viewAll": "Tümünü gör",
+    "review": "Tekrar et",
     "sets": {
-      "emptyTitle": "243|Henüz set yok",
-      "emptyBody": "244|Yeni düğmesiyle ilk kart setini oluştur."
+      "emptyTitle": "Henüz set yok",
+      "emptyBody": "Yeni düğmesiyle ilk kart setini oluştur."
     },
     "create": {
-      "folder": "245|Klasör",
-      "set": "246|Set",
-      "text": "247|Metin",
-      "audio": "248|Ses",
-      "essay": "249|Kompozisyon"
+      "folder": "Klasör",
+      "set": "Set",
+      "text": "Metin",
+      "audio": "Ses",
+      "essay": "Kompozisyon"
     },
     "placeholder": {
-      "comingSoon": "250|{{title}} — çok yakında"
+      "comingSoon": "{{title}} — çok yakında"
     },
     "progress": {
       "subtitle": {
-        "speaking": "251|konuşma pratiği",
-        "listening": "252|dinleme pratiği",
-        "reading": "253|okuma pratiği",
-        "writing": "254|yazma pratiği"
+        "speaking": "konuşma pratiği",
+        "listening": "dinleme pratiği",
+        "reading": "okuma pratiği",
+        "writing": "yazma pratiği"
       }
     },
     "dailyGoal": {
-      "title": "255|Bugünkü hedefin",
-      "body": "256|Bugün ne çalışmak istediğini seç — aşağıdaki kart bu hedefe sayılır.",
-      "chosenBody": "257|Bugün bununla ilgili.",
-      "howMuch": "258|Ne kadar?",
-      "change": "259|Değiştir"
+      "title": "Bugünkü hedefin",
+      "body": "Bugün ne çalışmak istediğini seç — aşağıdaki kart bu hedefe sayılır.",
+      "chosenBody": "Bugün bununla ilgili.",
+      "howMuch": "Ne kadar?",
+      "change": "Değiştir"
     },
     "lastNote": {
-      "title": "260|Son okuduğun not"
+      "title": "Son okuduğun not"
     }
   },
   "categories": {
-    "speaking": "261|Konuşma",
-    "listening": "262|Dinleme",
-    "reading": "263|Okuma",
-    "writing": "264|Yazma"
+    "speaking": "Konuşma",
+    "listening": "Dinleme",
+    "reading": "Okuma",
+    "writing": "Yazma"
   },
   "phase0": {
-    "title": "265|WordAround",
-    "subtitle": "266|Faz 0 çalışıyor. Tasarım tokenları yüklendi, Firebase bağlandı."
+    "title": "WordAround",
+    "subtitle": "Faz 0 çalışıyor. Tasarım tokenları yüklendi, Firebase bağlandı."
   },
   "study": {
-    "flip": "267|Çevir",
-    "known": "268|Biliyordum",
-    "unknown": "269|Hâlâ öğreniyorum",
-    "mastered": "270|Öğrenildi",
-    "shuffle": "271|Karıştır",
-    "trackProgress": "272|İlerlemeyi takip et",
-    "speak": "273|Seslendir",
-    "roundDone": "274|Tur tamamlandı",
-    "knewCount": "275|{{total}} kelimenin {{known}} tanesini bildin",
-    "repeatUnknown": "276|{{count}} bilinmeyeni tekrar et",
-    "restart": "277|Baştan başla",
+    "flip": "Çevir",
+    "known": "Biliyordum",
+    "unknown": "Hâlâ öğreniyorum",
+    "mastered": "Öğrenildi",
+    "shuffle": "Karıştır",
+    "trackProgress": "İlerlemeyi takip et",
+    "speak": "Seslendir",
+    "roundDone": "Tur tamamlandı",
+    "knewCount": "{{total}} kelimenin {{known}} tanesini bildin",
+    "repeatUnknown": "{{count}} bilinmeyeni tekrar et",
+    "restart": "Baştan başla",
     "filter": {
-      "all": "278|Tümü",
-      "studied": "279|Çalışılan",
-      "remaining": "280|Kalan",
-      "mastered": "281|Öğrenilen"
+      "all": "Tümü",
+      "studied": "Çalışılan",
+      "remaining": "Kalan",
+      "mastered": "Öğrenilen"
     },
-    "addCard": "282|Kart ekle",
-    "editCard": "283|Kartı düzenle",
-    "deleteCard": "284|Kartı sil",
-    "deleteCardConfirm": "285|Bu kart silinsin mi?",
-    "emptyPrompt": "286|Bu sette henüz kart yok. İlkini ekle.",
-    "save": "287|Kaydet",
-    "cancel": "288|Vazgeç"
+    "addCard": "Kart ekle",
+    "editCard": "Kartı düzenle",
+    "deleteCard": "Kartı sil",
+    "deleteCardConfirm": "Bu kart silinsin mi?",
+    "emptyPrompt": "Bu sette henüz kart yok. İlkini ekle.",
+    "save": "Kaydet",
+    "cancel": "Vazgeç"
   },
   "writing": {
     "today": {
-      "title": "289|Bugünkü ilerleme",
-      "unit": "290|kelime",
-      "subtitle": "291|yazma pratiği"
+      "title": "Bugünkü ilerleme",
+      "unit": "kelime",
+      "subtitle": "yazma pratiği"
     },
-    "sectionTitle": "292|Pratik modları",
+    "sectionTitle": "Pratik modları",
     "menu": {
       "writeFromSets": {
-        "title": "293|Setlerden yazma",
-        "subtitle": "294|Setlerindeki kelimelerin yazımını ve imlasını çalış."
+        "title": "Setlerden yazma",
+        "subtitle": "Setlerindeki kelimelerin yazımını ve imlasını çalış."
       },
       "essays": {
-        "title": "295|Kompozisyonlar",
-        "subtitle": "296|Metin yaz, dil bilgisi ve üslup için yapay zekâdan geri bildirim al."
+        "title": "Kompozisyonlar",
+        "subtitle": "Metin yaz, dil bilgisi ve üslup için yapay zekâdan geri bildirim al."
       },
-      "comingSoon": "297|Çok yakında"
+      "comingSoon": "Çok yakında"
     },
     "setSelection": {
-      "title": "298|Set seç",
+      "title": "Set seç",
       "empty": {
-        "title": "299|Kelime içeren set yok",
-        "subtitle": "300|Yazma pratiğine başlamadan önce en az bir kart içeren bir set oluştur."
+        "title": "Kelime içeren set yok",
+        "subtitle": "Yazma pratiğine başlamadan önce en az bir kart içeren bir set oluştur."
       },
-      "wordsCount": "301|{{count}} kelime",
-      "wordsCount_one": "302|{{count}} kelime",
-      "close": "303|Kapat"
+      "wordsCount": "{{count}} kelime",
+      "wordsCount_one": "{{count}} kelime",
+      "close": "Kapat"
     },
     "writeWords": {
-      "title": "304|Setlerden yazma",
-      "subtitle": "305|Çeviriyi yaz ve Enter'a bas.",
-      "translateHint": "306|Kendi diline çevir",
-      "hint": "307|İpucu",
-      "skip": "308|Atla",
-      "submit": "309|Kontrol et",
-      "inputPlaceholder": "310|Buraya yaz…",
-      "loading": "311|Set yükleniyor…",
-      "loadError": "312|Bu seti yükleyemedik.",
-      "noCards": "313|Bu sette kart yok.",
-      "back": "314|Geri",
+      "title": "Setlerden yazma",
+      "subtitle": "Çeviriyi yaz ve Enter'a bas.",
+      "translateHint": "Kendi diline çevir",
+      "hint": "İpucu",
+      "skip": "Atla",
+      "submit": "Kontrol et",
+      "inputPlaceholder": "Buraya yaz…",
+      "loading": "Set yükleniyor…",
+      "loadError": "Bu seti yükleyemedik.",
+      "noCards": "Bu sette kart yok.",
+      "back": "Geri",
       "settings": {
-        "title": "315|Ayarlar",
-        "trainingMode": "316|Antrenman modu",
-        "difficulty": "317|Zorluk"
+        "title": "Ayarlar",
+        "trainingMode": "Antrenman modu",
+        "difficulty": "Zorluk"
       },
       "mode": {
-        "wordToTranslation": "318|Kelime → Çeviri",
-        "translationToWord": "319|Çeviri → Kelime"
+        "wordToTranslation": "Kelime → Çeviri",
+        "translationToWord": "Çeviri → Kelime"
       },
       "difficulty": {
-        "easy": "320|Kolay",
-        "medium": "321|Orta",
-        "hard": "322|Zor",
-        "easyDesc": "323|Sınırsız ipucu, sınırsız atlama",
-        "mediumDesc": "324|1 harf ipucu, en fazla %25 atlama",
-        "hardDesc": "325|İpucu yok, atlama yok, süreli"
+        "easy": "Kolay",
+        "medium": "Orta",
+        "hard": "Zor",
+        "easyDesc": "Sınırsız ipucu, sınırsız atlama",
+        "mediumDesc": "1 harf ipucu, en fazla %25 atlama",
+        "hardDesc": "İpucu yok, atlama yok, süreli"
       },
       "translatePrompt": {
-        "word": "326|Kendi diline çevir",
-        "translation": "327|Orijinal kelimeyi yaz"
+        "word": "Kendi diline çevir",
+        "translation": "Orijinal kelimeyi yaz"
       },
-      "skipsLeft_one": "328|{{count}} atlama hakkı kaldı",
-      "skipsLeft_other": "329|{{count}} atlama hakkı kaldı",
-      "seconds": "330|{{count}} sn",
+      "skipsLeft_one": "{{count}} atlama hakkı kaldı",
+      "skipsLeft_other": "{{count}} atlama hakkı kaldı",
+      "seconds": "{{count}} sn",
       "result": {
         "win": {
-          "title": "331|Tur tamamlandı!",
-          "subtitle": "332|Harika iş. Bu yazma turunu bitirdin."
+          "title": "Tur tamamlandı!",
+          "subtitle": "Harika iş. Bu yazma turunu bitirdin."
         },
         "timeout": {
-          "title": "333|Süre doldu",
-          "subtitle": "334|Zor mod sayacı sıfıra indi. İlk kelimeden tekrar dene."
+          "title": "Süre doldu",
+          "subtitle": "Zor mod sayacı sıfıra indi. İlk kelimeden tekrar dene."
         },
         "wrong": {
-          "title": "335|Yanlış cevap",
-          "subtitle": "336|Zor modda tek hata turu bitirir."
+          "title": "Yanlış cevap",
+          "subtitle": "Zor modda tek hata turu bitirir."
         },
-        "perfectTitle": "337|Kusursuz tur!",
-        "perfectBody": "338|Zor modu hatasız tamamladın. Atlama yok. İpucu yok. Sadece beceri.",
-        "totalWords": "339|Toplam kelime",
-        "completedWords": "340|Tamamlanan kelime",
-        "skippedWords": "341|Atlanan kelime",
-        "hintsUsed": "342|Kullanılan ipucu",
-        "streak": "343|Seri",
-        "difficultyLabel": "344|Zorluk",
-        "word": "345|Kelime",
-        "yourAnswer": "346|Senin cevabın",
-        "correctAnswer": "347|Doğru cevap",
-        "tryAgain": "348|Tekrar dene"
+        "perfectTitle": "Kusursuz tur!",
+        "perfectBody": "Zor modu hatasız tamamladın. Atlama yok. İpucu yok. Sadece beceri.",
+        "totalWords": "Toplam kelime",
+        "completedWords": "Tamamlanan kelime",
+        "skippedWords": "Atlanan kelime",
+        "hintsUsed": "Kullanılan ipucu",
+        "streak": "Seri",
+        "difficultyLabel": "Zorluk",
+        "word": "Kelime",
+        "yourAnswer": "Senin cevabın",
+        "correctAnswer": "Doğru cevap",
+        "tryAgain": "Tekrar dene"
       }
     },
     "essays": {
-      "title": "349|Kompozisyonlar",
-      "subtitle": "350|Konuyu yapay zekâ seçer. Yaz, sonra geri bildirim al.",
+      "title": "Kompozisyonlar",
+      "subtitle": "Konuyu yapay zekâ seçer. Yaz, sonra geri bildirim al.",
       "mode": {
-        "suggested": "351|Önerilen",
-        "custom": "352|Kendi konum"
+        "suggested": "Önerilen",
+        "custom": "Kendi konum"
       },
       "custom": {
-        "placeholder": "353|Kendi kompozisyon konunu yaz...",
-        "generate": "354|Görev oluştur"
+        "placeholder": "Kendi kompozisyon konunu yaz...",
+        "generate": "Görev oluştur"
       },
       "suggested": {
-        "generate": "355|Konu oluştur",
-        "regenerate": "356|Yeni konu"
+        "generate": "Konu oluştur",
+        "regenerate": "Yeni konu"
       },
-      "language": "357|Dil",
-      "difficulty": "358|Zorluk",
+      "language": "Dil",
+      "difficulty": "Zorluk",
       "task": {
-        "time": "359|≈ {{count}} dk",
-        "wordRange": "360|{{min}}-{{max}} kelime",
-        "quickTips": "361|Hızlı ipuçları",
-        "taskLabel": "362|Görev"
+        "time": "≈ {{count}} dk",
+        "wordRange": "{{min}}-{{max}} kelime",
+        "quickTips": "Hızlı ipuçları",
+        "taskLabel": "Görev"
       },
       "editor": {
-        "placeholder": "363|Kompozisyonunu buradan yazmaya başla...",
-        "wordCount": "364|{{count}} / {{min}}-{{max}} kelime",
+        "placeholder": "Kompozisyonunu buradan yazmaya başla...",
+        "wordCount": "{{count}} / {{min}}-{{max}} kelime",
         "validation": {
-          "belowMinimum": "365|Devam et — en az {{min}} kelime gerekiyor.",
-          "aboveMaximum": "366|Sınırı aştın — biraz kısaltmayı dene.",
-          "valid": "367|Aralık içinde."
+          "belowMinimum": "Devam et — en az {{min}} kelime gerekiyor.",
+          "aboveMaximum": "Sınırı aştın — biraz kısaltmayı dene.",
+          "valid": "Aralık içinde."
         },
-        "reset": "368|Sıfırla"
+        "reset": "Sıfırla"
       },
       "error": {
-        "emptyCustomTopic": "369|Önce bir konu yaz.",
-        "generationFailed": "370|Konu oluşturulamadı. Lütfen tekrar dene."
+        "emptyCustomTopic": "Önce bir konu yaz.",
+        "generationFailed": "Konu oluşturulamadı. Lütfen tekrar dene."
       },
-      "generating": "371|Oluşturuluyor...",
+      "generating": "Oluşturuluyor...",
       "hint": {
-        "button": "372|İpucu al",
-        "remaining": "373|{{remaining}}/{{limit}} kaldı",
-        "noneLeft": "374|İpucu kalmadı",
-        "notAvailable": "375|Bu seviyede ipucu yok",
-        "generating": "376|İpucu oluşturuluyor...",
-        "error": "377|İpucu alınamadı. Lütfen tekrar dene.",
+        "button": "İpucu al",
+        "remaining": "{{remaining}}/{{limit}} kaldı",
+        "noneLeft": "İpucu kalmadı",
+        "notAvailable": "Bu seviyede ipucu yok",
+        "generating": "İpucu oluşturuluyor...",
+        "error": "İpucu alınamadı. Lütfen tekrar dene.",
         "category": {
-          "content": "378|İçerik",
-          "grammar": "379|Dil bilgisi",
-          "vocabulary": "380|Kelime bilgisi",
-          "structure": "381|Yapı"
+          "content": "İçerik",
+          "grammar": "Dil bilgisi",
+          "vocabulary": "Kelime bilgisi",
+          "structure": "Yapı"
         }
       },
       "check": {
-        "button": "382|Kompozisyonumu kontrol et",
-        "checking": "383|Kontrol ediliyor...",
-        "disabled": "384|Önce kelime aralığına gir",
-        "error": "385|Kompozisyonunu kontrol edemedik. Lütfen tekrar dene.",
-        "languageUnsupported": "386|{{language}} için dil bilgisi kontrolü henüz yok."
+        "button": "Kompozisyonumu kontrol et",
+        "checking": "Kontrol ediliyor...",
+        "disabled": "Önce kelime aralığına gir",
+        "error": "Kompozisyonunu kontrol edemedik. Lütfen tekrar dene.",
+        "languageUnsupported": "{{language}} için dil bilgisi kontrolü henüz yok."
       },
       "score": {
-        "title": "387|Kompozisyon puanı",
+        "title": "Kompozisyon puanı",
         "quality": {
-          "excellent": "388|Mükemmel",
-          "veryGood": "389|Çok iyi",
-          "good": "390|İyi",
-          "needsWork": "391|Geliştirilmeli"
+          "excellent": "Mükemmel",
+          "veryGood": "Çok iyi",
+          "good": "İyi",
+          "needsWork": "Geliştirilmeli"
         },
         "category": {
-          "grammar": "392|Dil bilgisi",
-          "vocabulary": "393|Kelime bilgisi",
-          "length": "394|Uzunluk",
-          "complexity": "395|Karmaşıklık",
-          "relevance": "396|Konuya uygunluk",
-          "independence": "397|Bağımsızlık"
+          "grammar": "Dil bilgisi",
+          "vocabulary": "Kelime bilgisi",
+          "length": "Uzunluk",
+          "complexity": "Karmaşıklık",
+          "relevance": "Konuya uygunluk",
+          "independence": "Bağımsızlık"
         },
         "stat": {
-          "words": "398|Kelimeler",
-          "grammar": "399|Dil bilgisi",
-          "vocabStyle": "400|Kelime/üslup",
-          "hints": "401|İpuçları",
-          "translations": "402|Çeviriler",
-          "synonyms": "403|Eş anlamlılar"
+          "words": "Kelimeler",
+          "grammar": "Dil bilgisi",
+          "vocabStyle": "Kelime/üslup",
+          "hints": "İpuçları",
+          "translations": "Çeviriler",
+          "synonyms": "Eş anlamlılar"
         }
       },
       "grammar": {
-        "sectionTitle": "404|Dil bilgisi sorunları",
-        "count_one": "405|{{count}} sorun",
-        "count_other": "406|{{count}} sorun",
-        "empty": "407|Dil bilgisi sorunu bulunamadı — harika iş!",
-        "original": "408|Özgün:",
-        "suggestion": "409|Öneri:",
-        "reason": "410|Neden:",
+        "sectionTitle": "Dil bilgisi sorunları",
+        "count_one": "{{count}} sorun",
+        "count_other": "{{count}} sorun",
+        "empty": "Dil bilgisi sorunu bulunamadı — harika iş!",
+        "original": "Özgün:",
+        "suggestion": "Öneri:",
+        "reason": "Neden:",
         "category": {
-          "grammar": "411|Dil bilgisi",
-          "vocabulary": "412|Kelime bilgisi",
-          "style": "413|Üslup"
+          "grammar": "Dil bilgisi",
+          "vocabulary": "Kelime bilgisi",
+          "style": "Üslup"
         },
         "save": {
-          "idle": "414|Notlara kaydet",
-          "saving": "415|Kaydediliyor…",
-          "saved": "416|Kaydedildi",
-          "duplicate": "417|Zaten kaydedildi",
-          "failed": "418|Kaydetmeyi tekrar dene"
+          "idle": "Notlara kaydet",
+          "saving": "Kaydediliyor…",
+          "saved": "Kaydedildi",
+          "duplicate": "Zaten kaydedildi",
+          "failed": "Kaydetmeyi tekrar dene"
         }
       },
       "helper": {
-        "translate": "419|Çevir",
-        "synonym": "420|Eş anlamlı",
-        "remaining": "421|{{remaining}} kaldı",
-        "notAvailable": "422|Bu seviyede yok"
+        "translate": "Çevir",
+        "synonym": "Eş anlamlı",
+        "remaining": "{{remaining}} kaldı",
+        "notAvailable": "Bu seviyede yok"
       },
       "translate": {
-        "title": "423|Çevir",
-        "placeholder": "424|Bir kelime veya kısa ifade gir",
-        "submit": "425|Çevir",
-        "submitting": "426|Çevriliyor..."
+        "title": "Çevir",
+        "placeholder": "Bir kelime veya kısa ifade gir",
+        "submit": "Çevir",
+        "submitting": "Çevriliyor..."
       },
       "synonym": {
-        "title": "427|Eş anlamlılar",
-        "placeholder": "428|Bir kelime gir",
-        "submit": "429|Eş anlamlıları bul",
-        "submitting": "430|Aranıyor..."
+        "title": "Eş anlamlılar",
+        "placeholder": "Bir kelime gir",
+        "submit": "Eş anlamlıları bul",
+        "submitting": "Aranıyor..."
       },
       "assist": {
-        "from": "431|Şuradan",
-        "to": "432|Şuraya",
-        "close": "433|Kapat",
-        "noResult": "434|Sonuç bulunamadı.",
-        "sameLanguage": "435|Başka bir kaynak dil seç.",
-        "error": "436|Hizmet geçici olarak kullanılamıyor."
+        "from": "Şuradan",
+        "to": "Şuraya",
+        "close": "Kapat",
+        "noResult": "Sonuç bulunamadı.",
+        "sameLanguage": "Başka bir kaynak dil seç.",
+        "error": "Hizmet geçici olarak kullanılamıyor."
       },
-      "saveMistakeConfirmTitle": "437|Bu hata Notlara kaydedilsin mi?",
-      "saveMistakeConfirmBody": "438|„{{correction}}” düzeltmesiyle hata notu olarak kaydedilecek.",
-      "autoSaveConfirmTitle": "439|Bu hatalar notlarına kaydedilsin mi?",
-      "autoSaveConfirmBody_one": "440|Bu kontrol {{count}} hata buldu. Kaydedersen tekrar için geri gelen bir nota dönüşür.",
-      "autoSaveConfirmBody_other": "441|Bu kontrol {{count}} hata buldu. Kaydedersen tekrar için geri gelen notlara dönüşür."
+      "saveMistakeConfirmTitle": "Bu hata Notlara kaydedilsin mi?",
+      "saveMistakeConfirmBody": "„{{correction}}” düzeltmesiyle hata notu olarak kaydedilecek.",
+      "autoSaveConfirmTitle": "Bu hatalar notlarına kaydedilsin mi?",
+      "autoSaveConfirmBody_one": "Bu kontrol {{count}} hata buldu. Kaydedersen tekrar için geri gelen bir nota dönüşür.",
+      "autoSaveConfirmBody_other": "Bu kontrol {{count}} hata buldu. Kaydedersen tekrar için geri gelen notlara dönüşür."
     },
     "grammar": {
-      "subtitle": "442|Dil bilgisini konulara göre, net ve düzenli notlarla topla.",
-      "newTopic": "443|Yeni konu",
-      "topicsEmptyTitle": "444|Henüz konu yok",
-      "topicsEmptyBody": "445|Dil bilgisi notları toplamaya başlamak için ilk konunu oluştur.",
-      "notesCount_one": "446|{{count}} not",
-      "notesCount_other": "447|{{count}} not",
-      "deleteTopicConfirm": "448|„{{title}}” ve tüm notları silinsin mi? Bu işlem geri alınamaz.",
-      "notesEmptyTitle": "449|Henüz not yok",
-      "notesEmptyBody": "450|Bu konuya ilk notunu ekle.",
-      "newNote": "451|Yeni not",
-      "deleteNoteConfirm": "452|Bu not silinsin mi? Bu işlem geri alınamaz.",
-      "loading": "453|Yükleniyor…",
-      "loadError": "454|Dil bilgisi notlarını yükleyemedik.",
-      "notFoundTitle": "455|Bulunamadı",
-      "notFoundBody": "456|Bu öğe silinmiş olabilir.",
-      "back": "457|Geri",
-      "updated": "458|{{date}} tarihinde güncellendi",
+      "subtitle": "Dil bilgisini konulara göre, net ve düzenli notlarla topla.",
+      "newTopic": "Yeni konu",
+      "topicsEmptyTitle": "Henüz konu yok",
+      "topicsEmptyBody": "Dil bilgisi notları toplamaya başlamak için ilk konunu oluştur.",
+      "notesCount_one": "{{count}} not",
+      "notesCount_other": "{{count}} not",
+      "deleteTopicConfirm": "„{{title}}” ve tüm notları silinsin mi? Bu işlem geri alınamaz.",
+      "notesEmptyTitle": "Henüz not yok",
+      "notesEmptyBody": "Bu konuya ilk notunu ekle.",
+      "newNote": "Yeni not",
+      "deleteNoteConfirm": "Bu not silinsin mi? Bu işlem geri alınamaz.",
+      "loading": "Yükleniyor…",
+      "loadError": "Dil bilgisi notlarını yükleyemedik.",
+      "notFoundTitle": "Bulunamadı",
+      "notFoundBody": "Bu öğe silinmiş olabilir.",
+      "back": "Geri",
+      "updated": "{{date}} tarihinde güncellendi",
       "form": {
-        "newTitle": "459|Yeni konu",
-        "editTitle": "460|Konuyu düzenle",
-        "name": "461|Başlık",
-        "namePlaceholder": "462|örn. İspanyolca fiiller",
-        "description": "463|Açıklama",
-        "descriptionPlaceholder": "464|İsteğe bağlı",
-        "color": "465|Renk",
-        "icon": "466|Simge",
-        "save": "467|Kaydet",
-        "cancel": "468|Vazgeç",
-        "language": "469|Dil",
-        "languageNone": "470|Ayarlanmadı"
+        "newTitle": "Yeni konu",
+        "editTitle": "Konuyu düzenle",
+        "name": "Başlık",
+        "namePlaceholder": "örn. İspanyolca fiiller",
+        "description": "Açıklama",
+        "descriptionPlaceholder": "İsteğe bağlı",
+        "color": "Renk",
+        "icon": "Simge",
+        "save": "Kaydet",
+        "cancel": "Vazgeç",
+        "language": "Dil",
+        "languageNone": "Ayarlanmadı"
       },
       "noteType": {
-        "standard": "471|Standart",
-        "mistake": "472|Hata",
-        "rule": "473|Kural",
-        "comparison": "474|Karşılaştırma",
-        "cheatSheet": "475|Özet kâğıdı",
-        "exercise": "476|Alıştırma"
+        "standard": "Standart",
+        "mistake": "Hata",
+        "rule": "Kural",
+        "comparison": "Karşılaştırma",
+        "cheatSheet": "Özet kâğıdı",
+        "exercise": "Alıştırma"
       },
       "block": {
-        "heading": "477|Başlık",
-        "paragraph": "478|Metin",
-        "bulletList": "479|Madde işaretli liste",
-        "rule": "480|Kural",
-        "example": "481|Örnek",
-        "warning": "482|Uyarı",
-        "quote": "483|Alıntı",
-        "divider": "484|Ayırıcı",
-        "addBlock": "485|Blok ekle",
-        "addItem": "486|Öğe ekle",
-        "moveUp": "487|Yukarı taşı",
-        "moveDown": "488|Aşağı taşı",
-        "remove": "489|Kaldır",
-        "secondaryPlaceholder": "490|Ayrıntı / çeviri (isteğe bağlı)",
-        "subheading": "491|Alt başlık",
-        "numberedList": "492|Numaralı liste",
-        "checklist": "493|Kontrol listesi",
-        "comparison": "494|Karşılaştırma",
-        "exercise": "495|Alıştırma",
-        "quiz": "496|Test",
-        "image": "497|Görsel",
-        "comparisonSecondary": "498|İkinci taraf",
-        "imageAdd": "499|Görsel ekle / değiştir",
-        "imageUploading": "500|Yükleniyor…",
-        "imageFailed": "501|Görsel yüklenemedi.",
-        "imageSaveFirst": "502|Görsel yüklemek için giriş yap."
+        "heading": "Başlık",
+        "paragraph": "Metin",
+        "bulletList": "Madde işaretli liste",
+        "rule": "Kural",
+        "example": "Örnek",
+        "warning": "Uyarı",
+        "quote": "Alıntı",
+        "divider": "Ayırıcı",
+        "addBlock": "Blok ekle",
+        "addItem": "Öğe ekle",
+        "moveUp": "Yukarı taşı",
+        "moveDown": "Aşağı taşı",
+        "remove": "Kaldır",
+        "secondaryPlaceholder": "Ayrıntı / çeviri (isteğe bağlı)",
+        "subheading": "Alt başlık",
+        "numberedList": "Numaralı liste",
+        "checklist": "Kontrol listesi",
+        "comparison": "Karşılaştırma",
+        "exercise": "Alıştırma",
+        "quiz": "Test",
+        "image": "Görsel",
+        "comparisonSecondary": "İkinci taraf",
+        "imageAdd": "Görsel ekle / değiştir",
+        "imageUploading": "Yükleniyor…",
+        "imageFailed": "Görsel yüklenemedi.",
+        "imageSaveFirst": "Görsel yüklemek için giriş yap."
       },
       "blockPlaceholder": {
-        "heading": "503|Başlık",
-        "paragraph": "504|Açıklamanı yaz…",
-        "bulletList": "505|Liste öğesi",
-        "rule": "506|Dil bilgisi kuralını açıkla…",
-        "example": "507|Bir örnek ekle…",
-        "warning": "508|Sık yapılan hata veya uyarı…",
-        "quote": "509|Aklında kalması gereken cümle…",
-        "subheading": "510|Alt başlık",
-        "numberedList": "511|Liste öğesi",
-        "checklist": "512|Kontrol listesi öğesi",
-        "comparison": "513|Birinci taraf",
-        "exercise": "514|Alıştırma yönergesi…",
-        "quiz": "515|Soru",
-        "image": "516|Görsel açıklaması"
+        "heading": "Başlık",
+        "paragraph": "Açıklamanı yaz…",
+        "bulletList": "Liste öğesi",
+        "rule": "Dil bilgisi kuralını açıkla…",
+        "example": "Bir örnek ekle…",
+        "warning": "Sık yapılan hata veya uyarı…",
+        "quote": "Aklında kalması gereken cümle…",
+        "subheading": "Alt başlık",
+        "numberedList": "Liste öğesi",
+        "checklist": "Kontrol listesi öğesi",
+        "comparison": "Birinci taraf",
+        "exercise": "Alıştırma yönergesi…",
+        "quiz": "Soru",
+        "image": "Görsel açıklaması"
       },
       "editor": {
-        "titlePlaceholder": "517|Not başlığı",
-        "save": "518|Notu kaydet",
-        "saving": "519|Kaydediliyor…",
-        "delete": "520|Notu sil",
-        "saveError": "521|Kaydedilemedi. Lütfen tekrar dene.",
-        "subtitle": "522|Notu düzenle",
-        "tags": "523|Etiketler",
-        "tagsPlaceholder": "524|Etiket ekle…",
-        "removeTag": "525|{{tag}} etiketini kaldır",
-        "addToReview": "526|Tekrara ekle",
-        "addedToReview": "527|Tekrar sırana eklendi.",
-        "inReview": "528|Tekrarda · {{when}}",
-        "inReviewDue": "529|Tekrar zamanı",
-        "removedFromReview": "530|Tekrar sıradan çıkarıldı.",
-        "unsavedTitle": "531|Kaydetmeden çıkılsın mı?",
-        "unsavedBody": "532|Bu notta kaydedilmemiş değişiklikler var.",
-        "discard": "533|Değişiklikleri at",
-        "saveAndLeave": "534|Kaydet ve çık"
+        "titlePlaceholder": "Not başlığı",
+        "save": "Notu kaydet",
+        "saving": "Kaydediliyor…",
+        "delete": "Notu sil",
+        "saveError": "Kaydedilemedi. Lütfen tekrar dene.",
+        "subtitle": "Notu düzenle",
+        "tags": "Etiketler",
+        "tagsPlaceholder": "Etiket ekle…",
+        "removeTag": "{{tag}} etiketini kaldır",
+        "addToReview": "Tekrara ekle",
+        "addedToReview": "Tekrar sırana eklendi.",
+        "inReview": "Tekrarda · {{when}}",
+        "inReviewDue": "Tekrar zamanı",
+        "removedFromReview": "Tekrar sıradan çıkarıldı.",
+        "unsavedTitle": "Kaydetmeden çıkılsın mı?",
+        "unsavedBody": "Bu notta kaydedilmemiş değişiklikler var.",
+        "discard": "Değişiklikleri at",
+        "saveAndLeave": "Kaydet ve çık"
       },
       "quiz": {
-        "title": "535|Testler",
-        "new": "536|Yeni test",
-        "start": "537|Testi başlat",
-        "delete": "538|Testi sil",
-        "deleteConfirm": "539|„{{title}}” silinsin mi? Bu işlem geri alınamaz.",
-        "emptyTitle": "540|Henüz test yok",
-        "emptyBody": "541|Kendini sınamak için bu nottan bir test oluştur.",
-        "loadError": "542|Testler yüklenemedi.",
-        "questionsCount_one": "543|{{count}} soru",
-        "questionsCount_other": "544|{{count}} soru",
+        "title": "Testler",
+        "new": "Yeni test",
+        "start": "Testi başlat",
+        "delete": "Testi sil",
+        "deleteConfirm": "„{{title}}” silinsin mi? Bu işlem geri alınamaz.",
+        "emptyTitle": "Henüz test yok",
+        "emptyBody": "Kendini sınamak için bu nottan bir test oluştur.",
+        "loadError": "Testler yüklenemedi.",
+        "questionsCount_one": "{{count}} soru",
+        "questionsCount_other": "{{count}} soru",
         "type": {
-          "multipleChoice": "545|Çoktan seçmeli",
-          "trueFalse": "546|Doğru / Yanlış",
-          "fillGap": "547|Boşluk doldurma",
-          "shortAnswer": "548|Kısa cevap"
+          "multipleChoice": "Çoktan seçmeli",
+          "trueFalse": "Doğru / Yanlış",
+          "fillGap": "Boşluk doldurma",
+          "shortAnswer": "Kısa cevap"
         },
         "sheet": {
-          "title": "549|Test oluştur",
-          "titlePlaceholder": "550|Test başlığı",
-          "mode": "551|Oluşturma modu",
-          "modeSmart": "552|Akıllı yerel",
-          "modeSmartDesc": "553|Notun içeriğinden, cihazda soru üretir.",
-          "modeAI": "554|Yapay zekâ ile oluşturuldu",
-          "modeAIDesc": "555|Yapay zekâ ile daha zengin, bağlamsal sorular üretir.",
-          "count": "556|Sorular",
-          "types": "557|Soru türleri",
-          "focus": "558|Odak (isteğe bağlı)",
-          "focusPlaceholder": "559|örn. düzensiz biçimlere odaklan",
-          "preview": "560|Soruları önizle",
-          "regenerate": "561|Önizlemeyi yeniden oluştur",
-          "previewTitle": "562|Önizleme",
-          "saveQuiz": "563|Testi kaydet",
-          "generateQuiz": "564|Testi oluştur",
-          "generating": "565|Oluşturuluyor…",
-          "saving": "566|Kaydediliyor…",
-          "useSmartInstead": "567|Bunun yerine Akıllı yereli kullan",
-          "modeManual": "568|Elle",
-          "modeManualDesc": "569|Kendi sorularını yaz.",
-          "createQuiz": "570|Test oluştur"
+          "title": "Test oluştur",
+          "titlePlaceholder": "Test başlığı",
+          "mode": "Oluşturma modu",
+          "modeSmart": "Akıllı yerel",
+          "modeSmartDesc": "Notun içeriğinden, cihazda soru üretir.",
+          "modeAI": "Yapay zekâ ile oluşturuldu",
+          "modeAIDesc": "Yapay zekâ ile daha zengin, bağlamsal sorular üretir.",
+          "count": "Sorular",
+          "types": "Soru türleri",
+          "focus": "Odak (isteğe bağlı)",
+          "focusPlaceholder": "örn. düzensiz biçimlere odaklan",
+          "preview": "Soruları önizle",
+          "regenerate": "Önizlemeyi yeniden oluştur",
+          "previewTitle": "Önizleme",
+          "saveQuiz": "Testi kaydet",
+          "generateQuiz": "Testi oluştur",
+          "generating": "Oluşturuluyor…",
+          "saving": "Kaydediliyor…",
+          "useSmartInstead": "Bunun yerine Akıllı yereli kullan",
+          "modeManual": "Elle",
+          "modeManualDesc": "Kendi sorularını yaz.",
+          "createQuiz": "Test oluştur"
         },
         "play": {
-          "questionOf": "571|Soru {{current}} / {{total}}",
-          "submit": "572|Cevabı gönder",
-          "next": "573|İleri",
-          "finish": "574|Bitir",
-          "correct": "575|Doğru!",
-          "incorrect": "576|Yanlış",
-          "correctAnswer": "577|Doğru cevap: {{answer}}",
-          "typeMissing": "578|Eksik kelimeyi yaz",
-          "typeAnswer": "579|Cevabını yaz",
-          "trueLabel": "580|Doğru",
-          "falseLabel": "581|Yanlış"
+          "questionOf": "Soru {{current}} / {{total}}",
+          "submit": "Cevabı gönder",
+          "next": "İleri",
+          "finish": "Bitir",
+          "correct": "Doğru!",
+          "incorrect": "Yanlış",
+          "correctAnswer": "Doğru cevap: {{answer}}",
+          "typeMissing": "Eksik kelimeyi yaz",
+          "typeAnswer": "Cevabını yaz",
+          "trueLabel": "Doğru",
+          "falseLabel": "Yanlış"
         },
         "result": {
-          "scoreOf": "582|{{total}} sorudan {{correct}} doğru",
+          "scoreOf": "{{total}} sorudan {{correct}} doğru",
           "grade": {
-            "excellent": "583|Mükemmel!",
-            "good": "584|Harika iş!",
-            "keepPracticing": "585|Pratik yapmaya devam et",
-            "reviewNote": "586|Notu gözden geçir"
+            "excellent": "Mükemmel!",
+            "good": "Harika iş!",
+            "keepPracticing": "Pratik yapmaya devam et",
+            "reviewNote": "Notu gözden geçir"
           },
-          "incorrectSection": "587|Yanlış",
-          "correctSection": "588|Doğru",
-          "yourAnswer": "589|Senin cevabın: {{answer}}",
-          "tryAgain": "590|Tekrar dene",
-          "reviewNote": "591|Notu aç",
-          "done": "592|Tamam"
+          "incorrectSection": "Yanlış",
+          "correctSection": "Doğru",
+          "yourAnswer": "Senin cevabın: {{answer}}",
+          "tryAgain": "Tekrar dene",
+          "reviewNote": "Notu aç",
+          "done": "Tamam"
         },
         "errors": {
-          "notEnoughContent": "593|Önce nota daha fazla içerik ekle — test için en az iki içerik bloğu gerekir (kural, örnek, uyarı, paragraf veya alıntı).",
-          "noMatchingQuestionTypes": "594|Seçilen soru türleri için yeterli uygun içerik yok. Daha fazla tür aç veya içerik ekle.",
-          "aiFailed": "595|Test yapay zekâ ile oluşturulamadı. Tekrar dene veya Akıllı yereli kullan."
+          "notEnoughContent": "Önce nota daha fazla içerik ekle — test için en az iki içerik bloğu gerekir (kural, örnek, uyarı, paragraf veya alıntı).",
+          "noMatchingQuestionTypes": "Seçilen soru türleri için yeterli uygun içerik yok. Daha fazla tür aç veya içerik ekle.",
+          "aiFailed": "Test yapay zekâ ile oluşturulamadı. Tekrar dene veya Akıllı yereli kullan."
         },
-        "badge": "596|Test",
+        "badge": "Test",
         "manual": {
-          "questions_one": "597|{{count}} soru",
-          "questions_other": "598|{{count}} soru",
-          "add": "599|Soru ekle",
-          "questionPlaceholder": "600|Soru metni",
-          "questionGapPlaceholder": "601|Boşluklu soru, örn. Ben okula _____",
-          "optionPlaceholder": "602|Seçenek {{index}}",
-          "answerPlaceholder": "603|Doğru cevap",
-          "explanationPlaceholder": "604|Açıklama (isteğe bağlı)",
+          "questions_one": "{{count}} soru",
+          "questions_other": "{{count}} soru",
+          "add": "Soru ekle",
+          "questionPlaceholder": "Soru metni",
+          "questionGapPlaceholder": "Boşluklu soru, örn. Ben okula _____",
+          "optionPlaceholder": "Seçenek {{index}}",
+          "answerPlaceholder": "Doğru cevap",
+          "explanationPlaceholder": "Açıklama (isteğe bağlı)",
           "error": {
-            "questionRequired": "605|Soru metni zorunlu.",
-            "optionsRequired": "606|Çoktan seçmeli için en az 2 seçenek gerekir.",
-            "answerRequired": "607|Doğru cevabı gir.",
-            "answerNotAnOption": "608|Doğru cevap seçeneklerden biriyle eşleşmeli.",
-            "blankRequired": "609|Sorunun içine bir boşluk (örn. _____) ekle."
+            "questionRequired": "Soru metni zorunlu.",
+            "optionsRequired": "Çoktan seçmeli için en az 2 seçenek gerekir.",
+            "answerRequired": "Doğru cevabı gir.",
+            "answerNotAnOption": "Doğru cevap seçeneklerden biriyle eşleşmeli.",
+            "blankRequired": "Sorunun içine bir boşluk (örn. _____) ekle."
           }
         }
       },
       "quickMistake": {
-        "button": "610|Hızlı hata",
-        "title": "611|Hızlı hata",
-        "original": "612|Özgün cümle",
-        "originalPlaceholder": "613|Örnek: Ben sana katılıyorum var",
-        "corrected": "614|Düzeltme",
-        "correctedPlaceholder": "615|Örnek: Sana katılıyorum",
-        "explanation": "616|Açıklama (isteğe bağlı)",
-        "explanationPlaceholder": "617|Düzeltme neden doğru?",
+        "button": "Hızlı hata",
+        "title": "Hızlı hata",
+        "original": "Özgün cümle",
+        "originalPlaceholder": "Örnek: Ben sana katılıyorum var",
+        "corrected": "Düzeltme",
+        "correctedPlaceholder": "Örnek: Sana katılıyorum",
+        "explanation": "Açıklama (isteğe bağlı)",
+        "explanationPlaceholder": "Düzeltme neden doğru?",
         "validation": {
-          "original": "618|Önce özgün cümleyi ekle.",
-          "corrected": "619|Düzeltilmiş cümleyi de ekle."
+          "original": "Önce özgün cümleyi ekle.",
+          "corrected": "Düzeltilmiş cümleyi de ekle."
         },
-        "save": "620|Hatayı kaydet",
-        "saving": "621|Kaydediliyor…",
-        "saved": "622|Dil bilgisi notlarına kaydedildi.",
-        "duplicate": "623|Zaten kaydedilmiş — kopya atlandı.",
-        "failed": "624|Kaydedilemedi. Lütfen tekrar dene.",
-        "openTopic": "625|Sık Yapılan Hataları aç",
-        "done": "626|Tamam",
-        "tip": "627|Kaydedilen düzeltmeler otomatik olarak tekrara girer, böylece sürekli yanlış yaptıkların önce geri gelir."
+        "save": "Hatayı kaydet",
+        "saving": "Kaydediliyor…",
+        "saved": "Dil bilgisi notlarına kaydedildi.",
+        "duplicate": "Zaten kaydedilmiş — kopya atlandı.",
+        "failed": "Kaydedilemedi. Lütfen tekrar dene.",
+        "openTopic": "Sık Yapılan Hataları aç",
+        "done": "Tamam",
+        "tip": "Kaydedilen düzeltmeler otomatik olarak tekrara girer, böylece sürekli yanlış yaptıkların önce geri gelir."
       },
       "templates": {
-        "topicTitle": "628|Konu şablonları",
-        "noteTitle": "629|Not şablonları",
-        "button": "630|Şablon",
-        "startFromTemplate": "631|Şablonla başla",
-        "searchPlaceholder": "632|Şablon ara…",
-        "allLanguages": "633|Tümü",
-        "anyDifficulty": "634|Herhangi",
+        "topicTitle": "Konu şablonları",
+        "noteTitle": "Not şablonları",
+        "button": "Şablon",
+        "startFromTemplate": "Şablonla başla",
+        "searchPlaceholder": "Şablon ara…",
+        "allLanguages": "Tümü",
+        "anyDifficulty": "Herhangi",
         "language": {
-          "en": "635|İngilizce",
-          "es": "636|İspanyolca",
-          "fr": "637|Fransızca",
-          "de": "638|Almanca"
+          "en": "İngilizce",
+          "es": "İspanyolca",
+          "fr": "Fransızca",
+          "de": "Almanca"
         },
-        "minutes": "639|{{minutes}} dk",
-        "notesIncluded_one": "640|{{count}} not",
-        "notesIncluded_other": "641|{{count}} not",
-        "blocksIncluded_one": "642|{{count}} blok",
-        "blocksIncluded_other": "643|{{count}} blok",
-        "empty": "644|Filtrelerine uyan şablon yok.",
-        "use": "645|Şablonu kullan",
-        "creating": "646|Oluşturuluyor…",
-        "replaceConfirm": "647|Notun mevcut içeriği bu şablonla değiştirilsin mi? Şablonu aşağıya eklemek için Vazgeç'e bas.",
-        "applyTitle": "648|„{{title}}” uygulansın mı?",
-        "applyBody": "649|Bu notta zaten içerik var. Şablonu nasıl uygulayacağını seç.",
-        "applyReplace": "650|İçeriği değiştir",
-        "applyAppend": "651|Blokları sona ekle"
+        "minutes": "{{minutes}} dk",
+        "notesIncluded_one": "{{count}} not",
+        "notesIncluded_other": "{{count}} not",
+        "blocksIncluded_one": "{{count}} blok",
+        "blocksIncluded_other": "{{count}} blok",
+        "empty": "Filtrelerine uyan şablon yok.",
+        "use": "Şablonu kullan",
+        "creating": "Oluşturuluyor…",
+        "replaceConfirm": "Notun mevcut içeriği bu şablonla değiştirilsin mi? Şablonu aşağıya eklemek için Vazgeç'e bas.",
+        "applyTitle": "„{{title}}” uygulansın mı?",
+        "applyBody": "Bu notta zaten içerik var. Şablonu nasıl uygulayacağını seç.",
+        "applyReplace": "İçeriği değiştir",
+        "applyAppend": "Blokları sona ekle"
       },
       "review": {
-        "title": "652|Tekrar",
-        "subtitle": "653|Öğrendiklerini aralıklı tekrarla pekiştir.",
-        "cardTitle": "654|Bugün tekrar et",
-        "cardSubtitle_one": "655|{{count}} öğe hazır · ~{{minutes}} dk",
-        "cardSubtitle_other": "656|{{count}} öğe hazır · ~{{minutes}} dk",
-        "caughtUpTitle": "657|Her şey güncel",
-        "caughtUp": "658|Her şeyi tamamladın. Tekrar önerileri almak için not aç veya düzenle.",
-        "dueBadge": "659|Zamanı geldi",
-        "refreshBody": "660|Şu anda bekleyen bir şey yok — yine de son okuduklarını tazeleyebilirsin.",
-        "refreshStart": "661|Son notları tazele",
-        "start": "662|Tekrarı başlat",
-        "skip": "663|Atla",
-        "itemOf": "664|Öğe {{current}} / {{total}}",
-        "untitled": "665|Dil bilgisi notu",
-        "stats": "666|{{count}} kez tekrar edildi · seri {{streak}}",
-        "continueToQuestion": "667|Soruya geç",
-        "showAnswer": "668|Cevabı göster",
-        "compareTitle": "669|Cevabını karşılaştır",
-        "referenceAnswer": "670|Referans: {{answer}}",
-        "openNote": "671|Notun tamamını aç",
+        "title": "Tekrar",
+        "subtitle": "Öğrendiklerini aralıklı tekrarla pekiştir.",
+        "cardTitle": "Bugün tekrar et",
+        "cardSubtitle_one": "{{count}} öğe hazır · ~{{minutes}} dk",
+        "cardSubtitle_other": "{{count}} öğe hazır · ~{{minutes}} dk",
+        "caughtUpTitle": "Her şey güncel",
+        "caughtUp": "Her şeyi tamamladın. Tekrar önerileri almak için not aç veya düzenle.",
+        "dueBadge": "Zamanı geldi",
+        "refreshBody": "Şu anda bekleyen bir şey yok — yine de son okuduklarını tazeleyebilirsin.",
+        "refreshStart": "Son notları tazele",
+        "start": "Tekrarı başlat",
+        "skip": "Atla",
+        "itemOf": "Öğe {{current}} / {{total}}",
+        "untitled": "Dil bilgisi notu",
+        "stats": "{{count}} kez tekrar edildi · seri {{streak}}",
+        "continueToQuestion": "Soruya geç",
+        "showAnswer": "Cevabı göster",
+        "compareTitle": "Cevabını karşılaştır",
+        "referenceAnswer": "Referans: {{answer}}",
+        "openNote": "Notun tamamını aç",
         "pool": {
-          "manual_one": "672|{{count}} öğe tekrar bekliyor",
-          "manual_other": "673|{{count}} öğe tekrar bekliyor",
-          "recentlyOpened_one": "674|{{count}} yakında açılan not",
-          "recentlyOpened_other": "675|{{count}} yakında açılan not",
-          "recentlyEdited_one": "676|{{count}} yakında düzenlenen not",
-          "recentlyEdited_other": "677|{{count}} yakında düzenlenen not"
+          "manual_one": "{{count}} öğe tekrar bekliyor",
+          "manual_other": "{{count}} öğe tekrar bekliyor",
+          "recentlyOpened_one": "{{count}} yakında açılan not",
+          "recentlyOpened_other": "{{count}} yakında açılan not",
+          "recentlyEdited_one": "{{count}} yakında düzenlenen not",
+          "recentlyEdited_other": "{{count}} yakında düzenlenen not"
         },
         "sourceType": {
-          "note": "678|Not",
-          "mistake": "679|Hata",
-          "quiz": "680|Test"
+          "note": "Not",
+          "mistake": "Hata",
+          "quiz": "Test"
         },
         "phase": {
-          "source": "681|Çalışma",
-          "question": "682|Cevap",
-          "result": "683|Değerlendirme"
+          "source": "Çalışma",
+          "question": "Cevap",
+          "result": "Değerlendirme"
         },
         "rating": {
-          "forgot": "684|Unuttum",
-          "hard": "685|Zor",
-          "good": "686|İyi",
-          "easy": "687|Kolay"
+          "forgot": "Unuttum",
+          "hard": "Zor",
+          "good": "İyi",
+          "easy": "Kolay"
         },
         "interval": {
-          "plus4h": "688|+4 saat",
-          "plus1d": "689|+1 gün",
-          "plus3d": "690|+3 gün",
-          "plus7d": "691|+7 gün"
+          "plus4h": "+4 saat",
+          "plus1d": "+1 gün",
+          "plus3d": "+3 gün",
+          "plus7d": "+7 gün"
         },
         "summary": {
-          "title": "692|Oturum tamamlandı",
-          "emptyTitle": "693|Hiçbir şey tekrar edilmedi",
-          "reviewed": "694|Tekrar edildi",
-          "correct": "695|Doğru",
-          "incorrect": "696|Yanlış",
-          "hintForgot": "697|Bazı öğeler 4 saat sonra geri gelecek.",
-          "hintHard": "698|Zor öğeler yarın geri gelecek.",
-          "hintGood": "699|İyi öğeler 3 gün sonra geri gelecek.",
-          "hintEasy": "700|Tüm öğeler 7 gün sonra geri gelecek.",
-          "done": "701|Dil bilgisi notlarına dön"
+          "title": "Oturum tamamlandı",
+          "emptyTitle": "Hiçbir şey tekrar edilmedi",
+          "reviewed": "Tekrar edildi",
+          "correct": "Doğru",
+          "incorrect": "Yanlış",
+          "hintForgot": "Bazı öğeler 4 saat sonra geri gelecek.",
+          "hintHard": "Zor öğeler yarın geri gelecek.",
+          "hintGood": "İyi öğeler 3 gün sonra geri gelecek.",
+          "hintEasy": "Tüm öğeler 7 gün sonra geri gelecek.",
+          "done": "Dil bilgisi notlarına dön"
         },
-        "loadError": "702|Tekrar sıranı yükleyemedik.",
-        "mistakeCount_one": "703|{{count}} hata",
-        "mistakeCount_other": "704|{{count}} hata"
+        "loadError": "Tekrar sıranı yükleyemedik.",
+        "mistakeCount_one": "{{count}} hata",
+        "mistakeCount_other": "{{count}} hata"
       },
-      "mistakesBadge": "705|Hatalar",
-      "topicsTitle": "706|Konular",
-      "deleteTopic": "707|Konuyu sil",
-      "deleteTopicTitle": "708|Bu konu silinsin mi?",
-      "deleteNoteTitle": "709|Bu not silinsin mi?",
-      "pin": "710|Notu sabitle",
-      "unpin": "711|Sabitlemeyi kaldır",
-      "favorite": "712|Favorilere ekle",
-      "unfavorite": "713|Favorilerden çıkar",
+      "mistakesBadge": "Hatalar",
+      "topicsTitle": "Konular",
+      "deleteTopic": "Konuyu sil",
+      "deleteTopicTitle": "Bu konu silinsin mi?",
+      "deleteNoteTitle": "Bu not silinsin mi?",
+      "pin": "Notu sabitle",
+      "unpin": "Sabitlemeyi kaldır",
+      "favorite": "Favorilere ekle",
+      "unfavorite": "Favorilerden çıkar",
       "search": {
-        "topics": "714|Konu ara…",
-        "notes": "715|Not ara…",
-        "clear": "716|Aramayı temizle",
-        "noMatchTitle": "717|Eşleşme yok",
-        "noMatchBody": "718|Başka bir anahtar kelime dene.",
-        "notesSection_one": "719|Notlar ({{count}})",
-        "notesSection_other": "720|Notlar ({{count}})",
-        "noNoteMatches": "721|Bu aramaya uyan not yok."
+        "topics": "Konu ara…",
+        "notes": "Not ara…",
+        "clear": "Aramayı temizle",
+        "noMatchTitle": "Eşleşme yok",
+        "noMatchBody": "Başka bir anahtar kelime dene.",
+        "notesSection_one": "Notlar ({{count}})",
+        "notesSection_other": "Notlar ({{count}})",
+        "noNoteMatches": "Bu aramaya uyan not yok."
       },
       "filter": {
-        "label": "722|Notları filtrele",
-        "all": "723|Tümü",
-        "pinned": "724|Sabitlenen",
-        "favorites": "725|Favoriler",
-        "mistakes": "726|Hatalar",
-        "quizzes": "727|Testler",
-        "review": "728|Zamanı gelen",
+        "label": "Notları filtrele",
+        "all": "Tümü",
+        "pinned": "Sabitlenen",
+        "favorites": "Favoriler",
+        "mistakes": "Hatalar",
+        "quizzes": "Testler",
+        "review": "Zamanı gelen",
         "empty": {
           "all": {
-            "title": "729|Henüz dil bilgisi notu yok",
-            "body": "730|Bu konu için ilk dil bilgisi notunu oluştur."
+            "title": "Henüz dil bilgisi notu yok",
+            "body": "Bu konu için ilk dil bilgisi notunu oluştur."
           },
           "pinned": {
-            "title": "731|Henüz sabitlenmiş not yok",
-            "body": "732|Hızlı bulmak için listeden not sabitle."
+            "title": "Henüz sabitlenmiş not yok",
+            "body": "Hızlı bulmak için listeden not sabitle."
           },
           "favorites": {
-            "title": "733|Henüz favori not yok",
-            "body": "734|Elinin altında olsun diye notları favorilere ekle."
+            "title": "Henüz favori not yok",
+            "body": "Elinin altında olsun diye notları favorilere ekle."
           },
           "mistakes": {
-            "title": "735|Henüz kaydedilmiş hata yok",
-            "body": "736|Dil bilgisi hatalarını kaydet ve burada tekrar et."
+            "title": "Henüz kaydedilmiş hata yok",
+            "body": "Dil bilgisi hatalarını kaydet ve burada tekrar et."
           },
           "quizzes": {
-            "title": "737|Henüz testli not yok",
-            "body": "738|Burada görmek için bir nota test ekle."
+            "title": "Henüz testli not yok",
+            "body": "Burada görmek için bir nota test ekle."
           },
           "review": {
-            "title": "739|Şu anda bekleyen bir şey yok",
-            "body": "740|Notlar, bir sonraki tekrar zamanı geldiğinde buraya döner."
+            "title": "Şu anda bekleyen bir şey yok",
+            "body": "Notlar, bir sonraki tekrar zamanı geldiğinde buraya döner."
           }
         }
       },
       "reorder": {
-        "start": "741|Sırala",
-        "done": "742|Tamam",
-        "up": "743|Yukarı taşı",
-        "down": "744|Aşağı taşı"
+        "start": "Sırala",
+        "done": "Tamam",
+        "up": "Yukarı taşı",
+        "down": "Aşağı taşı"
       },
       "highlights": {
-        "mistakesTitle": "745|Düzeltilecek hatalar",
-        "mistakesSubtitle": "746|Son düzeltmeler tekrar bekliyor.",
-        "quizzesTitle": "747|Zayıf test konuları",
-        "quizzesSubtitle": "748|Yakında tekrar çözmeye değer testler."
+        "mistakesTitle": "Düzeltilecek hatalar",
+        "mistakesSubtitle": "Son düzeltmeler tekrar bekliyor.",
+        "quizzesTitle": "Zayıf test konuları",
+        "quizzesSubtitle": "Yakında tekrar çözmeye değer testler."
       },
       "quickNote": {
-        "button": "749|Hızlı not",
-        "title": "750|Hızlı not",
-        "subtitle": "751|Tam düzenleyiciyi açmadan bir dil bilgisi fikrini yakala.",
-        "noteTitle": "752|Başlık",
-        "titlePlaceholder": "753|Örnek: Ser vs Estar",
-        "text": "754|Not",
-        "textPlaceholder": "755|İşe yarayan kısmı buraya yaz",
-        "noteType": "756|Not türü",
-        "topic": "757|Konu",
-        "openEditor": "758|Kaydettikten sonra düzenleyiciyi aç",
-        "openEditorHint": "759|Hızlı sürüm tam nota dönüştüğünde işe yarar.",
-        "tip": "760|Hızlı notlar, yoksa on dakika içinde unutacağın fikir içindir.",
-        "validation": "761|Önce bir başlık veya biraz metin ekle.",
-        "save": "762|Hızlı notu kaydet",
-        "saving": "763|Kaydediliyor…"
+        "button": "Hızlı not",
+        "title": "Hızlı not",
+        "subtitle": "Tam düzenleyiciyi açmadan bir dil bilgisi fikrini yakala.",
+        "noteTitle": "Başlık",
+        "titlePlaceholder": "Örnek: Ser vs Estar",
+        "text": "Not",
+        "textPlaceholder": "İşe yarayan kısmı buraya yaz",
+        "noteType": "Not türü",
+        "topic": "Konu",
+        "openEditor": "Kaydettikten sonra düzenleyiciyi aç",
+        "openEditorHint": "Hızlı sürüm tam nota dönüştüğünde işe yarar.",
+        "tip": "Hızlı notlar, yoksa on dakika içinde unutacağın fikir içindir.",
+        "validation": "Önce bir başlık veya biraz metin ekle.",
+        "save": "Hızlı notu kaydet",
+        "saving": "Kaydediliyor…"
       },
       "settings": {
-        "title": "764|Not ayarları",
-        "subtitle": "765|Hızlı yakalama, hatalar ve not listesi nasıl davranır.",
-        "reset": "766|Varsayılanlara dön",
-        "tip": "767|Hızlı hataları gerçekten yanlış yazdığın cümleler için kullan — kitaptaki kusursuz örneklerden daha faydalıdır.",
+        "title": "Not ayarları",
+        "subtitle": "Hızlı yakalama, hatalar ve not listesi nasıl davranır.",
+        "reset": "Varsayılanlara dön",
+        "tip": "Hızlı hataları gerçekten yanlış yazdığın cümleler için kullan — kitaptaki kusursuz örneklerden daha faydalıdır.",
         "quickCapture": {
-          "title": "768|Hızlı yakalama",
-          "subtitle": "769|Hızlı notlar ve hatalar anında olsun."
+          "title": "Hızlı yakalama",
+          "subtitle": "Hızlı notlar ve hatalar anında olsun."
         },
         "mistakeNotes": {
-          "title": "770|Hata notları",
-          "subtitle": "771|Hızlı hata yakaladığında ne kaydedilir."
+          "title": "Hata notları",
+          "subtitle": "Hızlı hata yakaladığında ne kaydedilir."
         },
         "essays": {
-          "title": "772|Kompozisyonlar",
-          "subtitle": "773|Kompozisyonlarındaki dil bilgisi sorunlarına ne olur."
+          "title": "Kompozisyonlar",
+          "subtitle": "Kompozisyonlarındaki dil bilgisi sorunlarına ne olur."
         },
         "review": {
-          "title": "774|Aralıklı tekrar",
-          "subtitle": "775|Notlar tekrar sırasına nasıl girer."
+          "title": "Aralıklı tekrar",
+          "subtitle": "Notlar tekrar sırasına nasıl girer."
         },
         "appearance": {
-          "title": "776|Notların görünümü",
-          "subtitle": "777|Not listesinin sıralaması ve boyutu."
+          "title": "Notların görünümü",
+          "subtitle": "Not listesinin sıralaması ve boyutu."
         },
         "helpers": {
-          "title": "778|Öğrenme yardımcıları",
-          "subtitle": "779|Boş ekranlarda ve hızlı formlarda küçük dürtmeler."
+          "title": "Öğrenme yardımcıları",
+          "subtitle": "Boş ekranlarda ve hızlı formlarda küçük dürtmeler."
         },
         "defaultType": {
-          "title": "780|Varsayılan not türü",
-          "subtitle": "781|Yeni hızlı not hangi türle başlar."
+          "title": "Varsayılan not türü",
+          "subtitle": "Yeni hızlı not hangi türle başlar."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "782|Hızlı kaydetmeden sonra düzenleyiciyi aç",
-            "subtitle": "783|Hızlı notu kaydettikten sonra doğrudan tam düzenleyiciye geç."
+            "title": "Hızlı kaydetmeden sonra düzenleyiciyi aç",
+            "subtitle": "Hızlı notu kaydettikten sonra doğrudan tam düzenleyiciye geç."
           },
           "allowQuickQuizzes": {
-            "title": "784|Notlarda teste izin ver",
-            "subtitle": "785|Notların içinde test blokları ve test oluşturma sun."
+            "title": "Notlarda teste izin ver",
+            "subtitle": "Notların içinde test blokları ve test oluşturma sun."
           },
           "showsMistakeHighlights": {
-            "title": "786|Hata notlarını vurgula",
-            "subtitle": "787|Hata kartları için sıcak bir ton kullan ve hatalar satırını göster."
+            "title": "Hata notlarını vurgula",
+            "subtitle": "Hata kartları için sıcak bir ton kullan ve hatalar satırını göster."
           },
           "includeOriginalSentence": {
-            "title": "788|Özgün cümleyi ekle",
-            "subtitle": "789|Yanlış sürümü nota alıntı bloğu olarak kaydet."
+            "title": "Özgün cümleyi ekle",
+            "subtitle": "Yanlış sürümü nota alıntı bloğu olarak kaydet."
           },
           "includeCorrectedSentence": {
-            "title": "790|Düzeltilmiş cümleyi ekle",
-            "subtitle": "791|Düzeltilmiş sürümü örnek bloğu olarak kaydet."
+            "title": "Düzeltilmiş cümleyi ekle",
+            "subtitle": "Düzeltilmiş sürümü örnek bloğu olarak kaydet."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "792|Açıklamayı ekle",
-            "subtitle": "793|Açıklamanı aşağıya paragraf bloğu olarak ekle."
+            "title": "Açıklamayı ekle",
+            "subtitle": "Açıklamanı aşağıya paragraf bloğu olarak ekle."
           },
           "groupMistakesByTopic": {
-            "title": "794|Hataları konuya göre grupla",
-            "subtitle": "795|Hızlı hataları Sık Yapılan Hatalar yerine mevcut konuya kaydet."
+            "title": "Hataları konuya göre grupla",
+            "subtitle": "Hızlı hataları Sık Yapılan Hatalar yerine mevcut konuya kaydet."
           },
           "askBeforeSavingMistakes": {
-            "title": "796|Hataları kaydetmeden önce sor",
-            "subtitle": "797|Bir kompozisyon sorunu nota dönüşmeden önce onay iste. Bu, otomatik kaydetmenin önüne geçer."
+            "title": "Hataları kaydetmeden önce sor",
+            "subtitle": "Bir kompozisyon sorunu nota dönüşmeden önce onay iste. Bu, otomatik kaydetmenin önüne geçer."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "798|Kompozisyon hatalarını otomatik kaydet",
-            "subtitle": "799|Kompozisyonda bulunan her dil bilgisi sorunu nota dönüşür. „Kaydetmeden önce sor” açıkken tüm kontrol için bir kez sorar."
+            "title": "Kompozisyon hatalarını otomatik kaydet",
+            "subtitle": "Kompozisyonda bulunan her dil bilgisi sorunu nota dönüşür. „Kaydetmeden önce sor” açıkken tüm kontrol için bir kez sorar."
           },
           "groupsPinnedNotesFirst": {
-            "title": "800|Sabitlenen notlar önce",
-            "subtitle": "801|Önemli kuralları her konunun en üstünde tut."
+            "title": "Sabitlenen notlar önce",
+            "subtitle": "Önemli kuralları her konunun en üstünde tut."
           },
           "usesCompactCards": {
-            "title": "802|Sıkışık not kartları",
-            "subtitle": "803|Ekranda daha çok not istediğinde daha sıkışık kartlar göster."
+            "title": "Sıkışık not kartları",
+            "subtitle": "Ekranda daha çok not istediğinde daha sıkışık kartlar göster."
           },
           "showsHelperTips": {
-            "title": "804|Yardımcı ipuçlarını göster",
-            "subtitle": "805|Not oluştururken kısa, bağlama uygun ipuçları göster."
+            "title": "Yardımcı ipuçlarını göster",
+            "subtitle": "Not oluştururken kısa, bağlama uygun ipuçları göster."
           },
           "autoAddNotesToReview": {
-            "title": "806|Yeni notları tekrara ekle",
-            "subtitle": "807|Kaydettiğin her not tekrar sırasına girer, sırası ertesi gün gelir."
+            "title": "Yeni notları tekrara ekle",
+            "subtitle": "Kaydettiğin her not tekrar sırasına girer, sırası ertesi gün gelir."
           }
         }
       },
-      "editTopic": "808|Konuyu düzenle",
+      "editTopic": "Konuyu düzenle",
       "toSet": {
-        "title": "809|Bu nottan set oluştur",
-        "subtitle": "810|Karta dönüşecek çiftleri seç.",
-        "setTitle": "811|Set başlığı",
-        "empty": "812|Bu notta karta dönüştürülecek bir şey henüz yok. Karşılaştırma, örnek ve kural blokları doğrudan dönüşür, liste öğeleri ise tirede bölünür — „hacer — yapmak” gibi.",
-        "button": "813|Set oluştur",
-        "create": "814|Set oluştur",
-        "creating": "815|Oluşturuluyor…",
-        "error": "816|Set oluşturulamadı. Tekrar dene.",
-        "cards_one": "817|{{count}} kart",
-        "cards_other": "818|{{count}} kart"
+        "title": "Bu nottan set oluştur",
+        "subtitle": "Karta dönüşecek çiftleri seç.",
+        "setTitle": "Set başlığı",
+        "empty": "Bu notta karta dönüştürülecek bir şey henüz yok. Karşılaştırma, örnek ve kural blokları doğrudan dönüşür, liste öğeleri ise tirede bölünür — „hacer — yapmak” gibi.",
+        "button": "Set oluştur",
+        "create": "Set oluştur",
+        "creating": "Oluşturuluyor…",
+        "error": "Set oluşturulamadı. Tekrar dene.",
+        "cards_one": "{{count}} kart",
+        "cards_other": "{{count}} kart"
       },
-      "topicsEmptyTip": "819|Konu, notlar için bir klasördür — her dile bir tane ya da sürekli yanlış yaptığın her şeye bir tane.",
-      "notesEmptyTip": "820|Kaydettiğin her not tekrar sırasına girer, yani yazmak zaten çalışmaya başlamak demektir."
+      "topicsEmptyTip": "Konu, notlar için bir klasördür — her dile bir tane ya da sürekli yanlış yaptığın her şeye bir tane.",
+      "notesEmptyTip": "Kaydettiğin her not tekrar sırasına girer, yani yazmak zaten çalışmaya başlamak demektir."
     }
   },
   "reading": {
-    "sectionTitle": "821|Pratik modları",
-    "loading": "822|Yükleniyor…",
-    "loadError": "823|Okuma metinlerini yükleyemedik.",
-    "notFound": "824|Bu öğe silinmiş olabilir.",
+    "sectionTitle": "Pratik modları",
+    "loading": "Yükleniyor…",
+    "loadError": "Okuma metinlerini yükleyemedik.",
+    "notFound": "Bu öğe silinmiş olabilir.",
     "today": {
-      "title": "825|Bugünkü ilerleme",
-      "subtitle": "826|Okuma serini sürdür."
+      "title": "Bugünkü ilerleme",
+      "subtitle": "Okuma serini sürdür."
     },
     "menu": {
-      "comingSoon": "827|Çok yakında",
+      "comingSoon": "Çok yakında",
       "myTexts": {
-        "title": "828|Metinlerim",
-        "subtitle": "829|Kendi metnini yapıştır ve yardımla oku."
+        "title": "Metinlerim",
+        "subtitle": "Kendi metnini yapıştır ve yardımla oku."
       },
       "fromSets": {
-        "title": "830|Setlerden okuma",
-        "subtitle": "831|Kart setlerinden bir okuma metni oluştur."
+        "title": "Setlerden okuma",
+        "subtitle": "Kart setlerinden bir okuma metni oluştur."
       },
       "storyMode": {
-        "title": "832|Hikâye modu",
-        "subtitle": "833|Dallanan seçimlerle etkileşimli hikâyeler oku."
+        "title": "Hikâye modu",
+        "subtitle": "Dallanan seçimlerle etkileşimli hikâyeler oku."
       },
       "speedReading": {
-        "title": "834|Hızlı okuma",
-        "subtitle": "835|Zamanlı tempoyla daha hızlı okumayı çalış."
+        "title": "Hızlı okuma",
+        "subtitle": "Zamanlı tempoyla daha hızlı okumayı çalış."
       }
     },
     "myTexts": {
-      "title": "836|Metinlerim",
-      "subtitle": "837|Kaydettiğin okuma metinlerin.",
-      "addText": "838|Metin ekle",
-      "emptyTitle": "839|Henüz metin yok",
-      "emptyBody": "840|Okuma pratiğine başlamak için ilk metnini ekle.",
-      "savedTitle": "841|Kaydedilen metinler"
+      "title": "Metinlerim",
+      "subtitle": "Kaydettiğin okuma metinlerin.",
+      "addText": "Metin ekle",
+      "emptyTitle": "Henüz metin yok",
+      "emptyBody": "Okuma pratiğine başlamak için ilk metnini ekle.",
+      "savedTitle": "Kaydedilen metinler"
     },
     "status": {
-      "new": "842|Yeni",
-      "inProgress": "843|Devam ediyor",
-      "completed": "844|Tamamlandı"
+      "new": "Yeni",
+      "inProgress": "Devam ediyor",
+      "completed": "Tamamlandı"
     },
     "card": {
-      "words_one": "845|{{count}} kelime",
-      "words_other": "846|{{count}} kelime",
-      "start": "847|Başla",
-      "continue": "848|Devam et",
-      "readAgain": "849|Yeniden oku",
-      "rename": "850|Yeniden adlandır",
-      "renamePrompt": "851|Yeni başlık:",
-      "delete": "852|Sil",
-      "deleteConfirm": "853|„{{title}}” silinsin mi? Bu işlem geri alınamaz."
+      "words_one": "{{count}} kelime",
+      "words_other": "{{count}} kelime",
+      "start": "Başla",
+      "continue": "Devam et",
+      "readAgain": "Yeniden oku",
+      "rename": "Yeniden adlandır",
+      "renamePrompt": "Yeni başlık:",
+      "delete": "Sil",
+      "deleteConfirm": "„{{title}}” silinsin mi? Bu işlem geri alınamaz."
     },
     "continue": {
-      "eyebrow": "854|Okumaya devam et",
-      "percent": "855|%{{percent}} tamamlandı",
-      "button": "856|Devam et"
+      "eyebrow": "Okumaya devam et",
+      "percent": "%{{percent}} tamamlandı",
+      "button": "Devam et"
     },
     "focus": {
-      "mainIdea": "857|Ana fikir",
-      "vocabulary": "858|Kelime bilgisi",
-      "detailedComprehension": "859|Ayrıntılı anlama",
-      "grammarAwareness": "860|Dil bilgisi farkındalığı",
-      "speedFluency": "861|Hız / akıcılık"
+      "mainIdea": "Ana fikir",
+      "vocabulary": "Kelime bilgisi",
+      "detailedComprehension": "Ayrıntılı anlama",
+      "grammarAwareness": "Dil bilgisi farkındalığı",
+      "speedFluency": "Hız / akıcılık"
     },
     "questionType": {
-      "comprehension": "862|Anlama",
-      "trueFalse": "863|Doğru / Yanlış",
-      "fillGap": "864|Boşluk doldurma",
-      "vocabulary": "865|Kelime bilgisi",
-      "findEvidence": "866|Kanıt bul",
-      "orderReconstruction": "867|Sıralama"
+      "comprehension": "Anlama",
+      "trueFalse": "Doğru / Yanlış",
+      "fillGap": "Boşluk doldurma",
+      "vocabulary": "Kelime bilgisi",
+      "findEvidence": "Kanıt bul",
+      "orderReconstruction": "Sıralama"
     },
     "assistance": {
-      "highlightUnknownWords": "868|Bilinmeyen kelimeleri vurgula",
-      "translationOnTap": "869|Dokununca çevir",
-      "vocabularyHints": "870|Kelime ipuçları",
-      "readingTimer": "871|Okuma sayacı"
+      "highlightUnknownWords": "Bilinmeyen kelimeleri vurgula",
+      "translationOnTap": "Dokununca çevir",
+      "vocabularyHints": "Kelime ipuçları",
+      "readingTimer": "Okuma sayacı"
     },
     "addText": {
-      "title": "872|Metin ekle",
-      "subtitle": "873|Bir metin yapıştır ve okuma pratiğini ayarla.",
-      "untitled": "874|Başlıksız metin",
-      "pastePlaceholder": "875|Metnini buraya yapıştır veya yaz…",
-      "titleLabel": "876|Başlık",
-      "titlePlaceholder": "877|İsteğe bağlı — biz de önerebiliriz",
-      "language": "878|Dil",
-      "difficulty": "879|Zorluk",
-      "autoDetect": "880|Otomatik algıla",
-      "manual": "881|Elle seç",
-      "focus": "882|Okuma odağı",
-      "questionTypes": "883|Soru türleri",
-      "assistance": "884|Okuma yardımı",
+      "title": "Metin ekle",
+      "subtitle": "Bir metin yapıştır ve okuma pratiğini ayarla.",
+      "untitled": "Başlıksız metin",
+      "pastePlaceholder": "Metnini buraya yapıştır veya yaz…",
+      "titleLabel": "Başlık",
+      "titlePlaceholder": "İsteğe bağlı — biz de önerebiliriz",
+      "language": "Dil",
+      "difficulty": "Zorluk",
+      "autoDetect": "Otomatik algıla",
+      "manual": "Elle seç",
+      "focus": "Okuma odağı",
+      "questionTypes": "Soru türleri",
+      "assistance": "Okuma yardımı",
       "stats": {
-        "words_one": "885|{{count}} kelime",
-        "words_other": "886|{{count}} kelime",
-        "chars_one": "887|{{count}} karakter",
-        "chars_other": "888|{{count}} karakter",
-        "min": "889|dk",
-        "detected": "890|Algılandı: {{level}}"
+        "words_one": "{{count}} kelime",
+        "words_other": "{{count}} kelime",
+        "chars_one": "{{count}} karakter",
+        "chars_other": "{{count}} karakter",
+        "min": "dk",
+        "detected": "Algılandı: {{level}}"
       },
       "validation": {
-        "empty": "891|Lütfen önce bir metin ekle.",
-        "tooShort": "892|En az 20 kelime ekle."
+        "empty": "Lütfen önce bir metin ekle.",
+        "tooShort": "En az 20 kelime ekle."
       },
-      "save": "893|Metni kaydet",
-      "saveAndStart": "894|Kaydet ve başla",
-      "saving": "895|Kaydediliyor…",
-      "saveError": "896|Kaydedilemedi. Lütfen tekrar dene.",
+      "save": "Metni kaydet",
+      "saveAndStart": "Kaydet ve başla",
+      "saving": "Kaydediliyor…",
+      "saveError": "Kaydedilemedi. Lütfen tekrar dene.",
       "source": {
-        "pasteText": "897|Yapıştır",
-        "photo": "898|Fotoğraf",
-        "pdf": "899|PDF",
-        "generate": "900|Oluştur",
-        "explore": "901|Keşfet"
+        "pasteText": "Yapıştır",
+        "photo": "Fotoğraf",
+        "pdf": "PDF",
+        "generate": "Oluştur",
+        "explore": "Keşfet"
       },
       "style": {
-        "informative": "902|Bilgilendirici",
-        "casual": "903|Samimi",
-        "academic": "904|Akademik",
-        "narrative": "905|Anlatı"
+        "informative": "Bilgilendirici",
+        "casual": "Samimi",
+        "academic": "Akademik",
+        "narrative": "Anlatı"
       },
       "length": {
-        "short": "906|Kısa",
-        "medium": "907|Orta",
-        "long": "908|Uzun"
+        "short": "Kısa",
+        "medium": "Orta",
+        "long": "Uzun"
       },
       "import": {
-        "photoHint": "909|Bir sayfanın fotoğrafını yükle — metni biz çıkaralım.",
-        "chooseImage": "910|Görsel seç",
-        "recognizing": "911|Tanınıyor… %{{percent}}",
-        "imageError": "912|Bu görselden metin okuyamadık.",
-        "pdfHint": "913|Bir PDF yükle — metni biz çıkaralım.",
-        "choosePDF": "914|PDF seç",
-        "reading": "915|PDF okunuyor…",
-        "pdfError": "916|Bu PDF'yi okuyamadık.",
-        "topicPlaceholder": "917|Konu — örn. mercan resifleri, matbaa",
-        "explorePlaceholder": "918|Konu veya anahtar kelime — örn. Marie Curie, Venedik",
-        "generateButton": "919|Metin oluştur",
-        "exploreButton": "920|Makale getir",
-        "working": "921|Çalışıyor…",
-        "generateError": "922|Metin oluşturulamadı. Tekrar dene.",
-        "exploreError": "923|Bu konuda makale bulamadık.",
-        "exploredFrom": "924|Şuradan alındı"
+        "photoHint": "Bir sayfanın fotoğrafını yükle — metni biz çıkaralım.",
+        "chooseImage": "Görsel seç",
+        "recognizing": "Tanınıyor… %{{percent}}",
+        "imageError": "Bu görselden metin okuyamadık.",
+        "pdfHint": "Bir PDF yükle — metni biz çıkaralım.",
+        "choosePDF": "PDF seç",
+        "reading": "PDF okunuyor…",
+        "pdfError": "Bu PDF'yi okuyamadık.",
+        "topicPlaceholder": "Konu — örn. mercan resifleri, matbaa",
+        "explorePlaceholder": "Konu veya anahtar kelime — örn. Marie Curie, Venedik",
+        "generateButton": "Metin oluştur",
+        "exploreButton": "Makale getir",
+        "working": "Çalışıyor…",
+        "generateError": "Metin oluşturulamadı. Tekrar dene.",
+        "exploreError": "Bu konuda makale bulamadık.",
+        "exploredFrom": "Şuradan alındı"
       }
     },
     "session": {
-      "startQuestions": "925|Sorulara geç",
-      "finish": "926|Bitir",
-      "next": "927|İleri",
-      "questionOf": "928|Soru {{current}} / {{total}}",
-      "closeTranslation": "929|Çeviriyi kapat",
-      "translating": "930|Çevriliyor…",
-      "translationError": "931|Çevrilemedi. Tekrar dene.",
-      "translation": "932|Çeviri",
-      "textLabel": "933|Metin"
+      "startQuestions": "Sorulara geç",
+      "finish": "Bitir",
+      "next": "İleri",
+      "questionOf": "Soru {{current}} / {{total}}",
+      "closeTranslation": "Çeviriyi kapat",
+      "translating": "Çevriliyor…",
+      "translationError": "Çevrilemedi. Tekrar dene.",
+      "translation": "Çeviri",
+      "textLabel": "Metin"
     },
     "result": {
-      "comprehension": "934|Anlama",
-      "correct": "935|Doğru",
-      "time": "936|Okuma süresi",
-      "wpm": "937|kelime/dk",
-      "mistakes": "938|Hatalar",
-      "mistakesTitle": "939|Hatalarını gözden geçir",
-      "readAgain": "940|Yeniden oku",
-      "back": "941|Metinlerim'e dön",
-      "complete": "942|Pratik tamamlandı"
+      "comprehension": "Anlama",
+      "correct": "Doğru",
+      "time": "Okuma süresi",
+      "wpm": "kelime/dk",
+      "mistakes": "Hatalar",
+      "mistakesTitle": "Hatalarını gözden geçir",
+      "readAgain": "Yeniden oku",
+      "back": "Metinlerim'e dön",
+      "complete": "Pratik tamamlandı"
     },
     "fromSets": {
-      "title": "943|Setlerden okuma",
-      "subtitle": "944|Bir kart setini okuma metnine dönüştür.",
-      "pickSet": "945|Bir set seç",
-      "changeSet": "946|Seti değiştir",
-      "tooFewWords": "947|Bu setin okuma metni oluşturmak için en az {{count}} kelimeye ihtiyacı var.",
-      "mode": "948|Oluşturma modu",
+      "title": "Setlerden okuma",
+      "subtitle": "Bir kart setini okuma metnine dönüştür.",
+      "pickSet": "Bir set seç",
+      "changeSet": "Seti değiştir",
+      "tooFewWords": "Bu setin okuma metni oluşturmak için en az {{count}} kelimeye ihtiyacı var.",
+      "mode": "Oluşturma modu",
       "modeOption": {
-        "natural": "949|Doğal",
-        "strict": "950|Katı",
-        "mixed": "951|Karma"
+        "natural": "Doğal",
+        "strict": "Katı",
+        "mixed": "Karma"
       },
-      "length": "952|Metin uzunluğu",
-      "generate": "953|Metni oluştur",
-      "generating": "954|Metnin hazırlanıyor…",
-      "generateError": "955|Metin oluşturulamadı. Tekrar dene.",
-      "emptyTitle": "956|Henüz okuma metni yok",
-      "emptyBody": "957|Bir kart seti seç, biz onu okuma metnine dönüştürelim.",
-      "savedTitle": "958|Kaydedilen metinler"
+      "length": "Metin uzunluğu",
+      "generate": "Metni oluştur",
+      "generating": "Metnin hazırlanıyor…",
+      "generateError": "Metin oluşturulamadı. Tekrar dene.",
+      "emptyTitle": "Henüz okuma metni yok",
+      "emptyBody": "Bir kart seti seç, biz onu okuma metnine dönüştürelim.",
+      "savedTitle": "Kaydedilen metinler"
     },
     "speed": {
-      "title": "959|Hızlı okuma",
-      "subtitle": "960|Zamanlı tempoyla daha hızlı okumayı çalış.",
+      "title": "Hızlı okuma",
+      "subtitle": "Zamanlı tempoyla daha hızlı okumayı çalış.",
       "section": {
-        "target": "961|Hedef okuma hızı",
-        "timer": "962|Sayaç tarzı",
-        "length": "963|Metin uzunluğu"
+        "target": "Hedef okuma hızı",
+        "timer": "Sayaç tarzı",
+        "length": "Metin uzunluğu"
       },
       "target": {
-        "relaxed": "964|Rahat",
-        "balanced": "965|Dengeli",
-        "fast": "966|Hızlı",
-        "challenge": "967|Zorlu"
+        "relaxed": "Rahat",
+        "balanced": "Dengeli",
+        "fast": "Hızlı",
+        "challenge": "Zorlu"
       },
       "timer": {
-        "noTimer": "968|Sayaç yok",
-        "soft": "969|Yumuşak sayaç",
-        "strict": "970|Katı sayaç"
+        "noTimer": "Sayaç yok",
+        "soft": "Yumuşak sayaç",
+        "strict": "Katı sayaç"
       },
       "length": {
-        "two": "971|2 dk",
-        "five": "972|5 dk",
-        "ten": "973|10 dk"
+        "two": "2 dk",
+        "five": "5 dk",
+        "ten": "10 dk"
       },
-      "summary": "974|Hedef {{wpm}} kelime/dk · ~{{minutes}} dk okuma",
-      "start": "975|Oturumu başlat",
-      "preparing": "976|Metin parçan hazırlanıyor…",
-      "generateError": "977|Metin parçası oluşturulamadı. Tekrar dene.",
-      "recentTitle": "978|Son oturumlar",
-      "chunkOf": "979|Bölüm {{current}} / {{total}}",
-      "previous": "980|Önceki bölüm",
-      "pause": "981|Duraklat",
-      "resume": "982|Sürdür",
-      "nextChunk": "983|Sonraki bölüm",
-      "finishReading": "984|Okumayı bitir",
+      "summary": "Hedef {{wpm}} kelime/dk · ~{{minutes}} dk okuma",
+      "start": "Oturumu başlat",
+      "preparing": "Metin parçan hazırlanıyor…",
+      "generateError": "Metin parçası oluşturulamadı. Tekrar dene.",
+      "recentTitle": "Son oturumlar",
+      "chunkOf": "Bölüm {{current}} / {{total}}",
+      "previous": "Önceki bölüm",
+      "pause": "Duraklat",
+      "resume": "Sürdür",
+      "nextChunk": "Sonraki bölüm",
+      "finishReading": "Okumayı bitir",
       "rating": {
-        "excellent": "985|Mükemmel",
-        "balanced": "986|Hedefte",
-        "fast": "987|Az kaldı",
-        "tooSlow": "988|Çok yavaş"
+        "excellent": "Mükemmel",
+        "balanced": "Hedefte",
+        "fast": "Az kaldı",
+        "tooSlow": "Çok yavaş"
       },
       "result": {
-        "average": "989|Ortalama kelime/dk",
-        "target": "990|Hedef kelime/dk",
-        "violations_one": "991|{{count}} süre aşımı",
-        "violations_other": "992|{{count}} süre aşımı"
+        "average": "Ortalama kelime/dk",
+        "target": "Hedef kelime/dk",
+        "violations_one": "{{count}} süre aşımı",
+        "violations_other": "{{count}} süre aşımı"
       },
-      "tryAgain": "993|Tekrar dene",
-      "backToSetup": "994|Ayarlara dön"
+      "tryAgain": "Tekrar dene",
+      "backToSetup": "Ayarlara dön"
     },
     "story": {
-      "title": "995|Hikâye modu",
-      "subtitle": "996|Dallanan seçimlerle etkileşimli hikâyeler oku.",
-      "typeSection": "997|Hikâye türü",
+      "title": "Hikâye modu",
+      "subtitle": "Dallanan seçimlerle etkileşimli hikâyeler oku.",
+      "typeSection": "Hikâye türü",
       "type": {
-        "adventure": "998|Macera",
-        "fantasy": "999|Fantastik",
-        "mystery": "1000|Gizem",
-        "romance": "1001|Romantik",
-        "dailyLife": "1002|Günlük hayat"
+        "adventure": "Macera",
+        "fantasy": "Fantastik",
+        "mystery": "Gizem",
+        "romance": "Romantik",
+        "dailyLife": "Günlük hayat"
       },
-      "lengthSection": "1003|Hikâye uzunluğu",
+      "lengthSection": "Hikâye uzunluğu",
       "length": {
-        "shortStory": "1004|Kısa hikâye",
-        "multiChapter": "1005|Çok bölümlü",
-        "infinite": "1006|Sonsuz hikâye"
+        "shortStory": "Kısa hikâye",
+        "multiChapter": "Çok bölümlü",
+        "infinite": "Sonsuz hikâye"
       },
-      "start": "1007|Hikâyeyi başlat",
-      "generating": "1008|Hikâyen yazılıyor…",
-      "generatingNext": "1009|Sonraki bölüm yazılıyor…",
-      "generateError": "1010|Hikâye yazılamadı. Tekrar dene.",
-      "emptyTitle": "1011|Henüz hikâye yok",
-      "emptyBody": "1012|İlk etkileşimli hikâyeni yukarıdan başlat.",
-      "savedTitle": "1013|Hikâyelerin",
-      "chapterN": "1014|Bölüm {{n}}",
-      "chapterOf": "1015|Bölüm {{current}} / {{total}}",
-      "chapterScore": "1016|Bölüm puanı",
-      "whatNext": "1017|Sırada ne var?",
-      "endStory": "1018|Hikâyeyi bitir",
-      "completeTitle": "1019|Hikâye tamamlandı",
-      "completeBody_one": "1020|{{count}} bölüm bitirdin. İyi okumalar!",
-      "completeBody_other": "1021|{{count}} bölüm bitirdin. İyi okumalar!",
-      "backToStories": "1022|Hikâyelere dön"
+      "start": "Hikâyeyi başlat",
+      "generating": "Hikâyen yazılıyor…",
+      "generatingNext": "Sonraki bölüm yazılıyor…",
+      "generateError": "Hikâye yazılamadı. Tekrar dene.",
+      "emptyTitle": "Henüz hikâye yok",
+      "emptyBody": "İlk etkileşimli hikâyeni yukarıdan başlat.",
+      "savedTitle": "Hikâyelerin",
+      "chapterN": "Bölüm {{n}}",
+      "chapterOf": "Bölüm {{current}} / {{total}}",
+      "chapterScore": "Bölüm puanı",
+      "whatNext": "Sırada ne var?",
+      "endStory": "Hikâyeyi bitir",
+      "completeTitle": "Hikâye tamamlandı",
+      "completeBody_one": "{{count}} bölüm bitirdin. İyi okumalar!",
+      "completeBody_other": "{{count}} bölüm bitirdin. İyi okumalar!",
+      "backToStories": "Hikâyelere dön"
     }
   },
   "listening": {
-    "sectionTitle": "1023|Pratik modları",
-    "notFound": "1024|Bu oturum silinmiş olabilir.",
+    "sectionTitle": "Pratik modları",
+    "notFound": "Bu oturum silinmiş olabilir.",
     "today": {
-      "title": "1025|Bugünkü ilerleme",
-      "subtitle": "1026|dinleme pratiği"
+      "title": "Bugünkü ilerleme",
+      "subtitle": "dinleme pratiği"
     },
     "menu": {
-      "comingSoon": "1027|Çok yakında",
+      "comingSoon": "Çok yakında",
       "fromText": {
-        "title": "1028|Metinden dinleme",
-        "subtitle": "1029|Metin yapıştır, dinle ve anlayışını kontrol et."
+        "title": "Metinden dinleme",
+        "subtitle": "Metin yapıştır, dinle ve anlayışını kontrol et."
       },
       "importAudio": {
-        "title": "1030|Ses içe aktar",
-        "subtitle": "1031|Kendi sesini yükle ve dinleme pratiğine dönüştür."
+        "title": "Ses içe aktar",
+        "subtitle": "Kendi sesini yükle ve dinleme pratiğine dönüştür."
       },
       "importVideo": {
-        "title": "1032|Video içe aktar",
-        "subtitle": "1033|Video yükle, altyazı al ve sorularla pratik yap."
+        "title": "Video içe aktar",
+        "subtitle": "Video yükle, altyazı al ve sorularla pratik yap."
       },
       "saved": {
-        "title": "1034|Kaydedilen pratikler",
-        "subtitle": "1035|Önceki oturumlara devam et ve hatalarını gözden geçir."
+        "title": "Kaydedilen pratikler",
+        "subtitle": "Önceki oturumlara devam et ve hatalarını gözden geçir."
       }
     },
     "questionType": {
-      "mainIdea": "1036|Ana fikir",
-      "details": "1037|Ayrıntılar",
-      "vocabulary": "1038|Kelime bilgisi",
-      "trueFalse": "1039|Doğru / Yanlış"
+      "mainIdea": "Ana fikir",
+      "details": "Ayrıntılar",
+      "vocabulary": "Kelime bilgisi",
+      "trueFalse": "Doğru / Yanlış"
     },
     "fromText": {
-      "title": "1040|Metinden dinleme",
-      "subtitle": "1041|Metin yapıştır ve dinleme pratiğine dönüştür.",
-      "level": "1042|Seviye",
-      "voiceSpeed": "1043|Ses hızı",
-      "voiceType": "1044|Ses türü",
+      "title": "Metinden dinleme",
+      "subtitle": "Metin yapıştır ve dinleme pratiğine dönüştür.",
+      "level": "Seviye",
+      "voiceSpeed": "Ses hızı",
+      "voiceType": "Ses türü",
       "voice": {
-        "default": "1045|Varsayılan",
-        "female": "1046|Kadın",
-        "male": "1047|Erkek"
+        "default": "Varsayılan",
+        "female": "Kadın",
+        "male": "Erkek"
       },
-      "showText": "1048|Dinlerken metni göster",
-      "addQuestions": "1049|Anlama soruları ekle",
-      "questionCount": "1050|Soru sayısı",
-      "questionTypes": "1051|Soru türleri",
-      "optionalTitle": "1052|İsteğe bağlı başlık",
-      "titlePlaceholder": "1053|Metnine bir ad ver",
-      "textPlaceholder": "1054|Metnini buraya yapıştır...",
-      "recommended": "1055|Önerilen: 80–500 kelime.",
-      "words": "1056|kelime",
-      "defaultTitle": "1057|Dinleme pratiği",
-      "start": "1058|Dinlemeye başla",
+      "showText": "Dinlerken metni göster",
+      "addQuestions": "Anlama soruları ekle",
+      "questionCount": "Soru sayısı",
+      "questionTypes": "Soru türleri",
+      "optionalTitle": "İsteğe bağlı başlık",
+      "titlePlaceholder": "Metnine bir ad ver",
+      "textPlaceholder": "Metnini buraya yapıştır...",
+      "recommended": "Önerilen: 80–500 kelime.",
+      "words": "kelime",
+      "defaultTitle": "Dinleme pratiği",
+      "start": "Dinlemeye başla",
       "validation": {
-        "empty": "1059|Dinlemeye başlamak için metin ekle.",
-        "tooShort": "1060|Dinlemeye başlamak için en az 40 karakter ekle.",
-        "tooLong": "1061|Bu metin çok uzun. Lütfen 5000 karakterin altında tut.",
-        "tooFewWords": "1062|İyi sorular oluşturabilmemiz için biraz daha metin ekle (yaklaşık 40 kelime veya üzeri)."
+        "empty": "Dinlemeye başlamak için metin ekle.",
+        "tooShort": "Dinlemeye başlamak için en az 40 karakter ekle.",
+        "tooLong": "Bu metin çok uzun. Lütfen 5000 karakterin altında tut.",
+        "tooFewWords": "İyi sorular oluşturabilmemiz için biraz daha metin ekle (yaklaşık 40 kelime veya üzeri)."
       },
-      "voiceSettings": "1063|Ses ayarları",
-      "questions": "1064|Sorular",
-      "textInput": "1065|Metin girişi"
+      "voiceSettings": "Ses ayarları",
+      "questions": "Sorular",
+      "textInput": "Metin girişi"
     },
     "session": {
-      "replay": "1066|Yeniden oynat",
-      "transcript": "1067|Deşifre",
-      "questionsTitle": "1068|Sorular",
-      "answerFirst": "1069|Kontrol etmeden önce en az bir soruyu cevapla.",
-      "checkAnswers": "1070|Cevapları kontrol et",
-      "finish": "1071|Pratiği bitir"
+      "replay": "Yeniden oynat",
+      "transcript": "Deşifre",
+      "questionsTitle": "Sorular",
+      "answerFirst": "Kontrol etmeden önce en az bir soruyu cevapla.",
+      "checkAnswers": "Cevapları kontrol et",
+      "finish": "Pratiği bitir"
     },
     "result": {
-      "title": "1072|Pratik tamamlandı",
-      "comprehension": "1073|Anlama",
-      "correct": "1074|Doğru",
-      "time": "1075|Dinleme süresi",
-      "speed": "1076|Hız",
-      "mistakes": "1077|Hatalar",
-      "mistakesTitle": "1078|Hatalarını gözden geçir",
-      "watchOnlyTitle": "1079|Dinleme tamamlandı",
-      "watchOnlyBody": "1080|{{time}} boyunca dinledin.",
-      "practiceAgain": "1081|Tekrar pratik yap",
-      "back": "1082|Dinleme'ye dön"
+      "title": "Pratik tamamlandı",
+      "comprehension": "Anlama",
+      "correct": "Doğru",
+      "time": "Dinleme süresi",
+      "speed": "Hız",
+      "mistakes": "Hatalar",
+      "mistakesTitle": "Hatalarını gözden geçir",
+      "watchOnlyTitle": "Dinleme tamamlandı",
+      "watchOnlyBody": "{{time}} boyunca dinledin.",
+      "practiceAgain": "Tekrar pratik yap",
+      "back": "Dinleme'ye dön"
     },
     "importAudio": {
-      "title": "1083|Ses içe aktar",
-      "subtitle": "1084|Kendi sesini dinleme pratiğine dönüştür.",
-      "uploadTitle": "1085|Ses dosyası yükle",
-      "uploadFormats": "1086|MP3, M4A, WAV veya AAC · 50 MB altı",
-      "chooseFile": "1087|Dosya seç",
-      "clearFile": "1088|Dosyayı kaldır",
-      "infoNote": "1089|Sesin arka planda deşifre edilecek. Pratik sırasında deşifre gizli kalır.",
-      "continue": "1090|Devam et",
-      "processingTitle": "1091|Dinleme pratiğin hazırlanıyor",
-      "step1": "1092|Ses yükleniyor",
-      "step2": "1093|Konuşma deşifre ediliyor",
-      "step3": "1094|Sorular oluşturuluyor",
-      "processError": "1095|Bu sesi hazırlayamadık. Tekrar dene.",
-      "tryAgain": "1096|Tekrar dene",
-      "chooseAnother": "1097|Başka dosya seç",
-      "transcriptHidden": "1098|Bunun gerçek bir dinleme alıştırması olması için deşifre gizli tutuluyor."
+      "title": "Ses içe aktar",
+      "subtitle": "Kendi sesini dinleme pratiğine dönüştür.",
+      "uploadTitle": "Ses dosyası yükle",
+      "uploadFormats": "MP3, M4A, WAV veya AAC · 50 MB altı",
+      "chooseFile": "Dosya seç",
+      "clearFile": "Dosyayı kaldır",
+      "infoNote": "Sesin arka planda deşifre edilecek. Pratik sırasında deşifre gizli kalır.",
+      "continue": "Devam et",
+      "processingTitle": "Dinleme pratiğin hazırlanıyor",
+      "step1": "Ses yükleniyor",
+      "step2": "Konuşma deşifre ediliyor",
+      "step3": "Sorular oluşturuluyor",
+      "processError": "Bu sesi hazırlayamadık. Tekrar dene.",
+      "tryAgain": "Tekrar dene",
+      "chooseAnother": "Başka dosya seç",
+      "transcriptHidden": "Bunun gerçek bir dinleme alıştırması olması için deşifre gizli tutuluyor."
     },
     "importVideo": {
-      "title": "1099|Video içe aktar",
-      "subtitle": "1100|Video yükle, altyazı al ve sorularla pratik yap.",
-      "uploadTitle": "1101|Video dosyası yükle",
-      "uploadFormats": "1102|MP4, MOV veya M4V · 80 MB altı",
-      "step1": "1103|Video hazırlanıyor",
-      "step2": "1104|Konuşma deşifre ediliyor",
-      "step3": "1105|Altyazılar oluşturuluyor",
-      "subtitles": "1106|Altyazılar",
-      "subtitlesOn": "1107|Altyazılar açık",
-      "subtitlesOff": "1108|Altyazılar kapalı",
-      "noSubtitles": "1109|Bu video için altyazı yok.",
-      "tapWord": "1110|Çevirmek için bir kelimeye dokun.",
-      "questionsLocked": "1111|Sorular, videoyu izlemeyi bitirdiğinde açılır."
+      "title": "Video içe aktar",
+      "subtitle": "Video yükle, altyazı al ve sorularla pratik yap.",
+      "uploadTitle": "Video dosyası yükle",
+      "uploadFormats": "MP4, MOV veya M4V · 80 MB altı",
+      "step1": "Video hazırlanıyor",
+      "step2": "Konuşma deşifre ediliyor",
+      "step3": "Altyazılar oluşturuluyor",
+      "subtitles": "Altyazılar",
+      "subtitlesOn": "Altyazılar açık",
+      "subtitlesOff": "Altyazılar kapalı",
+      "noSubtitles": "Bu video için altyazı yok.",
+      "tapWord": "Çevirmek için bir kelimeye dokun.",
+      "questionsLocked": "Sorular, videoyu izlemeyi bitirdiğinde açılır."
     },
     "wordSheet": {
-      "title": "1112|Kelimeyi çevir",
-      "pickSet": "1113|Bir set seç",
-      "createSet": "1114|Set oluştur",
-      "addToSet": "1115|Sete ekle",
-      "noSets": "1116|Henüz setin yok. Aşağıdan bir tane oluştur.",
-      "setNamePlaceholder": "1117|örn. Videodaki kelimeler",
-      "createAndAdd": "1118|Set oluştur ve kelimeyi ekle",
-      "saved": "1119|„{{set}}” setine kaydedildi."
+      "title": "Kelimeyi çevir",
+      "pickSet": "Bir set seç",
+      "createSet": "Set oluştur",
+      "addToSet": "Sete ekle",
+      "noSets": "Henüz setin yok. Aşağıdan bir tane oluştur.",
+      "setNamePlaceholder": "örn. Videodaki kelimeler",
+      "createAndAdd": "Set oluştur ve kelimeyi ekle",
+      "saved": "„{{set}}” setine kaydedildi."
     },
     "saved": {
-      "title": "1120|Kaydedilen pratikler",
-      "subtitle": "1121|Oturumlara devam et ve dinleme hatalarını gözden geçir.",
-      "emptyTitle": "1122|Kaydedilmiş oturum yok",
-      "emptyBody": "1123|Bir dinleme oturumunu bitir veya duraklat, burada görünsün.",
-      "continueEyebrow": "1124|Dinlemeye devam et",
-      "percentComplete": "1125|%{{percent}} tamamlandı",
-      "continue": "1126|Devam et",
-      "review": "1127|İncele",
-      "delete": "1128|Oturumu sil",
-      "deleteConfirm": "1129|„{{title}}” silinsin mi? Bu işlem geri alınamaz.",
+      "title": "Kaydedilen pratikler",
+      "subtitle": "Oturumlara devam et ve dinleme hatalarını gözden geçir.",
+      "emptyTitle": "Kaydedilmiş oturum yok",
+      "emptyBody": "Bir dinleme oturumunu bitir veya duraklat, burada görünsün.",
+      "continueEyebrow": "Dinlemeye devam et",
+      "percentComplete": "%{{percent}} tamamlandı",
+      "continue": "Devam et",
+      "review": "İncele",
+      "delete": "Oturumu sil",
+      "deleteConfirm": "„{{title}}” silinsin mi? Bu işlem geri alınamaz.",
       "status": {
-        "draft": "1130|Taslak",
-        "inProgress": "1131|Devam ediyor",
-        "completed": "1132|Tamamlandı"
+        "draft": "Taslak",
+        "inProgress": "Devam ediyor",
+        "completed": "Tamamlandı"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "1133|Pratik modları",
+    "sectionTitle": "Pratik modları",
     "today": {
-      "title": "1134|Bugünkü ilerleme",
-      "subtitle": "1135|konuşma pratiği"
+      "title": "Bugünkü ilerleme",
+      "subtitle": "konuşma pratiği"
     },
     "menu": {
-      "comingSoon": "1136|Çok yakında",
+      "comingSoon": "Çok yakında",
       "conversation": {
-        "title": "1137|Yapay zekâ ile sohbet",
-        "subtitle": "1138|Gerçek zamanlı olarak bir yapay zekâ öğretmeniyle konuş."
+        "title": "Yapay zekâ ile sohbet",
+        "subtitle": "Gerçek zamanlı olarak bir yapay zekâ öğretmeniyle konuş."
       },
       "free": {
-        "title": "1139|Serbest konuşma",
-        "subtitle": "1140|Üretilen konular üzerine konuş ve geri bildirim al."
+        "title": "Serbest konuşma",
+        "subtitle": "Üretilen konular üzerine konuş ve geri bildirim al."
       },
       "picture": {
-        "title": "1141|Resim betimleme",
-        "subtitle": "1142|Görselleri betimle ve işe yarar kelimeler öğren."
+        "title": "Resim betimleme",
+        "subtitle": "Görselleri betimle ve işe yarar kelimeler öğren."
       },
       "debate": {
-        "title": "1143|Tartışma modu",
-        "subtitle": "1144|Konuları tartış ve argümanlarını kur."
+        "title": "Tartışma modu",
+        "subtitle": "Konuları tartış ve argümanlarını kur."
       },
       "shadowing": {
-        "title": "1145|Shadowing",
-        "subtitle": "1146|Cümleleri tekrarla ve telaffuzunu geliştir."
+        "title": "Shadowing",
+        "subtitle": "Cümleleri tekrarla ve telaffuzunu geliştir."
       },
       "pronunciation": {
-        "title": "1147|Telaffuz antrenörü",
-        "subtitle": "1148|Zor seslere ve kelimelere odaklan."
+        "title": "Telaffuz antrenörü",
+        "subtitle": "Zor seslere ve kelimelere odaklan."
       }
     },
     "input": {
-      "speak": "1149|Konuş",
-      "stop": "1150|Durdur",
-      "listening": "1151|Dinliyoruz…",
-      "placeholder": "1152|Cevabını yaz…",
-      "noVoice": "1153|Bu tarayıcı sesli girişi desteklemiyor — cevabını yaz."
+      "speak": "Konuş",
+      "stop": "Durdur",
+      "listening": "Dinliyoruz…",
+      "placeholder": "Cevabını yaz…",
+      "noVoice": "Bu tarayıcı sesli girişi desteklemiyor — cevabını yaz."
     },
     "conversation": {
-      "title": "1154|Yapay zekâ ile sohbet",
-      "subtitle": "1155|Gerçek zamanlı olarak bir yapay zekâ öğretmeniyle konuş.",
-      "topic": "1156|Konu",
-      "scenarios": "1157|Senaryolar",
-      "autoTopic": "1158|Bana sürpriz yap",
-      "autoTopicHint": "1159|Senin için yeni bir konu üreteceğiz.",
-      "length": "1160|Süre",
-      "min": "1161|dk",
-      "start": "1162|Sohbeti başlat",
-      "starting": "1163|Başlatılıyor…",
-      "startError": "1164|Sohbet başlatılamadı. Tekrar dene.",
-      "end": "1165|Bitir",
-      "dismiss": "1166|Kapat",
-      "hint": "1167|İpucu",
-      "getHint": "1168|İpucu ister misin?",
-      "hintLoading": "1169|Düşünüyor…"
+      "title": "Yapay zekâ ile sohbet",
+      "subtitle": "Gerçek zamanlı olarak bir yapay zekâ öğretmeniyle konuş.",
+      "topic": "Konu",
+      "scenarios": "Senaryolar",
+      "autoTopic": "Bana sürpriz yap",
+      "autoTopicHint": "Senin için yeni bir konu üreteceğiz.",
+      "length": "Süre",
+      "min": "dk",
+      "start": "Sohbeti başlat",
+      "starting": "Başlatılıyor…",
+      "startError": "Sohbet başlatılamadı. Tekrar dene.",
+      "end": "Bitir",
+      "dismiss": "Kapat",
+      "hint": "İpucu",
+      "getHint": "İpucu ister misin?",
+      "hintLoading": "Düşünüyor…"
     },
     "result": {
-      "title": "1170|Pratik tamamlandı",
-      "generating": "1171|Konuşman analiz ediliyor…",
-      "overall": "1172|Genel puan",
-      "corrections": "1173|Düzeltmeler",
-      "transcript": "1174|Deşifre",
-      "practiceAgain": "1175|Tekrar pratik yap",
-      "back": "1176|Konuşma'ya dön"
+      "title": "Pratik tamamlandı",
+      "generating": "Konuşman analiz ediliyor…",
+      "overall": "Genel puan",
+      "corrections": "Düzeltmeler",
+      "transcript": "Deşifre",
+      "practiceAgain": "Tekrar pratik yap",
+      "back": "Konuşma'ya dön"
     },
     "free": {
-      "title": "1177|Serbest konuşma",
-      "subtitle": "1178|Bir konu hakkında serbestçe konuş ve geri bildirim al.",
-      "preview": "1179|Önizleme",
-      "autoTopic": "1180|Yapay zekâ tarafından üretilen konu",
-      "autoTopicHint": "1181|Başladığında {{language}} · {{level}} için yeni bir konu seçeceğiz.",
-      "auto": "1182|Otomatik",
-      "start": "1183|Serbest konuşmayı başlat",
-      "generating": "1184|Konu üretiliyor…",
-      "generatingHint": "1185|Seviyene uygun bir şey seçiyoruz.",
-      "fallbackTopic": "1186|Konu üretilemedi. Yedek bir konu kullanıyoruz.",
-      "transcript": "1187|Deşifre",
-      "transcriptHint": "1188|Sen konuşurken deşifren burada görünecek.",
-      "startSpeaking": "1189|Konuşmaya başla"
+      "title": "Serbest konuşma",
+      "subtitle": "Bir konu hakkında serbestçe konuş ve geri bildirim al.",
+      "preview": "Önizleme",
+      "autoTopic": "Yapay zekâ tarafından üretilen konu",
+      "autoTopicHint": "Başladığında {{language}} · {{level}} için yeni bir konu seçeceğiz.",
+      "auto": "Otomatik",
+      "start": "Serbest konuşmayı başlat",
+      "generating": "Konu üretiliyor…",
+      "generatingHint": "Seviyene uygun bir şey seçiyoruz.",
+      "fallbackTopic": "Konu üretilemedi. Yedek bir konu kullanıyoruz.",
+      "transcript": "Deşifre",
+      "transcriptHint": "Sen konuşurken deşifren burada görünecek.",
+      "startSpeaking": "Konuşmaya başla"
     },
     "picture": {
-      "title": "1190|Resim betimleme",
-      "subtitle": "1191|Gördüğünü betimle ve geri bildirim al.",
-      "start": "1192|Resim betimlemeyi başlat",
-      "prompt": "1193|Bu resimde ne gördüğünü betimle.",
-      "tryToMention": "1194|Şunlardan bahsetmeyi dene:",
+      "title": "Resim betimleme",
+      "subtitle": "Gördüğünü betimle ve geri bildirim al.",
+      "start": "Resim betimlemeyi başlat",
+      "prompt": "Bu resimde ne gördüğünü betimle.",
+      "tryToMention": "Şunlardan bahsetmeyi dene:",
       "hints": {
-        "people": "1195|insanlar",
-        "objects": "1196|nesneler",
-        "actions": "1197|eylemler",
-        "colors": "1198|renkler",
-        "emotions": "1199|duygular"
+        "people": "insanlar",
+        "objects": "nesneler",
+        "actions": "eylemler",
+        "colors": "renkler",
+        "emotions": "duygular"
       },
-      "loading": "1200|Fotoğraf yükleniyor…",
-      "retry": "1201|Tekrar dene",
-      "newPhoto": "1202|Yeni fotoğraf",
-      "imageAlt": "1203|Betimlenecek fotoğraf",
-      "photoBy": "1204|Fotoğraf:",
-      "onUnsplash": "1205|Unsplash'te",
-      "startDescribing": "1206|Betimlemeye başla"
+      "loading": "Fotoğraf yükleniyor…",
+      "retry": "Tekrar dene",
+      "newPhoto": "Yeni fotoğraf",
+      "imageAlt": "Betimlenecek fotoğraf",
+      "photoBy": "Fotoğraf:",
+      "onUnsplash": "Unsplash'te",
+      "startDescribing": "Betimlemeye başla"
     },
     "debate": {
-      "title": "1207|Tartışma modu",
-      "subtitle": "1208|Yapay zekâ rakibine karşı kendi tarafını savun.",
-      "start": "1209|Tartışmayı başlat",
-      "pickSide": "1210|Senin tarafın",
-      "preparing": "1211|Tartışma konusu hazırlanıyor…",
-      "roundOf": "1212|Tur {{current}} / {{total}} · {{label}}",
+      "title": "Tartışma modu",
+      "subtitle": "Yapay zekâ rakibine karşı kendi tarafını savun.",
+      "start": "Tartışmayı başlat",
+      "pickSide": "Senin tarafın",
+      "preparing": "Tartışma konusu hazırlanıyor…",
+      "roundOf": "Tur {{current}} / {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "1213|Katılıyorum",
-          "subtitle": "1214|İddiayı savun"
+          "title": "Katılıyorum",
+          "subtitle": "İddiayı savun"
         },
         "disagree": {
-          "title": "1215|Katılmıyorum",
-          "subtitle": "1216|Karşı çık"
+          "title": "Katılmıyorum",
+          "subtitle": "Karşı çık"
         },
         "surprise": {
-          "title": "1217|Bana sürpriz yap",
-          "subtitle": "1218|Tarafı senin için biz seçelim"
+          "title": "Bana sürpriz yap",
+          "subtitle": "Tarafı senin için biz seçelim"
         }
       }
     },
     "practice": {
-      "listen": "1219|Dinle",
-      "playing": "1220|Oynatılıyor…",
-      "record": "1221|Kaydet",
-      "stop": "1222|Durdur",
-      "playMine": "1223|Kendiminkini dinle",
-      "noRecording": "1224|Bu tarayıcı kayıt desteklemiyor — yine de dinleyip tekrarlayabilirsin."
+      "listen": "Dinle",
+      "playing": "Oynatılıyor…",
+      "record": "Kaydet",
+      "stop": "Durdur",
+      "playMine": "Kendiminkini dinle",
+      "noRecording": "Bu tarayıcı kayıt desteklemiyor — yine de dinleyip tekrarlayabilirsin."
     },
     "shadowing": {
-      "title": "1225|Shadowing",
-      "subtitle": "1226|Dinle, tekrarla ve kendini karşılaştır.",
-      "start": "1227|Shadowing'i başlat",
-      "category": "1228|Kategori",
-      "howItWorks": "1229|Cümleyi dinle, kayıt yaparken yüksek sesle tekrarla, sonra kendi kaydını dinleyip ritmi karşılaştır.",
-      "loading": "1230|Cümleler üretiliyor…",
-      "phrase": "1231|Cümle",
-      "previous": "1232|Önceki",
-      "nextPhrase": "1233|Sonraki cümle",
-      "finish": "1234|Bitir",
-      "changeSettings": "1235|Ayarları değiştir",
-      "done": "1236|{{count}} tamamlandı",
-      "allDone": "1237|Tüm cümleler çalışıldı!",
-      "newSet": "1238|Yeni set"
+      "title": "Shadowing",
+      "subtitle": "Dinle, tekrarla ve kendini karşılaştır.",
+      "start": "Shadowing'i başlat",
+      "category": "Kategori",
+      "howItWorks": "Cümleyi dinle, kayıt yaparken yüksek sesle tekrarla, sonra kendi kaydını dinleyip ritmi karşılaştır.",
+      "loading": "Cümleler üretiliyor…",
+      "phrase": "Cümle",
+      "previous": "Önceki",
+      "nextPhrase": "Sonraki cümle",
+      "finish": "Bitir",
+      "changeSettings": "Ayarları değiştir",
+      "done": "{{count}} tamamlandı",
+      "allDone": "Tüm cümleler çalışıldı!",
+      "newSet": "Yeni set"
     },
     "pronunciation": {
-      "title": "1239|Telaffuz antrenörü",
-      "subtitle": "1240|Zor seslere ve kelimelere odaklan.",
-      "start": "1241|Antrenmanı başlat",
-      "focus": "1242|Odak",
-      "difficulty": "1243|Zorluk",
+      "title": "Telaffuz antrenörü",
+      "subtitle": "Zor seslere ve kelimelere odaklan.",
+      "start": "Antrenmanı başlat",
+      "focus": "Odak",
+      "difficulty": "Zorluk",
       "level": {
-        "easy": "1244|Kolay",
-        "balanced": "1245|Dengeli",
-        "hard": "1246|Zor"
+        "easy": "Kolay",
+        "balanced": "Dengeli",
+        "hard": "Zor"
       },
-      "loading": "1247|Alıştırmalar üretiliyor…",
-      "sound": "1248|Ses",
-      "scoringUnavailable": "1249|Otomatik telaffuz puanlaması sunucuda henüz kurulu değil, bu yüzden puan gösterilmiyor. Dinleme, kayıt ve oynatma çalışıyor."
+      "loading": "Alıştırmalar üretiliyor…",
+      "sound": "Ses",
+      "scoringUnavailable": "Otomatik telaffuz puanlaması sunucuda henüz kurulu değil, bu yüzden puan gösterilmiyor. Dinleme, kayıt ve oynatma çalışıyor."
     }
   },
   "profile": {
-    "interfaceLanguage": "1250|Arayüz dili",
+    "interfaceLanguage": "Arayüz dili",
     "password": {
-      "title": "1251|Bir şifre oluştur",
-      "body": "1252|Hesabın Google ile oluşturuldu, bu yüzden şifresi yok — e-posta ve şifre alanlarıyla giriş yapamazsın. Bir şifre ekle, iki yöntem de çalışsın.",
-      "save": "1253|Şifreyi kaydet",
-      "saving": "1254|Kaydediliyor...",
-      "savedInfo": "1255|Şifre oluşturuldu. Artık e-postanla da giriş yapabilirsin."
+      "title": "Bir şifre oluştur",
+      "body": "Hesabın Google ile oluşturuldu, bu yüzden şifresi yok — e-posta ve şifre alanlarıyla giriş yapamazsın. Bir şifre ekle, iki yöntem de çalışsın.",
+      "save": "Şifreyi kaydet",
+      "saving": "Kaydediliyor...",
+      "savedInfo": "Şifre oluşturuldu. Artık e-postanla da giriş yapabilirsin."
     }
   },
   "units": {
-    "min": "1256|dk",
-    "words": "1257|kelime"
+    "min": "dk",
+    "words": "kelime"
   },
   "link": {
-    "title": "1258|Bağlantıyla giriş yap",
-    "subtitle": "1259|Sana tek kullanımlık bir bağlantı e-postalayacağız. Ezberlenecek şifre yok.",
-    "send": "1260|Bağlantıyı gönder",
-    "sending": "1261|Gönderiliyor...",
-    "sentInfo": "1262|Bağlantı gönderildi. E-postanı kontrol et.",
-    "sentTitle": "1263|E-postanı kontrol et",
-    "sentBody": "1264|Giriş bağlantısını şuraya gönderdik:",
-    "useAnotherEmail": "1265|Başka e-posta kullan",
-    "backToPassword": "1266|Bunun yerine şifreyle giriş yap"
+    "title": "Bağlantıyla giriş yap",
+    "subtitle": "Sana tek kullanımlık bir bağlantı e-postalayacağız. Ezberlenecek şifre yok.",
+    "send": "Bağlantıyı gönder",
+    "sending": "Gönderiliyor...",
+    "sentInfo": "Bağlantı gönderildi. E-postanı kontrol et.",
+    "sentTitle": "E-postanı kontrol et",
+    "sentBody": "Giriş bağlantısını şuraya gönderdik:",
+    "useAnotherEmail": "Başka e-posta kullan",
+    "backToPassword": "Bunun yerine şifreyle giriş yap"
   },
   "action": {
-    "working": "1267|Bir saniye...",
-    "continue": "1268|Devam et",
-    "confirmEmailTitle": "1269|E-postanı onayla",
-    "confirmEmailBody": "1270|Bu bağlantı başka bir tarayıcıda açıldı. Gönderildiği adresi gir, girişini tamamlayalım.",
-    "resetTitle": "1271|Yeni şifre",
-    "resetSubtitle": "1272|Şunun için yeni bir şifre seç:",
-    "newPassword": "1273|Yeni şifre",
-    "confirmPassword": "1274|Şifreyi tekrarla",
-    "savePassword": "1275|Şifreyi kaydet",
-    "resetDoneTitle": "1276|Şifre güncellendi",
-    "resetDoneBody": "1277|Artık yeni şifrenle giriş yapabilirsin.",
-    "failedTitle": "1278|Bu bağlantı işe yaramadı",
-    "failedBody": "1279|Daha önce kullanılmış ya da süresi dolmuş olabilir. Giriş ekranından yenisini iste.",
-    "backToSignIn": "1280|Girişe dön"
+    "working": "Bir saniye...",
+    "continue": "Devam et",
+    "confirmEmailTitle": "E-postanı onayla",
+    "confirmEmailBody": "Bu bağlantı başka bir tarayıcıda açıldı. Gönderildiği adresi gir, girişini tamamlayalım.",
+    "resetTitle": "Yeni şifre",
+    "resetSubtitle": "Şunun için yeni bir şifre seç:",
+    "newPassword": "Yeni şifre",
+    "confirmPassword": "Şifreyi tekrarla",
+    "savePassword": "Şifreyi kaydet",
+    "resetDoneTitle": "Şifre güncellendi",
+    "resetDoneBody": "Artık yeni şifrenle giriş yapabilirsin.",
+    "failedTitle": "Bu bağlantı işe yaramadı",
+    "failedBody": "Daha önce kullanılmış ya da süresi dolmuş olabilir. Giriş ekranından yenisini iste.",
+    "backToSignIn": "Girişe dön"
   },
   "common": {
-    "cancel": "1281|Vazgeç",
-    "delete": "1282|Sil",
+    "cancel": "Vazgeç",
+    "delete": "Sil",
     "view": {
-      "label": "1283|Görünüm",
-      "rows": "1284|Liste",
-      "grid": "1285|Izgara"
+      "label": "Görünüm",
+      "rows": "Liste",
+      "grid": "Izgara"
     }
   },
   "practice": {
     "language": {
-      "label": "1286|Dil",
-      "search": "1287|Dil ara",
-      "noMatch": "1288|Eşleşen dil yok.",
-      "noVoice": "1289|Tarayıcında {{language}} sesi yok, bu yüzden öğretmen bu dili konuşmayacak. Sistem ayarlarından dil paketini ekle ya da başka bir dil seç."
+      "label": "Dil",
+      "search": "Dil ara",
+      "noMatch": "Eşleşen dil yok.",
+      "noVoice": "Tarayıcında {{language}} sesi yok, bu yüzden öğretmen bu dili konuşmayacak. Sistem ayarlarından dil paketini ekle ya da başka bir dil seç."
     }
   }
 }

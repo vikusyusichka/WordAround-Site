@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "1|WordAround",
-    "tagline": "2|Aprende idiomas de forma activa."
+    "name": "WordAround",
+    "tagline": "Aprende idiomas de forma activa."
   },
   "onboarding": {
-    "subtitle": "3|Aprende palabras dun xeito divertido\\ne sinxelo",
-    "start": "4|Comecemos"
+    "subtitle": "Aprende palabras dun xeito divertido\\ne sinxelo",
+    "start": "Comecemos"
   },
   "auth": {
-    "welcomeBack": "5|Benvido de novo",
-    "subtitle": "6|Inicia sesión para seguir aprendendo",
-    "email": "7|Correo electrónico",
-    "emailPlaceholder": "8|Introduce o teu correo",
-    "password": "9|Contrasinal",
-    "passwordPlaceholder": "10|Introduce o teu contrasinal",
-    "forgotPassword": "11|Esqueciches o contrasinal?",
-    "signIn": "12|Iniciar sesión",
-    "signingIn": "13|Iniciando sesión...",
-    "signUp": "14|Rexistrarse",
-    "signOut": "15|Pechar sesión",
-    "continueWithGoogle": "16|Continuar con Google",
-    "createAccount": "17|Crear conta",
-    "accountCreatedInfo": "18|Conta creada. Enviámosche un correo de verificación.",
-    "resetEmailSent": "19|Correo de restablecemento enviado",
-    "showPassword": "20|Amosar o contrasinal",
-    "hidePassword": "21|Agochar o contrasinal",
-    "back": "22|Atrás",
-    "signUpTitle": "23|Crea a túa conta",
-    "signUpSubtitle": "24|Uns minutos ao día e o teu vocabulario medra",
-    "name": "25|Nome",
-    "namePlaceholder": "26|Como te chamamos?",
-    "orWithEmail": "27|ou con correo electrónico",
-    "signUpWithGoogle": "28|Rexistrarse con Google",
-    "passwordHint": "29|Polo menos {{min}} caracteres",
-    "magicLinkCta": "30|Iniciar sesión cunha ligazón por correo",
-    "creatingAccount": "31|Creando a conta..."
+    "welcomeBack": "Benvido de novo",
+    "subtitle": "Inicia sesión para seguir aprendendo",
+    "email": "Correo electrónico",
+    "emailPlaceholder": "Introduce o teu correo",
+    "password": "Contrasinal",
+    "passwordPlaceholder": "Introduce o teu contrasinal",
+    "forgotPassword": "Esqueciches o contrasinal?",
+    "signIn": "Iniciar sesión",
+    "signingIn": "Iniciando sesión...",
+    "signUp": "Rexistrarse",
+    "signOut": "Pechar sesión",
+    "continueWithGoogle": "Continuar con Google",
+    "createAccount": "Crear conta",
+    "accountCreatedInfo": "Conta creada. Enviámosche un correo de verificación.",
+    "resetEmailSent": "Correo de restablecemento enviado",
+    "showPassword": "Amosar o contrasinal",
+    "hidePassword": "Agochar o contrasinal",
+    "back": "Atrás",
+    "signUpTitle": "Crea a túa conta",
+    "signUpSubtitle": "Uns minutos ao día e o teu vocabulario medra",
+    "name": "Nome",
+    "namePlaceholder": "Como te chamamos?",
+    "orWithEmail": "ou con correo electrónico",
+    "signUpWithGoogle": "Rexistrarse con Google",
+    "passwordHint": "Polo menos {{min}} caracteres",
+    "magicLinkCta": "Iniciar sesión cunha ligazón por correo",
+    "creatingAccount": "Creando a conta..."
   },
   "verify": {
-    "title": "32|Verifica o teu correo",
-    "subtitle": "33|Un paso máis antes de comezar a aprender",
-    "sentTo": "34|Enviamos unha ligazón de verificación a",
-    "fallbackEmail": "35|o teu correo",
-    "step1": "36|Abre o correo na túa caixa de entrada",
-    "step2": "37|Toca a ligazón de confirmación",
-    "step3": "38|Abrimos a túa aprendizaxe de contado: non fai falta volver aquí",
-    "checkButton": "39|Xa verifiquei o meu correo",
-    "checking": "40|Comprobando...",
-    "resend": "41|Reenviar o correo",
-    "useAnotherAccount": "42|Usar outra conta",
-    "badgeInbox": "43|Mira a caixa de entrada",
-    "badgeConfirm": "44|Confirmar",
-    "badgeDone": "45|Feito",
-    "resentInfo": "46|Correo de verificación enviado de novo",
-    "notVerifiedYet": "47|O correo aínda non está verificado"
+    "title": "Verifica o teu correo",
+    "subtitle": "Un paso máis antes de comezar a aprender",
+    "sentTo": "Enviamos unha ligazón de verificación a",
+    "fallbackEmail": "o teu correo",
+    "step1": "Abre o correo na túa caixa de entrada",
+    "step2": "Toca a ligazón de confirmación",
+    "step3": "Abrimos a túa aprendizaxe de contado: non fai falta volver aquí",
+    "checkButton": "Xa verifiquei o meu correo",
+    "checking": "Comprobando...",
+    "resend": "Reenviar o correo",
+    "useAnotherAccount": "Usar outra conta",
+    "badgeInbox": "Mira a caixa de entrada",
+    "badgeConfirm": "Confirmar",
+    "badgeDone": "Feito",
+    "resentInfo": "Correo de verificación enviado de novo",
+    "notVerifiedYet": "O correo aínda non está verificado"
   },
   "errors": {
-    "emailRequired": "48|O correo é obrigatorio",
-    "emailInvalid": "49|Introduce un correo válido",
-    "emailFirst": "50|Introduce primeiro o teu correo",
-    "passwordRequired": "51|O contrasinal é obrigatorio",
-    "passwordTooShort": "52|O contrasinal debe ter polo menos 8 caracteres",
-    "invalidEmail": "53|Formato de correo non válido",
-    "wrongPassword": "54|Correo ou contrasinal incorrectos. Se te rexistraches con Google, usa o botón de Google.",
-    "userNotFound": "55|Correo ou contrasinal incorrectos. Se te rexistraches con Google, usa o botón de Google.",
-    "invalidCredential": "56|Correo ou contrasinal incorrectos. Se te rexistraches con Google, usa o botón de Google.",
-    "emailInUse": "57|Esta conta xa existe",
-    "weakPassword": "58|Este contrasinal é feble de máis",
-    "network": "59|Erro de rede. Comproba a túa conexión a internet",
-    "tooManyRequests": "60|Demasiados intentos. Téntao máis tarde",
-    "differentCredential": "61|Este correo xa se usa con outro método de inicio de sesión",
-    "noActiveAccount": "62|Non se atopou ningunha conta activa",
-    "default": "63|Fallou a autenticación. Téntao de novo",
-    "nameRequired": "64|O nome é obrigatorio",
-    "passwordsDoNotMatch": "65|Os contrasinais non coinciden",
-    "actionExpired": "66|Esta ligazón caducou. Pide unha nova.",
-    "actionInvalid": "67|Esta ligazón xa non é válida.",
-    "userDisabled": "68|Esta conta foi desactivada.",
-    "requiresRecentLogin": "69|Por seguranza, inicia sesión outra vez e repite isto.",
-    "passwordAlreadySet": "70|Esta conta xa ten un contrasinal.",
-    "linkNoEmail": "71|Introduce o correo ao que se enviou a ligazón"
+    "emailRequired": "O correo é obrigatorio",
+    "emailInvalid": "Introduce un correo válido",
+    "emailFirst": "Introduce primeiro o teu correo",
+    "passwordRequired": "O contrasinal é obrigatorio",
+    "passwordTooShort": "O contrasinal debe ter polo menos 8 caracteres",
+    "invalidEmail": "Formato de correo non válido",
+    "wrongPassword": "Correo ou contrasinal incorrectos. Se te rexistraches con Google, usa o botón de Google.",
+    "userNotFound": "Correo ou contrasinal incorrectos. Se te rexistraches con Google, usa o botón de Google.",
+    "invalidCredential": "Correo ou contrasinal incorrectos. Se te rexistraches con Google, usa o botón de Google.",
+    "emailInUse": "Esta conta xa existe",
+    "weakPassword": "Este contrasinal é feble de máis",
+    "network": "Erro de rede. Comproba a túa conexión a internet",
+    "tooManyRequests": "Demasiados intentos. Téntao máis tarde",
+    "differentCredential": "Este correo xa se usa con outro método de inicio de sesión",
+    "noActiveAccount": "Non se atopou ningunha conta activa",
+    "default": "Fallou a autenticación. Téntao de novo",
+    "nameRequired": "O nome é obrigatorio",
+    "passwordsDoNotMatch": "Os contrasinais non coinciden",
+    "actionExpired": "Esta ligazón caducou. Pide unha nova.",
+    "actionInvalid": "Esta ligazón xa non é válida.",
+    "userDisabled": "Esta conta foi desactivada.",
+    "requiresRecentLogin": "Por seguranza, inicia sesión outra vez e repite isto.",
+    "passwordAlreadySet": "Esta conta xa ten un contrasinal.",
+    "linkNoEmail": "Introduce o correo ao que se enviou a ligazón"
   },
   "nav": {
-    "home": "72|Inicio",
-    "speaking": "73|Fala",
-    "listening": "74|Escoita",
-    "reading": "75|Lectura",
-    "writing": "76|Escritura",
-    "folders": "77|Cartafoles",
-    "sets": "78|Conxuntos",
-    "notes": "79|Notas",
-    "profile": "80|Perfil",
-    "create": "81|Crear",
-    "menu": "82|Menú",
-    "closeMenu": "83|Pechar o menú",
+    "home": "Inicio",
+    "speaking": "Fala",
+    "listening": "Escoita",
+    "reading": "Lectura",
+    "writing": "Escritura",
+    "folders": "Cartafoles",
+    "sets": "Conxuntos",
+    "notes": "Notas",
+    "profile": "Perfil",
+    "create": "Crear",
+    "menu": "Menú",
+    "closeMenu": "Pechar o menú",
     "group": {
-      "practice": "84|Práctica",
-      "library": "85|Biblioteca"
+      "practice": "Práctica",
+      "library": "Biblioteca"
     }
   },
   "folders": {
-    "create": "86|Crear cartafol",
-    "loading": "87|Cargando os cartafoles…",
-    "loadError": "88|Non puidemos cargar os teus cartafoles.",
-    "emptyTitle": "89|Aínda non hai cartafoles",
-    "emptyBody": "90|Crea o teu primeiro cartafol para organizar os conxuntos.",
-    "setCount": "91|{{count}} conxuntos",
-    "setCount_one": "92|{{count}} conxunto",
-    "newTitle": "93|Novo cartafol",
-    "newSubtitle": "94|Agrupa os conxuntos relacionados.",
-    "editTitle": "95|Editar cartafol",
-    "name": "96|Nome",
-    "namePlaceholder": "97|p. ex. Viaxes",
-    "description": "98|Descrición",
-    "descriptionPlaceholder": "99|Opcional",
-    "color": "100|Cor",
-    "save": "101|Gardar",
-    "saving": "102|Gardando…",
-    "cancel": "103|Cancelar",
-    "edit": "104|Editar cartafol",
-    "delete": "105|Eliminar cartafol",
-    "deleteConfirm": "106|Eliminar \"{{title}}\"? Isto non se pode desfacer.",
-    "backToFolders": "107|Volver aos cartafoles",
-    "notFoundTitle": "108|Cartafol non atopado",
-    "notFoundBody": "109|Pode que este cartafol fose eliminado.",
-    "noSetsInFolder": "110|Aínda non hai conxuntos neste cartafol.",
-    "saveError": "111|Non se puido gardar. Téntao de novo.",
+    "create": "Crear cartafol",
+    "loading": "Cargando os cartafoles…",
+    "loadError": "Non puidemos cargar os teus cartafoles.",
+    "emptyTitle": "Aínda non hai cartafoles",
+    "emptyBody": "Crea o teu primeiro cartafol para organizar os conxuntos.",
+    "setCount": "{{count}} conxuntos",
+    "setCount_one": "{{count}} conxunto",
+    "newTitle": "Novo cartafol",
+    "newSubtitle": "Agrupa os conxuntos relacionados.",
+    "editTitle": "Editar cartafol",
+    "name": "Nome",
+    "namePlaceholder": "p. ex. Viaxes",
+    "description": "Descrición",
+    "descriptionPlaceholder": "Opcional",
+    "color": "Cor",
+    "save": "Gardar",
+    "saving": "Gardando…",
+    "cancel": "Cancelar",
+    "edit": "Editar cartafol",
+    "delete": "Eliminar cartafol",
+    "deleteConfirm": "Eliminar \"{{title}}\"? Isto non se pode desfacer.",
+    "backToFolders": "Volver aos cartafoles",
+    "notFoundTitle": "Cartafol non atopado",
+    "notFoundBody": "Pode que este cartafol fose eliminado.",
+    "noSetsInFolder": "Aínda non hai conxuntos neste cartafol.",
+    "saveError": "Non se puido gardar. Téntao de novo.",
     "error": {
-      "nameRequired": "112|O nome do cartafol é obrigatorio.",
-      "nameTooLong": "113|O nome do cartafol debe ter menos de 80 caracteres.",
-      "descTooLong": "114|A descrición debe ter menos de 120 caracteres."
+      "nameRequired": "O nome do cartafol é obrigatorio.",
+      "nameTooLong": "O nome do cartafol debe ter menos de 80 caracteres.",
+      "descTooLong": "A descrición debe ter menos de 120 caracteres."
     },
-    "optional": "115|(opcional)",
-    "preview": "116|Vista previa",
-    "previewPlaceholder": "117|Novo cartafol",
-    "deleteConfirmTitle": "118|Eliminar este cartafol?"
+    "optional": "(opcional)",
+    "preview": "Vista previa",
+    "previewPlaceholder": "Novo cartafol",
+    "deleteConfirmTitle": "Eliminar este cartafol?"
   },
   "sets": {
-    "create": "119|Crear conxunto",
-    "loading": "120|Cargando os conxuntos…",
-    "loadError": "121|Non puidemos cargar os teus conxuntos.",
-    "emptyTitle": "122|Aínda non hai conxuntos",
-    "emptyBody": "123|Crea o teu primeiro conxunto de tarxetas co botón Crear.",
-    "cardCount": "124|{{count}} tarxetas",
-    "cardCount_one": "125|{{count}} tarxeta",
-    "keepPracticing": "126|Segue practicando",
-    "delete": "127|Eliminar conxunto",
-    "deleteConfirm": "128|Eliminar \"{{title}}\"? Isto non se pode desfacer.",
-    "notFoundTitle": "129|Conxunto non atopado",
-    "notFoundBody": "130|Pode que este conxunto fose eliminado.",
-    "backToSets": "131|Volver aos conxuntos",
-    "edit": "132|Editar conxunto",
-    "deleteConfirmTitle": "133|Eliminar este conxunto?",
-    "editTitle": "134|Editar conxunto",
-    "editSubtitle": "135|Cambia o título, a cor, a icona ou o cartafol. As tarxetas quedan onde están.",
-    "save": "136|Gardar os cambios",
-    "saving": "137|Gardando…",
-    "cancel": "138|Cancelar",
-    "saveError": "139|Non se puido gardar. Téntao de novo."
+    "create": "Crear conxunto",
+    "loading": "Cargando os conxuntos…",
+    "loadError": "Non puidemos cargar os teus conxuntos.",
+    "emptyTitle": "Aínda non hai conxuntos",
+    "emptyBody": "Crea o teu primeiro conxunto de tarxetas co botón Crear.",
+    "cardCount": "{{count}} tarxetas",
+    "cardCount_one": "{{count}} tarxeta",
+    "keepPracticing": "Segue practicando",
+    "delete": "Eliminar conxunto",
+    "deleteConfirm": "Eliminar \"{{title}}\"? Isto non se pode desfacer.",
+    "notFoundTitle": "Conxunto non atopado",
+    "notFoundBody": "Pode que este conxunto fose eliminado.",
+    "backToSets": "Volver aos conxuntos",
+    "edit": "Editar conxunto",
+    "deleteConfirmTitle": "Eliminar este conxunto?",
+    "editTitle": "Editar conxunto",
+    "editSubtitle": "Cambia o título, a cor, a icona ou o cartafol. As tarxetas quedan onde están.",
+    "save": "Gardar os cambios",
+    "saving": "Gardando…",
+    "cancel": "Cancelar",
+    "saveError": "Non se puido gardar. Téntao de novo."
   },
   "createSet": {
-    "title": "140|Novo conxunto",
-    "subtitle": "141|Engade palabras e personaliza o teu conxunto.",
-    "infoSection": "142|Datos do conxunto",
-    "setTitle": "143|Título",
-    "setTitlePlaceholder": "144|p. ex. Esenciais de viaxe",
-    "setDescription": "145|Descrición",
-    "setDescriptionPlaceholder": "146|Opcional",
-    "privacy": "147|Privacidade",
-    "private": "148|Privado",
-    "public": "149|Público",
-    "cardsSection": "150|Tarxetas",
-    "addCard": "151|Engadir tarxeta",
-    "cardN": "152|Tarxeta {{n}}",
-    "removeCard": "153|Quitar tarxeta",
-    "word": "154|Palabra",
-    "translation": "155|Tradución",
-    "example": "156|Exemplo (opcional)",
-    "addImage": "157|Engadir imaxe",
-    "removeImage": "158|Quitar imaxe",
-    "customizeSection": "159|Personalizar",
-    "color": "160|Cor",
-    "icon": "161|Icona",
-    "folder": "162|Cartafol",
-    "noFolder": "163|Sen cartafol",
-    "previewSection": "164|Vista previa",
-    "previewPlaceholder": "165|Título do conxunto",
-    "save": "166|Crear conxunto",
-    "saving": "167|Gardando…",
-    "cancel": "168|Cancelar",
-    "saveError": "169|Non se puido gardar. Téntao de novo.",
+    "title": "Novo conxunto",
+    "subtitle": "Engade palabras e personaliza o teu conxunto.",
+    "infoSection": "Datos do conxunto",
+    "setTitle": "Título",
+    "setTitlePlaceholder": "p. ex. Esenciais de viaxe",
+    "setDescription": "Descrición",
+    "setDescriptionPlaceholder": "Opcional",
+    "privacy": "Privacidade",
+    "private": "Privado",
+    "public": "Público",
+    "cardsSection": "Tarxetas",
+    "addCard": "Engadir tarxeta",
+    "cardN": "Tarxeta {{n}}",
+    "removeCard": "Quitar tarxeta",
+    "word": "Palabra",
+    "translation": "Tradución",
+    "example": "Exemplo (opcional)",
+    "addImage": "Engadir imaxe",
+    "removeImage": "Quitar imaxe",
+    "customizeSection": "Personalizar",
+    "color": "Cor",
+    "icon": "Icona",
+    "folder": "Cartafol",
+    "noFolder": "Sen cartafol",
+    "previewSection": "Vista previa",
+    "previewPlaceholder": "Título do conxunto",
+    "save": "Crear conxunto",
+    "saving": "Gardando…",
+    "cancel": "Cancelar",
+    "saveError": "Non se puido gardar. Téntao de novo.",
     "error": {
-      "emptyTitle": "170|O título do conxunto é obrigatorio.",
-      "titleTooLong": "171|O título do conxunto debe ter menos de 150 caracteres.",
-      "descTooLong": "172|A descrición debe ter menos de 200 caracteres.",
-      "noValidCards": "173|Engade polo menos unha tarxeta con palabra e tradución.",
-      "exampleTooLong": "174|Os exemplos das tarxetas deben ter menos de 150 caracteres."
+      "emptyTitle": "O título do conxunto é obrigatorio.",
+      "titleTooLong": "O título do conxunto debe ter menos de 150 caracteres.",
+      "descTooLong": "A descrición debe ter menos de 200 caracteres.",
+      "noValidCards": "Engade polo menos unha tarxeta con palabra e tradución.",
+      "exampleTooLong": "Os exemplos das tarxetas deben ter menos de 150 caracteres."
     },
-    "imageTimeout": "175|Esgotouse o tempo ao subir a imaxe. Comproba a conexión e téntao de novo.",
+    "imageTimeout": "Esgotouse o tempo ao subir a imaxe. Comproba a conexión e téntao de novo.",
     "import": {
-      "button": "176|Importar",
-      "title": "177|Importar tarxetas",
-      "subtitle": "178|Copia e pega os teus datos: de Word, Excel, Google Docs e similares.",
-      "close": "179|Pechar a importación",
-      "dataSection": "180|Os teus datos",
-      "placeholder": "181|Palabra 1\\tDefinición 1\\nPalabra 2\\tDefinición 2\\nPalabra 3\\tDefinición 3",
-      "separatorsSection": "182|Separadores",
-      "betweenTermAndDefinition": "183|Entre palabra e tradución",
-      "betweenCards": "184|Entre tarxetas",
-      "tab": "185|Tabulador",
-      "comma": "186|Coma",
-      "newline": "187|Salto de liña",
-      "semicolon": "188|Punto e coma",
-      "custom": "189|Personalizado",
-      "customPlaceholder": "190|p. ex. —",
-      "previewSection": "191|Vista previa",
-      "previewEmpty": "192|Aínda non hai nada que amosar.",
-      "noDefinition": "193|Sen tradución",
-      "confirm": "194|Engadir tarxetas"
+      "button": "Importar",
+      "title": "Importar tarxetas",
+      "subtitle": "Copia e pega os teus datos: de Word, Excel, Google Docs e similares.",
+      "close": "Pechar a importación",
+      "dataSection": "Os teus datos",
+      "placeholder": "Palabra 1\\tDefinición 1\\nPalabra 2\\tDefinición 2\\nPalabra 3\\tDefinición 3",
+      "separatorsSection": "Separadores",
+      "betweenTermAndDefinition": "Entre palabra e tradución",
+      "betweenCards": "Entre tarxetas",
+      "tab": "Tabulador",
+      "comma": "Coma",
+      "newline": "Salto de liña",
+      "semicolon": "Punto e coma",
+      "custom": "Personalizado",
+      "customPlaceholder": "p. ex. —",
+      "previewSection": "Vista previa",
+      "previewEmpty": "Aínda non hai nada que amosar.",
+      "noDefinition": "Sen tradución",
+      "confirm": "Engadir tarxetas"
     },
     "iconPicker": {
-      "open": "195|Máis iconas",
-      "title": "196|Escoller icona",
-      "search": "197|Buscar símbolo",
-      "close": "198|Pechar",
-      "empty": "199|Ningunha icona coincide con ese nome."
+      "open": "Máis iconas",
+      "title": "Escoller icona",
+      "search": "Buscar símbolo",
+      "close": "Pechar",
+      "empty": "Ningunha icona coincide con ese nome."
     },
     "iconGroup": {
-      "learning": "200|Aprendizaxe",
-      "languages": "201|Idiomas",
-      "nature": "202|Natureza",
-      "health": "203|Saúde",
-      "food": "204|Comida",
-      "travel": "205|Viaxes",
-      "work": "206|Traballo",
-      "tech": "207|Tecnoloxía",
-      "creativity": "208|Creatividade",
-      "general": "209|Xeral"
+      "learning": "Aprendizaxe",
+      "languages": "Idiomas",
+      "nature": "Natureza",
+      "health": "Saúde",
+      "food": "Comida",
+      "travel": "Viaxes",
+      "work": "Traballo",
+      "tech": "Tecnoloxía",
+      "creativity": "Creatividade",
+      "general": "Xeral"
     }
   },
   "home": {
     "title": {
-      "flashcards": "210|Tarxetas",
-      "folders": "211|Cartafoles",
-      "sets": "212|Conxuntos",
-      "create": "213|Crear",
-      "profile": "214|Perfil",
-      "speaking": "215|Fala",
-      "listening": "216|Escoita",
-      "reading": "217|Lectura",
-      "writing": "218|Escritura"
+      "flashcards": "Tarxetas",
+      "folders": "Cartafoles",
+      "sets": "Conxuntos",
+      "create": "Crear",
+      "profile": "Perfil",
+      "speaking": "Fala",
+      "listening": "Escoita",
+      "reading": "Lectura",
+      "writing": "Escritura"
     },
     "subtitle": {
-      "pickSet": "219|Escolle un conxunto para practicar",
-      "folders": "220|Xestiona os teus cartafoles",
-      "sets": "221|Xestiona os teus conxuntos de tarxetas",
-      "create": "222|Crea un novo conxunto de estudo",
-      "speaking": "223|Practica a túa expresión oral.",
-      "listening": "224|Adestra o oído para entender o idioma con naturalidade.",
-      "reading": "225|Le e repasa materiais do idioma.",
-      "writing": "226|Practica o idioma de forma activa."
+      "pickSet": "Escolle un conxunto para practicar",
+      "folders": "Xestiona os teus cartafoles",
+      "sets": "Xestiona os teus conxuntos de tarxetas",
+      "create": "Crea un novo conxunto de estudo",
+      "speaking": "Practica a túa expresión oral.",
+      "listening": "Adestra o oído para entender o idioma con naturalidade.",
+      "reading": "Le e repasa materiais do idioma.",
+      "writing": "Practica o idioma de forma activa."
     },
     "category": {
-      "speaking": "227|FALA",
-      "listening": "228|ESCOITA",
-      "reading": "229|LECTURA",
-      "writing": "230|ESCRITURA"
+      "speaking": "FALA",
+      "listening": "ESCOITA",
+      "reading": "LECTURA",
+      "writing": "ESCRITURA"
     },
     "todayGoal": {
-      "title": "231|Obxectivo de hoxe",
-      "left": "232|Quedan {{count}} palabras"
+      "title": "Obxectivo de hoxe",
+      "left": "Quedan {{count}} palabras"
     },
     "stat": {
-      "learnedToday": "233|Aprendidas hoxe",
-      "words": "234|palabras",
-      "accuracy": "235|Precisión",
-      "greatJob": "236|Bo traballo!",
-      "streak": "237|Racha",
-      "days": "238|días"
+      "learnedToday": "Aprendidas hoxe",
+      "words": "palabras",
+      "accuracy": "Precisión",
+      "greatJob": "Bo traballo!",
+      "streak": "Racha",
+      "days": "días"
     },
-    "continueLearning": "239|Seguir aprendendo",
-    "yourSets": "240|Os teus conxuntos",
-    "viewAll": "241|Ver todos",
-    "review": "242|Repasar",
+    "continueLearning": "Seguir aprendendo",
+    "yourSets": "Os teus conxuntos",
+    "viewAll": "Ver todos",
+    "review": "Repasar",
     "sets": {
-      "emptyTitle": "243|Aínda non hai conxuntos",
-      "emptyBody": "244|Crea o teu primeiro conxunto de tarxetas co botón Crear."
+      "emptyTitle": "Aínda non hai conxuntos",
+      "emptyBody": "Crea o teu primeiro conxunto de tarxetas co botón Crear."
     },
     "create": {
-      "folder": "245|Cartafol",
-      "set": "246|Conxunto",
-      "text": "247|Texto",
-      "audio": "248|Audio",
-      "essay": "249|Redacción"
+      "folder": "Cartafol",
+      "set": "Conxunto",
+      "text": "Texto",
+      "audio": "Audio",
+      "essay": "Redacción"
     },
     "placeholder": {
-      "comingSoon": "250|{{title}} — moi pronto"
+      "comingSoon": "{{title}} — moi pronto"
     },
     "progress": {
       "subtitle": {
-        "speaking": "251|de práctica de fala",
-        "listening": "252|de práctica de escoita",
-        "reading": "253|de práctica de lectura",
-        "writing": "254|de práctica de escritura"
+        "speaking": "de práctica de fala",
+        "listening": "de práctica de escoita",
+        "reading": "de práctica de lectura",
+        "writing": "de práctica de escritura"
       }
     },
     "dailyGoal": {
-      "title": "255|O teu obxectivo de hoxe",
-      "body": "256|Escolle que queres practicar hoxe: a tarxeta de abaixo conta para iso.",
-      "chosenBody": "257|Disto vai o día de hoxe.",
-      "howMuch": "258|Canto?",
-      "change": "259|Cambiar"
+      "title": "O teu obxectivo de hoxe",
+      "body": "Escolle que queres practicar hoxe: a tarxeta de abaixo conta para iso.",
+      "chosenBody": "Disto vai o día de hoxe.",
+      "howMuch": "Canto?",
+      "change": "Cambiar"
     },
     "lastNote": {
-      "title": "260|Última nota que liches"
+      "title": "Última nota que liches"
     }
   },
   "categories": {
-    "speaking": "261|Fala",
-    "listening": "262|Escoita",
-    "reading": "263|Lectura",
-    "writing": "264|Escritura"
+    "speaking": "Fala",
+    "listening": "Escoita",
+    "reading": "Lectura",
+    "writing": "Escritura"
   },
   "phase0": {
-    "title": "265|WordAround",
-    "subtitle": "266|A fase 0 está activa. Tokens de deseño cargados, Firebase conectado."
+    "title": "WordAround",
+    "subtitle": "A fase 0 está activa. Tokens de deseño cargados, Firebase conectado."
   },
   "study": {
-    "flip": "267|Xirar",
-    "known": "268|Sabíaa",
-    "unknown": "269|Aínda a aprendo",
-    "mastered": "270|Dominada",
-    "shuffle": "271|Barallar",
-    "trackProgress": "272|Rexistrar o progreso",
-    "speak": "273|Pronunciar",
-    "roundDone": "274|Rolda completada",
-    "knewCount": "275|Acertaches {{known}} de {{total}}",
-    "repeatUnknown": "276|Repetir {{count}} sen saber",
-    "restart": "277|Recomezar",
+    "flip": "Xirar",
+    "known": "Sabíaa",
+    "unknown": "Aínda a aprendo",
+    "mastered": "Dominada",
+    "shuffle": "Barallar",
+    "trackProgress": "Rexistrar o progreso",
+    "speak": "Pronunciar",
+    "roundDone": "Rolda completada",
+    "knewCount": "Acertaches {{known}} de {{total}}",
+    "repeatUnknown": "Repetir {{count}} sen saber",
+    "restart": "Recomezar",
     "filter": {
-      "all": "278|Todas",
-      "studied": "279|Estudadas",
-      "remaining": "280|Pendentes",
-      "mastered": "281|Dominadas"
+      "all": "Todas",
+      "studied": "Estudadas",
+      "remaining": "Pendentes",
+      "mastered": "Dominadas"
     },
-    "addCard": "282|Engadir tarxeta",
-    "editCard": "283|Editar tarxeta",
-    "deleteCard": "284|Eliminar tarxeta",
-    "deleteCardConfirm": "285|Eliminar esta tarxeta?",
-    "emptyPrompt": "286|Este conxunto aínda non ten tarxetas. Engade a primeira.",
-    "save": "287|Gardar",
-    "cancel": "288|Cancelar"
+    "addCard": "Engadir tarxeta",
+    "editCard": "Editar tarxeta",
+    "deleteCard": "Eliminar tarxeta",
+    "deleteCardConfirm": "Eliminar esta tarxeta?",
+    "emptyPrompt": "Este conxunto aínda non ten tarxetas. Engade a primeira.",
+    "save": "Gardar",
+    "cancel": "Cancelar"
   },
   "writing": {
     "today": {
-      "title": "289|Progreso de hoxe",
-      "unit": "290|palabras",
-      "subtitle": "291|de práctica de escritura"
+      "title": "Progreso de hoxe",
+      "unit": "palabras",
+      "subtitle": "de práctica de escritura"
     },
-    "sectionTitle": "292|Modos de práctica",
+    "sectionTitle": "Modos de práctica",
     "menu": {
       "writeFromSets": {
-        "title": "293|Escribir dende os conxuntos",
-        "subtitle": "294|Practica a ortografía e a escritura das palabras dos teus conxuntos."
+        "title": "Escribir dende os conxuntos",
+        "subtitle": "Practica a ortografía e a escritura das palabras dos teus conxuntos."
       },
       "essays": {
-        "title": "295|Redaccións",
-        "subtitle": "296|Escribe textos e recibe comentarios da IA sobre gramática e estilo."
+        "title": "Redaccións",
+        "subtitle": "Escribe textos e recibe comentarios da IA sobre gramática e estilo."
       },
-      "comingSoon": "297|Moi pronto"
+      "comingSoon": "Moi pronto"
     },
     "setSelection": {
-      "title": "298|Escoller conxunto",
+      "title": "Escoller conxunto",
       "empty": {
-        "title": "299|Non hai conxuntos con palabras",
-        "subtitle": "300|Crea un conxunto con polo menos unha tarxeta antes de comezar a práctica de escritura."
+        "title": "Non hai conxuntos con palabras",
+        "subtitle": "Crea un conxunto con polo menos unha tarxeta antes de comezar a práctica de escritura."
       },
-      "wordsCount": "301|{{count}} palabras",
-      "wordsCount_one": "302|{{count}} palabra",
-      "close": "303|Pechar"
+      "wordsCount": "{{count}} palabras",
+      "wordsCount_one": "{{count}} palabra",
+      "close": "Pechar"
     },
     "writeWords": {
-      "title": "304|Escribir dende os conxuntos",
-      "subtitle": "305|Escribe a tradución e preme Intro.",
-      "translateHint": "306|Traduce ao teu idioma",
-      "hint": "307|Pista",
-      "skip": "308|Saltar",
-      "submit": "309|Comprobar",
-      "inputPlaceholder": "310|Escribe aquí…",
-      "loading": "311|Cargando o conxunto…",
-      "loadError": "312|Non puidemos cargar este conxunto.",
-      "noCards": "313|Este conxunto non ten tarxetas.",
-      "back": "314|Atrás",
+      "title": "Escribir dende os conxuntos",
+      "subtitle": "Escribe a tradución e preme Intro.",
+      "translateHint": "Traduce ao teu idioma",
+      "hint": "Pista",
+      "skip": "Saltar",
+      "submit": "Comprobar",
+      "inputPlaceholder": "Escribe aquí…",
+      "loading": "Cargando o conxunto…",
+      "loadError": "Non puidemos cargar este conxunto.",
+      "noCards": "Este conxunto non ten tarxetas.",
+      "back": "Atrás",
       "settings": {
-        "title": "315|Axustes",
-        "trainingMode": "316|Modo de adestramento",
-        "difficulty": "317|Dificultade"
+        "title": "Axustes",
+        "trainingMode": "Modo de adestramento",
+        "difficulty": "Dificultade"
       },
       "mode": {
-        "wordToTranslation": "318|Palabra → Tradución",
-        "translationToWord": "319|Tradución → Palabra"
+        "wordToTranslation": "Palabra → Tradución",
+        "translationToWord": "Tradución → Palabra"
       },
       "difficulty": {
-        "easy": "320|Fácil",
-        "medium": "321|Media",
-        "hard": "322|Difícil",
-        "easyDesc": "323|Pistas ilimitadas, saltos ilimitados",
-        "mediumDesc": "324|1 letra de pista, máx. 25 % de saltos",
-        "hardDesc": "325|Sen pistas, sen saltos, con tempo"
+        "easy": "Fácil",
+        "medium": "Media",
+        "hard": "Difícil",
+        "easyDesc": "Pistas ilimitadas, saltos ilimitados",
+        "mediumDesc": "1 letra de pista, máx. 25 % de saltos",
+        "hardDesc": "Sen pistas, sen saltos, con tempo"
       },
       "translatePrompt": {
-        "word": "326|Traduce ao teu idioma",
-        "translation": "327|Escribe a palabra orixinal"
+        "word": "Traduce ao teu idioma",
+        "translation": "Escribe a palabra orixinal"
       },
-      "skipsLeft_one": "328|Queda {{count}} salto",
-      "skipsLeft_other": "329|Quedan {{count}} saltos",
-      "seconds": "330|{{count}} s",
+      "skipsLeft_one": "Queda {{count}} salto",
+      "skipsLeft_other": "Quedan {{count}} saltos",
+      "seconds": "{{count}} s",
       "result": {
         "win": {
-          "title": "331|Rolda completada!",
-          "subtitle": "332|Bo traballo. Remataches esta rolda de escritura."
+          "title": "Rolda completada!",
+          "subtitle": "Bo traballo. Remataches esta rolda de escritura."
         },
         "timeout": {
-          "title": "333|Rematou o tempo",
-          "subtitle": "334|O contador do modo difícil chegou a cero. Téntao de novo dende a primeira palabra."
+          "title": "Rematou o tempo",
+          "subtitle": "O contador do modo difícil chegou a cero. Téntao de novo dende a primeira palabra."
         },
         "wrong": {
-          "title": "335|Resposta incorrecta",
-          "subtitle": "336|No modo difícil, un erro remata a rolda."
+          "title": "Resposta incorrecta",
+          "subtitle": "No modo difícil, un erro remata a rolda."
         },
-        "perfectTitle": "337|Rolda perfecta!",
-        "perfectBody": "338|Completaches o modo difícil sen erros. Sen saltos. Sen pistas. Só destreza.",
-        "totalWords": "339|Palabras totais",
-        "completedWords": "340|Palabras completadas",
-        "skippedWords": "341|Palabras saltadas",
-        "hintsUsed": "342|Pistas usadas",
-        "streak": "343|Racha",
-        "difficultyLabel": "344|Dificultade",
-        "word": "345|Palabra",
-        "yourAnswer": "346|A túa resposta",
-        "correctAnswer": "347|Resposta correcta",
-        "tryAgain": "348|Téntao de novo"
+        "perfectTitle": "Rolda perfecta!",
+        "perfectBody": "Completaches o modo difícil sen erros. Sen saltos. Sen pistas. Só destreza.",
+        "totalWords": "Palabras totais",
+        "completedWords": "Palabras completadas",
+        "skippedWords": "Palabras saltadas",
+        "hintsUsed": "Pistas usadas",
+        "streak": "Racha",
+        "difficultyLabel": "Dificultade",
+        "word": "Palabra",
+        "yourAnswer": "A túa resposta",
+        "correctAnswer": "Resposta correcta",
+        "tryAgain": "Téntao de novo"
       }
     },
     "essays": {
-      "title": "349|Redaccións",
-      "subtitle": "350|Tema escollido pola IA. Escribe e despois recibe comentarios.",
+      "title": "Redaccións",
+      "subtitle": "Tema escollido pola IA. Escribe e despois recibe comentarios.",
       "mode": {
-        "suggested": "351|Suxerido",
-        "custom": "352|O meu tema"
+        "suggested": "Suxerido",
+        "custom": "O meu tema"
       },
       "custom": {
-        "placeholder": "353|Escribe o teu propio tema de redacción...",
-        "generate": "354|Xerar tarefa"
+        "placeholder": "Escribe o teu propio tema de redacción...",
+        "generate": "Xerar tarefa"
       },
       "suggested": {
-        "generate": "355|Xerar tema",
-        "regenerate": "356|Novo tema"
+        "generate": "Xerar tema",
+        "regenerate": "Novo tema"
       },
-      "language": "357|Idioma",
-      "difficulty": "358|Dificultade",
+      "language": "Idioma",
+      "difficulty": "Dificultade",
       "task": {
-        "time": "359|≈ {{count}} min",
-        "wordRange": "360|{{min}}-{{max}} palabras",
-        "quickTips": "361|Consellos rápidos",
-        "taskLabel": "362|Tarefa"
+        "time": "≈ {{count}} min",
+        "wordRange": "{{min}}-{{max}} palabras",
+        "quickTips": "Consellos rápidos",
+        "taskLabel": "Tarefa"
       },
       "editor": {
-        "placeholder": "363|Comeza a escribir a túa redacción aquí...",
-        "wordCount": "364|{{count}} / {{min}}-{{max}} palabras",
+        "placeholder": "Comeza a escribir a túa redacción aquí...",
+        "wordCount": "{{count}} / {{min}}-{{max}} palabras",
         "validation": {
-          "belowMinimum": "365|Segue así: precisas polo menos {{min}} palabras.",
-          "aboveMaximum": "366|Pasaches do límite: proba a acurtar.",
-          "valid": "367|Dentro do rango."
+          "belowMinimum": "Segue así: precisas polo menos {{min}} palabras.",
+          "aboveMaximum": "Pasaches do límite: proba a acurtar.",
+          "valid": "Dentro do rango."
         },
-        "reset": "368|Restablecer"
+        "reset": "Restablecer"
       },
       "error": {
-        "emptyCustomTopic": "369|Escribe primeiro un tema.",
-        "generationFailed": "370|Non se puido xerar un tema. Téntao de novo."
+        "emptyCustomTopic": "Escribe primeiro un tema.",
+        "generationFailed": "Non se puido xerar un tema. Téntao de novo."
       },
-      "generating": "371|Xerando...",
+      "generating": "Xerando...",
       "hint": {
-        "button": "372|Pedir pista",
-        "remaining": "373|Quedan {{remaining}}/{{limit}}",
-        "noneLeft": "374|Non quedan pistas",
-        "notAvailable": "375|As pistas non están dispoñibles neste nivel",
-        "generating": "376|Xerando a pista...",
-        "error": "377|Non se puido obter unha pista. Téntao de novo.",
+        "button": "Pedir pista",
+        "remaining": "Quedan {{remaining}}/{{limit}}",
+        "noneLeft": "Non quedan pistas",
+        "notAvailable": "As pistas non están dispoñibles neste nivel",
+        "generating": "Xerando a pista...",
+        "error": "Non se puido obter unha pista. Téntao de novo.",
         "category": {
-          "content": "378|Contido",
-          "grammar": "379|Gramática",
-          "vocabulary": "380|Vocabulario",
-          "structure": "381|Estrutura"
+          "content": "Contido",
+          "grammar": "Gramática",
+          "vocabulary": "Vocabulario",
+          "structure": "Estrutura"
         }
       },
       "check": {
-        "button": "382|Revisar a miña redacción",
-        "checking": "383|Revisando...",
-        "disabled": "384|Escribe primeiro dentro do rango de palabras",
-        "error": "385|Non puidemos revisar a túa redacción. Téntao de novo.",
-        "languageUnsupported": "386|A revisión gramatical aínda non está dispoñible para {{language}}."
+        "button": "Revisar a miña redacción",
+        "checking": "Revisando...",
+        "disabled": "Escribe primeiro dentro do rango de palabras",
+        "error": "Non puidemos revisar a túa redacción. Téntao de novo.",
+        "languageUnsupported": "A revisión gramatical aínda non está dispoñible para {{language}}."
       },
       "score": {
-        "title": "387|Puntuación da redacción",
+        "title": "Puntuación da redacción",
         "quality": {
-          "excellent": "388|Excelente",
-          "veryGood": "389|Moi ben",
-          "good": "390|Ben",
-          "needsWork": "391|Hai que mellorar"
+          "excellent": "Excelente",
+          "veryGood": "Moi ben",
+          "good": "Ben",
+          "needsWork": "Hai que mellorar"
         },
         "category": {
-          "grammar": "392|Gramática",
-          "vocabulary": "393|Vocabulario",
-          "length": "394|Extensión",
-          "complexity": "395|Complexidade",
-          "relevance": "396|Relevancia",
-          "independence": "397|Autonomía"
+          "grammar": "Gramática",
+          "vocabulary": "Vocabulario",
+          "length": "Extensión",
+          "complexity": "Complexidade",
+          "relevance": "Relevancia",
+          "independence": "Autonomía"
         },
         "stat": {
-          "words": "398|Palabras",
-          "grammar": "399|Gramática",
-          "vocabStyle": "400|Vocabulario/estilo",
-          "hints": "401|Pistas",
-          "translations": "402|Traducións",
-          "synonyms": "403|Sinónimos"
+          "words": "Palabras",
+          "grammar": "Gramática",
+          "vocabStyle": "Vocabulario/estilo",
+          "hints": "Pistas",
+          "translations": "Traducións",
+          "synonyms": "Sinónimos"
         }
       },
       "grammar": {
-        "sectionTitle": "404|Problemas de gramática",
-        "count_one": "405|{{count}} problema",
-        "count_other": "406|{{count}} problemas",
-        "empty": "407|Non se atoparon problemas de gramática: bo traballo!",
-        "original": "408|Orixinal:",
-        "suggestion": "409|Suxestión:",
-        "reason": "410|Motivo:",
+        "sectionTitle": "Problemas de gramática",
+        "count_one": "{{count}} problema",
+        "count_other": "{{count}} problemas",
+        "empty": "Non se atoparon problemas de gramática: bo traballo!",
+        "original": "Orixinal:",
+        "suggestion": "Suxestión:",
+        "reason": "Motivo:",
         "category": {
-          "grammar": "411|Gramática",
-          "vocabulary": "412|Vocabulario",
-          "style": "413|Estilo"
+          "grammar": "Gramática",
+          "vocabulary": "Vocabulario",
+          "style": "Estilo"
         },
         "save": {
-          "idle": "414|Gardar en Notas",
-          "saving": "415|Gardando…",
-          "saved": "416|Gardado",
-          "duplicate": "417|Xa está gardado",
-          "failed": "418|Tentar gardar de novo"
+          "idle": "Gardar en Notas",
+          "saving": "Gardando…",
+          "saved": "Gardado",
+          "duplicate": "Xa está gardado",
+          "failed": "Tentar gardar de novo"
         }
       },
       "helper": {
-        "translate": "419|Traducir",
-        "synonym": "420|Sinónimo",
-        "remaining": "421|Quedan {{remaining}}",
-        "notAvailable": "422|Non dispoñible neste nivel"
+        "translate": "Traducir",
+        "synonym": "Sinónimo",
+        "remaining": "Quedan {{remaining}}",
+        "notAvailable": "Non dispoñible neste nivel"
       },
       "translate": {
-        "title": "423|Traducir",
-        "placeholder": "424|Introduce unha palabra ou frase curta",
-        "submit": "425|Traducir",
-        "submitting": "426|Traducindo..."
+        "title": "Traducir",
+        "placeholder": "Introduce unha palabra ou frase curta",
+        "submit": "Traducir",
+        "submitting": "Traducindo..."
       },
       "synonym": {
-        "title": "427|Sinónimos",
-        "placeholder": "428|Introduce unha palabra",
-        "submit": "429|Buscar sinónimos",
-        "submitting": "430|Buscando..."
+        "title": "Sinónimos",
+        "placeholder": "Introduce unha palabra",
+        "submit": "Buscar sinónimos",
+        "submitting": "Buscando..."
       },
       "assist": {
-        "from": "431|De",
-        "to": "432|A",
-        "close": "433|Pechar",
-        "noResult": "434|Non se atopou ningún resultado.",
-        "sameLanguage": "435|Escolle outro idioma de entrada.",
-        "error": "436|O servizo non está dispoñible temporalmente."
+        "from": "De",
+        "to": "A",
+        "close": "Pechar",
+        "noResult": "Non se atopou ningún resultado.",
+        "sameLanguage": "Escolle outro idioma de entrada.",
+        "error": "O servizo non está dispoñible temporalmente."
       },
-      "saveMistakeConfirmTitle": "437|Gardar este erro en Notas?",
-      "saveMistakeConfirmBody": "438|Gardarase como nota de erro coa corrección “{{correction}}”.",
-      "autoSaveConfirmTitle": "439|Gardar estes erros nas túas notas?",
-      "autoSaveConfirmBody_one": "440|Esta revisión atopou {{count}} erro. Ao gardalo convértese nunha nota que volve para repasar.",
-      "autoSaveConfirmBody_other": "441|Esta revisión atopou {{count}} erros. Ao gardalos convértense en notas que volven para repasar."
+      "saveMistakeConfirmTitle": "Gardar este erro en Notas?",
+      "saveMistakeConfirmBody": "Gardarase como nota de erro coa corrección “{{correction}}”.",
+      "autoSaveConfirmTitle": "Gardar estes erros nas túas notas?",
+      "autoSaveConfirmBody_one": "Esta revisión atopou {{count}} erro. Ao gardalo convértese nunha nota que volve para repasar.",
+      "autoSaveConfirmBody_other": "Esta revisión atopou {{count}} erros. Ao gardalos convértense en notas que volven para repasar."
     },
     "grammar": {
-      "subtitle": "442|Organiza a gramática por temas con notas claras e estruturadas.",
-      "newTopic": "443|Novo tema",
-      "topicsEmptyTitle": "444|Aínda non hai temas",
-      "topicsEmptyBody": "445|Crea o teu primeiro tema para comezar a xuntar notas de gramática.",
-      "notesCount_one": "446|{{count}} nota",
-      "notesCount_other": "447|{{count}} notas",
-      "deleteTopicConfirm": "448|Eliminar \"{{title}}\" e todas as súas notas? Isto non se pode desfacer.",
-      "notesEmptyTitle": "449|Aínda non hai notas",
-      "notesEmptyBody": "450|Engade a túa primeira nota a este tema.",
-      "newNote": "451|Nova nota",
-      "deleteNoteConfirm": "452|Eliminar esta nota? Isto non se pode desfacer.",
-      "loading": "453|Cargando…",
-      "loadError": "454|Non puidemos cargar as túas notas de gramática.",
-      "notFoundTitle": "455|Non atopado",
-      "notFoundBody": "456|Pode que este elemento fose eliminado.",
-      "back": "457|Atrás",
-      "updated": "458|Actualizado o {{date}}",
+      "subtitle": "Organiza a gramática por temas con notas claras e estruturadas.",
+      "newTopic": "Novo tema",
+      "topicsEmptyTitle": "Aínda non hai temas",
+      "topicsEmptyBody": "Crea o teu primeiro tema para comezar a xuntar notas de gramática.",
+      "notesCount_one": "{{count}} nota",
+      "notesCount_other": "{{count}} notas",
+      "deleteTopicConfirm": "Eliminar \"{{title}}\" e todas as súas notas? Isto non se pode desfacer.",
+      "notesEmptyTitle": "Aínda non hai notas",
+      "notesEmptyBody": "Engade a túa primeira nota a este tema.",
+      "newNote": "Nova nota",
+      "deleteNoteConfirm": "Eliminar esta nota? Isto non se pode desfacer.",
+      "loading": "Cargando…",
+      "loadError": "Non puidemos cargar as túas notas de gramática.",
+      "notFoundTitle": "Non atopado",
+      "notFoundBody": "Pode que este elemento fose eliminado.",
+      "back": "Atrás",
+      "updated": "Actualizado o {{date}}",
       "form": {
-        "newTitle": "459|Novo tema",
-        "editTitle": "460|Editar tema",
-        "name": "461|Título",
-        "namePlaceholder": "462|p. ex. Verbos casteláns",
-        "description": "463|Descrición",
-        "descriptionPlaceholder": "464|Opcional",
-        "color": "465|Cor",
-        "icon": "466|Icona",
-        "save": "467|Gardar",
-        "cancel": "468|Cancelar",
-        "language": "469|Idioma",
-        "languageNone": "470|Sen definir"
+        "newTitle": "Novo tema",
+        "editTitle": "Editar tema",
+        "name": "Título",
+        "namePlaceholder": "p. ex. Verbos casteláns",
+        "description": "Descrición",
+        "descriptionPlaceholder": "Opcional",
+        "color": "Cor",
+        "icon": "Icona",
+        "save": "Gardar",
+        "cancel": "Cancelar",
+        "language": "Idioma",
+        "languageNone": "Sen definir"
       },
       "noteType": {
-        "standard": "471|Estándar",
-        "mistake": "472|Erro",
-        "rule": "473|Regra",
-        "comparison": "474|Comparación",
-        "cheatSheet": "475|Chuleta",
-        "exercise": "476|Exercicio"
+        "standard": "Estándar",
+        "mistake": "Erro",
+        "rule": "Regra",
+        "comparison": "Comparación",
+        "cheatSheet": "Chuleta",
+        "exercise": "Exercicio"
       },
       "block": {
-        "heading": "477|Cabeceira",
-        "paragraph": "478|Texto",
-        "bulletList": "479|Lista con viñetas",
-        "rule": "480|Regra",
-        "example": "481|Exemplo",
-        "warning": "482|Aviso",
-        "quote": "483|Cita",
-        "divider": "484|Separador",
-        "addBlock": "485|Engadir bloque",
-        "addItem": "486|Engadir elemento",
-        "moveUp": "487|Subir",
-        "moveDown": "488|Baixar",
-        "remove": "489|Quitar",
-        "secondaryPlaceholder": "490|Detalle / tradución (opcional)",
-        "subheading": "491|Subtítulo",
-        "numberedList": "492|Lista numerada",
-        "checklist": "493|Lista de comprobación",
-        "comparison": "494|Comparación",
-        "exercise": "495|Exercicio",
-        "quiz": "496|Cuestionario",
-        "image": "497|Imaxe",
-        "comparisonSecondary": "498|Segundo lado",
-        "imageAdd": "499|Engadir / substituír imaxe",
-        "imageUploading": "500|Subindo…",
-        "imageFailed": "501|Non se puido subir a imaxe.",
-        "imageSaveFirst": "502|Inicia sesión para subir imaxes."
+        "heading": "Cabeceira",
+        "paragraph": "Texto",
+        "bulletList": "Lista con viñetas",
+        "rule": "Regra",
+        "example": "Exemplo",
+        "warning": "Aviso",
+        "quote": "Cita",
+        "divider": "Separador",
+        "addBlock": "Engadir bloque",
+        "addItem": "Engadir elemento",
+        "moveUp": "Subir",
+        "moveDown": "Baixar",
+        "remove": "Quitar",
+        "secondaryPlaceholder": "Detalle / tradución (opcional)",
+        "subheading": "Subtítulo",
+        "numberedList": "Lista numerada",
+        "checklist": "Lista de comprobación",
+        "comparison": "Comparación",
+        "exercise": "Exercicio",
+        "quiz": "Cuestionario",
+        "image": "Imaxe",
+        "comparisonSecondary": "Segundo lado",
+        "imageAdd": "Engadir / substituír imaxe",
+        "imageUploading": "Subindo…",
+        "imageFailed": "Non se puido subir a imaxe.",
+        "imageSaveFirst": "Inicia sesión para subir imaxes."
       },
       "blockPlaceholder": {
-        "heading": "503|Cabeceira",
-        "paragraph": "504|Escribe a túa explicación…",
-        "bulletList": "505|Elemento da lista",
-        "rule": "506|Explica a regra gramatical…",
-        "example": "507|Engade un exemplo…",
-        "warning": "508|Erro común ou aviso…",
-        "quote": "509|Frase que paga a pena lembrar…",
-        "subheading": "510|Subtítulo",
-        "numberedList": "511|Elemento da lista",
-        "checklist": "512|Elemento da lista de comprobación",
-        "comparison": "513|Primeiro lado",
-        "exercise": "514|Instrución de práctica…",
-        "quiz": "515|Pregunta",
-        "image": "516|Pé de imaxe"
+        "heading": "Cabeceira",
+        "paragraph": "Escribe a túa explicación…",
+        "bulletList": "Elemento da lista",
+        "rule": "Explica a regra gramatical…",
+        "example": "Engade un exemplo…",
+        "warning": "Erro común ou aviso…",
+        "quote": "Frase que paga a pena lembrar…",
+        "subheading": "Subtítulo",
+        "numberedList": "Elemento da lista",
+        "checklist": "Elemento da lista de comprobación",
+        "comparison": "Primeiro lado",
+        "exercise": "Instrución de práctica…",
+        "quiz": "Pregunta",
+        "image": "Pé de imaxe"
       },
       "editor": {
-        "titlePlaceholder": "517|Título da nota",
-        "save": "518|Gardar nota",
-        "saving": "519|Gardando…",
-        "delete": "520|Eliminar nota",
-        "saveError": "521|Non se puido gardar. Téntao de novo.",
-        "subtitle": "522|Editar nota",
-        "tags": "523|Etiquetas",
-        "tagsPlaceholder": "524|Engadir unha etiqueta…",
-        "removeTag": "525|Quitar a etiqueta {{tag}}",
-        "addToReview": "526|Engadir ao repaso",
-        "addedToReview": "527|Engadida á túa cola de repaso.",
-        "inReview": "528|En repaso · {{when}}",
-        "inReviewDue": "529|Toca repasala",
-        "removedFromReview": "530|Quitada da túa cola de repaso.",
-        "unsavedTitle": "531|Saír sen gardar?",
-        "unsavedBody": "532|Esta nota ten cambios que aínda non se gardaron.",
-        "discard": "533|Descartar os cambios",
-        "saveAndLeave": "534|Gardar e saír"
+        "titlePlaceholder": "Título da nota",
+        "save": "Gardar nota",
+        "saving": "Gardando…",
+        "delete": "Eliminar nota",
+        "saveError": "Non se puido gardar. Téntao de novo.",
+        "subtitle": "Editar nota",
+        "tags": "Etiquetas",
+        "tagsPlaceholder": "Engadir unha etiqueta…",
+        "removeTag": "Quitar a etiqueta {{tag}}",
+        "addToReview": "Engadir ao repaso",
+        "addedToReview": "Engadida á túa cola de repaso.",
+        "inReview": "En repaso · {{when}}",
+        "inReviewDue": "Toca repasala",
+        "removedFromReview": "Quitada da túa cola de repaso.",
+        "unsavedTitle": "Saír sen gardar?",
+        "unsavedBody": "Esta nota ten cambios que aínda non se gardaron.",
+        "discard": "Descartar os cambios",
+        "saveAndLeave": "Gardar e saír"
       },
       "quiz": {
-        "title": "535|Cuestionarios",
-        "new": "536|Novo cuestionario",
-        "start": "537|Comezar o cuestionario",
-        "delete": "538|Eliminar cuestionario",
-        "deleteConfirm": "539|Eliminar \"{{title}}\"? Isto non se pode desfacer.",
-        "emptyTitle": "540|Aínda non hai cuestionarios",
-        "emptyBody": "541|Crea un cuestionario a partir desta nota para poñerte a proba.",
-        "loadError": "542|Non se puideron cargar os cuestionarios.",
-        "questionsCount_one": "543|{{count}} pregunta",
-        "questionsCount_other": "544|{{count}} preguntas",
+        "title": "Cuestionarios",
+        "new": "Novo cuestionario",
+        "start": "Comezar o cuestionario",
+        "delete": "Eliminar cuestionario",
+        "deleteConfirm": "Eliminar \"{{title}}\"? Isto non se pode desfacer.",
+        "emptyTitle": "Aínda non hai cuestionarios",
+        "emptyBody": "Crea un cuestionario a partir desta nota para poñerte a proba.",
+        "loadError": "Non se puideron cargar os cuestionarios.",
+        "questionsCount_one": "{{count}} pregunta",
+        "questionsCount_other": "{{count}} preguntas",
         "type": {
-          "multipleChoice": "545|Escolla múltiple",
-          "trueFalse": "546|Verdadeiro / Falso",
-          "fillGap": "547|Encher o oco",
-          "shortAnswer": "548|Resposta curta"
+          "multipleChoice": "Escolla múltiple",
+          "trueFalse": "Verdadeiro / Falso",
+          "fillGap": "Encher o oco",
+          "shortAnswer": "Resposta curta"
         },
         "sheet": {
-          "title": "549|Crear cuestionario",
-          "titlePlaceholder": "550|Título do cuestionario",
-          "mode": "551|Modo de xeración",
-          "modeSmart": "552|Local intelixente",
-          "modeSmartDesc": "553|Xera preguntas a partir do contido da nota, no dispositivo.",
-          "modeAI": "554|Xerado con IA",
-          "modeAIDesc": "555|Xera preguntas máis ricas e contextuais con IA.",
-          "count": "556|Preguntas",
-          "types": "557|Tipos de pregunta",
-          "focus": "558|Foco (opcional)",
-          "focusPlaceholder": "559|p. ex. céntrate nas formas irregulares",
-          "preview": "560|Previsualizar as preguntas",
-          "regenerate": "561|Xerar de novo a vista previa",
-          "previewTitle": "562|Vista previa",
-          "saveQuiz": "563|Gardar cuestionario",
-          "generateQuiz": "564|Xerar cuestionario",
-          "generating": "565|Xerando…",
-          "saving": "566|Gardando…",
-          "useSmartInstead": "567|Usar mellor Local intelixente",
-          "modeManual": "568|Manual",
-          "modeManualDesc": "569|Escribe as túas propias preguntas.",
-          "createQuiz": "570|Crear cuestionario"
+          "title": "Crear cuestionario",
+          "titlePlaceholder": "Título do cuestionario",
+          "mode": "Modo de xeración",
+          "modeSmart": "Local intelixente",
+          "modeSmartDesc": "Xera preguntas a partir do contido da nota, no dispositivo.",
+          "modeAI": "Xerado con IA",
+          "modeAIDesc": "Xera preguntas máis ricas e contextuais con IA.",
+          "count": "Preguntas",
+          "types": "Tipos de pregunta",
+          "focus": "Foco (opcional)",
+          "focusPlaceholder": "p. ex. céntrate nas formas irregulares",
+          "preview": "Previsualizar as preguntas",
+          "regenerate": "Xerar de novo a vista previa",
+          "previewTitle": "Vista previa",
+          "saveQuiz": "Gardar cuestionario",
+          "generateQuiz": "Xerar cuestionario",
+          "generating": "Xerando…",
+          "saving": "Gardando…",
+          "useSmartInstead": "Usar mellor Local intelixente",
+          "modeManual": "Manual",
+          "modeManualDesc": "Escribe as túas propias preguntas.",
+          "createQuiz": "Crear cuestionario"
         },
         "play": {
-          "questionOf": "571|Pregunta {{current}} de {{total}}",
-          "submit": "572|Enviar a resposta",
-          "next": "573|Seguinte",
-          "finish": "574|Rematar",
-          "correct": "575|Correcto!",
-          "incorrect": "576|Incorrecto",
-          "correctAnswer": "577|Resposta correcta: {{answer}}",
-          "typeMissing": "578|Escribe a palabra que falta",
-          "typeAnswer": "579|Escribe a túa resposta",
-          "trueLabel": "580|Verdadeiro",
-          "falseLabel": "581|Falso"
+          "questionOf": "Pregunta {{current}} de {{total}}",
+          "submit": "Enviar a resposta",
+          "next": "Seguinte",
+          "finish": "Rematar",
+          "correct": "Correcto!",
+          "incorrect": "Incorrecto",
+          "correctAnswer": "Resposta correcta: {{answer}}",
+          "typeMissing": "Escribe a palabra que falta",
+          "typeAnswer": "Escribe a túa resposta",
+          "trueLabel": "Verdadeiro",
+          "falseLabel": "Falso"
         },
         "result": {
-          "scoreOf": "582|{{correct}} de {{total}} correctas",
+          "scoreOf": "{{correct}} de {{total}} correctas",
           "grade": {
-            "excellent": "583|Excelente!",
-            "good": "584|Bo traballo!",
-            "keepPracticing": "585|Segue practicando",
-            "reviewNote": "586|Repasa a nota"
+            "excellent": "Excelente!",
+            "good": "Bo traballo!",
+            "keepPracticing": "Segue practicando",
+            "reviewNote": "Repasa a nota"
           },
-          "incorrectSection": "587|Incorrectas",
-          "correctSection": "588|Correctas",
-          "yourAnswer": "589|A túa resposta: {{answer}}",
-          "tryAgain": "590|Téntao de novo",
-          "reviewNote": "591|Repasar a nota",
-          "done": "592|Feito"
+          "incorrectSection": "Incorrectas",
+          "correctSection": "Correctas",
+          "yourAnswer": "A túa resposta: {{answer}}",
+          "tryAgain": "Téntao de novo",
+          "reviewNote": "Repasar a nota",
+          "done": "Feito"
         },
         "errors": {
-          "notEnoughContent": "593|Engade primeiro máis contido á nota: un cuestionario precisa polo menos dous bloques de contido (regra, exemplo, aviso, parágrafo ou cita).",
-          "noMatchingQuestionTypes": "594|Non hai contido dabondo para os tipos de pregunta escollidos. Activa máis tipos ou engade máis contido.",
-          "aiFailed": "595|Non se puido xerar o cuestionario con IA. Téntao de novo ou usa Local intelixente."
+          "notEnoughContent": "Engade primeiro máis contido á nota: un cuestionario precisa polo menos dous bloques de contido (regra, exemplo, aviso, parágrafo ou cita).",
+          "noMatchingQuestionTypes": "Non hai contido dabondo para os tipos de pregunta escollidos. Activa máis tipos ou engade máis contido.",
+          "aiFailed": "Non se puido xerar o cuestionario con IA. Téntao de novo ou usa Local intelixente."
         },
-        "badge": "596|Cuestionario",
+        "badge": "Cuestionario",
         "manual": {
-          "questions_one": "597|{{count}} pregunta",
-          "questions_other": "598|{{count}} preguntas",
-          "add": "599|Engadir pregunta",
-          "questionPlaceholder": "600|Texto da pregunta",
-          "questionGapPlaceholder": "601|Pregunta cun oco, p. ex. Eu _____ á escola",
-          "optionPlaceholder": "602|Opción {{index}}",
-          "answerPlaceholder": "603|Resposta correcta",
-          "explanationPlaceholder": "604|Explicación (opcional)",
+          "questions_one": "{{count}} pregunta",
+          "questions_other": "{{count}} preguntas",
+          "add": "Engadir pregunta",
+          "questionPlaceholder": "Texto da pregunta",
+          "questionGapPlaceholder": "Pregunta cun oco, p. ex. Eu _____ á escola",
+          "optionPlaceholder": "Opción {{index}}",
+          "answerPlaceholder": "Resposta correcta",
+          "explanationPlaceholder": "Explicación (opcional)",
           "error": {
-            "questionRequired": "605|O texto da pregunta é obrigatorio.",
-            "optionsRequired": "606|A escolla múltiple precisa polo menos 2 opcións.",
-            "answerRequired": "607|Introduce a resposta correcta.",
-            "answerNotAnOption": "608|A resposta correcta debe coincidir cunha das opcións.",
-            "blankRequired": "609|Engade un oco (p. ex. _____) dentro da pregunta."
+            "questionRequired": "O texto da pregunta é obrigatorio.",
+            "optionsRequired": "A escolla múltiple precisa polo menos 2 opcións.",
+            "answerRequired": "Introduce a resposta correcta.",
+            "answerNotAnOption": "A resposta correcta debe coincidir cunha das opcións.",
+            "blankRequired": "Engade un oco (p. ex. _____) dentro da pregunta."
           }
         }
       },
       "quickMistake": {
-        "button": "610|Erro rápido",
-        "title": "611|Erro rápido",
-        "original": "612|Frase orixinal",
-        "originalPlaceholder": "613|Exemplo: Eu estou de acordo contigo",
-        "corrected": "614|Corrección",
-        "correctedPlaceholder": "615|Exemplo: Estou de acordo contigo",
-        "explanation": "616|Explicación (opcional)",
-        "explanationPlaceholder": "617|Por que é correcta a corrección?",
+        "button": "Erro rápido",
+        "title": "Erro rápido",
+        "original": "Frase orixinal",
+        "originalPlaceholder": "Exemplo: Eu estou de acordo contigo",
+        "corrected": "Corrección",
+        "correctedPlaceholder": "Exemplo: Estou de acordo contigo",
+        "explanation": "Explicación (opcional)",
+        "explanationPlaceholder": "Por que é correcta a corrección?",
         "validation": {
-          "original": "618|Engade primeiro a frase orixinal.",
-          "corrected": "619|Engade tamén a frase corrixida."
+          "original": "Engade primeiro a frase orixinal.",
+          "corrected": "Engade tamén a frase corrixida."
         },
-        "save": "620|Gardar o erro",
-        "saving": "621|Gardando…",
-        "saved": "622|Gardado en Notas de gramática.",
-        "duplicate": "623|Xa estaba gardado: omitiuse o duplicado.",
-        "failed": "624|Non se puido gardar. Téntao de novo.",
-        "openTopic": "625|Abrir Erros comúns",
-        "done": "626|Feito",
-        "tip": "627|As correccións gardadas entran no repaso automaticamente, así que as que fallas sempre volven primeiro."
+        "save": "Gardar o erro",
+        "saving": "Gardando…",
+        "saved": "Gardado en Notas de gramática.",
+        "duplicate": "Xa estaba gardado: omitiuse o duplicado.",
+        "failed": "Non se puido gardar. Téntao de novo.",
+        "openTopic": "Abrir Erros comúns",
+        "done": "Feito",
+        "tip": "As correccións gardadas entran no repaso automaticamente, así que as que fallas sempre volven primeiro."
       },
       "templates": {
-        "topicTitle": "628|Modelos de tema",
-        "noteTitle": "629|Modelos de nota",
-        "button": "630|Modelo",
-        "startFromTemplate": "631|Comezar dende un modelo",
-        "searchPlaceholder": "632|Buscar modelos…",
-        "allLanguages": "633|Todos",
-        "anyDifficulty": "634|Calquera",
+        "topicTitle": "Modelos de tema",
+        "noteTitle": "Modelos de nota",
+        "button": "Modelo",
+        "startFromTemplate": "Comezar dende un modelo",
+        "searchPlaceholder": "Buscar modelos…",
+        "allLanguages": "Todos",
+        "anyDifficulty": "Calquera",
         "language": {
-          "en": "635|Inglés",
-          "es": "636|Español",
-          "fr": "637|Francés",
-          "de": "638|Alemán"
+          "en": "Inglés",
+          "es": "Español",
+          "fr": "Francés",
+          "de": "Alemán"
         },
-        "minutes": "639|{{minutes}} min",
-        "notesIncluded_one": "640|{{count}} nota",
-        "notesIncluded_other": "641|{{count}} notas",
-        "blocksIncluded_one": "642|{{count}} bloque",
-        "blocksIncluded_other": "643|{{count}} bloques",
-        "empty": "644|Ningún modelo coincide cos teus filtros.",
-        "use": "645|Usar o modelo",
-        "creating": "646|Creando…",
-        "replaceConfirm": "647|Substituír o contido actual da nota por este modelo? Preme Cancelar para engadir o modelo debaixo.",
-        "applyTitle": "648|Aplicar “{{title}}”?",
-        "applyBody": "649|Esta nota xa ten contido. Escolle como aplicar o modelo.",
-        "applyReplace": "650|Substituír o contido",
-        "applyAppend": "651|Engadir os bloques ao final"
+        "minutes": "{{minutes}} min",
+        "notesIncluded_one": "{{count}} nota",
+        "notesIncluded_other": "{{count}} notas",
+        "blocksIncluded_one": "{{count}} bloque",
+        "blocksIncluded_other": "{{count}} bloques",
+        "empty": "Ningún modelo coincide cos teus filtros.",
+        "use": "Usar o modelo",
+        "creating": "Creando…",
+        "replaceConfirm": "Substituír o contido actual da nota por este modelo? Preme Cancelar para engadir o modelo debaixo.",
+        "applyTitle": "Aplicar “{{title}}”?",
+        "applyBody": "Esta nota xa ten contido. Escolle como aplicar o modelo.",
+        "applyReplace": "Substituír o contido",
+        "applyAppend": "Engadir os bloques ao final"
       },
       "review": {
-        "title": "652|Repaso",
-        "subtitle": "653|Reforza o aprendido con repetición espazada.",
-        "cardTitle": "654|Repasar hoxe",
-        "cardSubtitle_one": "655|{{count}} elemento listo · ~{{minutes}} min",
-        "cardSubtitle_other": "656|{{count}} elementos listos · ~{{minutes}} min",
-        "caughtUpTitle": "657|Todo ao día",
-        "caughtUp": "658|Estás ao día. Abre ou edita notas para recibir suxestións de repaso.",
-        "dueBadge": "659|Pendente",
-        "refreshBody": "660|Agora mesmo non hai nada pendente, pero podes refrescar o que liches ultimamente.",
-        "refreshStart": "661|Refrescar as notas recentes",
-        "start": "662|Comezar o repaso",
-        "skip": "663|Saltar",
-        "itemOf": "664|Elemento {{current}} de {{total}}",
-        "untitled": "665|Nota de gramática",
-        "stats": "666|Repasada {{count}} veces · racha {{streak}}",
-        "continueToQuestion": "667|Ir á pregunta",
-        "showAnswer": "668|Amosar a resposta",
-        "compareTitle": "669|Compara a túa resposta",
-        "referenceAnswer": "670|Referencia: {{answer}}",
-        "openNote": "671|Abrir a nota completa",
+        "title": "Repaso",
+        "subtitle": "Reforza o aprendido con repetición espazada.",
+        "cardTitle": "Repasar hoxe",
+        "cardSubtitle_one": "{{count}} elemento listo · ~{{minutes}} min",
+        "cardSubtitle_other": "{{count}} elementos listos · ~{{minutes}} min",
+        "caughtUpTitle": "Todo ao día",
+        "caughtUp": "Estás ao día. Abre ou edita notas para recibir suxestións de repaso.",
+        "dueBadge": "Pendente",
+        "refreshBody": "Agora mesmo non hai nada pendente, pero podes refrescar o que liches ultimamente.",
+        "refreshStart": "Refrescar as notas recentes",
+        "start": "Comezar o repaso",
+        "skip": "Saltar",
+        "itemOf": "Elemento {{current}} de {{total}}",
+        "untitled": "Nota de gramática",
+        "stats": "Repasada {{count}} veces · racha {{streak}}",
+        "continueToQuestion": "Ir á pregunta",
+        "showAnswer": "Amosar a resposta",
+        "compareTitle": "Compara a túa resposta",
+        "referenceAnswer": "Referencia: {{answer}}",
+        "openNote": "Abrir a nota completa",
         "pool": {
-          "manual_one": "672|{{count}} elemento pendente de repaso",
-          "manual_other": "673|{{count}} elementos pendentes de repaso",
-          "recentlyOpened_one": "674|{{count}} nota aberta recentemente",
-          "recentlyOpened_other": "675|{{count}} notas abertas recentemente",
-          "recentlyEdited_one": "676|{{count}} nota editada recentemente",
-          "recentlyEdited_other": "677|{{count}} notas editadas recentemente"
+          "manual_one": "{{count}} elemento pendente de repaso",
+          "manual_other": "{{count}} elementos pendentes de repaso",
+          "recentlyOpened_one": "{{count}} nota aberta recentemente",
+          "recentlyOpened_other": "{{count}} notas abertas recentemente",
+          "recentlyEdited_one": "{{count}} nota editada recentemente",
+          "recentlyEdited_other": "{{count}} notas editadas recentemente"
         },
         "sourceType": {
-          "note": "678|Nota",
-          "mistake": "679|Erro",
-          "quiz": "680|Cuestionario"
+          "note": "Nota",
+          "mistake": "Erro",
+          "quiz": "Cuestionario"
         },
         "phase": {
-          "source": "681|Estudar",
-          "question": "682|Responder",
-          "result": "683|Valorar"
+          "source": "Estudar",
+          "question": "Responder",
+          "result": "Valorar"
         },
         "rating": {
-          "forgot": "684|Esquecín",
-          "hard": "685|Difícil",
-          "good": "686|Ben",
-          "easy": "687|Fácil"
+          "forgot": "Esquecín",
+          "hard": "Difícil",
+          "good": "Ben",
+          "easy": "Fácil"
         },
         "interval": {
-          "plus4h": "688|+4 horas",
-          "plus1d": "689|+1 día",
-          "plus3d": "690|+3 días",
-          "plus7d": "691|+7 días"
+          "plus4h": "+4 horas",
+          "plus1d": "+1 día",
+          "plus3d": "+3 días",
+          "plus7d": "+7 días"
         },
         "summary": {
-          "title": "692|Sesión completada",
-          "emptyTitle": "693|Non se repasou nada",
-          "reviewed": "694|Repasados",
-          "correct": "695|Correctos",
-          "incorrect": "696|Incorrectos",
-          "hintForgot": "697|Algúns elementos volven dentro de 4 horas.",
-          "hintHard": "698|Os elementos difíciles volven mañá.",
-          "hintGood": "699|Os elementos correctos volven dentro de 3 días.",
-          "hintEasy": "700|Todos os elementos volven dentro de 7 días.",
-          "done": "701|Volver a Notas de gramática"
+          "title": "Sesión completada",
+          "emptyTitle": "Non se repasou nada",
+          "reviewed": "Repasados",
+          "correct": "Correctos",
+          "incorrect": "Incorrectos",
+          "hintForgot": "Algúns elementos volven dentro de 4 horas.",
+          "hintHard": "Os elementos difíciles volven mañá.",
+          "hintGood": "Os elementos correctos volven dentro de 3 días.",
+          "hintEasy": "Todos os elementos volven dentro de 7 días.",
+          "done": "Volver a Notas de gramática"
         },
-        "loadError": "702|Non puidemos cargar a túa cola de repaso.",
-        "mistakeCount_one": "703|{{count}} erro",
-        "mistakeCount_other": "704|{{count}} erros"
+        "loadError": "Non puidemos cargar a túa cola de repaso.",
+        "mistakeCount_one": "{{count}} erro",
+        "mistakeCount_other": "{{count}} erros"
       },
-      "mistakesBadge": "705|Erros",
-      "topicsTitle": "706|Temas",
-      "deleteTopic": "707|Eliminar tema",
-      "deleteTopicTitle": "708|Eliminar este tema?",
-      "deleteNoteTitle": "709|Eliminar esta nota?",
-      "pin": "710|Fixar a nota",
-      "unpin": "711|Deixar de fixala",
-      "favorite": "712|Engadir aos favoritos",
-      "unfavorite": "713|Quitar dos favoritos",
+      "mistakesBadge": "Erros",
+      "topicsTitle": "Temas",
+      "deleteTopic": "Eliminar tema",
+      "deleteTopicTitle": "Eliminar este tema?",
+      "deleteNoteTitle": "Eliminar esta nota?",
+      "pin": "Fixar a nota",
+      "unpin": "Deixar de fixala",
+      "favorite": "Engadir aos favoritos",
+      "unfavorite": "Quitar dos favoritos",
       "search": {
-        "topics": "714|Buscar temas…",
-        "notes": "715|Buscar notas…",
-        "clear": "716|Limpar a busca",
-        "noMatchTitle": "717|Sen coincidencias",
-        "noMatchBody": "718|Proba con outra palabra.",
-        "notesSection_one": "719|Notas ({{count}})",
-        "notesSection_other": "720|Notas ({{count}})",
-        "noNoteMatches": "721|Ningunha nota coincide con esta busca."
+        "topics": "Buscar temas…",
+        "notes": "Buscar notas…",
+        "clear": "Limpar a busca",
+        "noMatchTitle": "Sen coincidencias",
+        "noMatchBody": "Proba con outra palabra.",
+        "notesSection_one": "Notas ({{count}})",
+        "notesSection_other": "Notas ({{count}})",
+        "noNoteMatches": "Ningunha nota coincide con esta busca."
       },
       "filter": {
-        "label": "722|Filtrar as notas",
-        "all": "723|Todas",
-        "pinned": "724|Fixadas",
-        "favorites": "725|Favoritas",
-        "mistakes": "726|Erros",
-        "quizzes": "727|Cuestionarios",
-        "review": "728|Pendentes",
+        "label": "Filtrar as notas",
+        "all": "Todas",
+        "pinned": "Fixadas",
+        "favorites": "Favoritas",
+        "mistakes": "Erros",
+        "quizzes": "Cuestionarios",
+        "review": "Pendentes",
         "empty": {
           "all": {
-            "title": "729|Aínda non hai notas de gramática",
-            "body": "730|Crea a túa primeira nota de gramática para este tema."
+            "title": "Aínda non hai notas de gramática",
+            "body": "Crea a túa primeira nota de gramática para este tema."
           },
           "pinned": {
-            "title": "731|Aínda non hai notas fixadas",
-            "body": "732|Fixa notas da lista para atopalas rápido."
+            "title": "Aínda non hai notas fixadas",
+            "body": "Fixa notas da lista para atopalas rápido."
           },
           "favorites": {
-            "title": "733|Aínda non hai notas favoritas",
-            "body": "734|Marca notas como favoritas para telas á man."
+            "title": "Aínda non hai notas favoritas",
+            "body": "Marca notas como favoritas para telas á man."
           },
           "mistakes": {
-            "title": "735|Aínda non hai erros gardados",
-            "body": "736|Garda erros de gramática para repasalos aquí."
+            "title": "Aínda non hai erros gardados",
+            "body": "Garda erros de gramática para repasalos aquí."
           },
           "quizzes": {
-            "title": "737|Aínda non hai notas con cuestionario",
-            "body": "738|Engade un cuestionario a unha nota para vela aquí."
+            "title": "Aínda non hai notas con cuestionario",
+            "body": "Engade un cuestionario a unha nota para vela aquí."
           },
           "review": {
-            "title": "739|Agora mesmo non hai nada pendente",
-            "body": "740|As notas volven aquí cando toca repasalas."
+            "title": "Agora mesmo non hai nada pendente",
+            "body": "As notas volven aquí cando toca repasalas."
           }
         }
       },
       "reorder": {
-        "start": "741|Reordenar",
-        "done": "742|Feito",
-        "up": "743|Subir",
-        "down": "744|Baixar"
+        "start": "Reordenar",
+        "done": "Feito",
+        "up": "Subir",
+        "down": "Baixar"
       },
       "highlights": {
-        "mistakesTitle": "745|Erros por corrixir",
-        "mistakesSubtitle": "746|Correccións recentes agardando polo repaso.",
-        "quizzesTitle": "747|Cuestionarios frouxos",
-        "quizzesSubtitle": "748|Cuestionarios que paga a pena repetir pronto."
+        "mistakesTitle": "Erros por corrixir",
+        "mistakesSubtitle": "Correccións recentes agardando polo repaso.",
+        "quizzesTitle": "Cuestionarios frouxos",
+        "quizzesSubtitle": "Cuestionarios que paga a pena repetir pronto."
       },
       "quickNote": {
-        "button": "749|Nota rápida",
-        "title": "750|Nota rápida",
-        "subtitle": "751|Apunta unha idea de gramática sen abrir o editor completo.",
-        "noteTitle": "752|Título",
-        "titlePlaceholder": "753|Exemplo: Ser vs Estar",
-        "text": "754|Nota",
-        "textPlaceholder": "755|Escribe aquí a parte útil",
-        "noteType": "756|Tipo de nota",
-        "topic": "757|Tema",
-        "openEditor": "758|Abrir o editor ao gardar",
-        "openEditorHint": "759|Útil cando a versión rápida medra ata ser unha nota completa.",
-        "tip": "760|As notas rápidas son para esa idea que se non esquecerías en dez minutos.",
-        "validation": "761|Engade primeiro un título ou algo de texto.",
-        "save": "762|Gardar a nota rápida",
-        "saving": "763|Gardando…"
+        "button": "Nota rápida",
+        "title": "Nota rápida",
+        "subtitle": "Apunta unha idea de gramática sen abrir o editor completo.",
+        "noteTitle": "Título",
+        "titlePlaceholder": "Exemplo: Ser vs Estar",
+        "text": "Nota",
+        "textPlaceholder": "Escribe aquí a parte útil",
+        "noteType": "Tipo de nota",
+        "topic": "Tema",
+        "openEditor": "Abrir o editor ao gardar",
+        "openEditorHint": "Útil cando a versión rápida medra ata ser unha nota completa.",
+        "tip": "As notas rápidas son para esa idea que se non esquecerías en dez minutos.",
+        "validation": "Engade primeiro un título ou algo de texto.",
+        "save": "Gardar a nota rápida",
+        "saving": "Gardando…"
       },
       "settings": {
-        "title": "764|Axustes das notas",
-        "subtitle": "765|Como funcionan a captura rápida, os erros e a lista de notas.",
-        "reset": "766|Restablecer os valores por defecto",
-        "tip": "767|Usa os erros rápidos para frases que escribiches mal de verdade: son máis útiles que os exemplos perfectos dos libros.",
+        "title": "Axustes das notas",
+        "subtitle": "Como funcionan a captura rápida, os erros e a lista de notas.",
+        "reset": "Restablecer os valores por defecto",
+        "tip": "Usa os erros rápidos para frases que escribiches mal de verdade: son máis útiles que os exemplos perfectos dos libros.",
         "quickCapture": {
-          "title": "768|Captura rápida",
-          "subtitle": "769|Fai que as notas e os erros rápidos sexan instantáneos."
+          "title": "Captura rápida",
+          "subtitle": "Fai que as notas e os erros rápidos sexan instantáneos."
         },
         "mistakeNotes": {
-          "title": "770|Notas de erro",
-          "subtitle": "771|Que se garda cando capturas un erro rápido."
+          "title": "Notas de erro",
+          "subtitle": "Que se garda cando capturas un erro rápido."
         },
         "essays": {
-          "title": "772|Redaccións",
-          "subtitle": "773|Que pasa cos problemas de gramática das túas redaccións."
+          "title": "Redaccións",
+          "subtitle": "Que pasa cos problemas de gramática das túas redaccións."
         },
         "review": {
-          "title": "774|Repaso espazado",
-          "subtitle": "775|Como chegan as notas á cola de repaso."
+          "title": "Repaso espazado",
+          "subtitle": "Como chegan as notas á cola de repaso."
         },
         "appearance": {
-          "title": "776|Aparencia das notas",
-          "subtitle": "777|Como se ordena e se amosa a lista de notas."
+          "title": "Aparencia das notas",
+          "subtitle": "Como se ordena e se amosa a lista de notas."
         },
         "helpers": {
-          "title": "778|Axudas de aprendizaxe",
-          "subtitle": "779|Pequenos empurróns nos estados baleiros e nas follas rápidas."
+          "title": "Axudas de aprendizaxe",
+          "subtitle": "Pequenos empurróns nos estados baleiros e nas follas rápidas."
         },
         "defaultType": {
-          "title": "780|Tipo de nota por defecto",
-          "subtitle": "781|Con que tipo comeza unha nota rápida nova."
+          "title": "Tipo de nota por defecto",
+          "subtitle": "Con que tipo comeza unha nota rápida nova."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "782|Abrir o editor tras gardar rápido",
-            "subtitle": "783|Ao gardar unha nota rápida, salta directamente ao editor completo."
+            "title": "Abrir o editor tras gardar rápido",
+            "subtitle": "Ao gardar unha nota rápida, salta directamente ao editor completo."
           },
           "allowQuickQuizzes": {
-            "title": "784|Permitir cuestionarios nas notas",
-            "subtitle": "785|Ofrece bloques de cuestionario e creación de cuestionarios dentro das notas."
+            "title": "Permitir cuestionarios nas notas",
+            "subtitle": "Ofrece bloques de cuestionario e creación de cuestionarios dentro das notas."
           },
           "showsMistakeHighlights": {
-            "title": "786|Destacar as notas de erro",
-            "subtitle": "787|Usa un ton cálido para as tarxetas de erro e amosa a fila de erros."
+            "title": "Destacar as notas de erro",
+            "subtitle": "Usa un ton cálido para as tarxetas de erro e amosa a fila de erros."
           },
           "includeOriginalSentence": {
-            "title": "788|Incluír a frase orixinal",
-            "subtitle": "789|Garda a versión incorrecta como bloque de cita na nota."
+            "title": "Incluír a frase orixinal",
+            "subtitle": "Garda a versión incorrecta como bloque de cita na nota."
           },
           "includeCorrectedSentence": {
-            "title": "790|Incluír a frase corrixida",
-            "subtitle": "791|Garda a versión corrixida como bloque de exemplo."
+            "title": "Incluír a frase corrixida",
+            "subtitle": "Garda a versión corrixida como bloque de exemplo."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "792|Incluír a explicación",
-            "subtitle": "793|Engade a túa explicación como bloque de parágrafo debaixo."
+            "title": "Incluír a explicación",
+            "subtitle": "Engade a túa explicación como bloque de parágrafo debaixo."
           },
           "groupMistakesByTopic": {
-            "title": "794|Agrupar os erros por tema",
-            "subtitle": "795|Garda os erros rápidos no tema actual en vez de en Erros comúns."
+            "title": "Agrupar os erros por tema",
+            "subtitle": "Garda os erros rápidos no tema actual en vez de en Erros comúns."
           },
           "askBeforeSavingMistakes": {
-            "title": "796|Preguntar antes de gardar os erros",
-            "subtitle": "797|Confirma antes de que un problema dunha redacción se converta en nota. Isto manda sobre o gardado automático."
+            "title": "Preguntar antes de gardar os erros",
+            "subtitle": "Confirma antes de que un problema dunha redacción se converta en nota. Isto manda sobre o gardado automático."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "798|Gardar automaticamente os erros das redaccións",
-            "subtitle": "799|Cada problema de gramática atopado nunha redacción convértese en nota. Con \"Preguntar antes de gardar\" activado, pregunta unha vez por toda a revisión."
+            "title": "Gardar automaticamente os erros das redaccións",
+            "subtitle": "Cada problema de gramática atopado nunha redacción convértese en nota. Con \"Preguntar antes de gardar\" activado, pregunta unha vez por toda a revisión."
           },
           "groupsPinnedNotesFirst": {
-            "title": "800|Notas fixadas primeiro",
-            "subtitle": "801|Mantén as regras importantes arriba en cada tema."
+            "title": "Notas fixadas primeiro",
+            "subtitle": "Mantén as regras importantes arriba en cada tema."
           },
           "usesCompactCards": {
-            "title": "802|Tarxetas de nota compactas",
-            "subtitle": "803|Amosa tarxetas máis xuntas cando queiras máis notas na pantalla."
+            "title": "Tarxetas de nota compactas",
+            "subtitle": "Amosa tarxetas máis xuntas cando queiras máis notas na pantalla."
           },
           "showsHelperTips": {
-            "title": "804|Amosar consellos de axuda",
-            "subtitle": "805|Amosa pistas breves e contextuais mentres creas notas."
+            "title": "Amosar consellos de axuda",
+            "subtitle": "Amosa pistas breves e contextuais mentres creas notas."
           },
           "autoAddNotesToReview": {
-            "title": "806|Engadir as notas novas ao repaso",
-            "subtitle": "807|Cada nota que gardas entra na cola de repaso, pendente ao día seguinte."
+            "title": "Engadir as notas novas ao repaso",
+            "subtitle": "Cada nota que gardas entra na cola de repaso, pendente ao día seguinte."
           }
         }
       },
-      "editTopic": "808|Editar tema",
+      "editTopic": "Editar tema",
       "toSet": {
-        "title": "809|Crear un conxunto a partir desta nota",
-        "subtitle": "810|Escolle as parellas que se converterán en tarxetas.",
-        "setTitle": "811|Título do conxunto",
-        "empty": "812|Esta nota aínda non ten nada que converter en tarxetas. Os bloques de comparación, exemplo e regra convértense directamente, e os elementos de lista pártense por un guión, como “hacer — facer”.",
-        "button": "813|Crear un conxunto",
-        "create": "814|Crear conxunto",
-        "creating": "815|Creando…",
-        "error": "816|Non se puido crear o conxunto. Téntao de novo.",
-        "cards_one": "817|{{count}} tarxeta",
-        "cards_other": "818|{{count}} tarxetas"
+        "title": "Crear un conxunto a partir desta nota",
+        "subtitle": "Escolle as parellas que se converterán en tarxetas.",
+        "setTitle": "Título do conxunto",
+        "empty": "Esta nota aínda non ten nada que converter en tarxetas. Os bloques de comparación, exemplo e regra convértense directamente, e os elementos de lista pártense por un guión, como “hacer — facer”.",
+        "button": "Crear un conxunto",
+        "create": "Crear conxunto",
+        "creating": "Creando…",
+        "error": "Non se puido crear o conxunto. Téntao de novo.",
+        "cards_one": "{{count}} tarxeta",
+        "cards_other": "{{count}} tarxetas"
       },
-      "topicsEmptyTip": "819|Un tema é un cartafol para notas: un por idioma, ou un por cada cousa que segues fallando.",
-      "notesEmptyTip": "820|Cada nota que gardas entra na cola de repaso, así que escribila xa é comezar a practicala."
+      "topicsEmptyTip": "Un tema é un cartafol para notas: un por idioma, ou un por cada cousa que segues fallando.",
+      "notesEmptyTip": "Cada nota que gardas entra na cola de repaso, así que escribila xa é comezar a practicala."
     }
   },
   "reading": {
-    "sectionTitle": "821|Modos de práctica",
-    "loading": "822|Cargando…",
-    "loadError": "823|Non puidemos cargar as túas lecturas.",
-    "notFound": "824|Pode que este elemento fose eliminado.",
+    "sectionTitle": "Modos de práctica",
+    "loading": "Cargando…",
+    "loadError": "Non puidemos cargar as túas lecturas.",
+    "notFound": "Pode que este elemento fose eliminado.",
     "today": {
-      "title": "825|Progreso de hoxe",
-      "subtitle": "826|Mantén viva a túa racha de lectura."
+      "title": "Progreso de hoxe",
+      "subtitle": "Mantén viva a túa racha de lectura."
     },
     "menu": {
-      "comingSoon": "827|Moi pronto",
+      "comingSoon": "Moi pronto",
       "myTexts": {
-        "title": "828|Os meus textos",
-        "subtitle": "829|Pega o teu propio texto e leo con axuda."
+        "title": "Os meus textos",
+        "subtitle": "Pega o teu propio texto e leo con axuda."
       },
       "fromSets": {
-        "title": "830|Lectura dende os conxuntos",
-        "subtitle": "831|Crea unha lectura a partir dos teus conxuntos de tarxetas."
+        "title": "Lectura dende os conxuntos",
+        "subtitle": "Crea unha lectura a partir dos teus conxuntos de tarxetas."
       },
       "storyMode": {
-        "title": "832|Modo historia",
-        "subtitle": "833|Le historias interactivas con decisións ramificadas."
+        "title": "Modo historia",
+        "subtitle": "Le historias interactivas con decisións ramificadas."
       },
       "speedReading": {
-        "title": "834|Lectura rápida",
-        "subtitle": "835|Adéstrate para ler máis rápido cun ritmo cronometrado."
+        "title": "Lectura rápida",
+        "subtitle": "Adéstrate para ler máis rápido cun ritmo cronometrado."
       }
     },
     "myTexts": {
-      "title": "836|Os meus textos",
-      "subtitle": "837|Os teus textos de lectura gardados.",
-      "addText": "838|Engadir texto",
-      "emptyTitle": "839|Aínda non hai textos",
-      "emptyBody": "840|Engade o teu primeiro texto para comezar a practicar a lectura.",
-      "savedTitle": "841|Textos gardados"
+      "title": "Os meus textos",
+      "subtitle": "Os teus textos de lectura gardados.",
+      "addText": "Engadir texto",
+      "emptyTitle": "Aínda non hai textos",
+      "emptyBody": "Engade o teu primeiro texto para comezar a practicar a lectura.",
+      "savedTitle": "Textos gardados"
     },
     "status": {
-      "new": "842|Novo",
-      "inProgress": "843|En curso",
-      "completed": "844|Completado"
+      "new": "Novo",
+      "inProgress": "En curso",
+      "completed": "Completado"
     },
     "card": {
-      "words_one": "845|{{count}} palabra",
-      "words_other": "846|{{count}} palabras",
-      "start": "847|Comezar",
-      "continue": "848|Continuar",
-      "readAgain": "849|Ler outra vez",
-      "rename": "850|Renomear",
-      "renamePrompt": "851|Novo título:",
-      "delete": "852|Eliminar",
-      "deleteConfirm": "853|Eliminar \"{{title}}\"? Isto non se pode desfacer."
+      "words_one": "{{count}} palabra",
+      "words_other": "{{count}} palabras",
+      "start": "Comezar",
+      "continue": "Continuar",
+      "readAgain": "Ler outra vez",
+      "rename": "Renomear",
+      "renamePrompt": "Novo título:",
+      "delete": "Eliminar",
+      "deleteConfirm": "Eliminar \"{{title}}\"? Isto non se pode desfacer."
     },
     "continue": {
-      "eyebrow": "854|Continuar lendo",
-      "percent": "855|{{percent}} % completado",
-      "button": "856|Continuar"
+      "eyebrow": "Continuar lendo",
+      "percent": "{{percent}} % completado",
+      "button": "Continuar"
     },
     "focus": {
-      "mainIdea": "857|Idea principal",
-      "vocabulary": "858|Vocabulario",
-      "detailedComprehension": "859|Comprensión detallada",
-      "grammarAwareness": "860|Atención á gramática",
-      "speedFluency": "861|Velocidade / fluidez"
+      "mainIdea": "Idea principal",
+      "vocabulary": "Vocabulario",
+      "detailedComprehension": "Comprensión detallada",
+      "grammarAwareness": "Atención á gramática",
+      "speedFluency": "Velocidade / fluidez"
     },
     "questionType": {
-      "comprehension": "862|Comprensión",
-      "trueFalse": "863|Verdadeiro / Falso",
-      "fillGap": "864|Encher o oco",
-      "vocabulary": "865|Vocabulario",
-      "findEvidence": "866|Atopar a proba",
-      "orderReconstruction": "867|Ordenar"
+      "comprehension": "Comprensión",
+      "trueFalse": "Verdadeiro / Falso",
+      "fillGap": "Encher o oco",
+      "vocabulary": "Vocabulario",
+      "findEvidence": "Atopar a proba",
+      "orderReconstruction": "Ordenar"
     },
     "assistance": {
-      "highlightUnknownWords": "868|Resaltar as palabras descoñecidas",
-      "translationOnTap": "869|Traducir ao tocar",
-      "vocabularyHints": "870|Pistas de vocabulario",
-      "readingTimer": "871|Cronómetro de lectura"
+      "highlightUnknownWords": "Resaltar as palabras descoñecidas",
+      "translationOnTap": "Traducir ao tocar",
+      "vocabularyHints": "Pistas de vocabulario",
+      "readingTimer": "Cronómetro de lectura"
     },
     "addText": {
-      "title": "872|Engadir texto",
-      "subtitle": "873|Pega un texto e configura a túa práctica de lectura.",
-      "untitled": "874|Texto sen título",
-      "pastePlaceholder": "875|Pega ou escribe o teu texto aquí…",
-      "titleLabel": "876|Título",
-      "titlePlaceholder": "877|Opcional: podemos suxerir un",
-      "language": "878|Idioma",
-      "difficulty": "879|Dificultade",
-      "autoDetect": "880|Detección automática",
-      "manual": "881|Escoller manualmente",
-      "focus": "882|Foco de lectura",
-      "questionTypes": "883|Tipos de pregunta",
-      "assistance": "884|Axudas de lectura",
+      "title": "Engadir texto",
+      "subtitle": "Pega un texto e configura a túa práctica de lectura.",
+      "untitled": "Texto sen título",
+      "pastePlaceholder": "Pega ou escribe o teu texto aquí…",
+      "titleLabel": "Título",
+      "titlePlaceholder": "Opcional: podemos suxerir un",
+      "language": "Idioma",
+      "difficulty": "Dificultade",
+      "autoDetect": "Detección automática",
+      "manual": "Escoller manualmente",
+      "focus": "Foco de lectura",
+      "questionTypes": "Tipos de pregunta",
+      "assistance": "Axudas de lectura",
       "stats": {
-        "words_one": "885|{{count}} palabra",
-        "words_other": "886|{{count}} palabras",
-        "chars_one": "887|{{count}} carácter",
-        "chars_other": "888|{{count}} caracteres",
-        "min": "889|min",
-        "detected": "890|Detectado: {{level}}"
+        "words_one": "{{count}} palabra",
+        "words_other": "{{count}} palabras",
+        "chars_one": "{{count}} carácter",
+        "chars_other": "{{count}} caracteres",
+        "min": "min",
+        "detected": "Detectado: {{level}}"
       },
       "validation": {
-        "empty": "891|Engade primeiro un texto.",
-        "tooShort": "892|Engade polo menos 20 palabras."
+        "empty": "Engade primeiro un texto.",
+        "tooShort": "Engade polo menos 20 palabras."
       },
-      "save": "893|Gardar o texto",
-      "saveAndStart": "894|Gardar e comezar",
-      "saving": "895|Gardando…",
-      "saveError": "896|Non se puido gardar. Téntao de novo.",
+      "save": "Gardar o texto",
+      "saveAndStart": "Gardar e comezar",
+      "saving": "Gardando…",
+      "saveError": "Non se puido gardar. Téntao de novo.",
       "source": {
-        "pasteText": "897|Pegar",
-        "photo": "898|Foto",
-        "pdf": "899|PDF",
-        "generate": "900|Xerar",
-        "explore": "901|Explorar"
+        "pasteText": "Pegar",
+        "photo": "Foto",
+        "pdf": "PDF",
+        "generate": "Xerar",
+        "explore": "Explorar"
       },
       "style": {
-        "informative": "902|Informativo",
-        "casual": "903|Informal",
-        "academic": "904|Académico",
-        "narrative": "905|Narrativo"
+        "informative": "Informativo",
+        "casual": "Informal",
+        "academic": "Académico",
+        "narrative": "Narrativo"
       },
       "length": {
-        "short": "906|Curto",
-        "medium": "907|Medio",
-        "long": "908|Longo"
+        "short": "Curto",
+        "medium": "Medio",
+        "long": "Longo"
       },
       "import": {
-        "photoHint": "909|Sobe unha foto dunha páxina e extraeremos o texto.",
-        "chooseImage": "910|Escoller imaxe",
-        "recognizing": "911|Recoñecendo… {{percent}} %",
-        "imageError": "912|Non se puido ler o texto desta imaxe.",
-        "pdfHint": "913|Sobe un PDF e extraeremos o texto.",
-        "choosePDF": "914|Escoller PDF",
-        "reading": "915|Lendo o PDF…",
-        "pdfError": "916|Non se puido ler este PDF.",
-        "topicPlaceholder": "917|Tema: p. ex. arrecifes de coral, a imprenta",
-        "explorePlaceholder": "918|Tema ou palabra clave: p. ex. Marie Curie, Venecia",
-        "generateButton": "919|Xerar o texto",
-        "exploreButton": "920|Buscar artigo",
-        "working": "921|Traballando…",
-        "generateError": "922|Non se puido xerar o texto. Téntao de novo.",
-        "exploreError": "923|Non se atopou ningún artigo sobre este tema.",
-        "exploredFrom": "924|Obtido de"
+        "photoHint": "Sobe unha foto dunha páxina e extraeremos o texto.",
+        "chooseImage": "Escoller imaxe",
+        "recognizing": "Recoñecendo… {{percent}} %",
+        "imageError": "Non se puido ler o texto desta imaxe.",
+        "pdfHint": "Sobe un PDF e extraeremos o texto.",
+        "choosePDF": "Escoller PDF",
+        "reading": "Lendo o PDF…",
+        "pdfError": "Non se puido ler este PDF.",
+        "topicPlaceholder": "Tema: p. ex. arrecifes de coral, a imprenta",
+        "explorePlaceholder": "Tema ou palabra clave: p. ex. Marie Curie, Venecia",
+        "generateButton": "Xerar o texto",
+        "exploreButton": "Buscar artigo",
+        "working": "Traballando…",
+        "generateError": "Non se puido xerar o texto. Téntao de novo.",
+        "exploreError": "Non se atopou ningún artigo sobre este tema.",
+        "exploredFrom": "Obtido de"
       }
     },
     "session": {
-      "startQuestions": "925|Comezar as preguntas",
-      "finish": "926|Rematar",
-      "next": "927|Seguinte",
-      "questionOf": "928|Pregunta {{current}} de {{total}}",
-      "closeTranslation": "929|Pechar a tradución",
-      "translating": "930|Traducindo…",
-      "translationError": "931|Non se puido traducir. Téntao de novo.",
-      "translation": "932|Tradución",
-      "textLabel": "933|Texto"
+      "startQuestions": "Comezar as preguntas",
+      "finish": "Rematar",
+      "next": "Seguinte",
+      "questionOf": "Pregunta {{current}} de {{total}}",
+      "closeTranslation": "Pechar a tradución",
+      "translating": "Traducindo…",
+      "translationError": "Non se puido traducir. Téntao de novo.",
+      "translation": "Tradución",
+      "textLabel": "Texto"
     },
     "result": {
-      "comprehension": "934|Comprensión",
-      "correct": "935|Correctas",
-      "time": "936|Tempo de lectura",
-      "wpm": "937|PPM",
-      "mistakes": "938|Erros",
-      "mistakesTitle": "939|Repasa os teus erros",
-      "readAgain": "940|Ler outra vez",
-      "back": "941|Volver a Os meus textos",
-      "complete": "942|Práctica completada"
+      "comprehension": "Comprensión",
+      "correct": "Correctas",
+      "time": "Tempo de lectura",
+      "wpm": "PPM",
+      "mistakes": "Erros",
+      "mistakesTitle": "Repasa os teus erros",
+      "readAgain": "Ler outra vez",
+      "back": "Volver a Os meus textos",
+      "complete": "Práctica completada"
     },
     "fromSets": {
-      "title": "943|Lectura dende os conxuntos",
-      "subtitle": "944|Converte un conxunto de tarxetas nunha lectura.",
-      "pickSet": "945|Escolle un conxunto",
-      "changeSet": "946|Cambiar de conxunto",
-      "tooFewWords": "947|Este conxunto precisa polo menos {{count}} palabras para crear unha lectura.",
-      "mode": "948|Modo de xeración",
+      "title": "Lectura dende os conxuntos",
+      "subtitle": "Converte un conxunto de tarxetas nunha lectura.",
+      "pickSet": "Escolle un conxunto",
+      "changeSet": "Cambiar de conxunto",
+      "tooFewWords": "Este conxunto precisa polo menos {{count}} palabras para crear unha lectura.",
+      "mode": "Modo de xeración",
       "modeOption": {
-        "natural": "949|Natural",
-        "strict": "950|Estrito",
-        "mixed": "951|Mixto"
+        "natural": "Natural",
+        "strict": "Estrito",
+        "mixed": "Mixto"
       },
-      "length": "952|Extensión da lectura",
-      "generate": "953|Xerar a lectura",
-      "generating": "954|Creando a túa lectura…",
-      "generateError": "955|Non se puido crear a lectura. Téntao de novo.",
-      "emptyTitle": "956|Aínda non hai lecturas",
-      "emptyBody": "957|Escolle un conxunto de tarxetas e converterémolo nun texto de lectura.",
-      "savedTitle": "958|Lecturas gardadas"
+      "length": "Extensión da lectura",
+      "generate": "Xerar a lectura",
+      "generating": "Creando a túa lectura…",
+      "generateError": "Non se puido crear a lectura. Téntao de novo.",
+      "emptyTitle": "Aínda non hai lecturas",
+      "emptyBody": "Escolle un conxunto de tarxetas e converterémolo nun texto de lectura.",
+      "savedTitle": "Lecturas gardadas"
     },
     "speed": {
-      "title": "959|Lectura rápida",
-      "subtitle": "960|Adéstrate para ler máis rápido cun ritmo cronometrado.",
+      "title": "Lectura rápida",
+      "subtitle": "Adéstrate para ler máis rápido cun ritmo cronometrado.",
       "section": {
-        "target": "961|Velocidade de lectura obxectivo",
-        "timer": "962|Estilo de cronómetro",
-        "length": "963|Extensión da lectura"
+        "target": "Velocidade de lectura obxectivo",
+        "timer": "Estilo de cronómetro",
+        "length": "Extensión da lectura"
       },
       "target": {
-        "relaxed": "964|Relaxada",
-        "balanced": "965|Equilibrada",
-        "fast": "966|Rápida",
-        "challenge": "967|Reto"
+        "relaxed": "Relaxada",
+        "balanced": "Equilibrada",
+        "fast": "Rápida",
+        "challenge": "Reto"
       },
       "timer": {
-        "noTimer": "968|Sen cronómetro",
-        "soft": "969|Cronómetro suave",
-        "strict": "970|Cronómetro estrito"
+        "noTimer": "Sen cronómetro",
+        "soft": "Cronómetro suave",
+        "strict": "Cronómetro estrito"
       },
       "length": {
-        "two": "971|2 min",
-        "five": "972|5 min",
-        "ten": "973|10 min"
+        "two": "2 min",
+        "five": "5 min",
+        "ten": "10 min"
       },
-      "summary": "974|Obxectivo {{wpm}} PPM · ~{{minutes}} min de lectura",
-      "start": "975|Comezar a sesión",
-      "preparing": "976|Preparando o teu fragmento…",
-      "generateError": "977|Non se puido crear o fragmento. Téntao de novo.",
-      "recentTitle": "978|Sesións recentes",
-      "chunkOf": "979|Parte {{current}} de {{total}}",
-      "previous": "980|Parte anterior",
-      "pause": "981|Pausar",
-      "resume": "982|Retomar",
-      "nextChunk": "983|Parte seguinte",
-      "finishReading": "984|Rematar a lectura",
+      "summary": "Obxectivo {{wpm}} PPM · ~{{minutes}} min de lectura",
+      "start": "Comezar a sesión",
+      "preparing": "Preparando o teu fragmento…",
+      "generateError": "Non se puido crear o fragmento. Téntao de novo.",
+      "recentTitle": "Sesións recentes",
+      "chunkOf": "Parte {{current}} de {{total}}",
+      "previous": "Parte anterior",
+      "pause": "Pausar",
+      "resume": "Retomar",
+      "nextChunk": "Parte seguinte",
+      "finishReading": "Rematar a lectura",
       "rating": {
-        "excellent": "985|Excelente",
-        "balanced": "986|No obxectivo",
-        "fast": "987|Case o tes",
-        "tooSlow": "988|Demasiado lenta"
+        "excellent": "Excelente",
+        "balanced": "No obxectivo",
+        "fast": "Case o tes",
+        "tooSlow": "Demasiado lenta"
       },
       "result": {
-        "average": "989|PPM media",
-        "target": "990|PPM obxectivo",
-        "violations_one": "991|{{count}} fallo de tempo",
-        "violations_other": "992|{{count}} fallos de tempo"
+        "average": "PPM media",
+        "target": "PPM obxectivo",
+        "violations_one": "{{count}} fallo de tempo",
+        "violations_other": "{{count}} fallos de tempo"
       },
-      "tryAgain": "993|Téntao de novo",
-      "backToSetup": "994|Volver á configuración"
+      "tryAgain": "Téntao de novo",
+      "backToSetup": "Volver á configuración"
     },
     "story": {
-      "title": "995|Modo historia",
-      "subtitle": "996|Le historias interactivas con decisións ramificadas.",
-      "typeSection": "997|Tipo de historia",
+      "title": "Modo historia",
+      "subtitle": "Le historias interactivas con decisións ramificadas.",
+      "typeSection": "Tipo de historia",
       "type": {
-        "adventure": "998|Aventura",
-        "fantasy": "999|Fantasía",
-        "mystery": "1000|Misterio",
-        "romance": "1001|Romance",
-        "dailyLife": "1002|Vida cotiá"
+        "adventure": "Aventura",
+        "fantasy": "Fantasía",
+        "mystery": "Misterio",
+        "romance": "Romance",
+        "dailyLife": "Vida cotiá"
       },
-      "lengthSection": "1003|Extensión da historia",
+      "lengthSection": "Extensión da historia",
       "length": {
-        "shortStory": "1004|Historia curta",
-        "multiChapter": "1005|Varios capítulos",
-        "infinite": "1006|Historia infinita"
+        "shortStory": "Historia curta",
+        "multiChapter": "Varios capítulos",
+        "infinite": "Historia infinita"
       },
-      "start": "1007|Comezar a historia",
-      "generating": "1008|Escribindo a túa historia…",
-      "generatingNext": "1009|Escribindo o capítulo seguinte…",
-      "generateError": "1010|Non se puido escribir a historia. Téntao de novo.",
-      "emptyTitle": "1011|Aínda non hai historias",
-      "emptyBody": "1012|Comeza arriba a túa primeira historia interactiva.",
-      "savedTitle": "1013|As túas historias",
-      "chapterN": "1014|Capítulo {{n}}",
-      "chapterOf": "1015|Capítulo {{current}} / {{total}}",
-      "chapterScore": "1016|Puntuación do capítulo",
-      "whatNext": "1017|Que pasa despois?",
-      "endStory": "1018|Rematar a historia",
-      "completeTitle": "1019|Historia completada",
-      "completeBody_one": "1020|Remataches {{count}} capítulo. Boa lectura!",
-      "completeBody_other": "1021|Remataches {{count}} capítulos. Boa lectura!",
-      "backToStories": "1022|Volver ás historias"
+      "start": "Comezar a historia",
+      "generating": "Escribindo a túa historia…",
+      "generatingNext": "Escribindo o capítulo seguinte…",
+      "generateError": "Non se puido escribir a historia. Téntao de novo.",
+      "emptyTitle": "Aínda non hai historias",
+      "emptyBody": "Comeza arriba a túa primeira historia interactiva.",
+      "savedTitle": "As túas historias",
+      "chapterN": "Capítulo {{n}}",
+      "chapterOf": "Capítulo {{current}} / {{total}}",
+      "chapterScore": "Puntuación do capítulo",
+      "whatNext": "Que pasa despois?",
+      "endStory": "Rematar a historia",
+      "completeTitle": "Historia completada",
+      "completeBody_one": "Remataches {{count}} capítulo. Boa lectura!",
+      "completeBody_other": "Remataches {{count}} capítulos. Boa lectura!",
+      "backToStories": "Volver ás historias"
     }
   },
   "listening": {
-    "sectionTitle": "1023|Modos de práctica",
-    "notFound": "1024|Pode que esta sesión fose eliminada.",
+    "sectionTitle": "Modos de práctica",
+    "notFound": "Pode que esta sesión fose eliminada.",
     "today": {
-      "title": "1025|Progreso de hoxe",
-      "subtitle": "1026|de práctica de escoita"
+      "title": "Progreso de hoxe",
+      "subtitle": "de práctica de escoita"
     },
     "menu": {
-      "comingSoon": "1027|Moi pronto",
+      "comingSoon": "Moi pronto",
       "fromText": {
-        "title": "1028|Escoitar dende un texto",
-        "subtitle": "1029|Pega un texto, escóitao e comproba a túa comprensión."
+        "title": "Escoitar dende un texto",
+        "subtitle": "Pega un texto, escóitao e comproba a túa comprensión."
       },
       "importAudio": {
-        "title": "1030|Importar audio",
-        "subtitle": "1031|Sobe o teu propio audio e convérteo en práctica de escoita."
+        "title": "Importar audio",
+        "subtitle": "Sobe o teu propio audio e convérteo en práctica de escoita."
       },
       "importVideo": {
-        "title": "1032|Importar vídeo",
-        "subtitle": "1033|Sobe un vídeo, obtén subtítulos e practica con preguntas."
+        "title": "Importar vídeo",
+        "subtitle": "Sobe un vídeo, obtén subtítulos e practica con preguntas."
       },
       "saved": {
-        "title": "1034|Práctica gardada",
-        "subtitle": "1035|Continúa sesións anteriores e repasa os teus erros."
+        "title": "Práctica gardada",
+        "subtitle": "Continúa sesións anteriores e repasa os teus erros."
       }
     },
     "questionType": {
-      "mainIdea": "1036|Idea principal",
-      "details": "1037|Detalles",
-      "vocabulary": "1038|Vocabulario",
-      "trueFalse": "1039|Verdadeiro / Falso"
+      "mainIdea": "Idea principal",
+      "details": "Detalles",
+      "vocabulary": "Vocabulario",
+      "trueFalse": "Verdadeiro / Falso"
     },
     "fromText": {
-      "title": "1040|Escoitar dende un texto",
-      "subtitle": "1041|Pega un texto e convérteo en práctica de escoita.",
-      "level": "1042|Nivel",
-      "voiceSpeed": "1043|Velocidade da voz",
-      "voiceType": "1044|Tipo de voz",
+      "title": "Escoitar dende un texto",
+      "subtitle": "Pega un texto e convérteo en práctica de escoita.",
+      "level": "Nivel",
+      "voiceSpeed": "Velocidade da voz",
+      "voiceType": "Tipo de voz",
       "voice": {
-        "default": "1045|Por defecto",
-        "female": "1046|Feminina",
-        "male": "1047|Masculina"
+        "default": "Por defecto",
+        "female": "Feminina",
+        "male": "Masculina"
       },
-      "showText": "1048|Amosar o texto mentres escoito",
-      "addQuestions": "1049|Engadir preguntas de comprensión",
-      "questionCount": "1050|Número de preguntas",
-      "questionTypes": "1051|Tipos de pregunta",
-      "optionalTitle": "1052|Título opcional",
-      "titlePlaceholder": "1053|Ponlle un nome ao teu texto",
-      "textPlaceholder": "1054|Pega aquí o teu texto...",
-      "recommended": "1055|Recomendado: 80–500 palabras.",
-      "words": "1056|palabras",
-      "defaultTitle": "1057|Práctica de escoita",
-      "start": "1058|Comezar a escoitar",
+      "showText": "Amosar o texto mentres escoito",
+      "addQuestions": "Engadir preguntas de comprensión",
+      "questionCount": "Número de preguntas",
+      "questionTypes": "Tipos de pregunta",
+      "optionalTitle": "Título opcional",
+      "titlePlaceholder": "Ponlle un nome ao teu texto",
+      "textPlaceholder": "Pega aquí o teu texto...",
+      "recommended": "Recomendado: 80–500 palabras.",
+      "words": "palabras",
+      "defaultTitle": "Práctica de escoita",
+      "start": "Comezar a escoitar",
       "validation": {
-        "empty": "1059|Engade algo de texto para comezar a escoitar.",
-        "tooShort": "1060|Engade polo menos 40 caracteres para comezar a escoitar.",
-        "tooLong": "1061|Ese texto é longo de máis. Mantéreno por debaixo de 5000 caracteres.",
-        "tooFewWords": "1062|Engade un pouco máis de texto (unhas 40 palabras ou máis) para poder crear boas preguntas."
+        "empty": "Engade algo de texto para comezar a escoitar.",
+        "tooShort": "Engade polo menos 40 caracteres para comezar a escoitar.",
+        "tooLong": "Ese texto é longo de máis. Mantéreno por debaixo de 5000 caracteres.",
+        "tooFewWords": "Engade un pouco máis de texto (unhas 40 palabras ou máis) para poder crear boas preguntas."
       },
-      "voiceSettings": "1063|Axustes da voz",
-      "questions": "1064|Preguntas",
-      "textInput": "1065|Entrada de texto"
+      "voiceSettings": "Axustes da voz",
+      "questions": "Preguntas",
+      "textInput": "Entrada de texto"
     },
     "session": {
-      "replay": "1066|Repetir",
-      "transcript": "1067|Transcrición",
-      "questionsTitle": "1068|Preguntas",
-      "answerFirst": "1069|Responde polo menos unha pregunta antes de comprobar.",
-      "checkAnswers": "1070|Comprobar as respostas",
-      "finish": "1071|Rematar a práctica"
+      "replay": "Repetir",
+      "transcript": "Transcrición",
+      "questionsTitle": "Preguntas",
+      "answerFirst": "Responde polo menos unha pregunta antes de comprobar.",
+      "checkAnswers": "Comprobar as respostas",
+      "finish": "Rematar a práctica"
     },
     "result": {
-      "title": "1072|Práctica completada",
-      "comprehension": "1073|Comprensión",
-      "correct": "1074|Correctas",
-      "time": "1075|Tempo de escoita",
-      "speed": "1076|Velocidade",
-      "mistakes": "1077|Erros",
-      "mistakesTitle": "1078|Repasa os teus erros",
-      "watchOnlyTitle": "1079|Escoita completada",
-      "watchOnlyBody": "1080|Escoitaches durante {{time}}.",
-      "practiceAgain": "1081|Practicar de novo",
-      "back": "1082|Volver a Escoita"
+      "title": "Práctica completada",
+      "comprehension": "Comprensión",
+      "correct": "Correctas",
+      "time": "Tempo de escoita",
+      "speed": "Velocidade",
+      "mistakes": "Erros",
+      "mistakesTitle": "Repasa os teus erros",
+      "watchOnlyTitle": "Escoita completada",
+      "watchOnlyBody": "Escoitaches durante {{time}}.",
+      "practiceAgain": "Practicar de novo",
+      "back": "Volver a Escoita"
     },
     "importAudio": {
-      "title": "1083|Importar audio",
-      "subtitle": "1084|Converte o teu propio audio en práctica de escoita.",
-      "uploadTitle": "1085|Subir un ficheiro de audio",
-      "uploadFormats": "1086|MP3, M4A, WAV ou AAC · menos de 50 MB",
-      "chooseFile": "1087|Escoller ficheiro",
-      "clearFile": "1088|Quitar o ficheiro",
-      "infoNote": "1089|O teu audio transcribirase en segundo plano. A transcrición queda agochada durante a práctica.",
-      "continue": "1090|Continuar",
-      "processingTitle": "1091|Preparando a túa práctica de escoita",
-      "step1": "1092|Subindo o audio",
-      "step2": "1093|Transcribindo a fala",
-      "step3": "1094|Creando as preguntas",
-      "processError": "1095|Non puidemos preparar este audio. Téntao de novo.",
-      "tryAgain": "1096|Téntao de novo",
-      "chooseAnother": "1097|Escoller outro ficheiro",
-      "transcriptHidden": "1098|A transcrición está agochada para que isto sexa un exercicio de escoita de verdade."
+      "title": "Importar audio",
+      "subtitle": "Converte o teu propio audio en práctica de escoita.",
+      "uploadTitle": "Subir un ficheiro de audio",
+      "uploadFormats": "MP3, M4A, WAV ou AAC · menos de 50 MB",
+      "chooseFile": "Escoller ficheiro",
+      "clearFile": "Quitar o ficheiro",
+      "infoNote": "O teu audio transcribirase en segundo plano. A transcrición queda agochada durante a práctica.",
+      "continue": "Continuar",
+      "processingTitle": "Preparando a túa práctica de escoita",
+      "step1": "Subindo o audio",
+      "step2": "Transcribindo a fala",
+      "step3": "Creando as preguntas",
+      "processError": "Non puidemos preparar este audio. Téntao de novo.",
+      "tryAgain": "Téntao de novo",
+      "chooseAnother": "Escoller outro ficheiro",
+      "transcriptHidden": "A transcrición está agochada para que isto sexa un exercicio de escoita de verdade."
     },
     "importVideo": {
-      "title": "1099|Importar vídeo",
-      "subtitle": "1100|Sobe un vídeo, obtén subtítulos e practica con preguntas.",
-      "uploadTitle": "1101|Subir un ficheiro de vídeo",
-      "uploadFormats": "1102|MP4, MOV ou M4V · menos de 80 MB",
-      "step1": "1103|Preparando o vídeo",
-      "step2": "1104|Transcribindo a fala",
-      "step3": "1105|Creando os subtítulos",
-      "subtitles": "1106|Subtítulos",
-      "subtitlesOn": "1107|Subtítulos activados",
-      "subtitlesOff": "1108|Subtítulos desactivados",
-      "noSubtitles": "1109|Non hai subtítulos dispoñibles para este vídeo.",
-      "tapWord": "1110|Toca unha palabra para traducila.",
-      "questionsLocked": "1111|As preguntas desbloquéanse cando remates de ver o vídeo."
+      "title": "Importar vídeo",
+      "subtitle": "Sobe un vídeo, obtén subtítulos e practica con preguntas.",
+      "uploadTitle": "Subir un ficheiro de vídeo",
+      "uploadFormats": "MP4, MOV ou M4V · menos de 80 MB",
+      "step1": "Preparando o vídeo",
+      "step2": "Transcribindo a fala",
+      "step3": "Creando os subtítulos",
+      "subtitles": "Subtítulos",
+      "subtitlesOn": "Subtítulos activados",
+      "subtitlesOff": "Subtítulos desactivados",
+      "noSubtitles": "Non hai subtítulos dispoñibles para este vídeo.",
+      "tapWord": "Toca unha palabra para traducila.",
+      "questionsLocked": "As preguntas desbloquéanse cando remates de ver o vídeo."
     },
     "wordSheet": {
-      "title": "1112|Traducir palabra",
-      "pickSet": "1113|Escolle un conxunto",
-      "createSet": "1114|Crear conxunto",
-      "addToSet": "1115|Engadir ao conxunto",
-      "noSets": "1116|Aínda non tes conxuntos. Crea un abaixo.",
-      "setNamePlaceholder": "1117|p. ex. Palabras do vídeo",
-      "createAndAdd": "1118|Crear e engadir a palabra",
-      "saved": "1119|Gardado en \"{{set}}\"."
+      "title": "Traducir palabra",
+      "pickSet": "Escolle un conxunto",
+      "createSet": "Crear conxunto",
+      "addToSet": "Engadir ao conxunto",
+      "noSets": "Aínda non tes conxuntos. Crea un abaixo.",
+      "setNamePlaceholder": "p. ex. Palabras do vídeo",
+      "createAndAdd": "Crear e engadir a palabra",
+      "saved": "Gardado en \"{{set}}\"."
     },
     "saved": {
-      "title": "1120|Práctica gardada",
-      "subtitle": "1121|Continúa sesións e repasa os teus erros de escoita.",
-      "emptyTitle": "1122|Non hai sesións gardadas",
-      "emptyBody": "1123|Remata ou pon en pausa unha sesión de escoita e aparecerá aquí.",
-      "continueEyebrow": "1124|Continuar escoitando",
-      "percentComplete": "1125|{{percent}} % completado",
-      "continue": "1126|Continuar",
-      "review": "1127|Repasar",
-      "delete": "1128|Eliminar sesión",
-      "deleteConfirm": "1129|Eliminar \"{{title}}\"? Isto non se pode desfacer.",
+      "title": "Práctica gardada",
+      "subtitle": "Continúa sesións e repasa os teus erros de escoita.",
+      "emptyTitle": "Non hai sesións gardadas",
+      "emptyBody": "Remata ou pon en pausa unha sesión de escoita e aparecerá aquí.",
+      "continueEyebrow": "Continuar escoitando",
+      "percentComplete": "{{percent}} % completado",
+      "continue": "Continuar",
+      "review": "Repasar",
+      "delete": "Eliminar sesión",
+      "deleteConfirm": "Eliminar \"{{title}}\"? Isto non se pode desfacer.",
       "status": {
-        "draft": "1130|Borrador",
-        "inProgress": "1131|En curso",
-        "completed": "1132|Completada"
+        "draft": "Borrador",
+        "inProgress": "En curso",
+        "completed": "Completada"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "1133|Modos de práctica",
+    "sectionTitle": "Modos de práctica",
     "today": {
-      "title": "1134|Progreso de hoxe",
-      "subtitle": "1135|de práctica de fala"
+      "title": "Progreso de hoxe",
+      "subtitle": "de práctica de fala"
     },
     "menu": {
-      "comingSoon": "1136|Moi pronto",
+      "comingSoon": "Moi pronto",
       "conversation": {
-        "title": "1137|Conversa con IA",
-        "subtitle": "1138|Fala cun titor de IA en tempo real."
+        "title": "Conversa con IA",
+        "subtitle": "Fala cun titor de IA en tempo real."
       },
       "free": {
-        "title": "1139|Fala libre",
-        "subtitle": "1140|Fala sobre temas xerados e recibe comentarios."
+        "title": "Fala libre",
+        "subtitle": "Fala sobre temas xerados e recibe comentarios."
       },
       "picture": {
-        "title": "1141|Describir imaxe",
-        "subtitle": "1142|Describe imaxes e aprende vocabulario útil."
+        "title": "Describir imaxe",
+        "subtitle": "Describe imaxes e aprende vocabulario útil."
       },
       "debate": {
-        "title": "1143|Modo debate",
-        "subtitle": "1144|Debate temas e constrúe os teus argumentos."
+        "title": "Modo debate",
+        "subtitle": "Debate temas e constrúe os teus argumentos."
       },
       "shadowing": {
-        "title": "1145|Shadowing",
-        "subtitle": "1146|Repite frases e mellora a pronuncia."
+        "title": "Shadowing",
+        "subtitle": "Repite frases e mellora a pronuncia."
       },
       "pronunciation": {
-        "title": "1147|Adestrador de pronuncia",
-        "subtitle": "1148|Céntrate nos sons e palabras difíciles."
+        "title": "Adestrador de pronuncia",
+        "subtitle": "Céntrate nos sons e palabras difíciles."
       }
     },
     "input": {
-      "speak": "1149|Falar",
-      "stop": "1150|Parar",
-      "listening": "1151|Escoitando…",
-      "placeholder": "1152|Escribe a túa resposta…",
-      "noVoice": "1153|Este navegador non admite a entrada por voz: escribe a túa resposta."
+      "speak": "Falar",
+      "stop": "Parar",
+      "listening": "Escoitando…",
+      "placeholder": "Escribe a túa resposta…",
+      "noVoice": "Este navegador non admite a entrada por voz: escribe a túa resposta."
     },
     "conversation": {
-      "title": "1154|Conversa con IA",
-      "subtitle": "1155|Fala cun titor de IA en tempo real.",
-      "topic": "1156|Tema",
-      "scenarios": "1157|Escenarios",
-      "autoTopic": "1158|Sorpréndeme",
-      "autoTopicHint": "1159|Xeraremos un tema novo para ti.",
-      "length": "1160|Duración",
-      "min": "1161|min",
-      "start": "1162|Comezar a conversa",
-      "starting": "1163|Comezando…",
-      "startError": "1164|Non se puido comezar a conversa. Téntao de novo.",
-      "end": "1165|Rematar",
-      "dismiss": "1166|Descartar",
-      "hint": "1167|Pista",
-      "getHint": "1168|Precisas unha pista?",
-      "hintLoading": "1169|Pensando…"
+      "title": "Conversa con IA",
+      "subtitle": "Fala cun titor de IA en tempo real.",
+      "topic": "Tema",
+      "scenarios": "Escenarios",
+      "autoTopic": "Sorpréndeme",
+      "autoTopicHint": "Xeraremos un tema novo para ti.",
+      "length": "Duración",
+      "min": "min",
+      "start": "Comezar a conversa",
+      "starting": "Comezando…",
+      "startError": "Non se puido comezar a conversa. Téntao de novo.",
+      "end": "Rematar",
+      "dismiss": "Descartar",
+      "hint": "Pista",
+      "getHint": "Precisas unha pista?",
+      "hintLoading": "Pensando…"
     },
     "result": {
-      "title": "1170|Práctica completada",
-      "generating": "1171|Analizando a túa fala…",
-      "overall": "1172|Puntuación global",
-      "corrections": "1173|Correccións",
-      "transcript": "1174|Transcrición",
-      "practiceAgain": "1175|Practicar de novo",
-      "back": "1176|Volver a Fala"
+      "title": "Práctica completada",
+      "generating": "Analizando a túa fala…",
+      "overall": "Puntuación global",
+      "corrections": "Correccións",
+      "transcript": "Transcrición",
+      "practiceAgain": "Practicar de novo",
+      "back": "Volver a Fala"
     },
     "free": {
-      "title": "1177|Fala libre",
-      "subtitle": "1178|Fala libremente sobre un tema e recibe comentarios.",
-      "preview": "1179|Vista previa",
-      "autoTopic": "1180|Tema xerado por IA",
-      "autoTopicHint": "1181|Escolleremos un tema novo para {{language}} · {{level}} cando comeces.",
-      "auto": "1182|Automático",
-      "start": "1183|Comezar Fala libre",
-      "generating": "1184|Xerando o tema…",
-      "generatingHint": "1185|Buscando algo que encaixe co teu nivel.",
-      "fallbackTopic": "1186|Non se puido xerar un tema. Usamos un de reserva.",
-      "transcript": "1187|Transcrición",
-      "transcriptHint": "1188|A túa transcrición aparecerá aquí mentres falas.",
-      "startSpeaking": "1189|Comezar a falar"
+      "title": "Fala libre",
+      "subtitle": "Fala libremente sobre un tema e recibe comentarios.",
+      "preview": "Vista previa",
+      "autoTopic": "Tema xerado por IA",
+      "autoTopicHint": "Escolleremos un tema novo para {{language}} · {{level}} cando comeces.",
+      "auto": "Automático",
+      "start": "Comezar Fala libre",
+      "generating": "Xerando o tema…",
+      "generatingHint": "Buscando algo que encaixe co teu nivel.",
+      "fallbackTopic": "Non se puido xerar un tema. Usamos un de reserva.",
+      "transcript": "Transcrición",
+      "transcriptHint": "A túa transcrición aparecerá aquí mentres falas.",
+      "startSpeaking": "Comezar a falar"
     },
     "picture": {
-      "title": "1190|Describir imaxe",
-      "subtitle": "1191|Describe o que ves e recibe comentarios.",
-      "start": "1192|Comezar Describir imaxe",
-      "prompt": "1193|Describe o que ves nesta imaxe.",
-      "tryToMention": "1194|Tenta mencionar:",
+      "title": "Describir imaxe",
+      "subtitle": "Describe o que ves e recibe comentarios.",
+      "start": "Comezar Describir imaxe",
+      "prompt": "Describe o que ves nesta imaxe.",
+      "tryToMention": "Tenta mencionar:",
       "hints": {
-        "people": "1195|persoas",
-        "objects": "1196|obxectos",
-        "actions": "1197|accións",
-        "colors": "1198|cores",
-        "emotions": "1199|emocións"
+        "people": "persoas",
+        "objects": "obxectos",
+        "actions": "accións",
+        "colors": "cores",
+        "emotions": "emocións"
       },
-      "loading": "1200|Cargando unha foto…",
-      "retry": "1201|Téntao de novo",
-      "newPhoto": "1202|Outra foto",
-      "imageAlt": "1203|Foto para describir",
-      "photoBy": "1204|Foto de",
-      "onUnsplash": "1205|en Unsplash",
-      "startDescribing": "1206|Comezar a describir"
+      "loading": "Cargando unha foto…",
+      "retry": "Téntao de novo",
+      "newPhoto": "Outra foto",
+      "imageAlt": "Foto para describir",
+      "photoBy": "Foto de",
+      "onUnsplash": "en Unsplash",
+      "startDescribing": "Comezar a describir"
     },
     "debate": {
-      "title": "1207|Modo debate",
-      "subtitle": "1208|Defende a túa postura fronte a un rival de IA.",
-      "start": "1209|Comezar o debate",
-      "pickSide": "1210|A túa postura",
-      "preparing": "1211|Preparando o tema do debate…",
-      "roundOf": "1212|Rolda {{current}} de {{total}} · {{label}}",
+      "title": "Modo debate",
+      "subtitle": "Defende a túa postura fronte a un rival de IA.",
+      "start": "Comezar o debate",
+      "pickSide": "A túa postura",
+      "preparing": "Preparando o tema do debate…",
+      "roundOf": "Rolda {{current}} de {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "1213|A favor",
-          "subtitle": "1214|Defende a afirmación"
+          "title": "A favor",
+          "subtitle": "Defende a afirmación"
         },
         "disagree": {
-          "title": "1215|En contra",
-          "subtitle": "1216|Argumenta en contra"
+          "title": "En contra",
+          "subtitle": "Argumenta en contra"
         },
         "surprise": {
-          "title": "1217|Sorpréndeme",
-          "subtitle": "1218|Escollemos unha postura por ti"
+          "title": "Sorpréndeme",
+          "subtitle": "Escollemos unha postura por ti"
         }
       }
     },
     "practice": {
-      "listen": "1219|Escoitar",
-      "playing": "1220|Reproducindo…",
-      "record": "1221|Gravar",
-      "stop": "1222|Parar",
-      "playMine": "1223|Escoitar a miña",
-      "noRecording": "1224|Este navegador non admite a gravación: aínda podes escoitar e repetir."
+      "listen": "Escoitar",
+      "playing": "Reproducindo…",
+      "record": "Gravar",
+      "stop": "Parar",
+      "playMine": "Escoitar a miña",
+      "noRecording": "Este navegador non admite a gravación: aínda podes escoitar e repetir."
     },
     "shadowing": {
-      "title": "1225|Shadowing",
-      "subtitle": "1226|Escoita, repite e compárate.",
-      "start": "1227|Comezar o Shadowing",
-      "category": "1228|Categoría",
-      "howItWorks": "1229|Escoita a frase, repítea en voz alta mentres gravas e despois reproduce a túa versión para comparar o ritmo.",
-      "loading": "1230|Xerando frases…",
-      "phrase": "1231|Frase",
-      "previous": "1232|Anterior",
-      "nextPhrase": "1233|Frase seguinte",
-      "finish": "1234|Rematar",
-      "changeSettings": "1235|Cambiar os axustes",
-      "done": "1236|{{count}} feitas",
-      "allDone": "1237|Practicaches todas as frases!",
-      "newSet": "1238|Novo grupo"
+      "title": "Shadowing",
+      "subtitle": "Escoita, repite e compárate.",
+      "start": "Comezar o Shadowing",
+      "category": "Categoría",
+      "howItWorks": "Escoita a frase, repítea en voz alta mentres gravas e despois reproduce a túa versión para comparar o ritmo.",
+      "loading": "Xerando frases…",
+      "phrase": "Frase",
+      "previous": "Anterior",
+      "nextPhrase": "Frase seguinte",
+      "finish": "Rematar",
+      "changeSettings": "Cambiar os axustes",
+      "done": "{{count}} feitas",
+      "allDone": "Practicaches todas as frases!",
+      "newSet": "Novo grupo"
     },
     "pronunciation": {
-      "title": "1239|Adestrador de pronuncia",
-      "subtitle": "1240|Céntrate nos sons e palabras difíciles.",
-      "start": "1241|Comezar o adestramento",
-      "focus": "1242|Foco",
-      "difficulty": "1243|Dificultade",
+      "title": "Adestrador de pronuncia",
+      "subtitle": "Céntrate nos sons e palabras difíciles.",
+      "start": "Comezar o adestramento",
+      "focus": "Foco",
+      "difficulty": "Dificultade",
       "level": {
-        "easy": "1244|Fácil",
-        "balanced": "1245|Equilibrada",
-        "hard": "1246|Difícil"
+        "easy": "Fácil",
+        "balanced": "Equilibrada",
+        "hard": "Difícil"
       },
-      "loading": "1247|Xerando os exercicios…",
-      "sound": "1248|Son",
-      "scoringUnavailable": "1249|A puntuación automática da pronuncia aínda non está configurada no servidor, así que non se amosa ningunha nota. Escoitar, gravar e reproducir funcionan."
+      "loading": "Xerando os exercicios…",
+      "sound": "Son",
+      "scoringUnavailable": "A puntuación automática da pronuncia aínda non está configurada no servidor, así que non se amosa ningunha nota. Escoitar, gravar e reproducir funcionan."
     }
   },
   "profile": {
-    "interfaceLanguage": "1250|Idioma da interface",
+    "interfaceLanguage": "Idioma da interface",
     "password": {
-      "title": "1251|Crea un contrasinal",
-      "body": "1252|A túa conta creouse con Google, así que non ten contrasinal: os campos de correo e contrasinal non poden iniciarche a sesión. Engade un e funcionarán as dúas formas.",
-      "save": "1253|Gardar o contrasinal",
-      "saving": "1254|Gardando...",
-      "savedInfo": "1255|Contrasinal creado. Agora tamén podes iniciar sesión co teu correo."
+      "title": "Crea un contrasinal",
+      "body": "A túa conta creouse con Google, así que non ten contrasinal: os campos de correo e contrasinal non poden iniciarche a sesión. Engade un e funcionarán as dúas formas.",
+      "save": "Gardar o contrasinal",
+      "saving": "Gardando...",
+      "savedInfo": "Contrasinal creado. Agora tamén podes iniciar sesión co teu correo."
     }
   },
   "units": {
-    "min": "1256|min",
-    "words": "1257|palabras"
+    "min": "min",
+    "words": "palabras"
   },
   "link": {
-    "title": "1258|Iniciar sesión cunha ligazón",
-    "subtitle": "1259|Enviarémosche por correo unha ligazón dun só uso. Sen contrasinais que lembrar.",
-    "send": "1260|Enviar a ligazón",
-    "sending": "1261|Enviando...",
-    "sentInfo": "1262|Ligazón enviada. Mira o teu correo.",
-    "sentTitle": "1263|Mira o teu correo",
-    "sentBody": "1264|Enviamos unha ligazón de acceso a",
-    "useAnotherEmail": "1265|Usar outro correo",
-    "backToPassword": "1266|Iniciar sesión con contrasinal"
+    "title": "Iniciar sesión cunha ligazón",
+    "subtitle": "Enviarémosche por correo unha ligazón dun só uso. Sen contrasinais que lembrar.",
+    "send": "Enviar a ligazón",
+    "sending": "Enviando...",
+    "sentInfo": "Ligazón enviada. Mira o teu correo.",
+    "sentTitle": "Mira o teu correo",
+    "sentBody": "Enviamos unha ligazón de acceso a",
+    "useAnotherEmail": "Usar outro correo",
+    "backToPassword": "Iniciar sesión con contrasinal"
   },
   "action": {
-    "working": "1267|Un momento...",
-    "continue": "1268|Continuar",
-    "confirmEmailTitle": "1269|Confirma o teu correo",
-    "confirmEmailBody": "1270|Esta ligazón abriuse noutro navegador. Introduce o enderezo ao que se enviou e remataremos de iniciarche a sesión.",
-    "resetTitle": "1271|Novo contrasinal",
-    "resetSubtitle": "1272|Escolle un contrasinal novo para",
-    "newPassword": "1273|Novo contrasinal",
-    "confirmPassword": "1274|Repite o contrasinal",
-    "savePassword": "1275|Gardar o contrasinal",
-    "resetDoneTitle": "1276|Contrasinal actualizado",
-    "resetDoneBody": "1277|Xa podes iniciar sesión co teu novo contrasinal.",
-    "failedTitle": "1278|Esa ligazón non funcionou",
-    "failedBody": "1279|Pode que xa se usase ou que caducase. Pide unha nova dende a pantalla de inicio de sesión.",
-    "backToSignIn": "1280|Volver ao inicio de sesión"
+    "working": "Un momento...",
+    "continue": "Continuar",
+    "confirmEmailTitle": "Confirma o teu correo",
+    "confirmEmailBody": "Esta ligazón abriuse noutro navegador. Introduce o enderezo ao que se enviou e remataremos de iniciarche a sesión.",
+    "resetTitle": "Novo contrasinal",
+    "resetSubtitle": "Escolle un contrasinal novo para",
+    "newPassword": "Novo contrasinal",
+    "confirmPassword": "Repite o contrasinal",
+    "savePassword": "Gardar o contrasinal",
+    "resetDoneTitle": "Contrasinal actualizado",
+    "resetDoneBody": "Xa podes iniciar sesión co teu novo contrasinal.",
+    "failedTitle": "Esa ligazón non funcionou",
+    "failedBody": "Pode que xa se usase ou que caducase. Pide unha nova dende a pantalla de inicio de sesión.",
+    "backToSignIn": "Volver ao inicio de sesión"
   },
   "common": {
-    "cancel": "1281|Cancelar",
-    "delete": "1282|Eliminar",
+    "cancel": "Cancelar",
+    "delete": "Eliminar",
     "view": {
-      "label": "1283|Vista",
-      "rows": "1284|Lista",
-      "grid": "1285|Grade"
+      "label": "Vista",
+      "rows": "Lista",
+      "grid": "Grade"
     }
   },
   "practice": {
     "language": {
-      "label": "1286|Idioma",
-      "search": "1287|Buscar un idioma",
-      "noMatch": "1288|Ningún idioma coincide.",
-      "noVoice": "1289|O teu navegador non ten voz en {{language}}, así que o titor non falará este idioma. Engade o paquete de idioma nos axustes do sistema ou escolle outro idioma."
+      "label": "Idioma",
+      "search": "Buscar un idioma",
+      "noMatch": "Ningún idioma coincide.",
+      "noVoice": "O teu navegador non ten voz en {{language}}, así que o titor non falará este idioma. Engade o paquete de idioma nos axustes do sistema ou escolle outro idioma."
     }
   }
 }

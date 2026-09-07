@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "1|WordAround",
-    "tagline": "2|Opi kieliä aktiivisesti."
+    "name": "WordAround",
+    "tagline": "Opi kieliä aktiivisesti."
   },
   "onboarding": {
-    "subtitle": "3|Opi sanoja hauskasti\\nja helposti",
-    "start": "4|Aloitetaan"
+    "subtitle": "Opi sanoja hauskasti\\nja helposti",
+    "start": "Aloitetaan"
   },
   "auth": {
-    "welcomeBack": "5|Tervetuloa takaisin",
-    "subtitle": "6|Kirjaudu sisään ja jatka oppimista",
-    "email": "7|Sähköposti",
-    "emailPlaceholder": "8|Anna sähköpostiosoitteesi",
-    "password": "9|Salasana",
-    "passwordPlaceholder": "10|Anna salasanasi",
-    "forgotPassword": "11|Unohtuiko salasana?",
-    "signIn": "12|Kirjaudu sisään",
-    "signingIn": "13|Kirjaudutaan...",
-    "signUp": "14|Rekisteröidy",
-    "signOut": "15|Kirjaudu ulos",
-    "continueWithGoogle": "16|Jatka Googlella",
-    "createAccount": "17|Luo tili",
-    "accountCreatedInfo": "18|Tili luotu. Lähetimme vahvistusviestin.",
-    "resetEmailSent": "19|Salasanan palautusviesti lähetetty",
-    "showPassword": "20|Näytä salasana",
-    "hidePassword": "21|Piilota salasana",
-    "back": "22|Takaisin",
-    "signUpTitle": "23|Luo tilisi",
-    "signUpSubtitle": "24|Muutama minuutti päivässä, ja sanavarastosi kasvaa",
-    "name": "25|Nimi",
-    "namePlaceholder": "26|Miksi sinua kutsutaan?",
-    "orWithEmail": "27|tai sähköpostilla",
-    "signUpWithGoogle": "28|Rekisteröidy Googlella",
-    "passwordHint": "29|Vähintään {{min}} merkkiä",
-    "magicLinkCta": "30|Kirjaudu sähköpostilinkillä",
-    "creatingAccount": "31|Luodaan tiliä..."
+    "welcomeBack": "Tervetuloa takaisin",
+    "subtitle": "Kirjaudu sisään ja jatka oppimista",
+    "email": "Sähköposti",
+    "emailPlaceholder": "Anna sähköpostiosoitteesi",
+    "password": "Salasana",
+    "passwordPlaceholder": "Anna salasanasi",
+    "forgotPassword": "Unohtuiko salasana?",
+    "signIn": "Kirjaudu sisään",
+    "signingIn": "Kirjaudutaan...",
+    "signUp": "Rekisteröidy",
+    "signOut": "Kirjaudu ulos",
+    "continueWithGoogle": "Jatka Googlella",
+    "createAccount": "Luo tili",
+    "accountCreatedInfo": "Tili luotu. Lähetimme vahvistusviestin.",
+    "resetEmailSent": "Salasanan palautusviesti lähetetty",
+    "showPassword": "Näytä salasana",
+    "hidePassword": "Piilota salasana",
+    "back": "Takaisin",
+    "signUpTitle": "Luo tilisi",
+    "signUpSubtitle": "Muutama minuutti päivässä, ja sanavarastosi kasvaa",
+    "name": "Nimi",
+    "namePlaceholder": "Miksi sinua kutsutaan?",
+    "orWithEmail": "tai sähköpostilla",
+    "signUpWithGoogle": "Rekisteröidy Googlella",
+    "passwordHint": "Vähintään {{min}} merkkiä",
+    "magicLinkCta": "Kirjaudu sähköpostilinkillä",
+    "creatingAccount": "Luodaan tiliä..."
   },
   "verify": {
-    "title": "32|Vahvista sähköpostisi",
-    "subtitle": "33|Vielä yksi askel ennen kuin aloitat",
-    "sentTo": "34|Lähetimme vahvistuslinkin osoitteeseen",
-    "fallbackEmail": "35|sähköpostiisi",
-    "step1": "36|Avaa viesti postilaatikossasi",
-    "step2": "37|Napauta vahvistuslinkkiä",
-    "step3": "38|Avaamme oppimisen heti — tänne ei tarvitse palata",
-    "checkButton": "39|Olen vahvistanut sähköpostini",
-    "checking": "40|Tarkistetaan...",
-    "resend": "41|Lähetä viesti uudelleen",
-    "useAnotherAccount": "42|Käytä toista tiliä",
-    "badgeInbox": "43|Tarkista postilaatikko",
-    "badgeConfirm": "44|Vahvista",
-    "badgeDone": "45|Valmis",
-    "resentInfo": "46|Vahvistusviesti lähetetty uudelleen",
-    "notVerifiedYet": "47|Sähköpostia ei ole vielä vahvistettu"
+    "title": "Vahvista sähköpostisi",
+    "subtitle": "Vielä yksi askel ennen kuin aloitat",
+    "sentTo": "Lähetimme vahvistuslinkin osoitteeseen",
+    "fallbackEmail": "sähköpostiisi",
+    "step1": "Avaa viesti postilaatikossasi",
+    "step2": "Napauta vahvistuslinkkiä",
+    "step3": "Avaamme oppimisen heti — tänne ei tarvitse palata",
+    "checkButton": "Olen vahvistanut sähköpostini",
+    "checking": "Tarkistetaan...",
+    "resend": "Lähetä viesti uudelleen",
+    "useAnotherAccount": "Käytä toista tiliä",
+    "badgeInbox": "Tarkista postilaatikko",
+    "badgeConfirm": "Vahvista",
+    "badgeDone": "Valmis",
+    "resentInfo": "Vahvistusviesti lähetetty uudelleen",
+    "notVerifiedYet": "Sähköpostia ei ole vielä vahvistettu"
   },
   "errors": {
-    "emailRequired": "48|Sähköposti vaaditaan",
-    "emailInvalid": "49|Anna kelvollinen sähköpostiosoite",
-    "emailFirst": "50|Anna ensin sähköpostiosoitteesi",
-    "passwordRequired": "51|Salasana vaaditaan",
-    "passwordTooShort": "52|Salasanassa on oltava vähintään 8 merkkiä",
-    "invalidEmail": "53|Virheellinen sähköpostin muoto",
-    "wrongPassword": "54|Väärä sähköposti tai salasana. Jos rekisteröidyit Googlella, käytä Google-painiketta.",
-    "userNotFound": "55|Väärä sähköposti tai salasana. Jos rekisteröidyit Googlella, käytä Google-painiketta.",
-    "invalidCredential": "56|Väärä sähköposti tai salasana. Jos rekisteröidyit Googlella, käytä Google-painiketta.",
-    "emailInUse": "57|Tämä tili on jo olemassa",
-    "weakPassword": "58|Tämä salasana on liian heikko",
-    "network": "59|Verkkovirhe. Tarkista internetyhteytesi",
-    "tooManyRequests": "60|Liian monta yritystä. Yritä myöhemmin uudelleen",
-    "differentCredential": "61|Tätä sähköpostia käytetään jo toisella kirjautumistavalla",
-    "noActiveAccount": "62|Aktiivista tiliä ei löytynyt",
-    "default": "63|Kirjautuminen epäonnistui. Yritä uudelleen",
-    "nameRequired": "64|Nimi vaaditaan",
-    "passwordsDoNotMatch": "65|Salasanat eivät täsmää",
-    "actionExpired": "66|Tämä linkki on vanhentunut. Pyydä uusi.",
-    "actionInvalid": "67|Tämä linkki ei ole enää voimassa.",
-    "userDisabled": "68|Tämä tili on poistettu käytöstä.",
-    "requiresRecentLogin": "69|Kirjaudu turvallisuussyistä uudelleen ja toista tämä.",
-    "passwordAlreadySet": "70|Tällä tilillä on jo salasana.",
-    "linkNoEmail": "71|Anna sähköpostiosoite, johon linkki lähetettiin"
+    "emailRequired": "Sähköposti vaaditaan",
+    "emailInvalid": "Anna kelvollinen sähköpostiosoite",
+    "emailFirst": "Anna ensin sähköpostiosoitteesi",
+    "passwordRequired": "Salasana vaaditaan",
+    "passwordTooShort": "Salasanassa on oltava vähintään 8 merkkiä",
+    "invalidEmail": "Virheellinen sähköpostin muoto",
+    "wrongPassword": "Väärä sähköposti tai salasana. Jos rekisteröidyit Googlella, käytä Google-painiketta.",
+    "userNotFound": "Väärä sähköposti tai salasana. Jos rekisteröidyit Googlella, käytä Google-painiketta.",
+    "invalidCredential": "Väärä sähköposti tai salasana. Jos rekisteröidyit Googlella, käytä Google-painiketta.",
+    "emailInUse": "Tämä tili on jo olemassa",
+    "weakPassword": "Tämä salasana on liian heikko",
+    "network": "Verkkovirhe. Tarkista internetyhteytesi",
+    "tooManyRequests": "Liian monta yritystä. Yritä myöhemmin uudelleen",
+    "differentCredential": "Tätä sähköpostia käytetään jo toisella kirjautumistavalla",
+    "noActiveAccount": "Aktiivista tiliä ei löytynyt",
+    "default": "Kirjautuminen epäonnistui. Yritä uudelleen",
+    "nameRequired": "Nimi vaaditaan",
+    "passwordsDoNotMatch": "Salasanat eivät täsmää",
+    "actionExpired": "Tämä linkki on vanhentunut. Pyydä uusi.",
+    "actionInvalid": "Tämä linkki ei ole enää voimassa.",
+    "userDisabled": "Tämä tili on poistettu käytöstä.",
+    "requiresRecentLogin": "Kirjaudu turvallisuussyistä uudelleen ja toista tämä.",
+    "passwordAlreadySet": "Tällä tilillä on jo salasana.",
+    "linkNoEmail": "Anna sähköpostiosoite, johon linkki lähetettiin"
   },
   "nav": {
-    "home": "72|Etusivu",
-    "speaking": "73|Puhuminen",
-    "listening": "74|Kuunteleminen",
-    "reading": "75|Lukeminen",
-    "writing": "76|Kirjoittaminen",
-    "folders": "77|Kansiot",
-    "sets": "78|Setit",
-    "notes": "79|Muistiinpanot",
-    "profile": "80|Profiili",
-    "create": "81|Uusi",
-    "menu": "82|Valikko",
-    "closeMenu": "83|Sulje valikko",
+    "home": "Etusivu",
+    "speaking": "Puhuminen",
+    "listening": "Kuunteleminen",
+    "reading": "Lukeminen",
+    "writing": "Kirjoittaminen",
+    "folders": "Kansiot",
+    "sets": "Setit",
+    "notes": "Muistiinpanot",
+    "profile": "Profiili",
+    "create": "Uusi",
+    "menu": "Valikko",
+    "closeMenu": "Sulje valikko",
     "group": {
-      "practice": "84|Harjoittelu",
-      "library": "85|Kirjasto"
+      "practice": "Harjoittelu",
+      "library": "Kirjasto"
     }
   },
   "folders": {
-    "create": "86|Luo kansio",
-    "loading": "87|Ladataan kansioita…",
-    "loadError": "88|Kansioidesi lataus ei onnistunut.",
-    "emptyTitle": "89|Ei vielä kansioita",
-    "emptyBody": "90|Luo ensimmäinen kansiosi ja järjestä settisi.",
-    "setCount": "91|{{count}} settiä",
-    "setCount_one": "92|{{count}} setti",
-    "newTitle": "93|Uusi kansio",
-    "newSubtitle": "94|Kokoa toisiinsa liittyvät setit yhteen.",
-    "editTitle": "95|Muokkaa kansiota",
-    "name": "96|Nimi",
-    "namePlaceholder": "97|esim. Matkailu",
-    "description": "98|Kuvaus",
-    "descriptionPlaceholder": "99|Valinnainen",
-    "color": "100|Väri",
-    "save": "101|Tallenna",
-    "saving": "102|Tallennetaan…",
-    "cancel": "103|Peruuta",
-    "edit": "104|Muokkaa kansiota",
-    "delete": "105|Poista kansio",
-    "deleteConfirm": "106|Poistetaanko ”{{title}}”? Tätä ei voi kumota.",
-    "backToFolders": "107|Takaisin kansioihin",
-    "notFoundTitle": "108|Kansiota ei löytynyt",
-    "notFoundBody": "109|Tämä kansio on saatettu poistaa.",
-    "noSetsInFolder": "110|Tässä kansiossa ei ole vielä settejä.",
-    "saveError": "111|Tallennus ei onnistunut. Yritä uudelleen.",
+    "create": "Luo kansio",
+    "loading": "Ladataan kansioita…",
+    "loadError": "Kansioidesi lataus ei onnistunut.",
+    "emptyTitle": "Ei vielä kansioita",
+    "emptyBody": "Luo ensimmäinen kansiosi ja järjestä settisi.",
+    "setCount": "{{count}} settiä",
+    "setCount_one": "{{count}} setti",
+    "newTitle": "Uusi kansio",
+    "newSubtitle": "Kokoa toisiinsa liittyvät setit yhteen.",
+    "editTitle": "Muokkaa kansiota",
+    "name": "Nimi",
+    "namePlaceholder": "esim. Matkailu",
+    "description": "Kuvaus",
+    "descriptionPlaceholder": "Valinnainen",
+    "color": "Väri",
+    "save": "Tallenna",
+    "saving": "Tallennetaan…",
+    "cancel": "Peruuta",
+    "edit": "Muokkaa kansiota",
+    "delete": "Poista kansio",
+    "deleteConfirm": "Poistetaanko ”{{title}}”? Tätä ei voi kumota.",
+    "backToFolders": "Takaisin kansioihin",
+    "notFoundTitle": "Kansiota ei löytynyt",
+    "notFoundBody": "Tämä kansio on saatettu poistaa.",
+    "noSetsInFolder": "Tässä kansiossa ei ole vielä settejä.",
+    "saveError": "Tallennus ei onnistunut. Yritä uudelleen.",
     "error": {
-      "nameRequired": "112|Kansion nimi vaaditaan.",
-      "nameTooLong": "113|Kansion nimen on oltava alle 80 merkkiä.",
-      "descTooLong": "114|Kuvauksen on oltava alle 120 merkkiä."
+      "nameRequired": "Kansion nimi vaaditaan.",
+      "nameTooLong": "Kansion nimen on oltava alle 80 merkkiä.",
+      "descTooLong": "Kuvauksen on oltava alle 120 merkkiä."
     },
-    "optional": "115|(valinnainen)",
-    "preview": "116|Esikatselu",
-    "previewPlaceholder": "117|Uusi kansio",
-    "deleteConfirmTitle": "118|Poistetaanko tämä kansio?"
+    "optional": "(valinnainen)",
+    "preview": "Esikatselu",
+    "previewPlaceholder": "Uusi kansio",
+    "deleteConfirmTitle": "Poistetaanko tämä kansio?"
   },
   "sets": {
-    "create": "119|Luo setti",
-    "loading": "120|Ladataan settejä…",
-    "loadError": "121|Settiesi lataus ei onnistunut.",
-    "emptyTitle": "122|Ei vielä settejä",
-    "emptyBody": "123|Luo ensimmäinen korttisettisi Uusi-painikkeella.",
-    "cardCount": "124|{{count}} korttia",
-    "cardCount_one": "125|{{count}} kortti",
-    "keepPracticing": "126|Jatka harjoittelua",
-    "delete": "127|Poista setti",
-    "deleteConfirm": "128|Poistetaanko ”{{title}}”? Tätä ei voi kumota.",
-    "notFoundTitle": "129|Settiä ei löytynyt",
-    "notFoundBody": "130|Tämä setti on saatettu poistaa.",
-    "backToSets": "131|Takaisin setteihin",
-    "edit": "132|Muokkaa settiä",
-    "deleteConfirmTitle": "133|Poistetaanko tämä setti?",
-    "editTitle": "134|Muokkaa settiä",
-    "editSubtitle": "135|Vaihda otsikko, väri, kuvake tai kansio. Kortit pysyvät paikoillaan.",
-    "save": "136|Tallenna muutokset",
-    "saving": "137|Tallennetaan…",
-    "cancel": "138|Peruuta",
-    "saveError": "139|Tallennus ei onnistunut. Yritä uudelleen."
+    "create": "Luo setti",
+    "loading": "Ladataan settejä…",
+    "loadError": "Settiesi lataus ei onnistunut.",
+    "emptyTitle": "Ei vielä settejä",
+    "emptyBody": "Luo ensimmäinen korttisettisi Uusi-painikkeella.",
+    "cardCount": "{{count}} korttia",
+    "cardCount_one": "{{count}} kortti",
+    "keepPracticing": "Jatka harjoittelua",
+    "delete": "Poista setti",
+    "deleteConfirm": "Poistetaanko ”{{title}}”? Tätä ei voi kumota.",
+    "notFoundTitle": "Settiä ei löytynyt",
+    "notFoundBody": "Tämä setti on saatettu poistaa.",
+    "backToSets": "Takaisin setteihin",
+    "edit": "Muokkaa settiä",
+    "deleteConfirmTitle": "Poistetaanko tämä setti?",
+    "editTitle": "Muokkaa settiä",
+    "editSubtitle": "Vaihda otsikko, väri, kuvake tai kansio. Kortit pysyvät paikoillaan.",
+    "save": "Tallenna muutokset",
+    "saving": "Tallennetaan…",
+    "cancel": "Peruuta",
+    "saveError": "Tallennus ei onnistunut. Yritä uudelleen."
   },
   "createSet": {
-    "title": "140|Uusi setti",
-    "subtitle": "141|Lisää sanoja ja muokkaa settiäsi.",
-    "infoSection": "142|Setin tiedot",
-    "setTitle": "143|Otsikko",
-    "setTitlePlaceholder": "144|esim. Matkasanasto",
-    "setDescription": "145|Kuvaus",
-    "setDescriptionPlaceholder": "146|Valinnainen",
-    "privacy": "147|Yksityisyys",
-    "private": "148|Yksityinen",
-    "public": "149|Julkinen",
-    "cardsSection": "150|Kortit",
-    "addCard": "151|Lisää kortti",
-    "cardN": "152|Kortti {{n}}",
-    "removeCard": "153|Poista kortti",
-    "word": "154|Sana",
-    "translation": "155|Käännös",
-    "example": "156|Esimerkki (valinnainen)",
-    "addImage": "157|Lisää kuva",
-    "removeImage": "158|Poista kuva",
-    "customizeSection": "159|Mukauta",
-    "color": "160|Väri",
-    "icon": "161|Kuvake",
-    "folder": "162|Kansio",
-    "noFolder": "163|Ei kansiota",
-    "previewSection": "164|Esikatselu",
-    "previewPlaceholder": "165|Setin otsikko",
-    "save": "166|Luo setti",
-    "saving": "167|Tallennetaan…",
-    "cancel": "168|Peruuta",
-    "saveError": "169|Tallennus ei onnistunut. Yritä uudelleen.",
+    "title": "Uusi setti",
+    "subtitle": "Lisää sanoja ja muokkaa settiäsi.",
+    "infoSection": "Setin tiedot",
+    "setTitle": "Otsikko",
+    "setTitlePlaceholder": "esim. Matkasanasto",
+    "setDescription": "Kuvaus",
+    "setDescriptionPlaceholder": "Valinnainen",
+    "privacy": "Yksityisyys",
+    "private": "Yksityinen",
+    "public": "Julkinen",
+    "cardsSection": "Kortit",
+    "addCard": "Lisää kortti",
+    "cardN": "Kortti {{n}}",
+    "removeCard": "Poista kortti",
+    "word": "Sana",
+    "translation": "Käännös",
+    "example": "Esimerkki (valinnainen)",
+    "addImage": "Lisää kuva",
+    "removeImage": "Poista kuva",
+    "customizeSection": "Mukauta",
+    "color": "Väri",
+    "icon": "Kuvake",
+    "folder": "Kansio",
+    "noFolder": "Ei kansiota",
+    "previewSection": "Esikatselu",
+    "previewPlaceholder": "Setin otsikko",
+    "save": "Luo setti",
+    "saving": "Tallennetaan…",
+    "cancel": "Peruuta",
+    "saveError": "Tallennus ei onnistunut. Yritä uudelleen.",
     "error": {
-      "emptyTitle": "170|Setin otsikko vaaditaan.",
-      "titleTooLong": "171|Setin otsikon on oltava alle 150 merkkiä.",
-      "descTooLong": "172|Kuvauksen on oltava alle 200 merkkiä.",
-      "noValidCards": "173|Lisää vähintään yksi kortti, jossa on sana ja käännös.",
-      "exampleTooLong": "174|Korttien esimerkkien on oltava alle 150 merkkiä."
+      "emptyTitle": "Setin otsikko vaaditaan.",
+      "titleTooLong": "Setin otsikon on oltava alle 150 merkkiä.",
+      "descTooLong": "Kuvauksen on oltava alle 200 merkkiä.",
+      "noValidCards": "Lisää vähintään yksi kortti, jossa on sana ja käännös.",
+      "exampleTooLong": "Korttien esimerkkien on oltava alle 150 merkkiä."
     },
-    "imageTimeout": "175|Kuvan lataus aikakatkaistiin. Tarkista yhteytesi ja yritä uudelleen.",
+    "imageTimeout": "Kuvan lataus aikakatkaistiin. Tarkista yhteytesi ja yritä uudelleen.",
     "import": {
-      "button": "176|Tuo",
-      "title": "177|Tuo kortteja",
-      "subtitle": "178|Kopioi ja liitä tietosi — Wordista, Excelistä, Google Docsista ja vastaavista.",
-      "close": "179|Sulje tuonti",
-      "dataSection": "180|Tietosi",
-      "placeholder": "181|Sana 1\\tMerkitys 1\\nSana 2\\tMerkitys 2\\nSana 3\\tMerkitys 3",
-      "separatorsSection": "182|Erottimet",
-      "betweenTermAndDefinition": "183|Sanan ja käännöksen välissä",
-      "betweenCards": "184|Korttien välissä",
-      "tab": "185|Sarkain",
-      "comma": "186|Pilkku",
-      "newline": "187|Rivinvaihto",
-      "semicolon": "188|Puolipiste",
-      "custom": "189|Oma",
-      "customPlaceholder": "190|esim. —",
-      "previewSection": "191|Esikatselu",
-      "previewEmpty": "192|Ei vielä mitään esikatseltavaa.",
-      "noDefinition": "193|Ei käännöstä",
-      "confirm": "194|Lisää kortit"
+      "button": "Tuo",
+      "title": "Tuo kortteja",
+      "subtitle": "Kopioi ja liitä tietosi — Wordista, Excelistä, Google Docsista ja vastaavista.",
+      "close": "Sulje tuonti",
+      "dataSection": "Tietosi",
+      "placeholder": "Sana 1\\tMerkitys 1\\nSana 2\\tMerkitys 2\\nSana 3\\tMerkitys 3",
+      "separatorsSection": "Erottimet",
+      "betweenTermAndDefinition": "Sanan ja käännöksen välissä",
+      "betweenCards": "Korttien välissä",
+      "tab": "Sarkain",
+      "comma": "Pilkku",
+      "newline": "Rivinvaihto",
+      "semicolon": "Puolipiste",
+      "custom": "Oma",
+      "customPlaceholder": "esim. —",
+      "previewSection": "Esikatselu",
+      "previewEmpty": "Ei vielä mitään esikatseltavaa.",
+      "noDefinition": "Ei käännöstä",
+      "confirm": "Lisää kortit"
     },
     "iconPicker": {
-      "open": "195|Lisää kuvakkeita",
-      "title": "196|Valitse kuvake",
-      "search": "197|Hae symbolia",
-      "close": "198|Sulje",
-      "empty": "199|Yksikään kuvake ei vastaa tätä nimeä."
+      "open": "Lisää kuvakkeita",
+      "title": "Valitse kuvake",
+      "search": "Hae symbolia",
+      "close": "Sulje",
+      "empty": "Yksikään kuvake ei vastaa tätä nimeä."
     },
     "iconGroup": {
-      "learning": "200|Oppiminen",
-      "languages": "201|Kielet",
-      "nature": "202|Luonto",
-      "health": "203|Terveys",
-      "food": "204|Ruoka",
-      "travel": "205|Matkailu",
-      "work": "206|Työ",
-      "tech": "207|Teknologia",
-      "creativity": "208|Luovuus",
-      "general": "209|Yleinen"
+      "learning": "Oppiminen",
+      "languages": "Kielet",
+      "nature": "Luonto",
+      "health": "Terveys",
+      "food": "Ruoka",
+      "travel": "Matkailu",
+      "work": "Työ",
+      "tech": "Teknologia",
+      "creativity": "Luovuus",
+      "general": "Yleinen"
     }
   },
   "home": {
     "title": {
-      "flashcards": "210|Kortit",
-      "folders": "211|Kansiot",
-      "sets": "212|Setit",
-      "create": "213|Uusi",
-      "profile": "214|Profiili",
-      "speaking": "215|Puhuminen",
-      "listening": "216|Kuunteleminen",
-      "reading": "217|Lukeminen",
-      "writing": "218|Kirjoittaminen"
+      "flashcards": "Kortit",
+      "folders": "Kansiot",
+      "sets": "Setit",
+      "create": "Uusi",
+      "profile": "Profiili",
+      "speaking": "Puhuminen",
+      "listening": "Kuunteleminen",
+      "reading": "Lukeminen",
+      "writing": "Kirjoittaminen"
     },
     "subtitle": {
-      "pickSet": "219|Valitse harjoiteltava setti",
-      "folders": "220|Hallitse kansioitasi",
-      "sets": "221|Hallitse korttisettejäsi",
-      "create": "222|Luo uusi opiskelusetti",
-      "speaking": "223|Harjoittele puhumista.",
-      "listening": "224|Totuta korvasi ymmärtämään kieltä luontevasti.",
-      "reading": "225|Lue ja kertaa kielen materiaaleja.",
-      "writing": "226|Käytä kieltä aktiivisesti."
+      "pickSet": "Valitse harjoiteltava setti",
+      "folders": "Hallitse kansioitasi",
+      "sets": "Hallitse korttisettejäsi",
+      "create": "Luo uusi opiskelusetti",
+      "speaking": "Harjoittele puhumista.",
+      "listening": "Totuta korvasi ymmärtämään kieltä luontevasti.",
+      "reading": "Lue ja kertaa kielen materiaaleja.",
+      "writing": "Käytä kieltä aktiivisesti."
     },
     "category": {
-      "speaking": "227|PUHUMINEN",
-      "listening": "228|KUUNTELEMINEN",
-      "reading": "229|LUKEMINEN",
-      "writing": "230|KIRJOITTAMINEN"
+      "speaking": "PUHUMINEN",
+      "listening": "KUUNTELEMINEN",
+      "reading": "LUKEMINEN",
+      "writing": "KIRJOITTAMINEN"
     },
     "todayGoal": {
-      "title": "231|Tämän päivän tavoite",
-      "left": "232|{{count}} sanaa jäljellä"
+      "title": "Tämän päivän tavoite",
+      "left": "{{count}} sanaa jäljellä"
     },
     "stat": {
-      "learnedToday": "233|Opittu tänään",
-      "words": "234|sanaa",
-      "accuracy": "235|Tarkkuus",
-      "greatJob": "236|Hienoa työtä!",
-      "streak": "237|Putki",
-      "days": "238|päivää"
+      "learnedToday": "Opittu tänään",
+      "words": "sanaa",
+      "accuracy": "Tarkkuus",
+      "greatJob": "Hienoa työtä!",
+      "streak": "Putki",
+      "days": "päivää"
     },
-    "continueLearning": "239|Jatka oppimista",
-    "yourSets": "240|Settisi",
-    "viewAll": "241|Näytä kaikki",
-    "review": "242|Kertaa",
+    "continueLearning": "Jatka oppimista",
+    "yourSets": "Settisi",
+    "viewAll": "Näytä kaikki",
+    "review": "Kertaa",
     "sets": {
-      "emptyTitle": "243|Ei vielä settejä",
-      "emptyBody": "244|Luo ensimmäinen korttisettisi Uusi-painikkeella."
+      "emptyTitle": "Ei vielä settejä",
+      "emptyBody": "Luo ensimmäinen korttisettisi Uusi-painikkeella."
     },
     "create": {
-      "folder": "245|Kansio",
-      "set": "246|Setti",
-      "text": "247|Teksti",
-      "audio": "248|Ääni",
-      "essay": "249|Essee"
+      "folder": "Kansio",
+      "set": "Setti",
+      "text": "Teksti",
+      "audio": "Ääni",
+      "essay": "Essee"
     },
     "placeholder": {
-      "comingSoon": "250|{{title}} — tulossa pian"
+      "comingSoon": "{{title}} — tulossa pian"
     },
     "progress": {
       "subtitle": {
-        "speaking": "251|puheharjoittelua",
-        "listening": "252|kuunteluharjoittelua",
-        "reading": "253|lukuharjoittelua",
-        "writing": "254|kirjoitusharjoittelua"
+        "speaking": "puheharjoittelua",
+        "listening": "kuunteluharjoittelua",
+        "reading": "lukuharjoittelua",
+        "writing": "kirjoitusharjoittelua"
       }
     },
     "dailyGoal": {
-      "title": "255|Tavoitteesi tänään",
-      "body": "256|Valitse, mitä haluat harjoitella tänään — alla oleva kortti lasketaan siihen.",
-      "chosenBody": "257|Tästä tämä päivä on kyse.",
-      "howMuch": "258|Kuinka paljon?",
-      "change": "259|Vaihda"
+      "title": "Tavoitteesi tänään",
+      "body": "Valitse, mitä haluat harjoitella tänään — alla oleva kortti lasketaan siihen.",
+      "chosenBody": "Tästä tämä päivä on kyse.",
+      "howMuch": "Kuinka paljon?",
+      "change": "Vaihda"
     },
     "lastNote": {
-      "title": "260|Viimeksi luettu muistiinpano"
+      "title": "Viimeksi luettu muistiinpano"
     }
   },
   "categories": {
-    "speaking": "261|Puhuminen",
-    "listening": "262|Kuunteleminen",
-    "reading": "263|Lukeminen",
-    "writing": "264|Kirjoittaminen"
+    "speaking": "Puhuminen",
+    "listening": "Kuunteleminen",
+    "reading": "Lukeminen",
+    "writing": "Kirjoittaminen"
   },
   "phase0": {
-    "title": "265|WordAround",
-    "subtitle": "266|Vaihe 0 on käynnissä. Design-tokenit ladattu, Firebase yhdistetty."
+    "title": "WordAround",
+    "subtitle": "Vaihe 0 on käynnissä. Design-tokenit ladattu, Firebase yhdistetty."
   },
   "study": {
-    "flip": "267|Käännä",
-    "known": "268|Tiesin sen",
-    "unknown": "269|Vielä opettelussa",
-    "mastered": "270|Hallussa",
-    "shuffle": "271|Sekoita",
-    "trackProgress": "272|Seuraa edistymistä",
-    "speak": "273|Ääntele",
-    "roundDone": "274|Kierros valmis",
-    "knewCount": "275|Tiesit {{known}} / {{total}}",
-    "repeatUnknown": "276|Kertaa {{count}} osaamatonta",
-    "restart": "277|Aloita alusta",
+    "flip": "Käännä",
+    "known": "Tiesin sen",
+    "unknown": "Vielä opettelussa",
+    "mastered": "Hallussa",
+    "shuffle": "Sekoita",
+    "trackProgress": "Seuraa edistymistä",
+    "speak": "Ääntele",
+    "roundDone": "Kierros valmis",
+    "knewCount": "Tiesit {{known}} / {{total}}",
+    "repeatUnknown": "Kertaa {{count}} osaamatonta",
+    "restart": "Aloita alusta",
     "filter": {
-      "all": "278|Kaikki",
-      "studied": "279|Opiskellut",
-      "remaining": "280|Jäljellä",
-      "mastered": "281|Hallussa"
+      "all": "Kaikki",
+      "studied": "Opiskellut",
+      "remaining": "Jäljellä",
+      "mastered": "Hallussa"
     },
-    "addCard": "282|Lisää kortti",
-    "editCard": "283|Muokkaa korttia",
-    "deleteCard": "284|Poista kortti",
-    "deleteCardConfirm": "285|Poistetaanko tämä kortti?",
-    "emptyPrompt": "286|Tässä setissä ei ole vielä kortteja. Lisää ensimmäinen.",
-    "save": "287|Tallenna",
-    "cancel": "288|Peruuta"
+    "addCard": "Lisää kortti",
+    "editCard": "Muokkaa korttia",
+    "deleteCard": "Poista kortti",
+    "deleteCardConfirm": "Poistetaanko tämä kortti?",
+    "emptyPrompt": "Tässä setissä ei ole vielä kortteja. Lisää ensimmäinen.",
+    "save": "Tallenna",
+    "cancel": "Peruuta"
   },
   "writing": {
     "today": {
-      "title": "289|Tämän päivän edistyminen",
-      "unit": "290|sanaa",
-      "subtitle": "291|kirjoitusharjoittelua"
+      "title": "Tämän päivän edistyminen",
+      "unit": "sanaa",
+      "subtitle": "kirjoitusharjoittelua"
     },
-    "sectionTitle": "292|Harjoittelutavat",
+    "sectionTitle": "Harjoittelutavat",
     "menu": {
       "writeFromSets": {
-        "title": "293|Kirjoita seteistä",
-        "subtitle": "294|Harjoittele settiesi sanojen oikeinkirjoitusta ja kirjoittamista."
+        "title": "Kirjoita seteistä",
+        "subtitle": "Harjoittele settiesi sanojen oikeinkirjoitusta ja kirjoittamista."
       },
       "essays": {
-        "title": "295|Esseet",
-        "subtitle": "296|Kirjoita tekstejä ja saa tekoälypalautetta kieliopista ja tyylistä."
+        "title": "Esseet",
+        "subtitle": "Kirjoita tekstejä ja saa tekoälypalautetta kieliopista ja tyylistä."
       },
-      "comingSoon": "297|Tulossa pian"
+      "comingSoon": "Tulossa pian"
     },
     "setSelection": {
-      "title": "298|Valitse setti",
+      "title": "Valitse setti",
       "empty": {
-        "title": "299|Ei settejä, joissa on sanoja",
-        "subtitle": "300|Luo setti, jossa on vähintään yksi kortti, ennen kuin aloitat kirjoitusharjoittelun."
+        "title": "Ei settejä, joissa on sanoja",
+        "subtitle": "Luo setti, jossa on vähintään yksi kortti, ennen kuin aloitat kirjoitusharjoittelun."
       },
-      "wordsCount": "301|{{count}} sanaa",
-      "wordsCount_one": "302|{{count}} sana",
-      "close": "303|Sulje"
+      "wordsCount": "{{count}} sanaa",
+      "wordsCount_one": "{{count}} sana",
+      "close": "Sulje"
     },
     "writeWords": {
-      "title": "304|Kirjoita seteistä",
-      "subtitle": "305|Kirjoita käännös ja paina Enter.",
-      "translateHint": "306|Käännä omalle kielellesi",
-      "hint": "307|Vihje",
-      "skip": "308|Ohita",
-      "submit": "309|Tarkista",
-      "inputPlaceholder": "310|Kirjoita tähän…",
-      "loading": "311|Ladataan settiä…",
-      "loadError": "312|Tämän setin lataus ei onnistunut.",
-      "noCards": "313|Tässä setissä ei ole kortteja.",
-      "back": "314|Takaisin",
+      "title": "Kirjoita seteistä",
+      "subtitle": "Kirjoita käännös ja paina Enter.",
+      "translateHint": "Käännä omalle kielellesi",
+      "hint": "Vihje",
+      "skip": "Ohita",
+      "submit": "Tarkista",
+      "inputPlaceholder": "Kirjoita tähän…",
+      "loading": "Ladataan settiä…",
+      "loadError": "Tämän setin lataus ei onnistunut.",
+      "noCards": "Tässä setissä ei ole kortteja.",
+      "back": "Takaisin",
       "settings": {
-        "title": "315|Asetukset",
-        "trainingMode": "316|Harjoitustapa",
-        "difficulty": "317|Vaikeustaso"
+        "title": "Asetukset",
+        "trainingMode": "Harjoitustapa",
+        "difficulty": "Vaikeustaso"
       },
       "mode": {
-        "wordToTranslation": "318|Sana → Käännös",
-        "translationToWord": "319|Käännös → Sana"
+        "wordToTranslation": "Sana → Käännös",
+        "translationToWord": "Käännös → Sana"
       },
       "difficulty": {
-        "easy": "320|Helppo",
-        "medium": "321|Keskitaso",
-        "hard": "322|Vaikea",
-        "easyDesc": "323|Rajattomasti vihjeitä, rajattomasti ohituksia",
-        "mediumDesc": "324|1 kirjain vihjeenä, enintään 25 % ohituksia",
-        "hardDesc": "325|Ei vihjeitä, ei ohituksia, aikaa vastaan"
+        "easy": "Helppo",
+        "medium": "Keskitaso",
+        "hard": "Vaikea",
+        "easyDesc": "Rajattomasti vihjeitä, rajattomasti ohituksia",
+        "mediumDesc": "1 kirjain vihjeenä, enintään 25 % ohituksia",
+        "hardDesc": "Ei vihjeitä, ei ohituksia, aikaa vastaan"
       },
       "translatePrompt": {
-        "word": "326|Käännä omalle kielellesi",
-        "translation": "327|Kirjoita alkuperäinen sana"
+        "word": "Käännä omalle kielellesi",
+        "translation": "Kirjoita alkuperäinen sana"
       },
-      "skipsLeft_one": "328|{{count}} ohitus jäljellä",
-      "skipsLeft_other": "329|{{count}} ohitusta jäljellä",
-      "seconds": "330|{{count}} s",
+      "skipsLeft_one": "{{count}} ohitus jäljellä",
+      "skipsLeft_other": "{{count}} ohitusta jäljellä",
+      "seconds": "{{count}} s",
       "result": {
         "win": {
-          "title": "331|Kierros valmis!",
-          "subtitle": "332|Hienoa työtä. Sait tämän kirjoituskierroksen valmiiksi."
+          "title": "Kierros valmis!",
+          "subtitle": "Hienoa työtä. Sait tämän kirjoituskierroksen valmiiksi."
         },
         "timeout": {
-          "title": "333|Aika loppui",
-          "subtitle": "334|Vaikean tason ajastin nollautui. Yritä uudelleen ensimmäisestä sanasta."
+          "title": "Aika loppui",
+          "subtitle": "Vaikean tason ajastin nollautui. Yritä uudelleen ensimmäisestä sanasta."
         },
         "wrong": {
-          "title": "335|Väärä vastaus",
-          "subtitle": "336|Vaikealla tasolla yksi virhe päättää kierroksen."
+          "title": "Väärä vastaus",
+          "subtitle": "Vaikealla tasolla yksi virhe päättää kierroksen."
         },
-        "perfectTitle": "337|Täydellinen kierros!",
-        "perfectBody": "338|Suoritit vaikean tason virheittä. Ei ohituksia. Ei vihjeitä. Pelkkää osaamista.",
-        "totalWords": "339|Sanoja yhteensä",
-        "completedWords": "340|Suoritetut sanat",
-        "skippedWords": "341|Ohitetut sanat",
-        "hintsUsed": "342|Käytetyt vihjeet",
-        "streak": "343|Putki",
-        "difficultyLabel": "344|Vaikeustaso",
-        "word": "345|Sana",
-        "yourAnswer": "346|Vastauksesi",
-        "correctAnswer": "347|Oikea vastaus",
-        "tryAgain": "348|Yritä uudelleen"
+        "perfectTitle": "Täydellinen kierros!",
+        "perfectBody": "Suoritit vaikean tason virheittä. Ei ohituksia. Ei vihjeitä. Pelkkää osaamista.",
+        "totalWords": "Sanoja yhteensä",
+        "completedWords": "Suoritetut sanat",
+        "skippedWords": "Ohitetut sanat",
+        "hintsUsed": "Käytetyt vihjeet",
+        "streak": "Putki",
+        "difficultyLabel": "Vaikeustaso",
+        "word": "Sana",
+        "yourAnswer": "Vastauksesi",
+        "correctAnswer": "Oikea vastaus",
+        "tryAgain": "Yritä uudelleen"
       }
     },
     "essays": {
-      "title": "349|Esseet",
-      "subtitle": "350|Tekoäly valitsee aiheen. Kirjoita, ja saat sitten palautetta.",
+      "title": "Esseet",
+      "subtitle": "Tekoäly valitsee aiheen. Kirjoita, ja saat sitten palautetta.",
       "mode": {
-        "suggested": "351|Ehdotettu",
-        "custom": "352|Oma aihe"
+        "suggested": "Ehdotettu",
+        "custom": "Oma aihe"
       },
       "custom": {
-        "placeholder": "353|Kirjoita oma esseeaiheesi...",
-        "generate": "354|Luo tehtävä"
+        "placeholder": "Kirjoita oma esseeaiheesi...",
+        "generate": "Luo tehtävä"
       },
       "suggested": {
-        "generate": "355|Luo aihe",
-        "regenerate": "356|Uusi aihe"
+        "generate": "Luo aihe",
+        "regenerate": "Uusi aihe"
       },
-      "language": "357|Kieli",
-      "difficulty": "358|Vaikeustaso",
+      "language": "Kieli",
+      "difficulty": "Vaikeustaso",
       "task": {
-        "time": "359|≈ {{count}} min",
-        "wordRange": "360|{{min}}-{{max}} sanaa",
-        "quickTips": "361|Nopeat vinkit",
-        "taskLabel": "362|Tehtävä"
+        "time": "≈ {{count}} min",
+        "wordRange": "{{min}}-{{max}} sanaa",
+        "quickTips": "Nopeat vinkit",
+        "taskLabel": "Tehtävä"
       },
       "editor": {
-        "placeholder": "363|Aloita esseesi kirjoittaminen tästä...",
-        "wordCount": "364|{{count}} / {{min}}-{{max}} sanaa",
+        "placeholder": "Aloita esseesi kirjoittaminen tästä...",
+        "wordCount": "{{count}} / {{min}}-{{max}} sanaa",
         "validation": {
-          "belowMinimum": "365|Jatka — tarvitset vähintään {{min}} sanaa.",
-          "aboveMaximum": "366|Ylitit rajan — yritä tiivistää.",
-          "valid": "367|Rajojen sisällä."
+          "belowMinimum": "Jatka — tarvitset vähintään {{min}} sanaa.",
+          "aboveMaximum": "Ylitit rajan — yritä tiivistää.",
+          "valid": "Rajojen sisällä."
         },
-        "reset": "368|Palauta"
+        "reset": "Palauta"
       },
       "error": {
-        "emptyCustomTopic": "369|Kirjoita ensin aihe.",
-        "generationFailed": "370|Aiheen luonti ei onnistunut. Yritä uudelleen."
+        "emptyCustomTopic": "Kirjoita ensin aihe.",
+        "generationFailed": "Aiheen luonti ei onnistunut. Yritä uudelleen."
       },
-      "generating": "371|Luodaan...",
+      "generating": "Luodaan...",
       "hint": {
-        "button": "372|Pyydä vihje",
-        "remaining": "373|{{remaining}}/{{limit}} jäljellä",
-        "noneLeft": "374|Vihjeitä ei ole enää",
-        "notAvailable": "375|Vihjeet eivät ole käytössä tällä tasolla",
-        "generating": "376|Luodaan vihjettä...",
-        "error": "377|Vihjeen haku ei onnistunut. Yritä uudelleen.",
+        "button": "Pyydä vihje",
+        "remaining": "{{remaining}}/{{limit}} jäljellä",
+        "noneLeft": "Vihjeitä ei ole enää",
+        "notAvailable": "Vihjeet eivät ole käytössä tällä tasolla",
+        "generating": "Luodaan vihjettä...",
+        "error": "Vihjeen haku ei onnistunut. Yritä uudelleen.",
         "category": {
-          "content": "378|Sisältö",
-          "grammar": "379|Kielioppi",
-          "vocabulary": "380|Sanasto",
-          "structure": "381|Rakenne"
+          "content": "Sisältö",
+          "grammar": "Kielioppi",
+          "vocabulary": "Sanasto",
+          "structure": "Rakenne"
         }
       },
       "check": {
-        "button": "382|Tarkista esseeni",
-        "checking": "383|Tarkistetaan...",
-        "disabled": "384|Pysy ensin sanamäärän rajoissa",
-        "error": "385|Esseesi tarkistus ei onnistunut. Yritä uudelleen.",
-        "languageUnsupported": "386|Kieliopin tarkistus ei ole vielä käytössä kielelle {{language}}."
+        "button": "Tarkista esseeni",
+        "checking": "Tarkistetaan...",
+        "disabled": "Pysy ensin sanamäärän rajoissa",
+        "error": "Esseesi tarkistus ei onnistunut. Yritä uudelleen.",
+        "languageUnsupported": "Kieliopin tarkistus ei ole vielä käytössä kielelle {{language}}."
       },
       "score": {
-        "title": "387|Esseen pisteet",
+        "title": "Esseen pisteet",
         "quality": {
-          "excellent": "388|Erinomainen",
-          "veryGood": "389|Erittäin hyvä",
-          "good": "390|Hyvä",
-          "needsWork": "391|Kaipaa työstämistä"
+          "excellent": "Erinomainen",
+          "veryGood": "Erittäin hyvä",
+          "good": "Hyvä",
+          "needsWork": "Kaipaa työstämistä"
         },
         "category": {
-          "grammar": "392|Kielioppi",
-          "vocabulary": "393|Sanasto",
-          "length": "394|Pituus",
-          "complexity": "395|Monipuolisuus",
-          "relevance": "396|Aiheeseen sopivuus",
-          "independence": "397|Itsenäisyys"
+          "grammar": "Kielioppi",
+          "vocabulary": "Sanasto",
+          "length": "Pituus",
+          "complexity": "Monipuolisuus",
+          "relevance": "Aiheeseen sopivuus",
+          "independence": "Itsenäisyys"
         },
         "stat": {
-          "words": "398|Sanat",
-          "grammar": "399|Kielioppi",
-          "vocabStyle": "400|Sanasto/tyyli",
-          "hints": "401|Vihjeet",
-          "translations": "402|Käännökset",
-          "synonyms": "403|Synonyymit"
+          "words": "Sanat",
+          "grammar": "Kielioppi",
+          "vocabStyle": "Sanasto/tyyli",
+          "hints": "Vihjeet",
+          "translations": "Käännökset",
+          "synonyms": "Synonyymit"
         }
       },
       "grammar": {
-        "sectionTitle": "404|Kielioppiongelmat",
-        "count_one": "405|{{count}} ongelma",
-        "count_other": "406|{{count}} ongelmaa",
-        "empty": "407|Kielioppiongelmia ei löytynyt — hienoa työtä!",
-        "original": "408|Alkuperäinen:",
-        "suggestion": "409|Ehdotus:",
-        "reason": "410|Syy:",
+        "sectionTitle": "Kielioppiongelmat",
+        "count_one": "{{count}} ongelma",
+        "count_other": "{{count}} ongelmaa",
+        "empty": "Kielioppiongelmia ei löytynyt — hienoa työtä!",
+        "original": "Alkuperäinen:",
+        "suggestion": "Ehdotus:",
+        "reason": "Syy:",
         "category": {
-          "grammar": "411|Kielioppi",
-          "vocabulary": "412|Sanasto",
-          "style": "413|Tyyli"
+          "grammar": "Kielioppi",
+          "vocabulary": "Sanasto",
+          "style": "Tyyli"
         },
         "save": {
-          "idle": "414|Tallenna muistiinpanoihin",
-          "saving": "415|Tallennetaan…",
-          "saved": "416|Tallennettu",
-          "duplicate": "417|Jo tallennettu",
-          "failed": "418|Yritä tallentaa uudelleen"
+          "idle": "Tallenna muistiinpanoihin",
+          "saving": "Tallennetaan…",
+          "saved": "Tallennettu",
+          "duplicate": "Jo tallennettu",
+          "failed": "Yritä tallentaa uudelleen"
         }
       },
       "helper": {
-        "translate": "419|Käännä",
-        "synonym": "420|Synonyymi",
-        "remaining": "421|{{remaining}} jäljellä",
-        "notAvailable": "422|Ei käytössä tällä tasolla"
+        "translate": "Käännä",
+        "synonym": "Synonyymi",
+        "remaining": "{{remaining}} jäljellä",
+        "notAvailable": "Ei käytössä tällä tasolla"
       },
       "translate": {
-        "title": "423|Käännä",
-        "placeholder": "424|Anna sana tai lyhyt ilmaus",
-        "submit": "425|Käännä",
-        "submitting": "426|Käännetään..."
+        "title": "Käännä",
+        "placeholder": "Anna sana tai lyhyt ilmaus",
+        "submit": "Käännä",
+        "submitting": "Käännetään..."
       },
       "synonym": {
-        "title": "427|Synonyymit",
-        "placeholder": "428|Anna sana",
-        "submit": "429|Etsi synonyymejä",
-        "submitting": "430|Haetaan..."
+        "title": "Synonyymit",
+        "placeholder": "Anna sana",
+        "submit": "Etsi synonyymejä",
+        "submitting": "Haetaan..."
       },
       "assist": {
-        "from": "431|Kielestä",
-        "to": "432|Kielelle",
-        "close": "433|Sulje",
-        "noResult": "434|Tuloksia ei löytynyt.",
-        "sameLanguage": "435|Valitse toinen lähdekieli.",
-        "error": "436|Palvelu ei ole tilapäisesti käytettävissä."
+        "from": "Kielestä",
+        "to": "Kielelle",
+        "close": "Sulje",
+        "noResult": "Tuloksia ei löytynyt.",
+        "sameLanguage": "Valitse toinen lähdekieli.",
+        "error": "Palvelu ei ole tilapäisesti käytettävissä."
       },
-      "saveMistakeConfirmTitle": "437|Tallennetaanko tämä virhe muistiinpanoihin?",
-      "saveMistakeConfirmBody": "438|Se tallennetaan virhemuistiinpanona korjauksella ”{{correction}}”.",
-      "autoSaveConfirmTitle": "439|Tallennetaanko nämä virheet muistiinpanoihisi?",
-      "autoSaveConfirmBody_one": "440|Tarkistus löysi {{count}} virheen. Kun tallennat sen, siitä tulee muistiinpano, joka palaa kertaukseen.",
-      "autoSaveConfirmBody_other": "441|Tarkistus löysi {{count}} virhettä. Kun tallennat ne, niistä tulee muistiinpanoja, jotka palaavat kertaukseen."
+      "saveMistakeConfirmTitle": "Tallennetaanko tämä virhe muistiinpanoihin?",
+      "saveMistakeConfirmBody": "Se tallennetaan virhemuistiinpanona korjauksella ”{{correction}}”.",
+      "autoSaveConfirmTitle": "Tallennetaanko nämä virheet muistiinpanoihisi?",
+      "autoSaveConfirmBody_one": "Tarkistus löysi {{count}} virheen. Kun tallennat sen, siitä tulee muistiinpano, joka palaa kertaukseen.",
+      "autoSaveConfirmBody_other": "Tarkistus löysi {{count}} virhettä. Kun tallennat ne, niistä tulee muistiinpanoja, jotka palaavat kertaukseen."
     },
     "grammar": {
-      "subtitle": "442|Järjestä kielioppi aiheittain selkeiksi, jäsennellyiksi muistiinpanoiksi.",
-      "newTopic": "443|Uusi aihe",
-      "topicsEmptyTitle": "444|Ei vielä aiheita",
-      "topicsEmptyBody": "445|Luo ensimmäinen aiheesi ja ala kerätä kielioppimuistiinpanoja.",
-      "notesCount_one": "446|{{count}} muistiinpano",
-      "notesCount_other": "447|{{count}} muistiinpanoa",
-      "deleteTopicConfirm": "448|Poistetaanko ”{{title}}” ja kaikki sen muistiinpanot? Tätä ei voi kumota.",
-      "notesEmptyTitle": "449|Ei vielä muistiinpanoja",
-      "notesEmptyBody": "450|Lisää ensimmäinen muistiinpanosi tähän aiheeseen.",
-      "newNote": "451|Uusi muistiinpano",
-      "deleteNoteConfirm": "452|Poistetaanko tämä muistiinpano? Tätä ei voi kumota.",
-      "loading": "453|Ladataan…",
-      "loadError": "454|Kielioppimuistiinpanojesi lataus ei onnistunut.",
-      "notFoundTitle": "455|Ei löytynyt",
-      "notFoundBody": "456|Tämä kohde on saatettu poistaa.",
-      "back": "457|Takaisin",
-      "updated": "458|Päivitetty {{date}}",
+      "subtitle": "Järjestä kielioppi aiheittain selkeiksi, jäsennellyiksi muistiinpanoiksi.",
+      "newTopic": "Uusi aihe",
+      "topicsEmptyTitle": "Ei vielä aiheita",
+      "topicsEmptyBody": "Luo ensimmäinen aiheesi ja ala kerätä kielioppimuistiinpanoja.",
+      "notesCount_one": "{{count}} muistiinpano",
+      "notesCount_other": "{{count}} muistiinpanoa",
+      "deleteTopicConfirm": "Poistetaanko ”{{title}}” ja kaikki sen muistiinpanot? Tätä ei voi kumota.",
+      "notesEmptyTitle": "Ei vielä muistiinpanoja",
+      "notesEmptyBody": "Lisää ensimmäinen muistiinpanosi tähän aiheeseen.",
+      "newNote": "Uusi muistiinpano",
+      "deleteNoteConfirm": "Poistetaanko tämä muistiinpano? Tätä ei voi kumota.",
+      "loading": "Ladataan…",
+      "loadError": "Kielioppimuistiinpanojesi lataus ei onnistunut.",
+      "notFoundTitle": "Ei löytynyt",
+      "notFoundBody": "Tämä kohde on saatettu poistaa.",
+      "back": "Takaisin",
+      "updated": "Päivitetty {{date}}",
       "form": {
-        "newTitle": "459|Uusi aihe",
-        "editTitle": "460|Muokkaa aihetta",
-        "name": "461|Otsikko",
-        "namePlaceholder": "462|esim. Espanjan verbit",
-        "description": "463|Kuvaus",
-        "descriptionPlaceholder": "464|Valinnainen",
-        "color": "465|Väri",
-        "icon": "466|Kuvake",
-        "save": "467|Tallenna",
-        "cancel": "468|Peruuta",
-        "language": "469|Kieli",
-        "languageNone": "470|Ei asetettu"
+        "newTitle": "Uusi aihe",
+        "editTitle": "Muokkaa aihetta",
+        "name": "Otsikko",
+        "namePlaceholder": "esim. Espanjan verbit",
+        "description": "Kuvaus",
+        "descriptionPlaceholder": "Valinnainen",
+        "color": "Väri",
+        "icon": "Kuvake",
+        "save": "Tallenna",
+        "cancel": "Peruuta",
+        "language": "Kieli",
+        "languageNone": "Ei asetettu"
       },
       "noteType": {
-        "standard": "471|Vakio",
-        "mistake": "472|Virhe",
-        "rule": "473|Sääntö",
-        "comparison": "474|Vertailu",
-        "cheatSheet": "475|Lunttilappu",
-        "exercise": "476|Harjoitus"
+        "standard": "Vakio",
+        "mistake": "Virhe",
+        "rule": "Sääntö",
+        "comparison": "Vertailu",
+        "cheatSheet": "Lunttilappu",
+        "exercise": "Harjoitus"
       },
       "block": {
-        "heading": "477|Otsikko",
-        "paragraph": "478|Teksti",
-        "bulletList": "479|Luettelo",
-        "rule": "480|Sääntö",
-        "example": "481|Esimerkki",
-        "warning": "482|Varoitus",
-        "quote": "483|Lainaus",
-        "divider": "484|Erotin",
-        "addBlock": "485|Lisää lohko",
-        "addItem": "486|Lisää kohta",
-        "moveUp": "487|Siirrä ylös",
-        "moveDown": "488|Siirrä alas",
-        "remove": "489|Poista",
-        "secondaryPlaceholder": "490|Tarkennus / käännös (valinnainen)",
-        "subheading": "491|Alaotsikko",
-        "numberedList": "492|Numeroitu luettelo",
-        "checklist": "493|Tarkistuslista",
-        "comparison": "494|Vertailu",
-        "exercise": "495|Harjoitus",
-        "quiz": "496|Tietovisa",
-        "image": "497|Kuva",
-        "comparisonSecondary": "498|Toinen puoli",
-        "imageAdd": "499|Lisää / vaihda kuva",
-        "imageUploading": "500|Ladataan…",
-        "imageFailed": "501|Kuvan lataus ei onnistunut.",
-        "imageSaveFirst": "502|Kirjaudu sisään ladataksesi kuvia."
+        "heading": "Otsikko",
+        "paragraph": "Teksti",
+        "bulletList": "Luettelo",
+        "rule": "Sääntö",
+        "example": "Esimerkki",
+        "warning": "Varoitus",
+        "quote": "Lainaus",
+        "divider": "Erotin",
+        "addBlock": "Lisää lohko",
+        "addItem": "Lisää kohta",
+        "moveUp": "Siirrä ylös",
+        "moveDown": "Siirrä alas",
+        "remove": "Poista",
+        "secondaryPlaceholder": "Tarkennus / käännös (valinnainen)",
+        "subheading": "Alaotsikko",
+        "numberedList": "Numeroitu luettelo",
+        "checklist": "Tarkistuslista",
+        "comparison": "Vertailu",
+        "exercise": "Harjoitus",
+        "quiz": "Tietovisa",
+        "image": "Kuva",
+        "comparisonSecondary": "Toinen puoli",
+        "imageAdd": "Lisää / vaihda kuva",
+        "imageUploading": "Ladataan…",
+        "imageFailed": "Kuvan lataus ei onnistunut.",
+        "imageSaveFirst": "Kirjaudu sisään ladataksesi kuvia."
       },
       "blockPlaceholder": {
-        "heading": "503|Otsikko",
-        "paragraph": "504|Kirjoita selityksesi…",
-        "bulletList": "505|Luettelon kohta",
-        "rule": "506|Selitä kielioppisääntö…",
-        "example": "507|Lisää esimerkki…",
-        "warning": "508|Yleinen virhe tai varoitus…",
-        "quote": "509|Muistamisen arvoinen lause…",
-        "subheading": "510|Alaotsikko",
-        "numberedList": "511|Luettelon kohta",
-        "checklist": "512|Tarkistuslistan kohta",
-        "comparison": "513|Ensimmäinen puoli",
-        "exercise": "514|Harjoituksen ohje…",
-        "quiz": "515|Kysymys",
-        "image": "516|Kuvateksti"
+        "heading": "Otsikko",
+        "paragraph": "Kirjoita selityksesi…",
+        "bulletList": "Luettelon kohta",
+        "rule": "Selitä kielioppisääntö…",
+        "example": "Lisää esimerkki…",
+        "warning": "Yleinen virhe tai varoitus…",
+        "quote": "Muistamisen arvoinen lause…",
+        "subheading": "Alaotsikko",
+        "numberedList": "Luettelon kohta",
+        "checklist": "Tarkistuslistan kohta",
+        "comparison": "Ensimmäinen puoli",
+        "exercise": "Harjoituksen ohje…",
+        "quiz": "Kysymys",
+        "image": "Kuvateksti"
       },
       "editor": {
-        "titlePlaceholder": "517|Muistiinpanon otsikko",
-        "save": "518|Tallenna muistiinpano",
-        "saving": "519|Tallennetaan…",
-        "delete": "520|Poista muistiinpano",
-        "saveError": "521|Tallennus ei onnistunut. Yritä uudelleen.",
-        "subtitle": "522|Muokkaa muistiinpanoa",
-        "tags": "523|Tunnisteet",
-        "tagsPlaceholder": "524|Lisää tunniste…",
-        "removeTag": "525|Poista tunniste {{tag}}",
-        "addToReview": "526|Lisää kertaukseen",
-        "addedToReview": "527|Lisätty kertausjonoosi.",
-        "inReview": "528|Kertauksessa · {{when}}",
-        "inReviewDue": "529|Kertauksen aika",
-        "removedFromReview": "530|Poistettu kertausjonostasi.",
-        "unsavedTitle": "531|Poistutaanko tallentamatta?",
-        "unsavedBody": "532|Tässä muistiinpanossa on tallentamattomia muutoksia.",
-        "discard": "533|Hylkää muutokset",
-        "saveAndLeave": "534|Tallenna ja poistu"
+        "titlePlaceholder": "Muistiinpanon otsikko",
+        "save": "Tallenna muistiinpano",
+        "saving": "Tallennetaan…",
+        "delete": "Poista muistiinpano",
+        "saveError": "Tallennus ei onnistunut. Yritä uudelleen.",
+        "subtitle": "Muokkaa muistiinpanoa",
+        "tags": "Tunnisteet",
+        "tagsPlaceholder": "Lisää tunniste…",
+        "removeTag": "Poista tunniste {{tag}}",
+        "addToReview": "Lisää kertaukseen",
+        "addedToReview": "Lisätty kertausjonoosi.",
+        "inReview": "Kertauksessa · {{when}}",
+        "inReviewDue": "Kertauksen aika",
+        "removedFromReview": "Poistettu kertausjonostasi.",
+        "unsavedTitle": "Poistutaanko tallentamatta?",
+        "unsavedBody": "Tässä muistiinpanossa on tallentamattomia muutoksia.",
+        "discard": "Hylkää muutokset",
+        "saveAndLeave": "Tallenna ja poistu"
       },
       "quiz": {
-        "title": "535|Tietovisat",
-        "new": "536|Uusi tietovisa",
-        "start": "537|Aloita tietovisa",
-        "delete": "538|Poista tietovisa",
-        "deleteConfirm": "539|Poistetaanko ”{{title}}”? Tätä ei voi kumota.",
-        "emptyTitle": "540|Ei vielä tietovisoja",
-        "emptyBody": "541|Tee tästä muistiinpanosta tietovisa ja testaa itsesi.",
-        "loadError": "542|Tietovisojen lataus ei onnistunut.",
-        "questionsCount_one": "543|{{count}} kysymys",
-        "questionsCount_other": "544|{{count}} kysymystä",
+        "title": "Tietovisat",
+        "new": "Uusi tietovisa",
+        "start": "Aloita tietovisa",
+        "delete": "Poista tietovisa",
+        "deleteConfirm": "Poistetaanko ”{{title}}”? Tätä ei voi kumota.",
+        "emptyTitle": "Ei vielä tietovisoja",
+        "emptyBody": "Tee tästä muistiinpanosta tietovisa ja testaa itsesi.",
+        "loadError": "Tietovisojen lataus ei onnistunut.",
+        "questionsCount_one": "{{count}} kysymys",
+        "questionsCount_other": "{{count}} kysymystä",
         "type": {
-          "multipleChoice": "545|Monivalinta",
-          "trueFalse": "546|Tosi / Epätosi",
-          "fillGap": "547|Täydennä aukko",
-          "shortAnswer": "548|Lyhyt vastaus"
+          "multipleChoice": "Monivalinta",
+          "trueFalse": "Tosi / Epätosi",
+          "fillGap": "Täydennä aukko",
+          "shortAnswer": "Lyhyt vastaus"
         },
         "sheet": {
-          "title": "549|Luo tietovisa",
-          "titlePlaceholder": "550|Tietovisan otsikko",
-          "mode": "551|Luontitapa",
-          "modeSmart": "552|Älykäs paikallinen",
-          "modeSmartDesc": "553|Tekee kysymykset muistiinpanon sisällöstä laitteella.",
-          "modeAI": "554|Tekoälyn luoma",
-          "modeAIDesc": "555|Tekee rikkaampia, asiayhteyteen sopivia kysymyksiä tekoälyllä.",
-          "count": "556|Kysymykset",
-          "types": "557|Kysymystyypit",
-          "focus": "558|Painotus (valinnainen)",
-          "focusPlaceholder": "559|esim. keskity epäsäännöllisiin muotoihin",
-          "preview": "560|Esikatsele kysymykset",
-          "regenerate": "561|Luo esikatselu uudelleen",
-          "previewTitle": "562|Esikatselu",
-          "saveQuiz": "563|Tallenna tietovisa",
-          "generateQuiz": "564|Luo tietovisa",
-          "generating": "565|Luodaan…",
-          "saving": "566|Tallennetaan…",
-          "useSmartInstead": "567|Käytä sen sijaan Älykästä paikallista",
-          "modeManual": "568|Käsin",
-          "modeManualDesc": "569|Kirjoita omat kysymyksesi.",
-          "createQuiz": "570|Luo tietovisa"
+          "title": "Luo tietovisa",
+          "titlePlaceholder": "Tietovisan otsikko",
+          "mode": "Luontitapa",
+          "modeSmart": "Älykäs paikallinen",
+          "modeSmartDesc": "Tekee kysymykset muistiinpanon sisällöstä laitteella.",
+          "modeAI": "Tekoälyn luoma",
+          "modeAIDesc": "Tekee rikkaampia, asiayhteyteen sopivia kysymyksiä tekoälyllä.",
+          "count": "Kysymykset",
+          "types": "Kysymystyypit",
+          "focus": "Painotus (valinnainen)",
+          "focusPlaceholder": "esim. keskity epäsäännöllisiin muotoihin",
+          "preview": "Esikatsele kysymykset",
+          "regenerate": "Luo esikatselu uudelleen",
+          "previewTitle": "Esikatselu",
+          "saveQuiz": "Tallenna tietovisa",
+          "generateQuiz": "Luo tietovisa",
+          "generating": "Luodaan…",
+          "saving": "Tallennetaan…",
+          "useSmartInstead": "Käytä sen sijaan Älykästä paikallista",
+          "modeManual": "Käsin",
+          "modeManualDesc": "Kirjoita omat kysymyksesi.",
+          "createQuiz": "Luo tietovisa"
         },
         "play": {
-          "questionOf": "571|Kysymys {{current}} / {{total}}",
-          "submit": "572|Lähetä vastaus",
-          "next": "573|Seuraava",
-          "finish": "574|Lopeta",
-          "correct": "575|Oikein!",
-          "incorrect": "576|Väärin",
-          "correctAnswer": "577|Oikea vastaus: {{answer}}",
-          "typeMissing": "578|Kirjoita puuttuva sana",
-          "typeAnswer": "579|Kirjoita vastauksesi",
-          "trueLabel": "580|Tosi",
-          "falseLabel": "581|Epätosi"
+          "questionOf": "Kysymys {{current}} / {{total}}",
+          "submit": "Lähetä vastaus",
+          "next": "Seuraava",
+          "finish": "Lopeta",
+          "correct": "Oikein!",
+          "incorrect": "Väärin",
+          "correctAnswer": "Oikea vastaus: {{answer}}",
+          "typeMissing": "Kirjoita puuttuva sana",
+          "typeAnswer": "Kirjoita vastauksesi",
+          "trueLabel": "Tosi",
+          "falseLabel": "Epätosi"
         },
         "result": {
-          "scoreOf": "582|{{correct}} / {{total}} oikein",
+          "scoreOf": "{{correct}} / {{total}} oikein",
           "grade": {
-            "excellent": "583|Erinomaista!",
-            "good": "584|Hienoa työtä!",
-            "keepPracticing": "585|Jatka harjoittelua",
-            "reviewNote": "586|Kertaa muistiinpano"
+            "excellent": "Erinomaista!",
+            "good": "Hienoa työtä!",
+            "keepPracticing": "Jatka harjoittelua",
+            "reviewNote": "Kertaa muistiinpano"
           },
-          "incorrectSection": "587|Väärin",
-          "correctSection": "588|Oikein",
-          "yourAnswer": "589|Vastauksesi: {{answer}}",
-          "tryAgain": "590|Yritä uudelleen",
-          "reviewNote": "591|Avaa muistiinpano",
-          "done": "592|Valmis"
+          "incorrectSection": "Väärin",
+          "correctSection": "Oikein",
+          "yourAnswer": "Vastauksesi: {{answer}}",
+          "tryAgain": "Yritä uudelleen",
+          "reviewNote": "Avaa muistiinpano",
+          "done": "Valmis"
         },
         "errors": {
-          "notEnoughContent": "593|Lisää ensin muistiinpanoon sisältöä — tietovisa tarvitsee vähintään kaksi sisältölohkoa (sääntö, esimerkki, varoitus, kappale tai lainaus).",
-          "noMatchingQuestionTypes": "594|Valituille kysymystyypeille ei ole tarpeeksi sopivaa sisältöä. Ota käyttöön lisää tyyppejä tai lisää sisältöä.",
-          "aiFailed": "595|Tietovisan luonti tekoälyllä ei onnistunut. Yritä uudelleen tai käytä Älykästä paikallista."
+          "notEnoughContent": "Lisää ensin muistiinpanoon sisältöä — tietovisa tarvitsee vähintään kaksi sisältölohkoa (sääntö, esimerkki, varoitus, kappale tai lainaus).",
+          "noMatchingQuestionTypes": "Valituille kysymystyypeille ei ole tarpeeksi sopivaa sisältöä. Ota käyttöön lisää tyyppejä tai lisää sisältöä.",
+          "aiFailed": "Tietovisan luonti tekoälyllä ei onnistunut. Yritä uudelleen tai käytä Älykästä paikallista."
         },
-        "badge": "596|Tietovisa",
+        "badge": "Tietovisa",
         "manual": {
-          "questions_one": "597|{{count}} kysymys",
-          "questions_other": "598|{{count}} kysymystä",
-          "add": "599|Lisää kysymys",
-          "questionPlaceholder": "600|Kysymyksen teksti",
-          "questionGapPlaceholder": "601|Kysymys, jossa on aukko, esim. Minä _____ kouluun",
-          "optionPlaceholder": "602|Vaihtoehto {{index}}",
-          "answerPlaceholder": "603|Oikea vastaus",
-          "explanationPlaceholder": "604|Selitys (valinnainen)",
+          "questions_one": "{{count}} kysymys",
+          "questions_other": "{{count}} kysymystä",
+          "add": "Lisää kysymys",
+          "questionPlaceholder": "Kysymyksen teksti",
+          "questionGapPlaceholder": "Kysymys, jossa on aukko, esim. Minä _____ kouluun",
+          "optionPlaceholder": "Vaihtoehto {{index}}",
+          "answerPlaceholder": "Oikea vastaus",
+          "explanationPlaceholder": "Selitys (valinnainen)",
           "error": {
-            "questionRequired": "605|Kysymyksen teksti vaaditaan.",
-            "optionsRequired": "606|Monivalinta tarvitsee vähintään 2 vaihtoehtoa.",
-            "answerRequired": "607|Anna oikea vastaus.",
-            "answerNotAnOption": "608|Oikean vastauksen on vastattava yhtä vaihtoehdoista.",
-            "blankRequired": "609|Lisää kysymykseen aukko (esim. _____)."
+            "questionRequired": "Kysymyksen teksti vaaditaan.",
+            "optionsRequired": "Monivalinta tarvitsee vähintään 2 vaihtoehtoa.",
+            "answerRequired": "Anna oikea vastaus.",
+            "answerNotAnOption": "Oikean vastauksen on vastattava yhtä vaihtoehdoista.",
+            "blankRequired": "Lisää kysymykseen aukko (esim. _____)."
           }
         }
       },
       "quickMistake": {
-        "button": "610|Nopea virhe",
-        "title": "611|Nopea virhe",
-        "original": "612|Alkuperäinen lause",
-        "originalPlaceholder": "613|Esimerkki: Minä olen samaa mieltä kanssasi olen",
-        "corrected": "614|Korjaus",
-        "correctedPlaceholder": "615|Esimerkki: Olen samaa mieltä kanssasi",
-        "explanation": "616|Selitys (valinnainen)",
-        "explanationPlaceholder": "617|Miksi korjaus on oikein?",
+        "button": "Nopea virhe",
+        "title": "Nopea virhe",
+        "original": "Alkuperäinen lause",
+        "originalPlaceholder": "Esimerkki: Minä olen samaa mieltä kanssasi olen",
+        "corrected": "Korjaus",
+        "correctedPlaceholder": "Esimerkki: Olen samaa mieltä kanssasi",
+        "explanation": "Selitys (valinnainen)",
+        "explanationPlaceholder": "Miksi korjaus on oikein?",
         "validation": {
-          "original": "618|Lisää ensin alkuperäinen lause.",
-          "corrected": "619|Lisää myös korjattu lause."
+          "original": "Lisää ensin alkuperäinen lause.",
+          "corrected": "Lisää myös korjattu lause."
         },
-        "save": "620|Tallenna virhe",
-        "saving": "621|Tallennetaan…",
-        "saved": "622|Tallennettu kielioppimuistiinpanoihin.",
-        "duplicate": "623|Jo tallennettu — kaksoiskappale ohitettiin.",
-        "failed": "624|Tallennus ei onnistunut. Yritä uudelleen.",
-        "openTopic": "625|Avaa Yleiset virheet",
-        "done": "626|Valmis",
-        "tip": "627|Tallennetut korjaukset menevät kertaukseen automaattisesti, joten ne, joissa toistuvasti erehdyt, palaavat ensin."
+        "save": "Tallenna virhe",
+        "saving": "Tallennetaan…",
+        "saved": "Tallennettu kielioppimuistiinpanoihin.",
+        "duplicate": "Jo tallennettu — kaksoiskappale ohitettiin.",
+        "failed": "Tallennus ei onnistunut. Yritä uudelleen.",
+        "openTopic": "Avaa Yleiset virheet",
+        "done": "Valmis",
+        "tip": "Tallennetut korjaukset menevät kertaukseen automaattisesti, joten ne, joissa toistuvasti erehdyt, palaavat ensin."
       },
       "templates": {
-        "topicTitle": "628|Aihepohjat",
-        "noteTitle": "629|Muistiinpanopohjat",
-        "button": "630|Pohja",
-        "startFromTemplate": "631|Aloita pohjasta",
-        "searchPlaceholder": "632|Hae pohjia…",
-        "allLanguages": "633|Kaikki",
-        "anyDifficulty": "634|Mikä tahansa",
+        "topicTitle": "Aihepohjat",
+        "noteTitle": "Muistiinpanopohjat",
+        "button": "Pohja",
+        "startFromTemplate": "Aloita pohjasta",
+        "searchPlaceholder": "Hae pohjia…",
+        "allLanguages": "Kaikki",
+        "anyDifficulty": "Mikä tahansa",
         "language": {
-          "en": "635|Englanti",
-          "es": "636|Espanja",
-          "fr": "637|Ranska",
-          "de": "638|Saksa"
+          "en": "Englanti",
+          "es": "Espanja",
+          "fr": "Ranska",
+          "de": "Saksa"
         },
-        "minutes": "639|{{minutes}} min",
-        "notesIncluded_one": "640|{{count}} muistiinpano",
-        "notesIncluded_other": "641|{{count}} muistiinpanoa",
-        "blocksIncluded_one": "642|{{count}} lohko",
-        "blocksIncluded_other": "643|{{count}} lohkoa",
-        "empty": "644|Mikään pohja ei vastaa suodattimiasi.",
-        "use": "645|Käytä pohjaa",
-        "creating": "646|Luodaan…",
-        "replaceConfirm": "647|Korvataanko muistiinpanon nykyinen sisältö tällä pohjalla? Paina Peruuta, niin pohja lisätään alle.",
-        "applyTitle": "648|Otetaanko ”{{title}}” käyttöön?",
-        "applyBody": "649|Tässä muistiinpanossa on jo sisältöä. Valitse, miten pohja otetaan käyttöön.",
-        "applyReplace": "650|Korvaa sisältö",
-        "applyAppend": "651|Lisää lohkot loppuun"
+        "minutes": "{{minutes}} min",
+        "notesIncluded_one": "{{count}} muistiinpano",
+        "notesIncluded_other": "{{count}} muistiinpanoa",
+        "blocksIncluded_one": "{{count}} lohko",
+        "blocksIncluded_other": "{{count}} lohkoa",
+        "empty": "Mikään pohja ei vastaa suodattimiasi.",
+        "use": "Käytä pohjaa",
+        "creating": "Luodaan…",
+        "replaceConfirm": "Korvataanko muistiinpanon nykyinen sisältö tällä pohjalla? Paina Peruuta, niin pohja lisätään alle.",
+        "applyTitle": "Otetaanko ”{{title}}” käyttöön?",
+        "applyBody": "Tässä muistiinpanossa on jo sisältöä. Valitse, miten pohja otetaan käyttöön.",
+        "applyReplace": "Korvaa sisältö",
+        "applyAppend": "Lisää lohkot loppuun"
       },
       "review": {
-        "title": "652|Kertaus",
-        "subtitle": "653|Vahvista oppimaasi jaksotetulla kertauksella.",
-        "cardTitle": "654|Kertaa tänään",
-        "cardSubtitle_one": "655|{{count}} kohde valmiina · ~{{minutes}} min",
-        "cardSubtitle_other": "656|{{count}} kohdetta valmiina · ~{{minutes}} min",
-        "caughtUpTitle": "657|Kaikki ajan tasalla",
-        "caughtUp": "658|Olet täysin ajan tasalla. Avaa tai muokkaa muistiinpanoja saadaksesi kertausehdotuksia.",
-        "dueBadge": "659|Vuorossa",
-        "refreshBody": "660|Juuri nyt ei ole mitään vuorossa — voit silti kerrata viimeksi lukemaasi.",
-        "refreshStart": "661|Kertaa viimeisimmät muistiinpanot",
-        "start": "662|Aloita kertaus",
-        "skip": "663|Ohita",
-        "itemOf": "664|Kohde {{current}} / {{total}}",
-        "untitled": "665|Kielioppimuistiinpano",
-        "stats": "666|Kerrattu {{count}} kertaa · putki {{streak}}",
-        "continueToQuestion": "667|Siirry kysymykseen",
-        "showAnswer": "668|Näytä vastaus",
-        "compareTitle": "669|Vertaa vastaustasi",
-        "referenceAnswer": "670|Malli: {{answer}}",
-        "openNote": "671|Avaa koko muistiinpano",
+        "title": "Kertaus",
+        "subtitle": "Vahvista oppimaasi jaksotetulla kertauksella.",
+        "cardTitle": "Kertaa tänään",
+        "cardSubtitle_one": "{{count}} kohde valmiina · ~{{minutes}} min",
+        "cardSubtitle_other": "{{count}} kohdetta valmiina · ~{{minutes}} min",
+        "caughtUpTitle": "Kaikki ajan tasalla",
+        "caughtUp": "Olet täysin ajan tasalla. Avaa tai muokkaa muistiinpanoja saadaksesi kertausehdotuksia.",
+        "dueBadge": "Vuorossa",
+        "refreshBody": "Juuri nyt ei ole mitään vuorossa — voit silti kerrata viimeksi lukemaasi.",
+        "refreshStart": "Kertaa viimeisimmät muistiinpanot",
+        "start": "Aloita kertaus",
+        "skip": "Ohita",
+        "itemOf": "Kohde {{current}} / {{total}}",
+        "untitled": "Kielioppimuistiinpano",
+        "stats": "Kerrattu {{count}} kertaa · putki {{streak}}",
+        "continueToQuestion": "Siirry kysymykseen",
+        "showAnswer": "Näytä vastaus",
+        "compareTitle": "Vertaa vastaustasi",
+        "referenceAnswer": "Malli: {{answer}}",
+        "openNote": "Avaa koko muistiinpano",
         "pool": {
-          "manual_one": "672|{{count}} kohde odottaa kertausta",
-          "manual_other": "673|{{count}} kohdetta odottaa kertausta",
-          "recentlyOpened_one": "674|{{count}} äskettäin avattu muistiinpano",
-          "recentlyOpened_other": "675|{{count}} äskettäin avattua muistiinpanoa",
-          "recentlyEdited_one": "676|{{count}} äskettäin muokattu muistiinpano",
-          "recentlyEdited_other": "677|{{count}} äskettäin muokattua muistiinpanoa"
+          "manual_one": "{{count}} kohde odottaa kertausta",
+          "manual_other": "{{count}} kohdetta odottaa kertausta",
+          "recentlyOpened_one": "{{count}} äskettäin avattu muistiinpano",
+          "recentlyOpened_other": "{{count}} äskettäin avattua muistiinpanoa",
+          "recentlyEdited_one": "{{count}} äskettäin muokattu muistiinpano",
+          "recentlyEdited_other": "{{count}} äskettäin muokattua muistiinpanoa"
         },
         "sourceType": {
-          "note": "678|Muistiinpano",
-          "mistake": "679|Virhe",
-          "quiz": "680|Tietovisa"
+          "note": "Muistiinpano",
+          "mistake": "Virhe",
+          "quiz": "Tietovisa"
         },
         "phase": {
-          "source": "681|Opiskelu",
-          "question": "682|Vastaus",
-          "result": "683|Arviointi"
+          "source": "Opiskelu",
+          "question": "Vastaus",
+          "result": "Arviointi"
         },
         "rating": {
-          "forgot": "684|Unohdin",
-          "hard": "685|Vaikea",
-          "good": "686|Hyvä",
-          "easy": "687|Helppo"
+          "forgot": "Unohdin",
+          "hard": "Vaikea",
+          "good": "Hyvä",
+          "easy": "Helppo"
         },
         "interval": {
-          "plus4h": "688|+4 tuntia",
-          "plus1d": "689|+1 päivä",
-          "plus3d": "690|+3 päivää",
-          "plus7d": "691|+7 päivää"
+          "plus4h": "+4 tuntia",
+          "plus1d": "+1 päivä",
+          "plus3d": "+3 päivää",
+          "plus7d": "+7 päivää"
         },
         "summary": {
-          "title": "692|Istunto valmis",
-          "emptyTitle": "693|Mitään ei kerrattu",
-          "reviewed": "694|Kerrattu",
-          "correct": "695|Oikein",
-          "incorrect": "696|Väärin",
-          "hintForgot": "697|Osa kohteista palaa 4 tunnin päästä.",
-          "hintHard": "698|Vaikeat kohteet palaavat huomenna.",
-          "hintGood": "699|Hyvät kohteet palaavat 3 päivän päästä.",
-          "hintEasy": "700|Kaikki kohteet palaavat 7 päivän päästä.",
-          "done": "701|Takaisin kielioppimuistiinpanoihin"
+          "title": "Istunto valmis",
+          "emptyTitle": "Mitään ei kerrattu",
+          "reviewed": "Kerrattu",
+          "correct": "Oikein",
+          "incorrect": "Väärin",
+          "hintForgot": "Osa kohteista palaa 4 tunnin päästä.",
+          "hintHard": "Vaikeat kohteet palaavat huomenna.",
+          "hintGood": "Hyvät kohteet palaavat 3 päivän päästä.",
+          "hintEasy": "Kaikki kohteet palaavat 7 päivän päästä.",
+          "done": "Takaisin kielioppimuistiinpanoihin"
         },
-        "loadError": "702|Kertausjonosi lataus ei onnistunut.",
-        "mistakeCount_one": "703|{{count}} virhe",
-        "mistakeCount_other": "704|{{count}} virhettä"
+        "loadError": "Kertausjonosi lataus ei onnistunut.",
+        "mistakeCount_one": "{{count}} virhe",
+        "mistakeCount_other": "{{count}} virhettä"
       },
-      "mistakesBadge": "705|Virheet",
-      "topicsTitle": "706|Aiheet",
-      "deleteTopic": "707|Poista aihe",
-      "deleteTopicTitle": "708|Poistetaanko tämä aihe?",
-      "deleteNoteTitle": "709|Poistetaanko tämä muistiinpano?",
-      "pin": "710|Kiinnitä muistiinpano",
-      "unpin": "711|Irrota muistiinpano",
-      "favorite": "712|Lisää suosikkeihin",
-      "unfavorite": "713|Poista suosikeista",
+      "mistakesBadge": "Virheet",
+      "topicsTitle": "Aiheet",
+      "deleteTopic": "Poista aihe",
+      "deleteTopicTitle": "Poistetaanko tämä aihe?",
+      "deleteNoteTitle": "Poistetaanko tämä muistiinpano?",
+      "pin": "Kiinnitä muistiinpano",
+      "unpin": "Irrota muistiinpano",
+      "favorite": "Lisää suosikkeihin",
+      "unfavorite": "Poista suosikeista",
       "search": {
-        "topics": "714|Hae aiheita…",
-        "notes": "715|Hae muistiinpanoja…",
-        "clear": "716|Tyhjennä haku",
-        "noMatchTitle": "717|Ei osumia",
-        "noMatchBody": "718|Kokeile toista hakusanaa.",
-        "notesSection_one": "719|Muistiinpanot ({{count}})",
-        "notesSection_other": "720|Muistiinpanot ({{count}})",
-        "noNoteMatches": "721|Mikään muistiinpano ei vastaa tätä hakua."
+        "topics": "Hae aiheita…",
+        "notes": "Hae muistiinpanoja…",
+        "clear": "Tyhjennä haku",
+        "noMatchTitle": "Ei osumia",
+        "noMatchBody": "Kokeile toista hakusanaa.",
+        "notesSection_one": "Muistiinpanot ({{count}})",
+        "notesSection_other": "Muistiinpanot ({{count}})",
+        "noNoteMatches": "Mikään muistiinpano ei vastaa tätä hakua."
       },
       "filter": {
-        "label": "722|Suodata muistiinpanoja",
-        "all": "723|Kaikki",
-        "pinned": "724|Kiinnitetyt",
-        "favorites": "725|Suosikit",
-        "mistakes": "726|Virheet",
-        "quizzes": "727|Tietovisat",
-        "review": "728|Vuorossa",
+        "label": "Suodata muistiinpanoja",
+        "all": "Kaikki",
+        "pinned": "Kiinnitetyt",
+        "favorites": "Suosikit",
+        "mistakes": "Virheet",
+        "quizzes": "Tietovisat",
+        "review": "Vuorossa",
         "empty": {
           "all": {
-            "title": "729|Ei vielä kielioppimuistiinpanoja",
-            "body": "730|Luo ensimmäinen kielioppimuistiinpanosi tälle aiheelle."
+            "title": "Ei vielä kielioppimuistiinpanoja",
+            "body": "Luo ensimmäinen kielioppimuistiinpanosi tälle aiheelle."
           },
           "pinned": {
-            "title": "731|Ei vielä kiinnitettyjä muistiinpanoja",
-            "body": "732|Kiinnitä muistiinpanoja listalta, niin löydät ne nopeasti."
+            "title": "Ei vielä kiinnitettyjä muistiinpanoja",
+            "body": "Kiinnitä muistiinpanoja listalta, niin löydät ne nopeasti."
           },
           "favorites": {
-            "title": "733|Ei vielä suosikkimuistiinpanoja",
-            "body": "734|Merkitse muistiinpanoja suosikeiksi, niin ne pysyvät käsillä."
+            "title": "Ei vielä suosikkimuistiinpanoja",
+            "body": "Merkitse muistiinpanoja suosikeiksi, niin ne pysyvät käsillä."
           },
           "mistakes": {
-            "title": "735|Ei vielä tallennettuja virheitä",
-            "body": "736|Tallenna kielioppivirheitä, niin voit kerrata niitä täällä."
+            "title": "Ei vielä tallennettuja virheitä",
+            "body": "Tallenna kielioppivirheitä, niin voit kerrata niitä täällä."
           },
           "quizzes": {
-            "title": "737|Ei vielä muistiinpanoja, joissa on tietovisa",
-            "body": "738|Lisää muistiinpanoon tietovisa, niin se näkyy täällä."
+            "title": "Ei vielä muistiinpanoja, joissa on tietovisa",
+            "body": "Lisää muistiinpanoon tietovisa, niin se näkyy täällä."
           },
           "review": {
-            "title": "739|Juuri nyt ei ole mitään vuorossa",
-            "body": "740|Muistiinpanot palaavat tänne, kun niiden seuraava kertaus on vuorossa."
+            "title": "Juuri nyt ei ole mitään vuorossa",
+            "body": "Muistiinpanot palaavat tänne, kun niiden seuraava kertaus on vuorossa."
           }
         }
       },
       "reorder": {
-        "start": "741|Järjestä uudelleen",
-        "done": "742|Valmis",
-        "up": "743|Siirrä ylös",
-        "down": "744|Siirrä alas"
+        "start": "Järjestä uudelleen",
+        "done": "Valmis",
+        "up": "Siirrä ylös",
+        "down": "Siirrä alas"
       },
       "highlights": {
-        "mistakesTitle": "745|Korjattavat virheet",
-        "mistakesSubtitle": "746|Tuoreet korjaukset odottavat kertausta.",
-        "quizzesTitle": "747|Heikot tietovisa-alueet",
-        "quizzesSubtitle": "748|Tietovisat, jotka kannattaa tehdä pian uudelleen."
+        "mistakesTitle": "Korjattavat virheet",
+        "mistakesSubtitle": "Tuoreet korjaukset odottavat kertausta.",
+        "quizzesTitle": "Heikot tietovisa-alueet",
+        "quizzesSubtitle": "Tietovisat, jotka kannattaa tehdä pian uudelleen."
       },
       "quickNote": {
-        "button": "749|Pikamuistiinpano",
-        "title": "750|Pikamuistiinpano",
-        "subtitle": "751|Nappaa kielioppi-idea avaamatta koko editoria.",
-        "noteTitle": "752|Otsikko",
-        "titlePlaceholder": "753|Esimerkki: Ser vs Estar",
-        "text": "754|Muistiinpano",
-        "textPlaceholder": "755|Kirjoita hyödyllinen osa tähän",
-        "noteType": "756|Muistiinpanon tyyppi",
-        "topic": "757|Aihe",
-        "openEditor": "758|Avaa editori tallennuksen jälkeen",
-        "openEditorHint": "759|Hyödyllistä, kun pikaversio kasvaa kokonaiseksi muistiinpanoksi.",
-        "tip": "760|Pikamuistiinpanot ovat sitä ideaa varten, jonka muuten unohtaisit kymmenessä minuutissa.",
-        "validation": "761|Lisää ensin otsikko tai vähän tekstiä.",
-        "save": "762|Tallenna pikamuistiinpano",
-        "saving": "763|Tallennetaan…"
+        "button": "Pikamuistiinpano",
+        "title": "Pikamuistiinpano",
+        "subtitle": "Nappaa kielioppi-idea avaamatta koko editoria.",
+        "noteTitle": "Otsikko",
+        "titlePlaceholder": "Esimerkki: Ser vs Estar",
+        "text": "Muistiinpano",
+        "textPlaceholder": "Kirjoita hyödyllinen osa tähän",
+        "noteType": "Muistiinpanon tyyppi",
+        "topic": "Aihe",
+        "openEditor": "Avaa editori tallennuksen jälkeen",
+        "openEditorHint": "Hyödyllistä, kun pikaversio kasvaa kokonaiseksi muistiinpanoksi.",
+        "tip": "Pikamuistiinpanot ovat sitä ideaa varten, jonka muuten unohtaisit kymmenessä minuutissa.",
+        "validation": "Lisää ensin otsikko tai vähän tekstiä.",
+        "save": "Tallenna pikamuistiinpano",
+        "saving": "Tallennetaan…"
       },
       "settings": {
-        "title": "764|Muistiinpanojen asetukset",
-        "subtitle": "765|Miten pikakirjaus, virheet ja muistiinpanolista toimivat.",
-        "reset": "766|Palauta oletukset",
-        "tip": "767|Käytä pikavirheitä lauseisiin, jotka todella kirjoitit väärin — ne ovat hyödyllisempiä kuin oppikirjan täydelliset esimerkit.",
+        "title": "Muistiinpanojen asetukset",
+        "subtitle": "Miten pikakirjaus, virheet ja muistiinpanolista toimivat.",
+        "reset": "Palauta oletukset",
+        "tip": "Käytä pikavirheitä lauseisiin, jotka todella kirjoitit väärin — ne ovat hyödyllisempiä kuin oppikirjan täydelliset esimerkit.",
         "quickCapture": {
-          "title": "768|Pikakirjaus",
-          "subtitle": "769|Tee pikamuistiinpanoista ja virheistä välittömiä."
+          "title": "Pikakirjaus",
+          "subtitle": "Tee pikamuistiinpanoista ja virheistä välittömiä."
         },
         "mistakeNotes": {
-          "title": "770|Virhemuistiinpanot",
-          "subtitle": "771|Mitä tallennetaan, kun kirjaat pikavirheen."
+          "title": "Virhemuistiinpanot",
+          "subtitle": "Mitä tallennetaan, kun kirjaat pikavirheen."
         },
         "essays": {
-          "title": "772|Esseet",
-          "subtitle": "773|Mitä esseidesi kielioppiongelmille tapahtuu."
+          "title": "Esseet",
+          "subtitle": "Mitä esseidesi kielioppiongelmille tapahtuu."
         },
         "review": {
-          "title": "774|Jaksotettu kertaus",
-          "subtitle": "775|Miten muistiinpanot päätyvät kertausjonoon."
+          "title": "Jaksotettu kertaus",
+          "subtitle": "Miten muistiinpanot päätyvät kertausjonoon."
         },
         "appearance": {
-          "title": "776|Muistiinpanojen ulkoasu",
-          "subtitle": "777|Miten muistiinpanolista järjestetään ja näytetään."
+          "title": "Muistiinpanojen ulkoasu",
+          "subtitle": "Miten muistiinpanolista järjestetään ja näytetään."
         },
         "helpers": {
-          "title": "778|Oppimisen apurit",
-          "subtitle": "779|Pieniä vinkkejä tyhjissä näkymissä ja pikalomakkeissa."
+          "title": "Oppimisen apurit",
+          "subtitle": "Pieniä vinkkejä tyhjissä näkymissä ja pikalomakkeissa."
         },
         "defaultType": {
-          "title": "780|Oletustyyppi muistiinpanolle",
-          "subtitle": "781|Millä tyypillä uusi pikamuistiinpano alkaa."
+          "title": "Oletustyyppi muistiinpanolle",
+          "subtitle": "Millä tyypillä uusi pikamuistiinpano alkaa."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "782|Avaa editori pikatallennuksen jälkeen",
-            "subtitle": "783|Kun pikamuistiinpano on tallennettu, siirry suoraan koko editoriin."
+            "title": "Avaa editori pikatallennuksen jälkeen",
+            "subtitle": "Kun pikamuistiinpano on tallennettu, siirry suoraan koko editoriin."
           },
           "allowQuickQuizzes": {
-            "title": "784|Salli tietovisat muistiinpanoissa",
-            "subtitle": "785|Tarjoa tietovisalohkoja ja tietovisojen luontia muistiinpanoissa."
+            "title": "Salli tietovisat muistiinpanoissa",
+            "subtitle": "Tarjoa tietovisalohkoja ja tietovisojen luontia muistiinpanoissa."
           },
           "showsMistakeHighlights": {
-            "title": "786|Korosta virhemuistiinpanot",
-            "subtitle": "787|Käytä lämmintä sävyä virhekorteissa ja näytä virherivi."
+            "title": "Korosta virhemuistiinpanot",
+            "subtitle": "Käytä lämmintä sävyä virhekorteissa ja näytä virherivi."
           },
           "includeOriginalSentence": {
-            "title": "788|Sisällytä alkuperäinen lause",
-            "subtitle": "789|Tallenna virheellinen versio muistiinpanoon lainauslohkona."
+            "title": "Sisällytä alkuperäinen lause",
+            "subtitle": "Tallenna virheellinen versio muistiinpanoon lainauslohkona."
           },
           "includeCorrectedSentence": {
-            "title": "790|Sisällytä korjattu lause",
-            "subtitle": "791|Tallenna korjattu versio esimerkkilohkona."
+            "title": "Sisällytä korjattu lause",
+            "subtitle": "Tallenna korjattu versio esimerkkilohkona."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "792|Sisällytä selitys",
-            "subtitle": "793|Lisää selityksesi alle kappalelohkona."
+            "title": "Sisällytä selitys",
+            "subtitle": "Lisää selityksesi alle kappalelohkona."
           },
           "groupMistakesByTopic": {
-            "title": "794|Ryhmittele virheet aiheittain",
-            "subtitle": "795|Tallenna pikavirheet nykyiseen aiheeseen Yleisten virheiden sijaan."
+            "title": "Ryhmittele virheet aiheittain",
+            "subtitle": "Tallenna pikavirheet nykyiseen aiheeseen Yleisten virheiden sijaan."
           },
           "askBeforeSavingMistakes": {
-            "title": "796|Kysy ennen virheiden tallennusta",
-            "subtitle": "797|Vahvista, ennen kuin esseen ongelmasta tulee muistiinpano. Tämä menee automaattisen tallennuksen edelle."
+            "title": "Kysy ennen virheiden tallennusta",
+            "subtitle": "Vahvista, ennen kuin esseen ongelmasta tulee muistiinpano. Tämä menee automaattisen tallennuksen edelle."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "798|Tallenna esseiden virheet automaattisesti",
-            "subtitle": "799|Jokaisesta esseestä löytyneestä kielioppiongelmasta tulee muistiinpano. Kun ”Kysy ennen tallennusta” on päällä, se kysyy kerran koko tarkistuksesta."
+            "title": "Tallenna esseiden virheet automaattisesti",
+            "subtitle": "Jokaisesta esseestä löytyneestä kielioppiongelmasta tulee muistiinpano. Kun ”Kysy ennen tallennusta” on päällä, se kysyy kerran koko tarkistuksesta."
           },
           "groupsPinnedNotesFirst": {
-            "title": "800|Kiinnitetyt muistiinpanot ensin",
-            "subtitle": "801|Pidä tärkeät säännöt jokaisen aiheen ylimpänä."
+            "title": "Kiinnitetyt muistiinpanot ensin",
+            "subtitle": "Pidä tärkeät säännöt jokaisen aiheen ylimpänä."
           },
           "usesCompactCards": {
-            "title": "802|Tiiviit muistiinpanokortit",
-            "subtitle": "803|Näytä tiiviimpiä kortteja, kun haluat enemmän muistiinpanoja näytölle."
+            "title": "Tiiviit muistiinpanokortit",
+            "subtitle": "Näytä tiiviimpiä kortteja, kun haluat enemmän muistiinpanoja näytölle."
           },
           "showsHelperTips": {
-            "title": "804|Näytä vinkit",
-            "subtitle": "805|Näytä lyhyitä, tilanteeseen sopivia vinkkejä muistiinpanoja tehdessä."
+            "title": "Näytä vinkit",
+            "subtitle": "Näytä lyhyitä, tilanteeseen sopivia vinkkejä muistiinpanoja tehdessä."
           },
           "autoAddNotesToReview": {
-            "title": "806|Lisää uudet muistiinpanot kertaukseen",
-            "subtitle": "807|Jokainen tallentamasi muistiinpano menee kertausjonoon, vuoroon seuraavana päivänä."
+            "title": "Lisää uudet muistiinpanot kertaukseen",
+            "subtitle": "Jokainen tallentamasi muistiinpano menee kertausjonoon, vuoroon seuraavana päivänä."
           }
         }
       },
-      "editTopic": "808|Muokkaa aihetta",
+      "editTopic": "Muokkaa aihetta",
       "toSet": {
-        "title": "809|Tee tästä muistiinpanosta setti",
-        "subtitle": "810|Valitse parit, joista tulee kortteja.",
-        "setTitle": "811|Setin otsikko",
-        "empty": "812|Tästä muistiinpanosta ei ole vielä mitään korteiksi. Vertailu-, esimerkki- ja sääntölohkot muuntuvat suoraan, ja luettelon kohdat jaetaan ajatusviivan kohdalta — kuten ”hacer — tehdä”.",
-        "button": "813|Tee setti",
-        "create": "814|Luo setti",
-        "creating": "815|Luodaan…",
-        "error": "816|Setin luonti ei onnistunut. Yritä uudelleen.",
-        "cards_one": "817|{{count}} kortti",
-        "cards_other": "818|{{count}} korttia"
+        "title": "Tee tästä muistiinpanosta setti",
+        "subtitle": "Valitse parit, joista tulee kortteja.",
+        "setTitle": "Setin otsikko",
+        "empty": "Tästä muistiinpanosta ei ole vielä mitään korteiksi. Vertailu-, esimerkki- ja sääntölohkot muuntuvat suoraan, ja luettelon kohdat jaetaan ajatusviivan kohdalta — kuten ”hacer — tehdä”.",
+        "button": "Tee setti",
+        "create": "Luo setti",
+        "creating": "Luodaan…",
+        "error": "Setin luonti ei onnistunut. Yritä uudelleen.",
+        "cards_one": "{{count}} kortti",
+        "cards_other": "{{count}} korttia"
       },
-      "topicsEmptyTip": "819|Aihe on kansio muistiinpanoille — yksi kutakin kieltä kohti tai yksi kutakin asiaa kohti, jossa toistuvasti erehdyt.",
-      "notesEmptyTip": "820|Jokainen tallentamasi muistiinpano menee kertausjonoon, joten sen kirjoittaminen on jo harjoittelun aloittamista."
+      "topicsEmptyTip": "Aihe on kansio muistiinpanoille — yksi kutakin kieltä kohti tai yksi kutakin asiaa kohti, jossa toistuvasti erehdyt.",
+      "notesEmptyTip": "Jokainen tallentamasi muistiinpano menee kertausjonoon, joten sen kirjoittaminen on jo harjoittelun aloittamista."
     }
   },
   "reading": {
-    "sectionTitle": "821|Harjoittelutavat",
-    "loading": "822|Ladataan…",
-    "loadError": "823|Lukutekstiesi lataus ei onnistunut.",
-    "notFound": "824|Tämä kohde on saatettu poistaa.",
+    "sectionTitle": "Harjoittelutavat",
+    "loading": "Ladataan…",
+    "loadError": "Lukutekstiesi lataus ei onnistunut.",
+    "notFound": "Tämä kohde on saatettu poistaa.",
     "today": {
-      "title": "825|Tämän päivän edistyminen",
-      "subtitle": "826|Pidä lukuputkesi käynnissä."
+      "title": "Tämän päivän edistyminen",
+      "subtitle": "Pidä lukuputkesi käynnissä."
     },
     "menu": {
-      "comingSoon": "827|Tulossa pian",
+      "comingSoon": "Tulossa pian",
       "myTexts": {
-        "title": "828|Omat tekstini",
-        "subtitle": "829|Liitä oma tekstisi ja lue se avustettuna."
+        "title": "Omat tekstini",
+        "subtitle": "Liitä oma tekstisi ja lue se avustettuna."
       },
       "fromSets": {
-        "title": "830|Lukeminen seteistä",
-        "subtitle": "831|Tee lukuteksti korttiseteistäsi."
+        "title": "Lukeminen seteistä",
+        "subtitle": "Tee lukuteksti korttiseteistäsi."
       },
       "storyMode": {
-        "title": "832|Tarinatila",
-        "subtitle": "833|Lue vuorovaikutteisia tarinoita haarautuvin valinnoin."
+        "title": "Tarinatila",
+        "subtitle": "Lue vuorovaikutteisia tarinoita haarautuvin valinnoin."
       },
       "speedReading": {
-        "title": "834|Pikalukeminen",
-        "subtitle": "835|Harjoittele nopeampaa lukemista ajastetulla tahdilla."
+        "title": "Pikalukeminen",
+        "subtitle": "Harjoittele nopeampaa lukemista ajastetulla tahdilla."
       }
     },
     "myTexts": {
-      "title": "836|Omat tekstini",
-      "subtitle": "837|Tallennetut lukutekstisi.",
-      "addText": "838|Lisää teksti",
-      "emptyTitle": "839|Ei vielä tekstejä",
-      "emptyBody": "840|Lisää ensimmäinen tekstisi ja aloita lukuharjoittelu.",
-      "savedTitle": "841|Tallennetut tekstit"
+      "title": "Omat tekstini",
+      "subtitle": "Tallennetut lukutekstisi.",
+      "addText": "Lisää teksti",
+      "emptyTitle": "Ei vielä tekstejä",
+      "emptyBody": "Lisää ensimmäinen tekstisi ja aloita lukuharjoittelu.",
+      "savedTitle": "Tallennetut tekstit"
     },
     "status": {
-      "new": "842|Uusi",
-      "inProgress": "843|Kesken",
-      "completed": "844|Valmis"
+      "new": "Uusi",
+      "inProgress": "Kesken",
+      "completed": "Valmis"
     },
     "card": {
-      "words_one": "845|{{count}} sana",
-      "words_other": "846|{{count}} sanaa",
-      "start": "847|Aloita",
-      "continue": "848|Jatka",
-      "readAgain": "849|Lue uudelleen",
-      "rename": "850|Nimeä uudelleen",
-      "renamePrompt": "851|Uusi otsikko:",
-      "delete": "852|Poista",
-      "deleteConfirm": "853|Poistetaanko ”{{title}}”? Tätä ei voi kumota."
+      "words_one": "{{count}} sana",
+      "words_other": "{{count}} sanaa",
+      "start": "Aloita",
+      "continue": "Jatka",
+      "readAgain": "Lue uudelleen",
+      "rename": "Nimeä uudelleen",
+      "renamePrompt": "Uusi otsikko:",
+      "delete": "Poista",
+      "deleteConfirm": "Poistetaanko ”{{title}}”? Tätä ei voi kumota."
     },
     "continue": {
-      "eyebrow": "854|Jatka lukemista",
-      "percent": "855|{{percent}} % valmis",
-      "button": "856|Jatka"
+      "eyebrow": "Jatka lukemista",
+      "percent": "{{percent}} % valmis",
+      "button": "Jatka"
     },
     "focus": {
-      "mainIdea": "857|Pääajatus",
-      "vocabulary": "858|Sanasto",
-      "detailedComprehension": "859|Yksityiskohtainen ymmärtäminen",
-      "grammarAwareness": "860|Kieliopin huomiointi",
-      "speedFluency": "861|Nopeus / sujuvuus"
+      "mainIdea": "Pääajatus",
+      "vocabulary": "Sanasto",
+      "detailedComprehension": "Yksityiskohtainen ymmärtäminen",
+      "grammarAwareness": "Kieliopin huomiointi",
+      "speedFluency": "Nopeus / sujuvuus"
     },
     "questionType": {
-      "comprehension": "862|Ymmärtäminen",
-      "trueFalse": "863|Tosi / Epätosi",
-      "fillGap": "864|Täydennä aukko",
-      "vocabulary": "865|Sanasto",
-      "findEvidence": "866|Etsi todiste",
-      "orderReconstruction": "867|Järjestys"
+      "comprehension": "Ymmärtäminen",
+      "trueFalse": "Tosi / Epätosi",
+      "fillGap": "Täydennä aukko",
+      "vocabulary": "Sanasto",
+      "findEvidence": "Etsi todiste",
+      "orderReconstruction": "Järjestys"
     },
     "assistance": {
-      "highlightUnknownWords": "868|Korosta tuntemattomat sanat",
-      "translationOnTap": "869|Käännä napauttamalla",
-      "vocabularyHints": "870|Sanastovihjeet",
-      "readingTimer": "871|Lukuajastin"
+      "highlightUnknownWords": "Korosta tuntemattomat sanat",
+      "translationOnTap": "Käännä napauttamalla",
+      "vocabularyHints": "Sanastovihjeet",
+      "readingTimer": "Lukuajastin"
     },
     "addText": {
-      "title": "872|Lisää teksti",
-      "subtitle": "873|Liitä teksti ja määritä lukuharjoituksesi.",
-      "untitled": "874|Nimetön teksti",
-      "pastePlaceholder": "875|Liitä tai kirjoita tekstisi tähän…",
-      "titleLabel": "876|Otsikko",
-      "titlePlaceholder": "877|Valinnainen — voimme ehdottaa sellaista",
-      "language": "878|Kieli",
-      "difficulty": "879|Vaikeustaso",
-      "autoDetect": "880|Tunnista automaattisesti",
-      "manual": "881|Valitse käsin",
-      "focus": "882|Lukemisen painotus",
-      "questionTypes": "883|Kysymystyypit",
-      "assistance": "884|Lukemisen apu",
+      "title": "Lisää teksti",
+      "subtitle": "Liitä teksti ja määritä lukuharjoituksesi.",
+      "untitled": "Nimetön teksti",
+      "pastePlaceholder": "Liitä tai kirjoita tekstisi tähän…",
+      "titleLabel": "Otsikko",
+      "titlePlaceholder": "Valinnainen — voimme ehdottaa sellaista",
+      "language": "Kieli",
+      "difficulty": "Vaikeustaso",
+      "autoDetect": "Tunnista automaattisesti",
+      "manual": "Valitse käsin",
+      "focus": "Lukemisen painotus",
+      "questionTypes": "Kysymystyypit",
+      "assistance": "Lukemisen apu",
       "stats": {
-        "words_one": "885|{{count}} sana",
-        "words_other": "886|{{count}} sanaa",
-        "chars_one": "887|{{count}} merkki",
-        "chars_other": "888|{{count}} merkkiä",
-        "min": "889|min",
-        "detected": "890|Tunnistettu: {{level}}"
+        "words_one": "{{count}} sana",
+        "words_other": "{{count}} sanaa",
+        "chars_one": "{{count}} merkki",
+        "chars_other": "{{count}} merkkiä",
+        "min": "min",
+        "detected": "Tunnistettu: {{level}}"
       },
       "validation": {
-        "empty": "891|Lisää ensin teksti.",
-        "tooShort": "892|Lisää vähintään 20 sanaa."
+        "empty": "Lisää ensin teksti.",
+        "tooShort": "Lisää vähintään 20 sanaa."
       },
-      "save": "893|Tallenna teksti",
-      "saveAndStart": "894|Tallenna ja aloita",
-      "saving": "895|Tallennetaan…",
-      "saveError": "896|Tallennus ei onnistunut. Yritä uudelleen.",
+      "save": "Tallenna teksti",
+      "saveAndStart": "Tallenna ja aloita",
+      "saving": "Tallennetaan…",
+      "saveError": "Tallennus ei onnistunut. Yritä uudelleen.",
       "source": {
-        "pasteText": "897|Liitä",
-        "photo": "898|Valokuva",
-        "pdf": "899|PDF",
-        "generate": "900|Luo",
-        "explore": "901|Tutki"
+        "pasteText": "Liitä",
+        "photo": "Valokuva",
+        "pdf": "PDF",
+        "generate": "Luo",
+        "explore": "Tutki"
       },
       "style": {
-        "informative": "902|Tietopainotteinen",
-        "casual": "903|Rento",
-        "academic": "904|Akateeminen",
-        "narrative": "905|Kerronnallinen"
+        "informative": "Tietopainotteinen",
+        "casual": "Rento",
+        "academic": "Akateeminen",
+        "narrative": "Kerronnallinen"
       },
       "length": {
-        "short": "906|Lyhyt",
-        "medium": "907|Keskipitkä",
-        "long": "908|Pitkä"
+        "short": "Lyhyt",
+        "medium": "Keskipitkä",
+        "long": "Pitkä"
       },
       "import": {
-        "photoHint": "909|Lataa valokuva sivusta — poimimme tekstin.",
-        "chooseImage": "910|Valitse kuva",
-        "recognizing": "911|Tunnistetaan… {{percent}} %",
-        "imageError": "912|Emme saaneet luettua tekstiä tästä kuvasta.",
-        "pdfHint": "913|Lataa PDF — poimimme tekstin.",
-        "choosePDF": "914|Valitse PDF",
-        "reading": "915|Luetaan PDF:ää…",
-        "pdfError": "916|Emme saaneet luettua tätä PDF:ää.",
-        "topicPlaceholder": "917|Aihe — esim. koralliriutat, kirjapainotaito",
-        "explorePlaceholder": "918|Aihe tai hakusana — esim. Marie Curie, Venetsia",
-        "generateButton": "919|Luo teksti",
-        "exploreButton": "920|Hae artikkeli",
-        "working": "921|Työstetään…",
-        "generateError": "922|Tekstin luonti ei onnistunut. Yritä uudelleen.",
-        "exploreError": "923|Emme löytäneet artikkelia tästä aiheesta.",
-        "exploredFrom": "924|Haettu lähteestä"
+        "photoHint": "Lataa valokuva sivusta — poimimme tekstin.",
+        "chooseImage": "Valitse kuva",
+        "recognizing": "Tunnistetaan… {{percent}} %",
+        "imageError": "Emme saaneet luettua tekstiä tästä kuvasta.",
+        "pdfHint": "Lataa PDF — poimimme tekstin.",
+        "choosePDF": "Valitse PDF",
+        "reading": "Luetaan PDF:ää…",
+        "pdfError": "Emme saaneet luettua tätä PDF:ää.",
+        "topicPlaceholder": "Aihe — esim. koralliriutat, kirjapainotaito",
+        "explorePlaceholder": "Aihe tai hakusana — esim. Marie Curie, Venetsia",
+        "generateButton": "Luo teksti",
+        "exploreButton": "Hae artikkeli",
+        "working": "Työstetään…",
+        "generateError": "Tekstin luonti ei onnistunut. Yritä uudelleen.",
+        "exploreError": "Emme löytäneet artikkelia tästä aiheesta.",
+        "exploredFrom": "Haettu lähteestä"
       }
     },
     "session": {
-      "startQuestions": "925|Siirry kysymyksiin",
-      "finish": "926|Lopeta",
-      "next": "927|Seuraava",
-      "questionOf": "928|Kysymys {{current}} / {{total}}",
-      "closeTranslation": "929|Sulje käännös",
-      "translating": "930|Käännetään…",
-      "translationError": "931|Kääntäminen ei onnistunut. Yritä uudelleen.",
-      "translation": "932|Käännös",
-      "textLabel": "933|Teksti"
+      "startQuestions": "Siirry kysymyksiin",
+      "finish": "Lopeta",
+      "next": "Seuraava",
+      "questionOf": "Kysymys {{current}} / {{total}}",
+      "closeTranslation": "Sulje käännös",
+      "translating": "Käännetään…",
+      "translationError": "Kääntäminen ei onnistunut. Yritä uudelleen.",
+      "translation": "Käännös",
+      "textLabel": "Teksti"
     },
     "result": {
-      "comprehension": "934|Ymmärtäminen",
-      "correct": "935|Oikein",
-      "time": "936|Lukuaika",
-      "wpm": "937|sanaa/min",
-      "mistakes": "938|Virheet",
-      "mistakesTitle": "939|Käy virheesi läpi",
-      "readAgain": "940|Lue uudelleen",
-      "back": "941|Takaisin Omiin teksteihini",
-      "complete": "942|Harjoitus valmis"
+      "comprehension": "Ymmärtäminen",
+      "correct": "Oikein",
+      "time": "Lukuaika",
+      "wpm": "sanaa/min",
+      "mistakes": "Virheet",
+      "mistakesTitle": "Käy virheesi läpi",
+      "readAgain": "Lue uudelleen",
+      "back": "Takaisin Omiin teksteihini",
+      "complete": "Harjoitus valmis"
     },
     "fromSets": {
-      "title": "943|Lukeminen seteistä",
-      "subtitle": "944|Muuta korttisetti lukutekstiksi.",
-      "pickSet": "945|Valitse setti",
-      "changeSet": "946|Vaihda setti",
-      "tooFewWords": "947|Tämä setti tarvitsee vähintään {{count}} sanaa lukutekstiä varten.",
-      "mode": "948|Luontitapa",
+      "title": "Lukeminen seteistä",
+      "subtitle": "Muuta korttisetti lukutekstiksi.",
+      "pickSet": "Valitse setti",
+      "changeSet": "Vaihda setti",
+      "tooFewWords": "Tämä setti tarvitsee vähintään {{count}} sanaa lukutekstiä varten.",
+      "mode": "Luontitapa",
       "modeOption": {
-        "natural": "949|Luonteva",
-        "strict": "950|Tiukka",
-        "mixed": "951|Sekoitettu"
+        "natural": "Luonteva",
+        "strict": "Tiukka",
+        "mixed": "Sekoitettu"
       },
-      "length": "952|Tekstin pituus",
-      "generate": "953|Luo lukuteksti",
-      "generating": "954|Luodaan lukutekstiäsi…",
-      "generateError": "955|Lukutekstin luonti ei onnistunut. Yritä uudelleen.",
-      "emptyTitle": "956|Ei vielä lukutekstejä",
-      "emptyBody": "957|Valitse korttisetti, niin teemme siitä lukutekstin.",
-      "savedTitle": "958|Tallennetut lukutekstit"
+      "length": "Tekstin pituus",
+      "generate": "Luo lukuteksti",
+      "generating": "Luodaan lukutekstiäsi…",
+      "generateError": "Lukutekstin luonti ei onnistunut. Yritä uudelleen.",
+      "emptyTitle": "Ei vielä lukutekstejä",
+      "emptyBody": "Valitse korttisetti, niin teemme siitä lukutekstin.",
+      "savedTitle": "Tallennetut lukutekstit"
     },
     "speed": {
-      "title": "959|Pikalukeminen",
-      "subtitle": "960|Harjoittele nopeampaa lukemista ajastetulla tahdilla.",
+      "title": "Pikalukeminen",
+      "subtitle": "Harjoittele nopeampaa lukemista ajastetulla tahdilla.",
       "section": {
-        "target": "961|Tavoitelukunopeus",
-        "timer": "962|Ajastimen tyyli",
-        "length": "963|Tekstin pituus"
+        "target": "Tavoitelukunopeus",
+        "timer": "Ajastimen tyyli",
+        "length": "Tekstin pituus"
       },
       "target": {
-        "relaxed": "964|Rento",
-        "balanced": "965|Tasapainoinen",
-        "fast": "966|Nopea",
-        "challenge": "967|Haaste"
+        "relaxed": "Rento",
+        "balanced": "Tasapainoinen",
+        "fast": "Nopea",
+        "challenge": "Haaste"
       },
       "timer": {
-        "noTimer": "968|Ei ajastinta",
-        "soft": "969|Lempeä ajastin",
-        "strict": "970|Tiukka ajastin"
+        "noTimer": "Ei ajastinta",
+        "soft": "Lempeä ajastin",
+        "strict": "Tiukka ajastin"
       },
       "length": {
-        "two": "971|2 min",
-        "five": "972|5 min",
-        "ten": "973|10 min"
+        "two": "2 min",
+        "five": "5 min",
+        "ten": "10 min"
       },
-      "summary": "974|Tavoite {{wpm}} sanaa/min · ~{{minutes}} min lukemista",
-      "start": "975|Aloita istunto",
-      "preparing": "976|Valmistellaan tekstikatkelmaasi…",
-      "generateError": "977|Katkelman luonti ei onnistunut. Yritä uudelleen.",
-      "recentTitle": "978|Viimeisimmät istunnot",
-      "chunkOf": "979|Osa {{current}} / {{total}}",
-      "previous": "980|Edellinen osa",
-      "pause": "981|Tauko",
-      "resume": "982|Jatka",
-      "nextChunk": "983|Seuraava osa",
-      "finishReading": "984|Lopeta lukeminen",
+      "summary": "Tavoite {{wpm}} sanaa/min · ~{{minutes}} min lukemista",
+      "start": "Aloita istunto",
+      "preparing": "Valmistellaan tekstikatkelmaasi…",
+      "generateError": "Katkelman luonti ei onnistunut. Yritä uudelleen.",
+      "recentTitle": "Viimeisimmät istunnot",
+      "chunkOf": "Osa {{current}} / {{total}}",
+      "previous": "Edellinen osa",
+      "pause": "Tauko",
+      "resume": "Jatka",
+      "nextChunk": "Seuraava osa",
+      "finishReading": "Lopeta lukeminen",
       "rating": {
-        "excellent": "985|Erinomainen",
-        "balanced": "986|Tavoitteessa",
-        "fast": "987|Melkein perillä",
-        "tooSlow": "988|Liian hidas"
+        "excellent": "Erinomainen",
+        "balanced": "Tavoitteessa",
+        "fast": "Melkein perillä",
+        "tooSlow": "Liian hidas"
       },
       "result": {
-        "average": "989|Keskiarvo sanaa/min",
-        "target": "990|Tavoite sanaa/min",
-        "violations_one": "991|{{count}} aikaylitys",
-        "violations_other": "992|{{count}} aikaylitystä"
+        "average": "Keskiarvo sanaa/min",
+        "target": "Tavoite sanaa/min",
+        "violations_one": "{{count}} aikaylitys",
+        "violations_other": "{{count}} aikaylitystä"
       },
-      "tryAgain": "993|Yritä uudelleen",
-      "backToSetup": "994|Takaisin asetuksiin"
+      "tryAgain": "Yritä uudelleen",
+      "backToSetup": "Takaisin asetuksiin"
     },
     "story": {
-      "title": "995|Tarinatila",
-      "subtitle": "996|Lue vuorovaikutteisia tarinoita haarautuvin valinnoin.",
-      "typeSection": "997|Tarinan tyyppi",
+      "title": "Tarinatila",
+      "subtitle": "Lue vuorovaikutteisia tarinoita haarautuvin valinnoin.",
+      "typeSection": "Tarinan tyyppi",
       "type": {
-        "adventure": "998|Seikkailu",
-        "fantasy": "999|Fantasia",
-        "mystery": "1000|Mysteeri",
-        "romance": "1001|Romanssi",
-        "dailyLife": "1002|Arkielämä"
+        "adventure": "Seikkailu",
+        "fantasy": "Fantasia",
+        "mystery": "Mysteeri",
+        "romance": "Romanssi",
+        "dailyLife": "Arkielämä"
       },
-      "lengthSection": "1003|Tarinan pituus",
+      "lengthSection": "Tarinan pituus",
       "length": {
-        "shortStory": "1004|Novelli",
-        "multiChapter": "1005|Useita lukuja",
-        "infinite": "1006|Loputon tarina"
+        "shortStory": "Novelli",
+        "multiChapter": "Useita lukuja",
+        "infinite": "Loputon tarina"
       },
-      "start": "1007|Aloita tarina",
-      "generating": "1008|Kirjoitetaan tarinaasi…",
-      "generatingNext": "1009|Kirjoitetaan seuraavaa lukua…",
-      "generateError": "1010|Tarinan kirjoittaminen ei onnistunut. Yritä uudelleen.",
-      "emptyTitle": "1011|Ei vielä tarinoita",
-      "emptyBody": "1012|Aloita ensimmäinen vuorovaikutteinen tarinasi yltä.",
-      "savedTitle": "1013|Tarinasi",
-      "chapterN": "1014|Luku {{n}}",
-      "chapterOf": "1015|Luku {{current}} / {{total}}",
-      "chapterScore": "1016|Luvun pisteet",
-      "whatNext": "1017|Mitä tapahtuu seuraavaksi?",
-      "endStory": "1018|Lopeta tarina",
-      "completeTitle": "1019|Tarina valmis",
-      "completeBody_one": "1020|Luit {{count}} luvun. Hienoa lukemista!",
-      "completeBody_other": "1021|Luit {{count}} lukua. Hienoa lukemista!",
-      "backToStories": "1022|Takaisin tarinoihin"
+      "start": "Aloita tarina",
+      "generating": "Kirjoitetaan tarinaasi…",
+      "generatingNext": "Kirjoitetaan seuraavaa lukua…",
+      "generateError": "Tarinan kirjoittaminen ei onnistunut. Yritä uudelleen.",
+      "emptyTitle": "Ei vielä tarinoita",
+      "emptyBody": "Aloita ensimmäinen vuorovaikutteinen tarinasi yltä.",
+      "savedTitle": "Tarinasi",
+      "chapterN": "Luku {{n}}",
+      "chapterOf": "Luku {{current}} / {{total}}",
+      "chapterScore": "Luvun pisteet",
+      "whatNext": "Mitä tapahtuu seuraavaksi?",
+      "endStory": "Lopeta tarina",
+      "completeTitle": "Tarina valmis",
+      "completeBody_one": "Luit {{count}} luvun. Hienoa lukemista!",
+      "completeBody_other": "Luit {{count}} lukua. Hienoa lukemista!",
+      "backToStories": "Takaisin tarinoihin"
     }
   },
   "listening": {
-    "sectionTitle": "1023|Harjoittelutavat",
-    "notFound": "1024|Tämä istunto on saatettu poistaa.",
+    "sectionTitle": "Harjoittelutavat",
+    "notFound": "Tämä istunto on saatettu poistaa.",
     "today": {
-      "title": "1025|Tämän päivän edistyminen",
-      "subtitle": "1026|kuunteluharjoittelua"
+      "title": "Tämän päivän edistyminen",
+      "subtitle": "kuunteluharjoittelua"
     },
     "menu": {
-      "comingSoon": "1027|Tulossa pian",
+      "comingSoon": "Tulossa pian",
       "fromText": {
-        "title": "1028|Kuuntele tekstistä",
-        "subtitle": "1029|Liitä teksti, kuuntele se ja testaa ymmärtämisesi."
+        "title": "Kuuntele tekstistä",
+        "subtitle": "Liitä teksti, kuuntele se ja testaa ymmärtämisesi."
       },
       "importAudio": {
-        "title": "1030|Tuo ääni",
-        "subtitle": "1031|Lataa oma äänitiedostosi ja tee siitä kuunteluharjoitus."
+        "title": "Tuo ääni",
+        "subtitle": "Lataa oma äänitiedostosi ja tee siitä kuunteluharjoitus."
       },
       "importVideo": {
-        "title": "1032|Tuo video",
-        "subtitle": "1033|Lataa video, saa tekstitykset ja harjoittele kysymysten avulla."
+        "title": "Tuo video",
+        "subtitle": "Lataa video, saa tekstitykset ja harjoittele kysymysten avulla."
       },
       "saved": {
-        "title": "1034|Tallennetut harjoitukset",
-        "subtitle": "1035|Jatka aiempia istuntoja ja käy virheesi läpi."
+        "title": "Tallennetut harjoitukset",
+        "subtitle": "Jatka aiempia istuntoja ja käy virheesi läpi."
       }
     },
     "questionType": {
-      "mainIdea": "1036|Pääajatus",
-      "details": "1037|Yksityiskohdat",
-      "vocabulary": "1038|Sanasto",
-      "trueFalse": "1039|Tosi / Epätosi"
+      "mainIdea": "Pääajatus",
+      "details": "Yksityiskohdat",
+      "vocabulary": "Sanasto",
+      "trueFalse": "Tosi / Epätosi"
     },
     "fromText": {
-      "title": "1040|Kuuntele tekstistä",
-      "subtitle": "1041|Liitä teksti ja tee siitä kuunteluharjoitus.",
-      "level": "1042|Taso",
-      "voiceSpeed": "1043|Puheen nopeus",
-      "voiceType": "1044|Äänen tyyppi",
+      "title": "Kuuntele tekstistä",
+      "subtitle": "Liitä teksti ja tee siitä kuunteluharjoitus.",
+      "level": "Taso",
+      "voiceSpeed": "Puheen nopeus",
+      "voiceType": "Äänen tyyppi",
       "voice": {
-        "default": "1045|Oletus",
-        "female": "1046|Naisääni",
-        "male": "1047|Miesääni"
+        "default": "Oletus",
+        "female": "Naisääni",
+        "male": "Miesääni"
       },
-      "showText": "1048|Näytä teksti kuuntelun aikana",
-      "addQuestions": "1049|Lisää ymmärtämiskysymyksiä",
-      "questionCount": "1050|Kysymysten määrä",
-      "questionTypes": "1051|Kysymystyypit",
-      "optionalTitle": "1052|Valinnainen otsikko",
-      "titlePlaceholder": "1053|Anna tekstillesi nimi",
-      "textPlaceholder": "1054|Liitä tekstisi tähän...",
-      "recommended": "1055|Suositus: 80–500 sanaa.",
-      "words": "1056|sanaa",
-      "defaultTitle": "1057|Kuunteluharjoitus",
-      "start": "1058|Aloita kuuntelu",
+      "showText": "Näytä teksti kuuntelun aikana",
+      "addQuestions": "Lisää ymmärtämiskysymyksiä",
+      "questionCount": "Kysymysten määrä",
+      "questionTypes": "Kysymystyypit",
+      "optionalTitle": "Valinnainen otsikko",
+      "titlePlaceholder": "Anna tekstillesi nimi",
+      "textPlaceholder": "Liitä tekstisi tähän...",
+      "recommended": "Suositus: 80–500 sanaa.",
+      "words": "sanaa",
+      "defaultTitle": "Kuunteluharjoitus",
+      "start": "Aloita kuuntelu",
       "validation": {
-        "empty": "1059|Lisää tekstiä, niin voit aloittaa kuuntelun.",
-        "tooShort": "1060|Lisää vähintään 40 merkkiä, niin voit aloittaa kuuntelun.",
-        "tooLong": "1061|Teksti on liian pitkä. Pidä se alle 5000 merkissä.",
-        "tooFewWords": "1062|Lisää hieman enemmän tekstiä (noin 40 sanaa tai enemmän), jotta voimme tehdä hyviä kysymyksiä."
+        "empty": "Lisää tekstiä, niin voit aloittaa kuuntelun.",
+        "tooShort": "Lisää vähintään 40 merkkiä, niin voit aloittaa kuuntelun.",
+        "tooLong": "Teksti on liian pitkä. Pidä se alle 5000 merkissä.",
+        "tooFewWords": "Lisää hieman enemmän tekstiä (noin 40 sanaa tai enemmän), jotta voimme tehdä hyviä kysymyksiä."
       },
-      "voiceSettings": "1063|Ääniasetukset",
-      "questions": "1064|Kysymykset",
-      "textInput": "1065|Tekstin syöttö"
+      "voiceSettings": "Ääniasetukset",
+      "questions": "Kysymykset",
+      "textInput": "Tekstin syöttö"
     },
     "session": {
-      "replay": "1066|Toista uudelleen",
-      "transcript": "1067|Litterointi",
-      "questionsTitle": "1068|Kysymykset",
-      "answerFirst": "1069|Vastaa vähintään yhteen kysymykseen ennen tarkistusta.",
-      "checkAnswers": "1070|Tarkista vastaukset",
-      "finish": "1071|Lopeta harjoitus"
+      "replay": "Toista uudelleen",
+      "transcript": "Litterointi",
+      "questionsTitle": "Kysymykset",
+      "answerFirst": "Vastaa vähintään yhteen kysymykseen ennen tarkistusta.",
+      "checkAnswers": "Tarkista vastaukset",
+      "finish": "Lopeta harjoitus"
     },
     "result": {
-      "title": "1072|Harjoitus valmis",
-      "comprehension": "1073|Ymmärtäminen",
-      "correct": "1074|Oikein",
-      "time": "1075|Kuunteluaika",
-      "speed": "1076|Nopeus",
-      "mistakes": "1077|Virheet",
-      "mistakesTitle": "1078|Käy virheesi läpi",
-      "watchOnlyTitle": "1079|Kuuntelu valmis",
-      "watchOnlyBody": "1080|Kuuntelit {{time}}.",
-      "practiceAgain": "1081|Harjoittele uudelleen",
-      "back": "1082|Takaisin Kuuntelemiseen"
+      "title": "Harjoitus valmis",
+      "comprehension": "Ymmärtäminen",
+      "correct": "Oikein",
+      "time": "Kuunteluaika",
+      "speed": "Nopeus",
+      "mistakes": "Virheet",
+      "mistakesTitle": "Käy virheesi läpi",
+      "watchOnlyTitle": "Kuuntelu valmis",
+      "watchOnlyBody": "Kuuntelit {{time}}.",
+      "practiceAgain": "Harjoittele uudelleen",
+      "back": "Takaisin Kuuntelemiseen"
     },
     "importAudio": {
-      "title": "1083|Tuo ääni",
-      "subtitle": "1084|Tee omasta äänitiedostostasi kuunteluharjoitus.",
-      "uploadTitle": "1085|Lataa äänitiedosto",
-      "uploadFormats": "1086|MP3, M4A, WAV tai AAC · alle 50 Mt",
-      "chooseFile": "1087|Valitse tiedosto",
-      "clearFile": "1088|Poista tiedosto",
-      "infoNote": "1089|Äänesi litteroidaan taustalla. Litterointi pysyy piilossa harjoituksen ajan.",
-      "continue": "1090|Jatka",
-      "processingTitle": "1091|Valmistellaan kuunteluharjoitustasi",
-      "step1": "1092|Ladataan ääntä",
-      "step2": "1093|Litteroidaan puhetta",
-      "step3": "1094|Luodaan kysymyksiä",
-      "processError": "1095|Emme saaneet tätä ääntä valmisteltua. Yritä uudelleen.",
-      "tryAgain": "1096|Yritä uudelleen",
-      "chooseAnother": "1097|Valitse toinen tiedosto",
-      "transcriptHidden": "1098|Litterointi on piilotettu, jotta tämä pysyy aitona kuunteluharjoituksena."
+      "title": "Tuo ääni",
+      "subtitle": "Tee omasta äänitiedostostasi kuunteluharjoitus.",
+      "uploadTitle": "Lataa äänitiedosto",
+      "uploadFormats": "MP3, M4A, WAV tai AAC · alle 50 Mt",
+      "chooseFile": "Valitse tiedosto",
+      "clearFile": "Poista tiedosto",
+      "infoNote": "Äänesi litteroidaan taustalla. Litterointi pysyy piilossa harjoituksen ajan.",
+      "continue": "Jatka",
+      "processingTitle": "Valmistellaan kuunteluharjoitustasi",
+      "step1": "Ladataan ääntä",
+      "step2": "Litteroidaan puhetta",
+      "step3": "Luodaan kysymyksiä",
+      "processError": "Emme saaneet tätä ääntä valmisteltua. Yritä uudelleen.",
+      "tryAgain": "Yritä uudelleen",
+      "chooseAnother": "Valitse toinen tiedosto",
+      "transcriptHidden": "Litterointi on piilotettu, jotta tämä pysyy aitona kuunteluharjoituksena."
     },
     "importVideo": {
-      "title": "1099|Tuo video",
-      "subtitle": "1100|Lataa video, saa tekstitykset ja harjoittele kysymysten avulla.",
-      "uploadTitle": "1101|Lataa videotiedosto",
-      "uploadFormats": "1102|MP4, MOV tai M4V · alle 80 Mt",
-      "step1": "1103|Valmistellaan videota",
-      "step2": "1104|Litteroidaan puhetta",
-      "step3": "1105|Rakennetaan tekstityksiä",
-      "subtitles": "1106|Tekstitykset",
-      "subtitlesOn": "1107|Tekstitykset päällä",
-      "subtitlesOff": "1108|Tekstitykset pois",
-      "noSubtitles": "1109|Tälle videolle ei ole tekstityksiä.",
-      "tapWord": "1110|Napauta sanaa kääntääksesi sen.",
-      "questionsLocked": "1111|Kysymykset avautuvat, kun olet katsonut videon loppuun."
+      "title": "Tuo video",
+      "subtitle": "Lataa video, saa tekstitykset ja harjoittele kysymysten avulla.",
+      "uploadTitle": "Lataa videotiedosto",
+      "uploadFormats": "MP4, MOV tai M4V · alle 80 Mt",
+      "step1": "Valmistellaan videota",
+      "step2": "Litteroidaan puhetta",
+      "step3": "Rakennetaan tekstityksiä",
+      "subtitles": "Tekstitykset",
+      "subtitlesOn": "Tekstitykset päällä",
+      "subtitlesOff": "Tekstitykset pois",
+      "noSubtitles": "Tälle videolle ei ole tekstityksiä.",
+      "tapWord": "Napauta sanaa kääntääksesi sen.",
+      "questionsLocked": "Kysymykset avautuvat, kun olet katsonut videon loppuun."
     },
     "wordSheet": {
-      "title": "1112|Käännä sana",
-      "pickSet": "1113|Valitse setti",
-      "createSet": "1114|Luo setti",
-      "addToSet": "1115|Lisää settiin",
-      "noSets": "1116|Sinulla ei ole vielä settejä. Luo yksi alta.",
-      "setNamePlaceholder": "1117|esim. Videon sanat",
-      "createAndAdd": "1118|Luo ja lisää sana",
-      "saved": "1119|Tallennettu settiin ”{{set}}”."
+      "title": "Käännä sana",
+      "pickSet": "Valitse setti",
+      "createSet": "Luo setti",
+      "addToSet": "Lisää settiin",
+      "noSets": "Sinulla ei ole vielä settejä. Luo yksi alta.",
+      "setNamePlaceholder": "esim. Videon sanat",
+      "createAndAdd": "Luo ja lisää sana",
+      "saved": "Tallennettu settiin ”{{set}}”."
     },
     "saved": {
-      "title": "1120|Tallennetut harjoitukset",
-      "subtitle": "1121|Jatka istuntoja ja käy kuunteluvirheesi läpi.",
-      "emptyTitle": "1122|Ei tallennettuja istuntoja",
-      "emptyBody": "1123|Lopeta tai keskeytä kuunteluistunto, niin se ilmestyy tähän.",
-      "continueEyebrow": "1124|Jatka kuuntelua",
-      "percentComplete": "1125|{{percent}} % valmis",
-      "continue": "1126|Jatka",
-      "review": "1127|Käy läpi",
-      "delete": "1128|Poista istunto",
-      "deleteConfirm": "1129|Poistetaanko ”{{title}}”? Tätä ei voi kumota.",
+      "title": "Tallennetut harjoitukset",
+      "subtitle": "Jatka istuntoja ja käy kuunteluvirheesi läpi.",
+      "emptyTitle": "Ei tallennettuja istuntoja",
+      "emptyBody": "Lopeta tai keskeytä kuunteluistunto, niin se ilmestyy tähän.",
+      "continueEyebrow": "Jatka kuuntelua",
+      "percentComplete": "{{percent}} % valmis",
+      "continue": "Jatka",
+      "review": "Käy läpi",
+      "delete": "Poista istunto",
+      "deleteConfirm": "Poistetaanko ”{{title}}”? Tätä ei voi kumota.",
       "status": {
-        "draft": "1130|Luonnos",
-        "inProgress": "1131|Kesken",
-        "completed": "1132|Valmis"
+        "draft": "Luonnos",
+        "inProgress": "Kesken",
+        "completed": "Valmis"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "1133|Harjoittelutavat",
+    "sectionTitle": "Harjoittelutavat",
     "today": {
-      "title": "1134|Tämän päivän edistyminen",
-      "subtitle": "1135|puheharjoittelua"
+      "title": "Tämän päivän edistyminen",
+      "subtitle": "puheharjoittelua"
     },
     "menu": {
-      "comingSoon": "1136|Tulossa pian",
+      "comingSoon": "Tulossa pian",
       "conversation": {
-        "title": "1137|Tekoälykeskustelu",
-        "subtitle": "1138|Keskustele tekoälyopettajan kanssa reaaliajassa."
+        "title": "Tekoälykeskustelu",
+        "subtitle": "Keskustele tekoälyopettajan kanssa reaaliajassa."
       },
       "free": {
-        "title": "1139|Vapaa puhe",
-        "subtitle": "1140|Puhu luoduista aiheista ja saa palautetta."
+        "title": "Vapaa puhe",
+        "subtitle": "Puhu luoduista aiheista ja saa palautetta."
       },
       "picture": {
-        "title": "1141|Kuvaile kuva",
-        "subtitle": "1142|Kuvaile kuvia ja opi hyödyllistä sanastoa."
+        "title": "Kuvaile kuva",
+        "subtitle": "Kuvaile kuvia ja opi hyödyllistä sanastoa."
       },
       "debate": {
-        "title": "1143|Väittelytila",
-        "subtitle": "1144|Keskustele aiheista ja rakenna perustelusi."
+        "title": "Väittelytila",
+        "subtitle": "Keskustele aiheista ja rakenna perustelusi."
       },
       "shadowing": {
-        "title": "1145|Shadowing",
-        "subtitle": "1146|Toista fraaseja ja paranna ääntämistäsi."
+        "title": "Shadowing",
+        "subtitle": "Toista fraaseja ja paranna ääntämistäsi."
       },
       "pronunciation": {
-        "title": "1147|Ääntämisvalmentaja",
-        "subtitle": "1148|Keskity vaikeisiin äänteisiin ja sanoihin."
+        "title": "Ääntämisvalmentaja",
+        "subtitle": "Keskity vaikeisiin äänteisiin ja sanoihin."
       }
     },
     "input": {
-      "speak": "1149|Puhu",
-      "stop": "1150|Lopeta",
-      "listening": "1151|Kuunnellaan…",
-      "placeholder": "1152|Kirjoita vastauksesi…",
-      "noVoice": "1153|Tämä selain ei tue puhesyötettä — kirjoita vastauksesi."
+      "speak": "Puhu",
+      "stop": "Lopeta",
+      "listening": "Kuunnellaan…",
+      "placeholder": "Kirjoita vastauksesi…",
+      "noVoice": "Tämä selain ei tue puhesyötettä — kirjoita vastauksesi."
     },
     "conversation": {
-      "title": "1154|Tekoälykeskustelu",
-      "subtitle": "1155|Keskustele tekoälyopettajan kanssa reaaliajassa.",
-      "topic": "1156|Aihe",
-      "scenarios": "1157|Tilanteet",
-      "autoTopic": "1158|Yllätä minut",
-      "autoTopicHint": "1159|Luomme sinulle uuden aiheen.",
-      "length": "1160|Kesto",
-      "min": "1161|min",
-      "start": "1162|Aloita keskustelu",
-      "starting": "1163|Aloitetaan…",
-      "startError": "1164|Keskustelun aloitus ei onnistunut. Yritä uudelleen.",
-      "end": "1165|Lopeta",
-      "dismiss": "1166|Hylkää",
-      "hint": "1167|Vihje",
-      "getHint": "1168|Tarvitsetko vihjeen?",
-      "hintLoading": "1169|Mietitään…"
+      "title": "Tekoälykeskustelu",
+      "subtitle": "Keskustele tekoälyopettajan kanssa reaaliajassa.",
+      "topic": "Aihe",
+      "scenarios": "Tilanteet",
+      "autoTopic": "Yllätä minut",
+      "autoTopicHint": "Luomme sinulle uuden aiheen.",
+      "length": "Kesto",
+      "min": "min",
+      "start": "Aloita keskustelu",
+      "starting": "Aloitetaan…",
+      "startError": "Keskustelun aloitus ei onnistunut. Yritä uudelleen.",
+      "end": "Lopeta",
+      "dismiss": "Hylkää",
+      "hint": "Vihje",
+      "getHint": "Tarvitsetko vihjeen?",
+      "hintLoading": "Mietitään…"
     },
     "result": {
-      "title": "1170|Harjoitus valmis",
-      "generating": "1171|Analysoidaan puhettasi…",
-      "overall": "1172|Kokonaispisteet",
-      "corrections": "1173|Korjaukset",
-      "transcript": "1174|Litterointi",
-      "practiceAgain": "1175|Harjoittele uudelleen",
-      "back": "1176|Takaisin Puhumiseen"
+      "title": "Harjoitus valmis",
+      "generating": "Analysoidaan puhettasi…",
+      "overall": "Kokonaispisteet",
+      "corrections": "Korjaukset",
+      "transcript": "Litterointi",
+      "practiceAgain": "Harjoittele uudelleen",
+      "back": "Takaisin Puhumiseen"
     },
     "free": {
-      "title": "1177|Vapaa puhe",
-      "subtitle": "1178|Puhu vapaasti aiheesta ja saa palautetta.",
-      "preview": "1179|Esikatselu",
-      "autoTopic": "1180|Tekoälyn luoma aihe",
-      "autoTopicHint": "1181|Kun aloitat, valitsemme uuden aiheen: {{language}} · {{level}}.",
-      "auto": "1182|Automaattinen",
-      "start": "1183|Aloita Vapaa puhe",
-      "generating": "1184|Luodaan aihetta…",
-      "generatingHint": "1185|Etsimme jotain tasollesi sopivaa.",
-      "fallbackTopic": "1186|Aiheen luonti ei onnistunut. Käytämme vara-aihetta.",
-      "transcript": "1187|Litterointi",
-      "transcriptHint": "1188|Litterointisi ilmestyy tähän, kun puhut.",
-      "startSpeaking": "1189|Ala puhua"
+      "title": "Vapaa puhe",
+      "subtitle": "Puhu vapaasti aiheesta ja saa palautetta.",
+      "preview": "Esikatselu",
+      "autoTopic": "Tekoälyn luoma aihe",
+      "autoTopicHint": "Kun aloitat, valitsemme uuden aiheen: {{language}} · {{level}}.",
+      "auto": "Automaattinen",
+      "start": "Aloita Vapaa puhe",
+      "generating": "Luodaan aihetta…",
+      "generatingHint": "Etsimme jotain tasollesi sopivaa.",
+      "fallbackTopic": "Aiheen luonti ei onnistunut. Käytämme vara-aihetta.",
+      "transcript": "Litterointi",
+      "transcriptHint": "Litterointisi ilmestyy tähän, kun puhut.",
+      "startSpeaking": "Ala puhua"
     },
     "picture": {
-      "title": "1190|Kuvaile kuva",
-      "subtitle": "1191|Kuvaile, mitä näet, ja saa palautetta.",
-      "start": "1192|Aloita Kuvaile kuva",
-      "prompt": "1193|Kuvaile, mitä näet tässä kuvassa.",
-      "tryToMention": "1194|Yritä mainita:",
+      "title": "Kuvaile kuva",
+      "subtitle": "Kuvaile, mitä näet, ja saa palautetta.",
+      "start": "Aloita Kuvaile kuva",
+      "prompt": "Kuvaile, mitä näet tässä kuvassa.",
+      "tryToMention": "Yritä mainita:",
       "hints": {
-        "people": "1195|ihmiset",
-        "objects": "1196|esineet",
-        "actions": "1197|toiminnot",
-        "colors": "1198|värit",
-        "emotions": "1199|tunteet"
+        "people": "ihmiset",
+        "objects": "esineet",
+        "actions": "toiminnot",
+        "colors": "värit",
+        "emotions": "tunteet"
       },
-      "loading": "1200|Ladataan valokuvaa…",
-      "retry": "1201|Yritä uudelleen",
-      "newPhoto": "1202|Uusi valokuva",
-      "imageAlt": "1203|Kuvattava valokuva",
-      "photoBy": "1204|Kuva:",
-      "onUnsplash": "1205|Unsplashissa",
-      "startDescribing": "1206|Ala kuvailla"
+      "loading": "Ladataan valokuvaa…",
+      "retry": "Yritä uudelleen",
+      "newPhoto": "Uusi valokuva",
+      "imageAlt": "Kuvattava valokuva",
+      "photoBy": "Kuva:",
+      "onUnsplash": "Unsplashissa",
+      "startDescribing": "Ala kuvailla"
     },
     "debate": {
-      "title": "1207|Väittelytila",
-      "subtitle": "1208|Puolusta kantaasi tekoälyvastustajaa vastaan.",
-      "start": "1209|Aloita väittely",
-      "pickSide": "1210|Sinun puolesi",
-      "preparing": "1211|Valmistellaan väittelyn aihetta…",
-      "roundOf": "1212|Kierros {{current}} / {{total}} · {{label}}",
+      "title": "Väittelytila",
+      "subtitle": "Puolusta kantaasi tekoälyvastustajaa vastaan.",
+      "start": "Aloita väittely",
+      "pickSide": "Sinun puolesi",
+      "preparing": "Valmistellaan väittelyn aihetta…",
+      "roundOf": "Kierros {{current}} / {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "1213|Samaa mieltä",
-          "subtitle": "1214|Puolusta väitettä"
+          "title": "Samaa mieltä",
+          "subtitle": "Puolusta väitettä"
         },
         "disagree": {
-          "title": "1215|Eri mieltä",
-          "subtitle": "1216|Argumentoi sitä vastaan"
+          "title": "Eri mieltä",
+          "subtitle": "Argumentoi sitä vastaan"
         },
         "surprise": {
-          "title": "1217|Yllätä minut",
-          "subtitle": "1218|Valitsemme puolen puolestasi"
+          "title": "Yllätä minut",
+          "subtitle": "Valitsemme puolen puolestasi"
         }
       }
     },
     "practice": {
-      "listen": "1219|Kuuntele",
-      "playing": "1220|Toistetaan…",
-      "record": "1221|Nauhoita",
-      "stop": "1222|Lopeta",
-      "playMine": "1223|Toista omani",
-      "noRecording": "1224|Tämä selain ei tue nauhoitusta — voit silti kuunnella ja toistaa."
+      "listen": "Kuuntele",
+      "playing": "Toistetaan…",
+      "record": "Nauhoita",
+      "stop": "Lopeta",
+      "playMine": "Toista omani",
+      "noRecording": "Tämä selain ei tue nauhoitusta — voit silti kuunnella ja toistaa."
     },
     "shadowing": {
-      "title": "1225|Shadowing",
-      "subtitle": "1226|Kuuntele, toista ja vertaa itseäsi.",
-      "start": "1227|Aloita Shadowing",
-      "category": "1228|Kategoria",
-      "howItWorks": "1229|Kuuntele fraasi, toista se ääneen nauhoittaessasi, ja toista sitten oma versiosi ja vertaa rytmiä.",
-      "loading": "1230|Luodaan fraaseja…",
-      "phrase": "1231|Fraasi",
-      "previous": "1232|Edellinen",
-      "nextPhrase": "1233|Seuraava fraasi",
-      "finish": "1234|Lopeta",
-      "changeSettings": "1235|Vaihda asetuksia",
-      "done": "1236|{{count}} valmiina",
-      "allDone": "1237|Kaikki fraasit harjoiteltu!",
-      "newSet": "1238|Uusi setti"
+      "title": "Shadowing",
+      "subtitle": "Kuuntele, toista ja vertaa itseäsi.",
+      "start": "Aloita Shadowing",
+      "category": "Kategoria",
+      "howItWorks": "Kuuntele fraasi, toista se ääneen nauhoittaessasi, ja toista sitten oma versiosi ja vertaa rytmiä.",
+      "loading": "Luodaan fraaseja…",
+      "phrase": "Fraasi",
+      "previous": "Edellinen",
+      "nextPhrase": "Seuraava fraasi",
+      "finish": "Lopeta",
+      "changeSettings": "Vaihda asetuksia",
+      "done": "{{count}} valmiina",
+      "allDone": "Kaikki fraasit harjoiteltu!",
+      "newSet": "Uusi setti"
     },
     "pronunciation": {
-      "title": "1239|Ääntämisvalmentaja",
-      "subtitle": "1240|Keskity vaikeisiin äänteisiin ja sanoihin.",
-      "start": "1241|Aloita harjoittelu",
-      "focus": "1242|Painotus",
-      "difficulty": "1243|Vaikeustaso",
+      "title": "Ääntämisvalmentaja",
+      "subtitle": "Keskity vaikeisiin äänteisiin ja sanoihin.",
+      "start": "Aloita harjoittelu",
+      "focus": "Painotus",
+      "difficulty": "Vaikeustaso",
       "level": {
-        "easy": "1244|Helppo",
-        "balanced": "1245|Tasapainoinen",
-        "hard": "1246|Vaikea"
+        "easy": "Helppo",
+        "balanced": "Tasapainoinen",
+        "hard": "Vaikea"
       },
-      "loading": "1247|Luodaan harjoituksia…",
-      "sound": "1248|Äänne",
-      "scoringUnavailable": "1249|Automaattista ääntämisen arviointia ei ole vielä määritetty palvelimelle, joten pisteitä ei näytetä. Kuuntelu, nauhoitus ja toisto toimivat."
+      "loading": "Luodaan harjoituksia…",
+      "sound": "Äänne",
+      "scoringUnavailable": "Automaattista ääntämisen arviointia ei ole vielä määritetty palvelimelle, joten pisteitä ei näytetä. Kuuntelu, nauhoitus ja toisto toimivat."
     }
   },
   "profile": {
-    "interfaceLanguage": "1250|Käyttöliittymän kieli",
+    "interfaceLanguage": "Käyttöliittymän kieli",
     "password": {
-      "title": "1251|Luo salasana",
-      "body": "1252|Tilisi luotiin Googlella, joten sillä ei ole salasanaa — sähköposti- ja salasanakentät eivät kirjaa sinua sisään. Lisää salasana, niin molemmat tavat toimivat.",
-      "save": "1253|Tallenna salasana",
-      "saving": "1254|Tallennetaan...",
-      "savedInfo": "1255|Salasana luotu. Nyt voit kirjautua sisään myös sähköpostillasi."
+      "title": "Luo salasana",
+      "body": "Tilisi luotiin Googlella, joten sillä ei ole salasanaa — sähköposti- ja salasanakentät eivät kirjaa sinua sisään. Lisää salasana, niin molemmat tavat toimivat.",
+      "save": "Tallenna salasana",
+      "saving": "Tallennetaan...",
+      "savedInfo": "Salasana luotu. Nyt voit kirjautua sisään myös sähköpostillasi."
     }
   },
   "units": {
-    "min": "1256|min",
-    "words": "1257|sanaa"
+    "min": "min",
+    "words": "sanaa"
   },
   "link": {
-    "title": "1258|Kirjaudu linkillä",
-    "subtitle": "1259|Lähetämme sinulle kertakäyttöisen linkin sähköpostiin. Ei salasanaa muistettavaksi.",
-    "send": "1260|Lähetä linkki",
-    "sending": "1261|Lähetetään...",
-    "sentInfo": "1262|Linkki lähetetty. Tarkista sähköpostisi.",
-    "sentTitle": "1263|Tarkista sähköpostisi",
-    "sentBody": "1264|Lähetimme kirjautumislinkin osoitteeseen",
-    "useAnotherEmail": "1265|Käytä toista sähköpostia",
-    "backToPassword": "1266|Kirjaudu sen sijaan salasanalla"
+    "title": "Kirjaudu linkillä",
+    "subtitle": "Lähetämme sinulle kertakäyttöisen linkin sähköpostiin. Ei salasanaa muistettavaksi.",
+    "send": "Lähetä linkki",
+    "sending": "Lähetetään...",
+    "sentInfo": "Linkki lähetetty. Tarkista sähköpostisi.",
+    "sentTitle": "Tarkista sähköpostisi",
+    "sentBody": "Lähetimme kirjautumislinkin osoitteeseen",
+    "useAnotherEmail": "Käytä toista sähköpostia",
+    "backToPassword": "Kirjaudu sen sijaan salasanalla"
   },
   "action": {
-    "working": "1267|Hetkinen...",
-    "continue": "1268|Jatka",
-    "confirmEmailTitle": "1269|Vahvista sähköpostisi",
-    "confirmEmailBody": "1270|Tämä linkki avattiin toisessa selaimessa. Anna osoite, johon se lähetettiin, niin viimeistelemme kirjautumisen.",
-    "resetTitle": "1271|Uusi salasana",
-    "resetSubtitle": "1272|Valitse uusi salasana tunnukselle",
-    "newPassword": "1273|Uusi salasana",
-    "confirmPassword": "1274|Toista salasana",
-    "savePassword": "1275|Tallenna salasana",
-    "resetDoneTitle": "1276|Salasana päivitetty",
-    "resetDoneBody": "1277|Nyt voit kirjautua sisään uudella salasanallasi.",
-    "failedTitle": "1278|Tuo linkki ei toiminut",
-    "failedBody": "1279|Se on ehkä jo käytetty tai vanhentunut. Pyydä uusi kirjautumisnäytöltä.",
-    "backToSignIn": "1280|Takaisin kirjautumiseen"
+    "working": "Hetkinen...",
+    "continue": "Jatka",
+    "confirmEmailTitle": "Vahvista sähköpostisi",
+    "confirmEmailBody": "Tämä linkki avattiin toisessa selaimessa. Anna osoite, johon se lähetettiin, niin viimeistelemme kirjautumisen.",
+    "resetTitle": "Uusi salasana",
+    "resetSubtitle": "Valitse uusi salasana tunnukselle",
+    "newPassword": "Uusi salasana",
+    "confirmPassword": "Toista salasana",
+    "savePassword": "Tallenna salasana",
+    "resetDoneTitle": "Salasana päivitetty",
+    "resetDoneBody": "Nyt voit kirjautua sisään uudella salasanallasi.",
+    "failedTitle": "Tuo linkki ei toiminut",
+    "failedBody": "Se on ehkä jo käytetty tai vanhentunut. Pyydä uusi kirjautumisnäytöltä.",
+    "backToSignIn": "Takaisin kirjautumiseen"
   },
   "common": {
-    "cancel": "1281|Peruuta",
-    "delete": "1282|Poista",
+    "cancel": "Peruuta",
+    "delete": "Poista",
     "view": {
-      "label": "1283|Näkymä",
-      "rows": "1284|Lista",
-      "grid": "1285|Ruudukko"
+      "label": "Näkymä",
+      "rows": "Lista",
+      "grid": "Ruudukko"
     }
   },
   "practice": {
     "language": {
-      "label": "1286|Kieli",
-      "search": "1287|Hae kieltä",
-      "noMatch": "1288|Yksikään kieli ei vastaa hakua.",
-      "noVoice": "1289|Selaimessasi ei ole kielen {{language}} ääntä, joten opettaja ei puhu tätä kieltä. Lisää kielipaketti järjestelmän asetuksista tai valitse toinen kieli."
+      "label": "Kieli",
+      "search": "Hae kieltä",
+      "noMatch": "Yksikään kieli ei vastaa hakua.",
+      "noVoice": "Selaimessasi ei ole kielen {{language}} ääntä, joten opettaja ei puhu tätä kieltä. Lisää kielipaketti järjestelmän asetuksista tai valitse toinen kieli."
     }
   }
 }

@@ -1,1751 +1,1751 @@
 {
   "app": {
-    "name": "1|WordAround",
-    "tagline": "2|Učte sa jazyky aktívne."
+    "name": "WordAround",
+    "tagline": "Učte sa jazyky aktívne."
   },
   "onboarding": {
-    "subtitle": "3|Učte sa slovíčka zábavne\\na jednoducho",
-    "start": "4|Poďme na to"
+    "subtitle": "Učte sa slovíčka zábavne\\na jednoducho",
+    "start": "Poďme na to"
   },
   "auth": {
-    "welcomeBack": "5|Vitajte späť",
-    "subtitle": "6|Prihláste sa a pokračujte v učení",
-    "email": "7|E-mail",
-    "emailPlaceholder": "8|Zadajte svoj e-mail",
-    "password": "9|Heslo",
-    "passwordPlaceholder": "10|Zadajte svoje heslo",
-    "forgotPassword": "11|Zabudli ste heslo?",
-    "signIn": "12|Prihlásiť sa",
-    "signingIn": "13|Prihlasujeme...",
-    "signUp": "14|Zaregistrovať sa",
-    "signOut": "15|Odhlásiť sa",
-    "continueWithGoogle": "16|Pokračovať cez Google",
-    "createAccount": "17|Vytvoriť účet",
-    "accountCreatedInfo": "18|Účet vytvorený. Poslali sme overovací e-mail.",
-    "resetEmailSent": "19|E-mail na obnovu hesla odoslaný",
-    "showPassword": "20|Zobraziť heslo",
-    "hidePassword": "21|Skryť heslo",
-    "back": "22|Späť",
-    "signUpTitle": "23|Vytvorte si účet",
-    "signUpSubtitle": "24|Pár minút denne a vaša slovná zásoba rastie",
-    "name": "25|Meno",
-    "namePlaceholder": "26|Ako vás máme oslovovať?",
-    "orWithEmail": "27|alebo e-mailom",
-    "signUpWithGoogle": "28|Zaregistrovať sa cez Google",
-    "passwordHint": "29|Aspoň {{min}} znakov",
-    "magicLinkCta": "30|Prihlásiť sa odkazom z e-mailu",
-    "creatingAccount": "31|Vytvárame účet..."
+    "welcomeBack": "Vitajte späť",
+    "subtitle": "Prihláste sa a pokračujte v učení",
+    "email": "E-mail",
+    "emailPlaceholder": "Zadajte svoj e-mail",
+    "password": "Heslo",
+    "passwordPlaceholder": "Zadajte svoje heslo",
+    "forgotPassword": "Zabudli ste heslo?",
+    "signIn": "Prihlásiť sa",
+    "signingIn": "Prihlasujeme...",
+    "signUp": "Zaregistrovať sa",
+    "signOut": "Odhlásiť sa",
+    "continueWithGoogle": "Pokračovať cez Google",
+    "createAccount": "Vytvoriť účet",
+    "accountCreatedInfo": "Účet vytvorený. Poslali sme overovací e-mail.",
+    "resetEmailSent": "E-mail na obnovu hesla odoslaný",
+    "showPassword": "Zobraziť heslo",
+    "hidePassword": "Skryť heslo",
+    "back": "Späť",
+    "signUpTitle": "Vytvorte si účet",
+    "signUpSubtitle": "Pár minút denne a vaša slovná zásoba rastie",
+    "name": "Meno",
+    "namePlaceholder": "Ako vás máme oslovovať?",
+    "orWithEmail": "alebo e-mailom",
+    "signUpWithGoogle": "Zaregistrovať sa cez Google",
+    "passwordHint": "Aspoň {{min}} znakov",
+    "magicLinkCta": "Prihlásiť sa odkazom z e-mailu",
+    "creatingAccount": "Vytvárame účet..."
   },
   "verify": {
-    "title": "32|Overte svoj e-mail",
-    "subtitle": "33|Ešte jeden krok, než začnete",
-    "sentTo": "34|Overovací odkaz sme poslali na",
-    "fallbackEmail": "35|váš e-mail",
-    "step1": "36|Otvorte e-mail vo svojej schránke",
-    "step2": "37|Ťuknite na potvrdzovací odkaz",
-    "step3": "38|Hneď vám otvoríme učenie — sem sa vracať nemusíte",
-    "checkButton": "39|E-mail som overil(a)",
-    "checking": "40|Kontrolujeme...",
-    "resend": "41|Poslať e-mail znova",
-    "useAnotherAccount": "42|Použiť iný účet",
-    "badgeInbox": "43|Skontrolujte schránku",
-    "badgeConfirm": "44|Potvrďte",
-    "badgeDone": "45|Hotovo",
-    "resentInfo": "46|Overovací e-mail odoslaný znova",
-    "notVerifiedYet": "47|E-mail zatiaľ nie je overený"
+    "title": "Overte svoj e-mail",
+    "subtitle": "Ešte jeden krok, než začnete",
+    "sentTo": "Overovací odkaz sme poslali na",
+    "fallbackEmail": "váš e-mail",
+    "step1": "Otvorte e-mail vo svojej schránke",
+    "step2": "Ťuknite na potvrdzovací odkaz",
+    "step3": "Hneď vám otvoríme učenie — sem sa vracať nemusíte",
+    "checkButton": "E-mail som overil(a)",
+    "checking": "Kontrolujeme...",
+    "resend": "Poslať e-mail znova",
+    "useAnotherAccount": "Použiť iný účet",
+    "badgeInbox": "Skontrolujte schránku",
+    "badgeConfirm": "Potvrďte",
+    "badgeDone": "Hotovo",
+    "resentInfo": "Overovací e-mail odoslaný znova",
+    "notVerifiedYet": "E-mail zatiaľ nie je overený"
   },
   "errors": {
-    "emailRequired": "48|E-mail je povinný",
-    "emailInvalid": "49|Zadajte platný e-mail",
-    "emailFirst": "50|Najprv zadajte svoj e-mail",
-    "passwordRequired": "51|Heslo je povinné",
-    "passwordTooShort": "52|Heslo musí mať aspoň 8 znakov",
-    "invalidEmail": "53|Neplatný formát e-mailu",
-    "wrongPassword": "54|Nesprávny e-mail alebo heslo. Ak ste sa registrovali cez Google, použite tlačidlo Google.",
-    "userNotFound": "55|Nesprávny e-mail alebo heslo. Ak ste sa registrovali cez Google, použite tlačidlo Google.",
-    "invalidCredential": "56|Nesprávny e-mail alebo heslo. Ak ste sa registrovali cez Google, použite tlačidlo Google.",
-    "emailInUse": "57|Tento účet už existuje",
-    "weakPassword": "58|Toto heslo je príliš slabé",
-    "network": "59|Chyba siete. Skontrolujte pripojenie na internet",
-    "tooManyRequests": "60|Priveľa pokusov. Skúste to neskôr",
-    "differentCredential": "61|Tento e-mail sa už používa s iným spôsobom prihlásenia",
-    "noActiveAccount": "62|Nenašiel sa žiadny aktívny účet",
-    "default": "63|Prihlásenie zlyhalo. Skúste to prosím znova",
-    "nameRequired": "64|Meno je povinné",
-    "passwordsDoNotMatch": "65|Heslá sa nezhodujú",
-    "actionExpired": "66|Platnosť odkazu vypršala. Vyžiadajte si nový.",
-    "actionInvalid": "67|Tento odkaz už nie je platný.",
-    "userDisabled": "68|Tento účet bol zablokovaný.",
-    "requiresRecentLogin": "69|Z bezpečnostných dôvodov sa znova prihláste a zopakujte to.",
-    "passwordAlreadySet": "70|Tento účet už heslo má.",
-    "linkNoEmail": "71|Zadajte e-mail, na ktorý bol odkaz odoslaný"
+    "emailRequired": "E-mail je povinný",
+    "emailInvalid": "Zadajte platný e-mail",
+    "emailFirst": "Najprv zadajte svoj e-mail",
+    "passwordRequired": "Heslo je povinné",
+    "passwordTooShort": "Heslo musí mať aspoň 8 znakov",
+    "invalidEmail": "Neplatný formát e-mailu",
+    "wrongPassword": "Nesprávny e-mail alebo heslo. Ak ste sa registrovali cez Google, použite tlačidlo Google.",
+    "userNotFound": "Nesprávny e-mail alebo heslo. Ak ste sa registrovali cez Google, použite tlačidlo Google.",
+    "invalidCredential": "Nesprávny e-mail alebo heslo. Ak ste sa registrovali cez Google, použite tlačidlo Google.",
+    "emailInUse": "Tento účet už existuje",
+    "weakPassword": "Toto heslo je príliš slabé",
+    "network": "Chyba siete. Skontrolujte pripojenie na internet",
+    "tooManyRequests": "Priveľa pokusov. Skúste to neskôr",
+    "differentCredential": "Tento e-mail sa už používa s iným spôsobom prihlásenia",
+    "noActiveAccount": "Nenašiel sa žiadny aktívny účet",
+    "default": "Prihlásenie zlyhalo. Skúste to prosím znova",
+    "nameRequired": "Meno je povinné",
+    "passwordsDoNotMatch": "Heslá sa nezhodujú",
+    "actionExpired": "Platnosť odkazu vypršala. Vyžiadajte si nový.",
+    "actionInvalid": "Tento odkaz už nie je platný.",
+    "userDisabled": "Tento účet bol zablokovaný.",
+    "requiresRecentLogin": "Z bezpečnostných dôvodov sa znova prihláste a zopakujte to.",
+    "passwordAlreadySet": "Tento účet už heslo má.",
+    "linkNoEmail": "Zadajte e-mail, na ktorý bol odkaz odoslaný"
   },
   "nav": {
-    "home": "72|Domov",
-    "speaking": "73|Hovorenie",
-    "listening": "74|Počúvanie",
-    "reading": "75|Čítanie",
-    "writing": "76|Písanie",
-    "folders": "77|Priečinky",
-    "sets": "78|Sady",
-    "notes": "79|Poznámky",
-    "profile": "80|Profil",
-    "create": "81|Vytvoriť",
-    "menu": "82|Menu",
-    "closeMenu": "83|Zavrieť menu",
+    "home": "Domov",
+    "speaking": "Hovorenie",
+    "listening": "Počúvanie",
+    "reading": "Čítanie",
+    "writing": "Písanie",
+    "folders": "Priečinky",
+    "sets": "Sady",
+    "notes": "Poznámky",
+    "profile": "Profil",
+    "create": "Vytvoriť",
+    "menu": "Menu",
+    "closeMenu": "Zavrieť menu",
     "group": {
-      "practice": "84|Precvičovanie",
-      "library": "85|Knižnica"
+      "practice": "Precvičovanie",
+      "library": "Knižnica"
     }
   },
   "folders": {
-    "create": "86|Vytvoriť priečinok",
-    "loading": "87|Načítavame priečinky…",
-    "loadError": "88|Nepodarilo sa načítať vaše priečinky.",
-    "emptyTitle": "89|Zatiaľ žiadne priečinky",
-    "emptyBody": "90|Vytvorte prvý priečinok a usporiadajte si sady.",
-    "setCount": "91|{{count}} sád",
-    "setCount_one": "92|{{count}} sada",
-    "newTitle": "93|Nový priečinok",
-    "newSubtitle": "94|Dajte súvisiace sady dokopy.",
-    "editTitle": "95|Upraviť priečinok",
-    "name": "96|Názov",
-    "namePlaceholder": "97|napr. Cestovanie",
-    "description": "98|Popis",
-    "descriptionPlaceholder": "99|Nepovinné",
-    "color": "100|Farba",
-    "save": "101|Uložiť",
-    "saving": "102|Ukladáme…",
-    "cancel": "103|Zrušiť",
-    "edit": "104|Upraviť priečinok",
-    "delete": "105|Vymazať priečinok",
-    "deleteConfirm": "106|Vymazať „{{title}}“? Túto akciu nemožno vrátiť späť.",
-    "backToFolders": "107|Späť na priečinky",
-    "notFoundTitle": "108|Priečinok sa nenašiel",
-    "notFoundBody": "109|Tento priečinok mohol byť vymazaný.",
-    "noSetsInFolder": "110|V tomto priečinku zatiaľ nie sú žiadne sady.",
-    "saveError": "111|Nepodarilo sa uložiť. Skúste to prosím znova.",
+    "create": "Vytvoriť priečinok",
+    "loading": "Načítavame priečinky…",
+    "loadError": "Nepodarilo sa načítať vaše priečinky.",
+    "emptyTitle": "Zatiaľ žiadne priečinky",
+    "emptyBody": "Vytvorte prvý priečinok a usporiadajte si sady.",
+    "setCount": "{{count}} sád",
+    "setCount_one": "{{count}} sada",
+    "newTitle": "Nový priečinok",
+    "newSubtitle": "Dajte súvisiace sady dokopy.",
+    "editTitle": "Upraviť priečinok",
+    "name": "Názov",
+    "namePlaceholder": "napr. Cestovanie",
+    "description": "Popis",
+    "descriptionPlaceholder": "Nepovinné",
+    "color": "Farba",
+    "save": "Uložiť",
+    "saving": "Ukladáme…",
+    "cancel": "Zrušiť",
+    "edit": "Upraviť priečinok",
+    "delete": "Vymazať priečinok",
+    "deleteConfirm": "Vymazať „{{title}}“? Túto akciu nemožno vrátiť späť.",
+    "backToFolders": "Späť na priečinky",
+    "notFoundTitle": "Priečinok sa nenašiel",
+    "notFoundBody": "Tento priečinok mohol byť vymazaný.",
+    "noSetsInFolder": "V tomto priečinku zatiaľ nie sú žiadne sady.",
+    "saveError": "Nepodarilo sa uložiť. Skúste to prosím znova.",
     "error": {
-      "nameRequired": "112|Názov priečinka je povinný.",
-      "nameTooLong": "113|Názov priečinka musí mať menej ako 80 znakov.",
-      "descTooLong": "114|Popis musí mať menej ako 120 znakov."
+      "nameRequired": "Názov priečinka je povinný.",
+      "nameTooLong": "Názov priečinka musí mať menej ako 80 znakov.",
+      "descTooLong": "Popis musí mať menej ako 120 znakov."
     },
-    "optional": "115|(nepovinné)",
-    "preview": "116|Náhľad",
-    "previewPlaceholder": "117|Nový priečinok",
-    "deleteConfirmTitle": "118|Vymazať tento priečinok?",
+    "optional": "(nepovinné)",
+    "preview": "Náhľad",
+    "previewPlaceholder": "Nový priečinok",
+    "deleteConfirmTitle": "Vymazať tento priečinok?",
     "setCount_few": "{{count}} sady",
     "setCount_other": "{{count}} sád"
   },
   "sets": {
-    "create": "119|Vytvoriť sadu",
-    "loading": "120|Načítavame sady…",
-    "loadError": "121|Nepodarilo sa načítať vaše sady.",
-    "emptyTitle": "122|Zatiaľ žiadne sady",
-    "emptyBody": "123|Vytvorte prvú sadu kartičiek tlačidlom Vytvoriť.",
-    "cardCount": "124|{{count}} kartičiek",
-    "cardCount_one": "125|{{count}} kartička",
-    "keepPracticing": "126|Pokračujte v precvičovaní",
-    "delete": "127|Vymazať sadu",
-    "deleteConfirm": "128|Vymazať „{{title}}“? Túto akciu nemožno vrátiť späť.",
-    "notFoundTitle": "129|Sada sa nenašla",
-    "notFoundBody": "130|Táto sada mohla byť vymazaná.",
-    "backToSets": "131|Späť na sady",
-    "edit": "132|Upraviť sadu",
-    "deleteConfirmTitle": "133|Vymazať túto sadu?",
-    "editTitle": "134|Upraviť sadu",
-    "editSubtitle": "135|Zmeňte názov, farbu, ikonu alebo priečinok. Kartičky zostanú tam, kde sú.",
-    "save": "136|Uložiť zmeny",
-    "saving": "137|Ukladáme…",
-    "cancel": "138|Zrušiť",
-    "saveError": "139|Nepodarilo sa uložiť. Skúste to prosím znova.",
+    "create": "Vytvoriť sadu",
+    "loading": "Načítavame sady…",
+    "loadError": "Nepodarilo sa načítať vaše sady.",
+    "emptyTitle": "Zatiaľ žiadne sady",
+    "emptyBody": "Vytvorte prvú sadu kartičiek tlačidlom Vytvoriť.",
+    "cardCount": "{{count}} kartičiek",
+    "cardCount_one": "{{count}} kartička",
+    "keepPracticing": "Pokračujte v precvičovaní",
+    "delete": "Vymazať sadu",
+    "deleteConfirm": "Vymazať „{{title}}“? Túto akciu nemožno vrátiť späť.",
+    "notFoundTitle": "Sada sa nenašla",
+    "notFoundBody": "Táto sada mohla byť vymazaná.",
+    "backToSets": "Späť na sady",
+    "edit": "Upraviť sadu",
+    "deleteConfirmTitle": "Vymazať túto sadu?",
+    "editTitle": "Upraviť sadu",
+    "editSubtitle": "Zmeňte názov, farbu, ikonu alebo priečinok. Kartičky zostanú tam, kde sú.",
+    "save": "Uložiť zmeny",
+    "saving": "Ukladáme…",
+    "cancel": "Zrušiť",
+    "saveError": "Nepodarilo sa uložiť. Skúste to prosím znova.",
     "cardCount_few": "{{count}} kartičky",
     "cardCount_other": "{{count}} kartičiek"
   },
   "createSet": {
-    "title": "140|Nová sada",
-    "subtitle": "141|Pridajte slovíčka a upravte si sadu.",
-    "infoSection": "142|Info o sade",
-    "setTitle": "143|Názov",
-    "setTitlePlaceholder": "144|napr. Základy na cesty",
-    "setDescription": "145|Popis",
-    "setDescriptionPlaceholder": "146|Nepovinné",
-    "privacy": "147|Súkromie",
-    "private": "148|Súkromná",
-    "public": "149|Verejná",
-    "cardsSection": "150|Kartičky",
-    "addCard": "151|Pridať kartičku",
-    "cardN": "152|Kartička {{n}}",
-    "removeCard": "153|Odobrať kartičku",
-    "word": "154|Slovo",
-    "translation": "155|Preklad",
-    "example": "156|Príklad (nepovinné)",
-    "addImage": "157|Pridať obrázok",
-    "removeImage": "158|Odobrať obrázok",
-    "customizeSection": "159|Vzhľad",
-    "color": "160|Farba",
-    "icon": "161|Ikona",
-    "folder": "162|Priečinok",
-    "noFolder": "163|Bez priečinka",
-    "previewSection": "164|Náhľad",
-    "previewPlaceholder": "165|Názov sady",
-    "save": "166|Vytvoriť sadu",
-    "saving": "167|Ukladáme…",
-    "cancel": "168|Zrušiť",
-    "saveError": "169|Nepodarilo sa uložiť. Skúste to prosím znova.",
+    "title": "Nová sada",
+    "subtitle": "Pridajte slovíčka a upravte si sadu.",
+    "infoSection": "Info o sade",
+    "setTitle": "Názov",
+    "setTitlePlaceholder": "napr. Základy na cesty",
+    "setDescription": "Popis",
+    "setDescriptionPlaceholder": "Nepovinné",
+    "privacy": "Súkromie",
+    "private": "Súkromná",
+    "public": "Verejná",
+    "cardsSection": "Kartičky",
+    "addCard": "Pridať kartičku",
+    "cardN": "Kartička {{n}}",
+    "removeCard": "Odobrať kartičku",
+    "word": "Slovo",
+    "translation": "Preklad",
+    "example": "Príklad (nepovinné)",
+    "addImage": "Pridať obrázok",
+    "removeImage": "Odobrať obrázok",
+    "customizeSection": "Vzhľad",
+    "color": "Farba",
+    "icon": "Ikona",
+    "folder": "Priečinok",
+    "noFolder": "Bez priečinka",
+    "previewSection": "Náhľad",
+    "previewPlaceholder": "Názov sady",
+    "save": "Vytvoriť sadu",
+    "saving": "Ukladáme…",
+    "cancel": "Zrušiť",
+    "saveError": "Nepodarilo sa uložiť. Skúste to prosím znova.",
     "error": {
-      "emptyTitle": "170|Názov sady je povinný.",
-      "titleTooLong": "171|Názov sady musí mať menej ako 150 znakov.",
-      "descTooLong": "172|Popis musí mať menej ako 200 znakov.",
-      "noValidCards": "173|Pridajte aspoň jednu kartičku so slovom a prekladom.",
-      "exampleTooLong": "174|Príklady na kartičkách musia mať menej ako 150 znakov."
+      "emptyTitle": "Názov sady je povinný.",
+      "titleTooLong": "Názov sady musí mať menej ako 150 znakov.",
+      "descTooLong": "Popis musí mať menej ako 200 znakov.",
+      "noValidCards": "Pridajte aspoň jednu kartičku so slovom a prekladom.",
+      "exampleTooLong": "Príklady na kartičkách musia mať menej ako 150 znakov."
     },
-    "imageTimeout": "175|Nahrávanie obrázka vypršalo. Skontrolujte pripojenie a skúste to znova.",
+    "imageTimeout": "Nahrávanie obrázka vypršalo. Skontrolujte pripojenie a skúste to znova.",
     "import": {
-      "button": "176|Import",
-      "title": "177|Import kartičiek",
-      "subtitle": "178|Skopírujte a vložte svoje údaje — z Wordu, Excelu, Google Docs a podobne.",
-      "close": "179|Zavrieť import",
-      "dataSection": "180|Vaše údaje",
-      "placeholder": "181|Slovo 1\\tDefinícia 1\\nSlovo 2\\tDefinícia 2\\nSlovo 3\\tDefinícia 3",
-      "separatorsSection": "182|Oddeľovače",
-      "betweenTermAndDefinition": "183|Medzi slovom a prekladom",
-      "betweenCards": "184|Medzi kartičkami",
-      "tab": "185|Tabulátor",
-      "comma": "186|Čiarka",
-      "newline": "187|Nový riadok",
-      "semicolon": "188|Bodkočiarka",
-      "custom": "189|Vlastný",
-      "customPlaceholder": "190|napr. —",
-      "previewSection": "191|Náhľad",
-      "previewEmpty": "192|Zatiaľ nie je čo zobraziť.",
-      "noDefinition": "193|Bez prekladu",
-      "confirm": "194|Pridať kartičky"
+      "button": "Import",
+      "title": "Import kartičiek",
+      "subtitle": "Skopírujte a vložte svoje údaje — z Wordu, Excelu, Google Docs a podobne.",
+      "close": "Zavrieť import",
+      "dataSection": "Vaše údaje",
+      "placeholder": "Slovo 1\\tDefinícia 1\\nSlovo 2\\tDefinícia 2\\nSlovo 3\\tDefinícia 3",
+      "separatorsSection": "Oddeľovače",
+      "betweenTermAndDefinition": "Medzi slovom a prekladom",
+      "betweenCards": "Medzi kartičkami",
+      "tab": "Tabulátor",
+      "comma": "Čiarka",
+      "newline": "Nový riadok",
+      "semicolon": "Bodkočiarka",
+      "custom": "Vlastný",
+      "customPlaceholder": "napr. —",
+      "previewSection": "Náhľad",
+      "previewEmpty": "Zatiaľ nie je čo zobraziť.",
+      "noDefinition": "Bez prekladu",
+      "confirm": "Pridať kartičky"
     },
     "iconPicker": {
-      "open": "195|Viac ikon",
-      "title": "196|Vyberte ikonu",
-      "search": "197|Hľadať symbol",
-      "close": "198|Zavrieť",
-      "empty": "199|Tomuto názvu nezodpovedá žiadna ikona."
+      "open": "Viac ikon",
+      "title": "Vyberte ikonu",
+      "search": "Hľadať symbol",
+      "close": "Zavrieť",
+      "empty": "Tomuto názvu nezodpovedá žiadna ikona."
     },
     "iconGroup": {
-      "learning": "200|Učenie",
-      "languages": "201|Jazyky",
-      "nature": "202|Príroda",
-      "health": "203|Zdravie",
-      "food": "204|Jedlo",
-      "travel": "205|Cestovanie",
-      "work": "206|Práca",
-      "tech": "207|Technika",
-      "creativity": "208|Tvorivosť",
-      "general": "209|Všeobecné"
+      "learning": "Učenie",
+      "languages": "Jazyky",
+      "nature": "Príroda",
+      "health": "Zdravie",
+      "food": "Jedlo",
+      "travel": "Cestovanie",
+      "work": "Práca",
+      "tech": "Technika",
+      "creativity": "Tvorivosť",
+      "general": "Všeobecné"
     }
   },
   "home": {
     "title": {
-      "flashcards": "210|Kartičky",
-      "folders": "211|Priečinky",
-      "sets": "212|Sady",
-      "create": "213|Vytvoriť",
-      "profile": "214|Profil",
-      "speaking": "215|Hovorenie",
-      "listening": "216|Počúvanie",
-      "reading": "217|Čítanie",
-      "writing": "218|Písanie"
+      "flashcards": "Kartičky",
+      "folders": "Priečinky",
+      "sets": "Sady",
+      "create": "Vytvoriť",
+      "profile": "Profil",
+      "speaking": "Hovorenie",
+      "listening": "Počúvanie",
+      "reading": "Čítanie",
+      "writing": "Písanie"
     },
     "subtitle": {
-      "pickSet": "219|Vyberte sadu na precvičovanie",
-      "folders": "220|Spravujte svoje priečinky",
-      "sets": "221|Spravujte svoje sady kartičiek",
-      "create": "222|Vytvorte novú študijnú sadu",
-      "speaking": "223|Precvičujte hovorenie.",
-      "listening": "224|Trénujte ucho, aby jazyku rozumelo prirodzene.",
-      "reading": "225|Čítajte a opakujte materiály v jazyku.",
-      "writing": "226|Precvičujte jazyk aktívne."
+      "pickSet": "Vyberte sadu na precvičovanie",
+      "folders": "Spravujte svoje priečinky",
+      "sets": "Spravujte svoje sady kartičiek",
+      "create": "Vytvorte novú študijnú sadu",
+      "speaking": "Precvičujte hovorenie.",
+      "listening": "Trénujte ucho, aby jazyku rozumelo prirodzene.",
+      "reading": "Čítajte a opakujte materiály v jazyku.",
+      "writing": "Precvičujte jazyk aktívne."
     },
     "category": {
-      "speaking": "227|HOVORENIE",
-      "listening": "228|POČÚVANIE",
-      "reading": "229|ČÍTANIE",
-      "writing": "230|PÍSANIE"
+      "speaking": "HOVORENIE",
+      "listening": "POČÚVANIE",
+      "reading": "ČÍTANIE",
+      "writing": "PÍSANIE"
     },
     "todayGoal": {
-      "title": "231|Dnešný cieľ",
-      "left": "232|Zostáva {{count}} slov"
+      "title": "Dnešný cieľ",
+      "left": "Zostáva {{count}} slov"
     },
     "stat": {
-      "learnedToday": "233|Naučené dnes",
-      "words": "234|slov",
-      "accuracy": "235|Presnosť",
-      "greatJob": "236|Skvelá práca!",
-      "streak": "237|Séria",
-      "days": "238|dní"
+      "learnedToday": "Naučené dnes",
+      "words": "slov",
+      "accuracy": "Presnosť",
+      "greatJob": "Skvelá práca!",
+      "streak": "Séria",
+      "days": "dní"
     },
-    "continueLearning": "239|Pokračovať v učení",
-    "yourSets": "240|Vaše sady",
-    "viewAll": "241|Zobraziť všetko",
-    "review": "242|Opakovať",
+    "continueLearning": "Pokračovať v učení",
+    "yourSets": "Vaše sady",
+    "viewAll": "Zobraziť všetko",
+    "review": "Opakovať",
     "sets": {
-      "emptyTitle": "243|Zatiaľ žiadne sady",
-      "emptyBody": "244|Vytvorte prvú sadu kartičiek tlačidlom Vytvoriť."
+      "emptyTitle": "Zatiaľ žiadne sady",
+      "emptyBody": "Vytvorte prvú sadu kartičiek tlačidlom Vytvoriť."
     },
     "create": {
-      "folder": "245|Priečinok",
-      "set": "246|Sada",
-      "text": "247|Text",
-      "audio": "248|Audio",
-      "essay": "249|Esej"
+      "folder": "Priečinok",
+      "set": "Sada",
+      "text": "Text",
+      "audio": "Audio",
+      "essay": "Esej"
     },
     "placeholder": {
-      "comingSoon": "250|{{title}} — už čoskoro"
+      "comingSoon": "{{title}} — už čoskoro"
     },
     "progress": {
       "subtitle": {
-        "speaking": "251|precvičovania hovorenia",
-        "listening": "252|precvičovania počúvania",
-        "reading": "253|precvičovania čítania",
-        "writing": "254|precvičovania písania"
+        "speaking": "precvičovania hovorenia",
+        "listening": "precvičovania počúvania",
+        "reading": "precvičovania čítania",
+        "writing": "precvičovania písania"
       }
     },
     "dailyGoal": {
-      "title": "255|Váš dnešný cieľ",
-      "body": "256|Vyberte, čo chcete dnes precvičovať — kartička nižšie sa do toho počíta.",
-      "chosenBody": "257|O tomto je dnešný deň.",
-      "howMuch": "258|Koľko?",
-      "change": "259|Zmeniť"
+      "title": "Váš dnešný cieľ",
+      "body": "Vyberte, čo chcete dnes precvičovať — kartička nižšie sa do toho počíta.",
+      "chosenBody": "O tomto je dnešný deň.",
+      "howMuch": "Koľko?",
+      "change": "Zmeniť"
     },
     "lastNote": {
-      "title": "260|Naposledy prečítaná poznámka"
+      "title": "Naposledy prečítaná poznámka"
     }
   },
   "categories": {
-    "speaking": "261|Hovorenie",
-    "listening": "262|Počúvanie",
-    "reading": "263|Čítanie",
-    "writing": "264|Písanie"
+    "speaking": "Hovorenie",
+    "listening": "Počúvanie",
+    "reading": "Čítanie",
+    "writing": "Písanie"
   },
   "phase0": {
-    "title": "265|WordAround",
-    "subtitle": "266|Fáza 0 beží. Dizajnové tokeny načítané, Firebase pripojený."
+    "title": "WordAround",
+    "subtitle": "Fáza 0 beží. Dizajnové tokeny načítané, Firebase pripojený."
   },
   "study": {
-    "flip": "267|Otočiť",
-    "known": "268|Vedel(a) som",
-    "unknown": "269|Ešte sa učím",
-    "mastered": "270|Zvládnuté",
-    "shuffle": "271|Zamiešať",
-    "trackProgress": "272|Sledovať pokrok",
-    "speak": "273|Vysloviť",
-    "roundDone": "274|Kolo dokončené",
-    "knewCount": "275|Vedeli ste {{known}} z {{total}}",
-    "repeatUnknown": "276|Zopakovať {{count}} neznámych",
-    "restart": "277|Začať odznova",
+    "flip": "Otočiť",
+    "known": "Vedel(a) som",
+    "unknown": "Ešte sa učím",
+    "mastered": "Zvládnuté",
+    "shuffle": "Zamiešať",
+    "trackProgress": "Sledovať pokrok",
+    "speak": "Vysloviť",
+    "roundDone": "Kolo dokončené",
+    "knewCount": "Vedeli ste {{known}} z {{total}}",
+    "repeatUnknown": "Zopakovať {{count}} neznámych",
+    "restart": "Začať odznova",
     "filter": {
-      "all": "278|Všetko",
-      "studied": "279|Naučené",
-      "remaining": "280|Zostávajúce",
-      "mastered": "281|Zvládnuté"
+      "all": "Všetko",
+      "studied": "Naučené",
+      "remaining": "Zostávajúce",
+      "mastered": "Zvládnuté"
     },
-    "addCard": "282|Pridať kartičku",
-    "editCard": "283|Upraviť kartičku",
-    "deleteCard": "284|Vymazať kartičku",
-    "deleteCardConfirm": "285|Vymazať túto kartičku?",
-    "emptyPrompt": "286|Táto sada zatiaľ nemá kartičky. Pridajte prvú.",
-    "save": "287|Uložiť",
-    "cancel": "288|Zrušiť"
+    "addCard": "Pridať kartičku",
+    "editCard": "Upraviť kartičku",
+    "deleteCard": "Vymazať kartičku",
+    "deleteCardConfirm": "Vymazať túto kartičku?",
+    "emptyPrompt": "Táto sada zatiaľ nemá kartičky. Pridajte prvú.",
+    "save": "Uložiť",
+    "cancel": "Zrušiť"
   },
   "writing": {
     "today": {
-      "title": "289|Dnešný pokrok",
-      "unit": "290|slov",
-      "subtitle": "291|precvičovania písania"
+      "title": "Dnešný pokrok",
+      "unit": "slov",
+      "subtitle": "precvičovania písania"
     },
-    "sectionTitle": "292|Režimy precvičovania",
+    "sectionTitle": "Režimy precvičovania",
     "menu": {
       "writeFromSets": {
-        "title": "293|Písanie zo sád",
-        "subtitle": "294|Precvičte si pravopis a písanie slov z vašich sád."
+        "title": "Písanie zo sád",
+        "subtitle": "Precvičte si pravopis a písanie slov z vašich sád."
       },
       "essays": {
-        "title": "295|Eseje",
-        "subtitle": "296|Píšte texty a získajte spätnú väzbu AI ku gramatike a štýlu."
+        "title": "Eseje",
+        "subtitle": "Píšte texty a získajte spätnú väzbu AI ku gramatike a štýlu."
       },
-      "comingSoon": "297|Už čoskoro"
+      "comingSoon": "Už čoskoro"
     },
     "setSelection": {
-      "title": "298|Vyberte sadu",
+      "title": "Vyberte sadu",
       "empty": {
-        "title": "299|Žiadne sady so slovami",
-        "subtitle": "300|Než začnete precvičovať písanie, vytvorte sadu aspoň s jednou kartičkou."
+        "title": "Žiadne sady so slovami",
+        "subtitle": "Než začnete precvičovať písanie, vytvorte sadu aspoň s jednou kartičkou."
       },
-      "wordsCount": "301|{{count}} slov",
-      "wordsCount_one": "302|{{count}} slovo",
-      "close": "303|Zavrieť",
+      "wordsCount": "{{count}} slov",
+      "wordsCount_one": "{{count}} slovo",
+      "close": "Zavrieť",
       "wordsCount_few": "{{count}} slová",
       "wordsCount_other": "{{count}} slov"
     },
     "writeWords": {
-      "title": "304|Písanie zo sád",
-      "subtitle": "305|Napíšte preklad a stlačte Enter.",
-      "translateHint": "306|Preložte do svojho jazyka",
-      "hint": "307|Pomôcka",
-      "skip": "308|Preskočiť",
-      "submit": "309|Skontrolovať",
-      "inputPlaceholder": "310|Píšte sem…",
-      "loading": "311|Načítavame sadu…",
-      "loadError": "312|Nepodarilo sa načítať túto sadu.",
-      "noCards": "313|Táto sada nemá kartičky.",
-      "back": "314|Späť",
+      "title": "Písanie zo sád",
+      "subtitle": "Napíšte preklad a stlačte Enter.",
+      "translateHint": "Preložte do svojho jazyka",
+      "hint": "Pomôcka",
+      "skip": "Preskočiť",
+      "submit": "Skontrolovať",
+      "inputPlaceholder": "Píšte sem…",
+      "loading": "Načítavame sadu…",
+      "loadError": "Nepodarilo sa načítať túto sadu.",
+      "noCards": "Táto sada nemá kartičky.",
+      "back": "Späť",
       "settings": {
-        "title": "315|Nastavenia",
-        "trainingMode": "316|Režim tréningu",
-        "difficulty": "317|Náročnosť"
+        "title": "Nastavenia",
+        "trainingMode": "Režim tréningu",
+        "difficulty": "Náročnosť"
       },
       "mode": {
-        "wordToTranslation": "318|Slovo → Preklad",
-        "translationToWord": "319|Preklad → Slovo"
+        "wordToTranslation": "Slovo → Preklad",
+        "translationToWord": "Preklad → Slovo"
       },
       "difficulty": {
-        "easy": "320|Ľahká",
-        "medium": "321|Stredná",
-        "hard": "322|Ťažká",
-        "easyDesc": "323|Neobmedzené pomôcky, neobmedzené preskoky",
-        "mediumDesc": "324|1 písmeno pomôcky, max. 25 % preskokov",
-        "hardDesc": "325|Bez pomôcok, bez preskokov, na čas"
+        "easy": "Ľahká",
+        "medium": "Stredná",
+        "hard": "Ťažká",
+        "easyDesc": "Neobmedzené pomôcky, neobmedzené preskoky",
+        "mediumDesc": "1 písmeno pomôcky, max. 25 % preskokov",
+        "hardDesc": "Bez pomôcok, bez preskokov, na čas"
       },
       "translatePrompt": {
-        "word": "326|Preložte do svojho jazyka",
-        "translation": "327|Napíšte pôvodné slovo"
+        "word": "Preložte do svojho jazyka",
+        "translation": "Napíšte pôvodné slovo"
       },
-      "skipsLeft_one": "328|Zostáva {{count}} preskok",
-      "skipsLeft_other": "329|Zostáva {{count}} preskokov",
-      "seconds": "330|{{count}} s",
+      "skipsLeft_one": "Zostáva {{count}} preskok",
+      "skipsLeft_other": "Zostáva {{count}} preskokov",
+      "seconds": "{{count}} s",
       "result": {
         "win": {
-          "title": "331|Kolo dokončené!",
-          "subtitle": "332|Skvelá práca. Toto kolo písania máte za sebou."
+          "title": "Kolo dokončené!",
+          "subtitle": "Skvelá práca. Toto kolo písania máte za sebou."
         },
         "timeout": {
-          "title": "333|Čas vypršal",
-          "subtitle": "334|Časomiera ťažkého režimu došla na nulu. Skúste to znova od prvého slova."
+          "title": "Čas vypršal",
+          "subtitle": "Časomiera ťažkého režimu došla na nulu. Skúste to znova od prvého slova."
         },
         "wrong": {
-          "title": "335|Zlá odpoveď",
-          "subtitle": "336|V ťažkom režime jedna chyba ukončí kolo."
+          "title": "Zlá odpoveď",
+          "subtitle": "V ťažkom režime jedna chyba ukončí kolo."
         },
-        "perfectTitle": "337|Dokonalé kolo!",
-        "perfectBody": "338|Zvládli ste ťažký režim bez chyby. Bez preskokov. Bez pomôcok. Čistá zručnosť.",
-        "totalWords": "339|Slov celkovo",
-        "completedWords": "340|Dokončené slová",
-        "skippedWords": "341|Preskočené slová",
-        "hintsUsed": "342|Použité pomôcky",
-        "streak": "343|Séria",
-        "difficultyLabel": "344|Náročnosť",
-        "word": "345|Slovo",
-        "yourAnswer": "346|Vaša odpoveď",
-        "correctAnswer": "347|Správna odpoveď",
-        "tryAgain": "348|Skúsiť znova"
+        "perfectTitle": "Dokonalé kolo!",
+        "perfectBody": "Zvládli ste ťažký režim bez chyby. Bez preskokov. Bez pomôcok. Čistá zručnosť.",
+        "totalWords": "Slov celkovo",
+        "completedWords": "Dokončené slová",
+        "skippedWords": "Preskočené slová",
+        "hintsUsed": "Použité pomôcky",
+        "streak": "Séria",
+        "difficultyLabel": "Náročnosť",
+        "word": "Slovo",
+        "yourAnswer": "Vaša odpoveď",
+        "correctAnswer": "Správna odpoveď",
+        "tryAgain": "Skúsiť znova"
       },
       "skipsLeft_few": "Zostávajú {{count}} preskoky"
     },
     "essays": {
-      "title": "349|Eseje",
-      "subtitle": "350|Tému vyberá AI. Napíšte text a potom dostanete spätnú väzbu.",
+      "title": "Eseje",
+      "subtitle": "Tému vyberá AI. Napíšte text a potom dostanete spätnú väzbu.",
       "mode": {
-        "suggested": "351|Navrhnutá",
-        "custom": "352|Moja téma"
+        "suggested": "Navrhnutá",
+        "custom": "Moja téma"
       },
       "custom": {
-        "placeholder": "353|Napíšte vlastnú tému eseje...",
-        "generate": "354|Vygenerovať zadanie"
+        "placeholder": "Napíšte vlastnú tému eseje...",
+        "generate": "Vygenerovať zadanie"
       },
       "suggested": {
-        "generate": "355|Vygenerovať tému",
-        "regenerate": "356|Nová téma"
+        "generate": "Vygenerovať tému",
+        "regenerate": "Nová téma"
       },
-      "language": "357|Jazyk",
-      "difficulty": "358|Náročnosť",
+      "language": "Jazyk",
+      "difficulty": "Náročnosť",
       "task": {
-        "time": "359|≈ {{count}} min",
-        "wordRange": "360|{{min}}-{{max}} slov",
-        "quickTips": "361|Rýchle tipy",
-        "taskLabel": "362|Zadanie"
+        "time": "≈ {{count}} min",
+        "wordRange": "{{min}}-{{max}} slov",
+        "quickTips": "Rýchle tipy",
+        "taskLabel": "Zadanie"
       },
       "editor": {
-        "placeholder": "363|Začnite tu písať svoju esej...",
-        "wordCount": "364|{{count}} / {{min}}-{{max}} slov",
+        "placeholder": "Začnite tu písať svoju esej...",
+        "wordCount": "{{count}} / {{min}}-{{max}} slov",
         "validation": {
-          "belowMinimum": "365|Pokračujte — potrebujete aspoň {{min}} slov.",
-          "aboveMaximum": "366|Prekročili ste limit — skúste text skrátiť.",
-          "valid": "367|V rozsahu."
+          "belowMinimum": "Pokračujte — potrebujete aspoň {{min}} slov.",
+          "aboveMaximum": "Prekročili ste limit — skúste text skrátiť.",
+          "valid": "V rozsahu."
         },
-        "reset": "368|Obnoviť"
+        "reset": "Obnoviť"
       },
       "error": {
-        "emptyCustomTopic": "369|Najprv napíšte tému.",
-        "generationFailed": "370|Nepodarilo sa vygenerovať tému. Skúste to prosím znova."
+        "emptyCustomTopic": "Najprv napíšte tému.",
+        "generationFailed": "Nepodarilo sa vygenerovať tému. Skúste to prosím znova."
       },
-      "generating": "371|Generujeme...",
+      "generating": "Generujeme...",
       "hint": {
-        "button": "372|Získať pomôcku",
-        "remaining": "373|Zostáva {{remaining}}/{{limit}}",
-        "noneLeft": "374|Žiadne pomôcky nezostávajú",
-        "notAvailable": "375|Na tejto úrovni nie sú pomôcky k dispozícii",
-        "generating": "376|Generujeme pomôcku...",
-        "error": "377|Nepodarilo sa získať pomôcku. Skúste to prosím znova.",
+        "button": "Získať pomôcku",
+        "remaining": "Zostáva {{remaining}}/{{limit}}",
+        "noneLeft": "Žiadne pomôcky nezostávajú",
+        "notAvailable": "Na tejto úrovni nie sú pomôcky k dispozícii",
+        "generating": "Generujeme pomôcku...",
+        "error": "Nepodarilo sa získať pomôcku. Skúste to prosím znova.",
         "category": {
-          "content": "378|Obsah",
-          "grammar": "379|Gramatika",
-          "vocabulary": "380|Slovná zásoba",
-          "structure": "381|Štruktúra"
+          "content": "Obsah",
+          "grammar": "Gramatika",
+          "vocabulary": "Slovná zásoba",
+          "structure": "Štruktúra"
         }
       },
       "check": {
-        "button": "382|Skontrolovať moju esej",
-        "checking": "383|Kontrolujeme...",
-        "disabled": "384|Najprv sa zmestite do rozsahu slov",
-        "error": "385|Nepodarilo sa skontrolovať vašu esej. Skúste to prosím znova.",
-        "languageUnsupported": "386|Kontrola gramatiky pre jazyk {{language}} zatiaľ nie je k dispozícii."
+        "button": "Skontrolovať moju esej",
+        "checking": "Kontrolujeme...",
+        "disabled": "Najprv sa zmestite do rozsahu slov",
+        "error": "Nepodarilo sa skontrolovať vašu esej. Skúste to prosím znova.",
+        "languageUnsupported": "Kontrola gramatiky pre jazyk {{language}} zatiaľ nie je k dispozícii."
       },
       "score": {
-        "title": "387|Hodnotenie eseje",
+        "title": "Hodnotenie eseje",
         "quality": {
-          "excellent": "388|Výborné",
-          "veryGood": "389|Veľmi dobré",
-          "good": "390|Dobré",
-          "needsWork": "391|Treba popracovať"
+          "excellent": "Výborné",
+          "veryGood": "Veľmi dobré",
+          "good": "Dobré",
+          "needsWork": "Treba popracovať"
         },
         "category": {
-          "grammar": "392|Gramatika",
-          "vocabulary": "393|Slovná zásoba",
-          "length": "394|Dĺžka",
-          "complexity": "395|Zložitosť",
-          "relevance": "396|Relevantnosť",
-          "independence": "397|Samostatnosť"
+          "grammar": "Gramatika",
+          "vocabulary": "Slovná zásoba",
+          "length": "Dĺžka",
+          "complexity": "Zložitosť",
+          "relevance": "Relevantnosť",
+          "independence": "Samostatnosť"
         },
         "stat": {
-          "words": "398|Slová",
-          "grammar": "399|Gramatika",
-          "vocabStyle": "400|Slovná zásoba/štýl",
-          "hints": "401|Pomôcky",
-          "translations": "402|Preklady",
-          "synonyms": "403|Synonymá"
+          "words": "Slová",
+          "grammar": "Gramatika",
+          "vocabStyle": "Slovná zásoba/štýl",
+          "hints": "Pomôcky",
+          "translations": "Preklady",
+          "synonyms": "Synonymá"
         }
       },
       "grammar": {
-        "sectionTitle": "404|Gramatické chyby",
-        "count_one": "405|{{count}} chyba",
-        "count_other": "406|{{count}} chýb",
-        "empty": "407|Žiadne gramatické chyby — skvelá práca!",
-        "original": "408|Pôvodne:",
-        "suggestion": "409|Návrh:",
-        "reason": "410|Dôvod:",
+        "sectionTitle": "Gramatické chyby",
+        "count_one": "{{count}} chyba",
+        "count_other": "{{count}} chýb",
+        "empty": "Žiadne gramatické chyby — skvelá práca!",
+        "original": "Pôvodne:",
+        "suggestion": "Návrh:",
+        "reason": "Dôvod:",
         "category": {
-          "grammar": "411|Gramatika",
-          "vocabulary": "412|Slovná zásoba",
-          "style": "413|Štýl"
+          "grammar": "Gramatika",
+          "vocabulary": "Slovná zásoba",
+          "style": "Štýl"
         },
         "save": {
-          "idle": "414|Uložiť do poznámok",
-          "saving": "415|Ukladáme…",
-          "saved": "416|Uložené",
-          "duplicate": "417|Už uložené",
-          "failed": "418|Skúsiť uložiť znova"
+          "idle": "Uložiť do poznámok",
+          "saving": "Ukladáme…",
+          "saved": "Uložené",
+          "duplicate": "Už uložené",
+          "failed": "Skúsiť uložiť znova"
         },
         "count_few": "{{count}} chyby"
       },
       "helper": {
-        "translate": "419|Preložiť",
-        "synonym": "420|Synonymum",
-        "remaining": "421|Zostáva {{remaining}}",
-        "notAvailable": "422|Na tejto úrovni nie je k dispozícii"
+        "translate": "Preložiť",
+        "synonym": "Synonymum",
+        "remaining": "Zostáva {{remaining}}",
+        "notAvailable": "Na tejto úrovni nie je k dispozícii"
       },
       "translate": {
-        "title": "423|Preložiť",
-        "placeholder": "424|Zadajte slovo alebo krátku frázu",
-        "submit": "425|Preložiť",
-        "submitting": "426|Prekladáme..."
+        "title": "Preložiť",
+        "placeholder": "Zadajte slovo alebo krátku frázu",
+        "submit": "Preložiť",
+        "submitting": "Prekladáme..."
       },
       "synonym": {
-        "title": "427|Synonymá",
-        "placeholder": "428|Zadajte slovo",
-        "submit": "429|Nájsť synonymá",
-        "submitting": "430|Hľadáme..."
+        "title": "Synonymá",
+        "placeholder": "Zadajte slovo",
+        "submit": "Nájsť synonymá",
+        "submitting": "Hľadáme..."
       },
       "assist": {
-        "from": "431|Z",
-        "to": "432|Do",
-        "close": "433|Zavrieť",
-        "noResult": "434|Nič sa nenašlo.",
-        "sameLanguage": "435|Vyberte iný vstupný jazyk.",
-        "error": "436|Služba je dočasne nedostupná."
+        "from": "Z",
+        "to": "Do",
+        "close": "Zavrieť",
+        "noResult": "Nič sa nenašlo.",
+        "sameLanguage": "Vyberte iný vstupný jazyk.",
+        "error": "Služba je dočasne nedostupná."
       },
-      "saveMistakeConfirmTitle": "437|Uložiť túto chybu do poznámok?",
-      "saveMistakeConfirmBody": "438|Uloží sa ako poznámka o chybe s opravou „{{correction}}“.",
-      "autoSaveConfirmTitle": "439|Uložiť tieto chyby do vašich poznámok?",
-      "autoSaveConfirmBody_one": "440|Táto kontrola našla {{count}} chybu. Uložením z nej vznikne poznámka, ktorá sa vráti na opakovanie.",
-      "autoSaveConfirmBody_other": "441|Táto kontrola našla {{count}} chýb. Uložením z nich vzniknú poznámky, ktoré sa vrátia na opakovanie.",
+      "saveMistakeConfirmTitle": "Uložiť túto chybu do poznámok?",
+      "saveMistakeConfirmBody": "Uloží sa ako poznámka o chybe s opravou „{{correction}}“.",
+      "autoSaveConfirmTitle": "Uložiť tieto chyby do vašich poznámok?",
+      "autoSaveConfirmBody_one": "Táto kontrola našla {{count}} chybu. Uložením z nej vznikne poznámka, ktorá sa vráti na opakovanie.",
+      "autoSaveConfirmBody_other": "Táto kontrola našla {{count}} chýb. Uložením z nich vzniknú poznámky, ktoré sa vrátia na opakovanie.",
       "autoSaveConfirmBody_few": "Táto kontrola našla {{count}} chyby. Uložením z nich vzniknú poznámky, ktoré sa vrátia na opakovanie."
     },
     "grammar": {
-      "subtitle": "442|Usporiadajte gramatiku podľa tém do prehľadných štruktúrovaných poznámok.",
-      "newTopic": "443|Nová téma",
-      "topicsEmptyTitle": "444|Zatiaľ žiadne témy",
-      "topicsEmptyBody": "445|Vytvorte prvú tému a začnite zbierať poznámky ku gramatike.",
-      "notesCount_one": "446|{{count}} poznámka",
-      "notesCount_other": "447|{{count}} poznámok",
-      "deleteTopicConfirm": "448|Vymazať „{{title}}“ a všetky jej poznámky? Túto akciu nemožno vrátiť späť.",
-      "notesEmptyTitle": "449|Zatiaľ žiadne poznámky",
-      "notesEmptyBody": "450|Pridajte do tejto témy prvú poznámku.",
-      "newNote": "451|Nová poznámka",
-      "deleteNoteConfirm": "452|Vymazať túto poznámku? Túto akciu nemožno vrátiť späť.",
-      "loading": "453|Načítavame…",
-      "loadError": "454|Nepodarilo sa načítať vaše poznámky ku gramatike.",
-      "notFoundTitle": "455|Nenašlo sa",
-      "notFoundBody": "456|Táto položka mohla byť vymazaná.",
-      "back": "457|Späť",
-      "updated": "458|Aktualizované {{date}}",
+      "subtitle": "Usporiadajte gramatiku podľa tém do prehľadných štruktúrovaných poznámok.",
+      "newTopic": "Nová téma",
+      "topicsEmptyTitle": "Zatiaľ žiadne témy",
+      "topicsEmptyBody": "Vytvorte prvú tému a začnite zbierať poznámky ku gramatike.",
+      "notesCount_one": "{{count}} poznámka",
+      "notesCount_other": "{{count}} poznámok",
+      "deleteTopicConfirm": "Vymazať „{{title}}“ a všetky jej poznámky? Túto akciu nemožno vrátiť späť.",
+      "notesEmptyTitle": "Zatiaľ žiadne poznámky",
+      "notesEmptyBody": "Pridajte do tejto témy prvú poznámku.",
+      "newNote": "Nová poznámka",
+      "deleteNoteConfirm": "Vymazať túto poznámku? Túto akciu nemožno vrátiť späť.",
+      "loading": "Načítavame…",
+      "loadError": "Nepodarilo sa načítať vaše poznámky ku gramatike.",
+      "notFoundTitle": "Nenašlo sa",
+      "notFoundBody": "Táto položka mohla byť vymazaná.",
+      "back": "Späť",
+      "updated": "Aktualizované {{date}}",
       "form": {
-        "newTitle": "459|Nová téma",
-        "editTitle": "460|Upraviť tému",
-        "name": "461|Názov",
-        "namePlaceholder": "462|napr. Španielske slovesá",
-        "description": "463|Popis",
-        "descriptionPlaceholder": "464|Nepovinné",
-        "color": "465|Farba",
-        "icon": "466|Ikona",
-        "save": "467|Uložiť",
-        "cancel": "468|Zrušiť",
-        "language": "469|Jazyk",
-        "languageNone": "470|Nenastavené"
+        "newTitle": "Nová téma",
+        "editTitle": "Upraviť tému",
+        "name": "Názov",
+        "namePlaceholder": "napr. Španielske slovesá",
+        "description": "Popis",
+        "descriptionPlaceholder": "Nepovinné",
+        "color": "Farba",
+        "icon": "Ikona",
+        "save": "Uložiť",
+        "cancel": "Zrušiť",
+        "language": "Jazyk",
+        "languageNone": "Nenastavené"
       },
       "noteType": {
-        "standard": "471|Štandardná",
-        "mistake": "472|Chyba",
-        "rule": "473|Pravidlo",
-        "comparison": "474|Porovnanie",
-        "cheatSheet": "475|Ťahák",
-        "exercise": "476|Cvičenie"
+        "standard": "Štandardná",
+        "mistake": "Chyba",
+        "rule": "Pravidlo",
+        "comparison": "Porovnanie",
+        "cheatSheet": "Ťahák",
+        "exercise": "Cvičenie"
       },
       "block": {
-        "heading": "477|Nadpis",
-        "paragraph": "478|Text",
-        "bulletList": "479|Odrážkový zoznam",
-        "rule": "480|Pravidlo",
-        "example": "481|Príklad",
-        "warning": "482|Upozornenie",
-        "quote": "483|Citát",
-        "divider": "484|Oddeľovač",
-        "addBlock": "485|Pridať blok",
-        "addItem": "486|Pridať položku",
-        "moveUp": "487|Nahor",
-        "moveDown": "488|Nadol",
-        "remove": "489|Odobrať",
-        "secondaryPlaceholder": "490|Detail / preklad (nepovinné)",
-        "subheading": "491|Podnadpis",
-        "numberedList": "492|Číslovaný zoznam",
-        "checklist": "493|Kontrolný zoznam",
-        "comparison": "494|Porovnanie",
-        "exercise": "495|Cvičenie",
-        "quiz": "496|Kvíz",
-        "image": "497|Obrázok",
-        "comparisonSecondary": "498|Druhá strana",
-        "imageAdd": "499|Pridať / nahradiť obrázok",
-        "imageUploading": "500|Nahrávame…",
-        "imageFailed": "501|Obrázok sa nepodarilo nahrať.",
-        "imageSaveFirst": "502|Na nahrávanie obrázkov sa prihláste."
+        "heading": "Nadpis",
+        "paragraph": "Text",
+        "bulletList": "Odrážkový zoznam",
+        "rule": "Pravidlo",
+        "example": "Príklad",
+        "warning": "Upozornenie",
+        "quote": "Citát",
+        "divider": "Oddeľovač",
+        "addBlock": "Pridať blok",
+        "addItem": "Pridať položku",
+        "moveUp": "Nahor",
+        "moveDown": "Nadol",
+        "remove": "Odobrať",
+        "secondaryPlaceholder": "Detail / preklad (nepovinné)",
+        "subheading": "Podnadpis",
+        "numberedList": "Číslovaný zoznam",
+        "checklist": "Kontrolný zoznam",
+        "comparison": "Porovnanie",
+        "exercise": "Cvičenie",
+        "quiz": "Kvíz",
+        "image": "Obrázok",
+        "comparisonSecondary": "Druhá strana",
+        "imageAdd": "Pridať / nahradiť obrázok",
+        "imageUploading": "Nahrávame…",
+        "imageFailed": "Obrázok sa nepodarilo nahrať.",
+        "imageSaveFirst": "Na nahrávanie obrázkov sa prihláste."
       },
       "blockPlaceholder": {
-        "heading": "503|Nadpis",
-        "paragraph": "504|Napíšte svoje vysvetlenie…",
-        "bulletList": "505|Položka zoznamu",
-        "rule": "506|Vysvetlite gramatické pravidlo…",
-        "example": "507|Pridajte príklad…",
-        "warning": "508|Častá chyba alebo upozornenie…",
-        "quote": "509|Veta, ktorú sa oplatí zapamätať…",
-        "subheading": "510|Podnadpis",
-        "numberedList": "511|Položka zoznamu",
-        "checklist": "512|Položka kontrolného zoznamu",
-        "comparison": "513|Prvá strana",
-        "exercise": "514|Zadanie cvičenia…",
-        "quiz": "515|Otázka",
-        "image": "516|Popis obrázka"
+        "heading": "Nadpis",
+        "paragraph": "Napíšte svoje vysvetlenie…",
+        "bulletList": "Položka zoznamu",
+        "rule": "Vysvetlite gramatické pravidlo…",
+        "example": "Pridajte príklad…",
+        "warning": "Častá chyba alebo upozornenie…",
+        "quote": "Veta, ktorú sa oplatí zapamätať…",
+        "subheading": "Podnadpis",
+        "numberedList": "Položka zoznamu",
+        "checklist": "Položka kontrolného zoznamu",
+        "comparison": "Prvá strana",
+        "exercise": "Zadanie cvičenia…",
+        "quiz": "Otázka",
+        "image": "Popis obrázka"
       },
       "editor": {
-        "titlePlaceholder": "517|Názov poznámky",
-        "save": "518|Uložiť poznámku",
-        "saving": "519|Ukladáme…",
-        "delete": "520|Vymazať poznámku",
-        "saveError": "521|Nepodarilo sa uložiť. Skúste to prosím znova.",
-        "subtitle": "522|Upraviť poznámku",
-        "tags": "523|Štítky",
-        "tagsPlaceholder": "524|Pridať štítok…",
-        "removeTag": "525|Odobrať štítok {{tag}}",
-        "addToReview": "526|Pridať na opakovanie",
-        "addedToReview": "527|Pridané do vášho radu opakovania.",
-        "inReview": "528|Na opakovanie · {{when}}",
-        "inReviewDue": "529|Čas na opakovanie",
-        "removedFromReview": "530|Odobraté z vášho radu opakovania.",
-        "unsavedTitle": "531|Odísť bez uloženia?",
-        "unsavedBody": "532|Táto poznámka má neuložené zmeny.",
-        "discard": "533|Zahodiť zmeny",
-        "saveAndLeave": "534|Uložiť a odísť"
+        "titlePlaceholder": "Názov poznámky",
+        "save": "Uložiť poznámku",
+        "saving": "Ukladáme…",
+        "delete": "Vymazať poznámku",
+        "saveError": "Nepodarilo sa uložiť. Skúste to prosím znova.",
+        "subtitle": "Upraviť poznámku",
+        "tags": "Štítky",
+        "tagsPlaceholder": "Pridať štítok…",
+        "removeTag": "Odobrať štítok {{tag}}",
+        "addToReview": "Pridať na opakovanie",
+        "addedToReview": "Pridané do vášho radu opakovania.",
+        "inReview": "Na opakovanie · {{when}}",
+        "inReviewDue": "Čas na opakovanie",
+        "removedFromReview": "Odobraté z vášho radu opakovania.",
+        "unsavedTitle": "Odísť bez uloženia?",
+        "unsavedBody": "Táto poznámka má neuložené zmeny.",
+        "discard": "Zahodiť zmeny",
+        "saveAndLeave": "Uložiť a odísť"
       },
       "quiz": {
-        "title": "535|Kvízy",
-        "new": "536|Nový kvíz",
-        "start": "537|Spustiť kvíz",
-        "delete": "538|Vymazať kvíz",
-        "deleteConfirm": "539|Vymazať „{{title}}“? Túto akciu nemožno vrátiť späť.",
-        "emptyTitle": "540|Zatiaľ žiadne kvízy",
-        "emptyBody": "541|Vytvorte z tejto poznámky kvíz a vyskúšajte sa.",
-        "loadError": "542|Nepodarilo sa načítať kvízy.",
-        "questionsCount_one": "543|{{count}} otázka",
-        "questionsCount_other": "544|{{count}} otázok",
+        "title": "Kvízy",
+        "new": "Nový kvíz",
+        "start": "Spustiť kvíz",
+        "delete": "Vymazať kvíz",
+        "deleteConfirm": "Vymazať „{{title}}“? Túto akciu nemožno vrátiť späť.",
+        "emptyTitle": "Zatiaľ žiadne kvízy",
+        "emptyBody": "Vytvorte z tejto poznámky kvíz a vyskúšajte sa.",
+        "loadError": "Nepodarilo sa načítať kvízy.",
+        "questionsCount_one": "{{count}} otázka",
+        "questionsCount_other": "{{count}} otázok",
         "type": {
-          "multipleChoice": "545|Výber z možností",
-          "trueFalse": "546|Pravda / Nepravda",
-          "fillGap": "547|Doplniť medzeru",
-          "shortAnswer": "548|Krátka odpoveď"
+          "multipleChoice": "Výber z možností",
+          "trueFalse": "Pravda / Nepravda",
+          "fillGap": "Doplniť medzeru",
+          "shortAnswer": "Krátka odpoveď"
         },
         "sheet": {
-          "title": "549|Vytvoriť kvíz",
-          "titlePlaceholder": "550|Názov kvízu",
-          "mode": "551|Režim generovania",
-          "modeSmart": "552|Šikovný lokálny",
-          "modeSmartDesc": "553|Vytvorí otázky z obsahu poznámky priamo v zariadení.",
-          "modeAI": "554|Vygenerované AI",
-          "modeAIDesc": "555|Vytvorí bohatšie kontextové otázky pomocou AI.",
-          "count": "556|Otázky",
-          "types": "557|Typy otázok",
-          "focus": "558|Zameranie (nepovinné)",
-          "focusPlaceholder": "559|napr. zamerať sa na nepravidelné tvary",
-          "preview": "560|Náhľad otázok",
-          "regenerate": "561|Vygenerovať náhľad znova",
-          "previewTitle": "562|Náhľad",
-          "saveQuiz": "563|Uložiť kvíz",
-          "generateQuiz": "564|Vygenerovať kvíz",
-          "generating": "565|Generujeme…",
-          "saving": "566|Ukladáme…",
-          "useSmartInstead": "567|Použiť radšej Šikovný lokálny",
-          "modeManual": "568|Ručne",
-          "modeManualDesc": "569|Napíšte vlastné otázky.",
-          "createQuiz": "570|Vytvoriť kvíz"
+          "title": "Vytvoriť kvíz",
+          "titlePlaceholder": "Názov kvízu",
+          "mode": "Režim generovania",
+          "modeSmart": "Šikovný lokálny",
+          "modeSmartDesc": "Vytvorí otázky z obsahu poznámky priamo v zariadení.",
+          "modeAI": "Vygenerované AI",
+          "modeAIDesc": "Vytvorí bohatšie kontextové otázky pomocou AI.",
+          "count": "Otázky",
+          "types": "Typy otázok",
+          "focus": "Zameranie (nepovinné)",
+          "focusPlaceholder": "napr. zamerať sa na nepravidelné tvary",
+          "preview": "Náhľad otázok",
+          "regenerate": "Vygenerovať náhľad znova",
+          "previewTitle": "Náhľad",
+          "saveQuiz": "Uložiť kvíz",
+          "generateQuiz": "Vygenerovať kvíz",
+          "generating": "Generujeme…",
+          "saving": "Ukladáme…",
+          "useSmartInstead": "Použiť radšej Šikovný lokálny",
+          "modeManual": "Ručne",
+          "modeManualDesc": "Napíšte vlastné otázky.",
+          "createQuiz": "Vytvoriť kvíz"
         },
         "play": {
-          "questionOf": "571|Otázka {{current}} z {{total}}",
-          "submit": "572|Odoslať odpoveď",
-          "next": "573|Ďalej",
-          "finish": "574|Dokončiť",
-          "correct": "575|Správne!",
-          "incorrect": "576|Nesprávne",
-          "correctAnswer": "577|Správna odpoveď: {{answer}}",
-          "typeMissing": "578|Napíšte chýbajúce slovo",
-          "typeAnswer": "579|Napíšte svoju odpoveď",
-          "trueLabel": "580|Pravda",
-          "falseLabel": "581|Nepravda"
+          "questionOf": "Otázka {{current}} z {{total}}",
+          "submit": "Odoslať odpoveď",
+          "next": "Ďalej",
+          "finish": "Dokončiť",
+          "correct": "Správne!",
+          "incorrect": "Nesprávne",
+          "correctAnswer": "Správna odpoveď: {{answer}}",
+          "typeMissing": "Napíšte chýbajúce slovo",
+          "typeAnswer": "Napíšte svoju odpoveď",
+          "trueLabel": "Pravda",
+          "falseLabel": "Nepravda"
         },
         "result": {
-          "scoreOf": "582|{{correct}} z {{total}} správne",
+          "scoreOf": "{{correct}} z {{total}} správne",
           "grade": {
-            "excellent": "583|Výborne!",
-            "good": "584|Skvelá práca!",
-            "keepPracticing": "585|Pokračujte v precvičovaní",
-            "reviewNote": "586|Prezrite si poznámku"
+            "excellent": "Výborne!",
+            "good": "Skvelá práca!",
+            "keepPracticing": "Pokračujte v precvičovaní",
+            "reviewNote": "Prezrite si poznámku"
           },
-          "incorrectSection": "587|Nesprávne",
-          "correctSection": "588|Správne",
-          "yourAnswer": "589|Vaša odpoveď: {{answer}}",
-          "tryAgain": "590|Skúsiť znova",
-          "reviewNote": "591|Otvoriť poznámku",
-          "done": "592|Hotovo"
+          "incorrectSection": "Nesprávne",
+          "correctSection": "Správne",
+          "yourAnswer": "Vaša odpoveď: {{answer}}",
+          "tryAgain": "Skúsiť znova",
+          "reviewNote": "Otvoriť poznámku",
+          "done": "Hotovo"
         },
         "errors": {
-          "notEnoughContent": "593|Najprv pridajte do poznámky viac obsahu — kvíz potrebuje aspoň dva obsahové bloky (pravidlo, príklad, upozornenie, odsek alebo citát).",
-          "noMatchingQuestionTypes": "594|Pre vybrané typy otázok nie je dosť vhodného obsahu. Zapnite viac typov alebo pridajte obsah.",
-          "aiFailed": "595|Kvíz sa nepodarilo vygenerovať pomocou AI. Skúste to znova alebo použite Šikovný lokálny."
+          "notEnoughContent": "Najprv pridajte do poznámky viac obsahu — kvíz potrebuje aspoň dva obsahové bloky (pravidlo, príklad, upozornenie, odsek alebo citát).",
+          "noMatchingQuestionTypes": "Pre vybrané typy otázok nie je dosť vhodného obsahu. Zapnite viac typov alebo pridajte obsah.",
+          "aiFailed": "Kvíz sa nepodarilo vygenerovať pomocou AI. Skúste to znova alebo použite Šikovný lokálny."
         },
-        "badge": "596|Kvíz",
+        "badge": "Kvíz",
         "manual": {
-          "questions_one": "597|{{count}} otázka",
-          "questions_other": "598|{{count}} otázok",
-          "add": "599|Pridať otázku",
-          "questionPlaceholder": "600|Text otázky",
-          "questionGapPlaceholder": "601|Otázka s medzerou, napr. Ja _____ do školy",
-          "optionPlaceholder": "602|Možnosť {{index}}",
-          "answerPlaceholder": "603|Správna odpoveď",
-          "explanationPlaceholder": "604|Vysvetlenie (nepovinné)",
+          "questions_one": "{{count}} otázka",
+          "questions_other": "{{count}} otázok",
+          "add": "Pridať otázku",
+          "questionPlaceholder": "Text otázky",
+          "questionGapPlaceholder": "Otázka s medzerou, napr. Ja _____ do školy",
+          "optionPlaceholder": "Možnosť {{index}}",
+          "answerPlaceholder": "Správna odpoveď",
+          "explanationPlaceholder": "Vysvetlenie (nepovinné)",
           "error": {
-            "questionRequired": "605|Text otázky je povinný.",
-            "optionsRequired": "606|Výber z možností potrebuje aspoň 2 možnosti.",
-            "answerRequired": "607|Zadajte správnu odpoveď.",
-            "answerNotAnOption": "608|Správna odpoveď sa musí zhodovať s jednou z možností.",
-            "blankRequired": "609|Vložte do otázky medzeru (napr. _____)."
+            "questionRequired": "Text otázky je povinný.",
+            "optionsRequired": "Výber z možností potrebuje aspoň 2 možnosti.",
+            "answerRequired": "Zadajte správnu odpoveď.",
+            "answerNotAnOption": "Správna odpoveď sa musí zhodovať s jednou z možností.",
+            "blankRequired": "Vložte do otázky medzeru (napr. _____)."
           },
           "questions_few": "{{count}} otázky"
         },
         "questionsCount_few": "{{count}} otázky"
       },
       "quickMistake": {
-        "button": "610|Rýchla chyba",
-        "title": "611|Rýchla chyba",
-        "original": "612|Pôvodná veta",
-        "originalPlaceholder": "613|Príklad: Ja som súhlasím s tebou",
-        "corrected": "614|Oprava",
-        "correctedPlaceholder": "615|Príklad: Súhlasím s tebou",
-        "explanation": "616|Vysvetlenie (nepovinné)",
-        "explanationPlaceholder": "617|Prečo je oprava správna?",
+        "button": "Rýchla chyba",
+        "title": "Rýchla chyba",
+        "original": "Pôvodná veta",
+        "originalPlaceholder": "Príklad: Ja som súhlasím s tebou",
+        "corrected": "Oprava",
+        "correctedPlaceholder": "Príklad: Súhlasím s tebou",
+        "explanation": "Vysvetlenie (nepovinné)",
+        "explanationPlaceholder": "Prečo je oprava správna?",
         "validation": {
-          "original": "618|Najprv pridajte pôvodnú vetu.",
-          "corrected": "619|Pridajte aj opravenú vetu."
+          "original": "Najprv pridajte pôvodnú vetu.",
+          "corrected": "Pridajte aj opravenú vetu."
         },
-        "save": "620|Uložiť chybu",
-        "saving": "621|Ukladáme…",
-        "saved": "622|Uložené do poznámok ku gramatike.",
-        "duplicate": "623|Už uložené — duplicitu sme preskočili.",
-        "failed": "624|Nepodarilo sa uložiť. Skúste to prosím znova.",
-        "openTopic": "625|Otvoriť Časté chyby",
-        "done": "626|Hotovo",
-        "tip": "627|Uložené opravy idú na opakovanie automaticky, takže tie, v ktorých stále chybujete, sa vrátia ako prvé."
+        "save": "Uložiť chybu",
+        "saving": "Ukladáme…",
+        "saved": "Uložené do poznámok ku gramatike.",
+        "duplicate": "Už uložené — duplicitu sme preskočili.",
+        "failed": "Nepodarilo sa uložiť. Skúste to prosím znova.",
+        "openTopic": "Otvoriť Časté chyby",
+        "done": "Hotovo",
+        "tip": "Uložené opravy idú na opakovanie automaticky, takže tie, v ktorých stále chybujete, sa vrátia ako prvé."
       },
       "templates": {
-        "topicTitle": "628|Šablóny tém",
-        "noteTitle": "629|Šablóny poznámok",
-        "button": "630|Šablóna",
-        "startFromTemplate": "631|Začať zo šablóny",
-        "searchPlaceholder": "632|Hľadať šablóny…",
-        "allLanguages": "633|Všetky",
-        "anyDifficulty": "634|Akákoľvek",
+        "topicTitle": "Šablóny tém",
+        "noteTitle": "Šablóny poznámok",
+        "button": "Šablóna",
+        "startFromTemplate": "Začať zo šablóny",
+        "searchPlaceholder": "Hľadať šablóny…",
+        "allLanguages": "Všetky",
+        "anyDifficulty": "Akákoľvek",
         "language": {
-          "en": "635|Angličtina",
-          "es": "636|Španielčina",
-          "fr": "637|Francúzština",
-          "de": "638|Nemčina"
+          "en": "Angličtina",
+          "es": "Španielčina",
+          "fr": "Francúzština",
+          "de": "Nemčina"
         },
-        "minutes": "639|{{minutes}} min",
-        "notesIncluded_one": "640|{{count}} poznámka",
-        "notesIncluded_other": "641|{{count}} poznámok",
-        "blocksIncluded_one": "642|{{count}} blok",
-        "blocksIncluded_other": "643|{{count}} blokov",
-        "empty": "644|Vašim filtrom nezodpovedá žiadna šablóna.",
-        "use": "645|Použiť šablónu",
-        "creating": "646|Vytvárame…",
-        "replaceConfirm": "647|Nahradiť súčasný obsah poznámky touto šablónou? Stlačte Zrušiť a šablóna sa pridá nižšie.",
-        "applyTitle": "648|Použiť „{{title}}“?",
-        "applyBody": "649|Táto poznámka už obsah má. Vyberte, ako šablónu použiť.",
-        "applyReplace": "650|Nahradiť obsah",
-        "applyAppend": "651|Pridať bloky na koniec",
+        "minutes": "{{minutes}} min",
+        "notesIncluded_one": "{{count}} poznámka",
+        "notesIncluded_other": "{{count}} poznámok",
+        "blocksIncluded_one": "{{count}} blok",
+        "blocksIncluded_other": "{{count}} blokov",
+        "empty": "Vašim filtrom nezodpovedá žiadna šablóna.",
+        "use": "Použiť šablónu",
+        "creating": "Vytvárame…",
+        "replaceConfirm": "Nahradiť súčasný obsah poznámky touto šablónou? Stlačte Zrušiť a šablóna sa pridá nižšie.",
+        "applyTitle": "Použiť „{{title}}“?",
+        "applyBody": "Táto poznámka už obsah má. Vyberte, ako šablónu použiť.",
+        "applyReplace": "Nahradiť obsah",
+        "applyAppend": "Pridať bloky na koniec",
         "notesIncluded_few": "{{count}} poznámky",
         "blocksIncluded_few": "{{count}} bloky"
       },
       "review": {
-        "title": "652|Opakovanie",
-        "subtitle": "653|Upevnite naučené pomocou rozloženého opakovania.",
-        "cardTitle": "654|Opakovať dnes",
-        "cardSubtitle_one": "655|{{count}} položka pripravená · ~{{minutes}} min",
-        "cardSubtitle_other": "656|{{count}} položiek pripravených · ~{{minutes}} min",
-        "caughtUpTitle": "657|Všetko máte hotové",
-        "caughtUp": "658|Všetko máte hotové. Otvorte alebo upravte poznámky a dostanete návrhy na opakovanie.",
-        "dueBadge": "659|Na opakovanie",
-        "refreshBody": "660|Teraz nič nečaká — aj tak si môžete osviežiť, čo ste čítali naposledy.",
-        "refreshStart": "661|Osviežiť nedávne poznámky",
-        "start": "662|Začať opakovanie",
-        "skip": "663|Preskočiť",
-        "itemOf": "664|Položka {{current}} z {{total}}",
-        "untitled": "665|Poznámka ku gramatike",
-        "stats": "666|Zopakované {{count}}× · séria {{streak}}",
-        "continueToQuestion": "667|Prejsť na otázku",
-        "showAnswer": "668|Zobraziť odpoveď",
-        "compareTitle": "669|Porovnajte svoju odpoveď",
-        "referenceAnswer": "670|Referenčná odpoveď: {{answer}}",
-        "openNote": "671|Otvoriť celú poznámku",
+        "title": "Opakovanie",
+        "subtitle": "Upevnite naučené pomocou rozloženého opakovania.",
+        "cardTitle": "Opakovať dnes",
+        "cardSubtitle_one": "{{count}} položka pripravená · ~{{minutes}} min",
+        "cardSubtitle_other": "{{count}} položiek pripravených · ~{{minutes}} min",
+        "caughtUpTitle": "Všetko máte hotové",
+        "caughtUp": "Všetko máte hotové. Otvorte alebo upravte poznámky a dostanete návrhy na opakovanie.",
+        "dueBadge": "Na opakovanie",
+        "refreshBody": "Teraz nič nečaká — aj tak si môžete osviežiť, čo ste čítali naposledy.",
+        "refreshStart": "Osviežiť nedávne poznámky",
+        "start": "Začať opakovanie",
+        "skip": "Preskočiť",
+        "itemOf": "Položka {{current}} z {{total}}",
+        "untitled": "Poznámka ku gramatike",
+        "stats": "Zopakované {{count}}× · séria {{streak}}",
+        "continueToQuestion": "Prejsť na otázku",
+        "showAnswer": "Zobraziť odpoveď",
+        "compareTitle": "Porovnajte svoju odpoveď",
+        "referenceAnswer": "Referenčná odpoveď: {{answer}}",
+        "openNote": "Otvoriť celú poznámku",
         "pool": {
-          "manual_one": "672|{{count}} položka čaká na opakovanie",
-          "manual_other": "673|{{count}} položiek čaká na opakovanie",
-          "recentlyOpened_one": "674|{{count}} nedávno otvorená poznámka",
-          "recentlyOpened_other": "675|{{count}} nedávno otvorených poznámok",
-          "recentlyEdited_one": "676|{{count}} nedávno upravená poznámka",
-          "recentlyEdited_other": "677|{{count}} nedávno upravených poznámok",
+          "manual_one": "{{count}} položka čaká na opakovanie",
+          "manual_other": "{{count}} položiek čaká na opakovanie",
+          "recentlyOpened_one": "{{count}} nedávno otvorená poznámka",
+          "recentlyOpened_other": "{{count}} nedávno otvorených poznámok",
+          "recentlyEdited_one": "{{count}} nedávno upravená poznámka",
+          "recentlyEdited_other": "{{count}} nedávno upravených poznámok",
           "manual_few": "{{count}} položky čakajú na opakovanie",
           "recentlyOpened_few": "{{count}} nedávno otvorené poznámky",
           "recentlyEdited_few": "{{count}} nedávno upravené poznámky"
         },
         "sourceType": {
-          "note": "678|Poznámka",
-          "mistake": "679|Chyba",
-          "quiz": "680|Kvíz"
+          "note": "Poznámka",
+          "mistake": "Chyba",
+          "quiz": "Kvíz"
         },
         "phase": {
-          "source": "681|Štúdium",
-          "question": "682|Odpoveď",
-          "result": "683|Hodnotenie"
+          "source": "Štúdium",
+          "question": "Odpoveď",
+          "result": "Hodnotenie"
         },
         "rating": {
-          "forgot": "684|Zabudol(a) som",
-          "hard": "685|Ťažké",
-          "good": "686|Dobré",
-          "easy": "687|Ľahké"
+          "forgot": "Zabudol(a) som",
+          "hard": "Ťažké",
+          "good": "Dobré",
+          "easy": "Ľahké"
         },
         "interval": {
-          "plus4h": "688|+4 hodiny",
-          "plus1d": "689|+1 deň",
-          "plus3d": "690|+3 dni",
-          "plus7d": "691|+7 dní"
+          "plus4h": "+4 hodiny",
+          "plus1d": "+1 deň",
+          "plus3d": "+3 dni",
+          "plus7d": "+7 dní"
         },
         "summary": {
-          "title": "692|Sedenie dokončené",
-          "emptyTitle": "693|Nič zopakované",
-          "reviewed": "694|Zopakované",
-          "correct": "695|Správne",
-          "incorrect": "696|Nesprávne",
-          "hintForgot": "697|Niektoré položky sa vrátia o 4 hodiny.",
-          "hintHard": "698|Ťažké položky sa vrátia zajtra.",
-          "hintGood": "699|Dobré položky sa vrátia o 3 dni.",
-          "hintEasy": "700|Všetky položky sa vrátia o 7 dní.",
-          "done": "701|Späť na poznámky ku gramatike"
+          "title": "Sedenie dokončené",
+          "emptyTitle": "Nič zopakované",
+          "reviewed": "Zopakované",
+          "correct": "Správne",
+          "incorrect": "Nesprávne",
+          "hintForgot": "Niektoré položky sa vrátia o 4 hodiny.",
+          "hintHard": "Ťažké položky sa vrátia zajtra.",
+          "hintGood": "Dobré položky sa vrátia o 3 dni.",
+          "hintEasy": "Všetky položky sa vrátia o 7 dní.",
+          "done": "Späť na poznámky ku gramatike"
         },
-        "loadError": "702|Nepodarilo sa načítať váš rad opakovania.",
-        "mistakeCount_one": "703|{{count}} chyba",
-        "mistakeCount_other": "704|{{count}} chýb",
+        "loadError": "Nepodarilo sa načítať váš rad opakovania.",
+        "mistakeCount_one": "{{count}} chyba",
+        "mistakeCount_other": "{{count}} chýb",
         "cardSubtitle_few": "{{count}} položky pripravené · ~{{minutes}} min",
         "mistakeCount_few": "{{count}} chyby"
       },
-      "mistakesBadge": "705|Chyby",
-      "topicsTitle": "706|Témy",
-      "deleteTopic": "707|Vymazať tému",
-      "deleteTopicTitle": "708|Vymazať túto tému?",
-      "deleteNoteTitle": "709|Vymazať túto poznámku?",
-      "pin": "710|Pripnúť poznámku",
-      "unpin": "711|Odopnúť poznámku",
-      "favorite": "712|Pridať k obľúbeným",
-      "unfavorite": "713|Odobrať z obľúbených",
+      "mistakesBadge": "Chyby",
+      "topicsTitle": "Témy",
+      "deleteTopic": "Vymazať tému",
+      "deleteTopicTitle": "Vymazať túto tému?",
+      "deleteNoteTitle": "Vymazať túto poznámku?",
+      "pin": "Pripnúť poznámku",
+      "unpin": "Odopnúť poznámku",
+      "favorite": "Pridať k obľúbeným",
+      "unfavorite": "Odobrať z obľúbených",
       "search": {
-        "topics": "714|Hľadať témy…",
-        "notes": "715|Hľadať poznámky…",
-        "clear": "716|Vymazať hľadanie",
-        "noMatchTitle": "717|Žiadna zhoda",
-        "noMatchBody": "718|Skúste iné kľúčové slovo.",
-        "notesSection_one": "719|Poznámky ({{count}})",
-        "notesSection_other": "720|Poznámky ({{count}})",
-        "noNoteMatches": "721|Tomuto hľadaniu nezodpovedá žiadna poznámka.",
+        "topics": "Hľadať témy…",
+        "notes": "Hľadať poznámky…",
+        "clear": "Vymazať hľadanie",
+        "noMatchTitle": "Žiadna zhoda",
+        "noMatchBody": "Skúste iné kľúčové slovo.",
+        "notesSection_one": "Poznámky ({{count}})",
+        "notesSection_other": "Poznámky ({{count}})",
+        "noNoteMatches": "Tomuto hľadaniu nezodpovedá žiadna poznámka.",
         "notesSection_few": "Poznámky ({{count}})"
       },
       "filter": {
-        "label": "722|Filtrovať poznámky",
-        "all": "723|Všetky",
-        "pinned": "724|Pripnuté",
-        "favorites": "725|Obľúbené",
-        "mistakes": "726|Chyby",
-        "quizzes": "727|Kvízy",
-        "review": "728|Na opakovanie",
+        "label": "Filtrovať poznámky",
+        "all": "Všetky",
+        "pinned": "Pripnuté",
+        "favorites": "Obľúbené",
+        "mistakes": "Chyby",
+        "quizzes": "Kvízy",
+        "review": "Na opakovanie",
         "empty": {
           "all": {
-            "title": "729|Zatiaľ žiadne poznámky ku gramatike",
-            "body": "730|Vytvorte pre túto tému prvú poznámku ku gramatike."
+            "title": "Zatiaľ žiadne poznámky ku gramatike",
+            "body": "Vytvorte pre túto tému prvú poznámku ku gramatike."
           },
           "pinned": {
-            "title": "731|Zatiaľ žiadne pripnuté poznámky",
-            "body": "732|Pripínajte poznámky zo zoznamu, nech ich rýchlo nájdete."
+            "title": "Zatiaľ žiadne pripnuté poznámky",
+            "body": "Pripínajte poznámky zo zoznamu, nech ich rýchlo nájdete."
           },
           "favorites": {
-            "title": "733|Zatiaľ žiadne obľúbené poznámky",
-            "body": "734|Pridajte poznámky k obľúbeným, nech ich máte poruke."
+            "title": "Zatiaľ žiadne obľúbené poznámky",
+            "body": "Pridajte poznámky k obľúbeným, nech ich máte poruke."
           },
           "mistakes": {
-            "title": "735|Zatiaľ žiadne uložené chyby",
-            "body": "736|Ukladajte gramatické chyby a opakujte si ich tu."
+            "title": "Zatiaľ žiadne uložené chyby",
+            "body": "Ukladajte gramatické chyby a opakujte si ich tu."
           },
           "quizzes": {
-            "title": "737|Zatiaľ žiadne poznámky s kvízom",
-            "body": "738|Pridajte k poznámke kvíz a uvidíte ju tu."
+            "title": "Zatiaľ žiadne poznámky s kvízom",
+            "body": "Pridajte k poznámke kvíz a uvidíte ju tu."
           },
           "review": {
-            "title": "739|Teraz nič nečaká",
-            "body": "740|Poznámky sa sem vrátia, keď príde čas na ich ďalšie opakovanie."
+            "title": "Teraz nič nečaká",
+            "body": "Poznámky sa sem vrátia, keď príde čas na ich ďalšie opakovanie."
           }
         }
       },
       "reorder": {
-        "start": "741|Zmeniť poradie",
-        "done": "742|Hotovo",
-        "up": "743|Nahor",
-        "down": "744|Nadol"
+        "start": "Zmeniť poradie",
+        "done": "Hotovo",
+        "up": "Nahor",
+        "down": "Nadol"
       },
       "highlights": {
-        "mistakesTitle": "745|Chyby na opravu",
-        "mistakesSubtitle": "746|Nedávne opravy čakajú na opakovanie.",
-        "quizzesTitle": "747|Slabé miesta v kvízoch",
-        "quizzesSubtitle": "748|Kvízy, ktoré sa oplatí čoskoro zopakovať."
+        "mistakesTitle": "Chyby na opravu",
+        "mistakesSubtitle": "Nedávne opravy čakajú na opakovanie.",
+        "quizzesTitle": "Slabé miesta v kvízoch",
+        "quizzesSubtitle": "Kvízy, ktoré sa oplatí čoskoro zopakovať."
       },
       "quickNote": {
-        "button": "749|Rýchla poznámka",
-        "title": "750|Rýchla poznámka",
-        "subtitle": "751|Zachyťte gramatický nápad bez otvárania celého editora.",
-        "noteTitle": "752|Názov",
-        "titlePlaceholder": "753|Príklad: Ser vs Estar",
-        "text": "754|Poznámka",
-        "textPlaceholder": "755|Napíšte sem to podstatné",
-        "noteType": "756|Typ poznámky",
-        "topic": "757|Téma",
-        "openEditor": "758|Po uložení otvoriť editor",
-        "openEditorHint": "759|Hodí sa, keď rýchla verzia dorastie na plnú poznámku.",
-        "tip": "760|Rýchle poznámky sú pre nápad, ktorý by ste inak o desať minút zabudli.",
-        "validation": "761|Najprv pridajte názov alebo nejaký text.",
-        "save": "762|Uložiť rýchlu poznámku",
-        "saving": "763|Ukladáme…"
+        "button": "Rýchla poznámka",
+        "title": "Rýchla poznámka",
+        "subtitle": "Zachyťte gramatický nápad bez otvárania celého editora.",
+        "noteTitle": "Názov",
+        "titlePlaceholder": "Príklad: Ser vs Estar",
+        "text": "Poznámka",
+        "textPlaceholder": "Napíšte sem to podstatné",
+        "noteType": "Typ poznámky",
+        "topic": "Téma",
+        "openEditor": "Po uložení otvoriť editor",
+        "openEditorHint": "Hodí sa, keď rýchla verzia dorastie na plnú poznámku.",
+        "tip": "Rýchle poznámky sú pre nápad, ktorý by ste inak o desať minút zabudli.",
+        "validation": "Najprv pridajte názov alebo nejaký text.",
+        "save": "Uložiť rýchlu poznámku",
+        "saving": "Ukladáme…"
       },
       "settings": {
-        "title": "764|Nastavenia poznámok",
-        "subtitle": "765|Ako sa správa rýchly zápis, chyby a zoznam poznámok.",
-        "reset": "766|Obnoviť predvolené nastavenia",
-        "tip": "767|Rýchle chyby používajte na vety, ktoré ste naozaj napísali zle — sú užitočnejšie než dokonalé učebnicové príklady.",
+        "title": "Nastavenia poznámok",
+        "subtitle": "Ako sa správa rýchly zápis, chyby a zoznam poznámok.",
+        "reset": "Obnoviť predvolené nastavenia",
+        "tip": "Rýchle chyby používajte na vety, ktoré ste naozaj napísali zle — sú užitočnejšie než dokonalé učebnicové príklady.",
         "quickCapture": {
-          "title": "768|Rýchly zápis",
-          "subtitle": "769|Nech sú rýchle poznámky a chyby okamžité."
+          "title": "Rýchly zápis",
+          "subtitle": "Nech sú rýchle poznámky a chyby okamžité."
         },
         "mistakeNotes": {
-          "title": "770|Poznámky o chybách",
-          "subtitle": "771|Čo sa uloží, keď zachytíte rýchlu chybu."
+          "title": "Poznámky o chybách",
+          "subtitle": "Čo sa uloží, keď zachytíte rýchlu chybu."
         },
         "essays": {
-          "title": "772|Eseje",
-          "subtitle": "773|Čo sa stane s gramatickými chybami z vašich esejí."
+          "title": "Eseje",
+          "subtitle": "Čo sa stane s gramatickými chybami z vašich esejí."
         },
         "review": {
-          "title": "774|Rozložené opakovanie",
-          "subtitle": "775|Ako sa poznámky dostávajú do radu opakovania."
+          "title": "Rozložené opakovanie",
+          "subtitle": "Ako sa poznámky dostávajú do radu opakovania."
         },
         "appearance": {
-          "title": "776|Vzhľad poznámok",
-          "subtitle": "777|Ako je zoznam poznámok zoradený a veľký."
+          "title": "Vzhľad poznámok",
+          "subtitle": "Ako je zoznam poznámok zoradený a veľký."
         },
         "helpers": {
-          "title": "778|Pomôcky na učenie",
-          "subtitle": "779|Malé postrčenia v prázdnych stavoch a rýchlych formulároch."
+          "title": "Pomôcky na učenie",
+          "subtitle": "Malé postrčenia v prázdnych stavoch a rýchlych formulároch."
         },
         "defaultType": {
-          "title": "780|Predvolený typ poznámky",
-          "subtitle": "781|S akým typom začína nová rýchla poznámka."
+          "title": "Predvolený typ poznámky",
+          "subtitle": "S akým typom začína nová rýchla poznámka."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "782|Otvoriť editor po rýchlom uložení",
-            "subtitle": "783|Po uložení rýchlej poznámky rovno prejsť do celého editora."
+            "title": "Otvoriť editor po rýchlom uložení",
+            "subtitle": "Po uložení rýchlej poznámky rovno prejsť do celého editora."
           },
           "allowQuickQuizzes": {
-            "title": "784|Povoliť kvízy v poznámkach",
-            "subtitle": "785|Ponúkať bloky kvízov a tvorbu kvízov vnútri poznámok."
+            "title": "Povoliť kvízy v poznámkach",
+            "subtitle": "Ponúkať bloky kvízov a tvorbu kvízov vnútri poznámok."
           },
           "showsMistakeHighlights": {
-            "title": "786|Zvýrazňovať poznámky o chybách",
-            "subtitle": "787|Používať teplý odtieň pre kartičky chýb a zobrazovať riadok chýb."
+            "title": "Zvýrazňovať poznámky o chybách",
+            "subtitle": "Používať teplý odtieň pre kartičky chýb a zobrazovať riadok chýb."
           },
           "includeOriginalSentence": {
-            "title": "788|Zahrnúť pôvodnú vetu",
-            "subtitle": "789|Uložiť chybnú verziu do poznámky ako blok citátu."
+            "title": "Zahrnúť pôvodnú vetu",
+            "subtitle": "Uložiť chybnú verziu do poznámky ako blok citátu."
           },
           "includeCorrectedSentence": {
-            "title": "790|Zahrnúť opravenú vetu",
-            "subtitle": "791|Uložiť opravenú verziu ako blok príkladu."
+            "title": "Zahrnúť opravenú vetu",
+            "subtitle": "Uložiť opravenú verziu ako blok príkladu."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "792|Zahrnúť vysvetlenie",
-            "subtitle": "793|Pridať vaše vysvetlenie nižšie ako odsek."
+            "title": "Zahrnúť vysvetlenie",
+            "subtitle": "Pridať vaše vysvetlenie nižšie ako odsek."
           },
           "groupMistakesByTopic": {
-            "title": "794|Zoskupovať chyby podľa tém",
-            "subtitle": "795|Ukladať rýchle chyby do aktuálnej témy namiesto Častých chýb."
+            "title": "Zoskupovať chyby podľa tém",
+            "subtitle": "Ukladať rýchle chyby do aktuálnej témy namiesto Častých chýb."
           },
           "askBeforeSavingMistakes": {
-            "title": "796|Pýtať sa pred uložením chýb",
-            "subtitle": "797|Potvrdiť, než sa z chyby v eseji stane poznámka. Toto má prednosť pred automatickým ukladaním."
+            "title": "Pýtať sa pred uložením chýb",
+            "subtitle": "Potvrdiť, než sa z chyby v eseji stane poznámka. Toto má prednosť pred automatickým ukladaním."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "798|Automaticky ukladať chyby z esejí",
-            "subtitle": "799|Každá gramatická chyba nájdená v eseji sa stane poznámkou. So zapnutým „Pýtať sa pred uložením“ sa program spýta raz za celú kontrolu."
+            "title": "Automaticky ukladať chyby z esejí",
+            "subtitle": "Každá gramatická chyba nájdená v eseji sa stane poznámkou. So zapnutým „Pýtať sa pred uložením“ sa program spýta raz za celú kontrolu."
           },
           "groupsPinnedNotesFirst": {
-            "title": "800|Pripnuté poznámky prvé",
-            "subtitle": "801|Držte dôležité pravidlá hore v každej téme."
+            "title": "Pripnuté poznámky prvé",
+            "subtitle": "Držte dôležité pravidlá hore v každej téme."
           },
           "usesCompactCards": {
-            "title": "802|Kompaktné kartičky poznámok",
-            "subtitle": "803|Zobraziť tesnejšie kartičky, keď chcete na obrazovke viac poznámok."
+            "title": "Kompaktné kartičky poznámok",
+            "subtitle": "Zobraziť tesnejšie kartičky, keď chcete na obrazovke viac poznámok."
           },
           "showsHelperTips": {
-            "title": "804|Zobrazovať tipy",
-            "subtitle": "805|Zobrazovať krátke kontextové tipy pri tvorbe poznámok."
+            "title": "Zobrazovať tipy",
+            "subtitle": "Zobrazovať krátke kontextové tipy pri tvorbe poznámok."
           },
           "autoAddNotesToReview": {
-            "title": "806|Pridávať nové poznámky na opakovanie",
-            "subtitle": "807|Každá uložená poznámka sa zaradí do radu opakovania, na rad príde ďalší deň."
+            "title": "Pridávať nové poznámky na opakovanie",
+            "subtitle": "Každá uložená poznámka sa zaradí do radu opakovania, na rad príde ďalší deň."
           }
         }
       },
-      "editTopic": "808|Upraviť tému",
+      "editTopic": "Upraviť tému",
       "toSet": {
-        "title": "809|Vytvoriť z tejto poznámky sadu",
-        "subtitle": "810|Vyberte dvojice, z ktorých vzniknú kartičky.",
-        "setTitle": "811|Názov sady",
-        "empty": "812|Z tejto poznámky zatiaľ nie je čo urobiť kartičky. Bloky porovnania, príkladu a pravidla sa prevádzajú priamo a položky zoznamu sa delia na pomlčke — napríklad „hacer — robiť“.",
-        "button": "813|Vytvoriť sadu",
-        "create": "814|Vytvoriť sadu",
-        "creating": "815|Vytvárame…",
-        "error": "816|Sadu sa nepodarilo vytvoriť. Skúste to znova.",
-        "cards_one": "817|{{count}} kartička",
-        "cards_other": "818|{{count}} kartičiek",
+        "title": "Vytvoriť z tejto poznámky sadu",
+        "subtitle": "Vyberte dvojice, z ktorých vzniknú kartičky.",
+        "setTitle": "Názov sady",
+        "empty": "Z tejto poznámky zatiaľ nie je čo urobiť kartičky. Bloky porovnania, príkladu a pravidla sa prevádzajú priamo a položky zoznamu sa delia na pomlčke — napríklad „hacer — robiť“.",
+        "button": "Vytvoriť sadu",
+        "create": "Vytvoriť sadu",
+        "creating": "Vytvárame…",
+        "error": "Sadu sa nepodarilo vytvoriť. Skúste to znova.",
+        "cards_one": "{{count}} kartička",
+        "cards_other": "{{count}} kartičiek",
         "cards_few": "{{count}} kartičky"
       },
-      "topicsEmptyTip": "819|Téma je priečinok na poznámky — jedna na jazyk alebo jedna na vec, v ktorej stále chybujete.",
-      "notesEmptyTip": "820|Každá uložená poznámka sa zaradí do radu opakovania, takže zapísať si ju už znamená začať ju precvičovať.",
+      "topicsEmptyTip": "Téma je priečinok na poznámky — jedna na jazyk alebo jedna na vec, v ktorej stále chybujete.",
+      "notesEmptyTip": "Každá uložená poznámka sa zaradí do radu opakovania, takže zapísať si ju už znamená začať ju precvičovať.",
       "notesCount_few": "{{count}} poznámky"
     }
   },
   "reading": {
-    "sectionTitle": "821|Režimy precvičovania",
-    "loading": "822|Načítavame…",
-    "loadError": "823|Nepodarilo sa načítať vaše texty na čítanie.",
-    "notFound": "824|Táto položka mohla byť vymazaná.",
+    "sectionTitle": "Režimy precvičovania",
+    "loading": "Načítavame…",
+    "loadError": "Nepodarilo sa načítať vaše texty na čítanie.",
+    "notFound": "Táto položka mohla byť vymazaná.",
     "today": {
-      "title": "825|Dnešný pokrok",
-      "subtitle": "826|Udržte svoju čitateľskú sériu."
+      "title": "Dnešný pokrok",
+      "subtitle": "Udržte svoju čitateľskú sériu."
     },
     "menu": {
-      "comingSoon": "827|Už čoskoro",
+      "comingSoon": "Už čoskoro",
       "myTexts": {
-        "title": "828|Moje texty",
-        "subtitle": "829|Vložte vlastný text a čítajte ho s pomocou."
+        "title": "Moje texty",
+        "subtitle": "Vložte vlastný text a čítajte ho s pomocou."
       },
       "fromSets": {
-        "title": "830|Čítanie zo sád",
-        "subtitle": "831|Vytvorte text na čítanie z vašich sád kartičiek."
+        "title": "Čítanie zo sád",
+        "subtitle": "Vytvorte text na čítanie z vašich sád kartičiek."
       },
       "storyMode": {
-        "title": "832|Režim príbehu",
-        "subtitle": "833|Čítajte interaktívne príbehy s vetvením."
+        "title": "Režim príbehu",
+        "subtitle": "Čítajte interaktívne príbehy s vetvením."
       },
       "speedReading": {
-        "title": "834|Rýchločítanie",
-        "subtitle": "835|Trénujte rýchlejšie čítanie s načasovaným tempom."
+        "title": "Rýchločítanie",
+        "subtitle": "Trénujte rýchlejšie čítanie s načasovaným tempom."
       }
     },
     "myTexts": {
-      "title": "836|Moje texty",
-      "subtitle": "837|Vaše uložené texty na čítanie.",
-      "addText": "838|Pridať text",
-      "emptyTitle": "839|Zatiaľ žiadne texty",
-      "emptyBody": "840|Pridajte prvý text a začnite precvičovať čítanie.",
-      "savedTitle": "841|Uložené texty"
+      "title": "Moje texty",
+      "subtitle": "Vaše uložené texty na čítanie.",
+      "addText": "Pridať text",
+      "emptyTitle": "Zatiaľ žiadne texty",
+      "emptyBody": "Pridajte prvý text a začnite precvičovať čítanie.",
+      "savedTitle": "Uložené texty"
     },
     "status": {
-      "new": "842|Nový",
-      "inProgress": "843|Rozčítaný",
-      "completed": "844|Dokončený"
+      "new": "Nový",
+      "inProgress": "Rozčítaný",
+      "completed": "Dokončený"
     },
     "card": {
-      "words_one": "845|{{count}} slovo",
-      "words_other": "846|{{count}} slov",
-      "start": "847|Začať",
-      "continue": "848|Pokračovať",
-      "readAgain": "849|Prečítať znova",
-      "rename": "850|Premenovať",
-      "renamePrompt": "851|Nový názov:",
-      "delete": "852|Vymazať",
-      "deleteConfirm": "853|Vymazať „{{title}}“? Túto akciu nemožno vrátiť späť.",
+      "words_one": "{{count}} slovo",
+      "words_other": "{{count}} slov",
+      "start": "Začať",
+      "continue": "Pokračovať",
+      "readAgain": "Prečítať znova",
+      "rename": "Premenovať",
+      "renamePrompt": "Nový názov:",
+      "delete": "Vymazať",
+      "deleteConfirm": "Vymazať „{{title}}“? Túto akciu nemožno vrátiť späť.",
       "words_few": "{{count}} slová"
     },
     "continue": {
-      "eyebrow": "854|Pokračovať v čítaní",
-      "percent": "855|{{percent}} % hotovo",
-      "button": "856|Pokračovať"
+      "eyebrow": "Pokračovať v čítaní",
+      "percent": "{{percent}} % hotovo",
+      "button": "Pokračovať"
     },
     "focus": {
-      "mainIdea": "857|Hlavná myšlienka",
-      "vocabulary": "858|Slovná zásoba",
-      "detailedComprehension": "859|Podrobné porozumenie",
-      "grammarAwareness": "860|Všímavosť ku gramatike",
-      "speedFluency": "861|Rýchlosť / plynulosť"
+      "mainIdea": "Hlavná myšlienka",
+      "vocabulary": "Slovná zásoba",
+      "detailedComprehension": "Podrobné porozumenie",
+      "grammarAwareness": "Všímavosť ku gramatike",
+      "speedFluency": "Rýchlosť / plynulosť"
     },
     "questionType": {
-      "comprehension": "862|Porozumenie",
-      "trueFalse": "863|Pravda / Nepravda",
-      "fillGap": "864|Doplniť medzeru",
-      "vocabulary": "865|Slovná zásoba",
-      "findEvidence": "866|Nájsť dôkaz",
-      "orderReconstruction": "867|Zoradenie"
+      "comprehension": "Porozumenie",
+      "trueFalse": "Pravda / Nepravda",
+      "fillGap": "Doplniť medzeru",
+      "vocabulary": "Slovná zásoba",
+      "findEvidence": "Nájsť dôkaz",
+      "orderReconstruction": "Zoradenie"
     },
     "assistance": {
-      "highlightUnknownWords": "868|Zvýrazňovať neznáme slová",
-      "translationOnTap": "869|Preklad ťuknutím",
-      "vocabularyHints": "870|Pomôcky k slovnej zásobe",
-      "readingTimer": "871|Časovač čítania"
+      "highlightUnknownWords": "Zvýrazňovať neznáme slová",
+      "translationOnTap": "Preklad ťuknutím",
+      "vocabularyHints": "Pomôcky k slovnej zásobe",
+      "readingTimer": "Časovač čítania"
     },
     "addText": {
-      "title": "872|Pridať text",
-      "subtitle": "873|Vložte text a nastavte si precvičovanie čítania.",
-      "untitled": "874|Text bez názvu",
-      "pastePlaceholder": "875|Vložte alebo napíšte svoj text sem…",
-      "titleLabel": "876|Názov",
-      "titlePlaceholder": "877|Nepovinné — môžeme nejaký navrhnúť",
-      "language": "878|Jazyk",
-      "difficulty": "879|Náročnosť",
-      "autoDetect": "880|Rozpoznať automaticky",
-      "manual": "881|Vybrať ručne",
-      "focus": "882|Zameranie čítania",
-      "questionTypes": "883|Typy otázok",
-      "assistance": "884|Pomoc pri čítaní",
+      "title": "Pridať text",
+      "subtitle": "Vložte text a nastavte si precvičovanie čítania.",
+      "untitled": "Text bez názvu",
+      "pastePlaceholder": "Vložte alebo napíšte svoj text sem…",
+      "titleLabel": "Názov",
+      "titlePlaceholder": "Nepovinné — môžeme nejaký navrhnúť",
+      "language": "Jazyk",
+      "difficulty": "Náročnosť",
+      "autoDetect": "Rozpoznať automaticky",
+      "manual": "Vybrať ručne",
+      "focus": "Zameranie čítania",
+      "questionTypes": "Typy otázok",
+      "assistance": "Pomoc pri čítaní",
       "stats": {
-        "words_one": "885|{{count}} slovo",
-        "words_other": "886|{{count}} slov",
-        "chars_one": "887|{{count}} znak",
-        "chars_other": "888|{{count}} znakov",
-        "min": "889|min",
-        "detected": "890|Rozpoznané: {{level}}",
+        "words_one": "{{count}} slovo",
+        "words_other": "{{count}} slov",
+        "chars_one": "{{count}} znak",
+        "chars_other": "{{count}} znakov",
+        "min": "min",
+        "detected": "Rozpoznané: {{level}}",
         "words_few": "{{count}} slová",
         "chars_few": "{{count}} znaky"
       },
       "validation": {
-        "empty": "891|Najprv prosím pridajte text.",
-        "tooShort": "892|Pridajte aspoň 20 slov."
+        "empty": "Najprv prosím pridajte text.",
+        "tooShort": "Pridajte aspoň 20 slov."
       },
-      "save": "893|Uložiť text",
-      "saveAndStart": "894|Uložiť a začať",
-      "saving": "895|Ukladáme…",
-      "saveError": "896|Nepodarilo sa uložiť. Skúste to prosím znova.",
+      "save": "Uložiť text",
+      "saveAndStart": "Uložiť a začať",
+      "saving": "Ukladáme…",
+      "saveError": "Nepodarilo sa uložiť. Skúste to prosím znova.",
       "source": {
-        "pasteText": "897|Vložiť",
-        "photo": "898|Foto",
-        "pdf": "899|PDF",
-        "generate": "900|Vygenerovať",
-        "explore": "901|Preskúmať"
+        "pasteText": "Vložiť",
+        "photo": "Foto",
+        "pdf": "PDF",
+        "generate": "Vygenerovať",
+        "explore": "Preskúmať"
       },
       "style": {
-        "informative": "902|Informatívny",
-        "casual": "903|Neformálny",
-        "academic": "904|Akademický",
-        "narrative": "905|Rozprávačský"
+        "informative": "Informatívny",
+        "casual": "Neformálny",
+        "academic": "Akademický",
+        "narrative": "Rozprávačský"
       },
       "length": {
-        "short": "906|Krátky",
-        "medium": "907|Stredný",
-        "long": "908|Dlhý"
+        "short": "Krátky",
+        "medium": "Stredný",
+        "long": "Dlhý"
       },
       "import": {
-        "photoHint": "909|Nahrajte fotku strany — text z nej vytiahneme.",
-        "chooseImage": "910|Vybrať obrázok",
-        "recognizing": "911|Rozpoznávame… {{percent}} %",
-        "imageError": "912|Z tohto obrázka sa nepodarilo prečítať text.",
-        "pdfHint": "913|Nahrajte PDF — text z neho vytiahneme.",
-        "choosePDF": "914|Vybrať PDF",
-        "reading": "915|Čítame PDF…",
-        "pdfError": "916|Toto PDF sa nepodarilo prečítať.",
-        "topicPlaceholder": "917|Téma — napr. koralové útesy, kníhtlač",
-        "explorePlaceholder": "918|Téma alebo kľúčové slovo — napr. Marie Curie, Benátky",
-        "generateButton": "919|Vygenerovať text",
-        "exploreButton": "920|Načítať článok",
-        "working": "921|Pracujeme…",
-        "generateError": "922|Text sa nepodarilo vygenerovať. Skúste to znova.",
-        "exploreError": "923|K tejto téme sa nepodarilo nájsť článok.",
-        "exploredFrom": "924|Načítané z"
+        "photoHint": "Nahrajte fotku strany — text z nej vytiahneme.",
+        "chooseImage": "Vybrať obrázok",
+        "recognizing": "Rozpoznávame… {{percent}} %",
+        "imageError": "Z tohto obrázka sa nepodarilo prečítať text.",
+        "pdfHint": "Nahrajte PDF — text z neho vytiahneme.",
+        "choosePDF": "Vybrať PDF",
+        "reading": "Čítame PDF…",
+        "pdfError": "Toto PDF sa nepodarilo prečítať.",
+        "topicPlaceholder": "Téma — napr. koralové útesy, kníhtlač",
+        "explorePlaceholder": "Téma alebo kľúčové slovo — napr. Marie Curie, Benátky",
+        "generateButton": "Vygenerovať text",
+        "exploreButton": "Načítať článok",
+        "working": "Pracujeme…",
+        "generateError": "Text sa nepodarilo vygenerovať. Skúste to znova.",
+        "exploreError": "K tejto téme sa nepodarilo nájsť článok.",
+        "exploredFrom": "Načítané z"
       }
     },
     "session": {
-      "startQuestions": "925|Prejsť na otázky",
-      "finish": "926|Dokončiť",
-      "next": "927|Ďalej",
-      "questionOf": "928|Otázka {{current}} z {{total}}",
-      "closeTranslation": "929|Zavrieť preklad",
-      "translating": "930|Prekladáme…",
-      "translationError": "931|Nepodarilo sa preložiť. Skúste to znova.",
-      "translation": "932|Preklad",
-      "textLabel": "933|Text"
+      "startQuestions": "Prejsť na otázky",
+      "finish": "Dokončiť",
+      "next": "Ďalej",
+      "questionOf": "Otázka {{current}} z {{total}}",
+      "closeTranslation": "Zavrieť preklad",
+      "translating": "Prekladáme…",
+      "translationError": "Nepodarilo sa preložiť. Skúste to znova.",
+      "translation": "Preklad",
+      "textLabel": "Text"
     },
     "result": {
-      "comprehension": "934|Porozumenie",
-      "correct": "935|Správne",
-      "time": "936|Čas čítania",
-      "wpm": "937|slov/min",
-      "mistakes": "938|Chyby",
-      "mistakesTitle": "939|Prezrite si svoje chyby",
-      "readAgain": "940|Prečítať znova",
-      "back": "941|Späť na Moje texty",
-      "complete": "942|Precvičovanie dokončené"
+      "comprehension": "Porozumenie",
+      "correct": "Správne",
+      "time": "Čas čítania",
+      "wpm": "slov/min",
+      "mistakes": "Chyby",
+      "mistakesTitle": "Prezrite si svoje chyby",
+      "readAgain": "Prečítať znova",
+      "back": "Späť na Moje texty",
+      "complete": "Precvičovanie dokončené"
     },
     "fromSets": {
-      "title": "943|Čítanie zo sád",
-      "subtitle": "944|Premeňte sadu kartičiek na text na čítanie.",
-      "pickSet": "945|Vyberte sadu",
-      "changeSet": "946|Zmeniť sadu",
-      "tooFewWords": "947|Táto sada potrebuje na vytvorenie textu aspoň {{count}} slov.",
-      "mode": "948|Režim generovania",
+      "title": "Čítanie zo sád",
+      "subtitle": "Premeňte sadu kartičiek na text na čítanie.",
+      "pickSet": "Vyberte sadu",
+      "changeSet": "Zmeniť sadu",
+      "tooFewWords": "Táto sada potrebuje na vytvorenie textu aspoň {{count}} slov.",
+      "mode": "Režim generovania",
       "modeOption": {
-        "natural": "949|Prirodzený",
-        "strict": "950|Prísny",
-        "mixed": "951|Zmiešaný"
+        "natural": "Prirodzený",
+        "strict": "Prísny",
+        "mixed": "Zmiešaný"
       },
-      "length": "952|Dĺžka textu",
-      "generate": "953|Vygenerovať text",
-      "generating": "954|Vytvárame váš text…",
-      "generateError": "955|Text sa nepodarilo vytvoriť. Skúste to znova.",
-      "emptyTitle": "956|Zatiaľ žiadne texty",
-      "emptyBody": "957|Vyberte sadu kartičiek a my z nej urobíme text na čítanie.",
-      "savedTitle": "958|Uložené texty"
+      "length": "Dĺžka textu",
+      "generate": "Vygenerovať text",
+      "generating": "Vytvárame váš text…",
+      "generateError": "Text sa nepodarilo vytvoriť. Skúste to znova.",
+      "emptyTitle": "Zatiaľ žiadne texty",
+      "emptyBody": "Vyberte sadu kartičiek a my z nej urobíme text na čítanie.",
+      "savedTitle": "Uložené texty"
     },
     "speed": {
-      "title": "959|Rýchločítanie",
-      "subtitle": "960|Trénujte rýchlejšie čítanie s načasovaným tempom.",
+      "title": "Rýchločítanie",
+      "subtitle": "Trénujte rýchlejšie čítanie s načasovaným tempom.",
       "section": {
-        "target": "961|Cieľová rýchlosť čítania",
-        "timer": "962|Štýl časovača",
-        "length": "963|Dĺžka textu"
+        "target": "Cieľová rýchlosť čítania",
+        "timer": "Štýl časovača",
+        "length": "Dĺžka textu"
       },
       "target": {
-        "relaxed": "964|Pokojná",
-        "balanced": "965|Vyvážená",
-        "fast": "966|Rýchla",
-        "challenge": "967|Výzva"
+        "relaxed": "Pokojná",
+        "balanced": "Vyvážená",
+        "fast": "Rýchla",
+        "challenge": "Výzva"
       },
       "timer": {
-        "noTimer": "968|Bez časovača",
-        "soft": "969|Mierny časovač",
-        "strict": "970|Prísny časovač"
+        "noTimer": "Bez časovača",
+        "soft": "Mierny časovač",
+        "strict": "Prísny časovač"
       },
       "length": {
-        "two": "971|2 min",
-        "five": "972|5 min",
-        "ten": "973|10 min"
+        "two": "2 min",
+        "five": "5 min",
+        "ten": "10 min"
       },
-      "summary": "974|Cieľ {{wpm}} slov/min · ~{{minutes}} min čítania",
-      "start": "975|Spustiť sedenie",
-      "preparing": "976|Pripravujeme váš úryvok…",
-      "generateError": "977|Úryvok sa nepodarilo vytvoriť. Skúste to znova.",
-      "recentTitle": "978|Nedávne sedenia",
-      "chunkOf": "979|Časť {{current}} z {{total}}",
-      "previous": "980|Predchádzajúca časť",
-      "pause": "981|Pauza",
-      "resume": "982|Pokračovať",
-      "nextChunk": "983|Ďalšia časť",
-      "finishReading": "984|Dokončiť čítanie",
+      "summary": "Cieľ {{wpm}} slov/min · ~{{minutes}} min čítania",
+      "start": "Spustiť sedenie",
+      "preparing": "Pripravujeme váš úryvok…",
+      "generateError": "Úryvok sa nepodarilo vytvoriť. Skúste to znova.",
+      "recentTitle": "Nedávne sedenia",
+      "chunkOf": "Časť {{current}} z {{total}}",
+      "previous": "Predchádzajúca časť",
+      "pause": "Pauza",
+      "resume": "Pokračovať",
+      "nextChunk": "Ďalšia časť",
+      "finishReading": "Dokončiť čítanie",
       "rating": {
-        "excellent": "985|Výborné",
-        "balanced": "986|V cieli",
-        "fast": "987|Skoro tam",
-        "tooSlow": "988|Príliš pomalé"
+        "excellent": "Výborné",
+        "balanced": "V cieli",
+        "fast": "Skoro tam",
+        "tooSlow": "Príliš pomalé"
       },
       "result": {
-        "average": "989|Priemer slov/min",
-        "target": "990|Cieľ slov/min",
-        "violations_one": "991|{{count}} nedodržanie času",
-        "violations_other": "992|{{count}} nedodržaní času",
+        "average": "Priemer slov/min",
+        "target": "Cieľ slov/min",
+        "violations_one": "{{count}} nedodržanie času",
+        "violations_other": "{{count}} nedodržaní času",
         "violations_few": "{{count}} nedodržania času"
       },
-      "tryAgain": "993|Skúsiť znova",
-      "backToSetup": "994|Späť na nastavenia"
+      "tryAgain": "Skúsiť znova",
+      "backToSetup": "Späť na nastavenia"
     },
     "story": {
-      "title": "995|Režim príbehu",
-      "subtitle": "996|Čítajte interaktívne príbehy s vetvením.",
-      "typeSection": "997|Typ príbehu",
+      "title": "Režim príbehu",
+      "subtitle": "Čítajte interaktívne príbehy s vetvením.",
+      "typeSection": "Typ príbehu",
       "type": {
-        "adventure": "998|Dobrodružstvo",
-        "fantasy": "999|Fantasy",
-        "mystery": "1000|Detektívka",
-        "romance": "1001|Romantika",
-        "dailyLife": "1002|Každodenný život"
+        "adventure": "Dobrodružstvo",
+        "fantasy": "Fantasy",
+        "mystery": "Detektívka",
+        "romance": "Romantika",
+        "dailyLife": "Každodenný život"
       },
-      "lengthSection": "1003|Dĺžka príbehu",
+      "lengthSection": "Dĺžka príbehu",
       "length": {
-        "shortStory": "1004|Poviedka",
-        "multiChapter": "1005|Viac kapitol",
-        "infinite": "1006|Nekonečný príbeh"
+        "shortStory": "Poviedka",
+        "multiChapter": "Viac kapitol",
+        "infinite": "Nekonečný príbeh"
       },
-      "start": "1007|Začať príbeh",
-      "generating": "1008|Píšeme váš príbeh…",
-      "generatingNext": "1009|Píšeme ďalšiu kapitolu…",
-      "generateError": "1010|Príbeh sa nepodarilo napísať. Skúste to znova.",
-      "emptyTitle": "1011|Zatiaľ žiadne príbehy",
-      "emptyBody": "1012|Začnite hore svoj prvý interaktívny príbeh.",
-      "savedTitle": "1013|Vaše príbehy",
-      "chapterN": "1014|Kapitola {{n}}",
-      "chapterOf": "1015|Kapitola {{current}} / {{total}}",
-      "chapterScore": "1016|Hodnotenie kapitoly",
-      "whatNext": "1017|Čo bude ďalej?",
-      "endStory": "1018|Ukončiť príbeh",
-      "completeTitle": "1019|Príbeh dokončený",
-      "completeBody_one": "1020|Dočítali ste {{count}} kapitolu. Skvelé čítanie!",
-      "completeBody_other": "1021|Dočítali ste {{count}} kapitol. Skvelé čítanie!",
-      "backToStories": "1022|Späť na príbehy",
+      "start": "Začať príbeh",
+      "generating": "Píšeme váš príbeh…",
+      "generatingNext": "Píšeme ďalšiu kapitolu…",
+      "generateError": "Príbeh sa nepodarilo napísať. Skúste to znova.",
+      "emptyTitle": "Zatiaľ žiadne príbehy",
+      "emptyBody": "Začnite hore svoj prvý interaktívny príbeh.",
+      "savedTitle": "Vaše príbehy",
+      "chapterN": "Kapitola {{n}}",
+      "chapterOf": "Kapitola {{current}} / {{total}}",
+      "chapterScore": "Hodnotenie kapitoly",
+      "whatNext": "Čo bude ďalej?",
+      "endStory": "Ukončiť príbeh",
+      "completeTitle": "Príbeh dokončený",
+      "completeBody_one": "Dočítali ste {{count}} kapitolu. Skvelé čítanie!",
+      "completeBody_other": "Dočítali ste {{count}} kapitol. Skvelé čítanie!",
+      "backToStories": "Späť na príbehy",
       "completeBody_few": "Dočítali ste {{count}} kapitoly. Skvelé čítanie!"
     }
   },
   "listening": {
-    "sectionTitle": "1023|Režimy precvičovania",
-    "notFound": "1024|Toto sedenie mohlo byť vymazané.",
+    "sectionTitle": "Režimy precvičovania",
+    "notFound": "Toto sedenie mohlo byť vymazané.",
     "today": {
-      "title": "1025|Dnešný pokrok",
-      "subtitle": "1026|precvičovania počúvania"
+      "title": "Dnešný pokrok",
+      "subtitle": "precvičovania počúvania"
     },
     "menu": {
-      "comingSoon": "1027|Už čoskoro",
+      "comingSoon": "Už čoskoro",
       "fromText": {
-        "title": "1028|Počúvanie z textu",
-        "subtitle": "1029|Vložte text, vypočujte si ho a overte si porozumenie."
+        "title": "Počúvanie z textu",
+        "subtitle": "Vložte text, vypočujte si ho a overte si porozumenie."
       },
       "importAudio": {
-        "title": "1030|Import audia",
-        "subtitle": "1031|Nahrajte vlastné audio a urobte z neho počúvacie cvičenie."
+        "title": "Import audia",
+        "subtitle": "Nahrajte vlastné audio a urobte z neho počúvacie cvičenie."
       },
       "importVideo": {
-        "title": "1032|Import videa",
-        "subtitle": "1033|Nahrajte video, získajte titulky a precvičte sa s otázkami."
+        "title": "Import videa",
+        "subtitle": "Nahrajte video, získajte titulky a precvičte sa s otázkami."
       },
       "saved": {
-        "title": "1034|Uložené cvičenia",
-        "subtitle": "1035|Pokračujte v skorších sedeniach a prezrite si svoje chyby."
+        "title": "Uložené cvičenia",
+        "subtitle": "Pokračujte v skorších sedeniach a prezrite si svoje chyby."
       }
     },
     "questionType": {
-      "mainIdea": "1036|Hlavná myšlienka",
-      "details": "1037|Detaily",
-      "vocabulary": "1038|Slovná zásoba",
-      "trueFalse": "1039|Pravda / Nepravda"
+      "mainIdea": "Hlavná myšlienka",
+      "details": "Detaily",
+      "vocabulary": "Slovná zásoba",
+      "trueFalse": "Pravda / Nepravda"
     },
     "fromText": {
-      "title": "1040|Počúvanie z textu",
-      "subtitle": "1041|Vložte text a urobte z neho počúvacie cvičenie.",
-      "level": "1042|Úroveň",
-      "voiceSpeed": "1043|Rýchlosť hlasu",
-      "voiceType": "1044|Typ hlasu",
+      "title": "Počúvanie z textu",
+      "subtitle": "Vložte text a urobte z neho počúvacie cvičenie.",
+      "level": "Úroveň",
+      "voiceSpeed": "Rýchlosť hlasu",
+      "voiceType": "Typ hlasu",
       "voice": {
-        "default": "1045|Predvolený",
-        "female": "1046|Ženský",
-        "male": "1047|Mužský"
+        "default": "Predvolený",
+        "female": "Ženský",
+        "male": "Mužský"
       },
-      "showText": "1048|Zobrazovať text počas počúvania",
-      "addQuestions": "1049|Pridať otázky na porozumenie",
-      "questionCount": "1050|Počet otázok",
-      "questionTypes": "1051|Typy otázok",
-      "optionalTitle": "1052|Nepovinný názov",
-      "titlePlaceholder": "1053|Pomenujte svoj text",
-      "textPlaceholder": "1054|Vložte sem svoj text...",
-      "recommended": "1055|Odporúčame: 80–500 slov.",
-      "words": "1056|slov",
-      "defaultTitle": "1057|Počúvacie cvičenie",
-      "start": "1058|Začať počúvať",
+      "showText": "Zobrazovať text počas počúvania",
+      "addQuestions": "Pridať otázky na porozumenie",
+      "questionCount": "Počet otázok",
+      "questionTypes": "Typy otázok",
+      "optionalTitle": "Nepovinný názov",
+      "titlePlaceholder": "Pomenujte svoj text",
+      "textPlaceholder": "Vložte sem svoj text...",
+      "recommended": "Odporúčame: 80–500 slov.",
+      "words": "slov",
+      "defaultTitle": "Počúvacie cvičenie",
+      "start": "Začať počúvať",
       "validation": {
-        "empty": "1059|Pridajte text a môžete začať počúvať.",
-        "tooShort": "1060|Pridajte aspoň 40 znakov, aby ste mohli začať počúvať.",
-        "tooLong": "1061|Tento text je príliš dlhý. Zmestite sa prosím do 5000 znakov.",
-        "tooFewWords": "1062|Pridajte trochu viac textu (asi 40 slov a viac), nech vieme vytvoriť dobré otázky."
+        "empty": "Pridajte text a môžete začať počúvať.",
+        "tooShort": "Pridajte aspoň 40 znakov, aby ste mohli začať počúvať.",
+        "tooLong": "Tento text je príliš dlhý. Zmestite sa prosím do 5000 znakov.",
+        "tooFewWords": "Pridajte trochu viac textu (asi 40 slov a viac), nech vieme vytvoriť dobré otázky."
       },
-      "voiceSettings": "1063|Nastavenia hlasu",
-      "questions": "1064|Otázky",
-      "textInput": "1065|Zadanie textu"
+      "voiceSettings": "Nastavenia hlasu",
+      "questions": "Otázky",
+      "textInput": "Zadanie textu"
     },
     "session": {
-      "replay": "1066|Prehrať znova",
-      "transcript": "1067|Prepis",
-      "questionsTitle": "1068|Otázky",
-      "answerFirst": "1069|Pred kontrolou odpovedzte aspoň na jednu otázku.",
-      "checkAnswers": "1070|Skontrolovať odpovede",
-      "finish": "1071|Dokončiť cvičenie"
+      "replay": "Prehrať znova",
+      "transcript": "Prepis",
+      "questionsTitle": "Otázky",
+      "answerFirst": "Pred kontrolou odpovedzte aspoň na jednu otázku.",
+      "checkAnswers": "Skontrolovať odpovede",
+      "finish": "Dokončiť cvičenie"
     },
     "result": {
-      "title": "1072|Precvičovanie dokončené",
-      "comprehension": "1073|Porozumenie",
-      "correct": "1074|Správne",
-      "time": "1075|Čas počúvania",
-      "speed": "1076|Rýchlosť",
-      "mistakes": "1077|Chyby",
-      "mistakesTitle": "1078|Prezrite si svoje chyby",
-      "watchOnlyTitle": "1079|Počúvanie dokončené",
-      "watchOnlyBody": "1080|Počúvali ste {{time}}.",
-      "practiceAgain": "1081|Precvičiť znova",
-      "back": "1082|Späť na počúvanie"
+      "title": "Precvičovanie dokončené",
+      "comprehension": "Porozumenie",
+      "correct": "Správne",
+      "time": "Čas počúvania",
+      "speed": "Rýchlosť",
+      "mistakes": "Chyby",
+      "mistakesTitle": "Prezrite si svoje chyby",
+      "watchOnlyTitle": "Počúvanie dokončené",
+      "watchOnlyBody": "Počúvali ste {{time}}.",
+      "practiceAgain": "Precvičiť znova",
+      "back": "Späť na počúvanie"
     },
     "importAudio": {
-      "title": "1083|Import audia",
-      "subtitle": "1084|Urobte z vlastného audia počúvacie cvičenie.",
-      "uploadTitle": "1085|Nahrať zvukový súbor",
-      "uploadFormats": "1086|MP3, M4A, WAV alebo AAC · do 50 MB",
-      "chooseFile": "1087|Vybrať súbor",
-      "clearFile": "1088|Odobrať súbor",
-      "infoNote": "1089|Vaše audio sa prepíše na pozadí. Počas cvičenia zostane prepis skrytý.",
-      "continue": "1090|Pokračovať",
-      "processingTitle": "1091|Pripravujeme vaše počúvacie cvičenie",
-      "step1": "1092|Nahrávame audio",
-      "step2": "1093|Prepisujeme reč",
-      "step3": "1094|Vytvárame otázky",
-      "processError": "1095|Toto audio sa nepodarilo pripraviť. Skúste to znova.",
-      "tryAgain": "1096|Skúsiť znova",
-      "chooseAnother": "1097|Vybrať iný súbor",
-      "transcriptHidden": "1098|Prepis je skrytý, aby zostalo naozajstným počúvacím cvičením."
+      "title": "Import audia",
+      "subtitle": "Urobte z vlastného audia počúvacie cvičenie.",
+      "uploadTitle": "Nahrať zvukový súbor",
+      "uploadFormats": "MP3, M4A, WAV alebo AAC · do 50 MB",
+      "chooseFile": "Vybrať súbor",
+      "clearFile": "Odobrať súbor",
+      "infoNote": "Vaše audio sa prepíše na pozadí. Počas cvičenia zostane prepis skrytý.",
+      "continue": "Pokračovať",
+      "processingTitle": "Pripravujeme vaše počúvacie cvičenie",
+      "step1": "Nahrávame audio",
+      "step2": "Prepisujeme reč",
+      "step3": "Vytvárame otázky",
+      "processError": "Toto audio sa nepodarilo pripraviť. Skúste to znova.",
+      "tryAgain": "Skúsiť znova",
+      "chooseAnother": "Vybrať iný súbor",
+      "transcriptHidden": "Prepis je skrytý, aby zostalo naozajstným počúvacím cvičením."
     },
     "importVideo": {
-      "title": "1099|Import videa",
-      "subtitle": "1100|Nahrajte video, získajte titulky a precvičte sa s otázkami.",
-      "uploadTitle": "1101|Nahrať videosúbor",
-      "uploadFormats": "1102|MP4, MOV alebo M4V · do 80 MB",
-      "step1": "1103|Pripravujeme video",
-      "step2": "1104|Prepisujeme reč",
-      "step3": "1105|Zostavujeme titulky",
-      "subtitles": "1106|Titulky",
-      "subtitlesOn": "1107|Titulky zapnuté",
-      "subtitlesOff": "1108|Titulky vypnuté",
-      "noSubtitles": "1109|Pre toto video nie sú k dispozícii titulky.",
-      "tapWord": "1110|Ťuknutím na slovo ho preložíte.",
-      "questionsLocked": "1111|Otázky sa odomknú, keď video dopozeráte."
+      "title": "Import videa",
+      "subtitle": "Nahrajte video, získajte titulky a precvičte sa s otázkami.",
+      "uploadTitle": "Nahrať videosúbor",
+      "uploadFormats": "MP4, MOV alebo M4V · do 80 MB",
+      "step1": "Pripravujeme video",
+      "step2": "Prepisujeme reč",
+      "step3": "Zostavujeme titulky",
+      "subtitles": "Titulky",
+      "subtitlesOn": "Titulky zapnuté",
+      "subtitlesOff": "Titulky vypnuté",
+      "noSubtitles": "Pre toto video nie sú k dispozícii titulky.",
+      "tapWord": "Ťuknutím na slovo ho preložíte.",
+      "questionsLocked": "Otázky sa odomknú, keď video dopozeráte."
     },
     "wordSheet": {
-      "title": "1112|Preložiť slovo",
-      "pickSet": "1113|Vyberte sadu",
-      "createSet": "1114|Vytvoriť sadu",
-      "addToSet": "1115|Pridať do sady",
-      "noSets": "1116|Zatiaľ nemáte žiadne sady. Vytvorte ju nižšie.",
-      "setNamePlaceholder": "1117|napr. Slová z videa",
-      "createAndAdd": "1118|Vytvoriť a pridať slovo",
-      "saved": "1119|Uložené do „{{set}}“."
+      "title": "Preložiť slovo",
+      "pickSet": "Vyberte sadu",
+      "createSet": "Vytvoriť sadu",
+      "addToSet": "Pridať do sady",
+      "noSets": "Zatiaľ nemáte žiadne sady. Vytvorte ju nižšie.",
+      "setNamePlaceholder": "napr. Slová z videa",
+      "createAndAdd": "Vytvoriť a pridať slovo",
+      "saved": "Uložené do „{{set}}“."
     },
     "saved": {
-      "title": "1120|Uložené cvičenia",
-      "subtitle": "1121|Pokračujte v sedeniach a prezrite si svoje chyby z počúvania.",
-      "emptyTitle": "1122|Žiadne uložené sedenia",
-      "emptyBody": "1123|Dokončite alebo pozastavte počúvacie sedenie a objaví sa tu.",
-      "continueEyebrow": "1124|Pokračovať v počúvaní",
-      "percentComplete": "1125|{{percent}} % hotovo",
-      "continue": "1126|Pokračovať",
-      "review": "1127|Prejsť",
-      "delete": "1128|Vymazať sedenie",
-      "deleteConfirm": "1129|Vymazať „{{title}}“? Túto akciu nemožno vrátiť späť.",
+      "title": "Uložené cvičenia",
+      "subtitle": "Pokračujte v sedeniach a prezrite si svoje chyby z počúvania.",
+      "emptyTitle": "Žiadne uložené sedenia",
+      "emptyBody": "Dokončite alebo pozastavte počúvacie sedenie a objaví sa tu.",
+      "continueEyebrow": "Pokračovať v počúvaní",
+      "percentComplete": "{{percent}} % hotovo",
+      "continue": "Pokračovať",
+      "review": "Prejsť",
+      "delete": "Vymazať sedenie",
+      "deleteConfirm": "Vymazať „{{title}}“? Túto akciu nemožno vrátiť späť.",
       "status": {
-        "draft": "1130|Koncept",
-        "inProgress": "1131|Rozpracované",
-        "completed": "1132|Dokončené"
+        "draft": "Koncept",
+        "inProgress": "Rozpracované",
+        "completed": "Dokončené"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "1133|Režimy precvičovania",
+    "sectionTitle": "Režimy precvičovania",
     "today": {
-      "title": "1134|Dnešný pokrok",
-      "subtitle": "1135|precvičovania hovorenia"
+      "title": "Dnešný pokrok",
+      "subtitle": "precvičovania hovorenia"
     },
     "menu": {
-      "comingSoon": "1136|Už čoskoro",
+      "comingSoon": "Už čoskoro",
       "conversation": {
-        "title": "1137|Konverzácia s AI",
-        "subtitle": "1138|Rozprávajte sa s AI lektorom v reálnom čase."
+        "title": "Konverzácia s AI",
+        "subtitle": "Rozprávajte sa s AI lektorom v reálnom čase."
       },
       "free": {
-        "title": "1139|Voľné hovorenie",
-        "subtitle": "1140|Rozprávajte na vygenerované témy a získajte spätnú väzbu."
+        "title": "Voľné hovorenie",
+        "subtitle": "Rozprávajte na vygenerované témy a získajte spätnú väzbu."
       },
       "picture": {
-        "title": "1141|Opis obrázka",
-        "subtitle": "1142|Opisujte obrázky a učte sa užitočné slová."
+        "title": "Opis obrázka",
+        "subtitle": "Opisujte obrázky a učte sa užitočné slová."
       },
       "debate": {
-        "title": "1143|Režim debaty",
-        "subtitle": "1144|Diskutujte o témach a stavajte si argumenty."
+        "title": "Režim debaty",
+        "subtitle": "Diskutujte o témach a stavajte si argumenty."
       },
       "shadowing": {
-        "title": "1145|Shadowing",
-        "subtitle": "1146|Opakujte frázy a zlepšujte výslovnosť."
+        "title": "Shadowing",
+        "subtitle": "Opakujte frázy a zlepšujte výslovnosť."
       },
       "pronunciation": {
-        "title": "1147|Tréner výslovnosti",
-        "subtitle": "1148|Zamerajte sa na ťažké hlásky a slová."
+        "title": "Tréner výslovnosti",
+        "subtitle": "Zamerajte sa na ťažké hlásky a slová."
       }
     },
     "input": {
-      "speak": "1149|Hovoriť",
-      "stop": "1150|Zastaviť",
-      "listening": "1151|Počúvame…",
-      "placeholder": "1152|Napíšte svoju odpoveď…",
-      "noVoice": "1153|Hlasový vstup tento prehliadač nepodporuje — napíšte odpoveď."
+      "speak": "Hovoriť",
+      "stop": "Zastaviť",
+      "listening": "Počúvame…",
+      "placeholder": "Napíšte svoju odpoveď…",
+      "noVoice": "Hlasový vstup tento prehliadač nepodporuje — napíšte odpoveď."
     },
     "conversation": {
-      "title": "1154|Konverzácia s AI",
-      "subtitle": "1155|Rozprávajte sa s AI lektorom v reálnom čase.",
-      "topic": "1156|Téma",
-      "scenarios": "1157|Scenáre",
-      "autoTopic": "1158|Prekvap ma",
-      "autoTopicHint": "1159|Vygenerujeme pre vás novú tému.",
-      "length": "1160|Dĺžka",
-      "min": "1161|min",
-      "start": "1162|Začať konverzáciu",
-      "starting": "1163|Spúšťame…",
-      "startError": "1164|Konverzáciu sa nepodarilo začať. Skúste to znova.",
-      "end": "1165|Ukončiť",
-      "dismiss": "1166|Zavrieť",
-      "hint": "1167|Pomôcka",
-      "getHint": "1168|Potrebujete pomôcku?",
-      "hintLoading": "1169|Rozmýšľame…"
+      "title": "Konverzácia s AI",
+      "subtitle": "Rozprávajte sa s AI lektorom v reálnom čase.",
+      "topic": "Téma",
+      "scenarios": "Scenáre",
+      "autoTopic": "Prekvap ma",
+      "autoTopicHint": "Vygenerujeme pre vás novú tému.",
+      "length": "Dĺžka",
+      "min": "min",
+      "start": "Začať konverzáciu",
+      "starting": "Spúšťame…",
+      "startError": "Konverzáciu sa nepodarilo začať. Skúste to znova.",
+      "end": "Ukončiť",
+      "dismiss": "Zavrieť",
+      "hint": "Pomôcka",
+      "getHint": "Potrebujete pomôcku?",
+      "hintLoading": "Rozmýšľame…"
     },
     "result": {
-      "title": "1170|Precvičovanie dokončené",
-      "generating": "1171|Analyzujeme váš prejav…",
-      "overall": "1172|Celkové hodnotenie",
-      "corrections": "1173|Opravy",
-      "transcript": "1174|Prepis",
-      "practiceAgain": "1175|Precvičiť znova",
-      "back": "1176|Späť na hovorenie"
+      "title": "Precvičovanie dokončené",
+      "generating": "Analyzujeme váš prejav…",
+      "overall": "Celkové hodnotenie",
+      "corrections": "Opravy",
+      "transcript": "Prepis",
+      "practiceAgain": "Precvičiť znova",
+      "back": "Späť na hovorenie"
     },
     "free": {
-      "title": "1177|Voľné hovorenie",
-      "subtitle": "1178|Rozprávajte voľne na tému a získajte spätnú väzbu.",
-      "preview": "1179|Náhľad",
-      "autoTopic": "1180|Téma vygenerovaná AI",
-      "autoTopicHint": "1181|Keď začnete, vyberieme novú tému pre {{language}} · {{level}}.",
-      "auto": "1182|Auto",
-      "start": "1183|Spustiť Voľné hovorenie",
-      "generating": "1184|Generujeme tému…",
-      "generatingHint": "1185|Vyberáme niečo, čo sadne vašej úrovni.",
-      "fallbackTopic": "1186|Tému sa nepodarilo vygenerovať. Použijeme náhradnú.",
-      "transcript": "1187|Prepis",
-      "transcriptHint": "1188|Váš prepis sa tu objaví, kým rozprávate.",
-      "startSpeaking": "1189|Začať hovoriť"
+      "title": "Voľné hovorenie",
+      "subtitle": "Rozprávajte voľne na tému a získajte spätnú väzbu.",
+      "preview": "Náhľad",
+      "autoTopic": "Téma vygenerovaná AI",
+      "autoTopicHint": "Keď začnete, vyberieme novú tému pre {{language}} · {{level}}.",
+      "auto": "Auto",
+      "start": "Spustiť Voľné hovorenie",
+      "generating": "Generujeme tému…",
+      "generatingHint": "Vyberáme niečo, čo sadne vašej úrovni.",
+      "fallbackTopic": "Tému sa nepodarilo vygenerovať. Použijeme náhradnú.",
+      "transcript": "Prepis",
+      "transcriptHint": "Váš prepis sa tu objaví, kým rozprávate.",
+      "startSpeaking": "Začať hovoriť"
     },
     "picture": {
-      "title": "1190|Opis obrázka",
-      "subtitle": "1191|Opíšte, čo vidíte, a získajte spätnú väzbu.",
-      "start": "1192|Spustiť Opis obrázka",
-      "prompt": "1193|Opíšte, čo na tomto obrázku vidíte.",
-      "tryToMention": "1194|Skúste spomenúť:",
+      "title": "Opis obrázka",
+      "subtitle": "Opíšte, čo vidíte, a získajte spätnú väzbu.",
+      "start": "Spustiť Opis obrázka",
+      "prompt": "Opíšte, čo na tomto obrázku vidíte.",
+      "tryToMention": "Skúste spomenúť:",
       "hints": {
-        "people": "1195|osoby",
-        "objects": "1196|predmety",
-        "actions": "1197|činnosti",
-        "colors": "1198|farby",
-        "emotions": "1199|emócie"
+        "people": "osoby",
+        "objects": "predmety",
+        "actions": "činnosti",
+        "colors": "farby",
+        "emotions": "emócie"
       },
-      "loading": "1200|Načítavame fotku…",
-      "retry": "1201|Skúsiť znova",
-      "newPhoto": "1202|Nová fotka",
-      "imageAlt": "1203|Fotka na opis",
-      "photoBy": "1204|Fotka od",
-      "onUnsplash": "1205|na Unsplash",
-      "startDescribing": "1206|Začať opisovať"
+      "loading": "Načítavame fotku…",
+      "retry": "Skúsiť znova",
+      "newPhoto": "Nová fotka",
+      "imageAlt": "Fotka na opis",
+      "photoBy": "Fotka od",
+      "onUnsplash": "na Unsplash",
+      "startDescribing": "Začať opisovať"
     },
     "debate": {
-      "title": "1207|Režim debaty",
-      "subtitle": "1208|Bráňte svoju stranu proti AI protivníkovi.",
-      "start": "1209|Začať debatu",
-      "pickSide": "1210|Vaša strana",
-      "preparing": "1211|Pripravujeme tému debaty…",
-      "roundOf": "1212|Kolo {{current}} z {{total}} · {{label}}",
+      "title": "Režim debaty",
+      "subtitle": "Bráňte svoju stranu proti AI protivníkovi.",
+      "start": "Začať debatu",
+      "pickSide": "Vaša strana",
+      "preparing": "Pripravujeme tému debaty…",
+      "roundOf": "Kolo {{current}} z {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "1213|Súhlas",
-          "subtitle": "1214|Obhajujte tvrdenie"
+          "title": "Súhlas",
+          "subtitle": "Obhajujte tvrdenie"
         },
         "disagree": {
-          "title": "1215|Nesúhlas",
-          "subtitle": "1216|Argumentujte proti"
+          "title": "Nesúhlas",
+          "subtitle": "Argumentujte proti"
         },
         "surprise": {
-          "title": "1217|Prekvap ma",
-          "subtitle": "1218|Stranu vyberieme za vás"
+          "title": "Prekvap ma",
+          "subtitle": "Stranu vyberieme za vás"
         }
       }
     },
     "practice": {
-      "listen": "1219|Vypočuť",
-      "playing": "1220|Prehrávame…",
-      "record": "1221|Nahrať",
-      "stop": "1222|Zastaviť",
-      "playMine": "1223|Prehrať moju nahrávku",
-      "noRecording": "1224|Nahrávanie tento prehliadač nepodporuje — počúvať a opakovať však môžete."
+      "listen": "Vypočuť",
+      "playing": "Prehrávame…",
+      "record": "Nahrať",
+      "stop": "Zastaviť",
+      "playMine": "Prehrať moju nahrávku",
+      "noRecording": "Nahrávanie tento prehliadač nepodporuje — počúvať a opakovať však môžete."
     },
     "shadowing": {
-      "title": "1225|Shadowing",
-      "subtitle": "1226|Počúvajte, opakujte a porovnajte sa.",
-      "start": "1227|Spustiť Shadowing",
-      "category": "1228|Kategória",
-      "howItWorks": "1229|Vypočujte si frázu, nahlas ju zopakujte počas nahrávania a potom si seba prehrajte a porovnajte rytmus.",
-      "loading": "1230|Generujeme frázy…",
-      "phrase": "1231|Fráza",
-      "previous": "1232|Predchádzajúca",
-      "nextPhrase": "1233|Ďalšia fráza",
-      "finish": "1234|Dokončiť",
-      "changeSettings": "1235|Zmeniť nastavenia",
-      "done": "1236|Hotovo: {{count}}",
-      "allDone": "1237|Všetky frázy precvičené!",
-      "newSet": "1238|Nová sada"
+      "title": "Shadowing",
+      "subtitle": "Počúvajte, opakujte a porovnajte sa.",
+      "start": "Spustiť Shadowing",
+      "category": "Kategória",
+      "howItWorks": "Vypočujte si frázu, nahlas ju zopakujte počas nahrávania a potom si seba prehrajte a porovnajte rytmus.",
+      "loading": "Generujeme frázy…",
+      "phrase": "Fráza",
+      "previous": "Predchádzajúca",
+      "nextPhrase": "Ďalšia fráza",
+      "finish": "Dokončiť",
+      "changeSettings": "Zmeniť nastavenia",
+      "done": "Hotovo: {{count}}",
+      "allDone": "Všetky frázy precvičené!",
+      "newSet": "Nová sada"
     },
     "pronunciation": {
-      "title": "1239|Tréner výslovnosti",
-      "subtitle": "1240|Zamerajte sa na ťažké hlásky a slová.",
-      "start": "1241|Spustiť tréning",
-      "focus": "1242|Zameranie",
-      "difficulty": "1243|Náročnosť",
+      "title": "Tréner výslovnosti",
+      "subtitle": "Zamerajte sa na ťažké hlásky a slová.",
+      "start": "Spustiť tréning",
+      "focus": "Zameranie",
+      "difficulty": "Náročnosť",
       "level": {
-        "easy": "1244|Ľahká",
-        "balanced": "1245|Vyvážená",
-        "hard": "1246|Ťažká"
+        "easy": "Ľahká",
+        "balanced": "Vyvážená",
+        "hard": "Ťažká"
       },
-      "loading": "1247|Generujeme cvičenia…",
-      "sound": "1248|Hláska",
-      "scoringUnavailable": "1249|Automatické hodnotenie výslovnosti zatiaľ nie je na serveri nastavené, takže skóre sa nezobrazuje. Počúvanie, nahrávanie aj prehrávanie fungujú."
+      "loading": "Generujeme cvičenia…",
+      "sound": "Hláska",
+      "scoringUnavailable": "Automatické hodnotenie výslovnosti zatiaľ nie je na serveri nastavené, takže skóre sa nezobrazuje. Počúvanie, nahrávanie aj prehrávanie fungujú."
     }
   },
   "profile": {
-    "interfaceLanguage": "1250|Jazyk rozhrania",
+    "interfaceLanguage": "Jazyk rozhrania",
     "password": {
-      "title": "1251|Vytvorte heslo",
-      "body": "1252|Váš účet vznikol cez Google, takže nemá heslo — poliami e-mail a heslo sa prihlásiť nedá. Nastavte si heslo a budú fungovať oba spôsoby.",
-      "save": "1253|Uložiť heslo",
-      "saving": "1254|Ukladáme...",
-      "savedInfo": "1255|Heslo vytvorené. Teraz sa môžete prihlásiť aj e-mailom."
+      "title": "Vytvorte heslo",
+      "body": "Váš účet vznikol cez Google, takže nemá heslo — poliami e-mail a heslo sa prihlásiť nedá. Nastavte si heslo a budú fungovať oba spôsoby.",
+      "save": "Uložiť heslo",
+      "saving": "Ukladáme...",
+      "savedInfo": "Heslo vytvorené. Teraz sa môžete prihlásiť aj e-mailom."
     }
   },
   "units": {
-    "min": "1256|min",
-    "words": "1257|slov"
+    "min": "min",
+    "words": "slov"
   },
   "link": {
-    "title": "1258|Prihlásiť sa odkazom",
-    "subtitle": "1259|Pošleme vám e-mailom jednorazový odkaz. Žiadne heslo na zapamätanie.",
-    "send": "1260|Odoslať odkaz",
-    "sending": "1261|Odosielame...",
-    "sentInfo": "1262|Odkaz odoslaný. Skontrolujte e-mail.",
-    "sentTitle": "1263|Skontrolujte e-mail",
-    "sentBody": "1264|Prihlasovací odkaz sme poslali na",
-    "useAnotherEmail": "1265|Použiť iný e-mail",
-    "backToPassword": "1266|Prihlásiť sa radšej heslom"
+    "title": "Prihlásiť sa odkazom",
+    "subtitle": "Pošleme vám e-mailom jednorazový odkaz. Žiadne heslo na zapamätanie.",
+    "send": "Odoslať odkaz",
+    "sending": "Odosielame...",
+    "sentInfo": "Odkaz odoslaný. Skontrolujte e-mail.",
+    "sentTitle": "Skontrolujte e-mail",
+    "sentBody": "Prihlasovací odkaz sme poslali na",
+    "useAnotherEmail": "Použiť iný e-mail",
+    "backToPassword": "Prihlásiť sa radšej heslom"
   },
   "action": {
-    "working": "1267|Moment...",
-    "continue": "1268|Pokračovať",
-    "confirmEmailTitle": "1269|Potvrďte svoj e-mail",
-    "confirmEmailBody": "1270|Tento odkaz bol otvorený v inom prehliadači. Zadajte adresu, na ktorú bol odoslaný, a prihlásenie dokončíme.",
-    "resetTitle": "1271|Nové heslo",
-    "resetSubtitle": "1272|Vyberte nové heslo pre",
-    "newPassword": "1273|Nové heslo",
-    "confirmPassword": "1274|Zopakujte heslo",
-    "savePassword": "1275|Uložiť heslo",
-    "resetDoneTitle": "1276|Heslo aktualizované",
-    "resetDoneBody": "1277|Teraz sa môžete prihlásiť novým heslom.",
-    "failedTitle": "1278|Tento odkaz nefungoval",
-    "failedBody": "1279|Možno už bol použitý, alebo vypršala jeho platnosť. Vyžiadajte si nový na prihlasovacej obrazovke.",
-    "backToSignIn": "1280|Späť na prihlásenie"
+    "working": "Moment...",
+    "continue": "Pokračovať",
+    "confirmEmailTitle": "Potvrďte svoj e-mail",
+    "confirmEmailBody": "Tento odkaz bol otvorený v inom prehliadači. Zadajte adresu, na ktorú bol odoslaný, a prihlásenie dokončíme.",
+    "resetTitle": "Nové heslo",
+    "resetSubtitle": "Vyberte nové heslo pre",
+    "newPassword": "Nové heslo",
+    "confirmPassword": "Zopakujte heslo",
+    "savePassword": "Uložiť heslo",
+    "resetDoneTitle": "Heslo aktualizované",
+    "resetDoneBody": "Teraz sa môžete prihlásiť novým heslom.",
+    "failedTitle": "Tento odkaz nefungoval",
+    "failedBody": "Možno už bol použitý, alebo vypršala jeho platnosť. Vyžiadajte si nový na prihlasovacej obrazovke.",
+    "backToSignIn": "Späť na prihlásenie"
   },
   "common": {
-    "cancel": "1281|Zrušiť",
-    "delete": "1282|Vymazať",
+    "cancel": "Zrušiť",
+    "delete": "Vymazať",
     "view": {
-      "label": "1283|Zobrazenie",
-      "rows": "1284|Zoznam",
-      "grid": "1285|Mriežka"
+      "label": "Zobrazenie",
+      "rows": "Zoznam",
+      "grid": "Mriežka"
     }
   },
   "practice": {
     "language": {
-      "label": "1286|Jazyk",
-      "search": "1287|Hľadať jazyk",
-      "noMatch": "1288|Tomu nezodpovedá žiadny jazyk.",
-      "noVoice": "1289|Váš prehliadač nemá hlas pre jazyk {{language}}, takže lektor týmto jazykom hovoriť nebude. Pridajte jazykový balík v nastaveniach systému alebo vyberte iný jazyk."
+      "label": "Jazyk",
+      "search": "Hľadať jazyk",
+      "noMatch": "Tomu nezodpovedá žiadny jazyk.",
+      "noVoice": "Váš prehliadač nemá hlas pre jazyk {{language}}, takže lektor týmto jazykom hovoriť nebude. Pridajte jazykový balík v nastaveniach systému alebo vyberte iný jazyk."
     }
   }
 }

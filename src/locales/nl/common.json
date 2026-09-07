@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "1|WordAround",
-    "tagline": "2|Leer talen, actief."
+    "name": "WordAround",
+    "tagline": "Leer talen, actief."
   },
   "onboarding": {
-    "subtitle": "3|Leer woorden op een leuke\\nen simpele manier",
-    "start": "4|Laten we beginnen"
+    "subtitle": "Leer woorden op een leuke\\nen simpele manier",
+    "start": "Laten we beginnen"
   },
   "auth": {
-    "welcomeBack": "5|Welkom terug",
-    "subtitle": "6|Log in om verder te leren",
-    "email": "7|E-mail",
-    "emailPlaceholder": "8|Voer je e-mailadres in",
-    "password": "9|Wachtwoord",
-    "passwordPlaceholder": "10|Voer je wachtwoord in",
-    "forgotPassword": "11|Wachtwoord vergeten?",
-    "signIn": "12|Inloggen",
-    "signingIn": "13|Bezig met inloggen...",
-    "signUp": "14|Registreren",
-    "signOut": "15|Uitloggen",
-    "continueWithGoogle": "16|Doorgaan met Google",
-    "createAccount": "17|Account aanmaken",
-    "accountCreatedInfo": "18|Account aangemaakt. We hebben een verificatiemail gestuurd.",
-    "resetEmailSent": "19|E-mail voor wachtwoordherstel verzonden",
-    "showPassword": "20|Wachtwoord tonen",
-    "hidePassword": "21|Wachtwoord verbergen",
-    "back": "22|Terug",
-    "signUpTitle": "23|Maak je account aan",
-    "signUpSubtitle": "24|Een paar minuten per dag en je woordenschat groeit",
-    "name": "25|Naam",
-    "namePlaceholder": "26|Hoe zullen we je noemen?",
-    "orWithEmail": "27|of met e-mail",
-    "signUpWithGoogle": "28|Registreren met Google",
-    "passwordHint": "29|Minstens {{min}} tekens",
-    "magicLinkCta": "30|Inloggen met een e-maillink",
-    "creatingAccount": "31|Account aanmaken..."
+    "welcomeBack": "Welkom terug",
+    "subtitle": "Log in om verder te leren",
+    "email": "E-mail",
+    "emailPlaceholder": "Voer je e-mailadres in",
+    "password": "Wachtwoord",
+    "passwordPlaceholder": "Voer je wachtwoord in",
+    "forgotPassword": "Wachtwoord vergeten?",
+    "signIn": "Inloggen",
+    "signingIn": "Bezig met inloggen...",
+    "signUp": "Registreren",
+    "signOut": "Uitloggen",
+    "continueWithGoogle": "Doorgaan met Google",
+    "createAccount": "Account aanmaken",
+    "accountCreatedInfo": "Account aangemaakt. We hebben een verificatiemail gestuurd.",
+    "resetEmailSent": "E-mail voor wachtwoordherstel verzonden",
+    "showPassword": "Wachtwoord tonen",
+    "hidePassword": "Wachtwoord verbergen",
+    "back": "Terug",
+    "signUpTitle": "Maak je account aan",
+    "signUpSubtitle": "Een paar minuten per dag en je woordenschat groeit",
+    "name": "Naam",
+    "namePlaceholder": "Hoe zullen we je noemen?",
+    "orWithEmail": "of met e-mail",
+    "signUpWithGoogle": "Registreren met Google",
+    "passwordHint": "Minstens {{min}} tekens",
+    "magicLinkCta": "Inloggen met een e-maillink",
+    "creatingAccount": "Account aanmaken..."
   },
   "verify": {
-    "title": "32|Verifieer je e-mailadres",
-    "subtitle": "33|Nog één stap voordat je begint met leren",
-    "sentTo": "34|We hebben een verificatielink gestuurd naar",
-    "fallbackEmail": "35|je e-mailadres",
-    "step1": "36|Open de e-mail in je inbox",
-    "step2": "37|Tik op de bevestigingslink",
-    "step3": "38|We openen je leeromgeving meteen — je hoeft hier niet terug te komen",
-    "checkButton": "39|Ik heb mijn e-mail geverifieerd",
-    "checking": "40|Bezig met controleren...",
-    "resend": "41|E-mail opnieuw sturen",
-    "useAnotherAccount": "42|Ander account gebruiken",
-    "badgeInbox": "43|Check je inbox",
-    "badgeConfirm": "44|Bevestigen",
-    "badgeDone": "45|Klaar",
-    "resentInfo": "46|Verificatiemail opnieuw verzonden",
-    "notVerifiedYet": "47|Het e-mailadres is nog niet geverifieerd"
+    "title": "Verifieer je e-mailadres",
+    "subtitle": "Nog één stap voordat je begint met leren",
+    "sentTo": "We hebben een verificatielink gestuurd naar",
+    "fallbackEmail": "je e-mailadres",
+    "step1": "Open de e-mail in je inbox",
+    "step2": "Tik op de bevestigingslink",
+    "step3": "We openen je leeromgeving meteen — je hoeft hier niet terug te komen",
+    "checkButton": "Ik heb mijn e-mail geverifieerd",
+    "checking": "Bezig met controleren...",
+    "resend": "E-mail opnieuw sturen",
+    "useAnotherAccount": "Ander account gebruiken",
+    "badgeInbox": "Check je inbox",
+    "badgeConfirm": "Bevestigen",
+    "badgeDone": "Klaar",
+    "resentInfo": "Verificatiemail opnieuw verzonden",
+    "notVerifiedYet": "Het e-mailadres is nog niet geverifieerd"
   },
   "errors": {
-    "emailRequired": "48|E-mailadres is verplicht",
-    "emailInvalid": "49|Voer een geldig e-mailadres in",
-    "emailFirst": "50|Voer eerst je e-mailadres in",
-    "passwordRequired": "51|Wachtwoord is verplicht",
-    "passwordTooShort": "52|Het wachtwoord moet minstens 8 tekens bevatten",
-    "invalidEmail": "53|Ongeldige e-mailindeling",
-    "wrongPassword": "54|Onjuist e-mailadres of wachtwoord. Als je je met Google hebt geregistreerd, gebruik dan de Google-knop.",
-    "userNotFound": "55|Onjuist e-mailadres of wachtwoord. Als je je met Google hebt geregistreerd, gebruik dan de Google-knop.",
-    "invalidCredential": "56|Onjuist e-mailadres of wachtwoord. Als je je met Google hebt geregistreerd, gebruik dan de Google-knop.",
-    "emailInUse": "57|Dit account bestaat al",
-    "weakPassword": "58|Dit wachtwoord is te zwak",
-    "network": "59|Netwerkfout. Controleer je internetverbinding",
-    "tooManyRequests": "60|Te veel pogingen. Probeer het later opnieuw",
-    "differentCredential": "61|Dit e-mailadres wordt al gebruikt met een andere inlogmethode",
-    "noActiveAccount": "62|Geen actief account gevonden",
-    "default": "63|Verificatie mislukt. Probeer het opnieuw",
-    "nameRequired": "64|Naam is verplicht",
-    "passwordsDoNotMatch": "65|De wachtwoorden komen niet overeen",
-    "actionExpired": "66|Deze link is verlopen. Vraag een nieuwe aan.",
-    "actionInvalid": "67|Deze link is niet langer geldig.",
-    "userDisabled": "68|Dit account is uitgeschakeld.",
-    "requiresRecentLogin": "69|Log voor de zekerheid opnieuw in en herhaal dit daarna.",
-    "passwordAlreadySet": "70|Dit account heeft al een wachtwoord.",
-    "linkNoEmail": "71|Voer het e-mailadres in waar de link naartoe is gestuurd"
+    "emailRequired": "E-mailadres is verplicht",
+    "emailInvalid": "Voer een geldig e-mailadres in",
+    "emailFirst": "Voer eerst je e-mailadres in",
+    "passwordRequired": "Wachtwoord is verplicht",
+    "passwordTooShort": "Het wachtwoord moet minstens 8 tekens bevatten",
+    "invalidEmail": "Ongeldige e-mailindeling",
+    "wrongPassword": "Onjuist e-mailadres of wachtwoord. Als je je met Google hebt geregistreerd, gebruik dan de Google-knop.",
+    "userNotFound": "Onjuist e-mailadres of wachtwoord. Als je je met Google hebt geregistreerd, gebruik dan de Google-knop.",
+    "invalidCredential": "Onjuist e-mailadres of wachtwoord. Als je je met Google hebt geregistreerd, gebruik dan de Google-knop.",
+    "emailInUse": "Dit account bestaat al",
+    "weakPassword": "Dit wachtwoord is te zwak",
+    "network": "Netwerkfout. Controleer je internetverbinding",
+    "tooManyRequests": "Te veel pogingen. Probeer het later opnieuw",
+    "differentCredential": "Dit e-mailadres wordt al gebruikt met een andere inlogmethode",
+    "noActiveAccount": "Geen actief account gevonden",
+    "default": "Verificatie mislukt. Probeer het opnieuw",
+    "nameRequired": "Naam is verplicht",
+    "passwordsDoNotMatch": "De wachtwoorden komen niet overeen",
+    "actionExpired": "Deze link is verlopen. Vraag een nieuwe aan.",
+    "actionInvalid": "Deze link is niet langer geldig.",
+    "userDisabled": "Dit account is uitgeschakeld.",
+    "requiresRecentLogin": "Log voor de zekerheid opnieuw in en herhaal dit daarna.",
+    "passwordAlreadySet": "Dit account heeft al een wachtwoord.",
+    "linkNoEmail": "Voer het e-mailadres in waar de link naartoe is gestuurd"
   },
   "nav": {
-    "home": "72|Start",
-    "speaking": "73|Spreken",
-    "listening": "74|Luisteren",
-    "reading": "75|Lezen",
-    "writing": "76|Schrijven",
-    "folders": "77|Mappen",
-    "sets": "78|Sets",
-    "notes": "79|Notities",
-    "profile": "80|Profiel",
-    "create": "81|Nieuw",
-    "menu": "82|Menu",
-    "closeMenu": "83|Menu sluiten",
+    "home": "Start",
+    "speaking": "Spreken",
+    "listening": "Luisteren",
+    "reading": "Lezen",
+    "writing": "Schrijven",
+    "folders": "Mappen",
+    "sets": "Sets",
+    "notes": "Notities",
+    "profile": "Profiel",
+    "create": "Nieuw",
+    "menu": "Menu",
+    "closeMenu": "Menu sluiten",
     "group": {
-      "practice": "84|Oefenen",
-      "library": "85|Bibliotheek"
+      "practice": "Oefenen",
+      "library": "Bibliotheek"
     }
   },
   "folders": {
-    "create": "86|Map maken",
-    "loading": "87|Mappen laden…",
-    "loadError": "88|We konden je mappen niet laden.",
-    "emptyTitle": "89|Nog geen mappen",
-    "emptyBody": "90|Maak je eerste map om je sets te ordenen.",
-    "setCount": "91|{{count}} sets",
-    "setCount_one": "92|{{count}} set",
-    "newTitle": "93|Nieuwe map",
-    "newSubtitle": "94|Zet bij elkaar horende sets bij elkaar.",
-    "editTitle": "95|Map bewerken",
-    "name": "96|Naam",
-    "namePlaceholder": "97|bijv. Reizen",
-    "description": "98|Beschrijving",
-    "descriptionPlaceholder": "99|Optioneel",
-    "color": "100|Kleur",
-    "save": "101|Opslaan",
-    "saving": "102|Bezig met opslaan…",
-    "cancel": "103|Annuleren",
-    "edit": "104|Map bewerken",
-    "delete": "105|Map verwijderen",
-    "deleteConfirm": "106|\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt.",
-    "backToFolders": "107|Terug naar mappen",
-    "notFoundTitle": "108|Map niet gevonden",
-    "notFoundBody": "109|Deze map is mogelijk verwijderd.",
-    "noSetsInFolder": "110|Nog geen sets in deze map.",
-    "saveError": "111|Opslaan is mislukt. Probeer het opnieuw.",
+    "create": "Map maken",
+    "loading": "Mappen laden…",
+    "loadError": "We konden je mappen niet laden.",
+    "emptyTitle": "Nog geen mappen",
+    "emptyBody": "Maak je eerste map om je sets te ordenen.",
+    "setCount": "{{count}} sets",
+    "setCount_one": "{{count}} set",
+    "newTitle": "Nieuwe map",
+    "newSubtitle": "Zet bij elkaar horende sets bij elkaar.",
+    "editTitle": "Map bewerken",
+    "name": "Naam",
+    "namePlaceholder": "bijv. Reizen",
+    "description": "Beschrijving",
+    "descriptionPlaceholder": "Optioneel",
+    "color": "Kleur",
+    "save": "Opslaan",
+    "saving": "Bezig met opslaan…",
+    "cancel": "Annuleren",
+    "edit": "Map bewerken",
+    "delete": "Map verwijderen",
+    "deleteConfirm": "\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt.",
+    "backToFolders": "Terug naar mappen",
+    "notFoundTitle": "Map niet gevonden",
+    "notFoundBody": "Deze map is mogelijk verwijderd.",
+    "noSetsInFolder": "Nog geen sets in deze map.",
+    "saveError": "Opslaan is mislukt. Probeer het opnieuw.",
     "error": {
-      "nameRequired": "112|Een mapnaam is verplicht.",
-      "nameTooLong": "113|De mapnaam mag maximaal 80 tekens bevatten.",
-      "descTooLong": "114|De beschrijving mag maximaal 120 tekens bevatten."
+      "nameRequired": "Een mapnaam is verplicht.",
+      "nameTooLong": "De mapnaam mag maximaal 80 tekens bevatten.",
+      "descTooLong": "De beschrijving mag maximaal 120 tekens bevatten."
     },
-    "optional": "115|(optioneel)",
-    "preview": "116|Voorbeeld",
-    "previewPlaceholder": "117|Nieuwe map",
-    "deleteConfirmTitle": "118|Deze map verwijderen?"
+    "optional": "(optioneel)",
+    "preview": "Voorbeeld",
+    "previewPlaceholder": "Nieuwe map",
+    "deleteConfirmTitle": "Deze map verwijderen?"
   },
   "sets": {
-    "create": "119|Set maken",
-    "loading": "120|Sets laden…",
-    "loadError": "121|We konden je sets niet laden.",
-    "emptyTitle": "122|Nog geen sets",
-    "emptyBody": "123|Maak je eerste kaartenset met de knop Nieuw.",
-    "cardCount": "124|{{count}} kaarten",
-    "cardCount_one": "125|{{count}} kaart",
-    "keepPracticing": "126|Blijf oefenen",
-    "delete": "127|Set verwijderen",
-    "deleteConfirm": "128|\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt.",
-    "notFoundTitle": "129|Set niet gevonden",
-    "notFoundBody": "130|Deze set is mogelijk verwijderd.",
-    "backToSets": "131|Terug naar sets",
-    "edit": "132|Set bewerken",
-    "deleteConfirmTitle": "133|Deze set verwijderen?",
-    "editTitle": "134|Set bewerken",
-    "editSubtitle": "135|Wijzig de titel, kleur, het icoon of de map. De kaarten blijven waar ze zijn.",
-    "save": "136|Wijzigingen opslaan",
-    "saving": "137|Bezig met opslaan…",
-    "cancel": "138|Annuleren",
-    "saveError": "139|Opslaan is mislukt. Probeer het opnieuw."
+    "create": "Set maken",
+    "loading": "Sets laden…",
+    "loadError": "We konden je sets niet laden.",
+    "emptyTitle": "Nog geen sets",
+    "emptyBody": "Maak je eerste kaartenset met de knop Nieuw.",
+    "cardCount": "{{count}} kaarten",
+    "cardCount_one": "{{count}} kaart",
+    "keepPracticing": "Blijf oefenen",
+    "delete": "Set verwijderen",
+    "deleteConfirm": "\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt.",
+    "notFoundTitle": "Set niet gevonden",
+    "notFoundBody": "Deze set is mogelijk verwijderd.",
+    "backToSets": "Terug naar sets",
+    "edit": "Set bewerken",
+    "deleteConfirmTitle": "Deze set verwijderen?",
+    "editTitle": "Set bewerken",
+    "editSubtitle": "Wijzig de titel, kleur, het icoon of de map. De kaarten blijven waar ze zijn.",
+    "save": "Wijzigingen opslaan",
+    "saving": "Bezig met opslaan…",
+    "cancel": "Annuleren",
+    "saveError": "Opslaan is mislukt. Probeer het opnieuw."
   },
   "createSet": {
-    "title": "140|Nieuwe set",
-    "subtitle": "141|Voeg woorden toe en maak je set persoonlijk.",
-    "infoSection": "142|Setgegevens",
-    "setTitle": "143|Titel",
-    "setTitlePlaceholder": "144|bijv. Onmisbaar op reis",
-    "setDescription": "145|Beschrijving",
-    "setDescriptionPlaceholder": "146|Optioneel",
-    "privacy": "147|Privacy",
-    "private": "148|Privé",
-    "public": "149|Openbaar",
-    "cardsSection": "150|Kaarten",
-    "addCard": "151|Kaart toevoegen",
-    "cardN": "152|Kaart {{n}}",
-    "removeCard": "153|Kaart verwijderen",
-    "word": "154|Woord",
-    "translation": "155|Vertaling",
-    "example": "156|Voorbeeld (optioneel)",
-    "addImage": "157|Afbeelding toevoegen",
-    "removeImage": "158|Afbeelding verwijderen",
-    "customizeSection": "159|Aanpassen",
-    "color": "160|Kleur",
-    "icon": "161|Icoon",
-    "folder": "162|Map",
-    "noFolder": "163|Geen map",
-    "previewSection": "164|Voorbeeld",
-    "previewPlaceholder": "165|Settitel",
-    "save": "166|Set maken",
-    "saving": "167|Bezig met opslaan…",
-    "cancel": "168|Annuleren",
-    "saveError": "169|Opslaan is mislukt. Probeer het opnieuw.",
+    "title": "Nieuwe set",
+    "subtitle": "Voeg woorden toe en maak je set persoonlijk.",
+    "infoSection": "Setgegevens",
+    "setTitle": "Titel",
+    "setTitlePlaceholder": "bijv. Onmisbaar op reis",
+    "setDescription": "Beschrijving",
+    "setDescriptionPlaceholder": "Optioneel",
+    "privacy": "Privacy",
+    "private": "Privé",
+    "public": "Openbaar",
+    "cardsSection": "Kaarten",
+    "addCard": "Kaart toevoegen",
+    "cardN": "Kaart {{n}}",
+    "removeCard": "Kaart verwijderen",
+    "word": "Woord",
+    "translation": "Vertaling",
+    "example": "Voorbeeld (optioneel)",
+    "addImage": "Afbeelding toevoegen",
+    "removeImage": "Afbeelding verwijderen",
+    "customizeSection": "Aanpassen",
+    "color": "Kleur",
+    "icon": "Icoon",
+    "folder": "Map",
+    "noFolder": "Geen map",
+    "previewSection": "Voorbeeld",
+    "previewPlaceholder": "Settitel",
+    "save": "Set maken",
+    "saving": "Bezig met opslaan…",
+    "cancel": "Annuleren",
+    "saveError": "Opslaan is mislukt. Probeer het opnieuw.",
     "error": {
-      "emptyTitle": "170|Een settitel is verplicht.",
-      "titleTooLong": "171|De settitel mag maximaal 150 tekens bevatten.",
-      "descTooLong": "172|De beschrijving mag maximaal 200 tekens bevatten.",
-      "noValidCards": "173|Voeg minstens één kaart toe met een woord en een vertaling.",
-      "exampleTooLong": "174|Voorbeelden op kaarten mogen maximaal 150 tekens bevatten."
+      "emptyTitle": "Een settitel is verplicht.",
+      "titleTooLong": "De settitel mag maximaal 150 tekens bevatten.",
+      "descTooLong": "De beschrijving mag maximaal 200 tekens bevatten.",
+      "noValidCards": "Voeg minstens één kaart toe met een woord en een vertaling.",
+      "exampleTooLong": "Voorbeelden op kaarten mogen maximaal 150 tekens bevatten."
     },
-    "imageTimeout": "175|Time-out bij het uploaden van de afbeelding. Controleer je verbinding en probeer het opnieuw.",
+    "imageTimeout": "Time-out bij het uploaden van de afbeelding. Controleer je verbinding en probeer het opnieuw.",
     "import": {
-      "button": "176|Importeren",
-      "title": "177|Kaarten importeren",
-      "subtitle": "178|Kopieer en plak je gegevens — uit Word, Excel, Google Docs en dergelijke.",
-      "close": "179|Importeren sluiten",
-      "dataSection": "180|Jouw gegevens",
-      "placeholder": "181|Woord 1\\tDefinitie 1\\nWoord 2\\tDefinitie 2\\nWoord 3\\tDefinitie 3",
-      "separatorsSection": "182|Scheidingstekens",
-      "betweenTermAndDefinition": "183|Tussen woord en vertaling",
-      "betweenCards": "184|Tussen kaarten",
-      "tab": "185|Tab",
-      "comma": "186|Komma",
-      "newline": "187|Nieuwe regel",
-      "semicolon": "188|Puntkomma",
-      "custom": "189|Aangepast",
-      "customPlaceholder": "190|bijv. —",
-      "previewSection": "191|Voorbeeld",
-      "previewEmpty": "192|Nog niets om te tonen.",
-      "noDefinition": "193|Geen vertaling",
-      "confirm": "194|Kaarten toevoegen"
+      "button": "Importeren",
+      "title": "Kaarten importeren",
+      "subtitle": "Kopieer en plak je gegevens — uit Word, Excel, Google Docs en dergelijke.",
+      "close": "Importeren sluiten",
+      "dataSection": "Jouw gegevens",
+      "placeholder": "Woord 1\\tDefinitie 1\\nWoord 2\\tDefinitie 2\\nWoord 3\\tDefinitie 3",
+      "separatorsSection": "Scheidingstekens",
+      "betweenTermAndDefinition": "Tussen woord en vertaling",
+      "betweenCards": "Tussen kaarten",
+      "tab": "Tab",
+      "comma": "Komma",
+      "newline": "Nieuwe regel",
+      "semicolon": "Puntkomma",
+      "custom": "Aangepast",
+      "customPlaceholder": "bijv. —",
+      "previewSection": "Voorbeeld",
+      "previewEmpty": "Nog niets om te tonen.",
+      "noDefinition": "Geen vertaling",
+      "confirm": "Kaarten toevoegen"
     },
     "iconPicker": {
-      "open": "195|Meer iconen",
-      "title": "196|Kies een icoon",
-      "search": "197|Symbool zoeken",
-      "close": "198|Sluiten",
-      "empty": "199|Geen icoon komt overeen met die naam."
+      "open": "Meer iconen",
+      "title": "Kies een icoon",
+      "search": "Symbool zoeken",
+      "close": "Sluiten",
+      "empty": "Geen icoon komt overeen met die naam."
     },
     "iconGroup": {
-      "learning": "200|Leren",
-      "languages": "201|Talen",
-      "nature": "202|Natuur",
-      "health": "203|Gezondheid",
-      "food": "204|Eten",
-      "travel": "205|Reizen",
-      "work": "206|Werk",
-      "tech": "207|Techniek",
-      "creativity": "208|Creativiteit",
-      "general": "209|Algemeen"
+      "learning": "Leren",
+      "languages": "Talen",
+      "nature": "Natuur",
+      "health": "Gezondheid",
+      "food": "Eten",
+      "travel": "Reizen",
+      "work": "Werk",
+      "tech": "Techniek",
+      "creativity": "Creativiteit",
+      "general": "Algemeen"
     }
   },
   "home": {
     "title": {
-      "flashcards": "210|Kaarten",
-      "folders": "211|Mappen",
-      "sets": "212|Sets",
-      "create": "213|Nieuw",
-      "profile": "214|Profiel",
-      "speaking": "215|Spreken",
-      "listening": "216|Luisteren",
-      "reading": "217|Lezen",
-      "writing": "218|Schrijven"
+      "flashcards": "Kaarten",
+      "folders": "Mappen",
+      "sets": "Sets",
+      "create": "Nieuw",
+      "profile": "Profiel",
+      "speaking": "Spreken",
+      "listening": "Luisteren",
+      "reading": "Lezen",
+      "writing": "Schrijven"
     },
     "subtitle": {
-      "pickSet": "219|Kies een set om te oefenen",
-      "folders": "220|Beheer je mappen",
-      "sets": "221|Beheer je kaartensets",
-      "create": "222|Maak een nieuwe leerset",
-      "speaking": "223|Oefen je spreekvaardigheid.",
-      "listening": "224|Train je oor om de taal vanzelf te begrijpen.",
-      "reading": "225|Lees en herhaal materiaal in de taal.",
-      "writing": "226|Oefen je taal actief."
+      "pickSet": "Kies een set om te oefenen",
+      "folders": "Beheer je mappen",
+      "sets": "Beheer je kaartensets",
+      "create": "Maak een nieuwe leerset",
+      "speaking": "Oefen je spreekvaardigheid.",
+      "listening": "Train je oor om de taal vanzelf te begrijpen.",
+      "reading": "Lees en herhaal materiaal in de taal.",
+      "writing": "Oefen je taal actief."
     },
     "category": {
-      "speaking": "227|SPREKEN",
-      "listening": "228|LUISTEREN",
-      "reading": "229|LEZEN",
-      "writing": "230|SCHRIJVEN"
+      "speaking": "SPREKEN",
+      "listening": "LUISTEREN",
+      "reading": "LEZEN",
+      "writing": "SCHRIJVEN"
     },
     "todayGoal": {
-      "title": "231|Doel van vandaag",
-      "left": "232|Nog {{count}} woorden"
+      "title": "Doel van vandaag",
+      "left": "Nog {{count}} woorden"
     },
     "stat": {
-      "learnedToday": "233|Vandaag geleerd",
-      "words": "234|woorden",
-      "accuracy": "235|Nauwkeurigheid",
-      "greatJob": "236|Goed bezig!",
-      "streak": "237|Reeks",
-      "days": "238|dagen"
+      "learnedToday": "Vandaag geleerd",
+      "words": "woorden",
+      "accuracy": "Nauwkeurigheid",
+      "greatJob": "Goed bezig!",
+      "streak": "Reeks",
+      "days": "dagen"
     },
-    "continueLearning": "239|Verder leren",
-    "yourSets": "240|Jouw sets",
-    "viewAll": "241|Alles bekijken",
-    "review": "242|Herhalen",
+    "continueLearning": "Verder leren",
+    "yourSets": "Jouw sets",
+    "viewAll": "Alles bekijken",
+    "review": "Herhalen",
     "sets": {
-      "emptyTitle": "243|Nog geen sets",
-      "emptyBody": "244|Maak je eerste kaartenset met de knop Nieuw."
+      "emptyTitle": "Nog geen sets",
+      "emptyBody": "Maak je eerste kaartenset met de knop Nieuw."
     },
     "create": {
-      "folder": "245|Map",
-      "set": "246|Set",
-      "text": "247|Tekst",
-      "audio": "248|Audio",
-      "essay": "249|Opstel"
+      "folder": "Map",
+      "set": "Set",
+      "text": "Tekst",
+      "audio": "Audio",
+      "essay": "Opstel"
     },
     "placeholder": {
-      "comingSoon": "250|{{title}} — binnenkort"
+      "comingSoon": "{{title}} — binnenkort"
     },
     "progress": {
       "subtitle": {
-        "speaking": "251|spreekoefening",
-        "listening": "252|luisteroefening",
-        "reading": "253|leesoefening",
-        "writing": "254|schrijfoefening"
+        "speaking": "spreekoefening",
+        "listening": "luisteroefening",
+        "reading": "leesoefening",
+        "writing": "schrijfoefening"
       }
     },
     "dailyGoal": {
-      "title": "255|Jouw doel voor vandaag",
-      "body": "256|Kies wat je vandaag wilt oefenen — de kaart hieronder telt daarvoor mee.",
-      "chosenBody": "257|Hier draait vandaag om.",
-      "howMuch": "258|Hoeveel?",
-      "change": "259|Wijzigen"
+      "title": "Jouw doel voor vandaag",
+      "body": "Kies wat je vandaag wilt oefenen — de kaart hieronder telt daarvoor mee.",
+      "chosenBody": "Hier draait vandaag om.",
+      "howMuch": "Hoeveel?",
+      "change": "Wijzigen"
     },
     "lastNote": {
-      "title": "260|Laatst gelezen notitie"
+      "title": "Laatst gelezen notitie"
     }
   },
   "categories": {
-    "speaking": "261|Spreken",
-    "listening": "262|Luisteren",
-    "reading": "263|Lezen",
-    "writing": "264|Schrijven"
+    "speaking": "Spreken",
+    "listening": "Luisteren",
+    "reading": "Lezen",
+    "writing": "Schrijven"
   },
   "phase0": {
-    "title": "265|WordAround",
-    "subtitle": "266|Fase 0 draait. Designtokens geladen, Firebase verbonden."
+    "title": "WordAround",
+    "subtitle": "Fase 0 draait. Designtokens geladen, Firebase verbonden."
   },
   "study": {
-    "flip": "267|Omdraaien",
-    "known": "268|Ik wist het",
-    "unknown": "269|Nog aan het leren",
-    "mastered": "270|Beheerst",
-    "shuffle": "271|Schudden",
-    "trackProgress": "272|Voortgang bijhouden",
-    "speak": "273|Uitspreken",
-    "roundDone": "274|Ronde voltooid",
-    "knewCount": "275|Je wist er {{known}} van {{total}}",
-    "repeatUnknown": "276|Herhaal {{count}} onbekende",
-    "restart": "277|Opnieuw beginnen",
+    "flip": "Omdraaien",
+    "known": "Ik wist het",
+    "unknown": "Nog aan het leren",
+    "mastered": "Beheerst",
+    "shuffle": "Schudden",
+    "trackProgress": "Voortgang bijhouden",
+    "speak": "Uitspreken",
+    "roundDone": "Ronde voltooid",
+    "knewCount": "Je wist er {{known}} van {{total}}",
+    "repeatUnknown": "Herhaal {{count}} onbekende",
+    "restart": "Opnieuw beginnen",
     "filter": {
-      "all": "278|Alles",
-      "studied": "279|Bestudeerd",
-      "remaining": "280|Resterend",
-      "mastered": "281|Beheerst"
+      "all": "Alles",
+      "studied": "Bestudeerd",
+      "remaining": "Resterend",
+      "mastered": "Beheerst"
     },
-    "addCard": "282|Kaart toevoegen",
-    "editCard": "283|Kaart bewerken",
-    "deleteCard": "284|Kaart verwijderen",
-    "deleteCardConfirm": "285|Deze kaart verwijderen?",
-    "emptyPrompt": "286|Deze set heeft nog geen kaarten. Voeg je eerste kaart toe.",
-    "save": "287|Opslaan",
-    "cancel": "288|Annuleren"
+    "addCard": "Kaart toevoegen",
+    "editCard": "Kaart bewerken",
+    "deleteCard": "Kaart verwijderen",
+    "deleteCardConfirm": "Deze kaart verwijderen?",
+    "emptyPrompt": "Deze set heeft nog geen kaarten. Voeg je eerste kaart toe.",
+    "save": "Opslaan",
+    "cancel": "Annuleren"
   },
   "writing": {
     "today": {
-      "title": "289|Voortgang vandaag",
-      "unit": "290|woorden",
-      "subtitle": "291|schrijfoefening"
+      "title": "Voortgang vandaag",
+      "unit": "woorden",
+      "subtitle": "schrijfoefening"
     },
-    "sectionTitle": "292|Oefenvormen",
+    "sectionTitle": "Oefenvormen",
     "menu": {
       "writeFromSets": {
-        "title": "293|Schrijven vanuit sets",
-        "subtitle": "294|Oefen de spelling en het schrijven van woorden uit je sets."
+        "title": "Schrijven vanuit sets",
+        "subtitle": "Oefen de spelling en het schrijven van woorden uit je sets."
       },
       "essays": {
-        "title": "295|Opstellen",
-        "subtitle": "296|Schrijf teksten en krijg AI-feedback op grammatica en stijl."
+        "title": "Opstellen",
+        "subtitle": "Schrijf teksten en krijg AI-feedback op grammatica en stijl."
       },
-      "comingSoon": "297|Binnenkort"
+      "comingSoon": "Binnenkort"
     },
     "setSelection": {
-      "title": "298|Kies een set",
+      "title": "Kies een set",
       "empty": {
-        "title": "299|Geen sets met woorden",
-        "subtitle": "300|Maak een set met minstens één kaart voordat je met schrijfoefeningen begint."
+        "title": "Geen sets met woorden",
+        "subtitle": "Maak een set met minstens één kaart voordat je met schrijfoefeningen begint."
       },
-      "wordsCount": "301|{{count}} woorden",
-      "wordsCount_one": "302|{{count}} woord",
-      "close": "303|Sluiten"
+      "wordsCount": "{{count}} woorden",
+      "wordsCount_one": "{{count}} woord",
+      "close": "Sluiten"
     },
     "writeWords": {
-      "title": "304|Schrijven vanuit sets",
-      "subtitle": "305|Typ de vertaling en druk op Enter.",
-      "translateHint": "306|Vertaal naar je eigen taal",
-      "hint": "307|Hint",
-      "skip": "308|Overslaan",
-      "submit": "309|Controleren",
-      "inputPlaceholder": "310|Typ hier…",
-      "loading": "311|Set laden…",
-      "loadError": "312|We konden deze set niet laden.",
-      "noCards": "313|Deze set heeft geen kaarten.",
-      "back": "314|Terug",
+      "title": "Schrijven vanuit sets",
+      "subtitle": "Typ de vertaling en druk op Enter.",
+      "translateHint": "Vertaal naar je eigen taal",
+      "hint": "Hint",
+      "skip": "Overslaan",
+      "submit": "Controleren",
+      "inputPlaceholder": "Typ hier…",
+      "loading": "Set laden…",
+      "loadError": "We konden deze set niet laden.",
+      "noCards": "Deze set heeft geen kaarten.",
+      "back": "Terug",
       "settings": {
-        "title": "315|Instellingen",
-        "trainingMode": "316|Trainingsmodus",
-        "difficulty": "317|Moeilijkheid"
+        "title": "Instellingen",
+        "trainingMode": "Trainingsmodus",
+        "difficulty": "Moeilijkheid"
       },
       "mode": {
-        "wordToTranslation": "318|Woord → Vertaling",
-        "translationToWord": "319|Vertaling → Woord"
+        "wordToTranslation": "Woord → Vertaling",
+        "translationToWord": "Vertaling → Woord"
       },
       "difficulty": {
-        "easy": "320|Makkelijk",
-        "medium": "321|Gemiddeld",
-        "hard": "322|Moeilijk",
-        "easyDesc": "323|Onbeperkt hints, onbeperkt overslaan",
-        "mediumDesc": "324|1 hintletter, max. 25 % overslaan",
-        "hardDesc": "325|Geen hints, niet overslaan, op tijd"
+        "easy": "Makkelijk",
+        "medium": "Gemiddeld",
+        "hard": "Moeilijk",
+        "easyDesc": "Onbeperkt hints, onbeperkt overslaan",
+        "mediumDesc": "1 hintletter, max. 25 % overslaan",
+        "hardDesc": "Geen hints, niet overslaan, op tijd"
       },
       "translatePrompt": {
-        "word": "326|Vertaal naar je eigen taal",
-        "translation": "327|Schrijf het oorspronkelijke woord"
+        "word": "Vertaal naar je eigen taal",
+        "translation": "Schrijf het oorspronkelijke woord"
       },
-      "skipsLeft_one": "328|Nog {{count}} keer overslaan",
-      "skipsLeft_other": "329|Nog {{count}} keer overslaan",
-      "seconds": "330|{{count}} s",
+      "skipsLeft_one": "Nog {{count}} keer overslaan",
+      "skipsLeft_other": "Nog {{count}} keer overslaan",
+      "seconds": "{{count}} s",
       "result": {
         "win": {
-          "title": "331|Ronde voltooid!",
-          "subtitle": "332|Goed gedaan. Je hebt deze schrijfronde afgerond."
+          "title": "Ronde voltooid!",
+          "subtitle": "Goed gedaan. Je hebt deze schrijfronde afgerond."
         },
         "timeout": {
-          "title": "333|Tijd is om",
-          "subtitle": "334|De timer van de moeilijke modus stond op nul. Begin opnieuw bij het eerste woord."
+          "title": "Tijd is om",
+          "subtitle": "De timer van de moeilijke modus stond op nul. Begin opnieuw bij het eerste woord."
         },
         "wrong": {
-          "title": "335|Fout antwoord",
-          "subtitle": "336|In de moeilijke modus stopt de ronde na één fout."
+          "title": "Fout antwoord",
+          "subtitle": "In de moeilijke modus stopt de ronde na één fout."
         },
-        "perfectTitle": "337|Perfecte ronde!",
-        "perfectBody": "338|Je hebt de moeilijke modus foutloos afgerond. Niets overgeslagen. Geen hints. Puur kunnen.",
-        "totalWords": "339|Woorden totaal",
-        "completedWords": "340|Voltooide woorden",
-        "skippedWords": "341|Overgeslagen woorden",
-        "hintsUsed": "342|Gebruikte hints",
-        "streak": "343|Reeks",
-        "difficultyLabel": "344|Moeilijkheid",
-        "word": "345|Woord",
-        "yourAnswer": "346|Jouw antwoord",
-        "correctAnswer": "347|Juiste antwoord",
-        "tryAgain": "348|Opnieuw proberen"
+        "perfectTitle": "Perfecte ronde!",
+        "perfectBody": "Je hebt de moeilijke modus foutloos afgerond. Niets overgeslagen. Geen hints. Puur kunnen.",
+        "totalWords": "Woorden totaal",
+        "completedWords": "Voltooide woorden",
+        "skippedWords": "Overgeslagen woorden",
+        "hintsUsed": "Gebruikte hints",
+        "streak": "Reeks",
+        "difficultyLabel": "Moeilijkheid",
+        "word": "Woord",
+        "yourAnswer": "Jouw antwoord",
+        "correctAnswer": "Juiste antwoord",
+        "tryAgain": "Opnieuw proberen"
       }
     },
     "essays": {
-      "title": "349|Opstellen",
-      "subtitle": "350|Onderwerp gekozen door AI. Schrijf en krijg daarna feedback.",
+      "title": "Opstellen",
+      "subtitle": "Onderwerp gekozen door AI. Schrijf en krijg daarna feedback.",
       "mode": {
-        "suggested": "351|Voorgesteld",
-        "custom": "352|Mijn onderwerp"
+        "suggested": "Voorgesteld",
+        "custom": "Mijn onderwerp"
       },
       "custom": {
-        "placeholder": "353|Schrijf je eigen onderwerp...",
-        "generate": "354|Opdracht genereren"
+        "placeholder": "Schrijf je eigen onderwerp...",
+        "generate": "Opdracht genereren"
       },
       "suggested": {
-        "generate": "355|Onderwerp genereren",
-        "regenerate": "356|Nieuw onderwerp"
+        "generate": "Onderwerp genereren",
+        "regenerate": "Nieuw onderwerp"
       },
-      "language": "357|Taal",
-      "difficulty": "358|Moeilijkheid",
+      "language": "Taal",
+      "difficulty": "Moeilijkheid",
       "task": {
-        "time": "359|≈ {{count}} min",
-        "wordRange": "360|{{min}}-{{max}} woorden",
-        "quickTips": "361|Snelle tips",
-        "taskLabel": "362|Opdracht"
+        "time": "≈ {{count}} min",
+        "wordRange": "{{min}}-{{max}} woorden",
+        "quickTips": "Snelle tips",
+        "taskLabel": "Opdracht"
       },
       "editor": {
-        "placeholder": "363|Begin hier met je opstel...",
-        "wordCount": "364|{{count}} / {{min}}-{{max}} woorden",
+        "placeholder": "Begin hier met je opstel...",
+        "wordCount": "{{count}} / {{min}}-{{max}} woorden",
         "validation": {
-          "belowMinimum": "365|Ga zo door — je hebt minstens {{min}} woorden nodig.",
-          "aboveMaximum": "366|Je zit over de limiet — probeer in te korten.",
-          "valid": "367|Binnen het bereik."
+          "belowMinimum": "Ga zo door — je hebt minstens {{min}} woorden nodig.",
+          "aboveMaximum": "Je zit over de limiet — probeer in te korten.",
+          "valid": "Binnen het bereik."
         },
-        "reset": "368|Herstellen"
+        "reset": "Herstellen"
       },
       "error": {
-        "emptyCustomTopic": "369|Typ eerst een onderwerp.",
-        "generationFailed": "370|Er kon geen onderwerp worden gegenereerd. Probeer het opnieuw."
+        "emptyCustomTopic": "Typ eerst een onderwerp.",
+        "generationFailed": "Er kon geen onderwerp worden gegenereerd. Probeer het opnieuw."
       },
-      "generating": "371|Genereren...",
+      "generating": "Genereren...",
       "hint": {
-        "button": "372|Hint vragen",
-        "remaining": "373|Nog {{remaining}}/{{limit}}",
-        "noneLeft": "374|Geen hints meer",
-        "notAvailable": "375|Hints zijn niet beschikbaar op dit niveau",
-        "generating": "376|Hint genereren...",
-        "error": "377|Er kon geen hint worden opgehaald. Probeer het opnieuw.",
+        "button": "Hint vragen",
+        "remaining": "Nog {{remaining}}/{{limit}}",
+        "noneLeft": "Geen hints meer",
+        "notAvailable": "Hints zijn niet beschikbaar op dit niveau",
+        "generating": "Hint genereren...",
+        "error": "Er kon geen hint worden opgehaald. Probeer het opnieuw.",
         "category": {
-          "content": "378|Inhoud",
-          "grammar": "379|Grammatica",
-          "vocabulary": "380|Woordenschat",
-          "structure": "381|Structuur"
+          "content": "Inhoud",
+          "grammar": "Grammatica",
+          "vocabulary": "Woordenschat",
+          "structure": "Structuur"
         }
       },
       "check": {
-        "button": "382|Mijn opstel controleren",
-        "checking": "383|Bezig met controleren...",
-        "disabled": "384|Schrijf eerst binnen het woordenbereik",
-        "error": "385|We konden je opstel niet controleren. Probeer het opnieuw.",
-        "languageUnsupported": "386|Grammaticacontrole is nog niet beschikbaar voor {{language}}."
+        "button": "Mijn opstel controleren",
+        "checking": "Bezig met controleren...",
+        "disabled": "Schrijf eerst binnen het woordenbereik",
+        "error": "We konden je opstel niet controleren. Probeer het opnieuw.",
+        "languageUnsupported": "Grammaticacontrole is nog niet beschikbaar voor {{language}}."
       },
       "score": {
-        "title": "387|Score van het opstel",
+        "title": "Score van het opstel",
         "quality": {
-          "excellent": "388|Uitstekend",
-          "veryGood": "389|Heel goed",
-          "good": "390|Goed",
-          "needsWork": "391|Kan beter"
+          "excellent": "Uitstekend",
+          "veryGood": "Heel goed",
+          "good": "Goed",
+          "needsWork": "Kan beter"
         },
         "category": {
-          "grammar": "392|Grammatica",
-          "vocabulary": "393|Woordenschat",
-          "length": "394|Lengte",
-          "complexity": "395|Complexiteit",
-          "relevance": "396|Relevantie",
-          "independence": "397|Zelfstandigheid"
+          "grammar": "Grammatica",
+          "vocabulary": "Woordenschat",
+          "length": "Lengte",
+          "complexity": "Complexiteit",
+          "relevance": "Relevantie",
+          "independence": "Zelfstandigheid"
         },
         "stat": {
-          "words": "398|Woorden",
-          "grammar": "399|Grammatica",
-          "vocabStyle": "400|Woordkeus/stijl",
-          "hints": "401|Hints",
-          "translations": "402|Vertalingen",
-          "synonyms": "403|Synoniemen"
+          "words": "Woorden",
+          "grammar": "Grammatica",
+          "vocabStyle": "Woordkeus/stijl",
+          "hints": "Hints",
+          "translations": "Vertalingen",
+          "synonyms": "Synoniemen"
         }
       },
       "grammar": {
-        "sectionTitle": "404|Grammaticapunten",
-        "count_one": "405|{{count}} punt",
-        "count_other": "406|{{count}} punten",
-        "empty": "407|Geen grammaticafouten gevonden — goed gedaan!",
-        "original": "408|Origineel:",
-        "suggestion": "409|Suggestie:",
-        "reason": "410|Reden:",
+        "sectionTitle": "Grammaticapunten",
+        "count_one": "{{count}} punt",
+        "count_other": "{{count}} punten",
+        "empty": "Geen grammaticafouten gevonden — goed gedaan!",
+        "original": "Origineel:",
+        "suggestion": "Suggestie:",
+        "reason": "Reden:",
         "category": {
-          "grammar": "411|Grammatica",
-          "vocabulary": "412|Woordenschat",
-          "style": "413|Stijl"
+          "grammar": "Grammatica",
+          "vocabulary": "Woordenschat",
+          "style": "Stijl"
         },
         "save": {
-          "idle": "414|Opslaan in Notities",
-          "saving": "415|Bezig met opslaan…",
-          "saved": "416|Opgeslagen",
-          "duplicate": "417|Al opgeslagen",
-          "failed": "418|Opnieuw opslaan"
+          "idle": "Opslaan in Notities",
+          "saving": "Bezig met opslaan…",
+          "saved": "Opgeslagen",
+          "duplicate": "Al opgeslagen",
+          "failed": "Opnieuw opslaan"
         }
       },
       "helper": {
-        "translate": "419|Vertalen",
-        "synonym": "420|Synoniem",
-        "remaining": "421|Nog {{remaining}}",
-        "notAvailable": "422|Niet beschikbaar op dit niveau"
+        "translate": "Vertalen",
+        "synonym": "Synoniem",
+        "remaining": "Nog {{remaining}}",
+        "notAvailable": "Niet beschikbaar op dit niveau"
       },
       "translate": {
-        "title": "423|Vertalen",
-        "placeholder": "424|Voer een woord of korte zin in",
-        "submit": "425|Vertalen",
-        "submitting": "426|Bezig met vertalen..."
+        "title": "Vertalen",
+        "placeholder": "Voer een woord of korte zin in",
+        "submit": "Vertalen",
+        "submitting": "Bezig met vertalen..."
       },
       "synonym": {
-        "title": "427|Synoniemen",
-        "placeholder": "428|Voer een woord in",
-        "submit": "429|Synoniemen zoeken",
-        "submitting": "430|Bezig met zoeken..."
+        "title": "Synoniemen",
+        "placeholder": "Voer een woord in",
+        "submit": "Synoniemen zoeken",
+        "submitting": "Bezig met zoeken..."
       },
       "assist": {
-        "from": "431|Van",
-        "to": "432|Naar",
-        "close": "433|Sluiten",
-        "noResult": "434|Geen resultaat gevonden.",
-        "sameLanguage": "435|Kies een andere invoertaal.",
-        "error": "436|De dienst is tijdelijk niet beschikbaar."
+        "from": "Van",
+        "to": "Naar",
+        "close": "Sluiten",
+        "noResult": "Geen resultaat gevonden.",
+        "sameLanguage": "Kies een andere invoertaal.",
+        "error": "De dienst is tijdelijk niet beschikbaar."
       },
-      "saveMistakeConfirmTitle": "437|Deze fout opslaan in Notities?",
-      "saveMistakeConfirmBody": "438|Hij wordt opgeslagen als foutnotitie met de correctie “{{correction}}”.",
-      "autoSaveConfirmTitle": "439|Deze fouten opslaan in je notities?",
-      "autoSaveConfirmBody_one": "440|Deze controle vond {{count}} fout. Door hem op te slaan wordt het een notitie die terugkomt om te herhalen.",
-      "autoSaveConfirmBody_other": "441|Deze controle vond {{count}} fouten. Door ze op te slaan worden het notities die terugkomen om te herhalen."
+      "saveMistakeConfirmTitle": "Deze fout opslaan in Notities?",
+      "saveMistakeConfirmBody": "Hij wordt opgeslagen als foutnotitie met de correctie “{{correction}}”.",
+      "autoSaveConfirmTitle": "Deze fouten opslaan in je notities?",
+      "autoSaveConfirmBody_one": "Deze controle vond {{count}} fout. Door hem op te slaan wordt het een notitie die terugkomt om te herhalen.",
+      "autoSaveConfirmBody_other": "Deze controle vond {{count}} fouten. Door ze op te slaan worden het notities die terugkomen om te herhalen."
     },
     "grammar": {
-      "subtitle": "442|Orden grammatica per onderwerp met heldere, gestructureerde notities.",
-      "newTopic": "443|Nieuw onderwerp",
-      "topicsEmptyTitle": "444|Nog geen onderwerpen",
-      "topicsEmptyBody": "445|Maak je eerste onderwerp om grammaticanotities te verzamelen.",
-      "notesCount_one": "446|{{count}} notitie",
-      "notesCount_other": "447|{{count}} notities",
-      "deleteTopicConfirm": "448|\"{{title}}\" en alle bijbehorende notities verwijderen? Dit kan niet ongedaan worden gemaakt.",
-      "notesEmptyTitle": "449|Nog geen notities",
-      "notesEmptyBody": "450|Voeg je eerste notitie toe aan dit onderwerp.",
-      "newNote": "451|Nieuwe notitie",
-      "deleteNoteConfirm": "452|Deze notitie verwijderen? Dit kan niet ongedaan worden gemaakt.",
-      "loading": "453|Laden…",
-      "loadError": "454|We konden je grammaticanotities niet laden.",
-      "notFoundTitle": "455|Niet gevonden",
-      "notFoundBody": "456|Dit item is mogelijk verwijderd.",
-      "back": "457|Terug",
-      "updated": "458|Bijgewerkt op {{date}}",
+      "subtitle": "Orden grammatica per onderwerp met heldere, gestructureerde notities.",
+      "newTopic": "Nieuw onderwerp",
+      "topicsEmptyTitle": "Nog geen onderwerpen",
+      "topicsEmptyBody": "Maak je eerste onderwerp om grammaticanotities te verzamelen.",
+      "notesCount_one": "{{count}} notitie",
+      "notesCount_other": "{{count}} notities",
+      "deleteTopicConfirm": "\"{{title}}\" en alle bijbehorende notities verwijderen? Dit kan niet ongedaan worden gemaakt.",
+      "notesEmptyTitle": "Nog geen notities",
+      "notesEmptyBody": "Voeg je eerste notitie toe aan dit onderwerp.",
+      "newNote": "Nieuwe notitie",
+      "deleteNoteConfirm": "Deze notitie verwijderen? Dit kan niet ongedaan worden gemaakt.",
+      "loading": "Laden…",
+      "loadError": "We konden je grammaticanotities niet laden.",
+      "notFoundTitle": "Niet gevonden",
+      "notFoundBody": "Dit item is mogelijk verwijderd.",
+      "back": "Terug",
+      "updated": "Bijgewerkt op {{date}}",
       "form": {
-        "newTitle": "459|Nieuw onderwerp",
-        "editTitle": "460|Onderwerp bewerken",
-        "name": "461|Titel",
-        "namePlaceholder": "462|bijv. Spaanse werkwoorden",
-        "description": "463|Beschrijving",
-        "descriptionPlaceholder": "464|Optioneel",
-        "color": "465|Kleur",
-        "icon": "466|Icoon",
-        "save": "467|Opslaan",
-        "cancel": "468|Annuleren",
-        "language": "469|Taal",
-        "languageNone": "470|Niet ingesteld"
+        "newTitle": "Nieuw onderwerp",
+        "editTitle": "Onderwerp bewerken",
+        "name": "Titel",
+        "namePlaceholder": "bijv. Spaanse werkwoorden",
+        "description": "Beschrijving",
+        "descriptionPlaceholder": "Optioneel",
+        "color": "Kleur",
+        "icon": "Icoon",
+        "save": "Opslaan",
+        "cancel": "Annuleren",
+        "language": "Taal",
+        "languageNone": "Niet ingesteld"
       },
       "noteType": {
-        "standard": "471|Standaard",
-        "mistake": "472|Fout",
-        "rule": "473|Regel",
-        "comparison": "474|Vergelijking",
-        "cheatSheet": "475|Spiekbriefje",
-        "exercise": "476|Oefening"
+        "standard": "Standaard",
+        "mistake": "Fout",
+        "rule": "Regel",
+        "comparison": "Vergelijking",
+        "cheatSheet": "Spiekbriefje",
+        "exercise": "Oefening"
       },
       "block": {
-        "heading": "477|Kop",
-        "paragraph": "478|Tekst",
-        "bulletList": "479|Opsomming",
-        "rule": "480|Regel",
-        "example": "481|Voorbeeld",
-        "warning": "482|Waarschuwing",
-        "quote": "483|Citaat",
-        "divider": "484|Scheidingslijn",
-        "addBlock": "485|Blok toevoegen",
-        "addItem": "486|Item toevoegen",
-        "moveUp": "487|Omhoog",
-        "moveDown": "488|Omlaag",
-        "remove": "489|Verwijderen",
-        "secondaryPlaceholder": "490|Detail / vertaling (optioneel)",
-        "subheading": "491|Tussenkop",
-        "numberedList": "492|Genummerde lijst",
-        "checklist": "493|Checklist",
-        "comparison": "494|Vergelijking",
-        "exercise": "495|Oefening",
-        "quiz": "496|Quiz",
-        "image": "497|Afbeelding",
-        "comparisonSecondary": "498|Tweede kant",
-        "imageAdd": "499|Afbeelding toevoegen / vervangen",
-        "imageUploading": "500|Bezig met uploaden…",
-        "imageFailed": "501|De afbeelding kon niet worden geüpload.",
-        "imageSaveFirst": "502|Log in om afbeeldingen te uploaden."
+        "heading": "Kop",
+        "paragraph": "Tekst",
+        "bulletList": "Opsomming",
+        "rule": "Regel",
+        "example": "Voorbeeld",
+        "warning": "Waarschuwing",
+        "quote": "Citaat",
+        "divider": "Scheidingslijn",
+        "addBlock": "Blok toevoegen",
+        "addItem": "Item toevoegen",
+        "moveUp": "Omhoog",
+        "moveDown": "Omlaag",
+        "remove": "Verwijderen",
+        "secondaryPlaceholder": "Detail / vertaling (optioneel)",
+        "subheading": "Tussenkop",
+        "numberedList": "Genummerde lijst",
+        "checklist": "Checklist",
+        "comparison": "Vergelijking",
+        "exercise": "Oefening",
+        "quiz": "Quiz",
+        "image": "Afbeelding",
+        "comparisonSecondary": "Tweede kant",
+        "imageAdd": "Afbeelding toevoegen / vervangen",
+        "imageUploading": "Bezig met uploaden…",
+        "imageFailed": "De afbeelding kon niet worden geüpload.",
+        "imageSaveFirst": "Log in om afbeeldingen te uploaden."
       },
       "blockPlaceholder": {
-        "heading": "503|Kop",
-        "paragraph": "504|Schrijf je uitleg…",
-        "bulletList": "505|Lijstitem",
-        "rule": "506|Leg de grammaticaregel uit…",
-        "example": "507|Voeg een voorbeeld toe…",
-        "warning": "508|Veelgemaakte fout of waarschuwing…",
-        "quote": "509|Zin die het onthouden waard is…",
-        "subheading": "510|Tussenkop",
-        "numberedList": "511|Lijstitem",
-        "checklist": "512|Checklist-item",
-        "comparison": "513|Eerste kant",
-        "exercise": "514|Oefeninstructie…",
-        "quiz": "515|Vraag",
-        "image": "516|Bijschrift"
+        "heading": "Kop",
+        "paragraph": "Schrijf je uitleg…",
+        "bulletList": "Lijstitem",
+        "rule": "Leg de grammaticaregel uit…",
+        "example": "Voeg een voorbeeld toe…",
+        "warning": "Veelgemaakte fout of waarschuwing…",
+        "quote": "Zin die het onthouden waard is…",
+        "subheading": "Tussenkop",
+        "numberedList": "Lijstitem",
+        "checklist": "Checklist-item",
+        "comparison": "Eerste kant",
+        "exercise": "Oefeninstructie…",
+        "quiz": "Vraag",
+        "image": "Bijschrift"
       },
       "editor": {
-        "titlePlaceholder": "517|Notitietitel",
-        "save": "518|Notitie opslaan",
-        "saving": "519|Bezig met opslaan…",
-        "delete": "520|Notitie verwijderen",
-        "saveError": "521|Opslaan is mislukt. Probeer het opnieuw.",
-        "subtitle": "522|Notitie bewerken",
-        "tags": "523|Labels",
-        "tagsPlaceholder": "524|Label toevoegen…",
-        "removeTag": "525|Label {{tag}} verwijderen",
-        "addToReview": "526|Toevoegen aan herhaling",
-        "addedToReview": "527|Toegevoegd aan je herhalingsrij.",
-        "inReview": "528|In herhaling · {{when}}",
-        "inReviewDue": "529|Klaar om te herhalen",
-        "removedFromReview": "530|Verwijderd uit je herhalingsrij.",
-        "unsavedTitle": "531|Weggaan zonder opslaan?",
-        "unsavedBody": "532|Deze notitie heeft wijzigingen die nog niet zijn opgeslagen.",
-        "discard": "533|Wijzigingen verwerpen",
-        "saveAndLeave": "534|Opslaan en weggaan"
+        "titlePlaceholder": "Notitietitel",
+        "save": "Notitie opslaan",
+        "saving": "Bezig met opslaan…",
+        "delete": "Notitie verwijderen",
+        "saveError": "Opslaan is mislukt. Probeer het opnieuw.",
+        "subtitle": "Notitie bewerken",
+        "tags": "Labels",
+        "tagsPlaceholder": "Label toevoegen…",
+        "removeTag": "Label {{tag}} verwijderen",
+        "addToReview": "Toevoegen aan herhaling",
+        "addedToReview": "Toegevoegd aan je herhalingsrij.",
+        "inReview": "In herhaling · {{when}}",
+        "inReviewDue": "Klaar om te herhalen",
+        "removedFromReview": "Verwijderd uit je herhalingsrij.",
+        "unsavedTitle": "Weggaan zonder opslaan?",
+        "unsavedBody": "Deze notitie heeft wijzigingen die nog niet zijn opgeslagen.",
+        "discard": "Wijzigingen verwerpen",
+        "saveAndLeave": "Opslaan en weggaan"
       },
       "quiz": {
-        "title": "535|Quizzen",
-        "new": "536|Nieuwe quiz",
-        "start": "537|Quiz starten",
-        "delete": "538|Quiz verwijderen",
-        "deleteConfirm": "539|\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt.",
-        "emptyTitle": "540|Nog geen quizzen",
-        "emptyBody": "541|Maak een quiz van deze notitie om jezelf te testen.",
-        "loadError": "542|We konden de quizzen niet laden.",
-        "questionsCount_one": "543|{{count}} vraag",
-        "questionsCount_other": "544|{{count}} vragen",
+        "title": "Quizzen",
+        "new": "Nieuwe quiz",
+        "start": "Quiz starten",
+        "delete": "Quiz verwijderen",
+        "deleteConfirm": "\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt.",
+        "emptyTitle": "Nog geen quizzen",
+        "emptyBody": "Maak een quiz van deze notitie om jezelf te testen.",
+        "loadError": "We konden de quizzen niet laden.",
+        "questionsCount_one": "{{count}} vraag",
+        "questionsCount_other": "{{count}} vragen",
         "type": {
-          "multipleChoice": "545|Meerkeuze",
-          "trueFalse": "546|Waar / Niet waar",
-          "fillGap": "547|Invuloefening",
-          "shortAnswer": "548|Kort antwoord"
+          "multipleChoice": "Meerkeuze",
+          "trueFalse": "Waar / Niet waar",
+          "fillGap": "Invuloefening",
+          "shortAnswer": "Kort antwoord"
         },
         "sheet": {
-          "title": "549|Quiz maken",
-          "titlePlaceholder": "550|Quiztitel",
-          "mode": "551|Genereerwijze",
-          "modeSmart": "552|Slim lokaal",
-          "modeSmartDesc": "553|Genereert vragen uit de inhoud van de notitie, op je apparaat.",
-          "modeAI": "554|Door AI gegenereerd",
-          "modeAIDesc": "555|Genereert rijkere, contextuele vragen met AI.",
-          "count": "556|Vragen",
-          "types": "557|Vraagtypen",
-          "focus": "558|Focus (optioneel)",
-          "focusPlaceholder": "559|bijv. focus op onregelmatige vormen",
-          "preview": "560|Vragen bekijken",
-          "regenerate": "561|Voorbeeld opnieuw genereren",
-          "previewTitle": "562|Voorbeeld",
-          "saveQuiz": "563|Quiz opslaan",
-          "generateQuiz": "564|Quiz genereren",
-          "generating": "565|Bezig met genereren…",
-          "saving": "566|Bezig met opslaan…",
-          "useSmartInstead": "567|Gebruik in plaats daarvan Slim lokaal",
-          "modeManual": "568|Handmatig",
-          "modeManualDesc": "569|Schrijf je eigen vragen.",
-          "createQuiz": "570|Quiz maken"
+          "title": "Quiz maken",
+          "titlePlaceholder": "Quiztitel",
+          "mode": "Genereerwijze",
+          "modeSmart": "Slim lokaal",
+          "modeSmartDesc": "Genereert vragen uit de inhoud van de notitie, op je apparaat.",
+          "modeAI": "Door AI gegenereerd",
+          "modeAIDesc": "Genereert rijkere, contextuele vragen met AI.",
+          "count": "Vragen",
+          "types": "Vraagtypen",
+          "focus": "Focus (optioneel)",
+          "focusPlaceholder": "bijv. focus op onregelmatige vormen",
+          "preview": "Vragen bekijken",
+          "regenerate": "Voorbeeld opnieuw genereren",
+          "previewTitle": "Voorbeeld",
+          "saveQuiz": "Quiz opslaan",
+          "generateQuiz": "Quiz genereren",
+          "generating": "Bezig met genereren…",
+          "saving": "Bezig met opslaan…",
+          "useSmartInstead": "Gebruik in plaats daarvan Slim lokaal",
+          "modeManual": "Handmatig",
+          "modeManualDesc": "Schrijf je eigen vragen.",
+          "createQuiz": "Quiz maken"
         },
         "play": {
-          "questionOf": "571|Vraag {{current}} van {{total}}",
-          "submit": "572|Antwoord versturen",
-          "next": "573|Volgende",
-          "finish": "574|Afronden",
-          "correct": "575|Goed!",
-          "incorrect": "576|Fout",
-          "correctAnswer": "577|Juiste antwoord: {{answer}}",
-          "typeMissing": "578|Typ het ontbrekende woord",
-          "typeAnswer": "579|Typ je antwoord",
-          "trueLabel": "580|Waar",
-          "falseLabel": "581|Niet waar"
+          "questionOf": "Vraag {{current}} van {{total}}",
+          "submit": "Antwoord versturen",
+          "next": "Volgende",
+          "finish": "Afronden",
+          "correct": "Goed!",
+          "incorrect": "Fout",
+          "correctAnswer": "Juiste antwoord: {{answer}}",
+          "typeMissing": "Typ het ontbrekende woord",
+          "typeAnswer": "Typ je antwoord",
+          "trueLabel": "Waar",
+          "falseLabel": "Niet waar"
         },
         "result": {
-          "scoreOf": "582|{{correct}} van {{total}} goed",
+          "scoreOf": "{{correct}} van {{total}} goed",
           "grade": {
-            "excellent": "583|Uitstekend!",
-            "good": "584|Goed gedaan!",
-            "keepPracticing": "585|Blijf oefenen",
-            "reviewNote": "586|Lees de notitie nog eens"
+            "excellent": "Uitstekend!",
+            "good": "Goed gedaan!",
+            "keepPracticing": "Blijf oefenen",
+            "reviewNote": "Lees de notitie nog eens"
           },
-          "incorrectSection": "587|Fout",
-          "correctSection": "588|Goed",
-          "yourAnswer": "589|Jouw antwoord: {{answer}}",
-          "tryAgain": "590|Opnieuw proberen",
-          "reviewNote": "591|Notitie bekijken",
-          "done": "592|Klaar"
+          "incorrectSection": "Fout",
+          "correctSection": "Goed",
+          "yourAnswer": "Jouw antwoord: {{answer}}",
+          "tryAgain": "Opnieuw proberen",
+          "reviewNote": "Notitie bekijken",
+          "done": "Klaar"
         },
         "errors": {
-          "notEnoughContent": "593|Voeg eerst meer inhoud toe aan de notitie — een quiz heeft minstens twee inhoudsblokken nodig (regel, voorbeeld, waarschuwing, alinea of citaat).",
-          "noMatchingQuestionTypes": "594|Niet genoeg passende inhoud voor de gekozen vraagtypen. Zet meer typen aan of voeg meer inhoud toe.",
-          "aiFailed": "595|De quiz kon niet met AI worden gegenereerd. Probeer het opnieuw of gebruik Slim lokaal."
+          "notEnoughContent": "Voeg eerst meer inhoud toe aan de notitie — een quiz heeft minstens twee inhoudsblokken nodig (regel, voorbeeld, waarschuwing, alinea of citaat).",
+          "noMatchingQuestionTypes": "Niet genoeg passende inhoud voor de gekozen vraagtypen. Zet meer typen aan of voeg meer inhoud toe.",
+          "aiFailed": "De quiz kon niet met AI worden gegenereerd. Probeer het opnieuw of gebruik Slim lokaal."
         },
-        "badge": "596|Quiz",
+        "badge": "Quiz",
         "manual": {
-          "questions_one": "597|{{count}} vraag",
-          "questions_other": "598|{{count}} vragen",
-          "add": "599|Vraag toevoegen",
-          "questionPlaceholder": "600|Vraagtekst",
-          "questionGapPlaceholder": "601|Vraag met een gat, bijv. Ik _____ naar school",
-          "optionPlaceholder": "602|Optie {{index}}",
-          "answerPlaceholder": "603|Juiste antwoord",
-          "explanationPlaceholder": "604|Uitleg (optioneel)",
+          "questions_one": "{{count}} vraag",
+          "questions_other": "{{count}} vragen",
+          "add": "Vraag toevoegen",
+          "questionPlaceholder": "Vraagtekst",
+          "questionGapPlaceholder": "Vraag met een gat, bijv. Ik _____ naar school",
+          "optionPlaceholder": "Optie {{index}}",
+          "answerPlaceholder": "Juiste antwoord",
+          "explanationPlaceholder": "Uitleg (optioneel)",
           "error": {
-            "questionRequired": "605|Vraagtekst is verplicht.",
-            "optionsRequired": "606|Meerkeuze heeft minstens 2 opties nodig.",
-            "answerRequired": "607|Voer het juiste antwoord in.",
-            "answerNotAnOption": "608|Het juiste antwoord moet overeenkomen met een van de opties.",
-            "blankRequired": "609|Voeg een gat toe (bijv. _____) in de vraag."
+            "questionRequired": "Vraagtekst is verplicht.",
+            "optionsRequired": "Meerkeuze heeft minstens 2 opties nodig.",
+            "answerRequired": "Voer het juiste antwoord in.",
+            "answerNotAnOption": "Het juiste antwoord moet overeenkomen met een van de opties.",
+            "blankRequired": "Voeg een gat toe (bijv. _____) in de vraag."
           }
         }
       },
       "quickMistake": {
-        "button": "610|Snelle fout",
-        "title": "611|Snelle fout",
-        "original": "612|Oorspronkelijke zin",
-        "originalPlaceholder": "613|Voorbeeld: Ik ben het eens met jou",
-        "corrected": "614|Correctie",
-        "correctedPlaceholder": "615|Voorbeeld: Ik ben het met je eens",
-        "explanation": "616|Uitleg (optioneel)",
-        "explanationPlaceholder": "617|Waarom is de correctie juist?",
+        "button": "Snelle fout",
+        "title": "Snelle fout",
+        "original": "Oorspronkelijke zin",
+        "originalPlaceholder": "Voorbeeld: Ik ben het eens met jou",
+        "corrected": "Correctie",
+        "correctedPlaceholder": "Voorbeeld: Ik ben het met je eens",
+        "explanation": "Uitleg (optioneel)",
+        "explanationPlaceholder": "Waarom is de correctie juist?",
         "validation": {
-          "original": "618|Voeg eerst de oorspronkelijke zin toe.",
-          "corrected": "619|Voeg ook de gecorrigeerde zin toe."
+          "original": "Voeg eerst de oorspronkelijke zin toe.",
+          "corrected": "Voeg ook de gecorrigeerde zin toe."
         },
-        "save": "620|Fout opslaan",
-        "saving": "621|Bezig met opslaan…",
-        "saved": "622|Opgeslagen in Grammaticanotities.",
-        "duplicate": "623|Al opgeslagen — het duplicaat is overgeslagen.",
-        "failed": "624|Opslaan is mislukt. Probeer het opnieuw.",
-        "openTopic": "625|Veelgemaakte fouten openen",
-        "done": "626|Klaar",
-        "tip": "627|Opgeslagen correcties gaan automatisch de herhaling in, dus de fouten die je blijft maken komen als eerste terug."
+        "save": "Fout opslaan",
+        "saving": "Bezig met opslaan…",
+        "saved": "Opgeslagen in Grammaticanotities.",
+        "duplicate": "Al opgeslagen — het duplicaat is overgeslagen.",
+        "failed": "Opslaan is mislukt. Probeer het opnieuw.",
+        "openTopic": "Veelgemaakte fouten openen",
+        "done": "Klaar",
+        "tip": "Opgeslagen correcties gaan automatisch de herhaling in, dus de fouten die je blijft maken komen als eerste terug."
       },
       "templates": {
-        "topicTitle": "628|Onderwerpsjablonen",
-        "noteTitle": "629|Notitiesjablonen",
-        "button": "630|Sjabloon",
-        "startFromTemplate": "631|Beginnen met een sjabloon",
-        "searchPlaceholder": "632|Sjablonen zoeken…",
-        "allLanguages": "633|Alle",
-        "anyDifficulty": "634|Elke",
+        "topicTitle": "Onderwerpsjablonen",
+        "noteTitle": "Notitiesjablonen",
+        "button": "Sjabloon",
+        "startFromTemplate": "Beginnen met een sjabloon",
+        "searchPlaceholder": "Sjablonen zoeken…",
+        "allLanguages": "Alle",
+        "anyDifficulty": "Elke",
         "language": {
-          "en": "635|Engels",
-          "es": "636|Spaans",
-          "fr": "637|Frans",
-          "de": "638|Duits"
+          "en": "Engels",
+          "es": "Spaans",
+          "fr": "Frans",
+          "de": "Duits"
         },
-        "minutes": "639|{{minutes}} min",
-        "notesIncluded_one": "640|{{count}} notitie",
-        "notesIncluded_other": "641|{{count}} notities",
-        "blocksIncluded_one": "642|{{count}} blok",
-        "blocksIncluded_other": "643|{{count}} blokken",
-        "empty": "644|Geen sjabloon voldoet aan je filters.",
-        "use": "645|Sjabloon gebruiken",
-        "creating": "646|Bezig met maken…",
-        "replaceConfirm": "647|De huidige inhoud van de notitie vervangen door dit sjabloon? Druk op Annuleren om het sjabloon eronder toe te voegen.",
-        "applyTitle": "648|“{{title}}” toepassen?",
-        "applyBody": "649|Deze notitie heeft al inhoud. Kies hoe je het sjabloon toepast.",
-        "applyReplace": "650|Inhoud vervangen",
-        "applyAppend": "651|Blokken onderaan toevoegen"
+        "minutes": "{{minutes}} min",
+        "notesIncluded_one": "{{count}} notitie",
+        "notesIncluded_other": "{{count}} notities",
+        "blocksIncluded_one": "{{count}} blok",
+        "blocksIncluded_other": "{{count}} blokken",
+        "empty": "Geen sjabloon voldoet aan je filters.",
+        "use": "Sjabloon gebruiken",
+        "creating": "Bezig met maken…",
+        "replaceConfirm": "De huidige inhoud van de notitie vervangen door dit sjabloon? Druk op Annuleren om het sjabloon eronder toe te voegen.",
+        "applyTitle": "“{{title}}” toepassen?",
+        "applyBody": "Deze notitie heeft al inhoud. Kies hoe je het sjabloon toepast.",
+        "applyReplace": "Inhoud vervangen",
+        "applyAppend": "Blokken onderaan toevoegen"
       },
       "review": {
-        "title": "652|Herhalen",
-        "subtitle": "653|Versterk wat je hebt geleerd met gespreide herhaling.",
-        "cardTitle": "654|Vandaag herhalen",
-        "cardSubtitle_one": "655|{{count}} item klaar · ~{{minutes}} min",
-        "cardSubtitle_other": "656|{{count}} items klaar · ~{{minutes}} min",
-        "caughtUpTitle": "657|Alles bij",
-        "caughtUp": "658|Je bent helemaal bij. Open of bewerk notities om herhaalsuggesties te krijgen.",
-        "dueBadge": "659|Nu aan de beurt",
-        "refreshBody": "660|Er staat nu niets klaar — je kunt wel opfrissen wat je laatst hebt gelezen.",
-        "refreshStart": "661|Recente notities opfrissen",
-        "start": "662|Herhaling starten",
-        "skip": "663|Overslaan",
-        "itemOf": "664|Item {{current}} van {{total}}",
-        "untitled": "665|Grammaticanotitie",
-        "stats": "666|{{count}} keer herhaald · reeks {{streak}}",
-        "continueToQuestion": "667|Door naar de vraag",
-        "showAnswer": "668|Antwoord tonen",
-        "compareTitle": "669|Vergelijk je antwoord",
-        "referenceAnswer": "670|Referentie: {{answer}}",
-        "openNote": "671|Volledige notitie openen",
+        "title": "Herhalen",
+        "subtitle": "Versterk wat je hebt geleerd met gespreide herhaling.",
+        "cardTitle": "Vandaag herhalen",
+        "cardSubtitle_one": "{{count}} item klaar · ~{{minutes}} min",
+        "cardSubtitle_other": "{{count}} items klaar · ~{{minutes}} min",
+        "caughtUpTitle": "Alles bij",
+        "caughtUp": "Je bent helemaal bij. Open of bewerk notities om herhaalsuggesties te krijgen.",
+        "dueBadge": "Nu aan de beurt",
+        "refreshBody": "Er staat nu niets klaar — je kunt wel opfrissen wat je laatst hebt gelezen.",
+        "refreshStart": "Recente notities opfrissen",
+        "start": "Herhaling starten",
+        "skip": "Overslaan",
+        "itemOf": "Item {{current}} van {{total}}",
+        "untitled": "Grammaticanotitie",
+        "stats": "{{count}} keer herhaald · reeks {{streak}}",
+        "continueToQuestion": "Door naar de vraag",
+        "showAnswer": "Antwoord tonen",
+        "compareTitle": "Vergelijk je antwoord",
+        "referenceAnswer": "Referentie: {{answer}}",
+        "openNote": "Volledige notitie openen",
         "pool": {
-          "manual_one": "672|{{count}} item klaar om te herhalen",
-          "manual_other": "673|{{count}} items klaar om te herhalen",
-          "recentlyOpened_one": "674|{{count}} onlangs geopende notitie",
-          "recentlyOpened_other": "675|{{count}} onlangs geopende notities",
-          "recentlyEdited_one": "676|{{count}} onlangs bewerkte notitie",
-          "recentlyEdited_other": "677|{{count}} onlangs bewerkte notities"
+          "manual_one": "{{count}} item klaar om te herhalen",
+          "manual_other": "{{count}} items klaar om te herhalen",
+          "recentlyOpened_one": "{{count}} onlangs geopende notitie",
+          "recentlyOpened_other": "{{count}} onlangs geopende notities",
+          "recentlyEdited_one": "{{count}} onlangs bewerkte notitie",
+          "recentlyEdited_other": "{{count}} onlangs bewerkte notities"
         },
         "sourceType": {
-          "note": "678|Notitie",
-          "mistake": "679|Fout",
-          "quiz": "680|Quiz"
+          "note": "Notitie",
+          "mistake": "Fout",
+          "quiz": "Quiz"
         },
         "phase": {
-          "source": "681|Bestuderen",
-          "question": "682|Antwoorden",
-          "result": "683|Beoordelen"
+          "source": "Bestuderen",
+          "question": "Antwoorden",
+          "result": "Beoordelen"
         },
         "rating": {
-          "forgot": "684|Vergeten",
-          "hard": "685|Moeilijk",
-          "good": "686|Goed",
-          "easy": "687|Makkelijk"
+          "forgot": "Vergeten",
+          "hard": "Moeilijk",
+          "good": "Goed",
+          "easy": "Makkelijk"
         },
         "interval": {
-          "plus4h": "688|+4 uur",
-          "plus1d": "689|+1 dag",
-          "plus3d": "690|+3 dagen",
-          "plus7d": "691|+7 dagen"
+          "plus4h": "+4 uur",
+          "plus1d": "+1 dag",
+          "plus3d": "+3 dagen",
+          "plus7d": "+7 dagen"
         },
         "summary": {
-          "title": "692|Sessie voltooid",
-          "emptyTitle": "693|Niets herhaald",
-          "reviewed": "694|Herhaald",
-          "correct": "695|Goed",
-          "incorrect": "696|Fout",
-          "hintForgot": "697|Sommige items komen over 4 uur terug.",
-          "hintHard": "698|Moeilijke items komen morgen terug.",
-          "hintGood": "699|Goede items komen over 3 dagen terug.",
-          "hintEasy": "700|Alle items komen over 7 dagen terug.",
-          "done": "701|Terug naar Grammaticanotities"
+          "title": "Sessie voltooid",
+          "emptyTitle": "Niets herhaald",
+          "reviewed": "Herhaald",
+          "correct": "Goed",
+          "incorrect": "Fout",
+          "hintForgot": "Sommige items komen over 4 uur terug.",
+          "hintHard": "Moeilijke items komen morgen terug.",
+          "hintGood": "Goede items komen over 3 dagen terug.",
+          "hintEasy": "Alle items komen over 7 dagen terug.",
+          "done": "Terug naar Grammaticanotities"
         },
-        "loadError": "702|We konden je herhalingsrij niet laden.",
-        "mistakeCount_one": "703|{{count}} fout",
-        "mistakeCount_other": "704|{{count}} fouten"
+        "loadError": "We konden je herhalingsrij niet laden.",
+        "mistakeCount_one": "{{count}} fout",
+        "mistakeCount_other": "{{count}} fouten"
       },
-      "mistakesBadge": "705|Fouten",
-      "topicsTitle": "706|Onderwerpen",
-      "deleteTopic": "707|Onderwerp verwijderen",
-      "deleteTopicTitle": "708|Dit onderwerp verwijderen?",
-      "deleteNoteTitle": "709|Deze notitie verwijderen?",
-      "pin": "710|Notitie vastzetten",
-      "unpin": "711|Notitie losmaken",
-      "favorite": "712|Toevoegen aan favorieten",
-      "unfavorite": "713|Uit favorieten halen",
+      "mistakesBadge": "Fouten",
+      "topicsTitle": "Onderwerpen",
+      "deleteTopic": "Onderwerp verwijderen",
+      "deleteTopicTitle": "Dit onderwerp verwijderen?",
+      "deleteNoteTitle": "Deze notitie verwijderen?",
+      "pin": "Notitie vastzetten",
+      "unpin": "Notitie losmaken",
+      "favorite": "Toevoegen aan favorieten",
+      "unfavorite": "Uit favorieten halen",
       "search": {
-        "topics": "714|Onderwerpen zoeken…",
-        "notes": "715|Notities zoeken…",
-        "clear": "716|Zoekopdracht wissen",
-        "noMatchTitle": "717|Geen resultaten",
-        "noMatchBody": "718|Probeer een ander trefwoord.",
-        "notesSection_one": "719|Notities ({{count}})",
-        "notesSection_other": "720|Notities ({{count}})",
-        "noNoteMatches": "721|Geen notities komen overeen met deze zoekopdracht."
+        "topics": "Onderwerpen zoeken…",
+        "notes": "Notities zoeken…",
+        "clear": "Zoekopdracht wissen",
+        "noMatchTitle": "Geen resultaten",
+        "noMatchBody": "Probeer een ander trefwoord.",
+        "notesSection_one": "Notities ({{count}})",
+        "notesSection_other": "Notities ({{count}})",
+        "noNoteMatches": "Geen notities komen overeen met deze zoekopdracht."
       },
       "filter": {
-        "label": "722|Notities filteren",
-        "all": "723|Alle",
-        "pinned": "724|Vastgezet",
-        "favorites": "725|Favorieten",
-        "mistakes": "726|Fouten",
-        "quizzes": "727|Quizzen",
-        "review": "728|Aan de beurt",
+        "label": "Notities filteren",
+        "all": "Alle",
+        "pinned": "Vastgezet",
+        "favorites": "Favorieten",
+        "mistakes": "Fouten",
+        "quizzes": "Quizzen",
+        "review": "Aan de beurt",
         "empty": {
           "all": {
-            "title": "729|Nog geen grammaticanotities",
-            "body": "730|Maak je eerste grammaticanotitie voor dit onderwerp."
+            "title": "Nog geen grammaticanotities",
+            "body": "Maak je eerste grammaticanotitie voor dit onderwerp."
           },
           "pinned": {
-            "title": "731|Nog geen vastgezette notities",
-            "body": "732|Zet notities vast in de lijst om ze snel terug te vinden."
+            "title": "Nog geen vastgezette notities",
+            "body": "Zet notities vast in de lijst om ze snel terug te vinden."
           },
           "favorites": {
-            "title": "733|Nog geen favoriete notities",
-            "body": "734|Markeer notities als favoriet om ze bij de hand te houden."
+            "title": "Nog geen favoriete notities",
+            "body": "Markeer notities als favoriet om ze bij de hand te houden."
           },
           "mistakes": {
-            "title": "735|Nog geen opgeslagen fouten",
-            "body": "736|Sla grammaticafouten op om ze hier te herhalen."
+            "title": "Nog geen opgeslagen fouten",
+            "body": "Sla grammaticafouten op om ze hier te herhalen."
           },
           "quizzes": {
-            "title": "737|Nog geen notities met quiz",
-            "body": "738|Voeg een quiz toe aan een notitie om die hier te zien."
+            "title": "Nog geen notities met quiz",
+            "body": "Voeg een quiz toe aan een notitie om die hier te zien."
           },
           "review": {
-            "title": "739|Er staat nu niets klaar",
-            "body": "740|Notities komen hier terug wanneer hun volgende herhaling aan de beurt is."
+            "title": "Er staat nu niets klaar",
+            "body": "Notities komen hier terug wanneer hun volgende herhaling aan de beurt is."
           }
         }
       },
       "reorder": {
-        "start": "741|Volgorde wijzigen",
-        "done": "742|Klaar",
-        "up": "743|Omhoog",
-        "down": "744|Omlaag"
+        "start": "Volgorde wijzigen",
+        "done": "Klaar",
+        "up": "Omhoog",
+        "down": "Omlaag"
       },
       "highlights": {
-        "mistakesTitle": "745|Fouten om te herstellen",
-        "mistakesSubtitle": "746|Recente correcties die wachten op herhaling.",
-        "quizzesTitle": "747|Zwakke quizonderdelen",
-        "quizzesSubtitle": "748|Quizzen die je binnenkort beter opnieuw kunt doen."
+        "mistakesTitle": "Fouten om te herstellen",
+        "mistakesSubtitle": "Recente correcties die wachten op herhaling.",
+        "quizzesTitle": "Zwakke quizonderdelen",
+        "quizzesSubtitle": "Quizzen die je binnenkort beter opnieuw kunt doen."
       },
       "quickNote": {
-        "button": "749|Snelle notitie",
-        "title": "750|Snelle notitie",
-        "subtitle": "751|Leg een grammatica-idee vast zonder de volledige editor te openen.",
-        "noteTitle": "752|Titel",
-        "titlePlaceholder": "753|Voorbeeld: Ser vs Estar",
-        "text": "754|Notitie",
-        "textPlaceholder": "755|Schrijf hier het nuttige deel",
-        "noteType": "756|Notitietype",
-        "topic": "757|Onderwerp",
-        "openEditor": "758|Editor openen na opslaan",
-        "openEditorHint": "759|Handig als de snelle versie uitgroeit tot een volledige notitie.",
-        "tip": "760|Snelle notities zijn voor het idee dat je anders binnen tien minuten vergeet.",
-        "validation": "761|Voeg eerst een titel of wat tekst toe.",
-        "save": "762|Snelle notitie opslaan",
-        "saving": "763|Bezig met opslaan…"
+        "button": "Snelle notitie",
+        "title": "Snelle notitie",
+        "subtitle": "Leg een grammatica-idee vast zonder de volledige editor te openen.",
+        "noteTitle": "Titel",
+        "titlePlaceholder": "Voorbeeld: Ser vs Estar",
+        "text": "Notitie",
+        "textPlaceholder": "Schrijf hier het nuttige deel",
+        "noteType": "Notitietype",
+        "topic": "Onderwerp",
+        "openEditor": "Editor openen na opslaan",
+        "openEditorHint": "Handig als de snelle versie uitgroeit tot een volledige notitie.",
+        "tip": "Snelle notities zijn voor het idee dat je anders binnen tien minuten vergeet.",
+        "validation": "Voeg eerst een titel of wat tekst toe.",
+        "save": "Snelle notitie opslaan",
+        "saving": "Bezig met opslaan…"
       },
       "settings": {
-        "title": "764|Notitie-instellingen",
-        "subtitle": "765|Hoe snel vastleggen, fouten en de notitielijst zich gedragen.",
-        "reset": "766|Standaardwaarden herstellen",
-        "tip": "767|Gebruik snelle fouten voor zinnen die je echt fout hebt geschreven — die zijn nuttiger dan perfecte voorbeelden uit een boek.",
+        "title": "Notitie-instellingen",
+        "subtitle": "Hoe snel vastleggen, fouten en de notitielijst zich gedragen.",
+        "reset": "Standaardwaarden herstellen",
+        "tip": "Gebruik snelle fouten voor zinnen die je echt fout hebt geschreven — die zijn nuttiger dan perfecte voorbeelden uit een boek.",
         "quickCapture": {
-          "title": "768|Snel vastleggen",
-          "subtitle": "769|Laat snelle notities en fouten direct aanvoelen."
+          "title": "Snel vastleggen",
+          "subtitle": "Laat snelle notities en fouten direct aanvoelen."
         },
         "mistakeNotes": {
-          "title": "770|Foutnotities",
-          "subtitle": "771|Wat er wordt opgeslagen als je een snelle fout vastlegt."
+          "title": "Foutnotities",
+          "subtitle": "Wat er wordt opgeslagen als je een snelle fout vastlegt."
         },
         "essays": {
-          "title": "772|Opstellen",
-          "subtitle": "773|Wat er gebeurt met grammaticapunten uit je opstellen."
+          "title": "Opstellen",
+          "subtitle": "Wat er gebeurt met grammaticapunten uit je opstellen."
         },
         "review": {
-          "title": "774|Gespreide herhaling",
-          "subtitle": "775|Hoe notities in de herhalingsrij belanden."
+          "title": "Gespreide herhaling",
+          "subtitle": "Hoe notities in de herhalingsrij belanden."
         },
         "appearance": {
-          "title": "776|Weergave van notities",
-          "subtitle": "777|Hoe de notitielijst wordt geordend en weergegeven."
+          "title": "Weergave van notities",
+          "subtitle": "Hoe de notitielijst wordt geordend en weergegeven."
         },
         "helpers": {
-          "title": "778|Leerhulpjes",
-          "subtitle": "779|Kleine zetjes in lege schermen en snelle vensters."
+          "title": "Leerhulpjes",
+          "subtitle": "Kleine zetjes in lege schermen en snelle vensters."
         },
         "defaultType": {
-          "title": "780|Standaard notitietype",
-          "subtitle": "781|Waarmee een nieuwe snelle notitie begint."
+          "title": "Standaard notitietype",
+          "subtitle": "Waarmee een nieuwe snelle notitie begint."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "782|Editor openen na snel opslaan",
-            "subtitle": "783|Spring na het opslaan van een snelle notitie meteen naar de volledige editor."
+            "title": "Editor openen na snel opslaan",
+            "subtitle": "Spring na het opslaan van een snelle notitie meteen naar de volledige editor."
           },
           "allowQuickQuizzes": {
-            "title": "784|Quizzen in notities toestaan",
-            "subtitle": "785|Bied quizblokken en het maken van quizzen aan binnen notities."
+            "title": "Quizzen in notities toestaan",
+            "subtitle": "Bied quizblokken en het maken van quizzen aan binnen notities."
           },
           "showsMistakeHighlights": {
-            "title": "786|Foutnotities uitlichten",
-            "subtitle": "787|Gebruik een warme tint voor foutkaarten en toon de foutenrij."
+            "title": "Foutnotities uitlichten",
+            "subtitle": "Gebruik een warme tint voor foutkaarten en toon de foutenrij."
           },
           "includeOriginalSentence": {
-            "title": "788|Oorspronkelijke zin meenemen",
-            "subtitle": "789|Sla de foute versie op als citaatblok in de notitie."
+            "title": "Oorspronkelijke zin meenemen",
+            "subtitle": "Sla de foute versie op als citaatblok in de notitie."
           },
           "includeCorrectedSentence": {
-            "title": "790|Gecorrigeerde zin meenemen",
-            "subtitle": "791|Sla de verbeterde versie op als voorbeeldblok."
+            "title": "Gecorrigeerde zin meenemen",
+            "subtitle": "Sla de verbeterde versie op als voorbeeldblok."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "792|Uitleg meenemen",
-            "subtitle": "793|Voeg je uitleg eronder toe als alineablok."
+            "title": "Uitleg meenemen",
+            "subtitle": "Voeg je uitleg eronder toe als alineablok."
           },
           "groupMistakesByTopic": {
-            "title": "794|Fouten groeperen per onderwerp",
-            "subtitle": "795|Sla snelle fouten op bij het huidige onderwerp in plaats van bij Veelgemaakte fouten."
+            "title": "Fouten groeperen per onderwerp",
+            "subtitle": "Sla snelle fouten op bij het huidige onderwerp in plaats van bij Veelgemaakte fouten."
           },
           "askBeforeSavingMistakes": {
-            "title": "796|Vragen voor het opslaan van fouten",
-            "subtitle": "797|Bevestig voordat een punt uit een opstel een notitie wordt. Dit gaat boven automatisch opslaan."
+            "title": "Vragen voor het opslaan van fouten",
+            "subtitle": "Bevestig voordat een punt uit een opstel een notitie wordt. Dit gaat boven automatisch opslaan."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "798|Opstelfouten automatisch opslaan",
-            "subtitle": "799|Elk grammaticapunt uit een opstel wordt een notitie. Met \"Vragen voor het opslaan\" aan wordt het één keer gevraagd voor de hele controle."
+            "title": "Opstelfouten automatisch opslaan",
+            "subtitle": "Elk grammaticapunt uit een opstel wordt een notitie. Met \"Vragen voor het opslaan\" aan wordt het één keer gevraagd voor de hele controle."
           },
           "groupsPinnedNotesFirst": {
-            "title": "800|Vastgezette notities eerst",
-            "subtitle": "801|Houd belangrijke regels bovenaan elk onderwerp."
+            "title": "Vastgezette notities eerst",
+            "subtitle": "Houd belangrijke regels bovenaan elk onderwerp."
           },
           "usesCompactCards": {
-            "title": "802|Compacte notitiekaarten",
-            "subtitle": "803|Toon strakkere kaarten als je meer notities op het scherm wilt."
+            "title": "Compacte notitiekaarten",
+            "subtitle": "Toon strakkere kaarten als je meer notities op het scherm wilt."
           },
           "showsHelperTips": {
-            "title": "804|Hulptips tonen",
-            "subtitle": "805|Toon korte, passende hints tijdens het maken van notities."
+            "title": "Hulptips tonen",
+            "subtitle": "Toon korte, passende hints tijdens het maken van notities."
           },
           "autoAddNotesToReview": {
-            "title": "806|Nieuwe notities aan herhaling toevoegen",
-            "subtitle": "807|Elke notitie die je opslaat komt in de herhalingsrij, een dag later aan de beurt."
+            "title": "Nieuwe notities aan herhaling toevoegen",
+            "subtitle": "Elke notitie die je opslaat komt in de herhalingsrij, een dag later aan de beurt."
           }
         }
       },
-      "editTopic": "808|Onderwerp bewerken",
+      "editTopic": "Onderwerp bewerken",
       "toSet": {
-        "title": "809|Maak een set van deze notitie",
-        "subtitle": "810|Kies de paren die kaarten moeten worden.",
-        "setTitle": "811|Settitel",
-        "empty": "812|Deze notitie heeft nog niets om kaarten van te maken. Blokken met vergelijking, voorbeeld en regel gaan direct over, en lijstitems splitsen op een streepje — zoals “hacer — doen”.",
-        "button": "813|Set maken",
-        "create": "814|Set aanmaken",
-        "creating": "815|Bezig met maken…",
-        "error": "816|De set kon niet worden gemaakt. Probeer het opnieuw.",
-        "cards_one": "817|{{count}} kaart",
-        "cards_other": "818|{{count}} kaarten"
+        "title": "Maak een set van deze notitie",
+        "subtitle": "Kies de paren die kaarten moeten worden.",
+        "setTitle": "Settitel",
+        "empty": "Deze notitie heeft nog niets om kaarten van te maken. Blokken met vergelijking, voorbeeld en regel gaan direct over, en lijstitems splitsen op een streepje — zoals “hacer — doen”.",
+        "button": "Set maken",
+        "create": "Set aanmaken",
+        "creating": "Bezig met maken…",
+        "error": "De set kon niet worden gemaakt. Probeer het opnieuw.",
+        "cards_one": "{{count}} kaart",
+        "cards_other": "{{count}} kaarten"
       },
-      "topicsEmptyTip": "819|Een onderwerp is een map voor notities — één per taal, of één per ding dat je steeds fout doet.",
-      "notesEmptyTip": "820|Elke notitie die je opslaat komt in de herhalingsrij, dus opschrijven is al beginnen met oefenen."
+      "topicsEmptyTip": "Een onderwerp is een map voor notities — één per taal, of één per ding dat je steeds fout doet.",
+      "notesEmptyTip": "Elke notitie die je opslaat komt in de herhalingsrij, dus opschrijven is al beginnen met oefenen."
     }
   },
   "reading": {
-    "sectionTitle": "821|Oefenvormen",
-    "loading": "822|Laden…",
-    "loadError": "823|We konden je leesteksten niet laden.",
-    "notFound": "824|Dit item is mogelijk verwijderd.",
+    "sectionTitle": "Oefenvormen",
+    "loading": "Laden…",
+    "loadError": "We konden je leesteksten niet laden.",
+    "notFound": "Dit item is mogelijk verwijderd.",
     "today": {
-      "title": "825|Voortgang vandaag",
-      "subtitle": "826|Houd je leesreeks in leven."
+      "title": "Voortgang vandaag",
+      "subtitle": "Houd je leesreeks in leven."
     },
     "menu": {
-      "comingSoon": "827|Binnenkort",
+      "comingSoon": "Binnenkort",
       "myTexts": {
-        "title": "828|Mijn teksten",
-        "subtitle": "829|Plak je eigen tekst en lees hem met hulp."
+        "title": "Mijn teksten",
+        "subtitle": "Plak je eigen tekst en lees hem met hulp."
       },
       "fromSets": {
-        "title": "830|Lezen vanuit sets",
-        "subtitle": "831|Maak een leestekst van je kaartensets."
+        "title": "Lezen vanuit sets",
+        "subtitle": "Maak een leestekst van je kaartensets."
       },
       "storyMode": {
-        "title": "832|Verhaalmodus",
-        "subtitle": "833|Lees interactieve verhalen met vertakkende keuzes."
+        "title": "Verhaalmodus",
+        "subtitle": "Lees interactieve verhalen met vertakkende keuzes."
       },
       "speedReading": {
-        "title": "834|Snellezen",
-        "subtitle": "835|Train sneller lezen met een tempo op tijd."
+        "title": "Snellezen",
+        "subtitle": "Train sneller lezen met een tempo op tijd."
       }
     },
     "myTexts": {
-      "title": "836|Mijn teksten",
-      "subtitle": "837|Je opgeslagen leesteksten.",
-      "addText": "838|Tekst toevoegen",
-      "emptyTitle": "839|Nog geen teksten",
-      "emptyBody": "840|Voeg je eerste tekst toe om te beginnen met leesoefeningen.",
-      "savedTitle": "841|Opgeslagen teksten"
+      "title": "Mijn teksten",
+      "subtitle": "Je opgeslagen leesteksten.",
+      "addText": "Tekst toevoegen",
+      "emptyTitle": "Nog geen teksten",
+      "emptyBody": "Voeg je eerste tekst toe om te beginnen met leesoefeningen.",
+      "savedTitle": "Opgeslagen teksten"
     },
     "status": {
-      "new": "842|Nieuw",
-      "inProgress": "843|Bezig",
-      "completed": "844|Voltooid"
+      "new": "Nieuw",
+      "inProgress": "Bezig",
+      "completed": "Voltooid"
     },
     "card": {
-      "words_one": "845|{{count}} woord",
-      "words_other": "846|{{count}} woorden",
-      "start": "847|Starten",
-      "continue": "848|Verder",
-      "readAgain": "849|Opnieuw lezen",
-      "rename": "850|Naam wijzigen",
-      "renamePrompt": "851|Nieuwe titel:",
-      "delete": "852|Verwijderen",
-      "deleteConfirm": "853|\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt."
+      "words_one": "{{count}} woord",
+      "words_other": "{{count}} woorden",
+      "start": "Starten",
+      "continue": "Verder",
+      "readAgain": "Opnieuw lezen",
+      "rename": "Naam wijzigen",
+      "renamePrompt": "Nieuwe titel:",
+      "delete": "Verwijderen",
+      "deleteConfirm": "\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt."
     },
     "continue": {
-      "eyebrow": "854|Verder lezen",
-      "percent": "855|{{percent}} % voltooid",
-      "button": "856|Verder"
+      "eyebrow": "Verder lezen",
+      "percent": "{{percent}} % voltooid",
+      "button": "Verder"
     },
     "focus": {
-      "mainIdea": "857|Hoofdgedachte",
-      "vocabulary": "858|Woordenschat",
-      "detailedComprehension": "859|Gedetailleerd begrip",
-      "grammarAwareness": "860|Aandacht voor grammatica",
-      "speedFluency": "861|Snelheid / vloeiendheid"
+      "mainIdea": "Hoofdgedachte",
+      "vocabulary": "Woordenschat",
+      "detailedComprehension": "Gedetailleerd begrip",
+      "grammarAwareness": "Aandacht voor grammatica",
+      "speedFluency": "Snelheid / vloeiendheid"
     },
     "questionType": {
-      "comprehension": "862|Begrip",
-      "trueFalse": "863|Waar / Niet waar",
-      "fillGap": "864|Invuloefening",
-      "vocabulary": "865|Woordenschat",
-      "findEvidence": "866|Bewijs zoeken",
-      "orderReconstruction": "867|Volgorde"
+      "comprehension": "Begrip",
+      "trueFalse": "Waar / Niet waar",
+      "fillGap": "Invuloefening",
+      "vocabulary": "Woordenschat",
+      "findEvidence": "Bewijs zoeken",
+      "orderReconstruction": "Volgorde"
     },
     "assistance": {
-      "highlightUnknownWords": "868|Onbekende woorden markeren",
-      "translationOnTap": "869|Vertalen bij tikken",
-      "vocabularyHints": "870|Woordenschathints",
-      "readingTimer": "871|Leestimer"
+      "highlightUnknownWords": "Onbekende woorden markeren",
+      "translationOnTap": "Vertalen bij tikken",
+      "vocabularyHints": "Woordenschathints",
+      "readingTimer": "Leestimer"
     },
     "addText": {
-      "title": "872|Tekst toevoegen",
-      "subtitle": "873|Plak een tekst en stel je leesoefening in.",
-      "untitled": "874|Naamloze tekst",
-      "pastePlaceholder": "875|Plak of typ je tekst hier…",
-      "titleLabel": "876|Titel",
-      "titlePlaceholder": "877|Optioneel — we kunnen er een voorstellen",
-      "language": "878|Taal",
-      "difficulty": "879|Moeilijkheid",
-      "autoDetect": "880|Automatisch herkennen",
-      "manual": "881|Handmatig kiezen",
-      "focus": "882|Leesfocus",
-      "questionTypes": "883|Vraagtypen",
-      "assistance": "884|Leeshulp",
+      "title": "Tekst toevoegen",
+      "subtitle": "Plak een tekst en stel je leesoefening in.",
+      "untitled": "Naamloze tekst",
+      "pastePlaceholder": "Plak of typ je tekst hier…",
+      "titleLabel": "Titel",
+      "titlePlaceholder": "Optioneel — we kunnen er een voorstellen",
+      "language": "Taal",
+      "difficulty": "Moeilijkheid",
+      "autoDetect": "Automatisch herkennen",
+      "manual": "Handmatig kiezen",
+      "focus": "Leesfocus",
+      "questionTypes": "Vraagtypen",
+      "assistance": "Leeshulp",
       "stats": {
-        "words_one": "885|{{count}} woord",
-        "words_other": "886|{{count}} woorden",
-        "chars_one": "887|{{count}} teken",
-        "chars_other": "888|{{count}} tekens",
-        "min": "889|min",
-        "detected": "890|Herkend: {{level}}"
+        "words_one": "{{count}} woord",
+        "words_other": "{{count}} woorden",
+        "chars_one": "{{count}} teken",
+        "chars_other": "{{count}} tekens",
+        "min": "min",
+        "detected": "Herkend: {{level}}"
       },
       "validation": {
-        "empty": "891|Voeg eerst een tekst toe.",
-        "tooShort": "892|Voeg minstens 20 woorden toe."
+        "empty": "Voeg eerst een tekst toe.",
+        "tooShort": "Voeg minstens 20 woorden toe."
       },
-      "save": "893|Tekst opslaan",
-      "saveAndStart": "894|Opslaan en starten",
-      "saving": "895|Bezig met opslaan…",
-      "saveError": "896|Opslaan is mislukt. Probeer het opnieuw.",
+      "save": "Tekst opslaan",
+      "saveAndStart": "Opslaan en starten",
+      "saving": "Bezig met opslaan…",
+      "saveError": "Opslaan is mislukt. Probeer het opnieuw.",
       "source": {
-        "pasteText": "897|Plakken",
-        "photo": "898|Foto",
-        "pdf": "899|PDF",
-        "generate": "900|Genereren",
-        "explore": "901|Verkennen"
+        "pasteText": "Plakken",
+        "photo": "Foto",
+        "pdf": "PDF",
+        "generate": "Genereren",
+        "explore": "Verkennen"
       },
       "style": {
-        "informative": "902|Informatief",
-        "casual": "903|Informeel",
-        "academic": "904|Academisch",
-        "narrative": "905|Verhalend"
+        "informative": "Informatief",
+        "casual": "Informeel",
+        "academic": "Academisch",
+        "narrative": "Verhalend"
       },
       "length": {
-        "short": "906|Kort",
-        "medium": "907|Gemiddeld",
-        "long": "908|Lang"
+        "short": "Kort",
+        "medium": "Gemiddeld",
+        "long": "Lang"
       },
       "import": {
-        "photoHint": "909|Upload een foto van een pagina — wij halen de tekst eruit.",
-        "chooseImage": "910|Afbeelding kiezen",
-        "recognizing": "911|Herkennen… {{percent}} %",
-        "imageError": "912|We konden geen tekst uit deze afbeelding lezen.",
-        "pdfHint": "913|Upload een PDF — wij halen de tekst eruit.",
-        "choosePDF": "914|PDF kiezen",
-        "reading": "915|PDF lezen…",
-        "pdfError": "916|We konden deze PDF niet lezen.",
-        "topicPlaceholder": "917|Onderwerp — bijv. koraalriffen, de boekdrukkunst",
-        "explorePlaceholder": "918|Onderwerp of trefwoord — bijv. Marie Curie, Venetië",
-        "generateButton": "919|Tekst genereren",
-        "exploreButton": "920|Artikel ophalen",
-        "working": "921|Bezig…",
-        "generateError": "922|De tekst kon niet worden gegenereerd. Probeer het opnieuw.",
-        "exploreError": "923|Geen artikel gevonden over dit onderwerp.",
-        "exploredFrom": "924|Opgehaald van"
+        "photoHint": "Upload een foto van een pagina — wij halen de tekst eruit.",
+        "chooseImage": "Afbeelding kiezen",
+        "recognizing": "Herkennen… {{percent}} %",
+        "imageError": "We konden geen tekst uit deze afbeelding lezen.",
+        "pdfHint": "Upload een PDF — wij halen de tekst eruit.",
+        "choosePDF": "PDF kiezen",
+        "reading": "PDF lezen…",
+        "pdfError": "We konden deze PDF niet lezen.",
+        "topicPlaceholder": "Onderwerp — bijv. koraalriffen, de boekdrukkunst",
+        "explorePlaceholder": "Onderwerp of trefwoord — bijv. Marie Curie, Venetië",
+        "generateButton": "Tekst genereren",
+        "exploreButton": "Artikel ophalen",
+        "working": "Bezig…",
+        "generateError": "De tekst kon niet worden gegenereerd. Probeer het opnieuw.",
+        "exploreError": "Geen artikel gevonden over dit onderwerp.",
+        "exploredFrom": "Opgehaald van"
       }
     },
     "session": {
-      "startQuestions": "925|Vragen starten",
-      "finish": "926|Afronden",
-      "next": "927|Volgende",
-      "questionOf": "928|Vraag {{current}} van {{total}}",
-      "closeTranslation": "929|Vertaling sluiten",
-      "translating": "930|Bezig met vertalen…",
-      "translationError": "931|Vertalen is mislukt. Probeer het opnieuw.",
-      "translation": "932|Vertaling",
-      "textLabel": "933|Tekst"
+      "startQuestions": "Vragen starten",
+      "finish": "Afronden",
+      "next": "Volgende",
+      "questionOf": "Vraag {{current}} van {{total}}",
+      "closeTranslation": "Vertaling sluiten",
+      "translating": "Bezig met vertalen…",
+      "translationError": "Vertalen is mislukt. Probeer het opnieuw.",
+      "translation": "Vertaling",
+      "textLabel": "Tekst"
     },
     "result": {
-      "comprehension": "934|Begrip",
-      "correct": "935|Goed",
-      "time": "936|Leestijd",
-      "wpm": "937|WPM",
-      "mistakes": "938|Fouten",
-      "mistakesTitle": "939|Bekijk je fouten",
-      "readAgain": "940|Opnieuw lezen",
-      "back": "941|Terug naar Mijn teksten",
-      "complete": "942|Oefening voltooid"
+      "comprehension": "Begrip",
+      "correct": "Goed",
+      "time": "Leestijd",
+      "wpm": "WPM",
+      "mistakes": "Fouten",
+      "mistakesTitle": "Bekijk je fouten",
+      "readAgain": "Opnieuw lezen",
+      "back": "Terug naar Mijn teksten",
+      "complete": "Oefening voltooid"
     },
     "fromSets": {
-      "title": "943|Lezen vanuit sets",
-      "subtitle": "944|Maak van een kaartenset een leestekst.",
-      "pickSet": "945|Kies een set",
-      "changeSet": "946|Andere set",
-      "tooFewWords": "947|Deze set heeft minstens {{count}} woorden nodig om een leestekst te maken.",
-      "mode": "948|Genereerwijze",
+      "title": "Lezen vanuit sets",
+      "subtitle": "Maak van een kaartenset een leestekst.",
+      "pickSet": "Kies een set",
+      "changeSet": "Andere set",
+      "tooFewWords": "Deze set heeft minstens {{count}} woorden nodig om een leestekst te maken.",
+      "mode": "Genereerwijze",
       "modeOption": {
-        "natural": "949|Natuurlijk",
-        "strict": "950|Strikt",
-        "mixed": "951|Gemengd"
+        "natural": "Natuurlijk",
+        "strict": "Strikt",
+        "mixed": "Gemengd"
       },
-      "length": "952|Lengte van de tekst",
-      "generate": "953|Leestekst genereren",
-      "generating": "954|Je leestekst wordt gemaakt…",
-      "generateError": "955|De leestekst kon niet worden gemaakt. Probeer het opnieuw.",
-      "emptyTitle": "956|Nog geen leesteksten",
-      "emptyBody": "957|Kies een kaartenset en wij maken er een leestekst van.",
-      "savedTitle": "958|Opgeslagen leesteksten"
+      "length": "Lengte van de tekst",
+      "generate": "Leestekst genereren",
+      "generating": "Je leestekst wordt gemaakt…",
+      "generateError": "De leestekst kon niet worden gemaakt. Probeer het opnieuw.",
+      "emptyTitle": "Nog geen leesteksten",
+      "emptyBody": "Kies een kaartenset en wij maken er een leestekst van.",
+      "savedTitle": "Opgeslagen leesteksten"
     },
     "speed": {
-      "title": "959|Snellezen",
-      "subtitle": "960|Train sneller lezen met een tempo op tijd.",
+      "title": "Snellezen",
+      "subtitle": "Train sneller lezen met een tempo op tijd.",
       "section": {
-        "target": "961|Streefsnelheid",
-        "timer": "962|Timerstijl",
-        "length": "963|Lengte van de tekst"
+        "target": "Streefsnelheid",
+        "timer": "Timerstijl",
+        "length": "Lengte van de tekst"
       },
       "target": {
-        "relaxed": "964|Ontspannen",
-        "balanced": "965|In balans",
-        "fast": "966|Snel",
-        "challenge": "967|Uitdaging"
+        "relaxed": "Ontspannen",
+        "balanced": "In balans",
+        "fast": "Snel",
+        "challenge": "Uitdaging"
       },
       "timer": {
-        "noTimer": "968|Geen timer",
-        "soft": "969|Zachte timer",
-        "strict": "970|Strenge timer"
+        "noTimer": "Geen timer",
+        "soft": "Zachte timer",
+        "strict": "Strenge timer"
       },
       "length": {
-        "two": "971|2 min",
-        "five": "972|5 min",
-        "ten": "973|10 min"
+        "two": "2 min",
+        "five": "5 min",
+        "ten": "10 min"
       },
-      "summary": "974|Doel {{wpm}} WPM · ~{{minutes}} min lezen",
-      "start": "975|Sessie starten",
-      "preparing": "976|Je tekst wordt voorbereid…",
-      "generateError": "977|De tekst kon niet worden gemaakt. Probeer het opnieuw.",
-      "recentTitle": "978|Recente sessies",
-      "chunkOf": "979|Deel {{current}} van {{total}}",
-      "previous": "980|Vorig deel",
-      "pause": "981|Pauzeren",
-      "resume": "982|Hervatten",
-      "nextChunk": "983|Volgend deel",
-      "finishReading": "984|Lezen afronden",
+      "summary": "Doel {{wpm}} WPM · ~{{minutes}} min lezen",
+      "start": "Sessie starten",
+      "preparing": "Je tekst wordt voorbereid…",
+      "generateError": "De tekst kon niet worden gemaakt. Probeer het opnieuw.",
+      "recentTitle": "Recente sessies",
+      "chunkOf": "Deel {{current}} van {{total}}",
+      "previous": "Vorig deel",
+      "pause": "Pauzeren",
+      "resume": "Hervatten",
+      "nextChunk": "Volgend deel",
+      "finishReading": "Lezen afronden",
       "rating": {
-        "excellent": "985|Uitstekend",
-        "balanced": "986|Op schema",
-        "fast": "987|Bijna",
-        "tooSlow": "988|Te langzaam"
+        "excellent": "Uitstekend",
+        "balanced": "Op schema",
+        "fast": "Bijna",
+        "tooSlow": "Te langzaam"
       },
       "result": {
-        "average": "989|Gemiddelde WPM",
-        "target": "990|Doel-WPM",
-        "violations_one": "991|{{count}} keer buiten de tijd",
-        "violations_other": "992|{{count}} keer buiten de tijd"
+        "average": "Gemiddelde WPM",
+        "target": "Doel-WPM",
+        "violations_one": "{{count}} keer buiten de tijd",
+        "violations_other": "{{count}} keer buiten de tijd"
       },
-      "tryAgain": "993|Opnieuw proberen",
-      "backToSetup": "994|Terug naar de instellingen"
+      "tryAgain": "Opnieuw proberen",
+      "backToSetup": "Terug naar de instellingen"
     },
     "story": {
-      "title": "995|Verhaalmodus",
-      "subtitle": "996|Lees interactieve verhalen met vertakkende keuzes.",
-      "typeSection": "997|Verhaaltype",
+      "title": "Verhaalmodus",
+      "subtitle": "Lees interactieve verhalen met vertakkende keuzes.",
+      "typeSection": "Verhaaltype",
       "type": {
-        "adventure": "998|Avontuur",
-        "fantasy": "999|Fantasy",
-        "mystery": "1000|Mysterie",
-        "romance": "1001|Romantiek",
-        "dailyLife": "1002|Dagelijks leven"
+        "adventure": "Avontuur",
+        "fantasy": "Fantasy",
+        "mystery": "Mysterie",
+        "romance": "Romantiek",
+        "dailyLife": "Dagelijks leven"
       },
-      "lengthSection": "1003|Lengte van het verhaal",
+      "lengthSection": "Lengte van het verhaal",
       "length": {
-        "shortStory": "1004|Kort verhaal",
-        "multiChapter": "1005|Meerdere hoofdstukken",
-        "infinite": "1006|Oneindig verhaal"
+        "shortStory": "Kort verhaal",
+        "multiChapter": "Meerdere hoofdstukken",
+        "infinite": "Oneindig verhaal"
       },
-      "start": "1007|Verhaal starten",
-      "generating": "1008|Je verhaal wordt geschreven…",
-      "generatingNext": "1009|Het volgende hoofdstuk wordt geschreven…",
-      "generateError": "1010|Het verhaal kon niet worden geschreven. Probeer het opnieuw.",
-      "emptyTitle": "1011|Nog geen verhalen",
-      "emptyBody": "1012|Start hierboven je eerste interactieve verhaal.",
-      "savedTitle": "1013|Jouw verhalen",
-      "chapterN": "1014|Hoofdstuk {{n}}",
-      "chapterOf": "1015|Hoofdstuk {{current}} / {{total}}",
-      "chapterScore": "1016|Hoofdstukscore",
-      "whatNext": "1017|Wat gebeurt er nu?",
-      "endStory": "1018|Verhaal beëindigen",
-      "completeTitle": "1019|Verhaal voltooid",
-      "completeBody_one": "1020|Je hebt {{count}} hoofdstuk afgerond. Goed gelezen!",
-      "completeBody_other": "1021|Je hebt {{count}} hoofdstukken afgerond. Goed gelezen!",
-      "backToStories": "1022|Terug naar verhalen"
+      "start": "Verhaal starten",
+      "generating": "Je verhaal wordt geschreven…",
+      "generatingNext": "Het volgende hoofdstuk wordt geschreven…",
+      "generateError": "Het verhaal kon niet worden geschreven. Probeer het opnieuw.",
+      "emptyTitle": "Nog geen verhalen",
+      "emptyBody": "Start hierboven je eerste interactieve verhaal.",
+      "savedTitle": "Jouw verhalen",
+      "chapterN": "Hoofdstuk {{n}}",
+      "chapterOf": "Hoofdstuk {{current}} / {{total}}",
+      "chapterScore": "Hoofdstukscore",
+      "whatNext": "Wat gebeurt er nu?",
+      "endStory": "Verhaal beëindigen",
+      "completeTitle": "Verhaal voltooid",
+      "completeBody_one": "Je hebt {{count}} hoofdstuk afgerond. Goed gelezen!",
+      "completeBody_other": "Je hebt {{count}} hoofdstukken afgerond. Goed gelezen!",
+      "backToStories": "Terug naar verhalen"
     }
   },
   "listening": {
-    "sectionTitle": "1023|Oefenvormen",
-    "notFound": "1024|Deze sessie is mogelijk verwijderd.",
+    "sectionTitle": "Oefenvormen",
+    "notFound": "Deze sessie is mogelijk verwijderd.",
     "today": {
-      "title": "1025|Voortgang vandaag",
-      "subtitle": "1026|luisteroefening"
+      "title": "Voortgang vandaag",
+      "subtitle": "luisteroefening"
     },
     "menu": {
-      "comingSoon": "1027|Binnenkort",
+      "comingSoon": "Binnenkort",
       "fromText": {
-        "title": "1028|Luisteren vanuit tekst",
-        "subtitle": "1029|Plak tekst, luister ernaar en toets je begrip."
+        "title": "Luisteren vanuit tekst",
+        "subtitle": "Plak tekst, luister ernaar en toets je begrip."
       },
       "importAudio": {
-        "title": "1030|Audio importeren",
-        "subtitle": "1031|Upload je eigen audio en maak er een luisteroefening van."
+        "title": "Audio importeren",
+        "subtitle": "Upload je eigen audio en maak er een luisteroefening van."
       },
       "importVideo": {
-        "title": "1032|Video importeren",
-        "subtitle": "1033|Upload een video, krijg ondertitels en oefen met vragen."
+        "title": "Video importeren",
+        "subtitle": "Upload een video, krijg ondertitels en oefen met vragen."
       },
       "saved": {
-        "title": "1034|Opgeslagen oefeningen",
-        "subtitle": "1035|Ga verder met eerdere sessies en bekijk je fouten."
+        "title": "Opgeslagen oefeningen",
+        "subtitle": "Ga verder met eerdere sessies en bekijk je fouten."
       }
     },
     "questionType": {
-      "mainIdea": "1036|Hoofdgedachte",
-      "details": "1037|Details",
-      "vocabulary": "1038|Woordenschat",
-      "trueFalse": "1039|Waar / Niet waar"
+      "mainIdea": "Hoofdgedachte",
+      "details": "Details",
+      "vocabulary": "Woordenschat",
+      "trueFalse": "Waar / Niet waar"
     },
     "fromText": {
-      "title": "1040|Luisteren vanuit tekst",
-      "subtitle": "1041|Plak tekst en maak er een luisteroefening van.",
-      "level": "1042|Niveau",
-      "voiceSpeed": "1043|Spreeksnelheid",
-      "voiceType": "1044|Stemtype",
+      "title": "Luisteren vanuit tekst",
+      "subtitle": "Plak tekst en maak er een luisteroefening van.",
+      "level": "Niveau",
+      "voiceSpeed": "Spreeksnelheid",
+      "voiceType": "Stemtype",
       "voice": {
-        "default": "1045|Standaard",
-        "female": "1046|Vrouw",
-        "male": "1047|Man"
+        "default": "Standaard",
+        "female": "Vrouw",
+        "male": "Man"
       },
-      "showText": "1048|Tekst tonen tijdens het luisteren",
-      "addQuestions": "1049|Begripsvragen toevoegen",
-      "questionCount": "1050|Aantal vragen",
-      "questionTypes": "1051|Vraagtypen",
-      "optionalTitle": "1052|Titel (optioneel)",
-      "titlePlaceholder": "1053|Geef je tekst een naam",
-      "textPlaceholder": "1054|Plak je tekst hier...",
-      "recommended": "1055|Aanbevolen: 80–500 woorden.",
-      "words": "1056|woorden",
-      "defaultTitle": "1057|Luisteroefening",
-      "start": "1058|Beginnen met luisteren",
+      "showText": "Tekst tonen tijdens het luisteren",
+      "addQuestions": "Begripsvragen toevoegen",
+      "questionCount": "Aantal vragen",
+      "questionTypes": "Vraagtypen",
+      "optionalTitle": "Titel (optioneel)",
+      "titlePlaceholder": "Geef je tekst een naam",
+      "textPlaceholder": "Plak je tekst hier...",
+      "recommended": "Aanbevolen: 80–500 woorden.",
+      "words": "woorden",
+      "defaultTitle": "Luisteroefening",
+      "start": "Beginnen met luisteren",
       "validation": {
-        "empty": "1059|Voeg tekst toe om te beginnen met luisteren.",
-        "tooShort": "1060|Voeg minstens 40 tekens toe om te beginnen met luisteren.",
-        "tooLong": "1061|Die tekst is te lang. Houd het onder 5000 tekens.",
-        "tooFewWords": "1062|Voeg wat meer tekst toe (ongeveer 40 woorden of meer) zodat we goede vragen kunnen maken."
+        "empty": "Voeg tekst toe om te beginnen met luisteren.",
+        "tooShort": "Voeg minstens 40 tekens toe om te beginnen met luisteren.",
+        "tooLong": "Die tekst is te lang. Houd het onder 5000 tekens.",
+        "tooFewWords": "Voeg wat meer tekst toe (ongeveer 40 woorden of meer) zodat we goede vragen kunnen maken."
       },
-      "voiceSettings": "1063|Steminstellingen",
-      "questions": "1064|Vragen",
-      "textInput": "1065|Tekstinvoer"
+      "voiceSettings": "Steminstellingen",
+      "questions": "Vragen",
+      "textInput": "Tekstinvoer"
     },
     "session": {
-      "replay": "1066|Opnieuw afspelen",
-      "transcript": "1067|Transcriptie",
-      "questionsTitle": "1068|Vragen",
-      "answerFirst": "1069|Beantwoord minstens één vraag voordat je controleert.",
-      "checkAnswers": "1070|Antwoorden controleren",
-      "finish": "1071|Oefening afronden"
+      "replay": "Opnieuw afspelen",
+      "transcript": "Transcriptie",
+      "questionsTitle": "Vragen",
+      "answerFirst": "Beantwoord minstens één vraag voordat je controleert.",
+      "checkAnswers": "Antwoorden controleren",
+      "finish": "Oefening afronden"
     },
     "result": {
-      "title": "1072|Oefening voltooid",
-      "comprehension": "1073|Begrip",
-      "correct": "1074|Goed",
-      "time": "1075|Luistertijd",
-      "speed": "1076|Snelheid",
-      "mistakes": "1077|Fouten",
-      "mistakesTitle": "1078|Bekijk je fouten",
-      "watchOnlyTitle": "1079|Luisteren voltooid",
-      "watchOnlyBody": "1080|Je hebt {{time}} geluisterd.",
-      "practiceAgain": "1081|Opnieuw oefenen",
-      "back": "1082|Terug naar Luisteren"
+      "title": "Oefening voltooid",
+      "comprehension": "Begrip",
+      "correct": "Goed",
+      "time": "Luistertijd",
+      "speed": "Snelheid",
+      "mistakes": "Fouten",
+      "mistakesTitle": "Bekijk je fouten",
+      "watchOnlyTitle": "Luisteren voltooid",
+      "watchOnlyBody": "Je hebt {{time}} geluisterd.",
+      "practiceAgain": "Opnieuw oefenen",
+      "back": "Terug naar Luisteren"
     },
     "importAudio": {
-      "title": "1083|Audio importeren",
-      "subtitle": "1084|Maak van je eigen audio een luisteroefening.",
-      "uploadTitle": "1085|Audiobestand uploaden",
-      "uploadFormats": "1086|MP3, M4A, WAV of AAC · onder 50 MB",
-      "chooseFile": "1087|Bestand kiezen",
-      "clearFile": "1088|Bestand verwijderen",
-      "infoNote": "1089|Je audio wordt op de achtergrond getranscribeerd. De transcriptie blijft verborgen tijdens de oefening.",
-      "continue": "1090|Verder",
-      "processingTitle": "1091|Je luisteroefening wordt voorbereid",
-      "step1": "1092|Audio uploaden",
-      "step2": "1093|Spraak transcriberen",
-      "step3": "1094|Vragen maken",
-      "processError": "1095|We konden deze audio niet voorbereiden. Probeer het opnieuw.",
-      "tryAgain": "1096|Opnieuw proberen",
-      "chooseAnother": "1097|Ander bestand kiezen",
-      "transcriptHidden": "1098|De transcriptie is verborgen zodat dit een echte luisteroefening blijft."
+      "title": "Audio importeren",
+      "subtitle": "Maak van je eigen audio een luisteroefening.",
+      "uploadTitle": "Audiobestand uploaden",
+      "uploadFormats": "MP3, M4A, WAV of AAC · onder 50 MB",
+      "chooseFile": "Bestand kiezen",
+      "clearFile": "Bestand verwijderen",
+      "infoNote": "Je audio wordt op de achtergrond getranscribeerd. De transcriptie blijft verborgen tijdens de oefening.",
+      "continue": "Verder",
+      "processingTitle": "Je luisteroefening wordt voorbereid",
+      "step1": "Audio uploaden",
+      "step2": "Spraak transcriberen",
+      "step3": "Vragen maken",
+      "processError": "We konden deze audio niet voorbereiden. Probeer het opnieuw.",
+      "tryAgain": "Opnieuw proberen",
+      "chooseAnother": "Ander bestand kiezen",
+      "transcriptHidden": "De transcriptie is verborgen zodat dit een echte luisteroefening blijft."
     },
     "importVideo": {
-      "title": "1099|Video importeren",
-      "subtitle": "1100|Upload een video, krijg ondertitels en oefen met vragen.",
-      "uploadTitle": "1101|Videobestand uploaden",
-      "uploadFormats": "1102|MP4, MOV of M4V · onder 80 MB",
-      "step1": "1103|Video voorbereiden",
-      "step2": "1104|Spraak transcriberen",
-      "step3": "1105|Ondertitels maken",
-      "subtitles": "1106|Ondertitels",
-      "subtitlesOn": "1107|Ondertitels aan",
-      "subtitlesOff": "1108|Ondertitels uit",
-      "noSubtitles": "1109|Geen ondertitels beschikbaar voor deze video.",
-      "tapWord": "1110|Tik op een woord om het te vertalen.",
-      "questionsLocked": "1111|De vragen komen vrij zodra je de video hebt uitgekeken."
+      "title": "Video importeren",
+      "subtitle": "Upload een video, krijg ondertitels en oefen met vragen.",
+      "uploadTitle": "Videobestand uploaden",
+      "uploadFormats": "MP4, MOV of M4V · onder 80 MB",
+      "step1": "Video voorbereiden",
+      "step2": "Spraak transcriberen",
+      "step3": "Ondertitels maken",
+      "subtitles": "Ondertitels",
+      "subtitlesOn": "Ondertitels aan",
+      "subtitlesOff": "Ondertitels uit",
+      "noSubtitles": "Geen ondertitels beschikbaar voor deze video.",
+      "tapWord": "Tik op een woord om het te vertalen.",
+      "questionsLocked": "De vragen komen vrij zodra je de video hebt uitgekeken."
     },
     "wordSheet": {
-      "title": "1112|Woord vertalen",
-      "pickSet": "1113|Kies een set",
-      "createSet": "1114|Set maken",
-      "addToSet": "1115|Aan set toevoegen",
-      "noSets": "1116|Je hebt nog geen sets. Maak er hieronder een.",
-      "setNamePlaceholder": "1117|bijv. Woorden uit video",
-      "createAndAdd": "1118|Set maken en woord toevoegen",
-      "saved": "1119|Opgeslagen in \"{{set}}\"."
+      "title": "Woord vertalen",
+      "pickSet": "Kies een set",
+      "createSet": "Set maken",
+      "addToSet": "Aan set toevoegen",
+      "noSets": "Je hebt nog geen sets. Maak er hieronder een.",
+      "setNamePlaceholder": "bijv. Woorden uit video",
+      "createAndAdd": "Set maken en woord toevoegen",
+      "saved": "Opgeslagen in \"{{set}}\"."
     },
     "saved": {
-      "title": "1120|Opgeslagen oefeningen",
-      "subtitle": "1121|Ga verder met sessies en bekijk je luisterfouten.",
-      "emptyTitle": "1122|Geen opgeslagen sessies",
-      "emptyBody": "1123|Rond een luistersessie af of pauzeer hem, dan verschijnt hij hier.",
-      "continueEyebrow": "1124|Verder luisteren",
-      "percentComplete": "1125|{{percent}} % voltooid",
-      "continue": "1126|Verder",
-      "review": "1127|Bekijken",
-      "delete": "1128|Sessie verwijderen",
-      "deleteConfirm": "1129|\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt.",
+      "title": "Opgeslagen oefeningen",
+      "subtitle": "Ga verder met sessies en bekijk je luisterfouten.",
+      "emptyTitle": "Geen opgeslagen sessies",
+      "emptyBody": "Rond een luistersessie af of pauzeer hem, dan verschijnt hij hier.",
+      "continueEyebrow": "Verder luisteren",
+      "percentComplete": "{{percent}} % voltooid",
+      "continue": "Verder",
+      "review": "Bekijken",
+      "delete": "Sessie verwijderen",
+      "deleteConfirm": "\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt.",
       "status": {
-        "draft": "1130|Concept",
-        "inProgress": "1131|Bezig",
-        "completed": "1132|Voltooid"
+        "draft": "Concept",
+        "inProgress": "Bezig",
+        "completed": "Voltooid"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "1133|Oefenvormen",
+    "sectionTitle": "Oefenvormen",
     "today": {
-      "title": "1134|Voortgang vandaag",
-      "subtitle": "1135|spreekoefening"
+      "title": "Voortgang vandaag",
+      "subtitle": "spreekoefening"
     },
     "menu": {
-      "comingSoon": "1136|Binnenkort",
+      "comingSoon": "Binnenkort",
       "conversation": {
-        "title": "1137|AI-gesprek",
-        "subtitle": "1138|Praat live met een AI-tutor."
+        "title": "AI-gesprek",
+        "subtitle": "Praat live met een AI-tutor."
       },
       "free": {
-        "title": "1139|Vrij spreken",
-        "subtitle": "1140|Spreek over gegenereerde onderwerpen en krijg feedback."
+        "title": "Vrij spreken",
+        "subtitle": "Spreek over gegenereerde onderwerpen en krijg feedback."
       },
       "picture": {
-        "title": "1141|Foto beschrijven",
-        "subtitle": "1142|Beschrijf afbeeldingen en leer nuttige woorden."
+        "title": "Foto beschrijven",
+        "subtitle": "Beschrijf afbeeldingen en leer nuttige woorden."
       },
       "debate": {
-        "title": "1143|Debatmodus",
-        "subtitle": "1144|Bespreek onderwerpen en bouw je argumenten op."
+        "title": "Debatmodus",
+        "subtitle": "Bespreek onderwerpen en bouw je argumenten op."
       },
       "shadowing": {
-        "title": "1145|Shadowing",
-        "subtitle": "1146|Herhaal zinnen en verbeter je uitspraak."
+        "title": "Shadowing",
+        "subtitle": "Herhaal zinnen en verbeter je uitspraak."
       },
       "pronunciation": {
-        "title": "1147|Uitspraaktrainer",
-        "subtitle": "1148|Richt je op lastige klanken en woorden."
+        "title": "Uitspraaktrainer",
+        "subtitle": "Richt je op lastige klanken en woorden."
       }
     },
     "input": {
-      "speak": "1149|Spreken",
-      "stop": "1150|Stoppen",
-      "listening": "1151|Aan het luisteren…",
-      "placeholder": "1152|Typ je antwoord…",
-      "noVoice": "1153|Spraakinvoer wordt niet ondersteund in deze browser — typ je antwoord."
+      "speak": "Spreken",
+      "stop": "Stoppen",
+      "listening": "Aan het luisteren…",
+      "placeholder": "Typ je antwoord…",
+      "noVoice": "Spraakinvoer wordt niet ondersteund in deze browser — typ je antwoord."
     },
     "conversation": {
-      "title": "1154|AI-gesprek",
-      "subtitle": "1155|Praat live met een AI-tutor.",
-      "topic": "1156|Onderwerp",
-      "scenarios": "1157|Scenario's",
-      "autoTopic": "1158|Verras me",
-      "autoTopicHint": "1159|We genereren een nieuw onderwerp voor je.",
-      "length": "1160|Duur",
-      "min": "1161|min",
-      "start": "1162|Gesprek starten",
-      "starting": "1163|Bezig met starten…",
-      "startError": "1164|Het gesprek kon niet worden gestart. Probeer het opnieuw.",
-      "end": "1165|Beëindigen",
-      "dismiss": "1166|Sluiten",
-      "hint": "1167|Hint",
-      "getHint": "1168|Hint nodig?",
-      "hintLoading": "1169|Aan het denken…"
+      "title": "AI-gesprek",
+      "subtitle": "Praat live met een AI-tutor.",
+      "topic": "Onderwerp",
+      "scenarios": "Scenario's",
+      "autoTopic": "Verras me",
+      "autoTopicHint": "We genereren een nieuw onderwerp voor je.",
+      "length": "Duur",
+      "min": "min",
+      "start": "Gesprek starten",
+      "starting": "Bezig met starten…",
+      "startError": "Het gesprek kon niet worden gestart. Probeer het opnieuw.",
+      "end": "Beëindigen",
+      "dismiss": "Sluiten",
+      "hint": "Hint",
+      "getHint": "Hint nodig?",
+      "hintLoading": "Aan het denken…"
     },
     "result": {
-      "title": "1170|Oefening voltooid",
-      "generating": "1171|Je spreken wordt geanalyseerd…",
-      "overall": "1172|Totaalscore",
-      "corrections": "1173|Correcties",
-      "transcript": "1174|Transcriptie",
-      "practiceAgain": "1175|Opnieuw oefenen",
-      "back": "1176|Terug naar Spreken"
+      "title": "Oefening voltooid",
+      "generating": "Je spreken wordt geanalyseerd…",
+      "overall": "Totaalscore",
+      "corrections": "Correcties",
+      "transcript": "Transcriptie",
+      "practiceAgain": "Opnieuw oefenen",
+      "back": "Terug naar Spreken"
     },
     "free": {
-      "title": "1177|Vrij spreken",
-      "subtitle": "1178|Spreek vrijuit over een onderwerp en krijg feedback.",
-      "preview": "1179|Voorbeeld",
-      "autoTopic": "1180|Door AI gegenereerd onderwerp",
-      "autoTopicHint": "1181|We kiezen bij de start een nieuw onderwerp voor {{language}} · {{level}}.",
-      "auto": "1182|Auto",
-      "start": "1183|Vrij spreken starten",
-      "generating": "1184|Onderwerp genereren…",
-      "generatingHint": "1185|We zoeken iets dat bij je niveau past.",
-      "fallbackTopic": "1186|Er kon geen onderwerp worden gegenereerd. We gebruiken een reserveonderwerp.",
-      "transcript": "1187|Transcriptie",
-      "transcriptHint": "1188|Je transcriptie verschijnt hier terwijl je spreekt.",
-      "startSpeaking": "1189|Begin met spreken"
+      "title": "Vrij spreken",
+      "subtitle": "Spreek vrijuit over een onderwerp en krijg feedback.",
+      "preview": "Voorbeeld",
+      "autoTopic": "Door AI gegenereerd onderwerp",
+      "autoTopicHint": "We kiezen bij de start een nieuw onderwerp voor {{language}} · {{level}}.",
+      "auto": "Auto",
+      "start": "Vrij spreken starten",
+      "generating": "Onderwerp genereren…",
+      "generatingHint": "We zoeken iets dat bij je niveau past.",
+      "fallbackTopic": "Er kon geen onderwerp worden gegenereerd. We gebruiken een reserveonderwerp.",
+      "transcript": "Transcriptie",
+      "transcriptHint": "Je transcriptie verschijnt hier terwijl je spreekt.",
+      "startSpeaking": "Begin met spreken"
     },
     "picture": {
-      "title": "1190|Foto beschrijven",
-      "subtitle": "1191|Beschrijf wat je ziet en krijg feedback.",
-      "start": "1192|Foto beschrijven starten",
-      "prompt": "1193|Beschrijf wat je op deze foto ziet.",
-      "tryToMention": "1194|Probeer te noemen:",
+      "title": "Foto beschrijven",
+      "subtitle": "Beschrijf wat je ziet en krijg feedback.",
+      "start": "Foto beschrijven starten",
+      "prompt": "Beschrijf wat je op deze foto ziet.",
+      "tryToMention": "Probeer te noemen:",
       "hints": {
-        "people": "1195|mensen",
-        "objects": "1196|voorwerpen",
-        "actions": "1197|handelingen",
-        "colors": "1198|kleuren",
-        "emotions": "1199|emoties"
+        "people": "mensen",
+        "objects": "voorwerpen",
+        "actions": "handelingen",
+        "colors": "kleuren",
+        "emotions": "emoties"
       },
-      "loading": "1200|Een foto laden…",
-      "retry": "1201|Opnieuw proberen",
-      "newPhoto": "1202|Nieuwe foto",
-      "imageAlt": "1203|Foto om te beschrijven",
-      "photoBy": "1204|Foto van",
-      "onUnsplash": "1205|op Unsplash",
-      "startDescribing": "1206|Begin met beschrijven"
+      "loading": "Een foto laden…",
+      "retry": "Opnieuw proberen",
+      "newPhoto": "Nieuwe foto",
+      "imageAlt": "Foto om te beschrijven",
+      "photoBy": "Foto van",
+      "onUnsplash": "op Unsplash",
+      "startDescribing": "Begin met beschrijven"
     },
     "debate": {
-      "title": "1207|Debatmodus",
-      "subtitle": "1208|Verdedig jouw kant tegen een AI-tegenstander.",
-      "start": "1209|Debat starten",
-      "pickSide": "1210|Jouw kant",
-      "preparing": "1211|Het debatonderwerp wordt voorbereid…",
-      "roundOf": "1212|Ronde {{current}} van {{total}} · {{label}}",
+      "title": "Debatmodus",
+      "subtitle": "Verdedig jouw kant tegen een AI-tegenstander.",
+      "start": "Debat starten",
+      "pickSide": "Jouw kant",
+      "preparing": "Het debatonderwerp wordt voorbereid…",
+      "roundOf": "Ronde {{current}} van {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "1213|Eens",
-          "subtitle": "1214|Verdedig de stelling"
+          "title": "Eens",
+          "subtitle": "Verdedig de stelling"
         },
         "disagree": {
-          "title": "1215|Oneens",
-          "subtitle": "1216|Argumenteer ertegen"
+          "title": "Oneens",
+          "subtitle": "Argumenteer ertegen"
         },
         "surprise": {
-          "title": "1217|Verras me",
-          "subtitle": "1218|Wij kiezen een kant voor je"
+          "title": "Verras me",
+          "subtitle": "Wij kiezen een kant voor je"
         }
       }
     },
     "practice": {
-      "listen": "1219|Luisteren",
-      "playing": "1220|Aan het afspelen…",
-      "record": "1221|Opnemen",
-      "stop": "1222|Stoppen",
-      "playMine": "1223|Mijn versie afspelen",
-      "noRecording": "1224|Opnemen wordt niet ondersteund in deze browser — luisteren en herhalen kan wel."
+      "listen": "Luisteren",
+      "playing": "Aan het afspelen…",
+      "record": "Opnemen",
+      "stop": "Stoppen",
+      "playMine": "Mijn versie afspelen",
+      "noRecording": "Opnemen wordt niet ondersteund in deze browser — luisteren en herhalen kan wel."
     },
     "shadowing": {
-      "title": "1225|Shadowing",
-      "subtitle": "1226|Luister, herhaal en vergelijk jezelf.",
-      "start": "1227|Shadowing starten",
-      "category": "1228|Categorie",
-      "howItWorks": "1229|Luister naar de zin, herhaal hem hardop terwijl je opneemt en speel je versie daarna af om het ritme te vergelijken.",
-      "loading": "1230|Zinnen genereren…",
-      "phrase": "1231|Zin",
-      "previous": "1232|Vorige",
-      "nextPhrase": "1233|Volgende zin",
-      "finish": "1234|Afronden",
-      "changeSettings": "1235|Instellingen wijzigen",
-      "done": "1236|{{count}} gedaan",
-      "allDone": "1237|Alle zinnen geoefend!",
-      "newSet": "1238|Nieuwe reeks"
+      "title": "Shadowing",
+      "subtitle": "Luister, herhaal en vergelijk jezelf.",
+      "start": "Shadowing starten",
+      "category": "Categorie",
+      "howItWorks": "Luister naar de zin, herhaal hem hardop terwijl je opneemt en speel je versie daarna af om het ritme te vergelijken.",
+      "loading": "Zinnen genereren…",
+      "phrase": "Zin",
+      "previous": "Vorige",
+      "nextPhrase": "Volgende zin",
+      "finish": "Afronden",
+      "changeSettings": "Instellingen wijzigen",
+      "done": "{{count}} gedaan",
+      "allDone": "Alle zinnen geoefend!",
+      "newSet": "Nieuwe reeks"
     },
     "pronunciation": {
-      "title": "1239|Uitspraaktrainer",
-      "subtitle": "1240|Richt je op lastige klanken en woorden.",
-      "start": "1241|Training starten",
-      "focus": "1242|Focus",
-      "difficulty": "1243|Moeilijkheid",
+      "title": "Uitspraaktrainer",
+      "subtitle": "Richt je op lastige klanken en woorden.",
+      "start": "Training starten",
+      "focus": "Focus",
+      "difficulty": "Moeilijkheid",
       "level": {
-        "easy": "1244|Makkelijk",
-        "balanced": "1245|In balans",
-        "hard": "1246|Moeilijk"
+        "easy": "Makkelijk",
+        "balanced": "In balans",
+        "hard": "Moeilijk"
       },
-      "loading": "1247|Oefeningen genereren…",
-      "sound": "1248|Klank",
-      "scoringUnavailable": "1249|Automatische uitspraakbeoordeling is nog niet op de server ingesteld, dus er wordt geen score getoond. Luisteren, opnemen en afspelen werken wel."
+      "loading": "Oefeningen genereren…",
+      "sound": "Klank",
+      "scoringUnavailable": "Automatische uitspraakbeoordeling is nog niet op de server ingesteld, dus er wordt geen score getoond. Luisteren, opnemen en afspelen werken wel."
     }
   },
   "profile": {
-    "interfaceLanguage": "1250|Taal van de interface",
+    "interfaceLanguage": "Taal van de interface",
     "password": {
-      "title": "1251|Maak een wachtwoord aan",
-      "body": "1252|Je account is met Google aangemaakt en heeft dus geen wachtwoord — met de velden voor e-mail en wachtwoord kun je niet inloggen. Stel er een in en beide manieren werken.",
-      "save": "1253|Wachtwoord opslaan",
-      "saving": "1254|Bezig met opslaan...",
-      "savedInfo": "1255|Wachtwoord aangemaakt. Je kunt nu ook met je e-mailadres inloggen."
+      "title": "Maak een wachtwoord aan",
+      "body": "Je account is met Google aangemaakt en heeft dus geen wachtwoord — met de velden voor e-mail en wachtwoord kun je niet inloggen. Stel er een in en beide manieren werken.",
+      "save": "Wachtwoord opslaan",
+      "saving": "Bezig met opslaan...",
+      "savedInfo": "Wachtwoord aangemaakt. Je kunt nu ook met je e-mailadres inloggen."
     }
   },
   "units": {
-    "min": "1256|min",
-    "words": "1257|woorden"
+    "min": "min",
+    "words": "woorden"
   },
   "link": {
-    "title": "1258|Inloggen met een link",
-    "subtitle": "1259|We mailen je een eenmalige link. Geen wachtwoord om te onthouden.",
-    "send": "1260|Stuur de link",
-    "sending": "1261|Bezig met verzenden...",
-    "sentInfo": "1262|Link verzonden. Check je e-mail.",
-    "sentTitle": "1263|Check je e-mail",
-    "sentBody": "1264|We hebben een inloglink gestuurd naar",
-    "useAnotherEmail": "1265|Ander e-mailadres gebruiken",
-    "backToPassword": "1266|Toch met een wachtwoord inloggen"
+    "title": "Inloggen met een link",
+    "subtitle": "We mailen je een eenmalige link. Geen wachtwoord om te onthouden.",
+    "send": "Stuur de link",
+    "sending": "Bezig met verzenden...",
+    "sentInfo": "Link verzonden. Check je e-mail.",
+    "sentTitle": "Check je e-mail",
+    "sentBody": "We hebben een inloglink gestuurd naar",
+    "useAnotherEmail": "Ander e-mailadres gebruiken",
+    "backToPassword": "Toch met een wachtwoord inloggen"
   },
   "action": {
-    "working": "1267|Een moment...",
-    "continue": "1268|Verder",
-    "confirmEmailTitle": "1269|Bevestig je e-mailadres",
-    "confirmEmailBody": "1270|Deze link is in een andere browser geopend. Voer het adres in waar hij naartoe is gestuurd, dan maken we het inloggen af.",
-    "resetTitle": "1271|Nieuw wachtwoord",
-    "resetSubtitle": "1272|Kies een nieuw wachtwoord voor",
-    "newPassword": "1273|Nieuw wachtwoord",
-    "confirmPassword": "1274|Herhaal het wachtwoord",
-    "savePassword": "1275|Wachtwoord opslaan",
-    "resetDoneTitle": "1276|Wachtwoord bijgewerkt",
-    "resetDoneBody": "1277|Je kunt nu inloggen met je nieuwe wachtwoord.",
-    "failedTitle": "1278|Die link werkte niet",
-    "failedBody": "1279|Hij is mogelijk al gebruikt, of hij is verlopen. Vraag een nieuwe aan op het inlogscherm.",
-    "backToSignIn": "1280|Terug naar inloggen"
+    "working": "Een moment...",
+    "continue": "Verder",
+    "confirmEmailTitle": "Bevestig je e-mailadres",
+    "confirmEmailBody": "Deze link is in een andere browser geopend. Voer het adres in waar hij naartoe is gestuurd, dan maken we het inloggen af.",
+    "resetTitle": "Nieuw wachtwoord",
+    "resetSubtitle": "Kies een nieuw wachtwoord voor",
+    "newPassword": "Nieuw wachtwoord",
+    "confirmPassword": "Herhaal het wachtwoord",
+    "savePassword": "Wachtwoord opslaan",
+    "resetDoneTitle": "Wachtwoord bijgewerkt",
+    "resetDoneBody": "Je kunt nu inloggen met je nieuwe wachtwoord.",
+    "failedTitle": "Die link werkte niet",
+    "failedBody": "Hij is mogelijk al gebruikt, of hij is verlopen. Vraag een nieuwe aan op het inlogscherm.",
+    "backToSignIn": "Terug naar inloggen"
   },
   "common": {
-    "cancel": "1281|Annuleren",
-    "delete": "1282|Verwijderen",
+    "cancel": "Annuleren",
+    "delete": "Verwijderen",
     "view": {
-      "label": "1283|Weergave",
-      "rows": "1284|Lijst",
-      "grid": "1285|Raster"
+      "label": "Weergave",
+      "rows": "Lijst",
+      "grid": "Raster"
     }
   },
   "practice": {
     "language": {
-      "label": "1286|Taal",
-      "search": "1287|Zoek een taal",
-      "noMatch": "1288|Geen taal komt overeen.",
-      "noVoice": "1289|Je browser heeft geen stem voor {{language}}, dus de tutor spreekt deze taal niet. Voeg het taalpakket toe in je systeeminstellingen of kies een andere taal."
+      "label": "Taal",
+      "search": "Zoek een taal",
+      "noMatch": "Geen taal komt overeen.",
+      "noVoice": "Je browser heeft geen stem voor {{language}}, dus de tutor spreekt deze taal niet. Voeg het taalpakket toe in je systeeminstellingen of kies een andere taal."
     }
   }
 }

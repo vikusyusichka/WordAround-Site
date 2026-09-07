@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "1|WordAround",
-    "tagline": "2|Lär dig språk aktivt."
+    "name": "WordAround",
+    "tagline": "Lär dig språk aktivt."
   },
   "onboarding": {
-    "subtitle": "3|Lär dig ord på ett roligt\\noch enkelt sätt",
-    "start": "4|Nu kör vi"
+    "subtitle": "Lär dig ord på ett roligt\\noch enkelt sätt",
+    "start": "Nu kör vi"
   },
   "auth": {
-    "welcomeBack": "5|Välkommen tillbaka",
-    "subtitle": "6|Logga in för att fortsätta lära dig",
-    "email": "7|E-post",
-    "emailPlaceholder": "8|Ange din e-postadress",
-    "password": "9|Lösenord",
-    "passwordPlaceholder": "10|Ange ditt lösenord",
-    "forgotPassword": "11|Glömt lösenordet?",
-    "signIn": "12|Logga in",
-    "signingIn": "13|Loggar in...",
-    "signUp": "14|Registrera dig",
-    "signOut": "15|Logga ut",
-    "continueWithGoogle": "16|Fortsätt med Google",
-    "createAccount": "17|Skapa konto",
-    "accountCreatedInfo": "18|Kontot är skapat. Vi har skickat ett verifieringsmejl.",
-    "resetEmailSent": "19|Mejl för återställning av lösenord skickat",
-    "showPassword": "20|Visa lösenord",
-    "hidePassword": "21|Dölj lösenord",
-    "back": "22|Tillbaka",
-    "signUpTitle": "23|Skapa ditt konto",
-    "signUpSubtitle": "24|Några minuter om dagen och ditt ordförråd växer",
-    "name": "25|Namn",
-    "namePlaceholder": "26|Vad ska vi kalla dig?",
-    "orWithEmail": "27|eller med e-post",
-    "signUpWithGoogle": "28|Registrera dig med Google",
-    "passwordHint": "29|Minst {{min}} tecken",
-    "magicLinkCta": "30|Logga in med en länk via e-post",
-    "creatingAccount": "31|Skapar kontot..."
+    "welcomeBack": "Välkommen tillbaka",
+    "subtitle": "Logga in för att fortsätta lära dig",
+    "email": "E-post",
+    "emailPlaceholder": "Ange din e-postadress",
+    "password": "Lösenord",
+    "passwordPlaceholder": "Ange ditt lösenord",
+    "forgotPassword": "Glömt lösenordet?",
+    "signIn": "Logga in",
+    "signingIn": "Loggar in...",
+    "signUp": "Registrera dig",
+    "signOut": "Logga ut",
+    "continueWithGoogle": "Fortsätt med Google",
+    "createAccount": "Skapa konto",
+    "accountCreatedInfo": "Kontot är skapat. Vi har skickat ett verifieringsmejl.",
+    "resetEmailSent": "Mejl för återställning av lösenord skickat",
+    "showPassword": "Visa lösenord",
+    "hidePassword": "Dölj lösenord",
+    "back": "Tillbaka",
+    "signUpTitle": "Skapa ditt konto",
+    "signUpSubtitle": "Några minuter om dagen och ditt ordförråd växer",
+    "name": "Namn",
+    "namePlaceholder": "Vad ska vi kalla dig?",
+    "orWithEmail": "eller med e-post",
+    "signUpWithGoogle": "Registrera dig med Google",
+    "passwordHint": "Minst {{min}} tecken",
+    "magicLinkCta": "Logga in med en länk via e-post",
+    "creatingAccount": "Skapar kontot..."
   },
   "verify": {
-    "title": "32|Verifiera din e-post",
-    "subtitle": "33|Ett steg till innan du börjar lära dig",
-    "sentTo": "34|Vi skickade en verifieringslänk till",
-    "fallbackEmail": "35|din e-postadress",
-    "step1": "36|Öppna mejlet i din inkorg",
-    "step2": "37|Tryck på bekräftelselänken",
-    "step3": "38|Vi öppnar din inlärning direkt — du behöver inte komma tillbaka hit",
-    "checkButton": "39|Jag har verifierat min e-post",
-    "checking": "40|Kontrollerar...",
-    "resend": "41|Skicka mejlet igen",
-    "useAnotherAccount": "42|Använd ett annat konto",
-    "badgeInbox": "43|Kolla inkorgen",
-    "badgeConfirm": "44|Bekräfta",
-    "badgeDone": "45|Klart",
-    "resentInfo": "46|Verifieringsmejlet har skickats igen",
-    "notVerifiedYet": "47|E-postadressen är inte verifierad än"
+    "title": "Verifiera din e-post",
+    "subtitle": "Ett steg till innan du börjar lära dig",
+    "sentTo": "Vi skickade en verifieringslänk till",
+    "fallbackEmail": "din e-postadress",
+    "step1": "Öppna mejlet i din inkorg",
+    "step2": "Tryck på bekräftelselänken",
+    "step3": "Vi öppnar din inlärning direkt — du behöver inte komma tillbaka hit",
+    "checkButton": "Jag har verifierat min e-post",
+    "checking": "Kontrollerar...",
+    "resend": "Skicka mejlet igen",
+    "useAnotherAccount": "Använd ett annat konto",
+    "badgeInbox": "Kolla inkorgen",
+    "badgeConfirm": "Bekräfta",
+    "badgeDone": "Klart",
+    "resentInfo": "Verifieringsmejlet har skickats igen",
+    "notVerifiedYet": "E-postadressen är inte verifierad än"
   },
   "errors": {
-    "emailRequired": "48|E-postadress krävs",
-    "emailInvalid": "49|Ange en giltig e-postadress",
-    "emailFirst": "50|Ange din e-postadress först",
-    "passwordRequired": "51|Lösenord krävs",
-    "passwordTooShort": "52|Lösenordet måste vara minst 8 tecken",
-    "invalidEmail": "53|Ogiltigt e-postformat",
-    "wrongPassword": "54|Fel e-postadress eller lösenord. Om du registrerade dig med Google, använd Google-knappen.",
-    "userNotFound": "55|Fel e-postadress eller lösenord. Om du registrerade dig med Google, använd Google-knappen.",
-    "invalidCredential": "56|Fel e-postadress eller lösenord. Om du registrerade dig med Google, använd Google-knappen.",
-    "emailInUse": "57|Det här kontot finns redan",
-    "weakPassword": "58|Det här lösenordet är för svagt",
-    "network": "59|Nätverksfel. Kontrollera din internetanslutning",
-    "tooManyRequests": "60|För många försök. Försök igen senare",
-    "differentCredential": "61|Den här e-postadressen används redan med en annan inloggningsmetod",
-    "noActiveAccount": "62|Inget aktivt konto hittades",
-    "default": "63|Inloggningen misslyckades. Försök igen",
-    "nameRequired": "64|Namn krävs",
-    "passwordsDoNotMatch": "65|Lösenorden stämmer inte överens",
-    "actionExpired": "66|Länken har gått ut. Begär en ny.",
-    "actionInvalid": "67|Länken är inte giltig längre.",
-    "userDisabled": "68|Kontot har inaktiverats.",
-    "requiresRecentLogin": "69|Av säkerhetsskäl: logga in igen och gör om det här.",
-    "passwordAlreadySet": "70|Kontot har redan ett lösenord.",
-    "linkNoEmail": "71|Ange e-postadressen som länken skickades till"
+    "emailRequired": "E-postadress krävs",
+    "emailInvalid": "Ange en giltig e-postadress",
+    "emailFirst": "Ange din e-postadress först",
+    "passwordRequired": "Lösenord krävs",
+    "passwordTooShort": "Lösenordet måste vara minst 8 tecken",
+    "invalidEmail": "Ogiltigt e-postformat",
+    "wrongPassword": "Fel e-postadress eller lösenord. Om du registrerade dig med Google, använd Google-knappen.",
+    "userNotFound": "Fel e-postadress eller lösenord. Om du registrerade dig med Google, använd Google-knappen.",
+    "invalidCredential": "Fel e-postadress eller lösenord. Om du registrerade dig med Google, använd Google-knappen.",
+    "emailInUse": "Det här kontot finns redan",
+    "weakPassword": "Det här lösenordet är för svagt",
+    "network": "Nätverksfel. Kontrollera din internetanslutning",
+    "tooManyRequests": "För många försök. Försök igen senare",
+    "differentCredential": "Den här e-postadressen används redan med en annan inloggningsmetod",
+    "noActiveAccount": "Inget aktivt konto hittades",
+    "default": "Inloggningen misslyckades. Försök igen",
+    "nameRequired": "Namn krävs",
+    "passwordsDoNotMatch": "Lösenorden stämmer inte överens",
+    "actionExpired": "Länken har gått ut. Begär en ny.",
+    "actionInvalid": "Länken är inte giltig längre.",
+    "userDisabled": "Kontot har inaktiverats.",
+    "requiresRecentLogin": "Av säkerhetsskäl: logga in igen och gör om det här.",
+    "passwordAlreadySet": "Kontot har redan ett lösenord.",
+    "linkNoEmail": "Ange e-postadressen som länken skickades till"
   },
   "nav": {
-    "home": "72|Hem",
-    "speaking": "73|Tal",
-    "listening": "74|Hörförståelse",
-    "reading": "75|Läsning",
-    "writing": "76|Skrivande",
-    "folders": "77|Mappar",
-    "sets": "78|Set",
-    "notes": "79|Anteckningar",
-    "profile": "80|Profil",
-    "create": "81|Ny",
-    "menu": "82|Meny",
-    "closeMenu": "83|Stäng menyn",
+    "home": "Hem",
+    "speaking": "Tal",
+    "listening": "Hörförståelse",
+    "reading": "Läsning",
+    "writing": "Skrivande",
+    "folders": "Mappar",
+    "sets": "Set",
+    "notes": "Anteckningar",
+    "profile": "Profil",
+    "create": "Ny",
+    "menu": "Meny",
+    "closeMenu": "Stäng menyn",
     "group": {
-      "practice": "84|Övning",
-      "library": "85|Bibliotek"
+      "practice": "Övning",
+      "library": "Bibliotek"
     }
   },
   "folders": {
-    "create": "86|Skapa mapp",
-    "loading": "87|Laddar mappar…",
-    "loadError": "88|Vi kunde inte ladda dina mappar.",
-    "emptyTitle": "89|Inga mappar än",
-    "emptyBody": "90|Skapa din första mapp för att ordna dina set.",
-    "setCount": "91|{{count}} set",
-    "setCount_one": "92|{{count}} set",
-    "newTitle": "93|Ny mapp",
-    "newSubtitle": "94|Samla set som hör ihop.",
-    "editTitle": "95|Redigera mapp",
-    "name": "96|Namn",
-    "namePlaceholder": "97|t.ex. Resa",
-    "description": "98|Beskrivning",
-    "descriptionPlaceholder": "99|Valfritt",
-    "color": "100|Färg",
-    "save": "101|Spara",
-    "saving": "102|Sparar…",
-    "cancel": "103|Avbryt",
-    "edit": "104|Redigera mapp",
-    "delete": "105|Ta bort mapp",
-    "deleteConfirm": "106|Ta bort ”{{title}}”? Det går inte att ångra.",
-    "backToFolders": "107|Tillbaka till mappar",
-    "notFoundTitle": "108|Mappen hittades inte",
-    "notFoundBody": "109|Mappen kan ha tagits bort.",
-    "noSetsInFolder": "110|Inga set i den här mappen än.",
-    "saveError": "111|Det gick inte att spara. Försök igen.",
+    "create": "Skapa mapp",
+    "loading": "Laddar mappar…",
+    "loadError": "Vi kunde inte ladda dina mappar.",
+    "emptyTitle": "Inga mappar än",
+    "emptyBody": "Skapa din första mapp för att ordna dina set.",
+    "setCount": "{{count}} set",
+    "setCount_one": "{{count}} set",
+    "newTitle": "Ny mapp",
+    "newSubtitle": "Samla set som hör ihop.",
+    "editTitle": "Redigera mapp",
+    "name": "Namn",
+    "namePlaceholder": "t.ex. Resa",
+    "description": "Beskrivning",
+    "descriptionPlaceholder": "Valfritt",
+    "color": "Färg",
+    "save": "Spara",
+    "saving": "Sparar…",
+    "cancel": "Avbryt",
+    "edit": "Redigera mapp",
+    "delete": "Ta bort mapp",
+    "deleteConfirm": "Ta bort ”{{title}}”? Det går inte att ångra.",
+    "backToFolders": "Tillbaka till mappar",
+    "notFoundTitle": "Mappen hittades inte",
+    "notFoundBody": "Mappen kan ha tagits bort.",
+    "noSetsInFolder": "Inga set i den här mappen än.",
+    "saveError": "Det gick inte att spara. Försök igen.",
     "error": {
-      "nameRequired": "112|Mappnamn krävs.",
-      "nameTooLong": "113|Mappnamnet får vara högst 80 tecken.",
-      "descTooLong": "114|Beskrivningen får vara högst 120 tecken."
+      "nameRequired": "Mappnamn krävs.",
+      "nameTooLong": "Mappnamnet får vara högst 80 tecken.",
+      "descTooLong": "Beskrivningen får vara högst 120 tecken."
     },
-    "optional": "115|(valfritt)",
-    "preview": "116|Förhandsvisning",
-    "previewPlaceholder": "117|Ny mapp",
-    "deleteConfirmTitle": "118|Ta bort den här mappen?"
+    "optional": "(valfritt)",
+    "preview": "Förhandsvisning",
+    "previewPlaceholder": "Ny mapp",
+    "deleteConfirmTitle": "Ta bort den här mappen?"
   },
   "sets": {
-    "create": "119|Skapa set",
-    "loading": "120|Laddar set…",
-    "loadError": "121|Vi kunde inte ladda dina set.",
-    "emptyTitle": "122|Inga set än",
-    "emptyBody": "123|Skapa ditt första kortset med knappen Ny.",
-    "cardCount": "124|{{count}} kort",
-    "cardCount_one": "125|{{count}} kort",
-    "keepPracticing": "126|Fortsätt öva",
-    "delete": "127|Ta bort set",
-    "deleteConfirm": "128|Ta bort ”{{title}}”? Det går inte att ångra.",
-    "notFoundTitle": "129|Setet hittades inte",
-    "notFoundBody": "130|Setet kan ha tagits bort.",
-    "backToSets": "131|Tillbaka till set",
-    "edit": "132|Redigera set",
-    "deleteConfirmTitle": "133|Ta bort det här setet?",
-    "editTitle": "134|Redigera set",
-    "editSubtitle": "135|Ändra titel, färg, ikon eller mapp. Korten stannar där de är.",
-    "save": "136|Spara ändringar",
-    "saving": "137|Sparar…",
-    "cancel": "138|Avbryt",
-    "saveError": "139|Det gick inte att spara. Försök igen."
+    "create": "Skapa set",
+    "loading": "Laddar set…",
+    "loadError": "Vi kunde inte ladda dina set.",
+    "emptyTitle": "Inga set än",
+    "emptyBody": "Skapa ditt första kortset med knappen Ny.",
+    "cardCount": "{{count}} kort",
+    "cardCount_one": "{{count}} kort",
+    "keepPracticing": "Fortsätt öva",
+    "delete": "Ta bort set",
+    "deleteConfirm": "Ta bort ”{{title}}”? Det går inte att ångra.",
+    "notFoundTitle": "Setet hittades inte",
+    "notFoundBody": "Setet kan ha tagits bort.",
+    "backToSets": "Tillbaka till set",
+    "edit": "Redigera set",
+    "deleteConfirmTitle": "Ta bort det här setet?",
+    "editTitle": "Redigera set",
+    "editSubtitle": "Ändra titel, färg, ikon eller mapp. Korten stannar där de är.",
+    "save": "Spara ändringar",
+    "saving": "Sparar…",
+    "cancel": "Avbryt",
+    "saveError": "Det gick inte att spara. Försök igen."
   },
   "createSet": {
-    "title": "140|Nytt set",
-    "subtitle": "141|Lägg till ord och anpassa ditt set.",
-    "infoSection": "142|Om setet",
-    "setTitle": "143|Titel",
-    "setTitlePlaceholder": "144|t.ex. Reseord",
-    "setDescription": "145|Beskrivning",
-    "setDescriptionPlaceholder": "146|Valfritt",
-    "privacy": "147|Sekretess",
-    "private": "148|Privat",
-    "public": "149|Offentligt",
-    "cardsSection": "150|Kort",
-    "addCard": "151|Lägg till kort",
-    "cardN": "152|Kort {{n}}",
-    "removeCard": "153|Ta bort kort",
-    "word": "154|Ord",
-    "translation": "155|Översättning",
-    "example": "156|Exempel (valfritt)",
-    "addImage": "157|Lägg till bild",
-    "removeImage": "158|Ta bort bild",
-    "customizeSection": "159|Anpassa",
-    "color": "160|Färg",
-    "icon": "161|Ikon",
-    "folder": "162|Mapp",
-    "noFolder": "163|Ingen mapp",
-    "previewSection": "164|Förhandsvisning",
-    "previewPlaceholder": "165|Settitel",
-    "save": "166|Skapa set",
-    "saving": "167|Sparar…",
-    "cancel": "168|Avbryt",
-    "saveError": "169|Det gick inte att spara. Försök igen.",
+    "title": "Nytt set",
+    "subtitle": "Lägg till ord och anpassa ditt set.",
+    "infoSection": "Om setet",
+    "setTitle": "Titel",
+    "setTitlePlaceholder": "t.ex. Reseord",
+    "setDescription": "Beskrivning",
+    "setDescriptionPlaceholder": "Valfritt",
+    "privacy": "Sekretess",
+    "private": "Privat",
+    "public": "Offentligt",
+    "cardsSection": "Kort",
+    "addCard": "Lägg till kort",
+    "cardN": "Kort {{n}}",
+    "removeCard": "Ta bort kort",
+    "word": "Ord",
+    "translation": "Översättning",
+    "example": "Exempel (valfritt)",
+    "addImage": "Lägg till bild",
+    "removeImage": "Ta bort bild",
+    "customizeSection": "Anpassa",
+    "color": "Färg",
+    "icon": "Ikon",
+    "folder": "Mapp",
+    "noFolder": "Ingen mapp",
+    "previewSection": "Förhandsvisning",
+    "previewPlaceholder": "Settitel",
+    "save": "Skapa set",
+    "saving": "Sparar…",
+    "cancel": "Avbryt",
+    "saveError": "Det gick inte att spara. Försök igen.",
     "error": {
-      "emptyTitle": "170|Settitel krävs.",
-      "titleTooLong": "171|Settiteln får vara högst 150 tecken.",
-      "descTooLong": "172|Beskrivningen får vara högst 200 tecken.",
-      "noValidCards": "173|Lägg till minst ett kort med ord och översättning.",
-      "exampleTooLong": "174|Exempel på kort får vara högst 150 tecken."
+      "emptyTitle": "Settitel krävs.",
+      "titleTooLong": "Settiteln får vara högst 150 tecken.",
+      "descTooLong": "Beskrivningen får vara högst 200 tecken.",
+      "noValidCards": "Lägg till minst ett kort med ord och översättning.",
+      "exampleTooLong": "Exempel på kort får vara högst 150 tecken."
     },
-    "imageTimeout": "175|Tiden gick ut när bilden laddades upp. Kontrollera anslutningen och försök igen.",
+    "imageTimeout": "Tiden gick ut när bilden laddades upp. Kontrollera anslutningen och försök igen.",
     "import": {
-      "button": "176|Importera",
-      "title": "177|Importera kort",
-      "subtitle": "178|Kopiera och klistra in dina data — från Word, Excel, Google Docs och liknande.",
-      "close": "179|Stäng importen",
-      "dataSection": "180|Dina data",
-      "placeholder": "181|Ord 1\\tDefinition 1\\nOrd 2\\tDefinition 2\\nOrd 3\\tDefinition 3",
-      "separatorsSection": "182|Avgränsare",
-      "betweenTermAndDefinition": "183|Mellan ord och översättning",
-      "betweenCards": "184|Mellan kort",
-      "tab": "185|Tabb",
-      "comma": "186|Komma",
-      "newline": "187|Ny rad",
-      "semicolon": "188|Semikolon",
-      "custom": "189|Egen",
-      "customPlaceholder": "190|t.ex. —",
-      "previewSection": "191|Förhandsvisning",
-      "previewEmpty": "192|Inget att visa än.",
-      "noDefinition": "193|Ingen översättning",
-      "confirm": "194|Lägg till kort"
+      "button": "Importera",
+      "title": "Importera kort",
+      "subtitle": "Kopiera och klistra in dina data — från Word, Excel, Google Docs och liknande.",
+      "close": "Stäng importen",
+      "dataSection": "Dina data",
+      "placeholder": "Ord 1\\tDefinition 1\\nOrd 2\\tDefinition 2\\nOrd 3\\tDefinition 3",
+      "separatorsSection": "Avgränsare",
+      "betweenTermAndDefinition": "Mellan ord och översättning",
+      "betweenCards": "Mellan kort",
+      "tab": "Tabb",
+      "comma": "Komma",
+      "newline": "Ny rad",
+      "semicolon": "Semikolon",
+      "custom": "Egen",
+      "customPlaceholder": "t.ex. —",
+      "previewSection": "Förhandsvisning",
+      "previewEmpty": "Inget att visa än.",
+      "noDefinition": "Ingen översättning",
+      "confirm": "Lägg till kort"
     },
     "iconPicker": {
-      "open": "195|Fler ikoner",
-      "title": "196|Välj ikon",
-      "search": "197|Sök symbol",
-      "close": "198|Stäng",
-      "empty": "199|Ingen ikon matchar det namnet."
+      "open": "Fler ikoner",
+      "title": "Välj ikon",
+      "search": "Sök symbol",
+      "close": "Stäng",
+      "empty": "Ingen ikon matchar det namnet."
     },
     "iconGroup": {
-      "learning": "200|Lärande",
-      "languages": "201|Språk",
-      "nature": "202|Natur",
-      "health": "203|Hälsa",
-      "food": "204|Mat",
-      "travel": "205|Resa",
-      "work": "206|Jobb",
-      "tech": "207|Teknik",
-      "creativity": "208|Kreativitet",
-      "general": "209|Allmänt"
+      "learning": "Lärande",
+      "languages": "Språk",
+      "nature": "Natur",
+      "health": "Hälsa",
+      "food": "Mat",
+      "travel": "Resa",
+      "work": "Jobb",
+      "tech": "Teknik",
+      "creativity": "Kreativitet",
+      "general": "Allmänt"
     }
   },
   "home": {
     "title": {
-      "flashcards": "210|Kort",
-      "folders": "211|Mappar",
-      "sets": "212|Set",
-      "create": "213|Ny",
-      "profile": "214|Profil",
-      "speaking": "215|Tal",
-      "listening": "216|Hörförståelse",
-      "reading": "217|Läsning",
-      "writing": "218|Skrivande"
+      "flashcards": "Kort",
+      "folders": "Mappar",
+      "sets": "Set",
+      "create": "Ny",
+      "profile": "Profil",
+      "speaking": "Tal",
+      "listening": "Hörförståelse",
+      "reading": "Läsning",
+      "writing": "Skrivande"
     },
     "subtitle": {
-      "pickSet": "219|Välj ett set att öva på",
-      "folders": "220|Hantera dina mappar",
-      "sets": "221|Hantera dina kortset",
-      "create": "222|Skapa ett nytt studieset",
-      "speaking": "223|Öva på att tala.",
-      "listening": "224|Träna örat att förstå språket naturligt.",
-      "reading": "225|Läs och repetera material på språket.",
-      "writing": "226|Använd språket aktivt."
+      "pickSet": "Välj ett set att öva på",
+      "folders": "Hantera dina mappar",
+      "sets": "Hantera dina kortset",
+      "create": "Skapa ett nytt studieset",
+      "speaking": "Öva på att tala.",
+      "listening": "Träna örat att förstå språket naturligt.",
+      "reading": "Läs och repetera material på språket.",
+      "writing": "Använd språket aktivt."
     },
     "category": {
-      "speaking": "227|TAL",
-      "listening": "228|HÖRFÖRSTÅELSE",
-      "reading": "229|LÄSNING",
-      "writing": "230|SKRIVANDE"
+      "speaking": "TAL",
+      "listening": "HÖRFÖRSTÅELSE",
+      "reading": "LÄSNING",
+      "writing": "SKRIVANDE"
     },
     "todayGoal": {
-      "title": "231|Dagens mål",
-      "left": "232|{{count}} ord kvar"
+      "title": "Dagens mål",
+      "left": "{{count}} ord kvar"
     },
     "stat": {
-      "learnedToday": "233|Lärt idag",
-      "words": "234|ord",
-      "accuracy": "235|Träffsäkerhet",
-      "greatJob": "236|Snyggt jobbat!",
-      "streak": "237|Svit",
-      "days": "238|dagar"
+      "learnedToday": "Lärt idag",
+      "words": "ord",
+      "accuracy": "Träffsäkerhet",
+      "greatJob": "Snyggt jobbat!",
+      "streak": "Svit",
+      "days": "dagar"
     },
-    "continueLearning": "239|Fortsätt lära dig",
-    "yourSets": "240|Dina set",
-    "viewAll": "241|Visa alla",
-    "review": "242|Repetera",
+    "continueLearning": "Fortsätt lära dig",
+    "yourSets": "Dina set",
+    "viewAll": "Visa alla",
+    "review": "Repetera",
     "sets": {
-      "emptyTitle": "243|Inga set än",
-      "emptyBody": "244|Skapa ditt första kortset med knappen Ny."
+      "emptyTitle": "Inga set än",
+      "emptyBody": "Skapa ditt första kortset med knappen Ny."
     },
     "create": {
-      "folder": "245|Mapp",
-      "set": "246|Set",
-      "text": "247|Text",
-      "audio": "248|Ljud",
-      "essay": "249|Uppsats"
+      "folder": "Mapp",
+      "set": "Set",
+      "text": "Text",
+      "audio": "Ljud",
+      "essay": "Uppsats"
     },
     "placeholder": {
-      "comingSoon": "250|{{title}} — kommer snart"
+      "comingSoon": "{{title}} — kommer snart"
     },
     "progress": {
       "subtitle": {
-        "speaking": "251|taluppövning",
-        "listening": "252|hörövning",
-        "reading": "253|läsövning",
-        "writing": "254|skrivövning"
+        "speaking": "taluppövning",
+        "listening": "hörövning",
+        "reading": "läsövning",
+        "writing": "skrivövning"
       }
     },
     "dailyGoal": {
-      "title": "255|Ditt mål för idag",
-      "body": "256|Välj vad du vill öva på idag — kortet nedan räknas mot det.",
-      "chosenBody": "257|Det är det här dagen handlar om.",
-      "howMuch": "258|Hur mycket?",
-      "change": "259|Ändra"
+      "title": "Ditt mål för idag",
+      "body": "Välj vad du vill öva på idag — kortet nedan räknas mot det.",
+      "chosenBody": "Det är det här dagen handlar om.",
+      "howMuch": "Hur mycket?",
+      "change": "Ändra"
     },
     "lastNote": {
-      "title": "260|Senast lästa anteckning"
+      "title": "Senast lästa anteckning"
     }
   },
   "categories": {
-    "speaking": "261|Tal",
-    "listening": "262|Hörförståelse",
-    "reading": "263|Läsning",
-    "writing": "264|Skrivande"
+    "speaking": "Tal",
+    "listening": "Hörförståelse",
+    "reading": "Läsning",
+    "writing": "Skrivande"
   },
   "phase0": {
-    "title": "265|WordAround",
-    "subtitle": "266|Fas 0 är igång. Designtokens laddade, Firebase anslutet."
+    "title": "WordAround",
+    "subtitle": "Fas 0 är igång. Designtokens laddade, Firebase anslutet."
   },
   "study": {
-    "flip": "267|Vänd",
-    "known": "268|Jag kunde det",
-    "unknown": "269|Lär mig fortfarande",
-    "mastered": "270|Behärskar",
-    "shuffle": "271|Blanda",
-    "trackProgress": "272|Följ framsteg",
-    "speak": "273|Uttala",
-    "roundDone": "274|Rundan klar",
-    "knewCount": "275|Du kunde {{known}} av {{total}}",
-    "repeatUnknown": "276|Repetera {{count}} okända",
-    "restart": "277|Börja om",
+    "flip": "Vänd",
+    "known": "Jag kunde det",
+    "unknown": "Lär mig fortfarande",
+    "mastered": "Behärskar",
+    "shuffle": "Blanda",
+    "trackProgress": "Följ framsteg",
+    "speak": "Uttala",
+    "roundDone": "Rundan klar",
+    "knewCount": "Du kunde {{known}} av {{total}}",
+    "repeatUnknown": "Repetera {{count}} okända",
+    "restart": "Börja om",
     "filter": {
-      "all": "278|Alla",
-      "studied": "279|Studerade",
-      "remaining": "280|Kvar",
-      "mastered": "281|Behärskade"
+      "all": "Alla",
+      "studied": "Studerade",
+      "remaining": "Kvar",
+      "mastered": "Behärskade"
     },
-    "addCard": "282|Lägg till kort",
-    "editCard": "283|Redigera kort",
-    "deleteCard": "284|Ta bort kort",
-    "deleteCardConfirm": "285|Ta bort det här kortet?",
-    "emptyPrompt": "286|Det här setet har inga kort än. Lägg till det första.",
-    "save": "287|Spara",
-    "cancel": "288|Avbryt"
+    "addCard": "Lägg till kort",
+    "editCard": "Redigera kort",
+    "deleteCard": "Ta bort kort",
+    "deleteCardConfirm": "Ta bort det här kortet?",
+    "emptyPrompt": "Det här setet har inga kort än. Lägg till det första.",
+    "save": "Spara",
+    "cancel": "Avbryt"
   },
   "writing": {
     "today": {
-      "title": "289|Dagens framsteg",
-      "unit": "290|ord",
-      "subtitle": "291|skrivövning"
+      "title": "Dagens framsteg",
+      "unit": "ord",
+      "subtitle": "skrivövning"
     },
-    "sectionTitle": "292|Övningslägen",
+    "sectionTitle": "Övningslägen",
     "menu": {
       "writeFromSets": {
-        "title": "293|Skriv från set",
-        "subtitle": "294|Öva stavning och skrivning av orden i dina set."
+        "title": "Skriv från set",
+        "subtitle": "Öva stavning och skrivning av orden i dina set."
       },
       "essays": {
-        "title": "295|Uppsatser",
-        "subtitle": "296|Skriv texter och få AI-återkoppling på grammatik och stil."
+        "title": "Uppsatser",
+        "subtitle": "Skriv texter och få AI-återkoppling på grammatik och stil."
       },
-      "comingSoon": "297|Kommer snart"
+      "comingSoon": "Kommer snart"
     },
     "setSelection": {
-      "title": "298|Välj set",
+      "title": "Välj set",
       "empty": {
-        "title": "299|Inga set med ord",
-        "subtitle": "300|Skapa ett set med minst ett kort innan du börjar skrivövningen."
+        "title": "Inga set med ord",
+        "subtitle": "Skapa ett set med minst ett kort innan du börjar skrivövningen."
       },
-      "wordsCount": "301|{{count}} ord",
-      "wordsCount_one": "302|{{count}} ord",
-      "close": "303|Stäng"
+      "wordsCount": "{{count}} ord",
+      "wordsCount_one": "{{count}} ord",
+      "close": "Stäng"
     },
     "writeWords": {
-      "title": "304|Skriv från set",
-      "subtitle": "305|Skriv översättningen och tryck Enter.",
-      "translateHint": "306|Översätt till ditt språk",
-      "hint": "307|Ledtråd",
-      "skip": "308|Hoppa över",
-      "submit": "309|Kontrollera",
-      "inputPlaceholder": "310|Skriv här…",
-      "loading": "311|Laddar setet…",
-      "loadError": "312|Vi kunde inte ladda det här setet.",
-      "noCards": "313|Det här setet har inga kort.",
-      "back": "314|Tillbaka",
+      "title": "Skriv från set",
+      "subtitle": "Skriv översättningen och tryck Enter.",
+      "translateHint": "Översätt till ditt språk",
+      "hint": "Ledtråd",
+      "skip": "Hoppa över",
+      "submit": "Kontrollera",
+      "inputPlaceholder": "Skriv här…",
+      "loading": "Laddar setet…",
+      "loadError": "Vi kunde inte ladda det här setet.",
+      "noCards": "Det här setet har inga kort.",
+      "back": "Tillbaka",
       "settings": {
-        "title": "315|Inställningar",
-        "trainingMode": "316|Träningsläge",
-        "difficulty": "317|Svårighetsgrad"
+        "title": "Inställningar",
+        "trainingMode": "Träningsläge",
+        "difficulty": "Svårighetsgrad"
       },
       "mode": {
-        "wordToTranslation": "318|Ord → Översättning",
-        "translationToWord": "319|Översättning → Ord"
+        "wordToTranslation": "Ord → Översättning",
+        "translationToWord": "Översättning → Ord"
       },
       "difficulty": {
-        "easy": "320|Lätt",
-        "medium": "321|Medel",
-        "hard": "322|Svår",
-        "easyDesc": "323|Obegränsade ledtrådar, obegränsade överhopp",
-        "mediumDesc": "324|1 bokstav som ledtråd, max 25 % överhopp",
-        "hardDesc": "325|Inga ledtrådar, inga överhopp, på tid"
+        "easy": "Lätt",
+        "medium": "Medel",
+        "hard": "Svår",
+        "easyDesc": "Obegränsade ledtrådar, obegränsade överhopp",
+        "mediumDesc": "1 bokstav som ledtråd, max 25 % överhopp",
+        "hardDesc": "Inga ledtrådar, inga överhopp, på tid"
       },
       "translatePrompt": {
-        "word": "326|Översätt till ditt språk",
-        "translation": "327|Skriv originalordet"
+        "word": "Översätt till ditt språk",
+        "translation": "Skriv originalordet"
       },
-      "skipsLeft_one": "328|{{count}} överhopp kvar",
-      "skipsLeft_other": "329|{{count}} överhopp kvar",
-      "seconds": "330|{{count}} s",
+      "skipsLeft_one": "{{count}} överhopp kvar",
+      "skipsLeft_other": "{{count}} överhopp kvar",
+      "seconds": "{{count}} s",
       "result": {
         "win": {
-          "title": "331|Rundan klar!",
-          "subtitle": "332|Snyggt jobbat. Du klarade den här skrivrundan."
+          "title": "Rundan klar!",
+          "subtitle": "Snyggt jobbat. Du klarade den här skrivrundan."
         },
         "timeout": {
-          "title": "333|Tiden är ute",
-          "subtitle": "334|Timern i svårt läge nådde noll. Försök igen från första ordet."
+          "title": "Tiden är ute",
+          "subtitle": "Timern i svårt läge nådde noll. Försök igen från första ordet."
         },
         "wrong": {
-          "title": "335|Fel svar",
-          "subtitle": "336|I svårt läge avslutar ett fel rundan."
+          "title": "Fel svar",
+          "subtitle": "I svårt läge avslutar ett fel rundan."
         },
-        "perfectTitle": "337|Perfekt runda!",
-        "perfectBody": "338|Du klarade svårt läge utan fel. Inga överhopp. Inga ledtrådar. Bara kunnande.",
-        "totalWords": "339|Totalt antal ord",
-        "completedWords": "340|Klarade ord",
-        "skippedWords": "341|Överhoppade ord",
-        "hintsUsed": "342|Använda ledtrådar",
-        "streak": "343|Svit",
-        "difficultyLabel": "344|Svårighetsgrad",
-        "word": "345|Ord",
-        "yourAnswer": "346|Ditt svar",
-        "correctAnswer": "347|Rätt svar",
-        "tryAgain": "348|Försök igen"
+        "perfectTitle": "Perfekt runda!",
+        "perfectBody": "Du klarade svårt läge utan fel. Inga överhopp. Inga ledtrådar. Bara kunnande.",
+        "totalWords": "Totalt antal ord",
+        "completedWords": "Klarade ord",
+        "skippedWords": "Överhoppade ord",
+        "hintsUsed": "Använda ledtrådar",
+        "streak": "Svit",
+        "difficultyLabel": "Svårighetsgrad",
+        "word": "Ord",
+        "yourAnswer": "Ditt svar",
+        "correctAnswer": "Rätt svar",
+        "tryAgain": "Försök igen"
       }
     },
     "essays": {
-      "title": "349|Uppsatser",
-      "subtitle": "350|AI väljer ämnet. Skriv, och få sedan återkoppling.",
+      "title": "Uppsatser",
+      "subtitle": "AI väljer ämnet. Skriv, och få sedan återkoppling.",
       "mode": {
-        "suggested": "351|Föreslaget",
-        "custom": "352|Mitt ämne"
+        "suggested": "Föreslaget",
+        "custom": "Mitt ämne"
       },
       "custom": {
-        "placeholder": "353|Skriv ditt eget uppsatsämne...",
-        "generate": "354|Generera uppgift"
+        "placeholder": "Skriv ditt eget uppsatsämne...",
+        "generate": "Generera uppgift"
       },
       "suggested": {
-        "generate": "355|Generera ämne",
-        "regenerate": "356|Nytt ämne"
+        "generate": "Generera ämne",
+        "regenerate": "Nytt ämne"
       },
-      "language": "357|Språk",
-      "difficulty": "358|Svårighetsgrad",
+      "language": "Språk",
+      "difficulty": "Svårighetsgrad",
       "task": {
-        "time": "359|≈ {{count}} min",
-        "wordRange": "360|{{min}}-{{max}} ord",
-        "quickTips": "361|Snabba tips",
-        "taskLabel": "362|Uppgift"
+        "time": "≈ {{count}} min",
+        "wordRange": "{{min}}-{{max}} ord",
+        "quickTips": "Snabba tips",
+        "taskLabel": "Uppgift"
       },
       "editor": {
-        "placeholder": "363|Börja skriva din uppsats här...",
-        "wordCount": "364|{{count}} / {{min}}-{{max}} ord",
+        "placeholder": "Börja skriva din uppsats här...",
+        "wordCount": "{{count}} / {{min}}-{{max}} ord",
         "validation": {
-          "belowMinimum": "365|Fortsätt — du behöver minst {{min}} ord.",
-          "aboveMaximum": "366|Du har passerat gränsen — försök strama åt.",
-          "valid": "367|Inom intervallet."
+          "belowMinimum": "Fortsätt — du behöver minst {{min}} ord.",
+          "aboveMaximum": "Du har passerat gränsen — försök strama åt.",
+          "valid": "Inom intervallet."
         },
-        "reset": "368|Återställ"
+        "reset": "Återställ"
       },
       "error": {
-        "emptyCustomTopic": "369|Skriv ett ämne först.",
-        "generationFailed": "370|Det gick inte att generera ett ämne. Försök igen."
+        "emptyCustomTopic": "Skriv ett ämne först.",
+        "generationFailed": "Det gick inte att generera ett ämne. Försök igen."
       },
-      "generating": "371|Genererar...",
+      "generating": "Genererar...",
       "hint": {
-        "button": "372|Be om ledtråd",
-        "remaining": "373|{{remaining}}/{{limit}} kvar",
-        "noneLeft": "374|Inga ledtrådar kvar",
-        "notAvailable": "375|Ledtrådar finns inte på den här nivån",
-        "generating": "376|Genererar ledtråd...",
-        "error": "377|Det gick inte att hämta en ledtråd. Försök igen.",
+        "button": "Be om ledtråd",
+        "remaining": "{{remaining}}/{{limit}} kvar",
+        "noneLeft": "Inga ledtrådar kvar",
+        "notAvailable": "Ledtrådar finns inte på den här nivån",
+        "generating": "Genererar ledtråd...",
+        "error": "Det gick inte att hämta en ledtråd. Försök igen.",
         "category": {
-          "content": "378|Innehåll",
-          "grammar": "379|Grammatik",
-          "vocabulary": "380|Ordförråd",
-          "structure": "381|Struktur"
+          "content": "Innehåll",
+          "grammar": "Grammatik",
+          "vocabulary": "Ordförråd",
+          "structure": "Struktur"
         }
       },
       "check": {
-        "button": "382|Kontrollera min uppsats",
-        "checking": "383|Kontrollerar...",
-        "disabled": "384|Håll dig först inom ordintervallet",
-        "error": "385|Vi kunde inte kontrollera din uppsats. Försök igen.",
-        "languageUnsupported": "386|Grammatikkontroll finns inte för {{language}} än."
+        "button": "Kontrollera min uppsats",
+        "checking": "Kontrollerar...",
+        "disabled": "Håll dig först inom ordintervallet",
+        "error": "Vi kunde inte kontrollera din uppsats. Försök igen.",
+        "languageUnsupported": "Grammatikkontroll finns inte för {{language}} än."
       },
       "score": {
-        "title": "387|Uppsatsens poäng",
+        "title": "Uppsatsens poäng",
         "quality": {
-          "excellent": "388|Utmärkt",
-          "veryGood": "389|Mycket bra",
-          "good": "390|Bra",
-          "needsWork": "391|Behöver bearbetas"
+          "excellent": "Utmärkt",
+          "veryGood": "Mycket bra",
+          "good": "Bra",
+          "needsWork": "Behöver bearbetas"
         },
         "category": {
-          "grammar": "392|Grammatik",
-          "vocabulary": "393|Ordförråd",
-          "length": "394|Längd",
-          "complexity": "395|Komplexitet",
-          "relevance": "396|Relevans",
-          "independence": "397|Självständighet"
+          "grammar": "Grammatik",
+          "vocabulary": "Ordförråd",
+          "length": "Längd",
+          "complexity": "Komplexitet",
+          "relevance": "Relevans",
+          "independence": "Självständighet"
         },
         "stat": {
-          "words": "398|Ord",
-          "grammar": "399|Grammatik",
-          "vocabStyle": "400|Ordval/stil",
-          "hints": "401|Ledtrådar",
-          "translations": "402|Översättningar",
-          "synonyms": "403|Synonymer"
+          "words": "Ord",
+          "grammar": "Grammatik",
+          "vocabStyle": "Ordval/stil",
+          "hints": "Ledtrådar",
+          "translations": "Översättningar",
+          "synonyms": "Synonymer"
         }
       },
       "grammar": {
-        "sectionTitle": "404|Grammatikproblem",
-        "count_one": "405|{{count}} problem",
-        "count_other": "406|{{count}} problem",
-        "empty": "407|Inga grammatikproblem hittades — snyggt jobbat!",
-        "original": "408|Original:",
-        "suggestion": "409|Förslag:",
-        "reason": "410|Orsak:",
+        "sectionTitle": "Grammatikproblem",
+        "count_one": "{{count}} problem",
+        "count_other": "{{count}} problem",
+        "empty": "Inga grammatikproblem hittades — snyggt jobbat!",
+        "original": "Original:",
+        "suggestion": "Förslag:",
+        "reason": "Orsak:",
         "category": {
-          "grammar": "411|Grammatik",
-          "vocabulary": "412|Ordförråd",
-          "style": "413|Stil"
+          "grammar": "Grammatik",
+          "vocabulary": "Ordförråd",
+          "style": "Stil"
         },
         "save": {
-          "idle": "414|Spara i anteckningar",
-          "saving": "415|Sparar…",
-          "saved": "416|Sparad",
-          "duplicate": "417|Redan sparad",
-          "failed": "418|Försök spara igen"
+          "idle": "Spara i anteckningar",
+          "saving": "Sparar…",
+          "saved": "Sparad",
+          "duplicate": "Redan sparad",
+          "failed": "Försök spara igen"
         }
       },
       "helper": {
-        "translate": "419|Översätt",
-        "synonym": "420|Synonym",
-        "remaining": "421|{{remaining}} kvar",
-        "notAvailable": "422|Inte tillgängligt på den här nivån"
+        "translate": "Översätt",
+        "synonym": "Synonym",
+        "remaining": "{{remaining}} kvar",
+        "notAvailable": "Inte tillgängligt på den här nivån"
       },
       "translate": {
-        "title": "423|Översätt",
-        "placeholder": "424|Ange ett ord eller en kort fras",
-        "submit": "425|Översätt",
-        "submitting": "426|Översätter..."
+        "title": "Översätt",
+        "placeholder": "Ange ett ord eller en kort fras",
+        "submit": "Översätt",
+        "submitting": "Översätter..."
       },
       "synonym": {
-        "title": "427|Synonymer",
-        "placeholder": "428|Ange ett ord",
-        "submit": "429|Hitta synonymer",
-        "submitting": "430|Söker..."
+        "title": "Synonymer",
+        "placeholder": "Ange ett ord",
+        "submit": "Hitta synonymer",
+        "submitting": "Söker..."
       },
       "assist": {
-        "from": "431|Från",
-        "to": "432|Till",
-        "close": "433|Stäng",
-        "noResult": "434|Inget resultat hittades.",
-        "sameLanguage": "435|Välj ett annat källspråk.",
-        "error": "436|Tjänsten är tillfälligt otillgänglig."
+        "from": "Från",
+        "to": "Till",
+        "close": "Stäng",
+        "noResult": "Inget resultat hittades.",
+        "sameLanguage": "Välj ett annat källspråk.",
+        "error": "Tjänsten är tillfälligt otillgänglig."
       },
-      "saveMistakeConfirmTitle": "437|Spara det här felet i anteckningarna?",
-      "saveMistakeConfirmBody": "438|Det sparas som en felanteckning med rättelsen ”{{correction}}”.",
-      "autoSaveConfirmTitle": "439|Spara de här felen i dina anteckningar?",
-      "autoSaveConfirmBody_one": "440|Kontrollen hittade {{count}} fel. Sparar du det blir det en anteckning som återkommer för repetition.",
-      "autoSaveConfirmBody_other": "441|Kontrollen hittade {{count}} fel. Sparar du dem blir de anteckningar som återkommer för repetition."
+      "saveMistakeConfirmTitle": "Spara det här felet i anteckningarna?",
+      "saveMistakeConfirmBody": "Det sparas som en felanteckning med rättelsen ”{{correction}}”.",
+      "autoSaveConfirmTitle": "Spara de här felen i dina anteckningar?",
+      "autoSaveConfirmBody_one": "Kontrollen hittade {{count}} fel. Sparar du det blir det en anteckning som återkommer för repetition.",
+      "autoSaveConfirmBody_other": "Kontrollen hittade {{count}} fel. Sparar du dem blir de anteckningar som återkommer för repetition."
     },
     "grammar": {
-      "subtitle": "442|Ordna grammatiken efter ämne med tydliga, strukturerade anteckningar.",
-      "newTopic": "443|Nytt ämne",
-      "topicsEmptyTitle": "444|Inga ämnen än",
-      "topicsEmptyBody": "445|Skapa ditt första ämne för att börja samla grammatikanteckningar.",
-      "notesCount_one": "446|{{count}} anteckning",
-      "notesCount_other": "447|{{count}} anteckningar",
-      "deleteTopicConfirm": "448|Ta bort ”{{title}}” och alla dess anteckningar? Det går inte att ångra.",
-      "notesEmptyTitle": "449|Inga anteckningar än",
-      "notesEmptyBody": "450|Lägg till din första anteckning i det här ämnet.",
-      "newNote": "451|Ny anteckning",
-      "deleteNoteConfirm": "452|Ta bort den här anteckningen? Det går inte att ångra.",
-      "loading": "453|Laddar…",
-      "loadError": "454|Vi kunde inte ladda dina grammatikanteckningar.",
-      "notFoundTitle": "455|Hittades inte",
-      "notFoundBody": "456|Objektet kan ha tagits bort.",
-      "back": "457|Tillbaka",
-      "updated": "458|Uppdaterad {{date}}",
+      "subtitle": "Ordna grammatiken efter ämne med tydliga, strukturerade anteckningar.",
+      "newTopic": "Nytt ämne",
+      "topicsEmptyTitle": "Inga ämnen än",
+      "topicsEmptyBody": "Skapa ditt första ämne för att börja samla grammatikanteckningar.",
+      "notesCount_one": "{{count}} anteckning",
+      "notesCount_other": "{{count}} anteckningar",
+      "deleteTopicConfirm": "Ta bort ”{{title}}” och alla dess anteckningar? Det går inte att ångra.",
+      "notesEmptyTitle": "Inga anteckningar än",
+      "notesEmptyBody": "Lägg till din första anteckning i det här ämnet.",
+      "newNote": "Ny anteckning",
+      "deleteNoteConfirm": "Ta bort den här anteckningen? Det går inte att ångra.",
+      "loading": "Laddar…",
+      "loadError": "Vi kunde inte ladda dina grammatikanteckningar.",
+      "notFoundTitle": "Hittades inte",
+      "notFoundBody": "Objektet kan ha tagits bort.",
+      "back": "Tillbaka",
+      "updated": "Uppdaterad {{date}}",
       "form": {
-        "newTitle": "459|Nytt ämne",
-        "editTitle": "460|Redigera ämne",
-        "name": "461|Titel",
-        "namePlaceholder": "462|t.ex. Spanska verb",
-        "description": "463|Beskrivning",
-        "descriptionPlaceholder": "464|Valfritt",
-        "color": "465|Färg",
-        "icon": "466|Ikon",
-        "save": "467|Spara",
-        "cancel": "468|Avbryt",
-        "language": "469|Språk",
-        "languageNone": "470|Inte angivet"
+        "newTitle": "Nytt ämne",
+        "editTitle": "Redigera ämne",
+        "name": "Titel",
+        "namePlaceholder": "t.ex. Spanska verb",
+        "description": "Beskrivning",
+        "descriptionPlaceholder": "Valfritt",
+        "color": "Färg",
+        "icon": "Ikon",
+        "save": "Spara",
+        "cancel": "Avbryt",
+        "language": "Språk",
+        "languageNone": "Inte angivet"
       },
       "noteType": {
-        "standard": "471|Standard",
-        "mistake": "472|Fel",
-        "rule": "473|Regel",
-        "comparison": "474|Jämförelse",
-        "cheatSheet": "475|Fusklapp",
-        "exercise": "476|Övning"
+        "standard": "Standard",
+        "mistake": "Fel",
+        "rule": "Regel",
+        "comparison": "Jämförelse",
+        "cheatSheet": "Fusklapp",
+        "exercise": "Övning"
       },
       "block": {
-        "heading": "477|Rubrik",
-        "paragraph": "478|Text",
-        "bulletList": "479|Punktlista",
-        "rule": "480|Regel",
-        "example": "481|Exempel",
-        "warning": "482|Varning",
-        "quote": "483|Citat",
-        "divider": "484|Avdelare",
-        "addBlock": "485|Lägg till block",
-        "addItem": "486|Lägg till post",
-        "moveUp": "487|Flytta upp",
-        "moveDown": "488|Flytta ner",
-        "remove": "489|Ta bort",
-        "secondaryPlaceholder": "490|Detalj / översättning (valfritt)",
-        "subheading": "491|Underrubrik",
-        "numberedList": "492|Numrerad lista",
-        "checklist": "493|Checklista",
-        "comparison": "494|Jämförelse",
-        "exercise": "495|Övning",
-        "quiz": "496|Quiz",
-        "image": "497|Bild",
-        "comparisonSecondary": "498|Andra sidan",
-        "imageAdd": "499|Lägg till / ersätt bild",
-        "imageUploading": "500|Laddar upp…",
-        "imageFailed": "501|Det gick inte att ladda upp bilden.",
-        "imageSaveFirst": "502|Logga in för att ladda upp bilder."
+        "heading": "Rubrik",
+        "paragraph": "Text",
+        "bulletList": "Punktlista",
+        "rule": "Regel",
+        "example": "Exempel",
+        "warning": "Varning",
+        "quote": "Citat",
+        "divider": "Avdelare",
+        "addBlock": "Lägg till block",
+        "addItem": "Lägg till post",
+        "moveUp": "Flytta upp",
+        "moveDown": "Flytta ner",
+        "remove": "Ta bort",
+        "secondaryPlaceholder": "Detalj / översättning (valfritt)",
+        "subheading": "Underrubrik",
+        "numberedList": "Numrerad lista",
+        "checklist": "Checklista",
+        "comparison": "Jämförelse",
+        "exercise": "Övning",
+        "quiz": "Quiz",
+        "image": "Bild",
+        "comparisonSecondary": "Andra sidan",
+        "imageAdd": "Lägg till / ersätt bild",
+        "imageUploading": "Laddar upp…",
+        "imageFailed": "Det gick inte att ladda upp bilden.",
+        "imageSaveFirst": "Logga in för att ladda upp bilder."
       },
       "blockPlaceholder": {
-        "heading": "503|Rubrik",
-        "paragraph": "504|Skriv din förklaring…",
-        "bulletList": "505|Listpost",
-        "rule": "506|Förklara grammatikregeln…",
-        "example": "507|Lägg till ett exempel…",
-        "warning": "508|Vanligt fel eller varning…",
-        "quote": "509|Mening värd att minnas…",
-        "subheading": "510|Underrubrik",
-        "numberedList": "511|Listpost",
-        "checklist": "512|Checklistpost",
-        "comparison": "513|Första sidan",
-        "exercise": "514|Övningsinstruktion…",
-        "quiz": "515|Fråga",
-        "image": "516|Bildtext"
+        "heading": "Rubrik",
+        "paragraph": "Skriv din förklaring…",
+        "bulletList": "Listpost",
+        "rule": "Förklara grammatikregeln…",
+        "example": "Lägg till ett exempel…",
+        "warning": "Vanligt fel eller varning…",
+        "quote": "Mening värd att minnas…",
+        "subheading": "Underrubrik",
+        "numberedList": "Listpost",
+        "checklist": "Checklistpost",
+        "comparison": "Första sidan",
+        "exercise": "Övningsinstruktion…",
+        "quiz": "Fråga",
+        "image": "Bildtext"
       },
       "editor": {
-        "titlePlaceholder": "517|Anteckningens titel",
-        "save": "518|Spara anteckning",
-        "saving": "519|Sparar…",
-        "delete": "520|Ta bort anteckning",
-        "saveError": "521|Det gick inte att spara. Försök igen.",
-        "subtitle": "522|Redigera anteckning",
-        "tags": "523|Taggar",
-        "tagsPlaceholder": "524|Lägg till tagg…",
-        "removeTag": "525|Ta bort taggen {{tag}}",
-        "addToReview": "526|Lägg till i repetition",
-        "addedToReview": "527|Tillagd i din repetitionskö.",
-        "inReview": "528|I repetition · {{when}}",
-        "inReviewDue": "529|Dags att repetera",
-        "removedFromReview": "530|Borttagen från din repetitionskö.",
-        "unsavedTitle": "531|Lämna utan att spara?",
-        "unsavedBody": "532|Anteckningen har ändringar som inte är sparade.",
-        "discard": "533|Släng ändringarna",
-        "saveAndLeave": "534|Spara och lämna"
+        "titlePlaceholder": "Anteckningens titel",
+        "save": "Spara anteckning",
+        "saving": "Sparar…",
+        "delete": "Ta bort anteckning",
+        "saveError": "Det gick inte att spara. Försök igen.",
+        "subtitle": "Redigera anteckning",
+        "tags": "Taggar",
+        "tagsPlaceholder": "Lägg till tagg…",
+        "removeTag": "Ta bort taggen {{tag}}",
+        "addToReview": "Lägg till i repetition",
+        "addedToReview": "Tillagd i din repetitionskö.",
+        "inReview": "I repetition · {{when}}",
+        "inReviewDue": "Dags att repetera",
+        "removedFromReview": "Borttagen från din repetitionskö.",
+        "unsavedTitle": "Lämna utan att spara?",
+        "unsavedBody": "Anteckningen har ändringar som inte är sparade.",
+        "discard": "Släng ändringarna",
+        "saveAndLeave": "Spara och lämna"
       },
       "quiz": {
-        "title": "535|Quiz",
-        "new": "536|Nytt quiz",
-        "start": "537|Starta quiz",
-        "delete": "538|Ta bort quiz",
-        "deleteConfirm": "539|Ta bort ”{{title}}”? Det går inte att ångra.",
-        "emptyTitle": "540|Inga quiz än",
-        "emptyBody": "541|Skapa ett quiz från den här anteckningen och testa dig själv.",
-        "loadError": "542|Det gick inte att ladda quizen.",
-        "questionsCount_one": "543|{{count}} fråga",
-        "questionsCount_other": "544|{{count}} frågor",
+        "title": "Quiz",
+        "new": "Nytt quiz",
+        "start": "Starta quiz",
+        "delete": "Ta bort quiz",
+        "deleteConfirm": "Ta bort ”{{title}}”? Det går inte att ångra.",
+        "emptyTitle": "Inga quiz än",
+        "emptyBody": "Skapa ett quiz från den här anteckningen och testa dig själv.",
+        "loadError": "Det gick inte att ladda quizen.",
+        "questionsCount_one": "{{count}} fråga",
+        "questionsCount_other": "{{count}} frågor",
         "type": {
-          "multipleChoice": "545|Flerval",
-          "trueFalse": "546|Sant / Falskt",
-          "fillGap": "547|Fyll i luckan",
-          "shortAnswer": "548|Kort svar"
+          "multipleChoice": "Flerval",
+          "trueFalse": "Sant / Falskt",
+          "fillGap": "Fyll i luckan",
+          "shortAnswer": "Kort svar"
         },
         "sheet": {
-          "title": "549|Skapa quiz",
-          "titlePlaceholder": "550|Quizets titel",
-          "mode": "551|Genereringsläge",
-          "modeSmart": "552|Smart lokalt",
-          "modeSmartDesc": "553|Skapar frågor från anteckningens innehåll, på enheten.",
-          "modeAI": "554|Genererat med AI",
-          "modeAIDesc": "555|Skapar rikare, kontextuella frågor med AI.",
-          "count": "556|Frågor",
-          "types": "557|Frågetyper",
-          "focus": "558|Fokus (valfritt)",
-          "focusPlaceholder": "559|t.ex. fokusera på oregelbundna former",
-          "preview": "560|Förhandsvisa frågor",
-          "regenerate": "561|Generera förhandsvisningen igen",
-          "previewTitle": "562|Förhandsvisning",
-          "saveQuiz": "563|Spara quiz",
-          "generateQuiz": "564|Generera quiz",
-          "generating": "565|Genererar…",
-          "saving": "566|Sparar…",
-          "useSmartInstead": "567|Använd Smart lokalt istället",
-          "modeManual": "568|Manuellt",
-          "modeManualDesc": "569|Skriv dina egna frågor.",
-          "createQuiz": "570|Skapa quiz"
+          "title": "Skapa quiz",
+          "titlePlaceholder": "Quizets titel",
+          "mode": "Genereringsläge",
+          "modeSmart": "Smart lokalt",
+          "modeSmartDesc": "Skapar frågor från anteckningens innehåll, på enheten.",
+          "modeAI": "Genererat med AI",
+          "modeAIDesc": "Skapar rikare, kontextuella frågor med AI.",
+          "count": "Frågor",
+          "types": "Frågetyper",
+          "focus": "Fokus (valfritt)",
+          "focusPlaceholder": "t.ex. fokusera på oregelbundna former",
+          "preview": "Förhandsvisa frågor",
+          "regenerate": "Generera förhandsvisningen igen",
+          "previewTitle": "Förhandsvisning",
+          "saveQuiz": "Spara quiz",
+          "generateQuiz": "Generera quiz",
+          "generating": "Genererar…",
+          "saving": "Sparar…",
+          "useSmartInstead": "Använd Smart lokalt istället",
+          "modeManual": "Manuellt",
+          "modeManualDesc": "Skriv dina egna frågor.",
+          "createQuiz": "Skapa quiz"
         },
         "play": {
-          "questionOf": "571|Fråga {{current}} av {{total}}",
-          "submit": "572|Skicka svar",
-          "next": "573|Nästa",
-          "finish": "574|Avsluta",
-          "correct": "575|Rätt!",
-          "incorrect": "576|Fel",
-          "correctAnswer": "577|Rätt svar: {{answer}}",
-          "typeMissing": "578|Skriv ordet som saknas",
-          "typeAnswer": "579|Skriv ditt svar",
-          "trueLabel": "580|Sant",
-          "falseLabel": "581|Falskt"
+          "questionOf": "Fråga {{current}} av {{total}}",
+          "submit": "Skicka svar",
+          "next": "Nästa",
+          "finish": "Avsluta",
+          "correct": "Rätt!",
+          "incorrect": "Fel",
+          "correctAnswer": "Rätt svar: {{answer}}",
+          "typeMissing": "Skriv ordet som saknas",
+          "typeAnswer": "Skriv ditt svar",
+          "trueLabel": "Sant",
+          "falseLabel": "Falskt"
         },
         "result": {
-          "scoreOf": "582|{{correct}} av {{total}} rätt",
+          "scoreOf": "{{correct}} av {{total}} rätt",
           "grade": {
-            "excellent": "583|Utmärkt!",
-            "good": "584|Snyggt jobbat!",
-            "keepPracticing": "585|Fortsätt öva",
-            "reviewNote": "586|Gå igenom anteckningen"
+            "excellent": "Utmärkt!",
+            "good": "Snyggt jobbat!",
+            "keepPracticing": "Fortsätt öva",
+            "reviewNote": "Gå igenom anteckningen"
           },
-          "incorrectSection": "587|Fel",
-          "correctSection": "588|Rätt",
-          "yourAnswer": "589|Ditt svar: {{answer}}",
-          "tryAgain": "590|Försök igen",
-          "reviewNote": "591|Öppna anteckningen",
-          "done": "592|Klart"
+          "incorrectSection": "Fel",
+          "correctSection": "Rätt",
+          "yourAnswer": "Ditt svar: {{answer}}",
+          "tryAgain": "Försök igen",
+          "reviewNote": "Öppna anteckningen",
+          "done": "Klart"
         },
         "errors": {
-          "notEnoughContent": "593|Lägg först till mer innehåll i anteckningen — ett quiz behöver minst två innehållsblock (regel, exempel, varning, stycke eller citat).",
-          "noMatchingQuestionTypes": "594|Inte tillräckligt med passande innehåll för de valda frågetyperna. Slå på fler typer eller lägg till innehåll.",
-          "aiFailed": "595|Det gick inte att generera quizet med AI. Försök igen eller använd Smart lokalt."
+          "notEnoughContent": "Lägg först till mer innehåll i anteckningen — ett quiz behöver minst två innehållsblock (regel, exempel, varning, stycke eller citat).",
+          "noMatchingQuestionTypes": "Inte tillräckligt med passande innehåll för de valda frågetyperna. Slå på fler typer eller lägg till innehåll.",
+          "aiFailed": "Det gick inte att generera quizet med AI. Försök igen eller använd Smart lokalt."
         },
-        "badge": "596|Quiz",
+        "badge": "Quiz",
         "manual": {
-          "questions_one": "597|{{count}} fråga",
-          "questions_other": "598|{{count}} frågor",
-          "add": "599|Lägg till fråga",
-          "questionPlaceholder": "600|Frågetext",
-          "questionGapPlaceholder": "601|Fråga med lucka, t.ex. Jag _____ till skolan",
-          "optionPlaceholder": "602|Alternativ {{index}}",
-          "answerPlaceholder": "603|Rätt svar",
-          "explanationPlaceholder": "604|Förklaring (valfritt)",
+          "questions_one": "{{count}} fråga",
+          "questions_other": "{{count}} frågor",
+          "add": "Lägg till fråga",
+          "questionPlaceholder": "Frågetext",
+          "questionGapPlaceholder": "Fråga med lucka, t.ex. Jag _____ till skolan",
+          "optionPlaceholder": "Alternativ {{index}}",
+          "answerPlaceholder": "Rätt svar",
+          "explanationPlaceholder": "Förklaring (valfritt)",
           "error": {
-            "questionRequired": "605|Frågetext krävs.",
-            "optionsRequired": "606|Flerval behöver minst 2 alternativ.",
-            "answerRequired": "607|Ange rätt svar.",
-            "answerNotAnOption": "608|Rätt svar måste matcha ett av alternativen.",
-            "blankRequired": "609|Lägg till en lucka (t.ex. _____) i frågan."
+            "questionRequired": "Frågetext krävs.",
+            "optionsRequired": "Flerval behöver minst 2 alternativ.",
+            "answerRequired": "Ange rätt svar.",
+            "answerNotAnOption": "Rätt svar måste matcha ett av alternativen.",
+            "blankRequired": "Lägg till en lucka (t.ex. _____) i frågan."
           }
         }
       },
       "quickMistake": {
-        "button": "610|Snabbt fel",
-        "title": "611|Snabbt fel",
-        "original": "612|Ursprunglig mening",
-        "originalPlaceholder": "613|Exempel: Jag är håller med dig",
-        "corrected": "614|Rättelse",
-        "correctedPlaceholder": "615|Exempel: Jag håller med dig",
-        "explanation": "616|Förklaring (valfritt)",
-        "explanationPlaceholder": "617|Varför är rättelsen rätt?",
+        "button": "Snabbt fel",
+        "title": "Snabbt fel",
+        "original": "Ursprunglig mening",
+        "originalPlaceholder": "Exempel: Jag är håller med dig",
+        "corrected": "Rättelse",
+        "correctedPlaceholder": "Exempel: Jag håller med dig",
+        "explanation": "Förklaring (valfritt)",
+        "explanationPlaceholder": "Varför är rättelsen rätt?",
         "validation": {
-          "original": "618|Lägg till den ursprungliga meningen först.",
-          "corrected": "619|Lägg till den rättade meningen också."
+          "original": "Lägg till den ursprungliga meningen först.",
+          "corrected": "Lägg till den rättade meningen också."
         },
-        "save": "620|Spara felet",
-        "saving": "621|Sparar…",
-        "saved": "622|Sparat i grammatikanteckningarna.",
-        "duplicate": "623|Redan sparat — dubbletten hoppades över.",
-        "failed": "624|Det gick inte att spara. Försök igen.",
-        "openTopic": "625|Öppna Vanliga fel",
-        "done": "626|Klart",
-        "tip": "627|Sparade rättelser går in i repetitionen automatiskt, så de du ständigt gör fel på kommer tillbaka först."
+        "save": "Spara felet",
+        "saving": "Sparar…",
+        "saved": "Sparat i grammatikanteckningarna.",
+        "duplicate": "Redan sparat — dubbletten hoppades över.",
+        "failed": "Det gick inte att spara. Försök igen.",
+        "openTopic": "Öppna Vanliga fel",
+        "done": "Klart",
+        "tip": "Sparade rättelser går in i repetitionen automatiskt, så de du ständigt gör fel på kommer tillbaka först."
       },
       "templates": {
-        "topicTitle": "628|Ämnesmallar",
-        "noteTitle": "629|Anteckningsmallar",
-        "button": "630|Mall",
-        "startFromTemplate": "631|Börja från en mall",
-        "searchPlaceholder": "632|Sök mallar…",
-        "allLanguages": "633|Alla",
-        "anyDifficulty": "634|Vilken som",
+        "topicTitle": "Ämnesmallar",
+        "noteTitle": "Anteckningsmallar",
+        "button": "Mall",
+        "startFromTemplate": "Börja från en mall",
+        "searchPlaceholder": "Sök mallar…",
+        "allLanguages": "Alla",
+        "anyDifficulty": "Vilken som",
         "language": {
-          "en": "635|Engelska",
-          "es": "636|Spanska",
-          "fr": "637|Franska",
-          "de": "638|Tyska"
+          "en": "Engelska",
+          "es": "Spanska",
+          "fr": "Franska",
+          "de": "Tyska"
         },
-        "minutes": "639|{{minutes}} min",
-        "notesIncluded_one": "640|{{count}} anteckning",
-        "notesIncluded_other": "641|{{count}} anteckningar",
-        "blocksIncluded_one": "642|{{count}} block",
-        "blocksIncluded_other": "643|{{count}} block",
-        "empty": "644|Ingen mall matchar dina filter.",
-        "use": "645|Använd mallen",
-        "creating": "646|Skapar…",
-        "replaceConfirm": "647|Ersätta anteckningens nuvarande innehåll med den här mallen? Tryck Avbryt för att lägga mallen nedanför istället.",
-        "applyTitle": "648|Använda ”{{title}}”?",
-        "applyBody": "649|Anteckningen har redan innehåll. Välj hur mallen ska användas.",
-        "applyReplace": "650|Ersätt innehållet",
-        "applyAppend": "651|Lägg till blocken sist"
+        "minutes": "{{minutes}} min",
+        "notesIncluded_one": "{{count}} anteckning",
+        "notesIncluded_other": "{{count}} anteckningar",
+        "blocksIncluded_one": "{{count}} block",
+        "blocksIncluded_other": "{{count}} block",
+        "empty": "Ingen mall matchar dina filter.",
+        "use": "Använd mallen",
+        "creating": "Skapar…",
+        "replaceConfirm": "Ersätta anteckningens nuvarande innehåll med den här mallen? Tryck Avbryt för att lägga mallen nedanför istället.",
+        "applyTitle": "Använda ”{{title}}”?",
+        "applyBody": "Anteckningen har redan innehåll. Välj hur mallen ska användas.",
+        "applyReplace": "Ersätt innehållet",
+        "applyAppend": "Lägg till blocken sist"
       },
       "review": {
-        "title": "652|Repetition",
-        "subtitle": "653|Befäst det du lärt dig med spridd repetition.",
-        "cardTitle": "654|Repetera idag",
-        "cardSubtitle_one": "655|{{count}} objekt redo · ~{{minutes}} min",
-        "cardSubtitle_other": "656|{{count}} objekt redo · ~{{minutes}} min",
-        "caughtUpTitle": "657|Allt är ikapp",
-        "caughtUp": "658|Du är helt ikapp. Öppna eller redigera anteckningar för att få repetitionsförslag.",
-        "dueBadge": "659|Dags",
-        "refreshBody": "660|Inget är på tur just nu — men du kan ändå fräscha upp det du läst senast.",
-        "refreshStart": "661|Fräscha upp senaste anteckningarna",
-        "start": "662|Starta repetition",
-        "skip": "663|Hoppa över",
-        "itemOf": "664|Objekt {{current}} av {{total}}",
-        "untitled": "665|Grammatikanteckning",
-        "stats": "666|Repeterad {{count}} gånger · svit {{streak}}",
-        "continueToQuestion": "667|Gå vidare till frågan",
-        "showAnswer": "668|Visa svaret",
-        "compareTitle": "669|Jämför ditt svar",
-        "referenceAnswer": "670|Referens: {{answer}}",
-        "openNote": "671|Öppna hela anteckningen",
+        "title": "Repetition",
+        "subtitle": "Befäst det du lärt dig med spridd repetition.",
+        "cardTitle": "Repetera idag",
+        "cardSubtitle_one": "{{count}} objekt redo · ~{{minutes}} min",
+        "cardSubtitle_other": "{{count}} objekt redo · ~{{minutes}} min",
+        "caughtUpTitle": "Allt är ikapp",
+        "caughtUp": "Du är helt ikapp. Öppna eller redigera anteckningar för att få repetitionsförslag.",
+        "dueBadge": "Dags",
+        "refreshBody": "Inget är på tur just nu — men du kan ändå fräscha upp det du läst senast.",
+        "refreshStart": "Fräscha upp senaste anteckningarna",
+        "start": "Starta repetition",
+        "skip": "Hoppa över",
+        "itemOf": "Objekt {{current}} av {{total}}",
+        "untitled": "Grammatikanteckning",
+        "stats": "Repeterad {{count}} gånger · svit {{streak}}",
+        "continueToQuestion": "Gå vidare till frågan",
+        "showAnswer": "Visa svaret",
+        "compareTitle": "Jämför ditt svar",
+        "referenceAnswer": "Referens: {{answer}}",
+        "openNote": "Öppna hela anteckningen",
         "pool": {
-          "manual_one": "672|{{count}} objekt väntar på repetition",
-          "manual_other": "673|{{count}} objekt väntar på repetition",
-          "recentlyOpened_one": "674|{{count}} nyligen öppnad anteckning",
-          "recentlyOpened_other": "675|{{count}} nyligen öppnade anteckningar",
-          "recentlyEdited_one": "676|{{count}} nyligen redigerad anteckning",
-          "recentlyEdited_other": "677|{{count}} nyligen redigerade anteckningar"
+          "manual_one": "{{count}} objekt väntar på repetition",
+          "manual_other": "{{count}} objekt väntar på repetition",
+          "recentlyOpened_one": "{{count}} nyligen öppnad anteckning",
+          "recentlyOpened_other": "{{count}} nyligen öppnade anteckningar",
+          "recentlyEdited_one": "{{count}} nyligen redigerad anteckning",
+          "recentlyEdited_other": "{{count}} nyligen redigerade anteckningar"
         },
         "sourceType": {
-          "note": "678|Anteckning",
-          "mistake": "679|Fel",
-          "quiz": "680|Quiz"
+          "note": "Anteckning",
+          "mistake": "Fel",
+          "quiz": "Quiz"
         },
         "phase": {
-          "source": "681|Studera",
-          "question": "682|Svara",
-          "result": "683|Betygsätt"
+          "source": "Studera",
+          "question": "Svara",
+          "result": "Betygsätt"
         },
         "rating": {
-          "forgot": "684|Glömde",
-          "hard": "685|Svårt",
-          "good": "686|Bra",
-          "easy": "687|Lätt"
+          "forgot": "Glömde",
+          "hard": "Svårt",
+          "good": "Bra",
+          "easy": "Lätt"
         },
         "interval": {
-          "plus4h": "688|+4 timmar",
-          "plus1d": "689|+1 dag",
-          "plus3d": "690|+3 dagar",
-          "plus7d": "691|+7 dagar"
+          "plus4h": "+4 timmar",
+          "plus1d": "+1 dag",
+          "plus3d": "+3 dagar",
+          "plus7d": "+7 dagar"
         },
         "summary": {
-          "title": "692|Passet är klart",
-          "emptyTitle": "693|Inget repeterat",
-          "reviewed": "694|Repeterade",
-          "correct": "695|Rätt",
-          "incorrect": "696|Fel",
-          "hintForgot": "697|Vissa objekt kommer tillbaka om 4 timmar.",
-          "hintHard": "698|Svåra objekt kommer tillbaka imorgon.",
-          "hintGood": "699|Bra objekt kommer tillbaka om 3 dagar.",
-          "hintEasy": "700|Alla objekt kommer tillbaka om 7 dagar.",
-          "done": "701|Tillbaka till grammatikanteckningar"
+          "title": "Passet är klart",
+          "emptyTitle": "Inget repeterat",
+          "reviewed": "Repeterade",
+          "correct": "Rätt",
+          "incorrect": "Fel",
+          "hintForgot": "Vissa objekt kommer tillbaka om 4 timmar.",
+          "hintHard": "Svåra objekt kommer tillbaka imorgon.",
+          "hintGood": "Bra objekt kommer tillbaka om 3 dagar.",
+          "hintEasy": "Alla objekt kommer tillbaka om 7 dagar.",
+          "done": "Tillbaka till grammatikanteckningar"
         },
-        "loadError": "702|Vi kunde inte ladda din repetitionskö.",
-        "mistakeCount_one": "703|{{count}} fel",
-        "mistakeCount_other": "704|{{count}} fel"
+        "loadError": "Vi kunde inte ladda din repetitionskö.",
+        "mistakeCount_one": "{{count}} fel",
+        "mistakeCount_other": "{{count}} fel"
       },
-      "mistakesBadge": "705|Fel",
-      "topicsTitle": "706|Ämnen",
-      "deleteTopic": "707|Ta bort ämne",
-      "deleteTopicTitle": "708|Ta bort det här ämnet?",
-      "deleteNoteTitle": "709|Ta bort den här anteckningen?",
-      "pin": "710|Fäst anteckning",
-      "unpin": "711|Lossa anteckning",
-      "favorite": "712|Lägg till i favoriter",
-      "unfavorite": "713|Ta bort från favoriter",
+      "mistakesBadge": "Fel",
+      "topicsTitle": "Ämnen",
+      "deleteTopic": "Ta bort ämne",
+      "deleteTopicTitle": "Ta bort det här ämnet?",
+      "deleteNoteTitle": "Ta bort den här anteckningen?",
+      "pin": "Fäst anteckning",
+      "unpin": "Lossa anteckning",
+      "favorite": "Lägg till i favoriter",
+      "unfavorite": "Ta bort från favoriter",
       "search": {
-        "topics": "714|Sök ämnen…",
-        "notes": "715|Sök anteckningar…",
-        "clear": "716|Rensa sökningen",
-        "noMatchTitle": "717|Inga träffar",
-        "noMatchBody": "718|Prova ett annat sökord.",
-        "notesSection_one": "719|Anteckningar ({{count}})",
-        "notesSection_other": "720|Anteckningar ({{count}})",
-        "noNoteMatches": "721|Ingen anteckning matchar den här sökningen."
+        "topics": "Sök ämnen…",
+        "notes": "Sök anteckningar…",
+        "clear": "Rensa sökningen",
+        "noMatchTitle": "Inga träffar",
+        "noMatchBody": "Prova ett annat sökord.",
+        "notesSection_one": "Anteckningar ({{count}})",
+        "notesSection_other": "Anteckningar ({{count}})",
+        "noNoteMatches": "Ingen anteckning matchar den här sökningen."
       },
       "filter": {
-        "label": "722|Filtrera anteckningar",
-        "all": "723|Alla",
-        "pinned": "724|Fästa",
-        "favorites": "725|Favoriter",
-        "mistakes": "726|Fel",
-        "quizzes": "727|Quiz",
-        "review": "728|Dags",
+        "label": "Filtrera anteckningar",
+        "all": "Alla",
+        "pinned": "Fästa",
+        "favorites": "Favoriter",
+        "mistakes": "Fel",
+        "quizzes": "Quiz",
+        "review": "Dags",
         "empty": {
           "all": {
-            "title": "729|Inga grammatikanteckningar än",
-            "body": "730|Skapa din första grammatikanteckning för det här ämnet."
+            "title": "Inga grammatikanteckningar än",
+            "body": "Skapa din första grammatikanteckning för det här ämnet."
           },
           "pinned": {
-            "title": "731|Inga fästa anteckningar än",
-            "body": "732|Fäst anteckningar från listan så hittar du dem snabbt."
+            "title": "Inga fästa anteckningar än",
+            "body": "Fäst anteckningar från listan så hittar du dem snabbt."
           },
           "favorites": {
-            "title": "733|Inga favoritanteckningar än",
-            "body": "734|Markera anteckningar som favoriter så har du dem nära till hands."
+            "title": "Inga favoritanteckningar än",
+            "body": "Markera anteckningar som favoriter så har du dem nära till hands."
           },
           "mistakes": {
-            "title": "735|Inga sparade fel än",
-            "body": "736|Spara grammatikfel så kan du repetera dem här."
+            "title": "Inga sparade fel än",
+            "body": "Spara grammatikfel så kan du repetera dem här."
           },
           "quizzes": {
-            "title": "737|Inga anteckningar med quiz än",
-            "body": "738|Lägg till ett quiz i en anteckning så syns den här."
+            "title": "Inga anteckningar med quiz än",
+            "body": "Lägg till ett quiz i en anteckning så syns den här."
           },
           "review": {
-            "title": "739|Inget är på tur just nu",
-            "body": "740|Anteckningar kommer tillbaka hit när nästa repetition är dags."
+            "title": "Inget är på tur just nu",
+            "body": "Anteckningar kommer tillbaka hit när nästa repetition är dags."
           }
         }
       },
       "reorder": {
-        "start": "741|Ändra ordning",
-        "done": "742|Klart",
-        "up": "743|Flytta upp",
-        "down": "744|Flytta ner"
+        "start": "Ändra ordning",
+        "done": "Klart",
+        "up": "Flytta upp",
+        "down": "Flytta ner"
       },
       "highlights": {
-        "mistakesTitle": "745|Fel att rätta",
-        "mistakesSubtitle": "746|Nyliga rättelser väntar på repetition.",
-        "quizzesTitle": "747|Svaga quizområden",
-        "quizzesSubtitle": "748|Quiz som är värda att göra om snart."
+        "mistakesTitle": "Fel att rätta",
+        "mistakesSubtitle": "Nyliga rättelser väntar på repetition.",
+        "quizzesTitle": "Svaga quizområden",
+        "quizzesSubtitle": "Quiz som är värda att göra om snart."
       },
       "quickNote": {
-        "button": "749|Snabbanteckning",
-        "title": "750|Snabbanteckning",
-        "subtitle": "751|Fånga en grammatikidé utan att öppna hela redigeraren.",
-        "noteTitle": "752|Titel",
-        "titlePlaceholder": "753|Exempel: Ser vs Estar",
-        "text": "754|Anteckning",
-        "textPlaceholder": "755|Skriv den användbara delen här",
-        "noteType": "756|Anteckningstyp",
-        "topic": "757|Ämne",
-        "openEditor": "758|Öppna redigeraren efter sparande",
-        "openEditorHint": "759|Bra när snabbversionen växer till en hel anteckning.",
-        "tip": "760|Snabbanteckningar är till för idén du annars glömmer om tio minuter.",
-        "validation": "761|Lägg till en titel eller lite text först.",
-        "save": "762|Spara snabbanteckning",
-        "saving": "763|Sparar…"
+        "button": "Snabbanteckning",
+        "title": "Snabbanteckning",
+        "subtitle": "Fånga en grammatikidé utan att öppna hela redigeraren.",
+        "noteTitle": "Titel",
+        "titlePlaceholder": "Exempel: Ser vs Estar",
+        "text": "Anteckning",
+        "textPlaceholder": "Skriv den användbara delen här",
+        "noteType": "Anteckningstyp",
+        "topic": "Ämne",
+        "openEditor": "Öppna redigeraren efter sparande",
+        "openEditorHint": "Bra när snabbversionen växer till en hel anteckning.",
+        "tip": "Snabbanteckningar är till för idén du annars glömmer om tio minuter.",
+        "validation": "Lägg till en titel eller lite text först.",
+        "save": "Spara snabbanteckning",
+        "saving": "Sparar…"
       },
       "settings": {
-        "title": "764|Anteckningsinställningar",
-        "subtitle": "765|Hur snabbanteckning, fel och anteckningslistan beter sig.",
-        "reset": "766|Återställ till standard",
-        "tip": "767|Använd snabba fel för meningar du faktiskt skrev fel — de är nyttigare än perfekta läroboksexempel.",
+        "title": "Anteckningsinställningar",
+        "subtitle": "Hur snabbanteckning, fel och anteckningslistan beter sig.",
+        "reset": "Återställ till standard",
+        "tip": "Använd snabba fel för meningar du faktiskt skrev fel — de är nyttigare än perfekta läroboksexempel.",
         "quickCapture": {
-          "title": "768|Snabbanteckning",
-          "subtitle": "769|Gör snabba anteckningar och fel omedelbara."
+          "title": "Snabbanteckning",
+          "subtitle": "Gör snabba anteckningar och fel omedelbara."
         },
         "mistakeNotes": {
-          "title": "770|Felanteckningar",
-          "subtitle": "771|Vad som sparas när du fångar ett snabbt fel."
+          "title": "Felanteckningar",
+          "subtitle": "Vad som sparas när du fångar ett snabbt fel."
         },
         "essays": {
-          "title": "772|Uppsatser",
-          "subtitle": "773|Vad som händer med grammatikproblem i dina uppsatser."
+          "title": "Uppsatser",
+          "subtitle": "Vad som händer med grammatikproblem i dina uppsatser."
         },
         "review": {
-          "title": "774|Spridd repetition",
-          "subtitle": "775|Hur anteckningar hamnar i repetitionskön."
+          "title": "Spridd repetition",
+          "subtitle": "Hur anteckningar hamnar i repetitionskön."
         },
         "appearance": {
-          "title": "776|Anteckningarnas utseende",
-          "subtitle": "777|Hur anteckningslistan sorteras och visas."
+          "title": "Anteckningarnas utseende",
+          "subtitle": "Hur anteckningslistan sorteras och visas."
         },
         "helpers": {
-          "title": "778|Inlärningshjälp",
-          "subtitle": "779|Små knuffar i tomma vyer och snabbformulär."
+          "title": "Inlärningshjälp",
+          "subtitle": "Små knuffar i tomma vyer och snabbformulär."
         },
         "defaultType": {
-          "title": "780|Standardtyp för anteckning",
-          "subtitle": "781|Vilken typ en ny snabbanteckning börjar som."
+          "title": "Standardtyp för anteckning",
+          "subtitle": "Vilken typ en ny snabbanteckning börjar som."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "782|Öppna redigeraren efter snabbsparande",
-            "subtitle": "783|Hoppa direkt till hela redigeraren när en snabbanteckning sparats."
+            "title": "Öppna redigeraren efter snabbsparande",
+            "subtitle": "Hoppa direkt till hela redigeraren när en snabbanteckning sparats."
           },
           "allowQuickQuizzes": {
-            "title": "784|Tillåt quiz i anteckningar",
-            "subtitle": "785|Erbjud quizblock och quizskapande inuti anteckningar."
+            "title": "Tillåt quiz i anteckningar",
+            "subtitle": "Erbjud quizblock och quizskapande inuti anteckningar."
           },
           "showsMistakeHighlights": {
-            "title": "786|Lyft fram felanteckningar",
-            "subtitle": "787|Använd en varm ton för felkort och visa felraden."
+            "title": "Lyft fram felanteckningar",
+            "subtitle": "Använd en varm ton för felkort och visa felraden."
           },
           "includeOriginalSentence": {
-            "title": "788|Ta med ursprungsmeningen",
-            "subtitle": "789|Spara den felaktiga versionen som ett citatblock i anteckningen."
+            "title": "Ta med ursprungsmeningen",
+            "subtitle": "Spara den felaktiga versionen som ett citatblock i anteckningen."
           },
           "includeCorrectedSentence": {
-            "title": "790|Ta med den rättade meningen",
-            "subtitle": "791|Spara den rättade versionen som ett exempelblock."
+            "title": "Ta med den rättade meningen",
+            "subtitle": "Spara den rättade versionen som ett exempelblock."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "792|Ta med förklaringen",
-            "subtitle": "793|Lägg till din förklaring nedanför som ett stycke."
+            "title": "Ta med förklaringen",
+            "subtitle": "Lägg till din förklaring nedanför som ett stycke."
           },
           "groupMistakesByTopic": {
-            "title": "794|Gruppera fel efter ämne",
-            "subtitle": "795|Spara snabba fel i det aktuella ämnet istället för i Vanliga fel."
+            "title": "Gruppera fel efter ämne",
+            "subtitle": "Spara snabba fel i det aktuella ämnet istället för i Vanliga fel."
           },
           "askBeforeSavingMistakes": {
-            "title": "796|Fråga innan fel sparas",
-            "subtitle": "797|Bekräfta innan ett uppsatsproblem blir en anteckning. Det här väger tyngre än automatisk sparning."
+            "title": "Fråga innan fel sparas",
+            "subtitle": "Bekräfta innan ett uppsatsproblem blir en anteckning. Det här väger tyngre än automatisk sparning."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "798|Spara uppsatsfel automatiskt",
-            "subtitle": "799|Varje grammatikproblem i en uppsats blir en anteckning. Med ”Fråga innan sparning” på frågar den en gång för hela kontrollen."
+            "title": "Spara uppsatsfel automatiskt",
+            "subtitle": "Varje grammatikproblem i en uppsats blir en anteckning. Med ”Fråga innan sparning” på frågar den en gång för hela kontrollen."
           },
           "groupsPinnedNotesFirst": {
-            "title": "800|Fästa anteckningar först",
-            "subtitle": "801|Håll viktiga regler överst i varje ämne."
+            "title": "Fästa anteckningar först",
+            "subtitle": "Håll viktiga regler överst i varje ämne."
           },
           "usesCompactCards": {
-            "title": "802|Kompakta anteckningskort",
-            "subtitle": "803|Visa tätare kort när du vill ha fler anteckningar på skärmen."
+            "title": "Kompakta anteckningskort",
+            "subtitle": "Visa tätare kort när du vill ha fler anteckningar på skärmen."
           },
           "showsHelperTips": {
-            "title": "804|Visa hjälptips",
-            "subtitle": "805|Visa korta, situationsanpassade tips medan du skapar anteckningar."
+            "title": "Visa hjälptips",
+            "subtitle": "Visa korta, situationsanpassade tips medan du skapar anteckningar."
           },
           "autoAddNotesToReview": {
-            "title": "806|Lägg till nya anteckningar i repetitionen",
-            "subtitle": "807|Varje anteckning du sparar hamnar i repetitionskön, med start dagen efter."
+            "title": "Lägg till nya anteckningar i repetitionen",
+            "subtitle": "Varje anteckning du sparar hamnar i repetitionskön, med start dagen efter."
           }
         }
       },
-      "editTopic": "808|Redigera ämne",
+      "editTopic": "Redigera ämne",
       "toSet": {
-        "title": "809|Gör ett set av den här anteckningen",
-        "subtitle": "810|Välj paren som ska bli kort.",
-        "setTitle": "811|Settitel",
-        "empty": "812|Den här anteckningen har inget att göra kort av än. Block med jämförelse, exempel och regel omvandlas direkt, och listposter delas vid ett tankstreck — som ”hacer — att göra”.",
-        "button": "813|Gör ett set",
-        "create": "814|Skapa set",
-        "creating": "815|Skapar…",
-        "error": "816|Det gick inte att skapa setet. Försök igen.",
-        "cards_one": "817|{{count}} kort",
-        "cards_other": "818|{{count}} kort"
+        "title": "Gör ett set av den här anteckningen",
+        "subtitle": "Välj paren som ska bli kort.",
+        "setTitle": "Settitel",
+        "empty": "Den här anteckningen har inget att göra kort av än. Block med jämförelse, exempel och regel omvandlas direkt, och listposter delas vid ett tankstreck — som ”hacer — att göra”.",
+        "button": "Gör ett set",
+        "create": "Skapa set",
+        "creating": "Skapar…",
+        "error": "Det gick inte att skapa setet. Försök igen.",
+        "cards_one": "{{count}} kort",
+        "cards_other": "{{count}} kort"
       },
-      "topicsEmptyTip": "819|Ett ämne är en mapp för anteckningar — ett per språk, eller ett per sak du ständigt gör fel.",
-      "notesEmptyTip": "820|Varje anteckning du sparar hamnar i repetitionskön, så att skriva ner den är redan att börja öva på den."
+      "topicsEmptyTip": "Ett ämne är en mapp för anteckningar — ett per språk, eller ett per sak du ständigt gör fel.",
+      "notesEmptyTip": "Varje anteckning du sparar hamnar i repetitionskön, så att skriva ner den är redan att börja öva på den."
     }
   },
   "reading": {
-    "sectionTitle": "821|Övningslägen",
-    "loading": "822|Laddar…",
-    "loadError": "823|Vi kunde inte ladda dina lästexter.",
-    "notFound": "824|Objektet kan ha tagits bort.",
+    "sectionTitle": "Övningslägen",
+    "loading": "Laddar…",
+    "loadError": "Vi kunde inte ladda dina lästexter.",
+    "notFound": "Objektet kan ha tagits bort.",
     "today": {
-      "title": "825|Dagens framsteg",
-      "subtitle": "826|Håll din lässvit vid liv."
+      "title": "Dagens framsteg",
+      "subtitle": "Håll din lässvit vid liv."
     },
     "menu": {
-      "comingSoon": "827|Kommer snart",
+      "comingSoon": "Kommer snart",
       "myTexts": {
-        "title": "828|Mina texter",
-        "subtitle": "829|Klistra in din egen text och läs den med hjälp."
+        "title": "Mina texter",
+        "subtitle": "Klistra in din egen text och läs den med hjälp."
       },
       "fromSets": {
-        "title": "830|Läsning från set",
-        "subtitle": "831|Bygg en lästext av dina kortset."
+        "title": "Läsning från set",
+        "subtitle": "Bygg en lästext av dina kortset."
       },
       "storyMode": {
-        "title": "832|Berättelseläge",
-        "subtitle": "833|Läs interaktiva berättelser med förgrenade val."
+        "title": "Berättelseläge",
+        "subtitle": "Läs interaktiva berättelser med förgrenade val."
       },
       "speedReading": {
-        "title": "834|Snabbläsning",
-        "subtitle": "835|Träna snabbare läsning med tidsatt tempo."
+        "title": "Snabbläsning",
+        "subtitle": "Träna snabbare läsning med tidsatt tempo."
       }
     },
     "myTexts": {
-      "title": "836|Mina texter",
-      "subtitle": "837|Dina sparade lästexter.",
-      "addText": "838|Lägg till text",
-      "emptyTitle": "839|Inga texter än",
-      "emptyBody": "840|Lägg till din första text för att börja öva läsning.",
-      "savedTitle": "841|Sparade texter"
+      "title": "Mina texter",
+      "subtitle": "Dina sparade lästexter.",
+      "addText": "Lägg till text",
+      "emptyTitle": "Inga texter än",
+      "emptyBody": "Lägg till din första text för att börja öva läsning.",
+      "savedTitle": "Sparade texter"
     },
     "status": {
-      "new": "842|Ny",
-      "inProgress": "843|Pågår",
-      "completed": "844|Klar"
+      "new": "Ny",
+      "inProgress": "Pågår",
+      "completed": "Klar"
     },
     "card": {
-      "words_one": "845|{{count}} ord",
-      "words_other": "846|{{count}} ord",
-      "start": "847|Starta",
-      "continue": "848|Fortsätt",
-      "readAgain": "849|Läs igen",
-      "rename": "850|Byt namn",
-      "renamePrompt": "851|Ny titel:",
-      "delete": "852|Ta bort",
-      "deleteConfirm": "853|Ta bort ”{{title}}”? Det går inte att ångra."
+      "words_one": "{{count}} ord",
+      "words_other": "{{count}} ord",
+      "start": "Starta",
+      "continue": "Fortsätt",
+      "readAgain": "Läs igen",
+      "rename": "Byt namn",
+      "renamePrompt": "Ny titel:",
+      "delete": "Ta bort",
+      "deleteConfirm": "Ta bort ”{{title}}”? Det går inte att ångra."
     },
     "continue": {
-      "eyebrow": "854|Fortsätt läsa",
-      "percent": "855|{{percent}} % klart",
-      "button": "856|Fortsätt"
+      "eyebrow": "Fortsätt läsa",
+      "percent": "{{percent}} % klart",
+      "button": "Fortsätt"
     },
     "focus": {
-      "mainIdea": "857|Huvudtanke",
-      "vocabulary": "858|Ordförråd",
-      "detailedComprehension": "859|Detaljerad förståelse",
-      "grammarAwareness": "860|Uppmärksamhet på grammatik",
-      "speedFluency": "861|Snabbhet / flyt"
+      "mainIdea": "Huvudtanke",
+      "vocabulary": "Ordförråd",
+      "detailedComprehension": "Detaljerad förståelse",
+      "grammarAwareness": "Uppmärksamhet på grammatik",
+      "speedFluency": "Snabbhet / flyt"
     },
     "questionType": {
-      "comprehension": "862|Läsförståelse",
-      "trueFalse": "863|Sant / Falskt",
-      "fillGap": "864|Fyll i luckan",
-      "vocabulary": "865|Ordförråd",
-      "findEvidence": "866|Hitta belägg",
-      "orderReconstruction": "867|Ordna"
+      "comprehension": "Läsförståelse",
+      "trueFalse": "Sant / Falskt",
+      "fillGap": "Fyll i luckan",
+      "vocabulary": "Ordförråd",
+      "findEvidence": "Hitta belägg",
+      "orderReconstruction": "Ordna"
     },
     "assistance": {
-      "highlightUnknownWords": "868|Markera okända ord",
-      "translationOnTap": "869|Översätt vid tryck",
-      "vocabularyHints": "870|Ordtips",
-      "readingTimer": "871|Lästimer"
+      "highlightUnknownWords": "Markera okända ord",
+      "translationOnTap": "Översätt vid tryck",
+      "vocabularyHints": "Ordtips",
+      "readingTimer": "Lästimer"
     },
     "addText": {
-      "title": "872|Lägg till text",
-      "subtitle": "873|Klistra in en text och ställ in din läsövning.",
-      "untitled": "874|Text utan titel",
-      "pastePlaceholder": "875|Klistra in eller skriv din text här…",
-      "titleLabel": "876|Titel",
-      "titlePlaceholder": "877|Valfritt — vi kan föreslå en",
-      "language": "878|Språk",
-      "difficulty": "879|Svårighetsgrad",
-      "autoDetect": "880|Identifiera automatiskt",
-      "manual": "881|Välj manuellt",
-      "focus": "882|Läsfokus",
-      "questionTypes": "883|Frågetyper",
-      "assistance": "884|Läshjälp",
+      "title": "Lägg till text",
+      "subtitle": "Klistra in en text och ställ in din läsövning.",
+      "untitled": "Text utan titel",
+      "pastePlaceholder": "Klistra in eller skriv din text här…",
+      "titleLabel": "Titel",
+      "titlePlaceholder": "Valfritt — vi kan föreslå en",
+      "language": "Språk",
+      "difficulty": "Svårighetsgrad",
+      "autoDetect": "Identifiera automatiskt",
+      "manual": "Välj manuellt",
+      "focus": "Läsfokus",
+      "questionTypes": "Frågetyper",
+      "assistance": "Läshjälp",
       "stats": {
-        "words_one": "885|{{count}} ord",
-        "words_other": "886|{{count}} ord",
-        "chars_one": "887|{{count}} tecken",
-        "chars_other": "888|{{count}} tecken",
-        "min": "889|min",
-        "detected": "890|Identifierat: {{level}}"
+        "words_one": "{{count}} ord",
+        "words_other": "{{count}} ord",
+        "chars_one": "{{count}} tecken",
+        "chars_other": "{{count}} tecken",
+        "min": "min",
+        "detected": "Identifierat: {{level}}"
       },
       "validation": {
-        "empty": "891|Lägg till en text först.",
-        "tooShort": "892|Lägg till minst 20 ord."
+        "empty": "Lägg till en text först.",
+        "tooShort": "Lägg till minst 20 ord."
       },
-      "save": "893|Spara text",
-      "saveAndStart": "894|Spara och starta",
-      "saving": "895|Sparar…",
-      "saveError": "896|Det gick inte att spara. Försök igen.",
+      "save": "Spara text",
+      "saveAndStart": "Spara och starta",
+      "saving": "Sparar…",
+      "saveError": "Det gick inte att spara. Försök igen.",
       "source": {
-        "pasteText": "897|Klistra in",
-        "photo": "898|Foto",
-        "pdf": "899|PDF",
-        "generate": "900|Generera",
-        "explore": "901|Utforska"
+        "pasteText": "Klistra in",
+        "photo": "Foto",
+        "pdf": "PDF",
+        "generate": "Generera",
+        "explore": "Utforska"
       },
       "style": {
-        "informative": "902|Informativ",
-        "casual": "903|Ledig",
-        "academic": "904|Akademisk",
-        "narrative": "905|Berättande"
+        "informative": "Informativ",
+        "casual": "Ledig",
+        "academic": "Akademisk",
+        "narrative": "Berättande"
       },
       "length": {
-        "short": "906|Kort",
-        "medium": "907|Medel",
-        "long": "908|Lång"
+        "short": "Kort",
+        "medium": "Medel",
+        "long": "Lång"
       },
       "import": {
-        "photoHint": "909|Ladda upp ett foto av en sida — vi plockar ut texten.",
-        "chooseImage": "910|Välj bild",
-        "recognizing": "911|Känner igen… {{percent}} %",
-        "imageError": "912|Vi kunde inte läsa text från den här bilden.",
-        "pdfHint": "913|Ladda upp en PDF — vi plockar ut texten.",
-        "choosePDF": "914|Välj PDF",
-        "reading": "915|Läser PDF…",
-        "pdfError": "916|Vi kunde inte läsa den här PDF-filen.",
-        "topicPlaceholder": "917|Ämne — t.ex. korallrev, boktryckarkonsten",
-        "explorePlaceholder": "918|Ämne eller nyckelord — t.ex. Marie Curie, Venedig",
-        "generateButton": "919|Generera text",
-        "exploreButton": "920|Hämta artikel",
-        "working": "921|Arbetar…",
-        "generateError": "922|Det gick inte att generera texten. Försök igen.",
-        "exploreError": "923|Vi hittade ingen artikel om det här ämnet.",
-        "exploredFrom": "924|Hämtad från"
+        "photoHint": "Ladda upp ett foto av en sida — vi plockar ut texten.",
+        "chooseImage": "Välj bild",
+        "recognizing": "Känner igen… {{percent}} %",
+        "imageError": "Vi kunde inte läsa text från den här bilden.",
+        "pdfHint": "Ladda upp en PDF — vi plockar ut texten.",
+        "choosePDF": "Välj PDF",
+        "reading": "Läser PDF…",
+        "pdfError": "Vi kunde inte läsa den här PDF-filen.",
+        "topicPlaceholder": "Ämne — t.ex. korallrev, boktryckarkonsten",
+        "explorePlaceholder": "Ämne eller nyckelord — t.ex. Marie Curie, Venedig",
+        "generateButton": "Generera text",
+        "exploreButton": "Hämta artikel",
+        "working": "Arbetar…",
+        "generateError": "Det gick inte att generera texten. Försök igen.",
+        "exploreError": "Vi hittade ingen artikel om det här ämnet.",
+        "exploredFrom": "Hämtad från"
       }
     },
     "session": {
-      "startQuestions": "925|Gå till frågorna",
-      "finish": "926|Avsluta",
-      "next": "927|Nästa",
-      "questionOf": "928|Fråga {{current}} av {{total}}",
-      "closeTranslation": "929|Stäng översättningen",
-      "translating": "930|Översätter…",
-      "translationError": "931|Det gick inte att översätta. Försök igen.",
-      "translation": "932|Översättning",
-      "textLabel": "933|Text"
+      "startQuestions": "Gå till frågorna",
+      "finish": "Avsluta",
+      "next": "Nästa",
+      "questionOf": "Fråga {{current}} av {{total}}",
+      "closeTranslation": "Stäng översättningen",
+      "translating": "Översätter…",
+      "translationError": "Det gick inte att översätta. Försök igen.",
+      "translation": "Översättning",
+      "textLabel": "Text"
     },
     "result": {
-      "comprehension": "934|Läsförståelse",
-      "correct": "935|Rätt",
-      "time": "936|Lästid",
-      "wpm": "937|ord/min",
-      "mistakes": "938|Fel",
-      "mistakesTitle": "939|Gå igenom dina fel",
-      "readAgain": "940|Läs igen",
-      "back": "941|Tillbaka till Mina texter",
-      "complete": "942|Övningen är klar"
+      "comprehension": "Läsförståelse",
+      "correct": "Rätt",
+      "time": "Lästid",
+      "wpm": "ord/min",
+      "mistakes": "Fel",
+      "mistakesTitle": "Gå igenom dina fel",
+      "readAgain": "Läs igen",
+      "back": "Tillbaka till Mina texter",
+      "complete": "Övningen är klar"
     },
     "fromSets": {
-      "title": "943|Läsning från set",
-      "subtitle": "944|Gör om ett kortset till en lästext.",
-      "pickSet": "945|Välj ett set",
-      "changeSet": "946|Byt set",
-      "tooFewWords": "947|Setet behöver minst {{count}} ord för att bli en lästext.",
-      "mode": "948|Genereringsläge",
+      "title": "Läsning från set",
+      "subtitle": "Gör om ett kortset till en lästext.",
+      "pickSet": "Välj ett set",
+      "changeSet": "Byt set",
+      "tooFewWords": "Setet behöver minst {{count}} ord för att bli en lästext.",
+      "mode": "Genereringsläge",
       "modeOption": {
-        "natural": "949|Naturligt",
-        "strict": "950|Strikt",
-        "mixed": "951|Blandat"
+        "natural": "Naturligt",
+        "strict": "Strikt",
+        "mixed": "Blandat"
       },
-      "length": "952|Textens längd",
-      "generate": "953|Generera lästext",
-      "generating": "954|Skapar din lästext…",
-      "generateError": "955|Det gick inte att skapa lästexten. Försök igen.",
-      "emptyTitle": "956|Inga lästexter än",
-      "emptyBody": "957|Välj ett kortset så gör vi en lästext av det.",
-      "savedTitle": "958|Sparade lästexter"
+      "length": "Textens längd",
+      "generate": "Generera lästext",
+      "generating": "Skapar din lästext…",
+      "generateError": "Det gick inte att skapa lästexten. Försök igen.",
+      "emptyTitle": "Inga lästexter än",
+      "emptyBody": "Välj ett kortset så gör vi en lästext av det.",
+      "savedTitle": "Sparade lästexter"
     },
     "speed": {
-      "title": "959|Snabbläsning",
-      "subtitle": "960|Träna snabbare läsning med tidsatt tempo.",
+      "title": "Snabbläsning",
+      "subtitle": "Träna snabbare läsning med tidsatt tempo.",
       "section": {
-        "target": "961|Mål för lästempo",
-        "timer": "962|Timerstil",
-        "length": "963|Textens längd"
+        "target": "Mål för lästempo",
+        "timer": "Timerstil",
+        "length": "Textens längd"
       },
       "target": {
-        "relaxed": "964|Avslappnat",
-        "balanced": "965|Balanserat",
-        "fast": "966|Snabbt",
-        "challenge": "967|Utmaning"
+        "relaxed": "Avslappnat",
+        "balanced": "Balanserat",
+        "fast": "Snabbt",
+        "challenge": "Utmaning"
       },
       "timer": {
-        "noTimer": "968|Ingen timer",
-        "soft": "969|Mjuk timer",
-        "strict": "970|Strikt timer"
+        "noTimer": "Ingen timer",
+        "soft": "Mjuk timer",
+        "strict": "Strikt timer"
       },
       "length": {
-        "two": "971|2 min",
-        "five": "972|5 min",
-        "ten": "973|10 min"
+        "two": "2 min",
+        "five": "5 min",
+        "ten": "10 min"
       },
-      "summary": "974|Mål {{wpm}} ord/min · ~{{minutes}} min läsning",
-      "start": "975|Starta passet",
-      "preparing": "976|Förbereder ditt textavsnitt…",
-      "generateError": "977|Det gick inte att skapa avsnittet. Försök igen.",
-      "recentTitle": "978|Senaste passen",
-      "chunkOf": "979|Del {{current}} av {{total}}",
-      "previous": "980|Föregående del",
-      "pause": "981|Pausa",
-      "resume": "982|Återuppta",
-      "nextChunk": "983|Nästa del",
-      "finishReading": "984|Avsluta läsningen",
+      "summary": "Mål {{wpm}} ord/min · ~{{minutes}} min läsning",
+      "start": "Starta passet",
+      "preparing": "Förbereder ditt textavsnitt…",
+      "generateError": "Det gick inte att skapa avsnittet. Försök igen.",
+      "recentTitle": "Senaste passen",
+      "chunkOf": "Del {{current}} av {{total}}",
+      "previous": "Föregående del",
+      "pause": "Pausa",
+      "resume": "Återuppta",
+      "nextChunk": "Nästa del",
+      "finishReading": "Avsluta läsningen",
       "rating": {
-        "excellent": "985|Utmärkt",
-        "balanced": "986|På målet",
-        "fast": "987|Nästan där",
-        "tooSlow": "988|För långsamt"
+        "excellent": "Utmärkt",
+        "balanced": "På målet",
+        "fast": "Nästan där",
+        "tooSlow": "För långsamt"
       },
       "result": {
-        "average": "989|Snitt ord/min",
-        "target": "990|Mål ord/min",
-        "violations_one": "991|{{count}} överskriden tid",
-        "violations_other": "992|{{count}} överskridna tider"
+        "average": "Snitt ord/min",
+        "target": "Mål ord/min",
+        "violations_one": "{{count}} överskriden tid",
+        "violations_other": "{{count}} överskridna tider"
       },
-      "tryAgain": "993|Försök igen",
-      "backToSetup": "994|Tillbaka till inställningarna"
+      "tryAgain": "Försök igen",
+      "backToSetup": "Tillbaka till inställningarna"
     },
     "story": {
-      "title": "995|Berättelseläge",
-      "subtitle": "996|Läs interaktiva berättelser med förgrenade val.",
-      "typeSection": "997|Typ av berättelse",
+      "title": "Berättelseläge",
+      "subtitle": "Läs interaktiva berättelser med förgrenade val.",
+      "typeSection": "Typ av berättelse",
       "type": {
-        "adventure": "998|Äventyr",
-        "fantasy": "999|Fantasy",
-        "mystery": "1000|Mysterium",
-        "romance": "1001|Romantik",
-        "dailyLife": "1002|Vardagsliv"
+        "adventure": "Äventyr",
+        "fantasy": "Fantasy",
+        "mystery": "Mysterium",
+        "romance": "Romantik",
+        "dailyLife": "Vardagsliv"
       },
-      "lengthSection": "1003|Berättelsens längd",
+      "lengthSection": "Berättelsens längd",
       "length": {
-        "shortStory": "1004|Novell",
-        "multiChapter": "1005|Flera kapitel",
-        "infinite": "1006|Oändlig berättelse"
+        "shortStory": "Novell",
+        "multiChapter": "Flera kapitel",
+        "infinite": "Oändlig berättelse"
       },
-      "start": "1007|Starta berättelsen",
-      "generating": "1008|Skriver din berättelse…",
-      "generatingNext": "1009|Skriver nästa kapitel…",
-      "generateError": "1010|Det gick inte att skriva berättelsen. Försök igen.",
-      "emptyTitle": "1011|Inga berättelser än",
-      "emptyBody": "1012|Starta din första interaktiva berättelse ovan.",
-      "savedTitle": "1013|Dina berättelser",
-      "chapterN": "1014|Kapitel {{n}}",
-      "chapterOf": "1015|Kapitel {{current}} / {{total}}",
-      "chapterScore": "1016|Kapitlets poäng",
-      "whatNext": "1017|Vad händer nu?",
-      "endStory": "1018|Avsluta berättelsen",
-      "completeTitle": "1019|Berättelsen är klar",
-      "completeBody_one": "1020|Du läste {{count}} kapitel. Fin läsning!",
-      "completeBody_other": "1021|Du läste {{count}} kapitel. Fin läsning!",
-      "backToStories": "1022|Tillbaka till berättelserna"
+      "start": "Starta berättelsen",
+      "generating": "Skriver din berättelse…",
+      "generatingNext": "Skriver nästa kapitel…",
+      "generateError": "Det gick inte att skriva berättelsen. Försök igen.",
+      "emptyTitle": "Inga berättelser än",
+      "emptyBody": "Starta din första interaktiva berättelse ovan.",
+      "savedTitle": "Dina berättelser",
+      "chapterN": "Kapitel {{n}}",
+      "chapterOf": "Kapitel {{current}} / {{total}}",
+      "chapterScore": "Kapitlets poäng",
+      "whatNext": "Vad händer nu?",
+      "endStory": "Avsluta berättelsen",
+      "completeTitle": "Berättelsen är klar",
+      "completeBody_one": "Du läste {{count}} kapitel. Fin läsning!",
+      "completeBody_other": "Du läste {{count}} kapitel. Fin läsning!",
+      "backToStories": "Tillbaka till berättelserna"
     }
   },
   "listening": {
-    "sectionTitle": "1023|Övningslägen",
-    "notFound": "1024|Passet kan ha tagits bort.",
+    "sectionTitle": "Övningslägen",
+    "notFound": "Passet kan ha tagits bort.",
     "today": {
-      "title": "1025|Dagens framsteg",
-      "subtitle": "1026|hörövning"
+      "title": "Dagens framsteg",
+      "subtitle": "hörövning"
     },
     "menu": {
-      "comingSoon": "1027|Kommer snart",
+      "comingSoon": "Kommer snart",
       "fromText": {
-        "title": "1028|Lyssna från text",
-        "subtitle": "1029|Klistra in text, lyssna på den och testa din förståelse."
+        "title": "Lyssna från text",
+        "subtitle": "Klistra in text, lyssna på den och testa din förståelse."
       },
       "importAudio": {
-        "title": "1030|Importera ljud",
-        "subtitle": "1031|Ladda upp ditt eget ljud och gör en hörövning av det."
+        "title": "Importera ljud",
+        "subtitle": "Ladda upp ditt eget ljud och gör en hörövning av det."
       },
       "importVideo": {
-        "title": "1032|Importera video",
-        "subtitle": "1033|Ladda upp en video, få undertexter och öva med frågor."
+        "title": "Importera video",
+        "subtitle": "Ladda upp en video, få undertexter och öva med frågor."
       },
       "saved": {
-        "title": "1034|Sparade övningar",
-        "subtitle": "1035|Fortsätt tidigare pass och gå igenom dina fel."
+        "title": "Sparade övningar",
+        "subtitle": "Fortsätt tidigare pass och gå igenom dina fel."
       }
     },
     "questionType": {
-      "mainIdea": "1036|Huvudtanke",
-      "details": "1037|Detaljer",
-      "vocabulary": "1038|Ordförråd",
-      "trueFalse": "1039|Sant / Falskt"
+      "mainIdea": "Huvudtanke",
+      "details": "Detaljer",
+      "vocabulary": "Ordförråd",
+      "trueFalse": "Sant / Falskt"
     },
     "fromText": {
-      "title": "1040|Lyssna från text",
-      "subtitle": "1041|Klistra in text och gör en hörövning av den.",
-      "level": "1042|Nivå",
-      "voiceSpeed": "1043|Rösthastighet",
-      "voiceType": "1044|Rösttyp",
+      "title": "Lyssna från text",
+      "subtitle": "Klistra in text och gör en hörövning av den.",
+      "level": "Nivå",
+      "voiceSpeed": "Rösthastighet",
+      "voiceType": "Rösttyp",
       "voice": {
-        "default": "1045|Standard",
-        "female": "1046|Kvinnlig",
-        "male": "1047|Manlig"
+        "default": "Standard",
+        "female": "Kvinnlig",
+        "male": "Manlig"
       },
-      "showText": "1048|Visa texten medan jag lyssnar",
-      "addQuestions": "1049|Lägg till förståelsefrågor",
-      "questionCount": "1050|Antal frågor",
-      "questionTypes": "1051|Frågetyper",
-      "optionalTitle": "1052|Valfri titel",
-      "titlePlaceholder": "1053|Ge din text ett namn",
-      "textPlaceholder": "1054|Klistra in din text här...",
-      "recommended": "1055|Rekommenderat: 80–500 ord.",
-      "words": "1056|ord",
-      "defaultTitle": "1057|Hörövning",
-      "start": "1058|Börja lyssna",
+      "showText": "Visa texten medan jag lyssnar",
+      "addQuestions": "Lägg till förståelsefrågor",
+      "questionCount": "Antal frågor",
+      "questionTypes": "Frågetyper",
+      "optionalTitle": "Valfri titel",
+      "titlePlaceholder": "Ge din text ett namn",
+      "textPlaceholder": "Klistra in din text här...",
+      "recommended": "Rekommenderat: 80–500 ord.",
+      "words": "ord",
+      "defaultTitle": "Hörövning",
+      "start": "Börja lyssna",
       "validation": {
-        "empty": "1059|Lägg till text för att börja lyssna.",
-        "tooShort": "1060|Lägg till minst 40 tecken för att börja lyssna.",
-        "tooLong": "1061|Texten är för lång. Håll den under 5000 tecken.",
-        "tooFewWords": "1062|Lägg till lite mer text (ungefär 40 ord eller mer) så kan vi skapa bra frågor."
+        "empty": "Lägg till text för att börja lyssna.",
+        "tooShort": "Lägg till minst 40 tecken för att börja lyssna.",
+        "tooLong": "Texten är för lång. Håll den under 5000 tecken.",
+        "tooFewWords": "Lägg till lite mer text (ungefär 40 ord eller mer) så kan vi skapa bra frågor."
       },
-      "voiceSettings": "1063|Röstinställningar",
-      "questions": "1064|Frågor",
-      "textInput": "1065|Textinmatning"
+      "voiceSettings": "Röstinställningar",
+      "questions": "Frågor",
+      "textInput": "Textinmatning"
     },
     "session": {
-      "replay": "1066|Spela upp igen",
-      "transcript": "1067|Transkription",
-      "questionsTitle": "1068|Frågor",
-      "answerFirst": "1069|Svara på minst en fråga innan du kontrollerar.",
-      "checkAnswers": "1070|Kontrollera svaren",
-      "finish": "1071|Avsluta övningen"
+      "replay": "Spela upp igen",
+      "transcript": "Transkription",
+      "questionsTitle": "Frågor",
+      "answerFirst": "Svara på minst en fråga innan du kontrollerar.",
+      "checkAnswers": "Kontrollera svaren",
+      "finish": "Avsluta övningen"
     },
     "result": {
-      "title": "1072|Övningen är klar",
-      "comprehension": "1073|Läsförståelse",
-      "correct": "1074|Rätt",
-      "time": "1075|Lyssnartid",
-      "speed": "1076|Hastighet",
-      "mistakes": "1077|Fel",
-      "mistakesTitle": "1078|Gå igenom dina fel",
-      "watchOnlyTitle": "1079|Lyssningen är klar",
-      "watchOnlyBody": "1080|Du lyssnade i {{time}}.",
-      "practiceAgain": "1081|Öva igen",
-      "back": "1082|Tillbaka till Hörförståelse"
+      "title": "Övningen är klar",
+      "comprehension": "Läsförståelse",
+      "correct": "Rätt",
+      "time": "Lyssnartid",
+      "speed": "Hastighet",
+      "mistakes": "Fel",
+      "mistakesTitle": "Gå igenom dina fel",
+      "watchOnlyTitle": "Lyssningen är klar",
+      "watchOnlyBody": "Du lyssnade i {{time}}.",
+      "practiceAgain": "Öva igen",
+      "back": "Tillbaka till Hörförståelse"
     },
     "importAudio": {
-      "title": "1083|Importera ljud",
-      "subtitle": "1084|Gör en hörövning av ditt eget ljud.",
-      "uploadTitle": "1085|Ladda upp ljudfil",
-      "uploadFormats": "1086|MP3, M4A, WAV eller AAC · under 50 MB",
-      "chooseFile": "1087|Välj fil",
-      "clearFile": "1088|Ta bort filen",
-      "infoNote": "1089|Ditt ljud transkriberas i bakgrunden. Transkriptionen förblir dold under övningen.",
-      "continue": "1090|Fortsätt",
-      "processingTitle": "1091|Förbereder din hörövning",
-      "step1": "1092|Laddar upp ljud",
-      "step2": "1093|Transkriberar tal",
-      "step3": "1094|Skapar frågor",
-      "processError": "1095|Vi kunde inte förbereda det här ljudet. Försök igen.",
-      "tryAgain": "1096|Försök igen",
-      "chooseAnother": "1097|Välj en annan fil",
-      "transcriptHidden": "1098|Transkriptionen är dold för att det här ska förbli en riktig hörövning."
+      "title": "Importera ljud",
+      "subtitle": "Gör en hörövning av ditt eget ljud.",
+      "uploadTitle": "Ladda upp ljudfil",
+      "uploadFormats": "MP3, M4A, WAV eller AAC · under 50 MB",
+      "chooseFile": "Välj fil",
+      "clearFile": "Ta bort filen",
+      "infoNote": "Ditt ljud transkriberas i bakgrunden. Transkriptionen förblir dold under övningen.",
+      "continue": "Fortsätt",
+      "processingTitle": "Förbereder din hörövning",
+      "step1": "Laddar upp ljud",
+      "step2": "Transkriberar tal",
+      "step3": "Skapar frågor",
+      "processError": "Vi kunde inte förbereda det här ljudet. Försök igen.",
+      "tryAgain": "Försök igen",
+      "chooseAnother": "Välj en annan fil",
+      "transcriptHidden": "Transkriptionen är dold för att det här ska förbli en riktig hörövning."
     },
     "importVideo": {
-      "title": "1099|Importera video",
-      "subtitle": "1100|Ladda upp en video, få undertexter och öva med frågor.",
-      "uploadTitle": "1101|Ladda upp videofil",
-      "uploadFormats": "1102|MP4, MOV eller M4V · under 80 MB",
-      "step1": "1103|Förbereder videon",
-      "step2": "1104|Transkriberar tal",
-      "step3": "1105|Bygger undertexter",
-      "subtitles": "1106|Undertexter",
-      "subtitlesOn": "1107|Undertexter på",
-      "subtitlesOff": "1108|Undertexter av",
-      "noSubtitles": "1109|Inga undertexter finns för den här videon.",
-      "tapWord": "1110|Tryck på ett ord för att översätta det.",
-      "questionsLocked": "1111|Frågorna låses upp när du sett klart videon."
+      "title": "Importera video",
+      "subtitle": "Ladda upp en video, få undertexter och öva med frågor.",
+      "uploadTitle": "Ladda upp videofil",
+      "uploadFormats": "MP4, MOV eller M4V · under 80 MB",
+      "step1": "Förbereder videon",
+      "step2": "Transkriberar tal",
+      "step3": "Bygger undertexter",
+      "subtitles": "Undertexter",
+      "subtitlesOn": "Undertexter på",
+      "subtitlesOff": "Undertexter av",
+      "noSubtitles": "Inga undertexter finns för den här videon.",
+      "tapWord": "Tryck på ett ord för att översätta det.",
+      "questionsLocked": "Frågorna låses upp när du sett klart videon."
     },
     "wordSheet": {
-      "title": "1112|Översätt ord",
-      "pickSet": "1113|Välj ett set",
-      "createSet": "1114|Skapa set",
-      "addToSet": "1115|Lägg till i setet",
-      "noSets": "1116|Du har inga set än. Skapa ett nedan.",
-      "setNamePlaceholder": "1117|t.ex. Ord från videon",
-      "createAndAdd": "1118|Skapa och lägg till ordet",
-      "saved": "1119|Sparat i ”{{set}}”."
+      "title": "Översätt ord",
+      "pickSet": "Välj ett set",
+      "createSet": "Skapa set",
+      "addToSet": "Lägg till i setet",
+      "noSets": "Du har inga set än. Skapa ett nedan.",
+      "setNamePlaceholder": "t.ex. Ord från videon",
+      "createAndAdd": "Skapa och lägg till ordet",
+      "saved": "Sparat i ”{{set}}”."
     },
     "saved": {
-      "title": "1120|Sparade övningar",
-      "subtitle": "1121|Fortsätt pass och gå igenom dina hörfel.",
-      "emptyTitle": "1122|Inga sparade pass",
-      "emptyBody": "1123|Avsluta eller pausa ett lyssningspass så dyker det upp här.",
-      "continueEyebrow": "1124|Fortsätt lyssna",
-      "percentComplete": "1125|{{percent}} % klart",
-      "continue": "1126|Fortsätt",
-      "review": "1127|Gå igenom",
-      "delete": "1128|Ta bort passet",
-      "deleteConfirm": "1129|Ta bort ”{{title}}”? Det går inte att ångra.",
+      "title": "Sparade övningar",
+      "subtitle": "Fortsätt pass och gå igenom dina hörfel.",
+      "emptyTitle": "Inga sparade pass",
+      "emptyBody": "Avsluta eller pausa ett lyssningspass så dyker det upp här.",
+      "continueEyebrow": "Fortsätt lyssna",
+      "percentComplete": "{{percent}} % klart",
+      "continue": "Fortsätt",
+      "review": "Gå igenom",
+      "delete": "Ta bort passet",
+      "deleteConfirm": "Ta bort ”{{title}}”? Det går inte att ångra.",
       "status": {
-        "draft": "1130|Utkast",
-        "inProgress": "1131|Pågår",
-        "completed": "1132|Klart"
+        "draft": "Utkast",
+        "inProgress": "Pågår",
+        "completed": "Klart"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "1133|Övningslägen",
+    "sectionTitle": "Övningslägen",
     "today": {
-      "title": "1134|Dagens framsteg",
-      "subtitle": "1135|taluppövning"
+      "title": "Dagens framsteg",
+      "subtitle": "taluppövning"
     },
     "menu": {
-      "comingSoon": "1136|Kommer snart",
+      "comingSoon": "Kommer snart",
       "conversation": {
-        "title": "1137|AI-samtal",
-        "subtitle": "1138|Prata med en AI-lärare i realtid."
+        "title": "AI-samtal",
+        "subtitle": "Prata med en AI-lärare i realtid."
       },
       "free": {
-        "title": "1139|Fritt tal",
-        "subtitle": "1140|Prata om genererade ämnen och få återkoppling."
+        "title": "Fritt tal",
+        "subtitle": "Prata om genererade ämnen och få återkoppling."
       },
       "picture": {
-        "title": "1141|Beskriv bild",
-        "subtitle": "1142|Beskriv bilder och lär dig användbara ord."
+        "title": "Beskriv bild",
+        "subtitle": "Beskriv bilder och lär dig användbara ord."
       },
       "debate": {
-        "title": "1143|Debattläge",
-        "subtitle": "1144|Diskutera ämnen och bygg dina argument."
+        "title": "Debattläge",
+        "subtitle": "Diskutera ämnen och bygg dina argument."
       },
       "shadowing": {
-        "title": "1145|Shadowing",
-        "subtitle": "1146|Upprepa fraser och förbättra ditt uttal."
+        "title": "Shadowing",
+        "subtitle": "Upprepa fraser och förbättra ditt uttal."
       },
       "pronunciation": {
-        "title": "1147|Uttalsträning",
-        "subtitle": "1148|Fokusera på svåra ljud och ord."
+        "title": "Uttalsträning",
+        "subtitle": "Fokusera på svåra ljud och ord."
       }
     },
     "input": {
-      "speak": "1149|Tala",
-      "stop": "1150|Stoppa",
-      "listening": "1151|Lyssnar…",
-      "placeholder": "1152|Skriv ditt svar…",
-      "noVoice": "1153|Röstinmatning stöds inte i den här webbläsaren — skriv ditt svar istället."
+      "speak": "Tala",
+      "stop": "Stoppa",
+      "listening": "Lyssnar…",
+      "placeholder": "Skriv ditt svar…",
+      "noVoice": "Röstinmatning stöds inte i den här webbläsaren — skriv ditt svar istället."
     },
     "conversation": {
-      "title": "1154|AI-samtal",
-      "subtitle": "1155|Prata med en AI-lärare i realtid.",
-      "topic": "1156|Ämne",
-      "scenarios": "1157|Scenarier",
-      "autoTopic": "1158|Överraska mig",
-      "autoTopicHint": "1159|Vi genererar ett nytt ämne åt dig.",
-      "length": "1160|Längd",
-      "min": "1161|min",
-      "start": "1162|Starta samtalet",
-      "starting": "1163|Startar…",
-      "startError": "1164|Det gick inte att starta samtalet. Försök igen.",
-      "end": "1165|Avsluta",
-      "dismiss": "1166|Stäng",
-      "hint": "1167|Ledtråd",
-      "getHint": "1168|Behöver du en ledtråd?",
-      "hintLoading": "1169|Tänker…"
+      "title": "AI-samtal",
+      "subtitle": "Prata med en AI-lärare i realtid.",
+      "topic": "Ämne",
+      "scenarios": "Scenarier",
+      "autoTopic": "Överraska mig",
+      "autoTopicHint": "Vi genererar ett nytt ämne åt dig.",
+      "length": "Längd",
+      "min": "min",
+      "start": "Starta samtalet",
+      "starting": "Startar…",
+      "startError": "Det gick inte att starta samtalet. Försök igen.",
+      "end": "Avsluta",
+      "dismiss": "Stäng",
+      "hint": "Ledtråd",
+      "getHint": "Behöver du en ledtråd?",
+      "hintLoading": "Tänker…"
     },
     "result": {
-      "title": "1170|Övningen är klar",
-      "generating": "1171|Analyserar ditt tal…",
-      "overall": "1172|Totalpoäng",
-      "corrections": "1173|Rättelser",
-      "transcript": "1174|Transkription",
-      "practiceAgain": "1175|Öva igen",
-      "back": "1176|Tillbaka till Tal"
+      "title": "Övningen är klar",
+      "generating": "Analyserar ditt tal…",
+      "overall": "Totalpoäng",
+      "corrections": "Rättelser",
+      "transcript": "Transkription",
+      "practiceAgain": "Öva igen",
+      "back": "Tillbaka till Tal"
     },
     "free": {
-      "title": "1177|Fritt tal",
-      "subtitle": "1178|Prata fritt om ett ämne och få återkoppling.",
-      "preview": "1179|Förhandsvisning",
-      "autoTopic": "1180|AI-genererat ämne",
-      "autoTopicHint": "1181|Vi väljer ett nytt ämne för {{language}} · {{level}} när du börjar.",
-      "auto": "1182|Auto",
-      "start": "1183|Starta Fritt tal",
-      "generating": "1184|Genererar ämne…",
-      "generatingHint": "1185|Vi väljer något som passar din nivå.",
-      "fallbackTopic": "1186|Det gick inte att generera ett ämne. Vi använder ett reservämne.",
-      "transcript": "1187|Transkription",
-      "transcriptHint": "1188|Din transkription visas här medan du talar.",
-      "startSpeaking": "1189|Börja tala"
+      "title": "Fritt tal",
+      "subtitle": "Prata fritt om ett ämne och få återkoppling.",
+      "preview": "Förhandsvisning",
+      "autoTopic": "AI-genererat ämne",
+      "autoTopicHint": "Vi väljer ett nytt ämne för {{language}} · {{level}} när du börjar.",
+      "auto": "Auto",
+      "start": "Starta Fritt tal",
+      "generating": "Genererar ämne…",
+      "generatingHint": "Vi väljer något som passar din nivå.",
+      "fallbackTopic": "Det gick inte att generera ett ämne. Vi använder ett reservämne.",
+      "transcript": "Transkription",
+      "transcriptHint": "Din transkription visas här medan du talar.",
+      "startSpeaking": "Börja tala"
     },
     "picture": {
-      "title": "1190|Beskriv bild",
-      "subtitle": "1191|Beskriv vad du ser och få återkoppling.",
-      "start": "1192|Starta Beskriv bild",
-      "prompt": "1193|Beskriv vad du ser på den här bilden.",
-      "tryToMention": "1194|Försök nämna:",
+      "title": "Beskriv bild",
+      "subtitle": "Beskriv vad du ser och få återkoppling.",
+      "start": "Starta Beskriv bild",
+      "prompt": "Beskriv vad du ser på den här bilden.",
+      "tryToMention": "Försök nämna:",
       "hints": {
-        "people": "1195|personer",
-        "objects": "1196|föremål",
-        "actions": "1197|handlingar",
-        "colors": "1198|färger",
-        "emotions": "1199|känslor"
+        "people": "personer",
+        "objects": "föremål",
+        "actions": "handlingar",
+        "colors": "färger",
+        "emotions": "känslor"
       },
-      "loading": "1200|Laddar ett foto…",
-      "retry": "1201|Försök igen",
-      "newPhoto": "1202|Nytt foto",
-      "imageAlt": "1203|Foto att beskriva",
-      "photoBy": "1204|Foto av",
-      "onUnsplash": "1205|på Unsplash",
-      "startDescribing": "1206|Börja beskriva"
+      "loading": "Laddar ett foto…",
+      "retry": "Försök igen",
+      "newPhoto": "Nytt foto",
+      "imageAlt": "Foto att beskriva",
+      "photoBy": "Foto av",
+      "onUnsplash": "på Unsplash",
+      "startDescribing": "Börja beskriva"
     },
     "debate": {
-      "title": "1207|Debattläge",
-      "subtitle": "1208|Försvara din sida mot en AI-motståndare.",
-      "start": "1209|Starta debatten",
-      "pickSide": "1210|Din sida",
-      "preparing": "1211|Förbereder debattämnet…",
-      "roundOf": "1212|Runda {{current}} av {{total}} · {{label}}",
+      "title": "Debattläge",
+      "subtitle": "Försvara din sida mot en AI-motståndare.",
+      "start": "Starta debatten",
+      "pickSide": "Din sida",
+      "preparing": "Förbereder debattämnet…",
+      "roundOf": "Runda {{current}} av {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "1213|Håller med",
-          "subtitle": "1214|Försvara påståendet"
+          "title": "Håller med",
+          "subtitle": "Försvara påståendet"
         },
         "disagree": {
-          "title": "1215|Håller inte med",
-          "subtitle": "1216|Argumentera emot"
+          "title": "Håller inte med",
+          "subtitle": "Argumentera emot"
         },
         "surprise": {
-          "title": "1217|Överraska mig",
-          "subtitle": "1218|Vi väljer sida åt dig"
+          "title": "Överraska mig",
+          "subtitle": "Vi väljer sida åt dig"
         }
       }
     },
     "practice": {
-      "listen": "1219|Lyssna",
-      "playing": "1220|Spelar upp…",
-      "record": "1221|Spela in",
-      "stop": "1222|Stoppa",
-      "playMine": "1223|Spela upp min",
-      "noRecording": "1224|Inspelning stöds inte i den här webbläsaren — du kan ändå lyssna och upprepa."
+      "listen": "Lyssna",
+      "playing": "Spelar upp…",
+      "record": "Spela in",
+      "stop": "Stoppa",
+      "playMine": "Spela upp min",
+      "noRecording": "Inspelning stöds inte i den här webbläsaren — du kan ändå lyssna och upprepa."
     },
     "shadowing": {
-      "title": "1225|Shadowing",
-      "subtitle": "1226|Lyssna, upprepa och jämför dig själv.",
-      "start": "1227|Starta Shadowing",
-      "category": "1228|Kategori",
-      "howItWorks": "1229|Lyssna på frasen, upprepa den högt medan du spelar in, och spela sedan upp din version och jämför rytmen.",
-      "loading": "1230|Genererar fraser…",
-      "phrase": "1231|Fras",
-      "previous": "1232|Föregående",
-      "nextPhrase": "1233|Nästa fras",
-      "finish": "1234|Avsluta",
-      "changeSettings": "1235|Ändra inställningar",
-      "done": "1236|{{count}} klara",
-      "allDone": "1237|Alla fraser är övade!",
-      "newSet": "1238|Nytt set"
+      "title": "Shadowing",
+      "subtitle": "Lyssna, upprepa och jämför dig själv.",
+      "start": "Starta Shadowing",
+      "category": "Kategori",
+      "howItWorks": "Lyssna på frasen, upprepa den högt medan du spelar in, och spela sedan upp din version och jämför rytmen.",
+      "loading": "Genererar fraser…",
+      "phrase": "Fras",
+      "previous": "Föregående",
+      "nextPhrase": "Nästa fras",
+      "finish": "Avsluta",
+      "changeSettings": "Ändra inställningar",
+      "done": "{{count}} klara",
+      "allDone": "Alla fraser är övade!",
+      "newSet": "Nytt set"
     },
     "pronunciation": {
-      "title": "1239|Uttalsträning",
-      "subtitle": "1240|Fokusera på svåra ljud och ord.",
-      "start": "1241|Starta träningen",
-      "focus": "1242|Fokus",
-      "difficulty": "1243|Svårighetsgrad",
+      "title": "Uttalsträning",
+      "subtitle": "Fokusera på svåra ljud och ord.",
+      "start": "Starta träningen",
+      "focus": "Fokus",
+      "difficulty": "Svårighetsgrad",
       "level": {
-        "easy": "1244|Lätt",
-        "balanced": "1245|Balanserat",
-        "hard": "1246|Svårt"
+        "easy": "Lätt",
+        "balanced": "Balanserat",
+        "hard": "Svårt"
       },
-      "loading": "1247|Genererar övningar…",
-      "sound": "1248|Ljud",
-      "scoringUnavailable": "1249|Automatisk uttalsbedömning är inte uppsatt på servern än, så ingen poäng visas. Att lyssna, spela in och spela upp fungerar."
+      "loading": "Genererar övningar…",
+      "sound": "Ljud",
+      "scoringUnavailable": "Automatisk uttalsbedömning är inte uppsatt på servern än, så ingen poäng visas. Att lyssna, spela in och spela upp fungerar."
     }
   },
   "profile": {
-    "interfaceLanguage": "1250|Gränssnittsspråk",
+    "interfaceLanguage": "Gränssnittsspråk",
     "password": {
-      "title": "1251|Skapa ett lösenord",
-      "body": "1252|Ditt konto skapades med Google och har därför inget lösenord — fälten för e-post och lösenord kan inte logga in dig. Lägg till ett så fungerar båda sätten.",
-      "save": "1253|Spara lösenord",
-      "saving": "1254|Sparar...",
-      "savedInfo": "1255|Lösenordet är skapat. Nu kan du logga in med din e-post också."
+      "title": "Skapa ett lösenord",
+      "body": "Ditt konto skapades med Google och har därför inget lösenord — fälten för e-post och lösenord kan inte logga in dig. Lägg till ett så fungerar båda sätten.",
+      "save": "Spara lösenord",
+      "saving": "Sparar...",
+      "savedInfo": "Lösenordet är skapat. Nu kan du logga in med din e-post också."
     }
   },
   "units": {
-    "min": "1256|min",
-    "words": "1257|ord"
+    "min": "min",
+    "words": "ord"
   },
   "link": {
-    "title": "1258|Logga in med en länk",
-    "subtitle": "1259|Vi mejlar dig en engångslänk. Inget lösenord att komma ihåg.",
-    "send": "1260|Skicka länken",
-    "sending": "1261|Skickar...",
-    "sentInfo": "1262|Länken är skickad. Kolla din e-post.",
-    "sentTitle": "1263|Kolla din e-post",
-    "sentBody": "1264|Vi skickade en inloggningslänk till",
-    "useAnotherEmail": "1265|Använd en annan e-postadress",
-    "backToPassword": "1266|Logga in med lösenord istället"
+    "title": "Logga in med en länk",
+    "subtitle": "Vi mejlar dig en engångslänk. Inget lösenord att komma ihåg.",
+    "send": "Skicka länken",
+    "sending": "Skickar...",
+    "sentInfo": "Länken är skickad. Kolla din e-post.",
+    "sentTitle": "Kolla din e-post",
+    "sentBody": "Vi skickade en inloggningslänk till",
+    "useAnotherEmail": "Använd en annan e-postadress",
+    "backToPassword": "Logga in med lösenord istället"
   },
   "action": {
-    "working": "1267|Ett ögonblick...",
-    "continue": "1268|Fortsätt",
-    "confirmEmailTitle": "1269|Bekräfta din e-postadress",
-    "confirmEmailBody": "1270|Länken öppnades i en annan webbläsare. Ange adressen den skickades till så slutför vi inloggningen.",
-    "resetTitle": "1271|Nytt lösenord",
-    "resetSubtitle": "1272|Välj ett nytt lösenord för",
-    "newPassword": "1273|Nytt lösenord",
-    "confirmPassword": "1274|Upprepa lösenordet",
-    "savePassword": "1275|Spara lösenord",
-    "resetDoneTitle": "1276|Lösenordet är uppdaterat",
-    "resetDoneBody": "1277|Nu kan du logga in med ditt nya lösenord.",
-    "failedTitle": "1278|Den länken fungerade inte",
-    "failedBody": "1279|Den kan redan ha använts, eller så har den gått ut. Begär en ny från inloggningsskärmen.",
-    "backToSignIn": "1280|Tillbaka till inloggningen"
+    "working": "Ett ögonblick...",
+    "continue": "Fortsätt",
+    "confirmEmailTitle": "Bekräfta din e-postadress",
+    "confirmEmailBody": "Länken öppnades i en annan webbläsare. Ange adressen den skickades till så slutför vi inloggningen.",
+    "resetTitle": "Nytt lösenord",
+    "resetSubtitle": "Välj ett nytt lösenord för",
+    "newPassword": "Nytt lösenord",
+    "confirmPassword": "Upprepa lösenordet",
+    "savePassword": "Spara lösenord",
+    "resetDoneTitle": "Lösenordet är uppdaterat",
+    "resetDoneBody": "Nu kan du logga in med ditt nya lösenord.",
+    "failedTitle": "Den länken fungerade inte",
+    "failedBody": "Den kan redan ha använts, eller så har den gått ut. Begär en ny från inloggningsskärmen.",
+    "backToSignIn": "Tillbaka till inloggningen"
   },
   "common": {
-    "cancel": "1281|Avbryt",
-    "delete": "1282|Ta bort",
+    "cancel": "Avbryt",
+    "delete": "Ta bort",
     "view": {
-      "label": "1283|Vy",
-      "rows": "1284|Lista",
-      "grid": "1285|Rutnät"
+      "label": "Vy",
+      "rows": "Lista",
+      "grid": "Rutnät"
     }
   },
   "practice": {
     "language": {
-      "label": "1286|Språk",
-      "search": "1287|Sök ett språk",
-      "noMatch": "1288|Inget språk matchar.",
-      "noVoice": "1289|Din webbläsare har ingen röst för {{language}}, så läraren kommer inte att tala det språket. Lägg till språkpaketet i systeminställningarna eller välj ett annat språk."
+      "label": "Språk",
+      "search": "Sök ett språk",
+      "noMatch": "Inget språk matchar.",
+      "noVoice": "Din webbläsare har ingen röst för {{language}}, så läraren kommer inte att tala det språket. Lägg till språkpaketet i systeminställningarna eller välj ett annat språk."
     }
   }
 }

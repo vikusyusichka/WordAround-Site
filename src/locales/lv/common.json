@@ -1,1725 +1,1748 @@
 {
   "app": {
     "name": "WordAround",
-    "tagline": "Learn languages, actively."
+    "tagline": "Mācieties valodas aktīvi."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "Mācieties vārdus jautri\\nun vienkārši",
+    "start": "Sāksim"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back",
-    "signUpTitle": "Create your account",
-    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
-    "name": "Name",
-    "namePlaceholder": "What should we call you?",
-    "orWithEmail": "or with email",
-    "signUpWithGoogle": "Sign up with Google",
-    "passwordHint": "At least {{min}} characters",
-    "magicLinkCta": "Sign in with an email link",
-    "creatingAccount": "Creating account..."
+    "welcomeBack": "Laipni lūdzam atpakaļ",
+    "subtitle": "Piesakieties, lai turpinātu mācīties",
+    "email": "E-pasts",
+    "emailPlaceholder": "Ievadiet savu e-pastu",
+    "password": "Parole",
+    "passwordPlaceholder": "Ievadiet savu paroli",
+    "forgotPassword": "Aizmirsāt paroli?",
+    "signIn": "Pieteikties",
+    "signingIn": "Notiek pieteikšanās...",
+    "signUp": "Reģistrēties",
+    "signOut": "Iziet",
+    "continueWithGoogle": "Turpināt ar Google",
+    "createAccount": "Izveidot kontu",
+    "accountCreatedInfo": "Konts izveidots. Nosūtījām apstiprinājuma e-pastu.",
+    "resetEmailSent": "Paroles atjaunošanas e-pasts nosūtīts",
+    "showPassword": "Rādīt paroli",
+    "hidePassword": "Slēpt paroli",
+    "back": "Atpakaļ",
+    "signUpTitle": "Izveidojiet savu kontu",
+    "signUpSubtitle": "Dažas minūtes dienā – un jūsu vārdu krājums aug",
+    "name": "Vārds",
+    "namePlaceholder": "Kā jūs saukt?",
+    "orWithEmail": "vai ar e-pastu",
+    "signUpWithGoogle": "Reģistrēties ar Google",
+    "passwordHint": "Vismaz {{min}} rakstzīmes",
+    "magicLinkCta": "Pieteikties ar saiti e-pastā",
+    "creatingAccount": "Notiek konta izveide..."
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "We'll open your learning right away — no need to come back here",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "Apstipriniet savu e-pastu",
+    "subtitle": "Vēl viens solis, pirms sākat mācīties",
+    "sentTo": "Apstiprinājuma saiti nosūtījām uz",
+    "fallbackEmail": "jūsu e-pastu",
+    "step1": "Atveriet e-pastu savā iesūtnē",
+    "step2": "Pieskarieties apstiprinājuma saitei",
+    "step3": "Mācības atvērsim uzreiz – šeit atgriezties nevajadzēs",
+    "checkButton": "Esmu apstiprinājis savu e-pastu",
+    "checking": "Notiek pārbaude...",
+    "resend": "Sūtīt e-pastu vēlreiz",
+    "useAnotherAccount": "Izmantot citu kontu",
+    "badgeInbox": "Pārbaudiet iesūtni",
+    "badgeConfirm": "Apstipriniet",
+    "badgeDone": "Gatavs",
+    "resentInfo": "Apstiprinājuma e-pasts nosūtīts vēlreiz",
+    "notVerifiedYet": "E-pasts vēl nav apstiprināts"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 8 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "emailInUse": "This account already exists",
-    "weakPassword": "This password is too weak",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again",
-    "nameRequired": "Name is required",
-    "passwordsDoNotMatch": "Passwords don't match",
-    "actionExpired": "This link has expired. Request a new one.",
-    "actionInvalid": "This link is no longer valid.",
-    "userDisabled": "This account has been disabled.",
-    "requiresRecentLogin": "For security, sign in again and then repeat this.",
-    "passwordAlreadySet": "This account already has a password.",
-    "linkNoEmail": "Enter the email the link was sent to"
+    "emailRequired": "E-pasts ir obligāts",
+    "emailInvalid": "Ievadiet derīgu e-pastu",
+    "emailFirst": "Vispirms ievadiet savu e-pastu",
+    "passwordRequired": "Parole ir obligāta",
+    "passwordTooShort": "Parolē jābūt vismaz 8 rakstzīmēm",
+    "invalidEmail": "Nederīgs e-pasta formāts",
+    "wrongPassword": "Nepareizs e-pasts vai parole. Ja reģistrējāties ar Google, izmantojiet Google pogu.",
+    "userNotFound": "Nepareizs e-pasts vai parole. Ja reģistrējāties ar Google, izmantojiet Google pogu.",
+    "invalidCredential": "Nepareizs e-pasts vai parole. Ja reģistrējāties ar Google, izmantojiet Google pogu.",
+    "emailInUse": "Šāds konts jau pastāv",
+    "weakPassword": "Šī parole ir pārāk vāja",
+    "network": "Tīkla kļūda. Pārbaudiet interneta savienojumu",
+    "tooManyRequests": "Pārāk daudz mēģinājumu. Mēģiniet vēlāk",
+    "differentCredential": "Šis e-pasts jau tiek izmantots ar citu pieteikšanās veidu",
+    "noActiveAccount": "Aktīvs konts netika atrasts",
+    "default": "Pieteikšanās neizdevās. Mēģiniet vēlreiz",
+    "nameRequired": "Vārds ir obligāts",
+    "passwordsDoNotMatch": "Paroles nesakrīt",
+    "actionExpired": "Šai saitei beidzies termiņš. Pieprasiet jaunu.",
+    "actionInvalid": "Šī saite vairs nav derīga.",
+    "userDisabled": "Šis konts ir atspējots.",
+    "requiresRecentLogin": "Drošības nolūkos piesakieties vēlreiz un atkārtojiet šo darbību.",
+    "passwordAlreadySet": "Šim kontam jau ir parole.",
+    "linkNoEmail": "Ievadiet e-pastu, uz kuru tika nosūtīta saite"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
-    "sets": "Sets",
-    "notes": "Notes",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "home": "Sākums",
+    "speaking": "Runāšana",
+    "listening": "Klausīšanās",
+    "reading": "Lasīšana",
+    "writing": "Rakstīšana",
+    "folders": "Mapes",
+    "sets": "Komplekti",
+    "notes": "Piezīmes",
+    "profile": "Profils",
+    "create": "Jauns",
+    "menu": "Izvēlne",
+    "closeMenu": "Aizvērt izvēlni",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "Prakse",
+      "library": "Bibliotēka"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
-    "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
-    "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "create": "Izveidot mapi",
+    "loading": "Ielādē mapes…",
+    "loadError": "Neizdevās ielādēt jūsu mapes.",
+    "emptyTitle": "Vēl nav mapju",
+    "emptyBody": "Izveidojiet pirmo mapi, lai sakārtotu komplektus.",
+    "setCount": "{{count}} komplekti",
+    "setCount_one": "{{count}} komplekts",
+    "newTitle": "Jauna mape",
+    "newSubtitle": "Salieciet saistītos komplektus kopā.",
+    "editTitle": "Rediģēt mapi",
+    "name": "Nosaukums",
+    "namePlaceholder": "piem. Ceļojumi",
+    "description": "Apraksts",
+    "descriptionPlaceholder": "Nav obligāts",
+    "color": "Krāsa",
+    "save": "Saglabāt",
+    "saving": "Saglabā…",
+    "cancel": "Atcelt",
+    "edit": "Rediģēt mapi",
+    "delete": "Dzēst mapi",
+    "deleteConfirm": "Dzēst “{{title}}”? To nevarēs atsaukt.",
+    "backToFolders": "Atpakaļ uz mapēm",
+    "notFoundTitle": "Mape netika atrasta",
+    "notFoundBody": "Šī mape, iespējams, ir dzēsta.",
+    "noSetsInFolder": "Šajā mapē vēl nav komplektu.",
+    "saveError": "Neizdevās saglabāt. Mēģiniet vēlreiz.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "Mapes nosaukums ir obligāts.",
+      "nameTooLong": "Mapes nosaukumam jābūt īsākam par 80 rakstzīmēm.",
+      "descTooLong": "Aprakstam jābūt īsākam par 120 rakstzīmēm."
     },
-    "optional": "(optional)",
-    "preview": "Preview",
-    "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "optional": "(nav obligāts)",
+    "preview": "Priekšskatījums",
+    "previewPlaceholder": "Jauna mape",
+    "deleteConfirmTitle": "Dzēst šo mapi?",
+    "setCount_zero": "{{count}} komplektu"
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets",
-    "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?",
-    "editTitle": "Edit set",
-    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
-    "save": "Save changes",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "create": "Izveidot komplektu",
+    "loading": "Ielādē komplektus…",
+    "loadError": "Neizdevās ielādēt jūsu komplektus.",
+    "emptyTitle": "Vēl nav komplektu",
+    "emptyBody": "Izveidojiet savu pirmo kartīšu komplektu ar pogu “Jauns”.",
+    "cardCount": "{{count}} kartītes",
+    "cardCount_one": "{{count}} kartīte",
+    "keepPracticing": "Turpiniet praktizēties",
+    "delete": "Dzēst komplektu",
+    "deleteConfirm": "Dzēst “{{title}}”? To nevarēs atsaukt.",
+    "notFoundTitle": "Komplekts netika atrasts",
+    "notFoundBody": "Šis komplekts, iespējams, ir dzēsts.",
+    "backToSets": "Atpakaļ uz komplektiem",
+    "edit": "Rediģēt komplektu",
+    "deleteConfirmTitle": "Dzēst šo komplektu?",
+    "editTitle": "Rediģēt komplektu",
+    "editSubtitle": "Mainiet nosaukumu, krāsu, ikonu vai mapi. Kartītes paliek savās vietās.",
+    "save": "Saglabāt izmaiņas",
+    "saving": "Saglabā…",
+    "cancel": "Atcelt",
+    "saveError": "Neizdevās saglabāt. Mēģiniet vēlreiz.",
+    "cardCount_zero": "{{count}} kartīšu"
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
-    "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "title": "Jauns komplekts",
+    "subtitle": "Pievienojiet vārdus un pielāgojiet savu komplektu.",
+    "infoSection": "Informācija par komplektu",
+    "setTitle": "Nosaukums",
+    "setTitlePlaceholder": "piem. Ceļojumam nepieciešamais",
+    "setDescription": "Apraksts",
+    "setDescriptionPlaceholder": "Nav obligāts",
+    "privacy": "Privātums",
+    "private": "Privāts",
+    "public": "Publisks",
+    "cardsSection": "Kartītes",
+    "addCard": "Pievienot kartīti",
+    "cardN": "{{n}}. kartīte",
+    "removeCard": "Noņemt kartīti",
+    "word": "Vārds",
+    "translation": "Tulkojums",
+    "example": "Piemērs (nav obligāts)",
+    "addImage": "Pievienot attēlu",
+    "removeImage": "Noņemt attēlu",
+    "customizeSection": "Pielāgot",
+    "color": "Krāsa",
+    "icon": "Ikona",
+    "folder": "Mape",
+    "noFolder": "Bez mapes",
+    "previewSection": "Priekšskatījums",
+    "previewPlaceholder": "Komplekta nosaukums",
+    "save": "Izveidot komplektu",
+    "saving": "Saglabā…",
+    "cancel": "Atcelt",
+    "saveError": "Neizdevās saglabāt. Mēģiniet vēlreiz.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "Komplekta nosaukums ir obligāts.",
+      "titleTooLong": "Komplekta nosaukumam jābūt īsākam par 150 rakstzīmēm.",
+      "descTooLong": "Aprakstam jābūt īsākam par 200 rakstzīmēm.",
+      "noValidCards": "Pievienojiet vismaz vienu kartīti ar vārdu un tulkojumu.",
+      "exampleTooLong": "Kartīšu piemēriem jābūt īsākiem par 150 rakstzīmēm."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "imageTimeout": "Attēla augšupielādei beidzās laiks. Pārbaudiet savienojumu un mēģiniet vēlreiz.",
     "import": {
-      "button": "Import",
-      "title": "Import cards",
-      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
-      "close": "Close import",
-      "dataSection": "Your data",
-      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
-      "separatorsSection": "Separators",
-      "betweenTermAndDefinition": "Between word and translation",
-      "betweenCards": "Between cards",
-      "tab": "Tab",
-      "comma": "Comma",
-      "newline": "New line",
-      "semicolon": "Semicolon",
-      "custom": "Custom",
-      "customPlaceholder": "e.g. —",
-      "previewSection": "Preview",
-      "previewEmpty": "Nothing to preview yet.",
-      "noDefinition": "No translation",
-      "confirm": "Add cards"
+      "button": "Importēt",
+      "title": "Importēt kartītes",
+      "subtitle": "Nokopējiet un ielīmējiet savus datus – no Word, Excel, Google Docs un līdzīgiem.",
+      "close": "Aizvērt importu",
+      "dataSection": "Jūsu dati",
+      "placeholder": "1. vārds\\t1. skaidrojums\\n2. vārds\\t2. skaidrojums\\n3. vārds\\t3. skaidrojums",
+      "separatorsSection": "Atdalītāji",
+      "betweenTermAndDefinition": "Starp vārdu un tulkojumu",
+      "betweenCards": "Starp kartītēm",
+      "tab": "Tabulācija",
+      "comma": "Komats",
+      "newline": "Jauna rinda",
+      "semicolon": "Semikols",
+      "custom": "Pielāgots",
+      "customPlaceholder": "piem. —",
+      "previewSection": "Priekšskatījums",
+      "previewEmpty": "Pagaidām nav ko priekšskatīt.",
+      "noDefinition": "Nav tulkojuma",
+      "confirm": "Pievienot kartītes"
     },
     "iconPicker": {
-      "open": "More icons",
-      "title": "Choose icon",
-      "search": "Search symbol",
-      "close": "Close",
-      "empty": "No icons match that name."
+      "open": "Vairāk ikonu",
+      "title": "Izvēlieties ikonu",
+      "search": "Meklēt simbolu",
+      "close": "Aizvērt",
+      "empty": "Neviena ikona neatbilst šim nosaukumam."
     },
     "iconGroup": {
-      "learning": "Learning",
-      "languages": "Languages",
-      "nature": "Nature",
-      "health": "Health",
-      "food": "Food",
-      "travel": "Travel",
-      "work": "Work",
-      "tech": "Tech",
-      "creativity": "Creativity",
-      "general": "General"
+      "learning": "Mācīšanās",
+      "languages": "Valodas",
+      "nature": "Daba",
+      "health": "Veselība",
+      "food": "Ēdiens",
+      "travel": "Ceļojumi",
+      "work": "Darbs",
+      "tech": "Tehnoloģijas",
+      "creativity": "Radošums",
+      "general": "Vispārīgi"
     }
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
-      "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "flashcards": "Kartītes",
+      "folders": "Mapes",
+      "sets": "Komplekti",
+      "create": "Jauns",
+      "profile": "Profils",
+      "speaking": "Runāšana",
+      "listening": "Klausīšanās",
+      "reading": "Lasīšana",
+      "writing": "Rakstīšana"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "Izvēlieties komplektu praksei",
+      "folders": "Pārvaldiet savas mapes",
+      "sets": "Pārvaldiet savus kartīšu komplektus",
+      "create": "Izveidojiet jaunu mācību komplektu",
+      "speaking": "Trenējiet runāšanas prasmes.",
+      "listening": "Trenējiet ausi saprast valodu dabiski.",
+      "reading": "Lasiet un atkārtojiet materiālus šajā valodā.",
+      "writing": "Lietojiet valodu aktīvi."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "RUNĀŠANA",
+      "listening": "KLAUSĪŠANĀS",
+      "reading": "LASĪŠANA",
+      "writing": "RAKSTĪŠANA"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "Šodienas mērķis",
+      "left": "Atlikuši {{count}} vārdi"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "Iemācīts šodien",
+      "words": "vārdi",
+      "accuracy": "Precizitāte",
+      "greatJob": "Lielisks darbs!",
+      "streak": "Sērija",
+      "days": "dienas"
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "Turpināt mācīties",
+    "yourSets": "Jūsu komplekti",
+    "viewAll": "Skatīt visus",
+    "review": "Atkārtot",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "Vēl nav komplektu",
+      "emptyBody": "Izveidojiet savu pirmo kartīšu komplektu ar pogu “Jauns”."
     },
     "create": {
-      "folder": "Folder",
-      "set": "Set",
-      "text": "Text",
+      "folder": "Mape",
+      "set": "Komplekts",
+      "text": "Teksts",
       "audio": "Audio",
-      "essay": "Essay"
+      "essay": "Eseja"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "{{title}} – drīzumā"
     },
     "progress": {
       "subtitle": {
-        "speaking": "of speaking practice",
-        "listening": "of listening practice",
-        "reading": "of reading practice",
-        "writing": "of writing practice"
+        "speaking": "runāšanas prakses",
+        "listening": "klausīšanās prakses",
+        "reading": "lasīšanas prakses",
+        "writing": "rakstīšanas prakses"
       }
     },
     "dailyGoal": {
-      "title": "Your goal for today",
-      "body": "Pick what you want to practise today — the card below counts against it.",
-      "chosenBody": "This is what today is about.",
-      "howMuch": "How much?",
-      "change": "Change"
+      "title": "Jūsu šodienas mērķis",
+      "body": "Izvēlieties, ko šodien vēlaties trenēt – kartīte zemāk tiek ieskaitīta tajā.",
+      "chosenBody": "Lūk, par ko ir šī diena.",
+      "howMuch": "Cik daudz?",
+      "change": "Mainīt"
     },
     "lastNote": {
-      "title": "Last note you read"
+      "title": "Pēdējā izlasītā piezīme"
     }
   },
   "categories": {
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing"
+    "speaking": "Runāšana",
+    "listening": "Klausīšanās",
+    "reading": "Lasīšana",
+    "writing": "Rakstīšana"
   },
   "phase0": {
     "title": "WordAround",
-    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
+    "subtitle": "0. fāze darbojas. Dizaina marķieri ielādēti, Firebase pievienots."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "Apgriezt",
+    "known": "Es to zināju",
+    "unknown": "Vēl mācos",
+    "mastered": "Apgūts",
+    "shuffle": "Sajaukt",
+    "trackProgress": "Sekot progresam",
+    "speak": "Izrunāt",
+    "roundDone": "Kārta pabeigta",
+    "knewCount": "Jūs zinājāt {{known}} no {{total}}",
+    "repeatUnknown": "Atkārtot {{count}} nezināmos",
+    "restart": "Sākt no jauna",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "Visas",
+      "studied": "Mācītās",
+      "remaining": "Atlikušās",
+      "mastered": "Apgūtās"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "Pievienot kartīti",
+    "editCard": "Rediģēt kartīti",
+    "deleteCard": "Dzēst kartīti",
+    "deleteCardConfirm": "Dzēst šo kartīti?",
+    "emptyPrompt": "Šajā komplektā vēl nav kartīšu. Pievienojiet pirmo.",
+    "save": "Saglabāt",
+    "cancel": "Atcelt"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "Šodienas progress",
+      "unit": "vārdi",
+      "subtitle": "rakstīšanas prakses"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "Prakses režīmi",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "Rakstīšana no komplektiem",
+        "subtitle": "Trenējiet savu komplektu vārdu pareizrakstību un rakstīšanu."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "Esejas",
+        "subtitle": "Rakstiet tekstus un saņemiet MI atsauksmes par gramatiku un stilu."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "Drīzumā"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "Izvēlieties komplektu",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "Nav komplektu ar vārdiem",
+        "subtitle": "Pirms sākat rakstīšanas praksi, izveidojiet komplektu ar vismaz vienu kartīti."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "{{count}} vārdi",
+      "wordsCount_one": "{{count}} vārds",
+      "close": "Aizvērt",
+      "wordsCount_zero": "{{count}} vārdu"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "Rakstīšana no komplektiem",
+      "subtitle": "Ierakstiet tulkojumu un nospiediet Enter.",
+      "translateHint": "Tulkojiet savā valodā",
+      "hint": "Padoms",
+      "skip": "Izlaist",
+      "submit": "Pārbaudīt",
+      "inputPlaceholder": "Rakstiet šeit…",
+      "loading": "Ielādē komplektu…",
+      "loadError": "Neizdevās ielādēt šo komplektu.",
+      "noCards": "Šajā komplektā nav kartīšu.",
+      "back": "Atpakaļ",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "Iestatījumi",
+        "trainingMode": "Treniņa režīms",
+        "difficulty": "Grūtība"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "Vārds → Tulkojums",
+        "translationToWord": "Tulkojums → Vārds"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "Viegli",
+        "medium": "Vidēji",
+        "hard": "Grūti",
+        "easyDesc": "Neierobežoti padomi, neierobežoti izlaidumi",
+        "mediumDesc": "1 padoma burts, ne vairāk kā 25 % izlaidumu",
+        "hardDesc": "Bez padomiem, bez izlaidumiem, uz laiku"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "Tulkojiet savā valodā",
+        "translation": "Uzrakstiet sākotnējo vārdu"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "Atlicis {{count}} izlaidums",
+      "skipsLeft_other": "Atlikuši {{count}} izlaidumi",
+      "seconds": "{{count}} s",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "Kārta pabeigta!",
+          "subtitle": "Lielisks darbs. Jūs pabeidzāt šo rakstīšanas kārtu."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "Laiks beidzies",
+          "subtitle": "Grūtā režīma taimeris sasniedza nulli. Mēģiniet vēlreiz no pirmā vārda."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "Nepareiza atbilde",
+          "subtitle": "Grūtajā režīmā viena kļūda beidz kārtu."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
-      }
+        "perfectTitle": "Nevainojama kārta!",
+        "perfectBody": "Jūs pabeidzāt grūto režīmu bez kļūdām. Bez izlaidumiem. Bez padomiem. Tikai prasme.",
+        "totalWords": "Vārdu kopskaits",
+        "completedWords": "Pabeigtie vārdi",
+        "skippedWords": "Izlaistie vārdi",
+        "hintsUsed": "Izmantotie padomi",
+        "streak": "Sērija",
+        "difficultyLabel": "Grūtība",
+        "word": "Vārds",
+        "yourAnswer": "Jūsu atbilde",
+        "correctAnswer": "Pareizā atbilde",
+        "tryAgain": "Mēģināt vēlreiz"
+      },
+      "skipsLeft_zero": "Atlicis {{count}} izlaidumu"
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "Esejas",
+      "subtitle": "Tēmu izvēlas MI. Rakstiet un pēc tam saņemiet atsauksmi.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "Ieteiktā",
+        "custom": "Mana tēma"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "Uzrakstiet savu esejas tēmu...",
+        "generate": "Ģenerēt uzdevumu"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "Ģenerēt tēmu",
+        "regenerate": "Jauna tēma"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "Valoda",
+      "difficulty": "Grūtība",
       "task": {
         "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips",
-        "taskLabel": "Task"
+        "wordRange": "{{min}}-{{max}} vārdi",
+        "quickTips": "Ātrie padomi",
+        "taskLabel": "Uzdevums"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "Sāciet rakstīt savu eseju šeit...",
+        "wordCount": "{{count}} / {{min}}-{{max}} vārdi",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "Turpiniet – vajadzīgi vismaz {{min}} vārdi.",
+          "aboveMaximum": "Jūs pārsniedzāt ierobežojumu – mēģiniet saīsināt.",
+          "valid": "Diapazonā."
         },
-        "reset": "Reset"
+        "reset": "Atiestatīt"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "Vispirms ierakstiet tēmu.",
+        "generationFailed": "Neizdevās ģenerēt tēmu. Mēģiniet vēlreiz."
       },
-      "generating": "Generating...",
+      "generating": "Ģenerē...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "Lūgt padomu",
+        "remaining": "Atlikuši {{remaining}}/{{limit}}",
+        "noneLeft": "Padomu vairs nav",
+        "notAvailable": "Šajā līmenī padomi nav pieejami",
+        "generating": "Ģenerē padomu...",
+        "error": "Neizdevās iegūt padomu. Mēģiniet vēlreiz.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "Saturs",
+          "grammar": "Gramatika",
+          "vocabulary": "Vārdu krājums",
+          "structure": "Struktūra"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again.",
-        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
+        "button": "Pārbaudīt manu eseju",
+        "checking": "Pārbauda...",
+        "disabled": "Vispirms iekļaujieties vārdu diapazonā",
+        "error": "Neizdevās pārbaudīt jūsu eseju. Mēģiniet vēlreiz.",
+        "languageUnsupported": "Gramatikas pārbaude valodai {{language}} vēl nav pieejama."
       },
       "score": {
-        "title": "Essay score",
+        "title": "Esejas vērtējums",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "Teicami",
+          "veryGood": "Ļoti labi",
+          "good": "Labi",
+          "needsWork": "Jāpiestrādā"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "Gramatika",
+          "vocabulary": "Vārdu krājums",
+          "length": "Garums",
+          "complexity": "Sarežģītība",
+          "relevance": "Atbilstība tēmai",
+          "independence": "Patstāvība"
         },
         "stat": {
-          "words": "Words",
-          "grammar": "Grammar",
-          "vocabStyle": "Vocab/style",
-          "hints": "Hints",
-          "translations": "Translations",
-          "synonyms": "Synonyms"
+          "words": "Vārdi",
+          "grammar": "Gramatika",
+          "vocabStyle": "Vārdu krājums/stils",
+          "hints": "Padomi",
+          "translations": "Tulkojumi",
+          "synonyms": "Sinonīmi"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
-        "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "sectionTitle": "Gramatikas problēmas",
+        "count_one": "{{count}} problēma",
+        "count_other": "{{count}} problēmas",
+        "empty": "Gramatikas problēmas nav atrastas – lielisks darbs!",
+        "original": "Oriģināls:",
+        "suggestion": "Ieteikums:",
+        "reason": "Iemesls:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "Gramatika",
+          "vocabulary": "Vārdu krājums",
+          "style": "Stils"
         },
         "save": {
-          "idle": "Save to Notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
-        }
+          "idle": "Saglabāt piezīmēs",
+          "saving": "Saglabā…",
+          "saved": "Saglabāts",
+          "duplicate": "Jau saglabāts",
+          "failed": "Mēģināt saglabāt vēlreiz"
+        },
+        "count_zero": "{{count}} problēmu"
       },
       "helper": {
-        "translate": "Translate",
-        "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "translate": "Tulkot",
+        "synonym": "Sinonīms",
+        "remaining": "Atlikuši {{remaining}}",
+        "notAvailable": "Šajā līmenī nav pieejams"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "Tulkot",
+        "placeholder": "Ievadiet vārdu vai īsu frāzi",
+        "submit": "Tulkot",
+        "submitting": "Tulko..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "Sinonīmi",
+        "placeholder": "Ievadiet vārdu",
+        "submit": "Atrast sinonīmus",
+        "submitting": "Meklē..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "No",
+        "to": "Uz",
+        "close": "Aizvērt",
+        "noResult": "Nekas netika atrasts.",
+        "sameLanguage": "Izvēlieties citu ievades valodu.",
+        "error": "Pakalpojums īslaicīgi nav pieejams."
       },
-      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
-      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
-      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
+      "saveMistakeConfirmTitle": "Saglabāt šo kļūdu piezīmēs?",
+      "saveMistakeConfirmBody": "Tā tiks saglabāta kā kļūdas piezīme ar labojumu “{{correction}}”.",
+      "autoSaveConfirmTitle": "Saglabāt šīs kļūdas savās piezīmēs?",
+      "autoSaveConfirmBody_one": "Šī pārbaude atrada {{count}} kļūdu. Saglabājot tā kļūst par piezīmi, kas atgriežas atkārtošanai.",
+      "autoSaveConfirmBody_other": "Šī pārbaude atrada {{count}} kļūdas. Saglabājot tās kļūst par piezīmēm, kas atgriežas atkārtošanai.",
+      "autoSaveConfirmBody_zero": "Šī pārbaude atrada {{count}} kļūdu. Saglabājot tās kļūst par piezīmēm, kas atgriežas atkārtošanai."
     },
     "grammar": {
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "subtitle": "Sakārtojiet gramatiku pa tēmām skaidrās, strukturētās piezīmēs.",
+      "newTopic": "Jauna tēma",
+      "topicsEmptyTitle": "Vēl nav tēmu",
+      "topicsEmptyBody": "Izveidojiet savu pirmo tēmu, lai sāktu krāt gramatikas piezīmes.",
+      "notesCount_one": "{{count}} piezīme",
+      "notesCount_other": "{{count}} piezīmes",
+      "deleteTopicConfirm": "Dzēst “{{title}}” un visas tās piezīmes? To nevarēs atsaukt.",
+      "notesEmptyTitle": "Vēl nav piezīmju",
+      "notesEmptyBody": "Pievienojiet savu pirmo piezīmi šai tēmai.",
+      "newNote": "Jauna piezīme",
+      "deleteNoteConfirm": "Dzēst šo piezīmi? To nevarēs atsaukt.",
+      "loading": "Ielādē…",
+      "loadError": "Neizdevās ielādēt jūsu gramatikas piezīmes.",
+      "notFoundTitle": "Nav atrasts",
+      "notFoundBody": "Šis vienums, iespējams, ir dzēsts.",
+      "back": "Atpakaļ",
+      "updated": "Atjaunināts {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel",
-        "language": "Language",
-        "languageNone": "Not set"
+        "newTitle": "Jauna tēma",
+        "editTitle": "Rediģēt tēmu",
+        "name": "Nosaukums",
+        "namePlaceholder": "piem. Spāņu darbības vārdi",
+        "description": "Apraksts",
+        "descriptionPlaceholder": "Nav obligāts",
+        "color": "Krāsa",
+        "icon": "Ikona",
+        "save": "Saglabāt",
+        "cancel": "Atcelt",
+        "language": "Valoda",
+        "languageNone": "Nav iestatīta"
       },
       "noteType": {
-        "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "standard": "Standarta",
+        "mistake": "Kļūda",
+        "rule": "Likums",
+        "comparison": "Salīdzinājums",
+        "cheatSheet": "Špikeris",
+        "exercise": "Vingrinājums"
       },
       "block": {
-        "heading": "Heading",
-        "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)",
-        "subheading": "Subheading",
-        "numberedList": "Numbered list",
-        "checklist": "Checklist",
-        "comparison": "Comparison",
-        "exercise": "Exercise",
-        "quiz": "Quiz",
-        "image": "Image",
-        "comparisonSecondary": "Second side",
-        "imageAdd": "Add / replace image",
-        "imageUploading": "Uploading…",
-        "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images."
+        "heading": "Virsraksts",
+        "paragraph": "Teksts",
+        "bulletList": "Aizzīmju saraksts",
+        "rule": "Likums",
+        "example": "Piemērs",
+        "warning": "Brīdinājums",
+        "quote": "Citāts",
+        "divider": "Atdalītājs",
+        "addBlock": "Pievienot bloku",
+        "addItem": "Pievienot vienumu",
+        "moveUp": "Pārvietot augšup",
+        "moveDown": "Pārvietot lejup",
+        "remove": "Noņemt",
+        "secondaryPlaceholder": "Detaļa / tulkojums (nav obligāts)",
+        "subheading": "Apakšvirsraksts",
+        "numberedList": "Numurēts saraksts",
+        "checklist": "Kontrolsaraksts",
+        "comparison": "Salīdzinājums",
+        "exercise": "Vingrinājums",
+        "quiz": "Tests",
+        "image": "Attēls",
+        "comparisonSecondary": "Otra puse",
+        "imageAdd": "Pievienot / aizstāt attēlu",
+        "imageUploading": "Augšupielādē…",
+        "imageFailed": "Neizdevās augšupielādēt attēlu.",
+        "imageSaveFirst": "Piesakieties, lai augšupielādētu attēlus."
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…",
-        "subheading": "Subheading",
-        "numberedList": "List item",
-        "checklist": "Checklist item",
-        "comparison": "First side",
-        "exercise": "Practice instruction…",
-        "quiz": "Question",
-        "image": "Image caption"
+        "heading": "Virsraksts",
+        "paragraph": "Uzrakstiet savu skaidrojumu…",
+        "bulletList": "Saraksta vienums",
+        "rule": "Paskaidrojiet gramatikas likumu…",
+        "example": "Pievienojiet piemēru…",
+        "warning": "Bieža kļūda vai brīdinājums…",
+        "quote": "Teikums, ko vērts atcerēties…",
+        "subheading": "Apakšvirsraksts",
+        "numberedList": "Saraksta vienums",
+        "checklist": "Kontrolsaraksta vienums",
+        "comparison": "Pirmā puse",
+        "exercise": "Vingrinājuma norādījums…",
+        "quiz": "Jautājums",
+        "image": "Attēla paraksts"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again.",
-        "subtitle": "Edit note",
-        "tags": "Tags",
-        "tagsPlaceholder": "Add a tag…",
-        "removeTag": "Remove tag {{tag}}",
-        "addToReview": "Add to review",
-        "addedToReview": "Added to your review queue.",
-        "inReview": "In review · {{when}}",
-        "inReviewDue": "Due for review",
-        "removedFromReview": "Removed from your review queue.",
-        "unsavedTitle": "Leave without saving?",
-        "unsavedBody": "This note has changes that have not been saved yet.",
-        "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "titlePlaceholder": "Piezīmes nosaukums",
+        "save": "Saglabāt piezīmi",
+        "saving": "Saglabā…",
+        "delete": "Dzēst piezīmi",
+        "saveError": "Neizdevās saglabāt. Mēģiniet vēlreiz.",
+        "subtitle": "Rediģēt piezīmi",
+        "tags": "Birkas",
+        "tagsPlaceholder": "Pievienot birku…",
+        "removeTag": "Noņemt birku {{tag}}",
+        "addToReview": "Pievienot atkārtošanai",
+        "addedToReview": "Pievienots jūsu atkārtošanas rindai.",
+        "inReview": "Atkārtošanā · {{when}}",
+        "inReviewDue": "Laiks atkārtot",
+        "removedFromReview": "Noņemts no jūsu atkārtošanas rindas.",
+        "unsavedTitle": "Iziet, nesaglabājot?",
+        "unsavedBody": "Šajā piezīmē ir nesaglabātas izmaiņas.",
+        "discard": "Atmest izmaiņas",
+        "saveAndLeave": "Saglabāt un iziet"
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "Testi",
+        "new": "Jauns tests",
+        "start": "Sākt testu",
+        "delete": "Dzēst testu",
+        "deleteConfirm": "Dzēst “{{title}}”? To nevarēs atsaukt.",
+        "emptyTitle": "Vēl nav testu",
+        "emptyBody": "Izveidojiet testu no šīs piezīmes un pārbaudiet sevi.",
+        "loadError": "Neizdevās ielādēt testus.",
+        "questionsCount_one": "{{count}} jautājums",
+        "questionsCount_other": "{{count}} jautājumi",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "Izvēle no vairākiem",
+          "trueFalse": "Patiess / Aplams",
+          "fillGap": "Aizpildīt tukšumu",
+          "shortAnswer": "Īsa atbilde"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead",
-          "modeManual": "Manual",
-          "modeManualDesc": "Write your own questions.",
-          "createQuiz": "Create quiz"
+          "title": "Izveidot testu",
+          "titlePlaceholder": "Testa nosaukums",
+          "mode": "Ģenerēšanas režīms",
+          "modeSmart": "Viedais vietējais",
+          "modeSmartDesc": "Veido jautājumus no piezīmes satura, jūsu ierīcē.",
+          "modeAI": "Ģenerēts ar MI",
+          "modeAIDesc": "Veido bagātīgākus, kontekstuālus jautājumus ar MI.",
+          "count": "Jautājumi",
+          "types": "Jautājumu veidi",
+          "focus": "Fokuss (nav obligāts)",
+          "focusPlaceholder": "piem. koncentrēties uz neregulārajām formām",
+          "preview": "Priekšskatīt jautājumus",
+          "regenerate": "Ģenerēt priekšskatījumu vēlreiz",
+          "previewTitle": "Priekšskatījums",
+          "saveQuiz": "Saglabāt testu",
+          "generateQuiz": "Ģenerēt testu",
+          "generating": "Ģenerē…",
+          "saving": "Saglabā…",
+          "useSmartInstead": "Labāk izmantot Viedo vietējo",
+          "modeManual": "Manuāli",
+          "modeManualDesc": "Uzrakstiet savus jautājumus.",
+          "createQuiz": "Izveidot testu"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "{{current}}. jautājums no {{total}}",
+          "submit": "Iesniegt atbildi",
+          "next": "Tālāk",
+          "finish": "Pabeigt",
+          "correct": "Pareizi!",
+          "incorrect": "Nepareizi",
+          "correctAnswer": "Pareizā atbilde: {{answer}}",
+          "typeMissing": "Ierakstiet trūkstošo vārdu",
+          "typeAnswer": "Ierakstiet savu atbildi",
+          "trueLabel": "Patiess",
+          "falseLabel": "Aplams"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "{{correct}} no {{total}} pareizi",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "Teicami!",
+            "good": "Lielisks darbs!",
+            "keepPracticing": "Turpiniet praktizēties",
+            "reviewNote": "Pārskatiet piezīmi"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "Nepareizi",
+          "correctSection": "Pareizi",
+          "yourAnswer": "Jūsu atbilde: {{answer}}",
+          "tryAgain": "Mēģināt vēlreiz",
+          "reviewNote": "Atvērt piezīmi",
+          "done": "Gatavs"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "Vispirms pievienojiet piezīmei vairāk satura – testam vajadzīgi vismaz divi satura bloki (likums, piemērs, brīdinājums, rindkopa vai citāts).",
+          "noMatchingQuestionTypes": "Izvēlētajiem jautājumu veidiem nepietiek piemērota satura. Ieslēdziet vairāk veidu vai pievienojiet saturu.",
+          "aiFailed": "Neizdevās ģenerēt testu ar MI. Mēģiniet vēlreiz vai izmantojiet Viedo vietējo."
         },
-        "badge": "Quiz",
+        "badge": "Tests",
         "manual": {
-          "questions_one": "{{count}} question",
-          "questions_other": "{{count}} questions",
-          "add": "Add question",
-          "questionPlaceholder": "Question text",
-          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
-          "optionPlaceholder": "Option {{index}}",
-          "answerPlaceholder": "Correct answer",
-          "explanationPlaceholder": "Explanation (optional)",
+          "questions_one": "{{count}} jautājums",
+          "questions_other": "{{count}} jautājumi",
+          "add": "Pievienot jautājumu",
+          "questionPlaceholder": "Jautājuma teksts",
+          "questionGapPlaceholder": "Jautājums ar tukšumu, piem. Es _____ uz skolu",
+          "optionPlaceholder": "{{index}}. variants",
+          "answerPlaceholder": "Pareizā atbilde",
+          "explanationPlaceholder": "Skaidrojums (nav obligāts)",
           "error": {
-            "questionRequired": "Question text is required.",
-            "optionsRequired": "Multiple choice needs at least 2 options.",
-            "answerRequired": "Enter the correct answer.",
-            "answerNotAnOption": "The correct answer must match one of the options.",
-            "blankRequired": "Add a blank (e.g. _____) inside the question."
-          }
-        }
+            "questionRequired": "Jautājuma teksts ir obligāts.",
+            "optionsRequired": "Izvēlei no vairākiem vajadzīgi vismaz 2 varianti.",
+            "answerRequired": "Ievadiet pareizo atbildi.",
+            "answerNotAnOption": "Pareizajai atbildei jāsakrīt ar vienu no variantiem.",
+            "blankRequired": "Pievienojiet jautājumā tukšumu (piem. _____)."
+          },
+          "questions_zero": "{{count}} jautājumu"
+        },
+        "questionsCount_zero": "{{count}} jautājumu"
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "Ātrā kļūda",
+        "title": "Ātrā kļūda",
+        "original": "Sākotnējais teikums",
+        "originalPlaceholder": "Piemērs: Es esmu piekrītu tev",
+        "corrected": "Labojums",
+        "correctedPlaceholder": "Piemērs: Es tev piekrītu",
+        "explanation": "Skaidrojums (nav obligāts)",
+        "explanationPlaceholder": "Kāpēc labojums ir pareizs?",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "Vispirms pievienojiet sākotnējo teikumu.",
+          "corrected": "Pievienojiet arī laboto teikumu."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done",
-        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
+        "save": "Saglabāt kļūdu",
+        "saving": "Saglabā…",
+        "saved": "Saglabāts gramatikas piezīmēs.",
+        "duplicate": "Jau saglabāts – dublikāts izlaists.",
+        "failed": "Neizdevās saglabāt. Mēģiniet vēlreiz.",
+        "openTopic": "Atvērt “Biežās kļūdas”",
+        "done": "Gatavs",
+        "tip": "Saglabātie labojumi automātiski nonāk atkārtošanā, tāpēc tie, kuros pastāvīgi kļūdāties, atgriežas pirmie."
       },
       "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
+        "topicTitle": "Tēmu veidnes",
+        "noteTitle": "Piezīmju veidnes",
+        "button": "Veidne",
+        "startFromTemplate": "Sākt no veidnes",
+        "searchPlaceholder": "Meklēt veidnes…",
+        "allLanguages": "Visas",
+        "anyDifficulty": "Jebkura",
         "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
+          "en": "Angļu",
+          "es": "Spāņu",
+          "fr": "Franču",
+          "de": "Vācu"
         },
         "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
-        "applyTitle": "Apply “{{title}}”?",
-        "applyBody": "This note already has content. Choose how to apply the template.",
-        "applyReplace": "Replace content",
-        "applyAppend": "Append blocks"
+        "notesIncluded_one": "{{count}} piezīme",
+        "notesIncluded_other": "{{count}} piezīmes",
+        "blocksIncluded_one": "{{count}} bloks",
+        "blocksIncluded_other": "{{count}} bloki",
+        "empty": "Neviena veidne neatbilst jūsu filtriem.",
+        "use": "Izmantot veidni",
+        "creating": "Veido…",
+        "replaceConfirm": "Aizstāt pašreizējo piezīmes saturu ar šo veidni? Nospiediet “Atcelt”, lai veidni pievienotu zemāk.",
+        "applyTitle": "Lietot “{{title}}”?",
+        "applyBody": "Šajā piezīmē jau ir saturs. Izvēlieties, kā lietot veidni.",
+        "applyReplace": "Aizstāt saturu",
+        "applyAppend": "Pievienot blokus beigās",
+        "notesIncluded_zero": "{{count}} piezīmju",
+        "blocksIncluded_zero": "{{count}} bloku"
       },
       "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "dueBadge": "Due",
-        "refreshBody": "Nothing is due right now — you can still refresh what you read lately.",
-        "refreshStart": "Refresh recent notes",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
+        "title": "Atkārtošana",
+        "subtitle": "Nostipriniet apgūto ar atkārtošanu ar intervāliem.",
+        "cardTitle": "Atkārtot šodien",
+        "cardSubtitle_one": "{{count}} vienums gatavs · ~{{minutes}} min",
+        "cardSubtitle_other": "{{count}} vienumi gatavi · ~{{minutes}} min",
+        "caughtUpTitle": "Viss izdarīts",
+        "caughtUp": "Viss ir izdarīts. Atveriet vai rediģējiet piezīmes, lai saņemtu atkārtošanas ieteikumus.",
+        "dueBadge": "Gaida",
+        "refreshBody": "Šobrīd nekas negaida – tomēr varat atsvaidzināt to, ko lasījāt nesen.",
+        "refreshStart": "Atsvaidzināt nesenās piezīmes",
+        "start": "Sākt atkārtošanu",
+        "skip": "Izlaist",
+        "itemOf": "{{current}}. vienums no {{total}}",
+        "untitled": "Gramatikas piezīme",
+        "stats": "Atkārtots {{count}} reizes · sērija {{streak}}",
+        "continueToQuestion": "Pāriet uz jautājumu",
+        "showAnswer": "Rādīt atbildi",
+        "compareTitle": "Salīdziniet savu atbildi",
+        "referenceAnswer": "Paraugs: {{answer}}",
+        "openNote": "Atvērt visu piezīmi",
         "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
+          "manual_one": "{{count}} vienums gaida atkārtošanu",
+          "manual_other": "{{count}} vienumi gaida atkārtošanu",
+          "recentlyOpened_one": "{{count}} nesen atvērta piezīme",
+          "recentlyOpened_other": "{{count}} nesen atvērtas piezīmes",
+          "recentlyEdited_one": "{{count}} nesen rediģēta piezīme",
+          "recentlyEdited_other": "{{count}} nesen rediģētas piezīmes",
+          "manual_zero": "{{count}} vienumu gaida atkārtošanu",
+          "recentlyOpened_zero": "{{count}} nesen atvērtu piezīmju",
+          "recentlyEdited_zero": "{{count}} nesen rediģētu piezīmju"
         },
         "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
-          "quiz": "Quiz"
+          "note": "Piezīme",
+          "mistake": "Kļūda",
+          "quiz": "Tests"
         },
         "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
+          "source": "Mācīšanās",
+          "question": "Atbilde",
+          "result": "Novērtējums"
         },
         "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
+          "forgot": "Aizmirsu",
+          "hard": "Grūti",
+          "good": "Labi",
+          "easy": "Viegli"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "plus4h": "+4 stundas",
+          "plus1d": "+1 diena",
+          "plus3d": "+3 dienas",
+          "plus7d": "+7 dienas"
         },
         "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "title": "Sesija pabeigta",
+          "emptyTitle": "Nekas nav atkārtots",
+          "reviewed": "Atkārtoti",
+          "correct": "Pareizi",
+          "incorrect": "Nepareizi",
+          "hintForgot": "Daži vienumi atgriezīsies pēc 4 stundām.",
+          "hintHard": "Grūtie vienumi atgriezīsies rīt.",
+          "hintGood": "Labie vienumi atgriezīsies pēc 3 dienām.",
+          "hintEasy": "Visi vienumi atgriezīsies pēc 7 dienām.",
+          "done": "Atpakaļ uz gramatikas piezīmēm"
         },
-        "loadError": "Couldn't load your review queue.",
-        "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "loadError": "Neizdevās ielādēt jūsu atkārtošanas rindu.",
+        "mistakeCount_one": "{{count}} kļūda",
+        "mistakeCount_other": "{{count}} kļūdas",
+        "cardSubtitle_zero": "{{count}} vienumu gatavi · ~{{minutes}} min",
+        "mistakeCount_zero": "{{count}} kļūdu"
       },
-      "mistakesBadge": "Mistakes",
-      "topicsTitle": "Topics",
-      "deleteTopic": "Delete topic",
-      "deleteTopicTitle": "Delete this topic?",
-      "deleteNoteTitle": "Delete this note?",
-      "pin": "Pin note",
-      "unpin": "Unpin note",
-      "favorite": "Add to favorites",
-      "unfavorite": "Remove from favorites",
+      "mistakesBadge": "Kļūdas",
+      "topicsTitle": "Tēmas",
+      "deleteTopic": "Dzēst tēmu",
+      "deleteTopicTitle": "Dzēst šo tēmu?",
+      "deleteNoteTitle": "Dzēst šo piezīmi?",
+      "pin": "Piespraust piezīmi",
+      "unpin": "Atspraust piezīmi",
+      "favorite": "Pievienot izlasei",
+      "unfavorite": "Noņemt no izlases",
       "search": {
-        "topics": "Search topics…",
-        "notes": "Search notes…",
-        "clear": "Clear search",
-        "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword.",
-        "notesSection_one": "Notes ({{count}})",
-        "notesSection_other": "Notes ({{count}})",
-        "noNoteMatches": "No notes match this search."
+        "topics": "Meklēt tēmas…",
+        "notes": "Meklēt piezīmes…",
+        "clear": "Notīrīt meklēšanu",
+        "noMatchTitle": "Nav atbilstību",
+        "noMatchBody": "Pamēģiniet citu atslēgvārdu.",
+        "notesSection_one": "Piezīmes ({{count}})",
+        "notesSection_other": "Piezīmes ({{count}})",
+        "noNoteMatches": "Neviena piezīme neatbilst šai meklēšanai.",
+        "notesSection_zero": "Piezīmes ({{count}})"
       },
       "filter": {
-        "label": "Filter notes",
-        "all": "All",
-        "pinned": "Pinned",
-        "favorites": "Favorites",
-        "mistakes": "Mistakes",
-        "quizzes": "Quizzes",
-        "review": "Due",
+        "label": "Filtrēt piezīmes",
+        "all": "Visas",
+        "pinned": "Piespraustās",
+        "favorites": "Izlase",
+        "mistakes": "Kļūdas",
+        "quizzes": "Testi",
+        "review": "Gaida",
         "empty": {
           "all": {
-            "title": "No grammar notes yet",
-            "body": "Create your first grammar note for this topic."
+            "title": "Vēl nav gramatikas piezīmju",
+            "body": "Izveidojiet savu pirmo gramatikas piezīmi šai tēmai."
           },
           "pinned": {
-            "title": "No pinned notes yet",
-            "body": "Pin notes from the list to find them quickly."
+            "title": "Vēl nav piesprausto piezīmju",
+            "body": "Piespraudiet piezīmes no saraksta, lai ātri tās atrastu."
           },
           "favorites": {
-            "title": "No favorite notes yet",
-            "body": "Favorite notes to keep them handy."
+            "title": "Vēl nav izlases piezīmju",
+            "body": "Atzīmējiet piezīmes kā izlasi, lai tās būtu pa rokai."
           },
           "mistakes": {
-            "title": "No saved mistakes yet",
-            "body": "Save grammar mistakes to review them here."
+            "title": "Vēl nav saglabātu kļūdu",
+            "body": "Saglabājiet gramatikas kļūdas, lai atkārtotu tās šeit."
           },
           "quizzes": {
-            "title": "No quiz notes yet",
-            "body": "Add a quiz to a note to see it here."
+            "title": "Vēl nav piezīmju ar testu",
+            "body": "Pievienojiet piezīmei testu, lai to redzētu šeit."
           },
           "review": {
-            "title": "Nothing due right now",
-            "body": "Notes come back here when their next review is due."
+            "title": "Šobrīd nekas negaida",
+            "body": "Piezīmes atgriežas šeit, kad pienāk laiks nākamajai atkārtošanai."
           }
         }
       },
       "reorder": {
-        "start": "Reorder",
-        "done": "Done",
-        "up": "Move up",
-        "down": "Move down"
+        "start": "Mainīt secību",
+        "done": "Gatavs",
+        "up": "Pārvietot augšup",
+        "down": "Pārvietot lejup"
       },
       "highlights": {
-        "mistakesTitle": "Mistakes to fix",
-        "mistakesSubtitle": "Recent corrections waiting for review.",
-        "quizzesTitle": "Weak quiz areas",
-        "quizzesSubtitle": "Quizzes worth re-taking soon."
+        "mistakesTitle": "Labojamās kļūdas",
+        "mistakesSubtitle": "Nesenie labojumi gaida atkārtošanu.",
+        "quizzesTitle": "Vājās testu jomas",
+        "quizzesSubtitle": "Testi, ko vērts drīz atkārtot."
       },
       "quickNote": {
-        "button": "Quick note",
-        "title": "Quick note",
-        "subtitle": "Capture a grammar idea without opening the full editor.",
-        "noteTitle": "Title",
-        "titlePlaceholder": "Example: Ser vs Estar",
-        "text": "Note",
-        "textPlaceholder": "Write the useful part here",
-        "noteType": "Note type",
-        "topic": "Topic",
-        "openEditor": "Open editor after saving",
-        "openEditorHint": "Useful when the quick version grows into a full note.",
-        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
-        "validation": "Add a title or some text first.",
-        "save": "Save quick note",
-        "saving": "Saving…"
+        "button": "Ātrā piezīme",
+        "title": "Ātrā piezīme",
+        "subtitle": "Pierakstiet gramatikas ideju, neatverot pilno redaktoru.",
+        "noteTitle": "Nosaukums",
+        "titlePlaceholder": "Piemērs: Ser vs Estar",
+        "text": "Piezīme",
+        "textPlaceholder": "Uzrakstiet šeit noderīgo daļu",
+        "noteType": "Piezīmes veids",
+        "topic": "Tēma",
+        "openEditor": "Pēc saglabāšanas atvērt redaktoru",
+        "openEditorHint": "Noder, kad ātrā versija izaug par pilnu piezīmi.",
+        "tip": "Ātrās piezīmes ir tai idejai, ko citādi aizmirstu pēc desmit minūtēm.",
+        "validation": "Vispirms pievienojiet nosaukumu vai nedaudz teksta.",
+        "save": "Saglabāt ātro piezīmi",
+        "saving": "Saglabā…"
       },
       "settings": {
-        "title": "Notes settings",
-        "subtitle": "How quick capture, mistakes and the notes list behave.",
-        "reset": "Reset to defaults",
-        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "title": "Piezīmju iestatījumi",
+        "subtitle": "Kā darbojas ātrā pierakstīšana, kļūdas un piezīmju saraksts.",
+        "reset": "Atjaunot noklusējumus",
+        "tip": "Ātrās kļūdas izmantojiet teikumiem, kurus tiešām uzrakstījāt nepareizi – tie ir noderīgāki par nevainojamiem mācību grāmatas piemēriem.",
         "quickCapture": {
-          "title": "Quick capture",
-          "subtitle": "Make fast notes and mistakes feel instant."
+          "title": "Ātrā pierakstīšana",
+          "subtitle": "Padariet ātrās piezīmes un kļūdas tūlītējas."
         },
         "mistakeNotes": {
-          "title": "Mistake notes",
-          "subtitle": "What gets saved when you capture a quick mistake."
+          "title": "Kļūdu piezīmes",
+          "subtitle": "Kas tiek saglabāts, kad pierakstāt ātro kļūdu."
         },
         "essays": {
-          "title": "Essays",
-          "subtitle": "What happens to grammar issues found in your essays."
+          "title": "Esejas",
+          "subtitle": "Kas notiek ar gramatikas problēmām jūsu esejās."
         },
         "review": {
-          "title": "Spaced review",
-          "subtitle": "How notes reach the review queue."
+          "title": "Atkārtošana ar intervāliem",
+          "subtitle": "Kā piezīmes nonāk atkārtošanas rindā."
         },
         "appearance": {
-          "title": "Notes appearance",
-          "subtitle": "How the notes list is ordered and sized."
+          "title": "Piezīmju izskats",
+          "subtitle": "Kā piezīmju saraksts tiek kārtots un rādīts."
         },
         "helpers": {
-          "title": "Learning helpers",
-          "subtitle": "Small nudges inside empty states and quick sheets."
+          "title": "Mācīšanās palīgi",
+          "subtitle": "Nelieli pamudinājumi tukšos skatos un ātrajās formās."
         },
         "defaultType": {
-          "title": "Default note type",
-          "subtitle": "What a new quick note starts as."
+          "title": "Noklusējuma piezīmes veids",
+          "subtitle": "Ar kādu veidu sākas jauna ātrā piezīme."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "Open editor after quick save",
-            "subtitle": "After saving a quick note, jump straight into the full editor."
+            "title": "Atvērt redaktoru pēc ātrās saglabāšanas",
+            "subtitle": "Pēc ātrās piezīmes saglabāšanas uzreiz pāriet uz pilno redaktoru."
           },
           "allowQuickQuizzes": {
-            "title": "Allow quizzes in notes",
-            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+            "title": "Atļaut testus piezīmēs",
+            "subtitle": "Piedāvāt testu blokus un testu veidošanu piezīmēs."
           },
           "showsMistakeHighlights": {
-            "title": "Highlight mistake notes",
-            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+            "title": "Izcelt kļūdu piezīmes",
+            "subtitle": "Izmantot siltu toni kļūdu kartītēm un rādīt kļūdu rindu."
           },
           "includeOriginalSentence": {
-            "title": "Include original sentence",
-            "subtitle": "Save the wrong version as a quote block in the note."
+            "title": "Iekļaut sākotnējo teikumu",
+            "subtitle": "Saglabāt nepareizo versiju piezīmē kā citāta bloku."
           },
           "includeCorrectedSentence": {
-            "title": "Include corrected sentence",
-            "subtitle": "Save the fixed version as an example block."
+            "title": "Iekļaut laboto teikumu",
+            "subtitle": "Saglabāt laboto versiju kā piemēra bloku."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "Include explanation",
-            "subtitle": "Add your explanation as a paragraph block below."
+            "title": "Iekļaut skaidrojumu",
+            "subtitle": "Pievienot jūsu skaidrojumu zemāk kā rindkopas bloku."
           },
           "groupMistakesByTopic": {
-            "title": "Group mistakes by topic",
-            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+            "title": "Grupēt kļūdas pēc tēmas",
+            "subtitle": "Saglabāt ātrās kļūdas pašreizējā tēmā, nevis sadaļā “Biežās kļūdas”."
           },
           "askBeforeSavingMistakes": {
-            "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
+            "title": "Jautāt pirms kļūdu saglabāšanas",
+            "subtitle": "Apstiprināt, pirms esejas problēma kļūst par piezīmi. Tas ir svarīgāks par automātisko saglabāšanu."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
+            "title": "Automātiski saglabāt eseju kļūdas",
+            "subtitle": "Katra esejā atrastā gramatikas problēma kļūst par piezīmi. Ja ieslēgts “Jautāt pirms saglabāšanas”, tas jautā vienreiz par visu pārbaudi."
           },
           "groupsPinnedNotesFirst": {
-            "title": "Pinned notes first",
-            "subtitle": "Keep important rules at the top of each topic."
+            "title": "Piespraustās piezīmes pirmās",
+            "subtitle": "Turiet svarīgos likumus katras tēmas augšpusē."
           },
           "usesCompactCards": {
-            "title": "Compact note cards",
-            "subtitle": "Show tighter cards when you want more notes on screen."
+            "title": "Kompaktas piezīmju kartītes",
+            "subtitle": "Rādīt blīvākas kartītes, kad vēlaties vairāk piezīmju ekrānā."
           },
           "showsHelperTips": {
-            "title": "Show helper tips",
-            "subtitle": "Display short contextual hints while creating notes."
+            "title": "Rādīt padomus",
+            "subtitle": "Rādīt īsus, kontekstam atbilstošus padomus, veidojot piezīmes."
           },
           "autoAddNotesToReview": {
-            "title": "Add new notes to review",
-            "subtitle": "Every note you save joins the review queue, due a day later."
+            "title": "Pievienot jaunās piezīmes atkārtošanai",
+            "subtitle": "Katra saglabātā piezīme nonāk atkārtošanas rindā – tās kārta pienāk nākamajā dienā."
           }
         }
       },
-      "editTopic": "Edit topic",
+      "editTopic": "Rediģēt tēmu",
       "toSet": {
-        "title": "Make a set from this note",
-        "subtitle": "Pick the pairs to turn into flashcards.",
-        "setTitle": "Set title",
-        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
-        "button": "Make a set",
-        "create": "Create set",
-        "creating": "Creating…",
-        "error": "Couldn't create the set. Try again.",
-        "cards_one": "{{count}} card",
-        "cards_other": "{{count}} cards"
+        "title": "Izveidot komplektu no šīs piezīmes",
+        "subtitle": "Izvēlieties pārus, kas kļūs par kartītēm.",
+        "setTitle": "Komplekta nosaukums",
+        "empty": "No šīs piezīmes vēl nav ko pārvērst kartītēs. Salīdzinājuma, piemēra un likuma bloki pārvēršas tieši, bet saraksta vienumi dalās pie domuzīmes – kā “hacer — darīt”.",
+        "button": "Izveidot komplektu",
+        "create": "Izveidot komplektu",
+        "creating": "Veido…",
+        "error": "Neizdevās izveidot komplektu. Mēģiniet vēlreiz.",
+        "cards_one": "{{count}} kartīte",
+        "cards_other": "{{count}} kartītes",
+        "cards_zero": "{{count}} kartīšu"
       },
-      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "topicsEmptyTip": "Tēma ir mape piezīmēm – viena katrai valodai vai viena katrai lietai, kurā pastāvīgi kļūdāties.",
+      "notesEmptyTip": "Katra saglabātā piezīme nonāk atkārtošanas rindā, tāpēc to pierakstīt jau nozīmē sākt to trenēt.",
+      "notesCount_zero": "{{count}} piezīmju"
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "Prakses režīmi",
+    "loading": "Ielādē…",
+    "loadError": "Neizdevās ielādēt jūsu lasāmvielu.",
+    "notFound": "Šis vienums, iespējams, ir dzēsts.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "Šodienas progress",
+      "subtitle": "Uzturiet savu lasīšanas sēriju."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "Drīzumā",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "Mani teksti",
+        "subtitle": "Ielīmējiet savu tekstu un lasiet to ar palīdzību."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "Lasīšana no komplektiem",
+        "subtitle": "Izveidojiet lasāmvielu no saviem kartīšu komplektiem."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "Stāsta režīms",
+        "subtitle": "Lasiet interaktīvus stāstus ar sazarotām izvēlēm."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "Ātrlasīšana",
+        "subtitle": "Trenējiet ātrāku lasīšanu ar noteiktu tempu."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "Mani teksti",
+      "subtitle": "Jūsu saglabātie lasāmie teksti.",
+      "addText": "Pievienot tekstu",
+      "emptyTitle": "Vēl nav tekstu",
+      "emptyBody": "Pievienojiet savu pirmo tekstu, lai sāktu lasīšanas praksi.",
+      "savedTitle": "Saglabātie teksti"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "Jauns",
+      "inProgress": "Iesākts",
+      "completed": "Pabeigts"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "{{count}} vārds",
+      "words_other": "{{count}} vārdi",
+      "start": "Sākt",
+      "continue": "Turpināt",
+      "readAgain": "Lasīt vēlreiz",
+      "rename": "Pārdēvēt",
+      "renamePrompt": "Jauns nosaukums:",
+      "delete": "Dzēst",
+      "deleteConfirm": "Dzēst “{{title}}”? To nevarēs atsaukt.",
+      "words_zero": "{{count}} vārdu"
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "Turpināt lasīšanu",
+      "percent": "{{percent}} % pabeigts",
+      "button": "Turpināt"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "Galvenā doma",
+      "vocabulary": "Vārdu krājums",
+      "detailedComprehension": "Detalizēta izpratne",
+      "grammarAwareness": "Uzmanība gramatikai",
+      "speedFluency": "Ātrums / plūdums"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "Izpratne",
+      "trueFalse": "Patiess / Aplams",
+      "fillGap": "Aizpildīt tukšumu",
+      "vocabulary": "Vārdu krājums",
+      "findEvidence": "Atrast pierādījumu",
+      "orderReconstruction": "Secība"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "Izcelt nezināmos vārdus",
+      "translationOnTap": "Tulkot, pieskaroties",
+      "vocabularyHints": "Vārdu krājuma padomi",
+      "readingTimer": "Lasīšanas taimeris"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "Pievienot tekstu",
+      "subtitle": "Ielīmējiet tekstu un iestatiet savu lasīšanas praksi.",
+      "untitled": "Teksts bez nosaukuma",
+      "pastePlaceholder": "Ielīmējiet vai ierakstiet savu tekstu šeit…",
+      "titleLabel": "Nosaukums",
+      "titlePlaceholder": "Nav obligāts – varam kādu ieteikt",
+      "language": "Valoda",
+      "difficulty": "Grūtība",
+      "autoDetect": "Noteikt automātiski",
+      "manual": "Izvēlēties manuāli",
+      "focus": "Lasīšanas fokuss",
+      "questionTypes": "Jautājumu veidi",
+      "assistance": "Lasīšanas palīdzība",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
+        "words_one": "{{count}} vārds",
+        "words_other": "{{count}} vārdi",
+        "chars_one": "{{count}} rakstzīme",
+        "chars_other": "{{count}} rakstzīmes",
         "min": "min",
-        "detected": "Detected: {{level}}"
+        "detected": "Noteikts: {{level}}",
+        "words_zero": "{{count}} vārdu",
+        "chars_zero": "{{count}} rakstzīmju"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "Vispirms pievienojiet tekstu.",
+        "tooShort": "Pievienojiet vismaz 20 vārdus."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "Saglabāt tekstu",
+      "saveAndStart": "Saglabāt un sākt",
+      "saving": "Saglabā…",
+      "saveError": "Neizdevās saglabāt. Mēģiniet vēlreiz.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
+        "pasteText": "Ielīmēt",
+        "photo": "Foto",
         "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "generate": "Ģenerēt",
+        "explore": "Izpētīt"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "Informatīvs",
+        "casual": "Nepiespiests",
+        "academic": "Akadēmisks",
+        "narrative": "Stāstošs"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "Īss",
+        "medium": "Vidējs",
+        "long": "Garš"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "Augšupielādējiet lapas fotoattēlu – mēs iegūsim tekstu.",
+        "chooseImage": "Izvēlēties attēlu",
+        "recognizing": "Atpazīst… {{percent}} %",
+        "imageError": "Neizdevās nolasīt tekstu no šī attēla.",
+        "pdfHint": "Augšupielādējiet PDF – mēs iegūsim tekstu.",
+        "choosePDF": "Izvēlēties PDF",
+        "reading": "Lasa PDF…",
+        "pdfError": "Neizdevās nolasīt šo PDF.",
+        "topicPlaceholder": "Tēma – piem. koraļļu rifi, grāmatiespiešana",
+        "explorePlaceholder": "Tēma vai atslēgvārds – piem. Marija Kirī, Venēcija",
+        "generateButton": "Ģenerēt tekstu",
+        "exploreButton": "Iegūt rakstu",
+        "working": "Strādā…",
+        "generateError": "Neizdevās ģenerēt tekstu. Mēģiniet vēlreiz.",
+        "exploreError": "Neizdevās atrast rakstu par šo tēmu.",
+        "exploredFrom": "Iegūts no"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again.",
-      "translation": "Translation",
-      "textLabel": "Text"
+      "startQuestions": "Pāriet uz jautājumiem",
+      "finish": "Pabeigt",
+      "next": "Tālāk",
+      "questionOf": "{{current}}. jautājums no {{total}}",
+      "closeTranslation": "Aizvērt tulkojumu",
+      "translating": "Tulko…",
+      "translationError": "Neizdevās iztulkot. Mēģiniet vēlreiz.",
+      "translation": "Tulkojums",
+      "textLabel": "Teksts"
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts",
-      "complete": "Practice Complete"
+      "comprehension": "Izpratne",
+      "correct": "Pareizi",
+      "time": "Lasīšanas laiks",
+      "wpm": "vārdi/min",
+      "mistakes": "Kļūdas",
+      "mistakesTitle": "Pārskatiet savas kļūdas",
+      "readAgain": "Lasīt vēlreiz",
+      "back": "Atpakaļ uz “Mani teksti”",
+      "complete": "Prakse pabeigta"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "Lasīšana no komplektiem",
+      "subtitle": "Pārvērtiet kartīšu komplektu par lasāmvielu.",
+      "pickSet": "Izvēlieties komplektu",
+      "changeSet": "Mainīt komplektu",
+      "tooFewWords": "Šim komplektam vajadzīgi vismaz {{count}} vārdi, lai izveidotu lasāmvielu.",
+      "mode": "Ģenerēšanas režīms",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "Dabisks",
+        "strict": "Strikts",
+        "mixed": "Jaukts"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "Lasāmvielas garums",
+      "generate": "Ģenerēt lasāmvielu",
+      "generating": "Veido jūsu lasāmvielu…",
+      "generateError": "Neizdevās izveidot lasāmvielu. Mēģiniet vēlreiz.",
+      "emptyTitle": "Vēl nav lasāmvielas",
+      "emptyBody": "Izvēlieties kartīšu komplektu, un mēs to pārvērtīsim lasāmā tekstā.",
+      "savedTitle": "Saglabātā lasāmviela"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "Ātrlasīšana",
+      "subtitle": "Trenējiet ātrāku lasīšanu ar noteiktu tempu.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "Mērķa lasīšanas ātrums",
+        "timer": "Taimera stils",
+        "length": "Lasāmvielas garums"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "Mierīgs",
+        "balanced": "Līdzsvarots",
+        "fast": "Ātrs",
+        "challenge": "Izaicinājums"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "Bez taimera",
+        "soft": "Maigs taimeris",
+        "strict": "Strikts taimeris"
       },
       "length": {
         "two": "2 min",
         "five": "5 min",
         "ten": "10 min"
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
-      "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "summary": "Mērķis {{wpm}} vārdi/min · ~{{minutes}} min lasīšanas",
+      "start": "Sākt sesiju",
+      "preparing": "Gatavo jūsu fragmentu…",
+      "generateError": "Neizdevās izveidot fragmentu. Mēģiniet vēlreiz.",
+      "recentTitle": "Nesenās sesijas",
+      "chunkOf": "{{current}}. daļa no {{total}}",
+      "previous": "Iepriekšējā daļa",
+      "pause": "Pauze",
+      "resume": "Turpināt",
+      "nextChunk": "Nākamā daļa",
+      "finishReading": "Pabeigt lasīšanu",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "Teicami",
+        "balanced": "Mērķī",
+        "fast": "Gandrīz",
+        "tooSlow": "Pārāk lēni"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "Vidēji vārdi/min",
+        "target": "Mērķis vārdi/min",
+        "violations_one": "{{count}} laika pārsniegums",
+        "violations_other": "{{count}} laika pārsniegumi",
+        "violations_zero": "{{count}} laika pārsniegumu"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "Mēģināt vēlreiz",
+      "backToSetup": "Atpakaļ uz iestatījumiem"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "Stāsta režīms",
+      "subtitle": "Lasiet interaktīvus stāstus ar sazarotām izvēlēm.",
+      "typeSection": "Stāsta veids",
       "type": {
-        "adventure": "Adventure",
-        "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "adventure": "Piedzīvojumi",
+        "fantasy": "Fantāzija",
+        "mystery": "Detektīvs",
+        "romance": "Romantika",
+        "dailyLife": "Ikdienas dzīve"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "Stāsta garums",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "Īsstāsts",
+        "multiChapter": "Vairākas nodaļas",
+        "infinite": "Bezgalīgs stāsts"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "Sākt stāstu",
+      "generating": "Raksta jūsu stāstu…",
+      "generatingNext": "Raksta nākamo nodaļu…",
+      "generateError": "Neizdevās uzrakstīt stāstu. Mēģiniet vēlreiz.",
+      "emptyTitle": "Vēl nav stāstu",
+      "emptyBody": "Sāciet savu pirmo interaktīvo stāstu augšpusē.",
+      "savedTitle": "Jūsu stāsti",
+      "chapterN": "{{n}}. nodaļa",
+      "chapterOf": "{{current}}. nodaļa no {{total}}",
+      "chapterScore": "Nodaļas vērtējums",
+      "whatNext": "Kas notiek tālāk?",
+      "endStory": "Beigt stāstu",
+      "completeTitle": "Stāsts pabeigts",
+      "completeBody_one": "Jūs izlasījāt {{count}} nodaļu. Lielisks lasījums!",
+      "completeBody_other": "Jūs izlasījāt {{count}} nodaļas. Lielisks lasījums!",
+      "backToStories": "Atpakaļ uz stāstiem",
+      "completeBody_zero": "Jūs izlasījāt {{count}} nodaļu. Lielisks lasījums!"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "Prakses režīmi",
+    "notFound": "Šī sesija, iespējams, ir dzēsta.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "Šodienas progress",
+      "subtitle": "klausīšanās prakses"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "Drīzumā",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "Klausīšanās no teksta",
+        "subtitle": "Ielīmējiet tekstu, noklausieties to un pārbaudiet izpratni."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "Importēt audio",
+        "subtitle": "Augšupielādējiet savu audio un pārvērtiet to klausīšanās praksē."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "Importēt video",
+        "subtitle": "Augšupielādējiet video, saņemiet subtitrus un trenējieties ar jautājumiem."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "Saglabātā prakse",
+        "subtitle": "Turpiniet iepriekšējās sesijas un pārskatiet savas kļūdas."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
-      "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "mainIdea": "Galvenā doma",
+      "details": "Detaļas",
+      "vocabulary": "Vārdu krājums",
+      "trueFalse": "Patiess / Aplams"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "Klausīšanās no teksta",
+      "subtitle": "Ielīmējiet tekstu un pārvērtiet to klausīšanās praksē.",
+      "level": "Līmenis",
+      "voiceSpeed": "Balss ātrums",
+      "voiceType": "Balss veids",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "Noklusējuma",
+        "female": "Sieviešu",
+        "male": "Vīriešu"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "Rādīt tekstu klausoties",
+      "addQuestions": "Pievienot izpratnes jautājumus",
+      "questionCount": "Jautājumu skaits",
+      "questionTypes": "Jautājumu veidi",
+      "optionalTitle": "Nosaukums (nav obligāts)",
+      "titlePlaceholder": "Piešķiriet savam tekstam nosaukumu",
+      "textPlaceholder": "Ielīmējiet savu tekstu šeit...",
+      "recommended": "Ieteicams: 80–500 vārdi.",
+      "words": "vārdi",
+      "defaultTitle": "Klausīšanās prakse",
+      "start": "Sākt klausīties",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "Pievienojiet tekstu, lai sāktu klausīties.",
+        "tooShort": "Pievienojiet vismaz 40 rakstzīmes, lai sāktu klausīties.",
+        "tooLong": "Šis teksts ir pārāk garš. Lūdzu, nepārsniedziet 5000 rakstzīmju.",
+        "tooFewWords": "Pievienojiet nedaudz vairāk teksta (aptuveni 40 vārdu vai vairāk), lai varam izveidot labus jautājumus."
       },
-      "voiceSettings": "Voice Settings",
-      "questions": "Questions",
-      "textInput": "Text Input"
+      "voiceSettings": "Balss iestatījumi",
+      "questions": "Jautājumi",
+      "textInput": "Teksta ievade"
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "Atskaņot vēlreiz",
+      "transcript": "Transkripcija",
+      "questionsTitle": "Jautājumi",
+      "answerFirst": "Pirms pārbaudes atbildiet vismaz uz vienu jautājumu.",
+      "checkAnswers": "Pārbaudīt atbildes",
+      "finish": "Pabeigt praksi"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "Prakse pabeigta",
+      "comprehension": "Izpratne",
+      "correct": "Pareizi",
+      "time": "Klausīšanās laiks",
+      "speed": "Ātrums",
+      "mistakes": "Kļūdas",
+      "mistakesTitle": "Pārskatiet savas kļūdas",
+      "watchOnlyTitle": "Klausīšanās pabeigta",
+      "watchOnlyBody": "Jūs klausījāties {{time}}.",
+      "practiceAgain": "Praktizēties vēlreiz",
+      "back": "Atpakaļ uz klausīšanos"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "Importēt audio",
+      "subtitle": "Pārvērtiet savu audio klausīšanās praksē.",
+      "uploadTitle": "Augšupielādēt audio failu",
+      "uploadFormats": "MP3, M4A, WAV vai AAC · līdz 50 MB",
+      "chooseFile": "Izvēlēties failu",
+      "clearFile": "Noņemt failu",
+      "infoNote": "Jūsu audio tiks transkribēts fonā. Prakses laikā transkripcija paliek paslēpta.",
+      "continue": "Turpināt",
+      "processingTitle": "Gatavo jūsu klausīšanās praksi",
+      "step1": "Augšupielādē audio",
+      "step2": "Transkribē runu",
+      "step3": "Veido jautājumus",
+      "processError": "Neizdevās sagatavot šo audio. Mēģiniet vēlreiz.",
+      "tryAgain": "Mēģināt vēlreiz",
+      "chooseAnother": "Izvēlēties citu failu",
+      "transcriptHidden": "Transkripcija ir paslēpta, lai šis paliktu īsts klausīšanās vingrinājums."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "Importēt video",
+      "subtitle": "Augšupielādējiet video, saņemiet subtitrus un trenējieties ar jautājumiem.",
+      "uploadTitle": "Augšupielādēt video failu",
+      "uploadFormats": "MP4, MOV vai M4V · līdz 80 MB",
+      "step1": "Gatavo video",
+      "step2": "Transkribē runu",
+      "step3": "Veido subtitrus",
+      "subtitles": "Subtitri",
+      "subtitlesOn": "Subtitri ieslēgti",
+      "subtitlesOff": "Subtitri izslēgti",
+      "noSubtitles": "Šim video subtitru nav.",
+      "tapWord": "Pieskarieties vārdam, lai to iztulkotu.",
+      "questionsLocked": "Jautājumi atveras, kad esat noskatījies video."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "Tulkot vārdu",
+      "pickSet": "Izvēlieties komplektu",
+      "createSet": "Izveidot komplektu",
+      "addToSet": "Pievienot komplektam",
+      "noSets": "Jums vēl nav komplektu. Izveidojiet vienu zemāk.",
+      "setNamePlaceholder": "piem. Vārdi no video",
+      "createAndAdd": "Izveidot un pievienot vārdu",
+      "saved": "Saglabāts komplektā “{{set}}”."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "Saglabātā prakse",
+      "subtitle": "Turpiniet sesijas un pārskatiet savas klausīšanās kļūdas.",
+      "emptyTitle": "Nav saglabātu sesiju",
+      "emptyBody": "Pabeidziet vai apturiet klausīšanās sesiju, un tā parādīsies šeit.",
+      "continueEyebrow": "Turpināt klausīšanos",
+      "percentComplete": "{{percent}} % pabeigts",
+      "continue": "Turpināt",
+      "review": "Pārskatīt",
+      "delete": "Dzēst sesiju",
+      "deleteConfirm": "Dzēst “{{title}}”? To nevarēs atsaukt.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "Melnraksts",
+        "inProgress": "Iesākta",
+        "completed": "Pabeigta"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "Prakses režīmi",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "Šodienas progress",
+      "subtitle": "runāšanas prakses"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "Drīzumā",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "Saruna ar MI",
+        "subtitle": "Runājiet ar MI pasniedzēju reāllaikā."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "Brīvā runa",
+        "subtitle": "Runājiet par ģenerētām tēmām un saņemiet atsauksmi."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "Aprakstīt attēlu",
+        "subtitle": "Aprakstiet attēlus un mācieties noderīgus vārdus."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "Debašu režīms",
+        "subtitle": "Apspriediet tēmas un veidojiet argumentus."
       },
       "shadowing": {
         "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "subtitle": "Atkārtojiet frāzes un uzlabojiet izrunu."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "Izrunas treneris",
+        "subtitle": "Koncentrējieties uz grūtām skaņām un vārdiem."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "Runāt",
+      "stop": "Apturēt",
+      "listening": "Klausās…",
+      "placeholder": "Ierakstiet savu atbildi…",
+      "noVoice": "Šī pārlūkprogramma neatbalsta balss ievadi – ierakstiet atbildi."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
+      "title": "Saruna ar MI",
+      "subtitle": "Runājiet ar MI pasniedzēju reāllaikā.",
+      "topic": "Tēma",
+      "scenarios": "Scenāriji",
+      "autoTopic": "Pārsteidz mani",
+      "autoTopicHint": "Ģenerēsim jums jaunu tēmu.",
+      "length": "Ilgums",
       "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "start": "Sākt sarunu",
+      "starting": "Sāk…",
+      "startError": "Neizdevās sākt sarunu. Mēģiniet vēlreiz.",
+      "end": "Beigt",
+      "dismiss": "Aizvērt",
+      "hint": "Padoms",
+      "getHint": "Vajag padomu?",
+      "hintLoading": "Domā…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "Prakse pabeigta",
+      "generating": "Analizē jūsu runu…",
+      "overall": "Kopvērtējums",
+      "corrections": "Labojumi",
+      "transcript": "Transkripcija",
+      "practiceAgain": "Praktizēties vēlreiz",
+      "back": "Atpakaļ uz runāšanu"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
-      "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "title": "Brīvā runa",
+      "subtitle": "Runājiet brīvi par tēmu un saņemiet atsauksmi.",
+      "preview": "Priekšskatījums",
+      "autoTopic": "MI ģenerēta tēma",
+      "autoTopicHint": "Kad sāksiet, izvēlēsimies jaunu tēmu: {{language}} · {{level}}.",
+      "auto": "Automātiski",
+      "start": "Sākt brīvo runu",
+      "generating": "Ģenerē tēmu…",
+      "generatingHint": "Meklējam kaut ko jūsu līmenim.",
+      "fallbackTopic": "Neizdevās ģenerēt tēmu. Izmantojam rezerves tēmu.",
+      "transcript": "Transkripcija",
+      "transcriptHint": "Jūsu transkripcija parādīsies šeit, kamēr runājat.",
+      "startSpeaking": "Sākt runāt"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "Aprakstīt attēlu",
+      "subtitle": "Aprakstiet to, ko redzat, un saņemiet atsauksmi.",
+      "start": "Sākt “Aprakstīt attēlu”",
+      "prompt": "Aprakstiet, ko redzat šajā attēlā.",
+      "tryToMention": "Mēģiniet pieminēt:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "cilvēkus",
+        "objects": "priekšmetus",
+        "actions": "darbības",
+        "colors": "krāsas",
+        "emotions": "emocijas"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "Ielādē fotoattēlu…",
+      "retry": "Mēģināt vēlreiz",
+      "newPhoto": "Cits fotoattēls",
+      "imageAlt": "Fotoattēls aprakstīšanai",
+      "photoBy": "Fotoattēls:",
+      "onUnsplash": "vietnē Unsplash",
+      "startDescribing": "Sākt aprakstīt"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "Debašu režīms",
+      "subtitle": "Aizstāviet savu pusi pret MI pretinieku.",
+      "start": "Sākt debates",
+      "pickSide": "Jūsu puse",
+      "preparing": "Gatavo debašu tēmu…",
+      "roundOf": "{{current}}. raunds no {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "Piekrītu",
+          "subtitle": "Aizstāviet apgalvojumu"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "Nepiekrītu",
+          "subtitle": "Argumentējiet pret"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "Pārsteidz mani",
+          "subtitle": "Pusi izvēlēsimies mēs"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "Klausīties",
+      "playing": "Atskaņo…",
+      "record": "Ierakstīt",
+      "stop": "Apturēt",
+      "playMine": "Atskaņot manu",
+      "noRecording": "Šī pārlūkprogramma neatbalsta ierakstīšanu – klausīties un atkārtot tomēr varat."
     },
     "shadowing": {
       "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "subtitle": "Klausieties, atkārtojiet un salīdziniet sevi.",
+      "start": "Sākt “Shadowing”",
+      "category": "Kategorija",
+      "howItWorks": "Noklausieties frāzi, skaļi atkārtojiet to, ierakstot, pēc tam atskaņojiet savu un salīdziniet ritmu.",
+      "loading": "Ģenerē frāzes…",
+      "phrase": "Frāze",
+      "previous": "Iepriekšējā",
+      "nextPhrase": "Nākamā frāze",
+      "finish": "Pabeigt",
+      "changeSettings": "Mainīt iestatījumus",
+      "done": "Izdarīts: {{count}}",
+      "allDone": "Visas frāzes izmēģinātas!",
+      "newSet": "Jauns komplekts"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "Izrunas treneris",
+      "subtitle": "Koncentrējieties uz grūtām skaņām un vārdiem.",
+      "start": "Sākt treniņu",
+      "focus": "Fokuss",
+      "difficulty": "Grūtība",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "Viegli",
+        "balanced": "Līdzsvaroti",
+        "hard": "Grūti"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "Ģenerē vingrinājumus…",
+      "sound": "Skaņa",
+      "scoringUnavailable": "Automātiskā izrunas vērtēšana serverī vēl nav iestatīta, tāpēc vērtējums netiek rādīts. Klausīšanās, ierakstīšana un atskaņošana darbojas."
     }
   },
   "profile": {
-    "interfaceLanguage": "Interface language",
+    "interfaceLanguage": "Saskarnes valoda",
     "password": {
-      "title": "Create a password",
-      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
-      "save": "Save password",
-      "saving": "Saving...",
-      "savedInfo": "Password created. You can sign in with your email now too."
+      "title": "Izveidojiet paroli",
+      "body": "Jūsu konts izveidots ar Google, tāpēc tam nav paroles – ar e-pasta un paroles laukiem pieteikties nevar. Iestatiet paroli, un darbosies abi veidi.",
+      "save": "Saglabāt paroli",
+      "saving": "Saglabā...",
+      "savedInfo": "Parole izveidota. Tagad varat pieteikties arī ar savu e-pastu."
     }
   },
   "units": {
     "min": "min",
-    "words": "words"
+    "words": "vārdi"
   },
   "link": {
-    "title": "Sign in with a link",
-    "subtitle": "We'll email you a one-time link. No password to remember.",
-    "send": "Send the link",
-    "sending": "Sending...",
-    "sentInfo": "Link sent. Check your email.",
-    "sentTitle": "Check your email",
-    "sentBody": "We sent a sign-in link to",
-    "useAnotherEmail": "Use another email",
-    "backToPassword": "Sign in with a password instead"
+    "title": "Pieteikties ar saiti",
+    "subtitle": "Nosūtīsim jums e-pastā vienreizēju saiti. Nekādu paroļu, ko atcerēties.",
+    "send": "Nosūtīt saiti",
+    "sending": "Sūta...",
+    "sentInfo": "Saite nosūtīta. Pārbaudiet e-pastu.",
+    "sentTitle": "Pārbaudiet e-pastu",
+    "sentBody": "Pieteikšanās saiti nosūtījām uz",
+    "useAnotherEmail": "Izmantot citu e-pastu",
+    "backToPassword": "Labāk pieteikties ar paroli"
   },
   "action": {
-    "working": "One moment...",
-    "continue": "Continue",
-    "confirmEmailTitle": "Confirm your email",
-    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
-    "resetTitle": "New password",
-    "resetSubtitle": "Choose a new password for",
-    "newPassword": "New password",
-    "confirmPassword": "Repeat password",
-    "savePassword": "Save password",
-    "resetDoneTitle": "Password updated",
-    "resetDoneBody": "You can sign in with your new password now.",
-    "failedTitle": "That link didn't work",
-    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
-    "backToSignIn": "Back to sign in"
+    "working": "Vienu mirkli...",
+    "continue": "Turpināt",
+    "confirmEmailTitle": "Apstipriniet savu e-pastu",
+    "confirmEmailBody": "Šī saite tika atvērta citā pārlūkprogrammā. Ievadiet adresi, uz kuru tā tika nosūtīta, un mēs pabeigsim pieteikšanos.",
+    "resetTitle": "Jauna parole",
+    "resetSubtitle": "Izvēlieties jaunu paroli kontam",
+    "newPassword": "Jauna parole",
+    "confirmPassword": "Atkārtojiet paroli",
+    "savePassword": "Saglabāt paroli",
+    "resetDoneTitle": "Parole atjaunināta",
+    "resetDoneBody": "Tagad varat pieteikties ar savu jauno paroli.",
+    "failedTitle": "Šī saite nedarbojās",
+    "failedBody": "Iespējams, tā jau ir izmantota vai tai beidzies termiņš. Pieprasiet jaunu pieteikšanās ekrānā.",
+    "backToSignIn": "Atpakaļ uz pieteikšanos"
   },
   "common": {
-    "cancel": "Cancel",
-    "delete": "Delete",
+    "cancel": "Atcelt",
+    "delete": "Dzēst",
     "view": {
-      "label": "View",
-      "rows": "List",
-      "grid": "Grid"
+      "label": "Skats",
+      "rows": "Saraksts",
+      "grid": "Režģis"
     }
   },
   "practice": {
     "language": {
-      "label": "Language",
-      "search": "Search a language",
-      "noMatch": "No language matches that.",
-      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+      "label": "Valoda",
+      "search": "Meklēt valodu",
+      "noMatch": "Neviena valoda neatbilst.",
+      "noVoice": "Jūsu pārlūkprogrammai nav {{language}} valodas balss, tāpēc pasniedzējs šajā valodā nerunās. Pievienojiet valodas pakotni sistēmas iestatījumos vai izvēlieties citu valodu."
     }
   }
 }

@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "1|WordAround",
-    "tagline": "2|Tanulj nyelveket aktívan."
+    "name": "WordAround",
+    "tagline": "Tanulj nyelveket aktívan."
   },
   "onboarding": {
-    "subtitle": "3|Tanulj szavakat játékosan\\nés egyszerűen",
-    "start": "4|Kezdjük"
+    "subtitle": "Tanulj szavakat játékosan\\nés egyszerűen",
+    "start": "Kezdjük"
   },
   "auth": {
-    "welcomeBack": "5|Üdv újra!",
-    "subtitle": "6|Jelentkezz be a tanulás folytatásához",
-    "email": "7|E-mail",
-    "emailPlaceholder": "8|Add meg az e-mail-címed",
-    "password": "9|Jelszó",
-    "passwordPlaceholder": "10|Add meg a jelszavad",
-    "forgotPassword": "11|Elfelejtetted a jelszót?",
-    "signIn": "12|Bejelentkezés",
-    "signingIn": "13|Bejelentkezés...",
-    "signUp": "14|Regisztráció",
-    "signOut": "15|Kijelentkezés",
-    "continueWithGoogle": "16|Folytatás Google-fiókkal",
-    "createAccount": "17|Fiók létrehozása",
-    "accountCreatedInfo": "18|A fiók elkészült. Küldtünk egy megerősítő e-mailt.",
-    "resetEmailSent": "19|Elküldtük a jelszó-visszaállító e-mailt",
-    "showPassword": "20|Jelszó megjelenítése",
-    "hidePassword": "21|Jelszó elrejtése",
-    "back": "22|Vissza",
-    "signUpTitle": "23|Hozd létre a fiókod",
-    "signUpSubtitle": "24|Napi néhány perc, és a szókincsed nő",
-    "name": "25|Név",
-    "namePlaceholder": "26|Hogy szólítsunk?",
-    "orWithEmail": "27|vagy e-maillel",
-    "signUpWithGoogle": "28|Regisztráció Google-fiókkal",
-    "passwordHint": "29|Legalább {{min}} karakter",
-    "magicLinkCta": "30|Bejelentkezés e-mailes hivatkozással",
-    "creatingAccount": "31|Fiók létrehozása..."
+    "welcomeBack": "Üdv újra!",
+    "subtitle": "Jelentkezz be a tanulás folytatásához",
+    "email": "E-mail",
+    "emailPlaceholder": "Add meg az e-mail-címed",
+    "password": "Jelszó",
+    "passwordPlaceholder": "Add meg a jelszavad",
+    "forgotPassword": "Elfelejtetted a jelszót?",
+    "signIn": "Bejelentkezés",
+    "signingIn": "Bejelentkezés...",
+    "signUp": "Regisztráció",
+    "signOut": "Kijelentkezés",
+    "continueWithGoogle": "Folytatás Google-fiókkal",
+    "createAccount": "Fiók létrehozása",
+    "accountCreatedInfo": "A fiók elkészült. Küldtünk egy megerősítő e-mailt.",
+    "resetEmailSent": "Elküldtük a jelszó-visszaállító e-mailt",
+    "showPassword": "Jelszó megjelenítése",
+    "hidePassword": "Jelszó elrejtése",
+    "back": "Vissza",
+    "signUpTitle": "Hozd létre a fiókod",
+    "signUpSubtitle": "Napi néhány perc, és a szókincsed nő",
+    "name": "Név",
+    "namePlaceholder": "Hogy szólítsunk?",
+    "orWithEmail": "vagy e-maillel",
+    "signUpWithGoogle": "Regisztráció Google-fiókkal",
+    "passwordHint": "Legalább {{min}} karakter",
+    "magicLinkCta": "Bejelentkezés e-mailes hivatkozással",
+    "creatingAccount": "Fiók létrehozása..."
   },
   "verify": {
-    "title": "32|Erősítsd meg az e-mail-címed",
-    "subtitle": "33|Még egy lépés, mielőtt belevágsz",
-    "sentTo": "34|Megerősítő hivatkozást küldtünk ide:",
-    "fallbackEmail": "35|az e-mail-címedre",
-    "step1": "36|Nyisd meg az e-mailt a postafiókodban",
-    "step2": "37|Koppints a megerősítő hivatkozásra",
-    "step3": "38|Rögtön meg is nyitjuk a tanulást — ide nem kell visszajönnöd",
-    "checkButton": "39|Megerősítettem az e-mail-címem",
-    "checking": "40|Ellenőrzés...",
-    "resend": "41|E-mail újraküldése",
-    "useAnotherAccount": "42|Másik fiók használata",
-    "badgeInbox": "43|Nézd meg a postafiókod",
-    "badgeConfirm": "44|Erősítsd meg",
-    "badgeDone": "45|Kész",
-    "resentInfo": "46|Újraküldtük a megerősítő e-mailt",
-    "notVerifiedYet": "47|Az e-mail-cím még nincs megerősítve"
+    "title": "Erősítsd meg az e-mail-címed",
+    "subtitle": "Még egy lépés, mielőtt belevágsz",
+    "sentTo": "Megerősítő hivatkozást küldtünk ide:",
+    "fallbackEmail": "az e-mail-címedre",
+    "step1": "Nyisd meg az e-mailt a postafiókodban",
+    "step2": "Koppints a megerősítő hivatkozásra",
+    "step3": "Rögtön meg is nyitjuk a tanulást — ide nem kell visszajönnöd",
+    "checkButton": "Megerősítettem az e-mail-címem",
+    "checking": "Ellenőrzés...",
+    "resend": "E-mail újraküldése",
+    "useAnotherAccount": "Másik fiók használata",
+    "badgeInbox": "Nézd meg a postafiókod",
+    "badgeConfirm": "Erősítsd meg",
+    "badgeDone": "Kész",
+    "resentInfo": "Újraküldtük a megerősítő e-mailt",
+    "notVerifiedYet": "Az e-mail-cím még nincs megerősítve"
   },
   "errors": {
-    "emailRequired": "48|Az e-mail-cím kötelező",
-    "emailInvalid": "49|Adj meg érvényes e-mail-címet",
-    "emailFirst": "50|Előbb add meg az e-mail-címed",
-    "passwordRequired": "51|A jelszó kötelező",
-    "passwordTooShort": "52|A jelszónak legalább 8 karakterből kell állnia",
-    "invalidEmail": "53|Érvénytelen e-mail-formátum",
-    "wrongPassword": "54|Hibás e-mail-cím vagy jelszó. Ha Google-fiókkal regisztráltál, használd a Google gombot.",
-    "userNotFound": "55|Hibás e-mail-cím vagy jelszó. Ha Google-fiókkal regisztráltál, használd a Google gombot.",
-    "invalidCredential": "56|Hibás e-mail-cím vagy jelszó. Ha Google-fiókkal regisztráltál, használd a Google gombot.",
-    "emailInUse": "57|Ez a fiók már létezik",
-    "weakPassword": "58|Ez a jelszó túl gyenge",
-    "network": "59|Hálózati hiba. Ellenőrizd az internetkapcsolatod",
-    "tooManyRequests": "60|Túl sok próbálkozás. Próbáld később",
-    "differentCredential": "61|Ezt az e-mail-címet már más bejelentkezési móddal használják",
-    "noActiveAccount": "62|Nem található aktív fiók",
-    "default": "63|A bejelentkezés nem sikerült. Próbáld újra",
-    "nameRequired": "64|A név kötelező",
-    "passwordsDoNotMatch": "65|A jelszavak nem egyeznek",
-    "actionExpired": "66|Ez a hivatkozás lejárt. Kérj újat.",
-    "actionInvalid": "67|Ez a hivatkozás már nem érvényes.",
-    "userDisabled": "68|Ezt a fiókot letiltották.",
-    "requiresRecentLogin": "69|Biztonsági okból jelentkezz be újra, majd ismételd meg ezt.",
-    "passwordAlreadySet": "70|Ehhez a fiókhoz már tartozik jelszó.",
-    "linkNoEmail": "71|Add meg azt az e-mail-címet, amelyre a hivatkozás érkezett"
+    "emailRequired": "Az e-mail-cím kötelező",
+    "emailInvalid": "Adj meg érvényes e-mail-címet",
+    "emailFirst": "Előbb add meg az e-mail-címed",
+    "passwordRequired": "A jelszó kötelező",
+    "passwordTooShort": "A jelszónak legalább 8 karakterből kell állnia",
+    "invalidEmail": "Érvénytelen e-mail-formátum",
+    "wrongPassword": "Hibás e-mail-cím vagy jelszó. Ha Google-fiókkal regisztráltál, használd a Google gombot.",
+    "userNotFound": "Hibás e-mail-cím vagy jelszó. Ha Google-fiókkal regisztráltál, használd a Google gombot.",
+    "invalidCredential": "Hibás e-mail-cím vagy jelszó. Ha Google-fiókkal regisztráltál, használd a Google gombot.",
+    "emailInUse": "Ez a fiók már létezik",
+    "weakPassword": "Ez a jelszó túl gyenge",
+    "network": "Hálózati hiba. Ellenőrizd az internetkapcsolatod",
+    "tooManyRequests": "Túl sok próbálkozás. Próbáld később",
+    "differentCredential": "Ezt az e-mail-címet már más bejelentkezési móddal használják",
+    "noActiveAccount": "Nem található aktív fiók",
+    "default": "A bejelentkezés nem sikerült. Próbáld újra",
+    "nameRequired": "A név kötelező",
+    "passwordsDoNotMatch": "A jelszavak nem egyeznek",
+    "actionExpired": "Ez a hivatkozás lejárt. Kérj újat.",
+    "actionInvalid": "Ez a hivatkozás már nem érvényes.",
+    "userDisabled": "Ezt a fiókot letiltották.",
+    "requiresRecentLogin": "Biztonsági okból jelentkezz be újra, majd ismételd meg ezt.",
+    "passwordAlreadySet": "Ehhez a fiókhoz már tartozik jelszó.",
+    "linkNoEmail": "Add meg azt az e-mail-címet, amelyre a hivatkozás érkezett"
   },
   "nav": {
-    "home": "72|Kezdőlap",
-    "speaking": "73|Beszéd",
-    "listening": "74|Hallás utáni értés",
-    "reading": "75|Olvasás",
-    "writing": "76|Írás",
-    "folders": "77|Mappák",
-    "sets": "78|Csomagok",
-    "notes": "79|Jegyzetek",
-    "profile": "80|Profil",
-    "create": "81|Új",
-    "menu": "82|Menü",
-    "closeMenu": "83|Menü bezárása",
+    "home": "Kezdőlap",
+    "speaking": "Beszéd",
+    "listening": "Hallás utáni értés",
+    "reading": "Olvasás",
+    "writing": "Írás",
+    "folders": "Mappák",
+    "sets": "Csomagok",
+    "notes": "Jegyzetek",
+    "profile": "Profil",
+    "create": "Új",
+    "menu": "Menü",
+    "closeMenu": "Menü bezárása",
     "group": {
-      "practice": "84|Gyakorlás",
-      "library": "85|Könyvtár"
+      "practice": "Gyakorlás",
+      "library": "Könyvtár"
     }
   },
   "folders": {
-    "create": "86|Új mappa",
-    "loading": "87|Mappák betöltése…",
-    "loadError": "88|Nem sikerült betölteni a mappáidat.",
-    "emptyTitle": "89|Még nincs mappád",
-    "emptyBody": "90|Hozd létre az első mappád, hogy rendezd a csomagjaidat.",
-    "setCount": "91|{{count}} csomag",
-    "setCount_one": "92|{{count}} csomag",
-    "newTitle": "93|Új mappa",
-    "newSubtitle": "94|Tedd egy helyre az összetartozó csomagokat.",
-    "editTitle": "95|Mappa szerkesztése",
-    "name": "96|Név",
-    "namePlaceholder": "97|pl. Utazás",
-    "description": "98|Leírás",
-    "descriptionPlaceholder": "99|Nem kötelező",
-    "color": "100|Szín",
-    "save": "101|Mentés",
-    "saving": "102|Mentés…",
-    "cancel": "103|Mégse",
-    "edit": "104|Mappa szerkesztése",
-    "delete": "105|Mappa törlése",
-    "deleteConfirm": "106|Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
-    "backToFolders": "107|Vissza a mappákhoz",
-    "notFoundTitle": "108|A mappa nem található",
-    "notFoundBody": "109|Lehet, hogy ezt a mappát törölték.",
-    "noSetsInFolder": "110|Ebben a mappában még nincs csomag.",
-    "saveError": "111|A mentés nem sikerült. Próbáld újra.",
+    "create": "Új mappa",
+    "loading": "Mappák betöltése…",
+    "loadError": "Nem sikerült betölteni a mappáidat.",
+    "emptyTitle": "Még nincs mappád",
+    "emptyBody": "Hozd létre az első mappád, hogy rendezd a csomagjaidat.",
+    "setCount": "{{count}} csomag",
+    "setCount_one": "{{count}} csomag",
+    "newTitle": "Új mappa",
+    "newSubtitle": "Tedd egy helyre az összetartozó csomagokat.",
+    "editTitle": "Mappa szerkesztése",
+    "name": "Név",
+    "namePlaceholder": "pl. Utazás",
+    "description": "Leírás",
+    "descriptionPlaceholder": "Nem kötelező",
+    "color": "Szín",
+    "save": "Mentés",
+    "saving": "Mentés…",
+    "cancel": "Mégse",
+    "edit": "Mappa szerkesztése",
+    "delete": "Mappa törlése",
+    "deleteConfirm": "Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
+    "backToFolders": "Vissza a mappákhoz",
+    "notFoundTitle": "A mappa nem található",
+    "notFoundBody": "Lehet, hogy ezt a mappát törölték.",
+    "noSetsInFolder": "Ebben a mappában még nincs csomag.",
+    "saveError": "A mentés nem sikerült. Próbáld újra.",
     "error": {
-      "nameRequired": "112|A mappa neve kötelező.",
-      "nameTooLong": "113|A mappa neve legfeljebb 80 karakter lehet.",
-      "descTooLong": "114|A leírás legfeljebb 120 karakter lehet."
+      "nameRequired": "A mappa neve kötelező.",
+      "nameTooLong": "A mappa neve legfeljebb 80 karakter lehet.",
+      "descTooLong": "A leírás legfeljebb 120 karakter lehet."
     },
-    "optional": "115|(nem kötelező)",
-    "preview": "116|Előnézet",
-    "previewPlaceholder": "117|Új mappa",
-    "deleteConfirmTitle": "118|Törlöd ezt a mappát?"
+    "optional": "(nem kötelező)",
+    "preview": "Előnézet",
+    "previewPlaceholder": "Új mappa",
+    "deleteConfirmTitle": "Törlöd ezt a mappát?"
   },
   "sets": {
-    "create": "119|Új csomag",
-    "loading": "120|Csomagok betöltése…",
-    "loadError": "121|Nem sikerült betölteni a csomagjaidat.",
-    "emptyTitle": "122|Még nincs csomagod",
-    "emptyBody": "123|Hozd létre az első kártyacsomagod az Új gombbal.",
-    "cardCount": "124|{{count}} kártya",
-    "cardCount_one": "125|{{count}} kártya",
-    "keepPracticing": "126|Gyakorolj tovább",
-    "delete": "127|Csomag törlése",
-    "deleteConfirm": "128|Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
-    "notFoundTitle": "129|A csomag nem található",
-    "notFoundBody": "130|Lehet, hogy ezt a csomagot törölték.",
-    "backToSets": "131|Vissza a csomagokhoz",
-    "edit": "132|Csomag szerkesztése",
-    "deleteConfirmTitle": "133|Törlöd ezt a csomagot?",
-    "editTitle": "134|Csomag szerkesztése",
-    "editSubtitle": "135|Módosítsd a címet, a színt, az ikont vagy a mappát. A kártyák a helyükön maradnak.",
-    "save": "136|Módosítások mentése",
-    "saving": "137|Mentés…",
-    "cancel": "138|Mégse",
-    "saveError": "139|A mentés nem sikerült. Próbáld újra."
+    "create": "Új csomag",
+    "loading": "Csomagok betöltése…",
+    "loadError": "Nem sikerült betölteni a csomagjaidat.",
+    "emptyTitle": "Még nincs csomagod",
+    "emptyBody": "Hozd létre az első kártyacsomagod az Új gombbal.",
+    "cardCount": "{{count}} kártya",
+    "cardCount_one": "{{count}} kártya",
+    "keepPracticing": "Gyakorolj tovább",
+    "delete": "Csomag törlése",
+    "deleteConfirm": "Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
+    "notFoundTitle": "A csomag nem található",
+    "notFoundBody": "Lehet, hogy ezt a csomagot törölték.",
+    "backToSets": "Vissza a csomagokhoz",
+    "edit": "Csomag szerkesztése",
+    "deleteConfirmTitle": "Törlöd ezt a csomagot?",
+    "editTitle": "Csomag szerkesztése",
+    "editSubtitle": "Módosítsd a címet, a színt, az ikont vagy a mappát. A kártyák a helyükön maradnak.",
+    "save": "Módosítások mentése",
+    "saving": "Mentés…",
+    "cancel": "Mégse",
+    "saveError": "A mentés nem sikerült. Próbáld újra."
   },
   "createSet": {
-    "title": "140|Új csomag",
-    "subtitle": "141|Adj hozzá szavakat, és szabd testre a csomagot.",
-    "infoSection": "142|Csomag adatai",
-    "setTitle": "143|Cím",
-    "setTitlePlaceholder": "144|pl. Útiszótár",
-    "setDescription": "145|Leírás",
-    "setDescriptionPlaceholder": "146|Nem kötelező",
-    "privacy": "147|Adatvédelem",
-    "private": "148|Privát",
-    "public": "149|Nyilvános",
-    "cardsSection": "150|Kártyák",
-    "addCard": "151|Kártya hozzáadása",
-    "cardN": "152|{{n}}. kártya",
-    "removeCard": "153|Kártya eltávolítása",
-    "word": "154|Szó",
-    "translation": "155|Fordítás",
-    "example": "156|Példa (nem kötelező)",
-    "addImage": "157|Kép hozzáadása",
-    "removeImage": "158|Kép eltávolítása",
-    "customizeSection": "159|Testreszabás",
-    "color": "160|Szín",
-    "icon": "161|Ikon",
-    "folder": "162|Mappa",
-    "noFolder": "163|Nincs mappa",
-    "previewSection": "164|Előnézet",
-    "previewPlaceholder": "165|A csomag címe",
-    "save": "166|Csomag létrehozása",
-    "saving": "167|Mentés…",
-    "cancel": "168|Mégse",
-    "saveError": "169|A mentés nem sikerült. Próbáld újra.",
+    "title": "Új csomag",
+    "subtitle": "Adj hozzá szavakat, és szabd testre a csomagot.",
+    "infoSection": "Csomag adatai",
+    "setTitle": "Cím",
+    "setTitlePlaceholder": "pl. Útiszótár",
+    "setDescription": "Leírás",
+    "setDescriptionPlaceholder": "Nem kötelező",
+    "privacy": "Adatvédelem",
+    "private": "Privát",
+    "public": "Nyilvános",
+    "cardsSection": "Kártyák",
+    "addCard": "Kártya hozzáadása",
+    "cardN": "{{n}}. kártya",
+    "removeCard": "Kártya eltávolítása",
+    "word": "Szó",
+    "translation": "Fordítás",
+    "example": "Példa (nem kötelező)",
+    "addImage": "Kép hozzáadása",
+    "removeImage": "Kép eltávolítása",
+    "customizeSection": "Testreszabás",
+    "color": "Szín",
+    "icon": "Ikon",
+    "folder": "Mappa",
+    "noFolder": "Nincs mappa",
+    "previewSection": "Előnézet",
+    "previewPlaceholder": "A csomag címe",
+    "save": "Csomag létrehozása",
+    "saving": "Mentés…",
+    "cancel": "Mégse",
+    "saveError": "A mentés nem sikerült. Próbáld újra.",
     "error": {
-      "emptyTitle": "170|A csomag címe kötelező.",
-      "titleTooLong": "171|A csomag címe legfeljebb 150 karakter lehet.",
-      "descTooLong": "172|A leírás legfeljebb 200 karakter lehet.",
-      "noValidCards": "173|Adj hozzá legalább egy kártyát szóval és fordítással.",
-      "exampleTooLong": "174|A kártyák példái legfeljebb 150 karakter lehetnek."
+      "emptyTitle": "A csomag címe kötelező.",
+      "titleTooLong": "A csomag címe legfeljebb 150 karakter lehet.",
+      "descTooLong": "A leírás legfeljebb 200 karakter lehet.",
+      "noValidCards": "Adj hozzá legalább egy kártyát szóval és fordítással.",
+      "exampleTooLong": "A kártyák példái legfeljebb 150 karakter lehetnek."
     },
-    "imageTimeout": "175|A kép feltöltése időtúllépés miatt megszakadt. Ellenőrizd a kapcsolatot, és próbáld újra.",
+    "imageTimeout": "A kép feltöltése időtúllépés miatt megszakadt. Ellenőrizd a kapcsolatot, és próbáld újra.",
     "import": {
-      "button": "176|Importálás",
-      "title": "177|Kártyák importálása",
-      "subtitle": "178|Másold és illeszd be az adataidat — Wordből, Excelből, Google Docsból és hasonlókból.",
-      "close": "179|Importálás bezárása",
-      "dataSection": "180|Az adataid",
-      "placeholder": "181|1. szó\\t1. jelentés\\n2. szó\\t2. jelentés\\n3. szó\\t3. jelentés",
-      "separatorsSection": "182|Elválasztók",
-      "betweenTermAndDefinition": "183|Szó és fordítás között",
-      "betweenCards": "184|Kártyák között",
-      "tab": "185|Tabulátor",
-      "comma": "186|Vessző",
-      "newline": "187|Új sor",
-      "semicolon": "188|Pontosvessző",
-      "custom": "189|Egyéni",
-      "customPlaceholder": "190|pl. —",
-      "previewSection": "191|Előnézet",
-      "previewEmpty": "192|Még nincs mit megjeleníteni.",
-      "noDefinition": "193|Nincs fordítás",
-      "confirm": "194|Kártyák hozzáadása"
+      "button": "Importálás",
+      "title": "Kártyák importálása",
+      "subtitle": "Másold és illeszd be az adataidat — Wordből, Excelből, Google Docsból és hasonlókból.",
+      "close": "Importálás bezárása",
+      "dataSection": "Az adataid",
+      "placeholder": "1. szó\\t1. jelentés\\n2. szó\\t2. jelentés\\n3. szó\\t3. jelentés",
+      "separatorsSection": "Elválasztók",
+      "betweenTermAndDefinition": "Szó és fordítás között",
+      "betweenCards": "Kártyák között",
+      "tab": "Tabulátor",
+      "comma": "Vessző",
+      "newline": "Új sor",
+      "semicolon": "Pontosvessző",
+      "custom": "Egyéni",
+      "customPlaceholder": "pl. —",
+      "previewSection": "Előnézet",
+      "previewEmpty": "Még nincs mit megjeleníteni.",
+      "noDefinition": "Nincs fordítás",
+      "confirm": "Kártyák hozzáadása"
     },
     "iconPicker": {
-      "open": "195|További ikonok",
-      "title": "196|Válassz ikont",
-      "search": "197|Szimbólum keresése",
-      "close": "198|Bezárás",
-      "empty": "199|Nincs ilyen nevű ikon."
+      "open": "További ikonok",
+      "title": "Válassz ikont",
+      "search": "Szimbólum keresése",
+      "close": "Bezárás",
+      "empty": "Nincs ilyen nevű ikon."
     },
     "iconGroup": {
-      "learning": "200|Tanulás",
-      "languages": "201|Nyelvek",
-      "nature": "202|Természet",
-      "health": "203|Egészség",
-      "food": "204|Étel",
-      "travel": "205|Utazás",
-      "work": "206|Munka",
-      "tech": "207|Technológia",
-      "creativity": "208|Kreativitás",
-      "general": "209|Általános"
+      "learning": "Tanulás",
+      "languages": "Nyelvek",
+      "nature": "Természet",
+      "health": "Egészség",
+      "food": "Étel",
+      "travel": "Utazás",
+      "work": "Munka",
+      "tech": "Technológia",
+      "creativity": "Kreativitás",
+      "general": "Általános"
     }
   },
   "home": {
     "title": {
-      "flashcards": "210|Kártyák",
-      "folders": "211|Mappák",
-      "sets": "212|Csomagok",
-      "create": "213|Új",
-      "profile": "214|Profil",
-      "speaking": "215|Beszéd",
-      "listening": "216|Hallás utáni értés",
-      "reading": "217|Olvasás",
-      "writing": "218|Írás"
+      "flashcards": "Kártyák",
+      "folders": "Mappák",
+      "sets": "Csomagok",
+      "create": "Új",
+      "profile": "Profil",
+      "speaking": "Beszéd",
+      "listening": "Hallás utáni értés",
+      "reading": "Olvasás",
+      "writing": "Írás"
     },
     "subtitle": {
-      "pickSet": "219|Válassz csomagot a gyakorláshoz",
-      "folders": "220|Kezeld a mappáidat",
-      "sets": "221|Kezeld a kártyacsomagjaidat",
-      "create": "222|Hozz létre új tanulócsomagot",
-      "speaking": "223|Gyakorold a beszédkészséged.",
-      "listening": "224|Edzd a füled, hogy természetesen értsd a nyelvet.",
-      "reading": "225|Olvass és ismételj a nyelven készült anyagokat.",
-      "writing": "226|Gyakorold aktívan a nyelvet."
+      "pickSet": "Válassz csomagot a gyakorláshoz",
+      "folders": "Kezeld a mappáidat",
+      "sets": "Kezeld a kártyacsomagjaidat",
+      "create": "Hozz létre új tanulócsomagot",
+      "speaking": "Gyakorold a beszédkészséged.",
+      "listening": "Edzd a füled, hogy természetesen értsd a nyelvet.",
+      "reading": "Olvass és ismételj a nyelven készült anyagokat.",
+      "writing": "Gyakorold aktívan a nyelvet."
     },
     "category": {
-      "speaking": "227|BESZÉD",
-      "listening": "228|HALLÁS UTÁNI ÉRTÉS",
-      "reading": "229|OLVASÁS",
-      "writing": "230|ÍRÁS"
+      "speaking": "BESZÉD",
+      "listening": "HALLÁS UTÁNI ÉRTÉS",
+      "reading": "OLVASÁS",
+      "writing": "ÍRÁS"
     },
     "todayGoal": {
-      "title": "231|Mai cél",
-      "left": "232|Még {{count}} szó van hátra"
+      "title": "Mai cél",
+      "left": "Még {{count}} szó van hátra"
     },
     "stat": {
-      "learnedToday": "233|Ma megtanult",
-      "words": "234|szó",
-      "accuracy": "235|Pontosság",
-      "greatJob": "236|Szép munka!",
-      "streak": "237|Sorozat",
-      "days": "238|nap"
+      "learnedToday": "Ma megtanult",
+      "words": "szó",
+      "accuracy": "Pontosság",
+      "greatJob": "Szép munka!",
+      "streak": "Sorozat",
+      "days": "nap"
     },
-    "continueLearning": "239|Tanulás folytatása",
-    "yourSets": "240|A csomagjaid",
-    "viewAll": "241|Összes megtekintése",
-    "review": "242|Ismétlés",
+    "continueLearning": "Tanulás folytatása",
+    "yourSets": "A csomagjaid",
+    "viewAll": "Összes megtekintése",
+    "review": "Ismétlés",
     "sets": {
-      "emptyTitle": "243|Még nincs csomagod",
-      "emptyBody": "244|Hozd létre az első kártyacsomagod az Új gombbal."
+      "emptyTitle": "Még nincs csomagod",
+      "emptyBody": "Hozd létre az első kártyacsomagod az Új gombbal."
     },
     "create": {
-      "folder": "245|Mappa",
-      "set": "246|Csomag",
-      "text": "247|Szöveg",
-      "audio": "248|Hang",
-      "essay": "249|Esszé"
+      "folder": "Mappa",
+      "set": "Csomag",
+      "text": "Szöveg",
+      "audio": "Hang",
+      "essay": "Esszé"
     },
     "placeholder": {
-      "comingSoon": "250|{{title}} — hamarosan"
+      "comingSoon": "{{title}} — hamarosan"
     },
     "progress": {
       "subtitle": {
-        "speaking": "251|beszédgyakorlás",
-        "listening": "252|hallás utáni gyakorlás",
-        "reading": "253|olvasásgyakorlás",
-        "writing": "254|írásgyakorlás"
+        "speaking": "beszédgyakorlás",
+        "listening": "hallás utáni gyakorlás",
+        "reading": "olvasásgyakorlás",
+        "writing": "írásgyakorlás"
       }
     },
     "dailyGoal": {
-      "title": "255|A mai célod",
-      "body": "256|Válaszd ki, mit szeretnél ma gyakorolni — az alábbi kártya ebbe számít bele.",
-      "chosenBody": "257|A mai nap erről szól.",
-      "howMuch": "258|Mennyit?",
-      "change": "259|Módosítás"
+      "title": "A mai célod",
+      "body": "Válaszd ki, mit szeretnél ma gyakorolni — az alábbi kártya ebbe számít bele.",
+      "chosenBody": "A mai nap erről szól.",
+      "howMuch": "Mennyit?",
+      "change": "Módosítás"
     },
     "lastNote": {
-      "title": "260|Legutóbb olvasott jegyzet"
+      "title": "Legutóbb olvasott jegyzet"
     }
   },
   "categories": {
-    "speaking": "261|Beszéd",
-    "listening": "262|Hallás utáni értés",
-    "reading": "263|Olvasás",
-    "writing": "264|Írás"
+    "speaking": "Beszéd",
+    "listening": "Hallás utáni értés",
+    "reading": "Olvasás",
+    "writing": "Írás"
   },
   "phase0": {
-    "title": "265|WordAround",
-    "subtitle": "266|A 0. fázis fut. A designtokenek betöltve, a Firebase csatlakoztatva."
+    "title": "WordAround",
+    "subtitle": "A 0. fázis fut. A designtokenek betöltve, a Firebase csatlakoztatva."
   },
   "study": {
-    "flip": "267|Fordítás",
-    "known": "268|Tudtam",
-    "unknown": "269|Még tanulom",
-    "mastered": "270|Tudom",
-    "shuffle": "271|Keverés",
-    "trackProgress": "272|Haladás követése",
-    "speak": "273|Kimondás",
-    "roundDone": "274|Kör kész",
-    "knewCount": "275|{{known}} / {{total}} sikerült",
-    "repeatUnknown": "276|{{count}} nem tudott ismétlése",
-    "restart": "277|Újrakezdés",
+    "flip": "Fordítás",
+    "known": "Tudtam",
+    "unknown": "Még tanulom",
+    "mastered": "Tudom",
+    "shuffle": "Keverés",
+    "trackProgress": "Haladás követése",
+    "speak": "Kimondás",
+    "roundDone": "Kör kész",
+    "knewCount": "{{known}} / {{total}} sikerült",
+    "repeatUnknown": "{{count}} nem tudott ismétlése",
+    "restart": "Újrakezdés",
     "filter": {
-      "all": "278|Mind",
-      "studied": "279|Tanult",
-      "remaining": "280|Hátralévő",
-      "mastered": "281|Tudott"
+      "all": "Mind",
+      "studied": "Tanult",
+      "remaining": "Hátralévő",
+      "mastered": "Tudott"
     },
-    "addCard": "282|Kártya hozzáadása",
-    "editCard": "283|Kártya szerkesztése",
-    "deleteCard": "284|Kártya törlése",
-    "deleteCardConfirm": "285|Törlöd ezt a kártyát?",
-    "emptyPrompt": "286|Ebben a csomagban még nincs kártya. Add hozzá az elsőt.",
-    "save": "287|Mentés",
-    "cancel": "288|Mégse"
+    "addCard": "Kártya hozzáadása",
+    "editCard": "Kártya szerkesztése",
+    "deleteCard": "Kártya törlése",
+    "deleteCardConfirm": "Törlöd ezt a kártyát?",
+    "emptyPrompt": "Ebben a csomagban még nincs kártya. Add hozzá az elsőt.",
+    "save": "Mentés",
+    "cancel": "Mégse"
   },
   "writing": {
     "today": {
-      "title": "289|Mai haladás",
-      "unit": "290|szó",
-      "subtitle": "291|írásgyakorlás"
+      "title": "Mai haladás",
+      "unit": "szó",
+      "subtitle": "írásgyakorlás"
     },
-    "sectionTitle": "292|Gyakorlómódok",
+    "sectionTitle": "Gyakorlómódok",
     "menu": {
       "writeFromSets": {
-        "title": "293|Írás a csomagokból",
-        "subtitle": "294|Gyakorold a csomagjaidban lévő szavak helyesírását és leírását."
+        "title": "Írás a csomagokból",
+        "subtitle": "Gyakorold a csomagjaidban lévő szavak helyesírását és leírását."
       },
       "essays": {
-        "title": "295|Esszék",
-        "subtitle": "296|Írj szövegeket, és kapj MI-visszajelzést a nyelvtanról és a stílusról."
+        "title": "Esszék",
+        "subtitle": "Írj szövegeket, és kapj MI-visszajelzést a nyelvtanról és a stílusról."
       },
-      "comingSoon": "297|Hamarosan"
+      "comingSoon": "Hamarosan"
     },
     "setSelection": {
-      "title": "298|Válassz csomagot",
+      "title": "Válassz csomagot",
       "empty": {
-        "title": "299|Nincs szavakat tartalmazó csomag",
-        "subtitle": "300|Hozz létre legalább egy kártyát tartalmazó csomagot, mielőtt írásgyakorlásba kezdesz."
+        "title": "Nincs szavakat tartalmazó csomag",
+        "subtitle": "Hozz létre legalább egy kártyát tartalmazó csomagot, mielőtt írásgyakorlásba kezdesz."
       },
-      "wordsCount": "301|{{count}} szó",
-      "wordsCount_one": "302|{{count}} szó",
-      "close": "303|Bezárás"
+      "wordsCount": "{{count}} szó",
+      "wordsCount_one": "{{count}} szó",
+      "close": "Bezárás"
     },
     "writeWords": {
-      "title": "304|Írás a csomagokból",
-      "subtitle": "305|Írd be a fordítást, és nyomj Entert.",
-      "translateHint": "306|Fordítsd a saját nyelvedre",
-      "hint": "307|Tipp",
-      "skip": "308|Kihagyás",
-      "submit": "309|Ellenőrzés",
-      "inputPlaceholder": "310|Írj ide…",
-      "loading": "311|Csomag betöltése…",
-      "loadError": "312|Nem sikerült betölteni ezt a csomagot.",
-      "noCards": "313|Ebben a csomagban nincs kártya.",
-      "back": "314|Vissza",
+      "title": "Írás a csomagokból",
+      "subtitle": "Írd be a fordítást, és nyomj Entert.",
+      "translateHint": "Fordítsd a saját nyelvedre",
+      "hint": "Tipp",
+      "skip": "Kihagyás",
+      "submit": "Ellenőrzés",
+      "inputPlaceholder": "Írj ide…",
+      "loading": "Csomag betöltése…",
+      "loadError": "Nem sikerült betölteni ezt a csomagot.",
+      "noCards": "Ebben a csomagban nincs kártya.",
+      "back": "Vissza",
       "settings": {
-        "title": "315|Beállítások",
-        "trainingMode": "316|Gyakorlási mód",
-        "difficulty": "317|Nehézség"
+        "title": "Beállítások",
+        "trainingMode": "Gyakorlási mód",
+        "difficulty": "Nehézség"
       },
       "mode": {
-        "wordToTranslation": "318|Szó → Fordítás",
-        "translationToWord": "319|Fordítás → Szó"
+        "wordToTranslation": "Szó → Fordítás",
+        "translationToWord": "Fordítás → Szó"
       },
       "difficulty": {
-        "easy": "320|Könnyű",
-        "medium": "321|Közepes",
-        "hard": "322|Nehéz",
-        "easyDesc": "323|Korlátlan tipp, korlátlan kihagyás",
-        "mediumDesc": "324|1 betűnyi tipp, legfeljebb 25 % kihagyás",
-        "hardDesc": "325|Nincs tipp, nincs kihagyás, időre megy"
+        "easy": "Könnyű",
+        "medium": "Közepes",
+        "hard": "Nehéz",
+        "easyDesc": "Korlátlan tipp, korlátlan kihagyás",
+        "mediumDesc": "1 betűnyi tipp, legfeljebb 25 % kihagyás",
+        "hardDesc": "Nincs tipp, nincs kihagyás, időre megy"
       },
       "translatePrompt": {
-        "word": "326|Fordítsd a saját nyelvedre",
-        "translation": "327|Írd le az eredeti szót"
+        "word": "Fordítsd a saját nyelvedre",
+        "translation": "Írd le az eredeti szót"
       },
-      "skipsLeft_one": "328|{{count}} kihagyás maradt",
-      "skipsLeft_other": "329|{{count}} kihagyás maradt",
-      "seconds": "330|{{count}} mp",
+      "skipsLeft_one": "{{count}} kihagyás maradt",
+      "skipsLeft_other": "{{count}} kihagyás maradt",
+      "seconds": "{{count}} mp",
       "result": {
         "win": {
-          "title": "331|Kör kész!",
-          "subtitle": "332|Szép munka. Végigcsináltad ezt az íráskört."
+          "title": "Kör kész!",
+          "subtitle": "Szép munka. Végigcsináltad ezt az íráskört."
         },
         "timeout": {
-          "title": "333|Lejárt az idő",
-          "subtitle": "334|A nehéz mód órája lenullázódott. Kezdd újra az első szótól."
+          "title": "Lejárt az idő",
+          "subtitle": "A nehéz mód órája lenullázódott. Kezdd újra az első szótól."
         },
         "wrong": {
-          "title": "335|Rossz válasz",
-          "subtitle": "336|Nehéz módban egyetlen hiba lezárja a kört."
+          "title": "Rossz válasz",
+          "subtitle": "Nehéz módban egyetlen hiba lezárja a kört."
         },
-        "perfectTitle": "337|Tökéletes kör!",
-        "perfectBody": "338|Hibátlanul teljesítetted a nehéz módot. Kihagyás nélkül. Tipp nélkül. Csak tudásból.",
-        "totalWords": "339|Összes szó",
-        "completedWords": "340|Megoldott szavak",
-        "skippedWords": "341|Kihagyott szavak",
-        "hintsUsed": "342|Felhasznált tippek",
-        "streak": "343|Sorozat",
-        "difficultyLabel": "344|Nehézség",
-        "word": "345|Szó",
-        "yourAnswer": "346|A te válaszod",
-        "correctAnswer": "347|Helyes válasz",
-        "tryAgain": "348|Újra"
+        "perfectTitle": "Tökéletes kör!",
+        "perfectBody": "Hibátlanul teljesítetted a nehéz módot. Kihagyás nélkül. Tipp nélkül. Csak tudásból.",
+        "totalWords": "Összes szó",
+        "completedWords": "Megoldott szavak",
+        "skippedWords": "Kihagyott szavak",
+        "hintsUsed": "Felhasznált tippek",
+        "streak": "Sorozat",
+        "difficultyLabel": "Nehézség",
+        "word": "Szó",
+        "yourAnswer": "A te válaszod",
+        "correctAnswer": "Helyes válasz",
+        "tryAgain": "Újra"
       }
     },
     "essays": {
-      "title": "349|Esszék",
-      "subtitle": "350|A témát az MI választja. Írj, aztán kapsz visszajelzést.",
+      "title": "Esszék",
+      "subtitle": "A témát az MI választja. Írj, aztán kapsz visszajelzést.",
       "mode": {
-        "suggested": "351|Javasolt",
-        "custom": "352|Saját téma"
+        "suggested": "Javasolt",
+        "custom": "Saját téma"
       },
       "custom": {
-        "placeholder": "353|Írd meg a saját esszétémádat...",
-        "generate": "354|Feladat generálása"
+        "placeholder": "Írd meg a saját esszétémádat...",
+        "generate": "Feladat generálása"
       },
       "suggested": {
-        "generate": "355|Téma generálása",
-        "regenerate": "356|Új téma"
+        "generate": "Téma generálása",
+        "regenerate": "Új téma"
       },
-      "language": "357|Nyelv",
-      "difficulty": "358|Nehézség",
+      "language": "Nyelv",
+      "difficulty": "Nehézség",
       "task": {
-        "time": "359|≈ {{count}} perc",
-        "wordRange": "360|{{min}}-{{max}} szó",
-        "quickTips": "361|Gyors tippek",
-        "taskLabel": "362|Feladat"
+        "time": "≈ {{count}} perc",
+        "wordRange": "{{min}}-{{max}} szó",
+        "quickTips": "Gyors tippek",
+        "taskLabel": "Feladat"
       },
       "editor": {
-        "placeholder": "363|Itt kezdd írni az esszédet...",
-        "wordCount": "364|{{count}} / {{min}}-{{max}} szó",
+        "placeholder": "Itt kezdd írni az esszédet...",
+        "wordCount": "{{count}} / {{min}}-{{max}} szó",
         "validation": {
-          "belowMinimum": "365|Csak így tovább — legalább {{min}} szó kell.",
-          "aboveMaximum": "366|Túllépted a határt — próbáld tömöríteni.",
-          "valid": "367|A tartományon belül."
+          "belowMinimum": "Csak így tovább — legalább {{min}} szó kell.",
+          "aboveMaximum": "Túllépted a határt — próbáld tömöríteni.",
+          "valid": "A tartományon belül."
         },
-        "reset": "368|Visszaállítás"
+        "reset": "Visszaállítás"
       },
       "error": {
-        "emptyCustomTopic": "369|Előbb írj egy témát.",
-        "generationFailed": "370|Nem sikerült témát generálni. Próbáld újra."
+        "emptyCustomTopic": "Előbb írj egy témát.",
+        "generationFailed": "Nem sikerült témát generálni. Próbáld újra."
       },
-      "generating": "371|Generálás...",
+      "generating": "Generálás...",
       "hint": {
-        "button": "372|Kérek tippet",
-        "remaining": "373|Maradt: {{remaining}}/{{limit}}",
-        "noneLeft": "374|Nincs több tipp",
-        "notAvailable": "375|Ezen a szinten nincsenek tippek",
-        "generating": "376|Tipp generálása...",
-        "error": "377|Nem sikerült tippet kérni. Próbáld újra.",
+        "button": "Kérek tippet",
+        "remaining": "Maradt: {{remaining}}/{{limit}}",
+        "noneLeft": "Nincs több tipp",
+        "notAvailable": "Ezen a szinten nincsenek tippek",
+        "generating": "Tipp generálása...",
+        "error": "Nem sikerült tippet kérni. Próbáld újra.",
         "category": {
-          "content": "378|Tartalom",
-          "grammar": "379|Nyelvtan",
-          "vocabulary": "380|Szókincs",
-          "structure": "381|Szerkezet"
+          "content": "Tartalom",
+          "grammar": "Nyelvtan",
+          "vocabulary": "Szókincs",
+          "structure": "Szerkezet"
         }
       },
       "check": {
-        "button": "382|Esszém ellenőrzése",
-        "checking": "383|Ellenőrzés...",
-        "disabled": "384|Előbb férj bele a szótartományba",
-        "error": "385|Nem sikerült ellenőrizni az esszédet. Próbáld újra.",
-        "languageUnsupported": "386|A nyelvtani ellenőrzés a(z) {{language}} nyelvhez még nem érhető el."
+        "button": "Esszém ellenőrzése",
+        "checking": "Ellenőrzés...",
+        "disabled": "Előbb férj bele a szótartományba",
+        "error": "Nem sikerült ellenőrizni az esszédet. Próbáld újra.",
+        "languageUnsupported": "A nyelvtani ellenőrzés a(z) {{language}} nyelvhez még nem érhető el."
       },
       "score": {
-        "title": "387|Az esszé pontszáma",
+        "title": "Az esszé pontszáma",
         "quality": {
-          "excellent": "388|Kiváló",
-          "veryGood": "389|Nagyon jó",
-          "good": "390|Jó",
-          "needsWork": "391|Van min javítani"
+          "excellent": "Kiváló",
+          "veryGood": "Nagyon jó",
+          "good": "Jó",
+          "needsWork": "Van min javítani"
         },
         "category": {
-          "grammar": "392|Nyelvtan",
-          "vocabulary": "393|Szókincs",
-          "length": "394|Hossz",
-          "complexity": "395|Összetettség",
-          "relevance": "396|Témához illés",
-          "independence": "397|Önállóság"
+          "grammar": "Nyelvtan",
+          "vocabulary": "Szókincs",
+          "length": "Hossz",
+          "complexity": "Összetettség",
+          "relevance": "Témához illés",
+          "independence": "Önállóság"
         },
         "stat": {
-          "words": "398|Szavak",
-          "grammar": "399|Nyelvtan",
-          "vocabStyle": "400|Szókincs/stílus",
-          "hints": "401|Tippek",
-          "translations": "402|Fordítások",
-          "synonyms": "403|Szinonimák"
+          "words": "Szavak",
+          "grammar": "Nyelvtan",
+          "vocabStyle": "Szókincs/stílus",
+          "hints": "Tippek",
+          "translations": "Fordítások",
+          "synonyms": "Szinonimák"
         }
       },
       "grammar": {
-        "sectionTitle": "404|Nyelvtani hibák",
-        "count_one": "405|{{count}} hiba",
-        "count_other": "406|{{count}} hiba",
-        "empty": "407|Nem találtunk nyelvtani hibát — szép munka!",
-        "original": "408|Eredeti:",
-        "suggestion": "409|Javaslat:",
-        "reason": "410|Indok:",
+        "sectionTitle": "Nyelvtani hibák",
+        "count_one": "{{count}} hiba",
+        "count_other": "{{count}} hiba",
+        "empty": "Nem találtunk nyelvtani hibát — szép munka!",
+        "original": "Eredeti:",
+        "suggestion": "Javaslat:",
+        "reason": "Indok:",
         "category": {
-          "grammar": "411|Nyelvtan",
-          "vocabulary": "412|Szókincs",
-          "style": "413|Stílus"
+          "grammar": "Nyelvtan",
+          "vocabulary": "Szókincs",
+          "style": "Stílus"
         },
         "save": {
-          "idle": "414|Mentés a jegyzetekbe",
-          "saving": "415|Mentés…",
-          "saved": "416|Mentve",
-          "duplicate": "417|Már mentve",
-          "failed": "418|Mentés újra"
+          "idle": "Mentés a jegyzetekbe",
+          "saving": "Mentés…",
+          "saved": "Mentve",
+          "duplicate": "Már mentve",
+          "failed": "Mentés újra"
         }
       },
       "helper": {
-        "translate": "419|Fordítás",
-        "synonym": "420|Szinonima",
-        "remaining": "421|Maradt: {{remaining}}",
-        "notAvailable": "422|Ezen a szinten nem érhető el"
+        "translate": "Fordítás",
+        "synonym": "Szinonima",
+        "remaining": "Maradt: {{remaining}}",
+        "notAvailable": "Ezen a szinten nem érhető el"
       },
       "translate": {
-        "title": "423|Fordítás",
-        "placeholder": "424|Adj meg egy szót vagy rövid kifejezést",
-        "submit": "425|Fordítás",
-        "submitting": "426|Fordítás..."
+        "title": "Fordítás",
+        "placeholder": "Adj meg egy szót vagy rövid kifejezést",
+        "submit": "Fordítás",
+        "submitting": "Fordítás..."
       },
       "synonym": {
-        "title": "427|Szinonimák",
-        "placeholder": "428|Adj meg egy szót",
-        "submit": "429|Szinonimák keresése",
-        "submitting": "430|Keresés..."
+        "title": "Szinonimák",
+        "placeholder": "Adj meg egy szót",
+        "submit": "Szinonimák keresése",
+        "submitting": "Keresés..."
       },
       "assist": {
-        "from": "431|Erről",
-        "to": "432|Erre",
-        "close": "433|Bezárás",
-        "noResult": "434|Nincs találat.",
-        "sameLanguage": "435|Válassz másik forrásnyelvet.",
-        "error": "436|A szolgáltatás átmenetileg nem érhető el."
+        "from": "Erről",
+        "to": "Erre",
+        "close": "Bezárás",
+        "noResult": "Nincs találat.",
+        "sameLanguage": "Válassz másik forrásnyelvet.",
+        "error": "A szolgáltatás átmenetileg nem érhető el."
       },
-      "saveMistakeConfirmTitle": "437|Mented ezt a hibát a jegyzetekbe?",
-      "saveMistakeConfirmBody": "438|Hibajegyzetként mentjük a következő javítással: „{{correction}}”.",
-      "autoSaveConfirmTitle": "439|Mented ezeket a hibákat a jegyzeteid közé?",
-      "autoSaveConfirmBody_one": "440|Ez az ellenőrzés {{count}} hibát talált. Ha mented, jegyzet lesz belőle, amely visszatér ismétlésre.",
-      "autoSaveConfirmBody_other": "441|Ez az ellenőrzés {{count}} hibát talált. Ha mented őket, jegyzetek lesznek belőlük, amelyek visszatérnek ismétlésre."
+      "saveMistakeConfirmTitle": "Mented ezt a hibát a jegyzetekbe?",
+      "saveMistakeConfirmBody": "Hibajegyzetként mentjük a következő javítással: „{{correction}}”.",
+      "autoSaveConfirmTitle": "Mented ezeket a hibákat a jegyzeteid közé?",
+      "autoSaveConfirmBody_one": "Ez az ellenőrzés {{count}} hibát talált. Ha mented, jegyzet lesz belőle, amely visszatér ismétlésre.",
+      "autoSaveConfirmBody_other": "Ez az ellenőrzés {{count}} hibát talált. Ha mented őket, jegyzetek lesznek belőlük, amelyek visszatérnek ismétlésre."
     },
     "grammar": {
-      "subtitle": "442|Rendezd a nyelvtant témák szerint, világos, tagolt jegyzetekbe.",
-      "newTopic": "443|Új téma",
-      "topicsEmptyTitle": "444|Még nincs témád",
-      "topicsEmptyBody": "445|Hozd létre az első témát, hogy nyelvtani jegyzeteket gyűjthess.",
-      "notesCount_one": "446|{{count}} jegyzet",
-      "notesCount_other": "447|{{count}} jegyzet",
-      "deleteTopicConfirm": "448|Törlöd ezt: „{{title}}” és az összes jegyzetét? Ez nem vonható vissza.",
-      "notesEmptyTitle": "449|Még nincs jegyzeted",
-      "notesEmptyBody": "450|Add hozzá az első jegyzetet ehhez a témához.",
-      "newNote": "451|Új jegyzet",
-      "deleteNoteConfirm": "452|Törlöd ezt a jegyzetet? Ez nem vonható vissza.",
-      "loading": "453|Betöltés…",
-      "loadError": "454|Nem sikerült betölteni a nyelvtani jegyzeteidet.",
-      "notFoundTitle": "455|Nem található",
-      "notFoundBody": "456|Lehet, hogy ezt az elemet törölték.",
-      "back": "457|Vissza",
-      "updated": "458|Frissítve: {{date}}",
+      "subtitle": "Rendezd a nyelvtant témák szerint, világos, tagolt jegyzetekbe.",
+      "newTopic": "Új téma",
+      "topicsEmptyTitle": "Még nincs témád",
+      "topicsEmptyBody": "Hozd létre az első témát, hogy nyelvtani jegyzeteket gyűjthess.",
+      "notesCount_one": "{{count}} jegyzet",
+      "notesCount_other": "{{count}} jegyzet",
+      "deleteTopicConfirm": "Törlöd ezt: „{{title}}” és az összes jegyzetét? Ez nem vonható vissza.",
+      "notesEmptyTitle": "Még nincs jegyzeted",
+      "notesEmptyBody": "Add hozzá az első jegyzetet ehhez a témához.",
+      "newNote": "Új jegyzet",
+      "deleteNoteConfirm": "Törlöd ezt a jegyzetet? Ez nem vonható vissza.",
+      "loading": "Betöltés…",
+      "loadError": "Nem sikerült betölteni a nyelvtani jegyzeteidet.",
+      "notFoundTitle": "Nem található",
+      "notFoundBody": "Lehet, hogy ezt az elemet törölték.",
+      "back": "Vissza",
+      "updated": "Frissítve: {{date}}",
       "form": {
-        "newTitle": "459|Új téma",
-        "editTitle": "460|Téma szerkesztése",
-        "name": "461|Cím",
-        "namePlaceholder": "462|pl. Spanyol igék",
-        "description": "463|Leírás",
-        "descriptionPlaceholder": "464|Nem kötelező",
-        "color": "465|Szín",
-        "icon": "466|Ikon",
-        "save": "467|Mentés",
-        "cancel": "468|Mégse",
-        "language": "469|Nyelv",
-        "languageNone": "470|Nincs beállítva"
+        "newTitle": "Új téma",
+        "editTitle": "Téma szerkesztése",
+        "name": "Cím",
+        "namePlaceholder": "pl. Spanyol igék",
+        "description": "Leírás",
+        "descriptionPlaceholder": "Nem kötelező",
+        "color": "Szín",
+        "icon": "Ikon",
+        "save": "Mentés",
+        "cancel": "Mégse",
+        "language": "Nyelv",
+        "languageNone": "Nincs beállítva"
       },
       "noteType": {
-        "standard": "471|Általános",
-        "mistake": "472|Hiba",
-        "rule": "473|Szabály",
-        "comparison": "474|Összehasonlítás",
-        "cheatSheet": "475|Puska",
-        "exercise": "476|Gyakorlat"
+        "standard": "Általános",
+        "mistake": "Hiba",
+        "rule": "Szabály",
+        "comparison": "Összehasonlítás",
+        "cheatSheet": "Puska",
+        "exercise": "Gyakorlat"
       },
       "block": {
-        "heading": "477|Címsor",
-        "paragraph": "478|Szöveg",
-        "bulletList": "479|Felsorolás",
-        "rule": "480|Szabály",
-        "example": "481|Példa",
-        "warning": "482|Figyelmeztetés",
-        "quote": "483|Idézet",
-        "divider": "484|Elválasztó",
-        "addBlock": "485|Blokk hozzáadása",
-        "addItem": "486|Elem hozzáadása",
-        "moveUp": "487|Fel",
-        "moveDown": "488|Le",
-        "remove": "489|Eltávolítás",
-        "secondaryPlaceholder": "490|Részlet / fordítás (nem kötelező)",
-        "subheading": "491|Alcím",
-        "numberedList": "492|Számozott lista",
-        "checklist": "493|Ellenőrzőlista",
-        "comparison": "494|Összehasonlítás",
-        "exercise": "495|Gyakorlat",
-        "quiz": "496|Kvíz",
-        "image": "497|Kép",
-        "comparisonSecondary": "498|Második oldal",
-        "imageAdd": "499|Kép hozzáadása / cseréje",
-        "imageUploading": "500|Feltöltés…",
-        "imageFailed": "501|A képet nem sikerült feltölteni.",
-        "imageSaveFirst": "502|Jelentkezz be a képek feltöltéséhez."
+        "heading": "Címsor",
+        "paragraph": "Szöveg",
+        "bulletList": "Felsorolás",
+        "rule": "Szabály",
+        "example": "Példa",
+        "warning": "Figyelmeztetés",
+        "quote": "Idézet",
+        "divider": "Elválasztó",
+        "addBlock": "Blokk hozzáadása",
+        "addItem": "Elem hozzáadása",
+        "moveUp": "Fel",
+        "moveDown": "Le",
+        "remove": "Eltávolítás",
+        "secondaryPlaceholder": "Részlet / fordítás (nem kötelező)",
+        "subheading": "Alcím",
+        "numberedList": "Számozott lista",
+        "checklist": "Ellenőrzőlista",
+        "comparison": "Összehasonlítás",
+        "exercise": "Gyakorlat",
+        "quiz": "Kvíz",
+        "image": "Kép",
+        "comparisonSecondary": "Második oldal",
+        "imageAdd": "Kép hozzáadása / cseréje",
+        "imageUploading": "Feltöltés…",
+        "imageFailed": "A képet nem sikerült feltölteni.",
+        "imageSaveFirst": "Jelentkezz be a képek feltöltéséhez."
       },
       "blockPlaceholder": {
-        "heading": "503|Címsor",
-        "paragraph": "504|Írd le a magyarázatod…",
-        "bulletList": "505|Listaelem",
-        "rule": "506|Magyarázd el a nyelvtani szabályt…",
-        "example": "507|Adj hozzá egy példát…",
-        "warning": "508|Gyakori hiba vagy figyelmeztetés…",
-        "quote": "509|Megjegyzésre érdemes mondat…",
-        "subheading": "510|Alcím",
-        "numberedList": "511|Listaelem",
-        "checklist": "512|Ellenőrzőlista-elem",
-        "comparison": "513|Első oldal",
-        "exercise": "514|Gyakorlási utasítás…",
-        "quiz": "515|Kérdés",
-        "image": "516|Képaláírás"
+        "heading": "Címsor",
+        "paragraph": "Írd le a magyarázatod…",
+        "bulletList": "Listaelem",
+        "rule": "Magyarázd el a nyelvtani szabályt…",
+        "example": "Adj hozzá egy példát…",
+        "warning": "Gyakori hiba vagy figyelmeztetés…",
+        "quote": "Megjegyzésre érdemes mondat…",
+        "subheading": "Alcím",
+        "numberedList": "Listaelem",
+        "checklist": "Ellenőrzőlista-elem",
+        "comparison": "Első oldal",
+        "exercise": "Gyakorlási utasítás…",
+        "quiz": "Kérdés",
+        "image": "Képaláírás"
       },
       "editor": {
-        "titlePlaceholder": "517|A jegyzet címe",
-        "save": "518|Jegyzet mentése",
-        "saving": "519|Mentés…",
-        "delete": "520|Jegyzet törlése",
-        "saveError": "521|A mentés nem sikerült. Próbáld újra.",
-        "subtitle": "522|Jegyzet szerkesztése",
-        "tags": "523|Címkék",
-        "tagsPlaceholder": "524|Címke hozzáadása…",
-        "removeTag": "525|{{tag}} címke eltávolítása",
-        "addToReview": "526|Hozzáadás az ismétléshez",
-        "addedToReview": "527|Bekerült az ismétlési sorodba.",
-        "inReview": "528|Ismétlésben · {{when}}",
-        "inReviewDue": "529|Ismétlésre vár",
-        "removedFromReview": "530|Kikerült az ismétlési sorodból.",
-        "unsavedTitle": "531|Kilépsz mentés nélkül?",
-        "unsavedBody": "532|Ebben a jegyzetben mentetlen módosítások vannak.",
-        "discard": "533|Módosítások elvetése",
-        "saveAndLeave": "534|Mentés és kilépés"
+        "titlePlaceholder": "A jegyzet címe",
+        "save": "Jegyzet mentése",
+        "saving": "Mentés…",
+        "delete": "Jegyzet törlése",
+        "saveError": "A mentés nem sikerült. Próbáld újra.",
+        "subtitle": "Jegyzet szerkesztése",
+        "tags": "Címkék",
+        "tagsPlaceholder": "Címke hozzáadása…",
+        "removeTag": "{{tag}} címke eltávolítása",
+        "addToReview": "Hozzáadás az ismétléshez",
+        "addedToReview": "Bekerült az ismétlési sorodba.",
+        "inReview": "Ismétlésben · {{when}}",
+        "inReviewDue": "Ismétlésre vár",
+        "removedFromReview": "Kikerült az ismétlési sorodból.",
+        "unsavedTitle": "Kilépsz mentés nélkül?",
+        "unsavedBody": "Ebben a jegyzetben mentetlen módosítások vannak.",
+        "discard": "Módosítások elvetése",
+        "saveAndLeave": "Mentés és kilépés"
       },
       "quiz": {
-        "title": "535|Kvízek",
-        "new": "536|Új kvíz",
-        "start": "537|Kvíz indítása",
-        "delete": "538|Kvíz törlése",
-        "deleteConfirm": "539|Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
-        "emptyTitle": "540|Még nincs kvízed",
-        "emptyBody": "541|Készíts kvízt ebből a jegyzetből, hogy leteszteld magad.",
-        "loadError": "542|Nem sikerült betölteni a kvízeket.",
-        "questionsCount_one": "543|{{count}} kérdés",
-        "questionsCount_other": "544|{{count}} kérdés",
+        "title": "Kvízek",
+        "new": "Új kvíz",
+        "start": "Kvíz indítása",
+        "delete": "Kvíz törlése",
+        "deleteConfirm": "Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
+        "emptyTitle": "Még nincs kvízed",
+        "emptyBody": "Készíts kvízt ebből a jegyzetből, hogy leteszteld magad.",
+        "loadError": "Nem sikerült betölteni a kvízeket.",
+        "questionsCount_one": "{{count}} kérdés",
+        "questionsCount_other": "{{count}} kérdés",
         "type": {
-          "multipleChoice": "545|Feleletválasztós",
-          "trueFalse": "546|Igaz / Hamis",
-          "fillGap": "547|Hiányzó szó",
-          "shortAnswer": "548|Rövid válasz"
+          "multipleChoice": "Feleletválasztós",
+          "trueFalse": "Igaz / Hamis",
+          "fillGap": "Hiányzó szó",
+          "shortAnswer": "Rövid válasz"
         },
         "sheet": {
-          "title": "549|Kvíz létrehozása",
-          "titlePlaceholder": "550|A kvíz címe",
-          "mode": "551|Generálási mód",
-          "modeSmart": "552|Okos helyi",
-          "modeSmartDesc": "553|A jegyzet tartalmából készít kérdéseket, az eszközön.",
-          "modeAI": "554|MI-vel generált",
-          "modeAIDesc": "555|Gazdagabb, kontextusos kérdéseket készít MI segítségével.",
-          "count": "556|Kérdések",
-          "types": "557|Kérdéstípusok",
-          "focus": "558|Fókusz (nem kötelező)",
-          "focusPlaceholder": "559|pl. a rendhagyó alakokra fókuszálj",
-          "preview": "560|Kérdések előnézete",
-          "regenerate": "561|Előnézet újragenerálása",
-          "previewTitle": "562|Előnézet",
-          "saveQuiz": "563|Kvíz mentése",
-          "generateQuiz": "564|Kvíz generálása",
-          "generating": "565|Generálás…",
-          "saving": "566|Mentés…",
-          "useSmartInstead": "567|Inkább az Okos helyi mód",
-          "modeManual": "568|Kézi",
-          "modeManualDesc": "569|Írd meg a saját kérdéseidet.",
-          "createQuiz": "570|Kvíz létrehozása"
+          "title": "Kvíz létrehozása",
+          "titlePlaceholder": "A kvíz címe",
+          "mode": "Generálási mód",
+          "modeSmart": "Okos helyi",
+          "modeSmartDesc": "A jegyzet tartalmából készít kérdéseket, az eszközön.",
+          "modeAI": "MI-vel generált",
+          "modeAIDesc": "Gazdagabb, kontextusos kérdéseket készít MI segítségével.",
+          "count": "Kérdések",
+          "types": "Kérdéstípusok",
+          "focus": "Fókusz (nem kötelező)",
+          "focusPlaceholder": "pl. a rendhagyó alakokra fókuszálj",
+          "preview": "Kérdések előnézete",
+          "regenerate": "Előnézet újragenerálása",
+          "previewTitle": "Előnézet",
+          "saveQuiz": "Kvíz mentése",
+          "generateQuiz": "Kvíz generálása",
+          "generating": "Generálás…",
+          "saving": "Mentés…",
+          "useSmartInstead": "Inkább az Okos helyi mód",
+          "modeManual": "Kézi",
+          "modeManualDesc": "Írd meg a saját kérdéseidet.",
+          "createQuiz": "Kvíz létrehozása"
         },
         "play": {
-          "questionOf": "571|{{current}}. kérdés / {{total}}",
-          "submit": "572|Válasz beküldése",
-          "next": "573|Tovább",
-          "finish": "574|Befejezés",
-          "correct": "575|Helyes!",
-          "incorrect": "576|Hibás",
-          "correctAnswer": "577|Helyes válasz: {{answer}}",
-          "typeMissing": "578|Írd be a hiányzó szót",
-          "typeAnswer": "579|Írd be a válaszod",
-          "trueLabel": "580|Igaz",
-          "falseLabel": "581|Hamis"
+          "questionOf": "{{current}}. kérdés / {{total}}",
+          "submit": "Válasz beküldése",
+          "next": "Tovább",
+          "finish": "Befejezés",
+          "correct": "Helyes!",
+          "incorrect": "Hibás",
+          "correctAnswer": "Helyes válasz: {{answer}}",
+          "typeMissing": "Írd be a hiányzó szót",
+          "typeAnswer": "Írd be a válaszod",
+          "trueLabel": "Igaz",
+          "falseLabel": "Hamis"
         },
         "result": {
-          "scoreOf": "582|{{correct}} / {{total}} helyes",
+          "scoreOf": "{{correct}} / {{total}} helyes",
           "grade": {
-            "excellent": "583|Kiváló!",
-            "good": "584|Szép munka!",
-            "keepPracticing": "585|Gyakorolj tovább",
-            "reviewNote": "586|Nézd át a jegyzetet"
+            "excellent": "Kiváló!",
+            "good": "Szép munka!",
+            "keepPracticing": "Gyakorolj tovább",
+            "reviewNote": "Nézd át a jegyzetet"
           },
-          "incorrectSection": "587|Hibás",
-          "correctSection": "588|Helyes",
-          "yourAnswer": "589|A te válaszod: {{answer}}",
-          "tryAgain": "590|Újra",
-          "reviewNote": "591|Jegyzet megnyitása",
-          "done": "592|Kész"
+          "incorrectSection": "Hibás",
+          "correctSection": "Helyes",
+          "yourAnswer": "A te válaszod: {{answer}}",
+          "tryAgain": "Újra",
+          "reviewNote": "Jegyzet megnyitása",
+          "done": "Kész"
         },
         "errors": {
-          "notEnoughContent": "593|Előbb adj több tartalmat a jegyzethez — a kvízhez legalább két tartalmi blokk kell (szabály, példa, figyelmeztetés, bekezdés vagy idézet).",
-          "noMatchingQuestionTypes": "594|Nincs elég megfelelő tartalom a kiválasztott kérdéstípusokhoz. Kapcsolj be több típust, vagy adj hozzá tartalmat.",
-          "aiFailed": "595|A kvízt nem sikerült MI-vel generálni. Próbáld újra, vagy használd az Okos helyi módot."
+          "notEnoughContent": "Előbb adj több tartalmat a jegyzethez — a kvízhez legalább két tartalmi blokk kell (szabály, példa, figyelmeztetés, bekezdés vagy idézet).",
+          "noMatchingQuestionTypes": "Nincs elég megfelelő tartalom a kiválasztott kérdéstípusokhoz. Kapcsolj be több típust, vagy adj hozzá tartalmat.",
+          "aiFailed": "A kvízt nem sikerült MI-vel generálni. Próbáld újra, vagy használd az Okos helyi módot."
         },
-        "badge": "596|Kvíz",
+        "badge": "Kvíz",
         "manual": {
-          "questions_one": "597|{{count}} kérdés",
-          "questions_other": "598|{{count}} kérdés",
-          "add": "599|Kérdés hozzáadása",
-          "questionPlaceholder": "600|A kérdés szövege",
-          "questionGapPlaceholder": "601|Kérdés hiánnyal, pl. Én _____ iskolába",
-          "optionPlaceholder": "602|{{index}}. lehetőség",
-          "answerPlaceholder": "603|Helyes válasz",
-          "explanationPlaceholder": "604|Magyarázat (nem kötelező)",
+          "questions_one": "{{count}} kérdés",
+          "questions_other": "{{count}} kérdés",
+          "add": "Kérdés hozzáadása",
+          "questionPlaceholder": "A kérdés szövege",
+          "questionGapPlaceholder": "Kérdés hiánnyal, pl. Én _____ iskolába",
+          "optionPlaceholder": "{{index}}. lehetőség",
+          "answerPlaceholder": "Helyes válasz",
+          "explanationPlaceholder": "Magyarázat (nem kötelező)",
           "error": {
-            "questionRequired": "605|A kérdés szövege kötelező.",
-            "optionsRequired": "606|A feleletválasztóshoz legalább 2 lehetőség kell.",
-            "answerRequired": "607|Add meg a helyes választ.",
-            "answerNotAnOption": "608|A helyes válasznak egyeznie kell az egyik lehetőséggel.",
-            "blankRequired": "609|Tegyél hiányt (pl. _____) a kérdésbe."
+            "questionRequired": "A kérdés szövege kötelező.",
+            "optionsRequired": "A feleletválasztóshoz legalább 2 lehetőség kell.",
+            "answerRequired": "Add meg a helyes választ.",
+            "answerNotAnOption": "A helyes válasznak egyeznie kell az egyik lehetőséggel.",
+            "blankRequired": "Tegyél hiányt (pl. _____) a kérdésbe."
           }
         }
       },
       "quickMistake": {
-        "button": "610|Gyors hiba",
-        "title": "611|Gyors hiba",
-        "original": "612|Eredeti mondat",
-        "originalPlaceholder": "613|Példa: Én vagyok egyetértek veled",
-        "corrected": "614|Javítás",
-        "correctedPlaceholder": "615|Példa: Egyetértek veled",
-        "explanation": "616|Magyarázat (nem kötelező)",
-        "explanationPlaceholder": "617|Miért helyes a javítás?",
+        "button": "Gyors hiba",
+        "title": "Gyors hiba",
+        "original": "Eredeti mondat",
+        "originalPlaceholder": "Példa: Én vagyok egyetértek veled",
+        "corrected": "Javítás",
+        "correctedPlaceholder": "Példa: Egyetértek veled",
+        "explanation": "Magyarázat (nem kötelező)",
+        "explanationPlaceholder": "Miért helyes a javítás?",
         "validation": {
-          "original": "618|Előbb add meg az eredeti mondatot.",
-          "corrected": "619|Add meg a javított mondatot is."
+          "original": "Előbb add meg az eredeti mondatot.",
+          "corrected": "Add meg a javított mondatot is."
         },
-        "save": "620|Hiba mentése",
-        "saving": "621|Mentés…",
-        "saved": "622|Mentve a nyelvtani jegyzetek közé.",
-        "duplicate": "623|Már mentve — a duplikátumot kihagytuk.",
-        "failed": "624|A mentés nem sikerült. Próbáld újra.",
-        "openTopic": "625|Gyakori hibák megnyitása",
-        "done": "626|Kész",
-        "tip": "627|A mentett javítások automatikusan bekerülnek az ismétlésbe, így azok jönnek vissza először, amiket rendre elrontasz."
+        "save": "Hiba mentése",
+        "saving": "Mentés…",
+        "saved": "Mentve a nyelvtani jegyzetek közé.",
+        "duplicate": "Már mentve — a duplikátumot kihagytuk.",
+        "failed": "A mentés nem sikerült. Próbáld újra.",
+        "openTopic": "Gyakori hibák megnyitása",
+        "done": "Kész",
+        "tip": "A mentett javítások automatikusan bekerülnek az ismétlésbe, így azok jönnek vissza először, amiket rendre elrontasz."
       },
       "templates": {
-        "topicTitle": "628|Témasablonok",
-        "noteTitle": "629|Jegyzetsablonok",
-        "button": "630|Sablon",
-        "startFromTemplate": "631|Kezdés sablonból",
-        "searchPlaceholder": "632|Sablonok keresése…",
-        "allLanguages": "633|Mind",
-        "anyDifficulty": "634|Bármelyik",
+        "topicTitle": "Témasablonok",
+        "noteTitle": "Jegyzetsablonok",
+        "button": "Sablon",
+        "startFromTemplate": "Kezdés sablonból",
+        "searchPlaceholder": "Sablonok keresése…",
+        "allLanguages": "Mind",
+        "anyDifficulty": "Bármelyik",
         "language": {
-          "en": "635|Angol",
-          "es": "636|Spanyol",
-          "fr": "637|Francia",
-          "de": "638|Német"
+          "en": "Angol",
+          "es": "Spanyol",
+          "fr": "Francia",
+          "de": "Német"
         },
-        "minutes": "639|{{minutes}} perc",
-        "notesIncluded_one": "640|{{count}} jegyzet",
-        "notesIncluded_other": "641|{{count}} jegyzet",
-        "blocksIncluded_one": "642|{{count}} blokk",
-        "blocksIncluded_other": "643|{{count}} blokk",
-        "empty": "644|Egyik sablon sem felel meg a szűrőidnek.",
-        "use": "645|Sablon használata",
-        "creating": "646|Létrehozás…",
-        "replaceConfirm": "647|Lecseréled a jegyzet jelenlegi tartalmát erre a sablonra? Nyomj Mégsét, ha inkább alá szeretnéd illeszteni.",
-        "applyTitle": "648|Alkalmazod ezt: „{{title}}”?",
-        "applyBody": "649|Ebben a jegyzetben már van tartalom. Válaszd ki, hogyan alkalmazzuk a sablont.",
-        "applyReplace": "650|Tartalom cseréje",
-        "applyAppend": "651|Blokkok hozzáfűzése"
+        "minutes": "{{minutes}} perc",
+        "notesIncluded_one": "{{count}} jegyzet",
+        "notesIncluded_other": "{{count}} jegyzet",
+        "blocksIncluded_one": "{{count}} blokk",
+        "blocksIncluded_other": "{{count}} blokk",
+        "empty": "Egyik sablon sem felel meg a szűrőidnek.",
+        "use": "Sablon használata",
+        "creating": "Létrehozás…",
+        "replaceConfirm": "Lecseréled a jegyzet jelenlegi tartalmát erre a sablonra? Nyomj Mégsét, ha inkább alá szeretnéd illeszteni.",
+        "applyTitle": "Alkalmazod ezt: „{{title}}”?",
+        "applyBody": "Ebben a jegyzetben már van tartalom. Válaszd ki, hogyan alkalmazzuk a sablont.",
+        "applyReplace": "Tartalom cseréje",
+        "applyAppend": "Blokkok hozzáfűzése"
       },
       "review": {
-        "title": "652|Ismétlés",
-        "subtitle": "653|Rögzítsd a tanultakat szakaszos ismétléssel.",
-        "cardTitle": "654|Mai ismétlés",
-        "cardSubtitle_one": "655|{{count}} elem készen áll · ~{{minutes}} perc",
-        "cardSubtitle_other": "656|{{count}} elem készen áll · ~{{minutes}} perc",
-        "caughtUpTitle": "657|Mindennel megvagy",
-        "caughtUp": "658|Mindennel megvagy. Nyiss meg vagy szerkessz jegyzeteket, és kapsz ismétlési javaslatokat.",
-        "dueBadge": "659|Esedékes",
-        "refreshBody": "660|Most nincs esedékes tétel — azért felfrissítheted, amit mostanában olvastál.",
-        "refreshStart": "661|Friss jegyzetek felelevenítése",
-        "start": "662|Ismétlés indítása",
-        "skip": "663|Kihagyás",
-        "itemOf": "664|{{current}}. elem / {{total}}",
-        "untitled": "665|Nyelvtani jegyzet",
-        "stats": "666|Ismételve {{count}} alkalommal · sorozat {{streak}}",
-        "continueToQuestion": "667|Tovább a kérdésre",
-        "showAnswer": "668|Válasz megjelenítése",
-        "compareTitle": "669|Hasonlítsd össze a válaszod",
-        "referenceAnswer": "670|Minta: {{answer}}",
-        "openNote": "671|Teljes jegyzet megnyitása",
+        "title": "Ismétlés",
+        "subtitle": "Rögzítsd a tanultakat szakaszos ismétléssel.",
+        "cardTitle": "Mai ismétlés",
+        "cardSubtitle_one": "{{count}} elem készen áll · ~{{minutes}} perc",
+        "cardSubtitle_other": "{{count}} elem készen áll · ~{{minutes}} perc",
+        "caughtUpTitle": "Mindennel megvagy",
+        "caughtUp": "Mindennel megvagy. Nyiss meg vagy szerkessz jegyzeteket, és kapsz ismétlési javaslatokat.",
+        "dueBadge": "Esedékes",
+        "refreshBody": "Most nincs esedékes tétel — azért felfrissítheted, amit mostanában olvastál.",
+        "refreshStart": "Friss jegyzetek felelevenítése",
+        "start": "Ismétlés indítása",
+        "skip": "Kihagyás",
+        "itemOf": "{{current}}. elem / {{total}}",
+        "untitled": "Nyelvtani jegyzet",
+        "stats": "Ismételve {{count}} alkalommal · sorozat {{streak}}",
+        "continueToQuestion": "Tovább a kérdésre",
+        "showAnswer": "Válasz megjelenítése",
+        "compareTitle": "Hasonlítsd össze a válaszod",
+        "referenceAnswer": "Minta: {{answer}}",
+        "openNote": "Teljes jegyzet megnyitása",
         "pool": {
-          "manual_one": "672|{{count}} elem vár ismétlésre",
-          "manual_other": "673|{{count}} elem vár ismétlésre",
-          "recentlyOpened_one": "674|{{count}} nemrég megnyitott jegyzet",
-          "recentlyOpened_other": "675|{{count}} nemrég megnyitott jegyzet",
-          "recentlyEdited_one": "676|{{count}} nemrég szerkesztett jegyzet",
-          "recentlyEdited_other": "677|{{count}} nemrég szerkesztett jegyzet"
+          "manual_one": "{{count}} elem vár ismétlésre",
+          "manual_other": "{{count}} elem vár ismétlésre",
+          "recentlyOpened_one": "{{count}} nemrég megnyitott jegyzet",
+          "recentlyOpened_other": "{{count}} nemrég megnyitott jegyzet",
+          "recentlyEdited_one": "{{count}} nemrég szerkesztett jegyzet",
+          "recentlyEdited_other": "{{count}} nemrég szerkesztett jegyzet"
         },
         "sourceType": {
-          "note": "678|Jegyzet",
-          "mistake": "679|Hiba",
-          "quiz": "680|Kvíz"
+          "note": "Jegyzet",
+          "mistake": "Hiba",
+          "quiz": "Kvíz"
         },
         "phase": {
-          "source": "681|Tanulás",
-          "question": "682|Válasz",
-          "result": "683|Értékelés"
+          "source": "Tanulás",
+          "question": "Válasz",
+          "result": "Értékelés"
         },
         "rating": {
-          "forgot": "684|Elfelejtettem",
-          "hard": "685|Nehéz",
-          "good": "686|Jó",
-          "easy": "687|Könnyű"
+          "forgot": "Elfelejtettem",
+          "hard": "Nehéz",
+          "good": "Jó",
+          "easy": "Könnyű"
         },
         "interval": {
-          "plus4h": "688|+4 óra",
-          "plus1d": "689|+1 nap",
-          "plus3d": "690|+3 nap",
-          "plus7d": "691|+7 nap"
+          "plus4h": "+4 óra",
+          "plus1d": "+1 nap",
+          "plus3d": "+3 nap",
+          "plus7d": "+7 nap"
         },
         "summary": {
-          "title": "692|A munkamenet véget ért",
-          "emptyTitle": "693|Semmit sem ismételtél",
-          "reviewed": "694|Ismételve",
-          "correct": "695|Helyes",
-          "incorrect": "696|Hibás",
-          "hintForgot": "697|Néhány elem 4 óra múlva tér vissza.",
-          "hintHard": "698|A nehéz elemek holnap térnek vissza.",
-          "hintGood": "699|A jó elemek 3 nap múlva térnek vissza.",
-          "hintEasy": "700|Minden elem 7 nap múlva tér vissza.",
-          "done": "701|Vissza a nyelvtani jegyzetekhez"
+          "title": "A munkamenet véget ért",
+          "emptyTitle": "Semmit sem ismételtél",
+          "reviewed": "Ismételve",
+          "correct": "Helyes",
+          "incorrect": "Hibás",
+          "hintForgot": "Néhány elem 4 óra múlva tér vissza.",
+          "hintHard": "A nehéz elemek holnap térnek vissza.",
+          "hintGood": "A jó elemek 3 nap múlva térnek vissza.",
+          "hintEasy": "Minden elem 7 nap múlva tér vissza.",
+          "done": "Vissza a nyelvtani jegyzetekhez"
         },
-        "loadError": "702|Nem sikerült betölteni az ismétlési sorodat.",
-        "mistakeCount_one": "703|{{count}} hiba",
-        "mistakeCount_other": "704|{{count}} hiba"
+        "loadError": "Nem sikerült betölteni az ismétlési sorodat.",
+        "mistakeCount_one": "{{count}} hiba",
+        "mistakeCount_other": "{{count}} hiba"
       },
-      "mistakesBadge": "705|Hibák",
-      "topicsTitle": "706|Témák",
-      "deleteTopic": "707|Téma törlése",
-      "deleteTopicTitle": "708|Törlöd ezt a témát?",
-      "deleteNoteTitle": "709|Törlöd ezt a jegyzetet?",
-      "pin": "710|Jegyzet rögzítése",
-      "unpin": "711|Rögzítés feloldása",
-      "favorite": "712|Hozzáadás a kedvencekhez",
-      "unfavorite": "713|Eltávolítás a kedvencekből",
+      "mistakesBadge": "Hibák",
+      "topicsTitle": "Témák",
+      "deleteTopic": "Téma törlése",
+      "deleteTopicTitle": "Törlöd ezt a témát?",
+      "deleteNoteTitle": "Törlöd ezt a jegyzetet?",
+      "pin": "Jegyzet rögzítése",
+      "unpin": "Rögzítés feloldása",
+      "favorite": "Hozzáadás a kedvencekhez",
+      "unfavorite": "Eltávolítás a kedvencekből",
       "search": {
-        "topics": "714|Témák keresése…",
-        "notes": "715|Jegyzetek keresése…",
-        "clear": "716|Keresés törlése",
-        "noMatchTitle": "717|Nincs találat",
-        "noMatchBody": "718|Próbálj másik kulcsszót.",
-        "notesSection_one": "719|Jegyzetek ({{count}})",
-        "notesSection_other": "720|Jegyzetek ({{count}})",
-        "noNoteMatches": "721|Egyik jegyzet sem felel meg ennek a keresésnek."
+        "topics": "Témák keresése…",
+        "notes": "Jegyzetek keresése…",
+        "clear": "Keresés törlése",
+        "noMatchTitle": "Nincs találat",
+        "noMatchBody": "Próbálj másik kulcsszót.",
+        "notesSection_one": "Jegyzetek ({{count}})",
+        "notesSection_other": "Jegyzetek ({{count}})",
+        "noNoteMatches": "Egyik jegyzet sem felel meg ennek a keresésnek."
       },
       "filter": {
-        "label": "722|Jegyzetek szűrése",
-        "all": "723|Mind",
-        "pinned": "724|Rögzített",
-        "favorites": "725|Kedvencek",
-        "mistakes": "726|Hibák",
-        "quizzes": "727|Kvízek",
-        "review": "728|Esedékes",
+        "label": "Jegyzetek szűrése",
+        "all": "Mind",
+        "pinned": "Rögzített",
+        "favorites": "Kedvencek",
+        "mistakes": "Hibák",
+        "quizzes": "Kvízek",
+        "review": "Esedékes",
         "empty": {
           "all": {
-            "title": "729|Még nincs nyelvtani jegyzeted",
-            "body": "730|Hozd létre az első nyelvtani jegyzeted ehhez a témához."
+            "title": "Még nincs nyelvtani jegyzeted",
+            "body": "Hozd létre az első nyelvtani jegyzeted ehhez a témához."
           },
           "pinned": {
-            "title": "731|Még nincs rögzített jegyzeted",
-            "body": "732|Rögzíts jegyzeteket a listából, hogy gyorsan megtaláld őket."
+            "title": "Még nincs rögzített jegyzeted",
+            "body": "Rögzíts jegyzeteket a listából, hogy gyorsan megtaláld őket."
           },
           "favorites": {
-            "title": "733|Még nincs kedvenc jegyzeted",
-            "body": "734|Jelöld kedvencnek a jegyzeteket, hogy kéznél legyenek."
+            "title": "Még nincs kedvenc jegyzeted",
+            "body": "Jelöld kedvencnek a jegyzeteket, hogy kéznél legyenek."
           },
           "mistakes": {
-            "title": "735|Még nincs mentett hibád",
-            "body": "736|Ments el nyelvtani hibákat, hogy itt ismételhesd őket."
+            "title": "Még nincs mentett hibád",
+            "body": "Ments el nyelvtani hibákat, hogy itt ismételhesd őket."
           },
           "quizzes": {
-            "title": "737|Még nincs kvízes jegyzeted",
-            "body": "738|Adj kvízt egy jegyzethez, hogy itt lásd."
+            "title": "Még nincs kvízes jegyzeted",
+            "body": "Adj kvízt egy jegyzethez, hogy itt lásd."
           },
           "review": {
-            "title": "739|Most nincs esedékes tétel",
-            "body": "740|A jegyzetek akkor térnek vissza ide, amikor esedékes a következő ismétlésük."
+            "title": "Most nincs esedékes tétel",
+            "body": "A jegyzetek akkor térnek vissza ide, amikor esedékes a következő ismétlésük."
           }
         }
       },
       "reorder": {
-        "start": "741|Átrendezés",
-        "done": "742|Kész",
-        "up": "743|Fel",
-        "down": "744|Le"
+        "start": "Átrendezés",
+        "done": "Kész",
+        "up": "Fel",
+        "down": "Le"
       },
       "highlights": {
-        "mistakesTitle": "745|Javítandó hibák",
-        "mistakesSubtitle": "746|Friss javítások várnak ismétlésre.",
-        "quizzesTitle": "747|Gyenge kvíztémák",
-        "quizzesSubtitle": "748|Kvízek, amiket érdemes hamarosan újra megcsinálni."
+        "mistakesTitle": "Javítandó hibák",
+        "mistakesSubtitle": "Friss javítások várnak ismétlésre.",
+        "quizzesTitle": "Gyenge kvíztémák",
+        "quizzesSubtitle": "Kvízek, amiket érdemes hamarosan újra megcsinálni."
       },
       "quickNote": {
-        "button": "749|Gyors jegyzet",
-        "title": "750|Gyors jegyzet",
-        "subtitle": "751|Rögzíts egy nyelvtani ötletet a teljes szerkesztő megnyitása nélkül.",
-        "noteTitle": "752|Cím",
-        "titlePlaceholder": "753|Példa: Ser vs Estar",
-        "text": "754|Jegyzet",
-        "textPlaceholder": "755|Ide írd a hasznos részt",
-        "noteType": "756|Jegyzet típusa",
-        "topic": "757|Téma",
-        "openEditor": "758|Szerkesztő megnyitása mentés után",
-        "openEditorHint": "759|Hasznos, ha a gyors változatból teljes jegyzet nő ki.",
-        "tip": "760|A gyors jegyzet arra az ötletre való, amit különben tíz perc múlva elfelejtenél.",
-        "validation": "761|Előbb adj hozzá címet vagy valamennyi szöveget.",
-        "save": "762|Gyors jegyzet mentése",
-        "saving": "763|Mentés…"
+        "button": "Gyors jegyzet",
+        "title": "Gyors jegyzet",
+        "subtitle": "Rögzíts egy nyelvtani ötletet a teljes szerkesztő megnyitása nélkül.",
+        "noteTitle": "Cím",
+        "titlePlaceholder": "Példa: Ser vs Estar",
+        "text": "Jegyzet",
+        "textPlaceholder": "Ide írd a hasznos részt",
+        "noteType": "Jegyzet típusa",
+        "topic": "Téma",
+        "openEditor": "Szerkesztő megnyitása mentés után",
+        "openEditorHint": "Hasznos, ha a gyors változatból teljes jegyzet nő ki.",
+        "tip": "A gyors jegyzet arra az ötletre való, amit különben tíz perc múlva elfelejtenél.",
+        "validation": "Előbb adj hozzá címet vagy valamennyi szöveget.",
+        "save": "Gyors jegyzet mentése",
+        "saving": "Mentés…"
       },
       "settings": {
-        "title": "764|Jegyzetbeállítások",
-        "subtitle": "765|Hogyan működik a gyors rögzítés, a hibák és a jegyzetlista.",
-        "reset": "766|Alaphelyzet visszaállítása",
-        "tip": "767|A gyors hibákat olyan mondatokhoz használd, amiket tényleg rosszul írtál — hasznosabbak a tankönyvi tökéletes példáknál.",
+        "title": "Jegyzetbeállítások",
+        "subtitle": "Hogyan működik a gyors rögzítés, a hibák és a jegyzetlista.",
+        "reset": "Alaphelyzet visszaállítása",
+        "tip": "A gyors hibákat olyan mondatokhoz használd, amiket tényleg rosszul írtál — hasznosabbak a tankönyvi tökéletes példáknál.",
         "quickCapture": {
-          "title": "768|Gyors rögzítés",
-          "subtitle": "769|Legyen azonnali a gyors jegyzet és hiba."
+          "title": "Gyors rögzítés",
+          "subtitle": "Legyen azonnali a gyors jegyzet és hiba."
         },
         "mistakeNotes": {
-          "title": "770|Hibajegyzetek",
-          "subtitle": "771|Mi kerül mentésre, amikor gyors hibát rögzítesz."
+          "title": "Hibajegyzetek",
+          "subtitle": "Mi kerül mentésre, amikor gyors hibát rögzítesz."
         },
         "essays": {
-          "title": "772|Esszék",
-          "subtitle": "773|Mi történik az esszéidben talált nyelvtani hibákkal."
+          "title": "Esszék",
+          "subtitle": "Mi történik az esszéidben talált nyelvtani hibákkal."
         },
         "review": {
-          "title": "774|Szakaszos ismétlés",
-          "subtitle": "775|Hogyan kerülnek a jegyzetek az ismétlési sorba."
+          "title": "Szakaszos ismétlés",
+          "subtitle": "Hogyan kerülnek a jegyzetek az ismétlési sorba."
         },
         "appearance": {
-          "title": "776|Jegyzetek megjelenése",
-          "subtitle": "777|Hogyan rendezett és mekkora a jegyzetlista."
+          "title": "Jegyzetek megjelenése",
+          "subtitle": "Hogyan rendezett és mekkora a jegyzetlista."
         },
         "helpers": {
-          "title": "778|Tanulási segítők",
-          "subtitle": "779|Apró lökések az üres képernyőkön és a gyors űrlapokon."
+          "title": "Tanulási segítők",
+          "subtitle": "Apró lökések az üres képernyőkön és a gyors űrlapokon."
         },
         "defaultType": {
-          "title": "780|Alapértelmezett jegyzettípus",
-          "subtitle": "781|Milyen típussal indul egy új gyors jegyzet."
+          "title": "Alapértelmezett jegyzettípus",
+          "subtitle": "Milyen típussal indul egy új gyors jegyzet."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "782|Szerkesztő megnyitása gyors mentés után",
-            "subtitle": "783|Gyors jegyzet mentése után ugorj rögtön a teljes szerkesztőbe."
+            "title": "Szerkesztő megnyitása gyors mentés után",
+            "subtitle": "Gyors jegyzet mentése után ugorj rögtön a teljes szerkesztőbe."
           },
           "allowQuickQuizzes": {
-            "title": "784|Kvízek engedélyezése a jegyzetekben",
-            "subtitle": "785|Kínálj kvízblokkokat és kvízkészítést a jegyzeteken belül."
+            "title": "Kvízek engedélyezése a jegyzetekben",
+            "subtitle": "Kínálj kvízblokkokat és kvízkészítést a jegyzeteken belül."
           },
           "showsMistakeHighlights": {
-            "title": "786|Hibajegyzetek kiemelése",
-            "subtitle": "787|Meleg árnyalat a hibakártyákhoz, és a hibasor megjelenítése."
+            "title": "Hibajegyzetek kiemelése",
+            "subtitle": "Meleg árnyalat a hibakártyákhoz, és a hibasor megjelenítése."
           },
           "includeOriginalSentence": {
-            "title": "788|Eredeti mondat beillesztése",
-            "subtitle": "789|A hibás változat idézetblokként kerül a jegyzetbe."
+            "title": "Eredeti mondat beillesztése",
+            "subtitle": "A hibás változat idézetblokként kerül a jegyzetbe."
           },
           "includeCorrectedSentence": {
-            "title": "790|Javított mondat beillesztése",
-            "subtitle": "791|A javított változat példablokként kerül mentésre."
+            "title": "Javított mondat beillesztése",
+            "subtitle": "A javított változat példablokként kerül mentésre."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "792|Magyarázat beillesztése",
-            "subtitle": "793|A magyarázatod bekezdésblokként kerül alá."
+            "title": "Magyarázat beillesztése",
+            "subtitle": "A magyarázatod bekezdésblokként kerül alá."
           },
           "groupMistakesByTopic": {
-            "title": "794|Hibák csoportosítása téma szerint",
-            "subtitle": "795|A gyors hibák az aktuális témába kerüljenek a Gyakori hibák helyett."
+            "title": "Hibák csoportosítása téma szerint",
+            "subtitle": "A gyors hibák az aktuális témába kerüljenek a Gyakori hibák helyett."
           },
           "askBeforeSavingMistakes": {
-            "title": "796|Kérdezzen rá a hibák mentése előtt",
-            "subtitle": "797|Erősítsd meg, mielőtt egy esszéhiba jegyzetté válik. Ez felülírja az automatikus mentést."
+            "title": "Kérdezzen rá a hibák mentése előtt",
+            "subtitle": "Erősítsd meg, mielőtt egy esszéhiba jegyzetté válik. Ez felülírja az automatikus mentést."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "798|Esszéhibák automatikus mentése",
-            "subtitle": "799|Az esszében talált minden nyelvtani hiba jegyzetté válik. Ha a „Kérdezzen rá mentés előtt” be van kapcsolva, egyszer kérdez az egész ellenőrzésre."
+            "title": "Esszéhibák automatikus mentése",
+            "subtitle": "Az esszében talált minden nyelvtani hiba jegyzetté válik. Ha a „Kérdezzen rá mentés előtt” be van kapcsolva, egyszer kérdez az egész ellenőrzésre."
           },
           "groupsPinnedNotesFirst": {
-            "title": "800|Rögzített jegyzetek elöl",
-            "subtitle": "801|Tartsd a fontos szabályokat minden téma tetején."
+            "title": "Rögzített jegyzetek elöl",
+            "subtitle": "Tartsd a fontos szabályokat minden téma tetején."
           },
           "usesCompactCards": {
-            "title": "802|Kompakt jegyzetkártyák",
-            "subtitle": "803|Tömörebb kártyák, ha több jegyzetet szeretnél a képernyőn."
+            "title": "Kompakt jegyzetkártyák",
+            "subtitle": "Tömörebb kártyák, ha több jegyzetet szeretnél a képernyőn."
           },
           "showsHelperTips": {
-            "title": "804|Segítő tippek megjelenítése",
-            "subtitle": "805|Rövid, helyzethez illő tippek a jegyzetek készítése közben."
+            "title": "Segítő tippek megjelenítése",
+            "subtitle": "Rövid, helyzethez illő tippek a jegyzetek készítése közben."
           },
           "autoAddNotesToReview": {
-            "title": "806|Új jegyzetek hozzáadása az ismétléshez",
-            "subtitle": "807|Minden mentett jegyzet bekerül az ismétlési sorba, másnapra esedékesen."
+            "title": "Új jegyzetek hozzáadása az ismétléshez",
+            "subtitle": "Minden mentett jegyzet bekerül az ismétlési sorba, másnapra esedékesen."
           }
         }
       },
-      "editTopic": "808|Téma szerkesztése",
+      "editTopic": "Téma szerkesztése",
       "toSet": {
-        "title": "809|Csomag készítése ebből a jegyzetből",
-        "subtitle": "810|Válaszd ki a párokat, amelyekből kártya lesz.",
-        "setTitle": "811|A csomag címe",
-        "empty": "812|Ebből a jegyzetből még nincs mit kártyává alakítani. Az összehasonlítás, példa és szabály blokkok közvetlenül átalakulnak, a listaelemek pedig gondolatjelnél válnak ketté — mint a „hacer — csinálni”.",
-        "button": "813|Csomag készítése",
-        "create": "814|Csomag létrehozása",
-        "creating": "815|Létrehozás…",
-        "error": "816|A csomagot nem sikerült létrehozni. Próbáld újra.",
-        "cards_one": "817|{{count}} kártya",
-        "cards_other": "818|{{count}} kártya"
+        "title": "Csomag készítése ebből a jegyzetből",
+        "subtitle": "Válaszd ki a párokat, amelyekből kártya lesz.",
+        "setTitle": "A csomag címe",
+        "empty": "Ebből a jegyzetből még nincs mit kártyává alakítani. Az összehasonlítás, példa és szabály blokkok közvetlenül átalakulnak, a listaelemek pedig gondolatjelnél válnak ketté — mint a „hacer — csinálni”.",
+        "button": "Csomag készítése",
+        "create": "Csomag létrehozása",
+        "creating": "Létrehozás…",
+        "error": "A csomagot nem sikerült létrehozni. Próbáld újra.",
+        "cards_one": "{{count}} kártya",
+        "cards_other": "{{count}} kártya"
       },
-      "topicsEmptyTip": "819|A téma egy mappa a jegyzeteknek — egy nyelvenként, vagy egy minden olyan dologra, amit rendre elrontasz.",
-      "notesEmptyTip": "820|Minden mentett jegyzet bekerül az ismétlési sorba, így a leírásával már el is kezdted gyakorolni."
+      "topicsEmptyTip": "A téma egy mappa a jegyzeteknek — egy nyelvenként, vagy egy minden olyan dologra, amit rendre elrontasz.",
+      "notesEmptyTip": "Minden mentett jegyzet bekerül az ismétlési sorba, így a leírásával már el is kezdted gyakorolni."
     }
   },
   "reading": {
-    "sectionTitle": "821|Gyakorlómódok",
-    "loading": "822|Betöltés…",
-    "loadError": "823|Nem sikerült betölteni az olvasnivalóidat.",
-    "notFound": "824|Lehet, hogy ezt az elemet törölték.",
+    "sectionTitle": "Gyakorlómódok",
+    "loading": "Betöltés…",
+    "loadError": "Nem sikerült betölteni az olvasnivalóidat.",
+    "notFound": "Lehet, hogy ezt az elemet törölték.",
     "today": {
-      "title": "825|Mai haladás",
-      "subtitle": "826|Tartsd életben az olvasási sorozatod."
+      "title": "Mai haladás",
+      "subtitle": "Tartsd életben az olvasási sorozatod."
     },
     "menu": {
-      "comingSoon": "827|Hamarosan",
+      "comingSoon": "Hamarosan",
       "myTexts": {
-        "title": "828|Saját szövegeim",
-        "subtitle": "829|Illeszd be a saját szöveged, és olvasd el segítséggel."
+        "title": "Saját szövegeim",
+        "subtitle": "Illeszd be a saját szöveged, és olvasd el segítséggel."
       },
       "fromSets": {
-        "title": "830|Olvasás a csomagokból",
-        "subtitle": "831|Készíts olvasnivalót a kártyacsomagjaidból."
+        "title": "Olvasás a csomagokból",
+        "subtitle": "Készíts olvasnivalót a kártyacsomagjaidból."
       },
       "storyMode": {
-        "title": "832|Történet mód",
-        "subtitle": "833|Olvass interaktív történeteket elágazó döntésekkel."
+        "title": "Történet mód",
+        "subtitle": "Olvass interaktív történeteket elágazó döntésekkel."
       },
       "speedReading": {
-        "title": "834|Gyorsolvasás",
-        "subtitle": "835|Gyakorold a gyorsabb olvasást időzített tempóval."
+        "title": "Gyorsolvasás",
+        "subtitle": "Gyakorold a gyorsabb olvasást időzített tempóval."
       }
     },
     "myTexts": {
-      "title": "836|Saját szövegeim",
-      "subtitle": "837|A mentett olvasnivalóid.",
-      "addText": "838|Szöveg hozzáadása",
-      "emptyTitle": "839|Még nincs szöveged",
-      "emptyBody": "840|Add hozzá az első szöveged, és kezdd az olvasásgyakorlást.",
-      "savedTitle": "841|Mentett szövegek"
+      "title": "Saját szövegeim",
+      "subtitle": "A mentett olvasnivalóid.",
+      "addText": "Szöveg hozzáadása",
+      "emptyTitle": "Még nincs szöveged",
+      "emptyBody": "Add hozzá az első szöveged, és kezdd az olvasásgyakorlást.",
+      "savedTitle": "Mentett szövegek"
     },
     "status": {
-      "new": "842|Új",
-      "inProgress": "843|Folyamatban",
-      "completed": "844|Kész"
+      "new": "Új",
+      "inProgress": "Folyamatban",
+      "completed": "Kész"
     },
     "card": {
-      "words_one": "845|{{count}} szó",
-      "words_other": "846|{{count}} szó",
-      "start": "847|Kezdés",
-      "continue": "848|Folytatás",
-      "readAgain": "849|Újraolvasás",
-      "rename": "850|Átnevezés",
-      "renamePrompt": "851|Új cím:",
-      "delete": "852|Törlés",
-      "deleteConfirm": "853|Törlöd ezt: „{{title}}”? Ez nem vonható vissza."
+      "words_one": "{{count}} szó",
+      "words_other": "{{count}} szó",
+      "start": "Kezdés",
+      "continue": "Folytatás",
+      "readAgain": "Újraolvasás",
+      "rename": "Átnevezés",
+      "renamePrompt": "Új cím:",
+      "delete": "Törlés",
+      "deleteConfirm": "Törlöd ezt: „{{title}}”? Ez nem vonható vissza."
     },
     "continue": {
-      "eyebrow": "854|Olvasás folytatása",
-      "percent": "855|{{percent}} % kész",
-      "button": "856|Folytatás"
+      "eyebrow": "Olvasás folytatása",
+      "percent": "{{percent}} % kész",
+      "button": "Folytatás"
     },
     "focus": {
-      "mainIdea": "857|Fő gondolat",
-      "vocabulary": "858|Szókincs",
-      "detailedComprehension": "859|Részletes megértés",
-      "grammarAwareness": "860|Nyelvtani figyelem",
-      "speedFluency": "861|Sebesség / folyékonyság"
+      "mainIdea": "Fő gondolat",
+      "vocabulary": "Szókincs",
+      "detailedComprehension": "Részletes megértés",
+      "grammarAwareness": "Nyelvtani figyelem",
+      "speedFluency": "Sebesség / folyékonyság"
     },
     "questionType": {
-      "comprehension": "862|Szövegértés",
-      "trueFalse": "863|Igaz / Hamis",
-      "fillGap": "864|Hiányzó szó",
-      "vocabulary": "865|Szókincs",
-      "findEvidence": "866|Bizonyíték keresése",
-      "orderReconstruction": "867|Sorrend"
+      "comprehension": "Szövegértés",
+      "trueFalse": "Igaz / Hamis",
+      "fillGap": "Hiányzó szó",
+      "vocabulary": "Szókincs",
+      "findEvidence": "Bizonyíték keresése",
+      "orderReconstruction": "Sorrend"
     },
     "assistance": {
-      "highlightUnknownWords": "868|Ismeretlen szavak kiemelése",
-      "translationOnTap": "869|Fordítás koppintásra",
-      "vocabularyHints": "870|Szókincstippek",
-      "readingTimer": "871|Olvasási időzítő"
+      "highlightUnknownWords": "Ismeretlen szavak kiemelése",
+      "translationOnTap": "Fordítás koppintásra",
+      "vocabularyHints": "Szókincstippek",
+      "readingTimer": "Olvasási időzítő"
     },
     "addText": {
-      "title": "872|Szöveg hozzáadása",
-      "subtitle": "873|Illessz be egy szöveget, és állítsd be az olvasásgyakorlást.",
-      "untitled": "874|Cím nélküli szöveg",
-      "pastePlaceholder": "875|Illeszd be vagy írd ide a szöveged…",
-      "titleLabel": "876|Cím",
-      "titlePlaceholder": "877|Nem kötelező — javasolhatunk egyet",
-      "language": "878|Nyelv",
-      "difficulty": "879|Nehézség",
-      "autoDetect": "880|Automatikus felismerés",
-      "manual": "881|Kézi választás",
-      "focus": "882|Olvasási fókusz",
-      "questionTypes": "883|Kérdéstípusok",
-      "assistance": "884|Olvasási segítség",
+      "title": "Szöveg hozzáadása",
+      "subtitle": "Illessz be egy szöveget, és állítsd be az olvasásgyakorlást.",
+      "untitled": "Cím nélküli szöveg",
+      "pastePlaceholder": "Illeszd be vagy írd ide a szöveged…",
+      "titleLabel": "Cím",
+      "titlePlaceholder": "Nem kötelező — javasolhatunk egyet",
+      "language": "Nyelv",
+      "difficulty": "Nehézség",
+      "autoDetect": "Automatikus felismerés",
+      "manual": "Kézi választás",
+      "focus": "Olvasási fókusz",
+      "questionTypes": "Kérdéstípusok",
+      "assistance": "Olvasási segítség",
       "stats": {
-        "words_one": "885|{{count}} szó",
-        "words_other": "886|{{count}} szó",
-        "chars_one": "887|{{count}} karakter",
-        "chars_other": "888|{{count}} karakter",
-        "min": "889|perc",
-        "detected": "890|Felismerve: {{level}}"
+        "words_one": "{{count}} szó",
+        "words_other": "{{count}} szó",
+        "chars_one": "{{count}} karakter",
+        "chars_other": "{{count}} karakter",
+        "min": "perc",
+        "detected": "Felismerve: {{level}}"
       },
       "validation": {
-        "empty": "891|Előbb adj hozzá egy szöveget.",
-        "tooShort": "892|Adj hozzá legalább 20 szót."
+        "empty": "Előbb adj hozzá egy szöveget.",
+        "tooShort": "Adj hozzá legalább 20 szót."
       },
-      "save": "893|Szöveg mentése",
-      "saveAndStart": "894|Mentés és indítás",
-      "saving": "895|Mentés…",
-      "saveError": "896|A mentés nem sikerült. Próbáld újra.",
+      "save": "Szöveg mentése",
+      "saveAndStart": "Mentés és indítás",
+      "saving": "Mentés…",
+      "saveError": "A mentés nem sikerült. Próbáld újra.",
       "source": {
-        "pasteText": "897|Beillesztés",
-        "photo": "898|Fotó",
-        "pdf": "899|PDF",
-        "generate": "900|Generálás",
-        "explore": "901|Felfedezés"
+        "pasteText": "Beillesztés",
+        "photo": "Fotó",
+        "pdf": "PDF",
+        "generate": "Generálás",
+        "explore": "Felfedezés"
       },
       "style": {
-        "informative": "902|Ismeretterjesztő",
-        "casual": "903|Kötetlen",
-        "academic": "904|Tudományos",
-        "narrative": "905|Elbeszélő"
+        "informative": "Ismeretterjesztő",
+        "casual": "Kötetlen",
+        "academic": "Tudományos",
+        "narrative": "Elbeszélő"
       },
       "length": {
-        "short": "906|Rövid",
-        "medium": "907|Közepes",
-        "long": "908|Hosszú"
+        "short": "Rövid",
+        "medium": "Közepes",
+        "long": "Hosszú"
       },
       "import": {
-        "photoHint": "909|Tölts fel egy fotót egy oldalról — kinyerjük belőle a szöveget.",
-        "chooseImage": "910|Kép választása",
-        "recognizing": "911|Felismerés… {{percent}} %",
-        "imageError": "912|Nem sikerült szöveget kiolvasni ebből a képből.",
-        "pdfHint": "913|Tölts fel egy PDF-et — kinyerjük belőle a szöveget.",
-        "choosePDF": "914|PDF választása",
-        "reading": "915|PDF olvasása…",
-        "pdfError": "916|Nem sikerült elolvasni ezt a PDF-et.",
-        "topicPlaceholder": "917|Téma — pl. korallzátonyok, a könyvnyomtatás",
-        "explorePlaceholder": "918|Téma vagy kulcsszó — pl. Marie Curie, Velence",
-        "generateButton": "919|Szöveg generálása",
-        "exploreButton": "920|Cikk lekérése",
-        "working": "921|Dolgozunk…",
-        "generateError": "922|A szöveget nem sikerült generálni. Próbáld újra.",
-        "exploreError": "923|Nem találtunk cikket erről a témáról.",
-        "exploredFrom": "924|Forrás"
+        "photoHint": "Tölts fel egy fotót egy oldalról — kinyerjük belőle a szöveget.",
+        "chooseImage": "Kép választása",
+        "recognizing": "Felismerés… {{percent}} %",
+        "imageError": "Nem sikerült szöveget kiolvasni ebből a képből.",
+        "pdfHint": "Tölts fel egy PDF-et — kinyerjük belőle a szöveget.",
+        "choosePDF": "PDF választása",
+        "reading": "PDF olvasása…",
+        "pdfError": "Nem sikerült elolvasni ezt a PDF-et.",
+        "topicPlaceholder": "Téma — pl. korallzátonyok, a könyvnyomtatás",
+        "explorePlaceholder": "Téma vagy kulcsszó — pl. Marie Curie, Velence",
+        "generateButton": "Szöveg generálása",
+        "exploreButton": "Cikk lekérése",
+        "working": "Dolgozunk…",
+        "generateError": "A szöveget nem sikerült generálni. Próbáld újra.",
+        "exploreError": "Nem találtunk cikket erről a témáról.",
+        "exploredFrom": "Forrás"
       }
     },
     "session": {
-      "startQuestions": "925|Tovább a kérdésekre",
-      "finish": "926|Befejezés",
-      "next": "927|Tovább",
-      "questionOf": "928|{{current}}. kérdés / {{total}}",
-      "closeTranslation": "929|Fordítás bezárása",
-      "translating": "930|Fordítás…",
-      "translationError": "931|A fordítás nem sikerült. Próbáld újra.",
-      "translation": "932|Fordítás",
-      "textLabel": "933|Szöveg"
+      "startQuestions": "Tovább a kérdésekre",
+      "finish": "Befejezés",
+      "next": "Tovább",
+      "questionOf": "{{current}}. kérdés / {{total}}",
+      "closeTranslation": "Fordítás bezárása",
+      "translating": "Fordítás…",
+      "translationError": "A fordítás nem sikerült. Próbáld újra.",
+      "translation": "Fordítás",
+      "textLabel": "Szöveg"
     },
     "result": {
-      "comprehension": "934|Szövegértés",
-      "correct": "935|Helyes",
-      "time": "936|Olvasási idő",
-      "wpm": "937|szó/perc",
-      "mistakes": "938|Hibák",
-      "mistakesTitle": "939|Nézd át a hibáidat",
-      "readAgain": "940|Újraolvasás",
-      "back": "941|Vissza a Saját szövegeimhez",
-      "complete": "942|Gyakorlás kész"
+      "comprehension": "Szövegértés",
+      "correct": "Helyes",
+      "time": "Olvasási idő",
+      "wpm": "szó/perc",
+      "mistakes": "Hibák",
+      "mistakesTitle": "Nézd át a hibáidat",
+      "readAgain": "Újraolvasás",
+      "back": "Vissza a Saját szövegeimhez",
+      "complete": "Gyakorlás kész"
     },
     "fromSets": {
-      "title": "943|Olvasás a csomagokból",
-      "subtitle": "944|Alakíts át egy kártyacsomagot olvasnivalóvá.",
-      "pickSet": "945|Válassz csomagot",
-      "changeSet": "946|Csomag cseréje",
-      "tooFewWords": "947|Ehhez a csomaghoz legalább {{count}} szó kell egy olvasnivalóhoz.",
-      "mode": "948|Generálási mód",
+      "title": "Olvasás a csomagokból",
+      "subtitle": "Alakíts át egy kártyacsomagot olvasnivalóvá.",
+      "pickSet": "Válassz csomagot",
+      "changeSet": "Csomag cseréje",
+      "tooFewWords": "Ehhez a csomaghoz legalább {{count}} szó kell egy olvasnivalóhoz.",
+      "mode": "Generálási mód",
       "modeOption": {
-        "natural": "949|Természetes",
-        "strict": "950|Szigorú",
-        "mixed": "951|Vegyes"
+        "natural": "Természetes",
+        "strict": "Szigorú",
+        "mixed": "Vegyes"
       },
-      "length": "952|A szöveg hossza",
-      "generate": "953|Szöveg generálása",
-      "generating": "954|Készítjük a szöveged…",
-      "generateError": "955|A szöveget nem sikerült elkészíteni. Próbáld újra.",
-      "emptyTitle": "956|Még nincs olvasnivalód",
-      "emptyBody": "957|Válassz egy kártyacsomagot, és olvasnivalót készítünk belőle.",
-      "savedTitle": "958|Mentett olvasnivalók"
+      "length": "A szöveg hossza",
+      "generate": "Szöveg generálása",
+      "generating": "Készítjük a szöveged…",
+      "generateError": "A szöveget nem sikerült elkészíteni. Próbáld újra.",
+      "emptyTitle": "Még nincs olvasnivalód",
+      "emptyBody": "Válassz egy kártyacsomagot, és olvasnivalót készítünk belőle.",
+      "savedTitle": "Mentett olvasnivalók"
     },
     "speed": {
-      "title": "959|Gyorsolvasás",
-      "subtitle": "960|Gyakorold a gyorsabb olvasást időzített tempóval.",
+      "title": "Gyorsolvasás",
+      "subtitle": "Gyakorold a gyorsabb olvasást időzített tempóval.",
       "section": {
-        "target": "961|Cél olvasási sebesség",
-        "timer": "962|Időzítő stílusa",
-        "length": "963|A szöveg hossza"
+        "target": "Cél olvasási sebesség",
+        "timer": "Időzítő stílusa",
+        "length": "A szöveg hossza"
       },
       "target": {
-        "relaxed": "964|Nyugodt",
-        "balanced": "965|Kiegyensúlyozott",
-        "fast": "966|Gyors",
-        "challenge": "967|Kihívás"
+        "relaxed": "Nyugodt",
+        "balanced": "Kiegyensúlyozott",
+        "fast": "Gyors",
+        "challenge": "Kihívás"
       },
       "timer": {
-        "noTimer": "968|Nincs időzítő",
-        "soft": "969|Enyhe időzítő",
-        "strict": "970|Szigorú időzítő"
+        "noTimer": "Nincs időzítő",
+        "soft": "Enyhe időzítő",
+        "strict": "Szigorú időzítő"
       },
       "length": {
-        "two": "971|2 perc",
-        "five": "972|5 perc",
-        "ten": "973|10 perc"
+        "two": "2 perc",
+        "five": "5 perc",
+        "ten": "10 perc"
       },
-      "summary": "974|Cél {{wpm}} szó/perc · ~{{minutes}} perc olvasás",
-      "start": "975|Munkamenet indítása",
-      "preparing": "976|Készítjük a szövegrészletet…",
-      "generateError": "977|A részletet nem sikerült elkészíteni. Próbáld újra.",
-      "recentTitle": "978|Legutóbbi munkamenetek",
-      "chunkOf": "979|{{current}}. rész / {{total}}",
-      "previous": "980|Előző rész",
-      "pause": "981|Szünet",
-      "resume": "982|Folytatás",
-      "nextChunk": "983|Következő rész",
-      "finishReading": "984|Olvasás befejezése",
+      "summary": "Cél {{wpm}} szó/perc · ~{{minutes}} perc olvasás",
+      "start": "Munkamenet indítása",
+      "preparing": "Készítjük a szövegrészletet…",
+      "generateError": "A részletet nem sikerült elkészíteni. Próbáld újra.",
+      "recentTitle": "Legutóbbi munkamenetek",
+      "chunkOf": "{{current}}. rész / {{total}}",
+      "previous": "Előző rész",
+      "pause": "Szünet",
+      "resume": "Folytatás",
+      "nextChunk": "Következő rész",
+      "finishReading": "Olvasás befejezése",
       "rating": {
-        "excellent": "985|Kiváló",
-        "balanced": "986|Célon",
-        "fast": "987|Majdnem",
-        "tooSlow": "988|Túl lassú"
+        "excellent": "Kiváló",
+        "balanced": "Célon",
+        "fast": "Majdnem",
+        "tooSlow": "Túl lassú"
       },
       "result": {
-        "average": "989|Átlag szó/perc",
-        "target": "990|Cél szó/perc",
-        "violations_one": "991|{{count}} időtúllépés",
-        "violations_other": "992|{{count}} időtúllépés"
+        "average": "Átlag szó/perc",
+        "target": "Cél szó/perc",
+        "violations_one": "{{count}} időtúllépés",
+        "violations_other": "{{count}} időtúllépés"
       },
-      "tryAgain": "993|Újra",
-      "backToSetup": "994|Vissza a beállításokhoz"
+      "tryAgain": "Újra",
+      "backToSetup": "Vissza a beállításokhoz"
     },
     "story": {
-      "title": "995|Történet mód",
-      "subtitle": "996|Olvass interaktív történeteket elágazó döntésekkel.",
-      "typeSection": "997|Történet típusa",
+      "title": "Történet mód",
+      "subtitle": "Olvass interaktív történeteket elágazó döntésekkel.",
+      "typeSection": "Történet típusa",
       "type": {
-        "adventure": "998|Kaland",
-        "fantasy": "999|Fantasy",
-        "mystery": "1000|Krimi",
-        "romance": "1001|Romantikus",
-        "dailyLife": "1002|Hétköznapi élet"
+        "adventure": "Kaland",
+        "fantasy": "Fantasy",
+        "mystery": "Krimi",
+        "romance": "Romantikus",
+        "dailyLife": "Hétköznapi élet"
       },
-      "lengthSection": "1003|A történet hossza",
+      "lengthSection": "A történet hossza",
       "length": {
-        "shortStory": "1004|Rövid történet",
-        "multiChapter": "1005|Több fejezet",
-        "infinite": "1006|Végtelen történet"
+        "shortStory": "Rövid történet",
+        "multiChapter": "Több fejezet",
+        "infinite": "Végtelen történet"
       },
-      "start": "1007|Történet indítása",
-      "generating": "1008|Írjuk a történeted…",
-      "generatingNext": "1009|Írjuk a következő fejezetet…",
-      "generateError": "1010|A történetet nem sikerült megírni. Próbáld újra.",
-      "emptyTitle": "1011|Még nincs történeted",
-      "emptyBody": "1012|Kezdd el fent az első interaktív történeted.",
-      "savedTitle": "1013|A történeteid",
-      "chapterN": "1014|{{n}}. fejezet",
-      "chapterOf": "1015|{{current}}. / {{total}}. fejezet",
-      "chapterScore": "1016|Fejezet pontszáma",
-      "whatNext": "1017|Mi történik ezután?",
-      "endStory": "1018|Történet befejezése",
-      "completeTitle": "1019|Történet kész",
-      "completeBody_one": "1020|Elolvastál {{count}} fejezetet. Szép olvasás!",
-      "completeBody_other": "1021|Elolvastál {{count}} fejezetet. Szép olvasás!",
-      "backToStories": "1022|Vissza a történetekhez"
+      "start": "Történet indítása",
+      "generating": "Írjuk a történeted…",
+      "generatingNext": "Írjuk a következő fejezetet…",
+      "generateError": "A történetet nem sikerült megírni. Próbáld újra.",
+      "emptyTitle": "Még nincs történeted",
+      "emptyBody": "Kezdd el fent az első interaktív történeted.",
+      "savedTitle": "A történeteid",
+      "chapterN": "{{n}}. fejezet",
+      "chapterOf": "{{current}}. / {{total}}. fejezet",
+      "chapterScore": "Fejezet pontszáma",
+      "whatNext": "Mi történik ezután?",
+      "endStory": "Történet befejezése",
+      "completeTitle": "Történet kész",
+      "completeBody_one": "Elolvastál {{count}} fejezetet. Szép olvasás!",
+      "completeBody_other": "Elolvastál {{count}} fejezetet. Szép olvasás!",
+      "backToStories": "Vissza a történetekhez"
     }
   },
   "listening": {
-    "sectionTitle": "1023|Gyakorlómódok",
-    "notFound": "1024|Lehet, hogy ezt a munkamenetet törölték.",
+    "sectionTitle": "Gyakorlómódok",
+    "notFound": "Lehet, hogy ezt a munkamenetet törölték.",
     "today": {
-      "title": "1025|Mai haladás",
-      "subtitle": "1026|hallás utáni gyakorlás"
+      "title": "Mai haladás",
+      "subtitle": "hallás utáni gyakorlás"
     },
     "menu": {
-      "comingSoon": "1027|Hamarosan",
+      "comingSoon": "Hamarosan",
       "fromText": {
-        "title": "1028|Hallgatás szövegből",
-        "subtitle": "1029|Illessz be szöveget, hallgasd meg, és ellenőrizd a megértésed."
+        "title": "Hallgatás szövegből",
+        "subtitle": "Illessz be szöveget, hallgasd meg, és ellenőrizd a megértésed."
       },
       "importAudio": {
-        "title": "1030|Hang importálása",
-        "subtitle": "1031|Tölts fel saját hangot, és alakítsd hallásgyakorlattá."
+        "title": "Hang importálása",
+        "subtitle": "Tölts fel saját hangot, és alakítsd hallásgyakorlattá."
       },
       "importVideo": {
-        "title": "1032|Videó importálása",
-        "subtitle": "1033|Tölts fel egy videót, kapj feliratot, és gyakorolj kérdésekkel."
+        "title": "Videó importálása",
+        "subtitle": "Tölts fel egy videót, kapj feliratot, és gyakorolj kérdésekkel."
       },
       "saved": {
-        "title": "1034|Mentett gyakorlatok",
-        "subtitle": "1035|Folytasd a korábbi munkameneteket, és nézd át a hibáidat."
+        "title": "Mentett gyakorlatok",
+        "subtitle": "Folytasd a korábbi munkameneteket, és nézd át a hibáidat."
       }
     },
     "questionType": {
-      "mainIdea": "1036|Fő gondolat",
-      "details": "1037|Részletek",
-      "vocabulary": "1038|Szókincs",
-      "trueFalse": "1039|Igaz / Hamis"
+      "mainIdea": "Fő gondolat",
+      "details": "Részletek",
+      "vocabulary": "Szókincs",
+      "trueFalse": "Igaz / Hamis"
     },
     "fromText": {
-      "title": "1040|Hallgatás szövegből",
-      "subtitle": "1041|Illessz be szöveget, és alakítsd hallásgyakorlattá.",
-      "level": "1042|Szint",
-      "voiceSpeed": "1043|Beszédsebesség",
-      "voiceType": "1044|Hang típusa",
+      "title": "Hallgatás szövegből",
+      "subtitle": "Illessz be szöveget, és alakítsd hallásgyakorlattá.",
+      "level": "Szint",
+      "voiceSpeed": "Beszédsebesség",
+      "voiceType": "Hang típusa",
       "voice": {
-        "default": "1045|Alapértelmezett",
-        "female": "1046|Női",
-        "male": "1047|Férfi"
+        "default": "Alapértelmezett",
+        "female": "Női",
+        "male": "Férfi"
       },
-      "showText": "1048|Szöveg mutatása hallgatás közben",
-      "addQuestions": "1049|Szövegértési kérdések hozzáadása",
-      "questionCount": "1050|Kérdések száma",
-      "questionTypes": "1051|Kérdéstípusok",
-      "optionalTitle": "1052|Cím (nem kötelező)",
-      "titlePlaceholder": "1053|Adj nevet a szövegednek",
-      "textPlaceholder": "1054|Illeszd be ide a szöveged...",
-      "recommended": "1055|Ajánlott: 80–500 szó.",
-      "words": "1056|szó",
-      "defaultTitle": "1057|Hallásgyakorlat",
-      "start": "1058|Hallgatás indítása",
+      "showText": "Szöveg mutatása hallgatás közben",
+      "addQuestions": "Szövegértési kérdések hozzáadása",
+      "questionCount": "Kérdések száma",
+      "questionTypes": "Kérdéstípusok",
+      "optionalTitle": "Cím (nem kötelező)",
+      "titlePlaceholder": "Adj nevet a szövegednek",
+      "textPlaceholder": "Illeszd be ide a szöveged...",
+      "recommended": "Ajánlott: 80–500 szó.",
+      "words": "szó",
+      "defaultTitle": "Hallásgyakorlat",
+      "start": "Hallgatás indítása",
       "validation": {
-        "empty": "1059|Adj hozzá szöveget a hallgatás elkezdéséhez.",
-        "tooShort": "1060|Adj hozzá legalább 40 karaktert a hallgatás elkezdéséhez.",
-        "tooLong": "1061|Ez a szöveg túl hosszú. Maradj 5000 karakter alatt.",
-        "tooFewWords": "1062|Adj hozzá egy kicsit több szöveget (nagyjából 40 szót vagy többet), hogy jó kérdéseket készíthessünk."
+        "empty": "Adj hozzá szöveget a hallgatás elkezdéséhez.",
+        "tooShort": "Adj hozzá legalább 40 karaktert a hallgatás elkezdéséhez.",
+        "tooLong": "Ez a szöveg túl hosszú. Maradj 5000 karakter alatt.",
+        "tooFewWords": "Adj hozzá egy kicsit több szöveget (nagyjából 40 szót vagy többet), hogy jó kérdéseket készíthessünk."
       },
-      "voiceSettings": "1063|Hangbeállítások",
-      "questions": "1064|Kérdések",
-      "textInput": "1065|Szöveg bevitele"
+      "voiceSettings": "Hangbeállítások",
+      "questions": "Kérdések",
+      "textInput": "Szöveg bevitele"
     },
     "session": {
-      "replay": "1066|Újrajátszás",
-      "transcript": "1067|Átirat",
-      "questionsTitle": "1068|Kérdések",
-      "answerFirst": "1069|Az ellenőrzés előtt válaszolj legalább egy kérdésre.",
-      "checkAnswers": "1070|Válaszok ellenőrzése",
-      "finish": "1071|Gyakorlat befejezése"
+      "replay": "Újrajátszás",
+      "transcript": "Átirat",
+      "questionsTitle": "Kérdések",
+      "answerFirst": "Az ellenőrzés előtt válaszolj legalább egy kérdésre.",
+      "checkAnswers": "Válaszok ellenőrzése",
+      "finish": "Gyakorlat befejezése"
     },
     "result": {
-      "title": "1072|Gyakorlás kész",
-      "comprehension": "1073|Szövegértés",
-      "correct": "1074|Helyes",
-      "time": "1075|Hallgatási idő",
-      "speed": "1076|Sebesség",
-      "mistakes": "1077|Hibák",
-      "mistakesTitle": "1078|Nézd át a hibáidat",
-      "watchOnlyTitle": "1079|Hallgatás kész",
-      "watchOnlyBody": "1080|{{time}} ideig hallgattad.",
-      "practiceAgain": "1081|Gyakorlás újra",
-      "back": "1082|Vissza a hallás utáni értéshez"
+      "title": "Gyakorlás kész",
+      "comprehension": "Szövegértés",
+      "correct": "Helyes",
+      "time": "Hallgatási idő",
+      "speed": "Sebesség",
+      "mistakes": "Hibák",
+      "mistakesTitle": "Nézd át a hibáidat",
+      "watchOnlyTitle": "Hallgatás kész",
+      "watchOnlyBody": "{{time}} ideig hallgattad.",
+      "practiceAgain": "Gyakorlás újra",
+      "back": "Vissza a hallás utáni értéshez"
     },
     "importAudio": {
-      "title": "1083|Hang importálása",
-      "subtitle": "1084|Alakítsd a saját hangfelvételed hallásgyakorlattá.",
-      "uploadTitle": "1085|Hangfájl feltöltése",
-      "uploadFormats": "1086|MP3, M4A, WAV vagy AAC · 50 MB alatt",
-      "chooseFile": "1087|Fájl kiválasztása",
-      "clearFile": "1088|Fájl eltávolítása",
-      "infoNote": "1089|A hangot a háttérben átírjuk. Az átirat a gyakorlás alatt rejtve marad.",
-      "continue": "1090|Tovább",
-      "processingTitle": "1091|Készítjük a hallásgyakorlatod",
-      "step1": "1092|Hang feltöltése",
-      "step2": "1093|Beszéd átírása",
-      "step3": "1094|Kérdések készítése",
-      "processError": "1095|Nem sikerült előkészíteni ezt a hangot. Próbáld újra.",
-      "tryAgain": "1096|Újra",
-      "chooseAnother": "1097|Másik fájl választása",
-      "transcriptHidden": "1098|Az átirat rejtve van, hogy ez valódi hallásgyakorlat maradjon."
+      "title": "Hang importálása",
+      "subtitle": "Alakítsd a saját hangfelvételed hallásgyakorlattá.",
+      "uploadTitle": "Hangfájl feltöltése",
+      "uploadFormats": "MP3, M4A, WAV vagy AAC · 50 MB alatt",
+      "chooseFile": "Fájl kiválasztása",
+      "clearFile": "Fájl eltávolítása",
+      "infoNote": "A hangot a háttérben átírjuk. Az átirat a gyakorlás alatt rejtve marad.",
+      "continue": "Tovább",
+      "processingTitle": "Készítjük a hallásgyakorlatod",
+      "step1": "Hang feltöltése",
+      "step2": "Beszéd átírása",
+      "step3": "Kérdések készítése",
+      "processError": "Nem sikerült előkészíteni ezt a hangot. Próbáld újra.",
+      "tryAgain": "Újra",
+      "chooseAnother": "Másik fájl választása",
+      "transcriptHidden": "Az átirat rejtve van, hogy ez valódi hallásgyakorlat maradjon."
     },
     "importVideo": {
-      "title": "1099|Videó importálása",
-      "subtitle": "1100|Tölts fel egy videót, kapj feliratot, és gyakorolj kérdésekkel.",
-      "uploadTitle": "1101|Videofájl feltöltése",
-      "uploadFormats": "1102|MP4, MOV vagy M4V · 80 MB alatt",
-      "step1": "1103|Videó előkészítése",
-      "step2": "1104|Beszéd átírása",
-      "step3": "1105|Feliratok készítése",
-      "subtitles": "1106|Feliratok",
-      "subtitlesOn": "1107|Feliratok bekapcsolva",
-      "subtitlesOff": "1108|Feliratok kikapcsolva",
-      "noSubtitles": "1109|Ehhez a videóhoz nincs felirat.",
-      "tapWord": "1110|Koppints egy szóra a fordításához.",
-      "questionsLocked": "1111|A kérdések akkor nyílnak meg, ha végignézted a videót."
+      "title": "Videó importálása",
+      "subtitle": "Tölts fel egy videót, kapj feliratot, és gyakorolj kérdésekkel.",
+      "uploadTitle": "Videofájl feltöltése",
+      "uploadFormats": "MP4, MOV vagy M4V · 80 MB alatt",
+      "step1": "Videó előkészítése",
+      "step2": "Beszéd átírása",
+      "step3": "Feliratok készítése",
+      "subtitles": "Feliratok",
+      "subtitlesOn": "Feliratok bekapcsolva",
+      "subtitlesOff": "Feliratok kikapcsolva",
+      "noSubtitles": "Ehhez a videóhoz nincs felirat.",
+      "tapWord": "Koppints egy szóra a fordításához.",
+      "questionsLocked": "A kérdések akkor nyílnak meg, ha végignézted a videót."
     },
     "wordSheet": {
-      "title": "1112|Szó fordítása",
-      "pickSet": "1113|Válassz csomagot",
-      "createSet": "1114|Csomag létrehozása",
-      "addToSet": "1115|Hozzáadás a csomaghoz",
-      "noSets": "1116|Még nincs csomagod. Hozz létre egyet lent.",
-      "setNamePlaceholder": "1117|pl. Szavak a videóból",
-      "createAndAdd": "1118|Csomag létrehozása és szó hozzáadása",
-      "saved": "1119|Mentve ide: „{{set}}”."
+      "title": "Szó fordítása",
+      "pickSet": "Válassz csomagot",
+      "createSet": "Csomag létrehozása",
+      "addToSet": "Hozzáadás a csomaghoz",
+      "noSets": "Még nincs csomagod. Hozz létre egyet lent.",
+      "setNamePlaceholder": "pl. Szavak a videóból",
+      "createAndAdd": "Csomag létrehozása és szó hozzáadása",
+      "saved": "Mentve ide: „{{set}}”."
     },
     "saved": {
-      "title": "1120|Mentett gyakorlatok",
-      "subtitle": "1121|Folytasd a munkameneteket, és nézd át a hallás utáni hibáidat.",
-      "emptyTitle": "1122|Nincs mentett munkamenet",
-      "emptyBody": "1123|Fejezz be vagy szüneteltess egy hallgatási munkamenetet, és itt fog megjelenni.",
-      "continueEyebrow": "1124|Hallgatás folytatása",
-      "percentComplete": "1125|{{percent}} % kész",
-      "continue": "1126|Folytatás",
-      "review": "1127|Áttekintés",
-      "delete": "1128|Munkamenet törlése",
-      "deleteConfirm": "1129|Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
+      "title": "Mentett gyakorlatok",
+      "subtitle": "Folytasd a munkameneteket, és nézd át a hallás utáni hibáidat.",
+      "emptyTitle": "Nincs mentett munkamenet",
+      "emptyBody": "Fejezz be vagy szüneteltess egy hallgatási munkamenetet, és itt fog megjelenni.",
+      "continueEyebrow": "Hallgatás folytatása",
+      "percentComplete": "{{percent}} % kész",
+      "continue": "Folytatás",
+      "review": "Áttekintés",
+      "delete": "Munkamenet törlése",
+      "deleteConfirm": "Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
       "status": {
-        "draft": "1130|Piszkozat",
-        "inProgress": "1131|Folyamatban",
-        "completed": "1132|Kész"
+        "draft": "Piszkozat",
+        "inProgress": "Folyamatban",
+        "completed": "Kész"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "1133|Gyakorlómódok",
+    "sectionTitle": "Gyakorlómódok",
     "today": {
-      "title": "1134|Mai haladás",
-      "subtitle": "1135|beszédgyakorlás"
+      "title": "Mai haladás",
+      "subtitle": "beszédgyakorlás"
     },
     "menu": {
-      "comingSoon": "1136|Hamarosan",
+      "comingSoon": "Hamarosan",
       "conversation": {
-        "title": "1137|Beszélgetés MI-vel",
-        "subtitle": "1138|Beszélgess valós időben egy MI-tanárral."
+        "title": "Beszélgetés MI-vel",
+        "subtitle": "Beszélgess valós időben egy MI-tanárral."
       },
       "free": {
-        "title": "1139|Szabad beszéd",
-        "subtitle": "1140|Beszélj generált témákról, és kapj visszajelzést."
+        "title": "Szabad beszéd",
+        "subtitle": "Beszélj generált témákról, és kapj visszajelzést."
       },
       "picture": {
-        "title": "1141|Képleírás",
-        "subtitle": "1142|Írj le képeket, és tanulj hasznos szavakat."
+        "title": "Képleírás",
+        "subtitle": "Írj le képeket, és tanulj hasznos szavakat."
       },
       "debate": {
-        "title": "1143|Vita mód",
-        "subtitle": "1144|Vitatkozz témákról, és építsd fel az érveidet."
+        "title": "Vita mód",
+        "subtitle": "Vitatkozz témákról, és építsd fel az érveidet."
       },
       "shadowing": {
-        "title": "1145|Shadowing",
-        "subtitle": "1146|Ismételj mondatokat, és javítsd a kiejtésed."
+        "title": "Shadowing",
+        "subtitle": "Ismételj mondatokat, és javítsd a kiejtésed."
       },
       "pronunciation": {
-        "title": "1147|Kiejtésgyakorló",
-        "subtitle": "1148|Koncentrálj a nehéz hangokra és szavakra."
+        "title": "Kiejtésgyakorló",
+        "subtitle": "Koncentrálj a nehéz hangokra és szavakra."
       }
     },
     "input": {
-      "speak": "1149|Beszéd",
-      "stop": "1150|Leállítás",
-      "listening": "1151|Hallgatunk…",
-      "placeholder": "1152|Írd be a válaszod…",
-      "noVoice": "1153|Ez a böngésző nem támogatja a hangbevitelt — írd be a válaszod."
+      "speak": "Beszéd",
+      "stop": "Leállítás",
+      "listening": "Hallgatunk…",
+      "placeholder": "Írd be a válaszod…",
+      "noVoice": "Ez a böngésző nem támogatja a hangbevitelt — írd be a válaszod."
     },
     "conversation": {
-      "title": "1154|Beszélgetés MI-vel",
-      "subtitle": "1155|Beszélgess valós időben egy MI-tanárral.",
-      "topic": "1156|Téma",
-      "scenarios": "1157|Helyzetek",
-      "autoTopic": "1158|Lepj meg",
-      "autoTopicHint": "1159|Generálunk neked egy friss témát.",
-      "length": "1160|Hossz",
-      "min": "1161|perc",
-      "start": "1162|Beszélgetés indítása",
-      "starting": "1163|Indítás…",
-      "startError": "1164|A beszélgetést nem sikerült elindítani. Próbáld újra.",
-      "end": "1165|Befejezés",
-      "dismiss": "1166|Bezárás",
-      "hint": "1167|Tipp",
-      "getHint": "1168|Kell egy tipp?",
-      "hintLoading": "1169|Gondolkodunk…"
+      "title": "Beszélgetés MI-vel",
+      "subtitle": "Beszélgess valós időben egy MI-tanárral.",
+      "topic": "Téma",
+      "scenarios": "Helyzetek",
+      "autoTopic": "Lepj meg",
+      "autoTopicHint": "Generálunk neked egy friss témát.",
+      "length": "Hossz",
+      "min": "perc",
+      "start": "Beszélgetés indítása",
+      "starting": "Indítás…",
+      "startError": "A beszélgetést nem sikerült elindítani. Próbáld újra.",
+      "end": "Befejezés",
+      "dismiss": "Bezárás",
+      "hint": "Tipp",
+      "getHint": "Kell egy tipp?",
+      "hintLoading": "Gondolkodunk…"
     },
     "result": {
-      "title": "1170|Gyakorlás kész",
-      "generating": "1171|Elemezzük a beszéded…",
-      "overall": "1172|Összpontszám",
-      "corrections": "1173|Javítások",
-      "transcript": "1174|Átirat",
-      "practiceAgain": "1175|Gyakorlás újra",
-      "back": "1176|Vissza a beszédhez"
+      "title": "Gyakorlás kész",
+      "generating": "Elemezzük a beszéded…",
+      "overall": "Összpontszám",
+      "corrections": "Javítások",
+      "transcript": "Átirat",
+      "practiceAgain": "Gyakorlás újra",
+      "back": "Vissza a beszédhez"
     },
     "free": {
-      "title": "1177|Szabad beszéd",
-      "subtitle": "1178|Beszélj szabadon egy témáról, és kapj visszajelzést.",
-      "preview": "1179|Előnézet",
-      "autoTopic": "1180|MI által generált téma",
-      "autoTopicHint": "1181|Amikor elindulsz, friss témát választunk ehhez: {{language}} · {{level}}.",
-      "auto": "1182|Automatikus",
-      "start": "1183|Szabad beszéd indítása",
-      "generating": "1184|Téma generálása…",
-      "generatingHint": "1185|Olyat keresünk, ami illik a szintedhez.",
-      "fallbackTopic": "1186|Nem sikerült témát generálni. Tartaléktémát használunk.",
-      "transcript": "1187|Átirat",
-      "transcriptHint": "1188|Az átirat itt jelenik meg, miközben beszélsz.",
-      "startSpeaking": "1189|Kezdj beszélni"
+      "title": "Szabad beszéd",
+      "subtitle": "Beszélj szabadon egy témáról, és kapj visszajelzést.",
+      "preview": "Előnézet",
+      "autoTopic": "MI által generált téma",
+      "autoTopicHint": "Amikor elindulsz, friss témát választunk ehhez: {{language}} · {{level}}.",
+      "auto": "Automatikus",
+      "start": "Szabad beszéd indítása",
+      "generating": "Téma generálása…",
+      "generatingHint": "Olyat keresünk, ami illik a szintedhez.",
+      "fallbackTopic": "Nem sikerült témát generálni. Tartaléktémát használunk.",
+      "transcript": "Átirat",
+      "transcriptHint": "Az átirat itt jelenik meg, miközben beszélsz.",
+      "startSpeaking": "Kezdj beszélni"
     },
     "picture": {
-      "title": "1190|Képleírás",
-      "subtitle": "1191|Írd le, amit látsz, és kapj visszajelzést.",
-      "start": "1192|Képleírás indítása",
-      "prompt": "1193|Írd le, mit látsz ezen a képen.",
-      "tryToMention": "1194|Próbáld megemlíteni:",
+      "title": "Képleírás",
+      "subtitle": "Írd le, amit látsz, és kapj visszajelzést.",
+      "start": "Képleírás indítása",
+      "prompt": "Írd le, mit látsz ezen a képen.",
+      "tryToMention": "Próbáld megemlíteni:",
       "hints": {
-        "people": "1195|emberek",
-        "objects": "1196|tárgyak",
-        "actions": "1197|cselekvések",
-        "colors": "1198|színek",
-        "emotions": "1199|érzelmek"
+        "people": "emberek",
+        "objects": "tárgyak",
+        "actions": "cselekvések",
+        "colors": "színek",
+        "emotions": "érzelmek"
       },
-      "loading": "1200|Fotó betöltése…",
-      "retry": "1201|Újra",
-      "newPhoto": "1202|Új fotó",
-      "imageAlt": "1203|Leírandó fotó",
-      "photoBy": "1204|Fotó:",
-      "onUnsplash": "1205|az Unsplashen",
-      "startDescribing": "1206|Kezdd a leírást"
+      "loading": "Fotó betöltése…",
+      "retry": "Újra",
+      "newPhoto": "Új fotó",
+      "imageAlt": "Leírandó fotó",
+      "photoBy": "Fotó:",
+      "onUnsplash": "az Unsplashen",
+      "startDescribing": "Kezdd a leírást"
     },
     "debate": {
-      "title": "1207|Vita mód",
-      "subtitle": "1208|Védd az álláspontod egy MI-ellenféllel szemben.",
-      "start": "1209|Vita indítása",
-      "pickSide": "1210|A te oldalad",
-      "preparing": "1211|Vitatéma előkészítése…",
-      "roundOf": "1212|{{current}}. kör / {{total}} · {{label}}",
+      "title": "Vita mód",
+      "subtitle": "Védd az álláspontod egy MI-ellenféllel szemben.",
+      "start": "Vita indítása",
+      "pickSide": "A te oldalad",
+      "preparing": "Vitatéma előkészítése…",
+      "roundOf": "{{current}}. kör / {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "1213|Egyetért",
-          "subtitle": "1214|Védd az állítást"
+          "title": "Egyetért",
+          "subtitle": "Védd az állítást"
         },
         "disagree": {
-          "title": "1215|Nem ért egyet",
-          "subtitle": "1216|Érvelj ellene"
+          "title": "Nem ért egyet",
+          "subtitle": "Érvelj ellene"
         },
         "surprise": {
-          "title": "1217|Lepj meg",
-          "subtitle": "1218|Mi választunk oldalt helyetted"
+          "title": "Lepj meg",
+          "subtitle": "Mi választunk oldalt helyetted"
         }
       }
     },
     "practice": {
-      "listen": "1219|Meghallgatás",
-      "playing": "1220|Lejátszás…",
-      "record": "1221|Felvétel",
-      "stop": "1222|Leállítás",
-      "playMine": "1223|Sajátom lejátszása",
-      "noRecording": "1224|Ez a böngésző nem támogatja a felvételt — hallgatni és ismételni így is tudsz."
+      "listen": "Meghallgatás",
+      "playing": "Lejátszás…",
+      "record": "Felvétel",
+      "stop": "Leállítás",
+      "playMine": "Sajátom lejátszása",
+      "noRecording": "Ez a böngésző nem támogatja a felvételt — hallgatni és ismételni így is tudsz."
     },
     "shadowing": {
-      "title": "1225|Shadowing",
-      "subtitle": "1226|Hallgass, ismételj, és hasonlítsd össze magad.",
-      "start": "1227|Shadowing indítása",
-      "category": "1228|Kategória",
-      "howItWorks": "1229|Hallgasd meg a mondatot, ismételd hangosan felvétel közben, majd játszd le a sajátodat, és hasonlítsd össze a ritmust.",
-      "loading": "1230|Mondatok generálása…",
-      "phrase": "1231|Mondat",
-      "previous": "1232|Előző",
-      "nextPhrase": "1233|Következő mondat",
-      "finish": "1234|Befejezés",
-      "changeSettings": "1235|Beállítások módosítása",
-      "done": "1236|{{count}} kész",
-      "allDone": "1237|Minden mondatot begyakoroltál!",
-      "newSet": "1238|Új csomag"
+      "title": "Shadowing",
+      "subtitle": "Hallgass, ismételj, és hasonlítsd össze magad.",
+      "start": "Shadowing indítása",
+      "category": "Kategória",
+      "howItWorks": "Hallgasd meg a mondatot, ismételd hangosan felvétel közben, majd játszd le a sajátodat, és hasonlítsd össze a ritmust.",
+      "loading": "Mondatok generálása…",
+      "phrase": "Mondat",
+      "previous": "Előző",
+      "nextPhrase": "Következő mondat",
+      "finish": "Befejezés",
+      "changeSettings": "Beállítások módosítása",
+      "done": "{{count}} kész",
+      "allDone": "Minden mondatot begyakoroltál!",
+      "newSet": "Új csomag"
     },
     "pronunciation": {
-      "title": "1239|Kiejtésgyakorló",
-      "subtitle": "1240|Koncentrálj a nehéz hangokra és szavakra.",
-      "start": "1241|Gyakorlás indítása",
-      "focus": "1242|Fókusz",
-      "difficulty": "1243|Nehézség",
+      "title": "Kiejtésgyakorló",
+      "subtitle": "Koncentrálj a nehéz hangokra és szavakra.",
+      "start": "Gyakorlás indítása",
+      "focus": "Fókusz",
+      "difficulty": "Nehézség",
       "level": {
-        "easy": "1244|Könnyű",
-        "balanced": "1245|Kiegyensúlyozott",
-        "hard": "1246|Nehéz"
+        "easy": "Könnyű",
+        "balanced": "Kiegyensúlyozott",
+        "hard": "Nehéz"
       },
-      "loading": "1247|Gyakorlóelemek generálása…",
-      "sound": "1248|Hang",
-      "scoringUnavailable": "1249|Az automatikus kiejtésértékelés még nincs beállítva a szerveren, ezért nem jelenik meg pontszám. A meghallgatás, a felvétel és a lejátszás működik."
+      "loading": "Gyakorlóelemek generálása…",
+      "sound": "Hang",
+      "scoringUnavailable": "Az automatikus kiejtésértékelés még nincs beállítva a szerveren, ezért nem jelenik meg pontszám. A meghallgatás, a felvétel és a lejátszás működik."
     }
   },
   "profile": {
-    "interfaceLanguage": "1250|A felület nyelve",
+    "interfaceLanguage": "A felület nyelve",
     "password": {
-      "title": "1251|Hozz létre jelszót",
-      "body": "1252|A fiókod Google-fiókkal jött létre, ezért nincs hozzá jelszó — az e-mail és jelszó mezőkkel nem tudsz bejelentkezni. Adj meg egyet, és mindkét mód működni fog.",
-      "save": "1253|Jelszó mentése",
-      "saving": "1254|Mentés...",
-      "savedInfo": "1255|A jelszó elkészült. Mostantól e-maillel is bejelentkezhetsz."
+      "title": "Hozz létre jelszót",
+      "body": "A fiókod Google-fiókkal jött létre, ezért nincs hozzá jelszó — az e-mail és jelszó mezőkkel nem tudsz bejelentkezni. Adj meg egyet, és mindkét mód működni fog.",
+      "save": "Jelszó mentése",
+      "saving": "Mentés...",
+      "savedInfo": "A jelszó elkészült. Mostantól e-maillel is bejelentkezhetsz."
     }
   },
   "units": {
-    "min": "1256|perc",
-    "words": "1257|szó"
+    "min": "perc",
+    "words": "szó"
   },
   "link": {
-    "title": "1258|Bejelentkezés hivatkozással",
-    "subtitle": "1259|Küldünk egy egyszer használatos hivatkozást e-mailben. Nincs megjegyzendő jelszó.",
-    "send": "1260|Hivatkozás küldése",
-    "sending": "1261|Küldés...",
-    "sentInfo": "1262|Elküldtük a hivatkozást. Nézd meg az e-mailjeid.",
-    "sentTitle": "1263|Nézd meg az e-mailjeid",
-    "sentBody": "1264|Bejelentkezési hivatkozást küldtünk ide:",
-    "useAnotherEmail": "1265|Másik e-mail-cím használata",
-    "backToPassword": "1266|Inkább jelszóval jelentkezem be"
+    "title": "Bejelentkezés hivatkozással",
+    "subtitle": "Küldünk egy egyszer használatos hivatkozást e-mailben. Nincs megjegyzendő jelszó.",
+    "send": "Hivatkozás küldése",
+    "sending": "Küldés...",
+    "sentInfo": "Elküldtük a hivatkozást. Nézd meg az e-mailjeid.",
+    "sentTitle": "Nézd meg az e-mailjeid",
+    "sentBody": "Bejelentkezési hivatkozást küldtünk ide:",
+    "useAnotherEmail": "Másik e-mail-cím használata",
+    "backToPassword": "Inkább jelszóval jelentkezem be"
   },
   "action": {
-    "working": "1267|Egy pillanat...",
-    "continue": "1268|Tovább",
-    "confirmEmailTitle": "1269|Erősítsd meg az e-mail-címed",
-    "confirmEmailBody": "1270|Ezt a hivatkozást másik böngészőben nyitották meg. Add meg a címet, amelyre érkezett, és befejezzük a bejelentkezést.",
-    "resetTitle": "1271|Új jelszó",
-    "resetSubtitle": "1272|Válassz új jelszót ehhez:",
-    "newPassword": "1273|Új jelszó",
-    "confirmPassword": "1274|Ismételd meg a jelszót",
-    "savePassword": "1275|Jelszó mentése",
-    "resetDoneTitle": "1276|A jelszó frissült",
-    "resetDoneBody": "1277|Mostantól az új jelszavaddal jelentkezhetsz be.",
-    "failedTitle": "1278|Ez a hivatkozás nem működött",
-    "failedBody": "1279|Lehet, hogy már felhasználták, vagy lejárt. Kérj újat a bejelentkezési képernyőn.",
-    "backToSignIn": "1280|Vissza a bejelentkezéshez"
+    "working": "Egy pillanat...",
+    "continue": "Tovább",
+    "confirmEmailTitle": "Erősítsd meg az e-mail-címed",
+    "confirmEmailBody": "Ezt a hivatkozást másik böngészőben nyitották meg. Add meg a címet, amelyre érkezett, és befejezzük a bejelentkezést.",
+    "resetTitle": "Új jelszó",
+    "resetSubtitle": "Válassz új jelszót ehhez:",
+    "newPassword": "Új jelszó",
+    "confirmPassword": "Ismételd meg a jelszót",
+    "savePassword": "Jelszó mentése",
+    "resetDoneTitle": "A jelszó frissült",
+    "resetDoneBody": "Mostantól az új jelszavaddal jelentkezhetsz be.",
+    "failedTitle": "Ez a hivatkozás nem működött",
+    "failedBody": "Lehet, hogy már felhasználták, vagy lejárt. Kérj újat a bejelentkezési képernyőn.",
+    "backToSignIn": "Vissza a bejelentkezéshez"
   },
   "common": {
-    "cancel": "1281|Mégse",
-    "delete": "1282|Törlés",
+    "cancel": "Mégse",
+    "delete": "Törlés",
     "view": {
-      "label": "1283|Nézet",
-      "rows": "1284|Lista",
-      "grid": "1285|Rács"
+      "label": "Nézet",
+      "rows": "Lista",
+      "grid": "Rács"
     }
   },
   "practice": {
     "language": {
-      "label": "1286|Nyelv",
-      "search": "1287|Nyelv keresése",
-      "noMatch": "1288|Nincs ilyen nyelv.",
-      "noVoice": "1289|A böngésződben nincs {{language}} hang, ezért a tanár nem fog ezen a nyelven beszélni. Add hozzá a nyelvi csomagot a rendszerbeállításokban, vagy válassz másik nyelvet."
+      "label": "Nyelv",
+      "search": "Nyelv keresése",
+      "noMatch": "Nincs ilyen nyelv.",
+      "noVoice": "A böngésződben nincs {{language}} hang, ezért a tanár nem fog ezen a nyelven beszélni. Add hozzá a nyelvi csomagot a rendszerbeállításokban, vagy válassz másik nyelvet."
     }
   }
 }
