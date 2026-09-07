@@ -45,11 +45,13 @@ export const setAppLanguage = async (lng: string): Promise<void> => {
   await i18n.changeLanguage(lng);
 };
 
-void i18n
+const initPromise = i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
-    lng: DEFAULT_LANGUAGE,
+    /* No `lng` here: passing one would override the stored choice AND make
+       the detector write that override back to localStorage, wiping it. The
+       detector reads `wa.lang` and falls back to English on its own. */
     fallbackLng: DEFAULT_LANGUAGE,
     supportedLngs: [...supportedLngs],
     ns: ['common'],
@@ -72,6 +74,7 @@ void i18n
 /* Resolves once the stored language (if any) is in place, so the first paint is
    already translated instead of flashing English. */
 export const i18nReady: Promise<void> = (async () => {
+  await initPromise;
   const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('wa.lang') : null;
   if (stored && stored !== DEFAULT_LANGUAGE && supportedLngs.includes(stored)) {
     await setAppLanguage(stored);
