@@ -1,1725 +1,1748 @@
 {
   "app": {
-    "name": "WordAround",
-    "tagline": "Learn languages, actively."
+    "name": "1|WordAround",
+    "tagline": "2|Mokykitės kalbų aktyviai."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "3|Mokykitės žodžių smagiai\\nir paprastai",
+    "start": "4|Pradėkime"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back",
-    "signUpTitle": "Create your account",
-    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
-    "name": "Name",
-    "namePlaceholder": "What should we call you?",
-    "orWithEmail": "or with email",
-    "signUpWithGoogle": "Sign up with Google",
-    "passwordHint": "At least {{min}} characters",
-    "magicLinkCta": "Sign in with an email link",
-    "creatingAccount": "Creating account..."
+    "welcomeBack": "5|Sveiki sugrįžę",
+    "subtitle": "6|Prisijunkite ir tęskite mokymąsi",
+    "email": "7|El. paštas",
+    "emailPlaceholder": "8|Įveskite savo el. paštą",
+    "password": "9|Slaptažodis",
+    "passwordPlaceholder": "10|Įveskite savo slaptažodį",
+    "forgotPassword": "11|Pamiršote slaptažodį?",
+    "signIn": "12|Prisijungti",
+    "signingIn": "13|Jungiamasi...",
+    "signUp": "14|Registruotis",
+    "signOut": "15|Atsijungti",
+    "continueWithGoogle": "16|Tęsti su „Google“",
+    "createAccount": "17|Sukurti paskyrą",
+    "accountCreatedInfo": "18|Paskyra sukurta. Išsiuntėme patvirtinimo laišką.",
+    "resetEmailSent": "19|Slaptažodžio atkūrimo laiškas išsiųstas",
+    "showPassword": "20|Rodyti slaptažodį",
+    "hidePassword": "21|Slėpti slaptažodį",
+    "back": "22|Atgal",
+    "signUpTitle": "23|Sukurkite savo paskyrą",
+    "signUpSubtitle": "24|Kelios minutės per dieną – ir jūsų žodynas auga",
+    "name": "25|Vardas",
+    "namePlaceholder": "26|Kaip jus vadinti?",
+    "orWithEmail": "27|arba su el. paštu",
+    "signUpWithGoogle": "28|Registruotis su „Google“",
+    "passwordHint": "29|Bent {{min}} simbolių",
+    "magicLinkCta": "30|Prisijungti su nuoroda iš el. laiško",
+    "creatingAccount": "31|Kuriama paskyra..."
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "We'll open your learning right away — no need to come back here",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "32|Patvirtinkite savo el. paštą",
+    "subtitle": "33|Dar vienas žingsnis prieš pradedant mokytis",
+    "sentTo": "34|Patvirtinimo nuorodą išsiuntėme adresu",
+    "fallbackEmail": "35|jūsų el. paštą",
+    "step1": "36|Atidarykite laišką savo pašto dėžutėje",
+    "step2": "37|Palieskite patvirtinimo nuorodą",
+    "step3": "38|Mokymąsi atversime iš karto – čia grįžti nereikės",
+    "checkButton": "39|Patvirtinau savo el. paštą",
+    "checking": "40|Tikrinama...",
+    "resend": "41|Siųsti laišką dar kartą",
+    "useAnotherAccount": "42|Naudoti kitą paskyrą",
+    "badgeInbox": "43|Patikrinkite dėžutę",
+    "badgeConfirm": "44|Patvirtinkite",
+    "badgeDone": "45|Atlikta",
+    "resentInfo": "46|Patvirtinimo laiškas išsiųstas dar kartą",
+    "notVerifiedYet": "47|El. paštas dar nepatvirtintas"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 8 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "emailInUse": "This account already exists",
-    "weakPassword": "This password is too weak",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again",
-    "nameRequired": "Name is required",
-    "passwordsDoNotMatch": "Passwords don't match",
-    "actionExpired": "This link has expired. Request a new one.",
-    "actionInvalid": "This link is no longer valid.",
-    "userDisabled": "This account has been disabled.",
-    "requiresRecentLogin": "For security, sign in again and then repeat this.",
-    "passwordAlreadySet": "This account already has a password.",
-    "linkNoEmail": "Enter the email the link was sent to"
+    "emailRequired": "48|El. paštas privalomas",
+    "emailInvalid": "49|Įveskite galiojantį el. paštą",
+    "emailFirst": "50|Pirmiausia įveskite savo el. paštą",
+    "passwordRequired": "51|Slaptažodis privalomas",
+    "passwordTooShort": "52|Slaptažodį turi sudaryti bent 8 simboliai",
+    "invalidEmail": "53|Netinkamas el. pašto formatas",
+    "wrongPassword": "54|Neteisingas el. paštas arba slaptažodis. Jei registravotės su „Google“, naudokite „Google“ mygtuką.",
+    "userNotFound": "55|Neteisingas el. paštas arba slaptažodis. Jei registravotės su „Google“, naudokite „Google“ mygtuką.",
+    "invalidCredential": "56|Neteisingas el. paštas arba slaptažodis. Jei registravotės su „Google“, naudokite „Google“ mygtuką.",
+    "emailInUse": "57|Tokia paskyra jau yra",
+    "weakPassword": "58|Šis slaptažodis per silpnas",
+    "network": "59|Tinklo klaida. Patikrinkite interneto ryšį",
+    "tooManyRequests": "60|Per daug bandymų. Pabandykite vėliau",
+    "differentCredential": "61|Šis el. paštas jau naudojamas su kitu prisijungimo būdu",
+    "noActiveAccount": "62|Aktyvi paskyra nerasta",
+    "default": "63|Prisijungti nepavyko. Bandykite dar kartą",
+    "nameRequired": "64|Vardas privalomas",
+    "passwordsDoNotMatch": "65|Slaptažodžiai nesutampa",
+    "actionExpired": "66|Ši nuoroda nebegalioja. Paprašykite naujos.",
+    "actionInvalid": "67|Ši nuoroda nebegalioja.",
+    "userDisabled": "68|Ši paskyra išjungta.",
+    "requiresRecentLogin": "69|Saugumo sumetimais prisijunkite iš naujo ir pakartokite šį veiksmą.",
+    "passwordAlreadySet": "70|Ši paskyra jau turi slaptažodį.",
+    "linkNoEmail": "71|Įveskite el. paštą, kuriuo išsiųsta nuoroda"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
-    "sets": "Sets",
-    "notes": "Notes",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "home": "72|Pradžia",
+    "speaking": "73|Kalbėjimas",
+    "listening": "74|Klausymas",
+    "reading": "75|Skaitymas",
+    "writing": "76|Rašymas",
+    "folders": "77|Aplankai",
+    "sets": "78|Rinkiniai",
+    "notes": "79|Užrašai",
+    "profile": "80|Profilis",
+    "create": "81|Naujas",
+    "menu": "82|Meniu",
+    "closeMenu": "83|Uždaryti meniu",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "84|Praktika",
+      "library": "85|Biblioteka"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
-    "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
-    "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "create": "86|Sukurti aplanką",
+    "loading": "87|Įkeliami aplankai…",
+    "loadError": "88|Nepavyko įkelti jūsų aplankų.",
+    "emptyTitle": "89|Aplankų dar nėra",
+    "emptyBody": "90|Sukurkite pirmą aplanką, kad sutvarkytumėte rinkinius.",
+    "setCount": "91|{{count}} rinkinių",
+    "setCount_one": "92|{{count}} rinkinys",
+    "newTitle": "93|Naujas aplankas",
+    "newSubtitle": "94|Sudėkite susijusius rinkinius kartu.",
+    "editTitle": "95|Redaguoti aplanką",
+    "name": "96|Pavadinimas",
+    "namePlaceholder": "97|pvz. Kelionės",
+    "description": "98|Aprašymas",
+    "descriptionPlaceholder": "99|Neprivaloma",
+    "color": "100|Spalva",
+    "save": "101|Įrašyti",
+    "saving": "102|Įrašoma…",
+    "cancel": "103|Atšaukti",
+    "edit": "104|Redaguoti aplanką",
+    "delete": "105|Ištrinti aplanką",
+    "deleteConfirm": "106|Ištrinti „{{title}}“? Šio veiksmo anuliuoti negalėsite.",
+    "backToFolders": "107|Atgal į aplankus",
+    "notFoundTitle": "108|Aplankas nerastas",
+    "notFoundBody": "109|Šis aplankas galbūt ištrintas.",
+    "noSetsInFolder": "110|Šiame aplanke rinkinių dar nėra.",
+    "saveError": "111|Nepavyko įrašyti. Bandykite dar kartą.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "112|Aplanko pavadinimas privalomas.",
+      "nameTooLong": "113|Aplanko pavadinimas turi būti trumpesnis nei 80 simbolių.",
+      "descTooLong": "114|Aprašymas turi būti trumpesnis nei 120 simbolių."
     },
-    "optional": "(optional)",
-    "preview": "Preview",
-    "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "optional": "115|(neprivaloma)",
+    "preview": "116|Peržiūra",
+    "previewPlaceholder": "117|Naujas aplankas",
+    "deleteConfirmTitle": "118|Ištrinti šį aplanką?",
+    "setCount_few": "{{count}} rinkiniai"
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets",
-    "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?",
-    "editTitle": "Edit set",
-    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
-    "save": "Save changes",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "create": "119|Sukurti rinkinį",
+    "loading": "120|Įkeliami rinkiniai…",
+    "loadError": "121|Nepavyko įkelti jūsų rinkinių.",
+    "emptyTitle": "122|Rinkinių dar nėra",
+    "emptyBody": "123|Sukurkite pirmą kortelių rinkinį mygtuku „Naujas“.",
+    "cardCount": "124|{{count}} kortelių",
+    "cardCount_one": "125|{{count}} kortelė",
+    "keepPracticing": "126|Praktikuokitės toliau",
+    "delete": "127|Ištrinti rinkinį",
+    "deleteConfirm": "128|Ištrinti „{{title}}“? Šio veiksmo anuliuoti negalėsite.",
+    "notFoundTitle": "129|Rinkinys nerastas",
+    "notFoundBody": "130|Šis rinkinys galbūt ištrintas.",
+    "backToSets": "131|Atgal į rinkinius",
+    "edit": "132|Redaguoti rinkinį",
+    "deleteConfirmTitle": "133|Ištrinti šį rinkinį?",
+    "editTitle": "134|Redaguoti rinkinį",
+    "editSubtitle": "135|Pakeiskite pavadinimą, spalvą, piktogramą ar aplanką. Kortelės lieka savo vietose.",
+    "save": "136|Įrašyti pakeitimus",
+    "saving": "137|Įrašoma…",
+    "cancel": "138|Atšaukti",
+    "saveError": "139|Nepavyko įrašyti. Bandykite dar kartą.",
+    "cardCount_few": "{{count}} kortelės"
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
-    "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "title": "140|Naujas rinkinys",
+    "subtitle": "141|Pridėkite žodžių ir pritaikykite rinkinį sau.",
+    "infoSection": "142|Rinkinio informacija",
+    "setTitle": "143|Pavadinimas",
+    "setTitlePlaceholder": "144|pvz. Būtiniausi kelionės žodžiai",
+    "setDescription": "145|Aprašymas",
+    "setDescriptionPlaceholder": "146|Neprivaloma",
+    "privacy": "147|Privatumas",
+    "private": "148|Privatus",
+    "public": "149|Viešas",
+    "cardsSection": "150|Kortelės",
+    "addCard": "151|Pridėti kortelę",
+    "cardN": "152|{{n}} kortelė",
+    "removeCard": "153|Pašalinti kortelę",
+    "word": "154|Žodis",
+    "translation": "155|Vertimas",
+    "example": "156|Pavyzdys (neprivaloma)",
+    "addImage": "157|Pridėti paveikslėlį",
+    "removeImage": "158|Pašalinti paveikslėlį",
+    "customizeSection": "159|Pritaikyti",
+    "color": "160|Spalva",
+    "icon": "161|Piktograma",
+    "folder": "162|Aplankas",
+    "noFolder": "163|Be aplanko",
+    "previewSection": "164|Peržiūra",
+    "previewPlaceholder": "165|Rinkinio pavadinimas",
+    "save": "166|Sukurti rinkinį",
+    "saving": "167|Įrašoma…",
+    "cancel": "168|Atšaukti",
+    "saveError": "169|Nepavyko įrašyti. Bandykite dar kartą.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "170|Rinkinio pavadinimas privalomas.",
+      "titleTooLong": "171|Rinkinio pavadinimas turi būti trumpesnis nei 150 simbolių.",
+      "descTooLong": "172|Aprašymas turi būti trumpesnis nei 200 simbolių.",
+      "noValidCards": "173|Pridėkite bent vieną kortelę su žodžiu ir vertimu.",
+      "exampleTooLong": "174|Kortelių pavyzdžiai turi būti trumpesni nei 150 simbolių."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "imageTimeout": "175|Baigėsi paveikslėlio įkėlimo laikas. Patikrinkite ryšį ir bandykite dar kartą.",
     "import": {
-      "button": "Import",
-      "title": "Import cards",
-      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
-      "close": "Close import",
-      "dataSection": "Your data",
-      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
-      "separatorsSection": "Separators",
-      "betweenTermAndDefinition": "Between word and translation",
-      "betweenCards": "Between cards",
-      "tab": "Tab",
-      "comma": "Comma",
-      "newline": "New line",
-      "semicolon": "Semicolon",
-      "custom": "Custom",
-      "customPlaceholder": "e.g. —",
-      "previewSection": "Preview",
-      "previewEmpty": "Nothing to preview yet.",
-      "noDefinition": "No translation",
-      "confirm": "Add cards"
+      "button": "176|Importuoti",
+      "title": "177|Importuoti korteles",
+      "subtitle": "178|Nukopijuokite ir įklijuokite savo duomenis – iš „Word“, „Excel“, „Google Docs“ ir panašiai.",
+      "close": "179|Uždaryti importą",
+      "dataSection": "180|Jūsų duomenys",
+      "placeholder": "181|1 žodis\\t1 reikšmė\\n2 žodis\\t2 reikšmė\\n3 žodis\\t3 reikšmė",
+      "separatorsSection": "182|Skirtukai",
+      "betweenTermAndDefinition": "183|Tarp žodžio ir vertimo",
+      "betweenCards": "184|Tarp kortelių",
+      "tab": "185|Tabuliacija",
+      "comma": "186|Kablelis",
+      "newline": "187|Nauja eilutė",
+      "semicolon": "188|Kabliataškis",
+      "custom": "189|Savas",
+      "customPlaceholder": "190|pvz. —",
+      "previewSection": "191|Peržiūra",
+      "previewEmpty": "192|Kol kas nėra ką peržiūrėti.",
+      "noDefinition": "193|Vertimo nėra",
+      "confirm": "194|Pridėti korteles"
     },
     "iconPicker": {
-      "open": "More icons",
-      "title": "Choose icon",
-      "search": "Search symbol",
-      "close": "Close",
-      "empty": "No icons match that name."
+      "open": "195|Daugiau piktogramų",
+      "title": "196|Pasirinkite piktogramą",
+      "search": "197|Ieškoti simbolio",
+      "close": "198|Uždaryti",
+      "empty": "199|Piktogramų tokiu pavadinimu nėra."
     },
     "iconGroup": {
-      "learning": "Learning",
-      "languages": "Languages",
-      "nature": "Nature",
-      "health": "Health",
-      "food": "Food",
-      "travel": "Travel",
-      "work": "Work",
-      "tech": "Tech",
-      "creativity": "Creativity",
-      "general": "General"
+      "learning": "200|Mokymasis",
+      "languages": "201|Kalbos",
+      "nature": "202|Gamta",
+      "health": "203|Sveikata",
+      "food": "204|Maistas",
+      "travel": "205|Kelionės",
+      "work": "206|Darbas",
+      "tech": "207|Technologijos",
+      "creativity": "208|Kūryba",
+      "general": "209|Bendra"
     }
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
-      "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "flashcards": "210|Kortelės",
+      "folders": "211|Aplankai",
+      "sets": "212|Rinkiniai",
+      "create": "213|Naujas",
+      "profile": "214|Profilis",
+      "speaking": "215|Kalbėjimas",
+      "listening": "216|Klausymas",
+      "reading": "217|Skaitymas",
+      "writing": "218|Rašymas"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "219|Pasirinkite rinkinį praktikai",
+      "folders": "220|Tvarkykite savo aplankus",
+      "sets": "221|Tvarkykite savo kortelių rinkinius",
+      "create": "222|Sukurkite naują mokymosi rinkinį",
+      "speaking": "223|Lavinkite kalbėjimo įgūdžius.",
+      "listening": "224|Pratinkite ausį suprasti kalbą natūraliai.",
+      "reading": "225|Skaitykite ir kartokite medžiagą ta kalba.",
+      "writing": "226|Vartokite kalbą aktyviai."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "227|KALBĖJIMAS",
+      "listening": "228|KLAUSYMAS",
+      "reading": "229|SKAITYMAS",
+      "writing": "230|RAŠYMAS"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "231|Šios dienos tikslas",
+      "left": "232|Liko {{count}} žodžių"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "233|Išmokta šiandien",
+      "words": "234|žodžių",
+      "accuracy": "235|Tikslumas",
+      "greatJob": "236|Puikus darbas!",
+      "streak": "237|Serija",
+      "days": "238|d."
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "239|Tęsti mokymąsi",
+    "yourSets": "240|Jūsų rinkiniai",
+    "viewAll": "241|Rodyti visus",
+    "review": "242|Kartoti",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "243|Rinkinių dar nėra",
+      "emptyBody": "244|Sukurkite pirmą kortelių rinkinį mygtuku „Naujas“."
     },
     "create": {
-      "folder": "Folder",
-      "set": "Set",
-      "text": "Text",
-      "audio": "Audio",
-      "essay": "Essay"
+      "folder": "245|Aplankas",
+      "set": "246|Rinkinys",
+      "text": "247|Tekstas",
+      "audio": "248|Garsas",
+      "essay": "249|Rašinys"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "250|{{title}} – netrukus"
     },
     "progress": {
       "subtitle": {
-        "speaking": "of speaking practice",
-        "listening": "of listening practice",
-        "reading": "of reading practice",
-        "writing": "of writing practice"
+        "speaking": "251|kalbėjimo praktikos",
+        "listening": "252|klausymo praktikos",
+        "reading": "253|skaitymo praktikos",
+        "writing": "254|rašymo praktikos"
       }
     },
     "dailyGoal": {
-      "title": "Your goal for today",
-      "body": "Pick what you want to practise today — the card below counts against it.",
-      "chosenBody": "This is what today is about.",
-      "howMuch": "How much?",
-      "change": "Change"
+      "title": "255|Jūsų šiandienos tikslas",
+      "body": "256|Pasirinkite, ką norite praktikuoti šiandien – žemiau esanti kortelė įskaitoma į tai.",
+      "chosenBody": "257|Štai apie ką šiandiena.",
+      "howMuch": "258|Kiek?",
+      "change": "259|Keisti"
     },
     "lastNote": {
-      "title": "Last note you read"
+      "title": "260|Paskutinis skaitytas užrašas"
     }
   },
   "categories": {
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing"
+    "speaking": "261|Kalbėjimas",
+    "listening": "262|Klausymas",
+    "reading": "263|Skaitymas",
+    "writing": "264|Rašymas"
   },
   "phase0": {
-    "title": "WordAround",
-    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
+    "title": "265|WordAround",
+    "subtitle": "266|0 etapas veikia. Dizaino žetonai įkelti, „Firebase“ prijungtas."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "267|Apversti",
+    "known": "268|Žinojau",
+    "unknown": "269|Dar mokausi",
+    "mastered": "270|Įsisavinta",
+    "shuffle": "271|Sumaišyti",
+    "trackProgress": "272|Sekti pažangą",
+    "speak": "273|Ištarti",
+    "roundDone": "274|Ratas baigtas",
+    "knewCount": "275|Žinojote {{known}} iš {{total}}",
+    "repeatUnknown": "276|Pakartoti {{count}} nežinomų",
+    "restart": "277|Pradėti iš naujo",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "278|Visos",
+      "studied": "279|Mokytos",
+      "remaining": "280|Likusios",
+      "mastered": "281|Įsisavintos"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "282|Pridėti kortelę",
+    "editCard": "283|Redaguoti kortelę",
+    "deleteCard": "284|Ištrinti kortelę",
+    "deleteCardConfirm": "285|Ištrinti šią kortelę?",
+    "emptyPrompt": "286|Šiame rinkinyje kortelių dar nėra. Pridėkite pirmą.",
+    "save": "287|Įrašyti",
+    "cancel": "288|Atšaukti"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "289|Šios dienos pažanga",
+      "unit": "290|žodžių",
+      "subtitle": "291|rašymo praktikos"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "292|Praktikos režimai",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "293|Rašymas iš rinkinių",
+        "subtitle": "294|Praktikuokite savo rinkinių žodžių rašybą ir rašymą."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "295|Rašiniai",
+        "subtitle": "296|Rašykite tekstus ir gaukite DI atsiliepimą apie gramatiką ir stilių."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "297|Netrukus"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "298|Pasirinkite rinkinį",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "299|Nėra rinkinių su žodžiais",
+        "subtitle": "300|Prieš pradėdami rašymo praktiką sukurkite rinkinį bent su viena kortele."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "301|{{count}} žodžių",
+      "wordsCount_one": "302|{{count}} žodis",
+      "close": "303|Uždaryti",
+      "wordsCount_few": "{{count}} žodžiai"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "304|Rašymas iš rinkinių",
+      "subtitle": "305|Įrašykite vertimą ir spauskite „Enter“.",
+      "translateHint": "306|Išverskite į savo kalbą",
+      "hint": "307|Užuomina",
+      "skip": "308|Praleisti",
+      "submit": "309|Tikrinti",
+      "inputPlaceholder": "310|Rašykite čia…",
+      "loading": "311|Įkeliamas rinkinys…",
+      "loadError": "312|Nepavyko įkelti šio rinkinio.",
+      "noCards": "313|Šiame rinkinyje kortelių nėra.",
+      "back": "314|Atgal",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "315|Nustatymai",
+        "trainingMode": "316|Treniruotės režimas",
+        "difficulty": "317|Sudėtingumas"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "318|Žodis → Vertimas",
+        "translationToWord": "319|Vertimas → Žodis"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "320|Lengvas",
+        "medium": "321|Vidutinis",
+        "hard": "322|Sunkus",
+        "easyDesc": "323|Neriboti užuominų, neriboti praleidimų",
+        "mediumDesc": "324|1 užuominos raidė, daugiausia 25 % praleidimų",
+        "hardDesc": "325|Be užuominų, be praleidimų, su laiku"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "326|Išverskite į savo kalbą",
+        "translation": "327|Parašykite originalų žodį"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "328|Liko {{count}} praleidimas",
+      "skipsLeft_other": "329|Liko {{count}} praleidimų",
+      "seconds": "330|{{count}} s",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "331|Ratas baigtas!",
+          "subtitle": "332|Puikus darbas. Baigėte šį rašymo ratą."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "333|Laikas baigėsi",
+          "subtitle": "334|Sunkaus režimo laikmatis pasiekė nulį. Bandykite dar kartą nuo pirmo žodžio."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "335|Neteisingas atsakymas",
+          "subtitle": "336|Sunkiame režime viena klaida baigia ratą."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
-      }
+        "perfectTitle": "337|Tobulas ratas!",
+        "perfectBody": "338|Baigėte sunkų režimą be klaidų. Be praleidimų. Be užuominų. Vien meistriškumas.",
+        "totalWords": "339|Iš viso žodžių",
+        "completedWords": "340|Įveikta žodžių",
+        "skippedWords": "341|Praleista žodžių",
+        "hintsUsed": "342|Panaudota užuominų",
+        "streak": "343|Serija",
+        "difficultyLabel": "344|Sudėtingumas",
+        "word": "345|Žodis",
+        "yourAnswer": "346|Jūsų atsakymas",
+        "correctAnswer": "347|Teisingas atsakymas",
+        "tryAgain": "348|Bandyti dar kartą"
+      },
+      "skipsLeft_few": "Liko {{count}} praleidimai"
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "349|Rašiniai",
+      "subtitle": "350|Temą parenka DI. Parašykite ir gaukite atsiliepimą.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "351|Siūloma",
+        "custom": "352|Mano tema"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "353|Parašykite savo rašinio temą...",
+        "generate": "354|Generuoti užduotį"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "355|Generuoti temą",
+        "regenerate": "356|Nauja tema"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "357|Kalba",
+      "difficulty": "358|Sudėtingumas",
       "task": {
-        "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips",
-        "taskLabel": "Task"
+        "time": "359|≈ {{count}} min",
+        "wordRange": "360|{{min}}-{{max}} žodžių",
+        "quickTips": "361|Greiti patarimai",
+        "taskLabel": "362|Užduotis"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "363|Pradėkite rašyti rašinį čia...",
+        "wordCount": "364|{{count}} / {{min}}-{{max}} žodžių",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "365|Tęskite – reikia bent {{min}} žodžių.",
+          "aboveMaximum": "366|Viršijote ribą – pabandykite sutrumpinti.",
+          "valid": "367|Ribose."
         },
-        "reset": "Reset"
+        "reset": "368|Atstatyti"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "369|Pirmiausia įveskite temą.",
+        "generationFailed": "370|Nepavyko sugeneruoti temos. Bandykite dar kartą."
       },
-      "generating": "Generating...",
+      "generating": "371|Generuojama...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "372|Prašyti užuominos",
+        "remaining": "373|Liko {{remaining}}/{{limit}}",
+        "noneLeft": "374|Užuominų nebeliko",
+        "notAvailable": "375|Šiame lygyje užuominų nėra",
+        "generating": "376|Generuojama užuomina...",
+        "error": "377|Nepavyko gauti užuominos. Bandykite dar kartą.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "378|Turinys",
+          "grammar": "379|Gramatika",
+          "vocabulary": "380|Žodynas",
+          "structure": "381|Struktūra"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again.",
-        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
+        "button": "382|Tikrinti mano rašinį",
+        "checking": "383|Tikrinama...",
+        "disabled": "384|Pirmiausia telpkite į žodžių ribas",
+        "error": "385|Nepavyko patikrinti jūsų rašinio. Bandykite dar kartą.",
+        "languageUnsupported": "386|Gramatikos tikrinimo {{language}} kalbai dar nėra."
       },
       "score": {
-        "title": "Essay score",
+        "title": "387|Rašinio įvertinimas",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "388|Puikiai",
+          "veryGood": "389|Labai gerai",
+          "good": "390|Gerai",
+          "needsWork": "391|Reikia patobulinti"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "392|Gramatika",
+          "vocabulary": "393|Žodynas",
+          "length": "394|Ilgis",
+          "complexity": "395|Sudėtingumas",
+          "relevance": "396|Atitikimas temai",
+          "independence": "397|Savarankiškumas"
         },
         "stat": {
-          "words": "Words",
-          "grammar": "Grammar",
-          "vocabStyle": "Vocab/style",
-          "hints": "Hints",
-          "translations": "Translations",
-          "synonyms": "Synonyms"
+          "words": "398|Žodžiai",
+          "grammar": "399|Gramatika",
+          "vocabStyle": "400|Žodynas/stilius",
+          "hints": "401|Užuominos",
+          "translations": "402|Vertimai",
+          "synonyms": "403|Sinonimai"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
-        "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "sectionTitle": "404|Gramatikos problemos",
+        "count_one": "405|{{count}} problema",
+        "count_other": "406|{{count}} problemų",
+        "empty": "407|Gramatikos problemų nerasta – puikus darbas!",
+        "original": "408|Originalas:",
+        "suggestion": "409|Siūlymas:",
+        "reason": "410|Priežastis:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "411|Gramatika",
+          "vocabulary": "412|Žodynas",
+          "style": "413|Stilius"
         },
         "save": {
-          "idle": "Save to Notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
-        }
+          "idle": "414|Įrašyti į užrašus",
+          "saving": "415|Įrašoma…",
+          "saved": "416|Įrašyta",
+          "duplicate": "417|Jau įrašyta",
+          "failed": "418|Bandyti įrašyti dar kartą"
+        },
+        "count_few": "{{count}} problemos"
       },
       "helper": {
-        "translate": "Translate",
-        "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "translate": "419|Versti",
+        "synonym": "420|Sinonimas",
+        "remaining": "421|Liko {{remaining}}",
+        "notAvailable": "422|Šiame lygyje neprieinama"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "423|Versti",
+        "placeholder": "424|Įveskite žodį arba trumpą frazę",
+        "submit": "425|Versti",
+        "submitting": "426|Verčiama..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "427|Sinonimai",
+        "placeholder": "428|Įveskite žodį",
+        "submit": "429|Rasti sinonimų",
+        "submitting": "430|Ieškoma..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "431|Iš",
+        "to": "432|Į",
+        "close": "433|Uždaryti",
+        "noResult": "434|Rezultatų nerasta.",
+        "sameLanguage": "435|Pasirinkite kitą pradinę kalbą.",
+        "error": "436|Paslauga laikinai neprieinama."
       },
-      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
-      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
-      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
+      "saveMistakeConfirmTitle": "437|Įrašyti šią klaidą į užrašus?",
+      "saveMistakeConfirmBody": "438|Ji bus įrašyta kaip klaidos užrašas su pataisymu „{{correction}}“.",
+      "autoSaveConfirmTitle": "439|Įrašyti šias klaidas į savo užrašus?",
+      "autoSaveConfirmBody_one": "440|Šis patikrinimas rado {{count}} klaidą. Ją įrašius ji tampa užrašu, kuris grįžta pakartojimui.",
+      "autoSaveConfirmBody_other": "441|Šis patikrinimas rado {{count}} klaidų. Jas įrašius jos tampa užrašais, kurie grįžta pakartojimui.",
+      "autoSaveConfirmBody_few": "Šis patikrinimas rado {{count}} klaidas. Jas įrašius jos tampa užrašais, kurie grįžta pakartojimui."
     },
     "grammar": {
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "subtitle": "442|Sudėliokite gramatiką pagal temas į aiškius, struktūruotus užrašus.",
+      "newTopic": "443|Nauja tema",
+      "topicsEmptyTitle": "444|Temų dar nėra",
+      "topicsEmptyBody": "445|Sukurkite pirmą temą ir pradėkite kaupti gramatikos užrašus.",
+      "notesCount_one": "446|{{count}} užrašas",
+      "notesCount_other": "447|{{count}} užrašų",
+      "deleteTopicConfirm": "448|Ištrinti „{{title}}“ ir visus jos užrašus? Šio veiksmo anuliuoti negalėsite.",
+      "notesEmptyTitle": "449|Užrašų dar nėra",
+      "notesEmptyBody": "450|Pridėkite pirmą užrašą prie šios temos.",
+      "newNote": "451|Naujas užrašas",
+      "deleteNoteConfirm": "452|Ištrinti šį užrašą? Šio veiksmo anuliuoti negalėsite.",
+      "loading": "453|Įkeliama…",
+      "loadError": "454|Nepavyko įkelti jūsų gramatikos užrašų.",
+      "notFoundTitle": "455|Nerasta",
+      "notFoundBody": "456|Šis elementas galbūt ištrintas.",
+      "back": "457|Atgal",
+      "updated": "458|Atnaujinta {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel",
-        "language": "Language",
-        "languageNone": "Not set"
+        "newTitle": "459|Nauja tema",
+        "editTitle": "460|Redaguoti temą",
+        "name": "461|Pavadinimas",
+        "namePlaceholder": "462|pvz. Ispanų kalbos veiksmažodžiai",
+        "description": "463|Aprašymas",
+        "descriptionPlaceholder": "464|Neprivaloma",
+        "color": "465|Spalva",
+        "icon": "466|Piktograma",
+        "save": "467|Įrašyti",
+        "cancel": "468|Atšaukti",
+        "language": "469|Kalba",
+        "languageNone": "470|Nenustatyta"
       },
       "noteType": {
-        "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "standard": "471|Įprastas",
+        "mistake": "472|Klaida",
+        "rule": "473|Taisyklė",
+        "comparison": "474|Palyginimas",
+        "cheatSheet": "475|Atmintinė",
+        "exercise": "476|Pratimas"
       },
       "block": {
-        "heading": "Heading",
-        "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)",
-        "subheading": "Subheading",
-        "numberedList": "Numbered list",
-        "checklist": "Checklist",
-        "comparison": "Comparison",
-        "exercise": "Exercise",
-        "quiz": "Quiz",
-        "image": "Image",
-        "comparisonSecondary": "Second side",
-        "imageAdd": "Add / replace image",
-        "imageUploading": "Uploading…",
-        "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images."
+        "heading": "477|Antraštė",
+        "paragraph": "478|Tekstas",
+        "bulletList": "479|Sąrašas su ženkleliais",
+        "rule": "480|Taisyklė",
+        "example": "481|Pavyzdys",
+        "warning": "482|Įspėjimas",
+        "quote": "483|Citata",
+        "divider": "484|Skirtukas",
+        "addBlock": "485|Pridėti bloką",
+        "addItem": "486|Pridėti punktą",
+        "moveUp": "487|Aukštyn",
+        "moveDown": "488|Žemyn",
+        "remove": "489|Pašalinti",
+        "secondaryPlaceholder": "490|Detalė / vertimas (neprivaloma)",
+        "subheading": "491|Paantraštė",
+        "numberedList": "492|Numeruotas sąrašas",
+        "checklist": "493|Kontrolinis sąrašas",
+        "comparison": "494|Palyginimas",
+        "exercise": "495|Pratimas",
+        "quiz": "496|Testas",
+        "image": "497|Paveikslėlis",
+        "comparisonSecondary": "498|Antra pusė",
+        "imageAdd": "499|Pridėti / pakeisti paveikslėlį",
+        "imageUploading": "500|Įkeliama…",
+        "imageFailed": "501|Nepavyko įkelti paveikslėlio.",
+        "imageSaveFirst": "502|Prisijunkite, kad galėtumėte įkelti paveikslėlius."
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…",
-        "subheading": "Subheading",
-        "numberedList": "List item",
-        "checklist": "Checklist item",
-        "comparison": "First side",
-        "exercise": "Practice instruction…",
-        "quiz": "Question",
-        "image": "Image caption"
+        "heading": "503|Antraštė",
+        "paragraph": "504|Parašykite savo paaiškinimą…",
+        "bulletList": "505|Sąrašo punktas",
+        "rule": "506|Paaiškinkite gramatikos taisyklę…",
+        "example": "507|Pridėkite pavyzdį…",
+        "warning": "508|Dažna klaida ar įspėjimas…",
+        "quote": "509|Sakinys, kurį verta įsiminti…",
+        "subheading": "510|Paantraštė",
+        "numberedList": "511|Sąrašo punktas",
+        "checklist": "512|Kontrolinio sąrašo punktas",
+        "comparison": "513|Pirma pusė",
+        "exercise": "514|Pratimo nurodymas…",
+        "quiz": "515|Klausimas",
+        "image": "516|Paveikslėlio parašas"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again.",
-        "subtitle": "Edit note",
-        "tags": "Tags",
-        "tagsPlaceholder": "Add a tag…",
-        "removeTag": "Remove tag {{tag}}",
-        "addToReview": "Add to review",
-        "addedToReview": "Added to your review queue.",
-        "inReview": "In review · {{when}}",
-        "inReviewDue": "Due for review",
-        "removedFromReview": "Removed from your review queue.",
-        "unsavedTitle": "Leave without saving?",
-        "unsavedBody": "This note has changes that have not been saved yet.",
-        "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "titlePlaceholder": "517|Užrašo pavadinimas",
+        "save": "518|Įrašyti užrašą",
+        "saving": "519|Įrašoma…",
+        "delete": "520|Ištrinti užrašą",
+        "saveError": "521|Nepavyko įrašyti. Bandykite dar kartą.",
+        "subtitle": "522|Redaguoti užrašą",
+        "tags": "523|Žymos",
+        "tagsPlaceholder": "524|Pridėti žymą…",
+        "removeTag": "525|Pašalinti žymą {{tag}}",
+        "addToReview": "526|Pridėti į kartojimą",
+        "addedToReview": "527|Pridėta į jūsų kartojimo eilę.",
+        "inReview": "528|Kartojime · {{when}}",
+        "inReviewDue": "529|Laikas kartoti",
+        "removedFromReview": "530|Pašalinta iš jūsų kartojimo eilės.",
+        "unsavedTitle": "531|Išeiti neįrašius?",
+        "unsavedBody": "532|Šiame užraše yra neįrašytų pakeitimų.",
+        "discard": "533|Atmesti pakeitimus",
+        "saveAndLeave": "534|Įrašyti ir išeiti"
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "535|Testai",
+        "new": "536|Naujas testas",
+        "start": "537|Pradėti testą",
+        "delete": "538|Ištrinti testą",
+        "deleteConfirm": "539|Ištrinti „{{title}}“? Šio veiksmo anuliuoti negalėsite.",
+        "emptyTitle": "540|Testų dar nėra",
+        "emptyBody": "541|Sukurkite testą iš šio užrašo ir pasitikrinkite.",
+        "loadError": "542|Nepavyko įkelti testų.",
+        "questionsCount_one": "543|{{count}} klausimas",
+        "questionsCount_other": "544|{{count}} klausimų",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "545|Pasirinkimas iš kelių",
+          "trueFalse": "546|Tiesa / Netiesa",
+          "fillGap": "547|Užpildyti spragą",
+          "shortAnswer": "548|Trumpas atsakymas"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead",
-          "modeManual": "Manual",
-          "modeManualDesc": "Write your own questions.",
-          "createQuiz": "Create quiz"
+          "title": "549|Sukurti testą",
+          "titlePlaceholder": "550|Testo pavadinimas",
+          "mode": "551|Generavimo režimas",
+          "modeSmart": "552|Išmanusis vietinis",
+          "modeSmartDesc": "553|Sukuria klausimus iš užrašo turinio, jūsų įrenginyje.",
+          "modeAI": "554|Sugeneruota DI",
+          "modeAIDesc": "555|Sukuria turtingesnius, kontekstinius klausimus su DI.",
+          "count": "556|Klausimai",
+          "types": "557|Klausimų tipai",
+          "focus": "558|Akcentas (neprivaloma)",
+          "focusPlaceholder": "559|pvz. sutelkti dėmesį į netaisyklingas formas",
+          "preview": "560|Peržiūrėti klausimus",
+          "regenerate": "561|Generuoti peržiūrą iš naujo",
+          "previewTitle": "562|Peržiūra",
+          "saveQuiz": "563|Įrašyti testą",
+          "generateQuiz": "564|Generuoti testą",
+          "generating": "565|Generuojama…",
+          "saving": "566|Įrašoma…",
+          "useSmartInstead": "567|Verčiau naudoti Išmanųjį vietinį",
+          "modeManual": "568|Rankiniu būdu",
+          "modeManualDesc": "569|Parašykite savo klausimus.",
+          "createQuiz": "570|Sukurti testą"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "571|{{current}} klausimas iš {{total}}",
+          "submit": "572|Pateikti atsakymą",
+          "next": "573|Toliau",
+          "finish": "574|Baigti",
+          "correct": "575|Teisingai!",
+          "incorrect": "576|Neteisingai",
+          "correctAnswer": "577|Teisingas atsakymas: {{answer}}",
+          "typeMissing": "578|Įrašykite trūkstamą žodį",
+          "typeAnswer": "579|Įrašykite savo atsakymą",
+          "trueLabel": "580|Tiesa",
+          "falseLabel": "581|Netiesa"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "582|{{correct}} iš {{total}} teisingai",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "583|Puikiai!",
+            "good": "584|Puikus darbas!",
+            "keepPracticing": "585|Praktikuokitės toliau",
+            "reviewNote": "586|Peržiūrėkite užrašą"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "587|Neteisingi",
+          "correctSection": "588|Teisingi",
+          "yourAnswer": "589|Jūsų atsakymas: {{answer}}",
+          "tryAgain": "590|Bandyti dar kartą",
+          "reviewNote": "591|Atverti užrašą",
+          "done": "592|Atlikta"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "593|Pirmiausia pridėkite daugiau turinio į užrašą – testui reikia bent dviejų turinio blokų (taisyklė, pavyzdys, įspėjimas, pastraipa ar citata).",
+          "noMatchingQuestionTypes": "594|Pasirinktiems klausimų tipams nepakanka tinkamo turinio. Įjunkite daugiau tipų arba pridėkite turinio.",
+          "aiFailed": "595|Nepavyko sugeneruoti testo su DI. Bandykite dar kartą arba naudokite Išmanųjį vietinį."
         },
-        "badge": "Quiz",
+        "badge": "596|Testas",
         "manual": {
-          "questions_one": "{{count}} question",
-          "questions_other": "{{count}} questions",
-          "add": "Add question",
-          "questionPlaceholder": "Question text",
-          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
-          "optionPlaceholder": "Option {{index}}",
-          "answerPlaceholder": "Correct answer",
-          "explanationPlaceholder": "Explanation (optional)",
+          "questions_one": "597|{{count}} klausimas",
+          "questions_other": "598|{{count}} klausimų",
+          "add": "599|Pridėti klausimą",
+          "questionPlaceholder": "600|Klausimo tekstas",
+          "questionGapPlaceholder": "601|Klausimas su spraga, pvz. Aš _____ į mokyklą",
+          "optionPlaceholder": "602|{{index}} variantas",
+          "answerPlaceholder": "603|Teisingas atsakymas",
+          "explanationPlaceholder": "604|Paaiškinimas (neprivaloma)",
           "error": {
-            "questionRequired": "Question text is required.",
-            "optionsRequired": "Multiple choice needs at least 2 options.",
-            "answerRequired": "Enter the correct answer.",
-            "answerNotAnOption": "The correct answer must match one of the options.",
-            "blankRequired": "Add a blank (e.g. _____) inside the question."
-          }
-        }
+            "questionRequired": "605|Klausimo tekstas privalomas.",
+            "optionsRequired": "606|Pasirinkimui iš kelių reikia bent 2 variantų.",
+            "answerRequired": "607|Įveskite teisingą atsakymą.",
+            "answerNotAnOption": "608|Teisingas atsakymas turi sutapti su vienu iš variantų.",
+            "blankRequired": "609|Pridėkite spragą (pvz. _____) klausime."
+          },
+          "questions_few": "{{count}} klausimai"
+        },
+        "questionsCount_few": "{{count}} klausimai"
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "610|Greita klaida",
+        "title": "611|Greita klaida",
+        "original": "612|Originalus sakinys",
+        "originalPlaceholder": "613|Pavyzdys: Aš esu sutinku su tavimi",
+        "corrected": "614|Pataisymas",
+        "correctedPlaceholder": "615|Pavyzdys: Sutinku su tavimi",
+        "explanation": "616|Paaiškinimas (neprivaloma)",
+        "explanationPlaceholder": "617|Kodėl pataisymas teisingas?",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "618|Pirmiausia pridėkite originalų sakinį.",
+          "corrected": "619|Pridėkite ir pataisytą sakinį."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done",
-        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
+        "save": "620|Įrašyti klaidą",
+        "saving": "621|Įrašoma…",
+        "saved": "622|Įrašyta į gramatikos užrašus.",
+        "duplicate": "623|Jau įrašyta – dublikatas praleistas.",
+        "failed": "624|Nepavyko įrašyti. Bandykite dar kartą.",
+        "openTopic": "625|Atverti „Dažnos klaidos“",
+        "done": "626|Atlikta",
+        "tip": "627|Įrašyti pataisymai automatiškai patenka į kartojimą, tad tos, kurias nuolat klystate, grįžta pirmos."
       },
       "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
+        "topicTitle": "628|Temų šablonai",
+        "noteTitle": "629|Užrašų šablonai",
+        "button": "630|Šablonas",
+        "startFromTemplate": "631|Pradėti nuo šablono",
+        "searchPlaceholder": "632|Ieškoti šablonų…",
+        "allLanguages": "633|Visos",
+        "anyDifficulty": "634|Bet koks",
         "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
+          "en": "635|Anglų",
+          "es": "636|Ispanų",
+          "fr": "637|Prancūzų",
+          "de": "638|Vokiečių"
         },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
-        "applyTitle": "Apply “{{title}}”?",
-        "applyBody": "This note already has content. Choose how to apply the template.",
-        "applyReplace": "Replace content",
-        "applyAppend": "Append blocks"
+        "minutes": "639|{{minutes}} min",
+        "notesIncluded_one": "640|{{count}} užrašas",
+        "notesIncluded_other": "641|{{count}} užrašų",
+        "blocksIncluded_one": "642|{{count}} blokas",
+        "blocksIncluded_other": "643|{{count}} blokų",
+        "empty": "644|Jūsų filtrus atitinkančių šablonų nėra.",
+        "use": "645|Naudoti šabloną",
+        "creating": "646|Kuriama…",
+        "replaceConfirm": "647|Pakeisti dabartinį užrašo turinį šiuo šablonu? Spauskite „Atšaukti“, kad šablonas būtų pridėtas žemiau.",
+        "applyTitle": "648|Taikyti „{{title}}“?",
+        "applyBody": "649|Šiame užraše jau yra turinio. Pasirinkite, kaip taikyti šabloną.",
+        "applyReplace": "650|Pakeisti turinį",
+        "applyAppend": "651|Pridėti blokus pabaigoje",
+        "notesIncluded_few": "{{count}} užrašai",
+        "blocksIncluded_few": "{{count}} blokai"
       },
       "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "dueBadge": "Due",
-        "refreshBody": "Nothing is due right now — you can still refresh what you read lately.",
-        "refreshStart": "Refresh recent notes",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
+        "title": "652|Kartojimas",
+        "subtitle": "653|Įtvirtinkite tai, ko išmokote, kartodami intervalais.",
+        "cardTitle": "654|Kartoti šiandien",
+        "cardSubtitle_one": "655|{{count}} elementas parengtas · ~{{minutes}} min",
+        "cardSubtitle_other": "656|{{count}} elementų parengta · ~{{minutes}} min",
+        "caughtUpTitle": "657|Viskas atlikta",
+        "caughtUp": "658|Viską spėjote. Atverkite ar redaguokite užrašus, kad gautumėte kartojimo pasiūlymų.",
+        "dueBadge": "659|Laukia",
+        "refreshBody": "660|Šiuo metu nieko nelaukia – vis dėlto galite atnaujinti tai, ką neseniai skaitėte.",
+        "refreshStart": "661|Atnaujinti naujausius užrašus",
+        "start": "662|Pradėti kartojimą",
+        "skip": "663|Praleisti",
+        "itemOf": "664|{{current}} elementas iš {{total}}",
+        "untitled": "665|Gramatikos užrašas",
+        "stats": "666|Kartota {{count}} kartų · serija {{streak}}",
+        "continueToQuestion": "667|Pereiti prie klausimo",
+        "showAnswer": "668|Rodyti atsakymą",
+        "compareTitle": "669|Palyginkite savo atsakymą",
+        "referenceAnswer": "670|Etalonas: {{answer}}",
+        "openNote": "671|Atverti visą užrašą",
         "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
+          "manual_one": "672|{{count}} elementas laukia kartojimo",
+          "manual_other": "673|{{count}} elementų laukia kartojimo",
+          "recentlyOpened_one": "674|{{count}} neseniai atvertas užrašas",
+          "recentlyOpened_other": "675|{{count}} neseniai atvertų užrašų",
+          "recentlyEdited_one": "676|{{count}} neseniai redaguotas užrašas",
+          "recentlyEdited_other": "677|{{count}} neseniai redaguotų užrašų",
+          "manual_few": "{{count}} elementai laukia kartojimo",
+          "recentlyOpened_few": "{{count}} neseniai atverti užrašai",
+          "recentlyEdited_few": "{{count}} neseniai redaguoti užrašai"
         },
         "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
-          "quiz": "Quiz"
+          "note": "678|Užrašas",
+          "mistake": "679|Klaida",
+          "quiz": "680|Testas"
         },
         "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
+          "source": "681|Mokymasis",
+          "question": "682|Atsakymas",
+          "result": "683|Įvertinimas"
         },
         "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
+          "forgot": "684|Pamiršau",
+          "hard": "685|Sunku",
+          "good": "686|Gerai",
+          "easy": "687|Lengva"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "plus4h": "688|+4 valandos",
+          "plus1d": "689|+1 diena",
+          "plus3d": "690|+3 dienos",
+          "plus7d": "691|+7 dienos"
         },
         "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "title": "692|Sesija baigta",
+          "emptyTitle": "693|Nieko nekartota",
+          "reviewed": "694|Pakartota",
+          "correct": "695|Teisingai",
+          "incorrect": "696|Neteisingai",
+          "hintForgot": "697|Kai kurie elementai grįš po 4 valandų.",
+          "hintHard": "698|Sunkūs elementai grįš rytoj.",
+          "hintGood": "699|Geri elementai grįš po 3 dienų.",
+          "hintEasy": "700|Visi elementai grįš po 7 dienų.",
+          "done": "701|Atgal į gramatikos užrašus"
         },
-        "loadError": "Couldn't load your review queue.",
-        "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "loadError": "702|Nepavyko įkelti jūsų kartojimo eilės.",
+        "mistakeCount_one": "703|{{count}} klaida",
+        "mistakeCount_other": "704|{{count}} klaidų",
+        "cardSubtitle_few": "{{count}} elementai parengti · ~{{minutes}} min",
+        "mistakeCount_few": "{{count}} klaidos"
       },
-      "mistakesBadge": "Mistakes",
-      "topicsTitle": "Topics",
-      "deleteTopic": "Delete topic",
-      "deleteTopicTitle": "Delete this topic?",
-      "deleteNoteTitle": "Delete this note?",
-      "pin": "Pin note",
-      "unpin": "Unpin note",
-      "favorite": "Add to favorites",
-      "unfavorite": "Remove from favorites",
+      "mistakesBadge": "705|Klaidos",
+      "topicsTitle": "706|Temos",
+      "deleteTopic": "707|Ištrinti temą",
+      "deleteTopicTitle": "708|Ištrinti šią temą?",
+      "deleteNoteTitle": "709|Ištrinti šį užrašą?",
+      "pin": "710|Prisegti užrašą",
+      "unpin": "711|Atsegti užrašą",
+      "favorite": "712|Įtraukti į mėgstamus",
+      "unfavorite": "713|Pašalinti iš mėgstamų",
       "search": {
-        "topics": "Search topics…",
-        "notes": "Search notes…",
-        "clear": "Clear search",
-        "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword.",
-        "notesSection_one": "Notes ({{count}})",
-        "notesSection_other": "Notes ({{count}})",
-        "noNoteMatches": "No notes match this search."
+        "topics": "714|Ieškoti temų…",
+        "notes": "715|Ieškoti užrašų…",
+        "clear": "716|Išvalyti paiešką",
+        "noMatchTitle": "717|Atitikmenų nėra",
+        "noMatchBody": "718|Pabandykite kitą raktažodį.",
+        "notesSection_one": "719|Užrašai ({{count}})",
+        "notesSection_other": "720|Užrašai ({{count}})",
+        "noNoteMatches": "721|Šią paiešką atitinkančių užrašų nėra.",
+        "notesSection_few": "Užrašai ({{count}})"
       },
       "filter": {
-        "label": "Filter notes",
-        "all": "All",
-        "pinned": "Pinned",
-        "favorites": "Favorites",
-        "mistakes": "Mistakes",
-        "quizzes": "Quizzes",
-        "review": "Due",
+        "label": "722|Filtruoti užrašus",
+        "all": "723|Visi",
+        "pinned": "724|Prisegti",
+        "favorites": "725|Mėgstami",
+        "mistakes": "726|Klaidos",
+        "quizzes": "727|Testai",
+        "review": "728|Laukia",
         "empty": {
           "all": {
-            "title": "No grammar notes yet",
-            "body": "Create your first grammar note for this topic."
+            "title": "729|Gramatikos užrašų dar nėra",
+            "body": "730|Sukurkite pirmą gramatikos užrašą šiai temai."
           },
           "pinned": {
-            "title": "No pinned notes yet",
-            "body": "Pin notes from the list to find them quickly."
+            "title": "731|Prisegtų užrašų dar nėra",
+            "body": "732|Prisekite užrašus iš sąrašo, kad greitai juos rastumėte."
           },
           "favorites": {
-            "title": "No favorite notes yet",
-            "body": "Favorite notes to keep them handy."
+            "title": "733|Mėgstamų užrašų dar nėra",
+            "body": "734|Pažymėkite užrašus kaip mėgstamus, kad būtų po ranka."
           },
           "mistakes": {
-            "title": "No saved mistakes yet",
-            "body": "Save grammar mistakes to review them here."
+            "title": "735|Įrašytų klaidų dar nėra",
+            "body": "736|Įrašykite gramatikos klaidas, kad galėtumėte jas kartoti čia."
           },
           "quizzes": {
-            "title": "No quiz notes yet",
-            "body": "Add a quiz to a note to see it here."
+            "title": "737|Užrašų su testais dar nėra",
+            "body": "738|Pridėkite testą prie užrašo, kad jį matytumėte čia."
           },
           "review": {
-            "title": "Nothing due right now",
-            "body": "Notes come back here when their next review is due."
+            "title": "739|Šiuo metu nieko nelaukia",
+            "body": "740|Užrašai grįžta čia, kai ateina laikas kitam kartojimui."
           }
         }
       },
       "reorder": {
-        "start": "Reorder",
-        "done": "Done",
-        "up": "Move up",
-        "down": "Move down"
+        "start": "741|Keisti tvarką",
+        "done": "742|Atlikta",
+        "up": "743|Aukštyn",
+        "down": "744|Žemyn"
       },
       "highlights": {
-        "mistakesTitle": "Mistakes to fix",
-        "mistakesSubtitle": "Recent corrections waiting for review.",
-        "quizzesTitle": "Weak quiz areas",
-        "quizzesSubtitle": "Quizzes worth re-taking soon."
+        "mistakesTitle": "745|Taisytinos klaidos",
+        "mistakesSubtitle": "746|Neseni pataisymai laukia kartojimo.",
+        "quizzesTitle": "747|Silpnos testų sritys",
+        "quizzesSubtitle": "748|Testai, kuriuos verta greitai pakartoti."
       },
       "quickNote": {
-        "button": "Quick note",
-        "title": "Quick note",
-        "subtitle": "Capture a grammar idea without opening the full editor.",
-        "noteTitle": "Title",
-        "titlePlaceholder": "Example: Ser vs Estar",
-        "text": "Note",
-        "textPlaceholder": "Write the useful part here",
-        "noteType": "Note type",
-        "topic": "Topic",
-        "openEditor": "Open editor after saving",
-        "openEditorHint": "Useful when the quick version grows into a full note.",
-        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
-        "validation": "Add a title or some text first.",
-        "save": "Save quick note",
-        "saving": "Saving…"
+        "button": "749|Greitas užrašas",
+        "title": "750|Greitas užrašas",
+        "subtitle": "751|Užfiksuokite gramatikos mintį neatvėrę viso rengyklės lango.",
+        "noteTitle": "752|Pavadinimas",
+        "titlePlaceholder": "753|Pavyzdys: Ser vs Estar",
+        "text": "754|Užrašas",
+        "textPlaceholder": "755|Parašykite čia naudingą dalį",
+        "noteType": "756|Užrašo tipas",
+        "topic": "757|Tema",
+        "openEditor": "758|Įrašius atverti rengyklę",
+        "openEditorHint": "759|Naudinga, kai greitoji versija išauga į pilną užrašą.",
+        "tip": "760|Greiti užrašai skirti tai minčiai, kurią kitaip pamirštumėte po dešimties minučių.",
+        "validation": "761|Pirmiausia pridėkite pavadinimą arba šiek tiek teksto.",
+        "save": "762|Įrašyti greitą užrašą",
+        "saving": "763|Įrašoma…"
       },
       "settings": {
-        "title": "Notes settings",
-        "subtitle": "How quick capture, mistakes and the notes list behave.",
-        "reset": "Reset to defaults",
-        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "title": "764|Užrašų nustatymai",
+        "subtitle": "765|Kaip veikia greitas fiksavimas, klaidos ir užrašų sąrašas.",
+        "reset": "766|Atstatyti numatytuosius",
+        "tip": "767|Greitas klaidas naudokite sakiniams, kuriuos tikrai parašėte neteisingai – jie naudingesni už tobulus vadovėlio pavyzdžius.",
         "quickCapture": {
-          "title": "Quick capture",
-          "subtitle": "Make fast notes and mistakes feel instant."
+          "title": "768|Greitas fiksavimas",
+          "subtitle": "769|Padarykite greitus užrašus ir klaidas akimirksniu."
         },
         "mistakeNotes": {
-          "title": "Mistake notes",
-          "subtitle": "What gets saved when you capture a quick mistake."
+          "title": "770|Klaidų užrašai",
+          "subtitle": "771|Kas įrašoma, kai užfiksuojate greitą klaidą."
         },
         "essays": {
-          "title": "Essays",
-          "subtitle": "What happens to grammar issues found in your essays."
+          "title": "772|Rašiniai",
+          "subtitle": "773|Kas nutinka jūsų rašinių gramatikos problemoms."
         },
         "review": {
-          "title": "Spaced review",
-          "subtitle": "How notes reach the review queue."
+          "title": "774|Kartojimas intervalais",
+          "subtitle": "775|Kaip užrašai patenka į kartojimo eilę."
         },
         "appearance": {
-          "title": "Notes appearance",
-          "subtitle": "How the notes list is ordered and sized."
+          "title": "776|Užrašų išvaizda",
+          "subtitle": "777|Kaip užrašų sąrašas rikiuojamas ir rodomas."
         },
         "helpers": {
-          "title": "Learning helpers",
-          "subtitle": "Small nudges inside empty states and quick sheets."
+          "title": "778|Mokymosi pagalbininkai",
+          "subtitle": "779|Nedideli patarimai tuščiuose languose ir greitosiose formose."
         },
         "defaultType": {
-          "title": "Default note type",
-          "subtitle": "What a new quick note starts as."
+          "title": "780|Numatytasis užrašo tipas",
+          "subtitle": "781|Kokiu tipu prasideda naujas greitas užrašas."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "Open editor after quick save",
-            "subtitle": "After saving a quick note, jump straight into the full editor."
+            "title": "782|Atverti rengyklę po greito įrašymo",
+            "subtitle": "783|Įrašius greitą užrašą iškart pereiti į pilną rengyklę."
           },
           "allowQuickQuizzes": {
-            "title": "Allow quizzes in notes",
-            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+            "title": "784|Leisti testus užrašuose",
+            "subtitle": "785|Siūlyti testų blokus ir testų kūrimą užrašuose."
           },
           "showsMistakeHighlights": {
-            "title": "Highlight mistake notes",
-            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+            "title": "786|Išryškinti klaidų užrašus",
+            "subtitle": "787|Naudoti šiltą atspalvį klaidų kortelėms ir rodyti klaidų eilutę."
           },
           "includeOriginalSentence": {
-            "title": "Include original sentence",
-            "subtitle": "Save the wrong version as a quote block in the note."
+            "title": "788|Įtraukti originalų sakinį",
+            "subtitle": "789|Įrašyti klaidingą versiją į užrašą kaip citatos bloką."
           },
           "includeCorrectedSentence": {
-            "title": "Include corrected sentence",
-            "subtitle": "Save the fixed version as an example block."
+            "title": "790|Įtraukti pataisytą sakinį",
+            "subtitle": "791|Įrašyti pataisytą versiją kaip pavyzdžio bloką."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "Include explanation",
-            "subtitle": "Add your explanation as a paragraph block below."
+            "title": "792|Įtraukti paaiškinimą",
+            "subtitle": "793|Pridėti jūsų paaiškinimą žemiau kaip pastraipos bloką."
           },
           "groupMistakesByTopic": {
-            "title": "Group mistakes by topic",
-            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+            "title": "794|Grupuoti klaidas pagal temas",
+            "subtitle": "795|Įrašyti greitas klaidas į dabartinę temą, o ne į „Dažnos klaidos“."
           },
           "askBeforeSavingMistakes": {
-            "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
+            "title": "796|Klausti prieš įrašant klaidas",
+            "subtitle": "797|Patvirtinti, kol rašinio problema netapo užrašu. Tai svarbiau už automatinį įrašymą."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
+            "title": "798|Automatiškai įrašyti rašinių klaidas",
+            "subtitle": "799|Kiekviena rašinyje rasta gramatikos problema tampa užrašu. Įjungus „Klausti prieš įrašant“, klausiama vieną kartą už visą patikrinimą."
           },
           "groupsPinnedNotesFirst": {
-            "title": "Pinned notes first",
-            "subtitle": "Keep important rules at the top of each topic."
+            "title": "800|Prisegti užrašai pirma",
+            "subtitle": "801|Laikykite svarbias taisykles kiekvienos temos viršuje."
           },
           "usesCompactCards": {
-            "title": "Compact note cards",
-            "subtitle": "Show tighter cards when you want more notes on screen."
+            "title": "802|Kompaktiškos užrašų kortelės",
+            "subtitle": "803|Rodyti tankesnes korteles, kai norite daugiau užrašų ekrane."
           },
           "showsHelperTips": {
-            "title": "Show helper tips",
-            "subtitle": "Display short contextual hints while creating notes."
+            "title": "804|Rodyti patarimus",
+            "subtitle": "805|Rodyti trumpus, kontekstinius patarimus kuriant užrašus."
           },
           "autoAddNotesToReview": {
-            "title": "Add new notes to review",
-            "subtitle": "Every note you save joins the review queue, due a day later."
+            "title": "806|Įtraukti naujus užrašus į kartojimą",
+            "subtitle": "807|Kiekvienas įrašytas užrašas patenka į kartojimo eilę – jo eilė ateina kitą dieną."
           }
         }
       },
-      "editTopic": "Edit topic",
+      "editTopic": "808|Redaguoti temą",
       "toSet": {
-        "title": "Make a set from this note",
-        "subtitle": "Pick the pairs to turn into flashcards.",
-        "setTitle": "Set title",
-        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
-        "button": "Make a set",
-        "create": "Create set",
-        "creating": "Creating…",
-        "error": "Couldn't create the set. Try again.",
-        "cards_one": "{{count}} card",
-        "cards_other": "{{count}} cards"
+        "title": "809|Sukurti rinkinį iš šio užrašo",
+        "subtitle": "810|Pasirinkite poras, kurios taps kortelėmis.",
+        "setTitle": "811|Rinkinio pavadinimas",
+        "empty": "812|Šiame užraše dar nėra ko paversti kortelėmis. Palyginimo, pavyzdžio ir taisyklės blokai konvertuojami tiesiogiai, o sąrašo punktai dalijami ties brūkšniu – kaip „hacer — daryti“.",
+        "button": "813|Sukurti rinkinį",
+        "create": "814|Sukurti rinkinį",
+        "creating": "815|Kuriama…",
+        "error": "816|Nepavyko sukurti rinkinio. Bandykite dar kartą.",
+        "cards_one": "817|{{count}} kortelė",
+        "cards_other": "818|{{count}} kortelių",
+        "cards_few": "{{count}} kortelės"
       },
-      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "topicsEmptyTip": "819|Tema – tai aplankas užrašams: po vieną kalbai arba po vieną dalykui, kurį nuolat klystate.",
+      "notesEmptyTip": "820|Kiekvienas įrašytas užrašas patenka į kartojimo eilę, tad jį užsirašyti jau reiškia pradėti jį mokytis.",
+      "notesCount_few": "{{count}} užrašai"
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "821|Praktikos režimai",
+    "loading": "822|Įkeliama…",
+    "loadError": "823|Nepavyko įkelti jūsų skaitinių.",
+    "notFound": "824|Šis elementas galbūt ištrintas.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "825|Šios dienos pažanga",
+      "subtitle": "826|Nenutraukite skaitymo serijos."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "827|Netrukus",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "828|Mano tekstai",
+        "subtitle": "829|Įklijuokite savo tekstą ir skaitykite jį su pagalba."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "830|Skaitymas iš rinkinių",
+        "subtitle": "831|Sukurkite skaitinį iš savo kortelių rinkinių."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "832|Istorijos režimas",
+        "subtitle": "833|Skaitykite interaktyvias istorijas su išsišakojančiais pasirinkimais."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "834|Greitasis skaitymas",
+        "subtitle": "835|Treniruokite greitesnį skaitymą pagal laiką."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "836|Mano tekstai",
+      "subtitle": "837|Jūsų įrašyti skaitiniai.",
+      "addText": "838|Pridėti tekstą",
+      "emptyTitle": "839|Tekstų dar nėra",
+      "emptyBody": "840|Pridėkite pirmą tekstą ir pradėkite skaitymo praktiką.",
+      "savedTitle": "841|Įrašyti tekstai"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "842|Naujas",
+      "inProgress": "843|Vykdomas",
+      "completed": "844|Baigtas"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "845|{{count}} žodis",
+      "words_other": "846|{{count}} žodžių",
+      "start": "847|Pradėti",
+      "continue": "848|Tęsti",
+      "readAgain": "849|Skaityti dar kartą",
+      "rename": "850|Pervadinti",
+      "renamePrompt": "851|Naujas pavadinimas:",
+      "delete": "852|Ištrinti",
+      "deleteConfirm": "853|Ištrinti „{{title}}“? Šio veiksmo anuliuoti negalėsite.",
+      "words_few": "{{count}} žodžiai"
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "854|Tęsti skaitymą",
+      "percent": "855|{{percent}} % baigta",
+      "button": "856|Tęsti"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "857|Pagrindinė mintis",
+      "vocabulary": "858|Žodynas",
+      "detailedComprehension": "859|Detalus supratimas",
+      "grammarAwareness": "860|Dėmesys gramatikai",
+      "speedFluency": "861|Greitis / sklandumas"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "862|Supratimas",
+      "trueFalse": "863|Tiesa / Netiesa",
+      "fillGap": "864|Užpildyti spragą",
+      "vocabulary": "865|Žodynas",
+      "findEvidence": "866|Rasti įrodymą",
+      "orderReconstruction": "867|Eiliškumas"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "868|Išryškinti nežinomus žodžius",
+      "translationOnTap": "869|Versti palietus",
+      "vocabularyHints": "870|Žodyno užuominos",
+      "readingTimer": "871|Skaitymo laikmatis"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "872|Pridėti tekstą",
+      "subtitle": "873|Įklijuokite tekstą ir sutvarkykite savo skaitymo praktiką.",
+      "untitled": "874|Tekstas be pavadinimo",
+      "pastePlaceholder": "875|Įklijuokite arba įrašykite savo tekstą čia…",
+      "titleLabel": "876|Pavadinimas",
+      "titlePlaceholder": "877|Neprivaloma – galime pasiūlyti",
+      "language": "878|Kalba",
+      "difficulty": "879|Sudėtingumas",
+      "autoDetect": "880|Aptikti automatiškai",
+      "manual": "881|Pasirinkti rankiniu būdu",
+      "focus": "882|Skaitymo akcentas",
+      "questionTypes": "883|Klausimų tipai",
+      "assistance": "884|Skaitymo pagalba",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
-        "min": "min",
-        "detected": "Detected: {{level}}"
+        "words_one": "885|{{count}} žodis",
+        "words_other": "886|{{count}} žodžių",
+        "chars_one": "887|{{count}} simbolis",
+        "chars_other": "888|{{count}} simbolių",
+        "min": "889|min",
+        "detected": "890|Aptikta: {{level}}",
+        "words_few": "{{count}} žodžiai",
+        "chars_few": "{{count}} simboliai"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "891|Pirmiausia pridėkite tekstą.",
+        "tooShort": "892|Pridėkite bent 20 žodžių."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "893|Įrašyti tekstą",
+      "saveAndStart": "894|Įrašyti ir pradėti",
+      "saving": "895|Įrašoma…",
+      "saveError": "896|Nepavyko įrašyti. Bandykite dar kartą.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
-        "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "pasteText": "897|Įklijuoti",
+        "photo": "898|Nuotrauka",
+        "pdf": "899|PDF",
+        "generate": "900|Generuoti",
+        "explore": "901|Naršyti"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "902|Informacinis",
+        "casual": "903|Laisvas",
+        "academic": "904|Akademinis",
+        "narrative": "905|Pasakojamasis"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "906|Trumpas",
+        "medium": "907|Vidutinis",
+        "long": "908|Ilgas"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "909|Įkelkite puslapio nuotrauką – ištrauksime tekstą.",
+        "chooseImage": "910|Pasirinkti paveikslėlį",
+        "recognizing": "911|Atpažįstama… {{percent}} %",
+        "imageError": "912|Nepavyko perskaityti teksto iš šio paveikslėlio.",
+        "pdfHint": "913|Įkelkite PDF – ištrauksime tekstą.",
+        "choosePDF": "914|Pasirinkti PDF",
+        "reading": "915|Skaitomas PDF…",
+        "pdfError": "916|Nepavyko perskaityti šio PDF.",
+        "topicPlaceholder": "917|Tema – pvz. koraliniai rifai, spaudos išradimas",
+        "explorePlaceholder": "918|Tema arba raktažodis – pvz. Marie Curie, Venecija",
+        "generateButton": "919|Generuoti tekstą",
+        "exploreButton": "920|Parsisiųsti straipsnį",
+        "working": "921|Dirbama…",
+        "generateError": "922|Nepavyko sugeneruoti teksto. Bandykite dar kartą.",
+        "exploreError": "923|Straipsnio šia tema nepavyko rasti.",
+        "exploredFrom": "924|Paimta iš"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again.",
-      "translation": "Translation",
-      "textLabel": "Text"
+      "startQuestions": "925|Pereiti prie klausimų",
+      "finish": "926|Baigti",
+      "next": "927|Toliau",
+      "questionOf": "928|{{current}} klausimas iš {{total}}",
+      "closeTranslation": "929|Uždaryti vertimą",
+      "translating": "930|Verčiama…",
+      "translationError": "931|Nepavyko išversti. Bandykite dar kartą.",
+      "translation": "932|Vertimas",
+      "textLabel": "933|Tekstas"
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts",
-      "complete": "Practice Complete"
+      "comprehension": "934|Supratimas",
+      "correct": "935|Teisingi",
+      "time": "936|Skaitymo laikas",
+      "wpm": "937|žodžių/min",
+      "mistakes": "938|Klaidos",
+      "mistakesTitle": "939|Peržiūrėkite savo klaidas",
+      "readAgain": "940|Skaityti dar kartą",
+      "back": "941|Atgal į „Mano tekstai“",
+      "complete": "942|Praktika baigta"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "943|Skaitymas iš rinkinių",
+      "subtitle": "944|Paverskite kortelių rinkinį skaitiniu.",
+      "pickSet": "945|Pasirinkite rinkinį",
+      "changeSet": "946|Keisti rinkinį",
+      "tooFewWords": "947|Šiam rinkiniui reikia bent {{count}} žodžių, kad būtų sukurtas skaitinys.",
+      "mode": "948|Generavimo režimas",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "949|Natūralus",
+        "strict": "950|Griežtas",
+        "mixed": "951|Mišrus"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "952|Skaitinio ilgis",
+      "generate": "953|Generuoti skaitinį",
+      "generating": "954|Kuriamas jūsų skaitinys…",
+      "generateError": "955|Nepavyko sukurti skaitinio. Bandykite dar kartą.",
+      "emptyTitle": "956|Skaitinių dar nėra",
+      "emptyBody": "957|Pasirinkite kortelių rinkinį, ir mes paversime jį skaitiniu.",
+      "savedTitle": "958|Įrašyti skaitiniai"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "959|Greitasis skaitymas",
+      "subtitle": "960|Treniruokite greitesnį skaitymą pagal laiką.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "961|Siekiamas skaitymo greitis",
+        "timer": "962|Laikmačio stilius",
+        "length": "963|Skaitinio ilgis"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "964|Ramus",
+        "balanced": "965|Subalansuotas",
+        "fast": "966|Greitas",
+        "challenge": "967|Iššūkis"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "968|Be laikmačio",
+        "soft": "969|Švelnus laikmatis",
+        "strict": "970|Griežtas laikmatis"
       },
       "length": {
-        "two": "2 min",
-        "five": "5 min",
-        "ten": "10 min"
+        "two": "971|2 min",
+        "five": "972|5 min",
+        "ten": "973|10 min"
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
-      "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "summary": "974|Tikslas {{wpm}} žodžių/min · ~{{minutes}} min skaitymo",
+      "start": "975|Pradėti sesiją",
+      "preparing": "976|Ruošiama jūsų ištrauka…",
+      "generateError": "977|Nepavyko sukurti ištraukos. Bandykite dar kartą.",
+      "recentTitle": "978|Neseniai vykusios sesijos",
+      "chunkOf": "979|{{current}} dalis iš {{total}}",
+      "previous": "980|Ankstesnė dalis",
+      "pause": "981|Pauzė",
+      "resume": "982|Tęsti",
+      "nextChunk": "983|Kita dalis",
+      "finishReading": "984|Baigti skaitymą",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "985|Puikiai",
+        "balanced": "986|Pasiektas tikslas",
+        "fast": "987|Beveik",
+        "tooSlow": "988|Per lėtai"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "989|Vidutiniškai žodžių/min",
+        "target": "990|Tikslas žodžių/min",
+        "violations_one": "991|{{count}} laiko viršijimas",
+        "violations_other": "992|{{count}} laiko viršijimų",
+        "violations_few": "{{count}} laiko viršijimai"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "993|Bandyti dar kartą",
+      "backToSetup": "994|Atgal į nustatymus"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "995|Istorijos režimas",
+      "subtitle": "996|Skaitykite interaktyvias istorijas su išsišakojančiais pasirinkimais.",
+      "typeSection": "997|Istorijos tipas",
       "type": {
-        "adventure": "Adventure",
-        "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "adventure": "998|Nuotykiai",
+        "fantasy": "999|Fantastika",
+        "mystery": "1000|Detektyvas",
+        "romance": "1001|Romantika",
+        "dailyLife": "1002|Kasdienis gyvenimas"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "1003|Istorijos ilgis",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "1004|Trumpa istorija",
+        "multiChapter": "1005|Keli skyriai",
+        "infinite": "1006|Begalinė istorija"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "1007|Pradėti istoriją",
+      "generating": "1008|Rašoma jūsų istorija…",
+      "generatingNext": "1009|Rašomas kitas skyrius…",
+      "generateError": "1010|Nepavyko parašyti istorijos. Bandykite dar kartą.",
+      "emptyTitle": "1011|Istorijų dar nėra",
+      "emptyBody": "1012|Pradėkite pirmą interaktyvią istoriją viršuje.",
+      "savedTitle": "1013|Jūsų istorijos",
+      "chapterN": "1014|{{n}} skyrius",
+      "chapterOf": "1015|{{current}} skyrius iš {{total}}",
+      "chapterScore": "1016|Skyriaus įvertinimas",
+      "whatNext": "1017|Kas bus toliau?",
+      "endStory": "1018|Baigti istoriją",
+      "completeTitle": "1019|Istorija baigta",
+      "completeBody_one": "1020|Perskaitėte {{count}} skyrių. Puikus skaitymas!",
+      "completeBody_other": "1021|Perskaitėte {{count}} skyrių. Puikus skaitymas!",
+      "backToStories": "1022|Atgal į istorijas",
+      "completeBody_few": "Perskaitėte {{count}} skyrius. Puikus skaitymas!"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "1023|Praktikos režimai",
+    "notFound": "1024|Ši sesija galbūt ištrinta.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "1025|Šios dienos pažanga",
+      "subtitle": "1026|klausymo praktikos"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1027|Netrukus",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "1028|Klausymas iš teksto",
+        "subtitle": "1029|Įklijuokite tekstą, paklausykite jo ir pasitikrinkite supratimą."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "1030|Importuoti garsą",
+        "subtitle": "1031|Įkelkite savo garso įrašą ir paverskite jį klausymo praktika."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "1032|Importuoti vaizdo įrašą",
+        "subtitle": "1033|Įkelkite vaizdo įrašą, gaukite subtitrus ir praktikuokitės su klausimais."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "1034|Įrašyta praktika",
+        "subtitle": "1035|Tęskite ankstesnes sesijas ir peržiūrėkite savo klaidas."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
-      "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "mainIdea": "1036|Pagrindinė mintis",
+      "details": "1037|Detalės",
+      "vocabulary": "1038|Žodynas",
+      "trueFalse": "1039|Tiesa / Netiesa"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "1040|Klausymas iš teksto",
+      "subtitle": "1041|Įklijuokite tekstą ir paverskite jį klausymo praktika.",
+      "level": "1042|Lygis",
+      "voiceSpeed": "1043|Balso greitis",
+      "voiceType": "1044|Balso tipas",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "1045|Numatytasis",
+        "female": "1046|Moteriškas",
+        "male": "1047|Vyriškas"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "1048|Rodyti tekstą klausantis",
+      "addQuestions": "1049|Pridėti supratimo klausimų",
+      "questionCount": "1050|Klausimų skaičius",
+      "questionTypes": "1051|Klausimų tipai",
+      "optionalTitle": "1052|Pavadinimas (neprivaloma)",
+      "titlePlaceholder": "1053|Suteikite savo tekstui pavadinimą",
+      "textPlaceholder": "1054|Įklijuokite savo tekstą čia...",
+      "recommended": "1055|Rekomenduojama: 80–500 žodžių.",
+      "words": "1056|žodžių",
+      "defaultTitle": "1057|Klausymo praktika",
+      "start": "1058|Pradėti klausytis",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "1059|Pridėkite teksto, kad galėtumėte pradėti klausytis.",
+        "tooShort": "1060|Pridėkite bent 40 simbolių, kad galėtumėte pradėti klausytis.",
+        "tooLong": "1061|Šis tekstas per ilgas. Neviršykite 5000 simbolių.",
+        "tooFewWords": "1062|Pridėkite šiek tiek daugiau teksto (apie 40 žodžių ar daugiau), kad galėtume sukurti gerus klausimus."
       },
-      "voiceSettings": "Voice Settings",
-      "questions": "Questions",
-      "textInput": "Text Input"
+      "voiceSettings": "1063|Balso nustatymai",
+      "questions": "1064|Klausimai",
+      "textInput": "1065|Teksto įvedimas"
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "1066|Groti dar kartą",
+      "transcript": "1067|Transkripcija",
+      "questionsTitle": "1068|Klausimai",
+      "answerFirst": "1069|Prieš tikrinant atsakykite bent į vieną klausimą.",
+      "checkAnswers": "1070|Tikrinti atsakymus",
+      "finish": "1071|Baigti praktiką"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "1072|Praktika baigta",
+      "comprehension": "1073|Supratimas",
+      "correct": "1074|Teisingi",
+      "time": "1075|Klausymo laikas",
+      "speed": "1076|Greitis",
+      "mistakes": "1077|Klaidos",
+      "mistakesTitle": "1078|Peržiūrėkite savo klaidas",
+      "watchOnlyTitle": "1079|Klausymas baigtas",
+      "watchOnlyBody": "1080|Klausėtės {{time}}.",
+      "practiceAgain": "1081|Praktikuotis dar kartą",
+      "back": "1082|Atgal į klausymą"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "1083|Importuoti garsą",
+      "subtitle": "1084|Paverskite savo garso įrašą klausymo praktika.",
+      "uploadTitle": "1085|Įkelti garso failą",
+      "uploadFormats": "1086|MP3, M4A, WAV ar AAC · iki 50 MB",
+      "chooseFile": "1087|Pasirinkti failą",
+      "clearFile": "1088|Pašalinti failą",
+      "infoNote": "1089|Jūsų garso įrašas bus transkribuotas fone. Praktikos metu transkripcija lieka paslėpta.",
+      "continue": "1090|Tęsti",
+      "processingTitle": "1091|Ruošiama jūsų klausymo praktika",
+      "step1": "1092|Įkeliamas garsas",
+      "step2": "1093|Transkribuojama kalba",
+      "step3": "1094|Kuriami klausimai",
+      "processError": "1095|Nepavyko paruošti šio garso įrašo. Bandykite dar kartą.",
+      "tryAgain": "1096|Bandyti dar kartą",
+      "chooseAnother": "1097|Pasirinkti kitą failą",
+      "transcriptHidden": "1098|Transkripcija paslėpta, kad tai liktų tikras klausymo pratimas."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "1099|Importuoti vaizdo įrašą",
+      "subtitle": "1100|Įkelkite vaizdo įrašą, gaukite subtitrus ir praktikuokitės su klausimais.",
+      "uploadTitle": "1101|Įkelti vaizdo failą",
+      "uploadFormats": "1102|MP4, MOV ar M4V · iki 80 MB",
+      "step1": "1103|Ruošiamas vaizdo įrašas",
+      "step2": "1104|Transkribuojama kalba",
+      "step3": "1105|Kuriami subtitrai",
+      "subtitles": "1106|Subtitrai",
+      "subtitlesOn": "1107|Subtitrai įjungti",
+      "subtitlesOff": "1108|Subtitrai išjungti",
+      "noSubtitles": "1109|Šiam vaizdo įrašui subtitrų nėra.",
+      "tapWord": "1110|Palieskite žodį, kad jį išverstumėte.",
+      "questionsLocked": "1111|Klausimai atsirakina, kai baigiate žiūrėti vaizdo įrašą."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "1112|Versti žodį",
+      "pickSet": "1113|Pasirinkite rinkinį",
+      "createSet": "1114|Sukurti rinkinį",
+      "addToSet": "1115|Pridėti į rinkinį",
+      "noSets": "1116|Rinkinių dar neturite. Sukurkite vieną žemiau.",
+      "setNamePlaceholder": "1117|pvz. Žodžiai iš vaizdo įrašo",
+      "createAndAdd": "1118|Sukurti ir pridėti žodį",
+      "saved": "1119|Įrašyta į „{{set}}“."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "1120|Įrašyta praktika",
+      "subtitle": "1121|Tęskite sesijas ir peržiūrėkite savo klausymo klaidas.",
+      "emptyTitle": "1122|Įrašytų sesijų nėra",
+      "emptyBody": "1123|Užbaikite arba pristabdykite klausymo sesiją, ir ji atsiras čia.",
+      "continueEyebrow": "1124|Tęsti klausymą",
+      "percentComplete": "1125|{{percent}} % baigta",
+      "continue": "1126|Tęsti",
+      "review": "1127|Peržiūra",
+      "delete": "1128|Ištrinti sesiją",
+      "deleteConfirm": "1129|Ištrinti „{{title}}“? Šio veiksmo anuliuoti negalėsite.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "1130|Juodraštis",
+        "inProgress": "1131|Vykdoma",
+        "completed": "1132|Baigta"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "1133|Praktikos režimai",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "1134|Šios dienos pažanga",
+      "subtitle": "1135|kalbėjimo praktikos"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1136|Netrukus",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "1137|Pokalbis su DI",
+        "subtitle": "1138|Kalbėkite su DI mokytoju realiu laiku."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "1139|Laisvas kalbėjimas",
+        "subtitle": "1140|Kalbėkite sugeneruotomis temomis ir gaukite atsiliepimą."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "1141|Aprašyti paveikslėlį",
+        "subtitle": "1142|Aprašykite paveikslėlius ir mokykitės naudingų žodžių."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "1143|Diskusijos režimas",
+        "subtitle": "1144|Aptarkite temas ir kurkite argumentus."
       },
       "shadowing": {
-        "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "title": "1145|Shadowing",
+        "subtitle": "1146|Kartokite frazes ir tobulinkite tartį."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "1147|Tarties treniruoklis",
+        "subtitle": "1148|Susitelkite į sunkius garsus ir žodžius."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "1149|Kalbėti",
+      "stop": "1150|Stabdyti",
+      "listening": "1151|Klausomasi…",
+      "placeholder": "1152|Įrašykite savo atsakymą…",
+      "noVoice": "1153|Ši naršyklė nepalaiko balso įvesties – įrašykite atsakymą."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
-      "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "title": "1154|Pokalbis su DI",
+      "subtitle": "1155|Kalbėkite su DI mokytoju realiu laiku.",
+      "topic": "1156|Tema",
+      "scenarios": "1157|Scenarijai",
+      "autoTopic": "1158|Nustebink mane",
+      "autoTopicHint": "1159|Sugeneruosime jums naują temą.",
+      "length": "1160|Trukmė",
+      "min": "1161|min",
+      "start": "1162|Pradėti pokalbį",
+      "starting": "1163|Pradedama…",
+      "startError": "1164|Nepavyko pradėti pokalbio. Bandykite dar kartą.",
+      "end": "1165|Baigti",
+      "dismiss": "1166|Atmesti",
+      "hint": "1167|Užuomina",
+      "getHint": "1168|Reikia užuominos?",
+      "hintLoading": "1169|Galvojama…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "1170|Praktika baigta",
+      "generating": "1171|Analizuojama jūsų kalba…",
+      "overall": "1172|Bendras įvertinimas",
+      "corrections": "1173|Pataisymai",
+      "transcript": "1174|Transkripcija",
+      "practiceAgain": "1175|Praktikuotis dar kartą",
+      "back": "1176|Atgal į kalbėjimą"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
-      "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "title": "1177|Laisvas kalbėjimas",
+      "subtitle": "1178|Kalbėkite laisvai apie temą ir gaukite atsiliepimą.",
+      "preview": "1179|Peržiūra",
+      "autoTopic": "1180|DI sugeneruota tema",
+      "autoTopicHint": "1181|Kai pradėsite, parinksime naują temą: {{language}} · {{level}}.",
+      "auto": "1182|Automatiškai",
+      "start": "1183|Pradėti laisvą kalbėjimą",
+      "generating": "1184|Generuojama tema…",
+      "generatingHint": "1185|Renkame kai ką, kas tinka jūsų lygiui.",
+      "fallbackTopic": "1186|Nepavyko sugeneruoti temos. Naudojame atsarginę.",
+      "transcript": "1187|Transkripcija",
+      "transcriptHint": "1188|Jūsų transkripcija atsiras čia, kol kalbate.",
+      "startSpeaking": "1189|Pradėti kalbėti"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "1190|Aprašyti paveikslėlį",
+      "subtitle": "1191|Aprašykite, ką matote, ir gaukite atsiliepimą.",
+      "start": "1192|Pradėti „Aprašyti paveikslėlį“",
+      "prompt": "1193|Aprašykite, ką matote šiame paveikslėlyje.",
+      "tryToMention": "1194|Pabandykite paminėti:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "1195|žmones",
+        "objects": "1196|daiktus",
+        "actions": "1197|veiksmus",
+        "colors": "1198|spalvas",
+        "emotions": "1199|emocijas"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "1200|Įkeliama nuotrauka…",
+      "retry": "1201|Bandyti dar kartą",
+      "newPhoto": "1202|Kita nuotrauka",
+      "imageAlt": "1203|Nuotrauka aprašymui",
+      "photoBy": "1204|Nuotrauka:",
+      "onUnsplash": "1205|„Unsplash“",
+      "startDescribing": "1206|Pradėti aprašinėti"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "1207|Diskusijos režimas",
+      "subtitle": "1208|Ginkite savo pusę prieš DI oponentą.",
+      "start": "1209|Pradėti diskusiją",
+      "pickSide": "1210|Jūsų pusė",
+      "preparing": "1211|Ruošiama diskusijos tema…",
+      "roundOf": "1212|{{current}} raundas iš {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "1213|Sutinku",
+          "subtitle": "1214|Ginkite teiginį"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "1215|Nesutinku",
+          "subtitle": "1216|Argumentuokite prieš"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "1217|Nustebink mane",
+          "subtitle": "1218|Pusę parinksime už jus"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "1219|Klausytis",
+      "playing": "1220|Grojama…",
+      "record": "1221|Įrašyti",
+      "stop": "1222|Stabdyti",
+      "playMine": "1223|Groti mano įrašą",
+      "noRecording": "1224|Ši naršyklė nepalaiko įrašymo – vis dėlto galite klausytis ir kartoti."
     },
     "shadowing": {
-      "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "title": "1225|Shadowing",
+      "subtitle": "1226|Klausykitės, kartokite ir palyginkite save.",
+      "start": "1227|Pradėti „Shadowing“",
+      "category": "1228|Kategorija",
+      "howItWorks": "1229|Paklausykite frazės, garsiai ją pakartokite įrašinėdami, tada paleiskite savo įrašą ir palyginkite ritmą.",
+      "loading": "1230|Generuojamos frazės…",
+      "phrase": "1231|Frazė",
+      "previous": "1232|Ankstesnė",
+      "nextPhrase": "1233|Kita frazė",
+      "finish": "1234|Baigti",
+      "changeSettings": "1235|Keisti nustatymus",
+      "done": "1236|Atlikta: {{count}}",
+      "allDone": "1237|Visos frazės išbandytos!",
+      "newSet": "1238|Naujas rinkinys"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "1239|Tarties treniruoklis",
+      "subtitle": "1240|Susitelkite į sunkius garsus ir žodžius.",
+      "start": "1241|Pradėti treniruotę",
+      "focus": "1242|Akcentas",
+      "difficulty": "1243|Sudėtingumas",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "1244|Lengvas",
+        "balanced": "1245|Subalansuotas",
+        "hard": "1246|Sunkus"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "1247|Generuojami pratimai…",
+      "sound": "1248|Garsas",
+      "scoringUnavailable": "1249|Automatinis tarties vertinimas serveryje dar nesukonfigūruotas, todėl įvertinimas nerodomas. Klausymas, įrašymas ir atkūrimas veikia."
     }
   },
   "profile": {
-    "interfaceLanguage": "Interface language",
+    "interfaceLanguage": "1250|Sąsajos kalba",
     "password": {
-      "title": "Create a password",
-      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
-      "save": "Save password",
-      "saving": "Saving...",
-      "savedInfo": "Password created. You can sign in with your email now too."
+      "title": "1251|Sukurkite slaptažodį",
+      "body": "1252|Jūsų paskyra sukurta su „Google“, todėl slaptažodžio neturi – el. pašto ir slaptažodžio laukai jūsų neprijungs. Nustatykite slaptažodį, ir veiks abu būdai.",
+      "save": "1253|Įrašyti slaptažodį",
+      "saving": "1254|Įrašoma...",
+      "savedInfo": "1255|Slaptažodis sukurtas. Dabar galite prisijungti ir su savo el. paštu."
     }
   },
   "units": {
-    "min": "min",
-    "words": "words"
+    "min": "1256|min",
+    "words": "1257|žodžių"
   },
   "link": {
-    "title": "Sign in with a link",
-    "subtitle": "We'll email you a one-time link. No password to remember.",
-    "send": "Send the link",
-    "sending": "Sending...",
-    "sentInfo": "Link sent. Check your email.",
-    "sentTitle": "Check your email",
-    "sentBody": "We sent a sign-in link to",
-    "useAnotherEmail": "Use another email",
-    "backToPassword": "Sign in with a password instead"
+    "title": "1258|Prisijungti su nuoroda",
+    "subtitle": "1259|Atsiųsime el. paštu vienkartinę nuorodą. Jokio slaptažodžio įsiminti.",
+    "send": "1260|Siųsti nuorodą",
+    "sending": "1261|Siunčiama...",
+    "sentInfo": "1262|Nuoroda išsiųsta. Patikrinkite el. paštą.",
+    "sentTitle": "1263|Patikrinkite el. paštą",
+    "sentBody": "1264|Prisijungimo nuorodą išsiuntėme adresu",
+    "useAnotherEmail": "1265|Naudoti kitą el. paštą",
+    "backToPassword": "1266|Verčiau prisijungti su slaptažodžiu"
   },
   "action": {
-    "working": "One moment...",
-    "continue": "Continue",
-    "confirmEmailTitle": "Confirm your email",
-    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
-    "resetTitle": "New password",
-    "resetSubtitle": "Choose a new password for",
-    "newPassword": "New password",
-    "confirmPassword": "Repeat password",
-    "savePassword": "Save password",
-    "resetDoneTitle": "Password updated",
-    "resetDoneBody": "You can sign in with your new password now.",
-    "failedTitle": "That link didn't work",
-    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
-    "backToSignIn": "Back to sign in"
+    "working": "1267|Akimirką...",
+    "continue": "1268|Tęsti",
+    "confirmEmailTitle": "1269|Patvirtinkite savo el. paštą",
+    "confirmEmailBody": "1270|Ši nuoroda atverta kitoje naršyklėje. Įveskite adresą, kuriuo ji išsiųsta, ir baigsime prijungimą.",
+    "resetTitle": "1271|Naujas slaptažodis",
+    "resetSubtitle": "1272|Pasirinkite naują slaptažodį paskyrai",
+    "newPassword": "1273|Naujas slaptažodis",
+    "confirmPassword": "1274|Pakartokite slaptažodį",
+    "savePassword": "1275|Įrašyti slaptažodį",
+    "resetDoneTitle": "1276|Slaptažodis atnaujintas",
+    "resetDoneBody": "1277|Dabar galite prisijungti su nauju slaptažodžiu.",
+    "failedTitle": "1278|Ta nuoroda neveikė",
+    "failedBody": "1279|Galbūt ji jau panaudota arba nebegalioja. Paprašykite naujos prisijungimo lange.",
+    "backToSignIn": "1280|Atgal į prisijungimą"
   },
   "common": {
-    "cancel": "Cancel",
-    "delete": "Delete",
+    "cancel": "1281|Atšaukti",
+    "delete": "1282|Ištrinti",
     "view": {
-      "label": "View",
-      "rows": "List",
-      "grid": "Grid"
+      "label": "1283|Rodinys",
+      "rows": "1284|Sąrašas",
+      "grid": "1285|Tinklelis"
     }
   },
   "practice": {
     "language": {
-      "label": "Language",
-      "search": "Search a language",
-      "noMatch": "No language matches that.",
-      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+      "label": "1286|Kalba",
+      "search": "1287|Ieškoti kalbos",
+      "noMatch": "1288|Atitinkančių kalbų nėra.",
+      "noVoice": "1289|Jūsų naršyklė neturi {{language}} kalbos balso, tad mokytojas šia kalba nekalbės. Pridėkite kalbos paketą sistemos nustatymuose arba pasirinkite kitą kalbą."
     }
   }
 }
