@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "WordAround",
-    "tagline": "Learn languages, actively."
+    "name": "1|WordAround",
+    "tagline": "2|Μάθετε γλώσσες ενεργά."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "3|Μάθετε λέξεις διασκεδαστικά\\nκαι απλά",
+    "start": "4|Ας ξεκινήσουμε"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back",
-    "signUpTitle": "Create your account",
-    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
-    "name": "Name",
-    "namePlaceholder": "What should we call you?",
-    "orWithEmail": "or with email",
-    "signUpWithGoogle": "Sign up with Google",
-    "passwordHint": "At least {{min}} characters",
-    "magicLinkCta": "Sign in with an email link",
-    "creatingAccount": "Creating account..."
+    "welcomeBack": "5|Καλώς ήρθατε ξανά",
+    "subtitle": "6|Συνδεθείτε για να συνεχίσετε τη μάθηση",
+    "email": "7|Email",
+    "emailPlaceholder": "8|Εισαγάγετε το email σας",
+    "password": "9|Κωδικός",
+    "passwordPlaceholder": "10|Εισαγάγετε τον κωδικό σας",
+    "forgotPassword": "11|Ξεχάσατε τον κωδικό;",
+    "signIn": "12|Σύνδεση",
+    "signingIn": "13|Γίνεται σύνδεση...",
+    "signUp": "14|Εγγραφή",
+    "signOut": "15|Αποσύνδεση",
+    "continueWithGoogle": "16|Συνέχεια με Google",
+    "createAccount": "17|Δημιουργία λογαριασμού",
+    "accountCreatedInfo": "18|Ο λογαριασμός δημιουργήθηκε. Στείλαμε email επαλήθευσης.",
+    "resetEmailSent": "19|Το email επαναφοράς κωδικού στάλθηκε",
+    "showPassword": "20|Εμφάνιση κωδικού",
+    "hidePassword": "21|Απόκρυψη κωδικού",
+    "back": "22|Πίσω",
+    "signUpTitle": "23|Δημιουργήστε τον λογαριασμό σας",
+    "signUpSubtitle": "24|Λίγα λεπτά την ημέρα και το λεξιλόγιό σας μεγαλώνει",
+    "name": "25|Όνομα",
+    "namePlaceholder": "26|Πώς να σας λέμε;",
+    "orWithEmail": "27|ή με email",
+    "signUpWithGoogle": "28|Εγγραφή με Google",
+    "passwordHint": "29|Τουλάχιστον {{min}} χαρακτήρες",
+    "magicLinkCta": "30|Σύνδεση με σύνδεσμο από email",
+    "creatingAccount": "31|Δημιουργία λογαριασμού..."
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "We'll open your learning right away — no need to come back here",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "32|Επαληθεύστε το email σας",
+    "subtitle": "33|Ένα βήμα ακόμη πριν αρχίσετε να μαθαίνετε",
+    "sentTo": "34|Στείλαμε σύνδεσμο επαλήθευσης στο",
+    "fallbackEmail": "35|το email σας",
+    "step1": "36|Ανοίξτε το email στα εισερχόμενά σας",
+    "step2": "37|Πατήστε τον σύνδεσμο επιβεβαίωσης",
+    "step3": "38|Θα ανοίξουμε αμέσως τη μάθησή σας — δεν χρειάζεται να επιστρέψετε εδώ",
+    "checkButton": "39|Επαλήθευσα το email μου",
+    "checking": "40|Γίνεται έλεγχος...",
+    "resend": "41|Επαναποστολή email",
+    "useAnotherAccount": "42|Χρήση άλλου λογαριασμού",
+    "badgeInbox": "43|Δείτε τα εισερχόμενα",
+    "badgeConfirm": "44|Επιβεβαιώστε",
+    "badgeDone": "45|Έτοιμο",
+    "resentInfo": "46|Το email επαλήθευσης στάλθηκε ξανά",
+    "notVerifiedYet": "47|Το email δεν έχει επαληθευτεί ακόμη"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 8 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "emailInUse": "This account already exists",
-    "weakPassword": "This password is too weak",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again",
-    "nameRequired": "Name is required",
-    "passwordsDoNotMatch": "Passwords don't match",
-    "actionExpired": "This link has expired. Request a new one.",
-    "actionInvalid": "This link is no longer valid.",
-    "userDisabled": "This account has been disabled.",
-    "requiresRecentLogin": "For security, sign in again and then repeat this.",
-    "passwordAlreadySet": "This account already has a password.",
-    "linkNoEmail": "Enter the email the link was sent to"
+    "emailRequired": "48|Το email είναι υποχρεωτικό",
+    "emailInvalid": "49|Εισαγάγετε έγκυρο email",
+    "emailFirst": "50|Εισαγάγετε πρώτα το email σας",
+    "passwordRequired": "51|Ο κωδικός είναι υποχρεωτικός",
+    "passwordTooShort": "52|Ο κωδικός πρέπει να έχει τουλάχιστον 8 χαρακτήρες",
+    "invalidEmail": "53|Μη έγκυρη μορφή email",
+    "wrongPassword": "54|Λάθος email ή κωδικός. Αν εγγραφήκατε με Google, χρησιμοποιήστε το κουμπί Google.",
+    "userNotFound": "55|Λάθος email ή κωδικός. Αν εγγραφήκατε με Google, χρησιμοποιήστε το κουμπί Google.",
+    "invalidCredential": "56|Λάθος email ή κωδικός. Αν εγγραφήκατε με Google, χρησιμοποιήστε το κουμπί Google.",
+    "emailInUse": "57|Αυτός ο λογαριασμός υπάρχει ήδη",
+    "weakPassword": "58|Αυτός ο κωδικός είναι πολύ αδύναμος",
+    "network": "59|Σφάλμα δικτύου. Ελέγξτε τη σύνδεσή σας στο internet",
+    "tooManyRequests": "60|Πάρα πολλές προσπάθειες. Δοκιμάστε αργότερα",
+    "differentCredential": "61|Αυτό το email χρησιμοποιείται ήδη με άλλον τρόπο σύνδεσης",
+    "noActiveAccount": "62|Δεν βρέθηκε ενεργός λογαριασμός",
+    "default": "63|Η ταυτοποίηση απέτυχε. Δοκιμάστε ξανά",
+    "nameRequired": "64|Το όνομα είναι υποχρεωτικό",
+    "passwordsDoNotMatch": "65|Οι κωδικοί δεν ταιριάζουν",
+    "actionExpired": "66|Αυτός ο σύνδεσμος έληξε. Ζητήστε νέον.",
+    "actionInvalid": "67|Αυτός ο σύνδεσμος δεν ισχύει πλέον.",
+    "userDisabled": "68|Αυτός ο λογαριασμός έχει απενεργοποιηθεί.",
+    "requiresRecentLogin": "69|Για ασφάλεια, συνδεθείτε ξανά και επαναλάβετε το.",
+    "passwordAlreadySet": "70|Αυτός ο λογαριασμός έχει ήδη κωδικό.",
+    "linkNoEmail": "71|Εισαγάγετε το email στο οποίο στάλθηκε ο σύνδεσμος"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
-    "sets": "Sets",
-    "notes": "Notes",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "home": "72|Αρχική",
+    "speaking": "73|Ομιλία",
+    "listening": "74|Ακρόαση",
+    "reading": "75|Ανάγνωση",
+    "writing": "76|Γραφή",
+    "folders": "77|Φάκελοι",
+    "sets": "78|Σετ",
+    "notes": "79|Σημειώσεις",
+    "profile": "80|Προφίλ",
+    "create": "81|Νέο",
+    "menu": "82|Μενού",
+    "closeMenu": "83|Κλείσιμο μενού",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "84|Εξάσκηση",
+      "library": "85|Βιβλιοθήκη"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
-    "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
-    "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "create": "86|Νέος φάκελος",
+    "loading": "87|Φόρτωση φακέλων…",
+    "loadError": "88|Δεν μπορέσαμε να φορτώσουμε τους φακέλους σας.",
+    "emptyTitle": "89|Δεν υπάρχουν φάκελοι ακόμη",
+    "emptyBody": "90|Δημιουργήστε τον πρώτο σας φάκελο για να οργανώσετε τα σετ σας.",
+    "setCount": "91|{{count}} σετ",
+    "setCount_one": "92|{{count}} σετ",
+    "newTitle": "93|Νέος φάκελος",
+    "newSubtitle": "94|Μαζέψτε τα σχετικά σετ μαζί.",
+    "editTitle": "95|Επεξεργασία φακέλου",
+    "name": "96|Όνομα",
+    "namePlaceholder": "97|π.χ. Ταξίδια",
+    "description": "98|Περιγραφή",
+    "descriptionPlaceholder": "99|Προαιρετικό",
+    "color": "100|Χρώμα",
+    "save": "101|Αποθήκευση",
+    "saving": "102|Αποθήκευση…",
+    "cancel": "103|Άκυρο",
+    "edit": "104|Επεξεργασία φακέλου",
+    "delete": "105|Διαγραφή φακέλου",
+    "deleteConfirm": "106|Διαγραφή του «{{title}}»; Η ενέργεια δεν αναιρείται.",
+    "backToFolders": "107|Πίσω στους φακέλους",
+    "notFoundTitle": "108|Ο φάκελος δεν βρέθηκε",
+    "notFoundBody": "109|Αυτός ο φάκελος μπορεί να έχει διαγραφεί.",
+    "noSetsInFolder": "110|Δεν υπάρχουν σετ σε αυτόν τον φάκελο ακόμη.",
+    "saveError": "111|Η αποθήκευση απέτυχε. Δοκιμάστε ξανά.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "112|Το όνομα του φακέλου είναι υποχρεωτικό.",
+      "nameTooLong": "113|Το όνομα του φακέλου πρέπει να είναι κάτω από 80 χαρακτήρες.",
+      "descTooLong": "114|Η περιγραφή πρέπει να είναι κάτω από 120 χαρακτήρες."
     },
-    "optional": "(optional)",
-    "preview": "Preview",
-    "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "optional": "115|(προαιρετικό)",
+    "preview": "116|Προεπισκόπηση",
+    "previewPlaceholder": "117|Νέος φάκελος",
+    "deleteConfirmTitle": "118|Διαγραφή αυτού του φακέλου;"
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets",
-    "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?",
-    "editTitle": "Edit set",
-    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
-    "save": "Save changes",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "create": "119|Νέο σετ",
+    "loading": "120|Φόρτωση σετ…",
+    "loadError": "121|Δεν μπορέσαμε να φορτώσουμε τα σετ σας.",
+    "emptyTitle": "122|Δεν υπάρχουν σετ ακόμη",
+    "emptyBody": "123|Δημιουργήστε το πρώτο σας σετ καρτών με το κουμπί Νέο.",
+    "cardCount": "124|{{count}} κάρτες",
+    "cardCount_one": "125|{{count}} κάρτα",
+    "keepPracticing": "126|Συνεχίστε την εξάσκηση",
+    "delete": "127|Διαγραφή σετ",
+    "deleteConfirm": "128|Διαγραφή του «{{title}}»; Η ενέργεια δεν αναιρείται.",
+    "notFoundTitle": "129|Το σετ δεν βρέθηκε",
+    "notFoundBody": "130|Αυτό το σετ μπορεί να έχει διαγραφεί.",
+    "backToSets": "131|Πίσω στα σετ",
+    "edit": "132|Επεξεργασία σετ",
+    "deleteConfirmTitle": "133|Διαγραφή αυτού του σετ;",
+    "editTitle": "134|Επεξεργασία σετ",
+    "editSubtitle": "135|Αλλάξτε τον τίτλο, το χρώμα, το εικονίδιο ή τον φάκελο. Οι κάρτες μένουν εκεί που είναι.",
+    "save": "136|Αποθήκευση αλλαγών",
+    "saving": "137|Αποθήκευση…",
+    "cancel": "138|Άκυρο",
+    "saveError": "139|Η αποθήκευση απέτυχε. Δοκιμάστε ξανά."
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
-    "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "title": "140|Νέο σετ",
+    "subtitle": "141|Προσθέστε λέξεις και προσαρμόστε το σετ σας.",
+    "infoSection": "142|Στοιχεία σετ",
+    "setTitle": "143|Τίτλος",
+    "setTitlePlaceholder": "144|π.χ. Βασικά για ταξίδι",
+    "setDescription": "145|Περιγραφή",
+    "setDescriptionPlaceholder": "146|Προαιρετικό",
+    "privacy": "147|Απόρρητο",
+    "private": "148|Ιδιωτικό",
+    "public": "149|Δημόσιο",
+    "cardsSection": "150|Κάρτες",
+    "addCard": "151|Προσθήκη κάρτας",
+    "cardN": "152|Κάρτα {{n}}",
+    "removeCard": "153|Αφαίρεση κάρτας",
+    "word": "154|Λέξη",
+    "translation": "155|Μετάφραση",
+    "example": "156|Παράδειγμα (προαιρετικό)",
+    "addImage": "157|Προσθήκη εικόνας",
+    "removeImage": "158|Αφαίρεση εικόνας",
+    "customizeSection": "159|Προσαρμογή",
+    "color": "160|Χρώμα",
+    "icon": "161|Εικονίδιο",
+    "folder": "162|Φάκελος",
+    "noFolder": "163|Χωρίς φάκελο",
+    "previewSection": "164|Προεπισκόπηση",
+    "previewPlaceholder": "165|Τίτλος σετ",
+    "save": "166|Δημιουργία σετ",
+    "saving": "167|Αποθήκευση…",
+    "cancel": "168|Άκυρο",
+    "saveError": "169|Η αποθήκευση απέτυχε. Δοκιμάστε ξανά.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "170|Ο τίτλος του σετ είναι υποχρεωτικός.",
+      "titleTooLong": "171|Ο τίτλος του σετ πρέπει να είναι κάτω από 150 χαρακτήρες.",
+      "descTooLong": "172|Η περιγραφή πρέπει να είναι κάτω από 200 χαρακτήρες.",
+      "noValidCards": "173|Προσθέστε τουλάχιστον μία κάρτα με λέξη και μετάφραση.",
+      "exampleTooLong": "174|Τα παραδείγματα στις κάρτες πρέπει να είναι κάτω από 150 χαρακτήρες."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "imageTimeout": "175|Η μεταφόρτωση της εικόνας έληξε. Ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.",
     "import": {
-      "button": "Import",
-      "title": "Import cards",
-      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
-      "close": "Close import",
-      "dataSection": "Your data",
-      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
-      "separatorsSection": "Separators",
-      "betweenTermAndDefinition": "Between word and translation",
-      "betweenCards": "Between cards",
-      "tab": "Tab",
-      "comma": "Comma",
-      "newline": "New line",
-      "semicolon": "Semicolon",
-      "custom": "Custom",
-      "customPlaceholder": "e.g. —",
-      "previewSection": "Preview",
-      "previewEmpty": "Nothing to preview yet.",
-      "noDefinition": "No translation",
-      "confirm": "Add cards"
+      "button": "176|Εισαγωγή",
+      "title": "177|Εισαγωγή καρτών",
+      "subtitle": "178|Αντιγράψτε και επικολλήστε τα δεδομένα σας — από Word, Excel, Google Docs και παρόμοια.",
+      "close": "179|Κλείσιμο εισαγωγής",
+      "dataSection": "180|Τα δεδομένα σας",
+      "placeholder": "181|Λέξη 1\\tΟρισμός 1\\nΛέξη 2\\tΟρισμός 2\\nΛέξη 3\\tΟρισμός 3",
+      "separatorsSection": "182|Διαχωριστικά",
+      "betweenTermAndDefinition": "183|Ανάμεσα σε λέξη και μετάφραση",
+      "betweenCards": "184|Ανάμεσα στις κάρτες",
+      "tab": "185|Στηλοθέτης",
+      "comma": "186|Κόμμα",
+      "newline": "187|Νέα γραμμή",
+      "semicolon": "188|Ερωτηματικό",
+      "custom": "189|Προσαρμοσμένο",
+      "customPlaceholder": "190|π.χ. —",
+      "previewSection": "191|Προεπισκόπηση",
+      "previewEmpty": "192|Δεν υπάρχει κάτι για προεπισκόπηση ακόμη.",
+      "noDefinition": "193|Χωρίς μετάφραση",
+      "confirm": "194|Προσθήκη καρτών"
     },
     "iconPicker": {
-      "open": "More icons",
-      "title": "Choose icon",
-      "search": "Search symbol",
-      "close": "Close",
-      "empty": "No icons match that name."
+      "open": "195|Περισσότερα εικονίδια",
+      "title": "196|Επιλέξτε εικονίδιο",
+      "search": "197|Αναζήτηση συμβόλου",
+      "close": "198|Κλείσιμο",
+      "empty": "199|Κανένα εικονίδιο δεν ταιριάζει με αυτό το όνομα."
     },
     "iconGroup": {
-      "learning": "Learning",
-      "languages": "Languages",
-      "nature": "Nature",
-      "health": "Health",
-      "food": "Food",
-      "travel": "Travel",
-      "work": "Work",
-      "tech": "Tech",
-      "creativity": "Creativity",
-      "general": "General"
+      "learning": "200|Μάθηση",
+      "languages": "201|Γλώσσες",
+      "nature": "202|Φύση",
+      "health": "203|Υγεία",
+      "food": "204|Φαγητό",
+      "travel": "205|Ταξίδια",
+      "work": "206|Δουλειά",
+      "tech": "207|Τεχνολογία",
+      "creativity": "208|Δημιουργικότητα",
+      "general": "209|Γενικά"
     }
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
-      "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "flashcards": "210|Κάρτες",
+      "folders": "211|Φάκελοι",
+      "sets": "212|Σετ",
+      "create": "213|Νέο",
+      "profile": "214|Προφίλ",
+      "speaking": "215|Ομιλία",
+      "listening": "216|Ακρόαση",
+      "reading": "217|Ανάγνωση",
+      "writing": "218|Γραφή"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "219|Επιλέξτε σετ για εξάσκηση",
+      "folders": "220|Διαχειριστείτε τους φακέλους σας",
+      "sets": "221|Διαχειριστείτε τα σετ καρτών σας",
+      "create": "222|Δημιουργήστε νέο σετ μελέτης",
+      "speaking": "223|Εξασκήστε τις δεξιότητες ομιλίας σας.",
+      "listening": "224|Εκπαιδεύστε το αυτί σας να καταλαβαίνει τη γλώσσα φυσικά.",
+      "reading": "225|Διαβάστε και επαναλάβετε υλικό στη γλώσσα.",
+      "writing": "226|Εξασκήστε τη γλώσσα σας ενεργά."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "227|ΟΜΙΛΙΑ",
+      "listening": "228|ΑΚΡΟΑΣΗ",
+      "reading": "229|ΑΝΑΓΝΩΣΗ",
+      "writing": "230|ΓΡΑΦΗ"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "231|Στόχος της ημέρας",
+      "left": "232|Απομένουν {{count}} λέξεις"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "233|Έμαθες σήμερα",
+      "words": "234|λέξεις",
+      "accuracy": "235|Ακρίβεια",
+      "greatJob": "236|Μπράβο!",
+      "streak": "237|Σερί",
+      "days": "238|ημέρες"
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "239|Συνέχεια μάθησης",
+    "yourSets": "240|Τα σετ σας",
+    "viewAll": "241|Προβολή όλων",
+    "review": "242|Επανάληψη",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "243|Δεν υπάρχουν σετ ακόμη",
+      "emptyBody": "244|Δημιουργήστε το πρώτο σας σετ καρτών με το κουμπί Νέο."
     },
     "create": {
-      "folder": "Folder",
-      "set": "Set",
-      "text": "Text",
-      "audio": "Audio",
-      "essay": "Essay"
+      "folder": "245|Φάκελος",
+      "set": "246|Σετ",
+      "text": "247|Κείμενο",
+      "audio": "248|Ήχος",
+      "essay": "249|Έκθεση"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "250|{{title}} — σύντομα"
     },
     "progress": {
       "subtitle": {
-        "speaking": "of speaking practice",
-        "listening": "of listening practice",
-        "reading": "of reading practice",
-        "writing": "of writing practice"
+        "speaking": "251|εξάσκησης στην ομιλία",
+        "listening": "252|εξάσκησης στην ακρόαση",
+        "reading": "253|εξάσκησης στην ανάγνωση",
+        "writing": "254|εξάσκησης στη γραφή"
       }
     },
     "dailyGoal": {
-      "title": "Your goal for today",
-      "body": "Pick what you want to practise today — the card below counts against it.",
-      "chosenBody": "This is what today is about.",
-      "howMuch": "How much?",
-      "change": "Change"
+      "title": "255|Ο στόχος σας για σήμερα",
+      "body": "256|Επιλέξτε τι θέλετε να εξασκήσετε σήμερα — η κάρτα από κάτω μετράει σε αυτόν.",
+      "chosenBody": "257|Γι' αυτό είναι η σημερινή μέρα.",
+      "howMuch": "258|Πόσο;",
+      "change": "259|Αλλαγή"
     },
     "lastNote": {
-      "title": "Last note you read"
+      "title": "260|Τελευταία σημείωση που διαβάσατε"
     }
   },
   "categories": {
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing"
+    "speaking": "261|Ομιλία",
+    "listening": "262|Ακρόαση",
+    "reading": "263|Ανάγνωση",
+    "writing": "264|Γραφή"
   },
   "phase0": {
-    "title": "WordAround",
-    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
+    "title": "265|WordAround",
+    "subtitle": "266|Η φάση 0 τρέχει. Τα design tokens φορτώθηκαν, το Firebase συνδέθηκε."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "267|Γύρισμα",
+    "known": "268|Το ήξερα",
+    "unknown": "269|Ακόμη το μαθαίνω",
+    "mastered": "270|Κατακτημένη",
+    "shuffle": "271|Ανακάτεμα",
+    "trackProgress": "272|Παρακολούθηση προόδου",
+    "speak": "273|Προφορά",
+    "roundDone": "274|Ο γύρος ολοκληρώθηκε",
+    "knewCount": "275|Ξέρατε {{known}} από {{total}}",
+    "repeatUnknown": "276|Επανάληψη {{count}} άγνωστων",
+    "restart": "277|Από την αρχή",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "278|Όλες",
+      "studied": "279|Μελετημένες",
+      "remaining": "280|Υπόλοιπες",
+      "mastered": "281|Κατακτημένες"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "282|Προσθήκη κάρτας",
+    "editCard": "283|Επεξεργασία κάρτας",
+    "deleteCard": "284|Διαγραφή κάρτας",
+    "deleteCardConfirm": "285|Διαγραφή αυτής της κάρτας;",
+    "emptyPrompt": "286|Αυτό το σετ δεν έχει κάρτες ακόμη. Προσθέστε την πρώτη.",
+    "save": "287|Αποθήκευση",
+    "cancel": "288|Άκυρο"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "289|Πρόοδος σήμερα",
+      "unit": "290|λέξεις",
+      "subtitle": "291|εξάσκησης στη γραφή"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "292|Τρόποι εξάσκησης",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "293|Γραφή από τα σετ",
+        "subtitle": "294|Εξασκηθείτε στην ορθογραφία και τη γραφή των λέξεων από τα σετ σας."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "295|Εκθέσεις",
+        "subtitle": "296|Γράψτε κείμενα και πάρτε σχόλια της AI για γραμματική και ύφος."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "297|Σύντομα"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "298|Επιλέξτε σετ",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "299|Δεν υπάρχουν σετ με λέξεις",
+        "subtitle": "300|Δημιουργήστε ένα σετ με τουλάχιστον μία κάρτα πριν ξεκινήσετε εξάσκηση στη γραφή."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "301|{{count}} λέξεις",
+      "wordsCount_one": "302|{{count}} λέξη",
+      "close": "303|Κλείσιμο"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "304|Γραφή από τα σετ",
+      "subtitle": "305|Γράψτε τη μετάφραση και πατήστε Enter.",
+      "translateHint": "306|Μεταφράστε στη γλώσσα σας",
+      "hint": "307|Βοήθεια",
+      "skip": "308|Παράλειψη",
+      "submit": "309|Έλεγχος",
+      "inputPlaceholder": "310|Γράψτε εδώ…",
+      "loading": "311|Φόρτωση σετ…",
+      "loadError": "312|Δεν μπορέσαμε να φορτώσουμε αυτό το σετ.",
+      "noCards": "313|Αυτό το σετ δεν έχει κάρτες.",
+      "back": "314|Πίσω",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "315|Ρυθμίσεις",
+        "trainingMode": "316|Τρόπος προπόνησης",
+        "difficulty": "317|Δυσκολία"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "318|Λέξη → Μετάφραση",
+        "translationToWord": "319|Μετάφραση → Λέξη"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "320|Εύκολο",
+        "medium": "321|Μεσαίο",
+        "hard": "322|Δύσκολο",
+        "easyDesc": "323|Απεριόριστες βοήθειες, απεριόριστες παραλείψεις",
+        "mediumDesc": "324|1 γράμμα βοήθειας, το πολύ 25 % παραλείψεις",
+        "hardDesc": "325|Χωρίς βοήθειες, χωρίς παραλείψεις, με χρόνο"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "326|Μεταφράστε στη γλώσσα σας",
+        "translation": "327|Γράψτε την αρχική λέξη"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "328|Απομένει {{count}} παράλειψη",
+      "skipsLeft_other": "329|Απομένουν {{count}} παραλείψεις",
+      "seconds": "330|{{count}} δευτ.",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "331|Ο γύρος ολοκληρώθηκε!",
+          "subtitle": "332|Μπράβο. Ολοκληρώσατε αυτόν τον γύρο γραφής."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "333|Ο χρόνος τελείωσε",
+          "subtitle": "334|Ο χρόνος της δύσκολης λειτουργίας μηδενίστηκε. Δοκιμάστε ξανά από την πρώτη λέξη."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "335|Λάθος απάντηση",
+          "subtitle": "336|Στη δύσκολη λειτουργία ένα λάθος τερματίζει τον γύρο."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
+        "perfectTitle": "337|Τέλειος γύρος!",
+        "perfectBody": "338|Ολοκληρώσατε τη δύσκολη λειτουργία χωρίς λάθη. Χωρίς παραλείψεις. Χωρίς βοήθειες. Μόνο ικανότητα.",
+        "totalWords": "339|Σύνολο λέξεων",
+        "completedWords": "340|Ολοκληρωμένες λέξεις",
+        "skippedWords": "341|Λέξεις που παραλείφθηκαν",
+        "hintsUsed": "342|Βοήθειες που χρησιμοποιήθηκαν",
+        "streak": "343|Σερί",
+        "difficultyLabel": "344|Δυσκολία",
+        "word": "345|Λέξη",
+        "yourAnswer": "346|Η απάντησή σας",
+        "correctAnswer": "347|Σωστή απάντηση",
+        "tryAgain": "348|Δοκιμάστε ξανά"
       }
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "349|Εκθέσεις",
+      "subtitle": "350|Το θέμα το επιλέγει η AI. Γράψτε και μετά πάρτε σχόλια.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "351|Προτεινόμενο",
+        "custom": "352|Δικό μου θέμα"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "353|Γράψτε το δικό σας θέμα έκθεσης...",
+        "generate": "354|Δημιουργία εργασίας"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "355|Δημιουργία θέματος",
+        "regenerate": "356|Νέο θέμα"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "357|Γλώσσα",
+      "difficulty": "358|Δυσκολία",
       "task": {
-        "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips",
-        "taskLabel": "Task"
+        "time": "359|≈ {{count}} λεπτά",
+        "wordRange": "360|{{min}}-{{max}} λέξεις",
+        "quickTips": "361|Γρήγορες συμβουλές",
+        "taskLabel": "362|Εργασία"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "363|Ξεκινήστε να γράφετε την έκθεσή σας εδώ...",
+        "wordCount": "364|{{count}} / {{min}}-{{max}} λέξεις",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "365|Συνεχίστε — χρειάζεστε τουλάχιστον {{min}} λέξεις.",
+          "aboveMaximum": "366|Ξεπεράσατε το όριο — δοκιμάστε να το συντομεύσετε.",
+          "valid": "367|Εντός ορίων."
         },
-        "reset": "Reset"
+        "reset": "368|Επαναφορά"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "369|Γράψτε πρώτα ένα θέμα.",
+        "generationFailed": "370|Δεν μπορέσαμε να δημιουργήσουμε θέμα. Δοκιμάστε ξανά."
       },
-      "generating": "Generating...",
+      "generating": "371|Δημιουργία...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "372|Ζητήστε βοήθεια",
+        "remaining": "373|Απομένουν {{remaining}}/{{limit}}",
+        "noneLeft": "374|Δεν απομένουν βοήθειες",
+        "notAvailable": "375|Οι βοήθειες δεν είναι διαθέσιμες σε αυτό το επίπεδο",
+        "generating": "376|Δημιουργία βοήθειας...",
+        "error": "377|Δεν μπορέσαμε να πάρουμε βοήθεια. Δοκιμάστε ξανά.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "378|Περιεχόμενο",
+          "grammar": "379|Γραμματική",
+          "vocabulary": "380|Λεξιλόγιο",
+          "structure": "381|Δομή"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again.",
-        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
+        "button": "382|Έλεγχος της έκθεσής μου",
+        "checking": "383|Γίνεται έλεγχος...",
+        "disabled": "384|Γράψτε πρώτα μέσα στο εύρος λέξεων",
+        "error": "385|Δεν μπορέσαμε να ελέγξουμε την έκθεσή σας. Δοκιμάστε ξανά.",
+        "languageUnsupported": "386|Ο έλεγχος γραμματικής για τα {{language}} δεν είναι διαθέσιμος ακόμη."
       },
       "score": {
-        "title": "Essay score",
+        "title": "387|Βαθμολογία έκθεσης",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "388|Άριστα",
+          "veryGood": "389|Πολύ καλά",
+          "good": "390|Καλά",
+          "needsWork": "391|Θέλει δουλειά"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "392|Γραμματική",
+          "vocabulary": "393|Λεξιλόγιο",
+          "length": "394|Έκταση",
+          "complexity": "395|Πολυπλοκότητα",
+          "relevance": "396|Συνάφεια",
+          "independence": "397|Αυτονομία"
         },
         "stat": {
-          "words": "Words",
-          "grammar": "Grammar",
-          "vocabStyle": "Vocab/style",
-          "hints": "Hints",
-          "translations": "Translations",
-          "synonyms": "Synonyms"
+          "words": "398|Λέξεις",
+          "grammar": "399|Γραμματική",
+          "vocabStyle": "400|Λεξιλόγιο/ύφος",
+          "hints": "401|Βοήθειες",
+          "translations": "402|Μεταφράσεις",
+          "synonyms": "403|Συνώνυμα"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
-        "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "sectionTitle": "404|Γραμματικά λάθη",
+        "count_one": "405|{{count}} λάθος",
+        "count_other": "406|{{count}} λάθη",
+        "empty": "407|Δεν βρέθηκαν γραμματικά λάθη — μπράβο!",
+        "original": "408|Αρχικό:",
+        "suggestion": "409|Πρόταση:",
+        "reason": "410|Αιτία:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "411|Γραμματική",
+          "vocabulary": "412|Λεξιλόγιο",
+          "style": "413|Ύφος"
         },
         "save": {
-          "idle": "Save to Notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
+          "idle": "414|Αποθήκευση στις σημειώσεις",
+          "saving": "415|Αποθήκευση…",
+          "saved": "416|Αποθηκεύτηκε",
+          "duplicate": "417|Ήδη αποθηκευμένο",
+          "failed": "418|Δοκιμή αποθήκευσης ξανά"
         }
       },
       "helper": {
-        "translate": "Translate",
-        "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "translate": "419|Μετάφραση",
+        "synonym": "420|Συνώνυμο",
+        "remaining": "421|Απομένουν {{remaining}}",
+        "notAvailable": "422|Μη διαθέσιμο σε αυτό το επίπεδο"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "423|Μετάφραση",
+        "placeholder": "424|Εισαγάγετε μια λέξη ή σύντομη φράση",
+        "submit": "425|Μετάφραση",
+        "submitting": "426|Γίνεται μετάφραση..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "427|Συνώνυμα",
+        "placeholder": "428|Εισαγάγετε μια λέξη",
+        "submit": "429|Εύρεση συνωνύμων",
+        "submitting": "430|Γίνεται αναζήτηση..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "431|Από",
+        "to": "432|Προς",
+        "close": "433|Κλείσιμο",
+        "noResult": "434|Δεν βρέθηκε αποτέλεσμα.",
+        "sameLanguage": "435|Επιλέξτε άλλη γλώσσα εισόδου.",
+        "error": "436|Η υπηρεσία δεν είναι προσωρινά διαθέσιμη."
       },
-      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
-      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
-      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
+      "saveMistakeConfirmTitle": "437|Αποθήκευση αυτού του λάθους στις σημειώσεις;",
+      "saveMistakeConfirmBody": "438|Θα αποθηκευτεί ως σημείωση λάθους με τη διόρθωση «{{correction}}».",
+      "autoSaveConfirmTitle": "439|Αποθήκευση αυτών των λαθών στις σημειώσεις σας;",
+      "autoSaveConfirmBody_one": "440|Αυτός ο έλεγχος βρήκε {{count}} λάθος. Αν το αποθηκεύσετε, γίνεται σημείωση που επιστρέφει για επανάληψη.",
+      "autoSaveConfirmBody_other": "441|Αυτός ο έλεγχος βρήκε {{count}} λάθη. Αν τα αποθηκεύσετε, γίνονται σημειώσεις που επιστρέφουν για επανάληψη."
     },
     "grammar": {
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "subtitle": "442|Οργανώστε τη γραμματική ανά θέμα με καθαρές, δομημένες σημειώσεις.",
+      "newTopic": "443|Νέο θέμα",
+      "topicsEmptyTitle": "444|Δεν υπάρχουν θέματα ακόμη",
+      "topicsEmptyBody": "445|Δημιουργήστε το πρώτο σας θέμα για να αρχίσετε να μαζεύετε σημειώσεις γραμματικής.",
+      "notesCount_one": "446|{{count}} σημείωση",
+      "notesCount_other": "447|{{count}} σημειώσεις",
+      "deleteTopicConfirm": "448|Διαγραφή του «{{title}}» και όλων των σημειώσεών του; Η ενέργεια δεν αναιρείται.",
+      "notesEmptyTitle": "449|Δεν υπάρχουν σημειώσεις ακόμη",
+      "notesEmptyBody": "450|Προσθέστε την πρώτη σας σημείωση σε αυτό το θέμα.",
+      "newNote": "451|Νέα σημείωση",
+      "deleteNoteConfirm": "452|Διαγραφή αυτής της σημείωσης; Η ενέργεια δεν αναιρείται.",
+      "loading": "453|Φόρτωση…",
+      "loadError": "454|Δεν μπορέσαμε να φορτώσουμε τις σημειώσεις γραμματικής σας.",
+      "notFoundTitle": "455|Δεν βρέθηκε",
+      "notFoundBody": "456|Αυτό το στοιχείο μπορεί να έχει διαγραφεί.",
+      "back": "457|Πίσω",
+      "updated": "458|Ενημερώθηκε στις {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel",
-        "language": "Language",
-        "languageNone": "Not set"
+        "newTitle": "459|Νέο θέμα",
+        "editTitle": "460|Επεξεργασία θέματος",
+        "name": "461|Τίτλος",
+        "namePlaceholder": "462|π.χ. Ισπανικά ρήματα",
+        "description": "463|Περιγραφή",
+        "descriptionPlaceholder": "464|Προαιρετικό",
+        "color": "465|Χρώμα",
+        "icon": "466|Εικονίδιο",
+        "save": "467|Αποθήκευση",
+        "cancel": "468|Άκυρο",
+        "language": "469|Γλώσσα",
+        "languageNone": "470|Δεν ορίστηκε"
       },
       "noteType": {
-        "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "standard": "471|Τυπική",
+        "mistake": "472|Λάθος",
+        "rule": "473|Κανόνας",
+        "comparison": "474|Σύγκριση",
+        "cheatSheet": "475|Σύνοψη",
+        "exercise": "476|Άσκηση"
       },
       "block": {
-        "heading": "Heading",
-        "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)",
-        "subheading": "Subheading",
-        "numberedList": "Numbered list",
-        "checklist": "Checklist",
-        "comparison": "Comparison",
-        "exercise": "Exercise",
-        "quiz": "Quiz",
-        "image": "Image",
-        "comparisonSecondary": "Second side",
-        "imageAdd": "Add / replace image",
-        "imageUploading": "Uploading…",
-        "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images."
+        "heading": "477|Επικεφαλίδα",
+        "paragraph": "478|Κείμενο",
+        "bulletList": "479|Λίστα με κουκκίδες",
+        "rule": "480|Κανόνας",
+        "example": "481|Παράδειγμα",
+        "warning": "482|Προειδοποίηση",
+        "quote": "483|Παράθεση",
+        "divider": "484|Διαχωριστικό",
+        "addBlock": "485|Προσθήκη μπλοκ",
+        "addItem": "486|Προσθήκη στοιχείου",
+        "moveUp": "487|Πάνω",
+        "moveDown": "488|Κάτω",
+        "remove": "489|Αφαίρεση",
+        "secondaryPlaceholder": "490|Λεπτομέρεια / μετάφραση (προαιρετικό)",
+        "subheading": "491|Υπότιτλος",
+        "numberedList": "492|Αριθμημένη λίστα",
+        "checklist": "493|Λίστα ελέγχου",
+        "comparison": "494|Σύγκριση",
+        "exercise": "495|Άσκηση",
+        "quiz": "496|Κουίζ",
+        "image": "497|Εικόνα",
+        "comparisonSecondary": "498|Δεύτερη πλευρά",
+        "imageAdd": "499|Προσθήκη / αντικατάσταση εικόνας",
+        "imageUploading": "500|Μεταφόρτωση…",
+        "imageFailed": "501|Δεν ήταν δυνατή η μεταφόρτωση της εικόνας.",
+        "imageSaveFirst": "502|Συνδεθείτε για να ανεβάζετε εικόνες."
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…",
-        "subheading": "Subheading",
-        "numberedList": "List item",
-        "checklist": "Checklist item",
-        "comparison": "First side",
-        "exercise": "Practice instruction…",
-        "quiz": "Question",
-        "image": "Image caption"
+        "heading": "503|Επικεφαλίδα",
+        "paragraph": "504|Γράψτε την εξήγησή σας…",
+        "bulletList": "505|Στοιχείο λίστας",
+        "rule": "506|Εξηγήστε τον γραμματικό κανόνα…",
+        "example": "507|Προσθέστε ένα παράδειγμα…",
+        "warning": "508|Συχνό λάθος ή προειδοποίηση…",
+        "quote": "509|Πρόταση που αξίζει να θυμάστε…",
+        "subheading": "510|Υπότιτλος",
+        "numberedList": "511|Στοιχείο λίστας",
+        "checklist": "512|Στοιχείο λίστας ελέγχου",
+        "comparison": "513|Πρώτη πλευρά",
+        "exercise": "514|Οδηγία άσκησης…",
+        "quiz": "515|Ερώτηση",
+        "image": "516|Λεζάντα εικόνας"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again.",
-        "subtitle": "Edit note",
-        "tags": "Tags",
-        "tagsPlaceholder": "Add a tag…",
-        "removeTag": "Remove tag {{tag}}",
-        "addToReview": "Add to review",
-        "addedToReview": "Added to your review queue.",
-        "inReview": "In review · {{when}}",
-        "inReviewDue": "Due for review",
-        "removedFromReview": "Removed from your review queue.",
-        "unsavedTitle": "Leave without saving?",
-        "unsavedBody": "This note has changes that have not been saved yet.",
-        "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "titlePlaceholder": "517|Τίτλος σημείωσης",
+        "save": "518|Αποθήκευση σημείωσης",
+        "saving": "519|Αποθήκευση…",
+        "delete": "520|Διαγραφή σημείωσης",
+        "saveError": "521|Η αποθήκευση απέτυχε. Δοκιμάστε ξανά.",
+        "subtitle": "522|Επεξεργασία σημείωσης",
+        "tags": "523|Ετικέτες",
+        "tagsPlaceholder": "524|Προσθήκη ετικέτας…",
+        "removeTag": "525|Αφαίρεση της ετικέτας {{tag}}",
+        "addToReview": "526|Προσθήκη στην επανάληψη",
+        "addedToReview": "527|Προστέθηκε στην ουρά επανάληψής σας.",
+        "inReview": "528|Σε επανάληψη · {{when}}",
+        "inReviewDue": "529|Ώρα για επανάληψη",
+        "removedFromReview": "530|Αφαιρέθηκε από την ουρά επανάληψής σας.",
+        "unsavedTitle": "531|Έξοδος χωρίς αποθήκευση;",
+        "unsavedBody": "532|Αυτή η σημείωση έχει μη αποθηκευμένες αλλαγές.",
+        "discard": "533|Απόρριψη αλλαγών",
+        "saveAndLeave": "534|Αποθήκευση και έξοδος"
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "535|Κουίζ",
+        "new": "536|Νέο κουίζ",
+        "start": "537|Έναρξη κουίζ",
+        "delete": "538|Διαγραφή κουίζ",
+        "deleteConfirm": "539|Διαγραφή του «{{title}}»; Η ενέργεια δεν αναιρείται.",
+        "emptyTitle": "540|Δεν υπάρχουν κουίζ ακόμη",
+        "emptyBody": "541|Δημιουργήστε κουίζ από αυτή τη σημείωση για να δοκιμαστείτε.",
+        "loadError": "542|Δεν ήταν δυνατή η φόρτωση των κουίζ.",
+        "questionsCount_one": "543|{{count}} ερώτηση",
+        "questionsCount_other": "544|{{count}} ερωτήσεις",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "545|Πολλαπλής επιλογής",
+          "trueFalse": "546|Σωστό / Λάθος",
+          "fillGap": "547|Συμπλήρωση κενού",
+          "shortAnswer": "548|Σύντομη απάντηση"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead",
-          "modeManual": "Manual",
-          "modeManualDesc": "Write your own questions.",
-          "createQuiz": "Create quiz"
+          "title": "549|Δημιουργία κουίζ",
+          "titlePlaceholder": "550|Τίτλος κουίζ",
+          "mode": "551|Τρόπος δημιουργίας",
+          "modeSmart": "552|Έξυπνο τοπικό",
+          "modeSmartDesc": "553|Φτιάχνει ερωτήσεις από το περιεχόμενο της σημείωσης, στη συσκευή.",
+          "modeAI": "554|Δημιουργήθηκε με AI",
+          "modeAIDesc": "555|Φτιάχνει πιο πλούσιες, συμφραζόμενες ερωτήσεις με AI.",
+          "count": "556|Ερωτήσεις",
+          "types": "557|Τύποι ερωτήσεων",
+          "focus": "558|Εστίαση (προαιρετικό)",
+          "focusPlaceholder": "559|π.χ. εστίαση στους ανώμαλους τύπους",
+          "preview": "560|Προεπισκόπηση ερωτήσεων",
+          "regenerate": "561|Νέα προεπισκόπηση",
+          "previewTitle": "562|Προεπισκόπηση",
+          "saveQuiz": "563|Αποθήκευση κουίζ",
+          "generateQuiz": "564|Δημιουργία κουίζ",
+          "generating": "565|Δημιουργία…",
+          "saving": "566|Αποθήκευση…",
+          "useSmartInstead": "567|Χρήση του Έξυπνου τοπικού",
+          "modeManual": "568|Χειροκίνητα",
+          "modeManualDesc": "569|Γράψτε τις δικές σας ερωτήσεις.",
+          "createQuiz": "570|Δημιουργία κουίζ"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "571|Ερώτηση {{current}} από {{total}}",
+          "submit": "572|Υποβολή απάντησης",
+          "next": "573|Επόμενο",
+          "finish": "574|Τέλος",
+          "correct": "575|Σωστό!",
+          "incorrect": "576|Λάθος",
+          "correctAnswer": "577|Σωστή απάντηση: {{answer}}",
+          "typeMissing": "578|Γράψτε τη λέξη που λείπει",
+          "typeAnswer": "579|Γράψτε την απάντησή σας",
+          "trueLabel": "580|Σωστό",
+          "falseLabel": "581|Λάθος"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "582|{{correct}} από {{total}} σωστές",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "583|Άριστα!",
+            "good": "584|Μπράβο!",
+            "keepPracticing": "585|Συνεχίστε την εξάσκηση",
+            "reviewNote": "586|Ξαναδείτε τη σημείωση"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "587|Λάθος",
+          "correctSection": "588|Σωστές",
+          "yourAnswer": "589|Η απάντησή σας: {{answer}}",
+          "tryAgain": "590|Δοκιμάστε ξανά",
+          "reviewNote": "591|Άνοιγμα σημείωσης",
+          "done": "592|Έτοιμο"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "593|Προσθέστε πρώτα περισσότερο περιεχόμενο στη σημείωση — το κουίζ χρειάζεται τουλάχιστον δύο μπλοκ περιεχομένου (κανόνας, παράδειγμα, προειδοποίηση, παράγραφος ή παράθεση).",
+          "noMatchingQuestionTypes": "594|Δεν υπάρχει αρκετό κατάλληλο περιεχόμενο για τους επιλεγμένους τύπους ερωτήσεων. Ενεργοποιήστε περισσότερους τύπους ή προσθέστε περιεχόμενο.",
+          "aiFailed": "595|Δεν ήταν δυνατή η δημιουργία του κουίζ με AI. Δοκιμάστε ξανά ή χρησιμοποιήστε το Έξυπνο τοπικό."
         },
-        "badge": "Quiz",
+        "badge": "596|Κουίζ",
         "manual": {
-          "questions_one": "{{count}} question",
-          "questions_other": "{{count}} questions",
-          "add": "Add question",
-          "questionPlaceholder": "Question text",
-          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
-          "optionPlaceholder": "Option {{index}}",
-          "answerPlaceholder": "Correct answer",
-          "explanationPlaceholder": "Explanation (optional)",
+          "questions_one": "597|{{count}} ερώτηση",
+          "questions_other": "598|{{count}} ερωτήσεις",
+          "add": "599|Προσθήκη ερώτησης",
+          "questionPlaceholder": "600|Κείμενο ερώτησης",
+          "questionGapPlaceholder": "601|Ερώτηση με κενό, π.χ. Εγώ _____ στο σχολείο",
+          "optionPlaceholder": "602|Επιλογή {{index}}",
+          "answerPlaceholder": "603|Σωστή απάντηση",
+          "explanationPlaceholder": "604|Εξήγηση (προαιρετικό)",
           "error": {
-            "questionRequired": "Question text is required.",
-            "optionsRequired": "Multiple choice needs at least 2 options.",
-            "answerRequired": "Enter the correct answer.",
-            "answerNotAnOption": "The correct answer must match one of the options.",
-            "blankRequired": "Add a blank (e.g. _____) inside the question."
+            "questionRequired": "605|Το κείμενο της ερώτησης είναι υποχρεωτικό.",
+            "optionsRequired": "606|Η πολλαπλή επιλογή χρειάζεται τουλάχιστον 2 επιλογές.",
+            "answerRequired": "607|Εισαγάγετε τη σωστή απάντηση.",
+            "answerNotAnOption": "608|Η σωστή απάντηση πρέπει να ταιριάζει με μία από τις επιλογές.",
+            "blankRequired": "609|Προσθέστε ένα κενό (π.χ. _____) μέσα στην ερώτηση."
           }
         }
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "610|Γρήγορο λάθος",
+        "title": "611|Γρήγορο λάθος",
+        "original": "612|Αρχική πρόταση",
+        "originalPlaceholder": "613|Παράδειγμα: Εγώ είμαι συμφωνώ μαζί σου",
+        "corrected": "614|Διόρθωση",
+        "correctedPlaceholder": "615|Παράδειγμα: Συμφωνώ μαζί σου",
+        "explanation": "616|Εξήγηση (προαιρετικό)",
+        "explanationPlaceholder": "617|Γιατί είναι σωστή η διόρθωση;",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "618|Προσθέστε πρώτα την αρχική πρόταση.",
+          "corrected": "619|Προσθέστε και τη διορθωμένη πρόταση."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done",
-        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
+        "save": "620|Αποθήκευση λάθους",
+        "saving": "621|Αποθήκευση…",
+        "saved": "622|Αποθηκεύτηκε στις σημειώσεις γραμματικής.",
+        "duplicate": "623|Ήδη αποθηκευμένο — το διπλότυπο παραλείφθηκε.",
+        "failed": "624|Η αποθήκευση απέτυχε. Δοκιμάστε ξανά.",
+        "openTopic": "625|Άνοιγμα των Συχνών λαθών",
+        "done": "626|Έτοιμο",
+        "tip": "627|Οι αποθηκευμένες διορθώσεις μπαίνουν αυτόματα στην επανάληψη, οπότε αυτές που κάνετε συνέχεια λάθος επιστρέφουν πρώτες."
       },
       "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
+        "topicTitle": "628|Πρότυπα θεμάτων",
+        "noteTitle": "629|Πρότυπα σημειώσεων",
+        "button": "630|Πρότυπο",
+        "startFromTemplate": "631|Ξεκινήστε από πρότυπο",
+        "searchPlaceholder": "632|Αναζήτηση προτύπων…",
+        "allLanguages": "633|Όλες",
+        "anyDifficulty": "634|Οποιαδήποτε",
         "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
+          "en": "635|Αγγλικά",
+          "es": "636|Ισπανικά",
+          "fr": "637|Γαλλικά",
+          "de": "638|Γερμανικά"
         },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
-        "applyTitle": "Apply “{{title}}”?",
-        "applyBody": "This note already has content. Choose how to apply the template.",
-        "applyReplace": "Replace content",
-        "applyAppend": "Append blocks"
+        "minutes": "639|{{minutes}} λεπτά",
+        "notesIncluded_one": "640|{{count}} σημείωση",
+        "notesIncluded_other": "641|{{count}} σημειώσεις",
+        "blocksIncluded_one": "642|{{count}} μπλοκ",
+        "blocksIncluded_other": "643|{{count}} μπλοκ",
+        "empty": "644|Κανένα πρότυπο δεν ταιριάζει με τα φίλτρα σας.",
+        "use": "645|Χρήση προτύπου",
+        "creating": "646|Δημιουργία…",
+        "replaceConfirm": "647|Αντικατάσταση του τρέχοντος περιεχομένου της σημείωσης με αυτό το πρότυπο; Πατήστε Άκυρο για να προστεθεί το πρότυπο από κάτω.",
+        "applyTitle": "648|Εφαρμογή του «{{title}}»;",
+        "applyBody": "649|Αυτή η σημείωση έχει ήδη περιεχόμενο. Επιλέξτε πώς θα εφαρμοστεί το πρότυπο.",
+        "applyReplace": "650|Αντικατάσταση περιεχομένου",
+        "applyAppend": "651|Προσθήκη μπλοκ στο τέλος"
       },
       "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "dueBadge": "Due",
-        "refreshBody": "Nothing is due right now — you can still refresh what you read lately.",
-        "refreshStart": "Refresh recent notes",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
+        "title": "652|Επανάληψη",
+        "subtitle": "653|Εδραιώστε όσα μάθατε με επαναλήψεις σε διαστήματα.",
+        "cardTitle": "654|Επανάληψη σήμερα",
+        "cardSubtitle_one": "655|{{count}} στοιχείο έτοιμο · ~{{minutes}} λεπτά",
+        "cardSubtitle_other": "656|{{count}} στοιχεία έτοιμα · ~{{minutes}} λεπτά",
+        "caughtUpTitle": "657|Όλα εντάξει",
+        "caughtUp": "658|Είστε πλήρως ενήμεροι. Ανοίξτε ή επεξεργαστείτε σημειώσεις για να πάρετε προτάσεις επανάληψης.",
+        "dueBadge": "659|Εκκρεμεί",
+        "refreshBody": "660|Αυτή τη στιγμή δεν εκκρεμεί τίποτα — μπορείτε όμως να φρεσκάρετε ό,τι διαβάσατε πρόσφατα.",
+        "refreshStart": "661|Φρεσκάρισμα πρόσφατων σημειώσεων",
+        "start": "662|Έναρξη επανάληψης",
+        "skip": "663|Παράλειψη",
+        "itemOf": "664|Στοιχείο {{current}} από {{total}}",
+        "untitled": "665|Σημείωση γραμματικής",
+        "stats": "666|Επαναλήφθηκε {{count}} φορές · σερί {{streak}}",
+        "continueToQuestion": "667|Συνέχεια στην ερώτηση",
+        "showAnswer": "668|Εμφάνιση απάντησης",
+        "compareTitle": "669|Συγκρίνετε την απάντησή σας",
+        "referenceAnswer": "670|Αναφορά: {{answer}}",
+        "openNote": "671|Άνοιγμα ολόκληρης της σημείωσης",
         "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
+          "manual_one": "672|{{count}} στοιχείο εκκρεμεί για επανάληψη",
+          "manual_other": "673|{{count}} στοιχεία εκκρεμούν για επανάληψη",
+          "recentlyOpened_one": "674|{{count}} σημείωση που ανοίξατε πρόσφατα",
+          "recentlyOpened_other": "675|{{count}} σημειώσεις που ανοίξατε πρόσφατα",
+          "recentlyEdited_one": "676|{{count}} σημείωση που επεξεργαστήκατε πρόσφατα",
+          "recentlyEdited_other": "677|{{count}} σημειώσεις που επεξεργαστήκατε πρόσφατα"
         },
         "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
-          "quiz": "Quiz"
+          "note": "678|Σημείωση",
+          "mistake": "679|Λάθος",
+          "quiz": "680|Κουίζ"
         },
         "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
+          "source": "681|Μελέτη",
+          "question": "682|Απάντηση",
+          "result": "683|Αξιολόγηση"
         },
         "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
+          "forgot": "684|Το ξέχασα",
+          "hard": "685|Δύσκολο",
+          "good": "686|Καλό",
+          "easy": "687|Εύκολο"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "plus4h": "688|+4 ώρες",
+          "plus1d": "689|+1 ημέρα",
+          "plus3d": "690|+3 ημέρες",
+          "plus7d": "691|+7 ημέρες"
         },
         "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "title": "692|Η συνεδρία ολοκληρώθηκε",
+          "emptyTitle": "693|Δεν έγινε καμία επανάληψη",
+          "reviewed": "694|Επαναλήφθηκαν",
+          "correct": "695|Σωστά",
+          "incorrect": "696|Λάθος",
+          "hintForgot": "697|Ορισμένα στοιχεία επιστρέφουν σε 4 ώρες.",
+          "hintHard": "698|Τα δύσκολα στοιχεία επιστρέφουν αύριο.",
+          "hintGood": "699|Τα σωστά στοιχεία επιστρέφουν σε 3 ημέρες.",
+          "hintEasy": "700|Όλα τα στοιχεία επιστρέφουν σε 7 ημέρες.",
+          "done": "701|Πίσω στις σημειώσεις γραμματικής"
         },
-        "loadError": "Couldn't load your review queue.",
-        "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "loadError": "702|Δεν μπορέσαμε να φορτώσουμε την ουρά επανάληψής σας.",
+        "mistakeCount_one": "703|{{count}} λάθος",
+        "mistakeCount_other": "704|{{count}} λάθη"
       },
-      "mistakesBadge": "Mistakes",
-      "topicsTitle": "Topics",
-      "deleteTopic": "Delete topic",
-      "deleteTopicTitle": "Delete this topic?",
-      "deleteNoteTitle": "Delete this note?",
-      "pin": "Pin note",
-      "unpin": "Unpin note",
-      "favorite": "Add to favorites",
-      "unfavorite": "Remove from favorites",
+      "mistakesBadge": "705|Λάθη",
+      "topicsTitle": "706|Θέματα",
+      "deleteTopic": "707|Διαγραφή θέματος",
+      "deleteTopicTitle": "708|Διαγραφή αυτού του θέματος;",
+      "deleteNoteTitle": "709|Διαγραφή αυτής της σημείωσης;",
+      "pin": "710|Καρφίτσωμα σημείωσης",
+      "unpin": "711|Ξεκαρφίτσωμα σημείωσης",
+      "favorite": "712|Προσθήκη στα αγαπημένα",
+      "unfavorite": "713|Αφαίρεση από τα αγαπημένα",
       "search": {
-        "topics": "Search topics…",
-        "notes": "Search notes…",
-        "clear": "Clear search",
-        "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword.",
-        "notesSection_one": "Notes ({{count}})",
-        "notesSection_other": "Notes ({{count}})",
-        "noNoteMatches": "No notes match this search."
+        "topics": "714|Αναζήτηση θεμάτων…",
+        "notes": "715|Αναζήτηση σημειώσεων…",
+        "clear": "716|Καθαρισμός αναζήτησης",
+        "noMatchTitle": "717|Καμία αντιστοιχία",
+        "noMatchBody": "718|Δοκιμάστε άλλη λέξη-κλειδί.",
+        "notesSection_one": "719|Σημειώσεις ({{count}})",
+        "notesSection_other": "720|Σημειώσεις ({{count}})",
+        "noNoteMatches": "721|Καμία σημείωση δεν ταιριάζει με αυτή την αναζήτηση."
       },
       "filter": {
-        "label": "Filter notes",
-        "all": "All",
-        "pinned": "Pinned",
-        "favorites": "Favorites",
-        "mistakes": "Mistakes",
-        "quizzes": "Quizzes",
-        "review": "Due",
+        "label": "722|Φιλτράρισμα σημειώσεων",
+        "all": "723|Όλες",
+        "pinned": "724|Καρφιτσωμένες",
+        "favorites": "725|Αγαπημένες",
+        "mistakes": "726|Λάθη",
+        "quizzes": "727|Κουίζ",
+        "review": "728|Εκκρεμούν",
         "empty": {
           "all": {
-            "title": "No grammar notes yet",
-            "body": "Create your first grammar note for this topic."
+            "title": "729|Δεν υπάρχουν σημειώσεις γραμματικής ακόμη",
+            "body": "730|Δημιουργήστε την πρώτη σας σημείωση γραμματικής για αυτό το θέμα."
           },
           "pinned": {
-            "title": "No pinned notes yet",
-            "body": "Pin notes from the list to find them quickly."
+            "title": "731|Δεν υπάρχουν καρφιτσωμένες σημειώσεις ακόμη",
+            "body": "732|Καρφιτσώστε σημειώσεις από τη λίστα για να τις βρίσκετε γρήγορα."
           },
           "favorites": {
-            "title": "No favorite notes yet",
-            "body": "Favorite notes to keep them handy."
+            "title": "733|Δεν υπάρχουν αγαπημένες σημειώσεις ακόμη",
+            "body": "734|Σημειώστε σημειώσεις ως αγαπημένες για να τις έχετε πρόχειρες."
           },
           "mistakes": {
-            "title": "No saved mistakes yet",
-            "body": "Save grammar mistakes to review them here."
+            "title": "735|Δεν υπάρχουν αποθηκευμένα λάθη ακόμη",
+            "body": "736|Αποθηκεύστε γραμματικά λάθη για να τα επαναλαμβάνετε εδώ."
           },
           "quizzes": {
-            "title": "No quiz notes yet",
-            "body": "Add a quiz to a note to see it here."
+            "title": "737|Δεν υπάρχουν σημειώσεις με κουίζ ακόμη",
+            "body": "738|Προσθέστε κουίζ σε μια σημείωση για να τη δείτε εδώ."
           },
           "review": {
-            "title": "Nothing due right now",
-            "body": "Notes come back here when their next review is due."
+            "title": "739|Αυτή τη στιγμή δεν εκκρεμεί τίποτα",
+            "body": "740|Οι σημειώσεις επιστρέφουν εδώ όταν έρθει η ώρα της επόμενης επανάληψης."
           }
         }
       },
       "reorder": {
-        "start": "Reorder",
-        "done": "Done",
-        "up": "Move up",
-        "down": "Move down"
+        "start": "741|Αναδιάταξη",
+        "done": "742|Έτοιμο",
+        "up": "743|Πάνω",
+        "down": "744|Κάτω"
       },
       "highlights": {
-        "mistakesTitle": "Mistakes to fix",
-        "mistakesSubtitle": "Recent corrections waiting for review.",
-        "quizzesTitle": "Weak quiz areas",
-        "quizzesSubtitle": "Quizzes worth re-taking soon."
+        "mistakesTitle": "745|Λάθη προς διόρθωση",
+        "mistakesSubtitle": "746|Πρόσφατες διορθώσεις περιμένουν επανάληψη.",
+        "quizzesTitle": "747|Αδύναμα σημεία στα κουίζ",
+        "quizzesSubtitle": "748|Κουίζ που αξίζει να ξανακάνετε σύντομα."
       },
       "quickNote": {
-        "button": "Quick note",
-        "title": "Quick note",
-        "subtitle": "Capture a grammar idea without opening the full editor.",
-        "noteTitle": "Title",
-        "titlePlaceholder": "Example: Ser vs Estar",
-        "text": "Note",
-        "textPlaceholder": "Write the useful part here",
-        "noteType": "Note type",
-        "topic": "Topic",
-        "openEditor": "Open editor after saving",
-        "openEditorHint": "Useful when the quick version grows into a full note.",
-        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
-        "validation": "Add a title or some text first.",
-        "save": "Save quick note",
-        "saving": "Saving…"
+        "button": "749|Γρήγορη σημείωση",
+        "title": "750|Γρήγορη σημείωση",
+        "subtitle": "751|Καταγράψτε μια ιδέα γραμματικής χωρίς να ανοίξετε τον πλήρη επεξεργαστή.",
+        "noteTitle": "752|Τίτλος",
+        "titlePlaceholder": "753|Παράδειγμα: Ser vs Estar",
+        "text": "754|Σημείωση",
+        "textPlaceholder": "755|Γράψτε εδώ το χρήσιμο κομμάτι",
+        "noteType": "756|Τύπος σημείωσης",
+        "topic": "757|Θέμα",
+        "openEditor": "758|Άνοιγμα επεξεργαστή μετά την αποθήκευση",
+        "openEditorHint": "759|Χρήσιμο όταν η γρήγορη εκδοχή γίνεται πλήρης σημείωση.",
+        "tip": "760|Οι γρήγορες σημειώσεις είναι για την ιδέα που αλλιώς θα ξεχνούσατε σε δέκα λεπτά.",
+        "validation": "761|Προσθέστε πρώτα έναν τίτλο ή λίγο κείμενο.",
+        "save": "762|Αποθήκευση γρήγορης σημείωσης",
+        "saving": "763|Αποθήκευση…"
       },
       "settings": {
-        "title": "Notes settings",
-        "subtitle": "How quick capture, mistakes and the notes list behave.",
-        "reset": "Reset to defaults",
-        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "title": "764|Ρυθμίσεις σημειώσεων",
+        "subtitle": "765|Πώς συμπεριφέρονται η γρήγορη καταγραφή, τα λάθη και η λίστα σημειώσεων.",
+        "reset": "766|Επαναφορά προεπιλογών",
+        "tip": "767|Χρησιμοποιήστε τα γρήγορα λάθη για προτάσεις που όντως γράψατε λάθος — είναι πιο χρήσιμες από τα τέλεια σχολικά παραδείγματα.",
         "quickCapture": {
-          "title": "Quick capture",
-          "subtitle": "Make fast notes and mistakes feel instant."
+          "title": "768|Γρήγορη καταγραφή",
+          "subtitle": "769|Κάντε τις γρήγορες σημειώσεις και τα λάθη να είναι ακαριαία."
         },
         "mistakeNotes": {
-          "title": "Mistake notes",
-          "subtitle": "What gets saved when you capture a quick mistake."
+          "title": "770|Σημειώσεις λαθών",
+          "subtitle": "771|Τι αποθηκεύεται όταν καταγράφετε ένα γρήγορο λάθος."
         },
         "essays": {
-          "title": "Essays",
-          "subtitle": "What happens to grammar issues found in your essays."
+          "title": "772|Εκθέσεις",
+          "subtitle": "773|Τι γίνεται με τα γραμματικά λάθη από τις εκθέσεις σας."
         },
         "review": {
-          "title": "Spaced review",
-          "subtitle": "How notes reach the review queue."
+          "title": "774|Επανάληψη σε διαστήματα",
+          "subtitle": "775|Πώς φτάνουν οι σημειώσεις στην ουρά επανάληψης."
         },
         "appearance": {
-          "title": "Notes appearance",
-          "subtitle": "How the notes list is ordered and sized."
+          "title": "776|Εμφάνιση σημειώσεων",
+          "subtitle": "777|Πώς ταξινομείται και εμφανίζεται η λίστα σημειώσεων."
         },
         "helpers": {
-          "title": "Learning helpers",
-          "subtitle": "Small nudges inside empty states and quick sheets."
+          "title": "778|Βοηθήματα μάθησης",
+          "subtitle": "779|Μικρές υποδείξεις σε άδειες οθόνες και γρήγορες φόρμες."
         },
         "defaultType": {
-          "title": "Default note type",
-          "subtitle": "What a new quick note starts as."
+          "title": "780|Προεπιλεγμένος τύπος σημείωσης",
+          "subtitle": "781|Με ποιον τύπο ξεκινά μια νέα γρήγορη σημείωση."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "Open editor after quick save",
-            "subtitle": "After saving a quick note, jump straight into the full editor."
+            "title": "782|Άνοιγμα επεξεργαστή μετά τη γρήγορη αποθήκευση",
+            "subtitle": "783|Μετά την αποθήκευση γρήγορης σημείωσης, πηγαίνετε κατευθείαν στον πλήρη επεξεργαστή."
           },
           "allowQuickQuizzes": {
-            "title": "Allow quizzes in notes",
-            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+            "title": "784|Να επιτρέπονται κουίζ στις σημειώσεις",
+            "subtitle": "785|Προσφέρετε μπλοκ κουίζ και δημιουργία κουίζ μέσα στις σημειώσεις."
           },
           "showsMistakeHighlights": {
-            "title": "Highlight mistake notes",
-            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+            "title": "786|Επισήμανση σημειώσεων λαθών",
+            "subtitle": "787|Χρησιμοποιήστε ζεστή απόχρωση για τις κάρτες λαθών και εμφανίστε τη γραμμή λαθών."
           },
           "includeOriginalSentence": {
-            "title": "Include original sentence",
-            "subtitle": "Save the wrong version as a quote block in the note."
+            "title": "788|Να περιλαμβάνεται η αρχική πρόταση",
+            "subtitle": "789|Αποθηκεύστε τη λανθασμένη εκδοχή ως μπλοκ παράθεσης στη σημείωση."
           },
           "includeCorrectedSentence": {
-            "title": "Include corrected sentence",
-            "subtitle": "Save the fixed version as an example block."
+            "title": "790|Να περιλαμβάνεται η διορθωμένη πρόταση",
+            "subtitle": "791|Αποθηκεύστε τη διορθωμένη εκδοχή ως μπλοκ παραδείγματος."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "Include explanation",
-            "subtitle": "Add your explanation as a paragraph block below."
+            "title": "792|Να περιλαμβάνεται η εξήγηση",
+            "subtitle": "793|Προσθέστε την εξήγησή σας από κάτω ως μπλοκ παραγράφου."
           },
           "groupMistakesByTopic": {
-            "title": "Group mistakes by topic",
-            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+            "title": "794|Ομαδοποίηση λαθών ανά θέμα",
+            "subtitle": "795|Αποθηκεύστε τα γρήγορα λάθη στο τρέχον θέμα αντί στα Συχνά λάθη."
           },
           "askBeforeSavingMistakes": {
-            "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
+            "title": "796|Ερώτηση πριν την αποθήκευση λαθών",
+            "subtitle": "797|Επιβεβαιώστε πριν ένα λάθος έκθεσης γίνει σημείωση. Αυτό υπερισχύει της αυτόματης αποθήκευσης."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
+            "title": "798|Αυτόματη αποθήκευση λαθών από εκθέσεις",
+            "subtitle": "799|Κάθε γραμματικό λάθος που βρίσκεται σε έκθεση γίνεται σημείωση. Με ενεργή την «Ερώτηση πριν την αποθήκευση», ρωτά μία φορά για όλον τον έλεγχο."
           },
           "groupsPinnedNotesFirst": {
-            "title": "Pinned notes first",
-            "subtitle": "Keep important rules at the top of each topic."
+            "title": "800|Καρφιτσωμένες σημειώσεις πρώτα",
+            "subtitle": "801|Κρατήστε τους σημαντικούς κανόνες στην κορυφή κάθε θέματος."
           },
           "usesCompactCards": {
-            "title": "Compact note cards",
-            "subtitle": "Show tighter cards when you want more notes on screen."
+            "title": "802|Συμπαγείς κάρτες σημειώσεων",
+            "subtitle": "803|Εμφανίστε πιο πυκνές κάρτες όταν θέλετε περισσότερες σημειώσεις στην οθόνη."
           },
           "showsHelperTips": {
-            "title": "Show helper tips",
-            "subtitle": "Display short contextual hints while creating notes."
+            "title": "804|Εμφάνιση συμβουλών",
+            "subtitle": "805|Εμφανίστε σύντομες συμβουλές με βάση τα συμφραζόμενα καθώς δημιουργείτε σημειώσεις."
           },
           "autoAddNotesToReview": {
-            "title": "Add new notes to review",
-            "subtitle": "Every note you save joins the review queue, due a day later."
+            "title": "806|Προσθήκη νέων σημειώσεων στην επανάληψη",
+            "subtitle": "807|Κάθε σημείωση που αποθηκεύετε μπαίνει στην ουρά επανάληψης, με σειρά την επόμενη μέρα."
           }
         }
       },
-      "editTopic": "Edit topic",
+      "editTopic": "808|Επεξεργασία θέματος",
       "toSet": {
-        "title": "Make a set from this note",
-        "subtitle": "Pick the pairs to turn into flashcards.",
-        "setTitle": "Set title",
-        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
-        "button": "Make a set",
-        "create": "Create set",
-        "creating": "Creating…",
-        "error": "Couldn't create the set. Try again.",
-        "cards_one": "{{count}} card",
-        "cards_other": "{{count}} cards"
+        "title": "809|Δημιουργία σετ από αυτή τη σημείωση",
+        "subtitle": "810|Επιλέξτε τα ζεύγη που θα γίνουν κάρτες.",
+        "setTitle": "811|Τίτλος σετ",
+        "empty": "812|Αυτή η σημείωση δεν έχει ακόμη κάτι για κάρτες. Τα μπλοκ σύγκρισης, παραδείγματος και κανόνα μετατρέπονται απευθείας, και τα στοιχεία λίστας χωρίζονται στην παύλα — όπως «hacer — κάνω».",
+        "button": "813|Δημιουργία σετ",
+        "create": "814|Δημιουργία σετ",
+        "creating": "815|Δημιουργία…",
+        "error": "816|Δεν ήταν δυνατή η δημιουργία του σετ. Δοκιμάστε ξανά.",
+        "cards_one": "817|{{count}} κάρτα",
+        "cards_other": "818|{{count}} κάρτες"
       },
-      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "topicsEmptyTip": "819|Το θέμα είναι φάκελος για σημειώσεις — ένας ανά γλώσσα ή ένας για κάθε πράγμα που κάνετε συνέχεια λάθος.",
+      "notesEmptyTip": "820|Κάθε σημείωση που αποθηκεύετε μπαίνει στην ουρά επανάληψης, οπότε το να τη γράψετε είναι ήδη η αρχή της εξάσκησης."
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "821|Τρόποι εξάσκησης",
+    "loading": "822|Φόρτωση…",
+    "loadError": "823|Δεν μπορέσαμε να φορτώσουμε τα κείμενα ανάγνωσής σας.",
+    "notFound": "824|Αυτό το στοιχείο μπορεί να έχει διαγραφεί.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "825|Πρόοδος σήμερα",
+      "subtitle": "826|Κρατήστε ζωντανό το σερί ανάγνωσής σας."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "827|Σύντομα",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "828|Τα κείμενά μου",
+        "subtitle": "829|Επικολλήστε το δικό σας κείμενο και διαβάστε το με βοήθεια."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "830|Ανάγνωση από τα σετ",
+        "subtitle": "831|Φτιάξτε ένα κείμενο ανάγνωσης από τα σετ καρτών σας."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "832|Λειτουργία ιστορίας",
+        "subtitle": "833|Διαβάστε διαδραστικές ιστορίες με διακλαδώσεις."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "834|Γρήγορη ανάγνωση",
+        "subtitle": "835|Εξασκηθείτε σε πιο γρήγορη ανάγνωση με χρονομετρημένο ρυθμό."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "836|Τα κείμενά μου",
+      "subtitle": "837|Τα αποθηκευμένα κείμενα ανάγνωσής σας.",
+      "addText": "838|Προσθήκη κειμένου",
+      "emptyTitle": "839|Δεν υπάρχουν κείμενα ακόμη",
+      "emptyBody": "840|Προσθέστε το πρώτο σας κείμενο για να ξεκινήσετε εξάσκηση στην ανάγνωση.",
+      "savedTitle": "841|Αποθηκευμένα κείμενα"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "842|Νέο",
+      "inProgress": "843|Σε εξέλιξη",
+      "completed": "844|Ολοκληρωμένο"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "845|{{count}} λέξη",
+      "words_other": "846|{{count}} λέξεις",
+      "start": "847|Έναρξη",
+      "continue": "848|Συνέχεια",
+      "readAgain": "849|Νέα ανάγνωση",
+      "rename": "850|Μετονομασία",
+      "renamePrompt": "851|Νέος τίτλος:",
+      "delete": "852|Διαγραφή",
+      "deleteConfirm": "853|Διαγραφή του «{{title}}»; Η ενέργεια δεν αναιρείται."
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "854|Συνέχεια ανάγνωσης",
+      "percent": "855|{{percent}} % ολοκληρώθηκε",
+      "button": "856|Συνέχεια"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "857|Κύρια ιδέα",
+      "vocabulary": "858|Λεξιλόγιο",
+      "detailedComprehension": "859|Λεπτομερής κατανόηση",
+      "grammarAwareness": "860|Προσοχή στη γραμματική",
+      "speedFluency": "861|Ταχύτητα / ευχέρεια"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "862|Κατανόηση",
+      "trueFalse": "863|Σωστό / Λάθος",
+      "fillGap": "864|Συμπλήρωση κενού",
+      "vocabulary": "865|Λεξιλόγιο",
+      "findEvidence": "866|Εύρεση τεκμηρίου",
+      "orderReconstruction": "867|Σειρά"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "868|Επισήμανση άγνωστων λέξεων",
+      "translationOnTap": "869|Μετάφραση με άγγιγμα",
+      "vocabularyHints": "870|Βοήθειες λεξιλογίου",
+      "readingTimer": "871|Χρονόμετρο ανάγνωσης"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "872|Προσθήκη κειμένου",
+      "subtitle": "873|Επικολλήστε ένα κείμενο και ρυθμίστε την εξάσκηση ανάγνωσης.",
+      "untitled": "874|Κείμενο χωρίς τίτλο",
+      "pastePlaceholder": "875|Επικολλήστε ή γράψτε το κείμενό σας εδώ…",
+      "titleLabel": "876|Τίτλος",
+      "titlePlaceholder": "877|Προαιρετικό — μπορούμε να προτείνουμε έναν",
+      "language": "878|Γλώσσα",
+      "difficulty": "879|Δυσκολία",
+      "autoDetect": "880|Αυτόματη ανίχνευση",
+      "manual": "881|Χειροκίνητη επιλογή",
+      "focus": "882|Εστίαση ανάγνωσης",
+      "questionTypes": "883|Τύποι ερωτήσεων",
+      "assistance": "884|Βοήθεια στην ανάγνωση",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
-        "min": "min",
-        "detected": "Detected: {{level}}"
+        "words_one": "885|{{count}} λέξη",
+        "words_other": "886|{{count}} λέξεις",
+        "chars_one": "887|{{count}} χαρακτήρας",
+        "chars_other": "888|{{count}} χαρακτήρες",
+        "min": "889|λεπτά",
+        "detected": "890|Ανιχνεύθηκε: {{level}}"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "891|Προσθέστε πρώτα ένα κείμενο.",
+        "tooShort": "892|Προσθέστε τουλάχιστον 20 λέξεις."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "893|Αποθήκευση κειμένου",
+      "saveAndStart": "894|Αποθήκευση και έναρξη",
+      "saving": "895|Αποθήκευση…",
+      "saveError": "896|Η αποθήκευση απέτυχε. Δοκιμάστε ξανά.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
-        "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "pasteText": "897|Επικόλληση",
+        "photo": "898|Φωτογραφία",
+        "pdf": "899|PDF",
+        "generate": "900|Δημιουργία",
+        "explore": "901|Εξερεύνηση"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "902|Ενημερωτικό",
+        "casual": "903|Ανεπίσημο",
+        "academic": "904|Ακαδημαϊκό",
+        "narrative": "905|Αφηγηματικό"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "906|Σύντομο",
+        "medium": "907|Μεσαίο",
+        "long": "908|Μεγάλο"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "909|Ανεβάστε φωτογραφία μιας σελίδας — θα εξαγάγουμε το κείμενο.",
+        "chooseImage": "910|Επιλογή εικόνας",
+        "recognizing": "911|Αναγνώριση… {{percent}} %",
+        "imageError": "912|Δεν μπορέσαμε να διαβάσουμε κείμενο από αυτή την εικόνα.",
+        "pdfHint": "913|Ανεβάστε ένα PDF — θα εξαγάγουμε το κείμενο.",
+        "choosePDF": "914|Επιλογή PDF",
+        "reading": "915|Ανάγνωση PDF…",
+        "pdfError": "916|Δεν μπορέσαμε να διαβάσουμε αυτό το PDF.",
+        "topicPlaceholder": "917|Θέμα — π.χ. κοραλλιογενείς ύφαλοι, η τυπογραφία",
+        "explorePlaceholder": "918|Θέμα ή λέξη-κλειδί — π.χ. Μαρία Κιουρί, Βενετία",
+        "generateButton": "919|Δημιουργία κειμένου",
+        "exploreButton": "920|Ανάκτηση άρθρου",
+        "working": "921|Επεξεργασία…",
+        "generateError": "922|Δεν ήταν δυνατή η δημιουργία του κειμένου. Δοκιμάστε ξανά.",
+        "exploreError": "923|Δεν βρήκαμε άρθρο για αυτό το θέμα.",
+        "exploredFrom": "924|Ανακτήθηκε από"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again.",
-      "translation": "Translation",
-      "textLabel": "Text"
+      "startQuestions": "925|Έναρξη ερωτήσεων",
+      "finish": "926|Τέλος",
+      "next": "927|Επόμενο",
+      "questionOf": "928|Ερώτηση {{current}} από {{total}}",
+      "closeTranslation": "929|Κλείσιμο μετάφρασης",
+      "translating": "930|Μετάφραση…",
+      "translationError": "931|Η μετάφραση απέτυχε. Δοκιμάστε ξανά.",
+      "translation": "932|Μετάφραση",
+      "textLabel": "933|Κείμενο"
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts",
-      "complete": "Practice Complete"
+      "comprehension": "934|Κατανόηση",
+      "correct": "935|Σωστά",
+      "time": "936|Χρόνος ανάγνωσης",
+      "wpm": "937|λέξεις/λεπτό",
+      "mistakes": "938|Λάθη",
+      "mistakesTitle": "939|Δείτε τα λάθη σας",
+      "readAgain": "940|Νέα ανάγνωση",
+      "back": "941|Πίσω στα Κείμενά μου",
+      "complete": "942|Η εξάσκηση ολοκληρώθηκε"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "943|Ανάγνωση από τα σετ",
+      "subtitle": "944|Μετατρέψτε ένα σετ καρτών σε κείμενο ανάγνωσης.",
+      "pickSet": "945|Επιλέξτε σετ",
+      "changeSet": "946|Αλλαγή σετ",
+      "tooFewWords": "947|Αυτό το σετ χρειάζεται τουλάχιστον {{count}} λέξεις για να φτιαχτεί κείμενο.",
+      "mode": "948|Τρόπος δημιουργίας",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "949|Φυσικός",
+        "strict": "950|Αυστηρός",
+        "mixed": "951|Μεικτός"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "952|Μήκος κειμένου",
+      "generate": "953|Δημιουργία κειμένου",
+      "generating": "954|Δημιουργούμε το κείμενό σας…",
+      "generateError": "955|Δεν ήταν δυνατή η δημιουργία του κειμένου. Δοκιμάστε ξανά.",
+      "emptyTitle": "956|Δεν υπάρχουν κείμενα ακόμη",
+      "emptyBody": "957|Επιλέξτε ένα σετ καρτών και θα το μετατρέψουμε σε κείμενο ανάγνωσης.",
+      "savedTitle": "958|Αποθηκευμένα κείμενα"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "959|Γρήγορη ανάγνωση",
+      "subtitle": "960|Εξασκηθείτε σε πιο γρήγορη ανάγνωση με χρονομετρημένο ρυθμό.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "961|Στόχος ταχύτητας ανάγνωσης",
+        "timer": "962|Στιλ χρονομέτρου",
+        "length": "963|Μήκος κειμένου"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "964|Χαλαρή",
+        "balanced": "965|Ισορροπημένη",
+        "fast": "966|Γρήγορη",
+        "challenge": "967|Πρόκληση"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "968|Χωρίς χρονόμετρο",
+        "soft": "969|Ήπιο χρονόμετρο",
+        "strict": "970|Αυστηρό χρονόμετρο"
       },
       "length": {
-        "two": "2 min",
-        "five": "5 min",
-        "ten": "10 min"
+        "two": "971|2 λεπτά",
+        "five": "972|5 λεπτά",
+        "ten": "973|10 λεπτά"
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
-      "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "summary": "974|Στόχος {{wpm}} λέξεις/λεπτό · ~{{minutes}} λεπτά ανάγνωσης",
+      "start": "975|Έναρξη συνεδρίας",
+      "preparing": "976|Ετοιμάζουμε το απόσπασμά σας…",
+      "generateError": "977|Δεν ήταν δυνατή η δημιουργία του αποσπάσματος. Δοκιμάστε ξανά.",
+      "recentTitle": "978|Πρόσφατες συνεδρίες",
+      "chunkOf": "979|Μέρος {{current}} από {{total}}",
+      "previous": "980|Προηγούμενο μέρος",
+      "pause": "981|Παύση",
+      "resume": "982|Συνέχεια",
+      "nextChunk": "983|Επόμενο μέρος",
+      "finishReading": "984|Τέλος ανάγνωσης",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "985|Άριστα",
+        "balanced": "986|Στον στόχο",
+        "fast": "987|Σχεδόν",
+        "tooSlow": "988|Πολύ αργά"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "989|Μέσος όρος λέξεις/λεπτό",
+        "target": "990|Στόχος λέξεις/λεπτό",
+        "violations_one": "991|{{count}} υπέρβαση χρόνου",
+        "violations_other": "992|{{count}} υπερβάσεις χρόνου"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "993|Δοκιμάστε ξανά",
+      "backToSetup": "994|Πίσω στις ρυθμίσεις"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "995|Λειτουργία ιστορίας",
+      "subtitle": "996|Διαβάστε διαδραστικές ιστορίες με διακλαδώσεις.",
+      "typeSection": "997|Τύπος ιστορίας",
       "type": {
-        "adventure": "Adventure",
-        "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "adventure": "998|Περιπέτεια",
+        "fantasy": "999|Φαντασία",
+        "mystery": "1000|Μυστήριο",
+        "romance": "1001|Ρομαντική",
+        "dailyLife": "1002|Καθημερινή ζωή"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "1003|Μήκος ιστορίας",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "1004|Σύντομη ιστορία",
+        "multiChapter": "1005|Πολλά κεφάλαια",
+        "infinite": "1006|Ατέλειωτη ιστορία"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "1007|Έναρξη ιστορίας",
+      "generating": "1008|Γράφουμε την ιστορία σας…",
+      "generatingNext": "1009|Γράφουμε το επόμενο κεφάλαιο…",
+      "generateError": "1010|Δεν ήταν δυνατή η συγγραφή της ιστορίας. Δοκιμάστε ξανά.",
+      "emptyTitle": "1011|Δεν υπάρχουν ιστορίες ακόμη",
+      "emptyBody": "1012|Ξεκινήστε παραπάνω την πρώτη σας διαδραστική ιστορία.",
+      "savedTitle": "1013|Οι ιστορίες σας",
+      "chapterN": "1014|Κεφάλαιο {{n}}",
+      "chapterOf": "1015|Κεφάλαιο {{current}} / {{total}}",
+      "chapterScore": "1016|Βαθμολογία κεφαλαίου",
+      "whatNext": "1017|Τι γίνεται μετά;",
+      "endStory": "1018|Τέλος ιστορίας",
+      "completeTitle": "1019|Η ιστορία ολοκληρώθηκε",
+      "completeBody_one": "1020|Ολοκληρώσατε {{count}} κεφάλαιο. Ωραία ανάγνωση!",
+      "completeBody_other": "1021|Ολοκληρώσατε {{count}} κεφάλαια. Ωραία ανάγνωση!",
+      "backToStories": "1022|Πίσω στις ιστορίες"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "1023|Τρόποι εξάσκησης",
+    "notFound": "1024|Αυτή η συνεδρία μπορεί να έχει διαγραφεί.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "1025|Πρόοδος σήμερα",
+      "subtitle": "1026|εξάσκησης στην ακρόαση"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1027|Σύντομα",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "1028|Ακρόαση από κείμενο",
+        "subtitle": "1029|Επικολλήστε κείμενο, ακούστε το και ελέγξτε την κατανόησή σας."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "1030|Εισαγωγή ήχου",
+        "subtitle": "1031|Ανεβάστε τον δικό σας ήχο και κάντε τον άσκηση ακρόασης."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "1032|Εισαγωγή βίντεο",
+        "subtitle": "1033|Ανεβάστε ένα βίντεο, πάρτε υπότιτλους και εξασκηθείτε με ερωτήσεις."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "1034|Αποθηκευμένη εξάσκηση",
+        "subtitle": "1035|Συνεχίστε προηγούμενες συνεδρίες και δείτε τα λάθη σας."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
-      "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "mainIdea": "1036|Κύρια ιδέα",
+      "details": "1037|Λεπτομέρειες",
+      "vocabulary": "1038|Λεξιλόγιο",
+      "trueFalse": "1039|Σωστό / Λάθος"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "1040|Ακρόαση από κείμενο",
+      "subtitle": "1041|Επικολλήστε κείμενο και κάντε το άσκηση ακρόασης.",
+      "level": "1042|Επίπεδο",
+      "voiceSpeed": "1043|Ταχύτητα φωνής",
+      "voiceType": "1044|Τύπος φωνής",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "1045|Προεπιλογή",
+        "female": "1046|Γυναικεία",
+        "male": "1047|Ανδρική"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "1048|Εμφάνιση κειμένου κατά την ακρόαση",
+      "addQuestions": "1049|Προσθήκη ερωτήσεων κατανόησης",
+      "questionCount": "1050|Αριθμός ερωτήσεων",
+      "questionTypes": "1051|Τύποι ερωτήσεων",
+      "optionalTitle": "1052|Προαιρετικός τίτλος",
+      "titlePlaceholder": "1053|Δώστε όνομα στο κείμενό σας",
+      "textPlaceholder": "1054|Επικολλήστε το κείμενό σας εδώ...",
+      "recommended": "1055|Συνιστάται: 80–500 λέξεις.",
+      "words": "1056|λέξεις",
+      "defaultTitle": "1057|Άσκηση ακρόασης",
+      "start": "1058|Έναρξη ακρόασης",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "1059|Προσθέστε κείμενο για να ξεκινήσετε την ακρόαση.",
+        "tooShort": "1060|Προσθέστε τουλάχιστον 40 χαρακτήρες για να ξεκινήσετε την ακρόαση.",
+        "tooLong": "1061|Αυτό το κείμενο είναι πολύ μεγάλο. Μείνετε κάτω από 5000 χαρακτήρες.",
+        "tooFewWords": "1062|Προσθέστε λίγο περισσότερο κείμενο (γύρω στις 40 λέξεις ή παραπάνω) για να φτιάξουμε καλές ερωτήσεις."
       },
-      "voiceSettings": "Voice Settings",
-      "questions": "Questions",
-      "textInput": "Text Input"
+      "voiceSettings": "1063|Ρυθμίσεις φωνής",
+      "questions": "1064|Ερωτήσεις",
+      "textInput": "1065|Εισαγωγή κειμένου"
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "1066|Επανάληψη ήχου",
+      "transcript": "1067|Απομαγνητοφώνηση",
+      "questionsTitle": "1068|Ερωτήσεις",
+      "answerFirst": "1069|Απαντήστε τουλάχιστον σε μία ερώτηση πριν τον έλεγχο.",
+      "checkAnswers": "1070|Έλεγχος απαντήσεων",
+      "finish": "1071|Τέλος εξάσκησης"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "1072|Η εξάσκηση ολοκληρώθηκε",
+      "comprehension": "1073|Κατανόηση",
+      "correct": "1074|Σωστά",
+      "time": "1075|Χρόνος ακρόασης",
+      "speed": "1076|Ταχύτητα",
+      "mistakes": "1077|Λάθη",
+      "mistakesTitle": "1078|Δείτε τα λάθη σας",
+      "watchOnlyTitle": "1079|Η ακρόαση ολοκληρώθηκε",
+      "watchOnlyBody": "1080|Ακούσατε για {{time}}.",
+      "practiceAgain": "1081|Νέα εξάσκηση",
+      "back": "1082|Πίσω στην Ακρόαση"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "1083|Εισαγωγή ήχου",
+      "subtitle": "1084|Μετατρέψτε τον δικό σας ήχο σε άσκηση ακρόασης.",
+      "uploadTitle": "1085|Μεταφόρτωση αρχείου ήχου",
+      "uploadFormats": "1086|MP3, M4A, WAV ή AAC · κάτω από 50 MB",
+      "chooseFile": "1087|Επιλογή αρχείου",
+      "clearFile": "1088|Αφαίρεση αρχείου",
+      "infoNote": "1089|Ο ήχος σας θα απομαγνητοφωνηθεί στο παρασκήνιο. Η απομαγνητοφώνηση μένει κρυφή κατά την εξάσκηση.",
+      "continue": "1090|Συνέχεια",
+      "processingTitle": "1091|Ετοιμάζουμε την άσκηση ακρόασής σας",
+      "step1": "1092|Μεταφόρτωση ήχου",
+      "step2": "1093|Απομαγνητοφώνηση ομιλίας",
+      "step3": "1094|Δημιουργία ερωτήσεων",
+      "processError": "1095|Δεν μπορέσαμε να ετοιμάσουμε αυτόν τον ήχο. Δοκιμάστε ξανά.",
+      "tryAgain": "1096|Δοκιμάστε ξανά",
+      "chooseAnother": "1097|Επιλογή άλλου αρχείου",
+      "transcriptHidden": "1098|Η απομαγνητοφώνηση είναι κρυφή ώστε αυτό να παραμείνει πραγματική άσκηση ακρόασης."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "1099|Εισαγωγή βίντεο",
+      "subtitle": "1100|Ανεβάστε ένα βίντεο, πάρτε υπότιτλους και εξασκηθείτε με ερωτήσεις.",
+      "uploadTitle": "1101|Μεταφόρτωση αρχείου βίντεο",
+      "uploadFormats": "1102|MP4, MOV ή M4V · κάτω από 80 MB",
+      "step1": "1103|Προετοιμασία βίντεο",
+      "step2": "1104|Απομαγνητοφώνηση ομιλίας",
+      "step3": "1105|Δημιουργία υποτίτλων",
+      "subtitles": "1106|Υπότιτλοι",
+      "subtitlesOn": "1107|Υπότιτλοι ενεργοί",
+      "subtitlesOff": "1108|Υπότιτλοι ανενεργοί",
+      "noSubtitles": "1109|Δεν υπάρχουν υπότιτλοι για αυτό το βίντεο.",
+      "tapWord": "1110|Πατήστε μια λέξη για να τη μεταφράσετε.",
+      "questionsLocked": "1111|Οι ερωτήσεις ξεκλειδώνουν αφού δείτε ολόκληρο το βίντεο."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "1112|Μετάφραση λέξης",
+      "pickSet": "1113|Επιλέξτε σετ",
+      "createSet": "1114|Δημιουργία σετ",
+      "addToSet": "1115|Προσθήκη στο σετ",
+      "noSets": "1116|Δεν έχετε σετ ακόμη. Δημιουργήστε ένα παρακάτω.",
+      "setNamePlaceholder": "1117|π.χ. Λέξεις από βίντεο",
+      "createAndAdd": "1118|Δημιουργία και προσθήκη λέξης",
+      "saved": "1119|Αποθηκεύτηκε στο «{{set}}»."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "1120|Αποθηκευμένη εξάσκηση",
+      "subtitle": "1121|Συνεχίστε συνεδρίες και δείτε τα λάθη σας στην ακρόαση.",
+      "emptyTitle": "1122|Δεν υπάρχουν αποθηκευμένες συνεδρίες",
+      "emptyBody": "1123|Ολοκληρώστε ή διακόψτε μια συνεδρία ακρόασης και θα εμφανιστεί εδώ.",
+      "continueEyebrow": "1124|Συνέχεια ακρόασης",
+      "percentComplete": "1125|{{percent}} % ολοκληρώθηκε",
+      "continue": "1126|Συνέχεια",
+      "review": "1127|Ανασκόπηση",
+      "delete": "1128|Διαγραφή συνεδρίας",
+      "deleteConfirm": "1129|Διαγραφή του «{{title}}»; Η ενέργεια δεν αναιρείται.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "1130|Πρόχειρο",
+        "inProgress": "1131|Σε εξέλιξη",
+        "completed": "1132|Ολοκληρωμένη"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "1133|Τρόποι εξάσκησης",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "1134|Πρόοδος σήμερα",
+      "subtitle": "1135|εξάσκησης στην ομιλία"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1136|Σύντομα",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "1137|Συζήτηση με AI",
+        "subtitle": "1138|Μιλήστε με έναν δάσκαλο AI σε πραγματικό χρόνο."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "1139|Ελεύθερη ομιλία",
+        "subtitle": "1140|Μιλήστε για θέματα που δημιουργούνται και πάρτε σχόλια."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "1141|Περιγραφή εικόνας",
+        "subtitle": "1142|Περιγράψτε εικόνες και μάθετε χρήσιμο λεξιλόγιο."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "1143|Λειτουργία debate",
+        "subtitle": "1144|Συζητήστε θέματα και χτίστε τα επιχειρήματά σας."
       },
       "shadowing": {
-        "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "title": "1145|Shadowing",
+        "subtitle": "1146|Επαναλάβετε φράσεις και βελτιώστε την προφορά σας."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "1147|Προπονητής προφοράς",
+        "subtitle": "1148|Εστιάστε σε δύσκολους ήχους και λέξεις."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "1149|Ομιλία",
+      "stop": "1150|Διακοπή",
+      "listening": "1151|Ακούμε…",
+      "placeholder": "1152|Γράψτε την απάντησή σας…",
+      "noVoice": "1153|Αυτό το πρόγραμμα περιήγησης δεν υποστηρίζει φωνητική εισαγωγή — γράψτε την απάντησή σας."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
-      "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "title": "1154|Συζήτηση με AI",
+      "subtitle": "1155|Μιλήστε με έναν δάσκαλο AI σε πραγματικό χρόνο.",
+      "topic": "1156|Θέμα",
+      "scenarios": "1157|Σενάρια",
+      "autoTopic": "1158|Έκπληξέ με",
+      "autoTopicHint": "1159|Θα δημιουργήσουμε ένα φρέσκο θέμα για εσάς.",
+      "length": "1160|Διάρκεια",
+      "min": "1161|λεπτά",
+      "start": "1162|Έναρξη συζήτησης",
+      "starting": "1163|Ξεκινάμε…",
+      "startError": "1164|Δεν ήταν δυνατή η έναρξη της συζήτησης. Δοκιμάστε ξανά.",
+      "end": "1165|Τέλος",
+      "dismiss": "1166|Απόρριψη",
+      "hint": "1167|Βοήθεια",
+      "getHint": "1168|Θέλετε βοήθεια;",
+      "hintLoading": "1169|Σκεφτόμαστε…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "1170|Η εξάσκηση ολοκληρώθηκε",
+      "generating": "1171|Αναλύουμε την ομιλία σας…",
+      "overall": "1172|Συνολική βαθμολογία",
+      "corrections": "1173|Διορθώσεις",
+      "transcript": "1174|Απομαγνητοφώνηση",
+      "practiceAgain": "1175|Νέα εξάσκηση",
+      "back": "1176|Πίσω στην Ομιλία"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
-      "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "title": "1177|Ελεύθερη ομιλία",
+      "subtitle": "1178|Μιλήστε ελεύθερα για ένα θέμα και πάρτε σχόλια.",
+      "preview": "1179|Προεπισκόπηση",
+      "autoTopic": "1180|Θέμα από AI",
+      "autoTopicHint": "1181|Όταν ξεκινήσετε, θα διαλέξουμε φρέσκο θέμα για {{language}} · {{level}}.",
+      "auto": "1182|Αυτόματο",
+      "start": "1183|Έναρξη Ελεύθερης ομιλίας",
+      "generating": "1184|Δημιουργία θέματος…",
+      "generatingHint": "1185|Διαλέγουμε κάτι που ταιριάζει στο επίπεδό σας.",
+      "fallbackTopic": "1186|Δεν ήταν δυνατή η δημιουργία θέματος. Χρησιμοποιούμε εφεδρικό.",
+      "transcript": "1187|Απομαγνητοφώνηση",
+      "transcriptHint": "1188|Η απομαγνητοφώνησή σας θα εμφανίζεται εδώ καθώς μιλάτε.",
+      "startSpeaking": "1189|Αρχίστε να μιλάτε"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "1190|Περιγραφή εικόνας",
+      "subtitle": "1191|Περιγράψτε ό,τι βλέπετε και πάρτε σχόλια.",
+      "start": "1192|Έναρξη Περιγραφής εικόνας",
+      "prompt": "1193|Περιγράψτε τι βλέπετε σε αυτή την εικόνα.",
+      "tryToMention": "1194|Δοκιμάστε να αναφέρετε:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "1195|ανθρώπους",
+        "objects": "1196|αντικείμενα",
+        "actions": "1197|ενέργειες",
+        "colors": "1198|χρώματα",
+        "emotions": "1199|συναισθήματα"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "1200|Φόρτωση φωτογραφίας…",
+      "retry": "1201|Δοκιμάστε ξανά",
+      "newPhoto": "1202|Νέα φωτογραφία",
+      "imageAlt": "1203|Φωτογραφία προς περιγραφή",
+      "photoBy": "1204|Φωτογραφία:",
+      "onUnsplash": "1205|στο Unsplash",
+      "startDescribing": "1206|Αρχίστε να περιγράφετε"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "1207|Λειτουργία debate",
+      "subtitle": "1208|Υπερασπιστείτε την πλευρά σας απέναντι σε αντίπαλο AI.",
+      "start": "1209|Έναρξη debate",
+      "pickSide": "1210|Η πλευρά σας",
+      "preparing": "1211|Ετοιμάζουμε το θέμα του debate…",
+      "roundOf": "1212|Γύρος {{current}} από {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "1213|Συμφωνώ",
+          "subtitle": "1214|Υπερασπιστείτε τη θέση"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "1215|Διαφωνώ",
+          "subtitle": "1216|Επιχειρηματολογήστε εναντίον"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "1217|Έκπληξέ με",
+          "subtitle": "1218|Διαλέγουμε εμείς πλευρά για εσάς"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "1219|Ακούστε",
+      "playing": "1220|Αναπαραγωγή…",
+      "record": "1221|Εγγραφή",
+      "stop": "1222|Διακοπή",
+      "playMine": "1223|Ακούστε τη δική μου",
+      "noRecording": "1224|Αυτό το πρόγραμμα περιήγησης δεν υποστηρίζει εγγραφή — μπορείτε πάντως να ακούτε και να επαναλαμβάνετε."
     },
     "shadowing": {
-      "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "title": "1225|Shadowing",
+      "subtitle": "1226|Ακούστε, επαναλάβετε και συγκριθείτε.",
+      "start": "1227|Έναρξη Shadowing",
+      "category": "1228|Κατηγορία",
+      "howItWorks": "1229|Ακούστε τη φράση, επαναλάβετέ την δυνατά ενώ ηχογραφείτε, μετά ακούστε τη δική σας και συγκρίνετε τον ρυθμό.",
+      "loading": "1230|Δημιουργία φράσεων…",
+      "phrase": "1231|Φράση",
+      "previous": "1232|Προηγούμενη",
+      "nextPhrase": "1233|Επόμενη φράση",
+      "finish": "1234|Τέλος",
+      "changeSettings": "1235|Αλλαγή ρυθμίσεων",
+      "done": "1236|{{count}} έτοιμες",
+      "allDone": "1237|Εξασκηθήκατε σε όλες τις φράσεις!",
+      "newSet": "1238|Νέο σετ"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "1239|Προπονητής προφοράς",
+      "subtitle": "1240|Εστιάστε σε δύσκολους ήχους και λέξεις.",
+      "start": "1241|Έναρξη προπόνησης",
+      "focus": "1242|Εστίαση",
+      "difficulty": "1243|Δυσκολία",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "1244|Εύκολο",
+        "balanced": "1245|Ισορροπημένο",
+        "hard": "1246|Δύσκολο"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "1247|Δημιουργία ασκήσεων…",
+      "sound": "1248|Ήχος",
+      "scoringUnavailable": "1249|Η αυτόματη βαθμολόγηση προφοράς δεν έχει ρυθμιστεί ακόμη στον διακομιστή, οπότε δεν εμφανίζεται βαθμολογία. Η ακρόαση, η εγγραφή και η αναπαραγωγή λειτουργούν."
     }
   },
   "profile": {
-    "interfaceLanguage": "Interface language",
+    "interfaceLanguage": "1250|Γλώσσα διεπαφής",
     "password": {
-      "title": "Create a password",
-      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
-      "save": "Save password",
-      "saving": "Saving...",
-      "savedInfo": "Password created. You can sign in with your email now too."
+      "title": "1251|Δημιουργήστε κωδικό",
+      "body": "1252|Ο λογαριασμός σας δημιουργήθηκε με Google, οπότε δεν έχει κωδικό — τα πεδία email και κωδικού δεν μπορούν να σας συνδέσουν. Προσθέστε έναν και θα δουλεύουν και οι δύο τρόποι.",
+      "save": "1253|Αποθήκευση κωδικού",
+      "saving": "1254|Αποθήκευση...",
+      "savedInfo": "1255|Ο κωδικός δημιουργήθηκε. Τώρα μπορείτε να συνδέεστε και με το email σας."
     }
   },
   "units": {
-    "min": "min",
-    "words": "words"
+    "min": "1256|λεπτά",
+    "words": "1257|λέξεις"
   },
   "link": {
-    "title": "Sign in with a link",
-    "subtitle": "We'll email you a one-time link. No password to remember.",
-    "send": "Send the link",
-    "sending": "Sending...",
-    "sentInfo": "Link sent. Check your email.",
-    "sentTitle": "Check your email",
-    "sentBody": "We sent a sign-in link to",
-    "useAnotherEmail": "Use another email",
-    "backToPassword": "Sign in with a password instead"
+    "title": "1258|Σύνδεση με σύνδεσμο",
+    "subtitle": "1259|Θα σας στείλουμε email με σύνδεσμο μίας χρήσης. Κανένας κωδικός για απομνημόνευση.",
+    "send": "1260|Αποστολή συνδέσμου",
+    "sending": "1261|Αποστολή...",
+    "sentInfo": "1262|Ο σύνδεσμος στάλθηκε. Δείτε το email σας.",
+    "sentTitle": "1263|Δείτε το email σας",
+    "sentBody": "1264|Στείλαμε σύνδεσμο σύνδεσης στο",
+    "useAnotherEmail": "1265|Χρήση άλλου email",
+    "backToPassword": "1266|Σύνδεση με κωδικό"
   },
   "action": {
-    "working": "One moment...",
-    "continue": "Continue",
-    "confirmEmailTitle": "Confirm your email",
-    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
-    "resetTitle": "New password",
-    "resetSubtitle": "Choose a new password for",
-    "newPassword": "New password",
-    "confirmPassword": "Repeat password",
-    "savePassword": "Save password",
-    "resetDoneTitle": "Password updated",
-    "resetDoneBody": "You can sign in with your new password now.",
-    "failedTitle": "That link didn't work",
-    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
-    "backToSignIn": "Back to sign in"
+    "working": "1267|Μια στιγμή...",
+    "continue": "1268|Συνέχεια",
+    "confirmEmailTitle": "1269|Επιβεβαιώστε το email σας",
+    "confirmEmailBody": "1270|Αυτός ο σύνδεσμος άνοιξε σε άλλο πρόγραμμα περιήγησης. Εισαγάγετε τη διεύθυνση στην οποία στάλθηκε και θα ολοκληρώσουμε τη σύνδεση.",
+    "resetTitle": "1271|Νέος κωδικός",
+    "resetSubtitle": "1272|Επιλέξτε νέο κωδικό για",
+    "newPassword": "1273|Νέος κωδικός",
+    "confirmPassword": "1274|Επαναλάβετε τον κωδικό",
+    "savePassword": "1275|Αποθήκευση κωδικού",
+    "resetDoneTitle": "1276|Ο κωδικός ενημερώθηκε",
+    "resetDoneBody": "1277|Τώρα μπορείτε να συνδεθείτε με τον νέο σας κωδικό.",
+    "failedTitle": "1278|Αυτός ο σύνδεσμος δεν λειτούργησε",
+    "failedBody": "1279|Ίσως έχει ήδη χρησιμοποιηθεί ή έληξε. Ζητήστε νέον από την οθόνη σύνδεσης.",
+    "backToSignIn": "1280|Πίσω στη σύνδεση"
   },
   "common": {
-    "cancel": "Cancel",
-    "delete": "Delete",
+    "cancel": "1281|Άκυρο",
+    "delete": "1282|Διαγραφή",
     "view": {
-      "label": "View",
-      "rows": "List",
-      "grid": "Grid"
+      "label": "1283|Προβολή",
+      "rows": "1284|Λίστα",
+      "grid": "1285|Πλέγμα"
     }
   },
   "practice": {
     "language": {
-      "label": "Language",
-      "search": "Search a language",
-      "noMatch": "No language matches that.",
-      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+      "label": "1286|Γλώσσα",
+      "search": "1287|Αναζήτηση γλώσσας",
+      "noMatch": "1288|Καμία γλώσσα δεν ταιριάζει.",
+      "noVoice": "1289|Το πρόγραμμα περιήγησής σας δεν έχει φωνή για {{language}}, οπότε ο δάσκαλος δεν θα μιλήσει αυτή τη γλώσσα. Προσθέστε το γλωσσικό πακέτο στις ρυθμίσεις του συστήματος ή επιλέξτε άλλη γλώσσα."
     }
   }
 }

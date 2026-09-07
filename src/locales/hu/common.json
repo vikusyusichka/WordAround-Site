@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "WordAround",
-    "tagline": "Learn languages, actively."
+    "name": "1|WordAround",
+    "tagline": "2|Tanulj nyelveket aktívan."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "3|Tanulj szavakat játékosan\\nés egyszerűen",
+    "start": "4|Kezdjük"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back",
-    "signUpTitle": "Create your account",
-    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
-    "name": "Name",
-    "namePlaceholder": "What should we call you?",
-    "orWithEmail": "or with email",
-    "signUpWithGoogle": "Sign up with Google",
-    "passwordHint": "At least {{min}} characters",
-    "magicLinkCta": "Sign in with an email link",
-    "creatingAccount": "Creating account..."
+    "welcomeBack": "5|Üdv újra!",
+    "subtitle": "6|Jelentkezz be a tanulás folytatásához",
+    "email": "7|E-mail",
+    "emailPlaceholder": "8|Add meg az e-mail-címed",
+    "password": "9|Jelszó",
+    "passwordPlaceholder": "10|Add meg a jelszavad",
+    "forgotPassword": "11|Elfelejtetted a jelszót?",
+    "signIn": "12|Bejelentkezés",
+    "signingIn": "13|Bejelentkezés...",
+    "signUp": "14|Regisztráció",
+    "signOut": "15|Kijelentkezés",
+    "continueWithGoogle": "16|Folytatás Google-fiókkal",
+    "createAccount": "17|Fiók létrehozása",
+    "accountCreatedInfo": "18|A fiók elkészült. Küldtünk egy megerősítő e-mailt.",
+    "resetEmailSent": "19|Elküldtük a jelszó-visszaállító e-mailt",
+    "showPassword": "20|Jelszó megjelenítése",
+    "hidePassword": "21|Jelszó elrejtése",
+    "back": "22|Vissza",
+    "signUpTitle": "23|Hozd létre a fiókod",
+    "signUpSubtitle": "24|Napi néhány perc, és a szókincsed nő",
+    "name": "25|Név",
+    "namePlaceholder": "26|Hogy szólítsunk?",
+    "orWithEmail": "27|vagy e-maillel",
+    "signUpWithGoogle": "28|Regisztráció Google-fiókkal",
+    "passwordHint": "29|Legalább {{min}} karakter",
+    "magicLinkCta": "30|Bejelentkezés e-mailes hivatkozással",
+    "creatingAccount": "31|Fiók létrehozása..."
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "We'll open your learning right away — no need to come back here",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "32|Erősítsd meg az e-mail-címed",
+    "subtitle": "33|Még egy lépés, mielőtt belevágsz",
+    "sentTo": "34|Megerősítő hivatkozást küldtünk ide:",
+    "fallbackEmail": "35|az e-mail-címedre",
+    "step1": "36|Nyisd meg az e-mailt a postafiókodban",
+    "step2": "37|Koppints a megerősítő hivatkozásra",
+    "step3": "38|Rögtön meg is nyitjuk a tanulást — ide nem kell visszajönnöd",
+    "checkButton": "39|Megerősítettem az e-mail-címem",
+    "checking": "40|Ellenőrzés...",
+    "resend": "41|E-mail újraküldése",
+    "useAnotherAccount": "42|Másik fiók használata",
+    "badgeInbox": "43|Nézd meg a postafiókod",
+    "badgeConfirm": "44|Erősítsd meg",
+    "badgeDone": "45|Kész",
+    "resentInfo": "46|Újraküldtük a megerősítő e-mailt",
+    "notVerifiedYet": "47|Az e-mail-cím még nincs megerősítve"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 8 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "emailInUse": "This account already exists",
-    "weakPassword": "This password is too weak",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again",
-    "nameRequired": "Name is required",
-    "passwordsDoNotMatch": "Passwords don't match",
-    "actionExpired": "This link has expired. Request a new one.",
-    "actionInvalid": "This link is no longer valid.",
-    "userDisabled": "This account has been disabled.",
-    "requiresRecentLogin": "For security, sign in again and then repeat this.",
-    "passwordAlreadySet": "This account already has a password.",
-    "linkNoEmail": "Enter the email the link was sent to"
+    "emailRequired": "48|Az e-mail-cím kötelező",
+    "emailInvalid": "49|Adj meg érvényes e-mail-címet",
+    "emailFirst": "50|Előbb add meg az e-mail-címed",
+    "passwordRequired": "51|A jelszó kötelező",
+    "passwordTooShort": "52|A jelszónak legalább 8 karakterből kell állnia",
+    "invalidEmail": "53|Érvénytelen e-mail-formátum",
+    "wrongPassword": "54|Hibás e-mail-cím vagy jelszó. Ha Google-fiókkal regisztráltál, használd a Google gombot.",
+    "userNotFound": "55|Hibás e-mail-cím vagy jelszó. Ha Google-fiókkal regisztráltál, használd a Google gombot.",
+    "invalidCredential": "56|Hibás e-mail-cím vagy jelszó. Ha Google-fiókkal regisztráltál, használd a Google gombot.",
+    "emailInUse": "57|Ez a fiók már létezik",
+    "weakPassword": "58|Ez a jelszó túl gyenge",
+    "network": "59|Hálózati hiba. Ellenőrizd az internetkapcsolatod",
+    "tooManyRequests": "60|Túl sok próbálkozás. Próbáld később",
+    "differentCredential": "61|Ezt az e-mail-címet már más bejelentkezési móddal használják",
+    "noActiveAccount": "62|Nem található aktív fiók",
+    "default": "63|A bejelentkezés nem sikerült. Próbáld újra",
+    "nameRequired": "64|A név kötelező",
+    "passwordsDoNotMatch": "65|A jelszavak nem egyeznek",
+    "actionExpired": "66|Ez a hivatkozás lejárt. Kérj újat.",
+    "actionInvalid": "67|Ez a hivatkozás már nem érvényes.",
+    "userDisabled": "68|Ezt a fiókot letiltották.",
+    "requiresRecentLogin": "69|Biztonsági okból jelentkezz be újra, majd ismételd meg ezt.",
+    "passwordAlreadySet": "70|Ehhez a fiókhoz már tartozik jelszó.",
+    "linkNoEmail": "71|Add meg azt az e-mail-címet, amelyre a hivatkozás érkezett"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
-    "sets": "Sets",
-    "notes": "Notes",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "home": "72|Kezdőlap",
+    "speaking": "73|Beszéd",
+    "listening": "74|Hallás utáni értés",
+    "reading": "75|Olvasás",
+    "writing": "76|Írás",
+    "folders": "77|Mappák",
+    "sets": "78|Csomagok",
+    "notes": "79|Jegyzetek",
+    "profile": "80|Profil",
+    "create": "81|Új",
+    "menu": "82|Menü",
+    "closeMenu": "83|Menü bezárása",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "84|Gyakorlás",
+      "library": "85|Könyvtár"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
-    "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
-    "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "create": "86|Új mappa",
+    "loading": "87|Mappák betöltése…",
+    "loadError": "88|Nem sikerült betölteni a mappáidat.",
+    "emptyTitle": "89|Még nincs mappád",
+    "emptyBody": "90|Hozd létre az első mappád, hogy rendezd a csomagjaidat.",
+    "setCount": "91|{{count}} csomag",
+    "setCount_one": "92|{{count}} csomag",
+    "newTitle": "93|Új mappa",
+    "newSubtitle": "94|Tedd egy helyre az összetartozó csomagokat.",
+    "editTitle": "95|Mappa szerkesztése",
+    "name": "96|Név",
+    "namePlaceholder": "97|pl. Utazás",
+    "description": "98|Leírás",
+    "descriptionPlaceholder": "99|Nem kötelező",
+    "color": "100|Szín",
+    "save": "101|Mentés",
+    "saving": "102|Mentés…",
+    "cancel": "103|Mégse",
+    "edit": "104|Mappa szerkesztése",
+    "delete": "105|Mappa törlése",
+    "deleteConfirm": "106|Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
+    "backToFolders": "107|Vissza a mappákhoz",
+    "notFoundTitle": "108|A mappa nem található",
+    "notFoundBody": "109|Lehet, hogy ezt a mappát törölték.",
+    "noSetsInFolder": "110|Ebben a mappában még nincs csomag.",
+    "saveError": "111|A mentés nem sikerült. Próbáld újra.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "112|A mappa neve kötelező.",
+      "nameTooLong": "113|A mappa neve legfeljebb 80 karakter lehet.",
+      "descTooLong": "114|A leírás legfeljebb 120 karakter lehet."
     },
-    "optional": "(optional)",
-    "preview": "Preview",
-    "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "optional": "115|(nem kötelező)",
+    "preview": "116|Előnézet",
+    "previewPlaceholder": "117|Új mappa",
+    "deleteConfirmTitle": "118|Törlöd ezt a mappát?"
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets",
-    "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?",
-    "editTitle": "Edit set",
-    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
-    "save": "Save changes",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "create": "119|Új csomag",
+    "loading": "120|Csomagok betöltése…",
+    "loadError": "121|Nem sikerült betölteni a csomagjaidat.",
+    "emptyTitle": "122|Még nincs csomagod",
+    "emptyBody": "123|Hozd létre az első kártyacsomagod az Új gombbal.",
+    "cardCount": "124|{{count}} kártya",
+    "cardCount_one": "125|{{count}} kártya",
+    "keepPracticing": "126|Gyakorolj tovább",
+    "delete": "127|Csomag törlése",
+    "deleteConfirm": "128|Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
+    "notFoundTitle": "129|A csomag nem található",
+    "notFoundBody": "130|Lehet, hogy ezt a csomagot törölték.",
+    "backToSets": "131|Vissza a csomagokhoz",
+    "edit": "132|Csomag szerkesztése",
+    "deleteConfirmTitle": "133|Törlöd ezt a csomagot?",
+    "editTitle": "134|Csomag szerkesztése",
+    "editSubtitle": "135|Módosítsd a címet, a színt, az ikont vagy a mappát. A kártyák a helyükön maradnak.",
+    "save": "136|Módosítások mentése",
+    "saving": "137|Mentés…",
+    "cancel": "138|Mégse",
+    "saveError": "139|A mentés nem sikerült. Próbáld újra."
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
-    "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "title": "140|Új csomag",
+    "subtitle": "141|Adj hozzá szavakat, és szabd testre a csomagot.",
+    "infoSection": "142|Csomag adatai",
+    "setTitle": "143|Cím",
+    "setTitlePlaceholder": "144|pl. Útiszótár",
+    "setDescription": "145|Leírás",
+    "setDescriptionPlaceholder": "146|Nem kötelező",
+    "privacy": "147|Adatvédelem",
+    "private": "148|Privát",
+    "public": "149|Nyilvános",
+    "cardsSection": "150|Kártyák",
+    "addCard": "151|Kártya hozzáadása",
+    "cardN": "152|{{n}}. kártya",
+    "removeCard": "153|Kártya eltávolítása",
+    "word": "154|Szó",
+    "translation": "155|Fordítás",
+    "example": "156|Példa (nem kötelező)",
+    "addImage": "157|Kép hozzáadása",
+    "removeImage": "158|Kép eltávolítása",
+    "customizeSection": "159|Testreszabás",
+    "color": "160|Szín",
+    "icon": "161|Ikon",
+    "folder": "162|Mappa",
+    "noFolder": "163|Nincs mappa",
+    "previewSection": "164|Előnézet",
+    "previewPlaceholder": "165|A csomag címe",
+    "save": "166|Csomag létrehozása",
+    "saving": "167|Mentés…",
+    "cancel": "168|Mégse",
+    "saveError": "169|A mentés nem sikerült. Próbáld újra.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "170|A csomag címe kötelező.",
+      "titleTooLong": "171|A csomag címe legfeljebb 150 karakter lehet.",
+      "descTooLong": "172|A leírás legfeljebb 200 karakter lehet.",
+      "noValidCards": "173|Adj hozzá legalább egy kártyát szóval és fordítással.",
+      "exampleTooLong": "174|A kártyák példái legfeljebb 150 karakter lehetnek."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "imageTimeout": "175|A kép feltöltése időtúllépés miatt megszakadt. Ellenőrizd a kapcsolatot, és próbáld újra.",
     "import": {
-      "button": "Import",
-      "title": "Import cards",
-      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
-      "close": "Close import",
-      "dataSection": "Your data",
-      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
-      "separatorsSection": "Separators",
-      "betweenTermAndDefinition": "Between word and translation",
-      "betweenCards": "Between cards",
-      "tab": "Tab",
-      "comma": "Comma",
-      "newline": "New line",
-      "semicolon": "Semicolon",
-      "custom": "Custom",
-      "customPlaceholder": "e.g. —",
-      "previewSection": "Preview",
-      "previewEmpty": "Nothing to preview yet.",
-      "noDefinition": "No translation",
-      "confirm": "Add cards"
+      "button": "176|Importálás",
+      "title": "177|Kártyák importálása",
+      "subtitle": "178|Másold és illeszd be az adataidat — Wordből, Excelből, Google Docsból és hasonlókból.",
+      "close": "179|Importálás bezárása",
+      "dataSection": "180|Az adataid",
+      "placeholder": "181|1. szó\\t1. jelentés\\n2. szó\\t2. jelentés\\n3. szó\\t3. jelentés",
+      "separatorsSection": "182|Elválasztók",
+      "betweenTermAndDefinition": "183|Szó és fordítás között",
+      "betweenCards": "184|Kártyák között",
+      "tab": "185|Tabulátor",
+      "comma": "186|Vessző",
+      "newline": "187|Új sor",
+      "semicolon": "188|Pontosvessző",
+      "custom": "189|Egyéni",
+      "customPlaceholder": "190|pl. —",
+      "previewSection": "191|Előnézet",
+      "previewEmpty": "192|Még nincs mit megjeleníteni.",
+      "noDefinition": "193|Nincs fordítás",
+      "confirm": "194|Kártyák hozzáadása"
     },
     "iconPicker": {
-      "open": "More icons",
-      "title": "Choose icon",
-      "search": "Search symbol",
-      "close": "Close",
-      "empty": "No icons match that name."
+      "open": "195|További ikonok",
+      "title": "196|Válassz ikont",
+      "search": "197|Szimbólum keresése",
+      "close": "198|Bezárás",
+      "empty": "199|Nincs ilyen nevű ikon."
     },
     "iconGroup": {
-      "learning": "Learning",
-      "languages": "Languages",
-      "nature": "Nature",
-      "health": "Health",
-      "food": "Food",
-      "travel": "Travel",
-      "work": "Work",
-      "tech": "Tech",
-      "creativity": "Creativity",
-      "general": "General"
+      "learning": "200|Tanulás",
+      "languages": "201|Nyelvek",
+      "nature": "202|Természet",
+      "health": "203|Egészség",
+      "food": "204|Étel",
+      "travel": "205|Utazás",
+      "work": "206|Munka",
+      "tech": "207|Technológia",
+      "creativity": "208|Kreativitás",
+      "general": "209|Általános"
     }
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
-      "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "flashcards": "210|Kártyák",
+      "folders": "211|Mappák",
+      "sets": "212|Csomagok",
+      "create": "213|Új",
+      "profile": "214|Profil",
+      "speaking": "215|Beszéd",
+      "listening": "216|Hallás utáni értés",
+      "reading": "217|Olvasás",
+      "writing": "218|Írás"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "219|Válassz csomagot a gyakorláshoz",
+      "folders": "220|Kezeld a mappáidat",
+      "sets": "221|Kezeld a kártyacsomagjaidat",
+      "create": "222|Hozz létre új tanulócsomagot",
+      "speaking": "223|Gyakorold a beszédkészséged.",
+      "listening": "224|Edzd a füled, hogy természetesen értsd a nyelvet.",
+      "reading": "225|Olvass és ismételj a nyelven készült anyagokat.",
+      "writing": "226|Gyakorold aktívan a nyelvet."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "227|BESZÉD",
+      "listening": "228|HALLÁS UTÁNI ÉRTÉS",
+      "reading": "229|OLVASÁS",
+      "writing": "230|ÍRÁS"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "231|Mai cél",
+      "left": "232|Még {{count}} szó van hátra"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "233|Ma megtanult",
+      "words": "234|szó",
+      "accuracy": "235|Pontosság",
+      "greatJob": "236|Szép munka!",
+      "streak": "237|Sorozat",
+      "days": "238|nap"
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "239|Tanulás folytatása",
+    "yourSets": "240|A csomagjaid",
+    "viewAll": "241|Összes megtekintése",
+    "review": "242|Ismétlés",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "243|Még nincs csomagod",
+      "emptyBody": "244|Hozd létre az első kártyacsomagod az Új gombbal."
     },
     "create": {
-      "folder": "Folder",
-      "set": "Set",
-      "text": "Text",
-      "audio": "Audio",
-      "essay": "Essay"
+      "folder": "245|Mappa",
+      "set": "246|Csomag",
+      "text": "247|Szöveg",
+      "audio": "248|Hang",
+      "essay": "249|Esszé"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "250|{{title}} — hamarosan"
     },
     "progress": {
       "subtitle": {
-        "speaking": "of speaking practice",
-        "listening": "of listening practice",
-        "reading": "of reading practice",
-        "writing": "of writing practice"
+        "speaking": "251|beszédgyakorlás",
+        "listening": "252|hallás utáni gyakorlás",
+        "reading": "253|olvasásgyakorlás",
+        "writing": "254|írásgyakorlás"
       }
     },
     "dailyGoal": {
-      "title": "Your goal for today",
-      "body": "Pick what you want to practise today — the card below counts against it.",
-      "chosenBody": "This is what today is about.",
-      "howMuch": "How much?",
-      "change": "Change"
+      "title": "255|A mai célod",
+      "body": "256|Válaszd ki, mit szeretnél ma gyakorolni — az alábbi kártya ebbe számít bele.",
+      "chosenBody": "257|A mai nap erről szól.",
+      "howMuch": "258|Mennyit?",
+      "change": "259|Módosítás"
     },
     "lastNote": {
-      "title": "Last note you read"
+      "title": "260|Legutóbb olvasott jegyzet"
     }
   },
   "categories": {
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing"
+    "speaking": "261|Beszéd",
+    "listening": "262|Hallás utáni értés",
+    "reading": "263|Olvasás",
+    "writing": "264|Írás"
   },
   "phase0": {
-    "title": "WordAround",
-    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
+    "title": "265|WordAround",
+    "subtitle": "266|A 0. fázis fut. A designtokenek betöltve, a Firebase csatlakoztatva."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "267|Fordítás",
+    "known": "268|Tudtam",
+    "unknown": "269|Még tanulom",
+    "mastered": "270|Tudom",
+    "shuffle": "271|Keverés",
+    "trackProgress": "272|Haladás követése",
+    "speak": "273|Kimondás",
+    "roundDone": "274|Kör kész",
+    "knewCount": "275|{{known}} / {{total}} sikerült",
+    "repeatUnknown": "276|{{count}} nem tudott ismétlése",
+    "restart": "277|Újrakezdés",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "278|Mind",
+      "studied": "279|Tanult",
+      "remaining": "280|Hátralévő",
+      "mastered": "281|Tudott"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "282|Kártya hozzáadása",
+    "editCard": "283|Kártya szerkesztése",
+    "deleteCard": "284|Kártya törlése",
+    "deleteCardConfirm": "285|Törlöd ezt a kártyát?",
+    "emptyPrompt": "286|Ebben a csomagban még nincs kártya. Add hozzá az elsőt.",
+    "save": "287|Mentés",
+    "cancel": "288|Mégse"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "289|Mai haladás",
+      "unit": "290|szó",
+      "subtitle": "291|írásgyakorlás"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "292|Gyakorlómódok",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "293|Írás a csomagokból",
+        "subtitle": "294|Gyakorold a csomagjaidban lévő szavak helyesírását és leírását."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "295|Esszék",
+        "subtitle": "296|Írj szövegeket, és kapj MI-visszajelzést a nyelvtanról és a stílusról."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "297|Hamarosan"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "298|Válassz csomagot",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "299|Nincs szavakat tartalmazó csomag",
+        "subtitle": "300|Hozz létre legalább egy kártyát tartalmazó csomagot, mielőtt írásgyakorlásba kezdesz."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "301|{{count}} szó",
+      "wordsCount_one": "302|{{count}} szó",
+      "close": "303|Bezárás"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "304|Írás a csomagokból",
+      "subtitle": "305|Írd be a fordítást, és nyomj Entert.",
+      "translateHint": "306|Fordítsd a saját nyelvedre",
+      "hint": "307|Tipp",
+      "skip": "308|Kihagyás",
+      "submit": "309|Ellenőrzés",
+      "inputPlaceholder": "310|Írj ide…",
+      "loading": "311|Csomag betöltése…",
+      "loadError": "312|Nem sikerült betölteni ezt a csomagot.",
+      "noCards": "313|Ebben a csomagban nincs kártya.",
+      "back": "314|Vissza",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "315|Beállítások",
+        "trainingMode": "316|Gyakorlási mód",
+        "difficulty": "317|Nehézség"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "318|Szó → Fordítás",
+        "translationToWord": "319|Fordítás → Szó"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "320|Könnyű",
+        "medium": "321|Közepes",
+        "hard": "322|Nehéz",
+        "easyDesc": "323|Korlátlan tipp, korlátlan kihagyás",
+        "mediumDesc": "324|1 betűnyi tipp, legfeljebb 25 % kihagyás",
+        "hardDesc": "325|Nincs tipp, nincs kihagyás, időre megy"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "326|Fordítsd a saját nyelvedre",
+        "translation": "327|Írd le az eredeti szót"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "328|{{count}} kihagyás maradt",
+      "skipsLeft_other": "329|{{count}} kihagyás maradt",
+      "seconds": "330|{{count}} mp",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "331|Kör kész!",
+          "subtitle": "332|Szép munka. Végigcsináltad ezt az íráskört."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "333|Lejárt az idő",
+          "subtitle": "334|A nehéz mód órája lenullázódott. Kezdd újra az első szótól."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "335|Rossz válasz",
+          "subtitle": "336|Nehéz módban egyetlen hiba lezárja a kört."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
+        "perfectTitle": "337|Tökéletes kör!",
+        "perfectBody": "338|Hibátlanul teljesítetted a nehéz módot. Kihagyás nélkül. Tipp nélkül. Csak tudásból.",
+        "totalWords": "339|Összes szó",
+        "completedWords": "340|Megoldott szavak",
+        "skippedWords": "341|Kihagyott szavak",
+        "hintsUsed": "342|Felhasznált tippek",
+        "streak": "343|Sorozat",
+        "difficultyLabel": "344|Nehézség",
+        "word": "345|Szó",
+        "yourAnswer": "346|A te válaszod",
+        "correctAnswer": "347|Helyes válasz",
+        "tryAgain": "348|Újra"
       }
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "349|Esszék",
+      "subtitle": "350|A témát az MI választja. Írj, aztán kapsz visszajelzést.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "351|Javasolt",
+        "custom": "352|Saját téma"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "353|Írd meg a saját esszétémádat...",
+        "generate": "354|Feladat generálása"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "355|Téma generálása",
+        "regenerate": "356|Új téma"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "357|Nyelv",
+      "difficulty": "358|Nehézség",
       "task": {
-        "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips",
-        "taskLabel": "Task"
+        "time": "359|≈ {{count}} perc",
+        "wordRange": "360|{{min}}-{{max}} szó",
+        "quickTips": "361|Gyors tippek",
+        "taskLabel": "362|Feladat"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "363|Itt kezdd írni az esszédet...",
+        "wordCount": "364|{{count}} / {{min}}-{{max}} szó",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "365|Csak így tovább — legalább {{min}} szó kell.",
+          "aboveMaximum": "366|Túllépted a határt — próbáld tömöríteni.",
+          "valid": "367|A tartományon belül."
         },
-        "reset": "Reset"
+        "reset": "368|Visszaállítás"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "369|Előbb írj egy témát.",
+        "generationFailed": "370|Nem sikerült témát generálni. Próbáld újra."
       },
-      "generating": "Generating...",
+      "generating": "371|Generálás...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "372|Kérek tippet",
+        "remaining": "373|Maradt: {{remaining}}/{{limit}}",
+        "noneLeft": "374|Nincs több tipp",
+        "notAvailable": "375|Ezen a szinten nincsenek tippek",
+        "generating": "376|Tipp generálása...",
+        "error": "377|Nem sikerült tippet kérni. Próbáld újra.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "378|Tartalom",
+          "grammar": "379|Nyelvtan",
+          "vocabulary": "380|Szókincs",
+          "structure": "381|Szerkezet"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again.",
-        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
+        "button": "382|Esszém ellenőrzése",
+        "checking": "383|Ellenőrzés...",
+        "disabled": "384|Előbb férj bele a szótartományba",
+        "error": "385|Nem sikerült ellenőrizni az esszédet. Próbáld újra.",
+        "languageUnsupported": "386|A nyelvtani ellenőrzés a(z) {{language}} nyelvhez még nem érhető el."
       },
       "score": {
-        "title": "Essay score",
+        "title": "387|Az esszé pontszáma",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "388|Kiváló",
+          "veryGood": "389|Nagyon jó",
+          "good": "390|Jó",
+          "needsWork": "391|Van min javítani"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "392|Nyelvtan",
+          "vocabulary": "393|Szókincs",
+          "length": "394|Hossz",
+          "complexity": "395|Összetettség",
+          "relevance": "396|Témához illés",
+          "independence": "397|Önállóság"
         },
         "stat": {
-          "words": "Words",
-          "grammar": "Grammar",
-          "vocabStyle": "Vocab/style",
-          "hints": "Hints",
-          "translations": "Translations",
-          "synonyms": "Synonyms"
+          "words": "398|Szavak",
+          "grammar": "399|Nyelvtan",
+          "vocabStyle": "400|Szókincs/stílus",
+          "hints": "401|Tippek",
+          "translations": "402|Fordítások",
+          "synonyms": "403|Szinonimák"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
-        "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "sectionTitle": "404|Nyelvtani hibák",
+        "count_one": "405|{{count}} hiba",
+        "count_other": "406|{{count}} hiba",
+        "empty": "407|Nem találtunk nyelvtani hibát — szép munka!",
+        "original": "408|Eredeti:",
+        "suggestion": "409|Javaslat:",
+        "reason": "410|Indok:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "411|Nyelvtan",
+          "vocabulary": "412|Szókincs",
+          "style": "413|Stílus"
         },
         "save": {
-          "idle": "Save to Notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
+          "idle": "414|Mentés a jegyzetekbe",
+          "saving": "415|Mentés…",
+          "saved": "416|Mentve",
+          "duplicate": "417|Már mentve",
+          "failed": "418|Mentés újra"
         }
       },
       "helper": {
-        "translate": "Translate",
-        "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "translate": "419|Fordítás",
+        "synonym": "420|Szinonima",
+        "remaining": "421|Maradt: {{remaining}}",
+        "notAvailable": "422|Ezen a szinten nem érhető el"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "423|Fordítás",
+        "placeholder": "424|Adj meg egy szót vagy rövid kifejezést",
+        "submit": "425|Fordítás",
+        "submitting": "426|Fordítás..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "427|Szinonimák",
+        "placeholder": "428|Adj meg egy szót",
+        "submit": "429|Szinonimák keresése",
+        "submitting": "430|Keresés..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "431|Erről",
+        "to": "432|Erre",
+        "close": "433|Bezárás",
+        "noResult": "434|Nincs találat.",
+        "sameLanguage": "435|Válassz másik forrásnyelvet.",
+        "error": "436|A szolgáltatás átmenetileg nem érhető el."
       },
-      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
-      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
-      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
+      "saveMistakeConfirmTitle": "437|Mented ezt a hibát a jegyzetekbe?",
+      "saveMistakeConfirmBody": "438|Hibajegyzetként mentjük a következő javítással: „{{correction}}”.",
+      "autoSaveConfirmTitle": "439|Mented ezeket a hibákat a jegyzeteid közé?",
+      "autoSaveConfirmBody_one": "440|Ez az ellenőrzés {{count}} hibát talált. Ha mented, jegyzet lesz belőle, amely visszatér ismétlésre.",
+      "autoSaveConfirmBody_other": "441|Ez az ellenőrzés {{count}} hibát talált. Ha mented őket, jegyzetek lesznek belőlük, amelyek visszatérnek ismétlésre."
     },
     "grammar": {
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "subtitle": "442|Rendezd a nyelvtant témák szerint, világos, tagolt jegyzetekbe.",
+      "newTopic": "443|Új téma",
+      "topicsEmptyTitle": "444|Még nincs témád",
+      "topicsEmptyBody": "445|Hozd létre az első témát, hogy nyelvtani jegyzeteket gyűjthess.",
+      "notesCount_one": "446|{{count}} jegyzet",
+      "notesCount_other": "447|{{count}} jegyzet",
+      "deleteTopicConfirm": "448|Törlöd ezt: „{{title}}” és az összes jegyzetét? Ez nem vonható vissza.",
+      "notesEmptyTitle": "449|Még nincs jegyzeted",
+      "notesEmptyBody": "450|Add hozzá az első jegyzetet ehhez a témához.",
+      "newNote": "451|Új jegyzet",
+      "deleteNoteConfirm": "452|Törlöd ezt a jegyzetet? Ez nem vonható vissza.",
+      "loading": "453|Betöltés…",
+      "loadError": "454|Nem sikerült betölteni a nyelvtani jegyzeteidet.",
+      "notFoundTitle": "455|Nem található",
+      "notFoundBody": "456|Lehet, hogy ezt az elemet törölték.",
+      "back": "457|Vissza",
+      "updated": "458|Frissítve: {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel",
-        "language": "Language",
-        "languageNone": "Not set"
+        "newTitle": "459|Új téma",
+        "editTitle": "460|Téma szerkesztése",
+        "name": "461|Cím",
+        "namePlaceholder": "462|pl. Spanyol igék",
+        "description": "463|Leírás",
+        "descriptionPlaceholder": "464|Nem kötelező",
+        "color": "465|Szín",
+        "icon": "466|Ikon",
+        "save": "467|Mentés",
+        "cancel": "468|Mégse",
+        "language": "469|Nyelv",
+        "languageNone": "470|Nincs beállítva"
       },
       "noteType": {
-        "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "standard": "471|Általános",
+        "mistake": "472|Hiba",
+        "rule": "473|Szabály",
+        "comparison": "474|Összehasonlítás",
+        "cheatSheet": "475|Puska",
+        "exercise": "476|Gyakorlat"
       },
       "block": {
-        "heading": "Heading",
-        "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)",
-        "subheading": "Subheading",
-        "numberedList": "Numbered list",
-        "checklist": "Checklist",
-        "comparison": "Comparison",
-        "exercise": "Exercise",
-        "quiz": "Quiz",
-        "image": "Image",
-        "comparisonSecondary": "Second side",
-        "imageAdd": "Add / replace image",
-        "imageUploading": "Uploading…",
-        "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images."
+        "heading": "477|Címsor",
+        "paragraph": "478|Szöveg",
+        "bulletList": "479|Felsorolás",
+        "rule": "480|Szabály",
+        "example": "481|Példa",
+        "warning": "482|Figyelmeztetés",
+        "quote": "483|Idézet",
+        "divider": "484|Elválasztó",
+        "addBlock": "485|Blokk hozzáadása",
+        "addItem": "486|Elem hozzáadása",
+        "moveUp": "487|Fel",
+        "moveDown": "488|Le",
+        "remove": "489|Eltávolítás",
+        "secondaryPlaceholder": "490|Részlet / fordítás (nem kötelező)",
+        "subheading": "491|Alcím",
+        "numberedList": "492|Számozott lista",
+        "checklist": "493|Ellenőrzőlista",
+        "comparison": "494|Összehasonlítás",
+        "exercise": "495|Gyakorlat",
+        "quiz": "496|Kvíz",
+        "image": "497|Kép",
+        "comparisonSecondary": "498|Második oldal",
+        "imageAdd": "499|Kép hozzáadása / cseréje",
+        "imageUploading": "500|Feltöltés…",
+        "imageFailed": "501|A képet nem sikerült feltölteni.",
+        "imageSaveFirst": "502|Jelentkezz be a képek feltöltéséhez."
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…",
-        "subheading": "Subheading",
-        "numberedList": "List item",
-        "checklist": "Checklist item",
-        "comparison": "First side",
-        "exercise": "Practice instruction…",
-        "quiz": "Question",
-        "image": "Image caption"
+        "heading": "503|Címsor",
+        "paragraph": "504|Írd le a magyarázatod…",
+        "bulletList": "505|Listaelem",
+        "rule": "506|Magyarázd el a nyelvtani szabályt…",
+        "example": "507|Adj hozzá egy példát…",
+        "warning": "508|Gyakori hiba vagy figyelmeztetés…",
+        "quote": "509|Megjegyzésre érdemes mondat…",
+        "subheading": "510|Alcím",
+        "numberedList": "511|Listaelem",
+        "checklist": "512|Ellenőrzőlista-elem",
+        "comparison": "513|Első oldal",
+        "exercise": "514|Gyakorlási utasítás…",
+        "quiz": "515|Kérdés",
+        "image": "516|Képaláírás"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again.",
-        "subtitle": "Edit note",
-        "tags": "Tags",
-        "tagsPlaceholder": "Add a tag…",
-        "removeTag": "Remove tag {{tag}}",
-        "addToReview": "Add to review",
-        "addedToReview": "Added to your review queue.",
-        "inReview": "In review · {{when}}",
-        "inReviewDue": "Due for review",
-        "removedFromReview": "Removed from your review queue.",
-        "unsavedTitle": "Leave without saving?",
-        "unsavedBody": "This note has changes that have not been saved yet.",
-        "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "titlePlaceholder": "517|A jegyzet címe",
+        "save": "518|Jegyzet mentése",
+        "saving": "519|Mentés…",
+        "delete": "520|Jegyzet törlése",
+        "saveError": "521|A mentés nem sikerült. Próbáld újra.",
+        "subtitle": "522|Jegyzet szerkesztése",
+        "tags": "523|Címkék",
+        "tagsPlaceholder": "524|Címke hozzáadása…",
+        "removeTag": "525|{{tag}} címke eltávolítása",
+        "addToReview": "526|Hozzáadás az ismétléshez",
+        "addedToReview": "527|Bekerült az ismétlési sorodba.",
+        "inReview": "528|Ismétlésben · {{when}}",
+        "inReviewDue": "529|Ismétlésre vár",
+        "removedFromReview": "530|Kikerült az ismétlési sorodból.",
+        "unsavedTitle": "531|Kilépsz mentés nélkül?",
+        "unsavedBody": "532|Ebben a jegyzetben mentetlen módosítások vannak.",
+        "discard": "533|Módosítások elvetése",
+        "saveAndLeave": "534|Mentés és kilépés"
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "535|Kvízek",
+        "new": "536|Új kvíz",
+        "start": "537|Kvíz indítása",
+        "delete": "538|Kvíz törlése",
+        "deleteConfirm": "539|Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
+        "emptyTitle": "540|Még nincs kvízed",
+        "emptyBody": "541|Készíts kvízt ebből a jegyzetből, hogy leteszteld magad.",
+        "loadError": "542|Nem sikerült betölteni a kvízeket.",
+        "questionsCount_one": "543|{{count}} kérdés",
+        "questionsCount_other": "544|{{count}} kérdés",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "545|Feleletválasztós",
+          "trueFalse": "546|Igaz / Hamis",
+          "fillGap": "547|Hiányzó szó",
+          "shortAnswer": "548|Rövid válasz"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead",
-          "modeManual": "Manual",
-          "modeManualDesc": "Write your own questions.",
-          "createQuiz": "Create quiz"
+          "title": "549|Kvíz létrehozása",
+          "titlePlaceholder": "550|A kvíz címe",
+          "mode": "551|Generálási mód",
+          "modeSmart": "552|Okos helyi",
+          "modeSmartDesc": "553|A jegyzet tartalmából készít kérdéseket, az eszközön.",
+          "modeAI": "554|MI-vel generált",
+          "modeAIDesc": "555|Gazdagabb, kontextusos kérdéseket készít MI segítségével.",
+          "count": "556|Kérdések",
+          "types": "557|Kérdéstípusok",
+          "focus": "558|Fókusz (nem kötelező)",
+          "focusPlaceholder": "559|pl. a rendhagyó alakokra fókuszálj",
+          "preview": "560|Kérdések előnézete",
+          "regenerate": "561|Előnézet újragenerálása",
+          "previewTitle": "562|Előnézet",
+          "saveQuiz": "563|Kvíz mentése",
+          "generateQuiz": "564|Kvíz generálása",
+          "generating": "565|Generálás…",
+          "saving": "566|Mentés…",
+          "useSmartInstead": "567|Inkább az Okos helyi mód",
+          "modeManual": "568|Kézi",
+          "modeManualDesc": "569|Írd meg a saját kérdéseidet.",
+          "createQuiz": "570|Kvíz létrehozása"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "571|{{current}}. kérdés / {{total}}",
+          "submit": "572|Válasz beküldése",
+          "next": "573|Tovább",
+          "finish": "574|Befejezés",
+          "correct": "575|Helyes!",
+          "incorrect": "576|Hibás",
+          "correctAnswer": "577|Helyes válasz: {{answer}}",
+          "typeMissing": "578|Írd be a hiányzó szót",
+          "typeAnswer": "579|Írd be a válaszod",
+          "trueLabel": "580|Igaz",
+          "falseLabel": "581|Hamis"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "582|{{correct}} / {{total}} helyes",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "583|Kiváló!",
+            "good": "584|Szép munka!",
+            "keepPracticing": "585|Gyakorolj tovább",
+            "reviewNote": "586|Nézd át a jegyzetet"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "587|Hibás",
+          "correctSection": "588|Helyes",
+          "yourAnswer": "589|A te válaszod: {{answer}}",
+          "tryAgain": "590|Újra",
+          "reviewNote": "591|Jegyzet megnyitása",
+          "done": "592|Kész"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "593|Előbb adj több tartalmat a jegyzethez — a kvízhez legalább két tartalmi blokk kell (szabály, példa, figyelmeztetés, bekezdés vagy idézet).",
+          "noMatchingQuestionTypes": "594|Nincs elég megfelelő tartalom a kiválasztott kérdéstípusokhoz. Kapcsolj be több típust, vagy adj hozzá tartalmat.",
+          "aiFailed": "595|A kvízt nem sikerült MI-vel generálni. Próbáld újra, vagy használd az Okos helyi módot."
         },
-        "badge": "Quiz",
+        "badge": "596|Kvíz",
         "manual": {
-          "questions_one": "{{count}} question",
-          "questions_other": "{{count}} questions",
-          "add": "Add question",
-          "questionPlaceholder": "Question text",
-          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
-          "optionPlaceholder": "Option {{index}}",
-          "answerPlaceholder": "Correct answer",
-          "explanationPlaceholder": "Explanation (optional)",
+          "questions_one": "597|{{count}} kérdés",
+          "questions_other": "598|{{count}} kérdés",
+          "add": "599|Kérdés hozzáadása",
+          "questionPlaceholder": "600|A kérdés szövege",
+          "questionGapPlaceholder": "601|Kérdés hiánnyal, pl. Én _____ iskolába",
+          "optionPlaceholder": "602|{{index}}. lehetőség",
+          "answerPlaceholder": "603|Helyes válasz",
+          "explanationPlaceholder": "604|Magyarázat (nem kötelező)",
           "error": {
-            "questionRequired": "Question text is required.",
-            "optionsRequired": "Multiple choice needs at least 2 options.",
-            "answerRequired": "Enter the correct answer.",
-            "answerNotAnOption": "The correct answer must match one of the options.",
-            "blankRequired": "Add a blank (e.g. _____) inside the question."
+            "questionRequired": "605|A kérdés szövege kötelező.",
+            "optionsRequired": "606|A feleletválasztóshoz legalább 2 lehetőség kell.",
+            "answerRequired": "607|Add meg a helyes választ.",
+            "answerNotAnOption": "608|A helyes válasznak egyeznie kell az egyik lehetőséggel.",
+            "blankRequired": "609|Tegyél hiányt (pl. _____) a kérdésbe."
           }
         }
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "610|Gyors hiba",
+        "title": "611|Gyors hiba",
+        "original": "612|Eredeti mondat",
+        "originalPlaceholder": "613|Példa: Én vagyok egyetértek veled",
+        "corrected": "614|Javítás",
+        "correctedPlaceholder": "615|Példa: Egyetértek veled",
+        "explanation": "616|Magyarázat (nem kötelező)",
+        "explanationPlaceholder": "617|Miért helyes a javítás?",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "618|Előbb add meg az eredeti mondatot.",
+          "corrected": "619|Add meg a javított mondatot is."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done",
-        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
+        "save": "620|Hiba mentése",
+        "saving": "621|Mentés…",
+        "saved": "622|Mentve a nyelvtani jegyzetek közé.",
+        "duplicate": "623|Már mentve — a duplikátumot kihagytuk.",
+        "failed": "624|A mentés nem sikerült. Próbáld újra.",
+        "openTopic": "625|Gyakori hibák megnyitása",
+        "done": "626|Kész",
+        "tip": "627|A mentett javítások automatikusan bekerülnek az ismétlésbe, így azok jönnek vissza először, amiket rendre elrontasz."
       },
       "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
+        "topicTitle": "628|Témasablonok",
+        "noteTitle": "629|Jegyzetsablonok",
+        "button": "630|Sablon",
+        "startFromTemplate": "631|Kezdés sablonból",
+        "searchPlaceholder": "632|Sablonok keresése…",
+        "allLanguages": "633|Mind",
+        "anyDifficulty": "634|Bármelyik",
         "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
+          "en": "635|Angol",
+          "es": "636|Spanyol",
+          "fr": "637|Francia",
+          "de": "638|Német"
         },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
-        "applyTitle": "Apply “{{title}}”?",
-        "applyBody": "This note already has content. Choose how to apply the template.",
-        "applyReplace": "Replace content",
-        "applyAppend": "Append blocks"
+        "minutes": "639|{{minutes}} perc",
+        "notesIncluded_one": "640|{{count}} jegyzet",
+        "notesIncluded_other": "641|{{count}} jegyzet",
+        "blocksIncluded_one": "642|{{count}} blokk",
+        "blocksIncluded_other": "643|{{count}} blokk",
+        "empty": "644|Egyik sablon sem felel meg a szűrőidnek.",
+        "use": "645|Sablon használata",
+        "creating": "646|Létrehozás…",
+        "replaceConfirm": "647|Lecseréled a jegyzet jelenlegi tartalmát erre a sablonra? Nyomj Mégsét, ha inkább alá szeretnéd illeszteni.",
+        "applyTitle": "648|Alkalmazod ezt: „{{title}}”?",
+        "applyBody": "649|Ebben a jegyzetben már van tartalom. Válaszd ki, hogyan alkalmazzuk a sablont.",
+        "applyReplace": "650|Tartalom cseréje",
+        "applyAppend": "651|Blokkok hozzáfűzése"
       },
       "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "dueBadge": "Due",
-        "refreshBody": "Nothing is due right now — you can still refresh what you read lately.",
-        "refreshStart": "Refresh recent notes",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
+        "title": "652|Ismétlés",
+        "subtitle": "653|Rögzítsd a tanultakat szakaszos ismétléssel.",
+        "cardTitle": "654|Mai ismétlés",
+        "cardSubtitle_one": "655|{{count}} elem készen áll · ~{{minutes}} perc",
+        "cardSubtitle_other": "656|{{count}} elem készen áll · ~{{minutes}} perc",
+        "caughtUpTitle": "657|Mindennel megvagy",
+        "caughtUp": "658|Mindennel megvagy. Nyiss meg vagy szerkessz jegyzeteket, és kapsz ismétlési javaslatokat.",
+        "dueBadge": "659|Esedékes",
+        "refreshBody": "660|Most nincs esedékes tétel — azért felfrissítheted, amit mostanában olvastál.",
+        "refreshStart": "661|Friss jegyzetek felelevenítése",
+        "start": "662|Ismétlés indítása",
+        "skip": "663|Kihagyás",
+        "itemOf": "664|{{current}}. elem / {{total}}",
+        "untitled": "665|Nyelvtani jegyzet",
+        "stats": "666|Ismételve {{count}} alkalommal · sorozat {{streak}}",
+        "continueToQuestion": "667|Tovább a kérdésre",
+        "showAnswer": "668|Válasz megjelenítése",
+        "compareTitle": "669|Hasonlítsd össze a válaszod",
+        "referenceAnswer": "670|Minta: {{answer}}",
+        "openNote": "671|Teljes jegyzet megnyitása",
         "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
+          "manual_one": "672|{{count}} elem vár ismétlésre",
+          "manual_other": "673|{{count}} elem vár ismétlésre",
+          "recentlyOpened_one": "674|{{count}} nemrég megnyitott jegyzet",
+          "recentlyOpened_other": "675|{{count}} nemrég megnyitott jegyzet",
+          "recentlyEdited_one": "676|{{count}} nemrég szerkesztett jegyzet",
+          "recentlyEdited_other": "677|{{count}} nemrég szerkesztett jegyzet"
         },
         "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
-          "quiz": "Quiz"
+          "note": "678|Jegyzet",
+          "mistake": "679|Hiba",
+          "quiz": "680|Kvíz"
         },
         "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
+          "source": "681|Tanulás",
+          "question": "682|Válasz",
+          "result": "683|Értékelés"
         },
         "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
+          "forgot": "684|Elfelejtettem",
+          "hard": "685|Nehéz",
+          "good": "686|Jó",
+          "easy": "687|Könnyű"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "plus4h": "688|+4 óra",
+          "plus1d": "689|+1 nap",
+          "plus3d": "690|+3 nap",
+          "plus7d": "691|+7 nap"
         },
         "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "title": "692|A munkamenet véget ért",
+          "emptyTitle": "693|Semmit sem ismételtél",
+          "reviewed": "694|Ismételve",
+          "correct": "695|Helyes",
+          "incorrect": "696|Hibás",
+          "hintForgot": "697|Néhány elem 4 óra múlva tér vissza.",
+          "hintHard": "698|A nehéz elemek holnap térnek vissza.",
+          "hintGood": "699|A jó elemek 3 nap múlva térnek vissza.",
+          "hintEasy": "700|Minden elem 7 nap múlva tér vissza.",
+          "done": "701|Vissza a nyelvtani jegyzetekhez"
         },
-        "loadError": "Couldn't load your review queue.",
-        "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "loadError": "702|Nem sikerült betölteni az ismétlési sorodat.",
+        "mistakeCount_one": "703|{{count}} hiba",
+        "mistakeCount_other": "704|{{count}} hiba"
       },
-      "mistakesBadge": "Mistakes",
-      "topicsTitle": "Topics",
-      "deleteTopic": "Delete topic",
-      "deleteTopicTitle": "Delete this topic?",
-      "deleteNoteTitle": "Delete this note?",
-      "pin": "Pin note",
-      "unpin": "Unpin note",
-      "favorite": "Add to favorites",
-      "unfavorite": "Remove from favorites",
+      "mistakesBadge": "705|Hibák",
+      "topicsTitle": "706|Témák",
+      "deleteTopic": "707|Téma törlése",
+      "deleteTopicTitle": "708|Törlöd ezt a témát?",
+      "deleteNoteTitle": "709|Törlöd ezt a jegyzetet?",
+      "pin": "710|Jegyzet rögzítése",
+      "unpin": "711|Rögzítés feloldása",
+      "favorite": "712|Hozzáadás a kedvencekhez",
+      "unfavorite": "713|Eltávolítás a kedvencekből",
       "search": {
-        "topics": "Search topics…",
-        "notes": "Search notes…",
-        "clear": "Clear search",
-        "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword.",
-        "notesSection_one": "Notes ({{count}})",
-        "notesSection_other": "Notes ({{count}})",
-        "noNoteMatches": "No notes match this search."
+        "topics": "714|Témák keresése…",
+        "notes": "715|Jegyzetek keresése…",
+        "clear": "716|Keresés törlése",
+        "noMatchTitle": "717|Nincs találat",
+        "noMatchBody": "718|Próbálj másik kulcsszót.",
+        "notesSection_one": "719|Jegyzetek ({{count}})",
+        "notesSection_other": "720|Jegyzetek ({{count}})",
+        "noNoteMatches": "721|Egyik jegyzet sem felel meg ennek a keresésnek."
       },
       "filter": {
-        "label": "Filter notes",
-        "all": "All",
-        "pinned": "Pinned",
-        "favorites": "Favorites",
-        "mistakes": "Mistakes",
-        "quizzes": "Quizzes",
-        "review": "Due",
+        "label": "722|Jegyzetek szűrése",
+        "all": "723|Mind",
+        "pinned": "724|Rögzített",
+        "favorites": "725|Kedvencek",
+        "mistakes": "726|Hibák",
+        "quizzes": "727|Kvízek",
+        "review": "728|Esedékes",
         "empty": {
           "all": {
-            "title": "No grammar notes yet",
-            "body": "Create your first grammar note for this topic."
+            "title": "729|Még nincs nyelvtani jegyzeted",
+            "body": "730|Hozd létre az első nyelvtani jegyzeted ehhez a témához."
           },
           "pinned": {
-            "title": "No pinned notes yet",
-            "body": "Pin notes from the list to find them quickly."
+            "title": "731|Még nincs rögzített jegyzeted",
+            "body": "732|Rögzíts jegyzeteket a listából, hogy gyorsan megtaláld őket."
           },
           "favorites": {
-            "title": "No favorite notes yet",
-            "body": "Favorite notes to keep them handy."
+            "title": "733|Még nincs kedvenc jegyzeted",
+            "body": "734|Jelöld kedvencnek a jegyzeteket, hogy kéznél legyenek."
           },
           "mistakes": {
-            "title": "No saved mistakes yet",
-            "body": "Save grammar mistakes to review them here."
+            "title": "735|Még nincs mentett hibád",
+            "body": "736|Ments el nyelvtani hibákat, hogy itt ismételhesd őket."
           },
           "quizzes": {
-            "title": "No quiz notes yet",
-            "body": "Add a quiz to a note to see it here."
+            "title": "737|Még nincs kvízes jegyzeted",
+            "body": "738|Adj kvízt egy jegyzethez, hogy itt lásd."
           },
           "review": {
-            "title": "Nothing due right now",
-            "body": "Notes come back here when their next review is due."
+            "title": "739|Most nincs esedékes tétel",
+            "body": "740|A jegyzetek akkor térnek vissza ide, amikor esedékes a következő ismétlésük."
           }
         }
       },
       "reorder": {
-        "start": "Reorder",
-        "done": "Done",
-        "up": "Move up",
-        "down": "Move down"
+        "start": "741|Átrendezés",
+        "done": "742|Kész",
+        "up": "743|Fel",
+        "down": "744|Le"
       },
       "highlights": {
-        "mistakesTitle": "Mistakes to fix",
-        "mistakesSubtitle": "Recent corrections waiting for review.",
-        "quizzesTitle": "Weak quiz areas",
-        "quizzesSubtitle": "Quizzes worth re-taking soon."
+        "mistakesTitle": "745|Javítandó hibák",
+        "mistakesSubtitle": "746|Friss javítások várnak ismétlésre.",
+        "quizzesTitle": "747|Gyenge kvíztémák",
+        "quizzesSubtitle": "748|Kvízek, amiket érdemes hamarosan újra megcsinálni."
       },
       "quickNote": {
-        "button": "Quick note",
-        "title": "Quick note",
-        "subtitle": "Capture a grammar idea without opening the full editor.",
-        "noteTitle": "Title",
-        "titlePlaceholder": "Example: Ser vs Estar",
-        "text": "Note",
-        "textPlaceholder": "Write the useful part here",
-        "noteType": "Note type",
-        "topic": "Topic",
-        "openEditor": "Open editor after saving",
-        "openEditorHint": "Useful when the quick version grows into a full note.",
-        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
-        "validation": "Add a title or some text first.",
-        "save": "Save quick note",
-        "saving": "Saving…"
+        "button": "749|Gyors jegyzet",
+        "title": "750|Gyors jegyzet",
+        "subtitle": "751|Rögzíts egy nyelvtani ötletet a teljes szerkesztő megnyitása nélkül.",
+        "noteTitle": "752|Cím",
+        "titlePlaceholder": "753|Példa: Ser vs Estar",
+        "text": "754|Jegyzet",
+        "textPlaceholder": "755|Ide írd a hasznos részt",
+        "noteType": "756|Jegyzet típusa",
+        "topic": "757|Téma",
+        "openEditor": "758|Szerkesztő megnyitása mentés után",
+        "openEditorHint": "759|Hasznos, ha a gyors változatból teljes jegyzet nő ki.",
+        "tip": "760|A gyors jegyzet arra az ötletre való, amit különben tíz perc múlva elfelejtenél.",
+        "validation": "761|Előbb adj hozzá címet vagy valamennyi szöveget.",
+        "save": "762|Gyors jegyzet mentése",
+        "saving": "763|Mentés…"
       },
       "settings": {
-        "title": "Notes settings",
-        "subtitle": "How quick capture, mistakes and the notes list behave.",
-        "reset": "Reset to defaults",
-        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "title": "764|Jegyzetbeállítások",
+        "subtitle": "765|Hogyan működik a gyors rögzítés, a hibák és a jegyzetlista.",
+        "reset": "766|Alaphelyzet visszaállítása",
+        "tip": "767|A gyors hibákat olyan mondatokhoz használd, amiket tényleg rosszul írtál — hasznosabbak a tankönyvi tökéletes példáknál.",
         "quickCapture": {
-          "title": "Quick capture",
-          "subtitle": "Make fast notes and mistakes feel instant."
+          "title": "768|Gyors rögzítés",
+          "subtitle": "769|Legyen azonnali a gyors jegyzet és hiba."
         },
         "mistakeNotes": {
-          "title": "Mistake notes",
-          "subtitle": "What gets saved when you capture a quick mistake."
+          "title": "770|Hibajegyzetek",
+          "subtitle": "771|Mi kerül mentésre, amikor gyors hibát rögzítesz."
         },
         "essays": {
-          "title": "Essays",
-          "subtitle": "What happens to grammar issues found in your essays."
+          "title": "772|Esszék",
+          "subtitle": "773|Mi történik az esszéidben talált nyelvtani hibákkal."
         },
         "review": {
-          "title": "Spaced review",
-          "subtitle": "How notes reach the review queue."
+          "title": "774|Szakaszos ismétlés",
+          "subtitle": "775|Hogyan kerülnek a jegyzetek az ismétlési sorba."
         },
         "appearance": {
-          "title": "Notes appearance",
-          "subtitle": "How the notes list is ordered and sized."
+          "title": "776|Jegyzetek megjelenése",
+          "subtitle": "777|Hogyan rendezett és mekkora a jegyzetlista."
         },
         "helpers": {
-          "title": "Learning helpers",
-          "subtitle": "Small nudges inside empty states and quick sheets."
+          "title": "778|Tanulási segítők",
+          "subtitle": "779|Apró lökések az üres képernyőkön és a gyors űrlapokon."
         },
         "defaultType": {
-          "title": "Default note type",
-          "subtitle": "What a new quick note starts as."
+          "title": "780|Alapértelmezett jegyzettípus",
+          "subtitle": "781|Milyen típussal indul egy új gyors jegyzet."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "Open editor after quick save",
-            "subtitle": "After saving a quick note, jump straight into the full editor."
+            "title": "782|Szerkesztő megnyitása gyors mentés után",
+            "subtitle": "783|Gyors jegyzet mentése után ugorj rögtön a teljes szerkesztőbe."
           },
           "allowQuickQuizzes": {
-            "title": "Allow quizzes in notes",
-            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+            "title": "784|Kvízek engedélyezése a jegyzetekben",
+            "subtitle": "785|Kínálj kvízblokkokat és kvízkészítést a jegyzeteken belül."
           },
           "showsMistakeHighlights": {
-            "title": "Highlight mistake notes",
-            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+            "title": "786|Hibajegyzetek kiemelése",
+            "subtitle": "787|Meleg árnyalat a hibakártyákhoz, és a hibasor megjelenítése."
           },
           "includeOriginalSentence": {
-            "title": "Include original sentence",
-            "subtitle": "Save the wrong version as a quote block in the note."
+            "title": "788|Eredeti mondat beillesztése",
+            "subtitle": "789|A hibás változat idézetblokként kerül a jegyzetbe."
           },
           "includeCorrectedSentence": {
-            "title": "Include corrected sentence",
-            "subtitle": "Save the fixed version as an example block."
+            "title": "790|Javított mondat beillesztése",
+            "subtitle": "791|A javított változat példablokként kerül mentésre."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "Include explanation",
-            "subtitle": "Add your explanation as a paragraph block below."
+            "title": "792|Magyarázat beillesztése",
+            "subtitle": "793|A magyarázatod bekezdésblokként kerül alá."
           },
           "groupMistakesByTopic": {
-            "title": "Group mistakes by topic",
-            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+            "title": "794|Hibák csoportosítása téma szerint",
+            "subtitle": "795|A gyors hibák az aktuális témába kerüljenek a Gyakori hibák helyett."
           },
           "askBeforeSavingMistakes": {
-            "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
+            "title": "796|Kérdezzen rá a hibák mentése előtt",
+            "subtitle": "797|Erősítsd meg, mielőtt egy esszéhiba jegyzetté válik. Ez felülírja az automatikus mentést."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
+            "title": "798|Esszéhibák automatikus mentése",
+            "subtitle": "799|Az esszében talált minden nyelvtani hiba jegyzetté válik. Ha a „Kérdezzen rá mentés előtt” be van kapcsolva, egyszer kérdez az egész ellenőrzésre."
           },
           "groupsPinnedNotesFirst": {
-            "title": "Pinned notes first",
-            "subtitle": "Keep important rules at the top of each topic."
+            "title": "800|Rögzített jegyzetek elöl",
+            "subtitle": "801|Tartsd a fontos szabályokat minden téma tetején."
           },
           "usesCompactCards": {
-            "title": "Compact note cards",
-            "subtitle": "Show tighter cards when you want more notes on screen."
+            "title": "802|Kompakt jegyzetkártyák",
+            "subtitle": "803|Tömörebb kártyák, ha több jegyzetet szeretnél a képernyőn."
           },
           "showsHelperTips": {
-            "title": "Show helper tips",
-            "subtitle": "Display short contextual hints while creating notes."
+            "title": "804|Segítő tippek megjelenítése",
+            "subtitle": "805|Rövid, helyzethez illő tippek a jegyzetek készítése közben."
           },
           "autoAddNotesToReview": {
-            "title": "Add new notes to review",
-            "subtitle": "Every note you save joins the review queue, due a day later."
+            "title": "806|Új jegyzetek hozzáadása az ismétléshez",
+            "subtitle": "807|Minden mentett jegyzet bekerül az ismétlési sorba, másnapra esedékesen."
           }
         }
       },
-      "editTopic": "Edit topic",
+      "editTopic": "808|Téma szerkesztése",
       "toSet": {
-        "title": "Make a set from this note",
-        "subtitle": "Pick the pairs to turn into flashcards.",
-        "setTitle": "Set title",
-        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
-        "button": "Make a set",
-        "create": "Create set",
-        "creating": "Creating…",
-        "error": "Couldn't create the set. Try again.",
-        "cards_one": "{{count}} card",
-        "cards_other": "{{count}} cards"
+        "title": "809|Csomag készítése ebből a jegyzetből",
+        "subtitle": "810|Válaszd ki a párokat, amelyekből kártya lesz.",
+        "setTitle": "811|A csomag címe",
+        "empty": "812|Ebből a jegyzetből még nincs mit kártyává alakítani. Az összehasonlítás, példa és szabály blokkok közvetlenül átalakulnak, a listaelemek pedig gondolatjelnél válnak ketté — mint a „hacer — csinálni”.",
+        "button": "813|Csomag készítése",
+        "create": "814|Csomag létrehozása",
+        "creating": "815|Létrehozás…",
+        "error": "816|A csomagot nem sikerült létrehozni. Próbáld újra.",
+        "cards_one": "817|{{count}} kártya",
+        "cards_other": "818|{{count}} kártya"
       },
-      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "topicsEmptyTip": "819|A téma egy mappa a jegyzeteknek — egy nyelvenként, vagy egy minden olyan dologra, amit rendre elrontasz.",
+      "notesEmptyTip": "820|Minden mentett jegyzet bekerül az ismétlési sorba, így a leírásával már el is kezdted gyakorolni."
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "821|Gyakorlómódok",
+    "loading": "822|Betöltés…",
+    "loadError": "823|Nem sikerült betölteni az olvasnivalóidat.",
+    "notFound": "824|Lehet, hogy ezt az elemet törölték.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "825|Mai haladás",
+      "subtitle": "826|Tartsd életben az olvasási sorozatod."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "827|Hamarosan",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "828|Saját szövegeim",
+        "subtitle": "829|Illeszd be a saját szöveged, és olvasd el segítséggel."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "830|Olvasás a csomagokból",
+        "subtitle": "831|Készíts olvasnivalót a kártyacsomagjaidból."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "832|Történet mód",
+        "subtitle": "833|Olvass interaktív történeteket elágazó döntésekkel."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "834|Gyorsolvasás",
+        "subtitle": "835|Gyakorold a gyorsabb olvasást időzített tempóval."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "836|Saját szövegeim",
+      "subtitle": "837|A mentett olvasnivalóid.",
+      "addText": "838|Szöveg hozzáadása",
+      "emptyTitle": "839|Még nincs szöveged",
+      "emptyBody": "840|Add hozzá az első szöveged, és kezdd az olvasásgyakorlást.",
+      "savedTitle": "841|Mentett szövegek"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "842|Új",
+      "inProgress": "843|Folyamatban",
+      "completed": "844|Kész"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "845|{{count}} szó",
+      "words_other": "846|{{count}} szó",
+      "start": "847|Kezdés",
+      "continue": "848|Folytatás",
+      "readAgain": "849|Újraolvasás",
+      "rename": "850|Átnevezés",
+      "renamePrompt": "851|Új cím:",
+      "delete": "852|Törlés",
+      "deleteConfirm": "853|Törlöd ezt: „{{title}}”? Ez nem vonható vissza."
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "854|Olvasás folytatása",
+      "percent": "855|{{percent}} % kész",
+      "button": "856|Folytatás"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "857|Fő gondolat",
+      "vocabulary": "858|Szókincs",
+      "detailedComprehension": "859|Részletes megértés",
+      "grammarAwareness": "860|Nyelvtani figyelem",
+      "speedFluency": "861|Sebesség / folyékonyság"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "862|Szövegértés",
+      "trueFalse": "863|Igaz / Hamis",
+      "fillGap": "864|Hiányzó szó",
+      "vocabulary": "865|Szókincs",
+      "findEvidence": "866|Bizonyíték keresése",
+      "orderReconstruction": "867|Sorrend"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "868|Ismeretlen szavak kiemelése",
+      "translationOnTap": "869|Fordítás koppintásra",
+      "vocabularyHints": "870|Szókincstippek",
+      "readingTimer": "871|Olvasási időzítő"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "872|Szöveg hozzáadása",
+      "subtitle": "873|Illessz be egy szöveget, és állítsd be az olvasásgyakorlást.",
+      "untitled": "874|Cím nélküli szöveg",
+      "pastePlaceholder": "875|Illeszd be vagy írd ide a szöveged…",
+      "titleLabel": "876|Cím",
+      "titlePlaceholder": "877|Nem kötelező — javasolhatunk egyet",
+      "language": "878|Nyelv",
+      "difficulty": "879|Nehézség",
+      "autoDetect": "880|Automatikus felismerés",
+      "manual": "881|Kézi választás",
+      "focus": "882|Olvasási fókusz",
+      "questionTypes": "883|Kérdéstípusok",
+      "assistance": "884|Olvasási segítség",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
-        "min": "min",
-        "detected": "Detected: {{level}}"
+        "words_one": "885|{{count}} szó",
+        "words_other": "886|{{count}} szó",
+        "chars_one": "887|{{count}} karakter",
+        "chars_other": "888|{{count}} karakter",
+        "min": "889|perc",
+        "detected": "890|Felismerve: {{level}}"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "891|Előbb adj hozzá egy szöveget.",
+        "tooShort": "892|Adj hozzá legalább 20 szót."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "893|Szöveg mentése",
+      "saveAndStart": "894|Mentés és indítás",
+      "saving": "895|Mentés…",
+      "saveError": "896|A mentés nem sikerült. Próbáld újra.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
-        "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "pasteText": "897|Beillesztés",
+        "photo": "898|Fotó",
+        "pdf": "899|PDF",
+        "generate": "900|Generálás",
+        "explore": "901|Felfedezés"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "902|Ismeretterjesztő",
+        "casual": "903|Kötetlen",
+        "academic": "904|Tudományos",
+        "narrative": "905|Elbeszélő"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "906|Rövid",
+        "medium": "907|Közepes",
+        "long": "908|Hosszú"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "909|Tölts fel egy fotót egy oldalról — kinyerjük belőle a szöveget.",
+        "chooseImage": "910|Kép választása",
+        "recognizing": "911|Felismerés… {{percent}} %",
+        "imageError": "912|Nem sikerült szöveget kiolvasni ebből a képből.",
+        "pdfHint": "913|Tölts fel egy PDF-et — kinyerjük belőle a szöveget.",
+        "choosePDF": "914|PDF választása",
+        "reading": "915|PDF olvasása…",
+        "pdfError": "916|Nem sikerült elolvasni ezt a PDF-et.",
+        "topicPlaceholder": "917|Téma — pl. korallzátonyok, a könyvnyomtatás",
+        "explorePlaceholder": "918|Téma vagy kulcsszó — pl. Marie Curie, Velence",
+        "generateButton": "919|Szöveg generálása",
+        "exploreButton": "920|Cikk lekérése",
+        "working": "921|Dolgozunk…",
+        "generateError": "922|A szöveget nem sikerült generálni. Próbáld újra.",
+        "exploreError": "923|Nem találtunk cikket erről a témáról.",
+        "exploredFrom": "924|Forrás"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again.",
-      "translation": "Translation",
-      "textLabel": "Text"
+      "startQuestions": "925|Tovább a kérdésekre",
+      "finish": "926|Befejezés",
+      "next": "927|Tovább",
+      "questionOf": "928|{{current}}. kérdés / {{total}}",
+      "closeTranslation": "929|Fordítás bezárása",
+      "translating": "930|Fordítás…",
+      "translationError": "931|A fordítás nem sikerült. Próbáld újra.",
+      "translation": "932|Fordítás",
+      "textLabel": "933|Szöveg"
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts",
-      "complete": "Practice Complete"
+      "comprehension": "934|Szövegértés",
+      "correct": "935|Helyes",
+      "time": "936|Olvasási idő",
+      "wpm": "937|szó/perc",
+      "mistakes": "938|Hibák",
+      "mistakesTitle": "939|Nézd át a hibáidat",
+      "readAgain": "940|Újraolvasás",
+      "back": "941|Vissza a Saját szövegeimhez",
+      "complete": "942|Gyakorlás kész"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "943|Olvasás a csomagokból",
+      "subtitle": "944|Alakíts át egy kártyacsomagot olvasnivalóvá.",
+      "pickSet": "945|Válassz csomagot",
+      "changeSet": "946|Csomag cseréje",
+      "tooFewWords": "947|Ehhez a csomaghoz legalább {{count}} szó kell egy olvasnivalóhoz.",
+      "mode": "948|Generálási mód",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "949|Természetes",
+        "strict": "950|Szigorú",
+        "mixed": "951|Vegyes"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "952|A szöveg hossza",
+      "generate": "953|Szöveg generálása",
+      "generating": "954|Készítjük a szöveged…",
+      "generateError": "955|A szöveget nem sikerült elkészíteni. Próbáld újra.",
+      "emptyTitle": "956|Még nincs olvasnivalód",
+      "emptyBody": "957|Válassz egy kártyacsomagot, és olvasnivalót készítünk belőle.",
+      "savedTitle": "958|Mentett olvasnivalók"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "959|Gyorsolvasás",
+      "subtitle": "960|Gyakorold a gyorsabb olvasást időzített tempóval.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "961|Cél olvasási sebesség",
+        "timer": "962|Időzítő stílusa",
+        "length": "963|A szöveg hossza"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "964|Nyugodt",
+        "balanced": "965|Kiegyensúlyozott",
+        "fast": "966|Gyors",
+        "challenge": "967|Kihívás"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "968|Nincs időzítő",
+        "soft": "969|Enyhe időzítő",
+        "strict": "970|Szigorú időzítő"
       },
       "length": {
-        "two": "2 min",
-        "five": "5 min",
-        "ten": "10 min"
+        "two": "971|2 perc",
+        "five": "972|5 perc",
+        "ten": "973|10 perc"
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
-      "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "summary": "974|Cél {{wpm}} szó/perc · ~{{minutes}} perc olvasás",
+      "start": "975|Munkamenet indítása",
+      "preparing": "976|Készítjük a szövegrészletet…",
+      "generateError": "977|A részletet nem sikerült elkészíteni. Próbáld újra.",
+      "recentTitle": "978|Legutóbbi munkamenetek",
+      "chunkOf": "979|{{current}}. rész / {{total}}",
+      "previous": "980|Előző rész",
+      "pause": "981|Szünet",
+      "resume": "982|Folytatás",
+      "nextChunk": "983|Következő rész",
+      "finishReading": "984|Olvasás befejezése",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "985|Kiváló",
+        "balanced": "986|Célon",
+        "fast": "987|Majdnem",
+        "tooSlow": "988|Túl lassú"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "989|Átlag szó/perc",
+        "target": "990|Cél szó/perc",
+        "violations_one": "991|{{count}} időtúllépés",
+        "violations_other": "992|{{count}} időtúllépés"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "993|Újra",
+      "backToSetup": "994|Vissza a beállításokhoz"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "995|Történet mód",
+      "subtitle": "996|Olvass interaktív történeteket elágazó döntésekkel.",
+      "typeSection": "997|Történet típusa",
       "type": {
-        "adventure": "Adventure",
-        "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "adventure": "998|Kaland",
+        "fantasy": "999|Fantasy",
+        "mystery": "1000|Krimi",
+        "romance": "1001|Romantikus",
+        "dailyLife": "1002|Hétköznapi élet"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "1003|A történet hossza",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "1004|Rövid történet",
+        "multiChapter": "1005|Több fejezet",
+        "infinite": "1006|Végtelen történet"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "1007|Történet indítása",
+      "generating": "1008|Írjuk a történeted…",
+      "generatingNext": "1009|Írjuk a következő fejezetet…",
+      "generateError": "1010|A történetet nem sikerült megírni. Próbáld újra.",
+      "emptyTitle": "1011|Még nincs történeted",
+      "emptyBody": "1012|Kezdd el fent az első interaktív történeted.",
+      "savedTitle": "1013|A történeteid",
+      "chapterN": "1014|{{n}}. fejezet",
+      "chapterOf": "1015|{{current}}. / {{total}}. fejezet",
+      "chapterScore": "1016|Fejezet pontszáma",
+      "whatNext": "1017|Mi történik ezután?",
+      "endStory": "1018|Történet befejezése",
+      "completeTitle": "1019|Történet kész",
+      "completeBody_one": "1020|Elolvastál {{count}} fejezetet. Szép olvasás!",
+      "completeBody_other": "1021|Elolvastál {{count}} fejezetet. Szép olvasás!",
+      "backToStories": "1022|Vissza a történetekhez"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "1023|Gyakorlómódok",
+    "notFound": "1024|Lehet, hogy ezt a munkamenetet törölték.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "1025|Mai haladás",
+      "subtitle": "1026|hallás utáni gyakorlás"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1027|Hamarosan",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "1028|Hallgatás szövegből",
+        "subtitle": "1029|Illessz be szöveget, hallgasd meg, és ellenőrizd a megértésed."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "1030|Hang importálása",
+        "subtitle": "1031|Tölts fel saját hangot, és alakítsd hallásgyakorlattá."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "1032|Videó importálása",
+        "subtitle": "1033|Tölts fel egy videót, kapj feliratot, és gyakorolj kérdésekkel."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "1034|Mentett gyakorlatok",
+        "subtitle": "1035|Folytasd a korábbi munkameneteket, és nézd át a hibáidat."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
-      "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "mainIdea": "1036|Fő gondolat",
+      "details": "1037|Részletek",
+      "vocabulary": "1038|Szókincs",
+      "trueFalse": "1039|Igaz / Hamis"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "1040|Hallgatás szövegből",
+      "subtitle": "1041|Illessz be szöveget, és alakítsd hallásgyakorlattá.",
+      "level": "1042|Szint",
+      "voiceSpeed": "1043|Beszédsebesség",
+      "voiceType": "1044|Hang típusa",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "1045|Alapértelmezett",
+        "female": "1046|Női",
+        "male": "1047|Férfi"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "1048|Szöveg mutatása hallgatás közben",
+      "addQuestions": "1049|Szövegértési kérdések hozzáadása",
+      "questionCount": "1050|Kérdések száma",
+      "questionTypes": "1051|Kérdéstípusok",
+      "optionalTitle": "1052|Cím (nem kötelező)",
+      "titlePlaceholder": "1053|Adj nevet a szövegednek",
+      "textPlaceholder": "1054|Illeszd be ide a szöveged...",
+      "recommended": "1055|Ajánlott: 80–500 szó.",
+      "words": "1056|szó",
+      "defaultTitle": "1057|Hallásgyakorlat",
+      "start": "1058|Hallgatás indítása",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "1059|Adj hozzá szöveget a hallgatás elkezdéséhez.",
+        "tooShort": "1060|Adj hozzá legalább 40 karaktert a hallgatás elkezdéséhez.",
+        "tooLong": "1061|Ez a szöveg túl hosszú. Maradj 5000 karakter alatt.",
+        "tooFewWords": "1062|Adj hozzá egy kicsit több szöveget (nagyjából 40 szót vagy többet), hogy jó kérdéseket készíthessünk."
       },
-      "voiceSettings": "Voice Settings",
-      "questions": "Questions",
-      "textInput": "Text Input"
+      "voiceSettings": "1063|Hangbeállítások",
+      "questions": "1064|Kérdések",
+      "textInput": "1065|Szöveg bevitele"
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "1066|Újrajátszás",
+      "transcript": "1067|Átirat",
+      "questionsTitle": "1068|Kérdések",
+      "answerFirst": "1069|Az ellenőrzés előtt válaszolj legalább egy kérdésre.",
+      "checkAnswers": "1070|Válaszok ellenőrzése",
+      "finish": "1071|Gyakorlat befejezése"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "1072|Gyakorlás kész",
+      "comprehension": "1073|Szövegértés",
+      "correct": "1074|Helyes",
+      "time": "1075|Hallgatási idő",
+      "speed": "1076|Sebesség",
+      "mistakes": "1077|Hibák",
+      "mistakesTitle": "1078|Nézd át a hibáidat",
+      "watchOnlyTitle": "1079|Hallgatás kész",
+      "watchOnlyBody": "1080|{{time}} ideig hallgattad.",
+      "practiceAgain": "1081|Gyakorlás újra",
+      "back": "1082|Vissza a hallás utáni értéshez"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "1083|Hang importálása",
+      "subtitle": "1084|Alakítsd a saját hangfelvételed hallásgyakorlattá.",
+      "uploadTitle": "1085|Hangfájl feltöltése",
+      "uploadFormats": "1086|MP3, M4A, WAV vagy AAC · 50 MB alatt",
+      "chooseFile": "1087|Fájl kiválasztása",
+      "clearFile": "1088|Fájl eltávolítása",
+      "infoNote": "1089|A hangot a háttérben átírjuk. Az átirat a gyakorlás alatt rejtve marad.",
+      "continue": "1090|Tovább",
+      "processingTitle": "1091|Készítjük a hallásgyakorlatod",
+      "step1": "1092|Hang feltöltése",
+      "step2": "1093|Beszéd átírása",
+      "step3": "1094|Kérdések készítése",
+      "processError": "1095|Nem sikerült előkészíteni ezt a hangot. Próbáld újra.",
+      "tryAgain": "1096|Újra",
+      "chooseAnother": "1097|Másik fájl választása",
+      "transcriptHidden": "1098|Az átirat rejtve van, hogy ez valódi hallásgyakorlat maradjon."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "1099|Videó importálása",
+      "subtitle": "1100|Tölts fel egy videót, kapj feliratot, és gyakorolj kérdésekkel.",
+      "uploadTitle": "1101|Videofájl feltöltése",
+      "uploadFormats": "1102|MP4, MOV vagy M4V · 80 MB alatt",
+      "step1": "1103|Videó előkészítése",
+      "step2": "1104|Beszéd átírása",
+      "step3": "1105|Feliratok készítése",
+      "subtitles": "1106|Feliratok",
+      "subtitlesOn": "1107|Feliratok bekapcsolva",
+      "subtitlesOff": "1108|Feliratok kikapcsolva",
+      "noSubtitles": "1109|Ehhez a videóhoz nincs felirat.",
+      "tapWord": "1110|Koppints egy szóra a fordításához.",
+      "questionsLocked": "1111|A kérdések akkor nyílnak meg, ha végignézted a videót."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "1112|Szó fordítása",
+      "pickSet": "1113|Válassz csomagot",
+      "createSet": "1114|Csomag létrehozása",
+      "addToSet": "1115|Hozzáadás a csomaghoz",
+      "noSets": "1116|Még nincs csomagod. Hozz létre egyet lent.",
+      "setNamePlaceholder": "1117|pl. Szavak a videóból",
+      "createAndAdd": "1118|Csomag létrehozása és szó hozzáadása",
+      "saved": "1119|Mentve ide: „{{set}}”."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "1120|Mentett gyakorlatok",
+      "subtitle": "1121|Folytasd a munkameneteket, és nézd át a hallás utáni hibáidat.",
+      "emptyTitle": "1122|Nincs mentett munkamenet",
+      "emptyBody": "1123|Fejezz be vagy szüneteltess egy hallgatási munkamenetet, és itt fog megjelenni.",
+      "continueEyebrow": "1124|Hallgatás folytatása",
+      "percentComplete": "1125|{{percent}} % kész",
+      "continue": "1126|Folytatás",
+      "review": "1127|Áttekintés",
+      "delete": "1128|Munkamenet törlése",
+      "deleteConfirm": "1129|Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "1130|Piszkozat",
+        "inProgress": "1131|Folyamatban",
+        "completed": "1132|Kész"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "1133|Gyakorlómódok",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "1134|Mai haladás",
+      "subtitle": "1135|beszédgyakorlás"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1136|Hamarosan",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "1137|Beszélgetés MI-vel",
+        "subtitle": "1138|Beszélgess valós időben egy MI-tanárral."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "1139|Szabad beszéd",
+        "subtitle": "1140|Beszélj generált témákról, és kapj visszajelzést."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "1141|Képleírás",
+        "subtitle": "1142|Írj le képeket, és tanulj hasznos szavakat."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "1143|Vita mód",
+        "subtitle": "1144|Vitatkozz témákról, és építsd fel az érveidet."
       },
       "shadowing": {
-        "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "title": "1145|Shadowing",
+        "subtitle": "1146|Ismételj mondatokat, és javítsd a kiejtésed."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "1147|Kiejtésgyakorló",
+        "subtitle": "1148|Koncentrálj a nehéz hangokra és szavakra."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "1149|Beszéd",
+      "stop": "1150|Leállítás",
+      "listening": "1151|Hallgatunk…",
+      "placeholder": "1152|Írd be a válaszod…",
+      "noVoice": "1153|Ez a böngésző nem támogatja a hangbevitelt — írd be a válaszod."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
-      "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "title": "1154|Beszélgetés MI-vel",
+      "subtitle": "1155|Beszélgess valós időben egy MI-tanárral.",
+      "topic": "1156|Téma",
+      "scenarios": "1157|Helyzetek",
+      "autoTopic": "1158|Lepj meg",
+      "autoTopicHint": "1159|Generálunk neked egy friss témát.",
+      "length": "1160|Hossz",
+      "min": "1161|perc",
+      "start": "1162|Beszélgetés indítása",
+      "starting": "1163|Indítás…",
+      "startError": "1164|A beszélgetést nem sikerült elindítani. Próbáld újra.",
+      "end": "1165|Befejezés",
+      "dismiss": "1166|Bezárás",
+      "hint": "1167|Tipp",
+      "getHint": "1168|Kell egy tipp?",
+      "hintLoading": "1169|Gondolkodunk…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "1170|Gyakorlás kész",
+      "generating": "1171|Elemezzük a beszéded…",
+      "overall": "1172|Összpontszám",
+      "corrections": "1173|Javítások",
+      "transcript": "1174|Átirat",
+      "practiceAgain": "1175|Gyakorlás újra",
+      "back": "1176|Vissza a beszédhez"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
-      "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "title": "1177|Szabad beszéd",
+      "subtitle": "1178|Beszélj szabadon egy témáról, és kapj visszajelzést.",
+      "preview": "1179|Előnézet",
+      "autoTopic": "1180|MI által generált téma",
+      "autoTopicHint": "1181|Amikor elindulsz, friss témát választunk ehhez: {{language}} · {{level}}.",
+      "auto": "1182|Automatikus",
+      "start": "1183|Szabad beszéd indítása",
+      "generating": "1184|Téma generálása…",
+      "generatingHint": "1185|Olyat keresünk, ami illik a szintedhez.",
+      "fallbackTopic": "1186|Nem sikerült témát generálni. Tartaléktémát használunk.",
+      "transcript": "1187|Átirat",
+      "transcriptHint": "1188|Az átirat itt jelenik meg, miközben beszélsz.",
+      "startSpeaking": "1189|Kezdj beszélni"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "1190|Képleírás",
+      "subtitle": "1191|Írd le, amit látsz, és kapj visszajelzést.",
+      "start": "1192|Képleírás indítása",
+      "prompt": "1193|Írd le, mit látsz ezen a képen.",
+      "tryToMention": "1194|Próbáld megemlíteni:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "1195|emberek",
+        "objects": "1196|tárgyak",
+        "actions": "1197|cselekvések",
+        "colors": "1198|színek",
+        "emotions": "1199|érzelmek"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "1200|Fotó betöltése…",
+      "retry": "1201|Újra",
+      "newPhoto": "1202|Új fotó",
+      "imageAlt": "1203|Leírandó fotó",
+      "photoBy": "1204|Fotó:",
+      "onUnsplash": "1205|az Unsplashen",
+      "startDescribing": "1206|Kezdd a leírást"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "1207|Vita mód",
+      "subtitle": "1208|Védd az álláspontod egy MI-ellenféllel szemben.",
+      "start": "1209|Vita indítása",
+      "pickSide": "1210|A te oldalad",
+      "preparing": "1211|Vitatéma előkészítése…",
+      "roundOf": "1212|{{current}}. kör / {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "1213|Egyetért",
+          "subtitle": "1214|Védd az állítást"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "1215|Nem ért egyet",
+          "subtitle": "1216|Érvelj ellene"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "1217|Lepj meg",
+          "subtitle": "1218|Mi választunk oldalt helyetted"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "1219|Meghallgatás",
+      "playing": "1220|Lejátszás…",
+      "record": "1221|Felvétel",
+      "stop": "1222|Leállítás",
+      "playMine": "1223|Sajátom lejátszása",
+      "noRecording": "1224|Ez a böngésző nem támogatja a felvételt — hallgatni és ismételni így is tudsz."
     },
     "shadowing": {
-      "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "title": "1225|Shadowing",
+      "subtitle": "1226|Hallgass, ismételj, és hasonlítsd össze magad.",
+      "start": "1227|Shadowing indítása",
+      "category": "1228|Kategória",
+      "howItWorks": "1229|Hallgasd meg a mondatot, ismételd hangosan felvétel közben, majd játszd le a sajátodat, és hasonlítsd össze a ritmust.",
+      "loading": "1230|Mondatok generálása…",
+      "phrase": "1231|Mondat",
+      "previous": "1232|Előző",
+      "nextPhrase": "1233|Következő mondat",
+      "finish": "1234|Befejezés",
+      "changeSettings": "1235|Beállítások módosítása",
+      "done": "1236|{{count}} kész",
+      "allDone": "1237|Minden mondatot begyakoroltál!",
+      "newSet": "1238|Új csomag"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "1239|Kiejtésgyakorló",
+      "subtitle": "1240|Koncentrálj a nehéz hangokra és szavakra.",
+      "start": "1241|Gyakorlás indítása",
+      "focus": "1242|Fókusz",
+      "difficulty": "1243|Nehézség",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "1244|Könnyű",
+        "balanced": "1245|Kiegyensúlyozott",
+        "hard": "1246|Nehéz"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "1247|Gyakorlóelemek generálása…",
+      "sound": "1248|Hang",
+      "scoringUnavailable": "1249|Az automatikus kiejtésértékelés még nincs beállítva a szerveren, ezért nem jelenik meg pontszám. A meghallgatás, a felvétel és a lejátszás működik."
     }
   },
   "profile": {
-    "interfaceLanguage": "Interface language",
+    "interfaceLanguage": "1250|A felület nyelve",
     "password": {
-      "title": "Create a password",
-      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
-      "save": "Save password",
-      "saving": "Saving...",
-      "savedInfo": "Password created. You can sign in with your email now too."
+      "title": "1251|Hozz létre jelszót",
+      "body": "1252|A fiókod Google-fiókkal jött létre, ezért nincs hozzá jelszó — az e-mail és jelszó mezőkkel nem tudsz bejelentkezni. Adj meg egyet, és mindkét mód működni fog.",
+      "save": "1253|Jelszó mentése",
+      "saving": "1254|Mentés...",
+      "savedInfo": "1255|A jelszó elkészült. Mostantól e-maillel is bejelentkezhetsz."
     }
   },
   "units": {
-    "min": "min",
-    "words": "words"
+    "min": "1256|perc",
+    "words": "1257|szó"
   },
   "link": {
-    "title": "Sign in with a link",
-    "subtitle": "We'll email you a one-time link. No password to remember.",
-    "send": "Send the link",
-    "sending": "Sending...",
-    "sentInfo": "Link sent. Check your email.",
-    "sentTitle": "Check your email",
-    "sentBody": "We sent a sign-in link to",
-    "useAnotherEmail": "Use another email",
-    "backToPassword": "Sign in with a password instead"
+    "title": "1258|Bejelentkezés hivatkozással",
+    "subtitle": "1259|Küldünk egy egyszer használatos hivatkozást e-mailben. Nincs megjegyzendő jelszó.",
+    "send": "1260|Hivatkozás küldése",
+    "sending": "1261|Küldés...",
+    "sentInfo": "1262|Elküldtük a hivatkozást. Nézd meg az e-mailjeid.",
+    "sentTitle": "1263|Nézd meg az e-mailjeid",
+    "sentBody": "1264|Bejelentkezési hivatkozást küldtünk ide:",
+    "useAnotherEmail": "1265|Másik e-mail-cím használata",
+    "backToPassword": "1266|Inkább jelszóval jelentkezem be"
   },
   "action": {
-    "working": "One moment...",
-    "continue": "Continue",
-    "confirmEmailTitle": "Confirm your email",
-    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
-    "resetTitle": "New password",
-    "resetSubtitle": "Choose a new password for",
-    "newPassword": "New password",
-    "confirmPassword": "Repeat password",
-    "savePassword": "Save password",
-    "resetDoneTitle": "Password updated",
-    "resetDoneBody": "You can sign in with your new password now.",
-    "failedTitle": "That link didn't work",
-    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
-    "backToSignIn": "Back to sign in"
+    "working": "1267|Egy pillanat...",
+    "continue": "1268|Tovább",
+    "confirmEmailTitle": "1269|Erősítsd meg az e-mail-címed",
+    "confirmEmailBody": "1270|Ezt a hivatkozást másik böngészőben nyitották meg. Add meg a címet, amelyre érkezett, és befejezzük a bejelentkezést.",
+    "resetTitle": "1271|Új jelszó",
+    "resetSubtitle": "1272|Válassz új jelszót ehhez:",
+    "newPassword": "1273|Új jelszó",
+    "confirmPassword": "1274|Ismételd meg a jelszót",
+    "savePassword": "1275|Jelszó mentése",
+    "resetDoneTitle": "1276|A jelszó frissült",
+    "resetDoneBody": "1277|Mostantól az új jelszavaddal jelentkezhetsz be.",
+    "failedTitle": "1278|Ez a hivatkozás nem működött",
+    "failedBody": "1279|Lehet, hogy már felhasználták, vagy lejárt. Kérj újat a bejelentkezési képernyőn.",
+    "backToSignIn": "1280|Vissza a bejelentkezéshez"
   },
   "common": {
-    "cancel": "Cancel",
-    "delete": "Delete",
+    "cancel": "1281|Mégse",
+    "delete": "1282|Törlés",
     "view": {
-      "label": "View",
-      "rows": "List",
-      "grid": "Grid"
+      "label": "1283|Nézet",
+      "rows": "1284|Lista",
+      "grid": "1285|Rács"
     }
   },
   "practice": {
     "language": {
-      "label": "Language",
-      "search": "Search a language",
-      "noMatch": "No language matches that.",
-      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+      "label": "1286|Nyelv",
+      "search": "1287|Nyelv keresése",
+      "noMatch": "1288|Nincs ilyen nyelv.",
+      "noVoice": "1289|A böngésződben nincs {{language}} hang, ezért a tanár nem fog ezen a nyelven beszélni. Add hozzá a nyelvi csomagot a rendszerbeállításokban, vagy válassz másik nyelvet."
     }
   }
 }
