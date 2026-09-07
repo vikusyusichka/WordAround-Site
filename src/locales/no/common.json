@@ -1,1725 +1,1725 @@
 {
   "app": {
-    "name": "WordAround",
-    "tagline": "Learn languages, actively."
+    "name": "1|WordAround",
+    "tagline": "2|Lær språk aktivt."
   },
   "onboarding": {
-    "subtitle": "Learn words in a fun and\nsimple way",
-    "start": "Let’s Start"
+    "subtitle": "3|Lær ord på en morsom\\nog enkel måte",
+    "start": "4|La oss begynne"
   },
   "auth": {
-    "welcomeBack": "Welcome Back",
-    "subtitle": "Sign in to continue learning",
-    "email": "Email",
-    "emailPlaceholder": "Enter your email",
-    "password": "Password",
-    "passwordPlaceholder": "Enter your password",
-    "forgotPassword": "Forgot password?",
-    "signIn": "Sign In",
-    "signingIn": "Signing In...",
-    "signUp": "Sign up",
-    "signOut": "Sign out",
-    "continueWithGoogle": "Continue with Google",
-    "createAccount": "Create Account",
-    "accountCreatedInfo": "Account created. We sent a verification email.",
-    "resetEmailSent": "Password reset email sent",
-    "showPassword": "Show password",
-    "hidePassword": "Hide password",
-    "back": "Back",
-    "signUpTitle": "Create your account",
-    "signUpSubtitle": "A few minutes a day and your vocabulary grows",
-    "name": "Name",
-    "namePlaceholder": "What should we call you?",
-    "orWithEmail": "or with email",
-    "signUpWithGoogle": "Sign up with Google",
-    "passwordHint": "At least {{min}} characters",
-    "magicLinkCta": "Sign in with an email link",
-    "creatingAccount": "Creating account..."
+    "welcomeBack": "5|Velkommen tilbake",
+    "subtitle": "6|Logg inn for å fortsette å lære",
+    "email": "7|E-post",
+    "emailPlaceholder": "8|Skriv inn e-posten din",
+    "password": "9|Passord",
+    "passwordPlaceholder": "10|Skriv inn passordet ditt",
+    "forgotPassword": "11|Glemt passordet?",
+    "signIn": "12|Logg inn",
+    "signingIn": "13|Logger inn...",
+    "signUp": "14|Registrer deg",
+    "signOut": "15|Logg ut",
+    "continueWithGoogle": "16|Fortsett med Google",
+    "createAccount": "17|Opprett konto",
+    "accountCreatedInfo": "18|Kontoen er opprettet. Vi har sendt en bekreftelses-e-post.",
+    "resetEmailSent": "19|E-post for tilbakestilling av passord er sendt",
+    "showPassword": "20|Vis passord",
+    "hidePassword": "21|Skjul passord",
+    "back": "22|Tilbake",
+    "signUpTitle": "23|Opprett kontoen din",
+    "signUpSubtitle": "24|Noen minutter om dagen, og ordforrådet ditt vokser",
+    "name": "25|Navn",
+    "namePlaceholder": "26|Hva skal vi kalle deg?",
+    "orWithEmail": "27|eller med e-post",
+    "signUpWithGoogle": "28|Registrer deg med Google",
+    "passwordHint": "29|Minst {{min}} tegn",
+    "magicLinkCta": "30|Logg inn med en lenke på e-post",
+    "creatingAccount": "31|Oppretter kontoen..."
   },
   "verify": {
-    "title": "Verify Your Email",
-    "subtitle": "One more step before you start learning",
-    "sentTo": "We sent a verification link to",
-    "fallbackEmail": "your email",
-    "step1": "Open the email in your inbox",
-    "step2": "Tap the confirmation link",
-    "step3": "We'll open your learning right away — no need to come back here",
-    "checkButton": "I Verified My Email",
-    "checking": "Checking...",
-    "resend": "Resend Email",
-    "useAnotherAccount": "Use Another Account",
-    "badgeInbox": "Check inbox",
-    "badgeConfirm": "Confirm",
-    "badgeDone": "Done",
-    "resentInfo": "Verification email sent again",
-    "notVerifiedYet": "Email is not verified yet"
+    "title": "32|Bekreft e-posten din",
+    "subtitle": "33|Ett skritt til før du begynner å lære",
+    "sentTo": "34|Vi sendte en bekreftelseslenke til",
+    "fallbackEmail": "35|e-posten din",
+    "step1": "36|Åpne e-posten i innboksen din",
+    "step2": "37|Trykk på bekreftelseslenken",
+    "step3": "38|Vi åpner læringen din med én gang — du trenger ikke komme tilbake hit",
+    "checkButton": "39|Jeg har bekreftet e-posten min",
+    "checking": "40|Sjekker...",
+    "resend": "41|Send e-posten på nytt",
+    "useAnotherAccount": "42|Bruk en annen konto",
+    "badgeInbox": "43|Sjekk innboksen",
+    "badgeConfirm": "44|Bekreft",
+    "badgeDone": "45|Ferdig",
+    "resentInfo": "46|Bekreftelses-e-posten er sendt på nytt",
+    "notVerifiedYet": "47|E-posten er ikke bekreftet ennå"
   },
   "errors": {
-    "emailRequired": "Email is required",
-    "emailInvalid": "Enter a valid email",
-    "emailFirst": "Enter your email first",
-    "passwordRequired": "Password is required",
-    "passwordTooShort": "Password must be at least 8 characters",
-    "invalidEmail": "Invalid email format",
-    "wrongPassword": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "userNotFound": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "invalidCredential": "Incorrect email or password. If you signed up with Google, use the Google button.",
-    "emailInUse": "This account already exists",
-    "weakPassword": "This password is too weak",
-    "network": "Network error. Check your internet connection",
-    "tooManyRequests": "Too many attempts. Try again later",
-    "differentCredential": "This email is already used with another sign-in method",
-    "noActiveAccount": "No active account found",
-    "default": "Authentication failed. Please try again",
-    "nameRequired": "Name is required",
-    "passwordsDoNotMatch": "Passwords don't match",
-    "actionExpired": "This link has expired. Request a new one.",
-    "actionInvalid": "This link is no longer valid.",
-    "userDisabled": "This account has been disabled.",
-    "requiresRecentLogin": "For security, sign in again and then repeat this.",
-    "passwordAlreadySet": "This account already has a password.",
-    "linkNoEmail": "Enter the email the link was sent to"
+    "emailRequired": "48|E-post er påkrevd",
+    "emailInvalid": "49|Skriv inn en gyldig e-post",
+    "emailFirst": "50|Skriv inn e-posten din først",
+    "passwordRequired": "51|Passord er påkrevd",
+    "passwordTooShort": "52|Passordet må ha minst 8 tegn",
+    "invalidEmail": "53|Ugyldig e-postformat",
+    "wrongPassword": "54|Feil e-post eller passord. Hvis du registrerte deg med Google, bruk Google-knappen.",
+    "userNotFound": "55|Feil e-post eller passord. Hvis du registrerte deg med Google, bruk Google-knappen.",
+    "invalidCredential": "56|Feil e-post eller passord. Hvis du registrerte deg med Google, bruk Google-knappen.",
+    "emailInUse": "57|Denne kontoen finnes allerede",
+    "weakPassword": "58|Dette passordet er for svakt",
+    "network": "59|Nettverksfeil. Sjekk internettforbindelsen din",
+    "tooManyRequests": "60|For mange forsøk. Prøv igjen senere",
+    "differentCredential": "61|Denne e-posten brukes allerede med en annen innloggingsmåte",
+    "noActiveAccount": "62|Fant ingen aktiv konto",
+    "default": "63|Innloggingen mislyktes. Prøv igjen",
+    "nameRequired": "64|Navn er påkrevd",
+    "passwordsDoNotMatch": "65|Passordene er ikke like",
+    "actionExpired": "66|Denne lenken er utløpt. Be om en ny.",
+    "actionInvalid": "67|Denne lenken er ikke gyldig lenger.",
+    "userDisabled": "68|Denne kontoen er deaktivert.",
+    "requiresRecentLogin": "69|Av sikkerhetshensyn: logg inn igjen, og gjenta dette.",
+    "passwordAlreadySet": "70|Denne kontoen har allerede et passord.",
+    "linkNoEmail": "71|Skriv inn e-posten lenken ble sendt til"
   },
   "nav": {
-    "home": "Home",
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing",
-    "folders": "Folders",
-    "sets": "Sets",
-    "notes": "Notes",
-    "profile": "Profile",
-    "create": "Create",
-    "menu": "Menu",
-    "closeMenu": "Close menu",
+    "home": "72|Hjem",
+    "speaking": "73|Muntlig",
+    "listening": "74|Lytting",
+    "reading": "75|Lesing",
+    "writing": "76|Skriving",
+    "folders": "77|Mapper",
+    "sets": "78|Sett",
+    "notes": "79|Notater",
+    "profile": "80|Profil",
+    "create": "81|Ny",
+    "menu": "82|Meny",
+    "closeMenu": "83|Lukk menyen",
     "group": {
-      "practice": "Practice",
-      "library": "Library"
+      "practice": "84|Øving",
+      "library": "85|Bibliotek"
     }
   },
   "folders": {
-    "create": "Create folder",
-    "loading": "Loading folders…",
-    "loadError": "Couldn't load your folders.",
-    "emptyTitle": "No folders yet",
-    "emptyBody": "Create your first folder to organize your sets.",
-    "setCount": "{{count}} sets",
-    "setCount_one": "{{count}} set",
-    "newTitle": "New folder",
-    "newSubtitle": "Group related sets together.",
-    "editTitle": "Edit folder",
-    "name": "Name",
-    "namePlaceholder": "e.g. Travel",
-    "description": "Description",
-    "descriptionPlaceholder": "Optional",
-    "color": "Color",
-    "save": "Save",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "edit": "Edit folder",
-    "delete": "Delete folder",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "backToFolders": "Back to folders",
-    "notFoundTitle": "Folder not found",
-    "notFoundBody": "This folder may have been deleted.",
-    "noSetsInFolder": "No sets in this folder yet.",
-    "saveError": "Couldn't save. Please try again.",
+    "create": "86|Opprett mappe",
+    "loading": "87|Laster mapper…",
+    "loadError": "88|Vi klarte ikke å laste mappene dine.",
+    "emptyTitle": "89|Ingen mapper ennå",
+    "emptyBody": "90|Opprett den første mappen din for å ordne settene dine.",
+    "setCount": "91|{{count}} sett",
+    "setCount_one": "92|{{count}} sett",
+    "newTitle": "93|Ny mappe",
+    "newSubtitle": "94|Samle sett som hører sammen.",
+    "editTitle": "95|Rediger mappe",
+    "name": "96|Navn",
+    "namePlaceholder": "97|f.eks. Reise",
+    "description": "98|Beskrivelse",
+    "descriptionPlaceholder": "99|Valgfritt",
+    "color": "100|Farge",
+    "save": "101|Lagre",
+    "saving": "102|Lagrer…",
+    "cancel": "103|Avbryt",
+    "edit": "104|Rediger mappe",
+    "delete": "105|Slett mappe",
+    "deleteConfirm": "106|Slette «{{title}}»? Dette kan ikke angres.",
+    "backToFolders": "107|Tilbake til mapper",
+    "notFoundTitle": "108|Fant ikke mappen",
+    "notFoundBody": "109|Denne mappen kan ha blitt slettet.",
+    "noSetsInFolder": "110|Ingen sett i denne mappen ennå.",
+    "saveError": "111|Kunne ikke lagre. Prøv igjen.",
     "error": {
-      "nameRequired": "Folder name is required.",
-      "nameTooLong": "Folder name must be under 80 characters.",
-      "descTooLong": "Description must be under 120 characters."
+      "nameRequired": "112|Mappenavn er påkrevd.",
+      "nameTooLong": "113|Mappenavnet må være under 80 tegn.",
+      "descTooLong": "114|Beskrivelsen må være under 120 tegn."
     },
-    "optional": "(optional)",
-    "preview": "Preview",
-    "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "optional": "115|(valgfritt)",
+    "preview": "116|Forhåndsvisning",
+    "previewPlaceholder": "117|Ny mappe",
+    "deleteConfirmTitle": "118|Slette denne mappen?"
   },
   "sets": {
-    "create": "Create set",
-    "loading": "Loading sets…",
-    "loadError": "Couldn't load your sets.",
-    "emptyTitle": "No sets yet",
-    "emptyBody": "Create your first flashcard set using the Create button.",
-    "cardCount": "{{count}} cards",
-    "cardCount_one": "{{count}} card",
-    "keepPracticing": "Keep practicing",
-    "delete": "Delete set",
-    "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-    "notFoundTitle": "Set not found",
-    "notFoundBody": "This set may have been deleted.",
-    "backToSets": "Back to sets",
-    "edit": "Edit set",
-    "deleteConfirmTitle": "Delete this set?",
-    "editTitle": "Edit set",
-    "editSubtitle": "Change the title, colour, icon or folder. Cards stay where they are.",
-    "save": "Save changes",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "create": "119|Opprett sett",
+    "loading": "120|Laster sett…",
+    "loadError": "121|Vi klarte ikke å laste settene dine.",
+    "emptyTitle": "122|Ingen sett ennå",
+    "emptyBody": "123|Opprett det første kortsettet ditt med Ny-knappen.",
+    "cardCount": "124|{{count}} kort",
+    "cardCount_one": "125|{{count}} kort",
+    "keepPracticing": "126|Fortsett å øve",
+    "delete": "127|Slett sett",
+    "deleteConfirm": "128|Slette «{{title}}»? Dette kan ikke angres.",
+    "notFoundTitle": "129|Fant ikke settet",
+    "notFoundBody": "130|Dette settet kan ha blitt slettet.",
+    "backToSets": "131|Tilbake til sett",
+    "edit": "132|Rediger sett",
+    "deleteConfirmTitle": "133|Slette dette settet?",
+    "editTitle": "134|Rediger sett",
+    "editSubtitle": "135|Endre tittel, farge, ikon eller mappe. Kortene blir der de er.",
+    "save": "136|Lagre endringer",
+    "saving": "137|Lagrer…",
+    "cancel": "138|Avbryt",
+    "saveError": "139|Kunne ikke lagre. Prøv igjen."
   },
   "createSet": {
-    "title": "New set",
-    "subtitle": "Add words and customize your set.",
-    "infoSection": "Set info",
-    "setTitle": "Title",
-    "setTitlePlaceholder": "e.g. Travel Essentials",
-    "setDescription": "Description",
-    "setDescriptionPlaceholder": "Optional",
-    "privacy": "Privacy",
-    "private": "Private",
-    "public": "Public",
-    "cardsSection": "Cards",
-    "addCard": "Add card",
-    "cardN": "Card {{n}}",
-    "removeCard": "Remove card",
-    "word": "Word",
-    "translation": "Translation",
-    "example": "Example (optional)",
-    "addImage": "Add image",
-    "removeImage": "Remove image",
-    "customizeSection": "Customize",
-    "color": "Color",
-    "icon": "Icon",
-    "folder": "Folder",
-    "noFolder": "No folder",
-    "previewSection": "Preview",
-    "previewPlaceholder": "Set title",
-    "save": "Create set",
-    "saving": "Saving…",
-    "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again.",
+    "title": "140|Nytt sett",
+    "subtitle": "141|Legg til ord, og tilpass settet ditt.",
+    "infoSection": "142|Om settet",
+    "setTitle": "143|Tittel",
+    "setTitlePlaceholder": "144|f.eks. Reiseord",
+    "setDescription": "145|Beskrivelse",
+    "setDescriptionPlaceholder": "146|Valgfritt",
+    "privacy": "147|Personvern",
+    "private": "148|Privat",
+    "public": "149|Offentlig",
+    "cardsSection": "150|Kort",
+    "addCard": "151|Legg til kort",
+    "cardN": "152|Kort {{n}}",
+    "removeCard": "153|Fjern kort",
+    "word": "154|Ord",
+    "translation": "155|Oversettelse",
+    "example": "156|Eksempel (valgfritt)",
+    "addImage": "157|Legg til bilde",
+    "removeImage": "158|Fjern bilde",
+    "customizeSection": "159|Tilpass",
+    "color": "160|Farge",
+    "icon": "161|Ikon",
+    "folder": "162|Mappe",
+    "noFolder": "163|Ingen mappe",
+    "previewSection": "164|Forhåndsvisning",
+    "previewPlaceholder": "165|Settets tittel",
+    "save": "166|Opprett sett",
+    "saving": "167|Lagrer…",
+    "cancel": "168|Avbryt",
+    "saveError": "169|Kunne ikke lagre. Prøv igjen.",
     "error": {
-      "emptyTitle": "Set title is required.",
-      "titleTooLong": "Set title must be under 150 characters.",
-      "descTooLong": "Description must be under 200 characters.",
-      "noValidCards": "Add at least one card with a word and translation.",
-      "exampleTooLong": "Card examples must be under 150 characters."
+      "emptyTitle": "170|Settets tittel er påkrevd.",
+      "titleTooLong": "171|Settets tittel må være under 150 tegn.",
+      "descTooLong": "172|Beskrivelsen må være under 200 tegn.",
+      "noValidCards": "173|Legg til minst ett kort med ord og oversettelse.",
+      "exampleTooLong": "174|Eksempler på kort må være under 150 tegn."
     },
-    "imageTimeout": "Image upload timed out. Check your connection and try again.",
+    "imageTimeout": "175|Tiden gikk ut da bildet ble lastet opp. Sjekk forbindelsen, og prøv igjen.",
     "import": {
-      "button": "Import",
-      "title": "Import cards",
-      "subtitle": "Copy and paste your data — from Word, Excel, Google Docs and the like.",
-      "close": "Close import",
-      "dataSection": "Your data",
-      "placeholder": "Word 1\tDefinition 1\nWord 2\tDefinition 2\nWord 3\tDefinition 3",
-      "separatorsSection": "Separators",
-      "betweenTermAndDefinition": "Between word and translation",
-      "betweenCards": "Between cards",
-      "tab": "Tab",
-      "comma": "Comma",
-      "newline": "New line",
-      "semicolon": "Semicolon",
-      "custom": "Custom",
-      "customPlaceholder": "e.g. —",
-      "previewSection": "Preview",
-      "previewEmpty": "Nothing to preview yet.",
-      "noDefinition": "No translation",
-      "confirm": "Add cards"
+      "button": "176|Importer",
+      "title": "177|Importer kort",
+      "subtitle": "178|Kopier og lim inn dataene dine — fra Word, Excel, Google Docs og lignende.",
+      "close": "179|Lukk importen",
+      "dataSection": "180|Dataene dine",
+      "placeholder": "181|Ord 1\\tDefinisjon 1\\nOrd 2\\tDefinisjon 2\\nOrd 3\\tDefinisjon 3",
+      "separatorsSection": "182|Skilletegn",
+      "betweenTermAndDefinition": "183|Mellom ord og oversettelse",
+      "betweenCards": "184|Mellom kort",
+      "tab": "185|Tabulator",
+      "comma": "186|Komma",
+      "newline": "187|Ny linje",
+      "semicolon": "188|Semikolon",
+      "custom": "189|Egen",
+      "customPlaceholder": "190|f.eks. —",
+      "previewSection": "191|Forhåndsvisning",
+      "previewEmpty": "192|Ingenting å vise ennå.",
+      "noDefinition": "193|Ingen oversettelse",
+      "confirm": "194|Legg til kort"
     },
     "iconPicker": {
-      "open": "More icons",
-      "title": "Choose icon",
-      "search": "Search symbol",
-      "close": "Close",
-      "empty": "No icons match that name."
+      "open": "195|Flere ikoner",
+      "title": "196|Velg ikon",
+      "search": "197|Søk etter symbol",
+      "close": "198|Lukk",
+      "empty": "199|Ingen ikoner passer til det navnet."
     },
     "iconGroup": {
-      "learning": "Learning",
-      "languages": "Languages",
-      "nature": "Nature",
-      "health": "Health",
-      "food": "Food",
-      "travel": "Travel",
-      "work": "Work",
-      "tech": "Tech",
-      "creativity": "Creativity",
-      "general": "General"
+      "learning": "200|Læring",
+      "languages": "201|Språk",
+      "nature": "202|Natur",
+      "health": "203|Helse",
+      "food": "204|Mat",
+      "travel": "205|Reise",
+      "work": "206|Jobb",
+      "tech": "207|Teknologi",
+      "creativity": "208|Kreativitet",
+      "general": "209|Generelt"
     }
   },
   "home": {
     "title": {
-      "flashcards": "Flashcards",
-      "folders": "Folders",
-      "sets": "Sets",
-      "create": "Create",
-      "profile": "Profile",
-      "speaking": "Speaking",
-      "listening": "Listening",
-      "reading": "Reading",
-      "writing": "Writing"
+      "flashcards": "210|Kort",
+      "folders": "211|Mapper",
+      "sets": "212|Sett",
+      "create": "213|Ny",
+      "profile": "214|Profil",
+      "speaking": "215|Muntlig",
+      "listening": "216|Lytting",
+      "reading": "217|Lesing",
+      "writing": "218|Skriving"
     },
     "subtitle": {
-      "pickSet": "Pick a set to practice",
-      "folders": "Manage your folders",
-      "sets": "Manage your flashcard sets",
-      "create": "Build a new study set",
-      "speaking": "Practice speaking skills.",
-      "listening": "Train your ears to understand language naturally.",
-      "reading": "Read and review language materials.",
-      "writing": "Practice your language actively."
+      "pickSet": "219|Velg et sett å øve på",
+      "folders": "220|Håndter mappene dine",
+      "sets": "221|Håndter kortsettene dine",
+      "create": "222|Opprett et nytt studiesett",
+      "speaking": "223|Øv på å snakke.",
+      "listening": "224|Tren øret til å forstå språket naturlig.",
+      "reading": "225|Les og repeter materiale på språket.",
+      "writing": "226|Bruk språket aktivt."
     },
     "category": {
-      "speaking": "SPEAKING",
-      "listening": "LISTENING",
-      "reading": "READING",
-      "writing": "WRITING"
+      "speaking": "227|MUNTLIG",
+      "listening": "228|LYTTING",
+      "reading": "229|LESING",
+      "writing": "230|SKRIVING"
     },
     "todayGoal": {
-      "title": "Today's goal",
-      "left": "{{count}} words left"
+      "title": "231|Dagens mål",
+      "left": "232|{{count}} ord igjen"
     },
     "stat": {
-      "learnedToday": "Learned today",
-      "words": "words",
-      "accuracy": "Accuracy",
-      "greatJob": "Great job!",
-      "streak": "Streak",
-      "days": "days"
+      "learnedToday": "233|Lært i dag",
+      "words": "234|ord",
+      "accuracy": "235|Treffsikkerhet",
+      "greatJob": "236|Godt jobbet!",
+      "streak": "237|Rekke",
+      "days": "238|dager"
     },
-    "continueLearning": "Continue learning",
-    "yourSets": "Your sets",
-    "viewAll": "View all",
-    "review": "Review",
+    "continueLearning": "239|Fortsett å lære",
+    "yourSets": "240|Settene dine",
+    "viewAll": "241|Se alle",
+    "review": "242|Repeter",
     "sets": {
-      "emptyTitle": "No sets yet",
-      "emptyBody": "Create your first flashcard set using the Create button."
+      "emptyTitle": "243|Ingen sett ennå",
+      "emptyBody": "244|Opprett det første kortsettet ditt med Ny-knappen."
     },
     "create": {
-      "folder": "Folder",
-      "set": "Set",
-      "text": "Text",
-      "audio": "Audio",
-      "essay": "Essay"
+      "folder": "245|Mappe",
+      "set": "246|Sett",
+      "text": "247|Tekst",
+      "audio": "248|Lyd",
+      "essay": "249|Essay"
     },
     "placeholder": {
-      "comingSoon": "{{title}} — coming soon"
+      "comingSoon": "250|{{title}} — kommer snart"
     },
     "progress": {
       "subtitle": {
-        "speaking": "of speaking practice",
-        "listening": "of listening practice",
-        "reading": "of reading practice",
-        "writing": "of writing practice"
+        "speaking": "251|muntlig øving",
+        "listening": "252|lytteøving",
+        "reading": "253|leseøving",
+        "writing": "254|skriveøving"
       }
     },
     "dailyGoal": {
-      "title": "Your goal for today",
-      "body": "Pick what you want to practise today — the card below counts against it.",
-      "chosenBody": "This is what today is about.",
-      "howMuch": "How much?",
-      "change": "Change"
+      "title": "255|Målet ditt for i dag",
+      "body": "256|Velg hva du vil øve på i dag — kortet nedenfor teller mot det.",
+      "chosenBody": "257|Det er dette dagen handler om.",
+      "howMuch": "258|Hvor mye?",
+      "change": "259|Endre"
     },
     "lastNote": {
-      "title": "Last note you read"
+      "title": "260|Sist leste notat"
     }
   },
   "categories": {
-    "speaking": "Speaking",
-    "listening": "Listening",
-    "reading": "Reading",
-    "writing": "Writing"
+    "speaking": "261|Muntlig",
+    "listening": "262|Lytting",
+    "reading": "263|Lesing",
+    "writing": "264|Skriving"
   },
   "phase0": {
-    "title": "WordAround",
-    "subtitle": "Phase 0 is live. Design tokens loaded, Firebase connected."
+    "title": "265|WordAround",
+    "subtitle": "266|Fase 0 kjører. Designtokens lastet, Firebase tilkoblet."
   },
   "study": {
-    "flip": "Flip",
-    "known": "I knew it",
-    "unknown": "Still learning",
-    "mastered": "Mastered",
-    "shuffle": "Shuffle",
-    "trackProgress": "Track progress",
-    "speak": "Speak",
-    "roundDone": "Round complete",
-    "knewCount": "You knew {{known}} of {{total}}",
-    "repeatUnknown": "Repeat {{count}} unknown",
-    "restart": "Restart",
+    "flip": "267|Snu",
+    "known": "268|Jeg kunne det",
+    "unknown": "269|Holder på å lære",
+    "mastered": "270|Behersker",
+    "shuffle": "271|Stokk",
+    "trackProgress": "272|Følg fremgang",
+    "speak": "273|Uttal",
+    "roundDone": "274|Runden er ferdig",
+    "knewCount": "275|Du kunne {{known}} av {{total}}",
+    "repeatUnknown": "276|Repeter {{count}} ukjente",
+    "restart": "277|Start på nytt",
     "filter": {
-      "all": "All",
-      "studied": "Studied",
-      "remaining": "Remaining",
-      "mastered": "Mastered"
+      "all": "278|Alle",
+      "studied": "279|Øvde",
+      "remaining": "280|Igjen",
+      "mastered": "281|Behersket"
     },
-    "addCard": "Add card",
-    "editCard": "Edit card",
-    "deleteCard": "Delete card",
-    "deleteCardConfirm": "Delete this card?",
-    "emptyPrompt": "This set has no cards yet. Add your first card.",
-    "save": "Save",
-    "cancel": "Cancel"
+    "addCard": "282|Legg til kort",
+    "editCard": "283|Rediger kort",
+    "deleteCard": "284|Slett kort",
+    "deleteCardConfirm": "285|Slette dette kortet?",
+    "emptyPrompt": "286|Dette settet har ingen kort ennå. Legg til det første.",
+    "save": "287|Lagre",
+    "cancel": "288|Avbryt"
   },
   "writing": {
     "today": {
-      "title": "Today progress",
-      "unit": "words",
-      "subtitle": "of writing practice"
+      "title": "289|Dagens fremgang",
+      "unit": "290|ord",
+      "subtitle": "291|skriveøving"
     },
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "292|Øvingsmåter",
     "menu": {
       "writeFromSets": {
-        "title": "Write from sets",
-        "subtitle": "Practice spelling and writing words from your sets."
+        "title": "293|Skriv fra sett",
+        "subtitle": "294|Øv på staving og skriving av ordene i settene dine."
       },
       "essays": {
-        "title": "Essays",
-        "subtitle": "Write texts and get AI feedback on grammar and style."
+        "title": "295|Essayer",
+        "subtitle": "296|Skriv tekster, og få KI-tilbakemelding på grammatikk og stil."
       },
-      "comingSoon": "Coming soon"
+      "comingSoon": "297|Kommer snart"
     },
     "setSelection": {
-      "title": "Choose set",
+      "title": "298|Velg sett",
       "empty": {
-        "title": "No sets with words",
-        "subtitle": "Create a set with at least one card before starting writing practice."
+        "title": "299|Ingen sett med ord",
+        "subtitle": "300|Opprett et sett med minst ett kort før du begynner på skriveøvingen."
       },
-      "wordsCount": "{{count}} words",
-      "wordsCount_one": "{{count}} word",
-      "close": "Close"
+      "wordsCount": "301|{{count}} ord",
+      "wordsCount_one": "302|{{count}} ord",
+      "close": "303|Lukk"
     },
     "writeWords": {
-      "title": "Write from sets",
-      "subtitle": "Type the translation and press Enter.",
-      "translateHint": "Translate to your language",
-      "hint": "Hint",
-      "skip": "Skip",
-      "submit": "Check",
-      "inputPlaceholder": "Type here…",
-      "loading": "Loading set…",
-      "loadError": "Couldn't load this set.",
-      "noCards": "This set has no cards.",
-      "back": "Back",
+      "title": "304|Skriv fra sett",
+      "subtitle": "305|Skriv oversettelsen, og trykk Enter.",
+      "translateHint": "306|Oversett til ditt eget språk",
+      "hint": "307|Hint",
+      "skip": "308|Hopp over",
+      "submit": "309|Sjekk",
+      "inputPlaceholder": "310|Skriv her…",
+      "loading": "311|Laster settet…",
+      "loadError": "312|Vi klarte ikke å laste dette settet.",
+      "noCards": "313|Dette settet har ingen kort.",
+      "back": "314|Tilbake",
       "settings": {
-        "title": "Settings",
-        "trainingMode": "Training mode",
-        "difficulty": "Difficulty"
+        "title": "315|Innstillinger",
+        "trainingMode": "316|Treningsmodus",
+        "difficulty": "317|Vanskelighetsgrad"
       },
       "mode": {
-        "wordToTranslation": "Word → Translation",
-        "translationToWord": "Translation → Word"
+        "wordToTranslation": "318|Ord → Oversettelse",
+        "translationToWord": "319|Oversettelse → Ord"
       },
       "difficulty": {
-        "easy": "Easy",
-        "medium": "Medium",
-        "hard": "Hard",
-        "easyDesc": "Unlimited hints, unlimited skips",
-        "mediumDesc": "1 hint letter, max 25% skips",
-        "hardDesc": "No hints, no skips, timed"
+        "easy": "320|Lett",
+        "medium": "321|Middels",
+        "hard": "322|Vanskelig",
+        "easyDesc": "323|Ubegrenset med hint, ubegrenset med overhopp",
+        "mediumDesc": "324|1 bokstav som hint, maks 25 % overhopp",
+        "hardDesc": "325|Ingen hint, ingen overhopp, på tid"
       },
       "translatePrompt": {
-        "word": "Translate to your language",
-        "translation": "Write the original word"
+        "word": "326|Oversett til ditt eget språk",
+        "translation": "327|Skriv det opprinnelige ordet"
       },
-      "skipsLeft_one": "{{count}} skip left",
-      "skipsLeft_other": "{{count}} skips left",
-      "seconds": "{{count}}s",
+      "skipsLeft_one": "328|{{count}} overhopp igjen",
+      "skipsLeft_other": "329|{{count}} overhopp igjen",
+      "seconds": "330|{{count}} sek",
       "result": {
         "win": {
-          "title": "Round complete!",
-          "subtitle": "Great work. You finished this writing round."
+          "title": "331|Runden er ferdig!",
+          "subtitle": "332|Godt jobbet. Du fullførte denne skriverunden."
         },
         "timeout": {
-          "title": "Time's up",
-          "subtitle": "The hard-mode timer reached zero. Try again from the first word."
+          "title": "333|Tiden er ute",
+          "subtitle": "334|Tidsuret i vanskelig modus nådde null. Prøv igjen fra det første ordet."
         },
         "wrong": {
-          "title": "Wrong answer",
-          "subtitle": "One mistake ends the round in Hard mode."
+          "title": "335|Feil svar",
+          "subtitle": "336|I vanskelig modus avslutter én feil runden."
         },
-        "perfectTitle": "Perfect round!",
-        "perfectBody": "You completed Hard mode without mistakes. No skips. No hints. Just skill.",
-        "totalWords": "Total words",
-        "completedWords": "Completed words",
-        "skippedWords": "Skipped words",
-        "hintsUsed": "Hints used",
-        "streak": "Streak",
-        "difficultyLabel": "Difficulty",
-        "word": "Word",
-        "yourAnswer": "Your answer",
-        "correctAnswer": "Correct answer",
-        "tryAgain": "Try again"
+        "perfectTitle": "337|Perfekt runde!",
+        "perfectBody": "338|Du fullførte vanskelig modus uten feil. Ingen overhopp. Ingen hint. Bare ferdigheter.",
+        "totalWords": "339|Ord totalt",
+        "completedWords": "340|Fullførte ord",
+        "skippedWords": "341|Overhoppede ord",
+        "hintsUsed": "342|Brukte hint",
+        "streak": "343|Rekke",
+        "difficultyLabel": "344|Vanskelighetsgrad",
+        "word": "345|Ord",
+        "yourAnswer": "346|Svaret ditt",
+        "correctAnswer": "347|Riktig svar",
+        "tryAgain": "348|Prøv igjen"
       }
     },
     "essays": {
-      "title": "Essays",
-      "subtitle": "AI-picked topic. Write, then get feedback.",
+      "title": "349|Essayer",
+      "subtitle": "350|KI velger temaet. Skriv, og få så tilbakemelding.",
       "mode": {
-        "suggested": "Suggested",
-        "custom": "My topic"
+        "suggested": "351|Foreslått",
+        "custom": "352|Mitt tema"
       },
       "custom": {
-        "placeholder": "Write your own essay topic...",
-        "generate": "Generate task"
+        "placeholder": "353|Skriv ditt eget essaytema...",
+        "generate": "354|Generer oppgave"
       },
       "suggested": {
-        "generate": "Generate topic",
-        "regenerate": "New topic"
+        "generate": "355|Generer tema",
+        "regenerate": "356|Nytt tema"
       },
-      "language": "Language",
-      "difficulty": "Difficulty",
+      "language": "357|Språk",
+      "difficulty": "358|Vanskelighetsgrad",
       "task": {
-        "time": "≈ {{count}} min",
-        "wordRange": "{{min}}-{{max}} words",
-        "quickTips": "Quick tips",
-        "taskLabel": "Task"
+        "time": "359|≈ {{count}} min",
+        "wordRange": "360|{{min}}-{{max}} ord",
+        "quickTips": "361|Raske tips",
+        "taskLabel": "362|Oppgave"
       },
       "editor": {
-        "placeholder": "Start writing your essay here...",
-        "wordCount": "{{count}} / {{min}}-{{max}} words",
+        "placeholder": "363|Begynn å skrive essayet ditt her...",
+        "wordCount": "364|{{count}} / {{min}}-{{max}} ord",
         "validation": {
-          "belowMinimum": "Keep going — you need at least {{min}} words.",
-          "aboveMaximum": "You've passed the limit — try to tighten it up.",
-          "valid": "Within range."
+          "belowMinimum": "365|Fortsett — du trenger minst {{min}} ord.",
+          "aboveMaximum": "366|Du har passert grensen — prøv å stramme inn.",
+          "valid": "367|Innenfor rammen."
         },
-        "reset": "Reset"
+        "reset": "368|Nullstill"
       },
       "error": {
-        "emptyCustomTopic": "Type a topic first.",
-        "generationFailed": "Couldn't generate a topic. Please try again."
+        "emptyCustomTopic": "369|Skriv et tema først.",
+        "generationFailed": "370|Kunne ikke generere et tema. Prøv igjen."
       },
-      "generating": "Generating...",
+      "generating": "371|Genererer...",
       "hint": {
-        "button": "Get hint",
-        "remaining": "{{remaining}}/{{limit}} left",
-        "noneLeft": "No hints left",
-        "notAvailable": "Hints not available at this level",
-        "generating": "Generating hint...",
-        "error": "Couldn't get a hint. Please try again.",
+        "button": "372|Be om hint",
+        "remaining": "373|{{remaining}}/{{limit}} igjen",
+        "noneLeft": "374|Ingen hint igjen",
+        "notAvailable": "375|Hint er ikke tilgjengelig på dette nivået",
+        "generating": "376|Genererer hint...",
+        "error": "377|Kunne ikke hente et hint. Prøv igjen.",
         "category": {
-          "content": "Content",
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "structure": "Structure"
+          "content": "378|Innhold",
+          "grammar": "379|Grammatikk",
+          "vocabulary": "380|Ordforråd",
+          "structure": "381|Struktur"
         }
       },
       "check": {
-        "button": "Check my essay",
-        "checking": "Checking...",
-        "disabled": "Write within the word range first",
-        "error": "Couldn't check your essay. Please try again.",
-        "languageUnsupported": "Grammar check isn't available for {{language}} yet."
+        "button": "382|Sjekk essayet mitt",
+        "checking": "383|Sjekker...",
+        "disabled": "384|Hold deg innenfor ordrammen først",
+        "error": "385|Vi klarte ikke å sjekke essayet ditt. Prøv igjen.",
+        "languageUnsupported": "386|Grammatikksjekk finnes ikke for {{language}} ennå."
       },
       "score": {
-        "title": "Essay score",
+        "title": "387|Essayets poengsum",
         "quality": {
-          "excellent": "Excellent",
-          "veryGood": "Very good",
-          "good": "Good",
-          "needsWork": "Needs work"
+          "excellent": "388|Utmerket",
+          "veryGood": "389|Veldig bra",
+          "good": "390|Bra",
+          "needsWork": "391|Trenger arbeid"
         },
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "length": "Length",
-          "complexity": "Complexity",
-          "relevance": "Relevance",
-          "independence": "Independence"
+          "grammar": "392|Grammatikk",
+          "vocabulary": "393|Ordforråd",
+          "length": "394|Lengde",
+          "complexity": "395|Kompleksitet",
+          "relevance": "396|Relevans",
+          "independence": "397|Selvstendighet"
         },
         "stat": {
-          "words": "Words",
-          "grammar": "Grammar",
-          "vocabStyle": "Vocab/style",
-          "hints": "Hints",
-          "translations": "Translations",
-          "synonyms": "Synonyms"
+          "words": "398|Ord",
+          "grammar": "399|Grammatikk",
+          "vocabStyle": "400|Ordvalg/stil",
+          "hints": "401|Hint",
+          "translations": "402|Oversettelser",
+          "synonyms": "403|Synonymer"
         }
       },
       "grammar": {
-        "sectionTitle": "Grammar issues",
-        "count_one": "{{count}} issue",
-        "count_other": "{{count}} issues",
-        "empty": "No grammar issues found — great job!",
-        "original": "Original:",
-        "suggestion": "Suggestion:",
-        "reason": "Reason:",
+        "sectionTitle": "404|Grammatikkproblemer",
+        "count_one": "405|{{count}} problem",
+        "count_other": "406|{{count}} problemer",
+        "empty": "407|Ingen grammatikkproblemer funnet — godt jobbet!",
+        "original": "408|Original:",
+        "suggestion": "409|Forslag:",
+        "reason": "410|Grunn:",
         "category": {
-          "grammar": "Grammar",
-          "vocabulary": "Vocabulary",
-          "style": "Style"
+          "grammar": "411|Grammatikk",
+          "vocabulary": "412|Ordforråd",
+          "style": "413|Stil"
         },
         "save": {
-          "idle": "Save to Notes",
-          "saving": "Saving…",
-          "saved": "Saved",
-          "duplicate": "Already saved",
-          "failed": "Retry save"
+          "idle": "414|Lagre i notater",
+          "saving": "415|Lagrer…",
+          "saved": "416|Lagret",
+          "duplicate": "417|Allerede lagret",
+          "failed": "418|Prøv å lagre på nytt"
         }
       },
       "helper": {
-        "translate": "Translate",
-        "synonym": "Synonym",
-        "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "translate": "419|Oversett",
+        "synonym": "420|Synonym",
+        "remaining": "421|{{remaining}} igjen",
+        "notAvailable": "422|Ikke tilgjengelig på dette nivået"
       },
       "translate": {
-        "title": "Translate",
-        "placeholder": "Enter a word or short phrase",
-        "submit": "Translate",
-        "submitting": "Translating..."
+        "title": "423|Oversett",
+        "placeholder": "424|Skriv inn et ord eller en kort frase",
+        "submit": "425|Oversett",
+        "submitting": "426|Oversetter..."
       },
       "synonym": {
-        "title": "Synonyms",
-        "placeholder": "Enter a word",
-        "submit": "Find synonyms",
-        "submitting": "Searching..."
+        "title": "427|Synonymer",
+        "placeholder": "428|Skriv inn et ord",
+        "submit": "429|Finn synonymer",
+        "submitting": "430|Søker..."
       },
       "assist": {
-        "from": "From",
-        "to": "To",
-        "close": "Close",
-        "noResult": "No result found.",
-        "sameLanguage": "Choose a different input language.",
-        "error": "The service is temporarily unavailable."
+        "from": "431|Fra",
+        "to": "432|Til",
+        "close": "433|Lukk",
+        "noResult": "434|Fant ingen resultater.",
+        "sameLanguage": "435|Velg et annet kildespråk.",
+        "error": "436|Tjenesten er midlertidig utilgjengelig."
       },
-      "saveMistakeConfirmTitle": "Save this mistake to Notes?",
-      "saveMistakeConfirmBody": "It will be saved as a mistake note with the correction “{{correction}}”.",
-      "autoSaveConfirmTitle": "Save these mistakes to your notes?",
-      "autoSaveConfirmBody_one": "This check found {{count}} mistake. Saving turns it into a note that comes back for review.",
-      "autoSaveConfirmBody_other": "This check found {{count}} mistakes. Saving turns them into notes that come back for review."
+      "saveMistakeConfirmTitle": "437|Lagre denne feilen i notatene?",
+      "saveMistakeConfirmBody": "438|Den lagres som et feilnotat med rettelsen «{{correction}}».",
+      "autoSaveConfirmTitle": "439|Lagre disse feilene i notatene dine?",
+      "autoSaveConfirmBody_one": "440|Denne sjekken fant {{count}} feil. Lagrer du den, blir den et notat som kommer tilbake til repetisjon.",
+      "autoSaveConfirmBody_other": "441|Denne sjekken fant {{count}} feil. Lagrer du dem, blir de notater som kommer tilbake til repetisjon."
     },
     "grammar": {
-      "subtitle": "Organize grammar by topic with clear, structured notes.",
-      "newTopic": "New topic",
-      "topicsEmptyTitle": "No topics yet",
-      "topicsEmptyBody": "Create your first topic to start collecting grammar notes.",
-      "notesCount_one": "{{count}} note",
-      "notesCount_other": "{{count}} notes",
-      "deleteTopicConfirm": "Delete \"{{title}}\" and all its notes? This can't be undone.",
-      "notesEmptyTitle": "No notes yet",
-      "notesEmptyBody": "Add your first note to this topic.",
-      "newNote": "New note",
-      "deleteNoteConfirm": "Delete this note? This can't be undone.",
-      "loading": "Loading…",
-      "loadError": "Couldn't load your grammar notes.",
-      "notFoundTitle": "Not found",
-      "notFoundBody": "This item may have been deleted.",
-      "back": "Back",
-      "updated": "Updated {{date}}",
+      "subtitle": "442|Ordne grammatikken etter tema med tydelige, strukturerte notater.",
+      "newTopic": "443|Nytt tema",
+      "topicsEmptyTitle": "444|Ingen temaer ennå",
+      "topicsEmptyBody": "445|Opprett det første temaet ditt, og begynn å samle grammatikknotater.",
+      "notesCount_one": "446|{{count}} notat",
+      "notesCount_other": "447|{{count}} notater",
+      "deleteTopicConfirm": "448|Slette «{{title}}» og alle notatene? Dette kan ikke angres.",
+      "notesEmptyTitle": "449|Ingen notater ennå",
+      "notesEmptyBody": "450|Legg til det første notatet ditt i dette temaet.",
+      "newNote": "451|Nytt notat",
+      "deleteNoteConfirm": "452|Slette dette notatet? Dette kan ikke angres.",
+      "loading": "453|Laster…",
+      "loadError": "454|Vi klarte ikke å laste grammatikknotatene dine.",
+      "notFoundTitle": "455|Ikke funnet",
+      "notFoundBody": "456|Dette elementet kan ha blitt slettet.",
+      "back": "457|Tilbake",
+      "updated": "458|Oppdatert {{date}}",
       "form": {
-        "newTitle": "New topic",
-        "editTitle": "Edit topic",
-        "name": "Title",
-        "namePlaceholder": "e.g. Spanish verbs",
-        "description": "Description",
-        "descriptionPlaceholder": "Optional",
-        "color": "Color",
-        "icon": "Icon",
-        "save": "Save",
-        "cancel": "Cancel",
-        "language": "Language",
-        "languageNone": "Not set"
+        "newTitle": "459|Nytt tema",
+        "editTitle": "460|Rediger tema",
+        "name": "461|Tittel",
+        "namePlaceholder": "462|f.eks. Spanske verb",
+        "description": "463|Beskrivelse",
+        "descriptionPlaceholder": "464|Valgfritt",
+        "color": "465|Farge",
+        "icon": "466|Ikon",
+        "save": "467|Lagre",
+        "cancel": "468|Avbryt",
+        "language": "469|Språk",
+        "languageNone": "470|Ikke angitt"
       },
       "noteType": {
-        "standard": "Standard",
-        "mistake": "Mistake",
-        "rule": "Rule",
-        "comparison": "Comparison",
-        "cheatSheet": "Cheat sheet",
-        "exercise": "Exercise"
+        "standard": "471|Standard",
+        "mistake": "472|Feil",
+        "rule": "473|Regel",
+        "comparison": "474|Sammenligning",
+        "cheatSheet": "475|Jukselapp",
+        "exercise": "476|Øvelse"
       },
       "block": {
-        "heading": "Heading",
-        "paragraph": "Text",
-        "bulletList": "Bullet list",
-        "rule": "Rule",
-        "example": "Example",
-        "warning": "Warning",
-        "quote": "Quote",
-        "divider": "Divider",
-        "addBlock": "Add block",
-        "addItem": "Add item",
-        "moveUp": "Move up",
-        "moveDown": "Move down",
-        "remove": "Remove",
-        "secondaryPlaceholder": "Detail / translation (optional)",
-        "subheading": "Subheading",
-        "numberedList": "Numbered list",
-        "checklist": "Checklist",
-        "comparison": "Comparison",
-        "exercise": "Exercise",
-        "quiz": "Quiz",
-        "image": "Image",
-        "comparisonSecondary": "Second side",
-        "imageAdd": "Add / replace image",
-        "imageUploading": "Uploading…",
-        "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images."
+        "heading": "477|Overskrift",
+        "paragraph": "478|Tekst",
+        "bulletList": "479|Punktliste",
+        "rule": "480|Regel",
+        "example": "481|Eksempel",
+        "warning": "482|Advarsel",
+        "quote": "483|Sitat",
+        "divider": "484|Skillelinje",
+        "addBlock": "485|Legg til blokk",
+        "addItem": "486|Legg til element",
+        "moveUp": "487|Flytt opp",
+        "moveDown": "488|Flytt ned",
+        "remove": "489|Fjern",
+        "secondaryPlaceholder": "490|Detalj / oversettelse (valgfritt)",
+        "subheading": "491|Underoverskrift",
+        "numberedList": "492|Nummerert liste",
+        "checklist": "493|Sjekkliste",
+        "comparison": "494|Sammenligning",
+        "exercise": "495|Øvelse",
+        "quiz": "496|Quiz",
+        "image": "497|Bilde",
+        "comparisonSecondary": "498|Andre side",
+        "imageAdd": "499|Legg til / bytt bilde",
+        "imageUploading": "500|Laster opp…",
+        "imageFailed": "501|Bildet kunne ikke lastes opp.",
+        "imageSaveFirst": "502|Logg inn for å laste opp bilder."
       },
       "blockPlaceholder": {
-        "heading": "Heading",
-        "paragraph": "Write your explanation…",
-        "bulletList": "List item",
-        "rule": "Explain the grammar rule…",
-        "example": "Add an example…",
-        "warning": "Common mistake or warning…",
-        "quote": "Sentence worth remembering…",
-        "subheading": "Subheading",
-        "numberedList": "List item",
-        "checklist": "Checklist item",
-        "comparison": "First side",
-        "exercise": "Practice instruction…",
-        "quiz": "Question",
-        "image": "Image caption"
+        "heading": "503|Overskrift",
+        "paragraph": "504|Skriv forklaringen din…",
+        "bulletList": "505|Listeelement",
+        "rule": "506|Forklar grammatikkregelen…",
+        "example": "507|Legg til et eksempel…",
+        "warning": "508|Vanlig feil eller advarsel…",
+        "quote": "509|Setning verdt å huske…",
+        "subheading": "510|Underoverskrift",
+        "numberedList": "511|Listeelement",
+        "checklist": "512|Sjekklisteelement",
+        "comparison": "513|Første side",
+        "exercise": "514|Instruksjon til øvelsen…",
+        "quiz": "515|Spørsmål",
+        "image": "516|Bildetekst"
       },
       "editor": {
-        "titlePlaceholder": "Note title",
-        "save": "Save note",
-        "saving": "Saving…",
-        "delete": "Delete note",
-        "saveError": "Couldn't save. Please try again.",
-        "subtitle": "Edit note",
-        "tags": "Tags",
-        "tagsPlaceholder": "Add a tag…",
-        "removeTag": "Remove tag {{tag}}",
-        "addToReview": "Add to review",
-        "addedToReview": "Added to your review queue.",
-        "inReview": "In review · {{when}}",
-        "inReviewDue": "Due for review",
-        "removedFromReview": "Removed from your review queue.",
-        "unsavedTitle": "Leave without saving?",
-        "unsavedBody": "This note has changes that have not been saved yet.",
-        "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "titlePlaceholder": "517|Notatets tittel",
+        "save": "518|Lagre notat",
+        "saving": "519|Lagrer…",
+        "delete": "520|Slett notat",
+        "saveError": "521|Kunne ikke lagre. Prøv igjen.",
+        "subtitle": "522|Rediger notat",
+        "tags": "523|Etiketter",
+        "tagsPlaceholder": "524|Legg til etikett…",
+        "removeTag": "525|Fjern etiketten {{tag}}",
+        "addToReview": "526|Legg til i repetisjon",
+        "addedToReview": "527|Lagt til i repetisjonskøen din.",
+        "inReview": "528|I repetisjon · {{when}}",
+        "inReviewDue": "529|Klar for repetisjon",
+        "removedFromReview": "530|Fjernet fra repetisjonskøen din.",
+        "unsavedTitle": "531|Gå ut uten å lagre?",
+        "unsavedBody": "532|Dette notatet har endringer som ikke er lagret.",
+        "discard": "533|Forkast endringene",
+        "saveAndLeave": "534|Lagre og gå ut"
       },
       "quiz": {
-        "title": "Quizzes",
-        "new": "New quiz",
-        "start": "Start quiz",
-        "delete": "Delete quiz",
-        "deleteConfirm": "Delete \"{{title}}\"? This can't be undone.",
-        "emptyTitle": "No quizzes yet",
-        "emptyBody": "Create a quiz from this note to test yourself.",
-        "loadError": "Couldn't load quizzes.",
-        "questionsCount_one": "{{count}} question",
-        "questionsCount_other": "{{count}} questions",
+        "title": "535|Quizer",
+        "new": "536|Ny quiz",
+        "start": "537|Start quiz",
+        "delete": "538|Slett quiz",
+        "deleteConfirm": "539|Slette «{{title}}»? Dette kan ikke angres.",
+        "emptyTitle": "540|Ingen quizer ennå",
+        "emptyBody": "541|Lag en quiz fra dette notatet, og test deg selv.",
+        "loadError": "542|Quizene kunne ikke lastes.",
+        "questionsCount_one": "543|{{count}} spørsmål",
+        "questionsCount_other": "544|{{count}} spørsmål",
         "type": {
-          "multipleChoice": "Multiple choice",
-          "trueFalse": "True / False",
-          "fillGap": "Fill gap",
-          "shortAnswer": "Short answer"
+          "multipleChoice": "545|Flervalg",
+          "trueFalse": "546|Sant / Usant",
+          "fillGap": "547|Fyll ut hullet",
+          "shortAnswer": "548|Kort svar"
         },
         "sheet": {
-          "title": "Create quiz",
-          "titlePlaceholder": "Quiz title",
-          "mode": "Generation mode",
-          "modeSmart": "Smart local",
-          "modeSmartDesc": "Generate questions from note content locally.",
-          "modeAI": "AI generated",
-          "modeAIDesc": "Generate richer contextual questions using AI.",
-          "count": "Questions",
-          "types": "Question types",
-          "focus": "Focus (optional)",
-          "focusPlaceholder": "e.g. focus on irregular forms",
-          "preview": "Preview questions",
-          "regenerate": "Regenerate preview",
-          "previewTitle": "Preview",
-          "saveQuiz": "Save quiz",
-          "generateQuiz": "Generate quiz",
-          "generating": "Generating…",
-          "saving": "Saving…",
-          "useSmartInstead": "Use Smart local instead",
-          "modeManual": "Manual",
-          "modeManualDesc": "Write your own questions.",
-          "createQuiz": "Create quiz"
+          "title": "549|Opprett quiz",
+          "titlePlaceholder": "550|Quizens tittel",
+          "mode": "551|Genereringsmåte",
+          "modeSmart": "552|Smart lokalt",
+          "modeSmartDesc": "553|Lager spørsmål fra innholdet i notatet, på enheten.",
+          "modeAI": "554|Generert med KI",
+          "modeAIDesc": "555|Lager rikere, kontekstuelle spørsmål med KI.",
+          "count": "556|Spørsmål",
+          "types": "557|Spørsmålstyper",
+          "focus": "558|Fokus (valgfritt)",
+          "focusPlaceholder": "559|f.eks. fokuser på uregelrette former",
+          "preview": "560|Forhåndsvis spørsmålene",
+          "regenerate": "561|Generer forhåndsvisningen på nytt",
+          "previewTitle": "562|Forhåndsvisning",
+          "saveQuiz": "563|Lagre quiz",
+          "generateQuiz": "564|Generer quiz",
+          "generating": "565|Genererer…",
+          "saving": "566|Lagrer…",
+          "useSmartInstead": "567|Bruk Smart lokalt i stedet",
+          "modeManual": "568|Manuelt",
+          "modeManualDesc": "569|Skriv dine egne spørsmål.",
+          "createQuiz": "570|Opprett quiz"
         },
         "play": {
-          "questionOf": "Question {{current}} of {{total}}",
-          "submit": "Submit answer",
-          "next": "Next",
-          "finish": "Finish",
-          "correct": "Correct!",
-          "incorrect": "Incorrect",
-          "correctAnswer": "Correct answer: {{answer}}",
-          "typeMissing": "Type the missing word",
-          "typeAnswer": "Type your answer",
-          "trueLabel": "True",
-          "falseLabel": "False"
+          "questionOf": "571|Spørsmål {{current}} av {{total}}",
+          "submit": "572|Send svar",
+          "next": "573|Videre",
+          "finish": "574|Fullfør",
+          "correct": "575|Riktig!",
+          "incorrect": "576|Feil",
+          "correctAnswer": "577|Riktig svar: {{answer}}",
+          "typeMissing": "578|Skriv ordet som mangler",
+          "typeAnswer": "579|Skriv svaret ditt",
+          "trueLabel": "580|Sant",
+          "falseLabel": "581|Usant"
         },
         "result": {
-          "scoreOf": "{{correct}} of {{total}} correct",
+          "scoreOf": "582|{{correct}} av {{total}} riktige",
           "grade": {
-            "excellent": "Excellent!",
-            "good": "Good job!",
-            "keepPracticing": "Keep practicing",
-            "reviewNote": "Review the note"
+            "excellent": "583|Utmerket!",
+            "good": "584|Godt jobbet!",
+            "keepPracticing": "585|Fortsett å øve",
+            "reviewNote": "586|Gå gjennom notatet"
           },
-          "incorrectSection": "Incorrect",
-          "correctSection": "Correct",
-          "yourAnswer": "Your answer: {{answer}}",
-          "tryAgain": "Try again",
-          "reviewNote": "Review note",
-          "done": "Done"
+          "incorrectSection": "587|Feil",
+          "correctSection": "588|Riktige",
+          "yourAnswer": "589|Svaret ditt: {{answer}}",
+          "tryAgain": "590|Prøv igjen",
+          "reviewNote": "591|Åpne notatet",
+          "done": "592|Ferdig"
         },
         "errors": {
-          "notEnoughContent": "Add more note content first — a quiz needs at least two content blocks (rule, example, warning, paragraph or quote).",
-          "noMatchingQuestionTypes": "Not enough matching content for the selected question types. Enable more types or add more content.",
-          "aiFailed": "Couldn't generate the quiz with AI. Try again or use Smart local."
+          "notEnoughContent": "593|Legg først til mer innhold i notatet — en quiz trenger minst to innholdsblokker (regel, eksempel, advarsel, avsnitt eller sitat).",
+          "noMatchingQuestionTypes": "594|Det er ikke nok passende innhold for de valgte spørsmålstypene. Slå på flere typer, eller legg til innhold.",
+          "aiFailed": "595|Quizen kunne ikke genereres med KI. Prøv igjen, eller bruk Smart lokalt."
         },
-        "badge": "Quiz",
+        "badge": "596|Quiz",
         "manual": {
-          "questions_one": "{{count}} question",
-          "questions_other": "{{count}} questions",
-          "add": "Add question",
-          "questionPlaceholder": "Question text",
-          "questionGapPlaceholder": "Question with a blank, e.g. I _____ to school",
-          "optionPlaceholder": "Option {{index}}",
-          "answerPlaceholder": "Correct answer",
-          "explanationPlaceholder": "Explanation (optional)",
+          "questions_one": "597|{{count}} spørsmål",
+          "questions_other": "598|{{count}} spørsmål",
+          "add": "599|Legg til spørsmål",
+          "questionPlaceholder": "600|Spørsmålstekst",
+          "questionGapPlaceholder": "601|Spørsmål med et hull, f.eks. Jeg _____ på skolen",
+          "optionPlaceholder": "602|Alternativ {{index}}",
+          "answerPlaceholder": "603|Riktig svar",
+          "explanationPlaceholder": "604|Forklaring (valgfritt)",
           "error": {
-            "questionRequired": "Question text is required.",
-            "optionsRequired": "Multiple choice needs at least 2 options.",
-            "answerRequired": "Enter the correct answer.",
-            "answerNotAnOption": "The correct answer must match one of the options.",
-            "blankRequired": "Add a blank (e.g. _____) inside the question."
+            "questionRequired": "605|Spørsmålstekst er påkrevd.",
+            "optionsRequired": "606|Flervalg trenger minst 2 alternativer.",
+            "answerRequired": "607|Skriv inn riktig svar.",
+            "answerNotAnOption": "608|Riktig svar må stemme med ett av alternativene.",
+            "blankRequired": "609|Legg inn et hull (f.eks. _____) i spørsmålet."
           }
         }
       },
       "quickMistake": {
-        "button": "Quick mistake",
-        "title": "Quick mistake",
-        "original": "Original sentence",
-        "originalPlaceholder": "Example: I am agree with you",
-        "corrected": "Correction",
-        "correctedPlaceholder": "Example: I agree with you",
-        "explanation": "Explanation (optional)",
-        "explanationPlaceholder": "Why is the correction right?",
+        "button": "610|Rask feil",
+        "title": "611|Rask feil",
+        "original": "612|Opprinnelig setning",
+        "originalPlaceholder": "613|Eksempel: Jeg er enig med deg er",
+        "corrected": "614|Rettelse",
+        "correctedPlaceholder": "615|Eksempel: Jeg er enig med deg",
+        "explanation": "616|Forklaring (valgfritt)",
+        "explanationPlaceholder": "617|Hvorfor er rettelsen riktig?",
         "validation": {
-          "original": "Add the original sentence first.",
-          "corrected": "Add the corrected sentence too."
+          "original": "618|Legg til den opprinnelige setningen først.",
+          "corrected": "619|Legg til den rettede setningen også."
         },
-        "save": "Save mistake",
-        "saving": "Saving…",
-        "saved": "Saved to Grammar notes.",
-        "duplicate": "Already saved — duplicate was skipped.",
-        "failed": "Couldn't save. Please try again.",
-        "openTopic": "Open Common Mistakes",
-        "done": "Done",
-        "tip": "Saved corrections go into review automatically, so the ones you keep getting wrong come back first."
+        "save": "620|Lagre feilen",
+        "saving": "621|Lagrer…",
+        "saved": "622|Lagret i grammatikknotatene.",
+        "duplicate": "623|Allerede lagret — duplikatet ble hoppet over.",
+        "failed": "624|Kunne ikke lagre. Prøv igjen.",
+        "openTopic": "625|Åpne Vanlige feil",
+        "done": "626|Ferdig",
+        "tip": "627|Lagrede rettelser går automatisk inn i repetisjonen, så de du stadig gjør feil, kommer tilbake først."
       },
       "templates": {
-        "topicTitle": "Topic templates",
-        "noteTitle": "Note templates",
-        "button": "Template",
-        "startFromTemplate": "Start from a template",
-        "searchPlaceholder": "Search templates…",
-        "allLanguages": "All",
-        "anyDifficulty": "Any",
+        "topicTitle": "628|Temamaler",
+        "noteTitle": "629|Notatmaler",
+        "button": "630|Mal",
+        "startFromTemplate": "631|Start fra en mal",
+        "searchPlaceholder": "632|Søk i maler…",
+        "allLanguages": "633|Alle",
+        "anyDifficulty": "634|Hvilken som helst",
         "language": {
-          "en": "English",
-          "es": "Spanish",
-          "fr": "French",
-          "de": "German"
+          "en": "635|Engelsk",
+          "es": "636|Spansk",
+          "fr": "637|Fransk",
+          "de": "638|Tysk"
         },
-        "minutes": "{{minutes}} min",
-        "notesIncluded_one": "{{count}} note",
-        "notesIncluded_other": "{{count}} notes",
-        "blocksIncluded_one": "{{count}} block",
-        "blocksIncluded_other": "{{count}} blocks",
-        "empty": "No templates match your filters.",
-        "use": "Use template",
-        "creating": "Creating…",
-        "replaceConfirm": "Replace the current note content with this template? Press Cancel to add the template below instead.",
-        "applyTitle": "Apply “{{title}}”?",
-        "applyBody": "This note already has content. Choose how to apply the template.",
-        "applyReplace": "Replace content",
-        "applyAppend": "Append blocks"
+        "minutes": "639|{{minutes}} min",
+        "notesIncluded_one": "640|{{count}} notat",
+        "notesIncluded_other": "641|{{count}} notater",
+        "blocksIncluded_one": "642|{{count}} blokk",
+        "blocksIncluded_other": "643|{{count}} blokker",
+        "empty": "644|Ingen maler passer til filtrene dine.",
+        "use": "645|Bruk malen",
+        "creating": "646|Oppretter…",
+        "replaceConfirm": "647|Erstatte notatets nåværende innhold med denne malen? Trykk Avbryt for å legge malen inn under i stedet.",
+        "applyTitle": "648|Bruke «{{title}}»?",
+        "applyBody": "649|Dette notatet har allerede innhold. Velg hvordan malen skal brukes.",
+        "applyReplace": "650|Erstatt innholdet",
+        "applyAppend": "651|Legg blokkene til slutt"
       },
       "review": {
-        "title": "Review",
-        "subtitle": "Strengthen what you've learned with spaced repetition.",
-        "cardTitle": "Review Today",
-        "cardSubtitle_one": "{{count}} item ready · ~{{minutes}} min",
-        "cardSubtitle_other": "{{count}} items ready · ~{{minutes}} min",
-        "caughtUpTitle": "All caught up",
-        "caughtUp": "You're all caught up. Open or edit notes to get review suggestions.",
-        "dueBadge": "Due",
-        "refreshBody": "Nothing is due right now — you can still refresh what you read lately.",
-        "refreshStart": "Refresh recent notes",
-        "start": "Start review",
-        "skip": "Skip",
-        "itemOf": "Item {{current}} of {{total}}",
-        "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
-        "showAnswer": "Show answer",
-        "compareTitle": "Compare your answer",
-        "referenceAnswer": "Reference: {{answer}}",
-        "openNote": "Open full note",
+        "title": "652|Repetisjon",
+        "subtitle": "653|Fest det du har lært, med spredt repetisjon.",
+        "cardTitle": "654|Repeter i dag",
+        "cardSubtitle_one": "655|{{count}} element klart · ~{{minutes}} min",
+        "cardSubtitle_other": "656|{{count}} elementer klare · ~{{minutes}} min",
+        "caughtUpTitle": "657|Alt er ajour",
+        "caughtUp": "658|Du er helt ajour. Åpne eller rediger notater for å få repetisjonsforslag.",
+        "dueBadge": "659|Klar",
+        "refreshBody": "660|Ingenting står for tur nå — men du kan likevel friske opp det du leste sist.",
+        "refreshStart": "661|Frisk opp de siste notatene",
+        "start": "662|Start repetisjon",
+        "skip": "663|Hopp over",
+        "itemOf": "664|Element {{current}} av {{total}}",
+        "untitled": "665|Grammatikknotat",
+        "stats": "666|Repetert {{count}} ganger · rekke {{streak}}",
+        "continueToQuestion": "667|Videre til spørsmålet",
+        "showAnswer": "668|Vis svaret",
+        "compareTitle": "669|Sammenlign svaret ditt",
+        "referenceAnswer": "670|Referanse: {{answer}}",
+        "openNote": "671|Åpne hele notatet",
         "pool": {
-          "manual_one": "{{count}} item due for review",
-          "manual_other": "{{count}} items due for review",
-          "recentlyOpened_one": "{{count}} recently opened note",
-          "recentlyOpened_other": "{{count}} recently opened notes",
-          "recentlyEdited_one": "{{count}} recently edited note",
-          "recentlyEdited_other": "{{count}} recently edited notes"
+          "manual_one": "672|{{count}} element venter på repetisjon",
+          "manual_other": "673|{{count}} elementer venter på repetisjon",
+          "recentlyOpened_one": "674|{{count}} nylig åpnet notat",
+          "recentlyOpened_other": "675|{{count}} nylig åpnede notater",
+          "recentlyEdited_one": "676|{{count}} nylig redigert notat",
+          "recentlyEdited_other": "677|{{count}} nylig redigerte notater"
         },
         "sourceType": {
-          "note": "Note",
-          "mistake": "Mistake",
-          "quiz": "Quiz"
+          "note": "678|Notat",
+          "mistake": "679|Feil",
+          "quiz": "680|Quiz"
         },
         "phase": {
-          "source": "Study",
-          "question": "Answer",
-          "result": "Rate"
+          "source": "681|Studer",
+          "question": "682|Svar",
+          "result": "683|Vurder"
         },
         "rating": {
-          "forgot": "Forgot",
-          "hard": "Hard",
-          "good": "Good",
-          "easy": "Easy"
+          "forgot": "684|Glemte det",
+          "hard": "685|Vanskelig",
+          "good": "686|Bra",
+          "easy": "687|Lett"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "plus4h": "688|+4 timer",
+          "plus1d": "689|+1 dag",
+          "plus3d": "690|+3 dager",
+          "plus7d": "691|+7 dager"
         },
         "summary": {
-          "title": "Session complete",
-          "emptyTitle": "Nothing reviewed",
-          "reviewed": "Reviewed",
-          "correct": "Correct",
-          "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "title": "692|Økten er ferdig",
+          "emptyTitle": "693|Ingenting repetert",
+          "reviewed": "694|Repetert",
+          "correct": "695|Riktige",
+          "incorrect": "696|Feil",
+          "hintForgot": "697|Noen elementer kommer tilbake om 4 timer.",
+          "hintHard": "698|Vanskelige elementer kommer tilbake i morgen.",
+          "hintGood": "699|Gode elementer kommer tilbake om 3 dager.",
+          "hintEasy": "700|Alle elementer kommer tilbake om 7 dager.",
+          "done": "701|Tilbake til grammatikknotater"
         },
-        "loadError": "Couldn't load your review queue.",
-        "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "loadError": "702|Vi klarte ikke å laste repetisjonskøen din.",
+        "mistakeCount_one": "703|{{count}} feil",
+        "mistakeCount_other": "704|{{count}} feil"
       },
-      "mistakesBadge": "Mistakes",
-      "topicsTitle": "Topics",
-      "deleteTopic": "Delete topic",
-      "deleteTopicTitle": "Delete this topic?",
-      "deleteNoteTitle": "Delete this note?",
-      "pin": "Pin note",
-      "unpin": "Unpin note",
-      "favorite": "Add to favorites",
-      "unfavorite": "Remove from favorites",
+      "mistakesBadge": "705|Feil",
+      "topicsTitle": "706|Temaer",
+      "deleteTopic": "707|Slett tema",
+      "deleteTopicTitle": "708|Slette dette temaet?",
+      "deleteNoteTitle": "709|Slette dette notatet?",
+      "pin": "710|Fest notat",
+      "unpin": "711|Løsne notat",
+      "favorite": "712|Legg til i favoritter",
+      "unfavorite": "713|Fjern fra favoritter",
       "search": {
-        "topics": "Search topics…",
-        "notes": "Search notes…",
-        "clear": "Clear search",
-        "noMatchTitle": "No matches",
-        "noMatchBody": "Try another keyword.",
-        "notesSection_one": "Notes ({{count}})",
-        "notesSection_other": "Notes ({{count}})",
-        "noNoteMatches": "No notes match this search."
+        "topics": "714|Søk i temaer…",
+        "notes": "715|Søk i notater…",
+        "clear": "716|Tøm søket",
+        "noMatchTitle": "717|Ingen treff",
+        "noMatchBody": "718|Prøv et annet søkeord.",
+        "notesSection_one": "719|Notater ({{count}})",
+        "notesSection_other": "720|Notater ({{count}})",
+        "noNoteMatches": "721|Ingen notater passer til dette søket."
       },
       "filter": {
-        "label": "Filter notes",
-        "all": "All",
-        "pinned": "Pinned",
-        "favorites": "Favorites",
-        "mistakes": "Mistakes",
-        "quizzes": "Quizzes",
-        "review": "Due",
+        "label": "722|Filtrer notater",
+        "all": "723|Alle",
+        "pinned": "724|Festede",
+        "favorites": "725|Favoritter",
+        "mistakes": "726|Feil",
+        "quizzes": "727|Quizer",
+        "review": "728|Klar",
         "empty": {
           "all": {
-            "title": "No grammar notes yet",
-            "body": "Create your first grammar note for this topic."
+            "title": "729|Ingen grammatikknotater ennå",
+            "body": "730|Opprett det første grammatikknotatet ditt for dette temaet."
           },
           "pinned": {
-            "title": "No pinned notes yet",
-            "body": "Pin notes from the list to find them quickly."
+            "title": "731|Ingen festede notater ennå",
+            "body": "732|Fest notater fra listen, så finner du dem raskt."
           },
           "favorites": {
-            "title": "No favorite notes yet",
-            "body": "Favorite notes to keep them handy."
+            "title": "733|Ingen favorittnotater ennå",
+            "body": "734|Merk notater som favoritter, så har du dem lett tilgjengelig."
           },
           "mistakes": {
-            "title": "No saved mistakes yet",
-            "body": "Save grammar mistakes to review them here."
+            "title": "735|Ingen lagrede feil ennå",
+            "body": "736|Lagre grammatikkfeil, så kan du repetere dem her."
           },
           "quizzes": {
-            "title": "No quiz notes yet",
-            "body": "Add a quiz to a note to see it here."
+            "title": "737|Ingen notater med quiz ennå",
+            "body": "738|Legg en quiz til et notat, så vises det her."
           },
           "review": {
-            "title": "Nothing due right now",
-            "body": "Notes come back here when their next review is due."
+            "title": "739|Ingenting står for tur nå",
+            "body": "740|Notater kommer tilbake hit når neste repetisjon står for tur."
           }
         }
       },
       "reorder": {
-        "start": "Reorder",
-        "done": "Done",
-        "up": "Move up",
-        "down": "Move down"
+        "start": "741|Endre rekkefølge",
+        "done": "742|Ferdig",
+        "up": "743|Flytt opp",
+        "down": "744|Flytt ned"
       },
       "highlights": {
-        "mistakesTitle": "Mistakes to fix",
-        "mistakesSubtitle": "Recent corrections waiting for review.",
-        "quizzesTitle": "Weak quiz areas",
-        "quizzesSubtitle": "Quizzes worth re-taking soon."
+        "mistakesTitle": "745|Feil som skal rettes",
+        "mistakesSubtitle": "746|Nylige rettelser venter på repetisjon.",
+        "quizzesTitle": "747|Svake quizområder",
+        "quizzesSubtitle": "748|Quizer som er verdt å ta om igjen snart."
       },
       "quickNote": {
-        "button": "Quick note",
-        "title": "Quick note",
-        "subtitle": "Capture a grammar idea without opening the full editor.",
-        "noteTitle": "Title",
-        "titlePlaceholder": "Example: Ser vs Estar",
-        "text": "Note",
-        "textPlaceholder": "Write the useful part here",
-        "noteType": "Note type",
-        "topic": "Topic",
-        "openEditor": "Open editor after saving",
-        "openEditorHint": "Useful when the quick version grows into a full note.",
-        "tip": "Quick notes are for the idea you would otherwise forget in ten minutes.",
-        "validation": "Add a title or some text first.",
-        "save": "Save quick note",
-        "saving": "Saving…"
+        "button": "749|Rask notat",
+        "title": "750|Rask notat",
+        "subtitle": "751|Fang en grammatikkidé uten å åpne hele redigeringsverktøyet.",
+        "noteTitle": "752|Tittel",
+        "titlePlaceholder": "753|Eksempel: Ser vs Estar",
+        "text": "754|Notat",
+        "textPlaceholder": "755|Skriv den nyttige delen her",
+        "noteType": "756|Notattype",
+        "topic": "757|Tema",
+        "openEditor": "758|Åpne redigering etter lagring",
+        "openEditorHint": "759|Nyttig når den raske versjonen vokser til et helt notat.",
+        "tip": "760|Raske notater er til idéen du ellers glemmer om ti minutter.",
+        "validation": "761|Legg til en tittel eller litt tekst først.",
+        "save": "762|Lagre rask notat",
+        "saving": "763|Lagrer…"
       },
       "settings": {
-        "title": "Notes settings",
-        "subtitle": "How quick capture, mistakes and the notes list behave.",
-        "reset": "Reset to defaults",
-        "tip": "Use quick mistakes for sentences you actually wrote wrong — those are more useful than textbook-perfect examples.",
+        "title": "764|Notatinnstillinger",
+        "subtitle": "765|Hvordan rask notering, feil og notatlisten oppfører seg.",
+        "reset": "766|Tilbakestill til standard",
+        "tip": "767|Bruk raske feil til setninger du faktisk skrev feil — de er nyttigere enn perfekte lærebokeksempler.",
         "quickCapture": {
-          "title": "Quick capture",
-          "subtitle": "Make fast notes and mistakes feel instant."
+          "title": "768|Rask notering",
+          "subtitle": "769|Gjør raske notater og feil umiddelbare."
         },
         "mistakeNotes": {
-          "title": "Mistake notes",
-          "subtitle": "What gets saved when you capture a quick mistake."
+          "title": "770|Feilnotater",
+          "subtitle": "771|Hva som lagres når du fanger en rask feil."
         },
         "essays": {
-          "title": "Essays",
-          "subtitle": "What happens to grammar issues found in your essays."
+          "title": "772|Essayer",
+          "subtitle": "773|Hva som skjer med grammatikkproblemer i essayene dine."
         },
         "review": {
-          "title": "Spaced review",
-          "subtitle": "How notes reach the review queue."
+          "title": "774|Spredt repetisjon",
+          "subtitle": "775|Hvordan notater havner i repetisjonskøen."
         },
         "appearance": {
-          "title": "Notes appearance",
-          "subtitle": "How the notes list is ordered and sized."
+          "title": "776|Notatenes utseende",
+          "subtitle": "777|Hvordan notatlisten sorteres og vises."
         },
         "helpers": {
-          "title": "Learning helpers",
-          "subtitle": "Small nudges inside empty states and quick sheets."
+          "title": "778|Læringshjelp",
+          "subtitle": "779|Små dytt i tomme skjermer og raske skjemaer."
         },
         "defaultType": {
-          "title": "Default note type",
-          "subtitle": "What a new quick note starts as."
+          "title": "780|Standard notattype",
+          "subtitle": "781|Hvilken type et nytt rask notat starter som."
         },
         "toggle": {
           "opensEditorAfterQuickSave": {
-            "title": "Open editor after quick save",
-            "subtitle": "After saving a quick note, jump straight into the full editor."
+            "title": "782|Åpne redigering etter rask lagring",
+            "subtitle": "783|Hopp rett til hele redigeringsverktøyet når et rask notat er lagret."
           },
           "allowQuickQuizzes": {
-            "title": "Allow quizzes in notes",
-            "subtitle": "Offer quiz blocks and quiz creation inside notes."
+            "title": "784|Tillat quizer i notater",
+            "subtitle": "785|Tilby quizblokker og quizoppretting inne i notatene."
           },
           "showsMistakeHighlights": {
-            "title": "Highlight mistake notes",
-            "subtitle": "Use a warm tint for mistake cards and show the mistakes row."
+            "title": "786|Fremhev feilnotater",
+            "subtitle": "787|Bruk en varm tone på feilkort, og vis feilraden."
           },
           "includeOriginalSentence": {
-            "title": "Include original sentence",
-            "subtitle": "Save the wrong version as a quote block in the note."
+            "title": "788|Ta med den opprinnelige setningen",
+            "subtitle": "789|Lagre den feilaktige versjonen som en sitatblokk i notatet."
           },
           "includeCorrectedSentence": {
-            "title": "Include corrected sentence",
-            "subtitle": "Save the fixed version as an example block."
+            "title": "790|Ta med den rettede setningen",
+            "subtitle": "791|Lagre den rettede versjonen som en eksempelblokk."
           },
           "createMistakeNotesWithExplanation": {
-            "title": "Include explanation",
-            "subtitle": "Add your explanation as a paragraph block below."
+            "title": "792|Ta med forklaringen",
+            "subtitle": "793|Legg forklaringen din inn under som et avsnitt."
           },
           "groupMistakesByTopic": {
-            "title": "Group mistakes by topic",
-            "subtitle": "Save quick mistakes to the current topic instead of Common Mistakes."
+            "title": "794|Grupper feil etter tema",
+            "subtitle": "795|Lagre raske feil i det gjeldende temaet i stedet for i Vanlige feil."
           },
           "askBeforeSavingMistakes": {
-            "title": "Ask before saving mistakes",
-            "subtitle": "Confirm before an essay issue becomes a note. This wins over saving automatically."
+            "title": "796|Spør før feil lagres",
+            "subtitle": "797|Bekreft før et essayproblem blir et notat. Dette veier tyngre enn automatisk lagring."
           },
           "saveGrammarMistakesAutomatically": {
-            "title": "Save essay mistakes automatically",
-            "subtitle": "Every grammar issue found in an essay becomes a note. With \"Ask before saving\" on, it asks once for the whole check."
+            "title": "798|Lagre essayfeil automatisk",
+            "subtitle": "799|Hvert grammatikkproblem i et essay blir et notat. Med «Spør før lagring» på spør den én gang for hele sjekken."
           },
           "groupsPinnedNotesFirst": {
-            "title": "Pinned notes first",
-            "subtitle": "Keep important rules at the top of each topic."
+            "title": "800|Festede notater først",
+            "subtitle": "801|Hold de viktige reglene øverst i hvert tema."
           },
           "usesCompactCards": {
-            "title": "Compact note cards",
-            "subtitle": "Show tighter cards when you want more notes on screen."
+            "title": "802|Kompakte notatkort",
+            "subtitle": "803|Vis tettere kort når du vil ha flere notater på skjermen."
           },
           "showsHelperTips": {
-            "title": "Show helper tips",
-            "subtitle": "Display short contextual hints while creating notes."
+            "title": "804|Vis hjelpetips",
+            "subtitle": "805|Vis korte, situasjonstilpassede tips mens du lager notater."
           },
           "autoAddNotesToReview": {
-            "title": "Add new notes to review",
-            "subtitle": "Every note you save joins the review queue, due a day later."
+            "title": "806|Legg nye notater til repetisjon",
+            "subtitle": "807|Hvert notat du lagrer, havner i repetisjonskøen, klart dagen etter."
           }
         }
       },
-      "editTopic": "Edit topic",
+      "editTopic": "808|Rediger tema",
       "toSet": {
-        "title": "Make a set from this note",
-        "subtitle": "Pick the pairs to turn into flashcards.",
-        "setTitle": "Set title",
-        "empty": "This note has nothing to turn into cards yet. Comparison, example and rule blocks convert directly, and list items split on a dash — like “hacer — to do”.",
-        "button": "Make a set",
-        "create": "Create set",
-        "creating": "Creating…",
-        "error": "Couldn't create the set. Try again.",
-        "cards_one": "{{count}} card",
-        "cards_other": "{{count}} cards"
+        "title": "809|Lag et sett fra dette notatet",
+        "subtitle": "810|Velg parene som skal bli kort.",
+        "setTitle": "811|Settets tittel",
+        "empty": "812|Dette notatet har ennå ikke noe å lage kort av. Blokker med sammenligning, eksempel og regel gjøres om direkte, og listeelementer deles ved en tankestrek — som «hacer — å gjøre».",
+        "button": "813|Lag et sett",
+        "create": "814|Opprett sett",
+        "creating": "815|Oppretter…",
+        "error": "816|Settet kunne ikke opprettes. Prøv igjen.",
+        "cards_one": "817|{{count}} kort",
+        "cards_other": "818|{{count}} kort"
       },
-      "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "topicsEmptyTip": "819|Et tema er en mappe for notater — ett per språk, eller ett per ting du stadig gjør feil.",
+      "notesEmptyTip": "820|Hvert notat du lagrer, havner i repetisjonskøen, så det å skrive det ned er allerede å begynne å øve på det."
     }
   },
   "reading": {
-    "sectionTitle": "Practice modes",
-    "loading": "Loading…",
-    "loadError": "Couldn’t load your reading items.",
-    "notFound": "This item may have been deleted.",
+    "sectionTitle": "821|Øvingsmåter",
+    "loading": "822|Laster…",
+    "loadError": "823|Vi klarte ikke å laste lesetekstene dine.",
+    "notFound": "824|Dette elementet kan ha blitt slettet.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "Keep your reading streak going."
+      "title": "825|Dagens fremgang",
+      "subtitle": "826|Hold leserekken din i live."
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "827|Kommer snart",
       "myTexts": {
-        "title": "My Texts",
-        "subtitle": "Paste your own text and read it with help."
+        "title": "828|Tekstene mine",
+        "subtitle": "829|Lim inn din egen tekst, og les den med hjelp."
       },
       "fromSets": {
-        "title": "Reading From Sets",
-        "subtitle": "Build a reading from your flashcard sets."
+        "title": "830|Lesing fra sett",
+        "subtitle": "831|Lag en lesetekst av kortsettene dine."
       },
       "storyMode": {
-        "title": "Story Mode",
-        "subtitle": "Read interactive stories with branching choices."
+        "title": "832|Historiemodus",
+        "subtitle": "833|Les interaktive historier med forgrenede valg."
       },
       "speedReading": {
-        "title": "Speed Reading",
-        "subtitle": "Train faster reading with timed pacing."
+        "title": "834|Hurtiglesing",
+        "subtitle": "835|Tren raskere lesing med tidsstyrt tempo."
       }
     },
     "myTexts": {
-      "title": "My Texts",
-      "subtitle": "Your saved reading texts.",
-      "addText": "Add text",
-      "emptyTitle": "No texts yet",
-      "emptyBody": "Add your first text to start reading practice.",
-      "savedTitle": "Saved texts"
+      "title": "836|Tekstene mine",
+      "subtitle": "837|De lagrede lesetekstene dine.",
+      "addText": "838|Legg til tekst",
+      "emptyTitle": "839|Ingen tekster ennå",
+      "emptyBody": "840|Legg til den første teksten din, og begynn å øve på lesing.",
+      "savedTitle": "841|Lagrede tekster"
     },
     "status": {
-      "new": "New",
-      "inProgress": "In progress",
-      "completed": "Completed"
+      "new": "842|Ny",
+      "inProgress": "843|Pågår",
+      "completed": "844|Fullført"
     },
     "card": {
-      "words_one": "{{count}} word",
-      "words_other": "{{count}} words",
-      "start": "Start",
-      "continue": "Continue",
-      "readAgain": "Read again",
-      "rename": "Rename",
-      "renamePrompt": "New title:",
-      "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "words_one": "845|{{count}} ord",
+      "words_other": "846|{{count}} ord",
+      "start": "847|Start",
+      "continue": "848|Fortsett",
+      "readAgain": "849|Les igjen",
+      "rename": "850|Gi nytt navn",
+      "renamePrompt": "851|Ny tittel:",
+      "delete": "852|Slett",
+      "deleteConfirm": "853|Slette «{{title}}»? Dette kan ikke angres."
     },
     "continue": {
-      "eyebrow": "Continue reading",
-      "percent": "{{percent}}% complete",
-      "button": "Continue"
+      "eyebrow": "854|Fortsett lesingen",
+      "percent": "855|{{percent}} % fullført",
+      "button": "856|Fortsett"
     },
     "focus": {
-      "mainIdea": "Main idea",
-      "vocabulary": "Vocabulary",
-      "detailedComprehension": "Detailed comprehension",
-      "grammarAwareness": "Grammar awareness",
-      "speedFluency": "Speed / fluency"
+      "mainIdea": "857|Hovedpoeng",
+      "vocabulary": "858|Ordforråd",
+      "detailedComprehension": "859|Detaljert forståelse",
+      "grammarAwareness": "860|Oppmerksomhet på grammatikk",
+      "speedFluency": "861|Hastighet / flyt"
     },
     "questionType": {
-      "comprehension": "Comprehension",
-      "trueFalse": "True / False",
-      "fillGap": "Fill gap",
-      "vocabulary": "Vocabulary",
-      "findEvidence": "Find evidence",
-      "orderReconstruction": "Order"
+      "comprehension": "862|Forståelse",
+      "trueFalse": "863|Sant / Usant",
+      "fillGap": "864|Fyll ut hullet",
+      "vocabulary": "865|Ordforråd",
+      "findEvidence": "866|Finn belegg",
+      "orderReconstruction": "867|Rekkefølge"
     },
     "assistance": {
-      "highlightUnknownWords": "Highlight unknown words",
-      "translationOnTap": "Translate on tap",
-      "vocabularyHints": "Vocabulary hints",
-      "readingTimer": "Reading timer"
+      "highlightUnknownWords": "868|Uthev ukjente ord",
+      "translationOnTap": "869|Oversett ved trykk",
+      "vocabularyHints": "870|Ordforrådshjelp",
+      "readingTimer": "871|Lesetidsur"
     },
     "addText": {
-      "title": "Add text",
-      "subtitle": "Paste a text and set up your reading practice.",
-      "untitled": "Untitled text",
-      "pastePlaceholder": "Paste or type your text here…",
-      "titleLabel": "Title",
-      "titlePlaceholder": "Optional — we can suggest one",
-      "language": "Language",
-      "difficulty": "Difficulty",
-      "autoDetect": "Auto detect",
-      "manual": "Choose manually",
-      "focus": "Reading focus",
-      "questionTypes": "Question types",
-      "assistance": "Reading assistance",
+      "title": "872|Legg til tekst",
+      "subtitle": "873|Lim inn en tekst, og sett opp leseøvingen din.",
+      "untitled": "874|Tekst uten tittel",
+      "pastePlaceholder": "875|Lim inn eller skriv teksten din her…",
+      "titleLabel": "876|Tittel",
+      "titlePlaceholder": "877|Valgfritt — vi kan foreslå en",
+      "language": "878|Språk",
+      "difficulty": "879|Vanskelighetsgrad",
+      "autoDetect": "880|Gjenkjenn automatisk",
+      "manual": "881|Velg manuelt",
+      "focus": "882|Lesefokus",
+      "questionTypes": "883|Spørsmålstyper",
+      "assistance": "884|Lesehjelp",
       "stats": {
-        "words_one": "{{count}} word",
-        "words_other": "{{count}} words",
-        "chars_one": "{{count}} char",
-        "chars_other": "{{count}} chars",
-        "min": "min",
-        "detected": "Detected: {{level}}"
+        "words_one": "885|{{count}} ord",
+        "words_other": "886|{{count}} ord",
+        "chars_one": "887|{{count}} tegn",
+        "chars_other": "888|{{count}} tegn",
+        "min": "889|min",
+        "detected": "890|Gjenkjent: {{level}}"
       },
       "validation": {
-        "empty": "Please add a text first.",
-        "tooShort": "Add at least 20 words."
+        "empty": "891|Legg til en tekst først.",
+        "tooShort": "892|Legg til minst 20 ord."
       },
-      "save": "Save text",
-      "saveAndStart": "Save & start",
-      "saving": "Saving…",
-      "saveError": "Couldn’t save. Please try again.",
+      "save": "893|Lagre tekst",
+      "saveAndStart": "894|Lagre og start",
+      "saving": "895|Lagrer…",
+      "saveError": "896|Kunne ikke lagre. Prøv igjen.",
       "source": {
-        "pasteText": "Paste",
-        "photo": "Photo",
-        "pdf": "PDF",
-        "generate": "Generate",
-        "explore": "Explore"
+        "pasteText": "897|Lim inn",
+        "photo": "898|Foto",
+        "pdf": "899|PDF",
+        "generate": "900|Generer",
+        "explore": "901|Utforsk"
       },
       "style": {
-        "informative": "Informative",
-        "casual": "Casual",
-        "academic": "Academic",
-        "narrative": "Narrative"
+        "informative": "902|Informativ",
+        "casual": "903|Uformell",
+        "academic": "904|Akademisk",
+        "narrative": "905|Fortellende"
       },
       "length": {
-        "short": "Short",
-        "medium": "Medium",
-        "long": "Long"
+        "short": "906|Kort",
+        "medium": "907|Middels",
+        "long": "908|Lang"
       },
       "import": {
-        "photoHint": "Upload a photo of a page — we’ll extract the text.",
-        "chooseImage": "Choose image",
-        "recognizing": "Recognizing… {{percent}}%",
-        "imageError": "Couldn’t read text from this image.",
-        "pdfHint": "Upload a PDF — we’ll extract the text.",
-        "choosePDF": "Choose PDF",
-        "reading": "Reading PDF…",
-        "pdfError": "Couldn’t read this PDF.",
-        "topicPlaceholder": "Topic — e.g. coral reefs, the printing press",
-        "explorePlaceholder": "Topic or keyword — e.g. Marie Curie, Venice",
-        "generateButton": "Generate text",
-        "exploreButton": "Fetch article",
-        "working": "Working…",
-        "generateError": "Couldn’t generate the text. Try again.",
-        "exploreError": "Couldn’t find an article for this topic.",
-        "exploredFrom": "Fetched from"
+        "photoHint": "909|Last opp et foto av en side — så henter vi ut teksten.",
+        "chooseImage": "910|Velg bilde",
+        "recognizing": "911|Gjenkjenner… {{percent}} %",
+        "imageError": "912|Vi klarte ikke å lese tekst fra dette bildet.",
+        "pdfHint": "913|Last opp en PDF — så henter vi ut teksten.",
+        "choosePDF": "914|Velg PDF",
+        "reading": "915|Leser PDF…",
+        "pdfError": "916|Vi klarte ikke å lese denne PDF-en.",
+        "topicPlaceholder": "917|Tema — f.eks. korallrev, boktrykkerkunsten",
+        "explorePlaceholder": "918|Tema eller nøkkelord — f.eks. Marie Curie, Venezia",
+        "generateButton": "919|Generer tekst",
+        "exploreButton": "920|Hent artikkel",
+        "working": "921|Jobber…",
+        "generateError": "922|Teksten kunne ikke genereres. Prøv igjen.",
+        "exploreError": "923|Vi fant ingen artikkel om dette temaet.",
+        "exploredFrom": "924|Hentet fra"
       }
     },
     "session": {
-      "startQuestions": "Start questions",
-      "finish": "Finish",
-      "next": "Next",
-      "questionOf": "Question {{current}} of {{total}}",
-      "closeTranslation": "Close translation",
-      "translating": "Translating…",
-      "translationError": "Couldn’t translate. Try again.",
-      "translation": "Translation",
-      "textLabel": "Text"
+      "startQuestions": "925|Videre til spørsmålene",
+      "finish": "926|Fullfør",
+      "next": "927|Videre",
+      "questionOf": "928|Spørsmål {{current}} av {{total}}",
+      "closeTranslation": "929|Lukk oversettelsen",
+      "translating": "930|Oversetter…",
+      "translationError": "931|Kunne ikke oversette. Prøv igjen.",
+      "translation": "932|Oversettelse",
+      "textLabel": "933|Tekst"
     },
     "result": {
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Reading time",
-      "wpm": "WPM",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "readAgain": "Read again",
-      "back": "Back to My Texts",
-      "complete": "Practice Complete"
+      "comprehension": "934|Forståelse",
+      "correct": "935|Riktige",
+      "time": "936|Lesetid",
+      "wpm": "937|ord/min",
+      "mistakes": "938|Feil",
+      "mistakesTitle": "939|Gå gjennom feilene dine",
+      "readAgain": "940|Les igjen",
+      "back": "941|Tilbake til Tekstene mine",
+      "complete": "942|Øvingen er ferdig"
     },
     "fromSets": {
-      "title": "Reading From Sets",
-      "subtitle": "Turn a flashcard set into a reading.",
-      "pickSet": "Pick a set",
-      "changeSet": "Change set",
-      "tooFewWords": "This set needs at least {{count}} words to create a reading.",
-      "mode": "Generation mode",
+      "title": "943|Lesing fra sett",
+      "subtitle": "944|Gjør et kortsett om til en lesetekst.",
+      "pickSet": "945|Velg et sett",
+      "changeSet": "946|Bytt sett",
+      "tooFewWords": "947|Dette settet trenger minst {{count}} ord for å bli en lesetekst.",
+      "mode": "948|Genereringsmåte",
       "modeOption": {
-        "natural": "Natural",
-        "strict": "Strict",
-        "mixed": "Mixed"
+        "natural": "949|Naturlig",
+        "strict": "950|Streng",
+        "mixed": "951|Blandet"
       },
-      "length": "Reading length",
-      "generate": "Generate reading",
-      "generating": "Creating your reading…",
-      "generateError": "Couldn’t create the reading. Try again.",
-      "emptyTitle": "No readings yet",
-      "emptyBody": "Pick a flashcard set and we’ll turn it into a reading text.",
-      "savedTitle": "Saved readings"
+      "length": "952|Tekstens lengde",
+      "generate": "953|Generer lesetekst",
+      "generating": "954|Lager leseteksten din…",
+      "generateError": "955|Leseteksten kunne ikke lages. Prøv igjen.",
+      "emptyTitle": "956|Ingen lesetekster ennå",
+      "emptyBody": "957|Velg et kortsett, så lager vi en lesetekst av det.",
+      "savedTitle": "958|Lagrede lesetekster"
     },
     "speed": {
-      "title": "Speed Reading",
-      "subtitle": "Train faster reading with timed pacing.",
+      "title": "959|Hurtiglesing",
+      "subtitle": "960|Tren raskere lesing med tidsstyrt tempo.",
       "section": {
-        "target": "Reading speed target",
-        "timer": "Timer style",
-        "length": "Reading length"
+        "target": "961|Mål for lesehastighet",
+        "timer": "962|Tidsurstil",
+        "length": "963|Tekstens lengde"
       },
       "target": {
-        "relaxed": "Relaxed",
-        "balanced": "Balanced",
-        "fast": "Fast",
-        "challenge": "Challenge"
+        "relaxed": "964|Avslappet",
+        "balanced": "965|Balansert",
+        "fast": "966|Rask",
+        "challenge": "967|Utfordring"
       },
       "timer": {
-        "noTimer": "No timer",
-        "soft": "Soft timer",
-        "strict": "Strict timer"
+        "noTimer": "968|Uten tidsur",
+        "soft": "969|Mildt tidsur",
+        "strict": "970|Strengt tidsur"
       },
       "length": {
-        "two": "2 min",
-        "five": "5 min",
-        "ten": "10 min"
+        "two": "971|2 min",
+        "five": "972|5 min",
+        "ten": "973|10 min"
       },
-      "summary": "Target {{wpm}} WPM · ~{{minutes}} min of reading",
-      "start": "Start session",
-      "preparing": "Preparing your passage…",
-      "generateError": "Couldn’t create the passage. Try again.",
-      "recentTitle": "Recent sessions",
-      "chunkOf": "Part {{current}} of {{total}}",
-      "previous": "Previous part",
-      "pause": "Pause",
-      "resume": "Resume",
-      "nextChunk": "Next part",
-      "finishReading": "Finish reading",
+      "summary": "974|Mål {{wpm}} ord/min · ~{{minutes}} min lesing",
+      "start": "975|Start økten",
+      "preparing": "976|Forbereder tekstutdraget ditt…",
+      "generateError": "977|Utdraget kunne ikke lages. Prøv igjen.",
+      "recentTitle": "978|Nylige økter",
+      "chunkOf": "979|Del {{current}} av {{total}}",
+      "previous": "980|Forrige del",
+      "pause": "981|Pause",
+      "resume": "982|Fortsett",
+      "nextChunk": "983|Neste del",
+      "finishReading": "984|Fullfør lesingen",
       "rating": {
-        "excellent": "Excellent",
-        "balanced": "On target",
-        "fast": "Almost there",
-        "tooSlow": "Too slow"
+        "excellent": "985|Utmerket",
+        "balanced": "986|På målet",
+        "fast": "987|Nesten der",
+        "tooSlow": "988|For sakte"
       },
       "result": {
-        "average": "Average WPM",
-        "target": "Target WPM",
-        "violations_one": "{{count}} timer miss",
-        "violations_other": "{{count}} timer misses"
+        "average": "989|Snitt ord/min",
+        "target": "990|Mål ord/min",
+        "violations_one": "991|{{count}} overskredet tid",
+        "violations_other": "992|{{count}} overskredne tider"
       },
-      "tryAgain": "Try again",
-      "backToSetup": "Back to setup"
+      "tryAgain": "993|Prøv igjen",
+      "backToSetup": "994|Tilbake til oppsettet"
     },
     "story": {
-      "title": "Story Mode",
-      "subtitle": "Read interactive stories with branching choices.",
-      "typeSection": "Story type",
+      "title": "995|Historiemodus",
+      "subtitle": "996|Les interaktive historier med forgrenede valg.",
+      "typeSection": "997|Historietype",
       "type": {
-        "adventure": "Adventure",
-        "fantasy": "Fantasy",
-        "mystery": "Mystery",
-        "romance": "Romance",
-        "dailyLife": "Daily Life"
+        "adventure": "998|Eventyr",
+        "fantasy": "999|Fantasy",
+        "mystery": "1000|Mysterium",
+        "romance": "1001|Romantikk",
+        "dailyLife": "1002|Hverdagsliv"
       },
-      "lengthSection": "Story length",
+      "lengthSection": "1003|Historiens lengde",
       "length": {
-        "shortStory": "Short Story",
-        "multiChapter": "Multi Chapter",
-        "infinite": "Infinite Story"
+        "shortStory": "1004|Novelle",
+        "multiChapter": "1005|Flere kapitler",
+        "infinite": "1006|Uendelig historie"
       },
-      "start": "Start story",
-      "generating": "Writing your story…",
-      "generatingNext": "Writing the next chapter…",
-      "generateError": "Couldn’t write the story. Try again.",
-      "emptyTitle": "No stories yet",
-      "emptyBody": "Start your first interactive story above.",
-      "savedTitle": "Your stories",
-      "chapterN": "Chapter {{n}}",
-      "chapterOf": "Chapter {{current}} / {{total}}",
-      "chapterScore": "Chapter score",
-      "whatNext": "What happens next?",
-      "endStory": "End story",
-      "completeTitle": "Story complete",
-      "completeBody_one": "You finished {{count}} chapter. Great reading!",
-      "completeBody_other": "You finished {{count}} chapters. Great reading!",
-      "backToStories": "Back to stories"
+      "start": "1007|Start historien",
+      "generating": "1008|Skriver historien din…",
+      "generatingNext": "1009|Skriver neste kapittel…",
+      "generateError": "1010|Historien kunne ikke skrives. Prøv igjen.",
+      "emptyTitle": "1011|Ingen historier ennå",
+      "emptyBody": "1012|Start din første interaktive historie ovenfor.",
+      "savedTitle": "1013|Historiene dine",
+      "chapterN": "1014|Kapittel {{n}}",
+      "chapterOf": "1015|Kapittel {{current}} / {{total}}",
+      "chapterScore": "1016|Kapittelets poengsum",
+      "whatNext": "1017|Hva skjer nå?",
+      "endStory": "1018|Avslutt historien",
+      "completeTitle": "1019|Historien er ferdig",
+      "completeBody_one": "1020|Du leste {{count}} kapittel. Fin lesing!",
+      "completeBody_other": "1021|Du leste {{count}} kapitler. Fin lesing!",
+      "backToStories": "1022|Tilbake til historiene"
     }
   },
   "listening": {
-    "sectionTitle": "Practice modes",
-    "notFound": "This session may have been deleted.",
+    "sectionTitle": "1023|Øvingsmåter",
+    "notFound": "1024|Denne økten kan ha blitt slettet.",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of listening practice"
+      "title": "1025|Dagens fremgang",
+      "subtitle": "1026|lytteøving"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1027|Kommer snart",
       "fromText": {
-        "title": "Listen from Text",
-        "subtitle": "Paste text, listen to it, and check your understanding."
+        "title": "1028|Lytt ut fra tekst",
+        "subtitle": "1029|Lim inn tekst, lytt til den, og sjekk forståelsen din."
       },
       "importAudio": {
-        "title": "Import Audio",
-        "subtitle": "Upload your own audio and turn it into listening practice."
+        "title": "1030|Importer lyd",
+        "subtitle": "1031|Last opp din egen lyd, og gjør den om til lytteøving."
       },
       "importVideo": {
-        "title": "Import Video",
-        "subtitle": "Upload a video, get subtitles, and practice with questions."
+        "title": "1032|Importer video",
+        "subtitle": "1033|Last opp en video, få undertekster, og øv med spørsmål."
       },
       "saved": {
-        "title": "Saved Practice",
-        "subtitle": "Continue previous sessions and review your mistakes."
+        "title": "1034|Lagret øving",
+        "subtitle": "1035|Fortsett tidligere økter, og gå gjennom feilene dine."
       }
     },
     "questionType": {
-      "mainIdea": "Main idea",
-      "details": "Details",
-      "vocabulary": "Vocabulary",
-      "trueFalse": "True / False"
+      "mainIdea": "1036|Hovedpoeng",
+      "details": "1037|Detaljer",
+      "vocabulary": "1038|Ordforråd",
+      "trueFalse": "1039|Sant / Usant"
     },
     "fromText": {
-      "title": "Listen from Text",
-      "subtitle": "Paste text and turn it into listening practice.",
-      "level": "Level",
-      "voiceSpeed": "Voice speed",
-      "voiceType": "Voice type",
+      "title": "1040|Lytt ut fra tekst",
+      "subtitle": "1041|Lim inn tekst, og gjør den om til lytteøving.",
+      "level": "1042|Nivå",
+      "voiceSpeed": "1043|Stemmehastighet",
+      "voiceType": "1044|Stemmetype",
       "voice": {
-        "default": "Default",
-        "female": "Female",
-        "male": "Male"
+        "default": "1045|Standard",
+        "female": "1046|Kvinnelig",
+        "male": "1047|Mannlig"
       },
-      "showText": "Show text while listening",
-      "addQuestions": "Add comprehension questions",
-      "questionCount": "Question count",
-      "questionTypes": "Question types",
-      "optionalTitle": "Optional title",
-      "titlePlaceholder": "Give your text a name",
-      "textPlaceholder": "Paste your text here...",
-      "recommended": "Recommended: 80–500 words.",
-      "words": "words",
-      "defaultTitle": "Listening Practice",
-      "start": "Start listening",
+      "showText": "1048|Vis teksten mens jeg lytter",
+      "addQuestions": "1049|Legg til forståelsesspørsmål",
+      "questionCount": "1050|Antall spørsmål",
+      "questionTypes": "1051|Spørsmålstyper",
+      "optionalTitle": "1052|Valgfri tittel",
+      "titlePlaceholder": "1053|Gi teksten din et navn",
+      "textPlaceholder": "1054|Lim inn teksten din her...",
+      "recommended": "1055|Anbefalt: 80–500 ord.",
+      "words": "1056|ord",
+      "defaultTitle": "1057|Lytteøving",
+      "start": "1058|Begynn å lytte",
       "validation": {
-        "empty": "Add some text to start listening.",
-        "tooShort": "Add at least 40 characters to start listening.",
-        "tooLong": "That text is too long. Please keep it under 5000 characters.",
-        "tooFewWords": "Add a bit more text (about 40+ words) so we can create good questions."
+        "empty": "1059|Legg til litt tekst for å begynne å lytte.",
+        "tooShort": "1060|Legg til minst 40 tegn for å begynne å lytte.",
+        "tooLong": "1061|Denne teksten er for lang. Hold den under 5000 tegn.",
+        "tooFewWords": "1062|Legg til litt mer tekst (rundt 40 ord eller mer), så kan vi lage gode spørsmål."
       },
-      "voiceSettings": "Voice Settings",
-      "questions": "Questions",
-      "textInput": "Text Input"
+      "voiceSettings": "1063|Stemmeinnstillinger",
+      "questions": "1064|Spørsmål",
+      "textInput": "1065|Tekstinntasting"
     },
     "session": {
-      "replay": "Replay",
-      "transcript": "Transcript",
-      "questionsTitle": "Questions",
-      "answerFirst": "Answer at least one question before checking.",
-      "checkAnswers": "Check answers",
-      "finish": "Finish practice"
+      "replay": "1066|Spill av igjen",
+      "transcript": "1067|Transkripsjon",
+      "questionsTitle": "1068|Spørsmål",
+      "answerFirst": "1069|Svar på minst ett spørsmål før du sjekker.",
+      "checkAnswers": "1070|Sjekk svarene",
+      "finish": "1071|Fullfør øvingen"
     },
     "result": {
-      "title": "Practice Complete",
-      "comprehension": "Comprehension",
-      "correct": "Correct",
-      "time": "Listening time",
-      "speed": "Speed",
-      "mistakes": "Mistakes",
-      "mistakesTitle": "Review your mistakes",
-      "watchOnlyTitle": "Listening completed",
-      "watchOnlyBody": "You listened for {{time}}.",
-      "practiceAgain": "Practice again",
-      "back": "Back to Listening"
+      "title": "1072|Øvingen er ferdig",
+      "comprehension": "1073|Forståelse",
+      "correct": "1074|Riktige",
+      "time": "1075|Lyttetid",
+      "speed": "1076|Hastighet",
+      "mistakes": "1077|Feil",
+      "mistakesTitle": "1078|Gå gjennom feilene dine",
+      "watchOnlyTitle": "1079|Lyttingen er ferdig",
+      "watchOnlyBody": "1080|Du lyttet i {{time}}.",
+      "practiceAgain": "1081|Øv igjen",
+      "back": "1082|Tilbake til Lytting"
     },
     "importAudio": {
-      "title": "Import Audio",
-      "subtitle": "Turn your own audio into listening practice.",
-      "uploadTitle": "Upload audio file",
-      "uploadFormats": "MP3, M4A, WAV or AAC · under 50 MB",
-      "chooseFile": "Choose file",
-      "clearFile": "Remove file",
-      "infoNote": "Your audio will be transcribed in the background. The transcript stays hidden during practice.",
-      "continue": "Continue",
-      "processingTitle": "Preparing your listening practice",
-      "step1": "Uploading audio",
-      "step2": "Transcribing speech",
-      "step3": "Creating questions",
-      "processError": "We couldn’t prepare this audio. Try again.",
-      "tryAgain": "Try again",
-      "chooseAnother": "Choose another file",
-      "transcriptHidden": "Transcript is hidden to keep this a real listening exercise."
+      "title": "1083|Importer lyd",
+      "subtitle": "1084|Gjør din egen lyd om til lytteøving.",
+      "uploadTitle": "1085|Last opp lydfil",
+      "uploadFormats": "1086|MP3, M4A, WAV eller AAC · under 50 MB",
+      "chooseFile": "1087|Velg fil",
+      "clearFile": "1088|Fjern filen",
+      "infoNote": "1089|Lyden din blir transkribert i bakgrunnen. Transkripsjonen forblir skjult under øvingen.",
+      "continue": "1090|Fortsett",
+      "processingTitle": "1091|Forbereder lytteøvingen din",
+      "step1": "1092|Laster opp lyd",
+      "step2": "1093|Transkriberer tale",
+      "step3": "1094|Lager spørsmål",
+      "processError": "1095|Vi klarte ikke å forberede denne lyden. Prøv igjen.",
+      "tryAgain": "1096|Prøv igjen",
+      "chooseAnother": "1097|Velg en annen fil",
+      "transcriptHidden": "1098|Transkripsjonen er skjult, så dette forblir en ekte lytteøvelse."
     },
     "importVideo": {
-      "title": "Import Video",
-      "subtitle": "Upload a video, get subtitles, and practice with questions.",
-      "uploadTitle": "Upload video file",
-      "uploadFormats": "MP4, MOV or M4V · under 80 MB",
-      "step1": "Preparing video",
-      "step2": "Transcribing speech",
-      "step3": "Building subtitles",
-      "subtitles": "Subtitles",
-      "subtitlesOn": "Subtitles on",
-      "subtitlesOff": "Subtitles off",
-      "noSubtitles": "No subtitles available for this video.",
-      "tapWord": "Tap a word to translate it.",
-      "questionsLocked": "Questions unlock after you finish watching the video."
+      "title": "1099|Importer video",
+      "subtitle": "1100|Last opp en video, få undertekster, og øv med spørsmål.",
+      "uploadTitle": "1101|Last opp videofil",
+      "uploadFormats": "1102|MP4, MOV eller M4V · under 80 MB",
+      "step1": "1103|Forbereder videoen",
+      "step2": "1104|Transkriberer tale",
+      "step3": "1105|Bygger undertekster",
+      "subtitles": "1106|Undertekster",
+      "subtitlesOn": "1107|Undertekster på",
+      "subtitlesOff": "1108|Undertekster av",
+      "noSubtitles": "1109|Det finnes ingen undertekster for denne videoen.",
+      "tapWord": "1110|Trykk på et ord for å oversette det.",
+      "questionsLocked": "1111|Spørsmålene låses opp når du har sett ferdig videoen."
     },
     "wordSheet": {
-      "title": "Translate word",
-      "pickSet": "Choose a set",
-      "createSet": "Create set",
-      "addToSet": "Add to set",
-      "noSets": "You have no sets yet. Create one below.",
-      "setNamePlaceholder": "e.g. Video words",
-      "createAndAdd": "Create & add word",
-      "saved": "Saved to \"{{set}}\"."
+      "title": "1112|Oversett ord",
+      "pickSet": "1113|Velg et sett",
+      "createSet": "1114|Opprett sett",
+      "addToSet": "1115|Legg til i settet",
+      "noSets": "1116|Du har ingen sett ennå. Opprett ett nedenfor.",
+      "setNamePlaceholder": "1117|f.eks. Ord fra videoen",
+      "createAndAdd": "1118|Opprett, og legg til ordet",
+      "saved": "1119|Lagret i «{{set}}»."
     },
     "saved": {
-      "title": "Saved Practice",
-      "subtitle": "Continue sessions and review your listening mistakes.",
-      "emptyTitle": "No saved sessions",
-      "emptyBody": "Finish or pause a listening session and it will appear here.",
-      "continueEyebrow": "Continue listening",
-      "percentComplete": "{{percent}}% complete",
-      "continue": "Continue",
-      "review": "Review",
-      "delete": "Delete session",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "title": "1120|Lagret øving",
+      "subtitle": "1121|Fortsett økter, og gå gjennom lyttefeilene dine.",
+      "emptyTitle": "1122|Ingen lagrede økter",
+      "emptyBody": "1123|Fullfør eller sett en lytteøkt på pause, så dukker den opp her.",
+      "continueEyebrow": "1124|Fortsett lyttingen",
+      "percentComplete": "1125|{{percent}} % fullført",
+      "continue": "1126|Fortsett",
+      "review": "1127|Gå gjennom",
+      "delete": "1128|Slett økten",
+      "deleteConfirm": "1129|Slette «{{title}}»? Dette kan ikke angres.",
       "status": {
-        "draft": "Draft",
-        "inProgress": "In progress",
-        "completed": "Completed"
+        "draft": "1130|Utkast",
+        "inProgress": "1131|Pågår",
+        "completed": "1132|Fullført"
       }
     }
   },
   "speaking": {
-    "sectionTitle": "Practice modes",
+    "sectionTitle": "1133|Øvingsmåter",
     "today": {
-      "title": "Today progress",
-      "subtitle": "of speaking practice"
+      "title": "1134|Dagens fremgang",
+      "subtitle": "1135|muntlig øving"
     },
     "menu": {
-      "comingSoon": "Coming soon",
+      "comingSoon": "1136|Kommer snart",
       "conversation": {
-        "title": "AI Conversation",
-        "subtitle": "Talk with an AI tutor in real-time."
+        "title": "1137|KI-samtale",
+        "subtitle": "1138|Snakk med en KI-lærer i sanntid."
       },
       "free": {
-        "title": "Free Speaking",
-        "subtitle": "Speak on generated topics and get feedback."
+        "title": "1139|Fri tale",
+        "subtitle": "1140|Snakk om genererte temaer, og få tilbakemelding."
       },
       "picture": {
-        "title": "Describe Picture",
-        "subtitle": "Describe images and learn useful vocabulary."
+        "title": "1141|Beskriv bilde",
+        "subtitle": "1142|Beskriv bilder, og lær nyttige ord."
       },
       "debate": {
-        "title": "Debate Mode",
-        "subtitle": "Discuss topics and build your arguments."
+        "title": "1143|Debattmodus",
+        "subtitle": "1144|Diskuter temaer, og bygg opp argumentene dine."
       },
       "shadowing": {
-        "title": "Shadowing",
-        "subtitle": "Repeat phrases and improve pronunciation."
+        "title": "1145|Shadowing",
+        "subtitle": "1146|Gjenta fraser, og forbedre uttalen din."
       },
       "pronunciation": {
-        "title": "Pronunciation Trainer",
-        "subtitle": "Focus on difficult sounds and words."
+        "title": "1147|Uttaletrener",
+        "subtitle": "1148|Fokuser på vanskelige lyder og ord."
       }
     },
     "input": {
-      "speak": "Speak",
-      "stop": "Stop",
-      "listening": "Listening…",
-      "placeholder": "Type your answer…",
-      "noVoice": "Voice input isn’t supported in this browser — type your answer instead."
+      "speak": "1149|Snakk",
+      "stop": "1150|Stopp",
+      "listening": "1151|Lytter…",
+      "placeholder": "1152|Skriv svaret ditt…",
+      "noVoice": "1153|Denne nettleseren støtter ikke taleinntasting — skriv svaret ditt i stedet."
     },
     "conversation": {
-      "title": "AI Conversation",
-      "subtitle": "Talk with an AI tutor in real-time.",
-      "topic": "Topic",
-      "scenarios": "Scenarios",
-      "autoTopic": "Surprise me",
-      "autoTopicHint": "We’ll generate a fresh topic for you.",
-      "length": "Length",
-      "min": "min",
-      "start": "Start conversation",
-      "starting": "Starting…",
-      "startError": "Couldn’t start the conversation. Try again.",
-      "end": "End",
-      "dismiss": "Dismiss",
-      "hint": "Hint",
-      "getHint": "Need a hint?",
-      "hintLoading": "Thinking…"
+      "title": "1154|KI-samtale",
+      "subtitle": "1155|Snakk med en KI-lærer i sanntid.",
+      "topic": "1156|Tema",
+      "scenarios": "1157|Scenarier",
+      "autoTopic": "1158|Overrask meg",
+      "autoTopicHint": "1159|Vi lager et nytt tema til deg.",
+      "length": "1160|Varighet",
+      "min": "1161|min",
+      "start": "1162|Start samtalen",
+      "starting": "1163|Starter…",
+      "startError": "1164|Samtalen kunne ikke startes. Prøv igjen.",
+      "end": "1165|Avslutt",
+      "dismiss": "1166|Lukk",
+      "hint": "1167|Hint",
+      "getHint": "1168|Trenger du et hint?",
+      "hintLoading": "1169|Tenker…"
     },
     "result": {
-      "title": "Practice Complete",
-      "generating": "Analysing your speaking…",
-      "overall": "Overall score",
-      "corrections": "Corrections",
-      "transcript": "Transcript",
-      "practiceAgain": "Practice again",
-      "back": "Back to Speaking"
+      "title": "1170|Øvingen er ferdig",
+      "generating": "1171|Analyserer talen din…",
+      "overall": "1172|Samlet poengsum",
+      "corrections": "1173|Rettelser",
+      "transcript": "1174|Transkripsjon",
+      "practiceAgain": "1175|Øv igjen",
+      "back": "1176|Tilbake til Muntlig"
     },
     "free": {
-      "title": "Free Speaking",
-      "subtitle": "Speak freely on a topic and get feedback.",
-      "preview": "Preview",
-      "autoTopic": "AI-generated topic",
-      "autoTopicHint": "We’ll pick a fresh topic for {{language}} · {{level}} when you start.",
-      "auto": "Auto",
-      "start": "Start Free Speaking",
-      "generating": "Generating topic…",
-      "generatingHint": "Picking something that fits your level.",
-      "fallbackTopic": "Could not generate a topic. Using a fallback topic.",
-      "transcript": "Transcript",
-      "transcriptHint": "Your transcript will appear here while you speak.",
-      "startSpeaking": "Start speaking"
+      "title": "1177|Fri tale",
+      "subtitle": "1178|Snakk fritt om et tema, og få tilbakemelding.",
+      "preview": "1179|Forhåndsvisning",
+      "autoTopic": "1180|KI-generert tema",
+      "autoTopicHint": "1181|Når du starter, velger vi et nytt tema for {{language}} · {{level}}.",
+      "auto": "1182|Auto",
+      "start": "1183|Start Fri tale",
+      "generating": "1184|Genererer tema…",
+      "generatingHint": "1185|Vi finner noe som passer nivået ditt.",
+      "fallbackTopic": "1186|Kunne ikke generere et tema. Vi bruker et reservetema.",
+      "transcript": "1187|Transkripsjon",
+      "transcriptHint": "1188|Transkripsjonen din vises her mens du snakker.",
+      "startSpeaking": "1189|Begynn å snakke"
     },
     "picture": {
-      "title": "Describe Picture",
-      "subtitle": "Describe what you see and get feedback.",
-      "start": "Start Describe Picture",
-      "prompt": "Describe what you can see in this picture.",
-      "tryToMention": "Try to mention:",
+      "title": "1190|Beskriv bilde",
+      "subtitle": "1191|Beskriv det du ser, og få tilbakemelding.",
+      "start": "1192|Start Beskriv bilde",
+      "prompt": "1193|Beskriv det du ser på dette bildet.",
+      "tryToMention": "1194|Prøv å nevne:",
       "hints": {
-        "people": "people",
-        "objects": "objects",
-        "actions": "actions",
-        "colors": "colors",
-        "emotions": "emotions"
+        "people": "1195|personer",
+        "objects": "1196|gjenstander",
+        "actions": "1197|handlinger",
+        "colors": "1198|farger",
+        "emotions": "1199|følelser"
       },
-      "loading": "Loading a photo…",
-      "retry": "Try again",
-      "newPhoto": "New photo",
-      "imageAlt": "Photo to describe",
-      "photoBy": "Photo by",
-      "onUnsplash": "on Unsplash",
-      "startDescribing": "Start describing"
+      "loading": "1200|Laster et foto…",
+      "retry": "1201|Prøv igjen",
+      "newPhoto": "1202|Nytt foto",
+      "imageAlt": "1203|Foto som skal beskrives",
+      "photoBy": "1204|Foto av",
+      "onUnsplash": "1205|på Unsplash",
+      "startDescribing": "1206|Begynn å beskrive"
     },
     "debate": {
-      "title": "Debate Mode",
-      "subtitle": "Argue your side against an AI opponent.",
-      "start": "Start Debate",
-      "pickSide": "Your side",
-      "preparing": "Preparing the debate topic…",
-      "roundOf": "Round {{current}} of {{total}} · {{label}}",
+      "title": "1207|Debattmodus",
+      "subtitle": "1208|Forsvar din side mot en KI-motstander.",
+      "start": "1209|Start debatten",
+      "pickSide": "1210|Din side",
+      "preparing": "1211|Forbereder debattemaet…",
+      "roundOf": "1212|Runde {{current}} av {{total}} · {{label}}",
       "side": {
         "agree": {
-          "title": "Agree",
-          "subtitle": "Defend the statement"
+          "title": "1213|Enig",
+          "subtitle": "1214|Forsvar påstanden"
         },
         "disagree": {
-          "title": "Disagree",
-          "subtitle": "Argue against it"
+          "title": "1215|Uenig",
+          "subtitle": "1216|Argumenter mot"
         },
         "surprise": {
-          "title": "Surprise Me",
-          "subtitle": "We pick a side for you"
+          "title": "1217|Overrask meg",
+          "subtitle": "1218|Vi velger side for deg"
         }
       }
     },
     "practice": {
-      "listen": "Listen",
-      "playing": "Playing…",
-      "record": "Record",
-      "stop": "Stop",
-      "playMine": "Play mine",
-      "noRecording": "Recording is not supported in this browser — you can still listen and repeat."
+      "listen": "1219|Lytt",
+      "playing": "1220|Spiller av…",
+      "record": "1221|Ta opp",
+      "stop": "1222|Stopp",
+      "playMine": "1223|Spill av min",
+      "noRecording": "1224|Denne nettleseren støtter ikke opptak — du kan likevel lytte og gjenta."
     },
     "shadowing": {
-      "title": "Shadowing",
-      "subtitle": "Listen, repeat, and compare yourself.",
-      "start": "Start Shadowing",
-      "category": "Category",
-      "howItWorks": "Listen to the phrase, repeat it out loud while recording, then play your take back and compare the rhythm.",
-      "loading": "Generating phrases…",
-      "phrase": "Phrase",
-      "previous": "Previous",
-      "nextPhrase": "Next phrase",
-      "finish": "Finish",
-      "changeSettings": "Change settings",
-      "done": "{{count}} done",
-      "allDone": "All phrases practised!",
-      "newSet": "New set"
+      "title": "1225|Shadowing",
+      "subtitle": "1226|Lytt, gjenta, og sammenlign deg selv.",
+      "start": "1227|Start Shadowing",
+      "category": "1228|Kategori",
+      "howItWorks": "1229|Lytt til frasen, gjenta den høyt mens du tar opp, og spill så av ditt eget opptak og sammenlign rytmen.",
+      "loading": "1230|Genererer fraser…",
+      "phrase": "1231|Frase",
+      "previous": "1232|Forrige",
+      "nextPhrase": "1233|Neste frase",
+      "finish": "1234|Fullfør",
+      "changeSettings": "1235|Endre innstillinger",
+      "done": "1236|{{count}} ferdige",
+      "allDone": "1237|Alle frasene er øvd på!",
+      "newSet": "1238|Nytt sett"
     },
     "pronunciation": {
-      "title": "Pronunciation Trainer",
-      "subtitle": "Focus on difficult sounds and words.",
-      "start": "Start Training",
-      "focus": "Focus",
-      "difficulty": "Difficulty",
+      "title": "1239|Uttaletrener",
+      "subtitle": "1240|Fokuser på vanskelige lyder og ord.",
+      "start": "1241|Start treningen",
+      "focus": "1242|Fokus",
+      "difficulty": "1243|Vanskelighetsgrad",
       "level": {
-        "easy": "Easy",
-        "balanced": "Balanced",
-        "hard": "Hard"
+        "easy": "1244|Lett",
+        "balanced": "1245|Balansert",
+        "hard": "1246|Vanskelig"
       },
-      "loading": "Generating practice items…",
-      "sound": "Sound",
-      "scoringUnavailable": "Automatic pronunciation scoring is not set up on the server yet, so no score is shown. Listening, recording and playback all work."
+      "loading": "1247|Genererer øvelser…",
+      "sound": "1248|Lyd",
+      "scoringUnavailable": "1249|Automatisk uttalevurdering er ikke satt opp på serveren ennå, så ingen poengsum vises. Lytting, opptak og avspilling fungerer."
     }
   },
   "profile": {
-    "interfaceLanguage": "Interface language",
+    "interfaceLanguage": "1250|Grensesnittspråk",
     "password": {
-      "title": "Create a password",
-      "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
-      "save": "Save password",
-      "saving": "Saving...",
-      "savedInfo": "Password created. You can sign in with your email now too."
+      "title": "1251|Opprett et passord",
+      "body": "1252|Kontoen din ble opprettet med Google og har derfor ikke noe passord — feltene for e-post og passord kan ikke logge deg inn. Legg til ett, så virker begge måtene.",
+      "save": "1253|Lagre passord",
+      "saving": "1254|Lagrer...",
+      "savedInfo": "1255|Passordet er opprettet. Nå kan du logge inn med e-posten din også."
     }
   },
   "units": {
-    "min": "min",
-    "words": "words"
+    "min": "1256|min",
+    "words": "1257|ord"
   },
   "link": {
-    "title": "Sign in with a link",
-    "subtitle": "We'll email you a one-time link. No password to remember.",
-    "send": "Send the link",
-    "sending": "Sending...",
-    "sentInfo": "Link sent. Check your email.",
-    "sentTitle": "Check your email",
-    "sentBody": "We sent a sign-in link to",
-    "useAnotherEmail": "Use another email",
-    "backToPassword": "Sign in with a password instead"
+    "title": "1258|Logg inn med en lenke",
+    "subtitle": "1259|Vi sender deg en engangslenke på e-post. Ingen passord å huske.",
+    "send": "1260|Send lenken",
+    "sending": "1261|Sender...",
+    "sentInfo": "1262|Lenken er sendt. Sjekk e-posten din.",
+    "sentTitle": "1263|Sjekk e-posten din",
+    "sentBody": "1264|Vi sendte en innloggingslenke til",
+    "useAnotherEmail": "1265|Bruk en annen e-post",
+    "backToPassword": "1266|Logg inn med passord i stedet"
   },
   "action": {
-    "working": "One moment...",
-    "continue": "Continue",
-    "confirmEmailTitle": "Confirm your email",
-    "confirmEmailBody": "This link was opened in a different browser. Enter the address it was sent to and we'll finish signing you in.",
-    "resetTitle": "New password",
-    "resetSubtitle": "Choose a new password for",
-    "newPassword": "New password",
-    "confirmPassword": "Repeat password",
-    "savePassword": "Save password",
-    "resetDoneTitle": "Password updated",
-    "resetDoneBody": "You can sign in with your new password now.",
-    "failedTitle": "That link didn't work",
-    "failedBody": "It may have already been used, or it expired. Request a new one from the sign-in screen.",
-    "backToSignIn": "Back to sign in"
+    "working": "1267|Ett øyeblikk...",
+    "continue": "1268|Fortsett",
+    "confirmEmailTitle": "1269|Bekreft e-posten din",
+    "confirmEmailBody": "1270|Denne lenken ble åpnet i en annen nettleser. Skriv inn adressen den ble sendt til, så fullfører vi innloggingen.",
+    "resetTitle": "1271|Nytt passord",
+    "resetSubtitle": "1272|Velg et nytt passord for",
+    "newPassword": "1273|Nytt passord",
+    "confirmPassword": "1274|Gjenta passordet",
+    "savePassword": "1275|Lagre passord",
+    "resetDoneTitle": "1276|Passordet er oppdatert",
+    "resetDoneBody": "1277|Nå kan du logge inn med det nye passordet ditt.",
+    "failedTitle": "1278|Den lenken virket ikke",
+    "failedBody": "1279|Den kan allerede være brukt, eller så er den utløpt. Be om en ny fra innloggingsskjermen.",
+    "backToSignIn": "1280|Tilbake til innlogging"
   },
   "common": {
-    "cancel": "Cancel",
-    "delete": "Delete",
+    "cancel": "1281|Avbryt",
+    "delete": "1282|Slett",
     "view": {
-      "label": "View",
-      "rows": "List",
-      "grid": "Grid"
+      "label": "1283|Visning",
+      "rows": "1284|Liste",
+      "grid": "1285|Rutenett"
     }
   },
   "practice": {
     "language": {
-      "label": "Language",
-      "search": "Search a language",
-      "noMatch": "No language matches that.",
-      "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
+      "label": "1286|Språk",
+      "search": "1287|Søk etter et språk",
+      "noMatch": "1288|Ingen språk passer.",
+      "noVoice": "1289|Nettleseren din har ingen {{language}}-stemme, så læreren snakker ikke dette språket. Legg til språkpakken i systeminnstillingene, eller velg et annet språk."
     }
   }
 }
