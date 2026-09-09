@@ -1840,5 +1840,8 @@
       "noMatch": "Inget språk matchar.",
       "noVoice": "Din webbläsare har ingen röst för {{language}}, så läraren kommer inte att tala det språket. Lägg till språkpaketet i systeminställningarna eller välj ett annat språk."
     }
+  },
+  "offline": {
+    "banner": "Ingen anslutning. Dina set och anteckningar öppnas ändå, och ändringar sparas och skickas när du är online igen."
   }
 }

@@ -1840,5 +1840,8 @@
       "noMatch": "Ükski keel ei sobi.",
       "noVoice": "Sinu brauseril pole {{language}} häält, seega juhendaja seda keelt ei räägi. Lisa keelepakett süsteemiseadetes või vali teine keel."
     }
+  },
+  "offline": {
+    "banner": "Võrguühendust pole. Sinu komplektid ja märkmed avanevad ikka ning muudatused salvestatakse ja saadetakse, kui ühendus taastub."
   }
 }

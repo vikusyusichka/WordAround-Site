@@ -1840,5 +1840,8 @@
       "noMatch": "Cap idioma coincideix.",
       "noVoice": "El teu navegador no té veu en {{language}}, així que el tutor no parlarà aquest idioma. Afegeix el paquet d'idioma a la configuració del sistema o tria un altre idioma."
     }
+  },
+  "offline": {
+    "banner": "Sense connexió. Els teus conjunts i notes s’obren igualment, i els canvis es desen i s’envien quan tornis a tenir xarxa."
   }
 }

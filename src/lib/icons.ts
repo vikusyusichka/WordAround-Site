@@ -157,6 +157,7 @@ import {
   Trophy,
   VideoCamera,
   WifiHigh,
+  WifiSlash,
   Wine,
   type Icon as PhosphorIcon,
 } from '@phosphor-icons/react';
@@ -357,6 +358,7 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'cpu.fill': Cpu,
   'server.rack': HardDrives,
   wifi: WifiHigh,
+  'wifi.slash': WifiSlash,
   'antenna.radiowaves.left.and.right': Broadcast,
   /* Creativity */
   'paintbrush.fill': PaintBrush,

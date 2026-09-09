@@ -1840,5 +1840,8 @@
       "noMatch": "Aucune langue ne correspond.",
       "noVoice": "Votre navigateur n'a pas de voix pour {{language}}, le tuteur ne parlera donc pas cette langue. Ajoutez le pack de langue dans les réglages de votre système, ou choisissez une autre langue."
     }
+  },
+  "offline": {
+    "banner": "Hors ligne. Vos listes et vos notes s’ouvrent toujours, et vos modifications sont enregistrées puis envoyées au retour de la connexion."
   }
 }

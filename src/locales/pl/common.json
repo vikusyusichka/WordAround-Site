@@ -1889,5 +1889,8 @@
       "noMatch": "Żaden język nie pasuje.",
       "noVoice": "Twoja przeglądarka nie ma głosu dla języka {{language}}, więc lektor nie będzie mówić w tym języku. Dodaj pakiet językowy w ustawieniach systemu lub wybierz inny język."
     }
+  },
+  "offline": {
+    "banner": "Brak sieci. Twoje zestawy i notatki nadal się otwierają, a zmiany zostaną zapisane i wysłane po powrocie połączenia."
   }
 }

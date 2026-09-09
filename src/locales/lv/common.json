@@ -1863,5 +1863,8 @@
       "noMatch": "Neviena valoda neatbilst.",
       "noVoice": "Jūsu pārlūkprogrammai nav {{language}} valodas balss, tāpēc pasniedzējs šajā valodā nerunās. Pievienojiet valodas pakotni sistēmas iestatījumos vai izvēlieties citu valodu."
     }
+  },
+  "offline": {
+    "banner": "Nav savienojuma. Jūsu kopas un piezīmes joprojām atveras, un izmaiņas tiek saglabātas un nosūtītas, kad savienojums atgriezīsies."
   }
 }

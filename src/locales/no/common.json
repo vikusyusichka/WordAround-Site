@@ -1840,5 +1840,8 @@
       "noMatch": "Ingen språk passer.",
       "noVoice": "Nettleseren din har ingen {{language}}-stemme, så læreren snakker ikke dette språket. Legg til språkpakken i systeminnstillingene, eller velg et annet språk."
     }
+  },
+  "offline": {
+    "banner": "Ingen tilkobling. Settene og notatene dine åpnes fortsatt, og endringer lagres og sendes når tilkoblingen er tilbake."
   }
 }

@@ -1840,5 +1840,8 @@
       "noMatch": "Eşleşen dil yok.",
       "noVoice": "Tarayıcında {{language}} sesi yok, bu yüzden öğretmen bu dili konuşmayacak. Sistem ayarlarından dil paketini ekle ya da başka bir dil seç."
     }
+  },
+  "offline": {
+    "banner": "Bağlantı yok. Setleriniz ve notlarınız yine de açılır; değişiklikler kaydedilir ve bağlantı dönünce gönderilir."
   }
 }

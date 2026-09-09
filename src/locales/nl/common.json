@@ -1840,5 +1840,8 @@
       "noMatch": "Geen taal komt overeen.",
       "noVoice": "Je browser heeft geen stem voor {{language}}, dus de tutor spreekt deze taal niet. Voeg het taalpakket toe in je systeeminstellingen of kies een andere taal."
     }
+  },
+  "offline": {
+    "banner": "Geen verbinding. Je sets en notities gaan gewoon open, en wijzigingen worden bewaard en verstuurd zodra je weer online bent."
   }
 }

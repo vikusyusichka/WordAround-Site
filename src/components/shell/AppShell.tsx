@@ -11,6 +11,7 @@ import { HomeIconGradientDefs } from '@/components/home/HomeIconGradientDefs';
 import { Icon } from '@/components/primitives/Icon';
 import { CreateMenuOverlay } from '@/components/shell/CreateMenuOverlay';
 import { MobileNav } from '@/components/shell/MobileNav';
+import { OfflineBanner } from '@/components/shell/OfflineBanner';
 import { Sidebar } from '@/components/shell/Sidebar';
 import { showsCreateFab } from '@/lib/navigation';
 import { useUiStore } from '@/stores/uiStore';
@@ -48,6 +49,7 @@ export const AppShell = ({ children }: AppShellProps) => {
 
       {/* Main column */}
       <div className="relative z-10 flex min-w-0 flex-1 flex-col">
+        <OfflineBanner />
         <div className="lg:hidden">
           <MobileNav />
         </div>

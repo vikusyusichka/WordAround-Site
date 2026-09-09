@@ -1840,5 +1840,8 @@
       "noMatch": "Der er ingen sprog, der matcher.",
       "noVoice": "Din browser har ingen {{language}} stemme, så underviseren taler ikke dette sprog. Tilføj sprogpakken i dine systemindstillinger, eller vælg et andet sprog."
     }
+  },
+  "offline": {
+    "banner": "Ingen forbindelse. Dine sæt og noter åbner stadig, og ændringer gemmes og sendes, når forbindelsen er tilbage."
   }
 }

@@ -1840,5 +1840,8 @@
       "noMatch": "Neniu lingvo kongruas.",
       "noVoice": "Via retumilo ne havas voĉon por {{language}}, do la instruisto ne parolos ĉi tiun lingvon. Aldonu la lingvopakon en viaj sistemaj agordoj, aŭ elektu alian lingvon."
     }
+  },
+  "offline": {
+    "banner": "Neniu reto. Viaj aroj kaj notoj plu malfermiĝas, kaj ŝanĝoj konserviĝas kaj sendiĝas kiam la konekto revenos."
   }
 }

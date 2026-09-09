@@ -1840,5 +1840,8 @@
       "noMatch": "No language matches that.",
       "noVoice": "Your browser has no {{language}} voice, so the tutor will not speak this language. Add the language pack in your system settings, or pick another language."
     }
+  },
+  "offline": {
+    "banner": "You are offline. Your sets and notes still open, and changes are saved and sent when you are back."
   }
 }

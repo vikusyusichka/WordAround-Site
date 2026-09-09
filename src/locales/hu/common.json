@@ -1840,5 +1840,8 @@
       "noMatch": "Nincs ilyen nyelv.",
       "noVoice": "A böngésződben nincs {{language}} hang, ezért a tanár nem fog ezen a nyelven beszélni. Add hozzá a nyelvi csomagot a rendszerbeállításokban, vagy válassz másik nyelvet."
     }
+  },
+  "offline": {
+    "banner": "Nincs hálózat. A szettjeid és jegyzeteid továbbra is megnyílnak, a módosítások pedig mentődnek és elmennek, amint visszatér a kapcsolat."
   }
 }

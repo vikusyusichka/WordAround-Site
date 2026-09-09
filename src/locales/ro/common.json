@@ -1866,5 +1866,8 @@
       "noMatch": "Nicio limbă nu se potrivește.",
       "noVoice": "Browserul tău nu are voce pentru {{language}}, așa că tutorele nu va vorbi această limbă. Adaugă pachetul de limbă în setările sistemului sau alege altă limbă."
     }
+  },
+  "offline": {
+    "banner": "Fără rețea. Seturile și notițele tale se deschid oricum, iar modificările se salvează și se trimit când revine conexiunea."
   }
 }

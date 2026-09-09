@@ -1843,5 +1843,8 @@
       "noMatch": "Keine Sprache passt dazu.",
       "noVoice": "Dein Browser hat keine Stimme für {{language}}, daher spricht der Tutor diese Sprache nicht. Füge das Sprachpaket in den Systemeinstellungen hinzu oder wähle eine andere Sprache."
     }
+  },
+  "offline": {
+    "banner": "Keine Verbindung. Deine Sets und Notizen lassen sich weiterhin öffnen, und Änderungen werden gespeichert und gesendet, sobald du wieder online bist."
   }
 }

@@ -1863,5 +1863,8 @@
       "noMatch": "Nijedan jezik ne odgovara.",
       "noVoice": "Vaš preglednik nema glas za jezik {{language}} pa mentor neće govoriti ovim jezikom. Dodajte jezični paket u postavkama sustava ili odaberite drugi jezik."
     }
+  },
+  "offline": {
+    "banner": "Nema mreže. Vaši setovi i bilješke i dalje se otvaraju, a promjene se spremaju i šalju kad se veza vrati."
   }
 }

@@ -1840,5 +1840,8 @@
       "noMatch": "Yksikään kieli ei vastaa hakua.",
       "noVoice": "Selaimessasi ei ole kielen {{language}} ääntä, joten opettaja ei puhu tätä kieltä. Lisää kielipaketti järjestelmän asetuksista tai valitse toinen kieli."
     }
+  },
+  "offline": {
+    "banner": "Ei verkkoyhteyttä. Settisi ja muistiinpanosi aukeavat silti, ja muutokset tallennetaan ja lähetetään, kun yhteys palaa."
   }
 }

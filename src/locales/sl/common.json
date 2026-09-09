@@ -1886,5 +1886,8 @@
       "noMatch": "Noben jezik ne ustreza.",
       "noVoice": "Vaš brskalnik nima glasu za jezik {{language}}, zato mentor v tem jeziku ne bo govoril. Dodajte jezikovni paket v sistemskih nastavitvah ali izberite drug jezik."
     }
+  },
+  "offline": {
+    "banner": "Ni povezave. Vaši sklopi in zapiski se še vedno odprejo, spremembe pa se shranijo in pošljejo, ko se povezava vrne."
   }
 }

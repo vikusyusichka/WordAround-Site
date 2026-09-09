@@ -1840,5 +1840,8 @@
       "noMatch": "Nenhum idioma corresponde.",
       "noVoice": "O seu navegador não tem voz em {{language}}, por isso o tutor não vai falar este idioma. Adicione o pacote de idioma nas definições do sistema ou escolha outro idioma."
     }
+  },
+  "offline": {
+    "banner": "Sem ligação. Os seus conjuntos e notas continuam a abrir, e as alterações são guardadas e enviadas quando voltar a ligação."
   }
 }

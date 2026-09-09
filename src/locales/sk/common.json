@@ -1866,5 +1866,8 @@
       "noMatch": "Tomu nezodpovedá žiadny jazyk.",
       "noVoice": "Váš prehliadač nemá hlas pre jazyk {{language}}, takže lektor týmto jazykom hovoriť nebude. Pridajte jazykový balík v nastaveniach systému alebo vyberte iný jazyk."
     }
+  },
+  "offline": {
+    "banner": "Bez pripojenia. Vaše sady a poznámky sa stále otvárajú a zmeny sa uložia a odošlú, len čo sa spojenie vráti."
   }
 }

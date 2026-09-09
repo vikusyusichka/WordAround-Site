@@ -1,7 +1,7 @@
 /* The 5 "create" actions, shared by the desktop dropdown (CreateMenu) and the
    mobile radial overlay (CreateMenuOverlay). Icons resolve via <Icon>; offsets
-   are only used by the radial variant. Actions are stubs until Phase 3 wires
-   Folder/Set (and later Text/Audio/Essay). */
+   are only used by the radial variant. Every action has a destination — see
+   CREATE_ROUTES below. */
 export interface CreateItem {
   id: string;
   labelKey: string;
@@ -14,12 +14,20 @@ export interface CreateItem {
   delay: number;
 }
 
-/* Destination route per create action. Missing entries are still stubs (the
-   menu just closes) until their phase lands. */
-export const CREATE_ROUTES: Partial<Record<string, string>> = {
+/* Destination route per create action, one per item in CREATE_ITEMS.
+
+   Text, Audio and Essay sat here as `// later phases` long after those phases
+   landed, so three of the five items in the "+" menu did nothing at all: the
+   menu opened, you picked one, and it just closed again. The screens they
+   belong to have existed since Phases 5-7. Destinations mirror what iOS opens
+   from the same menu (HomeView.swift): the add-text sheet, audio import, and
+   the essay practice screen. */
+export const CREATE_ROUTES: Record<string, string> = {
   folder: '/folders/new',
   set: '/sets/new',
-  // text/audio/essay — later phases
+  text: '/practice/reading/my-texts/new',
+  audio: '/practice/listening/import-audio',
+  essay: '/practice/writing/essays',
 };
 
 export const CREATE_ITEMS: CreateItem[] = [

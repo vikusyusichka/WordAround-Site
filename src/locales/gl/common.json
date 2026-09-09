@@ -1840,5 +1840,8 @@
       "noMatch": "Ningún idioma coincide.",
       "noVoice": "O teu navegador non ten voz en {{language}}, así que o titor non falará este idioma. Engade o paquete de idioma nos axustes do sistema ou escolle outro idioma."
     }
+  },
+  "offline": {
+    "banner": "Sen conexión. Os teus conxuntos e notas ábrense igualmente, e os cambios gárdanse e envíanse cando volva a rede."
   }
 }

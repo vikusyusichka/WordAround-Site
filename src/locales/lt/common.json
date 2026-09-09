@@ -1863,5 +1863,8 @@
       "noMatch": "Atitinkančių kalbų nėra.",
       "noVoice": "Jūsų naršyklė neturi {{language}} kalbos balso, tad mokytojas šia kalba nekalbės. Pridėkite kalbos paketą sistemos nustatymuose arba pasirinkite kitą kalbą."
     }
+  },
+  "offline": {
+    "banner": "Nėra ryšio. Jūsų rinkiniai ir užrašai vis tiek atsidaro, o pakeitimai išsaugomi ir išsiunčiami grįžus ryšiui."
   }
 }
