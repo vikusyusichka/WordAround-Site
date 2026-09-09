@@ -7,14 +7,20 @@
 > "where are we / what next / which files" map.
 
 ## What this is
-Web SPA port of the iOS app **WordAround** (SwiftUI, `github.com/vikusyusichka/WordAround`,
-branch `develop`). Shares the **same Firebase project** (`wordaround-97f86`) and the
+Web SPA port of the iOS app **WordAround** (SwiftUI, `github.com/vikusyusichka/WordAround`).
+Shares the **same Firebase project** (`wordaround-97f86`) and the
 same Cloudflare AI Worker as iOS, so users/data are common.
 Working dir: `H:\Projects\WordAround-Site` (git, branch `main`).
 
+⚠️ **The iOS reference branch is `feature/home-screen-update`, NOT `develop`.**
+`develop` is several commits behind, and the unpacked copy still sitting in this
+repo (`vikusyusichka-WordAround-3e1de26/`) is that stale `develop` — do not
+compare against it. The current branch is where 32 languages, the full Profile
+module, real home statistics and the grid/list toggle live.
+
 Fetch iOS source for reference:
 ```
-curl -sL https://api.github.com/repos/vikusyusichka/WordAround/tarball/develop -o wa.tar.gz && tar -xzf wa.tar.gz
+curl -sL https://api.github.com/repos/vikusyusichka/WordAround/tarball/feature/home-screen-update -o wa.tar.gz && tar -xzf wa.tar.gz
 # extracts to vikusyusichka-WordAround-<sha>/WordAround/Features/<Module>/...
 ```
 
@@ -38,6 +44,23 @@ Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
 
 ## Done so far (commits on `main`, newest first)
+- **iOS parity slice A — Profile (`0781fd2`, pushed + deployed).** `/profile` is
+  now the iOS module: identity card + avatar (colour/initials/photo), two summary
+  tiles, ACCOUNT / SUPPORT / DANGER ZONE, plus the web-only "Create a password"
+  card. Three real routes underneath — `/profile/{language,appearance,notifications}`
+  — master-detail from `lg`, round back button below it. Shared card chrome
+  `src/components/profile/ProfileCard.tsx` (port of `ProfileDashboardCardChrome`);
+  **slice C is meant to reuse it.** New: `stores/preferencesStore.ts` (iOS
+  UserDefaults keys verbatim; language deliberately stays in i18next),
+  `lib/{profileStats,profileAvatarColor,appearance,webNotifications,
+  userProfileService,accountDeletionService,profileLinks}.ts`,
+  `hooks/{useProfileStats,useReminderScheduler}.ts`. `LanguageSwitcher.tsx`
+  deleted. 76 new strings really translated into all 30 locales.
+  ⚠️ **Pending user action, not code:** publish the new
+  `users/{uid}/profile/{fileName}` rule from `storage.rules` in the Firebase
+  Console, or avatar photo upload keeps failing `storage/unauthorized` (handled
+  gracefully — name + colour still save).
+  Not exercised live: the `auth/requires-recent-login` deletion branch.
 - Visual alignment with iOS (page content only, nav untouched) — `2a7b008` fix
   (invisible yellow/purple swatch colours + full iOS theme + mode-card tokens),
   `765fdd8` (mode cards, sets/folders one-column, real folder shape, themed
@@ -434,7 +457,29 @@ resets auth). Screenshot tool may hang while TTS speaks — page-text is enough.
 
 **REMAINING:** offline flashcards via IndexedDB, container-query pad layout ≥700px, virtualized long lists
 (`@tanstack/react-virtual`), perf, Firestore security-rules review before public
-launch. Polish/German are still English scaffolds (structure is in sync).
+launch. (All 30 locales are real translations now — the pl/de scaffold note that
+used to sit here is out of date.)
+
+### iOS parity slices (plan `C:\Users\vikusyusichka\.claude\plans\ios-iridescent-bonbon.md`)
+Reference branch `feature/home-screen-update`. **A is done and deployed**
+(`0781fd2`); B and C are next, each its own plan → build → gates → live → commit.
+- **Slice B — Sets & folders.** B1 full-screen card overlay (the only place a
+  card's image is ever visible — `FlashcardExpandedView.swift`); B2 swipe +
+  keyboard on the main card, keeping the Known/Unknown buttons; B3 example line,
+  row audio and the learned star in `CardListRow`; B4 replace the remaining
+  `window.confirm`/`prompt` with `ConfirmDialog` + a new `RenameDialog`;
+  B5 folder reorder (⚠️ iOS does NOT persist the order — keep it in
+  localStorage, do not add a Firestore field without asking); B6 align the grid
+  to 1/2/3/4 columns.
+- **Slice C — Writing / Grammar Notes, design only.** Functionality must not
+  change; nothing may be removed. Reuse slice A's `ProfileCard` chrome for topic,
+  note and review cards; quick actions as a 2→4 column grid; iOS section
+  headings; the note editor capped at 900px with a toolbar tray.
+
+**Deliberately deferred:** dark theme across the site, real background Web Push
+(FCM + Cloud Functions), pronunciation scoring (the worker's
+`/api/speech/azure-token` returns 502), and the Text/Audio/Essay entries in the
+"+" menu (`CREATE_ROUTES` in `src/lib/createMenu.ts` still has only folder and set).
 
 ## Working process (follow strictly)
 1. Big phase → **plan mode** → detailed slice plan → user approval → build.
