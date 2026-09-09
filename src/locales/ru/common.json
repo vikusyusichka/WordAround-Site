@@ -160,6 +160,7 @@
     "saving": "Сохраняем…",
     "cancel": "Отмена",
     "saveError": "Не удалось сохранить. Попробуйте ещё раз.",
+    "deleteTitle": "Удалить набор?",
     "cardCount_few": "{{count}} карточки",
     "cardCount_many": "{{count}} карточек",
     "cardCount_other": "{{count}} карточки"
@@ -355,7 +356,17 @@
     "deleteCardConfirm": "Удалить эту карточку?",
     "emptyPrompt": "В этом наборе пока нет карточек. Добавьте первую.",
     "save": "Сохранить",
-    "cancel": "Отмена"
+    "cancel": "Отмена",
+    "expand": "Открыть на весь экран",
+    "close": "Закрыть",
+    "expandedTitle": "Карточка на весь экран",
+    "exampleFormat": "Пример: {{text}}",
+    "cardSubWord": "Слово",
+    "cardSubTranslation": "Перевод",
+    "noTranslation": "Нет перевода",
+    "learning": "Учу",
+    "knownShort": "Знаю",
+    "deleteCardTitle": "Удалить карточку?"
   },
   "writing": {
     "today": {
@@ -1171,6 +1182,8 @@
       "renamePrompt": "Новое название:",
       "delete": "Удалить",
       "deleteConfirm": "Удалить «{{title}}»? Это действие нельзя отменить.",
+      "renameTitle": "Переименовать текст",
+      "deleteTitle": "Удалить текст?",
       "words_few": "{{count}} слова",
       "words_many": "{{count}} слов"
     },
@@ -1545,7 +1558,8 @@
         "draft": "Черновик",
         "inProgress": "В процессе",
         "completed": "Завершена"
-      }
+      },
+      "deleteTitle": "Удалить сессию?"
     }
   },
   "speaking": {
@@ -1856,7 +1870,12 @@
       "rows": "Список",
       "grid": "Сетка"
     },
-    "save": "Сохранить"
+    "save": "Сохранить",
+    "arrange": "Упорядочить",
+    "done": "Готово",
+    "rename": "Название",
+    "moveUp": "Переместить {{name}} вверх",
+    "moveDown": "Переместить {{name}} вниз"
   },
   "practice": {
     "language": {

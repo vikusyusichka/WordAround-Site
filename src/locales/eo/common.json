@@ -156,7 +156,8 @@
     "save": "Konservi la ŝanĝojn",
     "saving": "Konservante…",
     "cancel": "Nuligi",
-    "saveError": "Ne eblis konservi. Bonvolu provi denove."
+    "saveError": "Ne eblis konservi. Bonvolu provi denove.",
+    "deleteTitle": "Ĉu forigi la aron?"
   },
   "createSet": {
     "title": "Nova aro",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Ĉu forigi ĉi tiun karton?",
     "emptyPrompt": "Ĉi tiu aro ankoraŭ ne havas kartojn. Aldonu vian unuan karton.",
     "save": "Konservi",
-    "cancel": "Nuligi"
+    "cancel": "Nuligi",
+    "expand": "Malfermi plenekrane",
+    "close": "Fermi",
+    "expandedTitle": "Karto plenekrane",
+    "exampleFormat": "Ekzemplo: {{text}}",
+    "cardSubWord": "Vorto",
+    "cardSubTranslation": "Traduko",
+    "noTranslation": "Neniu traduko",
+    "learning": "Lernante",
+    "knownShort": "Scias",
+    "deleteCardTitle": "Ĉu forigi la karton?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Renomi",
       "renamePrompt": "Nova titolo:",
       "delete": "Forigi",
-      "deleteConfirm": "Ĉu forigi \"{{title}}\"? Tio ne estas malfarebla."
+      "deleteConfirm": "Ĉu forigi \"{{title}}\"? Tio ne estas malfarebla.",
+      "renameTitle": "Renomi la tekston",
+      "deleteTitle": "Ĉu forigi la tekston?"
     },
     "continue": {
       "eyebrow": "Daŭrigi la legadon",
@@ -1496,7 +1509,8 @@
         "draft": "Malneto",
         "inProgress": "Survoje",
         "completed": "Finita"
-      }
+      },
+      "deleteTitle": "Ĉu forigi la seancon?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Listo",
       "grid": "Krado"
     },
-    "save": "Konservi"
+    "save": "Konservi",
+    "arrange": "Ordigi",
+    "done": "Preta",
+    "rename": "Nomo",
+    "moveUp": "Movi {{name}} supren",
+    "moveDown": "Movi {{name}} malsupren"
   },
   "practice": {
     "language": {

@@ -156,7 +156,8 @@
     "save": "Lagre endringer",
     "saving": "Lagrer…",
     "cancel": "Avbryt",
-    "saveError": "Kunne ikke lagre. Prøv igjen."
+    "saveError": "Kunne ikke lagre. Prøv igjen.",
+    "deleteTitle": "Slette settet?"
   },
   "createSet": {
     "title": "Nytt sett",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Slette dette kortet?",
     "emptyPrompt": "Dette settet har ingen kort ennå. Legg til det første.",
     "save": "Lagre",
-    "cancel": "Avbryt"
+    "cancel": "Avbryt",
+    "expand": "Åpne i fullskjerm",
+    "close": "Lukk",
+    "expandedTitle": "Kort i fullskjerm",
+    "exampleFormat": "Eksempel: {{text}}",
+    "cardSubWord": "Ord",
+    "cardSubTranslation": "Oversettelse",
+    "noTranslation": "Ingen oversettelse",
+    "learning": "Lærer",
+    "knownShort": "Kan",
+    "deleteCardTitle": "Slette kortet?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Gi nytt navn",
       "renamePrompt": "Ny tittel:",
       "delete": "Slett",
-      "deleteConfirm": "Slette «{{title}}»? Dette kan ikke angres."
+      "deleteConfirm": "Slette «{{title}}»? Dette kan ikke angres.",
+      "renameTitle": "Gi teksten nytt navn",
+      "deleteTitle": "Slette teksten?"
     },
     "continue": {
       "eyebrow": "Fortsett lesingen",
@@ -1496,7 +1509,8 @@
         "draft": "Utkast",
         "inProgress": "Pågår",
         "completed": "Fullført"
-      }
+      },
+      "deleteTitle": "Slette økten?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Liste",
       "grid": "Rutenett"
     },
-    "save": "Lagre"
+    "save": "Lagre",
+    "arrange": "Ordne",
+    "done": "Ferdig",
+    "rename": "Navn",
+    "moveUp": "Flytt {{name}} opp",
+    "moveDown": "Flytt {{name}} ned"
   },
   "practice": {
     "language": {

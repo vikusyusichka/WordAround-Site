@@ -156,7 +156,8 @@
     "save": "Αποθήκευση αλλαγών",
     "saving": "Αποθήκευση…",
     "cancel": "Άκυρο",
-    "saveError": "Η αποθήκευση απέτυχε. Δοκιμάστε ξανά."
+    "saveError": "Η αποθήκευση απέτυχε. Δοκιμάστε ξανά.",
+    "deleteTitle": "Διαγραφή σετ;"
   },
   "createSet": {
     "title": "Νέο σετ",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Διαγραφή αυτής της κάρτας;",
     "emptyPrompt": "Αυτό το σετ δεν έχει κάρτες ακόμη. Προσθέστε την πρώτη.",
     "save": "Αποθήκευση",
-    "cancel": "Άκυρο"
+    "cancel": "Άκυρο",
+    "expand": "Άνοιγμα σε πλήρη οθόνη",
+    "close": "Κλείσιμο",
+    "expandedTitle": "Κάρτα σε πλήρη οθόνη",
+    "exampleFormat": "Παράδειγμα: {{text}}",
+    "cardSubWord": "Λέξη",
+    "cardSubTranslation": "Μετάφραση",
+    "noTranslation": "Χωρίς μετάφραση",
+    "learning": "Μαθαίνω",
+    "knownShort": "Το ξέρω",
+    "deleteCardTitle": "Διαγραφή κάρτας;"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Μετονομασία",
       "renamePrompt": "Νέος τίτλος:",
       "delete": "Διαγραφή",
-      "deleteConfirm": "Διαγραφή του «{{title}}»; Η ενέργεια δεν αναιρείται."
+      "deleteConfirm": "Διαγραφή του «{{title}}»; Η ενέργεια δεν αναιρείται.",
+      "renameTitle": "Μετονομασία κειμένου",
+      "deleteTitle": "Διαγραφή κειμένου;"
     },
     "continue": {
       "eyebrow": "Συνέχεια ανάγνωσης",
@@ -1496,7 +1509,8 @@
         "draft": "Πρόχειρο",
         "inProgress": "Σε εξέλιξη",
         "completed": "Ολοκληρωμένη"
-      }
+      },
+      "deleteTitle": "Διαγραφή συνεδρίας;"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Λίστα",
       "grid": "Πλέγμα"
     },
-    "save": "Αποθήκευση"
+    "save": "Αποθήκευση",
+    "arrange": "Ταξινόμηση",
+    "done": "Έτοιμο",
+    "rename": "Όνομα",
+    "moveUp": "Μετακίνηση {{name}} πάνω",
+    "moveDown": "Μετακίνηση {{name}} κάτω"
   },
   "practice": {
     "language": {

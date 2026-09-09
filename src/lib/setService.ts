@@ -9,8 +9,11 @@ import {
   setDoc,
   updateDoc,
   where,
+  writeBatch,
 } from 'firebase/firestore';
 
+import { db } from '@/lib/firebase';
+import { sortByOrder } from '@/lib/collectionOrder';
 import type { Flashcard, FlashcardSet, SetIconType } from '@/lib/models';
 import {
   flashcardSetDoc,
@@ -65,6 +68,9 @@ const toFirestore = (set: FlashcardSet): Record<string, unknown> => ({
   cards: set.cards.map(cardToFirestore),
   createdAt: millisToTs(set.createdAt),
   updatedAt: millisToTs(set.updatedAt),
+  /* Carried through on every write — this function re-sends the whole document,
+     so omitting it would wipe the arrangement on the first edit. */
+  ...(typeof set.order === 'number' ? { order: set.order } : {}),
 });
 
 /* The document id is the authoritative one: a stored `id` field can be
@@ -88,17 +94,27 @@ const fromFirestore = (data: Record<string, unknown>, docId?: string): Flashcard
     : [],
   createdAt: tsToMillis(data.createdAt),
   updatedAt: tsToMillis(data.updatedAt),
+  ...(typeof data.order === 'number' ? { order: data.order } : {}),
 });
 
 export const createSet = async (set: FlashcardSet): Promise<void> => {
   await setDoc(flashcardSetDoc(set.ownerUID, set.id), toFirestore(set));
 };
 
+/* Ordered by createdAt on the server; the manual arrangement is applied in
+   memory, because a Firestore orderBy would drop every set without the field. */
 export const fetchSets = async (uid: string): Promise<FlashcardSet[]> => {
   const snapshot = await getDocs(
     query(flashcardSetsCollection(uid), orderBy('createdAt', 'desc')),
   );
-  return snapshot.docs.map((d) => fromFirestore(d.data(), d.id));
+  return sortByOrder(snapshot.docs.map((d) => fromFirestore(d.data(), d.id)));
+};
+
+/** Writes the new arrangement in one batch — `ids` in their display order. */
+export const reorderSets = async (uid: string, ids: string[]): Promise<void> => {
+  const batch = writeBatch(db);
+  ids.forEach((id, order) => batch.set(flashcardSetDoc(uid, id), { order }, { merge: true }));
+  await batch.commit();
 };
 
 export const deleteSet = async (id: string, ownerUID: string): Promise<void> => {

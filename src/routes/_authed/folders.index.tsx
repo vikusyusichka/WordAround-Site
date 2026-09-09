@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
+import { Reorder } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { Plus } from '@phosphor-icons/react';
 
@@ -7,9 +8,12 @@ import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
 import { FolderCard } from '@/components/folders/FolderCard';
+import { ReorderControls } from '@/components/shell/ReorderControls';
+import { ReorderToggle } from '@/components/shell/ReorderToggle';
 import { ViewToggle } from '@/components/shell/ViewToggle';
 import { cardGridClass, useCardView } from '@/lib/cardView';
-import { useDeleteFolder, useFoldersQuery } from '@/hooks/useFolders';
+import { useDeleteFolder, useFoldersQuery, useReorderFolders } from '@/hooks/useFolders';
+import { useReorderMode } from '@/hooks/useReorderMode';
 import { useSetsQuery } from '@/hooks/useSets';
 import type { Folder } from '@/lib/models';
 
@@ -23,9 +27,16 @@ function FoldersPage() {
   const { data: folders, isLoading, isError } = useFoldersQuery();
   const { data: sets } = useSetsQuery();
   const deleteFolder = useDeleteFolder();
+  const reorderFolders = useReorderFolders();
 
   const [view, chooseView] = useCardView('folders');
   const [pendingDelete, setPendingDelete] = useState<Folder | null>(null);
+
+  const saveOrder = useCallback(
+    (ids: string[]) => reorderFolders.mutate(ids),
+    [reorderFolders],
+  );
+  const arrange = useReorderMode(folders ?? [], saveOrder);
 
   /* One sets query for the whole list rather than one per folder. */
   const setsPerFolder = new Map<string, number>();
@@ -46,6 +57,11 @@ function FoldersPage() {
         subtitle={t('home.subtitle.folders')}
         actions={
           <>
+            <ReorderToggle
+              isEditing={arrange.isEditing}
+              disabled={(folders?.length ?? 0) < 2}
+              onToggle={arrange.toggle}
+            />
             <ViewToggle value={view} onChange={chooseView} />
 
             <button
@@ -77,9 +93,41 @@ function FoldersPage() {
             {t('folders.emptyBody')}
           </span>
         </div>
+      ) : arrange.isEditing ? (
+        /* Arranging is always a single column: a card being dragged between
+           grid cells jumps around, and the up/down buttons only mean anything
+           in a list. */
+        <Reorder.Group
+          axis="y"
+          values={arrange.items}
+          onReorder={arrange.reorder}
+          className="flex flex-col gap-(--spacing-home-sets-gap)"
+        >
+          {arrange.items.map((folder, index) => (
+            <Reorder.Item key={folder.id} value={folder} className="flex items-center gap-3">
+              <ReorderControls
+                label={folder.title}
+                isFirst={index === 0}
+                isLast={index === arrange.items.length - 1}
+                onMoveUp={() => arrange.moveUp(folder.id)}
+                onMoveDown={() => arrange.moveDown(folder.id)}
+              />
+              <div className="min-w-0 flex-1 cursor-grab active:cursor-grabbing">
+                <FolderCard
+                  folder={folder}
+                  setCount={setsPerFolder.get(folder.id) ?? 0}
+                  variant="row"
+                  interactive={false}
+                  onOpen={() => {}}
+                  onDelete={() => {}}
+                />
+              </div>
+            </Reorder.Item>
+          ))}
+        </Reorder.Group>
       ) : (
         <div className={cardGridClass(view)}>
-          {folders.map((folder) => (
+          {arrange.items.map((folder) => (
             <FolderCard
               key={folder.id}
               folder={folder}

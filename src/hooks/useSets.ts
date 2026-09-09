@@ -126,6 +126,16 @@ export const useDeleteSet = () => {
   });
 };
 
+/** Saves a manual arrangement — `ids` in their display order. */
+export const useReorderSets = () => {
+  const qc = useQueryClient();
+  const uid = useUid();
+  return useMutation({
+    mutationFn: (ids: string[]) => setService.reorderSets(uid as string, ids),
+    onSuccess: () => qc.invalidateQueries({ queryKey: ['sets'] }),
+  });
+};
+
 /** Persist card edits (add/edit/delete) for a set. */
 export const useUpdateSetCards = () => {
   const qc = useQueryClient();

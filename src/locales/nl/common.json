@@ -156,7 +156,8 @@
     "save": "Wijzigingen opslaan",
     "saving": "Bezig met opslaan…",
     "cancel": "Annuleren",
-    "saveError": "Opslaan is mislukt. Probeer het opnieuw."
+    "saveError": "Opslaan is mislukt. Probeer het opnieuw.",
+    "deleteTitle": "Set verwijderen?"
   },
   "createSet": {
     "title": "Nieuwe set",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Deze kaart verwijderen?",
     "emptyPrompt": "Deze set heeft nog geen kaarten. Voeg je eerste kaart toe.",
     "save": "Opslaan",
-    "cancel": "Annuleren"
+    "cancel": "Annuleren",
+    "expand": "Op volledig scherm openen",
+    "close": "Sluiten",
+    "expandedTitle": "Kaart op volledig scherm",
+    "exampleFormat": "Voorbeeld: {{text}}",
+    "cardSubWord": "Woord",
+    "cardSubTranslation": "Vertaling",
+    "noTranslation": "Geen vertaling",
+    "learning": "Aan het leren",
+    "knownShort": "Geleerd",
+    "deleteCardTitle": "Kaart verwijderen?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Naam wijzigen",
       "renamePrompt": "Nieuwe titel:",
       "delete": "Verwijderen",
-      "deleteConfirm": "\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt."
+      "deleteConfirm": "\"{{title}}\" verwijderen? Dit kan niet ongedaan worden gemaakt.",
+      "renameTitle": "Tekst hernoemen",
+      "deleteTitle": "Tekst verwijderen?"
     },
     "continue": {
       "eyebrow": "Verder lezen",
@@ -1496,7 +1509,8 @@
         "draft": "Concept",
         "inProgress": "Bezig",
         "completed": "Voltooid"
-      }
+      },
+      "deleteTitle": "Sessie verwijderen?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Lijst",
       "grid": "Raster"
     },
-    "save": "Opslaan"
+    "save": "Opslaan",
+    "arrange": "Ordenen",
+    "done": "Klaar",
+    "rename": "Naam",
+    "moveUp": "{{name}} omhoog",
+    "moveDown": "{{name}} omlaag"
   },
   "practice": {
     "language": {

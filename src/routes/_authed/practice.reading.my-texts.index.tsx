@@ -1,11 +1,13 @@
 /* My Texts library — /practice/reading/my-texts. Continue-reading hero for
    the most recent unfinished text + saved-text grid. Web port of
    ReadingMyTextsView. */
+import { useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 import { Plus } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { ItemActionDialogs } from '@/components/shell/ItemActionDialogs';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { ContinueReadingCard } from '@/components/reading/ContinueReadingCard';
 import { ReadingTextCard } from '@/components/reading/ReadingTextCard';
@@ -36,17 +38,12 @@ function MyTextsScreen() {
       params: { itemId: item.id },
     });
 
-  const handleRename = (item: ReadingLibraryItem) => {
-    const next = window.prompt(t('reading.card.renamePrompt'), item.title);
-    if (next && next.trim().length > 0) {
-      renameItem.mutate({ id: item.id, title: next });
-    }
-  };
+  const [renameTarget, setRenameTarget] = useState<ReadingLibraryItem | null>(null);
+  const [deleteTarget, setDeleteTarget] = useState<ReadingLibraryItem | null>(null);
 
-  const handleDelete = (item: ReadingLibraryItem) => {
-    if (window.confirm(t('reading.card.deleteConfirm', { title: item.title }))) {
-      deleteItem.mutate(item.id);
-    }
+  const closeDialogs = () => {
+    setRenameTarget(null);
+    setDeleteTarget(null);
   };
 
   return (
@@ -108,14 +105,31 @@ function MyTextsScreen() {
                   key={item.id}
                   item={item}
                   onOpen={() => openItem(item)}
-                  onRename={() => handleRename(item)}
-                  onDelete={() => handleDelete(item)}
+                  onRename={() => setRenameTarget(item)}
+                  onDelete={() => setDeleteTarget(item)}
                 />
               ))}
             </div>
           </section>
         )}
       </div>
+
+      <ItemActionDialogs
+        renameTarget={renameTarget}
+        deleteTarget={deleteTarget}
+        deleteTitleKey="reading.card.deleteTitle"
+        deleteBodyKey="reading.card.deleteConfirm"
+        isDeleting={deleteItem.isPending}
+        onRename={(title) => {
+          if (renameTarget) renameItem.mutate({ id: renameTarget.id, title });
+          closeDialogs();
+        }}
+        onDelete={() => {
+          if (deleteTarget) deleteItem.mutate(deleteTarget.id);
+          closeDialogs();
+        }}
+        onCancel={closeDialogs}
+      />
     </ContentContainer>
   );
 }

@@ -160,6 +160,7 @@
     "saving": "Збереження…",
     "cancel": "Скасувати",
     "saveError": "Не вдалося зберегти. Спробуйте ще раз.",
+    "deleteTitle": "Видалити набір?",
     "cardCount_few": "{{count}} картки",
     "cardCount_many": "{{count}} карток",
     "cardCount_other": "{{count}} карток"
@@ -355,7 +356,17 @@
     "deleteCardConfirm": "Видалити цю картку?",
     "emptyPrompt": "У цьому наборі ще немає карток. Додайте першу.",
     "save": "Зберегти",
-    "cancel": "Скасувати"
+    "cancel": "Скасувати",
+    "expand": "Відкрити на весь екран",
+    "close": "Закрити",
+    "expandedTitle": "Картка на весь екран",
+    "exampleFormat": "Приклад: {{text}}",
+    "cardSubWord": "Слово",
+    "cardSubTranslation": "Переклад",
+    "noTranslation": "Немає перекладу",
+    "learning": "Вчу",
+    "knownShort": "Знаю",
+    "deleteCardTitle": "Видалити картку?"
   },
   "writing": {
     "today": {
@@ -1171,6 +1182,8 @@
       "renamePrompt": "Нова назва:",
       "delete": "Видалити",
       "deleteConfirm": "Видалити «{{title}}»? Цю дію не можна скасувати.",
+      "renameTitle": "Перейменувати текст",
+      "deleteTitle": "Видалити текст?",
       "words_few": "{{count}} слова",
       "words_many": "{{count}} слів"
     },
@@ -1545,7 +1558,8 @@
         "draft": "Чернетка",
         "inProgress": "У процесі",
         "completed": "Завершено"
-      }
+      },
+      "deleteTitle": "Видалити сесію?"
     }
   },
   "speaking": {
@@ -1856,7 +1870,12 @@
       "rows": "Списком",
       "grid": "Плитками"
     },
-    "save": "Зберегти"
+    "save": "Зберегти",
+    "arrange": "Упорядкувати",
+    "done": "Готово",
+    "rename": "Назва",
+    "moveUp": "Перемістити {{name}} вгору",
+    "moveDown": "Перемістити {{name}} вниз"
   },
   "practice": {
     "language": {

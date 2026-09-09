@@ -160,6 +160,7 @@
     "saving": "Zapisywanie…",
     "cancel": "Anuluj",
     "saveError": "Nie udało się zapisać. Spróbuj ponownie.",
+    "deleteTitle": "Usunąć zestaw?",
     "cardCount_few": "{{count}} fiszki",
     "cardCount_many": "{{count}} fiszek",
     "cardCount_other": "{{count}} fiszek"
@@ -355,7 +356,17 @@
     "deleteCardConfirm": "Usunąć tę fiszkę?",
     "emptyPrompt": "Ten zestaw nie ma jeszcze fiszek. Dodaj pierwszą.",
     "save": "Zapisz",
-    "cancel": "Anuluj"
+    "cancel": "Anuluj",
+    "expand": "Otwórz na pełnym ekranie",
+    "close": "Zamknij",
+    "expandedTitle": "Fiszka na pełnym ekranie",
+    "exampleFormat": "Przykład: {{text}}",
+    "cardSubWord": "Słowo",
+    "cardSubTranslation": "Tłumaczenie",
+    "noTranslation": "Brak tłumaczenia",
+    "learning": "Uczę się",
+    "knownShort": "Znam",
+    "deleteCardTitle": "Usunąć fiszkę?"
   },
   "writing": {
     "today": {
@@ -1171,6 +1182,8 @@
       "renamePrompt": "Nowy tytuł:",
       "delete": "Usuń",
       "deleteConfirm": "Usunąć „{{title}}”? Tej operacji nie można cofnąć.",
+      "renameTitle": "Zmień nazwę tekstu",
+      "deleteTitle": "Usunąć tekst?",
       "words_few": "{{count}} słowa",
       "words_many": "{{count}} słów"
     },
@@ -1545,7 +1558,8 @@
         "draft": "Szkic",
         "inProgress": "W trakcie",
         "completed": "Ukończone"
-      }
+      },
+      "deleteTitle": "Usunąć sesję?"
     }
   },
   "speaking": {
@@ -1856,7 +1870,12 @@
       "rows": "Lista",
       "grid": "Siatka"
     },
-    "save": "Zapisz"
+    "save": "Zapisz",
+    "arrange": "Uporządkuj",
+    "done": "Gotowe",
+    "rename": "Nazwa",
+    "moveUp": "Przenieś {{name}} w górę",
+    "moveDown": "Przenieś {{name}} w dół"
   },
   "practice": {
     "language": {

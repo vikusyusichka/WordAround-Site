@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { Plus } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { ItemActionDialogs } from '@/components/shell/ItemActionDialogs';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { SetupSection } from '@/components/practice/SetupSection';
 import { OptionPillGroup } from '@/components/practice/OptionPill';
@@ -52,6 +53,12 @@ function FromSetsScreen() {
   const saveItem = useSaveReadingItem();
   const renameItem = useRenameReadingItem();
   const deleteItem = useDeleteReadingItem();
+  const [renameTarget, setRenameTarget] = useState<ReadingLibraryItem | null>(null);
+  const [deleteTarget, setDeleteTarget] = useState<ReadingLibraryItem | null>(null);
+  const closeDialogs = () => {
+    setRenameTarget(null);
+    setDeleteTarget(null);
+  };
 
   const [setPickerOpen, setSetPickerOpen] = useState(false);
   const [selectedSet, setSelectedSet] = useState<FlashcardSet | null>(null);
@@ -252,21 +259,31 @@ function FromSetsScreen() {
                   key={item.id}
                   item={item}
                   onOpen={() => openItem(item)}
-                  onRename={() => {
-                    const next = window.prompt(t('reading.card.renamePrompt'), item.title);
-                    if (next && next.trim().length > 0) renameItem.mutate({ id: item.id, title: next });
-                  }}
-                  onDelete={() => {
-                    if (window.confirm(t('reading.card.deleteConfirm', { title: item.title }))) {
-                      deleteItem.mutate(item.id);
-                    }
-                  }}
+                  onRename={() => setRenameTarget(item)}
+                  onDelete={() => setDeleteTarget(item)}
                 />
               ))}
             </div>
           </section>
         )}
       </div>
+
+      <ItemActionDialogs
+        renameTarget={renameTarget}
+        deleteTarget={deleteTarget}
+        deleteTitleKey="reading.card.deleteTitle"
+        deleteBodyKey="reading.card.deleteConfirm"
+        isDeleting={deleteItem.isPending}
+        onRename={(title) => {
+          if (renameTarget) renameItem.mutate({ id: renameTarget.id, title });
+          closeDialogs();
+        }}
+        onDelete={() => {
+          if (deleteTarget) deleteItem.mutate(deleteTarget.id);
+          closeDialogs();
+        }}
+        onCancel={closeDialogs}
+      />
 
       <SetSelectionModal
         open={setPickerOpen}

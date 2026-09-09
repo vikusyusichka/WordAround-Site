@@ -156,7 +156,8 @@
     "save": "Módosítások mentése",
     "saving": "Mentés…",
     "cancel": "Mégse",
-    "saveError": "A mentés nem sikerült. Próbáld újra."
+    "saveError": "A mentés nem sikerült. Próbáld újra.",
+    "deleteTitle": "Törlöd a szettet?"
   },
   "createSet": {
     "title": "Új csomag",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Törlöd ezt a kártyát?",
     "emptyPrompt": "Ebben a csomagban még nincs kártya. Add hozzá az elsőt.",
     "save": "Mentés",
-    "cancel": "Mégse"
+    "cancel": "Mégse",
+    "expand": "Megnyitás teljes képernyőn",
+    "close": "Bezárás",
+    "expandedTitle": "Kártya teljes képernyőn",
+    "exampleFormat": "Példa: {{text}}",
+    "cardSubWord": "Szó",
+    "cardSubTranslation": "Fordítás",
+    "noTranslation": "Nincs fordítás",
+    "learning": "Tanulom",
+    "knownShort": "Tudom",
+    "deleteCardTitle": "Törlöd a kártyát?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Átnevezés",
       "renamePrompt": "Új cím:",
       "delete": "Törlés",
-      "deleteConfirm": "Törlöd ezt: „{{title}}”? Ez nem vonható vissza."
+      "deleteConfirm": "Törlöd ezt: „{{title}}”? Ez nem vonható vissza.",
+      "renameTitle": "Szöveg átnevezése",
+      "deleteTitle": "Törlöd a szöveget?"
     },
     "continue": {
       "eyebrow": "Olvasás folytatása",
@@ -1496,7 +1509,8 @@
         "draft": "Piszkozat",
         "inProgress": "Folyamatban",
         "completed": "Kész"
-      }
+      },
+      "deleteTitle": "Törlöd a munkamenetet?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Lista",
       "grid": "Rács"
     },
-    "save": "Mentés"
+    "save": "Mentés",
+    "arrange": "Rendezés",
+    "done": "Kész",
+    "rename": "Név",
+    "moveUp": "{{name}} feljebb",
+    "moveDown": "{{name}} lejjebb"
   },
   "practice": {
     "language": {

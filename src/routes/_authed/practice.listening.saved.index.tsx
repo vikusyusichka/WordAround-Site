@@ -8,6 +8,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { ItemActionDialogs } from '@/components/shell/ItemActionDialogs';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { Icon } from '@/components/primitives/Icon';
 import { ListeningResultView } from '@/components/listening/ListeningResultView';
@@ -57,10 +58,11 @@ function SavedPracticeScreen() {
     }
   };
 
-  const handleDelete = (session: ListeningPersistedSession) => {
-    if (window.confirm(t('listening.saved.deleteConfirm', { title: session.title }))) {
-      void deleteListeningSession(session.id).then(reload);
-    }
+  const [deleteTarget, setDeleteTarget] = useState<ListeningPersistedSession | null>(null);
+
+  const confirmDelete = () => {
+    if (deleteTarget) void deleteListeningSession(deleteTarget.id).then(reload);
+    setDeleteTarget(null);
   };
 
   if (reviewSession?.result) {
@@ -193,7 +195,7 @@ function SavedPracticeScreen() {
                   </button>
                   <button
                     type="button"
-                    onClick={() => handleDelete(session)}
+                    onClick={() => setDeleteTarget(session)}
                     aria-label={t('listening.saved.delete')}
                     className="absolute right-3 top-3 grid size-8 place-items-center rounded-full text-(--color-cs-text-muted) opacity-0 transition-opacity hover:bg-black/[0.04] hover:text-(--color-cs-red) focus-visible:opacity-100 group-hover:opacity-100"
                   >
@@ -205,6 +207,14 @@ function SavedPracticeScreen() {
           </section>
         )}
       </div>
+
+      <ItemActionDialogs
+        deleteTarget={deleteTarget}
+        deleteTitleKey="listening.saved.deleteTitle"
+        deleteBodyKey="listening.saved.deleteConfirm"
+        onDelete={confirmDelete}
+        onCancel={() => setDeleteTarget(null)}
+      />
     </ContentContainer>
   );
 }

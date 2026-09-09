@@ -156,7 +156,8 @@
     "save": "Enregistrer les modifications",
     "saving": "Enregistrement…",
     "cancel": "Annuler",
-    "saveError": "Enregistrement impossible. Veuillez réessayer."
+    "saveError": "Enregistrement impossible. Veuillez réessayer.",
+    "deleteTitle": "Supprimer la liste ?"
   },
   "createSet": {
     "title": "Nouvelle liste",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Supprimer cette carte ?",
     "emptyPrompt": "Cette liste n'a pas encore de cartes. Ajoutez la première.",
     "save": "Enregistrer",
-    "cancel": "Annuler"
+    "cancel": "Annuler",
+    "expand": "Ouvrir en plein écran",
+    "close": "Fermer",
+    "expandedTitle": "Carte en plein écran",
+    "exampleFormat": "Exemple : {{text}}",
+    "cardSubWord": "Mot",
+    "cardSubTranslation": "Traduction",
+    "noTranslation": "Pas de traduction",
+    "learning": "En cours",
+    "knownShort": "Su",
+    "deleteCardTitle": "Supprimer la carte ?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Renommer",
       "renamePrompt": "Nouveau titre :",
       "delete": "Supprimer",
-      "deleteConfirm": "Supprimer « {{title}} » ? Cette action est irréversible."
+      "deleteConfirm": "Supprimer « {{title}} » ? Cette action est irréversible.",
+      "renameTitle": "Renommer le texte",
+      "deleteTitle": "Supprimer le texte ?"
     },
     "continue": {
       "eyebrow": "Reprendre la lecture",
@@ -1496,7 +1509,8 @@
         "draft": "Brouillon",
         "inProgress": "En cours",
         "completed": "Terminée"
-      }
+      },
+      "deleteTitle": "Supprimer la session ?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Liste",
       "grid": "Grille"
     },
-    "save": "Enregistrer"
+    "save": "Enregistrer",
+    "arrange": "Organiser",
+    "done": "Terminé",
+    "rename": "Nom",
+    "moveUp": "Monter {{name}}",
+    "moveDown": "Descendre {{name}}"
   },
   "practice": {
     "language": {

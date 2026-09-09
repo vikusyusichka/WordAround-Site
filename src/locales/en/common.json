@@ -156,7 +156,8 @@
     "save": "Save changes",
     "saving": "Saving…",
     "cancel": "Cancel",
-    "saveError": "Couldn't save. Please try again."
+    "saveError": "Couldn't save. Please try again.",
+    "deleteTitle": "Delete set?"
   },
   "createSet": {
     "title": "New set",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Delete this card?",
     "emptyPrompt": "This set has no cards yet. Add your first card.",
     "save": "Save",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "expand": "Open full screen",
+    "close": "Close",
+    "expandedTitle": "Flashcard, full screen",
+    "exampleFormat": "Example: {{text}}",
+    "cardSubWord": "Word",
+    "cardSubTranslation": "Translation",
+    "noTranslation": "No translation",
+    "learning": "Learning",
+    "knownShort": "Known",
+    "deleteCardTitle": "Delete card?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Rename",
       "renamePrompt": "New title:",
       "delete": "Delete",
-      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone."
+      "deleteConfirm": "Delete \"{{title}}\"? This can’t be undone.",
+      "renameTitle": "Rename text",
+      "deleteTitle": "Delete text?"
     },
     "continue": {
       "eyebrow": "Continue reading",
@@ -1496,7 +1509,8 @@
         "draft": "Draft",
         "inProgress": "In progress",
         "completed": "Completed"
-      }
+      },
+      "deleteTitle": "Delete session?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "List",
       "grid": "Grid"
     },
-    "save": "Save"
+    "save": "Save",
+    "arrange": "Arrange",
+    "done": "Done",
+    "rename": "Name",
+    "moveUp": "Move {{name}} up",
+    "moveDown": "Move {{name}} down"
   },
   "practice": {
     "language": {

@@ -2,13 +2,20 @@
    flips it (3D rotateY via Motion). The whole card is themed by the set's
    colour: soft section fill, a thick field-coloured border, the word in the
    set's title colour, an accent speaker, two corner wave-blobs and a sparkle.
-   Front = word, back = translation + example + optional image. A mastered
-   (star) toggle sits in the corner. */
+   Front = word, back = translation. The image and the example sentence live in
+   the full-screen view (ExpandedCard) — this card stays a clean two-sided
+   flashcard, as iOS's does. A mastered (heart) toggle sits in the corner.
+
+   On touch, dragging the card sideways answers it: right = known, left = still
+   learning, the same directions the arrow keys use. The Known/Unknown buttons
+   below stay regardless — there is no swipe on a desktop, and a beginner
+   should not have to discover a gesture to use the app. */
 import { motion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
-import { SpeakerHigh, Star } from '@phosphor-icons/react';
+import { ArrowsOut, Heart, SpeakerHigh } from '@phosphor-icons/react';
 
 import { Icon } from '@/components/primitives/Icon';
+import { swipeOutcome } from '@/lib/cardSwipe';
 import type { Flashcard } from '@/lib/models';
 import type { SetTheme } from '@/lib/setColors';
 
@@ -23,6 +30,10 @@ interface StudyCardProps {
   onFlip: () => void;
   onToggleMastered: () => void;
   onSpeak: (text: string, lang: string) => void;
+  /** Opens the full-screen card (iOS onExpand). */
+  onExpand?: () => void;
+  onKnown?: () => void;
+  onUnknown?: () => void;
 }
 
 // iOS TopRightWaveShape, factors ×100 for a 0..100 viewBox.
@@ -45,6 +56,9 @@ export const StudyCard = ({
   onFlip,
   onToggleMastered,
   onSpeak,
+  onExpand,
+  onKnown,
+  onUnknown,
 }: StudyCardProps) => {
   const { t } = useTranslation();
 
@@ -109,6 +123,22 @@ export const StudyCard = ({
       </span>
     ) : null;
 
+  /* iOS puts the expand control opposite the counter, on the card itself. */
+  const expander = onExpand ? (
+    <button
+      type="button"
+      onClick={(e) => {
+        e.stopPropagation();
+        onExpand();
+      }}
+      aria-label={t('study.expand')}
+      className="absolute right-5 bottom-5 grid size-10 place-items-center rounded-full hover:bg-black/[0.04] focus-visible:outline-none"
+      style={{ color: theme.mutedTextColor }}
+    >
+      <ArrowsOut size={20} weight="bold" />
+    </button>
+  ) : null;
+
   const cardSide = (text: string, lang: string) => (
     <>
       {decorations}
@@ -122,6 +152,7 @@ export const StudyCard = ({
         {speaker(text, lang)}
       </div>
       {counter}
+      {expander}
     </>
   );
 
@@ -134,6 +165,16 @@ export const StudyCard = ({
         onClick={onFlip}
         role="button"
         aria-label={t('study.flip')}
+        /* Only draggable when the caller can act on it, so a read-only preview
+           of this card can't be flung around to no effect. */
+        drag={onKnown && onUnknown ? 'x' : false}
+        dragSnapToOrigin
+        dragElastic={0.5}
+        onDragEnd={(_, info) => {
+          const outcome = swipeOutcome({ dx: info.offset.x, dy: info.offset.y });
+          if (outcome === 'known') onKnown?.();
+          else if (outcome === 'unknown') onUnknown?.();
+        }}
       >
         {/* Front — word. Opacity is bound to the flip state so the reverse face
             never paints in the settled state — the guaranteed cure for the
@@ -162,16 +203,17 @@ export const StudyCard = ({
         </div>
       </motion.div>
 
-      {/* Mastered toggle — corner, outside the flipping element. */}
+      {/* Mastered toggle — corner, outside the flipping element. A heart, the
+          same mark the card list uses (iOS marks mastered cards with a heart). */}
       <button
         type="button"
         onClick={onToggleMastered}
         aria-label={t('study.mastered')}
         aria-pressed={isMastered}
         className="absolute top-4 right-4 z-10 grid size-10 place-items-center rounded-full bg-white/90 shadow-[0_2px_6px_rgba(0,0,0,0.08)] focus-visible:outline-none"
-        style={{ color: isMastered ? '#F5B942' : 'var(--color-cs-text-muted)' }}
+        style={{ color: isMastered ? theme.accent : 'var(--color-cs-text-muted)' }}
       >
-        <Star size={20} weight={isMastered ? 'fill' : 'bold'} />
+        <Heart size={20} weight={isMastered ? 'fill' : 'bold'} />
       </button>
     </div>
   );

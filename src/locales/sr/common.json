@@ -158,6 +158,7 @@
     "saving": "Чувамо…",
     "cancel": "Одустани",
     "saveError": "Чување није успело. Покушајте поново.",
+    "deleteTitle": "Обрисати сет?",
     "cardCount_few": "{{count}} картице"
   },
   "createSet": {
@@ -351,7 +352,17 @@
     "deleteCardConfirm": "Обрисати ову картицу?",
     "emptyPrompt": "Овај сет још нема картица. Додајте прву.",
     "save": "Сачувај",
-    "cancel": "Одустани"
+    "cancel": "Одустани",
+    "expand": "Отвори преко целог екрана",
+    "close": "Затвори",
+    "expandedTitle": "Картица преко целог екрана",
+    "exampleFormat": "Пример: {{text}}",
+    "cardSubWord": "Реч",
+    "cardSubTranslation": "Превод",
+    "noTranslation": "Нема превода",
+    "learning": "Учим",
+    "knownShort": "Знам",
+    "deleteCardTitle": "Обрисати картицу?"
   },
   "writing": {
     "today": {
@@ -1150,6 +1161,8 @@
       "renamePrompt": "Нови назив:",
       "delete": "Обриши",
       "deleteConfirm": "Обрисати „{{title}}”? Ово се не може поништити.",
+      "renameTitle": "Преименуј текст",
+      "deleteTitle": "Обрисати текст?",
       "words_few": "{{count}} речи"
     },
     "continue": {
@@ -1519,7 +1532,8 @@
         "draft": "Нацрт",
         "inProgress": "У току",
         "completed": "Завршена"
-      }
+      },
+      "deleteTitle": "Обрисати сесију?"
     }
   },
   "speaking": {
@@ -1830,7 +1844,12 @@
       "rows": "Листа",
       "grid": "Мрежа"
     },
-    "save": "Сачувај"
+    "save": "Сачувај",
+    "arrange": "Уреди редослед",
+    "done": "Готово",
+    "rename": "Назив",
+    "moveUp": "Помери {{name}} горе",
+    "moveDown": "Помери {{name}} доле"
   },
   "practice": {
     "language": {

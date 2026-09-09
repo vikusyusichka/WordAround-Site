@@ -158,6 +158,7 @@
     "saving": "Se salvează…",
     "cancel": "Anulează",
     "saveError": "Salvarea nu a reușit. Încearcă din nou.",
+    "deleteTitle": "Ștergi setul?",
     "cardCount_few": "{{count}} cartonașe"
   },
   "createSet": {
@@ -354,7 +355,17 @@
     "deleteCardConfirm": "Ștergi acest cartonaș?",
     "emptyPrompt": "Acest set nu are încă cartonașe. Adaugă-l pe primul.",
     "save": "Salvează",
-    "cancel": "Anulează"
+    "cancel": "Anulează",
+    "expand": "Deschide pe tot ecranul",
+    "close": "Închide",
+    "expandedTitle": "Card pe tot ecranul",
+    "exampleFormat": "Exemplu: {{text}}",
+    "cardSubWord": "Cuvânt",
+    "cardSubTranslation": "Traducere",
+    "noTranslation": "Fără traducere",
+    "learning": "Învăț",
+    "knownShort": "Știu",
+    "deleteCardTitle": "Ștergi cardul?"
   },
   "writing": {
     "today": {
@@ -1153,6 +1164,8 @@
       "renamePrompt": "Titlu nou:",
       "delete": "Șterge",
       "deleteConfirm": "Ștergi „{{title}}”? Acțiunea nu poate fi anulată.",
+      "renameTitle": "Redenumește textul",
+      "deleteTitle": "Ștergi textul?",
       "words_few": "{{count}} cuvinte"
     },
     "continue": {
@@ -1522,7 +1535,8 @@
         "draft": "Ciornă",
         "inProgress": "În curs",
         "completed": "Terminată"
-      }
+      },
+      "deleteTitle": "Ștergi sesiunea?"
     }
   },
   "speaking": {
@@ -1833,7 +1847,12 @@
       "rows": "Listă",
       "grid": "Grilă"
     },
-    "save": "Salvează"
+    "save": "Salvează",
+    "arrange": "Aranjează",
+    "done": "Gata",
+    "rename": "Nume",
+    "moveUp": "Mută {{name}} mai sus",
+    "moveDown": "Mută {{name}} mai jos"
   },
   "practice": {
     "language": {

@@ -159,6 +159,7 @@
     "saving": "Shranjujemo…",
     "cancel": "Prekliči",
     "saveError": "Shranjevanje ni uspelo. Poskusite znova.",
+    "deleteTitle": "Izbrišem sklop?",
     "cardCount_two": "{{count}} kartici",
     "cardCount_few": "{{count}} kartice"
   },
@@ -353,7 +354,17 @@
     "deleteCardConfirm": "Izbrisati to kartico?",
     "emptyPrompt": "Ta komplet še nima kartic. Dodajte prvo.",
     "save": "Shrani",
-    "cancel": "Prekliči"
+    "cancel": "Prekliči",
+    "expand": "Odpri čez cel zaslon",
+    "close": "Zapri",
+    "expandedTitle": "Kartica čez cel zaslon",
+    "exampleFormat": "Primer: {{text}}",
+    "cardSubWord": "Beseda",
+    "cardSubTranslation": "Prevod",
+    "noTranslation": "Ni prevoda",
+    "learning": "Se učim",
+    "knownShort": "Znam",
+    "deleteCardTitle": "Izbrišem kartico?"
   },
   "writing": {
     "today": {
@@ -1168,6 +1179,8 @@
       "renamePrompt": "Nov naslov:",
       "delete": "Izbriši",
       "deleteConfirm": "Izbrisati »{{title}}«? Tega ni mogoče razveljaviti.",
+      "renameTitle": "Preimenuj besedilo",
+      "deleteTitle": "Izbrišem besedilo?",
       "words_two": "{{count}} besedi",
       "words_few": "{{count}} besede"
     },
@@ -1542,7 +1555,8 @@
         "draft": "Osnutek",
         "inProgress": "V teku",
         "completed": "Končana"
-      }
+      },
+      "deleteTitle": "Izbrišem sejo?"
     }
   },
   "speaking": {
@@ -1853,7 +1867,12 @@
       "rows": "Seznam",
       "grid": "Mreža"
     },
-    "save": "Shrani"
+    "save": "Shrani",
+    "arrange": "Razporedi",
+    "done": "Končano",
+    "rename": "Ime",
+    "moveUp": "Premakni {{name}} navzgor",
+    "moveDown": "Premakni {{name}} navzdol"
   },
   "practice": {
     "language": {

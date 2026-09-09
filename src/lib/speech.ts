@@ -27,6 +27,51 @@ export const speak = (text: string, lang = 'en-US'): void => {
   window.speechSynthesis.speak(utterance);
 };
 
+export interface SpokenPart {
+  text: string;
+  lang: string;
+}
+
+/** Speaks the parts one after another — the card row reads the word, then its
+    translation (iOS `speakWordAndTranslation`).
+
+    `speak()` cannot be called twice in a row for this: it cancels whatever is
+    in progress, so the second call would cut the first off mid-word. Each part
+    here waits for the previous one's `end` event, and only the first call
+    cancels, so pressing the button again interrupts cleanly. */
+let sequenceToken = 0;
+
+export const speakSequence = (parts: SpokenPart[]): void => {
+  if (!isSpeechSupported()) return;
+  const queue = parts.filter((part) => part.text.trim().length > 0);
+  if (queue.length === 0) return;
+
+  /* Cancelling raises `error` on whatever is mid-sentence, which would
+     otherwise advance the OLD queue while the new one is already speaking.
+     The token makes a superseded sequence stop dead. */
+  const token = ++sequenceToken;
+  window.speechSynthesis.cancel();
+
+  const speakAt = (index: number) => {
+    if (token !== sequenceToken) return;
+    const part = queue[index];
+    if (!part) return;
+    const utterance = new SpeechSynthesisUtterance(part.text);
+    utterance.lang = part.lang;
+    const voice = pickVoice(part.lang);
+    if (voice) utterance.voice = voice;
+    utterance.rate = 0.9;
+    utterance.pitch = 1.02;
+    /* `error` fires when a voice is missing or the utterance is cancelled;
+       moving on regardless means one silent part never strands the rest. */
+    utterance.onend = () => speakAt(index + 1);
+    utterance.onerror = () => speakAt(index + 1);
+    window.speechSynthesis.speak(utterance);
+  };
+
+  speakAt(0);
+};
+
 /* --- Listening TTS (Phase 6) — long-form speech with voice-type and rate
    control, pause/resume/stop. Web port of AVFoundationListeningSpeechService;
    gender picking uses the iOS name-hint lists since the Web Speech API has no

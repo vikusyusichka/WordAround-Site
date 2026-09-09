@@ -159,6 +159,7 @@
     "saving": "Ukladáme…",
     "cancel": "Zrušiť",
     "saveError": "Nepodarilo sa uložiť. Skúste to prosím znova.",
+    "deleteTitle": "Zmazať sadu?",
     "cardCount_few": "{{count}} kartičky",
     "cardCount_other": "{{count}} kartičiek"
   },
@@ -353,7 +354,17 @@
     "deleteCardConfirm": "Vymazať túto kartičku?",
     "emptyPrompt": "Táto sada zatiaľ nemá kartičky. Pridajte prvú.",
     "save": "Uložiť",
-    "cancel": "Zrušiť"
+    "cancel": "Zrušiť",
+    "expand": "Otvoriť na celú obrazovku",
+    "close": "Zavrieť",
+    "expandedTitle": "Kartička na celú obrazovku",
+    "exampleFormat": "Príklad: {{text}}",
+    "cardSubWord": "Slovo",
+    "cardSubTranslation": "Preklad",
+    "noTranslation": "Bez prekladu",
+    "learning": "Učím sa",
+    "knownShort": "Viem",
+    "deleteCardTitle": "Zmazať kartičku?"
   },
   "writing": {
     "today": {
@@ -1153,6 +1164,8 @@
       "renamePrompt": "Nový názov:",
       "delete": "Vymazať",
       "deleteConfirm": "Vymazať „{{title}}“? Túto akciu nemožno vrátiť späť.",
+      "renameTitle": "Premenovať text",
+      "deleteTitle": "Zmazať text?",
       "words_few": "{{count}} slová"
     },
     "continue": {
@@ -1522,7 +1535,8 @@
         "draft": "Koncept",
         "inProgress": "Rozpracované",
         "completed": "Dokončené"
-      }
+      },
+      "deleteTitle": "Zmazať reláciu?"
     }
   },
   "speaking": {
@@ -1833,7 +1847,12 @@
       "rows": "Zoznam",
       "grid": "Mriežka"
     },
-    "save": "Uložiť"
+    "save": "Uložiť",
+    "arrange": "Usporiadať",
+    "done": "Hotovo",
+    "rename": "Názov",
+    "moveUp": "Posunúť {{name}} nahor",
+    "moveDown": "Posunúť {{name}} nadol"
   },
   "practice": {
     "language": {

@@ -156,7 +156,8 @@
     "save": "Gardar os cambios",
     "saving": "Gardando…",
     "cancel": "Cancelar",
-    "saveError": "Non se puido gardar. Téntao de novo."
+    "saveError": "Non se puido gardar. Téntao de novo.",
+    "deleteTitle": "Queres eliminar o conxunto?"
   },
   "createSet": {
     "title": "Novo conxunto",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Eliminar esta tarxeta?",
     "emptyPrompt": "Este conxunto aínda non ten tarxetas. Engade a primeira.",
     "save": "Gardar",
-    "cancel": "Cancelar"
+    "cancel": "Cancelar",
+    "expand": "Abrir a pantalla completa",
+    "close": "Pechar",
+    "expandedTitle": "Tarxeta a pantalla completa",
+    "exampleFormat": "Exemplo: {{text}}",
+    "cardSubWord": "Palabra",
+    "cardSubTranslation": "Tradución",
+    "noTranslation": "Sen tradución",
+    "learning": "Aprendendo",
+    "knownShort": "Seino",
+    "deleteCardTitle": "Queres eliminar a tarxeta?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Renomear",
       "renamePrompt": "Novo título:",
       "delete": "Eliminar",
-      "deleteConfirm": "Eliminar \"{{title}}\"? Isto non se pode desfacer."
+      "deleteConfirm": "Eliminar \"{{title}}\"? Isto non se pode desfacer.",
+      "renameTitle": "Renomear o texto",
+      "deleteTitle": "Queres eliminar o texto?"
     },
     "continue": {
       "eyebrow": "Continuar lendo",
@@ -1496,7 +1509,8 @@
         "draft": "Borrador",
         "inProgress": "En curso",
         "completed": "Completada"
-      }
+      },
+      "deleteTitle": "Queres eliminar a sesión?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Lista",
       "grid": "Grade"
     },
-    "save": "Gardar"
+    "save": "Gardar",
+    "arrange": "Ordenar",
+    "done": "Feito",
+    "rename": "Nome",
+    "moveUp": "Subir {{name}}",
+    "moveDown": "Baixar {{name}}"
   },
   "practice": {
     "language": {

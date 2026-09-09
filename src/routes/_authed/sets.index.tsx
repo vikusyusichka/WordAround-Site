@@ -1,5 +1,6 @@
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
+import { Reorder } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { Plus } from '@phosphor-icons/react';
 
@@ -7,10 +8,13 @@ import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { CardActions } from '@/components/shell/CardActions';
 import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
+import { ReorderControls } from '@/components/shell/ReorderControls';
+import { ReorderToggle } from '@/components/shell/ReorderToggle';
 import { ViewToggle } from '@/components/shell/ViewToggle';
 import { cardGridClass, useCardView } from '@/lib/cardView';
 import { SetItem } from '@/components/home/SetItem';
-import { useDeleteSet, useSetsQuery } from '@/hooks/useSets';
+import { useDeleteSet, useReorderSets, useSetsQuery } from '@/hooks/useSets';
+import { useReorderMode } from '@/hooks/useReorderMode';
 import { mapSetToPreview } from '@/lib/setPreview';
 import type { FlashcardSet } from '@/lib/models';
 
@@ -23,9 +27,13 @@ function SetsPage() {
   const navigate = useNavigate();
   const { data: sets, isLoading, isError } = useSetsQuery();
   const deleteSet = useDeleteSet();
+  const reorderSets = useReorderSets();
 
   const [view, chooseView] = useCardView('sets');
   const [pendingDelete, setPendingDelete] = useState<FlashcardSet | null>(null);
+
+  const saveOrder = useCallback((ids: string[]) => reorderSets.mutate(ids), [reorderSets]);
+  const arrange = useReorderMode(sets ?? [], saveOrder);
 
   const confirmDelete = () => {
     if (!pendingDelete) return;
@@ -39,6 +47,11 @@ function SetsPage() {
         subtitle={t('home.subtitle.sets')}
         actions={
           <>
+            <ReorderToggle
+              isEditing={arrange.isEditing}
+              disabled={(sets?.length ?? 0) < 2}
+              onToggle={arrange.toggle}
+            />
             <ViewToggle value={view} onChange={chooseView} />
 
             <button
@@ -68,9 +81,35 @@ function SetsPage() {
             {t('sets.emptyBody')}
           </span>
         </div>
+      ) : arrange.isEditing ? (
+        /* One column while arranging — see the note on the folders screen. */
+        <Reorder.Group
+          axis="y"
+          values={arrange.items}
+          onReorder={arrange.reorder}
+          className="flex flex-col gap-(--spacing-home-sets-gap)"
+        >
+          {arrange.items.map((set, index) => (
+            <Reorder.Item key={set.id} value={set} className="flex items-center gap-3">
+              <ReorderControls
+                label={set.title}
+                isFirst={index === 0}
+                isLast={index === arrange.items.length - 1}
+                onMoveUp={() => arrange.moveUp(set.id)}
+                onMoveDown={() => arrange.moveDown(set.id)}
+              />
+              <div className="min-w-0 flex-1 cursor-grab active:cursor-grabbing">
+                <SetItem
+                  item={mapSetToPreview(set, t('sets.cardCount', { count: set.cards.length }))}
+                  variant="row"
+                />
+              </div>
+            </Reorder.Item>
+          ))}
+        </Reorder.Group>
       ) : (
         <div className={cardGridClass(view)}>
-          {sets.map((set) => {
+          {arrange.items.map((set) => {
             const preview = mapSetToPreview(set, t('sets.cardCount', { count: set.cards.length }));
             return (
               <div key={set.id} className="group relative">

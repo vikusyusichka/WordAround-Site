@@ -156,7 +156,8 @@
     "save": "Spara ändringar",
     "saving": "Sparar…",
     "cancel": "Avbryt",
-    "saveError": "Det gick inte att spara. Försök igen."
+    "saveError": "Det gick inte att spara. Försök igen.",
+    "deleteTitle": "Radera setet?"
   },
   "createSet": {
     "title": "Nytt set",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Ta bort det här kortet?",
     "emptyPrompt": "Det här setet har inga kort än. Lägg till det första.",
     "save": "Spara",
-    "cancel": "Avbryt"
+    "cancel": "Avbryt",
+    "expand": "Öppna i helskärm",
+    "close": "Stäng",
+    "expandedTitle": "Kort i helskärm",
+    "exampleFormat": "Exempel: {{text}}",
+    "cardSubWord": "Ord",
+    "cardSubTranslation": "Översättning",
+    "noTranslation": "Ingen översättning",
+    "learning": "Lär mig",
+    "knownShort": "Kan",
+    "deleteCardTitle": "Radera kortet?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Byt namn",
       "renamePrompt": "Ny titel:",
       "delete": "Ta bort",
-      "deleteConfirm": "Ta bort ”{{title}}”? Det går inte att ångra."
+      "deleteConfirm": "Ta bort ”{{title}}”? Det går inte att ångra.",
+      "renameTitle": "Byt namn på texten",
+      "deleteTitle": "Radera texten?"
     },
     "continue": {
       "eyebrow": "Fortsätt läsa",
@@ -1496,7 +1509,8 @@
         "draft": "Utkast",
         "inProgress": "Pågår",
         "completed": "Klart"
-      }
+      },
+      "deleteTitle": "Radera sessionen?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Lista",
       "grid": "Rutnät"
     },
-    "save": "Spara"
+    "save": "Spara",
+    "arrange": "Ordna",
+    "done": "Klar",
+    "rename": "Namn",
+    "moveUp": "Flytta {{name}} uppåt",
+    "moveDown": "Flytta {{name}} nedåt"
   },
   "practice": {
     "language": {

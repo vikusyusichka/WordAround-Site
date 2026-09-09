@@ -156,7 +156,8 @@
     "save": "Guardar alterações",
     "saving": "A guardar…",
     "cancel": "Cancelar",
-    "saveError": "Não foi possível guardar. Tente novamente."
+    "saveError": "Não foi possível guardar. Tente novamente.",
+    "deleteTitle": "Eliminar o conjunto?"
   },
   "createSet": {
     "title": "Novo conjunto",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Eliminar este cartão?",
     "emptyPrompt": "Este conjunto ainda não tem cartões. Adicione o primeiro.",
     "save": "Guardar",
-    "cancel": "Cancelar"
+    "cancel": "Cancelar",
+    "expand": "Abrir em ecrã inteiro",
+    "close": "Fechar",
+    "expandedTitle": "Cartão em ecrã inteiro",
+    "exampleFormat": "Exemplo: {{text}}",
+    "cardSubWord": "Palavra",
+    "cardSubTranslation": "Tradução",
+    "noTranslation": "Sem tradução",
+    "learning": "A aprender",
+    "knownShort": "Sei",
+    "deleteCardTitle": "Eliminar o cartão?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Mudar o nome",
       "renamePrompt": "Novo título:",
       "delete": "Eliminar",
-      "deleteConfirm": "Eliminar \"{{title}}\"? Não é possível anular."
+      "deleteConfirm": "Eliminar \"{{title}}\"? Não é possível anular.",
+      "renameTitle": "Mudar o nome do texto",
+      "deleteTitle": "Eliminar o texto?"
     },
     "continue": {
       "eyebrow": "Continuar a leitura",
@@ -1496,7 +1509,8 @@
         "draft": "Rascunho",
         "inProgress": "Em curso",
         "completed": "Concluída"
-      }
+      },
+      "deleteTitle": "Eliminar a sessão?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Lista",
       "grid": "Grelha"
     },
-    "save": "Guardar"
+    "save": "Guardar",
+    "arrange": "Organizar",
+    "done": "Concluído",
+    "rename": "Nome",
+    "moveUp": "Mover {{name}} para cima",
+    "moveDown": "Mover {{name}} para baixo"
   },
   "practice": {
     "language": {

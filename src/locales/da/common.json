@@ -156,7 +156,8 @@
     "save": "Gem ændringer",
     "saving": "Gemmer…",
     "cancel": "Annuller",
-    "saveError": "Kunne ikke gemme. Prøv igen."
+    "saveError": "Kunne ikke gemme. Prøv igen.",
+    "deleteTitle": "Slet sættet?"
   },
   "createSet": {
     "title": "Nyt sæt",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Slet dette kort?",
     "emptyPrompt": "Dette sæt har ingen kort endnu. Tilføj det første.",
     "save": "Gem",
-    "cancel": "Annuller"
+    "cancel": "Annuller",
+    "expand": "Åbn i fuld skærm",
+    "close": "Luk",
+    "expandedTitle": "Kort i fuld skærm",
+    "exampleFormat": "Eksempel: {{text}}",
+    "cardSubWord": "Ord",
+    "cardSubTranslation": "Oversættelse",
+    "noTranslation": "Ingen oversættelse",
+    "learning": "Lærer",
+    "knownShort": "Kan",
+    "deleteCardTitle": "Slet kortet?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Omdøb",
       "renamePrompt": "Ny titel:",
       "delete": "Slet",
-      "deleteConfirm": "Slet ”{{title}}”? Det kan ikke fortrydes."
+      "deleteConfirm": "Slet ”{{title}}”? Det kan ikke fortrydes.",
+      "renameTitle": "Omdøb teksten",
+      "deleteTitle": "Slet teksten?"
     },
     "continue": {
       "eyebrow": "Fortsæt læsningen",
@@ -1496,7 +1509,8 @@
         "draft": "Kladde",
         "inProgress": "I gang",
         "completed": "Færdig"
-      }
+      },
+      "deleteTitle": "Slet sessionen?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Liste",
       "grid": "Gitter"
     },
-    "save": "Gem"
+    "save": "Gem",
+    "arrange": "Arranger",
+    "done": "Færdig",
+    "rename": "Navn",
+    "moveUp": "Flyt {{name}} op",
+    "moveDown": "Flyt {{name}} ned"
   },
   "practice": {
     "language": {

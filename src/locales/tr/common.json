@@ -156,7 +156,8 @@
     "save": "Değişiklikleri kaydet",
     "saving": "Kaydediliyor…",
     "cancel": "Vazgeç",
-    "saveError": "Kaydedilemedi. Lütfen tekrar dene."
+    "saveError": "Kaydedilemedi. Lütfen tekrar dene.",
+    "deleteTitle": "Set silinsin mi?"
   },
   "createSet": {
     "title": "Yeni set",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Bu kart silinsin mi?",
     "emptyPrompt": "Bu sette henüz kart yok. İlkini ekle.",
     "save": "Kaydet",
-    "cancel": "Vazgeç"
+    "cancel": "Vazgeç",
+    "expand": "Tam ekranda aç",
+    "close": "Kapat",
+    "expandedTitle": "Tam ekran kart",
+    "exampleFormat": "Örnek: {{text}}",
+    "cardSubWord": "Kelime",
+    "cardSubTranslation": "Çeviri",
+    "noTranslation": "Çeviri yok",
+    "learning": "Öğreniyorum",
+    "knownShort": "Biliyorum",
+    "deleteCardTitle": "Kart silinsin mi?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Yeniden adlandır",
       "renamePrompt": "Yeni başlık:",
       "delete": "Sil",
-      "deleteConfirm": "„{{title}}” silinsin mi? Bu işlem geri alınamaz."
+      "deleteConfirm": "„{{title}}” silinsin mi? Bu işlem geri alınamaz.",
+      "renameTitle": "Metni yeniden adlandır",
+      "deleteTitle": "Metin silinsin mi?"
     },
     "continue": {
       "eyebrow": "Okumaya devam et",
@@ -1496,7 +1509,8 @@
         "draft": "Taslak",
         "inProgress": "Devam ediyor",
         "completed": "Tamamlandı"
-      }
+      },
+      "deleteTitle": "Oturum silinsin mi?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Liste",
       "grid": "Izgara"
     },
-    "save": "Kaydet"
+    "save": "Kaydet",
+    "arrange": "Sırala",
+    "done": "Bitti",
+    "rename": "Ad",
+    "moveUp": "{{name}} yukarı taşı",
+    "moveDown": "{{name}} aşağı taşı"
   },
   "practice": {
     "language": {

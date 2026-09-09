@@ -156,7 +156,8 @@
     "save": "Запази промените",
     "saving": "Запазваме…",
     "cancel": "Отказ",
-    "saveError": "Запазването не бе успешно. Опитайте отново."
+    "saveError": "Запазването не бе успешно. Опитайте отново.",
+    "deleteTitle": "Да се изтрие ли наборът?"
   },
   "createSet": {
     "title": "Нов комплект",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Да се изтрие ли тази карта?",
     "emptyPrompt": "Този комплект още няма карти. Добавете първата.",
     "save": "Запази",
-    "cancel": "Отказ"
+    "cancel": "Отказ",
+    "expand": "Отваряне на цял екран",
+    "close": "Затваряне",
+    "expandedTitle": "Карта на цял екран",
+    "exampleFormat": "Пример: {{text}}",
+    "cardSubWord": "Дума",
+    "cardSubTranslation": "Превод",
+    "noTranslation": "Няма превод",
+    "learning": "Уча",
+    "knownShort": "Зная",
+    "deleteCardTitle": "Да се изтрие ли картата?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Преименувай",
       "renamePrompt": "Ново заглавие:",
       "delete": "Изтрий",
-      "deleteConfirm": "Да се изтрие ли „{{title}}“? Това не може да се върне."
+      "deleteConfirm": "Да се изтрие ли „{{title}}“? Това не може да се върне.",
+      "renameTitle": "Преименуване на текста",
+      "deleteTitle": "Да се изтрие ли текстът?"
     },
     "continue": {
       "eyebrow": "Продължи четенето",
@@ -1496,7 +1509,8 @@
         "draft": "Чернова",
         "inProgress": "В процес",
         "completed": "Завършена"
-      }
+      },
+      "deleteTitle": "Да се изтрие ли сесията?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Списък",
       "grid": "Мрежа"
     },
-    "save": "Запази"
+    "save": "Запази",
+    "arrange": "Подреждане",
+    "done": "Готово",
+    "rename": "Име",
+    "moveUp": "Премести {{name}} нагоре",
+    "moveDown": "Премести {{name}} надолу"
   },
   "practice": {
     "language": {

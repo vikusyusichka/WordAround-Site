@@ -158,6 +158,7 @@
     "saving": "Įrašoma…",
     "cancel": "Atšaukti",
     "saveError": "Nepavyko įrašyti. Bandykite dar kartą.",
+    "deleteTitle": "Ištrinti rinkinį?",
     "cardCount_few": "{{count}} kortelės"
   },
   "createSet": {
@@ -351,7 +352,17 @@
     "deleteCardConfirm": "Ištrinti šią kortelę?",
     "emptyPrompt": "Šiame rinkinyje kortelių dar nėra. Pridėkite pirmą.",
     "save": "Įrašyti",
-    "cancel": "Atšaukti"
+    "cancel": "Atšaukti",
+    "expand": "Atverti per visą ekraną",
+    "close": "Uždaryti",
+    "expandedTitle": "Kortelė per visą ekraną",
+    "exampleFormat": "Pavyzdys: {{text}}",
+    "cardSubWord": "Žodis",
+    "cardSubTranslation": "Vertimas",
+    "noTranslation": "Vertimo nėra",
+    "learning": "Mokausi",
+    "knownShort": "Moku",
+    "deleteCardTitle": "Ištrinti kortelę?"
   },
   "writing": {
     "today": {
@@ -1150,6 +1161,8 @@
       "renamePrompt": "Naujas pavadinimas:",
       "delete": "Ištrinti",
       "deleteConfirm": "Ištrinti „{{title}}“? Šio veiksmo anuliuoti negalėsite.",
+      "renameTitle": "Pervadinti tekstą",
+      "deleteTitle": "Ištrinti tekstą?",
       "words_few": "{{count}} žodžiai"
     },
     "continue": {
@@ -1519,7 +1532,8 @@
         "draft": "Juodraštis",
         "inProgress": "Vykdoma",
         "completed": "Baigta"
-      }
+      },
+      "deleteTitle": "Ištrinti sesiją?"
     }
   },
   "speaking": {
@@ -1830,7 +1844,12 @@
       "rows": "Sąrašas",
       "grid": "Tinklelis"
     },
-    "save": "Įrašyti"
+    "save": "Įrašyti",
+    "arrange": "Pertvarkyti",
+    "done": "Atlikta",
+    "rename": "Pavadinimas",
+    "moveUp": "Perkelti {{name}} aukštyn",
+    "moveDown": "Perkelti {{name}} žemyn"
   },
   "practice": {
     "language": {

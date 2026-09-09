@@ -156,7 +156,8 @@
     "save": "Tallenna muutokset",
     "saving": "Tallennetaan…",
     "cancel": "Peruuta",
-    "saveError": "Tallennus ei onnistunut. Yritä uudelleen."
+    "saveError": "Tallennus ei onnistunut. Yritä uudelleen.",
+    "deleteTitle": "Poistetaanko setti?"
   },
   "createSet": {
     "title": "Uusi setti",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Poistetaanko tämä kortti?",
     "emptyPrompt": "Tässä setissä ei ole vielä kortteja. Lisää ensimmäinen.",
     "save": "Tallenna",
-    "cancel": "Peruuta"
+    "cancel": "Peruuta",
+    "expand": "Avaa koko näytölle",
+    "close": "Sulje",
+    "expandedTitle": "Kortti koko näytöllä",
+    "exampleFormat": "Esimerkki: {{text}}",
+    "cardSubWord": "Sana",
+    "cardSubTranslation": "Käännös",
+    "noTranslation": "Ei käännöstä",
+    "learning": "Opettelen",
+    "knownShort": "Osaan",
+    "deleteCardTitle": "Poistetaanko kortti?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Nimeä uudelleen",
       "renamePrompt": "Uusi otsikko:",
       "delete": "Poista",
-      "deleteConfirm": "Poistetaanko ”{{title}}”? Tätä ei voi kumota."
+      "deleteConfirm": "Poistetaanko ”{{title}}”? Tätä ei voi kumota.",
+      "renameTitle": "Nimeä teksti uudelleen",
+      "deleteTitle": "Poistetaanko teksti?"
     },
     "continue": {
       "eyebrow": "Jatka lukemista",
@@ -1496,7 +1509,8 @@
         "draft": "Luonnos",
         "inProgress": "Kesken",
         "completed": "Valmis"
-      }
+      },
+      "deleteTitle": "Poistetaanko istunto?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Lista",
       "grid": "Ruudukko"
     },
-    "save": "Tallenna"
+    "save": "Tallenna",
+    "arrange": "Järjestä",
+    "done": "Valmis",
+    "rename": "Nimi",
+    "moveUp": "Siirrä {{name}} ylös",
+    "moveDown": "Siirrä {{name}} alas"
   },
   "practice": {
     "language": {

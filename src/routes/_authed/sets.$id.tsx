@@ -4,9 +4,11 @@ import { useTranslation } from 'react-i18next';
 import { ArrowsClockwise, CaretLeft, PencilSimple, Plus, Trash } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
 import { EditSetScreen } from '@/components/create/EditSetScreen';
 import { ThemedScreen } from '@/components/create/ThemedScreen';
 import { Icon } from '@/components/primitives/Icon';
+import { ExpandedCard } from '@/components/study/ExpandedCard';
 import { StudyCard } from '@/components/study/StudyCard';
 import { StudyControls } from '@/components/study/StudyControls';
 import { RoundFinish } from '@/components/study/RoundFinish';
@@ -91,6 +93,9 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
   const { state, dispatch, addCard, saveEdit, deleteCard } = useStudySession(set);
   const [dialogCard, setDialogCard] = useState<Flashcard | null>(null);
   const [dialogOpen, setDialogOpen] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [pendingCardDelete, setPendingCardDelete] = useState<Flashcard | null>(null);
+  const [isConfirmingSetDelete, setIsConfirmingSetDelete] = useState(false);
 
   const theme = themeForHex(set.colorHex);
   const card = activeCard(state);
@@ -110,13 +115,12 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
     else addCard(fc);
     setDialogOpen(false);
   };
-  const handleDeleteCard = (fc: Flashcard) => {
-    if (window.confirm(t('study.deleteCardConfirm'))) deleteCard(fc.id);
+  const confirmDeleteCard = () => {
+    if (pendingCardDelete) deleteCard(pendingCardDelete.id);
+    setPendingCardDelete(null);
   };
-  const handleDeleteSet = () => {
-    if (window.confirm(t('sets.deleteConfirm', { title: set.title }))) {
-      deleteSet.mutate(set.id, { onSuccess: () => void navigate({ to: '/sets' }) });
-    }
+  const confirmDeleteSet = () => {
+    deleteSet.mutate(set.id, { onSuccess: () => void navigate({ to: '/sets' }) });
   };
 
   const iconBtn =
@@ -150,7 +154,7 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
           </button>
           <button
             type="button"
-            onClick={handleDeleteSet}
+            onClick={() => setIsConfirmingSetDelete(true)}
             aria-label={t('sets.delete')}
             className={iconBtn}
             style={{ background: theme.fieldBackground, color: 'var(--color-cs-red)' }}
@@ -209,11 +213,15 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
             onFlip={() => dispatch({ type: 'FLIP' })}
             onToggleMastered={() => dispatch({ type: 'TOGGLE_MASTERED', cardId: card.id })}
             onSpeak={speak}
+            onExpand={() => setIsExpanded(true)}
+            onKnown={() => dispatch({ type: 'KNOWN' })}
+            onUnknown={() => dispatch({ type: 'UNKNOWN' })}
           />
           <StudyControls
             onKnown={() => dispatch({ type: 'KNOWN' })}
             onUnknown={() => dispatch({ type: 'UNKNOWN' })}
             onFlip={() => dispatch({ type: 'FLIP' })}
+            isSuspended={isExpanded}
           />
 
           {/* Controls row — Track progress toggle (left), shuffle + edit
@@ -280,9 +288,11 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
               <CardListRow
                 card={fc}
                 index={i}
-                accent={theme.accent}
+                theme={theme}
+                isMastered={state.masteredCardIDs.has(fc.id)}
+                onToggleMastered={() => dispatch({ type: 'TOGGLE_MASTERED', cardId: fc.id })}
                 onEdit={() => openEdit(fc)}
-                onDelete={() => handleDeleteCard(fc)}
+                onDelete={() => setPendingCardDelete(fc)}
               />
             </div>
           ))}
@@ -298,6 +308,34 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
         onSave={handleSave}
         onClose={() => setDialogOpen(false)}
       />
+
+      {/* The only place a card's image and example sentence are ever shown. */}
+      <ExpandedCard
+        open={isExpanded}
+        state={state}
+        theme={theme}
+        dispatch={dispatch}
+        onClose={() => setIsExpanded(false)}
+      />
+
+      {pendingCardDelete && (
+        <ConfirmDialog
+          title={t('study.deleteCardTitle')}
+          body={t('study.deleteCardConfirm')}
+          onConfirm={confirmDeleteCard}
+          onCancel={() => setPendingCardDelete(null)}
+        />
+      )}
+
+      {isConfirmingSetDelete && (
+        <ConfirmDialog
+          title={t('sets.deleteTitle')}
+          body={t('sets.deleteConfirm', { title: set.title })}
+          isBusy={deleteSet.isPending}
+          onConfirm={confirmDeleteSet}
+          onCancel={() => setIsConfirmingSetDelete(false)}
+        />
+      )}
     </ContentContainer>
   );
 }

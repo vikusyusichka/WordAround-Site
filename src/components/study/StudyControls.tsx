@@ -8,12 +8,21 @@ interface StudyControlsProps {
   onKnown: () => void;
   onUnknown: () => void;
   onFlip: () => void;
+  /** True while the full-screen card is up. That overlay listens for the same
+      keys, and with both handlers live one press of → answered two cards. */
+  isSuspended?: boolean;
 }
 
-export const StudyControls = ({ onKnown, onUnknown, onFlip }: StudyControlsProps) => {
+export const StudyControls = ({
+  onKnown,
+  onUnknown,
+  onFlip,
+  isSuspended = false,
+}: StudyControlsProps) => {
   const { t } = useTranslation();
 
   useEffect(() => {
+    if (isSuspended) return;
     const onKey = (e: KeyboardEvent) => {
       const target = e.target as HTMLElement | null;
       if (target && ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)) return;
@@ -30,7 +39,7 @@ export const StudyControls = ({ onKnown, onUnknown, onFlip }: StudyControlsProps
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [onKnown, onUnknown, onFlip]);
+  }, [onKnown, onUnknown, onFlip, isSuspended]);
 
   return (
     <div className="flex items-center justify-center gap-2.5">

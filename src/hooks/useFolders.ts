@@ -69,3 +69,13 @@ export const useDeleteFolder = () => {
     onSuccess: () => qc.invalidateQueries({ queryKey: ['folders'] }),
   });
 };
+
+/** Saves a manual arrangement — `ids` in their display order. */
+export const useReorderFolders = () => {
+  const qc = useQueryClient();
+  const uid = useUid();
+  return useMutation({
+    mutationFn: (ids: string[]) => folderService.reorderFolders(uid as string, ids),
+    onSuccess: () => qc.invalidateQueries({ queryKey: ['folders'] }),
+  });
+};

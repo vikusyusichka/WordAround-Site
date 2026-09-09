@@ -158,6 +158,7 @@
     "saving": "Saglabā…",
     "cancel": "Atcelt",
     "saveError": "Neizdevās saglabāt. Mēģiniet vēlreiz.",
+    "deleteTitle": "Vai dzēst kopu?",
     "cardCount_zero": "{{count}} kartīšu"
   },
   "createSet": {
@@ -351,7 +352,17 @@
     "deleteCardConfirm": "Dzēst šo kartīti?",
     "emptyPrompt": "Šajā komplektā vēl nav kartīšu. Pievienojiet pirmo.",
     "save": "Saglabāt",
-    "cancel": "Atcelt"
+    "cancel": "Atcelt",
+    "expand": "Atvērt pilnekrāna režīmā",
+    "close": "Aizvērt",
+    "expandedTitle": "Kartīte pilnekrāna režīmā",
+    "exampleFormat": "Piemērs: {{text}}",
+    "cardSubWord": "Vārds",
+    "cardSubTranslation": "Tulkojums",
+    "noTranslation": "Nav tulkojuma",
+    "learning": "Mācos",
+    "knownShort": "Zinu",
+    "deleteCardTitle": "Vai dzēst kartīti?"
   },
   "writing": {
     "today": {
@@ -1150,6 +1161,8 @@
       "renamePrompt": "Jauns nosaukums:",
       "delete": "Dzēst",
       "deleteConfirm": "Dzēst “{{title}}”? To nevarēs atsaukt.",
+      "renameTitle": "Pārdēvēt tekstu",
+      "deleteTitle": "Vai dzēst tekstu?",
       "words_zero": "{{count}} vārdu"
     },
     "continue": {
@@ -1519,7 +1532,8 @@
         "draft": "Melnraksts",
         "inProgress": "Iesākta",
         "completed": "Pabeigta"
-      }
+      },
+      "deleteTitle": "Vai dzēst sesiju?"
     }
   },
   "speaking": {
@@ -1830,7 +1844,12 @@
       "rows": "Saraksts",
       "grid": "Režģis"
     },
-    "save": "Saglabāt"
+    "save": "Saglabāt",
+    "arrange": "Sakārtot",
+    "done": "Gatavs",
+    "rename": "Nosaukums",
+    "moveUp": "Pārvietot {{name}} uz augšu",
+    "moveDown": "Pārvietot {{name}} uz leju"
   },
   "practice": {
     "language": {

@@ -156,7 +156,8 @@
     "save": "Salvesta muudatused",
     "saving": "Salvestamine…",
     "cancel": "Loobu",
-    "saveError": "Salvestamine ebaõnnestus. Proovi uuesti."
+    "saveError": "Salvestamine ebaõnnestus. Proovi uuesti.",
+    "deleteTitle": "Kas kustutada komplekt?"
   },
   "createSet": {
     "title": "Uus komplekt",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Kas kustutada see kaart?",
     "emptyPrompt": "Selles komplektis pole veel kaarte. Lisa esimene.",
     "save": "Salvesta",
-    "cancel": "Loobu"
+    "cancel": "Loobu",
+    "expand": "Ava täisekraanil",
+    "close": "Sulge",
+    "expandedTitle": "Kaart täisekraanil",
+    "exampleFormat": "Näide: {{text}}",
+    "cardSubWord": "Sõna",
+    "cardSubTranslation": "Tõlge",
+    "noTranslation": "Tõlget pole",
+    "learning": "Õpin",
+    "knownShort": "Oskan",
+    "deleteCardTitle": "Kas kustutada kaart?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Nimeta ümber",
       "renamePrompt": "Uus pealkiri:",
       "delete": "Kustuta",
-      "deleteConfirm": "Kas kustutada „{{title}}”? Seda ei saa tagasi võtta."
+      "deleteConfirm": "Kas kustutada „{{title}}”? Seda ei saa tagasi võtta.",
+      "renameTitle": "Nimeta tekst ümber",
+      "deleteTitle": "Kas kustutada tekst?"
     },
     "continue": {
       "eyebrow": "Jätka lugemist",
@@ -1496,7 +1509,8 @@
         "draft": "Mustand",
         "inProgress": "Pooleli",
         "completed": "Lõpetatud"
-      }
+      },
+      "deleteTitle": "Kas kustutada seanss?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Loend",
       "grid": "Ruudustik"
     },
-    "save": "Salvesta"
+    "save": "Salvesta",
+    "arrange": "Korralda",
+    "done": "Valmis",
+    "rename": "Nimi",
+    "moveUp": "Liiguta {{name}} üles",
+    "moveDown": "Liiguta {{name}} alla"
   },
   "practice": {
     "language": {

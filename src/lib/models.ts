@@ -10,6 +10,9 @@ export interface Folder {
   colorHex: string;
   createdAt: number;
   updatedAt: number;
+  /** Position in the manually arranged list. Web-only — iOS has no such field
+      and ignores it; see lib/collectionOrder.ts. Absent until first arranged. */
+  order?: number;
 }
 
 /* --- Flashcard sets (used from slice 3B; defined here so the model lives in
@@ -42,6 +45,8 @@ export interface FlashcardSet {
   cards: Flashcard[];
   createdAt: number;
   updatedAt: number;
+  /** Position in the manually arranged list — same as Folder.order. */
+  order?: number;
 }
 
 /* --- Grammar notes (Phase 4D) — subset of the iOS GrammarNotes models.

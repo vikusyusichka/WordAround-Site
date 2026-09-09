@@ -3,47 +3,91 @@ import userEvent from '@testing-library/user-event';
 import { describe, expect, it, vi } from 'vitest';
 
 import '@/lib/i18n';
-import { CreateMenu } from './CreateMenu';
-import { PageHeader } from './PageHeader';
+import { RenameDialog } from './RenameDialog';
+import { ReorderControls } from './ReorderControls';
+import { ReorderToggle } from './ReorderToggle';
 
-describe('PageHeader', () => {
-  it('renders the title and subtitle', () => {
-    render(<PageHeader title="Flashcards" subtitle="Pick a set to practice" />);
-    expect(screen.getByRole('heading', { name: 'Flashcards' })).toBeInTheDocument();
-    expect(screen.getByText('Pick a set to practice')).toBeInTheDocument();
+describe('RenameDialog', () => {
+  it('starts from the current name and returns the trimmed new one', async () => {
+    const user = userEvent.setup();
+    const onSubmit = vi.fn();
+    render(
+      <RenameDialog
+        title="Rename text"
+        initialValue="Old title"
+        onSubmit={onSubmit}
+        onCancel={() => {}}
+      />,
+    );
+
+    const field = screen.getByRole('textbox');
+    expect(field).toHaveValue('Old title');
+
+    await user.clear(field);
+    await user.type(field, '  New title  ');
+    await user.click(screen.getByRole('button', { name: /save/i }));
+    expect(onSubmit).toHaveBeenCalledWith('New title');
   });
 
-  it('renders an actions slot', () => {
-    render(<PageHeader title="X" actions={<button>Act</button>} />);
-    expect(screen.getByRole('button', { name: 'Act' })).toBeInTheDocument();
+  it('will not save an empty name', async () => {
+    const user = userEvent.setup();
+    const onSubmit = vi.fn();
+    render(
+      <RenameDialog title="Rename" initialValue="x" onSubmit={onSubmit} onCancel={() => {}} />,
+    );
+
+    await user.clear(screen.getByRole('textbox'));
+    expect(screen.getByRole('button', { name: /save/i })).toBeDisabled();
+    expect(onSubmit).not.toHaveBeenCalled();
+  });
+
+  it('cancels on Escape', () => {
+    const onCancel = vi.fn();
+    render(
+      <RenameDialog title="Rename" initialValue="x" onSubmit={() => {}} onCancel={onCancel} />,
+    );
+    document.dispatchEvent(new KeyboardEvent('keydown', { key: 'Escape' }));
+    expect(onCancel).toHaveBeenCalledOnce();
   });
 });
 
-describe('CreateMenu', () => {
-  it('opens on click and lists the 5 create actions', async () => {
+describe('ReorderControls', () => {
+  it('names what each button moves and blocks the ends', async () => {
     const user = userEvent.setup();
-    render(<CreateMenu />);
+    const onMoveDown = vi.fn();
+    render(
+      <ReorderControls
+        label="Verbs"
+        isFirst
+        isLast={false}
+        onMoveUp={() => {}}
+        onMoveDown={onMoveDown}
+      />,
+    );
 
-    expect(screen.queryByRole('menuitem')).not.toBeInTheDocument();
-    await user.click(screen.getByRole('button', { name: /create/i }));
+    expect(screen.getByRole('button', { name: 'Move Verbs up' })).toBeDisabled();
+    await user.click(screen.getByRole('button', { name: 'Move Verbs down' }));
+    expect(onMoveDown).toHaveBeenCalledOnce();
+  });
+});
 
-    const items = screen.getAllByRole('menuitem');
-    expect(items).toHaveLength(5);
-    ['Folder', 'Set', 'Text', 'Audio', 'Essay'].forEach((label) => {
-      expect(screen.getByRole('menuitem', { name: label })).toBeInTheDocument();
-    });
+describe('ReorderToggle', () => {
+  it('switches between Arrange and Done', async () => {
+    const user = userEvent.setup();
+    const onToggle = vi.fn();
+    const { rerender } = render(<ReorderToggle isEditing={false} onToggle={onToggle} />);
+
+    const button = screen.getByRole('button', { name: /arrange/i });
+    expect(button).toHaveAttribute('aria-pressed', 'false');
+    await user.click(button);
+    expect(onToggle).toHaveBeenCalledOnce();
+
+    rerender(<ReorderToggle isEditing onToggle={onToggle} />);
+    expect(screen.getByRole('button', { name: /done/i })).toHaveAttribute('aria-pressed', 'true');
   });
 
-  it('fires onSelect with the chosen id and closes', async () => {
-    const user = userEvent.setup();
-    const onSelect = vi.fn();
-    render(<CreateMenu onSelect={onSelect} />);
-
-    await user.click(screen.getByRole('button', { name: /create/i }));
-    await user.click(screen.getByRole('menuitem', { name: 'Set' }));
-
-    /* DOM removal is gated by the AnimatePresence exit animation (rAF), which
-       doesn't complete in jsdom — assert the behavior (onSelect) instead. */
-    expect(onSelect).toHaveBeenCalledWith('set');
+  it('is unavailable when there is nothing to arrange', () => {
+    render(<ReorderToggle isEditing={false} disabled onToggle={() => {}} />);
+    expect(screen.getByRole('button', { name: /arrange/i })).toBeDisabled();
   });
 });

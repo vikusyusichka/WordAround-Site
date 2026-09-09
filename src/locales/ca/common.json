@@ -156,7 +156,8 @@
     "save": "Desa els canvis",
     "saving": "Desant…",
     "cancel": "Cancel·la",
-    "saveError": "No s'ha pogut desar. Torna-ho a provar."
+    "saveError": "No s'ha pogut desar. Torna-ho a provar.",
+    "deleteTitle": "Vols eliminar el conjunt?"
   },
   "createSet": {
     "title": "Conjunt nou",
@@ -349,7 +350,17 @@
     "deleteCardConfirm": "Vols eliminar aquesta targeta?",
     "emptyPrompt": "Aquest conjunt encara no té targetes. Afegeix-ne la primera.",
     "save": "Desa",
-    "cancel": "Cancel·la"
+    "cancel": "Cancel·la",
+    "expand": "Obre a pantalla completa",
+    "close": "Tanca",
+    "expandedTitle": "Targeta a pantalla completa",
+    "exampleFormat": "Exemple: {{text}}",
+    "cardSubWord": "Paraula",
+    "cardSubTranslation": "Traducció",
+    "noTranslation": "Sense traducció",
+    "learning": "Aprenent",
+    "knownShort": "Ho sé",
+    "deleteCardTitle": "Vols eliminar la targeta?"
   },
   "writing": {
     "today": {
@@ -1131,7 +1142,9 @@
       "rename": "Reanomena",
       "renamePrompt": "Títol nou:",
       "delete": "Elimina",
-      "deleteConfirm": "Vols eliminar \"{{title}}\"? No es pot desfer."
+      "deleteConfirm": "Vols eliminar \"{{title}}\"? No es pot desfer.",
+      "renameTitle": "Canvia el nom del text",
+      "deleteTitle": "Vols eliminar el text?"
     },
     "continue": {
       "eyebrow": "Continua llegint",
@@ -1496,7 +1509,8 @@
         "draft": "Esborrany",
         "inProgress": "En curs",
         "completed": "Completada"
-      }
+      },
+      "deleteTitle": "Vols eliminar la sessió?"
     }
   },
   "speaking": {
@@ -1807,7 +1821,12 @@
       "rows": "Llista",
       "grid": "Graella"
     },
-    "save": "Desa"
+    "save": "Desa",
+    "arrange": "Ordena",
+    "done": "Fet",
+    "rename": "Nom",
+    "moveUp": "Puja {{name}}",
+    "moveDown": "Baixa {{name}}"
   },
   "practice": {
     "language": {
