@@ -34,8 +34,8 @@ export const NoteFilterChips = ({ value, counts, onChange }: NoteFilterChipsProp
             className={[
               'flex h-9 shrink-0 items-center gap-1.5 rounded-full border px-3.5 text-[13px] font-bold transition-colors focus-visible:outline-none',
               isActive
-                ? 'border-transparent bg-(--color-primary-blue) text-white'
-                : 'border-(--color-auth-field-border) bg-white/90 text-(--color-text-secondary) hover:bg-white',
+                ? 'border-transparent bg-(--color-primary-blue-solid) text-white'
+                : 'border-(--color-auth-field-border) bg-(--color-surface)/90 text-(--color-text-secondary) hover:bg-(--color-surface)',
             ].join(' ')}
           >
             <Icon name={FILTER_ICON[filter]} className="size-[13px]" />

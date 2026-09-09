@@ -59,7 +59,7 @@ function FolderDetailPage() {
         <button
           type="button"
           onClick={() => void navigate({ to: '/folders' })}
-          className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-primary-blue) focus-visible:outline-none"
+          className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-primary-blue) focus-visible:outline-none"
         >
           {t('folders.backToFolders')}
         </button>
@@ -124,7 +124,7 @@ function FolderDetailPage() {
             type="button"
             onClick={() => setIsEditing(true)}
             aria-label={t('folders.edit')}
-            className="grid size-11 place-items-center rounded-full bg-white/90 text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+            className="grid size-11 place-items-center rounded-full bg-(--color-surface)/90 text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
           >
             <PencilSimple size={18} weight="bold" />
           </button>
@@ -132,7 +132,7 @@ function FolderDetailPage() {
             type="button"
             onClick={() => setIsConfirmingDelete(true)}
             aria-label={t('folders.delete')}
-            className="grid size-11 place-items-center rounded-full bg-white/90 text-(--color-cs-red) shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+            className="grid size-11 place-items-center rounded-full bg-(--color-surface)/90 text-(--color-cs-red) shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
           >
             <Trash size={18} weight="bold" />
           </button>
@@ -168,7 +168,7 @@ function FolderSets({ folderId }: { folderId: string }) {
 
   if (!sets || sets.length === 0) {
     return (
-      <div className="flex flex-col items-center gap-2 rounded-3xl border border-white/80 bg-white/70 px-6 py-14 text-center shadow-[0_6px_16px_rgba(0,0,0,0.04)]">
+      <div className="flex flex-col items-center gap-2 rounded-3xl border border-(--color-surface)/80 bg-(--color-surface)/70 px-6 py-14 text-center shadow-[0_6px_16px_rgba(0,0,0,0.04)]">
         <span className="text-[16px] font-medium text-(--color-text-secondary)">
           {t('folders.noSetsInFolder')}
         </span>

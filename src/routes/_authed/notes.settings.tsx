@@ -10,6 +10,7 @@ import { BackLink } from '@/components/shell/BackLink';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { NOTE_TYPES, NOTE_TYPE_META } from '@/lib/grammarMeta';
+import { tint } from '@/lib/colorMix';
 import {
   useGrammarSettings,
   type GrammarSettings,
@@ -32,53 +33,53 @@ const SECTIONS: SectionDef[] = [
   {
     id: 'quickCapture',
     icon: 'bolt.fill',
-    tint: '#4F7CFF',
+    tint: 'var(--color-accent-blue)',
     toggles: [
-      { key: 'opensEditorAfterQuickSave', icon: 'arrow.right.circle.fill', tint: '#4F7CFF' },
-      { key: 'allowQuickQuizzes', icon: 'questionmark.circle.fill', tint: '#7C5CFF' },
-      { key: 'showsMistakeHighlights', icon: 'exclamationmark.triangle.fill', tint: '#F4729A' },
+      { key: 'opensEditorAfterQuickSave', icon: 'arrow.right.circle.fill', tint: 'var(--color-accent-blue)' },
+      { key: 'allowQuickQuizzes', icon: 'questionmark.circle.fill', tint: 'var(--color-accent-violet)' },
+      { key: 'showsMistakeHighlights', icon: 'exclamationmark.triangle.fill', tint: 'var(--color-accent-pink)' },
     ],
   },
   {
     id: 'mistakeNotes',
     icon: 'exclamationmark.bubble.fill',
-    tint: '#F4729A',
+    tint: 'var(--color-accent-pink)',
     toggles: [
-      { key: 'includeOriginalSentence', icon: 'quote.opening', tint: '#F4729A' },
-      { key: 'includeCorrectedSentence', icon: 'checkmark.circle.fill', tint: '#22C55E' },
-      { key: 'createMistakeNotesWithExplanation', icon: 'lightbulb.fill', tint: '#F59E0B' },
-      { key: 'groupMistakesByTopic', icon: 'folder.fill', tint: '#7C5CFF' },
+      { key: 'includeOriginalSentence', icon: 'quote.opening', tint: 'var(--color-accent-pink)' },
+      { key: 'includeCorrectedSentence', icon: 'checkmark.circle.fill', tint: 'var(--color-accent-green)' },
+      { key: 'createMistakeNotesWithExplanation', icon: 'lightbulb.fill', tint: 'var(--color-accent-amber)' },
+      { key: 'groupMistakesByTopic', icon: 'folder.fill', tint: 'var(--color-accent-violet)' },
     ],
   },
   {
     id: 'essays',
     icon: 'pencil.and.scribble',
-    tint: '#38BDF8',
+    tint: 'var(--color-accent-sky)',
     toggles: [
-      { key: 'saveGrammarMistakesAutomatically', icon: 'sparkles', tint: '#38BDF8' },
-      { key: 'askBeforeSavingMistakes', icon: 'questionmark.circle.fill', tint: '#4F7CFF' },
+      { key: 'saveGrammarMistakesAutomatically', icon: 'sparkles', tint: 'var(--color-accent-sky)' },
+      { key: 'askBeforeSavingMistakes', icon: 'questionmark.circle.fill', tint: 'var(--color-accent-blue)' },
     ],
   },
   {
     id: 'review',
     icon: 'brain.head.profile',
-    tint: '#7C5CFF',
-    toggles: [{ key: 'autoAddNotesToReview', icon: 'brain.head.profile', tint: '#7C5CFF' }],
+    tint: 'var(--color-accent-violet)',
+    toggles: [{ key: 'autoAddNotesToReview', icon: 'brain.head.profile', tint: 'var(--color-accent-violet)' }],
   },
   {
     id: 'appearance',
     icon: 'list.bullet.rectangle.fill',
-    tint: '#7C5CFF',
+    tint: 'var(--color-accent-violet)',
     toggles: [
-      { key: 'groupsPinnedNotesFirst', icon: 'pin.fill', tint: '#7C5CFF' },
-      { key: 'usesCompactCards', icon: 'list.bullet', tint: '#38BDF8' },
+      { key: 'groupsPinnedNotesFirst', icon: 'pin.fill', tint: 'var(--color-accent-violet)' },
+      { key: 'usesCompactCards', icon: 'list.bullet', tint: 'var(--color-accent-sky)' },
     ],
   },
   {
     id: 'helpers',
     icon: 'lightbulb.fill',
-    tint: '#F59E0B',
-    toggles: [{ key: 'showsHelperTips', icon: 'lightbulb.fill', tint: '#F59E0B' }],
+    tint: 'var(--color-accent-amber)',
+    toggles: [{ key: 'showsHelperTips', icon: 'lightbulb.fill', tint: 'var(--color-accent-amber)' }],
   },
 ];
 
@@ -96,7 +97,7 @@ function NotesSettings() {
           <button
             type="button"
             onClick={() => settings.resetAll()}
-            className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[14px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:outline-none md:text-[15px]"
+            className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[14px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none md:text-[15px]"
           >
             {t('writing.grammar.settings.reset')}
           </button>
@@ -113,12 +114,12 @@ function NotesSettings() {
         {SECTIONS.map((section) => (
           <section
             key={section.id}
-            className="flex flex-col gap-3 rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
+            className="flex flex-col gap-3 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
           >
             <div className="flex items-center gap-3">
               <span
                 className="grid size-10 shrink-0 place-items-center rounded-2xl"
-                style={{ background: `${section.tint}1F` }}
+                style={{ background: tint(section.tint, 12.2) }}
               >
                 <Icon name={section.icon} className="size-5" style={{ color: section.tint }} />
               </span>
@@ -133,16 +134,16 @@ function NotesSettings() {
             </div>
 
             <div className="flex flex-col gap-2">
-              {section.toggles.map(({ key, icon, tint }) => (
+              {section.toggles.map(({ key, icon, tint: toneColor }) => (
                 <label
                   key={key}
-                  className="flex cursor-pointer items-center gap-3 rounded-2xl border border-(--color-auth-field-border) px-4 py-3 transition-colors hover:bg-black/[0.02]"
+                  className="flex cursor-pointer items-center gap-3 rounded-2xl border border-(--color-auth-field-border) px-4 py-3 transition-colors hover:bg-(--color-hover-wash)"
                 >
                   <span
                     className="grid size-8 shrink-0 place-items-center rounded-xl"
-                    style={{ background: `${tint}1C` }}
+                    style={{ background: tint(toneColor, 11) }}
                   >
-                    <Icon name={icon} className="size-4" style={{ color: tint }} />
+                    <Icon name={icon} className="size-4" style={{ color: toneColor }} />
                   </span>
                   <span className="flex min-w-0 flex-col">
                     <span className="text-[14px] font-bold text-(--color-primary-blue-dark)">
@@ -164,11 +165,11 @@ function NotesSettings() {
           </section>
         ))}
 
-        <section className="flex flex-col gap-3 rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+        <section className="flex flex-col gap-3 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
           <div className="flex items-center gap-3">
             <span
               className="grid size-10 shrink-0 place-items-center rounded-2xl"
-              style={{ background: `${NOTE_TYPE_META[settings.defaultNoteType].color}1F` }}
+              style={{ background: tint(NOTE_TYPE_META[settings.defaultNoteType].color, 12.2) }}
             >
               <Icon
                 name={NOTE_TYPE_META[settings.defaultNoteType].icon}
@@ -198,7 +199,7 @@ function NotesSettings() {
                   aria-pressed={isActive}
                   className="flex h-10 items-center gap-2 rounded-full border px-3.5 text-[13px] font-bold transition-colors focus-visible:outline-none"
                   style={{
-                    background: isActive ? `${meta.color}1C` : 'white',
+                    background: isActive ? tint(meta.color, 11) : 'var(--color-surface)',
                     borderColor: isActive ? meta.color : 'var(--color-auth-field-border)',
                     color: isActive ? meta.color : 'var(--color-text-secondary)',
                   }}

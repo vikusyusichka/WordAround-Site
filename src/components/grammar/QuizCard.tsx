@@ -15,7 +15,7 @@ interface QuizCardProps {
 export const QuizCard = ({ quiz, onStart, onDelete }: QuizCardProps) => {
   const { t } = useTranslation();
   return (
-    <div className="group relative flex flex-col gap-3 rounded-2xl border border-white bg-white/95 p-4 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+    <div className="group relative flex flex-col gap-3 rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 p-4 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
       <div className="flex items-start gap-3">
         <span className="mt-0.5 grid size-9 shrink-0 place-items-center rounded-xl bg-(--color-primary-blue)/10">
           <Icon
@@ -54,7 +54,7 @@ export const QuizCard = ({ quiz, onStart, onDelete }: QuizCardProps) => {
         type="button"
         onClick={onDelete}
         aria-label={t('writing.grammar.quiz.delete')}
-        className="absolute right-3 top-3 grid size-8 place-items-center rounded-full text-(--color-cs-text-muted) opacity-0 transition-opacity hover:bg-black/[0.04] hover:text-(--color-cs-red) focus-visible:opacity-100 group-hover:opacity-100"
+        className="absolute right-3 top-3 grid size-8 place-items-center rounded-full text-(--color-cs-text-muted) opacity-0 transition-opacity hover:bg-(--color-hover-wash) hover:text-(--color-cs-red) focus-visible:opacity-100 group-hover:opacity-100"
       >
         <Trash size={16} weight="bold" />
       </button>

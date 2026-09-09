@@ -33,13 +33,13 @@ export const WriteWordsCells = ({
         const typedCh = typed[i];
         const showChar = isHint ? ch : typedCh ?? '';
 
-        let cls = 'border-black/10 bg-white text-(--color-primary-blue-dark)';
+        let cls = 'border-black/10 bg-(--color-surface) text-(--color-primary-blue-dark)';
         if (validation === 'correct') {
           cls = 'border-green-500 bg-green-50 text-green-700';
         } else if (validation === 'incorrect') {
           cls = 'border-red-500 bg-red-50 text-red-700';
         } else if (isHint) {
-          cls = 'border-black/10 bg-white text-(--color-text-secondary)';
+          cls = 'border-black/10 bg-(--color-surface) text-(--color-text-secondary)';
         }
 
         return (

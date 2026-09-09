@@ -30,9 +30,9 @@ const RESULT_META: Record<GrammarReviewResult, { icon: string; intervalKey: stri
 
 const RESULT_COLOR: Record<GrammarReviewResult, string> = {
   forgot: 'var(--color-cs-red)',
-  hard: '#F59E0B',
+  hard: 'var(--color-accent-amber)',
   good: 'var(--color-primary-blue)',
-  easy: '#22C55E',
+  easy: 'var(--color-accent-green)',
 };
 
 export const ReviewSessionScreen = ({
@@ -54,9 +54,9 @@ export const ReviewSessionScreen = ({
   if (phase === 'source') {
     return (
       <div className="flex flex-col gap-4">
-        <div className="rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+        <div className="rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
           <div className="flex flex-wrap gap-1.5">
-            <span className="rounded-full bg-[#7C5CFF]/10 px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-[#7C5CFF]">
+            <span className="rounded-full bg-(--color-accent-violet)/10 px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-(--color-accent-violet)">
               {t(`writing.grammar.review.sourceType.${card.reviewItem.sourceType}`)}
             </span>
             {card.sourceBlockType && (
@@ -100,7 +100,7 @@ export const ReviewSessionScreen = ({
   if (phase === 'question') {
     return (
       <div className="flex flex-col gap-4">
-        <div className="rounded-3xl border border-(--color-auth-field-border) bg-white p-5">
+        <div className="rounded-3xl border border-(--color-auth-field-border) bg-(--color-surface) p-5">
           <span className="flex items-center gap-2 text-[12px] font-bold uppercase tracking-wide text-(--color-muted-text)">
             <Icon name={QUIZ_TYPE_ICON[question.type]} className="size-[13px]" />
             {t(`writing.grammar.quiz.type.${question.type}`)}
@@ -117,7 +117,7 @@ export const ReviewSessionScreen = ({
                 key={option}
                 type="button"
                 onClick={() => onSubmit(option)}
-                className="rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-left text-[15px] font-semibold text-(--color-primary-blue-dark) transition-colors hover:border-(--color-primary-blue)/35"
+                className="rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-left text-[15px] font-semibold text-(--color-primary-blue-dark) transition-colors hover:border-(--color-primary-blue)/35"
               >
                 {question.type === 'trueFalse'
                   ? t(`writing.grammar.quiz.play.${option === 'True' ? 'trueLabel' : 'falseLabel'}`)
@@ -136,7 +136,7 @@ export const ReviewSessionScreen = ({
                   : t('writing.grammar.quiz.play.typeAnswer')
               }
               rows={question.type === 'fillGap' ? 1 : 3}
-              className="w-full resize-none rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+              className="w-full resize-none rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
             />
             <button
               type="button"
@@ -162,13 +162,13 @@ export const ReviewSessionScreen = ({
           role="status"
           className={`rounded-2xl border px-4 py-3 ${
             lastAnswer.correct
-              ? 'border-[#22C55E]/40 bg-[#22C55E]/8'
+              ? 'border-(--color-accent-green)/40 bg-(--color-accent-green)/8'
               : 'border-(--color-cs-red)/40 bg-(--color-cs-red)/8'
           }`}
         >
           <p
             className={`text-[15px] font-bold ${
-              lastAnswer.correct ? 'text-[#15803D]' : 'text-(--color-cs-red)'
+              lastAnswer.correct ? 'text-(--color-accent-green-text)' : 'text-(--color-cs-red)'
             }`}
           >
             {lastAnswer.correct
@@ -187,7 +187,7 @@ export const ReviewSessionScreen = ({
           )}
         </div>
       ) : (
-        <div role="status" className="rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3">
+        <div role="status" className="rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3">
           <p className="text-[13px] font-bold uppercase tracking-wide text-(--color-muted-text)">
             {t('writing.grammar.review.compareTitle')}
           </p>
@@ -196,7 +196,7 @@ export const ReviewSessionScreen = ({
               {t('writing.grammar.quiz.result.yourAnswer', { answer: lastAnswer.answer })}
             </p>
           )}
-          <p className="mt-1 text-[14px] font-medium text-[#15803D]">
+          <p className="mt-1 text-[14px] font-medium text-(--color-accent-green-text)">
             {t('writing.grammar.review.referenceAnswer', { answer: question.correctAnswer })}
           </p>
           {question.explanation && (
@@ -222,7 +222,7 @@ export const ReviewSessionScreen = ({
             key={result}
             type="button"
             onClick={() => onRate(result)}
-            className="flex flex-col items-center gap-1 rounded-2xl border border-(--color-auth-field-border) bg-white px-3 py-3 transition-colors hover:bg-black/[0.02]"
+            className="flex flex-col items-center gap-1 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-3 py-3 transition-colors hover:bg-(--color-hover-wash)"
           >
             <span className="flex items-center gap-1.5 text-[14px] font-bold" style={{ color: RESULT_COLOR[result] }}>
               <Icon name={RESULT_META[result].icon} className="size-[15px]" />

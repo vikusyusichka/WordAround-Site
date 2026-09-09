@@ -26,7 +26,7 @@ export const ReorderControls = ({
   const { t } = useTranslation();
 
   const button =
-    'grid size-9 place-items-center rounded-xl bg-white text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-colors hover:bg-(--color-home-nav-sel-bg) disabled:opacity-35 disabled:hover:bg-white focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none';
+    'grid size-9 place-items-center rounded-xl bg-(--color-surface) text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-colors hover:bg-(--color-home-nav-sel-bg) disabled:opacity-35 disabled:hover:bg-(--color-surface) focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none';
 
   return (
     <div className="flex shrink-0 flex-col gap-1.5">

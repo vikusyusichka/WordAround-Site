@@ -36,7 +36,7 @@ export const EssayHintButton = ({
       type="button"
       onClick={onRequest}
       disabled={disabled}
-      className="flex h-11 items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue-dark) shadow-[0_4px_10px_rgba(0,0,0,0.045)] transition-transform hover:-translate-y-0.5 disabled:opacity-60 disabled:hover:translate-y-0 focus-visible:outline-none md:h-12 md:px-5 md:text-[15px]"
+      className="flex h-11 items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[14px] font-semibold text-(--color-primary-blue-dark) shadow-[0_4px_10px_rgba(0,0,0,0.045)] transition-transform hover:-translate-y-0.5 disabled:opacity-60 disabled:hover:translate-y-0 focus-visible:outline-none md:h-12 md:px-5 md:text-[15px]"
     >
       <Icon name="sparkles" className="size-[16px] text-(--color-primary-blue)" />
       <span>

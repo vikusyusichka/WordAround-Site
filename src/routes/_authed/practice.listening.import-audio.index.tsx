@@ -50,8 +50,8 @@ export const Route = createFileRoute('/_authed/practice/listening/import-audio/'
 });
 
 // Import Audio mode accent (ListeningTheme.importAudioAccent / Dark).
-const ACCENT = '#8C66EB';
-const ACCENT_DARK = '#6142B8';
+const ACCENT = 'var(--color-accent-purple)';
+const ACCENT_DARK = 'var(--color-accent-indigo-text)';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 const subLabel = 'text-[13px] font-bold';
 
@@ -333,8 +333,8 @@ function ImportAudioScreen() {
             <div
               className={`flex flex-col gap-3 rounded-2xl border-2 p-5 ${
                 media
-                  ? 'border-(--color-auth-field-border) bg-white'
-                  : 'border-dashed border-[#8C66EB]/40 bg-[#8C66EB]/5'
+                  ? 'border-(--color-auth-field-border) bg-(--color-surface)'
+                  : 'border-dashed border-(--color-accent-purple)/40 bg-(--color-accent-purple)/5'
               }`}
             >
               {media ? (
@@ -351,14 +351,14 @@ function ImportAudioScreen() {
                     type="button"
                     onClick={() => void clearFile()}
                     aria-label={t('listening.importAudio.clearFile')}
-                    className="grid size-8 shrink-0 place-items-center rounded-full text-(--color-cs-text-muted) hover:bg-black/[0.04]"
+                    className="grid size-8 shrink-0 place-items-center rounded-full text-(--color-cs-text-muted) hover:bg-(--color-chip-bg)"
                   >
                     ✕
                   </button>
                 </div>
               ) : (
                 <div className="flex flex-col items-center gap-2 py-2">
-                  <Icon name="waveform.badge.plus" className="size-[28px] text-[#8C66EB]" />
+                  <Icon name="waveform.badge.plus" className="size-[28px] text-(--color-accent-purple)" />
                   <span className="text-[15px] font-bold text-(--color-primary-blue-dark)">
                     {t('listening.importAudio.uploadTitle')}
                   </span>
@@ -368,7 +368,7 @@ function ImportAudioScreen() {
                   <button
                     type="button"
                     onClick={() => fileInputRef.current?.click()}
-                    className="mt-1 h-10 rounded-2xl bg-[#8C66EB] px-5 text-[14px] font-semibold text-white"
+                    className="mt-1 h-10 rounded-2xl bg-(--color-accent-purple) px-5 text-[14px] font-semibold text-white"
                   >
                     {t('listening.importAudio.chooseFile')}
                   </button>
@@ -470,7 +470,7 @@ function ImportAudioScreen() {
         )}
 
         {screen === 'processing' && (
-          <div className="flex flex-col gap-4 rounded-3xl border border-white bg-white/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+          <div className="flex flex-col gap-4 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
             <h3 className="text-[17px] font-bold text-(--color-primary-blue-dark)">
               {t('listening.importAudio.processingTitle')}
             </h3>
@@ -481,9 +481,9 @@ function ImportAudioScreen() {
                     processingError && i === processingStep
                       ? 'bg-(--color-cs-red)/10 text-(--color-cs-red)'
                       : i < processingStep
-                        ? 'bg-[#22C55E] text-white'
+                        ? 'bg-(--color-accent-green) text-white'
                         : i === processingStep
-                          ? 'bg-[#8C66EB] text-white'
+                          ? 'bg-(--color-accent-purple) text-white'
                           : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
                   }`}
                 >
@@ -508,14 +508,14 @@ function ImportAudioScreen() {
                   <button
                     type="button"
                     onClick={() => void startProcessing()}
-                    className="h-11 flex-1 rounded-2xl bg-[#8C66EB] text-[14px] font-semibold text-white"
+                    className="h-11 flex-1 rounded-2xl bg-(--color-accent-purple) text-[14px] font-semibold text-white"
                   >
                     {t('listening.importAudio.tryAgain')}
                   </button>
                   <button
                     type="button"
                     onClick={() => setScreen('setup')}
-                    className="h-11 flex-1 rounded-2xl border border-(--color-auth-field-border) bg-white text-[14px] font-semibold text-(--color-cs-text-muted)"
+                    className="h-11 flex-1 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) text-[14px] font-semibold text-(--color-cs-text-muted)"
                   >
                     {t('listening.importAudio.chooseAnother')}
                   </button>
@@ -528,10 +528,10 @@ function ImportAudioScreen() {
         {screen === 'session' && (
           <>
             {/* Player card */}
-            <div className="flex flex-col gap-3 rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+            <div className="flex flex-col gap-3 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
               <div className="h-[6px] w-full overflow-hidden rounded-full bg-(--color-goal-bg)">
                 <div
-                  className="h-full rounded-full bg-[#8C66EB] transition-[width]"
+                  className="h-full rounded-full bg-(--color-accent-purple) transition-[width]"
                   style={{ width: `${duration > 0 ? (currentTime / duration) * 100 : 0}%` }}
                 />
               </div>
@@ -544,14 +544,14 @@ function ImportAudioScreen() {
                   type="button"
                   onClick={replay}
                   aria-label={t('listening.session.replay')}
-                  className="grid size-11 place-items-center rounded-full border border-(--color-auth-field-border) bg-white"
+                  className="grid size-11 place-items-center rounded-full border border-(--color-auth-field-border) bg-(--color-surface)"
                 >
                   <Icon name="arrow.uturn.backward" className="size-[16px] text-(--color-text-secondary)" />
                 </button>
                 <button
                   type="button"
                   onClick={togglePlay}
-                  className="grid size-14 place-items-center rounded-full bg-[#8C66EB] text-white shadow-[0_8px_14px_rgba(140,102,235,0.35)]"
+                  className="grid size-14 place-items-center rounded-full bg-(--color-accent-purple) text-white shadow-[0_8px_14px_rgba(140,102,235,0.35)]"
                 >
                   {isPlaying ? (
                     <span className="text-[18px] font-bold">❚❚</span>
@@ -567,7 +567,7 @@ function ImportAudioScreen() {
                       onClick={() => selectRate(speed)}
                       className={`h-8 rounded-full px-2.5 text-[11px] font-bold ${
                         rate === speed
-                          ? 'bg-[#8C66EB] text-white'
+                          ? 'bg-(--color-accent-purple) text-white'
                           : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
                       }`}
                     >

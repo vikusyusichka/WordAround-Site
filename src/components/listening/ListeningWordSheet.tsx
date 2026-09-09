@@ -202,8 +202,8 @@ export const ListeningWordSheet = ({
                       }}
                       className={`h-8 rounded-full border px-3 text-[12px] font-semibold ${
                         targetId === lang.id
-                          ? 'border-[#29A89E]/50 bg-[#29A89E]/12 text-(--color-primary-blue-dark)'
-                          : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
+                          ? 'border-(--color-accent-teal)/50 bg-(--color-accent-teal)/12 text-(--color-primary-blue-dark)'
+                          : 'border-(--color-auth-field-border) bg-(--color-surface) text-(--color-text-secondary)'
                       }`}
                     >
                       {lang.shortTitle}
@@ -219,7 +219,7 @@ export const ListeningWordSheet = ({
                     {t('reading.session.translationError')}
                   </p>
                 ) : translation ? (
-                  <p className="text-[20px] font-bold text-[#14736E]">{translation}</p>
+                  <p className="text-[20px] font-bold text-(--color-accent-teal-text)">{translation}</p>
                 ) : null}
                 {contextSentence && (
                   <p className="rounded-2xl bg-(--color-goal-bg) px-3 py-2 text-[13px] font-medium text-(--color-text-secondary)">
@@ -227,7 +227,7 @@ export const ListeningWordSheet = ({
                   </p>
                 )}
                 {savedTo !== null && (
-                  <p className="text-[13px] font-semibold text-[#15803D]">
+                  <p className="text-[13px] font-semibold text-(--color-accent-green-text)">
                     {t('listening.wordSheet.saved', { set: savedTo })}
                   </p>
                 )}
@@ -235,7 +235,7 @@ export const ListeningWordSheet = ({
                   type="button"
                   disabled={!translation || isSaving}
                   onClick={() => void openSetPicker()}
-                  className="h-11 w-full rounded-2xl bg-[#29A89E] text-[14px] font-semibold text-white disabled:opacity-50"
+                  className="h-11 w-full rounded-2xl bg-(--color-accent-teal) text-[14px] font-semibold text-white disabled:opacity-50"
                 >
                   {t('listening.wordSheet.addToSet')}
                 </button>
@@ -260,7 +260,7 @@ export const ListeningWordSheet = ({
                         type="button"
                         disabled={isSaving}
                         onClick={() => void saveToSet(set.id)}
-                        className="flex items-center gap-3 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-left disabled:opacity-60"
+                        className="flex items-center gap-3 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-left disabled:opacity-60"
                       >
                         <span
                           className="size-4 shrink-0 rounded-full"
@@ -281,7 +281,7 @@ export const ListeningWordSheet = ({
                 <button
                   type="button"
                   onClick={() => setMode('createSet')}
-                  className="h-11 w-full rounded-2xl border border-[#29A89E]/50 bg-white text-[14px] font-semibold text-[#14736E]"
+                  className="h-11 w-full rounded-2xl border border-(--color-accent-teal)/50 bg-(--color-surface) text-[14px] font-semibold text-(--color-accent-teal-text)"
                 >
                   + {t('listening.wordSheet.createSet')}
                 </button>
@@ -294,13 +294,13 @@ export const ListeningWordSheet = ({
                   value={newTitle}
                   onChange={(e) => setNewTitle(e.target.value)}
                   placeholder={t('listening.wordSheet.setNamePlaceholder')}
-                  className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+                  className="w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
                 />
                 <input
                   value={newDescription}
                   onChange={(e) => setNewDescription(e.target.value)}
                   placeholder={t('folders.descriptionPlaceholder')}
-                  className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[14px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+                  className="w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[14px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
                 />
                 <div className="flex flex-wrap gap-2">
                   {SET_COLOR_IDS.map((id) => (
@@ -322,7 +322,7 @@ export const ListeningWordSheet = ({
                   type="button"
                   disabled={newTitle.trim().length === 0 || isSaving}
                   onClick={() => void createAndSave()}
-                  className="h-11 w-full rounded-2xl bg-[#29A89E] text-[14px] font-semibold text-white disabled:opacity-50"
+                  className="h-11 w-full rounded-2xl bg-(--color-accent-teal) text-[14px] font-semibold text-white disabled:opacity-50"
                 >
                   {isSaving ? t('folders.saving') : t('listening.wordSheet.createAndAdd')}
                 </button>

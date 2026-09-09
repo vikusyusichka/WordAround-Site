@@ -63,7 +63,7 @@ export const FolderForm = ({
 
   const label = 'text-[14px] font-bold';
   const field =
-    'w-full rounded-2xl border bg-white px-4 text-[15px] font-semibold outline-none transition-colors';
+    'w-full rounded-2xl border bg-(--color-surface) px-4 text-[15px] font-semibold outline-none transition-colors';
 
   return (
     <>
@@ -172,7 +172,7 @@ export const FolderForm = ({
           <button
             type="button"
             onClick={onCancel}
-            className="h-14 rounded-full bg-white px-6 text-[15px] font-semibold transition-colors hover:bg-black/[0.03] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+            className="h-14 rounded-full bg-(--color-surface) px-6 text-[15px] font-semibold transition-colors hover:bg-(--color-hover-wash) focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
             style={{ color: theme.mutedTextColor }}
           >
             {t('folders.cancel')}

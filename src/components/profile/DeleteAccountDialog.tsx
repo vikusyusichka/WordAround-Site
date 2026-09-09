@@ -120,7 +120,7 @@ export const DeleteAccountDialog = ({ open, onClose }: DeleteAccountDialogProps)
                 autoComplete="off"
                 autoCapitalize="characters"
                 spellCheck={false}
-                className="h-13 rounded-2xl border bg-white px-4 text-[17px] font-bold text-(--color-primary-blue-dark) outline-none"
+                className="h-13 rounded-2xl border bg-(--color-surface) px-4 text-[17px] font-bold text-(--color-primary-blue-dark) outline-none"
                 style={{
                   borderColor: matches
                     ? 'color-mix(in srgb, var(--color-profile-danger) 50%, transparent)'

@@ -129,7 +129,7 @@ export const LanguagePicker = ({
 
         {isOpen && (
           <div
-            className="absolute top-[calc(100%+6px)] right-0 left-0 z-30 flex max-h-[320px] flex-col overflow-hidden rounded-2xl border bg-white"
+            className="absolute top-[calc(100%+6px)] right-0 left-0 z-30 flex max-h-[320px] flex-col overflow-hidden rounded-2xl border bg-(--color-surface)"
             style={{ borderColor: withAlpha(a, 22), boxShadow: `0 12px 28px ${withAlpha(a, 22)}` }}
           >
             <div
@@ -163,7 +163,7 @@ export const LanguagePicker = ({
                       type="button"
                       onClick={() => pick(language.id)}
                       className={`flex w-full items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-[14px] transition-colors ${
-                        isSelected ? 'font-bold' : 'font-medium hover:bg-black/[0.03]'
+                        isSelected ? 'font-bold' : 'font-medium hover:bg-(--color-hover-wash)'
                       }`}
                       style={
                         isSelected

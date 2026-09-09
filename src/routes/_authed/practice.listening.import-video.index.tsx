@@ -54,8 +54,8 @@ export const Route = createFileRoute('/_authed/practice/listening/import-video/'
 });
 
 // Import Video mode accent (ListeningTheme.importVideoAccent / Dark).
-const ACCENT = '#29A89E';
-const ACCENT_DARK = '#14736E';
+const ACCENT = 'var(--color-accent-teal)';
+const ACCENT_DARK = 'var(--color-accent-teal-text)';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 const subLabel = 'text-[13px] font-bold';
 
@@ -257,8 +257,8 @@ function ImportVideoScreen() {
             <div
               className={`flex flex-col gap-3 rounded-2xl border-2 p-5 ${
                 media
-                  ? 'border-(--color-auth-field-border) bg-white'
-                  : 'border-dashed border-[#29A89E]/40 bg-[#29A89E]/5'
+                  ? 'border-(--color-auth-field-border) bg-(--color-surface)'
+                  : 'border-dashed border-(--color-accent-teal)/40 bg-(--color-accent-teal)/5'
               }`}
             >
               {media ? (
@@ -278,14 +278,14 @@ function ImportVideoScreen() {
                       setMedia(null);
                     }}
                     aria-label={t('listening.importAudio.clearFile')}
-                    className="grid size-8 shrink-0 place-items-center rounded-full text-(--color-cs-text-muted) hover:bg-black/[0.04]"
+                    className="grid size-8 shrink-0 place-items-center rounded-full text-(--color-cs-text-muted) hover:bg-(--color-chip-bg)"
                   >
                     ✕
                   </button>
                 </div>
               ) : (
                 <div className="flex flex-col items-center gap-2 py-2">
-                  <Icon name="film.stack" className="size-[28px] text-[#29A89E]" />
+                  <Icon name="film.stack" className="size-[28px] text-(--color-accent-teal)" />
                   <span className="text-[15px] font-bold text-(--color-primary-blue-dark)">
                     {t('listening.importVideo.uploadTitle')}
                   </span>
@@ -295,7 +295,7 @@ function ImportVideoScreen() {
                   <button
                     type="button"
                     onClick={() => fileInputRef.current?.click()}
-                    className="mt-1 h-10 rounded-2xl bg-[#29A89E] px-5 text-[14px] font-semibold text-white"
+                    className="mt-1 h-10 rounded-2xl bg-(--color-accent-teal) px-5 text-[14px] font-semibold text-white"
                   >
                     {t('listening.importAudio.chooseFile')}
                   </button>
@@ -391,7 +391,7 @@ function ImportVideoScreen() {
         )}
 
         {screen === 'processing' && (
-          <div className="flex flex-col gap-4 rounded-3xl border border-white bg-white/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+          <div className="flex flex-col gap-4 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
             <h3 className="text-[17px] font-bold text-(--color-primary-blue-dark)">
               {t('listening.importAudio.processingTitle')}
             </h3>
@@ -402,9 +402,9 @@ function ImportVideoScreen() {
                     processingError && i === processingStep
                       ? 'bg-(--color-cs-red)/10 text-(--color-cs-red)'
                       : i < processingStep
-                        ? 'bg-[#22C55E] text-white'
+                        ? 'bg-(--color-accent-green) text-white'
                         : i === processingStep
-                          ? 'bg-[#29A89E] text-white'
+                          ? 'bg-(--color-accent-teal) text-white'
                           : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
                   }`}
                 >
@@ -429,14 +429,14 @@ function ImportVideoScreen() {
                   <button
                     type="button"
                     onClick={() => void startProcessing()}
-                    className="h-11 flex-1 rounded-2xl bg-[#29A89E] text-[14px] font-semibold text-white"
+                    className="h-11 flex-1 rounded-2xl bg-(--color-accent-teal) text-[14px] font-semibold text-white"
                   >
                     {t('listening.importAudio.tryAgain')}
                   </button>
                   <button
                     type="button"
                     onClick={() => setScreen('setup')}
-                    className="h-11 flex-1 rounded-2xl border border-(--color-auth-field-border) bg-white text-[14px] font-semibold text-(--color-cs-text-muted)"
+                    className="h-11 flex-1 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) text-[14px] font-semibold text-(--color-cs-text-muted)"
                   >
                     {t('listening.importAudio.chooseAnother')}
                   </button>
@@ -463,7 +463,7 @@ function ImportVideoScreen() {
             />
 
             {/* Synced subtitles */}
-            <div className="flex flex-col gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white p-4">
+            <div className="flex flex-col gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) p-4">
               <div className="flex items-center justify-between">
                 <span className={sectionTitle}>{t('listening.importVideo.subtitles')}</span>
                 <button
@@ -471,7 +471,7 @@ function ImportVideoScreen() {
                   onClick={() => setSubtitlesOn((v) => !v)}
                   className={`h-8 rounded-full px-3 text-[12px] font-bold ${
                     subtitlesOn
-                      ? 'bg-[#29A89E]/12 text-[#14736E]'
+                      ? 'bg-(--color-accent-teal)/12 text-(--color-accent-teal-text)'
                       : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
                   }`}
                 >

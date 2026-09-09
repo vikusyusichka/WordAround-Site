@@ -3,6 +3,7 @@
 import { useTranslation } from 'react-i18next';
 
 import type { ListeningQuestion } from '@/lib/listeningTypes';
+import { tint } from '@/lib/colorMix';
 
 const OPTION_LETTERS = ['A', 'B', 'C', 'D', 'E', 'F'];
 
@@ -33,7 +34,7 @@ export const ListeningQuestionList = ({
         return (
           <div
             key={q.id}
-            className="flex flex-col gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white p-4"
+            className="flex flex-col gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) p-4"
           >
             <span className="text-[11px] font-bold uppercase tracking-wide" style={{ color: accentColor }}>
               {t(`listening.questionType.${q.type}`)} · {qi + 1}/{questions.length}
@@ -52,16 +53,16 @@ export const ListeningQuestionList = ({
                     onClick={() => onSelect(q.id, oi)}
                     className={`flex items-center gap-2.5 rounded-xl border px-3 py-2.5 text-left text-[14px] font-medium transition-colors disabled:cursor-default ${
                       isCorrect
-                        ? 'border-[#22C55E]/50 bg-[#22C55E]/8 text-[#15803D]'
+                        ? 'border-(--color-accent-green)/50 bg-(--color-accent-green)/8 text-(--color-accent-green-text)'
                         : isWrong
                           ? 'border-(--color-cs-red)/50 bg-(--color-cs-red)/8 text-(--color-cs-red)'
                           : isSelected
-                            ? 'bg-black/[0.02] text-(--color-primary-blue-dark)'
-                            : 'border-(--color-auth-field-border) bg-white text-(--color-primary-blue-dark)'
+                            ? 'bg-(--color-hover-wash) text-(--color-primary-blue-dark)'
+                            : 'border-(--color-auth-field-border) bg-(--color-surface) text-(--color-primary-blue-dark)'
                     }`}
                     style={
                       isSelected && !hasChecked
-                        ? { borderColor: `${accentColor}80`, background: `${accentColor}14` }
+                        ? { borderColor: tint(accentColor, 50.2), background: tint(accentColor, 7.8) }
                         : undefined
                     }
                   >

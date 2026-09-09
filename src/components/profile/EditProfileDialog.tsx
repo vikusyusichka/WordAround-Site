@@ -236,7 +236,7 @@ export const EditProfileDialog = ({
                 placeholder={t('profile.edit.namePlaceholder')}
                 autoComplete="name"
                 maxLength={60}
-                className="h-13 rounded-2xl border border-(--color-primary-blue)/10 bg-white px-4 text-[17px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+                className="h-13 rounded-2xl border border-(--color-primary-blue)/10 bg-(--color-surface) px-4 text-[17px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
               />
             </label>
 
@@ -251,7 +251,7 @@ export const EditProfileDialog = ({
                 type="button"
                 onClick={onClose}
                 disabled={isSaving}
-                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
               >
                 {t('common.cancel')}
               </button>
@@ -259,7 +259,7 @@ export const EditProfileDialog = ({
                 type="button"
                 onClick={() => void handleSave()}
                 disabled={!hasChanges || isSaving}
-                className="h-11 rounded-2xl bg-(--color-primary-blue) px-5 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
+                className="h-11 rounded-2xl bg-(--color-primary-blue-solid) px-5 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
               >
                 {isSaving ? t('profile.edit.saving') : t('common.save')}
               </button>

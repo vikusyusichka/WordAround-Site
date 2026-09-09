@@ -8,13 +8,16 @@ export const NOTE_TYPES: GrammarNoteType[] = [
   'standard', 'mistake', 'rule', 'comparison', 'cheatSheet', 'exercise',
 ];
 
+/* The colours are variables rather than the iOS hexes so the dark theme can
+   move them (styles/index.css) without this table, or anything reading it,
+   knowing a theme exists. The light values are still the iOS ones. */
 export const NOTE_TYPE_META: Record<GrammarNoteType, { icon: string; color: string }> = {
-  standard: { icon: 'doc.text.fill', color: '#4F7CFF' },
-  mistake: { icon: 'exclamationmark.triangle.fill', color: '#F4729A' },
-  rule: { icon: 'text.book.closed.fill', color: '#7C5CFF' },
-  comparison: { icon: 'arrow.left.arrow.right', color: '#38BDF8' },
-  cheatSheet: { icon: 'bolt.fill', color: '#F59E0B' },
-  exercise: { icon: 'checklist.checked', color: '#22C55E' },
+  standard: { icon: 'doc.text.fill', color: 'var(--color-accent-blue)' },
+  mistake: { icon: 'exclamationmark.triangle.fill', color: 'var(--color-accent-pink)' },
+  rule: { icon: 'text.book.closed.fill', color: 'var(--color-accent-violet)' },
+  comparison: { icon: 'arrow.left.arrow.right', color: 'var(--color-accent-sky)' },
+  cheatSheet: { icon: 'bolt.fill', color: 'var(--color-accent-amber)' },
+  exercise: { icon: 'checklist.checked', color: 'var(--color-accent-green)' },
 };
 
 /** English titles — used by the search index (iOS indexes noteType.title). */

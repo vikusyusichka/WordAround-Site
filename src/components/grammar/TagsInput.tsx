@@ -22,7 +22,7 @@ export const TagsInput = ({ tags, onAdd, onRemove }: TagsInputProps) => {
   };
 
   return (
-    <div className="flex flex-wrap items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white px-3 py-2.5">
+    <div className="flex flex-wrap items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-3 py-2.5">
       {tags.map((tag) => (
         <span
           key={tag}

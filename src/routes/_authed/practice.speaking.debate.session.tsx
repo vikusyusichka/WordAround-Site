@@ -14,8 +14,9 @@ import { useDebate } from '@/hooks/useDebate';
 import { findLanguage } from '@/lib/essayTypes';
 import { ROUND_LABEL, ROUND_LEARNER_PROMPT, type DebateSide } from '@/lib/speakingDebate';
 import { type ConversationLength } from '@/lib/speakingTypes';
+import { tint } from '@/lib/colorMix';
 
-const ACCENT = '#ED6699';
+const ACCENT = 'var(--color-accent-rose)';
 
 const isSide = (v: string): v is DebateSide => ['agree', 'disagree', 'surpriseMe'].includes(v);
 
@@ -79,7 +80,7 @@ function DebateSession({
           <button
             type="button"
             onClick={onExit}
-            className="w-fit text-[13px] font-semibold text-[#B23A6E] hover:underline focus-visible:outline-none"
+            className="w-fit text-[13px] font-semibold text-(--color-accent-rose-text) hover:underline focus-visible:outline-none"
           >
             ← {t('nav.speaking')}
           </button>
@@ -112,7 +113,7 @@ function DebateSession({
             className={`rounded-2xl px-4 py-2 text-[14px] font-bold tabular-nums ${
               debate.remainingSeconds < 60
                 ? 'bg-(--color-cs-red)/10 text-(--color-cs-red)'
-                : 'bg-[#ED6699]/12 text-[#B23A6E]'
+                : 'bg-(--color-accent-rose)/12 text-(--color-accent-rose-text)'
             }`}
           >
             {mmss(debate.remainingSeconds)}
@@ -125,14 +126,14 @@ function DebateSession({
           <button
             type="button"
             onClick={onExit}
-            className="text-[13px] font-semibold text-[#B23A6E] hover:underline focus-visible:outline-none"
+            className="text-[13px] font-semibold text-(--color-accent-rose-text) hover:underline focus-visible:outline-none"
           >
             ← {t('nav.speaking')}
           </button>
           <button
             type="button"
             onClick={debate.endDebate}
-            className="h-9 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[13px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-black/[0.03]"
+            className="h-9 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[13px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash)"
           >
             {t('speaking.conversation.end')}
           </button>
@@ -140,19 +141,19 @@ function DebateSession({
 
         {/* Round progress */}
         {debate.rounds.length > 0 && (
-          <div className="flex flex-col gap-2 rounded-2xl bg-white px-4 py-3 shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
+          <div className="flex flex-col gap-2 rounded-2xl bg-(--color-surface) px-4 py-3 shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
             <div className="flex items-center gap-1.5">
               {debate.rounds.map((_, i) => (
                 <span
                   key={i}
                   className="h-1.5 flex-1 rounded-full"
-                  style={{ background: i <= debate.currentRoundIndex ? ACCENT : `${ACCENT}26` }}
+                  style={{ background: i <= debate.currentRoundIndex ? ACCENT : tint(ACCENT, 14.9) }}
                 />
               ))}
             </div>
             {round && (
               <div className="flex flex-col gap-0.5">
-                <span className="text-[13px] font-bold text-[#B23A6E]">
+                <span className="text-[13px] font-bold text-(--color-accent-rose-text)">
                   {t('speaking.debate.roundOf', {
                     current: debate.currentRoundIndex + 1,
                     total: debate.rounds.length,
@@ -168,16 +169,16 @@ function DebateSession({
         )}
 
         {debate.errorBanner && (
-          <div className="flex items-center justify-between rounded-2xl bg-[#F59E0B]/10 px-4 py-2">
-            <span className="text-[13px] font-medium text-[#B45309]">{debate.errorBanner}</span>
+          <div className="flex items-center justify-between rounded-2xl bg-(--color-accent-amber)/10 px-4 py-2">
+            <span className="text-[13px] font-medium text-(--color-accent-amber-text)">{debate.errorBanner}</span>
             <button type="button" onClick={debate.clearError} aria-label={t('speaking.conversation.dismiss')}>
-              <Icon name="xmark" className="size-[14px] text-[#B45309]" />
+              <Icon name="xmark" className="size-[14px] text-(--color-accent-amber-text)" />
             </button>
           </div>
         )}
 
         {debate.isGeneratingTopic && (
-          <p className="rounded-2xl bg-white/70 px-4 py-8 text-center text-[15px] font-medium text-(--color-text-secondary) shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
+          <p className="rounded-2xl bg-(--color-surface)/70 px-4 py-8 text-center text-[15px] font-medium text-(--color-text-secondary) shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
             {t('speaking.debate.preparing')}
           </p>
         )}
@@ -189,15 +190,15 @@ function DebateSession({
               key={i}
               className={`max-w-[85%] rounded-2xl px-4 py-2.5 text-[14px] font-medium ${
                 m.role === 'ai'
-                  ? 'self-start bg-white text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.05)]'
-                  : 'self-end bg-[#ED6699] text-white'
+                  ? 'self-start bg-(--color-surface) text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.05)]'
+                  : 'self-end bg-(--color-accent-rose) text-white'
               }`}
             >
               {m.text}
             </div>
           ))}
           {debate.state === 'processing' && !debate.isGeneratingTopic && (
-            <div className="self-start rounded-2xl bg-white px-4 py-2.5 text-[14px] font-medium text-(--color-muted-text) shadow-[0_2px_6px_rgba(0,0,0,0.05)]">
+            <div className="self-start rounded-2xl bg-(--color-surface) px-4 py-2.5 text-[14px] font-medium text-(--color-muted-text) shadow-[0_2px_6px_rgba(0,0,0,0.05)]">
               …
             </div>
           )}
@@ -205,8 +206,8 @@ function DebateSession({
         </div>
 
         {debate.hint && (
-          <div className="rounded-2xl border border-[#ED6699]/30 bg-[#ED6699]/5 px-4 py-2.5">
-            <span className="text-[11px] font-bold uppercase tracking-wide text-[#B23A6E]">
+          <div className="rounded-2xl border border-(--color-accent-rose)/30 bg-(--color-accent-rose)/5 px-4 py-2.5">
+            <span className="text-[11px] font-bold uppercase tracking-wide text-(--color-accent-rose-text)">
               {t('speaking.conversation.hint')}
             </span>
             <p className="text-[14px] font-medium text-(--color-primary-blue-dark)">{debate.hint}</p>
@@ -226,7 +227,7 @@ function DebateSession({
           <button
             type="button"
             onClick={debate.requestHint}
-            className="h-10 w-fit rounded-2xl border border-[#ED6699]/35 bg-white px-4 text-[13px] font-semibold text-[#B23A6E] transition-colors hover:bg-[#ED6699]/5"
+            className="h-10 w-fit rounded-2xl border border-(--color-accent-rose)/35 bg-(--color-surface) px-4 text-[13px] font-semibold text-(--color-accent-rose-text) transition-colors hover:bg-(--color-accent-rose)/5"
           >
             {t('speaking.conversation.getHint')}
           </button>

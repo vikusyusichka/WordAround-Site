@@ -45,7 +45,7 @@ export const EssayEditor = ({
         onChange={(e) => onChange(e.target.value)}
         placeholder={t('writing.essays.editor.placeholder')}
         rows={10}
-        className="min-h-[220px] w-full resize-y rounded-2xl border border-white bg-white/95 px-4 py-3.5 text-[15px] leading-relaxed font-medium text-(--color-primary-blue-dark) shadow-[0_4px_10px_rgba(0,0,0,0.045)] outline-none focus-visible:border-(--color-home-brand) md:min-h-[280px] md:px-5 md:py-4 md:text-[16px]"
+        className="min-h-[220px] w-full resize-y rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 px-4 py-3.5 text-[15px] leading-relaxed font-medium text-(--color-primary-blue-dark) shadow-[0_4px_10px_rgba(0,0,0,0.045)] outline-none focus-visible:border-(--color-home-brand) md:min-h-[280px] md:px-5 md:py-4 md:text-[16px]"
       />
 
       <div className="flex flex-col">

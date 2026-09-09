@@ -38,7 +38,7 @@ export const QuickActionsGrid = ({ actions }: QuickActionsGridProps) => {
           key={action.id}
           type="button"
           onClick={action.onClick}
-          className="relative flex min-h-[76px] flex-col items-center justify-center gap-1.5 overflow-hidden rounded-[18px] border border-white/60 bg-white/[0.84] px-2 py-2.5 shadow-[0_8px_14px_rgba(0,0,0,0.045)] transition-transform hover:-translate-y-0.5 active:scale-[0.99] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none lg:min-h-[88px] lg:gap-2 lg:py-3"
+          className="relative flex min-h-[76px] flex-col items-center justify-center gap-1.5 overflow-hidden rounded-[18px] border border-(--color-surface)/60 bg-(--color-surface)/[0.84] px-2 py-2.5 shadow-[0_8px_14px_rgba(0,0,0,0.045)] transition-transform hover:-translate-y-0.5 active:scale-[0.99] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none lg:min-h-[88px] lg:gap-2 lg:py-3"
         >
           {/* iOS: 64×52 offset (16, −14); 80×64 offset (22, −18) on iPad. */}
           <span

@@ -27,13 +27,13 @@ export const ManualQuestionForm = ({ order, onAdd }: ManualQuestionFormProps) =>
 
   const error = validateManualQuestion(draft);
   const field =
-    'w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-2.5 text-[14px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)';
+    'w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-2.5 text-[14px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)';
 
   const patch = (values: Partial<ManualQuestionDraft>) =>
     setDraft((prev) => ({ ...prev, ...values }));
 
   return (
-    <div className="flex flex-col gap-2.5 rounded-2xl border border-(--color-auth-field-border) bg-white/70 p-3.5">
+    <div className="flex flex-col gap-2.5 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface)/70 p-3.5">
       <div className="grid grid-cols-2 gap-2">
         {QUIZ_QUESTION_TYPES.map((type) => {
           const selected = type === draft.type;
@@ -45,7 +45,7 @@ export const ManualQuestionForm = ({ order, onAdd }: ManualQuestionFormProps) =>
               className={`flex items-center gap-2 rounded-2xl border px-3 py-2 text-left transition-colors ${
                 selected
                   ? 'border-(--color-primary-blue)/35 bg-(--color-primary-blue)/8'
-                  : 'border-(--color-auth-field-border) bg-white'
+                  : 'border-(--color-auth-field-border) bg-(--color-surface)'
               }`}
             >
               <Icon
@@ -100,7 +100,7 @@ export const ManualQuestionForm = ({ order, onAdd }: ManualQuestionFormProps) =>
               className={`h-10 flex-1 rounded-2xl border text-[14px] font-semibold transition-colors ${
                 (draft.correctAnswer || 'True') === value
                   ? 'border-(--color-primary-blue)/35 bg-(--color-primary-blue)/8 text-(--color-primary-blue-dark)'
-                  : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
+                  : 'border-(--color-auth-field-border) bg-(--color-surface) text-(--color-text-secondary)'
               }`}
             >
               {t(value === 'True' ? 'writing.grammar.quiz.play.trueLabel' : 'writing.grammar.quiz.play.falseLabel')}
@@ -140,7 +140,7 @@ export const ManualQuestionForm = ({ order, onAdd }: ManualQuestionFormProps) =>
           setDraft(EMPTY_MANUAL_DRAFT);
           setShowError(false);
         }}
-        className="h-10 w-fit rounded-2xl bg-(--color-primary-blue) px-4 text-[14px] font-semibold text-white transition-transform active:scale-[0.98] focus-visible:outline-none"
+        className="h-10 w-fit rounded-2xl bg-(--color-primary-blue-solid) px-4 text-[14px] font-semibold text-white transition-transform active:scale-[0.98] focus-visible:outline-none"
       >
         {t('writing.grammar.quiz.manual.add')}
       </button>

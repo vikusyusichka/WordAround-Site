@@ -18,7 +18,7 @@ export const ViewToggle = ({ value, onChange }: ViewToggleProps) => {
     <div
       role="radiogroup"
       aria-label={t('common.view.label')}
-      className="flex gap-1 rounded-2xl bg-white/90 p-1 shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
+      className="flex gap-1 rounded-2xl bg-(--color-surface)/90 p-1 shadow-[0_2px_8px_rgba(0,0,0,0.05)]"
     >
       <ViewButton
         icon={<Rows size={17} weight="bold" />}
@@ -54,7 +54,7 @@ const ViewButton = ({ icon, label, isActive, onClick }: ViewButtonProps) => (
     className={`grid size-9 place-items-center rounded-xl transition-colors focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none ${
       isActive
         ? 'bg-(--color-home-nav-sel-bg) text-(--color-primary-blue)'
-        : 'text-(--color-cs-text-muted) hover:bg-black/[0.03]'
+        : 'text-(--color-cs-text-muted) hover:bg-(--color-hover-wash)'
     }`}
   >
     {icon}

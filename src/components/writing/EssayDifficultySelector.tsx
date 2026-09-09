@@ -36,7 +36,7 @@ export const EssayDifficultySelector = ({
         disabled={disabled}
         aria-expanded={open}
         aria-haspopup="listbox"
-        className="flex w-full items-center justify-between rounded-2xl border border-white bg-white/95 px-4 py-3 text-left shadow-[0_4px_10px_rgba(0,0,0,0.045)] transition-transform hover:-translate-y-px disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-(--color-home-brand) md:px-5 md:py-3.5"
+        className="flex w-full items-center justify-between rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 px-4 py-3 text-left shadow-[0_4px_10px_rgba(0,0,0,0.045)] transition-transform hover:-translate-y-px disabled:opacity-60 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-(--color-home-brand) md:px-5 md:py-3.5"
       >
         <div className="flex items-center gap-3">
           <span className="grid size-9 place-items-center rounded-full bg-(--color-goal-bg) text-[12px] font-bold text-(--color-primary-blue-dark) md:size-10 md:text-[13px]">
@@ -61,7 +61,7 @@ export const EssayDifficultySelector = ({
         <div
           role="listbox"
           aria-label={t('writing.essays.difficulty')}
-          className="flex flex-col gap-1.5 rounded-2xl border border-white bg-white/98 p-2 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
+          className="flex flex-col gap-1.5 rounded-2xl border border-(--color-surface) bg-(--color-surface)/98 p-2 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
         >
           {ESSAY_DIFFICULTIES.map((level) => {
             const active = level === value;

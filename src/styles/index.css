@@ -236,6 +236,161 @@
      Kept in :root rather than @theme for the same reason as the swatches. */
   --color-surface-card: rgba(255, 255, 255, 0.88);
   --color-surface-border: rgba(255, 255, 255, 0.6);
+
+  /* The opaque surface itself, for the ~40 places that write their own alpha
+     (`bg-white/95`, `border-white/60`). They become `bg-(--color-surface)/95`,
+     which keeps every one of those alphas exactly as it is and only moves the
+     colour underneath — so the light theme renders identically and the dark
+     theme stops painting white cards on a navy page. */
+  --color-surface: #ffffff;
+
+  /* The brand blue as a FILLED button with white text on it, as opposed to the
+     brand blue as text. One value cannot do both on a dark ground: white on a
+     blue light enough to read against #0f1424 lands at 3.45:1, and a blue deep
+     enough for white text lands at 3.7:1 as text. The two roles get two
+     variables; in the light theme they are the same colour, as they always
+     were. */
+  --color-primary-blue-solid: #2b5cfa;
+
+  /* The per-colour surfaces behind a set, folder or topic (setColors.ts
+     makeTheme). These used to be literal hexes in a TypeScript table, which
+     meant the only way to have a dark variant was to recompute the theme in
+     JavaScript and re-render everything that reads it. As variables the
+     browser does the swapping and the 102 consumers never learn there is such
+     a thing as a theme. Runtime-composed names (`--color-cs-${id}-screen`), so
+     :root rather than @theme — see the note on the swatches above. */
+  --color-cs-surface: #ffffff;
+  --color-cs-field: #ffffff;
+
+  --color-cs-red-screen: #fff5f5;
+  --color-cs-red-preview: #fff0f0;
+  --color-cs-red-image: #fff2f5;
+  --color-cs-red-title: #94051e;
+  --color-cs-red-border: #fac7d1;
+  --color-cs-red-soft-border: #fad1db;
+
+  --color-cs-blue-screen: #f0f7ff;
+  --color-cs-blue-preview: #edf5ff;
+  --color-cs-blue-image: #f2f7ff;
+  --color-cs-blue-title: #1a3dc2;
+
+  --color-cs-yellow-screen: #fffaeb;
+  --color-cs-yellow-preview: #fff5db;
+  --color-cs-yellow-image: #fff7e3;
+  --color-cs-yellow-title: #9e6105;
+
+  --color-cs-green-screen: #f0fcf5;
+  --color-cs-green-preview: #ebfaf2;
+  --color-cs-green-image: #f0fcf5;
+  --color-cs-green-title: #1a7a4d;
+
+  --color-cs-purple-screen: #f7f2ff;
+  --color-cs-purple-preview: #f5edff;
+  --color-cs-purple-image: #f7f2ff;
+  --color-cs-purple-title: #6b33b8;
+
+  --color-cs-cyan-screen: #edfcff;
+  --color-cs-cyan-preview: #e8faff;
+  --color-cs-cyan-image: #f0fcff;
+  --color-cs-cyan-title: #14708f;
+
+  /* The accent used as small TEXT on the set's own tinted card (the tile
+     subtitle). In light it is the accent itself, so nothing moves; in dark the
+     muted accents read at 3.5–4.1:1 there, so they lighten — without lightening
+     the icon fills that share --color-cs-*. */
+  --color-cs-red-label: var(--color-cs-red);
+  --color-cs-blue-label: var(--color-cs-blue);
+  --color-cs-yellow-label: var(--color-cs-yellow);
+  --color-cs-green-label: var(--color-cs-green);
+  --color-cs-purple-label: var(--color-cs-purple);
+  --color-cs-cyan-label: var(--color-cs-cyan);
+
+  /* The pale blob behind each practice-mode card (lib/*Types.ts). One variable
+     per distinct value rather than one per mode: eleven modes share eleven
+     colours between them, and naming them by hue keeps the light theme exactly
+     as it was while giving the dark theme somewhere to hook. */
+  --color-mode-blob-violet: #e6dbff;
+  --color-mode-blob-periwinkle: #d6e0fa;
+  --color-mode-blob-blue: #d1dcfa;
+  --color-mode-blob-cyan: #ccf0f5;
+  --color-mode-blob-pink: #fadbe7;
+  --color-mode-blob-coral: #fad9d7;
+  --color-mode-blob-lilac: #e6dbfa;
+  --color-mode-blob-teal: #d1f2ed;
+  --color-mode-blob-mint: #d1f5e6;
+  --color-mode-blob-mauve: #e6d6fa;
+
+  /* The accents that carry meaning inside a screen rather than identifying a
+     set: note types, review, right/wrong, favourite. Named by hue, one per
+     distinct value, same reasoning as the blobs above — several screens share
+     the same six hues, and a name like "correct" would be a lie the first time
+     the green is used for something else.
+
+     Each hue that also appears as small text on its own tint carries a -text
+     companion: the same hue darkened for a pale ground, which in the dark theme
+     has to become the same hue LIGHTENED instead. */
+  --color-accent-blue: #4f7cff;
+  --color-accent-pink: #f4729a;
+  --color-accent-violet: #7c5cff;
+  --color-accent-violet-text: #5b3fd1;
+  --color-accent-sky: #38bdf8;
+  --color-accent-amber: #f59e0b;
+  --color-accent-green: #22c55e;
+  --color-accent-green-text: #15803d;
+  --color-accent-amber-text: #b45309;
+
+  /* The practice modes. Each session screen had these as a local ACCENT /
+     ACCENT_DARK pair, which is why the same rose appears in four files. */
+  --color-accent-mint: #3ccf91;
+  --color-accent-mint-text: #1f8f63;
+  --color-accent-rose: #ed6699;
+  --color-accent-rose-text: #b23a6e;
+  --color-accent-magenta: #d94785;
+  --color-accent-orchid: #9e4da8;
+  --color-accent-indigo: #8a5ce0;
+  --color-accent-indigo-text: #6438b8;
+  --color-accent-turquoise: #2eb8cc;
+  --color-accent-turquoise-text: #1b7c8c;
+  --color-accent-cyan: #21a8bd;
+  --color-accent-cyan-text: #0f6a78;
+  --color-accent-teal: #29a89e;
+  --color-accent-teal-text: #14736e;
+  --color-accent-purple: #8c66eb;
+  --color-accent-steel: #3394d1;
+  --color-accent-steel-text: #1f6ba3;
+  --color-accent-coral: #f26b66;
+  --color-accent-coral-text: #ba5752;
+  --color-accent-lavender: #8563ff;
+  --color-accent-iris: #7363ff;
+  --color-accent-periwinkle: #5c94ff;
+  --color-accent-gold: #c78c42;
+  --color-blob-orchid: #ebd6f2;
+
+  /* Essay score bands, and the pale grounds a few feedback boxes use. */
+  --color-score-verygood: #4f8cd1;
+  --color-score-good: #b89145;
+  --color-soft-amber: #fff3d6;
+  --color-soft-peach: #fff2e0;
+  --color-soft-lavender: #edebff;
+  /* The green ring a correctly typed word gets (WriteWords). */
+  --color-valid-border: #a1e0ab;
+
+  /* What the other side says, in a practice conversation. */
+  --color-chat-bubble: #edf2ff;
+
+  /* What a hue is mixed WITH to become its own label (QuickCaptureButtons).
+     Darkening a pill colour is what makes it readable on a pale fill; on a dark
+     ground the same mix has to go the other way, so the far end is a variable
+     and the mix itself never changes. */
+  --color-tone-mix: #0b1020;
+
+  /* A chip that borrows contrast from whatever it sits on — tag pills, counter
+     bubbles. Written as black at 4% everywhere it appears, which on a dark card
+     is a chip you cannot see. */
+  --color-chip-bg: rgba(0, 0, 0, 0.04);
+  /* The faint wash a plain button takes on hover. Written as black at 3%, which
+     on a dark button is no hover at all. */
+  --color-hover-wash: rgba(0, 0, 0, 0.03);
 }
 
 /* ── Dark theme ───────────────────────────────────────────────────────────
@@ -263,7 +418,14 @@
 
   /* Core */
   --color-app-bg: #0f1424;
-  --color-primary-blue: #5b82ff;
+  /* Lighter than the first pass had it: the brand blue is also a label on its
+     own 10% tint (the editor's block tray), and #5b82ff measured 4.08:1 there.
+     Against the page ground it was never the problem — this only buys headroom
+     for the tinted pills. */
+  --color-primary-blue: #7b9cff;
+  /* Deeper than the accent above, because this one carries white text: at
+     #5b82ff the "Edit" button on the profile measured 3.45:1. */
+  --color-primary-blue-solid: #4166df;
   /* Also the body text colour — the single most important swap here. */
   --color-primary-blue-dark: #e8ecf7;
   /* Both measured against the ground rather than eyeballed: #97a1bd came in at
@@ -274,6 +436,7 @@
 
   --color-surface-card: rgba(26, 33, 54, 0.92);
   --color-surface-border: rgba(255, 255, 255, 0.08);
+  --color-surface: #1a2136;
 
   /* Home shell */
   --color-home-brand: #5b82ff;
@@ -333,7 +496,9 @@
   --color-cs-bg: #131a2e;
   --color-cs-dark-red: #ff9aa2;
   --color-cs-soft-red: #3a1f26;
-  --color-cs-text-muted: #98a2c0;
+  /* Measured against the tinted set-card grounds, where #98a2c0 came in at
+     3.53:1 on the amber tile — under the 4.5:1 a 13px subtitle needs. */
+  --color-cs-text-muted: #b4bdd6;
   --color-cs-dark-text: #e8ecf7;
   --color-cs-border: #2e3a58;
   --color-cs-soft-border: #2a3450;
@@ -381,6 +546,104 @@
   --color-cs-green: #79b489;
   --color-cs-purple: #a273cc;
   --color-cs-cyan: #5fadbb;
+
+  /* The surfaces a set / folder / topic paints itself with. Each keeps a trace
+     of its own hue, so a green set still feels green at night, but the value
+     sits below the page rather than above it. Titles go the other way: they
+     have to carry the hue AND clear 4.5:1 against these grounds. */
+  --color-cs-surface: #1e2740;
+  --color-cs-field: #212a42;
+
+  --color-cs-red-screen: #1d1418;
+  --color-cs-red-preview: #24171b;
+  --color-cs-red-image: #261a1f;
+  --color-cs-red-title: #ffa3b2;
+  --color-cs-red-border: #4d2731;
+  --color-cs-red-soft-border: #3f212a;
+
+  --color-cs-blue-screen: #101728;
+  --color-cs-blue-preview: #131b30;
+  --color-cs-blue-image: #151d34;
+  --color-cs-blue-title: #a3bbff;
+
+  --color-cs-yellow-screen: #1e1a11;
+  --color-cs-yellow-preview: #251f14;
+  --color-cs-yellow-image: #272117;
+  --color-cs-yellow-title: #f2c87f;
+
+  --color-cs-green-screen: #101f18;
+  --color-cs-green-preview: #13251d;
+  --color-cs-green-image: #152820;
+  --color-cs-green-title: #86dcaa;
+
+  --color-cs-purple-screen: #1a1429;
+  --color-cs-purple-preview: #201832;
+  --color-cs-purple-image: #231b36;
+  --color-cs-purple-title: #cfaef5;
+
+  --color-cs-cyan-screen: #101e23;
+  --color-cs-cyan-preview: #13242a;
+  --color-cs-cyan-image: #15272e;
+  --color-cs-cyan-title: #86d3e6;
+
+  /* Between the muted accent and the title: bright enough to clear 4.5:1 on
+     the card it sits on, dim enough that the title still leads. */
+  --color-cs-red-label: #ef8b98;
+  --color-cs-blue-label: #8fa8f0;
+  --color-cs-yellow-label: #cfa662;
+  --color-cs-green-label: #67b881;
+  --color-cs-purple-label: #b98fe0;
+  --color-cs-cyan-label: #6bbccd;
+
+  /* Practice-card blobs, keeping each hue but sitting below the page rather
+     than glowing above it. */
+  --color-mode-blob-violet: #2a2340;
+  --color-mode-blob-periwinkle: #1e2740;
+  --color-mode-blob-blue: #1d2642;
+  --color-mode-blob-cyan: #14303a;
+  --color-mode-blob-pink: #38202c;
+  --color-mode-blob-coral: #3a2422;
+  --color-mode-blob-lilac: #29233d;
+  --color-mode-blob-teal: #143029;
+  --color-mode-blob-mint: #143026;
+  --color-mode-blob-mauve: #2b2240;
+
+  /* Four of the six screen accents carry straight over — a saturated hue on a
+     #0f1424 ground measures 6.7:1 (pink) to 8.5:1 (amber). The two that do not
+     are the ones that also appear as a label on their own tint: violet at
+     4.20:1 and blue at 3.78:1, both measured. They lift.
+     The -text pair inverts, and so does what they mix into. */
+  --color-accent-blue: #7b9cff;
+  --color-accent-violet: #a78bff;
+  --color-accent-violet-text: #c4b2ff;
+  --color-accent-green-text: #7fe0a4;
+  --color-accent-amber-text: #f2b872;
+
+  /* Every practice accent stays; only the deep labels invert, since "darker
+     than the accent" is what makes a label readable on a pale tint and the
+     exact opposite of what a dark tint needs. */
+  --color-accent-mint-text: #6fd9a4;
+  --color-accent-rose-text: #f299bd;
+  --color-accent-indigo-text: #c0a3f5;
+  --color-accent-turquoise-text: #7fd0dd;
+  --color-accent-orchid: #c98ed4;
+  --color-accent-cyan-text: #7fd0de;
+  --color-accent-teal-text: #6fcfc6;
+  --color-accent-steel-text: #8cc2ec;
+  --color-accent-coral-text: #f0938e;
+  --color-accent-gold: #dcae6f;
+  --color-score-verygood: #8fbde8;
+  --color-score-good: #dcbb7a;
+  --color-soft-amber: #33290f;
+  --color-soft-peach: #33260f;
+  --color-soft-lavender: #1f1d3d;
+  --color-valid-border: #4d8f5c;
+  --color-blob-orchid: #2c1f33;
+  --color-chat-bubble: #1b2440;
+
+  --color-tone-mix: #ffffff;
+  --color-chip-bg: rgba(255, 255, 255, 0.08);
+  --color-hover-wash: rgba(255, 255, 255, 0.06);
 }
 
 /* CSS reset & app-wide defaults */

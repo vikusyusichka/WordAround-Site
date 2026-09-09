@@ -76,8 +76,8 @@ const sectionTitle = 'text-[15px] font-bold text-(--color-primary-blue-dark)';
 const pill = (selected: boolean) =>
   `h-11 rounded-[18px] border px-4 text-[14px] font-bold transition-all focus-visible:outline-none ${
     selected
-      ? 'border-transparent bg-[#2b5cfa] text-white shadow-[0_4px_10px_rgba(43,92,250,0.22)]'
-      : 'border-[#2b5cfa]/22 bg-[#2b5cfa]/10 text-(--color-primary-blue-dark) hover:brightness-[0.98]'
+      ? 'border-transparent bg-(--color-primary-blue) text-white shadow-[0_4px_10px_rgba(43,92,250,0.22)]'
+      : 'border-(--color-primary-blue)/22 bg-(--color-primary-blue)/10 text-(--color-primary-blue-dark) hover:brightness-[0.98]'
   }`;
 
 function AddTextScreen() {
@@ -293,7 +293,7 @@ function AddTextScreen() {
         </div>
 
         {source === 'photo' && (
-          <div className="flex flex-col gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white p-4">
+          <div className="flex flex-col gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) p-4">
             <p className="text-[13px] font-medium text-(--color-text-secondary)">
               {t('reading.addText.import.photoHint')}
             </p>
@@ -308,7 +308,7 @@ function AddTextScreen() {
               type="button"
               disabled={importBusy}
               onClick={() => imageInputRef.current?.click()}
-              className="h-11 w-fit rounded-2xl border border-(--color-primary-blue)/35 bg-white px-5 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 disabled:opacity-60"
+              className="h-11 w-fit rounded-2xl border border-(--color-primary-blue)/35 bg-(--color-surface) px-5 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 disabled:opacity-60"
             >
               {importBusy
                 ? t('reading.addText.import.recognizing', {
@@ -320,7 +320,7 @@ function AddTextScreen() {
         )}
 
         {source === 'pdf' && (
-          <div className="flex flex-col gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white p-4">
+          <div className="flex flex-col gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) p-4">
             <p className="text-[13px] font-medium text-(--color-text-secondary)">
               {t('reading.addText.import.pdfHint')}
             </p>
@@ -335,7 +335,7 @@ function AddTextScreen() {
               type="button"
               disabled={importBusy}
               onClick={() => pdfInputRef.current?.click()}
-              className="h-11 w-fit rounded-2xl border border-(--color-primary-blue)/35 bg-white px-5 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 disabled:opacity-60"
+              className="h-11 w-fit rounded-2xl border border-(--color-primary-blue)/35 bg-(--color-surface) px-5 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 disabled:opacity-60"
             >
               {importBusy
                 ? t('reading.addText.import.reading')
@@ -345,7 +345,7 @@ function AddTextScreen() {
         )}
 
         {(source === 'generate' || source === 'explore') && (
-          <div className="flex flex-col gap-3 rounded-2xl border border-(--color-auth-field-border) bg-white p-4">
+          <div className="flex flex-col gap-3 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) p-4">
             <input
               value={genTopic}
               onChange={(e) => setGenTopic(e.target.value)}
@@ -354,7 +354,7 @@ function AddTextScreen() {
                   ? 'reading.addText.import.topicPlaceholder'
                   : 'reading.addText.import.explorePlaceholder',
               )}
-              className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[14px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+              className="w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[14px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
             />
             {source === 'generate' && (
               <>
@@ -399,7 +399,7 @@ function AddTextScreen() {
                   )}
             </button>
             {contentSource === 'explore' && sourceMeta['source.originalSourceURL'] && (
-              <p className="text-[12px] font-medium text-[#15803D]">
+              <p className="text-[12px] font-medium text-(--color-accent-green-text)">
                 {t('reading.addText.import.exploredFrom')}{' '}
                 <a
                   href={sourceMeta['source.originalSourceURL']}
@@ -426,7 +426,7 @@ function AddTextScreen() {
           onChange={(e) => setContent(e.target.value)}
           placeholder={t('reading.addText.pastePlaceholder')}
           rows={8}
-          className="w-full resize-y rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-medium leading-relaxed text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+          className="w-full resize-y rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[15px] font-medium leading-relaxed text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
         />
 
         {/* Stats chips */}
@@ -441,7 +441,7 @@ function AddTextScreen() {
             ~{estimatedReadingMinutes(wordCount)} {t('reading.addText.stats.min')}
           </span>
           {content.trim().length > 0 && (
-            <span className="rounded-full bg-[#21A8BD]/12 px-2.5 py-1 text-[12px] font-bold text-[#21A8BD]">
+            <span className="rounded-full bg-(--color-accent-cyan)/12 px-2.5 py-1 text-[12px] font-bold text-(--color-accent-cyan)">
               {t('reading.addText.stats.detected', { level: detected })}
             </span>
           )}
@@ -454,7 +454,7 @@ function AddTextScreen() {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             placeholder={t('reading.addText.titlePlaceholder')}
-            className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+            className="w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
           />
         </label>
 
@@ -546,7 +546,7 @@ function AddTextScreen() {
             {READING_ASSISTANCE_KEYS.map((key) => (
               <label
                 key={key}
-                className="flex cursor-pointer items-center justify-between rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3"
+                className="flex cursor-pointer items-center justify-between rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3"
               >
                 <span className="text-[14px] font-semibold text-(--color-primary-blue-dark)">
                   {t(`reading.assistance.${key}`)}
@@ -575,7 +575,7 @@ function AddTextScreen() {
             type="button"
             onClick={() => handleSave(false)}
             disabled={saveItem.isPending}
-            className="h-12 flex-1 rounded-2xl border border-(--color-primary-blue)/35 bg-white text-[15px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 disabled:opacity-60"
+            className="h-12 flex-1 rounded-2xl border border-(--color-primary-blue)/35 bg-(--color-surface) text-[15px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 disabled:opacity-60"
           >
             {t('reading.addText.save')}
           </button>

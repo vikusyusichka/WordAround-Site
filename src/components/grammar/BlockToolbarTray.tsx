@@ -79,7 +79,7 @@ export const BlockToolbarTray = ({ allowsQuiz = true, onAdd }: BlockToolbarTrayP
       <div
         role="toolbar"
         aria-label={t('writing.grammar.block.trayLabel')}
-        className="flex items-center gap-2 rounded-[18px] border border-white/60 bg-white/95 px-2.5 py-2 shadow-[0_5px_10px_rgba(0,0,0,0.05)]"
+        className="flex items-center gap-2 rounded-[18px] border border-(--color-surface)/60 bg-(--color-surface)/95 px-2.5 py-2 shadow-[0_5px_10px_rgba(0,0,0,0.05)]"
       >
         {/* Two things this markup is carrying.
 
@@ -119,7 +119,7 @@ export const BlockToolbarTray = ({ allowsQuiz = true, onAdd }: BlockToolbarTrayP
           {isMoreOpen && (
             <div
               role="menu"
-              className="absolute right-0 bottom-[calc(100%+8px)] z-30 grid w-[240px] grid-cols-2 gap-1 rounded-2xl border border-white bg-white p-2 shadow-[0_16px_40px_rgba(20,24,40,0.16)]"
+              className="absolute right-0 bottom-[calc(100%+8px)] z-30 grid w-[240px] grid-cols-2 gap-1 rounded-2xl border border-(--color-surface) bg-(--color-surface) p-2 shadow-[0_16px_40px_rgba(20,24,40,0.16)]"
             >
               {more.map((type) => (
                 <button

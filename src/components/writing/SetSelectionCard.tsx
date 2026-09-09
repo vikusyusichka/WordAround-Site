@@ -15,7 +15,7 @@ export const SetSelectionCard = ({ preview, wordsCountLabel, onClick }: SetSelec
   <button
     type="button"
     onClick={onClick}
-    className="flex w-full items-center gap-3 rounded-[22px] border border-white bg-white/95 p-3 text-left shadow-[0_4px_10px_rgba(0,0,0,0.045)] transition-transform hover:-translate-y-px active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-(--color-home-brand) md:rounded-[26px] md:p-4"
+    className="flex w-full items-center gap-3 rounded-[22px] border border-(--color-surface) bg-(--color-surface)/95 p-3 text-left shadow-[0_4px_10px_rgba(0,0,0,0.045)] transition-transform hover:-translate-y-px active:scale-[0.99] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-(--color-home-brand) md:rounded-[26px] md:p-4"
   >
     <div
       className="grid size-[48px] shrink-0 place-items-center rounded-full md:size-[58px]"

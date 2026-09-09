@@ -85,7 +85,7 @@ function SavedPracticeScreen() {
               reviewSession.level,
               t(MODE_TITLE_KEY[reviewSession.modeID] ?? 'nav.listening'),
             ]}
-            accentColor="#ED6699"
+            accentColor='var(--color-accent-rose)'
             onBack={() => setReviewSession(null)}
           />
         </div>
@@ -121,10 +121,10 @@ function SavedPracticeScreen() {
 
         {/* Continue card */}
         {continueSession && (
-          <section className="flex flex-col gap-3 rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+          <section className="flex flex-col gap-3 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
             <div className="flex items-center gap-3">
-              <span className="grid size-10 shrink-0 place-items-center rounded-2xl bg-[#ED6699]/12">
-                <Icon name="headphones" className="size-[20px] text-[#ED6699]" />
+              <span className="grid size-10 shrink-0 place-items-center rounded-2xl bg-(--color-accent-rose)/12">
+                <Icon name="headphones" className="size-[20px] text-(--color-accent-rose)" />
               </span>
               <div className="flex min-w-0 flex-col">
                 <span className="text-[11px] font-bold uppercase tracking-wide text-(--color-muted-text)">
@@ -143,7 +143,7 @@ function SavedPracticeScreen() {
               </span>
               <div className="h-[6px] w-full overflow-hidden rounded-full bg-(--color-goal-bg)">
                 <div
-                  className="h-full rounded-full bg-[#ED6699]"
+                  className="h-full rounded-full bg-(--color-accent-rose)"
                   style={{ width: `${Math.max(displayProgress(continueSession) * 100, 4)}%` }}
                 />
               </div>
@@ -166,7 +166,7 @@ function SavedPracticeScreen() {
               return (
                 <div
                   key={session.id}
-                  className="group relative flex flex-col gap-2.5 rounded-2xl border border-white bg-white/95 p-4 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
+                  className="group relative flex flex-col gap-2.5 rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 p-4 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
                 >
                   <span className="line-clamp-1 pr-8 text-[15px] font-bold text-(--color-primary-blue-dark)">
                     {session.title}
@@ -189,7 +189,7 @@ function SavedPracticeScreen() {
                   <button
                     type="button"
                     onClick={() => openSession(session)}
-                    className="h-10 w-fit rounded-2xl border border-[#ED6699]/50 bg-white px-5 text-[13px] font-semibold text-[#9E2E6B] transition-colors hover:bg-[#ED6699]/5"
+                    className="h-10 w-fit rounded-2xl border border-(--color-accent-rose)/50 bg-(--color-surface) px-5 text-[13px] font-semibold text-(--color-accent-rose-text) transition-colors hover:bg-(--color-accent-rose)/5"
                   >
                     {isInProgress ? t('listening.saved.continue') : t('listening.saved.review')}
                   </button>
@@ -197,7 +197,7 @@ function SavedPracticeScreen() {
                     type="button"
                     onClick={() => setDeleteTarget(session)}
                     aria-label={t('listening.saved.delete')}
-                    className="absolute right-3 top-3 grid size-8 place-items-center rounded-full text-(--color-cs-text-muted) opacity-0 transition-opacity hover:bg-black/[0.04] hover:text-(--color-cs-red) focus-visible:opacity-100 group-hover:opacity-100"
+                    className="absolute right-3 top-3 grid size-8 place-items-center rounded-full text-(--color-cs-text-muted) opacity-0 transition-opacity hover:bg-(--color-chip-bg) hover:text-(--color-cs-red) focus-visible:opacity-100 group-hover:opacity-100"
                   >
                     ✕
                   </button>

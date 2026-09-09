@@ -65,7 +65,7 @@ function SetDetailPage() {
         <button
           type="button"
           onClick={() => void navigate({ to: '/sets' })}
-          className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-primary-blue) focus-visible:outline-none"
+          className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-primary-blue) focus-visible:outline-none"
         >
           {t('sets.backToSets')}
         </button>
@@ -186,7 +186,7 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
 
       {/* Study area */}
       {state.cards.length === 0 ? (
-        <div className="mx-auto flex max-w-2xl flex-col items-center gap-4 rounded-3xl border border-white/80 bg-white/70 px-6 py-16 text-center shadow-[0_6px_16px_rgba(0,0,0,0.04)]">
+        <div className="mx-auto flex max-w-2xl flex-col items-center gap-4 rounded-3xl border border-(--color-surface)/80 bg-(--color-surface)/70 px-6 py-16 text-center shadow-[0_6px_16px_rgba(0,0,0,0.04)]">
           <span className="text-[16px] font-medium text-(--color-text-secondary)">
             {t('study.emptyPrompt')}
           </span>
@@ -239,7 +239,7 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
                 style={{ background: state.trackProgress ? theme.accent : 'rgba(0,0,0,0.15)' }}
               >
                 <span
-                  className="absolute top-0.5 left-0.5 size-6 rounded-full bg-white shadow transition-transform"
+                  className="absolute top-0.5 left-0.5 size-6 rounded-full bg-(--color-surface) shadow transition-transform"
                   style={{ transform: state.trackProgress ? 'translateX(20px)' : 'none' }}
                 />
               </button>
@@ -249,7 +249,7 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
                 type="button"
                 onClick={() => dispatch({ type: 'SHUFFLE' })}
                 aria-label={t('study.shuffle')}
-                className="grid size-10 place-items-center rounded-full hover:bg-black/[0.04] focus-visible:outline-none"
+                className="grid size-10 place-items-center rounded-full hover:bg-(--color-hover-wash) focus-visible:outline-none"
               >
                 <ArrowsClockwise size={18} weight="bold" />
               </button>
@@ -258,7 +258,7 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
                 type="button"
                 onClick={() => openEdit(card)}
                 aria-label={t('study.editCard')}
-                className="grid size-10 place-items-center rounded-full hover:bg-black/[0.04] focus-visible:outline-none"
+                className="grid size-10 place-items-center rounded-full hover:bg-(--color-hover-wash) focus-visible:outline-none"
               >
                 <PencilSimple size={18} weight="bold" />
               </button>

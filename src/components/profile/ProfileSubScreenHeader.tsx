@@ -27,7 +27,7 @@ export const ProfileSubScreenHeader = ({
         type="button"
         aria-label={backLabel}
         onClick={() => void navigate({ to: '/profile' })}
-        className="grid size-9 shrink-0 place-items-center rounded-full bg-white/[0.88] text-(--color-primary-blue-dark) shadow-[0_5px_10px_rgba(0,0,0,0.04)] transition-colors hover:bg-white focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+        className="grid size-9 shrink-0 place-items-center rounded-full bg-(--color-surface)/[0.88] text-(--color-primary-blue-dark) shadow-[0_5px_10px_rgba(0,0,0,0.04)] transition-colors hover:bg-(--color-surface) focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
       >
         <Icon name="chevron.left" className="size-[15px]" weight="bold" />
       </button>

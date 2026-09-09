@@ -187,7 +187,7 @@ export const EssayAssistanceModal = ({
                 {pickerOpen && (
                   <div
                     role="listbox"
-                    className="absolute left-0 right-0 top-full z-10 mt-1 flex max-h-[220px] flex-col gap-1 overflow-y-auto rounded-2xl border border-white bg-white p-2 shadow-[0_10px_24px_rgba(0,0,0,0.12)]"
+                    className="absolute left-0 right-0 top-full z-10 mt-1 flex max-h-[220px] flex-col gap-1 overflow-y-auto rounded-2xl border border-(--color-surface) bg-(--color-surface) p-2 shadow-[0_10px_24px_rgba(0,0,0,0.12)]"
                   >
                     {ESSAY_LANGUAGES.filter((l) => l.id !== targetLanguage.id).map((lang) => (
                       <button
@@ -240,7 +240,7 @@ export const EssayAssistanceModal = ({
               placeholder={placeholder}
               rows={2}
               autoFocus
-              className="min-h-[56px] w-full resize-y rounded-2xl border border-(--color-auth-field-border) bg-white px-3.5 py-2.5 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+              className="min-h-[56px] w-full resize-y rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-3.5 py-2.5 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
             />
 
             {/* Result / loading / error */}

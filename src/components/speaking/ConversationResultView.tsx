@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { Icon } from '@/components/primitives/Icon';
 import { StatBlobShape } from '@/components/home/blobs';
 import type { SpeakingFeedback, SpeakingFeedbackMetric } from '@/lib/speakingTypes';
+import { tint } from '@/lib/colorMix';
 
 interface ConversationResultViewProps {
   feedback: SpeakingFeedback;
@@ -20,21 +21,21 @@ interface ConversationResultViewProps {
   onBack: () => void;
 }
 
-const BLUE = '#2b5cfa';
+const BLUE = 'var(--color-primary-blue)';
 
 /* Per-metric colours, ported from ConversationResultView.colours(for:). The
    first four are fixed slots; debate extras are matched by title. */
 const SLOT_COLORS: { accent: string; blob: string }[] = [
-  { accent: '#2b5cfa', blob: '#d6e0fa' }, // grammar
-  { accent: '#29ba66', blob: '#d1e3d9' }, // pronunciation
-  { accent: '#f7a310', blob: '#f2dba1' }, // vocabulary
-  { accent: '#8a5ce0', blob: '#e6d6fa' }, // fluency
+  { accent: 'var(--color-primary-blue)', blob: 'var(--color-blob-blue)' }, // grammar
+  { accent: 'var(--color-green-accent)', blob: 'var(--color-blob-green)' }, // pronunciation
+  { accent: 'var(--color-orange-accent)', blob: 'var(--color-blob-yellow)' }, // vocabulary
+  { accent: 'var(--color-accent-indigo)', blob: 'var(--color-mode-blob-mauve)' }, // fluency
 ];
 
 const EXTRA_COLORS: Record<string, { accent: string; blob: string }> = {
-  'argument quality': { accent: '#ed6699', blob: '#ebd1de' },
-  persuasiveness: { accent: '#d94785', blob: '#ebd1de' },
-  structure: { accent: '#9e4da8', blob: '#ebd6f2' },
+  'argument quality': { accent: 'var(--color-accent-rose)', blob: 'var(--color-blob-pink)' },
+  persuasiveness: { accent: 'var(--color-accent-magenta)', blob: 'var(--color-blob-pink)' },
+  structure: { accent: 'var(--color-accent-orchid)', blob: 'var(--color-blob-orchid)' },
 };
 
 const colorForMetric = (metric: SpeakingFeedbackMetric, index: number) => {
@@ -49,7 +50,7 @@ const MetricCard = ({
   metric: SpeakingFeedbackMetric;
   colors: { accent: string; blob: string };
 }) => (
-  <div className="relative overflow-hidden rounded-[18px] border border-white/90 bg-white shadow-[0_4px_10px_rgba(0,0,0,0.05)]">
+  <div className="relative overflow-hidden rounded-[18px] border border-(--color-surface)/90 bg-(--color-surface) shadow-[0_4px_10px_rgba(0,0,0,0.05)]">
     <div className="pointer-events-none absolute -bottom-1.5 -right-1.5 h-12 w-[60px]">
       <StatBlobShape color={colors.blob} opacity={0.65} className="size-full" />
     </div>
@@ -97,7 +98,7 @@ export const ConversationResultView = ({
     <div className="flex flex-col gap-4">
       {/* Header */}
       <div className="flex flex-col items-center gap-2 text-center">
-        <span className="grid size-14 place-items-center rounded-full" style={{ background: `${accentColor}1F` }}>
+        <span className="grid size-14 place-items-center rounded-full" style={{ background: tint(accentColor, 12.2) }}>
           <Icon name="mic.fill" className="size-[26px]" style={{ color: accentColor }} />
         </span>
         <h2 className="text-[22px] font-extrabold text-(--color-primary-blue-dark)">
@@ -114,16 +115,16 @@ export const ConversationResultView = ({
       </div>
 
       {fallbackReason && (
-        <p className="rounded-2xl bg-[#F59E0B]/10 px-4 py-2 text-center text-[13px] font-medium text-[#B45309]">
+        <p className="rounded-2xl bg-(--color-accent-amber)/10 px-4 py-2 text-center text-[13px] font-medium text-(--color-accent-amber-text)">
           {fallbackReason}
         </p>
       )}
 
       {/* Overall score — ring + summary (ConversationScoreCardView). */}
-      <div className="flex items-center gap-5 rounded-[22px] bg-white/96 p-5 shadow-[0_9px_16px_rgba(0,0,0,0.05)]">
+      <div className="flex items-center gap-5 rounded-[22px] bg-(--color-surface)/96 p-5 shadow-[0_9px_16px_rgba(0,0,0,0.05)]">
         <div className="relative grid size-[84px] shrink-0 place-items-center">
           <svg viewBox="0 0 80 80" className="size-full -rotate-90">
-            <circle cx="40" cy="40" r="34" fill="none" stroke={`${BLUE}1A`} strokeWidth="8" />
+            <circle cx="40" cy="40" r="34" fill="none" stroke={tint(BLUE, 10.2)} strokeWidth="8" />
             <circle
               cx="40"
               cy="40"
@@ -165,7 +166,7 @@ export const ConversationResultView = ({
             {t('speaking.result.corrections')}
           </h3>
           {feedback.corrections.map((c, i) => (
-            <div key={i} className="flex flex-col gap-1 rounded-[18px] bg-white/95 p-3.5 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+            <div key={i} className="flex flex-col gap-1 rounded-[18px] bg-(--color-surface)/95 p-3.5 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
               <p className="text-[13px] font-medium text-(--color-text-secondary) line-through">{c.originalText}</p>
               <p className="text-[14px] font-semibold" style={{ color: accentColor }}>{c.correctedText}</p>
               {c.explanation && (
@@ -178,7 +179,7 @@ export const ConversationResultView = ({
 
       {/* Transcript */}
       {feedback.transcript && (
-        <details className="rounded-2xl bg-white/95 px-4 py-3 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+        <details className="rounded-2xl bg-(--color-surface)/95 px-4 py-3 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
           <summary className="cursor-pointer text-[13px] font-bold text-(--color-primary-blue-dark)">
             {t('speaking.result.transcript')}
           </summary>

@@ -45,9 +45,9 @@ export const Route = createFileRoute('/_authed/practice/reading/speed/')({
 });
 
 const RATING_COLOR: Record<string, string> = {
-  excellent: '#22C55E',
+  excellent: 'var(--color-accent-green)',
   balanced: 'var(--color-primary-blue)',
-  fast: '#F59E0B',
+  fast: 'var(--color-accent-amber)',
   tooSlow: 'var(--color-cs-red)',
 };
 
@@ -248,7 +248,7 @@ function SpeedReadingScreen() {
                 {savedItems.slice(0, 5).map((item) => (
                   <div
                     key={item.id}
-                    className="flex items-center justify-between rounded-2xl border border-white bg-white/95 px-4 py-3 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
+                    className="flex items-center justify-between rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 px-4 py-3 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
                   >
                     <span className="text-[14px] font-semibold text-(--color-primary-blue-dark)">
                       {item.title}
@@ -266,7 +266,7 @@ function SpeedReadingScreen() {
 
         {screen === 'session' && session.phase === 'countdown' && (
           <div className="grid place-items-center py-24">
-            <span className="text-[96px] font-extrabold text-[#F26B66]">
+            <span className="text-[96px] font-extrabold text-(--color-accent-coral)">
               {session.countdownValue}
             </span>
           </div>
@@ -295,14 +295,14 @@ function SpeedReadingScreen() {
             </div>
             <div className="h-[5px] w-full overflow-hidden rounded-full bg-(--color-goal-bg)">
               <div
-                className="h-full rounded-full bg-[#F26B66] transition-[width]"
+                className="h-full rounded-full bg-(--color-accent-coral) transition-[width]"
                 style={{
                   width: `${((session.chunkIndex + 1) / Math.max(session.chunks.length, 1)) * 100}%`,
                 }}
               />
             </div>
 
-            <div className="rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)] md:p-6">
+            <div className="rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)] md:p-6">
               <p
                 className="font-medium leading-relaxed text-(--color-primary-blue-dark)"
                 style={{ fontSize: `${16 * session.fontScale}px` }}
@@ -318,28 +318,28 @@ function SpeedReadingScreen() {
                   onClick={() => dispatch({ type: 'PREVIOUS_CHUNK' })}
                   disabled={session.chunkIndex === 0}
                   aria-label={t('reading.speed.previous')}
-                  className="grid size-11 place-items-center rounded-2xl border border-(--color-auth-field-border) bg-white disabled:opacity-40"
+                  className="grid size-11 place-items-center rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) disabled:opacity-40"
                 >
                   <Icon name="arrow.left" className="size-[16px] text-(--color-text-secondary)" />
                 </button>
                 <button
                   type="button"
                   onClick={() => dispatch({ type: 'TOGGLE_PAUSE' })}
-                  className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[13px] font-semibold text-(--color-text-secondary)"
+                  className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[13px] font-semibold text-(--color-text-secondary)"
                 >
                   {session.paused ? t('reading.speed.resume') : t('reading.speed.pause')}
                 </button>
                 <button
                   type="button"
                   onClick={() => dispatch({ type: 'FONT_DELTA', delta: -0.1 })}
-                  className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-3 text-[13px] font-bold text-(--color-text-secondary)"
+                  className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-3 text-[13px] font-bold text-(--color-text-secondary)"
                 >
                   A−
                 </button>
                 <button
                   type="button"
                   onClick={() => dispatch({ type: 'FONT_DELTA', delta: 0.1 })}
-                  className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-3 text-[15px] font-bold text-(--color-text-secondary)"
+                  className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-3 text-[15px] font-bold text-(--color-text-secondary)"
                 >
                   A+
                 </button>
@@ -382,7 +382,7 @@ function SpeedReadingScreen() {
 
         {screen === 'session' && session.phase === 'results' && session.result && (
           <div className="flex flex-col gap-4">
-            <div className="flex flex-col items-center gap-2 rounded-3xl border border-white bg-white/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+            <div className="flex flex-col items-center gap-2 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
               <span
                 className="rounded-full px-3 py-1 text-[13px] font-bold"
                 style={{
@@ -437,7 +437,7 @@ function SpeedReadingScreen() {
               <button
                 type="button"
                 onClick={() => setScreen('setup')}
-                className="h-12 flex-1 rounded-2xl border border-(--color-auth-field-border) bg-white text-[15px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-black/[0.03]"
+                className="h-12 flex-1 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) text-[15px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash)"
               >
                 {t('reading.speed.backToSetup')}
               </button>

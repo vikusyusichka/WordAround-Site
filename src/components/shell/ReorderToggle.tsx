@@ -27,8 +27,8 @@ export const ReorderToggle = ({ isEditing, disabled = false, onToggle }: Reorder
       title={label}
       className={`flex h-11 items-center gap-2 rounded-2xl px-3.5 text-[15px] font-semibold shadow-[0_2px_8px_rgba(0,0,0,0.05)] transition-colors disabled:opacity-40 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none ${
         isEditing
-          ? 'bg-(--color-primary-blue) text-white'
-          : 'bg-white/90 text-(--color-text-secondary) hover:bg-white'
+          ? 'bg-(--color-primary-blue-solid) text-white'
+          : 'bg-(--color-surface-card) text-(--color-text-secondary) hover:brightness-110'
       }`}
     >
       {isEditing ? <Check size={17} weight="bold" /> : <PencilSimple size={17} weight="bold" />}

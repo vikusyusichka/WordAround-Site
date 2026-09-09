@@ -184,7 +184,7 @@ export const EssaysScreen = () => {
               type="button"
               onClick={() => dispatch({ type: 'RESET_ESSAY' })}
               disabled={state.wordCount === 0}
-              className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[14px] font-semibold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 disabled:opacity-60 focus-visible:outline-none md:h-12 md:px-5 md:text-[15px]"
+              className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[14px] font-semibold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 disabled:opacity-60 focus-visible:outline-none md:h-12 md:px-5 md:text-[15px]"
             >
               {t('writing.essays.editor.reset')}
             </button>

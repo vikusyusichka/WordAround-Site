@@ -6,6 +6,7 @@
    `disabled` dims the card, drops the arrow and disables the click. */
 import { StatBlobShape } from '@/components/home/blobs';
 import { Icon } from '@/components/primitives/Icon';
+import { tint } from '@/lib/colorMix';
 
 interface PracticeModeCardProps {
   title: string;
@@ -30,7 +31,7 @@ export const PracticeModeCard = ({
 }: PracticeModeCardProps) => {
   const inner = (
     <div
-      className={`relative flex h-full w-full flex-col overflow-hidden rounded-(--radius-mode-card) border border-white/92 bg-white p-(--spacing-mode-card-pad) text-left shadow-[0_4px_10px_rgba(0,0,0,0.055)] min-h-(--size-mode-card-min-h) ${
+      className={`relative flex h-full w-full flex-col overflow-hidden rounded-(--radius-mode-card) border border-(--color-surface-border) bg-(--color-surface-card) p-(--spacing-mode-card-pad) text-left shadow-[0_4px_10px_var(--shadow-color-fc)] min-h-(--size-mode-card-min-h) ${
         disabled ? 'opacity-60' : ''
       }`}
     >
@@ -48,7 +49,7 @@ export const PracticeModeCard = ({
 
       <div
         className="grid size-(--size-mode-icon-circle) shrink-0 place-items-center rounded-full"
-        style={{ background: `${accentColor}1F` /* ~12% opacity */ }}
+        style={{ background: tint(accentColor, 12.2) }}
       >
         <Icon
           name={iconSystemName}
@@ -78,7 +79,7 @@ export const PracticeModeCard = ({
         <div className="mt-2.5 flex justify-end">
           <div
             className="grid size-(--size-mode-arrow-circle) place-items-center rounded-full"
-            style={{ background: `${accentColor}1F` }}
+            style={{ background: tint(accentColor, 12.2) }}
           >
             <Icon
               name="arrow.right"

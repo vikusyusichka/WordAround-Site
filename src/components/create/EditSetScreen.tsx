@@ -99,7 +99,7 @@ export const EditSetScreen = ({ set, onClose }: EditSetScreenProps) => {
           <button
             type="button"
             onClick={onClose}
-            className="h-14 rounded-[24px] bg-white px-6 text-[15px] font-semibold transition-colors hover:bg-black/[0.03] focus-visible:outline-none md:h-[66px]"
+            className="h-14 rounded-[24px] bg-(--color-surface) px-6 text-[15px] font-semibold transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none md:h-[66px]"
             style={{ color: theme.mutedTextColor }}
           >
             {t('sets.cancel')}

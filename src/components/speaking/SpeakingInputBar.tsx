@@ -71,7 +71,7 @@ export const SpeakingInputBar = ({
           }}
           disabled={disabled || isListening}
           placeholder={t('speaking.input.placeholder')}
-          className="h-12 flex-1 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-60"
+          className="h-12 flex-1 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-60"
         />
 
         <button

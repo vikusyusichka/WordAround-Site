@@ -26,7 +26,7 @@ export const SetItem = ({
   if (variant === 'tile') {
     return (
       <div
-        className="relative h-[178px] w-full overflow-hidden rounded-[22px] border border-white/95 shadow-[0_6px_10px_rgba(0,0,0,0.04)] md:rounded-[26px]"
+        className="relative h-[178px] w-full overflow-hidden rounded-[22px] border border-(--color-surface)/95 shadow-[0_6px_10px_rgba(0,0,0,0.04)] md:rounded-[26px]"
         style={{ background: item.backgroundColor }}
       >
         <div className="absolute inset-y-0 right-0 flex items-center">
@@ -54,7 +54,7 @@ export const SetItem = ({
             </span>
             <span
               className="truncate text-[14px] font-medium"
-              style={{ color: item.accentColor }}
+              style={{ color: item.accentTextColor ?? item.accentColor }}
             >
               {item.subtitle}
             </span>
@@ -66,7 +66,7 @@ export const SetItem = ({
 
   return (
     <div
-      className="relative h-[86px] w-full overflow-hidden rounded-[22px] border border-white/95 shadow-[0_6px_10px_rgba(0,0,0,0.04)] md:h-[104px] md:rounded-[30px]"
+      className="relative h-[86px] w-full overflow-hidden rounded-[22px] border border-(--color-surface)/95 shadow-[0_6px_10px_rgba(0,0,0,0.04)] md:h-[104px] md:rounded-[30px]"
       style={{ background: item.backgroundColor }}
     >
       {/* Decorative blob — right side. */}
@@ -95,7 +95,7 @@ export const SetItem = ({
           </span>
           <span
             className="truncate text-[13px] font-medium md:text-base"
-            style={{ color: item.accentColor }}
+            style={{ color: item.accentTextColor ?? item.accentColor }}
           >
             {item.subtitle}
           </span>
@@ -105,7 +105,7 @@ export const SetItem = ({
           {trailingText && (
             <span
               className="text-[12px] font-medium md:text-base"
-              style={{ color: item.accentColor }}
+              style={{ color: item.accentTextColor ?? item.accentColor }}
             >
               {trailingText}
             </span>

@@ -62,7 +62,7 @@ export const ProgressCard = ({
   const shell = (
     <div className="@container w-full">
       <div
-        className={`relative w-full overflow-hidden rounded-[22px] border border-white/95 shadow-[0_6px_10px_rgba(0,0,0,0.035)] @min-[420px]:rounded-[30px] ${heightClass}`}
+        className={`relative w-full overflow-hidden rounded-[22px] border border-(--color-surface)/95 shadow-[0_6px_10px_rgba(0,0,0,0.035)] @min-[420px]:rounded-[30px] ${heightClass}`}
         style={{ background: item.backgroundColor }}
       >
         {/* Decorative blob — top-trailing, overshoots the right edge. */}

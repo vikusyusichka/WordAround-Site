@@ -141,7 +141,7 @@ export const ExpandedCard = ({ open, state, theme, dispatch, onClose }: Expanded
           speak(text, lang);
         }}
         aria-label={t('study.speak')}
-        className="absolute right-5 bottom-5 grid size-12 place-items-center rounded-full hover:bg-black/[0.04] focus-visible:outline-none lg:right-8 lg:bottom-8"
+        className="absolute right-5 bottom-5 grid size-12 place-items-center rounded-full hover:bg-(--color-hover-wash) focus-visible:outline-none lg:right-8 lg:bottom-8"
         style={{ color: theme.accent }}
       >
         <SpeakerHigh size={26} weight="fill" />
@@ -306,7 +306,7 @@ const ProgressSection = ({
 
   const counter = (count: number, label: string) => (
     <span
-      className="flex h-12 w-[72px] shrink-0 flex-col items-center justify-center rounded-full bg-white/95 shadow-[0_5px_10px_rgba(0,0,0,0.05)] lg:h-14 lg:w-[92px]"
+      className="flex h-12 w-[72px] shrink-0 flex-col items-center justify-center rounded-full bg-(--color-surface)/95 shadow-[0_5px_10px_rgba(0,0,0,0.05)] lg:h-14 lg:w-[92px]"
       style={{ border: '1px solid rgba(255,255,255,0.85)' }}
     >
       <span

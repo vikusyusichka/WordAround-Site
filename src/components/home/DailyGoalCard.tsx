@@ -50,7 +50,7 @@ export const DailyGoalCard = ({ onChange }: DailyGoalCardProps) => {
   };
 
   return (
-    <section className="flex w-full flex-col gap-4 rounded-[22px] border border-white/95 bg-white/85 p-5 shadow-[0_6px_10px_rgba(0,0,0,0.035)] md:rounded-[30px] md:p-6">
+    <section className="flex w-full flex-col gap-4 rounded-[22px] border border-(--color-surface-border) bg-(--color-surface-card) p-5 shadow-[0_6px_10px_var(--shadow-color-card)] md:rounded-[30px] md:p-6">
       <div className="flex items-start justify-between gap-3">
         <div className="flex flex-col gap-1">
           <h2 className="text-[17px] font-bold text-(--color-primary-blue-dark) md:text-[21px]">
@@ -88,7 +88,7 @@ export const DailyGoalCard = ({ onChange }: DailyGoalCardProps) => {
                   className={`flex items-center gap-2 rounded-2xl border px-3 py-2.5 text-left text-[14px] font-semibold transition-colors focus-visible:outline-none ${
                     isOpen
                       ? 'border-(--color-primary-blue) bg-(--color-home-nav-sel-bg) text-(--color-primary-blue)'
-                      : 'border-(--color-auth-field-border) bg-white text-(--color-cs-text-muted) hover:bg-black/[0.02]'
+                      : 'border-(--color-auth-field-border) bg-(--color-cs-field) text-(--color-cs-text-muted) hover:bg-(--color-hover-wash)'
                   }`}
                 >
                   <Icon name={CATEGORY_ICON[skill]} className="size-[18px] shrink-0" />
@@ -108,7 +108,7 @@ export const DailyGoalCard = ({ onChange }: DailyGoalCardProps) => {
                   key={target}
                   type="button"
                   onClick={() => commit({ skill: pending, target })}
-                  className="rounded-full bg-(--color-primary-blue) px-4 py-2 text-[14px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
+                  className="rounded-full bg-(--color-primary-blue-solid) px-4 py-2 text-[14px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
                 >
                   {target} {t(pending === 'writing' ? 'units.words' : 'units.min')}
                 </button>
@@ -126,7 +126,7 @@ const ChosenGoal = ({ goal }: { goal: DailyGoal }) => {
 
   return (
     <div className="flex items-center gap-3 rounded-2xl bg-(--color-home-nav-sel-bg) px-4 py-3">
-      <span className="grid size-10 shrink-0 place-items-center rounded-full bg-white">
+      <span className="grid size-10 shrink-0 place-items-center rounded-full bg-(--color-cs-field)">
         <Icon
           name={CATEGORY_ICON[goal.skill]}
           className="size-[18px] text-(--color-primary-blue)"

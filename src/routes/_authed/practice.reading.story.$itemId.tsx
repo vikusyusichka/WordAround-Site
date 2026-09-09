@@ -219,14 +219,14 @@ function StorySession({
         {chapter && (
           <div className="h-[5px] w-full overflow-hidden rounded-full bg-(--color-goal-bg)">
             <div
-              className="h-full rounded-full bg-[#ED6699] transition-[width]"
+              className="h-full rounded-full bg-(--color-accent-rose) transition-[width]"
               style={{ width: `${Math.max(progress.overallProgress * 100, 4)}%` }}
             />
           </div>
         )}
 
         {chapter && isComplete && (
-          <div className="flex flex-col items-center gap-3 rounded-3xl border border-white bg-white/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+          <div className="flex flex-col items-center gap-3 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
             <span className="text-[22px] font-extrabold text-(--color-primary-blue-dark)">
               {t('reading.story.completeTitle')}
             </span>
@@ -245,8 +245,8 @@ function StorySession({
 
         {chapter && !isComplete && phase === 'reading' && (
           <>
-            <div className="flex flex-col gap-2 rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)] md:p-6">
-              <span className="w-fit rounded-full bg-[#ED6699]/12 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-[#ED6699]">
+            <div className="flex flex-col gap-2 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)] md:p-6">
+              <span className="w-fit rounded-full bg-(--color-accent-rose)/12 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-(--color-accent-rose)">
                 {t('reading.story.chapterN', { n: chapter.chapterIndex })}
               </span>
               {readingParagraphs(chapter.text).map((paragraph, i) => (
@@ -291,7 +291,7 @@ function StorySession({
         {chapter && !isComplete && phase === 'choices' && (
           <div className="flex flex-col gap-3">
             {chapter.scorePercent !== undefined && (
-              <div className="flex items-center justify-between rounded-2xl border border-white bg-white/95 px-4 py-3 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+              <div className="flex items-center justify-between rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 px-4 py-3 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
                 <span className="text-[14px] font-semibold text-(--color-text-secondary)">
                   {t('reading.story.chapterScore')}
                 </span>
@@ -312,10 +312,10 @@ function StorySession({
                     type="button"
                     disabled={isGeneratingNext}
                     onClick={() => void chooseNext(choice.label)}
-                    className="flex items-center justify-between rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-left text-[15px] font-semibold text-(--color-primary-blue-dark) transition-colors hover:border-[#ED6699]/40 disabled:opacity-60"
+                    className="flex items-center justify-between rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-left text-[15px] font-semibold text-(--color-primary-blue-dark) transition-colors hover:border-(--color-accent-rose)/40 disabled:opacity-60"
                   >
                     {choice.label}
-                    <span className="text-[#ED6699]">→</span>
+                    <span className="text-(--color-accent-rose)">→</span>
                   </button>
                 ))}
                 {isGeneratingNext && (
@@ -332,14 +332,14 @@ function StorySession({
                   <button
                     type="button"
                     onClick={endStory}
-                    className="h-11 w-full rounded-2xl border border-(--color-auth-field-border) bg-white text-[14px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-black/[0.03]"
+                    className="h-11 w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) text-[14px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash)"
                   >
                     {t('reading.story.endStory')}
                   </button>
                 )}
               </>
             ) : (
-              <div className="flex flex-col items-center gap-3 rounded-3xl border border-white bg-white/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+              <div className="flex flex-col items-center gap-3 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
                 <span className="text-[22px] font-extrabold text-(--color-primary-blue-dark)">
                   {t('reading.story.completeTitle')}
                 </span>

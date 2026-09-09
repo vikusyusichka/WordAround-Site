@@ -276,12 +276,12 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
   };
 
   const secondaryButton =
-    'h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 disabled:opacity-60 focus-visible:outline-none md:text-[15px]';
+    'h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-(--color-surface) px-4 text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 disabled:opacity-60 focus-visible:outline-none md:text-[15px]';
 
   /* A note already in review gets the queue's purple, so the button reports a
      state rather than offering the same action twice. */
   const reviewButtonActive =
-    'h-11 rounded-2xl border border-[#7C5CFF]/35 bg-[#7C5CFF]/10 px-4 text-[14px] font-semibold text-[#5B3FD1] transition-colors hover:bg-[#7C5CFF]/20 disabled:opacity-60 focus-visible:outline-none md:text-[15px]';
+    'h-11 rounded-2xl border border-(--color-accent-violet)/35 bg-(--color-accent-violet)/10 px-4 text-[14px] font-semibold text-(--color-accent-violet-text) transition-colors hover:bg-(--color-accent-violet)/20 disabled:opacity-60 focus-visible:outline-none md:text-[15px]';
 
   return (
     <ContentContainer fluid>
@@ -295,7 +295,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
               onClick={() => dispatch({ type: 'TOGGLE_PINNED' })}
               aria-pressed={state.isPinned}
               aria-label={t(state.isPinned ? 'writing.grammar.unpin' : 'writing.grammar.pin')}
-              className={`grid size-[42px] place-items-center rounded-2xl border border-(--color-auth-field-border) bg-white transition-colors focus-visible:outline-none lg:size-[46px] ${state.isPinned ? 'text-(--color-primary-blue)' : 'text-(--color-muted-text)'}`}
+              className={`grid size-[42px] place-items-center rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) transition-colors focus-visible:outline-none lg:size-[46px] ${state.isPinned ? 'text-(--color-primary-blue)' : 'text-(--color-muted-text)'}`}
             >
               <Icon name="pin.fill" className="size-[18px]" />
             </button>
@@ -306,7 +306,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
               aria-label={t(
                 state.isFavorite ? 'writing.grammar.unfavorite' : 'writing.grammar.favorite',
               )}
-              className={`grid size-[42px] place-items-center rounded-2xl border border-(--color-auth-field-border) bg-white transition-colors focus-visible:outline-none lg:size-[46px] ${state.isFavorite ? 'text-[#F59E0B]' : 'text-(--color-muted-text)'}`}
+              className={`grid size-[42px] place-items-center rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) transition-colors focus-visible:outline-none lg:size-[46px] ${state.isFavorite ? 'text-(--color-accent-amber)' : 'text-(--color-muted-text)'}`}
             >
               <Icon name="star.fill" className="size-[18px]" />
             </button>
@@ -348,7 +348,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
             <button
               type="button"
               onClick={handleDelete}
-              className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[14px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-black/[0.03] focus-visible:outline-none md:text-[15px]"
+              className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[14px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none md:text-[15px]"
             >
               {isNew ? t('writing.grammar.form.cancel') : t('writing.grammar.editor.delete')}
             </button>
@@ -374,7 +374,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
           placeholder={t('writing.grammar.editor.titlePlaceholder')}
           autoFocus
           /* iOS titleFontSize: 21 on a phone, 26 on a regular width. */
-          className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[21px] font-bold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) lg:text-[26px]"
+          className="w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[21px] font-bold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) lg:text-[26px]"
         />
 
         <GrammarNoteTypePicker
@@ -473,7 +473,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
             aria-modal="true"
             aria-label={t('writing.grammar.templates.applyTitle', { title: pendingTemplate.title })}
             onClick={(e) => e.stopPropagation()}
-            className="flex w-full max-w-[440px] flex-col gap-4 rounded-[26px] bg-white p-6 shadow-[0_24px_60px_rgba(20,24,40,0.18)]"
+            className="flex w-full max-w-[440px] flex-col gap-4 rounded-[26px] bg-(--color-surface) p-6 shadow-[0_24px_60px_rgba(20,24,40,0.18)]"
           >
             <h2 className="text-[19px] font-bold text-(--color-primary-blue-dark)">
               {t('writing.grammar.templates.applyTitle', { title: pendingTemplate.title })}
@@ -485,14 +485,14 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
               <button
                 type="button"
                 onClick={() => setPendingTemplate(null)}
-                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none"
               >
                 {t('common.cancel')}
               </button>
               <button
                 type="button"
                 onClick={() => applyTemplate(pendingTemplate, 'append')}
-                className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white px-5 text-[15px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 focus-visible:outline-none"
+                className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 focus-visible:outline-none"
               >
                 {t('writing.grammar.templates.applyAppend')}
               </button>
@@ -531,7 +531,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
             role="alertdialog"
             aria-modal="true"
             aria-label={t('writing.grammar.editor.unsavedTitle')}
-            className="flex w-full max-w-[440px] flex-col gap-4 rounded-[26px] bg-white p-6 shadow-[0_24px_60px_rgba(20,24,40,0.18)]"
+            className="flex w-full max-w-[440px] flex-col gap-4 rounded-[26px] bg-(--color-surface) p-6 shadow-[0_24px_60px_rgba(20,24,40,0.18)]"
           >
             <h2 className="text-[19px] font-bold text-(--color-primary-blue-dark)">
               {t('writing.grammar.editor.unsavedTitle')}
@@ -543,7 +543,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
               <button
                 type="button"
                 onClick={() => blocker.reset()}
-                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none"
               >
                 {t('common.cancel')}
               </button>
@@ -553,7 +553,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
                   savedRef.current = true;
                   blocker.proceed();
                 }}
-                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-cs-red) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-cs-red) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none"
               >
                 {t('writing.grammar.editor.discard')}
               </button>

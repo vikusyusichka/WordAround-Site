@@ -39,7 +39,7 @@ export const WriteWordsControls = ({
             type="button"
             onClick={onHint}
             disabled={!isHintAvailable}
-            className="flex h-12 items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 disabled:opacity-60 focus-visible:outline-none"
+            className="flex h-12 items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 disabled:opacity-60 focus-visible:outline-none"
           >
             <Icon name="lightbulb" className="size-[18px]" />
             {t('writing.writeWords.hint')}
@@ -51,7 +51,7 @@ export const WriteWordsControls = ({
             type="button"
             onClick={onSkip}
             disabled={!canSkip}
-            className="flex h-12 items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 disabled:opacity-60 focus-visible:outline-none"
+            className="flex h-12 items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 disabled:opacity-60 focus-visible:outline-none"
           >
             <Icon name="arrow.right" className="size-[18px]" />
             {t('writing.writeWords.skip')}

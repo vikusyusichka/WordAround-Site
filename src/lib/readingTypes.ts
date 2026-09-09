@@ -27,8 +27,8 @@ export const READING_MENU_ITEMS: ReadingMenuItemDef[] = [
     titleKey: 'reading.menu.myTexts.title',
     subtitleKey: 'reading.menu.myTexts.subtitle',
     iconSystemName: 'doc.text.fill',
-    accentColor: '#21A8BD',
-    blobColor: '#CCF0F5',
+    accentColor: 'var(--color-accent-cyan)',
+    blobColor: 'var(--color-mode-blob-cyan)',
     enabled: true,
   },
   {
@@ -36,8 +36,8 @@ export const READING_MENU_ITEMS: ReadingMenuItemDef[] = [
     titleKey: 'reading.menu.fromSets.title',
     subtitleKey: 'reading.menu.fromSets.subtitle',
     iconSystemName: 'rectangle.stack.fill',
-    accentColor: '#F7A310',
-    blobColor: '#F2DBA1',
+    accentColor: 'var(--color-orange-accent)',
+    blobColor: 'var(--color-blob-yellow)',
     enabled: true,
   },
   {
@@ -45,8 +45,8 @@ export const READING_MENU_ITEMS: ReadingMenuItemDef[] = [
     titleKey: 'reading.menu.storyMode.title',
     subtitleKey: 'reading.menu.storyMode.subtitle',
     iconSystemName: 'books.vertical.fill',
-    accentColor: '#ED6699',
-    blobColor: '#FADBE7',
+    accentColor: 'var(--color-accent-rose)',
+    blobColor: 'var(--color-mode-blob-pink)',
     enabled: true,
   },
   {
@@ -54,8 +54,8 @@ export const READING_MENU_ITEMS: ReadingMenuItemDef[] = [
     titleKey: 'reading.menu.speedReading.title',
     subtitleKey: 'reading.menu.speedReading.subtitle',
     iconSystemName: 'bolt.fill',
-    accentColor: '#F26B66',
-    blobColor: '#FAD9D7',
+    accentColor: 'var(--color-accent-coral)',
+    blobColor: 'var(--color-mode-blob-coral)',
     enabled: true,
   },
 ];
@@ -142,6 +142,6 @@ export const READING_TODAY_GOAL: HomeSetPreviewItem = {
   titleColor: 'var(--color-primary-blue-dark)',
   valueColor: 'var(--color-primary-blue-dark)',
   subtitleColor: 'var(--color-text-secondary)',
-  iconBackground: '#ffffff',
-  blobColor: '#D1DCFA',
+  iconBackground: 'var(--color-card-white)',
+  blobColor: 'var(--color-mode-blob-blue)',
 };

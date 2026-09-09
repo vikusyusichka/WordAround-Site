@@ -35,11 +35,11 @@ export const ReadingTappableText = memo(
             const isVocab = vocabularyTerms.length > 0 && isVocabularyTerm(token.text, vocabularyTerms);
             const isUnknown = highlightUnknownWords && isHighlightableWord(token.text);
             const cls = isSelected
-              ? 'bg-[#21A8BD]/30 rounded'
+              ? 'bg-(--color-accent-cyan)/30 rounded'
               : isVocab
-                ? 'bg-[#F7A310]/20 rounded'
+                ? 'bg-(--color-orange-accent)/20 rounded'
                 : isUnknown
-                  ? 'bg-[#21A8BD]/10 rounded'
+                  ? 'bg-(--color-accent-cyan)/10 rounded'
                   : '';
             return (
               <button

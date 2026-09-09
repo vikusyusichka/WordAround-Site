@@ -155,7 +155,7 @@ function GrammarTopicDetail() {
               <button
                 type="button"
                 onClick={() => setReordering((v) => !v)}
-                className="flex h-9 shrink-0 items-center gap-1.5 rounded-full border border-(--color-auth-field-border) bg-white px-3 text-[13px] font-bold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+                className="flex h-9 shrink-0 items-center gap-1.5 rounded-full border border-(--color-auth-field-border) bg-(--color-surface) px-3 text-[13px] font-bold text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none"
               >
                 <Icon name="arrow.up.arrow.down" className="size-[13px]" />
                 {t(isReordering ? 'writing.grammar.reorder.done' : 'writing.grammar.reorder.start')}

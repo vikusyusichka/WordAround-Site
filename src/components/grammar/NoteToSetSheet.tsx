@@ -89,7 +89,7 @@ export const NoteToSetSheet = ({
         </div>
 
         {pairs.length === 0 ? (
-          <p className="rounded-2xl border border-(--color-auth-field-border) bg-white p-4 text-[14px] font-medium text-(--color-text-secondary)">
+          <p className="rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) p-4 text-[14px] font-medium text-(--color-text-secondary)">
             {t('writing.grammar.toSet.empty')}
           </p>
         ) : (
@@ -101,7 +101,7 @@ export const NoteToSetSheet = ({
               <input
                 value={title}
                 onChange={(e) => setTitle(e.target.value)}
-                className="h-11 w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+                className="h-11 w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
               />
             </label>
 
@@ -114,7 +114,7 @@ export const NoteToSetSheet = ({
                 return (
                   <label
                     key={pair.id}
-                    className="flex cursor-pointer items-center gap-3 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 transition-colors hover:bg-black/[0.02]"
+                    className="flex cursor-pointer items-center gap-3 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 transition-colors hover:bg-(--color-hover-wash)"
                   >
                     <input
                       type="checkbox"
@@ -147,7 +147,7 @@ export const NoteToSetSheet = ({
           <button
             type="button"
             onClick={onClose}
-            className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+            className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none"
           >
             {t('common.cancel')}
           </button>

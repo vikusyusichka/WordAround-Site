@@ -14,14 +14,15 @@ import { StartButton } from '@/components/practice/StartButton';
 import { PracticeRecorderBar } from '@/components/speaking/PracticeRecorderBar';
 import { useShadowing } from '@/hooks/useShadowing';
 import { SHADOWING_CATEGORIES, type ShadowingCategoryId } from '@/lib/shadowing';
+import { tint } from '@/lib/colorMix';
 
 export const Route = createFileRoute('/_authed/practice/speaking/shadowing/')({
   component: ShadowingScreen,
 });
 
 // Shadowing is the purple Speaking mode.
-const ACCENT = '#8A5CE0';
-const ACCENT_DARK = '#6438B8';
+const ACCENT = 'var(--color-accent-indigo)';
+const ACCENT_DARK = 'var(--color-accent-indigo-text)';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 const PHRASE_COUNT = 8;
 
@@ -177,7 +178,7 @@ function ShadowingSession({
         subtitle={t('speaking.shadowing.subtitle')}
         actions={
           s.total > 0 ? (
-            <span className="rounded-2xl bg-[#8A5CE0]/12 px-4 py-2 text-[14px] font-bold text-[#6438B8] tabular-nums">
+            <span className="rounded-2xl bg-(--color-accent-indigo)/12 px-4 py-2 text-[14px] font-bold text-(--color-accent-indigo-text) tabular-nums">
               {s.index + 1} / {s.total}
             </span>
           ) : undefined
@@ -189,7 +190,7 @@ function ShadowingSession({
           <button
             type="button"
             onClick={onBackToSetup}
-            className="text-[13px] font-semibold text-[#6438B8] hover:underline focus-visible:outline-none"
+            className="text-[13px] font-semibold text-(--color-accent-indigo-text) hover:underline focus-visible:outline-none"
           >
             ← {t('speaking.shadowing.changeSettings')}
           </button>
@@ -201,14 +202,14 @@ function ShadowingSession({
         </div>
 
         {s.isLoading && (
-          <p className="rounded-2xl bg-white/70 px-4 py-10 text-center text-[15px] font-medium text-(--color-text-secondary) shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
+          <p className="rounded-2xl bg-(--color-surface)/70 px-4 py-10 text-center text-[15px] font-medium text-(--color-text-secondary) shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
             {t('speaking.shadowing.loading')}
           </p>
         )}
 
         {!s.isLoading && s.error && (
-          <div className="flex flex-col items-center gap-3 rounded-2xl bg-white px-4 py-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
-            <Icon name="exclamationmark.triangle.fill" className="size-[22px] text-[#B45309]" />
+          <div className="flex flex-col items-center gap-3 rounded-2xl bg-(--color-surface) px-4 py-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
+            <Icon name="exclamationmark.triangle.fill" className="size-[22px] text-(--color-accent-amber-text)" />
             <span className="text-[14px] font-medium text-(--color-primary-blue-dark)">{s.error}</span>
             <button
               type="button"
@@ -223,8 +224,8 @@ function ShadowingSession({
 
         {!s.isLoading && !s.error && s.current && (
           <>
-            <div className="flex flex-col gap-3 rounded-2xl bg-white p-5 shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
-              <span className="w-fit rounded-full px-2.5 py-1 text-[11px] font-bold" style={{ background: `${ACCENT}14`, color: ACCENT }}>
+            <div className="flex flex-col gap-3 rounded-2xl bg-(--color-surface) p-5 shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
+              <span className="w-fit rounded-full px-2.5 py-1 text-[11px] font-bold" style={{ background: tint(ACCENT, 7.8), color: ACCENT }}>
                 {t('speaking.shadowing.phrase')}
               </span>
               <p className="text-[22px] font-bold leading-snug text-(--color-primary-blue-dark)">
@@ -234,7 +235,7 @@ function ShadowingSession({
                 <p className="text-[14px] font-medium text-(--color-text-secondary)">{s.current.translation}</p>
               )}
               {s.current.tip && (
-                <p className="flex items-start gap-2 rounded-xl bg-[#8A5CE0]/8 px-3 py-2 text-[13px] font-medium text-(--color-text-secondary)">
+                <p className="flex items-start gap-2 rounded-xl bg-(--color-accent-indigo)/8 px-3 py-2 text-[13px] font-medium text-(--color-text-secondary)">
                   <Icon name="lightbulb" className="mt-0.5 size-[14px] shrink-0" style={{ color: ACCENT }} />
                   {s.current.tip}
                 </p>
@@ -242,10 +243,10 @@ function ShadowingSession({
             </div>
 
             {s.recorder.error && (
-              <div className="flex items-center justify-between rounded-2xl bg-[#F59E0B]/10 px-4 py-2">
-                <span className="text-[13px] font-medium text-[#B45309]">{s.recorder.error}</span>
+              <div className="flex items-center justify-between rounded-2xl bg-(--color-accent-amber)/10 px-4 py-2">
+                <span className="text-[13px] font-medium text-(--color-accent-amber-text)">{s.recorder.error}</span>
                 <button type="button" onClick={s.recorder.clearError} aria-label={t('speaking.conversation.dismiss')}>
-                  <Icon name="xmark" className="size-[14px] text-[#B45309]" />
+                  <Icon name="xmark" className="size-[14px] text-(--color-accent-amber-text)" />
                 </button>
               </div>
             )}
@@ -266,7 +267,7 @@ function ShadowingSession({
                 type="button"
                 onClick={s.previous}
                 disabled={s.index === 0}
-                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue-dark) transition-colors hover:bg-black/[0.03] disabled:opacity-40"
+                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[14px] font-semibold text-(--color-primary-blue-dark) transition-colors hover:bg-(--color-hover-wash) disabled:opacity-40"
               >
                 ← {t('speaking.shadowing.previous')}
               </button>
@@ -283,7 +284,7 @@ function ShadowingSession({
         )}
 
         {!s.isLoading && !s.error && s.total > 0 && s.completedCount === s.total && (
-          <div className="flex flex-col items-center gap-3 rounded-2xl bg-white px-4 py-6 text-center shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
+          <div className="flex flex-col items-center gap-3 rounded-2xl bg-(--color-surface) px-4 py-6 text-center shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
             <Icon name="checkmark.seal.fill" className="size-[26px]" style={{ color: ACCENT }} />
             <span className="text-[16px] font-bold text-(--color-primary-blue-dark)">
               {t('speaking.shadowing.allDone')}

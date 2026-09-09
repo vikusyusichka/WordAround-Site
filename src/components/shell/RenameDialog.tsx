@@ -61,7 +61,7 @@ export const RenameDialog = ({
           e.preventDefault();
           submit();
         }}
-        className="flex w-full max-w-[420px] flex-col gap-4 rounded-[26px] bg-white p-6 shadow-[0_24px_60px_rgba(20,24,40,0.18)]"
+        className="flex w-full max-w-[420px] flex-col gap-4 rounded-[26px] bg-(--color-surface) p-6 shadow-[0_24px_60px_rgba(20,24,40,0.18)]"
       >
         <h2 className="text-[19px] font-bold text-(--color-primary-blue-dark)">{title}</h2>
 
@@ -75,7 +75,7 @@ export const RenameDialog = ({
             onChange={(e) => setValue(e.target.value)}
             autoFocus
             maxLength={120}
-            className="h-12 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+            className="h-12 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
           />
         </label>
 
@@ -84,14 +84,14 @@ export const RenameDialog = ({
             type="button"
             onClick={onCancel}
             disabled={isBusy}
-            className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+            className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) disabled:opacity-60 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
           >
             {t('common.cancel')}
           </button>
           <button
             type="submit"
             disabled={!canSave}
-            className="h-11 rounded-2xl bg-(--color-primary-blue) px-5 text-[15px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
+            className="h-11 rounded-2xl bg-(--color-primary-blue-solid) px-5 text-[15px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
           >
             {t('common.save')}
           </button>

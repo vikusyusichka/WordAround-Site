@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import { NOTE_TYPE_META } from '@/lib/grammarMeta';
+import { tint } from '@/lib/colorMix';
 import {
   filterNoteTemplates,
   filterTopicTemplates,
@@ -30,7 +31,7 @@ const pillClass = (selected: boolean) =>
   `h-9 rounded-full border px-3.5 text-[13px] font-semibold transition-colors ${
     selected
       ? 'border-(--color-primary-blue)/35 bg-(--color-primary-blue)/8 text-(--color-primary-blue-dark)'
-      : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
+      : 'border-(--color-auth-field-border) bg-(--color-surface) text-(--color-text-secondary)'
   }`;
 
 export const TemplateLibraryModal = ({
@@ -114,7 +115,7 @@ export const TemplateLibraryModal = ({
               value={query}
               onChange={(e) => setQuery(e.target.value)}
               placeholder={t('writing.grammar.templates.searchPlaceholder')}
-              className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[14px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+              className="w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[14px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
             />
 
             {/* Language pills */}
@@ -220,14 +221,14 @@ const CardShell = ({
   const { t } = useTranslation();
   return (
     <div
-      className={`rounded-2xl border bg-white p-4 transition-colors ${
+      className={`rounded-2xl border bg-(--color-surface) p-4 transition-colors ${
         expanded ? 'border-(--color-primary-blue)/35' : 'border-(--color-auth-field-border)'
       }`}
     >
       <button type="button" onClick={onToggle} className="flex w-full items-start gap-3 text-left">
         <span
           className="mt-0.5 grid size-10 shrink-0 place-items-center rounded-xl"
-          style={{ background: `${iconColor}1F` }}
+          style={{ background: tint(iconColor, 12.2) }}
         >
           <Icon name={icon} className="size-[19px]" style={{ color: iconColor }} />
         </span>

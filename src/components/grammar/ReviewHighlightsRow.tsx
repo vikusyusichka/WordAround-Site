@@ -39,7 +39,7 @@ export const ReviewHighlightsRow = ({
             key={item.id}
             type="button"
             onClick={() => onOpen(item)}
-            className="flex w-[230px] shrink-0 flex-col gap-2 rounded-[20px] border border-white bg-white/95 p-3.5 text-left shadow-[0_4px_10px_rgba(0,0,0,0.045)] transition-transform hover:-translate-y-px focus-visible:outline-none"
+            className="flex w-[230px] shrink-0 flex-col gap-2 rounded-[20px] border border-(--color-surface) bg-(--color-surface)/95 p-3.5 text-left shadow-[0_4px_10px_rgba(0,0,0,0.045)] transition-transform hover:-translate-y-px focus-visible:outline-none"
           >
             <span
               className="flex items-center gap-1.5 text-[10px] font-black uppercase tracking-wide"

@@ -150,7 +150,7 @@ function GrammarHome() {
             type="button"
             onClick={() => void navigate({ to: '/notes/settings' })}
             aria-label={t('writing.grammar.settings.title')}
-            className="grid size-11 place-items-center rounded-2xl border border-(--color-auth-field-border) bg-white text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+            className="grid size-11 place-items-center rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none"
           >
             <Icon name="gearshape.fill" className="size-5" />
           </button>
@@ -209,7 +209,7 @@ function GrammarHome() {
           <ReviewHighlightsRow
             title={t('writing.grammar.highlights.mistakesTitle')}
             subtitle={t('writing.grammar.highlights.mistakesSubtitle')}
-            accent="#F4729A"
+            accent='var(--color-accent-pink)'
             items={mistakeHighlights ?? []}
             onOpen={(item) =>
               item.noteId
@@ -225,7 +225,7 @@ function GrammarHome() {
         <ReviewHighlightsRow
           title={t('writing.grammar.highlights.quizzesTitle')}
           subtitle={t('writing.grammar.highlights.quizzesSubtitle')}
-          accent="#7C5CFF"
+          accent='var(--color-accent-violet)'
           items={quizHighlights ?? []}
           onOpen={(item) =>
             item.noteId

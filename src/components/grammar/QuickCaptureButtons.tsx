@@ -8,8 +8,10 @@
    screens, and three solid buttons in a row would have no primary at all.
 
    The label is a darkened mix of the same hue rather than the hue itself:
-   #4F7CFF and #F4729A are pill colours, and at button-label size on a light
-   fill neither clears 4.5:1. The icon keeps the full colour.
+   The blue and the rose are pill colours, and at button-label size on a light
+   fill neither clears 4.5:1. The icon keeps the full colour. What the hue is
+   darkened WITH is a variable, because on a dark ground it has to be
+   lightened instead.
 
    The tone travels as CSS variables because a hover colour cannot be an
    inline style. */
@@ -17,6 +19,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import { NOTE_TYPE_META } from '@/lib/grammarMeta';
+import { mix, tint } from '@/lib/colorMix';
 
 interface QuickCaptureButtonsProps {
   onQuickNote: () => void;
@@ -61,10 +64,10 @@ const QuickCaptureButton = ({ color, icon, label, onClick }: QuickCaptureButtonP
     style={
       {
         '--tone': color,
-        '--tone-text': `color-mix(in srgb, ${color} 58%, #0B1020)`,
-        '--tone-bg': `${color}1A`,
-        '--tone-hover': `${color}2E`,
-        '--tone-border': `${color}3D`,
+        '--tone-text': mix(color, 58, 'var(--color-tone-mix)'),
+        '--tone-bg': tint(color, 10.2),
+        '--tone-hover': tint(color, 18),
+        '--tone-border': tint(color, 23.9),
       } as React.CSSProperties
     }
     className="flex h-11 items-center gap-2 rounded-2xl border border-(--tone-border) bg-(--tone-bg) px-4 text-[14px] font-semibold text-(--tone-text) shadow-[0_2px_8px_rgba(0,0,0,0.04)] transition-colors hover:bg-(--tone-hover) focus-visible:ring-2 focus-visible:ring-(--tone) focus-visible:outline-none md:text-[15px]"

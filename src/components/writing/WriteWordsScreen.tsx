@@ -117,7 +117,7 @@ export const WriteWordsScreen = ({ setId }: WriteWordsScreenProps) => {
                 type="button"
                 onClick={() => setSettingsOpen(true)}
                 aria-label={t('writing.writeWords.settings.title')}
-                className="grid size-9 place-items-center rounded-full bg-white text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.06)] transition-transform hover:-translate-y-0.5"
+                className="grid size-9 place-items-center rounded-full bg-(--color-surface) text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.06)] transition-transform hover:-translate-y-0.5"
               >
                 <Icon name="gearshape" className="size-[18px]" />
               </button>
@@ -143,7 +143,7 @@ export const WriteWordsScreen = ({ setId }: WriteWordsScreenProps) => {
 
         {/* The whole exercise lives in one white card (iOS
             WriteWordsExerciseCardView): prompt → cells → input → controls. */}
-        <div className="flex flex-col gap-5 rounded-[28px] bg-white/96 px-6 py-8 shadow-[0_9px_16px_rgba(0,0,0,0.07)] md:rounded-[32px] md:px-8">
+        <div className="flex flex-col gap-5 rounded-[28px] bg-(--color-surface)/96 px-6 py-8 shadow-[0_9px_16px_rgba(0,0,0,0.07)] md:rounded-[32px] md:px-8">
           <WriteWordsCard displayTitle={displayTitle} displayWord={displayWord(state)} />
 
           {/* iOS WriteWordsAnswerInputView — a single centred text field with a
@@ -169,11 +169,11 @@ export const WriteWordsScreen = ({ setId }: WriteWordsScreenProps) => {
               spellCheck={false}
               disabled={isInteractionLocked(state)}
               aria-label={t('writing.writeWords.inputPlaceholder')}
-              className="h-14 w-full rounded-2xl border bg-white px-4 text-center text-[22px] font-bold text-(--color-primary-blue-dark) shadow-[0_2px_8px_rgba(0,0,0,0.035)] outline-none disabled:opacity-60"
+              className="h-14 w-full rounded-2xl border bg-(--color-surface) px-4 text-center text-[22px] font-bold text-(--color-primary-blue-dark) shadow-[0_2px_8px_rgba(0,0,0,0.035)] outline-none disabled:opacity-60"
               style={{
                 borderColor:
                   state.validation === 'correct'
-                    ? '#A1E0AB'
+                    ? 'var(--color-valid-border)'
                     : 'var(--color-auth-field-border)',
               }}
             />

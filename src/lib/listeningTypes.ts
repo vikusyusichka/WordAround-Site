@@ -27,7 +27,7 @@ export const LISTENING_MENU_ITEMS: ListeningMenuItemDef[] = [
     subtitleKey: 'listening.menu.fromText.subtitle',
     iconSystemName: 'headphones',
     accentColor: 'var(--color-primary-blue)',
-    blobColor: '#D1DCFA',
+    blobColor: 'var(--color-mode-blob-blue)',
     enabled: true,
   },
   {
@@ -35,8 +35,8 @@ export const LISTENING_MENU_ITEMS: ListeningMenuItemDef[] = [
     titleKey: 'listening.menu.importAudio.title',
     subtitleKey: 'listening.menu.importAudio.subtitle',
     iconSystemName: 'waveform.badge.plus',
-    accentColor: '#8C66EB',
-    blobColor: '#E6DBFA',
+    accentColor: 'var(--color-accent-purple)',
+    blobColor: 'var(--color-mode-blob-lilac)',
     enabled: true,
   },
   {
@@ -44,8 +44,8 @@ export const LISTENING_MENU_ITEMS: ListeningMenuItemDef[] = [
     titleKey: 'listening.menu.importVideo.title',
     subtitleKey: 'listening.menu.importVideo.subtitle',
     iconSystemName: 'film.stack',
-    accentColor: '#29A89E',
-    blobColor: '#D1F2ED',
+    accentColor: 'var(--color-accent-teal)',
+    blobColor: 'var(--color-mode-blob-teal)',
     enabled: true,
   },
   {
@@ -53,8 +53,8 @@ export const LISTENING_MENU_ITEMS: ListeningMenuItemDef[] = [
     titleKey: 'listening.menu.saved.title',
     subtitleKey: 'listening.menu.saved.subtitle',
     iconSystemName: 'bookmark.fill',
-    accentColor: '#ED6699',
-    blobColor: '#FADBE7',
+    accentColor: 'var(--color-accent-rose)',
+    blobColor: 'var(--color-mode-blob-pink)',
     enabled: true,
   },
 ];
@@ -216,6 +216,6 @@ export const LISTENING_TODAY_GOAL: HomeSetPreviewItem = {
   titleColor: 'var(--color-primary-blue-dark)',
   valueColor: 'var(--color-primary-blue-dark)',
   subtitleColor: 'var(--color-text-secondary)',
-  iconBackground: '#ffffff',
-  blobColor: '#D1DCFA',
+  iconBackground: 'var(--color-card-white)',
+  blobColor: 'var(--color-mode-blob-blue)',
 };

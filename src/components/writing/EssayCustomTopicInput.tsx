@@ -19,13 +19,13 @@ export const EssayCustomTopicInput = ({
   const canGenerate = value.trim().length > 0 && !isGenerating;
 
   return (
-    <div className="flex flex-col gap-3 rounded-2xl border border-white bg-white/95 p-4 shadow-[0_4px_10px_rgba(0,0,0,0.045)] md:p-5">
+    <div className="flex flex-col gap-3 rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 p-4 shadow-[0_4px_10px_rgba(0,0,0,0.045)] md:p-5">
       <textarea
         value={value}
         onChange={(e) => onChange(e.target.value)}
         placeholder={t('writing.essays.custom.placeholder')}
         rows={2}
-        className="min-h-[64px] w-full resize-y rounded-xl border border-(--color-auth-field-border) bg-white px-3.5 py-2.5 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+        className="min-h-[64px] w-full resize-y rounded-xl border border-(--color-auth-field-border) bg-(--color-surface) px-3.5 py-2.5 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
       />
       <div className="flex justify-end">
         <button

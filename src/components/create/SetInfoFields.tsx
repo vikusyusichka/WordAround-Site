@@ -26,7 +26,7 @@ export const SetInfoFields = ({ values, onChange, theme, children }: SetInfoFiel
   const { t } = useTranslation();
 
   const field =
-    'w-full rounded-2xl border bg-white px-4 text-[15px] font-semibold outline-none transition-colors';
+    'w-full rounded-2xl border bg-(--color-surface) px-4 text-[15px] font-semibold outline-none transition-colors';
   const fieldStyle = { borderColor: theme.softBorderColor, color: theme.titleColor };
   const labelStyle = { color: theme.titleColor };
   const counterStyle = { color: theme.mutedTextColor };

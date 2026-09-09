@@ -52,7 +52,7 @@ export const ImportCardsScreen = ({ theme, onCancel, onImport }: ImportCardsScre
             type="button"
             onClick={onCancel}
             aria-label={t('createSet.import.close')}
-            className="grid size-11 place-items-center rounded-full bg-white transition-colors hover:bg-black/[0.03] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+            className="grid size-11 place-items-center rounded-full bg-(--color-surface) transition-colors hover:bg-(--color-hover-wash) focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
             style={{ color: theme.titleColor, boxShadow: `0 4px 10px ${theme.shadowColor}` }}
           >
             <X size={18} weight="bold" />
@@ -68,7 +68,7 @@ export const ImportCardsScreen = ({ theme, onCancel, onImport }: ImportCardsScre
             rows={9}
             placeholder={t('createSet.import.placeholder')}
             aria-label={t('createSet.import.dataSection')}
-            className="w-full resize-y rounded-2xl border bg-white px-4 py-3 text-[15px] font-medium outline-none transition-colors"
+            className="w-full resize-y rounded-2xl border bg-(--color-surface) px-4 py-3 text-[15px] font-medium outline-none transition-colors"
             style={{ borderColor: theme.softBorderColor, color: theme.textColor }}
           />
         </CreateSection>
@@ -145,7 +145,7 @@ export const ImportCardsScreen = ({ theme, onCancel, onImport }: ImportCardsScre
           <button
             type="button"
             onClick={onCancel}
-            className="h-14 rounded-[24px] bg-white px-6 text-[15px] font-semibold transition-colors hover:bg-black/[0.03] focus-visible:outline-none md:h-[66px]"
+            className="h-14 rounded-[24px] bg-(--color-surface) px-6 text-[15px] font-semibold transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none md:h-[66px]"
             style={mutedStyle}
           >
             {t('createSet.cancel')}
@@ -206,7 +206,7 @@ const SeparatorGroup = <Id extends string>({
           onFocus={() => onSelect('custom')}
           placeholder={t('createSet.import.customPlaceholder')}
           aria-label={`${legend} — ${t('createSet.import.custom')}`}
-          className="h-10 w-24 rounded-xl border bg-white px-3 text-[15px] font-semibold outline-none transition-colors"
+          className="h-10 w-24 rounded-xl border bg-(--color-surface) px-3 text-[15px] font-semibold outline-none transition-colors"
           style={{ borderColor: theme.softBorderColor, color: theme.titleColor }}
         />
       </div>

@@ -210,7 +210,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
               value={title}
               onChange={(e) => setTitle(e.target.value)}
               placeholder={t('writing.grammar.quiz.sheet.titlePlaceholder')}
-              className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+              className="w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
             />
 
             {/* Mode */}
@@ -231,13 +231,13 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
                     className={`flex items-start gap-3 rounded-2xl border px-4 py-3 text-left transition-colors ${
                       selected
                         ? 'border-(--color-primary-blue)/35 bg-(--color-primary-blue)/8'
-                        : 'border-(--color-auth-field-border) bg-white'
+                        : 'border-(--color-auth-field-border) bg-(--color-surface)'
                     }`}
                   >
                     <span
                       className={`mt-0.5 grid size-[30px] shrink-0 place-items-center rounded-full ${
                         selected
-                          ? 'bg-(--color-primary-blue) text-white'
+                          ? 'bg-(--color-primary-blue-solid) text-white'
                           : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
                       }`}
                     >
@@ -278,7 +278,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
                     className={`h-10 flex-1 rounded-2xl border text-[15px] font-semibold transition-colors ${
                       c === count
                         ? 'border-(--color-primary-blue)/35 bg-(--color-primary-blue)/8 text-(--color-primary-blue-dark)'
-                        : 'border-(--color-auth-field-border) bg-white text-(--color-text-secondary)'
+                        : 'border-(--color-auth-field-border) bg-(--color-surface) text-(--color-text-secondary)'
                     }`}
                   >
                     {c}
@@ -305,7 +305,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
                       className={`flex items-center gap-2 rounded-2xl border px-3 py-2.5 text-left transition-colors ${
                         selected
                           ? 'border-(--color-primary-blue)/35 bg-(--color-primary-blue)/8'
-                          : 'border-(--color-auth-field-border) bg-white'
+                          : 'border-(--color-auth-field-border) bg-(--color-surface)'
                       }`}
                     >
                       <Icon
@@ -339,7 +339,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
                     {manualQuestions.map((q, i) => (
                       <li
                         key={q.id}
-                        className="flex items-start gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-2.5"
+                        className="flex items-start gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-2.5"
                       >
                         <span className="flex min-w-0 flex-col">
                           <span className="flex items-center gap-2 text-[12px] font-bold uppercase tracking-wide text-(--color-muted-text)">
@@ -382,7 +382,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
                   value={focus}
                   onChange={(e) => setFocus(e.target.value)}
                   placeholder={t('writing.grammar.quiz.sheet.focusPlaceholder')}
-                  className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[14px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+                  className="w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[14px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
                 />
               </section>
             )}
@@ -393,7 +393,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
                 <button
                   type="button"
                   onClick={runPreview}
-                  className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-white text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5"
+                  className="h-11 rounded-2xl border border-(--color-primary-blue)/35 bg-(--color-surface) text-[14px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5"
                 >
                   {preview
                     ? t('writing.grammar.quiz.sheet.regenerate')
@@ -404,7 +404,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
                     {preview.map((q, i) => (
                       <li
                         key={q.id}
-                        className="rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-2.5"
+                        className="rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-2.5"
                       >
                         <span className="flex items-center gap-2 text-[12px] font-bold uppercase tracking-wide text-(--color-muted-text)">
                           <Icon name={QUIZ_TYPE_ICON[q.type]} className="size-[13px]" />

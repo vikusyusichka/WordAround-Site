@@ -25,7 +25,7 @@ export const LastNoteCard = ({ note }: LastNoteCardProps) => {
     >
       <div className="@container w-full">
         <div
-          className="relative h-[130px] w-full overflow-hidden rounded-[22px] border border-white/95 shadow-[0_6px_10px_rgba(0,0,0,0.035)] @min-[420px]:h-[190px] @min-[420px]:rounded-[30px]"
+          className="relative h-[130px] w-full overflow-hidden rounded-[22px] border border-(--color-surface)/95 shadow-[0_6px_10px_rgba(0,0,0,0.035)] @min-[420px]:h-[190px] @min-[420px]:rounded-[30px]"
           style={{ background: 'var(--color-home-stat1-bg)' }}
         >
           <div className="absolute top-0 right-0 flex justify-end">

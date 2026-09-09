@@ -8,8 +8,8 @@ import { Icon } from '@/components/primitives/Icon';
 import type { MistakeSaveState } from '@/hooks/useSaveMistake';
 import type { GrammarIssue } from '@/lib/essayTypes';
 
-const GOLD = '#C78C42';
-const PEACH = '#FFF2E0';
+const GOLD = 'var(--color-accent-gold)';
+const PEACH = 'var(--color-soft-peach)';
 
 interface GrammarIssueCardProps {
   issue: GrammarIssue;
@@ -57,7 +57,7 @@ export const GrammarIssueCard = ({ issue, saveState = 'idle', onSave }: GrammarI
   const buttonTint = saveState === 'failed' ? GOLD : 'var(--color-primary-blue)';
 
   return (
-    <div className="flex flex-col gap-3 rounded-[20px] bg-white/95 p-4 shadow-[0_8px_14px_rgba(0,0,0,0.045)] md:p-[18px]">
+    <div className="flex flex-col gap-3 rounded-[20px] bg-(--color-surface)/95 p-4 shadow-[0_8px_14px_rgba(0,0,0,0.045)] md:p-[18px]">
       <FeedbackRow
         label={t('writing.essays.grammar.original')}
         text={issue.incorrectText}

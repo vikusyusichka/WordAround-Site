@@ -36,7 +36,7 @@ export const QuizQuestionView = ({ question, isLast, onSubmit, onAdvance }: Quiz
   return (
     <div className="flex flex-col gap-4">
       {/* Question card */}
-      <div className="rounded-3xl border border-(--color-auth-field-border) bg-white p-5">
+      <div className="rounded-3xl border border-(--color-auth-field-border) bg-(--color-surface) p-5">
         <span className="flex items-center gap-2 text-[12px] font-bold uppercase tracking-wide text-(--color-muted-text)">
           <Icon name={QUIZ_TYPE_ICON[question.type]} className="size-[13px]" />
           {t(`writing.grammar.quiz.type.${question.type}`)}
@@ -56,12 +56,12 @@ export const QuizQuestionView = ({ question, isLast, onSubmit, onAdvance }: Quiz
               option.trim().toLowerCase() === question.correctAnswer.trim().toLowerCase();
             const stateClasses =
               submitted === null
-                ? 'border-(--color-auth-field-border) bg-white hover:border-(--color-primary-blue)/35'
+                ? 'border-(--color-auth-field-border) bg-(--color-surface) hover:border-(--color-primary-blue)/35'
                 : isCorrectOption
-                  ? 'border-(--color-cs-green,#22C55E) bg-[#22C55E]/8'
+                  ? 'border-(--color-accent-green) bg-(--color-accent-green)/8'
                   : isSelected
                     ? 'border-(--color-cs-red) bg-(--color-cs-red)/8'
-                    : 'border-(--color-auth-field-border) bg-white opacity-60';
+                    : 'border-(--color-auth-field-border) bg-(--color-surface) opacity-60';
             return (
               <button
                 key={option}
@@ -76,7 +76,7 @@ export const QuizQuestionView = ({ question, isLast, onSubmit, onAdvance }: Quiz
                     : option}
                 </span>
                 {submitted !== null && isCorrectOption && (
-                  <Icon name="checkmark" className="size-[16px] text-[#22C55E]" />
+                  <Icon name="checkmark" className="size-[16px] text-(--color-accent-green)" />
                 )}
                 {submitted !== null && isSelected && !isCorrectOption && (
                   <Icon name="xmark" className="size-[16px] text-(--color-cs-red)" />
@@ -94,7 +94,7 @@ export const QuizQuestionView = ({ question, isLast, onSubmit, onAdvance }: Quiz
               placeholder={t('writing.grammar.quiz.play.typeAnswer')}
               rows={3}
               disabled={submitted !== null}
-              className="w-full resize-none rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-70"
+              className="w-full resize-none rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-70"
             />
           ) : (
             <input
@@ -106,7 +106,7 @@ export const QuizQuestionView = ({ question, isLast, onSubmit, onAdvance }: Quiz
               placeholder={t('writing.grammar.quiz.play.typeMissing')}
               disabled={submitted !== null}
               autoFocus
-              className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-70"
+              className="w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-70"
             />
           )}
           {submitted === null && (
@@ -129,13 +129,13 @@ export const QuizQuestionView = ({ question, isLast, onSubmit, onAdvance }: Quiz
             role="status"
             className={`rounded-2xl border px-4 py-3 ${
               correct
-                ? 'border-[#22C55E]/40 bg-[#22C55E]/8'
+                ? 'border-(--color-accent-green)/40 bg-(--color-accent-green)/8'
                 : 'border-(--color-cs-red)/40 bg-(--color-cs-red)/8'
             }`}
           >
             <p
               className={`text-[15px] font-bold ${
-                correct ? 'text-[#15803D]' : 'text-(--color-cs-red)'
+                correct ? 'text-(--color-accent-green-text)' : 'text-(--color-cs-red)'
               }`}
             >
               {correct

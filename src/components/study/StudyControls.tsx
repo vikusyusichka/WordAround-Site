@@ -47,7 +47,7 @@ export const StudyControls = ({
       <button
         type="button"
         onClick={onUnknown}
-        className="flex h-[54px] flex-1 max-w-[220px] items-center justify-center gap-2 rounded-full bg-(--color-cs-soft-red) text-[15px] font-bold text-(--color-cs-red) shadow-[0_4px_10px_rgba(255,87,89,0.14)] transition-transform hover:-translate-y-0.5 active:scale-[0.98] focus-visible:outline-none"
+        className="flex h-[54px] flex-1 max-w-[220px] items-center justify-center gap-2 rounded-full bg-(--color-cs-soft-red) text-[15px] font-bold text-(--color-cs-red-label) shadow-[0_4px_10px_rgba(255,87,89,0.14)] transition-transform hover:-translate-y-0.5 active:scale-[0.98] focus-visible:outline-none"
       >
         <span className="grid size-6 place-items-center rounded-full bg-(--color-cs-red)/12">
           <X size={14} weight="bold" />
@@ -59,7 +59,7 @@ export const StudyControls = ({
         type="button"
         onClick={onFlip}
         aria-label={t('study.flip')}
-        className="grid size-[54px] shrink-0 place-items-center rounded-full bg-white text-(--color-cs-text-muted) shadow-[0_4px_10px_rgba(0,0,0,0.06)] transition-transform hover:-translate-y-0.5 active:scale-[0.96] focus-visible:outline-none"
+        className="grid size-[54px] shrink-0 place-items-center rounded-full bg-(--color-surface) text-(--color-cs-text-muted) shadow-[0_4px_10px_rgba(0,0,0,0.06)] transition-transform hover:-translate-y-0.5 active:scale-[0.96] focus-visible:outline-none"
       >
         <ArrowsClockwise size={20} weight="bold" />
       </button>

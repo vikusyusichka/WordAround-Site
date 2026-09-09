@@ -101,7 +101,7 @@ function ProfilePage() {
               <button
                 type="button"
                 onClick={() => setIsEditing(true)}
-                className="mt-2 flex w-fit items-center gap-1.5 rounded-full bg-(--color-primary-blue) px-3.5 py-2 text-[13px] font-bold text-white shadow-[0_5px_10px_rgba(43,92,250,0.20)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
+                className="mt-2 flex w-fit items-center gap-1.5 rounded-full bg-(--color-primary-blue-solid) px-3.5 py-2 text-[13px] font-bold text-white shadow-[0_5px_10px_rgba(43,92,250,0.20)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
               >
                 <Icon name="pencil" className="size-[11px]" />
                 {t('profile.edit.button')}

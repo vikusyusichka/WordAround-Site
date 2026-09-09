@@ -29,6 +29,10 @@ export interface SetTheme {
   id: SetColorId;
   /** Solid accent (icon/border) — a design token. */
   accent: string;
+  /** The accent when it is small text on the set's own card. Identical to
+      `accent` in the light theme; lightened in the dark one, where the muted
+      accent falls under 4.5:1 on that tinted ground. */
+  accentText: string;
   /** Translucent accent for soft fills. */
   soft: string;
   /** Light card background tint. */
@@ -63,89 +67,33 @@ export interface SetTheme {
 
 /** Per-color values that differ; the shared ones are filled in by makeTheme. */
 interface ThemeSpec {
-  screenBackground: string;
-  previewBackground: string;
-  imageBackground: string;
-  titleColor: string;
   sectionAlpha: number;
   borderAlpha: number;
   softBorderAlpha: number;
   softAccentAlpha: number;
   shadowAlpha: number;
-  /** red overrides its borders with literal pinks rather than accent tints. */
+  /* red overrides its borders with literal pinks rather than accent tints. */
   borderColor?: string;
   softBorderColor?: string;
 }
 
 const SPECS: Record<SetColorId, ThemeSpec> = {
   red: {
-    screenBackground: '#FFF5F5',
-    previewBackground: '#FFF0F0',
-    imageBackground: '#FFF2F5',
-    titleColor: '#94051E',
     sectionAlpha: 0.74,
     borderAlpha: 0,
     softBorderAlpha: 0,
     softAccentAlpha: 0.14,
     shadowAlpha: 0.18,
-    borderColor: '#FAC7D1',
-    softBorderColor: '#FAD1DB',
+    /* Red is the one colour whose borders are literal pinks rather than tints
+       of the accent — mirrored as variables so the dark theme can swap them. */
+    borderColor: 'var(--color-cs-red-border)',
+    softBorderColor: 'var(--color-cs-red-soft-border)',
   },
-  blue: {
-    screenBackground: '#F0F7FF',
-    previewBackground: '#EDF5FF',
-    imageBackground: '#F2F7FF',
-    titleColor: '#1A3DC2',
-    sectionAlpha: 0.78,
-    borderAlpha: 0.35,
-    softBorderAlpha: 0.24,
-    softAccentAlpha: 0.16,
-    shadowAlpha: 0.18,
-  },
-  yellow: {
-    screenBackground: '#FFFAEB',
-    previewBackground: '#FFF5DB',
-    imageBackground: '#FFF7E3',
-    titleColor: '#9E6105',
-    sectionAlpha: 0.78,
-    borderAlpha: 0.42,
-    softBorderAlpha: 0.28,
-    softAccentAlpha: 0.2,
-    shadowAlpha: 0.2,
-  },
-  green: {
-    screenBackground: '#F0FCF5',
-    previewBackground: '#EBFAF2',
-    imageBackground: '#F0FCF5',
-    titleColor: '#1A7A4D',
-    sectionAlpha: 0.78,
-    borderAlpha: 0.38,
-    softBorderAlpha: 0.26,
-    softAccentAlpha: 0.18,
-    shadowAlpha: 0.18,
-  },
-  purple: {
-    screenBackground: '#F7F2FF',
-    previewBackground: '#F5EDFF',
-    imageBackground: '#F7F2FF',
-    titleColor: '#6B33B8',
-    sectionAlpha: 0.78,
-    borderAlpha: 0.38,
-    softBorderAlpha: 0.26,
-    softAccentAlpha: 0.18,
-    shadowAlpha: 0.18,
-  },
-  cyan: {
-    screenBackground: '#EDFCFF',
-    previewBackground: '#E8FAFF',
-    imageBackground: '#F0FCFF',
-    titleColor: '#14708F',
-    sectionAlpha: 0.78,
-    borderAlpha: 0.38,
-    softBorderAlpha: 0.26,
-    softAccentAlpha: 0.18,
-    shadowAlpha: 0.18,
-  },
+  blue: { sectionAlpha: 0.78, borderAlpha: 0.35, softBorderAlpha: 0.24, softAccentAlpha: 0.16, shadowAlpha: 0.18 },
+  yellow: { sectionAlpha: 0.78, borderAlpha: 0.42, softBorderAlpha: 0.28, softAccentAlpha: 0.2, shadowAlpha: 0.2 },
+  green: { sectionAlpha: 0.78, borderAlpha: 0.38, softBorderAlpha: 0.26, softAccentAlpha: 0.18, shadowAlpha: 0.18 },
+  purple: { sectionAlpha: 0.78, borderAlpha: 0.38, softBorderAlpha: 0.26, softAccentAlpha: 0.18, shadowAlpha: 0.18 },
+  cyan: { sectionAlpha: 0.78, borderAlpha: 0.38, softBorderAlpha: 0.26, softAccentAlpha: 0.18, shadowAlpha: 0.18 },
 };
 
 /** `color-mix` is how we apply an alpha to a CSS variable we can't inline. */
@@ -157,15 +105,23 @@ const makeTheme = (id: SetColorId): SetTheme => {
   return {
     id,
     accent: `var(--color-cs-${id})`,
+    accentText: `var(--color-cs-${id}-label)`,
     soft: tint(id, 0.18),
-    bg: `color-mix(in srgb, var(--color-cs-${id}) 12%, white)`,
+    /* Mixed into the themed surface, not literal white: mixing into white
+       leaves every set tile pale on a dark page. */
+    bg: `color-mix(in srgb, var(--color-cs-${id}) 12%, var(--color-cs-surface))`,
 
-    screenBackground: spec.screenBackground,
-    sectionBackground: `rgba(255, 255, 255, ${spec.sectionAlpha})`,
-    fieldBackground: '#FFFFFF',
-    previewBackground: spec.previewBackground,
-    imageBackground: spec.imageBackground,
-    titleColor: spec.titleColor,
+    /* Every surface is a variable so the dark theme swaps it without this
+       function — or the 102 places that consume it — knowing anything about
+       themes. The alpha stays per-colour; only the base it mixes into moves. */
+    screenBackground: `var(--color-cs-${id}-screen)`,
+    sectionBackground: `color-mix(in srgb, var(--color-cs-surface) ${Math.round(
+      spec.sectionAlpha * 100,
+    )}%, transparent)`,
+    fieldBackground: 'var(--color-cs-field)',
+    previewBackground: `var(--color-cs-${id}-preview)`,
+    imageBackground: `var(--color-cs-${id}-image)`,
+    titleColor: `var(--color-cs-${id}-title)`,
     textColor: 'var(--color-cs-dark-text)',
     mutedTextColor: 'var(--color-cs-text-muted)',
     borderColor: spec.borderColor ?? tint(id, spec.borderAlpha),

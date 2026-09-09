@@ -75,19 +75,23 @@ describe('showsMistakeHighlights', () => {
   const mistake = note({ noteType: 'mistake', isMistakeNote: true });
 
   /* The warm tint is an inline style, since the colour comes from the note
-     type rather than from a class. */
+     type rather than from a class. Both branches are now color-mix over a
+     variable, so the assertion is on WHICH colour is being mixed: the note
+     type's own, or the plain card surface. */
   const backgroundOf = (title: string) =>
     screen.getByRole('button', { name: title }).style.background;
 
   it('on: a mistake note is tinted', () => {
     render(<GrammarNoteRow note={mistake} {...rowProps} />);
-    expect(backgroundOf('Note')).not.toContain('255,255,255');
+    expect(backgroundOf('Note')).toContain('--color-accent-pink');
   });
 
   it('off: it looks like any other note', () => {
     set('showsMistakeHighlights', false);
     render(<GrammarNoteRow note={mistake} {...rowProps} />);
-    expect(backgroundOf('Note')).toContain('255, 255, 255');
+    const bg = backgroundOf('Note');
+    expect(bg).toContain('--color-surface');
+    expect(bg).not.toContain('--color-accent-pink');
   });
 });
 

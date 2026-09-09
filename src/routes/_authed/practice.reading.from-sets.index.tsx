@@ -42,8 +42,8 @@ export const Route = createFileRoute('/_authed/practice/reading/from-sets/')({
 });
 
 // Reading From Sets is the orange reading mode.
-const ACCENT = '#F7A310';
-const ACCENT_DARK = '#AB6305';
+const ACCENT = 'var(--color-orange-accent)';
+const ACCENT_DARK = 'var(--color-orange-title)';
 
 function FromSetsScreen() {
   const { t } = useTranslation();
@@ -141,7 +141,7 @@ function FromSetsScreen() {
 
         {/* Creation card (after a set is picked) */}
         {selectedSet && (
-          <section className="flex flex-col gap-4 rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+          <section className="flex flex-col gap-4 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
             <div className="flex items-baseline justify-between gap-3">
               <h2 className="text-[16px] font-bold text-(--color-primary-blue-dark)">
                 {selectedSet.title}
@@ -166,7 +166,7 @@ function FromSetsScreen() {
                     {vocabulary.words.slice(0, 14).map((w) => (
                       <span
                         key={w.term}
-                        className="rounded-full bg-[#F7A310]/12 px-2.5 py-1 text-[12px] font-bold text-[#B97607]"
+                        className="rounded-full bg-(--color-orange-accent)/12 px-2.5 py-1 text-[12px] font-bold text-(--color-orange-title)"
                       >
                         {w.term}
                       </span>

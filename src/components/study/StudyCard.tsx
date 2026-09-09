@@ -104,7 +104,7 @@ export const StudyCard = ({
         onSpeak(text, lang);
       }}
       aria-label={t('study.speak')}
-      className="grid size-11 place-items-center rounded-full hover:bg-black/[0.04] focus-visible:outline-none"
+      className="grid size-11 place-items-center rounded-full hover:bg-(--color-hover-wash) focus-visible:outline-none"
       style={{ color: theme.accent }}
     >
       <SpeakerHigh size={22} weight="bold" />
@@ -132,7 +132,7 @@ export const StudyCard = ({
         onExpand();
       }}
       aria-label={t('study.expand')}
-      className="absolute right-5 bottom-5 grid size-10 place-items-center rounded-full hover:bg-black/[0.04] focus-visible:outline-none"
+      className="absolute right-5 bottom-5 grid size-10 place-items-center rounded-full hover:bg-(--color-hover-wash) focus-visible:outline-none"
       style={{ color: theme.mutedTextColor }}
     >
       <ArrowsOut size={20} weight="bold" />
@@ -210,7 +210,7 @@ export const StudyCard = ({
         onClick={onToggleMastered}
         aria-label={t('study.mastered')}
         aria-pressed={isMastered}
-        className="absolute top-4 right-4 z-10 grid size-10 place-items-center rounded-full bg-white/90 shadow-[0_2px_6px_rgba(0,0,0,0.08)] focus-visible:outline-none"
+        className="absolute top-4 right-4 z-10 grid size-10 place-items-center rounded-full bg-(--color-surface)/90 shadow-[0_2px_6px_rgba(0,0,0,0.08)] focus-visible:outline-none"
         style={{ color: isMastered ? theme.accent : 'var(--color-cs-text-muted)' }}
       >
         <Heart size={20} weight={isMastered ? 'fill' : 'bold'} />

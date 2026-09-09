@@ -14,10 +14,10 @@ interface EssayTopicCardProps {
 export const EssayTopicCard = ({ task }: EssayTopicCardProps) => {
   const { t } = useTranslation();
   return (
-    <div className="flex flex-col gap-4 rounded-[22px] bg-white/95 p-5 shadow-[0_8px_14px_rgba(0,0,0,0.055)] md:p-6">
+    <div className="flex flex-col gap-4 rounded-[22px] bg-(--color-surface)/95 p-5 shadow-[0_8px_14px_rgba(0,0,0,0.055)] md:p-6">
       {/* Header — gradient level badge + title + estimated minutes. */}
       <div className="flex items-start gap-3">
-        <span className="shrink-0 rounded-full bg-linear-to-br from-[#855CFF] to-[#5C94FF] px-2.5 py-[7px] text-[12px] font-bold text-white">
+        <span className="shrink-0 rounded-full bg-linear-to-br from-(--color-accent-lavender) to-(--color-accent-periwinkle) px-2.5 py-[7px] text-[12px] font-bold text-white">
           {task.detectedLevel}
         </span>
         <div className="flex min-w-0 flex-col gap-1">
@@ -53,7 +53,7 @@ export const EssayTopicCard = ({ task }: EssayTopicCardProps) => {
           {task.quickTips.map((tip, i) => (
             <span
               key={i}
-              className="rounded-full bg-[#EDEBFF] px-3 py-[7px] text-[12px] font-semibold text-(--color-primary-blue-dark) md:text-[13px]"
+              className="rounded-full bg-(--color-soft-lavender) px-3 py-[7px] text-[12px] font-semibold text-(--color-primary-blue-dark) md:text-[13px]"
             >
               {tip}
             </span>

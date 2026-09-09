@@ -28,7 +28,7 @@ export const CardActions = ({
         onClick={onEdit}
         aria-label={editLabel}
         title={editLabel}
-        className="grid size-8 place-items-center rounded-full bg-white/92 shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+        className="grid size-8 place-items-center rounded-full bg-(--color-surface)/92 shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
         style={{ color: editColor ?? 'var(--color-primary-blue-dark)' }}
       >
         <PencilSimple size={15} weight="bold" />
@@ -39,7 +39,7 @@ export const CardActions = ({
       onClick={onDelete}
       aria-label={deleteLabel}
       title={deleteLabel}
-      className="grid size-8 place-items-center rounded-full bg-white/92 text-(--color-cs-red) shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+      className="grid size-8 place-items-center rounded-full bg-(--color-surface)/92 text-(--color-cs-red) shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-transform hover:-translate-y-0.5 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
     >
       <Trash size={15} weight="bold" />
     </button>

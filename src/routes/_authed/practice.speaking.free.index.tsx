@@ -23,8 +23,8 @@ export const Route = createFileRoute('/_authed/practice/speaking/free/')({
 });
 
 // Free Speaking is the green Speaking mode (AppColors.greenAccent / greenTitle).
-const ACCENT = '#29ba66';
-const ACCENT_DARK = '#128c47';
+const ACCENT = 'var(--color-green-accent)';
+const ACCENT_DARK = 'var(--color-green-title)';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 
 function FreeSpeakingSetup() {

@@ -93,7 +93,7 @@ function NewSetPage() {
             <button
               type="button"
               onClick={() => setIsImporting(true)}
-              className="flex h-11 items-center gap-2 self-start rounded-2xl bg-white px-4 text-[15px] font-semibold transition-colors hover:bg-black/[0.03] focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
+              className="flex h-11 items-center gap-2 self-start rounded-2xl bg-(--color-surface) px-4 text-[15px] font-semibold transition-colors hover:bg-(--color-hover-wash) focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:outline-none"
               style={{ color: theme.accent, boxShadow: `0 4px 10px ${theme.shadowColor}` }}
             >
               <DownloadSimple size={18} weight="bold" />
@@ -133,7 +133,7 @@ function NewSetPage() {
           <button
             type="button"
             onClick={() => void navigate({ to: '/sets' })}
-            className="h-14 rounded-[24px] bg-white px-6 text-[15px] font-semibold transition-colors hover:bg-black/[0.03] focus-visible:outline-none md:h-[66px]"
+            className="h-14 rounded-[24px] bg-(--color-surface) px-6 text-[15px] font-semibold transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none md:h-[66px]"
             style={{ color: theme.mutedTextColor }}
           >
             {t('createSet.cancel')}

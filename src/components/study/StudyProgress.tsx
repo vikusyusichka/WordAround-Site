@@ -8,7 +8,7 @@ interface StudyProgressProps {
 
 export const StudyProgress = ({ answered, total, progress, accent }: StudyProgressProps) => (
   <div className="mx-auto flex w-full max-w-2xl items-center gap-3">
-    <div className="h-2 flex-1 overflow-hidden rounded-full bg-black/[0.06]">
+    <div className="h-2 flex-1 overflow-hidden rounded-full bg-(--color-chip-bg)">
       <div
         className="h-full rounded-full transition-[width] duration-300"
         style={{ width: `${Math.round(progress * 100)}%`, background: accent }}

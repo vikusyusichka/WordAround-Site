@@ -32,7 +32,8 @@ describe('swatch variables', () => {
   // them. Declaring them in :root is what keeps them in the build.
   // Read from disk: vitest stubs CSS module imports, so `?raw` comes back empty.
   const css = readFileSync(resolve(process.cwd(), 'src/styles/index.css'), 'utf8');
-  const rootBlock = css.slice(css.indexOf(':root {'), css.indexOf('@layer base'));
+  const darkStart = css.indexOf(":root[data-theme='dark']");
+  const rootBlock = css.slice(css.indexOf(':root {'), darkStart);
 
   it.each(SET_COLOR_IDS)('declares --color-cs-%s outside @theme', (id) => {
     expect(rootBlock).toContain(`--color-cs-${id}:`);
@@ -44,11 +45,28 @@ describe('swatch variables', () => {
 
     for (const id of SET_COLOR_IDS) {
       const theme = themeForColor(id);
-      expect(theme.screenBackground).toMatch(/^#[0-9A-F]{6}$/i);
-      expect(theme.previewBackground).toMatch(/^#[0-9A-F]{6}$/i);
-      expect(theme.titleColor).toMatch(/^#[0-9A-F]{6}$/i);
+      expect(theme.screenBackground).toBe(`var(--color-cs-${id}-screen)`);
+      expect(theme.previewBackground).toBe(`var(--color-cs-${id}-preview)`);
+      expect(theme.titleColor).toBe(`var(--color-cs-${id}-title)`);
       expect(theme.softBorderColor).toBeTruthy();
       expect(theme.shadowColor).toBeTruthy();
+    }
+  });
+
+  /* The surfaces moved out of this file and into CSS so the dark theme could
+     swap them without recomputing anything. That only works if both blocks
+     actually carry every name — a theme referencing a variable no one declares
+     renders as nothing at all, which is the same failure the swatches had. */
+  const darkBlock = css.slice(darkStart, css.indexOf('@layer base'));
+
+  it.each(SET_COLOR_IDS)('declares every surface %s needs, light and dark', (id) => {
+    for (const suffix of ['screen', 'preview', 'image', 'title', 'label']) {
+      expect(rootBlock, `light --color-cs-${id}-${suffix}`).toContain(
+        `--color-cs-${id}-${suffix}:`,
+      );
+      expect(darkBlock, `dark --color-cs-${id}-${suffix}`).toContain(
+        `--color-cs-${id}-${suffix}:`,
+      );
     }
   });
 });

@@ -14,7 +14,7 @@ import { useFreeSpeaking } from '@/hooks/useFreeSpeaking';
 import { findLanguage } from '@/lib/essayTypes';
 import { type ConversationLength } from '@/lib/speakingTypes';
 
-const ACCENT = '#3CCF91';
+const ACCENT = 'var(--color-accent-mint)';
 
 export const Route = createFileRoute('/_authed/practice/speaking/free/session')({
   validateSearch: (
@@ -66,7 +66,7 @@ function FreeSpeakingSession({
           <button
             type="button"
             onClick={onExit}
-            className="w-fit text-[13px] font-semibold text-[#1F8F63] hover:underline focus-visible:outline-none"
+            className="w-fit text-[13px] font-semibold text-(--color-accent-mint-text) hover:underline focus-visible:outline-none"
           >
             ← {t('nav.speaking')}
           </button>
@@ -99,7 +99,7 @@ function FreeSpeakingSession({
             className={`rounded-2xl px-4 py-2 text-[14px] font-bold tabular-nums ${
               fs.remainingSeconds < 60
                 ? 'bg-(--color-cs-red)/10 text-(--color-cs-red)'
-                : 'bg-[#3CCF91]/12 text-[#1F8F63]'
+                : 'bg-(--color-accent-mint)/12 text-(--color-accent-mint-text)'
             }`}
           >
             {mmss(fs.remainingSeconds)}
@@ -112,14 +112,14 @@ function FreeSpeakingSession({
           <button
             type="button"
             onClick={onExit}
-            className="text-[13px] font-semibold text-[#1F8F63] hover:underline focus-visible:outline-none"
+            className="text-[13px] font-semibold text-(--color-accent-mint-text) hover:underline focus-visible:outline-none"
           >
             ← {t('nav.speaking')}
           </button>
           <button
             type="button"
             onClick={fs.endSession}
-            className="h-9 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[13px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-black/[0.03]"
+            className="h-9 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[13px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash)"
           >
             {t('speaking.conversation.end')}
           </button>
@@ -134,16 +134,16 @@ function FreeSpeakingSession({
         />
 
         {fs.usedFallbackTopic && (
-          <p className="rounded-2xl bg-[#F59E0B]/10 px-4 py-2 text-[13px] font-medium text-[#B45309]">
+          <p className="rounded-2xl bg-(--color-accent-amber)/10 px-4 py-2 text-[13px] font-medium text-(--color-accent-amber-text)">
             {t('speaking.free.fallbackTopic')}
           </p>
         )}
 
         {fs.errorBanner && (
-          <div className="flex items-center justify-between rounded-2xl bg-[#F59E0B]/10 px-4 py-2">
-            <span className="text-[13px] font-medium text-[#B45309]">{fs.errorBanner}</span>
+          <div className="flex items-center justify-between rounded-2xl bg-(--color-accent-amber)/10 px-4 py-2">
+            <span className="text-[13px] font-medium text-(--color-accent-amber-text)">{fs.errorBanner}</span>
             <button type="button" onClick={fs.clearError} aria-label={t('speaking.conversation.dismiss')}>
-              <Icon name="xmark" className="size-[14px] text-[#B45309]" />
+              <Icon name="xmark" className="size-[14px] text-(--color-accent-amber-text)" />
             </button>
           </div>
         )}
@@ -154,9 +154,9 @@ function FreeSpeakingSession({
             {t('speaking.free.transcript')}
           </span>
           {fs.transcript.chunks.length === 0 && !fs.partialTranscript ? (
-            <div className="flex flex-col items-center gap-2 rounded-2xl bg-white/70 px-4 py-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
-              <span className="grid size-12 place-items-center rounded-full bg-[#3CCF91]/12">
-                <Icon name="waveform" className="size-[22px] text-[#3CCF91]" />
+            <div className="flex flex-col items-center gap-2 rounded-2xl bg-(--color-surface)/70 px-4 py-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
+              <span className="grid size-12 place-items-center rounded-full bg-(--color-accent-mint)/12">
+                <Icon name="waveform" className="size-[22px] text-(--color-accent-mint)" />
               </span>
               <span className="text-[15px] font-bold text-(--color-primary-blue-dark)">
                 {t('speaking.free.startSpeaking')}
@@ -170,13 +170,13 @@ function FreeSpeakingSession({
               {fs.transcript.chunks.map((chunk, i) => (
                 <div
                   key={i}
-                  className="rounded-2xl bg-white px-4 py-2.5 text-[14px] font-medium text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.05)]"
+                  className="rounded-2xl bg-(--color-surface) px-4 py-2.5 text-[14px] font-medium text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.05)]"
                 >
                   {chunk}
                 </div>
               ))}
               {fs.partialTranscript && (
-                <div className="rounded-2xl border border-[#3CCF91]/30 bg-[#3CCF91]/5 px-4 py-2.5 text-[14px] font-medium text-(--color-text-secondary)">
+                <div className="rounded-2xl border border-(--color-accent-mint)/30 bg-(--color-accent-mint)/5 px-4 py-2.5 text-[14px] font-medium text-(--color-text-secondary)">
                   {fs.partialTranscript}
                 </div>
               )}

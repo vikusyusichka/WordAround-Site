@@ -25,6 +25,7 @@ export const mapSetToPreview = (
     unit: 'cards',
     progress: 0,
     accentColor: theme.accent,
+    accentTextColor: theme.accentText,
     backgroundColor: theme.bg,
     progressBackgroundColor: theme.soft,
     titleColor: 'var(--color-cs-dark-text)',

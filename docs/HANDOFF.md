@@ -44,6 +44,23 @@ Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
 
 ## Done so far (commits on `main`, newest first)
+- **Dark theme, D3b+D3c — the colour system and the screen sweep.** Every
+  literal `#hex` outside the deliberate exceptions (the signed-out screens, and
+  hexes that are STORED — `colorHex`, avatar colour, template colours) is now a
+  CSS variable with a dark value. Two roles that one variable cannot serve got
+  two variables: `--color-primary-blue-solid` (the accent as a filled button
+  with white text — on a dark ground the blue that reads as text is too light
+  for white to sit on) and `--color-cs-*-label` / `--color-accent-*-text` (the
+  accent as small text on its own tint: darkened for a pale ground in light,
+  LIGHTENED for a dark one). `src/lib/colorMix.ts` replaces the 20
+  `${color}1A` hex-alpha concatenations, which silently render as no colour at
+  all once `color` is a `var()`. Literal white/black surfaces became
+  `--color-surface` / `--color-chip-bg` / `--color-hover-wash`.
+  **Verified by measurement, not by eye:** an in-browser WCAG audit run in BOTH
+  themes, reporting only failures that exist in dark and not in light. Zero
+  dark-only failures on every screen, at 390 / 768 / 1440. The light theme is
+  untouched — the `index.css` diff removes exactly two lines, both inside the
+  dark block.
 - **iOS parity slice A — Profile (`0781fd2`, pushed + deployed).** `/profile` is
   now the iOS module: identity card + avatar (colour/initials/photo), two summary
   tiles, ACCOUNT / SUPPORT / DANGER ZONE, plus the web-only "Create a password"
@@ -450,15 +467,21 @@ resets auth). Screenshot tool may hang while TTS speaks — page-text is enough.
   `users/{uid}/{document=**}` was REVERTED: it would have denied the
   `users/{uid}` profile doc that the live rules allow — regression risk on a
   shipped iOS app for zero security gain.
-  ⚠️ **Storage rules are still UNREVIEWED** — `storage.rules` is a proposal, not
-  a copy of live. Capture and reconcile before publishing.
+  Storage rules ARE reconciled (`dca8693`): the live rules were Firebase's
+  default deny-all, so `storage.rules` replaces them with nothing lost.
+  ⚠️ It still has to be PUBLISHED in the Console — until it is, avatar upload
+  fails with `storage/unauthorized` (handled: name and colour still save).
   Not executed (emulator needs Java 11+, box has Java 8); the Console's Rules
   Playground is the practical check. See `docs/SECURITY-RULES.md`.
 
-**REMAINING:** offline flashcards via IndexedDB, container-query pad layout ≥700px, virtualized long lists
-(`@tanstack/react-virtual`), perf, Firestore security-rules review before public
-launch. (All 30 locales are real translations now — the pl/de scaffold note that
-used to sit here is out of date.)
+**REMAINING:** container-query pad layout ≥700px, and the light theme's own
+contrast (one family: white text on a saturated accent, worst 1.75:1 on the
+selected setup pill — the `-text`/`-label` hooks for fixing it now exist).
+Offline flashcards are effectively done — Firestore's `persistentLocalCache`
+(`e5d8a75`) IS IndexedDB. Virtualized lists and bundle-splitting were MEASURED
+and declined: the main chunk is the Firebase SDK itself. Firestore rules were
+reviewed (`90be85f`). (All 30 locales are real translations now — the pl/de
+scaffold note that used to sit here is out of date.)
 
 ### iOS parity slices (plan `C:\Users\vikusyusichka\.claude\plans\ios-iridescent-bonbon.md`)
 Reference branch `feature/home-screen-update`. **A is done and deployed**
@@ -476,10 +499,11 @@ Reference branch `feature/home-screen-update`. **A is done and deployed**
   note and review cards; quick actions as a 2→4 column grid; iOS section
   headings; the note editor capped at 900px with a toolbar tray.
 
-**Deliberately deferred:** dark theme across the site, real background Web Push
-(FCM + Cloud Functions), pronunciation scoring (the worker's
-`/api/speech/azure-token` returns 502), and the Text/Audio/Essay entries in the
-"+" menu (`CREATE_ROUTES` in `src/lib/createMenu.ts` still has only folder and set).
+**Deliberately deferred — what is LEFT of it:** real background Web Push (FCM +
+Cloud Functions) — blocked on a VAPID key from the Console, and pronunciation
+scoring (the worker's `/api/speech/azure-token` returns 502; that is the
+Cloudflare Worker, not this repo). The dark theme is DONE (D3a/b/c below) and so
+are the Text/Audio/Essay entries in the "+" menu (`e5d8a75`).
 
 ## Working process (follow strictly)
 1. Big phase → **plan mode** → detailed slice plan → user approval → build.

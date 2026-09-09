@@ -25,14 +25,14 @@ export const GrammarSearchBar = ({ value, placeholder, onChange }: GrammarSearch
         onChange={(e) => onChange(e.target.value)}
         placeholder={placeholder}
         aria-label={placeholder}
-        className="h-11 w-full rounded-2xl border border-white bg-white/95 pl-11 pr-10 text-[15px] font-medium text-(--color-primary-blue-dark) shadow-[0_2px_8px_rgba(0,0,0,0.04)] outline-none focus-visible:border-(--color-home-brand) [&::-webkit-search-cancel-button]:hidden"
+        className="h-11 w-full rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 pl-11 pr-10 text-[15px] font-medium text-(--color-primary-blue-dark) shadow-[0_2px_8px_rgba(0,0,0,0.04)] outline-none focus-visible:border-(--color-home-brand) [&::-webkit-search-cancel-button]:hidden"
       />
       {value.length > 0 && (
         <button
           type="button"
           onClick={() => onChange('')}
           aria-label={t('writing.grammar.search.clear')}
-          className="absolute right-3 grid size-7 place-items-center rounded-full text-(--color-muted-text) hover:bg-black/[0.04] focus-visible:outline-none"
+          className="absolute right-3 grid size-7 place-items-center rounded-full text-(--color-muted-text) hover:bg-(--color-hover-wash) focus-visible:outline-none"
         >
           <X size={15} weight="bold" />
         </button>

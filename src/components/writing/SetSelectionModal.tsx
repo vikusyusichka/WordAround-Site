@@ -60,7 +60,7 @@ export const SetSelectionModal = ({ open, onClose, onSelect }: SetSelectionModal
                 type="button"
                 onClick={onClose}
                 aria-label={t('writing.setSelection.close')}
-                className="absolute left-0 grid size-[46px] place-items-center rounded-full bg-white shadow-[0_4px_8px_rgba(0,0,0,0.06)] md:size-[52px]"
+                className="absolute left-0 grid size-[46px] place-items-center rounded-full bg-(--color-surface) shadow-[0_4px_8px_rgba(0,0,0,0.06)] md:size-[52px]"
               >
                 <Icon name="xmark" className="size-[18px] text-(--color-primary-blue-dark) md:size-[20px]" />
               </button>
@@ -78,7 +78,7 @@ export const SetSelectionModal = ({ open, onClose, onSelect }: SetSelectionModal
                   {t('writing.writeWords.loading')}
                 </p>
               ) : eligibleSets.length === 0 ? (
-                <div className="flex flex-col gap-2.5 rounded-3xl bg-white/95 p-6 text-left shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+                <div className="flex flex-col gap-2.5 rounded-3xl bg-(--color-surface)/95 p-6 text-left shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
                   <span className="text-[20px] font-bold text-(--color-primary-blue-dark)">
                     {t('writing.setSelection.empty.title')}
                   </span>

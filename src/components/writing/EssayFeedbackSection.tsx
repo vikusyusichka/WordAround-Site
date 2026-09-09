@@ -53,7 +53,7 @@ export const EssayFeedbackSection = ({
         </div>
 
         {issues.length === 0 ? (
-          <div className="rounded-2xl border border-white bg-white/95 p-4 text-center shadow-[0_4px_10px_rgba(0,0,0,0.045)] md:p-5">
+          <div className="rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 p-4 text-center shadow-[0_4px_10px_rgba(0,0,0,0.045)] md:p-5">
             <span className="text-[14px] font-medium text-(--color-home-stat2-sub) md:text-[15px]">
               {t('writing.essays.grammar.empty')}
             </span>

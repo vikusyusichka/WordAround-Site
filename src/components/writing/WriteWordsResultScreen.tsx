@@ -65,10 +65,10 @@ export const WriteWordsResultScreen = ({
     result === 'win' ? 'win' : result === 'timeout' ? 'timeout' : 'wrong';
 
   return (
-    <div className="mx-auto flex w-full max-w-lg flex-col items-center gap-6 rounded-3xl border border-white/80 bg-white/94 p-8 text-center shadow-[0_10px_30px_rgba(0,0,0,0.07)] md:p-10">
+    <div className="mx-auto flex w-full max-w-lg flex-col items-center gap-6 rounded-3xl border border-(--color-surface)/80 bg-(--color-surface)/94 p-8 text-center shadow-[0_10px_30px_rgba(0,0,0,0.07)] md:p-10">
       {/* Header */}
       <div className="flex flex-col items-center gap-3">
-        <div className="grid size-[72px] place-items-center rounded-full bg-linear-to-br from-(--color-primary-blue)/18 to-[#7363FF]/14">
+        <div className="grid size-[72px] place-items-center rounded-full bg-linear-to-br from-(--color-primary-blue)/18 to-(--color-accent-iris)/14">
           <Icon name={RESULT_ICON[result]} className="size-[30px] text-(--color-primary-blue-dark)" />
         </div>
         <h2 className="text-[24px] font-bold text-(--color-primary-blue-dark) md:text-[28px]">
@@ -80,7 +80,7 @@ export const WriteWordsResultScreen = ({
       </div>
 
       {/* Stats card */}
-      <div className="w-full rounded-2xl border border-white/85 bg-(--color-app-bg)/72 p-4 text-left md:p-5">
+      <div className="w-full rounded-2xl border border-(--color-surface)/85 bg-(--color-app-bg)/72 p-4 text-left md:p-5">
         {isWin ? (
           <>
             <StatRow label={t('writing.writeWords.result.totalWords')} value={`${stats.total}`} />
@@ -148,7 +148,7 @@ export const WriteWordsResultScreen = ({
         <button
           type="button"
           onClick={onExit}
-          className="h-12 rounded-2xl border border-(--color-auth-field-border) bg-white px-6 text-[15px] font-bold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 focus-visible:outline-none"
+          className="h-12 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-6 text-[15px] font-bold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 focus-visible:outline-none"
         >
           {t('writing.writeWords.back')}
         </button>

@@ -34,17 +34,17 @@ export const ReviewSummaryView = ({ session, onDone }: ReviewSummaryViewProps) =
 
   const breakdown: { key: string; value: number; color: string }[] = [
     { key: 'forgot', value: session.forgotCount, color: 'var(--color-cs-red)' },
-    { key: 'hard', value: session.hardCount, color: '#F59E0B' },
+    { key: 'hard', value: session.hardCount, color: 'var(--color-accent-amber)' },
     { key: 'good', value: session.goodCount, color: 'var(--color-primary-blue)' },
-    { key: 'easy', value: session.easyCount, color: '#22C55E' },
+    { key: 'easy', value: session.easyCount, color: 'var(--color-accent-green)' },
   ];
 
   return (
     <div className="mx-auto flex w-full max-w-2xl flex-col items-center gap-6">
-      <span className="grid size-16 place-items-center rounded-full bg-[#7C5CFF]/12">
+      <span className="grid size-16 place-items-center rounded-full bg-(--color-accent-violet)/12">
         <Icon
           name={reviewed > 0 ? 'checkmark.seal.fill' : 'tray.fill'}
-          className="size-[30px] text-[#7C5CFF]"
+          className="size-[30px] text-(--color-accent-violet)"
         />
       </span>
       <h2 className="text-[22px] font-extrabold text-(--color-primary-blue-dark)">
@@ -57,7 +57,7 @@ export const ReviewSummaryView = ({ session, onDone }: ReviewSummaryViewProps) =
         {stats.map((stat) => (
           <div
             key={stat.label}
-            className="flex flex-col items-center gap-0.5 rounded-2xl border border-white bg-white/95 px-2 py-3 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
+            className="flex flex-col items-center gap-0.5 rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 px-2 py-3 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
           >
             <span className="text-[22px] font-extrabold text-(--color-primary-blue-dark)">
               {stat.value}
@@ -74,7 +74,7 @@ export const ReviewSummaryView = ({ session, onDone }: ReviewSummaryViewProps) =
           <span
             key={b.key}
             className="rounded-full px-3 py-1 text-[12px] font-bold"
-            style={{ background: `color-mix(in srgb, ${b.color} 12%, white)`, color: b.color }}
+            style={{ background: `color-mix(in srgb, ${b.color} 12%, var(--color-cs-surface))`, color: b.color }}
           >
             {t(`writing.grammar.review.rating.${b.key}`)}: {b.value}
           </span>

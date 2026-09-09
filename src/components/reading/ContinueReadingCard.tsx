@@ -16,10 +16,10 @@ export const ContinueReadingCard = ({ item, onContinue }: ContinueReadingCardPro
   const percent = Math.round(item.progress * 100);
 
   return (
-    <section className="flex flex-col gap-3 rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+    <section className="flex flex-col gap-3 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
       <div className="flex items-center gap-3">
-        <span className="grid size-10 shrink-0 place-items-center rounded-2xl bg-[#21A8BD]/12">
-          <Icon name="book.fill" className="size-[20px] text-[#21A8BD]" />
+        <span className="grid size-10 shrink-0 place-items-center rounded-2xl bg-(--color-accent-cyan)/12">
+          <Icon name="book.fill" className="size-[20px] text-(--color-accent-cyan)" />
         </span>
         <div className="flex min-w-0 flex-col">
           <span className="text-[11px] font-bold uppercase tracking-wide text-(--color-muted-text)">
@@ -46,7 +46,7 @@ export const ContinueReadingCard = ({ item, onContinue }: ContinueReadingCardPro
         </span>
         <div className="h-[6px] w-full overflow-hidden rounded-full bg-(--color-goal-bg)">
           <div
-            className="h-full rounded-full bg-[#21A8BD]"
+            className="h-full rounded-full bg-(--color-accent-cyan)"
             style={{ width: `${Math.max(percent, 4)}%` }}
           />
         </div>

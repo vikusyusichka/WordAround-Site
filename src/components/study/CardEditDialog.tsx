@@ -34,7 +34,7 @@ export const CardEditDialog = ({ card, open, onSave, onClose }: CardEditDialogPr
   };
 
   const field =
-    'h-11 rounded-xl border border-(--color-auth-field-border) bg-white px-3.5 text-[15px] font-medium text-(--color-cs-dark-text) outline-none focus-visible:border-(--color-home-brand)';
+    'h-11 rounded-xl border border-(--color-auth-field-border) bg-(--color-surface) px-3.5 text-[15px] font-medium text-(--color-cs-dark-text) outline-none focus-visible:border-(--color-home-brand)';
 
   return (
     <AnimatePresence>
@@ -71,7 +71,7 @@ export const CardEditDialog = ({ card, open, onSave, onClose }: CardEditDialogPr
               <button
                 type="button"
                 onClick={onClose}
-                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-cs-text-muted) focus-visible:outline-none"
+                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-cs-text-muted) focus-visible:outline-none"
               >
                 {t('study.cancel')}
               </button>

@@ -1,6 +1,7 @@
 /* Topic card for Free Speaking — shows the generated (or generating) topic with
    its description and a row of context chips. Web port of FreeSpeakingTopicCardView. */
 import { Icon } from '@/components/primitives/Icon';
+import { tint } from '@/lib/colorMix';
 
 interface FreeSpeakingTopicCardProps {
   title: string;
@@ -17,11 +18,11 @@ export const FreeSpeakingTopicCard = ({
   accentColor,
   loading,
 }: FreeSpeakingTopicCardProps) => (
-  <div className="flex flex-col gap-2.5 rounded-2xl bg-white p-4 shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
+  <div className="flex flex-col gap-2.5 rounded-2xl bg-(--color-surface) p-4 shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
     <div className="flex items-start gap-2.5">
       <span
         className="grid size-9 shrink-0 place-items-center rounded-xl"
-        style={{ background: `${accentColor}1A`, color: accentColor }}
+        style={{ background: tint(accentColor, 10.2), color: accentColor }}
       >
         <Icon name={loading ? 'sparkles' : 'waveform'} className="size-[18px]" />
       </span>
@@ -37,7 +38,7 @@ export const FreeSpeakingTopicCard = ({
           <span
             key={chip}
             className="rounded-full px-2.5 py-1 text-[11px] font-semibold"
-            style={{ background: `${accentColor}14`, color: accentColor }}
+            style={{ background: tint(accentColor, 7.8), color: accentColor }}
           >
             {chip}
           </span>

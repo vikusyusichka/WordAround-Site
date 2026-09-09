@@ -68,7 +68,7 @@ export const QuickMistakeSheet = ({
   const isDone = saveState === 'saved' || saveState === 'duplicate';
 
   const fieldClass =
-    'w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-70';
+    'w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-70';
 
   return (
     <AnimatePresence>
@@ -124,7 +124,7 @@ export const QuickMistakeSheet = ({
 
             {/* Correction */}
             <label className="flex flex-col gap-1.5">
-              <span className="flex items-center gap-1.5 text-[13px] font-bold uppercase tracking-wide text-[#15803D]">
+              <span className="flex items-center gap-1.5 text-[13px] font-bold uppercase tracking-wide text-(--color-accent-green-text)">
                 <Icon name="checkmark.circle.fill" className="size-[14px]" />
                 {t('writing.grammar.quickMistake.corrected')}
               </span>
@@ -177,8 +177,8 @@ export const QuickMistakeSheet = ({
               </div>
             )}
             {isDone && (
-              <div className="flex flex-col gap-1.5 rounded-2xl border border-[#22C55E]/40 bg-[#22C55E]/8 px-4 py-3">
-                <p className="text-[14px] font-bold text-[#15803D]">
+              <div className="flex flex-col gap-1.5 rounded-2xl border border-(--color-accent-green)/40 bg-(--color-accent-green)/8 px-4 py-3">
+                <p className="text-[14px] font-bold text-(--color-accent-green-text)">
                   {t(`writing.grammar.quickMistake.${saveState}`)}
                 </p>
                 <button

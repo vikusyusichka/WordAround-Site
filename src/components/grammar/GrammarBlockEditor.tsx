@@ -21,7 +21,7 @@ interface GrammarBlockEditorProps {
 }
 
 const field =
-  'w-full rounded-xl border border-(--color-auth-field-border) bg-white px-3.5 py-2.5 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)';
+  'w-full rounded-xl border border-(--color-auth-field-border) bg-(--color-surface) px-3.5 py-2.5 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)';
 
 export const GrammarBlockEditor = ({
   block,
@@ -42,7 +42,7 @@ export const GrammarBlockEditor = ({
         onClick={() => dispatch({ type: 'MOVE_BLOCK', id: block.id, dir: 'up' })}
         disabled={isFirst}
         aria-label={t('writing.grammar.block.moveUp')}
-        className="grid size-7 place-items-center rounded-lg text-(--color-cs-text-muted) hover:bg-black/[0.04] disabled:opacity-30 focus-visible:outline-none"
+        className="grid size-7 place-items-center rounded-lg text-(--color-cs-text-muted) hover:bg-(--color-hover-wash) disabled:opacity-30 focus-visible:outline-none"
       >
         <Icon name="arrow.up" className="size-4" />
       </button>
@@ -51,7 +51,7 @@ export const GrammarBlockEditor = ({
         onClick={() => dispatch({ type: 'MOVE_BLOCK', id: block.id, dir: 'down' })}
         disabled={isLast}
         aria-label={t('writing.grammar.block.moveDown')}
-        className="grid size-7 place-items-center rounded-lg text-(--color-cs-text-muted) hover:bg-black/[0.04] disabled:opacity-30 focus-visible:outline-none"
+        className="grid size-7 place-items-center rounded-lg text-(--color-cs-text-muted) hover:bg-(--color-hover-wash) disabled:opacity-30 focus-visible:outline-none"
       >
         <Icon name="arrow.down" className="size-4" />
       </button>
@@ -59,7 +59,7 @@ export const GrammarBlockEditor = ({
         type="button"
         onClick={() => dispatch({ type: 'DELETE_BLOCK', id: block.id })}
         aria-label={t('writing.grammar.block.remove')}
-        className="grid size-7 place-items-center rounded-lg text-(--color-cs-text-muted) hover:bg-black/[0.04] hover:text-(--color-cs-red) focus-visible:outline-none"
+        className="grid size-7 place-items-center rounded-lg text-(--color-cs-text-muted) hover:bg-(--color-hover-wash) hover:text-(--color-cs-red) focus-visible:outline-none"
       >
         <Icon name="trash" className="size-4" />
       </button>
@@ -189,7 +189,7 @@ export const GrammarBlockEditor = ({
                 type="button"
                 onClick={() => fileRef.current?.click()}
                 disabled={!imageTarget || uploadState === 'uploading'}
-                className="h-9 rounded-full bg-(--color-primary-blue) px-3.5 text-[13px] font-bold text-white transition-transform active:scale-[0.98] disabled:opacity-60 focus-visible:outline-none"
+                className="h-9 rounded-full bg-(--color-primary-blue-solid) px-3.5 text-[13px] font-bold text-white transition-transform active:scale-[0.98] disabled:opacity-60 focus-visible:outline-none"
               >
                 {uploadState === 'uploading'
                   ? t('writing.grammar.block.imageUploading')
@@ -271,7 +271,7 @@ export const GrammarBlockEditor = ({
   };
 
   return (
-    <div className="flex flex-col gap-2 rounded-2xl border border-white bg-white/70 p-3 shadow-[0_2px_8px_rgba(0,0,0,0.03)] md:p-4">
+    <div className="flex flex-col gap-2 rounded-2xl border border-(--color-surface) bg-(--color-surface)/70 p-3 shadow-[0_2px_8px_rgba(0,0,0,0.03)] md:p-4">
       <div className="flex items-center justify-between">
         <span className="text-[12px] font-bold uppercase tracking-wide text-(--color-text-secondary)">
           {t(`writing.grammar.block.${block.type}`)}

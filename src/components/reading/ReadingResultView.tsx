@@ -8,8 +8,8 @@ import { Icon } from '@/components/primitives/Icon';
 import { formatReadingTime, type ReadingResult } from '@/lib/readingScoring';
 
 // Reading My-Texts mode accent (teal).
-const ACCENT = '#21A8BD';
-const ACCENT_DARK = '#0F6A78';
+const ACCENT = 'var(--color-accent-cyan)';
+const ACCENT_DARK = 'var(--color-accent-cyan-text)';
 
 interface ReadingResultViewProps {
   result: ReadingResult;
@@ -47,7 +47,7 @@ export const ReadingResultView = ({ result, title, onReadAgain, onBack }: Readin
 
       {/* Summary card — comprehension % + statistics. */}
       <div
-        className="flex flex-col gap-[18px] rounded-[22px] bg-white/95 p-5 shadow-[0_4px_12px_rgba(0,0,0,0.05)]"
+        className="flex flex-col gap-[18px] rounded-[22px] bg-(--color-surface)/95 p-5 shadow-[0_4px_12px_rgba(0,0,0,0.05)]"
       >
         <div className="flex flex-col items-center gap-1">
           <span className="text-[44px] font-extrabold" style={{ color: ACCENT }}>
@@ -83,13 +83,13 @@ export const ReadingResultView = ({ result, title, onReadAgain, onBack }: Readin
             {t('reading.result.mistakesTitle')}
           </h3>
           {result.mistakes.map((mistake, i) => (
-            <div key={i} className="flex flex-col gap-2 rounded-[18px] bg-white/95 p-3.5">
+            <div key={i} className="flex flex-col gap-2 rounded-[18px] bg-(--color-surface)/95 p-3.5">
               <p className="whitespace-pre-line text-[15px] font-semibold" style={{ color: ACCENT_DARK }}>
                 {mistake.prompt}
               </p>
               {mistake.selectedAnswer && (
                 <p className="flex items-center gap-1.5 text-[14px] font-medium text-(--color-text-secondary)">
-                  <Icon name="xmark.circle.fill" className="size-[15px] text-[#F26B66]" />
+                  <Icon name="xmark.circle.fill" className="size-[15px] text-(--color-accent-coral)" />
                   {mistake.selectedAnswer}
                 </p>
               )}

@@ -14,6 +14,7 @@ import { OptionPillGroup } from '@/components/practice/OptionPill';
 import { StartButton } from '@/components/practice/StartButton';
 import { PracticeRecorderBar } from '@/components/speaking/PracticeRecorderBar';
 import { usePronunciationTrainer } from '@/hooks/usePronunciationTrainer';
+import { tint } from '@/lib/colorMix';
 import {
   ITEM_TYPE_ICON,
   ITEM_TYPE_LABEL,
@@ -28,8 +29,8 @@ export const Route = createFileRoute('/_authed/practice/speaking/pronunciation/'
 });
 
 // Pronunciation Trainer is the cyan Speaking mode.
-const ACCENT = '#2EB8CC';
-const ACCENT_DARK = '#1B7C8C';
+const ACCENT = 'var(--color-accent-turquoise)';
+const ACCENT_DARK = 'var(--color-accent-turquoise-text)';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 const ITEM_COUNT = 8;
 
@@ -200,7 +201,7 @@ function PronunciationSession({
         subtitle={t('speaking.pronunciation.subtitle')}
         actions={
           p.total > 0 ? (
-            <span className="rounded-2xl bg-[#2EB8CC]/12 px-4 py-2 text-[14px] font-bold text-[#1B7C8C] tabular-nums">
+            <span className="rounded-2xl bg-(--color-accent-turquoise)/12 px-4 py-2 text-[14px] font-bold text-(--color-accent-turquoise-text) tabular-nums">
               {p.index + 1} / {p.total}
             </span>
           ) : undefined
@@ -211,28 +212,28 @@ function PronunciationSession({
         <button
           type="button"
           onClick={onBackToSetup}
-          className="w-fit text-[13px] font-semibold text-[#1B7C8C] hover:underline focus-visible:outline-none"
+          className="w-fit text-[13px] font-semibold text-(--color-accent-turquoise-text) hover:underline focus-visible:outline-none"
         >
           ← {t('speaking.shadowing.changeSettings')}
         </button>
 
         {/* Azure-dependent scoring: say plainly when it is unavailable. */}
         {p.scoringAvailable === false && (
-          <p className="flex items-start gap-2 rounded-2xl bg-[#F59E0B]/10 px-4 py-3 text-[13px] font-medium text-[#B45309]">
+          <p className="flex items-start gap-2 rounded-2xl bg-(--color-accent-amber)/10 px-4 py-3 text-[13px] font-medium text-(--color-accent-amber-text)">
             <Icon name="exclamationmark.circle.fill" className="mt-0.5 size-[15px] shrink-0" />
             {t('speaking.pronunciation.scoringUnavailable')}
           </p>
         )}
 
         {p.isLoading && (
-          <p className="rounded-2xl bg-white/70 px-4 py-10 text-center text-[15px] font-medium text-(--color-text-secondary) shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
+          <p className="rounded-2xl bg-(--color-surface)/70 px-4 py-10 text-center text-[15px] font-medium text-(--color-text-secondary) shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
             {t('speaking.pronunciation.loading')}
           </p>
         )}
 
         {!p.isLoading && p.error && (
-          <div className="flex flex-col items-center gap-3 rounded-2xl bg-white px-4 py-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
-            <Icon name="exclamationmark.triangle.fill" className="size-[22px] text-[#B45309]" />
+          <div className="flex flex-col items-center gap-3 rounded-2xl bg-(--color-surface) px-4 py-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
+            <Icon name="exclamationmark.triangle.fill" className="size-[22px] text-(--color-accent-amber-text)" />
             <span className="text-[14px] font-medium text-(--color-primary-blue-dark)">{p.error}</span>
             <button
               type="button"
@@ -247,11 +248,11 @@ function PronunciationSession({
 
         {!p.isLoading && !p.error && p.current && (
           <>
-            <div className="flex flex-col gap-3 rounded-2xl bg-white p-5 shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
+            <div className="flex flex-col gap-3 rounded-2xl bg-(--color-surface) p-5 shadow-[0_2px_10px_rgba(0,0,0,0.05)]">
               <div className="flex flex-wrap items-center gap-2">
                 <span
                   className="flex items-center gap-1.5 rounded-full px-2.5 py-1 text-[11px] font-bold"
-                  style={{ background: `${ACCENT}14`, color: ACCENT }}
+                  style={{ background: tint(ACCENT, 7.8), color: ACCENT }}
                 >
                   <Icon name={ITEM_TYPE_ICON[p.current.type]} className="size-[12px]" />
                   {ITEM_TYPE_LABEL[p.current.type]}
@@ -270,7 +271,7 @@ function PronunciationSession({
                 <p className="text-[14px] font-medium text-(--color-text-secondary)">{p.current.translation}</p>
               )}
               {p.current.tip && (
-                <p className="flex items-start gap-2 rounded-xl bg-[#2EB8CC]/8 px-3 py-2 text-[13px] font-medium text-(--color-text-secondary)">
+                <p className="flex items-start gap-2 rounded-xl bg-(--color-accent-turquoise)/8 px-3 py-2 text-[13px] font-medium text-(--color-text-secondary)">
                   <Icon name="lightbulb" className="mt-0.5 size-[14px] shrink-0" style={{ color: ACCENT }} />
                   {p.current.tip}
                 </p>
@@ -279,7 +280,7 @@ function PronunciationSession({
                 <button
                   type="button"
                   onClick={() => p.listen(p.current?.example ?? undefined)}
-                  className="flex items-start gap-2 rounded-xl border border-(--color-auth-field-border) px-3 py-2 text-left text-[13px] font-medium text-(--color-text-secondary) transition-colors hover:bg-black/[0.02]"
+                  className="flex items-start gap-2 rounded-xl border border-(--color-auth-field-border) px-3 py-2 text-left text-[13px] font-medium text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash)"
                 >
                   <Icon name="play.fill" className="mt-0.5 size-[12px] shrink-0" style={{ color: ACCENT }} />
                   {p.current.example}
@@ -288,10 +289,10 @@ function PronunciationSession({
             </div>
 
             {p.recorder.error && (
-              <div className="flex items-center justify-between rounded-2xl bg-[#F59E0B]/10 px-4 py-2">
-                <span className="text-[13px] font-medium text-[#B45309]">{p.recorder.error}</span>
+              <div className="flex items-center justify-between rounded-2xl bg-(--color-accent-amber)/10 px-4 py-2">
+                <span className="text-[13px] font-medium text-(--color-accent-amber-text)">{p.recorder.error}</span>
                 <button type="button" onClick={p.recorder.clearError} aria-label={t('speaking.conversation.dismiss')}>
-                  <Icon name="xmark" className="size-[14px] text-[#B45309]" />
+                  <Icon name="xmark" className="size-[14px] text-(--color-accent-amber-text)" />
                 </button>
               </div>
             )}
@@ -312,7 +313,7 @@ function PronunciationSession({
                 type="button"
                 onClick={p.previous}
                 disabled={p.index === 0}
-                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue-dark) transition-colors hover:bg-black/[0.03] disabled:opacity-40"
+                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[14px] font-semibold text-(--color-primary-blue-dark) transition-colors hover:bg-(--color-hover-wash) disabled:opacity-40"
               >
                 ← {t('speaking.shadowing.previous')}
               </button>

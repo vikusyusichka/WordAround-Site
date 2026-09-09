@@ -76,7 +76,7 @@ export const GrammarTopicForm = ({
           }}
           placeholder={t('writing.grammar.form.namePlaceholder')}
           autoFocus
-          className="h-12 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[15px] font-medium text-(--color-cs-dark-text) outline-none focus-visible:border-(--color-home-brand)"
+          className="h-12 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[15px] font-medium text-(--color-cs-dark-text) outline-none focus-visible:border-(--color-home-brand)"
         />
       </label>
 
@@ -89,7 +89,7 @@ export const GrammarTopicForm = ({
           onChange={(e) => setDescription(e.target.value)}
           placeholder={t('writing.grammar.form.descriptionPlaceholder')}
           rows={2}
-          className="resize-none rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-medium text-(--color-cs-dark-text) outline-none focus-visible:border-(--color-home-brand)"
+          className="resize-none rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[15px] font-medium text-(--color-cs-dark-text) outline-none focus-visible:border-(--color-home-brand)"
         />
       </label>
 
@@ -138,7 +138,7 @@ export const GrammarTopicForm = ({
         <button
           type="button"
           onClick={onCancel}
-          className="h-12 rounded-2xl border border-(--color-auth-field-border) bg-white px-6 text-[15px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+          className="h-12 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-6 text-[15px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none"
         >
           {t('writing.grammar.form.cancel')}
         </button>

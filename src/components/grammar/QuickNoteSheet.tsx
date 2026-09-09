@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import { NOTE_TYPE_META, NOTE_TYPES } from '@/lib/grammarMeta';
+import { tint } from '@/lib/colorMix';
 import type { QuickNoteDraft } from '@/lib/grammarQuickNoteService';
 import type { GrammarNoteTopic } from '@/lib/models';
 import { useGrammarSettings } from '@/stores/grammarSettingsStore';
@@ -81,7 +82,7 @@ export const QuickNoteSheet = ({
   };
 
   const fieldClass =
-    'w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-70';
+    'w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) disabled:opacity-70';
 
   return (
     <AnimatePresence>
@@ -155,7 +156,7 @@ export const QuickNoteSheet = ({
                       aria-pressed={isActive}
                       className="flex h-9 items-center gap-1.5 rounded-full border px-3 text-[13px] font-bold transition-colors focus-visible:outline-none"
                       style={{
-                        background: isActive ? `${meta.color}1C` : 'white',
+                        background: isActive ? tint(meta.color, 11) : 'var(--color-surface)',
                         borderColor: isActive ? meta.color : 'var(--color-auth-field-border)',
                         color: isActive ? meta.color : 'var(--color-text-secondary)',
                       }}
@@ -188,7 +189,7 @@ export const QuickNoteSheet = ({
               </label>
             )}
 
-            <label className="flex items-center gap-3 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3">
+            <label className="flex items-center gap-3 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3">
               <input
                 type="checkbox"
                 checked={opensEditorAfterQuickSave}
@@ -221,7 +222,7 @@ export const QuickNoteSheet = ({
               <button
                 type="button"
                 onClick={onClose}
-                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:outline-none"
+                className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none"
               >
                 {t('common.cancel')}
               </button>

@@ -248,7 +248,7 @@ function ListenFromTextSession() {
             result={result}
             subtitle={session.title}
             chips={[findLanguage(session.languageId).title, session.level, t('listening.fromText.title')]}
-            accentColor="#3394D1"
+            accentColor='var(--color-accent-steel)'
             onPracticeAgain={() => {
               setShowResult(false);
               setHasChecked(false);
@@ -262,10 +262,10 @@ function ListenFromTextSession() {
         ) : (
           <>
             {/* Player card */}
-            <div className="flex flex-col gap-3 rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+            <div className="flex flex-col gap-3 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
               <div className="h-[6px] w-full overflow-hidden rounded-full bg-(--color-goal-bg)">
                 <div
-                  className="h-full rounded-full bg-[#3394D1] transition-[width]"
+                  className="h-full rounded-full bg-(--color-accent-steel) transition-[width]"
                   style={{ width: `${progress * 100}%` }}
                 />
               </div>
@@ -278,14 +278,14 @@ function ListenFromTextSession() {
                   type="button"
                   onClick={replay}
                   aria-label={t('listening.session.replay')}
-                  className="grid size-11 place-items-center rounded-full border border-(--color-auth-field-border) bg-white"
+                  className="grid size-11 place-items-center rounded-full border border-(--color-auth-field-border) bg-(--color-surface)"
                 >
                   <Icon name="arrow.uturn.backward" className="size-[16px] text-(--color-text-secondary)" />
                 </button>
                 <button
                   type="button"
                   onClick={togglePlayback}
-                  className="grid size-14 place-items-center rounded-full bg-[#3394D1] text-white shadow-[0_8px_14px_rgba(51,148,209,0.35)]"
+                  className="grid size-14 place-items-center rounded-full bg-(--color-accent-steel) text-white shadow-[0_8px_14px_rgba(51,148,209,0.35)]"
                 >
                   {playback === 'playing' ? (
                     <span className="text-[18px] font-bold">❚❚</span>
@@ -301,7 +301,7 @@ function ListenFromTextSession() {
 
             {/* Optional static transcript */}
             {session.showTextWhileListening && session.text && (
-              <div className="rounded-3xl border border-white bg-white/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+              <div className="rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
                 <h3 className="mb-2 text-[13px] font-bold uppercase tracking-wide text-(--color-text-secondary)">
                   {t('listening.session.transcript')}
                 </h3>
@@ -320,8 +320,8 @@ function ListenFromTextSession() {
                 {session.questions.map((q, qi) => {
                   const selected = selectedAnswers[q.id];
                   return (
-                    <div key={q.id} className="flex flex-col gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white p-4">
-                      <span className="text-[11px] font-bold uppercase tracking-wide text-[#3394D1]">
+                    <div key={q.id} className="flex flex-col gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) p-4">
+                      <span className="text-[11px] font-bold uppercase tracking-wide text-(--color-accent-steel)">
                         {t(`listening.questionType.${q.type}`)} · {qi + 1}/{session.questions.length}
                       </span>
                       <p className="text-[15px] font-semibold text-(--color-primary-blue-dark)">
@@ -342,18 +342,18 @@ function ListenFromTextSession() {
                               }
                               className={`flex items-center gap-2.5 rounded-xl border px-3 py-2.5 text-left text-[14px] font-medium transition-colors ${
                                 isCorrect
-                                  ? 'border-[#22C55E]/50 bg-[#22C55E]/8 text-[#15803D]'
+                                  ? 'border-(--color-accent-green)/50 bg-(--color-accent-green)/8 text-(--color-accent-green-text)'
                                   : isWrong
                                     ? 'border-(--color-cs-red)/50 bg-(--color-cs-red)/8 text-(--color-cs-red)'
                                     : isSelected
-                                      ? 'border-[#3394D1]/50 bg-[#3394D1]/8 text-(--color-primary-blue-dark)'
-                                      : 'border-(--color-auth-field-border) bg-white text-(--color-primary-blue-dark)'
+                                      ? 'border-(--color-accent-steel)/50 bg-(--color-accent-steel)/8 text-(--color-primary-blue-dark)'
+                                      : 'border-(--color-auth-field-border) bg-(--color-surface) text-(--color-primary-blue-dark)'
                               } disabled:cursor-default`}
                             >
                               <span
                                 className={`grid size-6 shrink-0 place-items-center rounded-full text-[11px] font-bold ${
                                   isSelected || isCorrect
-                                    ? 'bg-[#3394D1] text-white'
+                                    ? 'bg-(--color-accent-steel) text-white'
                                     : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
                                 }`}
                               >

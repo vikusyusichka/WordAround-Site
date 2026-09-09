@@ -40,8 +40,8 @@ export const GrammarSectionHeader = ({
           onClick={action.onClick}
           className={`h-9 rounded-full px-3.5 text-[12px] font-bold transition-colors focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none lg:text-[13px] ${
             action.isActive
-              ? 'bg-(--color-primary-blue) text-white'
-              : 'border border-(--color-auth-field-border) bg-white text-(--color-primary-blue) hover:bg-(--color-home-nav-sel-bg)'
+              ? 'bg-(--color-primary-blue-solid) text-white'
+              : 'border border-(--color-auth-field-border) bg-(--color-surface) text-(--color-primary-blue) hover:bg-(--color-home-nav-sel-bg)'
           }`}
         >
           {action.label}

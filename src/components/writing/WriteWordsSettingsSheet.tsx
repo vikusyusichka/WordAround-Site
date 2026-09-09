@@ -103,12 +103,12 @@ export const WriteWordsSettingsSheet = ({
                     className={`flex items-center gap-3 rounded-2xl border px-4 py-3 text-left transition-colors ${
                       selected
                         ? 'border-(--color-primary-blue)/35 bg-(--color-primary-blue)/8'
-                        : 'border-(--color-auth-field-border) bg-white'
+                        : 'border-(--color-auth-field-border) bg-(--color-surface)'
                     }`}
                   >
                     <span
                       className={`grid size-[30px] place-items-center rounded-full ${
-                        selected ? 'bg-(--color-primary-blue) text-white' : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
+                        selected ? 'bg-(--color-primary-blue-solid) text-white' : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
                       }`}
                     >
                       <Icon name={selected ? 'checkmark' : MODE_ICON[mode]} className="size-[13px]" />
@@ -143,12 +143,12 @@ export const WriteWordsSettingsSheet = ({
                     className={`flex items-start gap-3 rounded-2xl border px-4 py-3 text-left transition-colors ${
                       selected
                         ? 'border-(--color-primary-blue)/35 bg-(--color-primary-blue)/8'
-                        : 'border-(--color-auth-field-border) bg-white'
+                        : 'border-(--color-auth-field-border) bg-(--color-surface)'
                     }`}
                   >
                     <span
                       className={`mt-0.5 grid size-[30px] shrink-0 place-items-center rounded-full ${
-                        selected ? 'bg-(--color-primary-blue) text-white' : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
+                        selected ? 'bg-(--color-primary-blue-solid) text-white' : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
                       }`}
                     >
                       <Icon name={selected ? 'checkmark' : DIFFICULTY_ICON[level]} className="size-[13px]" />

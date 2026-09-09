@@ -58,7 +58,7 @@ function ReviewRoute() {
             <button
               type="button"
               onClick={() => dispatch({ type: 'SKIP' })}
-              className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[14px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-black/[0.03] md:text-[15px]"
+              className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[14px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash) md:text-[15px]"
             >
               {t('writing.grammar.review.skip')}
             </button>
@@ -103,7 +103,7 @@ function ReviewRoute() {
               </div>
               <div className="h-[5px] w-full overflow-hidden rounded-full bg-(--color-goal-bg)">
                 <div
-                  className="h-full rounded-full bg-[#7C5CFF] transition-[width]"
+                  className="h-full rounded-full bg-(--color-accent-violet) transition-[width]"
                   style={{ width: `${progressFraction(session) * 100}%` }}
                 />
               </div>

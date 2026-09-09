@@ -14,6 +14,7 @@ import { Trash } from '@phosphor-icons/react';
 
 import { Icon } from '@/components/primitives/Icon';
 import { NOTE_TYPE_META } from '@/lib/grammarMeta';
+import { tint } from '@/lib/colorMix';
 import type { GrammarNote, GrammarReviewItem } from '@/lib/models';
 import { useGrammarSettings } from '@/stores/grammarSettingsStore';
 
@@ -41,7 +42,7 @@ interface GrammarNoteRowProps {
 }
 
 /** The spaced-review purple, shared with ReviewTodayCard. */
-const REVIEW_TINT = '#7C5CFF';
+const REVIEW_TINT = 'var(--color-accent-violet)';
 
 /* Signed, so the same helper reads both ways: a past timestamp gives
    "17 hours ago", a future due date gives "in 3 days". */
@@ -86,7 +87,7 @@ export const GrammarNoteRow = ({
   const warmTint = isMistake && highlightMistakes;
 
   const iconButton =
-    'grid size-8 place-items-center rounded-full bg-white/90 shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-colors focus-visible:outline-none';
+    'grid size-8 place-items-center rounded-full bg-(--color-surface)/90 shadow-[0_2px_6px_rgba(0,0,0,0.08)] transition-colors focus-visible:outline-none';
 
   return (
     <div className="group relative">
@@ -102,14 +103,14 @@ export const GrammarNoteRow = ({
           isTile ? (compact ? 'h-[148px]' : 'h-[206px]') : '',
         ].join(' ')}
         style={{
-          background: warmTint ? `${meta.color}0F` : 'rgba(255,255,255,0.92)',
-          borderColor: warmTint ? `${meta.color}33` : 'rgba(255,255,255,0.76)',
+          background: warmTint ? tint(meta.color, 5.9) : tint('var(--color-surface)', 92),
+          borderColor: warmTint ? tint(meta.color, 20) : tint('var(--color-surface)', 76),
         }}
       >
         {/* Corner blob. */}
         <span
           className="pointer-events-none absolute -top-[45px] right-[-38px] size-[98px] rounded-full"
-          style={{ background: `${meta.color}1A` }}
+          style={{ background: tint(meta.color, 10.2) }}
           aria-hidden
         />
 
@@ -125,7 +126,7 @@ export const GrammarNoteRow = ({
               'grid shrink-0 place-items-center rounded-full',
               compact ? 'size-9' : 'size-11',
             ].join(' ')}
-            style={{ background: `${meta.color}24` }}
+            style={{ background: tint(meta.color, 14.1) }}
           >
             <Icon name={meta.icon} className="size-[18px]" style={{ color: meta.color }} />
           </span>
@@ -149,7 +150,7 @@ export const GrammarNoteRow = ({
                 <Icon name="pin.fill" className="size-[11px] shrink-0" style={{ color: meta.color }} />
               )}
               {note.isFavorite && (
-                <Icon name="star.fill" className="size-[11px] shrink-0 text-[#F59E0B]" />
+                <Icon name="star.fill" className="size-[11px] shrink-0 text-(--color-accent-amber)" />
               )}
             </span>
 
@@ -167,7 +168,7 @@ export const GrammarNoteRow = ({
                 {note.tags.slice(0, 4).map((tag) => (
                   <span
                     key={tag}
-                    className="rounded-full bg-black/[0.04] px-2 py-0.5 text-[10px] font-bold text-(--color-text-secondary)"
+                    className="rounded-full bg-(--color-chip-bg) px-2 py-0.5 text-[10px] font-bold text-(--color-text-secondary)"
                   >
                     #{tag}
                   </span>
@@ -178,12 +179,12 @@ export const GrammarNoteRow = ({
             <span
               className={`flex flex-wrap items-center gap-1.5 ${isTile ? 'mt-auto' : ''}`}
             >
-              <span className={pill} style={{ background: `${meta.color}1C`, color: meta.color }}>
+              <span className={pill} style={{ background: tint(meta.color, 11), color: meta.color }}>
                 <Icon name={meta.icon} className="size-[9px]" />
                 {t(`writing.grammar.noteType.${note.noteType}`)}
               </span>
               {note.hasQuiz && (
-                <span className={pill} style={{ background: `${meta.color}1C`, color: meta.color }}>
+                <span className={pill} style={{ background: tint(meta.color, 11), color: meta.color }}>
                   <Icon name="questionmark.circle.fill" className="size-[9px]" />
                   {t('writing.grammar.quiz.badge')}
                 </span>
@@ -196,7 +197,7 @@ export const GrammarNoteRow = ({
                 <span
                   className={pill}
                   style={{
-                    background: isDue ? `${REVIEW_TINT}26` : `${REVIEW_TINT}14`,
+                    background: isDue ? tint(REVIEW_TINT, 14.9) : tint(REVIEW_TINT, 7.8),
                     color: REVIEW_TINT,
                   }}
                 >
@@ -258,7 +259,7 @@ export const GrammarNoteRow = ({
             onClick={onToggleFavorite}
             aria-label={t(note.isFavorite ? 'writing.grammar.unfavorite' : 'writing.grammar.favorite')}
             aria-pressed={note.isFavorite}
-            className={`${iconButton} ${note.isFavorite ? 'text-[#F59E0B]' : 'text-(--color-muted-text) hover:text-[#F59E0B]'}`}
+            className={`${iconButton} ${note.isFavorite ? 'text-(--color-accent-amber)' : 'text-(--color-muted-text) hover:text-(--color-accent-amber)'}`}
           >
             <Icon name="star.fill" className="size-4" />
           </button>

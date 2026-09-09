@@ -20,7 +20,7 @@ export const PlaceholderPage = ({ title, subtitle, icon, bodyKey }: PlaceholderP
   return (
     <ContentContainer>
       <PageHeader title={title} subtitle={subtitle} />
-      <div className="flex flex-col items-center justify-center gap-4 rounded-3xl border border-white/80 bg-white/70 px-6 py-16 text-center shadow-[0_6px_16px_rgba(0,0,0,0.04)]">
+      <div className="flex flex-col items-center justify-center gap-4 rounded-3xl border border-(--color-surface)/80 bg-(--color-surface)/70 px-6 py-16 text-center shadow-[0_6px_16px_rgba(0,0,0,0.04)]">
         <span className="grid size-16 place-items-center rounded-2xl bg-(--color-goal-bg)">
           <Icon name={icon} className="size-8 text-(--color-home-brand)" />
         </span>

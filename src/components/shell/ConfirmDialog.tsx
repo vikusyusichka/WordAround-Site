@@ -48,7 +48,7 @@ export const ConfirmDialog = ({
         aria-modal="true"
         aria-label={title}
         onClick={(e) => e.stopPropagation()}
-        className="flex w-full max-w-[420px] flex-col gap-4 rounded-[26px] bg-white p-6 shadow-[0_24px_60px_rgba(20,24,40,0.18)]"
+        className="flex w-full max-w-[420px] flex-col gap-4 rounded-[26px] bg-(--color-surface) p-6 shadow-[0_24px_60px_rgba(20,24,40,0.18)]"
       >
         <h2 className="text-[19px] font-bold text-(--color-primary-blue-dark)">{title}</h2>
         {body && (
@@ -62,7 +62,7 @@ export const ConfirmDialog = ({
             ref={cancelRef}
             type="button"
             onClick={onCancel}
-            className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-white px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-black/[0.03] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+            className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
           >
             {t('common.cancel')}
           </button>

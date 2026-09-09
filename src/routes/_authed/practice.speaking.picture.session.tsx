@@ -14,7 +14,7 @@ import { useDescribePicture } from '@/hooks/useDescribePicture';
 import { findLanguage } from '@/lib/essayTypes';
 import { type ConversationLength } from '@/lib/speakingTypes';
 
-const ACCENT = '#F7A310';
+const ACCENT = 'var(--color-orange-accent)';
 
 export const Route = createFileRoute('/_authed/practice/speaking/picture/session')({
   validateSearch: (
@@ -66,7 +66,7 @@ function DescribePictureSession({
           <button
             type="button"
             onClick={onExit}
-            className="w-fit text-[13px] font-semibold text-[#A66A05] hover:underline focus-visible:outline-none"
+            className="w-fit text-[13px] font-semibold text-(--color-orange-title) hover:underline focus-visible:outline-none"
           >
             ← {t('nav.speaking')}
           </button>
@@ -99,7 +99,7 @@ function DescribePictureSession({
             className={`rounded-2xl px-4 py-2 text-[14px] font-bold tabular-nums ${
               dp.remainingSeconds < 60
                 ? 'bg-(--color-cs-red)/10 text-(--color-cs-red)'
-                : 'bg-[#F7A310]/12 text-[#A66A05]'
+                : 'bg-(--color-orange-accent)/12 text-(--color-orange-title)'
             }`}
           >
             {mmss(dp.remainingSeconds)}
@@ -112,7 +112,7 @@ function DescribePictureSession({
           <button
             type="button"
             onClick={onExit}
-            className="text-[13px] font-semibold text-[#A66A05] hover:underline focus-visible:outline-none"
+            className="text-[13px] font-semibold text-(--color-orange-title) hover:underline focus-visible:outline-none"
           >
             ← {t('nav.speaking')}
           </button>
@@ -121,7 +121,7 @@ function DescribePictureSession({
               type="button"
               onClick={dp.newImage}
               disabled={dp.isLoadingImage}
-              className="flex h-9 items-center gap-1.5 rounded-2xl border border-[#F7A310]/40 bg-white px-4 text-[13px] font-semibold text-[#A66A05] transition-colors hover:bg-[#F7A310]/8 disabled:opacity-50"
+              className="flex h-9 items-center gap-1.5 rounded-2xl border border-(--color-orange-accent)/40 bg-(--color-surface) px-4 text-[13px] font-semibold text-(--color-orange-title) transition-colors hover:bg-(--color-orange-accent)/8 disabled:opacity-50"
             >
               <Icon name="arrow.clockwise" className="size-[13px]" />
               {t('speaking.picture.newPhoto')}
@@ -129,7 +129,7 @@ function DescribePictureSession({
             <button
               type="button"
               onClick={dp.endSession}
-              className="h-9 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[13px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-black/[0.03]"
+              className="h-9 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[13px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash)"
             >
               {t('speaking.conversation.end')}
             </button>
@@ -145,10 +145,10 @@ function DescribePictureSession({
         />
 
         {dp.errorBanner && (
-          <div className="flex items-center justify-between rounded-2xl bg-[#F59E0B]/10 px-4 py-2">
-            <span className="text-[13px] font-medium text-[#B45309]">{dp.errorBanner}</span>
+          <div className="flex items-center justify-between rounded-2xl bg-(--color-accent-amber)/10 px-4 py-2">
+            <span className="text-[13px] font-medium text-(--color-accent-amber-text)">{dp.errorBanner}</span>
             <button type="button" onClick={dp.clearError} aria-label={t('speaking.conversation.dismiss')}>
-              <Icon name="xmark" className="size-[14px] text-[#B45309]" />
+              <Icon name="xmark" className="size-[14px] text-(--color-accent-amber-text)" />
             </button>
           </div>
         )}
@@ -159,9 +159,9 @@ function DescribePictureSession({
             {t('speaking.free.transcript')}
           </span>
           {dp.transcript.chunks.length === 0 && !dp.partialTranscript ? (
-            <div className="flex flex-col items-center gap-2 rounded-2xl bg-white/70 px-4 py-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
-              <span className="grid size-12 place-items-center rounded-full bg-[#F7A310]/12">
-                <Icon name="waveform" className="size-[22px] text-[#F7A310]" />
+            <div className="flex flex-col items-center gap-2 rounded-2xl bg-(--color-surface)/70 px-4 py-8 text-center shadow-[0_2px_10px_rgba(0,0,0,0.04)]">
+              <span className="grid size-12 place-items-center rounded-full bg-(--color-orange-accent)/12">
+                <Icon name="waveform" className="size-[22px] text-(--color-orange-accent)" />
               </span>
               <span className="text-[15px] font-bold text-(--color-primary-blue-dark)">
                 {t('speaking.picture.startDescribing')}
@@ -175,13 +175,13 @@ function DescribePictureSession({
               {dp.transcript.chunks.map((chunk, i) => (
                 <div
                   key={i}
-                  className="rounded-2xl bg-white px-4 py-2.5 text-[14px] font-medium text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.05)]"
+                  className="rounded-2xl bg-(--color-surface) px-4 py-2.5 text-[14px] font-medium text-(--color-primary-blue-dark) shadow-[0_2px_6px_rgba(0,0,0,0.05)]"
                 >
                   {chunk}
                 </div>
               ))}
               {dp.partialTranscript && (
-                <div className="rounded-2xl border border-[#F7A310]/30 bg-[#F7A310]/5 px-4 py-2.5 text-[14px] font-medium text-(--color-text-secondary)">
+                <div className="rounded-2xl border border-(--color-orange-accent)/30 bg-(--color-orange-accent)/5 px-4 py-2.5 text-[14px] font-medium text-(--color-text-secondary)">
                   {dp.partialTranscript}
                 </div>
               )}

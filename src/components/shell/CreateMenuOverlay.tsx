@@ -65,7 +65,7 @@ export const CreateMenuOverlay = ({ isOpen, onClose }: CreateMenuOverlayProps) =
                     if (to) void navigate({ to });
                   }}
                 >
-                  <span className="grid size-[58px] place-items-center rounded-full bg-white/98 shadow-[0_7px_12px_rgba(0,0,0,0.10)] md:size-[78px]">
+                  <span className="grid size-[58px] place-items-center rounded-full bg-(--color-surface)/98 shadow-[0_7px_12px_rgba(0,0,0,0.10)] md:size-[78px]">
                     <Icon name={item.icon} className="size-[22px] text-(--color-home-brand) md:size-[30px]" />
                   </span>
                   <span className="text-[13px] font-semibold text-(--color-home-brand) md:text-base">

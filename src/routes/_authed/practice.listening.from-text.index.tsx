@@ -37,8 +37,8 @@ export const Route = createFileRoute('/_authed/practice/listening/from-text/')({
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 
 // Listen-from-Text mode accent (ListeningTheme.listenFromTextAccent / Dark).
-const ACCENT = '#3394D1';
-const ACCENT_DARK = '#1F6BA3';
+const ACCENT = 'var(--color-accent-steel)';
+const ACCENT_DARK = 'var(--color-accent-steel-text)';
 
 const subLabel = 'text-[13px] font-bold';
 
@@ -245,7 +245,7 @@ function ListenFromTextSetup() {
             value={title}
             onChange={(e) => setTitle(e.target.value)}
             placeholder={t('listening.fromText.titlePlaceholder')}
-            className="w-full rounded-2xl border bg-white px-4 py-3 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none transition-colors focus-visible:border-(--color-home-brand)"
+            className="w-full rounded-2xl border bg-(--color-surface) px-4 py-3 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none transition-colors focus-visible:border-(--color-home-brand)"
             style={{ borderColor: `color-mix(in srgb, ${ACCENT} 24%, transparent)` }}
           />
           <textarea
@@ -253,7 +253,7 @@ function ListenFromTextSetup() {
             onChange={(e) => setText(e.target.value)}
             placeholder={t('listening.fromText.textPlaceholder')}
             rows={7}
-            className="mt-1 w-full resize-y rounded-2xl border bg-white px-4 py-3 text-[15px] font-medium leading-relaxed text-(--color-primary-blue-dark) outline-none transition-colors focus-visible:border-(--color-home-brand)"
+            className="mt-1 w-full resize-y rounded-2xl border bg-(--color-surface) px-4 py-3 text-[15px] font-medium leading-relaxed text-(--color-primary-blue-dark) outline-none transition-colors focus-visible:border-(--color-home-brand)"
             style={{ borderColor: `color-mix(in srgb, ${ACCENT} 24%, transparent)` }}
           />
           <span className="text-[12px] font-medium text-(--color-muted-text)">

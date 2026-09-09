@@ -25,9 +25,9 @@ const QUALITY_KEY: Record<EssayQualityLabel, string> = {
 // scoreTint by quality (EssayScoreCardView.scoreTint).
 const TINT: Record<EssayQualityLabel, string> = {
   Excellent: 'var(--color-primary-blue)',
-  'Very good': '#4F8CD1',
-  Good: '#B89145',
-  'Needs work': '#BA5752',
+  'Very good': 'var(--color-score-verygood)',
+  Good: 'var(--color-score-good)',
+  'Needs work': 'var(--color-accent-coral-text)',
 };
 
 const ScoreRow = ({ labelKey, value }: { labelKey: string; value: number }) => {
@@ -73,7 +73,7 @@ export const EssayScoreCard = ({
   const vocabIssues = issues.filter((i) => i.category === 'vocabulary' || i.category === 'style').length;
 
   return (
-    <div className="flex flex-col gap-5 rounded-[22px] bg-white/95 p-5 shadow-[0_9px_16px_rgba(0,0,0,0.05)] md:p-6">
+    <div className="flex flex-col gap-5 rounded-[22px] bg-(--color-surface)/95 p-5 shadow-[0_9px_16px_rgba(0,0,0,0.05)] md:p-6">
       {/* Header */}
       <div className="flex items-center justify-between gap-3">
         <div className="flex flex-col gap-1">

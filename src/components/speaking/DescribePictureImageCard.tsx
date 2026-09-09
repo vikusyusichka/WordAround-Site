@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import { PICTURE_PROMPT_HINTS, type DescribePictureImage } from '@/lib/describePicture';
+import { tint } from '@/lib/colorMix';
 
 interface DescribePictureImageCardProps {
   image: DescribePictureImage | null;
@@ -25,7 +26,7 @@ export const DescribePictureImageCard = ({
 
   return (
     <div className="flex flex-col gap-2">
-      <div className="relative overflow-hidden rounded-2xl bg-black/[0.04] shadow-[0_2px_10px_rgba(0,0,0,0.06)]">
+      <div className="relative overflow-hidden rounded-2xl bg-(--color-chip-bg) shadow-[0_2px_10px_rgba(0,0,0,0.06)]">
         {isLoading && (
           <div className="flex aspect-4/3 w-full items-center justify-center">
             <span className="text-[14px] font-medium text-(--color-text-secondary)">
@@ -36,7 +37,7 @@ export const DescribePictureImageCard = ({
 
         {!isLoading && error && (
           <div className="flex aspect-4/3 w-full flex-col items-center justify-center gap-3 px-6 text-center">
-            <Icon name="exclamationmark.triangle.fill" className="size-[22px] text-[#B45309]" />
+            <Icon name="exclamationmark.triangle.fill" className="size-[22px] text-(--color-accent-amber-text)" />
             <span className="text-[14px] font-medium text-(--color-primary-blue-dark)">{error}</span>
             <button
               type="button"
@@ -76,12 +77,12 @@ export const DescribePictureImageCard = ({
       {/* Prompt card */}
       <div
         className="flex flex-col gap-2.5 rounded-2xl border p-4"
-        style={{ background: `${accentColor}12`, borderColor: `${accentColor}2E` }}
+        style={{ background: tint(accentColor, 7.1), borderColor: tint(accentColor, 18) }}
       >
         <div className="flex items-center gap-2.5">
           <span
             className="grid size-8 shrink-0 place-items-center rounded-full"
-            style={{ background: `${accentColor}24`, color: accentColor }}
+            style={{ background: tint(accentColor, 14.1), color: accentColor }}
           >
             <Icon name="text.bubble.fill" className="size-[16px]" />
           </span>
@@ -96,7 +97,7 @@ export const DescribePictureImageCard = ({
           {PICTURE_PROMPT_HINTS.map((hint) => (
             <span
               key={hint.key}
-              className="flex items-center gap-1.5 rounded-full bg-white/90 px-2.5 py-1.5 text-[12px] font-bold"
+              className="flex items-center gap-1.5 rounded-full bg-(--color-surface)/90 px-2.5 py-1.5 text-[12px] font-bold"
               style={{ color: accentColor }}
             >
               <Icon name={hint.icon} className="size-[12px]" />

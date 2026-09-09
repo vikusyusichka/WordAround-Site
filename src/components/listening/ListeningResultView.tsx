@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import type { ListeningResult } from '@/lib/listeningTypes';
+import { tint } from '@/lib/colorMix';
 
 interface ListeningResultViewProps {
   result: ListeningResult;
@@ -39,7 +40,7 @@ export const ListeningResultView = ({
       <div className="flex flex-col items-center gap-2">
         <span
           className="grid size-14 place-items-center rounded-full"
-          style={{ background: `${accentColor}1F` }}
+          style={{ background: tint(accentColor, 12.2) }}
         >
           <Icon name="headphones" className="size-[26px]" style={{ color: accentColor }} />
         </span>
@@ -62,7 +63,7 @@ export const ListeningResultView = ({
       {result.hasQuestions ? (
         <>
           {/* Summary card — comprehension % + statistics (one card). */}
-          <div className="flex flex-col gap-[18px] rounded-[22px] bg-white/95 p-5 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
+          <div className="flex flex-col gap-[18px] rounded-[22px] bg-(--color-surface)/95 p-5 shadow-[0_4px_12px_rgba(0,0,0,0.05)]">
             <div className="flex flex-col items-center gap-1">
               <span className="text-[44px] font-extrabold" style={{ color: accentColor }}>
                 {result.comprehensionPercent}%
@@ -96,13 +97,13 @@ export const ListeningResultView = ({
                 {t('listening.result.mistakesTitle')}
               </h3>
               {result.mistakes.map((mistake, i) => (
-                <div key={i} className="flex flex-col gap-2 rounded-[18px] bg-white/95 p-3.5 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+                <div key={i} className="flex flex-col gap-2 rounded-[18px] bg-(--color-surface)/95 p-3.5 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
                   <p className="text-[15px] font-semibold text-(--color-primary-blue-dark)">
                     {mistake.prompt}
                   </p>
                   {mistake.selectedAnswer && (
                     <p className="flex items-center gap-1.5 text-[14px] font-medium text-(--color-text-secondary)">
-                      <Icon name="xmark.circle.fill" className="size-[15px] text-[#F26B66]" />
+                      <Icon name="xmark.circle.fill" className="size-[15px] text-(--color-accent-coral)" />
                       {mistake.selectedAnswer}
                     </p>
                   )}
@@ -121,7 +122,7 @@ export const ListeningResultView = ({
           )}
         </>
       ) : (
-        <div className="flex flex-col items-center gap-1 rounded-3xl border border-white bg-white/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+        <div className="flex flex-col items-center gap-1 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-6 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
           <span className="text-[18px] font-bold text-(--color-primary-blue-dark)">
             {t('listening.result.watchOnlyTitle')}
           </span>

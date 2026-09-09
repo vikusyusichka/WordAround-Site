@@ -49,7 +49,7 @@ export const PracticeRecorderBar = ({
             className={`flex h-11 items-center gap-2 rounded-2xl border px-4 text-[14px] font-semibold transition-colors ${
               isRecording
                 ? 'animate-pulse border-(--color-cs-red)/50 bg-(--color-cs-red)/10 text-(--color-cs-red)'
-                : 'border-(--color-auth-field-border) bg-white text-(--color-primary-blue-dark) hover:bg-black/[0.03]'
+                : 'border-(--color-auth-field-border) bg-(--color-surface) text-(--color-primary-blue-dark) hover:bg-(--color-hover-wash)'
             }`}
           >
             <Icon name={isRecording ? 'stop.fill' : 'mic.fill'} className="size-[16px]" />
@@ -61,7 +61,7 @@ export const PracticeRecorderBar = ({
           <button
             type="button"
             onClick={onPlayBack}
-            className="flex h-11 items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[14px] font-semibold text-(--color-primary-blue-dark) transition-colors hover:bg-black/[0.03]"
+            className="flex h-11 items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[14px] font-semibold text-(--color-primary-blue-dark) transition-colors hover:bg-(--color-hover-wash)"
           >
             <Icon name="play.fill" className="size-[16px]" />
             {t('speaking.practice.playMine')}

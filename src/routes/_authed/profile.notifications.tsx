@@ -139,7 +139,7 @@ function NotificationsScreen() {
                     const parsed = reminderTimeFromInput(e.target.value);
                     if (parsed) preferences.setReminderTime(parsed);
                   }}
-                  className="ml-auto h-10 rounded-xl border border-(--color-auth-field-border) bg-white px-3 text-[14px] font-bold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+                  className="ml-auto h-10 rounded-xl border border-(--color-auth-field-border) bg-(--color-surface) px-3 text-[14px] font-bold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
                 />
               </label>
             </>

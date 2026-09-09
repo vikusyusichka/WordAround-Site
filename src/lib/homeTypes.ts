@@ -65,6 +65,10 @@ export interface HomeSetPreviewItem {
   progress: number;
 
   accentColor: string;
+  /** The accent when it is text rather than a fill — the tile subtitle sits on
+      the card's own tinted ground, where the accent alone is too dim to read in
+      the dark theme. Falls back to `accentColor` for the placeholder items. */
+  accentTextColor?: string;
   backgroundColor: string;
   progressBackgroundColor: string;
   titleColor: string;
@@ -140,7 +144,7 @@ export const TODAY_GOAL: HomeSetPreviewItem = {
   titleColor: 'var(--color-primary-blue-dark)',
   valueColor: 'var(--color-primary-blue-dark)',
   subtitleColor: 'var(--color-text-secondary)',
-  iconBackground: '#ffffff',
+  iconBackground: 'var(--color-card-white)',
   blobColor: 'var(--color-home-goal-blob)',
 };
 

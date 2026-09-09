@@ -18,9 +18,9 @@ interface QuizResultViewProps {
 }
 
 const GRADE_COLOR: Record<ReturnType<typeof gradeForScore>, string> = {
-  excellent: '#22C55E',
+  excellent: 'var(--color-accent-green)',
   good: 'var(--color-primary-blue)',
-  keepPracticing: '#F59E0B',
+  keepPracticing: 'var(--color-accent-amber)',
   reviewNote: 'var(--color-cs-red)',
 };
 
@@ -87,14 +87,14 @@ export const QuizResultView = ({
         <button
           type="button"
           onClick={onReviewNote}
-          className="h-12 flex-1 rounded-2xl border border-(--color-primary-blue)/35 bg-white text-[15px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5"
+          className="h-12 flex-1 rounded-2xl border border-(--color-primary-blue)/35 bg-(--color-surface) text-[15px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5"
         >
           {t('writing.grammar.quiz.result.reviewNote')}
         </button>
         <button
           type="button"
           onClick={onDone}
-          className="h-12 flex-1 rounded-2xl border border-(--color-auth-field-border) bg-white text-[15px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-black/[0.03]"
+          className="h-12 flex-1 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) text-[15px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash)"
         >
           {t('writing.grammar.quiz.result.done')}
         </button>
@@ -109,7 +109,7 @@ export const QuizResultView = ({
           {incorrect.map(({ question, userAnswer }) => (
             <div
               key={question.id}
-              className="rounded-2xl border border-(--color-cs-red)/25 bg-white px-4 py-3"
+              className="rounded-2xl border border-(--color-cs-red)/25 bg-(--color-surface) px-4 py-3"
             >
               <p className="text-[14px] font-semibold text-(--color-primary-blue-dark)">
                 {question.questionText}
@@ -117,7 +117,7 @@ export const QuizResultView = ({
               <p className="mt-1 text-[13px] font-medium text-(--color-cs-red)">
                 {t('writing.grammar.quiz.result.yourAnswer', { answer: userAnswer ?? '—' })}
               </p>
-              <p className="text-[13px] font-medium text-[#15803D]">
+              <p className="text-[13px] font-medium text-(--color-accent-green-text)">
                 {t('writing.grammar.quiz.play.correctAnswer', { answer: question.correctAnswer })}
               </p>
               {question.explanation && (
@@ -132,15 +132,15 @@ export const QuizResultView = ({
 
       {correctOnes.length > 0 && (
         <section className="flex flex-col gap-2">
-          <h3 className="text-[13px] font-bold uppercase tracking-wide text-[#15803D]">
+          <h3 className="text-[13px] font-bold uppercase tracking-wide text-(--color-accent-green-text)">
             {t('writing.grammar.quiz.result.correctSection')}
           </h3>
           {correctOnes.map(({ question }) => (
             <div
               key={question.id}
-              className="flex items-start gap-2 rounded-2xl border border-[#22C55E]/25 bg-white px-4 py-3"
+              className="flex items-start gap-2 rounded-2xl border border-(--color-accent-green)/25 bg-(--color-surface) px-4 py-3"
             >
-              <Icon name="checkmark.circle.fill" className="mt-0.5 size-[16px] shrink-0 text-[#22C55E]" />
+              <Icon name="checkmark.circle.fill" className="mt-0.5 size-[16px] shrink-0 text-(--color-accent-green)" />
               <div>
                 <p className="text-[14px] font-semibold text-(--color-primary-blue-dark)">
                   {question.questionText}

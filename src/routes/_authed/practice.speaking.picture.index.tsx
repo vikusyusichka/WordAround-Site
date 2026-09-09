@@ -12,6 +12,7 @@ import { LanguagePicker } from '@/components/practice/LanguagePicker';
 import { OptionPillGroup } from '@/components/practice/OptionPill';
 import { StartButton } from '@/components/practice/StartButton';
 import { PICTURE_PROMPT_HINTS } from '@/lib/describePicture';
+import { tint } from '@/lib/colorMix';
 import {
   CONVERSATION_LENGTHS,
   CONVERSATION_LENGTH_MINUTES,
@@ -23,8 +24,8 @@ export const Route = createFileRoute('/_authed/practice/speaking/picture/')({
 });
 
 // Describe Picture is the orange Speaking mode (AppColors.orangeAccent/Title).
-const ACCENT = '#F7A310';
-const ACCENT_DARK = '#AB6305';
+const ACCENT = 'var(--color-orange-accent)';
+const ACCENT_DARK = 'var(--color-orange-title)';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 
 function DescribePictureSetup() {
@@ -76,12 +77,12 @@ function DescribePictureSetup() {
         <SetupSection title={t('speaking.free.preview')} accentDark={ACCENT_DARK}>
           <div
             className="flex flex-col gap-2.5 rounded-2xl border p-4"
-            style={{ background: `${ACCENT}12`, borderColor: `${ACCENT}2E` }}
+            style={{ background: tint(ACCENT, 7.1), borderColor: tint(ACCENT, 18) }}
           >
             <div className="flex items-center gap-2.5">
               <span
                 className="grid size-8 shrink-0 place-items-center rounded-full"
-                style={{ background: `${ACCENT}24`, color: ACCENT }}
+                style={{ background: tint(ACCENT, 14.1), color: ACCENT }}
               >
                 <Icon name="photo.fill" className="size-[16px]" />
               </span>
@@ -96,7 +97,7 @@ function DescribePictureSetup() {
               {PICTURE_PROMPT_HINTS.map((hint) => (
                 <span
                   key={hint.key}
-                  className="flex items-center gap-1.5 rounded-full bg-white/90 px-2.5 py-1.5 text-[12px] font-bold"
+                  className="flex items-center gap-1.5 rounded-full bg-(--color-surface)/90 px-2.5 py-1.5 text-[12px] font-bold"
                   style={{ color: ACCENT }}
                 >
                   <Icon name={hint.icon} className="size-[12px]" />

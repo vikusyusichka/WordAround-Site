@@ -21,7 +21,7 @@ export const BackLink = ({ label, onClick, className = '' }: BackLinkProps) => (
   <button
     type="button"
     onClick={onClick}
-    className={`group flex h-9 w-fit shrink-0 items-center gap-1.5 rounded-full border border-(--color-auth-field-border) bg-white pr-3.5 pl-2.5 text-[13px] font-bold text-(--color-text-secondary) shadow-[0_2px_6px_rgba(0,0,0,0.04)] transition-colors hover:bg-black/[0.03] hover:text-(--color-primary-blue) focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none ${className}`}
+    className={`group flex h-9 w-fit shrink-0 items-center gap-1.5 rounded-full border border-(--color-auth-field-border) bg-(--color-surface) pr-3.5 pl-2.5 text-[13px] font-bold text-(--color-text-secondary) shadow-[0_2px_6px_rgba(0,0,0,0.04)] transition-colors hover:bg-(--color-hover-wash) hover:text-(--color-primary-blue) focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none ${className}`}
   >
     <Icon
       name="chevron.left"

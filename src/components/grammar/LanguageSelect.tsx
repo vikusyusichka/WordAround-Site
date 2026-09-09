@@ -22,7 +22,7 @@ export const LanguageSelect = ({ value, onChange }: LanguageSelectProps) => {
         onChange(code, match?.title ?? '');
       }}
       aria-label={t('writing.grammar.form.language')}
-      className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+      className="w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-[15px] font-medium text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
     >
       <option value="">{t('writing.grammar.form.languageNone')}</option>
       {ESSAY_LANGUAGES.map((language) => (

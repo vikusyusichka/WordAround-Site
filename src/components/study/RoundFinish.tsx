@@ -22,7 +22,7 @@ export const RoundFinish = ({
   const { t } = useTranslation();
 
   return (
-    <div className="mx-auto flex w-full max-w-2xl flex-col items-center gap-6 rounded-3xl border border-white/80 bg-white p-10 text-center shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
+    <div className="mx-auto flex w-full max-w-2xl flex-col items-center gap-6 rounded-3xl border border-(--color-surface)/80 bg-(--color-surface) p-10 text-center shadow-[0_10px_30px_rgba(0,0,0,0.06)]">
       <span className="text-[22px] font-bold text-(--color-cs-dark-text)">
         {t('study.roundDone')}
       </span>
@@ -44,7 +44,7 @@ export const RoundFinish = ({
         <button
           type="button"
           onClick={onRestart}
-          className="flex h-12 items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-white px-6 text-[15px] font-semibold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 focus-visible:outline-none"
+          className="flex h-12 items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-6 text-[15px] font-semibold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 focus-visible:outline-none"
         >
           <ArrowClockwise size={18} weight="bold" />
           {t('study.restart')}

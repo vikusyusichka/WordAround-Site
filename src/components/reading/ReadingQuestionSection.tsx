@@ -27,9 +27,9 @@ export const ReadingQuestionSection = ({
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="rounded-3xl border border-(--color-auth-field-border) bg-white p-5">
+      <div className="rounded-3xl border border-(--color-auth-field-border) bg-(--color-surface) p-5">
         <div className="flex items-center justify-between">
-          <span className="text-[12px] font-bold uppercase tracking-wide text-[#21A8BD]">
+          <span className="text-[12px] font-bold uppercase tracking-wide text-(--color-accent-cyan)">
             {t(`reading.questionType.${question.type}`)}
           </span>
           <span className="text-[12px] font-semibold text-(--color-muted-text)">
@@ -56,13 +56,13 @@ export const ReadingQuestionSection = ({
               onClick={() => onSelect(option)}
               className={`flex items-start gap-3 rounded-2xl border px-4 py-3 text-left transition-colors ${
                 selected
-                  ? 'border-[#21A8BD]/50 bg-[#21A8BD]/8'
-                  : 'border-(--color-auth-field-border) bg-white hover:border-[#21A8BD]/30'
+                  ? 'border-(--color-accent-cyan)/50 bg-(--color-accent-cyan)/8'
+                  : 'border-(--color-auth-field-border) bg-(--color-surface) hover:border-(--color-accent-cyan)/30'
               }`}
             >
               <span
                 className={`mt-0.5 grid size-7 shrink-0 place-items-center rounded-full text-[12px] font-bold ${
-                  selected ? 'bg-[#21A8BD] text-white' : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
+                  selected ? 'bg-(--color-accent-cyan) text-white' : 'bg-(--color-goal-bg) text-(--color-text-secondary)'
                 }`}
               >
                 {OPTION_LETTERS[Math.min(i, 5)]}

@@ -35,7 +35,7 @@ export const CardListRow = ({
   const { t } = useTranslation();
 
   const iconButton =
-    'grid size-9 shrink-0 place-items-center rounded-full hover:bg-black/[0.04] focus-visible:outline-none';
+    'grid size-9 shrink-0 place-items-center rounded-full hover:bg-(--color-hover-wash) focus-visible:outline-none';
 
   return (
     <div className="flex flex-col">
@@ -137,7 +137,7 @@ export const CardListRow = ({
       {card.example.trim().length > 0 && (
         <p
           className="mx-4 mb-2.5 line-clamp-2 rounded-xl px-3.5 py-2 text-[13px] leading-[1.45] font-medium md:truncate"
-          style={{ background: theme.softAccent, color: theme.accent }}
+          style={{ background: theme.softAccent, color: theme.accentText }}
         >
           {t('study.exampleFormat', { text: card.example })}
         </p>

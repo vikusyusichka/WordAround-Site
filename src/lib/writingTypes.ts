@@ -66,8 +66,8 @@ export const WRITING_MENU_ITEMS: WritingMenuItemDef[] = [
     titleKey: 'writing.menu.writeFromSets.title',
     subtitleKey: 'writing.menu.writeFromSets.subtitle',
     iconSystemName: 'square.grid.2x2.fill',
-    accentColor: '#8563FF',
-    blobColor: '#E6DBFF',
+    accentColor: 'var(--color-accent-lavender)',
+    blobColor: 'var(--color-mode-blob-violet)',
     enabled: true,
   },
   {
@@ -75,8 +75,8 @@ export const WRITING_MENU_ITEMS: WritingMenuItemDef[] = [
     titleKey: 'writing.menu.essays.title',
     subtitleKey: 'writing.menu.essays.subtitle',
     iconSystemName: 'note.text.badge.plus',
-    accentColor: '#5C94FF',
-    blobColor: '#D6E0FA',
+    accentColor: 'var(--color-accent-periwinkle)',
+    blobColor: 'var(--color-mode-blob-periwinkle)',
     enabled: true,
   },
 ];
@@ -98,8 +98,8 @@ export const WRITING_TODAY_GOAL: HomeSetPreviewItem = {
   titleColor: 'var(--color-primary-blue-dark)',
   valueColor: 'var(--color-primary-blue-dark)',
   subtitleColor: 'var(--color-text-secondary)',
-  iconBackground: '#ffffff',
-  blobColor: '#D1DCFA',
+  iconBackground: 'var(--color-card-white)',
+  blobColor: 'var(--color-mode-blob-blue)',
 };
 
 export const buildWriteWordsExercise = (card: Flashcard): WriteWordsExercise => ({

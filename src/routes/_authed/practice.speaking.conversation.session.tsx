@@ -19,7 +19,7 @@ import {
   type SpeakingContext,
 } from '@/lib/speakingTypes';
 
-const ACCENT = '#2B5CFA';
+const ACCENT = 'var(--color-primary-blue)';
 
 export const Route = createFileRoute('/_authed/practice/speaking/conversation/session')({
   validateSearch: (
@@ -152,24 +152,24 @@ function ConversationSession({
           <button
             type="button"
             onClick={convo.endConversation}
-            className="h-9 rounded-2xl border border-(--color-auth-field-border) bg-white px-4 text-[13px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-black/[0.03]"
+            className="h-9 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[13px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash)"
           >
             {t('speaking.conversation.end')}
           </button>
         </div>
 
         {convo.errorBanner && (
-          <div className="flex items-center justify-between rounded-2xl bg-[#F59E0B]/10 px-4 py-2">
-            <span className="text-[13px] font-medium text-[#B45309]">{convo.errorBanner}</span>
+          <div className="flex items-center justify-between rounded-2xl bg-(--color-accent-amber)/10 px-4 py-2">
+            <span className="text-[13px] font-medium text-(--color-accent-amber-text)">{convo.errorBanner}</span>
             <button type="button" onClick={convo.clearError} aria-label={t('speaking.conversation.dismiss')}>
-              <Icon name="xmark" className="size-[14px] text-[#B45309]" />
+              <Icon name="xmark" className="size-[14px] text-(--color-accent-amber-text)" />
             </button>
           </div>
         )}
 
         {/* Scenario/topic card (ConversationScenarioCardView) — sits above the
             chat and gives context, so the screen isn't an empty chat. */}
-        <div className="relative overflow-hidden rounded-[22px] border border-white/90 bg-(--color-goal-bg) p-4 shadow-[0_8px_16px_rgba(0,0,0,0.05)]">
+        <div className="relative overflow-hidden rounded-[22px] border border-(--color-surface)/90 bg-(--color-goal-bg) p-4 shadow-[0_8px_16px_rgba(0,0,0,0.05)]">
           <ProgressBlobShape
             color="var(--color-blob-blue)"
             opacity={0.35}
@@ -204,17 +204,17 @@ function ConversationSession({
           {convo.messages.map((m, i) =>
             m.role === 'ai' ? (
               <div key={i} className="flex items-end gap-2 self-start pr-11">
-                <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#2B5CFA]/10">
-                  <Icon name="bubble.left.and.bubble.right.fill" className="size-[15px] text-[#2B5CFA]" />
+                <span className="grid size-9 shrink-0 place-items-center rounded-full bg-(--color-primary-blue)/10">
+                  <Icon name="bubble.left.and.bubble.right.fill" className="size-[15px] text-(--color-primary-blue)" />
                 </span>
-                <div className="rounded-2xl bg-[#EDF2FF] px-4 py-2.5 text-[14px] font-medium text-(--color-primary-blue-dark)">
+                <div className="rounded-2xl bg-(--color-chat-bubble) px-4 py-2.5 text-[14px] font-medium text-(--color-primary-blue-dark)">
                   {m.text}
                 </div>
               </div>
             ) : (
               <div
                 key={i}
-                className="max-w-[85%] self-end rounded-2xl bg-[#2B5CFA] px-4 py-2.5 text-[14px] font-medium text-white"
+                className="max-w-[85%] self-end rounded-2xl bg-(--color-primary-blue) px-4 py-2.5 text-[14px] font-medium text-white"
               >
                 {m.text}
               </div>
@@ -222,10 +222,10 @@ function ConversationSession({
           )}
           {convo.state === 'processing' && (
             <div className="flex items-end gap-2 self-start pr-11">
-              <span className="grid size-9 shrink-0 place-items-center rounded-full bg-[#2B5CFA]/10">
-                <Icon name="bubble.left.and.bubble.right.fill" className="size-[15px] text-[#2B5CFA]" />
+              <span className="grid size-9 shrink-0 place-items-center rounded-full bg-(--color-primary-blue)/10">
+                <Icon name="bubble.left.and.bubble.right.fill" className="size-[15px] text-(--color-primary-blue)" />
               </span>
-              <div className="rounded-2xl bg-[#EDF2FF] px-4 py-2.5 text-[14px] font-medium text-(--color-muted-text)">
+              <div className="rounded-2xl bg-(--color-chat-bubble) px-4 py-2.5 text-[14px] font-medium text-(--color-muted-text)">
                 …
               </div>
             </div>
@@ -235,8 +235,8 @@ function ConversationSession({
 
         {/* Hint */}
         {convo.hint && (
-          <div className="rounded-2xl border border-[#2B5CFA]/30 bg-[#2B5CFA]/5 px-4 py-2.5">
-            <span className="text-[11px] font-bold uppercase tracking-wide text-[#2B5CFA]">
+          <div className="rounded-2xl border border-(--color-primary-blue)/30 bg-(--color-primary-blue)/5 px-4 py-2.5">
+            <span className="text-[11px] font-bold uppercase tracking-wide text-(--color-primary-blue)">
               {t('speaking.conversation.hint')}
             </span>
             <p className="text-[14px] font-medium text-(--color-primary-blue-dark)">{convo.hint}</p>
@@ -256,7 +256,7 @@ function ConversationSession({
             type="button"
             onClick={() => void convo.requestHint()}
             disabled={convo.isRequestingHint}
-            className="h-10 w-fit rounded-2xl border border-[#2B5CFA]/35 bg-white px-4 text-[13px] font-semibold text-[#2B5CFA] transition-colors hover:bg-[#2B5CFA]/5 disabled:opacity-60"
+            className="h-10 w-fit rounded-2xl border border-(--color-primary-blue)/35 bg-(--color-surface) px-4 text-[13px] font-semibold text-(--color-primary-blue) transition-colors hover:bg-(--color-primary-blue)/5 disabled:opacity-60"
           >
             {convo.isRequestingHint ? t('speaking.conversation.hintLoading') : t('speaking.conversation.getHint')}
           </button>

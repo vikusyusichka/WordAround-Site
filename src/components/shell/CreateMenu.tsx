@@ -62,7 +62,7 @@ export const CreateMenu = ({ onSelect }: CreateMenuProps) => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: -6, scale: 0.98 }}
             transition={{ duration: 0.14 }}
-            className="absolute top-[calc(100%+8px)] left-0 z-40 w-full min-w-[200px] overflow-hidden rounded-2xl border border-(--color-auth-field-border) bg-white p-1.5 shadow-[0_16px_32px_rgba(0,0,0,0.12)]"
+            className="absolute top-[calc(100%+8px)] left-0 z-40 w-full min-w-[200px] overflow-hidden rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) p-1.5 shadow-[0_16px_32px_rgba(0,0,0,0.12)]"
           >
             {CREATE_ITEMS.map((item) => (
               <button

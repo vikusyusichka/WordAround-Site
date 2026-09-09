@@ -8,8 +8,8 @@ import { Icon } from '@/components/primitives/Icon';
 import { ESSAY_LANGUAGES, findLanguage } from '@/lib/essayTypes';
 
 // Reading My-Texts mode accent (teal).
-const ACCENT = '#21A8BD';
-const ACCENT_DARK = '#0F6A78';
+const ACCENT = 'var(--color-accent-cyan)';
+const ACCENT_DARK = 'var(--color-accent-cyan-text)';
 
 interface ReadingTranslationCardProps {
   word: string;
@@ -36,7 +36,7 @@ export const ReadingTranslationCard = ({
 
   return (
     <div
-      className="flex flex-col gap-3.5 rounded-[22px] bg-white/95 p-4 shadow-[0_4px_12px_rgba(0,0,0,0.05)]"
+      className="flex flex-col gap-3.5 rounded-[22px] bg-(--color-surface)/95 p-4 shadow-[0_4px_12px_rgba(0,0,0,0.05)]"
       style={{ border: `1px solid color-mix(in srgb, ${ACCENT} 22%, transparent)` }}
     >
       {/* Header — icon circle + labels + close. */}
@@ -59,7 +59,7 @@ export const ReadingTranslationCard = ({
           type="button"
           onClick={onClose}
           aria-label={t('reading.session.closeTranslation')}
-          className="ml-auto grid size-8 shrink-0 place-items-center rounded-full text-(--color-text-secondary) hover:bg-black/[0.04]"
+          className="ml-auto grid size-8 shrink-0 place-items-center rounded-full text-(--color-text-secondary) hover:bg-(--color-chip-bg)"
         >
           <Icon name="xmark" className="size-[13px]" />
         </button>

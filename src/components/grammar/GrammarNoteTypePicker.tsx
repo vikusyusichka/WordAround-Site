@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import { NOTE_TYPES, NOTE_TYPE_META } from '@/lib/grammarMeta';
+import { tint } from '@/lib/colorMix';
 import type { GrammarNoteType } from '@/lib/models';
 
 interface GrammarNoteTypePickerProps {
@@ -28,8 +29,12 @@ export const GrammarNoteTypePicker = ({ value, onChange }: GrammarNoteTypePicker
             className="flex items-center gap-1.5 rounded-full border px-3 py-1.5 text-[13px] font-semibold transition-colors focus-visible:outline-none md:text-[14px]"
             style={
               active
-                ? { background: `${meta.color}1F`, borderColor: meta.color, color: meta.color }
-                : { background: 'white', borderColor: 'var(--color-auth-field-border)', color: 'var(--color-cs-text-muted)' }
+                ? { background: tint(meta.color, 12.2), borderColor: meta.color, color: meta.color }
+                : {
+                    background: 'var(--color-surface)',
+                    borderColor: 'var(--color-auth-field-border)',
+                    color: 'var(--color-cs-text-muted)',
+                  }
             }
           >
             <Icon name={meta.icon} className="size-[15px]" />

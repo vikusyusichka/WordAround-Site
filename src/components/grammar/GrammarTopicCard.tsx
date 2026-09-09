@@ -91,7 +91,7 @@ export const GrammarTopicCard = ({
                   style={{
                     background: theme.softAccent,
                     borderColor: theme.softBorderColor,
-                    color: theme.accent,
+                    color: theme.accentText,
                   }}
                 >
                   {t('writing.grammar.mistakesBadge')}
@@ -154,7 +154,7 @@ export const GrammarTopicCard = ({
             onClick={() => onMove?.('up')}
             disabled={isFirst}
             aria-label={t('writing.grammar.reorder.up')}
-            className="grid size-8 place-items-center rounded-full bg-white/90 text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] disabled:opacity-30 focus-visible:outline-none"
+            className="grid size-8 place-items-center rounded-full bg-(--color-surface)/90 text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] disabled:opacity-30 focus-visible:outline-none"
           >
             <Icon name="arrow.up" className="size-4" />
           </button>
@@ -163,7 +163,7 @@ export const GrammarTopicCard = ({
             onClick={() => onMove?.('down')}
             disabled={isLast}
             aria-label={t('writing.grammar.reorder.down')}
-            className="grid size-8 place-items-center rounded-full bg-white/90 text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] disabled:opacity-30 focus-visible:outline-none"
+            className="grid size-8 place-items-center rounded-full bg-(--color-surface)/90 text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] disabled:opacity-30 focus-visible:outline-none"
           >
             <Icon name="arrow.down" className="size-4" />
           </button>

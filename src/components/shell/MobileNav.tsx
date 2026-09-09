@@ -27,7 +27,7 @@ export const MobileNav = () => {
           type="button"
           onClick={openDrawer}
           aria-label={t('nav.menu')}
-          className="grid size-10 place-items-center rounded-xl text-(--color-primary-blue-dark) hover:bg-black/[0.04] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+          className="grid size-10 place-items-center rounded-xl text-(--color-primary-blue-dark) hover:bg-(--color-hover-wash) focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
         >
           <List size={22} weight="bold" />
         </button>
@@ -39,7 +39,7 @@ export const MobileNav = () => {
         <Link
           to="/profile"
           aria-label={t('nav.profile')}
-          className="grid size-9 place-items-center rounded-full bg-white/95 shadow-[0_2px_6px_rgba(0,0,0,0.06)] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+          className="grid size-9 place-items-center rounded-full bg-(--color-surface)/95 shadow-[0_2px_6px_rgba(0,0,0,0.06)] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
         >
           <Icon name="person.crop.circle.fill" className="home-avatar-gradient size-7" />
         </Link>

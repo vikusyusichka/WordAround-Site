@@ -104,7 +104,7 @@ export const FolderPicker = ({ value, onChange, theme }: FolderPickerProps) => {
                   type="button"
                   onClick={() => pick(option.id)}
                   className={`flex w-full items-center justify-between gap-3 rounded-xl px-3 py-2.5 text-left text-[15px] transition-colors focus-visible:outline-none ${
-                    isSelected ? 'font-semibold' : 'font-medium hover:bg-black/[0.03]'
+                    isSelected ? 'font-semibold' : 'font-medium hover:bg-(--color-hover-wash)'
                   }`}
                   style={
                     isSelected

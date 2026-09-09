@@ -23,8 +23,8 @@ export const Route = createFileRoute('/_authed/practice/speaking/debate/')({
 });
 
 // Debate is the pink Speaking mode.
-const ACCENT = '#ED6699';
-const ACCENT_DARK = '#B23A6E';
+const ACCENT = 'var(--color-accent-rose)';
+const ACCENT_DARK = 'var(--color-accent-rose-text)';
 const LEVELS = ['A1', 'A2', 'B1', 'B2', 'C1'] as const;
 
 function DebateSetup() {

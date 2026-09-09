@@ -51,7 +51,7 @@ function LanguageScreen() {
           onChange={(e) => setQuery(e.target.value)}
           placeholder={t('profile.language.searchPlaceholder')}
           aria-label={t('profile.language.searchPlaceholder')}
-          className="h-12 w-full rounded-2xl border border-(--color-auth-field-border) bg-white pr-4 pl-11 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+          className="h-12 w-full rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) pr-4 pl-11 text-[15px] font-semibold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
         />
       </div>
 

@@ -8,7 +8,7 @@ import { findLanguage } from '@/lib/essayTypes';
 import type { ReadingLibraryItem } from '@/lib/models';
 
 // Reading My-Texts mode accent (teal).
-const ACCENT = '#21A8BD';
+const ACCENT = 'var(--color-accent-cyan)';
 
 interface ReadingTextCardProps {
   item: ReadingLibraryItem;
@@ -27,7 +27,7 @@ export const ReadingTextCard = ({ item, onOpen, onRename, onDelete }: ReadingTex
   const level = item.detectedDifficulty ?? item.difficulty;
 
   return (
-    <div className="group relative flex flex-col gap-3 rounded-2xl border border-white bg-white/95 p-4 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+    <div className="group relative flex flex-col gap-3 rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 p-4 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
       <div className="flex flex-col gap-1 pr-14">
         <span className="line-clamp-2 text-[16px] font-bold text-(--color-primary-blue-dark)">
           {item.title}
@@ -74,7 +74,7 @@ export const ReadingTextCard = ({ item, onOpen, onRename, onDelete }: ReadingTex
           type="button"
           onClick={onRename}
           aria-label={t('reading.card.rename')}
-          className="grid size-8 place-items-center rounded-full text-(--color-cs-text-muted) hover:bg-black/[0.04]"
+          className="grid size-8 place-items-center rounded-full text-(--color-cs-text-muted) hover:bg-(--color-chip-bg)"
         >
           <PencilSimple size={15} weight="bold" />
         </button>
@@ -82,7 +82,7 @@ export const ReadingTextCard = ({ item, onOpen, onRename, onDelete }: ReadingTex
           type="button"
           onClick={onDelete}
           aria-label={t('reading.card.delete')}
-          className="grid size-8 place-items-center rounded-full text-(--color-cs-text-muted) hover:bg-black/[0.04] hover:text-(--color-cs-red)"
+          className="grid size-8 place-items-center rounded-full text-(--color-cs-text-muted) hover:bg-(--color-chip-bg) hover:text-(--color-cs-red)"
         >
           <Trash size={15} weight="bold" />
         </button>

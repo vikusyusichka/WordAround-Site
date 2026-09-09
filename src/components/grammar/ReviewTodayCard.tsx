@@ -52,15 +52,15 @@ export const ReviewTodayCard = ({
   return (
     <SurfaceCard
       as="section"
-      accent="#7C5CFF"
+      accent='var(--color-accent-violet)'
       className="flex flex-col gap-3 p-4 lg:p-5"
       {...GRAMMAR_SURFACE}
     >
       {/* iOS GrammarReviewSummaryView.header: a 40/46 icon circle, the title in
           the heaviest weight, and a subtitle of at most two lines. */}
       <div className="flex items-start gap-3">
-        <span className="grid size-10 shrink-0 place-items-center rounded-full bg-[#7C5CFF]/12 lg:size-[46px]">
-          <Icon name="brain.head.profile" className="size-[20px] text-[#7C5CFF]" />
+        <span className="grid size-10 shrink-0 place-items-center rounded-full bg-(--color-accent-violet)/12 lg:size-[46px]">
+          <Icon name="brain.head.profile" className="size-[20px] text-(--color-accent-violet)" />
         </span>
         <div className="flex min-w-0 flex-col gap-0.5">
           <h2 className="text-[16px] font-black text-(--color-primary-blue-dark) lg:text-[18px]">
@@ -77,7 +77,7 @@ export const ReviewTodayCard = ({
       </div>
 
       {hasCards && queue?.pool && (
-        <span className="w-fit rounded-full bg-[#7C5CFF]/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-[#7C5CFF]">
+        <span className="w-fit rounded-full bg-(--color-accent-violet)/10 px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide text-(--color-accent-violet)">
           {t(`writing.grammar.review.pool.${queue.pool}`, { count })}
         </span>
       )}
@@ -97,7 +97,7 @@ export const ReviewTodayCard = ({
         <button
           type="button"
           onClick={onStart}
-          className="h-11 w-full rounded-2xl border border-[#7C5CFF]/35 bg-[#7C5CFF]/8 text-[14px] font-semibold text-[#5B3FD1] transition-colors hover:bg-[#7C5CFF]/16"
+          className="h-11 w-full rounded-2xl border border-(--color-accent-violet)/35 bg-(--color-accent-violet)/8 text-[14px] font-semibold text-(--color-accent-violet-text) transition-colors hover:bg-(--color-accent-violet)/16"
         >
           {t('writing.grammar.review.refreshStart')}
         </button>

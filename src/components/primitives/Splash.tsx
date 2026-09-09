@@ -4,7 +4,7 @@ import { BlobBackground } from '@/components/primitives/BlobBackground';
 
 export const Splash = () => {
   return (
-    <div className="relative flex min-h-dvh items-center justify-center overflow-hidden bg-[#F5F5FB]">
+    <div className="relative flex min-h-dvh items-center justify-center overflow-hidden bg-(--color-app-bg)">
       <BlobBackground
         className="pointer-events-none absolute h-72 w-72 opacity-50"
         color="var(--color-blob-blue)"

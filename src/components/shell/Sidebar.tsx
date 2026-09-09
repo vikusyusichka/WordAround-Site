@@ -29,7 +29,7 @@ const NavLink = ({ item, onNavigate }: { item: NavItem; onNavigate?: () => void 
             'flex items-center gap-3 rounded-xl px-3 py-2.5 text-[15px] font-semibold transition-colors',
             isActive
               ? 'bg-(--color-home-nav-sel-bg) text-(--color-home-brand)'
-              : 'text-(--color-text-secondary) hover:bg-black/[0.03] hover:text-(--color-primary-blue-dark)',
+              : 'text-(--color-text-secondary) hover:bg-(--color-hover-wash) hover:text-(--color-primary-blue-dark)',
           ].join(' ')}
         >
           <Icon

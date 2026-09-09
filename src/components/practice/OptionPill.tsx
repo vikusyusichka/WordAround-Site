@@ -16,7 +16,10 @@ const withAlpha = (color: string, pct: number) =>
   `color-mix(in srgb, ${color} ${pct}%, transparent)`;
 
 export const OptionPill = ({ label, selected, accent, accentDark, onClick }: OptionPillProps) => {
-  const a = accent ?? 'var(--color-primary-blue)';
+  /* The solid brand blue, not the plain one: a selected pill is a filled
+     surface with white text on it, and in the dark theme the two are different
+     colours (see --color-primary-blue-solid). Identical in the light theme. */
+  const a = accent ?? 'var(--color-primary-blue-solid)';
   const aDark = accentDark ?? 'var(--color-primary-blue-dark)';
 
   const style: CSSProperties = selected
