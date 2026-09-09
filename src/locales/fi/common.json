@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Käyttöliittymän kieli",
     "password": {
       "title": "Luo salasana",
       "body": "Tilisi luotiin Googlella, joten sillä ei ole salasanaa — sähköposti- ja salasanakentät eivät kirjaa sinua sisään. Lisää salasana, niin molemmat tavat toimivat.",
       "save": "Tallenna salasana",
       "saving": "Tallennetaan...",
       "savedInfo": "Salasana luotu. Nyt voit kirjautua sisään myös sähköpostillasi."
+    },
+    "subtitle": "Tilisi ja sovelluksen asetukset",
+    "addName": "Lisää nimesi",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Harjoitteluaika",
+      "memberSince": "Jäsen alkaen"
+    },
+    "section": {
+      "account": "Tili",
+      "support": "Tuki",
+      "danger": "Vaaravyöhyke"
+    },
+    "row": {
+      "language": "Kieli",
+      "appearance": "Ulkoasu",
+      "notifications": "Ilmoitukset",
+      "privacy": "Tietosuojakäytäntö",
+      "terms": "Käyttöehdot",
+      "signOut": "Kirjaudu ulos",
+      "deleteAccount": "Poista tili"
+    },
+    "edit": {
+      "button": "Muokkaa",
+      "title": "Muokkaa profiilia",
+      "avatarColor": "Avatarin väri",
+      "nameLabel": "Nimi",
+      "namePlaceholder": "Miksi sinua kutsutaan?",
+      "changePhoto": "Vaihda kuva",
+      "chooseAnother": "Valitse toinen",
+      "saving": "Tallennetaan...",
+      "photoFailed": "Kuvaa ei voitu ladata. Nimesi ja värisi tallennettiin.",
+      "photoTimeout": "Kuvan lataus kesti liian kauan. Nimesi ja värisi tallennettiin.",
+      "saveFailed": "Profiilia ei voitu tallentaa. Yritä uudelleen."
+    },
+    "color": {
+      "blue": "Sininen",
+      "purple": "Violetti",
+      "pink": "Pinkki",
+      "orange": "Oranssi",
+      "green": "Vihreä",
+      "cyan": "Turkoosi"
+    },
+    "signOut": {
+      "title": "Kirjaudutaanko ulos?",
+      "message": "Sinun täytyy kirjautua uudelleen päästäksesi setteihisi ja edistymiseesi.",
+      "confirm": "Kirjaudu ulos"
+    },
+    "delete": {
+      "title": "Poista tili",
+      "firstMessage": "Tämä poistaa tilisi pysyvästi. Setit, kansiot ja muistiinpanot jäävät palvelimelle, mutta et enää pääse niihin.",
+      "continue": "Jatka",
+      "secondMessage": "Tätä ei voi perua. Kirjoita alle DELETE vahvistaaksesi, että haluat poistaa tilisi lopullisesti.",
+      "confirmField": "Kirjoita {{word}} vahvistukseksi",
+      "confirmButton": "Poista tilini",
+      "deleting": "Poistetaan...",
+      "reauthNeeded": "Turvallisuuden vuoksi tarvitaan tuore kirjautuminen. Sinut kirjattiin ulos — kirjaudu uudelleen ja toista poisto.",
+      "failed": "Tiliä ei voitu poistaa. Yritä uudelleen."
+    },
+    "language": {
+      "title": "Kieli",
+      "subtitle": "Valitse käyttöliittymän kieli",
+      "searchPlaceholder": "Hae kieltä",
+      "noResults": "Mikään kieli ei vastaa hakua ”{{query}}”.",
+      "note": "Käyttöliittymä vaihtuu heti. Settisi, muistiinpanosi ja tekstisi pysyvät sillä kielellä, jolla ne kirjoitit."
+    },
+    "appearance": {
+      "title": "Ulkoasu",
+      "subtitle": "Valitse, miltä WordAround näyttää",
+      "system": "Järjestelmä",
+      "systemHint": "Seuraa laitteesi asetusta",
+      "light": "Vaalea",
+      "lightHint": "Aina vaalea teema",
+      "dark": "Tumma",
+      "darkHint": "Tumma teema on tulossa",
+      "comingSoon": "Pian",
+      "note": "Tummaa teemaa rakennetaan. Siihen asti molemmat vaihtoehdot näyttävät vaalean."
+    },
+    "notifications": {
+      "title": "Ilmoitukset",
+      "subtitle": "Muistutukset, jotka pitävät putkesi elossa",
+      "dailyReminder": "Päivittäinen muistutus",
+      "dailyReminderHint": "Tönäisy harjoitella joka päivä",
+      "reminderTime": "Muistutuksen aika",
+      "weeklySummary": "Viikkokooste",
+      "weeklySummaryHint": "Mitä opit — joka sunnuntai-ilta",
+      "streakAlerts": "Putki-ilmoitukset",
+      "streakAlertsHint": "Varoitus ennen kuin putkesi katkeaa",
+      "permissionDenied": "Selaimesi estää WordAroundin ilmoitukset. Salli ne sivuston asetuksissa, niin saat muistutukset takaisin käyttöön.",
+      "unsupported": "Tämä selain ei osaa näyttää ilmoituksia.",
+      "backgroundNote": "Muistutukset toimivat, kun WordAround on auki välilehdellä tai asennettuna sovelluksena. Ilmoitukset sovelluksen ollessa suljettuna tulevat myöhemmin.",
+      "dailyPushTitle": "Aika harjoitella",
+      "dailyPushBody": "Muutama minuutti WordAroundin parissa pitää putkesi elossa.",
+      "weeklyPushTitle": "Viikkosi WordAroundissa",
+      "weeklyPushBody": "Katso, mitä opit tällä viikolla ja mitä kannattaa kerrata."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Näkymä",
       "rows": "Lista",
       "grid": "Ruudukko"
-    }
+    },
+    "save": "Tallenna"
   },
   "practice": {
     "language": {

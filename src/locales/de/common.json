@@ -1668,13 +1668,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Sprache der Oberfläche",
     "password": {
       "title": "Passwort erstellen",
       "body": "Dein Konto wurde mit Google erstellt und hat daher kein Passwort — die Felder für E-Mail und Passwort können dich nicht anmelden. Lege eines an, dann funktionieren beide Wege.",
       "save": "Passwort speichern",
       "saving": "Wird gespeichert...",
       "savedInfo": "Passwort erstellt. Du kannst dich jetzt auch mit deiner E-Mail anmelden."
+    },
+    "subtitle": "Dein Konto und die Einstellungen der App",
+    "addName": "Namen hinzufügen",
+    "stat": {
+      "minutes": "{{value}} Min.",
+      "practiceTime": "Übungszeit",
+      "memberSince": "Dabei seit"
+    },
+    "section": {
+      "account": "Konto",
+      "support": "Support",
+      "danger": "Gefahrenzone"
+    },
+    "row": {
+      "language": "Sprache",
+      "appearance": "Darstellung",
+      "notifications": "Mitteilungen",
+      "privacy": "Datenschutzerklärung",
+      "terms": "Nutzungsbedingungen",
+      "signOut": "Abmelden",
+      "deleteAccount": "Konto löschen"
+    },
+    "edit": {
+      "button": "Bearbeiten",
+      "title": "Profil bearbeiten",
+      "avatarColor": "Avatarfarbe",
+      "nameLabel": "Name",
+      "namePlaceholder": "Wie sollen wir dich nennen?",
+      "changePhoto": "Foto ändern",
+      "chooseAnother": "Anderes wählen",
+      "saving": "Wird gespeichert...",
+      "photoFailed": "Das Foto konnte nicht hochgeladen werden. Name und Farbe wurden gespeichert.",
+      "photoTimeout": "Der Foto-Upload hat zu lange gedauert. Name und Farbe wurden gespeichert.",
+      "saveFailed": "Das Profil konnte nicht gespeichert werden. Bitte versuche es erneut."
+    },
+    "color": {
+      "blue": "Blau",
+      "purple": "Lila",
+      "pink": "Rosa",
+      "orange": "Orange",
+      "green": "Grün",
+      "cyan": "Türkis"
+    },
+    "signOut": {
+      "title": "Abmelden?",
+      "message": "Um wieder an deine Sets und deinen Fortschritt zu kommen, musst du dich erneut anmelden.",
+      "confirm": "Abmelden"
+    },
+    "delete": {
+      "title": "Konto löschen",
+      "firstMessage": "Damit wird dein Konto dauerhaft gelöscht. Sets, Ordner und Notizen bleiben auf dem Server, du kommst aber nicht mehr an sie heran.",
+      "continue": "Weiter",
+      "secondMessage": "Das lässt sich nicht rückgängig machen. Tippe unten DELETE ein, um das endgültige Löschen deines Kontos zu bestätigen.",
+      "confirmField": "Tippe {{word}} zur Bestätigung",
+      "confirmButton": "Mein Konto löschen",
+      "deleting": "Wird gelöscht...",
+      "reauthNeeded": "Zur Sicherheit ist eine frische Anmeldung nötig. Du wurdest abgemeldet — melde dich erneut an und wiederhole das Löschen.",
+      "failed": "Das Konto konnte nicht gelöscht werden. Bitte versuche es erneut."
+    },
+    "language": {
+      "title": "Sprache",
+      "subtitle": "Wähle die Sprache der Oberfläche",
+      "searchPlaceholder": "Sprache suchen",
+      "noResults": "Keine Sprache passt zu „{{query}}“.",
+      "note": "Die Oberfläche wechselt sofort. Deine Sets, Notizen und Texte bleiben in der Sprache, in der du sie geschrieben hast."
+    },
+    "appearance": {
+      "title": "Darstellung",
+      "subtitle": "Wähle, wie WordAround aussieht",
+      "system": "System",
+      "systemHint": "Folgt der Einstellung deines Geräts",
+      "light": "Hell",
+      "lightHint": "Immer das helle Design",
+      "dark": "Dunkel",
+      "darkHint": "Ein dunkles Design ist unterwegs",
+      "comingSoon": "Bald",
+      "note": "Das dunkle Design entsteht gerade. Bis dahin zeigen beide Optionen das helle."
+    },
+    "notifications": {
+      "title": "Mitteilungen",
+      "subtitle": "Erinnerungen, die deine Serie am Leben halten",
+      "dailyReminder": "Tägliche Erinnerung",
+      "dailyReminderHint": "Ein Anstoß, jeden Tag zu üben",
+      "reminderTime": "Uhrzeit der Erinnerung",
+      "weeklySummary": "Wochenrückblick",
+      "weeklySummaryHint": "Was du gelernt hast — jeden Sonntagabend",
+      "streakAlerts": "Serien-Warnungen",
+      "streakAlertsHint": "Eine Warnung, bevor deine Serie reißt",
+      "permissionDenied": "Dein Browser blockiert Mitteilungen für WordAround. Erlaube sie in den Website-Einstellungen, um Erinnerungen wieder einzuschalten.",
+      "unsupported": "Dieser Browser kann keine Mitteilungen anzeigen.",
+      "backgroundNote": "Erinnerungen funktionieren, solange WordAround in einem Tab oder als installierte App geöffnet ist. Mitteilungen bei geschlossener App kommen später.",
+      "dailyPushTitle": "Zeit zu üben",
+      "dailyPushBody": "Ein paar Minuten mit WordAround halten deine Serie am Leben.",
+      "weeklyPushTitle": "Deine Woche in WordAround",
+      "weeklyPushBody": "Sieh dir an, was du diese Woche gelernt hast und was sich zu wiederholen lohnt."
     }
   },
   "units": {
@@ -1715,7 +1809,8 @@
       "label": "Ansicht",
       "rows": "Liste",
       "grid": "Raster"
-    }
+    },
+    "save": "Speichern"
   },
   "practice": {
     "language": {

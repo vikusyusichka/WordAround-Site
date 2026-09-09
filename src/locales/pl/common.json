@@ -1714,13 +1714,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Język interfejsu",
     "password": {
       "title": "Utwórz hasło",
       "body": "Twoje konto powstało przez Google, więc nie ma hasła — pola e-mail i hasło nie zalogują Cię. Dodaj hasło, a zadziałają oba sposoby.",
       "save": "Zapisz hasło",
       "saving": "Zapisywanie...",
       "savedInfo": "Hasło utworzone. Teraz możesz logować się także e-mailem."
+    },
+    "subtitle": "Twoje konto i ustawienia aplikacji",
+    "addName": "Dodaj imię",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Czas ćwiczeń",
+      "memberSince": "Użytkownik od"
+    },
+    "section": {
+      "account": "Konto",
+      "support": "Pomoc",
+      "danger": "Strefa ryzyka"
+    },
+    "row": {
+      "language": "Język",
+      "appearance": "Wygląd",
+      "notifications": "Powiadomienia",
+      "privacy": "Polityka prywatności",
+      "terms": "Warunki korzystania",
+      "signOut": "Wyloguj się",
+      "deleteAccount": "Usuń konto"
+    },
+    "edit": {
+      "button": "Edytuj",
+      "title": "Edytuj profil",
+      "avatarColor": "Kolor awatara",
+      "nameLabel": "Imię",
+      "namePlaceholder": "Jak mamy się do Ciebie zwracać?",
+      "changePhoto": "Zmień zdjęcie",
+      "chooseAnother": "Wybierz inne",
+      "saving": "Zapisywanie...",
+      "photoFailed": "Nie udało się przesłać zdjęcia. Imię i kolor zostały zapisane.",
+      "photoTimeout": "Przesyłanie zdjęcia trwało zbyt długo. Imię i kolor zostały zapisane.",
+      "saveFailed": "Nie udało się zapisać profilu. Spróbuj ponownie."
+    },
+    "color": {
+      "blue": "Niebieski",
+      "purple": "Fioletowy",
+      "pink": "Różowy",
+      "orange": "Pomarańczowy",
+      "green": "Zielony",
+      "cyan": "Turkusowy"
+    },
+    "signOut": {
+      "title": "Wylogować się?",
+      "message": "Aby wrócić do swoich zestawów i postępów, trzeba będzie zalogować się ponownie.",
+      "confirm": "Wyloguj się"
+    },
+    "delete": {
+      "title": "Usuń konto",
+      "firstMessage": "To trwale usunie Twoje konto. Zestawy, foldery i notatki zostaną na serwerze, ale nie będziesz mieć już do nich dostępu.",
+      "continue": "Dalej",
+      "secondMessage": "Tego nie da się cofnąć. Wpisz poniżej DELETE, aby potwierdzić trwałe usunięcie konta.",
+      "confirmField": "Wpisz {{word}}, aby potwierdzić",
+      "confirmButton": "Usuń moje konto",
+      "deleting": "Usuwanie...",
+      "reauthNeeded": "Ze względów bezpieczeństwa potrzebne jest świeże logowanie. Wylogowaliśmy Cię — zaloguj się ponownie i powtórz usuwanie.",
+      "failed": "Nie udało się usunąć konta. Spróbuj ponownie."
+    },
+    "language": {
+      "title": "Język",
+      "subtitle": "Wybierz język interfejsu",
+      "searchPlaceholder": "Szukaj języka",
+      "noResults": "Żaden język nie pasuje do „{{query}}”.",
+      "note": "Interfejs zmienia się od razu. Twoje zestawy, notatki i teksty pozostają w języku, w którym je napisano."
+    },
+    "appearance": {
+      "title": "Wygląd",
+      "subtitle": "Wybierz, jak wygląda WordAround",
+      "system": "Systemowy",
+      "systemHint": "Zgodnie z ustawieniem urządzenia",
+      "light": "Jasny",
+      "lightHint": "Zawsze jasny motyw",
+      "dark": "Ciemny",
+      "darkHint": "Ciemny motyw jest w drodze",
+      "comingSoon": "Wkrótce",
+      "note": "Ciemny motyw powstaje. Zanim będzie gotowy, obie opcje pokazują jasny."
+    },
+    "notifications": {
+      "title": "Powiadomienia",
+      "subtitle": "Przypomnienia, które podtrzymują Twoją serię",
+      "dailyReminder": "Codzienne przypomnienie",
+      "dailyReminderHint": "Zachęta do codziennych ćwiczeń",
+      "reminderTime": "Godzina przypomnienia",
+      "weeklySummary": "Podsumowanie tygodnia",
+      "weeklySummaryHint": "Czego się nauczyłeś — w każdą niedzielę wieczorem",
+      "streakAlerts": "Alerty serii",
+      "streakAlertsHint": "Ostrzeżenie, zanim seria się urwie",
+      "permissionDenied": "Przeglądarka blokuje powiadomienia dla WordAround. Zezwól na nie w ustawieniach witryny, aby znów włączyć przypomnienia.",
+      "unsupported": "Ta przeglądarka nie może wyświetlać powiadomień.",
+      "backgroundNote": "Przypomnienia działają, gdy WordAround jest otwarty w karcie lub jako zainstalowana aplikacja. Powiadomienia przy zamkniętej aplikacji pojawią się później.",
+      "dailyPushTitle": "Czas na ćwiczenia",
+      "dailyPushBody": "Kilka minut z WordAround i seria trwa dalej.",
+      "weeklyPushTitle": "Twój tydzień w WordAround",
+      "weeklyPushBody": "Zobacz, czego nauczyłeś się w tym tygodniu i co warto powtórzyć."
     }
   },
   "units": {
@@ -1761,7 +1855,8 @@
       "label": "Widok",
       "rows": "Lista",
       "grid": "Siatka"
-    }
+    },
+    "save": "Zapisz"
   },
   "practice": {
     "language": {

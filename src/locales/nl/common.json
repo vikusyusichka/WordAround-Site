@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Taal van de interface",
     "password": {
       "title": "Maak een wachtwoord aan",
       "body": "Je account is met Google aangemaakt en heeft dus geen wachtwoord — met de velden voor e-mail en wachtwoord kun je niet inloggen. Stel er een in en beide manieren werken.",
       "save": "Wachtwoord opslaan",
       "saving": "Bezig met opslaan...",
       "savedInfo": "Wachtwoord aangemaakt. Je kunt nu ook met je e-mailadres inloggen."
+    },
+    "subtitle": "Je account en de instellingen van de app",
+    "addName": "Voeg je naam toe",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Oefentijd",
+      "memberSince": "Lid sinds"
+    },
+    "section": {
+      "account": "Account",
+      "support": "Ondersteuning",
+      "danger": "Gevarenzone"
+    },
+    "row": {
+      "language": "Taal",
+      "appearance": "Weergave",
+      "notifications": "Meldingen",
+      "privacy": "Privacybeleid",
+      "terms": "Gebruiksvoorwaarden",
+      "signOut": "Uitloggen",
+      "deleteAccount": "Account verwijderen"
+    },
+    "edit": {
+      "button": "Bewerken",
+      "title": "Profiel bewerken",
+      "avatarColor": "Avatarkleur",
+      "nameLabel": "Naam",
+      "namePlaceholder": "Hoe zullen we je noemen?",
+      "changePhoto": "Foto wijzigen",
+      "chooseAnother": "Een andere kiezen",
+      "saving": "Opslaan...",
+      "photoFailed": "De foto kon niet worden geüpload. Je naam en kleur zijn wel opgeslagen.",
+      "photoTimeout": "Het uploaden van de foto duurde te lang. Je naam en kleur zijn wel opgeslagen.",
+      "saveFailed": "Je profiel kon niet worden opgeslagen. Probeer het opnieuw."
+    },
+    "color": {
+      "blue": "Blauw",
+      "purple": "Paars",
+      "pink": "Roze",
+      "orange": "Oranje",
+      "green": "Groen",
+      "cyan": "Turquoise"
+    },
+    "signOut": {
+      "title": "Uitloggen?",
+      "message": "Je moet opnieuw inloggen om bij je sets en voortgang te komen.",
+      "confirm": "Uitloggen"
+    },
+    "delete": {
+      "title": "Account verwijderen",
+      "firstMessage": "Hiermee verwijder je je account definitief. Je sets, mappen en notities blijven op de server staan, maar je kunt er niet meer bij.",
+      "continue": "Doorgaan",
+      "secondMessage": "Dit kan niet ongedaan worden gemaakt. Typ hieronder DELETE om te bevestigen dat je je account voorgoed wilt verwijderen.",
+      "confirmField": "Typ {{word}} om te bevestigen",
+      "confirmButton": "Mijn account verwijderen",
+      "deleting": "Verwijderen...",
+      "reauthNeeded": "Voor de zekerheid is een recente login nodig. Je bent uitgelogd — log opnieuw in en herhaal het verwijderen.",
+      "failed": "Het account kon niet worden verwijderd. Probeer het opnieuw."
+    },
+    "language": {
+      "title": "Taal",
+      "subtitle": "Kies de taal van de interface",
+      "searchPlaceholder": "Taal zoeken",
+      "noResults": "Geen taal komt overeen met “{{query}}”.",
+      "note": "De interface schakelt meteen om. Je sets, notities en teksten blijven in de taal waarin je ze hebt geschreven."
+    },
+    "appearance": {
+      "title": "Weergave",
+      "subtitle": "Kies hoe WordAround eruitziet",
+      "system": "Systeem",
+      "systemHint": "Volgt de instelling van je apparaat",
+      "light": "Licht",
+      "lightHint": "Altijd het lichte thema",
+      "dark": "Donker",
+      "darkHint": "Een donker thema is onderweg",
+      "comingSoon": "Binnenkort",
+      "note": "Het donkere thema wordt gebouwd. Tot die tijd tonen beide opties het lichte."
+    },
+    "notifications": {
+      "title": "Meldingen",
+      "subtitle": "Herinneringen die je reeks in stand houden",
+      "dailyReminder": "Dagelijkse herinnering",
+      "dailyReminderHint": "Een zetje om elke dag te oefenen",
+      "reminderTime": "Tijd van de herinnering",
+      "weeklySummary": "Weekoverzicht",
+      "weeklySummaryHint": "Wat je hebt geleerd, elke zondagavond",
+      "streakAlerts": "Reeksmeldingen",
+      "streakAlertsHint": "Een waarschuwing voordat je reeks afloopt",
+      "permissionDenied": "Je browser blokkeert meldingen voor WordAround. Sta ze toe in de site-instellingen om herinneringen weer aan te zetten.",
+      "unsupported": "Deze browser kan geen meldingen tonen.",
+      "backgroundNote": "Herinneringen werken zolang WordAround open staat in een tabblad of als geïnstalleerde app. Meldingen met de app dicht komen later.",
+      "dailyPushTitle": "Tijd om te oefenen",
+      "dailyPushBody": "Een paar minuten met WordAround houdt je reeks in leven.",
+      "weeklyPushTitle": "Jouw week in WordAround",
+      "weeklyPushBody": "Bekijk wat je deze week hebt geleerd en wat het herhalen waard is."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Weergave",
       "rows": "Lijst",
       "grid": "Raster"
-    }
+    },
+    "save": "Opslaan"
   },
   "practice": {
     "language": {

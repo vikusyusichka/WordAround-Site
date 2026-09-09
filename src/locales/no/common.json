@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Grensesnittspråk",
     "password": {
       "title": "Opprett et passord",
       "body": "Kontoen din ble opprettet med Google og har derfor ikke noe passord — feltene for e-post og passord kan ikke logge deg inn. Legg til ett, så virker begge måtene.",
       "save": "Lagre passord",
       "saving": "Lagrer...",
       "savedInfo": "Passordet er opprettet. Nå kan du logge inn med e-posten din også."
+    },
+    "subtitle": "Kontoen din og innstillingene i appen",
+    "addName": "Legg til navnet ditt",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Øvingstid",
+      "memberSince": "Medlem siden"
+    },
+    "section": {
+      "account": "Konto",
+      "support": "Støtte",
+      "danger": "Faresone"
+    },
+    "row": {
+      "language": "Språk",
+      "appearance": "Utseende",
+      "notifications": "Varsler",
+      "privacy": "Personvernerklæring",
+      "terms": "Bruksvilkår",
+      "signOut": "Logg ut",
+      "deleteAccount": "Slett konto"
+    },
+    "edit": {
+      "button": "Rediger",
+      "title": "Rediger profil",
+      "avatarColor": "Avatarfarge",
+      "nameLabel": "Navn",
+      "namePlaceholder": "Hva skal vi kalle deg?",
+      "changePhoto": "Bytt bilde",
+      "chooseAnother": "Velg et annet",
+      "saving": "Lagrer...",
+      "photoFailed": "Bildet kunne ikke lastes opp. Navnet og fargen din ble lagret.",
+      "photoTimeout": "Opplastingen av bildet tok for lang tid. Navnet og fargen din ble lagret.",
+      "saveFailed": "Profilen kunne ikke lagres. Prøv igjen."
+    },
+    "color": {
+      "blue": "Blå",
+      "purple": "Lilla",
+      "pink": "Rosa",
+      "orange": "Oransje",
+      "green": "Grønn",
+      "cyan": "Turkis"
+    },
+    "signOut": {
+      "title": "Logge ut?",
+      "message": "Du må logge inn igjen for å komme til settene og fremgangen din.",
+      "confirm": "Logg ut"
+    },
+    "delete": {
+      "title": "Slett konto",
+      "firstMessage": "Dette sletter kontoen din for godt. Sett, mapper og notater blir liggende på serveren, men du når dem ikke lenger.",
+      "continue": "Fortsett",
+      "secondMessage": "Dette kan ikke angres. Skriv DELETE nedenfor for å bekrefte at du vil slette kontoen din for godt.",
+      "confirmField": "Skriv {{word}} for å bekrefte",
+      "confirmButton": "Slett kontoen min",
+      "deleting": "Sletter...",
+      "reauthNeeded": "Av sikkerhetshensyn trengs en fersk innlogging. Du er logget ut — logg inn igjen og gjenta slettingen.",
+      "failed": "Kontoen kunne ikke slettes. Prøv igjen."
+    },
+    "language": {
+      "title": "Språk",
+      "subtitle": "Velg språket i grensesnittet",
+      "searchPlaceholder": "Søk etter språk",
+      "noResults": "Ingen språk passer til «{{query}}».",
+      "note": "Grensesnittet bytter med en gang. Settene, notatene og tekstene dine blir på språket du skrev dem på."
+    },
+    "appearance": {
+      "title": "Utseende",
+      "subtitle": "Velg hvordan WordAround ser ut",
+      "system": "System",
+      "systemHint": "Følger innstillingen på enheten din",
+      "light": "Lys",
+      "lightHint": "Alltid det lyse temaet",
+      "dark": "Mørk",
+      "darkHint": "Et mørkt tema er på vei",
+      "comingSoon": "Snart",
+      "note": "Det mørke temaet bygges nå. Til det er klart, viser begge valgene det lyse."
+    },
+    "notifications": {
+      "title": "Varsler",
+      "subtitle": "Påminnelser som holder rekken din i live",
+      "dailyReminder": "Daglig påminnelse",
+      "dailyReminderHint": "Et dytt til å øve hver dag",
+      "reminderTime": "Tidspunkt for påminnelsen",
+      "weeklySummary": "Ukesoppsummering",
+      "weeklySummaryHint": "Hva du har lært — hver søndag kveld",
+      "streakAlerts": "Rekkevarsler",
+      "streakAlertsHint": "En advarsel før rekken din ryker",
+      "permissionDenied": "Nettleseren din blokkerer varsler for WordAround. Tillat dem i nettstedsinnstillingene for å slå på påminnelser igjen.",
+      "unsupported": "Denne nettleseren kan ikke vise varsler.",
+      "backgroundNote": "Påminnelser virker så lenge WordAround er åpent i en fane eller som installert app. Varsler når appen er lukket kommer senere.",
+      "dailyPushTitle": "På tide å øve",
+      "dailyPushBody": "Noen minutter med WordAround holder rekken din i live.",
+      "weeklyPushTitle": "Uken din i WordAround",
+      "weeklyPushBody": "Se hva du har lært denne uken og hva som er verdt å repetere."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Visning",
       "rows": "Liste",
       "grid": "Rutenett"
-    }
+    },
+    "save": "Lagre"
   },
   "practice": {
     "language": {

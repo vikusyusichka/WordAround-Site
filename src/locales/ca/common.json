@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Idioma de la interfície",
     "password": {
       "title": "Crea una contrasenya",
       "body": "El teu compte es va crear amb Google, així que no té contrasenya: els camps de correu i contrasenya no poden iniciar-te la sessió. Afegeix-ne una i funcionaran les dues maneres.",
       "save": "Desa la contrasenya",
       "saving": "Desant...",
       "savedInfo": "Contrasenya creada. Ara també pots iniciar la sessió amb el teu correu."
+    },
+    "subtitle": "El teu compte i la configuració de l’aplicació",
+    "addName": "Afegeix el teu nom",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Temps de pràctica",
+      "memberSince": "Membre des de"
+    },
+    "section": {
+      "account": "Compte",
+      "support": "Ajuda",
+      "danger": "Zona de risc"
+    },
+    "row": {
+      "language": "Idioma",
+      "appearance": "Aparença",
+      "notifications": "Notificacions",
+      "privacy": "Política de privadesa",
+      "terms": "Condicions d’ús",
+      "signOut": "Tanca la sessió",
+      "deleteAccount": "Elimina el compte"
+    },
+    "edit": {
+      "button": "Edita",
+      "title": "Edita el perfil",
+      "avatarColor": "Color de l’avatar",
+      "nameLabel": "Nom",
+      "namePlaceholder": "Com t’hem de dir?",
+      "changePhoto": "Canvia la foto",
+      "chooseAnother": "Tria’n una altra",
+      "saving": "S’està desant...",
+      "photoFailed": "No s’ha pogut pujar la foto. El nom i el color s’han desat.",
+      "photoTimeout": "La pujada de la foto ha trigat massa. El nom i el color s’han desat.",
+      "saveFailed": "No s’ha pogut desar el perfil. Torna-ho a provar."
+    },
+    "color": {
+      "blue": "Blau",
+      "purple": "Lila",
+      "pink": "Rosa",
+      "orange": "Taronja",
+      "green": "Verd",
+      "cyan": "Turquesa"
+    },
+    "signOut": {
+      "title": "Vols tancar la sessió?",
+      "message": "Hauràs d’iniciar sessió de nou per tornar als teus conjunts i al teu progrés.",
+      "confirm": "Tanca la sessió"
+    },
+    "delete": {
+      "title": "Elimina el compte",
+      "firstMessage": "Això elimina el teu compte per sempre. Els conjunts, les carpetes i les notes es queden al servidor, però ja no hi podràs accedir.",
+      "continue": "Continua",
+      "secondMessage": "Això no es pot desfer. Escriu DELETE a sota per confirmar que vols eliminar el compte definitivament.",
+      "confirmField": "Escriu {{word}} per confirmar",
+      "confirmButton": "Elimina el meu compte",
+      "deleting": "S’està eliminant...",
+      "reauthNeeded": "Per seguretat cal un inici de sessió recent. Hem tancat la teva sessió: torna a entrar i repeteix l’eliminació.",
+      "failed": "No s’ha pogut eliminar el compte. Torna-ho a provar."
+    },
+    "language": {
+      "title": "Idioma",
+      "subtitle": "Tria l’idioma de la interfície",
+      "searchPlaceholder": "Cerca un idioma",
+      "noResults": "Cap idioma coincideix amb «{{query}}».",
+      "note": "La interfície canvia a l’instant. Els teus conjunts, notes i textos es queden en l’idioma en què els vas escriure."
+    },
+    "appearance": {
+      "title": "Aparença",
+      "subtitle": "Tria com es veu WordAround",
+      "system": "Sistema",
+      "systemHint": "Segueix la configuració del teu dispositiu",
+      "light": "Clar",
+      "lightHint": "Sempre el tema clar",
+      "dark": "Fosc",
+      "darkHint": "El tema fosc està en camí",
+      "comingSoon": "Aviat",
+      "note": "El tema fosc s’està construint. Fins que arribi, totes dues opcions mostren el clar."
+    },
+    "notifications": {
+      "title": "Notificacions",
+      "subtitle": "Recordatoris que mantenen viva la teva ratxa",
+      "dailyReminder": "Recordatori diari",
+      "dailyReminderHint": "Una empenta per practicar cada dia",
+      "reminderTime": "Hora del recordatori",
+      "weeklySummary": "Resum setmanal",
+      "weeklySummaryHint": "El que has après, cada diumenge al vespre",
+      "streakAlerts": "Avisos de ratxa",
+      "streakAlertsHint": "Un avís abans que la teva ratxa s’acabi",
+      "permissionDenied": "El navegador està bloquejant les notificacions de WordAround. Permet-les a la configuració del lloc per tornar a activar els recordatoris.",
+      "unsupported": "Aquest navegador no pot mostrar notificacions.",
+      "backgroundNote": "Els recordatoris funcionen mentre WordAround estigui obert en una pestanya o com a aplicació instal·lada. Les notificacions amb l’aplicació tancada arribaran més endavant.",
+      "dailyPushTitle": "És hora de practicar",
+      "dailyPushBody": "Uns minuts amb WordAround mantenen viva la teva ratxa.",
+      "weeklyPushTitle": "La teva setmana a WordAround",
+      "weeklyPushBody": "Mira què has après aquesta setmana i què val la pena repassar."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Vista",
       "rows": "Llista",
       "grid": "Graella"
-    }
+    },
+    "save": "Desa"
   },
   "practice": {
     "language": {

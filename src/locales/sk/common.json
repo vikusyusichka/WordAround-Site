@@ -1691,13 +1691,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Jazyk rozhrania",
     "password": {
       "title": "Vytvorte heslo",
       "body": "Váš účet vznikol cez Google, takže nemá heslo — poliami e-mail a heslo sa prihlásiť nedá. Nastavte si heslo a budú fungovať oba spôsoby.",
       "save": "Uložiť heslo",
       "saving": "Ukladáme...",
       "savedInfo": "Heslo vytvorené. Teraz sa môžete prihlásiť aj e-mailom."
+    },
+    "subtitle": "Váš účet a nastavenia aplikácie",
+    "addName": "Pridajte meno",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Čas precvičovania",
+      "memberSince": "Členom od"
+    },
+    "section": {
+      "account": "Účet",
+      "support": "Podpora",
+      "danger": "Riziková zóna"
+    },
+    "row": {
+      "language": "Jazyk",
+      "appearance": "Vzhľad",
+      "notifications": "Upozornenia",
+      "privacy": "Zásady ochrany súkromia",
+      "terms": "Podmienky používania",
+      "signOut": "Odhlásiť sa",
+      "deleteAccount": "Zmazať účet"
+    },
+    "edit": {
+      "button": "Upraviť",
+      "title": "Upraviť profil",
+      "avatarColor": "Farba avatara",
+      "nameLabel": "Meno",
+      "namePlaceholder": "Ako vás máme oslovovať?",
+      "changePhoto": "Zmeniť fotku",
+      "chooseAnother": "Vybrať inú",
+      "saving": "Ukladá sa...",
+      "photoFailed": "Fotku sa nepodarilo nahrať. Meno a farba sa uložili.",
+      "photoTimeout": "Nahrávanie fotky trvalo príliš dlho. Meno a farba sa uložili.",
+      "saveFailed": "Profil sa nepodarilo uložiť. Skúste to znova."
+    },
+    "color": {
+      "blue": "Modrá",
+      "purple": "Fialová",
+      "pink": "Ružová",
+      "orange": "Oranžová",
+      "green": "Zelená",
+      "cyan": "Tyrkysová"
+    },
+    "signOut": {
+      "title": "Odhlásiť sa?",
+      "message": "Aby ste sa vrátili k svojim sadám a pokroku, budete sa musieť znova prihlásiť.",
+      "confirm": "Odhlásiť sa"
+    },
+    "delete": {
+      "title": "Zmazať účet",
+      "firstMessage": "Týmto natrvalo zmažete svoj účet. Sady, priečinky a poznámky zostanú na serveri, ale už sa k nim nedostanete.",
+      "continue": "Pokračovať",
+      "secondMessage": "Túto akciu nemožno vrátiť späť. Napíšte nižšie DELETE a potvrďte tak trvalé zmazanie účtu.",
+      "confirmField": "Na potvrdenie napíšte {{word}}",
+      "confirmButton": "Zmazať môj účet",
+      "deleting": "Maže sa...",
+      "reauthNeeded": "Z bezpečnostných dôvodov je potrebné čerstvé prihlásenie. Odhlásili sme vás — prihláste sa znova a zmazanie zopakujte.",
+      "failed": "Účet sa nepodarilo zmazať. Skúste to znova."
+    },
+    "language": {
+      "title": "Jazyk",
+      "subtitle": "Vyberte jazyk rozhrania",
+      "searchPlaceholder": "Hľadať jazyk",
+      "noResults": "Dopytu „{{query}}“ nezodpovedá žiadny jazyk.",
+      "note": "Rozhranie sa prepne okamžite. Vaše sady, poznámky a texty zostanú v jazyku, v ktorom ste ich napísali."
+    },
+    "appearance": {
+      "title": "Vzhľad",
+      "subtitle": "Vyberte, ako WordAround vyzerá",
+      "system": "Systémový",
+      "systemHint": "Riadi sa nastavením zariadenia",
+      "light": "Svetlý",
+      "lightHint": "Vždy svetlá téma",
+      "dark": "Tmavý",
+      "darkHint": "Tmavá téma je na ceste",
+      "comingSoon": "Čoskoro",
+      "note": "Tmavá téma sa ešte tvorí. Kým bude hotová, obe možnosti ukazujú svetlú."
+    },
+    "notifications": {
+      "title": "Upozornenia",
+      "subtitle": "Pripomienky, ktoré udržia vašu sériu",
+      "dailyReminder": "Denná pripomienka",
+      "dailyReminderHint": "Podnet precvičovať každý deň",
+      "reminderTime": "Čas pripomienky",
+      "weeklySummary": "Týždenné zhrnutie",
+      "weeklySummaryHint": "Čo ste sa naučili — každú nedeľu večer",
+      "streakAlerts": "Upozornenia na sériu",
+      "streakAlertsHint": "Varovanie skôr, než sa séria preruší",
+      "permissionDenied": "Prehliadač blokuje upozornenia pre WordAround. Povoľte ich v nastaveniach stránky, aby ste pripomienky mohli znova zapnúť.",
+      "unsupported": "Tento prehliadač nevie zobrazovať upozornenia.",
+      "backgroundNote": "Pripomienky fungujú, kým je WordAround otvorený na karte alebo ako nainštalovaná aplikácia. Upozornenia pri zavretej aplikácii prídu neskôr.",
+      "dailyPushTitle": "Čas na precvičovanie",
+      "dailyPushBody": "Pár minút s WordAround a séria pokračuje.",
+      "weeklyPushTitle": "Váš týždeň vo WordAround",
+      "weeklyPushBody": "Pozrite sa, čo ste sa tento týždeň naučili a čo sa oplatí zopakovať."
     }
   },
   "units": {
@@ -1738,7 +1832,8 @@
       "label": "Zobrazenie",
       "rows": "Zoznam",
       "grid": "Mriežka"
-    }
+    },
+    "save": "Uložiť"
   },
   "practice": {
     "language": {

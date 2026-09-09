@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Lingvo de la interfaco",
     "password": {
       "title": "Kreu pasvorton",
       "body": "Via konto estis kreita per Google, do ĝi ne havas pasvorton — la kampoj de retadreso kaj pasvorto ne povas ensalutigi vin. Aldonu unu kaj ambaŭ manieroj funkcios.",
       "save": "Konservi la pasvorton",
       "saving": "Konservante...",
       "savedInfo": "Pasvorto kreita. Nun vi povas ensaluti ankaŭ per via retadreso."
+    },
+    "subtitle": "Via konto kaj la agordoj de la aplikaĵo",
+    "addName": "Aldonu vian nomon",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Ekzerca tempo",
+      "memberSince": "Membro ekde"
+    },
+    "section": {
+      "account": "Konto",
+      "support": "Subteno",
+      "danger": "Danĝera zono"
+    },
+    "row": {
+      "language": "Lingvo",
+      "appearance": "Aspekto",
+      "notifications": "Sciigoj",
+      "privacy": "Privateca politiko",
+      "terms": "Uzkondiĉoj",
+      "signOut": "Elsaluti",
+      "deleteAccount": "Forigi konton"
+    },
+    "edit": {
+      "button": "Redakti",
+      "title": "Redakti profilon",
+      "avatarColor": "Koloro de la avataro",
+      "nameLabel": "Nomo",
+      "namePlaceholder": "Kiel ni nomu vin?",
+      "changePhoto": "Ŝanĝi foton",
+      "chooseAnother": "Elekti alian",
+      "saving": "Konservado...",
+      "photoFailed": "La foto ne alŝuteblis. Via nomo kaj koloro estis konservitaj.",
+      "photoTimeout": "La alŝuto de la foto daŭris tro longe. Via nomo kaj koloro estis konservitaj.",
+      "saveFailed": "La profilo ne konserveblis. Bonvolu reprovi."
+    },
+    "color": {
+      "blue": "Blua",
+      "purple": "Purpura",
+      "pink": "Rozkolora",
+      "orange": "Oranĝa",
+      "green": "Verda",
+      "cyan": "Turkisa"
+    },
+    "signOut": {
+      "title": "Ĉu elsaluti?",
+      "message": "Vi devos ensaluti denove por atingi viajn arojn kaj vian progreson.",
+      "confirm": "Elsaluti"
+    },
+    "delete": {
+      "title": "Forigi konton",
+      "firstMessage": "Tio definitive forigas vian konton. Viaj aroj, dosierujoj kaj notoj restas sur la servilo, sed vi ne plu povos atingi ilin.",
+      "continue": "Daŭrigi",
+      "secondMessage": "Tio ne estas malfarebla. Tajpu DELETE sube por konfirmi, ke vi volas forigi vian konton por ĉiam.",
+      "confirmField": "Tajpu {{word}} por konfirmi",
+      "confirmButton": "Forigi mian konton",
+      "deleting": "Forigado...",
+      "reauthNeeded": "Pro sekureco necesas freŝa ensaluto. Vi estis elsalutita — ensalutu denove kaj ripetu la forigon.",
+      "failed": "La konto ne forigeblis. Bonvolu reprovi."
+    },
+    "language": {
+      "title": "Lingvo",
+      "subtitle": "Elektu la lingvon de la interfaco",
+      "searchPlaceholder": "Serĉi lingvon",
+      "noResults": "Neniu lingvo kongruas kun „{{query}}“.",
+      "note": "La interfaco ŝanĝiĝas tuj. Viaj aroj, notoj kaj tekstoj restas en la lingvo, en kiu vi verkis ilin."
+    },
+    "appearance": {
+      "title": "Aspekto",
+      "subtitle": "Elektu, kiel aspektas WordAround",
+      "system": "Sistema",
+      "systemHint": "Sekvas la agordon de via aparato",
+      "light": "Hela",
+      "lightHint": "Ĉiam la hela etoso",
+      "dark": "Malhela",
+      "darkHint": "Malhela etoso venas baldaŭ",
+      "comingSoon": "Baldaŭ",
+      "note": "La malhela etoso ankoraŭ konstruiĝas. Ĝis ĝi alvenos, ambaŭ elektoj montras la helan."
+    },
+    "notifications": {
+      "title": "Sciigoj",
+      "subtitle": "Memorigiloj, kiuj tenas vian serion viva",
+      "dailyReminder": "Ĉiutaga memorigilo",
+      "dailyReminderHint": "Puŝeto ekzerci ĉiutage",
+      "reminderTime": "Horo de la memorigilo",
+      "weeklySummary": "Semajna resumo",
+      "weeklySummaryHint": "Kion vi lernis — ĉiun dimanĉan vesperon",
+      "streakAlerts": "Seriaj avertoj",
+      "streakAlertsHint": "Averto antaŭ ol via serio ĉesos",
+      "permissionDenied": "Via retumilo blokas la sciigojn de WordAround. Permesu ilin en la retejaj agordoj por reŝalti la memorigilojn.",
+      "unsupported": "Ĉi tiu retumilo ne povas montri sciigojn.",
+      "backgroundNote": "Memorigiloj funkcias dum WordAround estas malfermita en langeto aŭ kiel instalita aplikaĵo. Sciigoj kun fermita aplikaĵo venos poste.",
+      "dailyPushTitle": "Tempo por ekzerci",
+      "dailyPushBody": "Kelkaj minutoj kun WordAround tenas vian serion viva.",
+      "weeklyPushTitle": "Via semajno en WordAround",
+      "weeklyPushBody": "Vidu, kion vi lernis ĉi-semajne kaj kion indas ripeti."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Vido",
       "rows": "Listo",
       "grid": "Krado"
-    }
+    },
+    "save": "Konservi"
   },
   "practice": {
     "language": {

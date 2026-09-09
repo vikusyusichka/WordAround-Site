@@ -1691,13 +1691,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Limba interfeței",
     "password": {
       "title": "Creează o parolă",
       "body": "Contul tău a fost creat cu Google, deci nu are parolă — cu câmpurile de e-mail și parolă nu te poți conecta. Adaugă una și vor funcționa ambele metode.",
       "save": "Salvează parola",
       "saving": "Se salvează...",
       "savedInfo": "Parola a fost creată. Acum te poți conecta și cu e-mailul."
+    },
+    "subtitle": "Contul tău și setările aplicației",
+    "addName": "Adaugă-ți numele",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Timp de exersare",
+      "memberSince": "Membru din"
+    },
+    "section": {
+      "account": "Cont",
+      "support": "Asistență",
+      "danger": "Zonă de risc"
+    },
+    "row": {
+      "language": "Limbă",
+      "appearance": "Aspect",
+      "notifications": "Notificări",
+      "privacy": "Politica de confidențialitate",
+      "terms": "Termeni de utilizare",
+      "signOut": "Deconectare",
+      "deleteAccount": "Șterge contul"
+    },
+    "edit": {
+      "button": "Editează",
+      "title": "Editează profilul",
+      "avatarColor": "Culoarea avatarului",
+      "nameLabel": "Nume",
+      "namePlaceholder": "Cum să îți spunem?",
+      "changePhoto": "Schimbă fotografia",
+      "chooseAnother": "Alege alta",
+      "saving": "Se salvează...",
+      "photoFailed": "Fotografia nu a putut fi încărcată. Numele și culoarea au fost salvate.",
+      "photoTimeout": "Încărcarea fotografiei a durat prea mult. Numele și culoarea au fost salvate.",
+      "saveFailed": "Profilul nu a putut fi salvat. Încearcă din nou."
+    },
+    "color": {
+      "blue": "Albastru",
+      "purple": "Mov",
+      "pink": "Roz",
+      "orange": "Portocaliu",
+      "green": "Verde",
+      "cyan": "Turcoaz"
+    },
+    "signOut": {
+      "title": "Ieși din cont?",
+      "message": "Va trebui să te autentifici din nou ca să ajungi la seturile și progresul tău.",
+      "confirm": "Deconectare"
+    },
+    "delete": {
+      "title": "Șterge contul",
+      "firstMessage": "Aceasta îți șterge contul definitiv. Seturile, folderele și notițele rămân pe server, dar nu vei mai putea ajunge la ele.",
+      "continue": "Continuă",
+      "secondMessage": "Această acțiune nu poate fi anulată. Scrie DELETE mai jos pentru a confirma ștergerea definitivă a contului.",
+      "confirmField": "Scrie {{word}} pentru a confirma",
+      "confirmButton": "Șterge contul meu",
+      "deleting": "Se șterge...",
+      "reauthNeeded": "Din motive de siguranță este nevoie de o autentificare recentă. Te-am deconectat — autentifică-te din nou și repetă ștergerea.",
+      "failed": "Contul nu a putut fi șters. Încearcă din nou."
+    },
+    "language": {
+      "title": "Limbă",
+      "subtitle": "Alege limba interfeței",
+      "searchPlaceholder": "Caută o limbă",
+      "noResults": "Nicio limbă nu se potrivește cu „{{query}}”.",
+      "note": "Interfața se schimbă imediat. Seturile, notițele și textele tale rămân în limba în care le-ai scris."
+    },
+    "appearance": {
+      "title": "Aspect",
+      "subtitle": "Alege cum arată WordAround",
+      "system": "Sistem",
+      "systemHint": "Urmează setarea dispozitivului tău",
+      "light": "Luminos",
+      "lightHint": "Întotdeauna tema luminoasă",
+      "dark": "Întunecat",
+      "darkHint": "Tema întunecată este pe drum",
+      "comingSoon": "În curând",
+      "note": "Tema întunecată se construiește. Până atunci, ambele opțiuni arată tema luminoasă."
+    },
+    "notifications": {
+      "title": "Notificări",
+      "subtitle": "Memento-uri care îți țin seria în viață",
+      "dailyReminder": "Memento zilnic",
+      "dailyReminderHint": "Un imbold să exersezi în fiecare zi",
+      "reminderTime": "Ora memento-ului",
+      "weeklySummary": "Rezumat săptămânal",
+      "weeklySummaryHint": "Ce ai învățat — în fiecare duminică seara",
+      "streakAlerts": "Alerte de serie",
+      "streakAlertsHint": "Un avertisment înainte ca seria să se rupă",
+      "permissionDenied": "Browserul blochează notificările pentru WordAround. Permite-le în setările site-ului ca să reactivezi memento-urile.",
+      "unsupported": "Acest browser nu poate afișa notificări.",
+      "backgroundNote": "Memento-urile funcționează cât timp WordAround este deschis într-o filă sau ca aplicație instalată. Notificările cu aplicația închisă vor veni mai târziu.",
+      "dailyPushTitle": "E timpul să exersezi",
+      "dailyPushBody": "Câteva minute cu WordAround și seria ta continuă.",
+      "weeklyPushTitle": "Săptămâna ta în WordAround",
+      "weeklyPushBody": "Vezi ce ai învățat săptămâna aceasta și ce merită repetat."
     }
   },
   "units": {
@@ -1738,7 +1832,8 @@
       "label": "Vizualizare",
       "rows": "Listă",
       "grid": "Grilă"
-    }
+    },
+    "save": "Salvează"
   },
   "practice": {
     "language": {

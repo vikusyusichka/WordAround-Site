@@ -113,6 +113,19 @@
   --color-fc-soft-blue: #dce3ff;
   --color-fc-divider: #e0e5f5;
 
+  /* Profile palette — the inline Color(red:green:blue:) literals in
+     Features/Profile (ProfileView danger rows, DeleteAccountConfirmationSheet,
+     NotificationsView permission banner, AppearanceView theme tints). */
+  --color-profile-danger: #d94d4d;
+  --color-profile-danger-soft: #ffebe8;
+  --color-profile-danger-bg: #fff2f0;
+  --color-profile-danger-border: #f2c7c7;
+  --color-profile-warn-bg: #fff2d9;
+  --color-profile-warn-border: #f2c766;
+  --color-profile-warn-icon: #d98c33;
+  --color-appearance-light: #f2a61a;
+  --color-appearance-dark: #665ac7;
+
   /* Shadows (raw color; blur/offset applied per-utility) */
   --shadow-color-card: rgba(0, 0, 0, 0.06);
   --shadow-color-fc: rgba(0, 0, 0, 0.055);

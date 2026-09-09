@@ -51,6 +51,21 @@ service firebase.storage {
       allow delete: if isOwner(uid);
     }
 
+    /* Profile avatar (src/lib/userProfileService.ts), downscaled to 512px and
+       re-encoded as JPEG client-side. The path is the one the iOS app uses
+       (`users/{uid}/profile/avatar.jpg`), so an avatar set on either platform
+       shows up on the other.
+
+       ⚠️ Adding this block to the file is not enough — these rules live in the
+       Firebase Console and have to be PUBLISHED there. Until they are, avatar
+       upload fails with a permission error (handled: the name and colour still
+       save, and the dialog says the photo could not be uploaded). */
+    match /users/{uid}/profile/{fileName} {
+      allow read: if isOwner(uid);
+      allow write: if isOwner(uid) && isReasonableImage();
+      allow delete: if isOwner(uid);
+    }
+
     /* Images inside grammar-note image blocks (src/lib/noteImageService.ts),
        downscaled to 1400px and re-encoded as JPEG client-side. */
     match /users/{uid}/noteImages/{topicId}/{noteId}/{fileName} {

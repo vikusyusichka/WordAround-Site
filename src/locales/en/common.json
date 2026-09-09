@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Interface language",
     "password": {
       "title": "Create a password",
       "body": "Your account was created with Google, so it has no password — the email and password fields can't sign you in. Add one and both ways will work.",
       "save": "Save password",
       "saving": "Saving...",
       "savedInfo": "Password created. You can sign in with your email now too."
+    },
+    "subtitle": "Your account and app settings",
+    "addName": "Add your name",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Practice time",
+      "memberSince": "Member since"
+    },
+    "section": {
+      "account": "Account",
+      "support": "Support",
+      "danger": "Danger zone"
+    },
+    "row": {
+      "language": "Language",
+      "appearance": "Appearance",
+      "notifications": "Notifications",
+      "privacy": "Privacy policy",
+      "terms": "Terms of use",
+      "signOut": "Sign out",
+      "deleteAccount": "Delete account"
+    },
+    "edit": {
+      "button": "Edit",
+      "title": "Edit profile",
+      "avatarColor": "Avatar colour",
+      "nameLabel": "Name",
+      "namePlaceholder": "How should we call you?",
+      "changePhoto": "Change photo",
+      "chooseAnother": "Choose another",
+      "saving": "Saving...",
+      "photoFailed": "The photo couldn't be uploaded. Your name and colour were saved.",
+      "photoTimeout": "The photo upload took too long. Your name and colour were saved.",
+      "saveFailed": "Couldn't save your profile. Please try again."
+    },
+    "color": {
+      "blue": "Blue",
+      "purple": "Purple",
+      "pink": "Pink",
+      "orange": "Orange",
+      "green": "Green",
+      "cyan": "Cyan"
+    },
+    "signOut": {
+      "title": "Sign out?",
+      "message": "You'll need to sign in again to reach your sets and progress.",
+      "confirm": "Sign out"
+    },
+    "delete": {
+      "title": "Delete account",
+      "firstMessage": "This permanently deletes your account. Your sets, folders and notes stay on the server but you will no longer be able to reach them.",
+      "continue": "Continue",
+      "secondMessage": "This cannot be undone. Type DELETE below to confirm that you want to delete your account for good.",
+      "confirmField": "Type {{word}} to confirm",
+      "confirmButton": "Delete my account",
+      "deleting": "Deleting...",
+      "reauthNeeded": "For your safety, this needs a fresh sign-in. You have been signed out — sign in again and repeat the deletion.",
+      "failed": "Couldn't delete the account. Please try again."
+    },
+    "language": {
+      "title": "Language",
+      "subtitle": "Choose the language of the interface",
+      "searchPlaceholder": "Search languages",
+      "noResults": "No language matches \"{{query}}\".",
+      "note": "The interface switches straight away. Your sets, notes and texts keep the language you wrote them in."
+    },
+    "appearance": {
+      "title": "Appearance",
+      "subtitle": "Choose how WordAround looks",
+      "system": "System",
+      "systemHint": "Follows your device setting",
+      "light": "Light",
+      "lightHint": "Always the light theme",
+      "dark": "Dark",
+      "darkHint": "A dark theme is on the way",
+      "comingSoon": "Soon",
+      "note": "The dark theme is being built. Until it lands, both options show the light one."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "subtitle": "Reminders that keep your streak going",
+      "dailyReminder": "Daily reminder",
+      "dailyReminderHint": "A nudge to practise every day",
+      "reminderTime": "Reminder time",
+      "weeklySummary": "Weekly summary",
+      "weeklySummaryHint": "What you learned, every Sunday evening",
+      "streakAlerts": "Streak alerts",
+      "streakAlertsHint": "A warning before your streak runs out",
+      "permissionDenied": "Your browser is blocking notifications for WordAround. Allow them in the site settings to turn reminders back on.",
+      "unsupported": "This browser cannot show notifications.",
+      "backgroundNote": "Reminders work while WordAround is open in a tab or as an installed app. Notifications that reach you with the app closed are coming later.",
+      "dailyPushTitle": "Time to practise",
+      "dailyPushBody": "A few minutes with WordAround keeps your streak alive.",
+      "weeklyPushTitle": "Your week in WordAround",
+      "weeklyPushBody": "See what you learned this week and what's worth reviewing."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "View",
       "rows": "List",
       "grid": "Grid"
-    }
+    },
+    "save": "Save"
   },
   "practice": {
     "language": {

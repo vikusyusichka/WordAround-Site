@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Langue de l'interface",
     "password": {
       "title": "Créer un mot de passe",
       "body": "Votre compte a été créé avec Google : il n'a donc pas de mot de passe, et les champs e-mail et mot de passe ne peuvent pas vous connecter. Ajoutez-en un et les deux méthodes fonctionneront.",
       "save": "Enregistrer le mot de passe",
       "saving": "Enregistrement...",
       "savedInfo": "Mot de passe créé. Vous pouvez aussi vous connecter avec votre e-mail maintenant."
+    },
+    "subtitle": "Votre compte et les réglages de l’application",
+    "addName": "Ajoutez votre nom",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Temps de pratique",
+      "memberSince": "Membre depuis"
+    },
+    "section": {
+      "account": "Compte",
+      "support": "Assistance",
+      "danger": "Zone sensible"
+    },
+    "row": {
+      "language": "Langue",
+      "appearance": "Apparence",
+      "notifications": "Notifications",
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d’utilisation",
+      "signOut": "Se déconnecter",
+      "deleteAccount": "Supprimer le compte"
+    },
+    "edit": {
+      "button": "Modifier",
+      "title": "Modifier le profil",
+      "avatarColor": "Couleur de l’avatar",
+      "nameLabel": "Nom",
+      "namePlaceholder": "Comment doit-on vous appeler ?",
+      "changePhoto": "Changer la photo",
+      "chooseAnother": "En choisir une autre",
+      "saving": "Enregistrement...",
+      "photoFailed": "La photo n’a pas pu être envoyée. Votre nom et votre couleur ont bien été enregistrés.",
+      "photoTimeout": "L’envoi de la photo a pris trop de temps. Votre nom et votre couleur ont bien été enregistrés.",
+      "saveFailed": "Impossible d’enregistrer le profil. Réessayez."
+    },
+    "color": {
+      "blue": "Bleu",
+      "purple": "Violet",
+      "pink": "Rose",
+      "orange": "Orange",
+      "green": "Vert",
+      "cyan": "Turquoise"
+    },
+    "signOut": {
+      "title": "Se déconnecter ?",
+      "message": "Vous devrez vous reconnecter pour retrouver vos listes et votre progression.",
+      "confirm": "Se déconnecter"
+    },
+    "delete": {
+      "title": "Supprimer le compte",
+      "firstMessage": "Cela supprime définitivement votre compte. Vos listes, dossiers et notes resteront sur le serveur, mais vous n’y aurez plus accès.",
+      "continue": "Continuer",
+      "secondMessage": "Cette action est irréversible. Tapez DELETE ci-dessous pour confirmer la suppression définitive de votre compte.",
+      "confirmField": "Tapez {{word}} pour confirmer",
+      "confirmButton": "Supprimer mon compte",
+      "deleting": "Suppression...",
+      "reauthNeeded": "Par sécurité, une connexion récente est nécessaire. Vous avez été déconnecté — reconnectez-vous et recommencez la suppression.",
+      "failed": "Impossible de supprimer le compte. Réessayez."
+    },
+    "language": {
+      "title": "Langue",
+      "subtitle": "Choisissez la langue de l’interface",
+      "searchPlaceholder": "Rechercher une langue",
+      "noResults": "Aucune langue ne correspond à « {{query}} ».",
+      "note": "L’interface change tout de suite. Vos listes, notes et textes restent dans la langue où vous les avez écrits."
+    },
+    "appearance": {
+      "title": "Apparence",
+      "subtitle": "Choisissez l’allure de WordAround",
+      "system": "Système",
+      "systemHint": "Suit le réglage de votre appareil",
+      "light": "Clair",
+      "lightHint": "Toujours le thème clair",
+      "dark": "Sombre",
+      "darkHint": "Un thème sombre arrive bientôt",
+      "comingSoon": "Bientôt",
+      "note": "Le thème sombre est en cours de création. En attendant, les deux options affichent le thème clair."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "subtitle": "Des rappels qui entretiennent votre série",
+      "dailyReminder": "Rappel quotidien",
+      "dailyReminderHint": "Un coup de pouce pour pratiquer chaque jour",
+      "reminderTime": "Heure du rappel",
+      "weeklySummary": "Bilan hebdomadaire",
+      "weeklySummaryHint": "Ce que vous avez appris, chaque dimanche soir",
+      "streakAlerts": "Alertes de série",
+      "streakAlertsHint": "Un avertissement avant que votre série ne s’arrête",
+      "permissionDenied": "Votre navigateur bloque les notifications de WordAround. Autorisez-les dans les réglages du site pour réactiver les rappels.",
+      "unsupported": "Ce navigateur ne peut pas afficher de notifications.",
+      "backgroundNote": "Les rappels fonctionnent tant que WordAround est ouvert dans un onglet ou en application installée. Les notifications application fermée arriveront plus tard.",
+      "dailyPushTitle": "C’est l’heure de pratiquer",
+      "dailyPushBody": "Quelques minutes avec WordAround et votre série continue.",
+      "weeklyPushTitle": "Votre semaine dans WordAround",
+      "weeklyPushBody": "Voyez ce que vous avez appris cette semaine et ce qui mérite une révision."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Affichage",
       "rows": "Liste",
       "grid": "Grille"
-    }
+    },
+    "save": "Enregistrer"
   },
   "practice": {
     "language": {

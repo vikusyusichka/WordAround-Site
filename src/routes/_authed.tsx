@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { createFileRoute, Outlet, redirect, useNavigate } from '@tanstack/react-router';
 
 import { AppShell } from '@/components/shell/AppShell';
+import { useReminderScheduler } from '@/hooks/useReminderScheduler';
 import { useSessionStore, waitForAuthReady } from '@/stores/sessionStore';
 
 /* Pathless layout route for the whole signed-in area. Runs the auth-gate once,
@@ -19,6 +20,9 @@ export const Route = createFileRoute('/_authed')({
 function AuthedLayout() {
   const navigate = useNavigate();
   const sessionState = useSessionStore((s) => s.state);
+
+  /* Practice reminders live as long as the signed-in session does. */
+  useReminderScheduler();
 
   /* React to sign-out / session loss that happens while already inside. */
   useEffect(() => {

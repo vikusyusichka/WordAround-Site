@@ -5,7 +5,18 @@ import { test, expect } from '@playwright/test';
    authenticated shell (sidebar nav, URL changes, deep-links, back/forward) is
    verified via the browser MCP with a session override, not in CI. */
 
-const authedRoutes = ['/home', '/folders', '/sets', '/practice/reading', '/profile'];
+const authedRoutes = [
+  '/home',
+  '/folders',
+  '/sets',
+  '/practice/reading',
+  '/profile',
+  /* The profile sub-screens are children of the same gate; a settings page
+     that rendered for a signed-out visitor would leak the account's choices. */
+  '/profile/language',
+  '/profile/appearance',
+  '/profile/notifications',
+];
 
 for (const route of authedRoutes) {
   test(`logged-out visit to ${route} redirects to /auth`, async ({ page }) => {

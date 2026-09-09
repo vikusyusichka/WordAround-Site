@@ -8,8 +8,15 @@ import { queryClient } from '@/lib/queryClient';
 import { Splash } from '@/components/primitives/Splash';
 import { registerServiceWorker } from '@/lib/registerServiceWorker';
 import { i18nReady } from '@/lib/i18n';
+import { applyTheme } from '@/lib/appearance';
+import { usePreferences } from '@/stores/preferencesStore';
 import '@/lib/firebase';
 import '@/styles/index.css';
+
+/* The stored appearance choice has to reach the root element before the first
+   paint — it is what the browser reads for the scrollbars and form controls it
+   draws itself. */
+applyTheme(usePreferences.getState().theme);
 
 /* Kick off Firebase initialization eagerly — the SessionStore module already
    subscribes to onAuthStateChanged on import, so by the time the router

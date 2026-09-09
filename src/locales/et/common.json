@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Liidese keel",
     "password": {
       "title": "Loo parool",
       "body": "Sinu konto loodi Google'iga, seega sellel pole parooli — e-posti ja parooli väljad sind sisse ei logi. Lisa parool ja mõlemad viisid töötavad.",
       "save": "Salvesta parool",
       "saving": "Salvestamine...",
       "savedInfo": "Parool on loodud. Nüüd saad sisse logida ka oma e-postiga."
+    },
+    "subtitle": "Sinu konto ja rakenduse seaded",
+    "addName": "Lisa oma nimi",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Harjutamise aeg",
+      "memberSince": "Liige alates"
+    },
+    "section": {
+      "account": "Konto",
+      "support": "Tugi",
+      "danger": "Ohutsoon"
+    },
+    "row": {
+      "language": "Keel",
+      "appearance": "Välimus",
+      "notifications": "Teavitused",
+      "privacy": "Privaatsuspoliitika",
+      "terms": "Kasutustingimused",
+      "signOut": "Logi välja",
+      "deleteAccount": "Kustuta konto"
+    },
+    "edit": {
+      "button": "Muuda",
+      "title": "Muuda profiili",
+      "avatarColor": "Avatari värv",
+      "nameLabel": "Nimi",
+      "namePlaceholder": "Kuidas sind kutsuda?",
+      "changePhoto": "Vaheta foto",
+      "chooseAnother": "Vali teine",
+      "saving": "Salvestamine...",
+      "photoFailed": "Fotot ei õnnestunud üles laadida. Nimi ja värv salvestati.",
+      "photoTimeout": "Foto üleslaadimine võttis liiga kaua aega. Nimi ja värv salvestati.",
+      "saveFailed": "Profiili ei õnnestunud salvestada. Proovi uuesti."
+    },
+    "color": {
+      "blue": "Sinine",
+      "purple": "Lilla",
+      "pink": "Roosa",
+      "orange": "Oranž",
+      "green": "Roheline",
+      "cyan": "Türkiis"
+    },
+    "signOut": {
+      "title": "Kas logida välja?",
+      "message": "Oma komplektide ja edenemise juurde naasmiseks pead uuesti sisse logima.",
+      "confirm": "Logi välja"
+    },
+    "delete": {
+      "title": "Kustuta konto",
+      "firstMessage": "See kustutab su konto jäädavalt. Komplektid, kaustad ja märkmed jäävad serverisse, kuid sa ei pääse neile enam ligi.",
+      "continue": "Jätka",
+      "secondMessage": "Seda ei saa tagasi võtta. Kirjuta allapoole DELETE, et kinnitada konto lõplik kustutamine.",
+      "confirmField": "Kinnitamiseks kirjuta {{word}}",
+      "confirmButton": "Kustuta minu konto",
+      "deleting": "Kustutamine...",
+      "reauthNeeded": "Turvalisuse huvides on vaja värsket sisselogimist. Sind logiti välja — logi uuesti sisse ja korda kustutamist.",
+      "failed": "Kontot ei õnnestunud kustutada. Proovi uuesti."
+    },
+    "language": {
+      "title": "Keel",
+      "subtitle": "Vali liidese keel",
+      "searchPlaceholder": "Otsi keelt",
+      "noResults": "Ükski keel ei vasta päringule „{{query}}”.",
+      "note": "Liides vahetub kohe. Sinu komplektid, märkmed ja tekstid jäävad keelde, milles need kirjutasid."
+    },
+    "appearance": {
+      "title": "Välimus",
+      "subtitle": "Vali, milline WordAround välja näeb",
+      "system": "Süsteem",
+      "systemHint": "Järgib sinu seadme seadet",
+      "light": "Hele",
+      "lightHint": "Alati hele teema",
+      "dark": "Tume",
+      "darkHint": "Tume teema on tulekul",
+      "comingSoon": "Varsti",
+      "note": "Tumedat teemat alles ehitatakse. Seni näitavad mõlemad valikud heledat."
+    },
+    "notifications": {
+      "title": "Teavitused",
+      "subtitle": "Meeldetuletused, mis hoiavad su seeria elus",
+      "dailyReminder": "Igapäevane meeldetuletus",
+      "dailyReminderHint": "Tõuge harjutada iga päev",
+      "reminderTime": "Meeldetuletuse aeg",
+      "weeklySummary": "Nädala kokkuvõte",
+      "weeklySummaryHint": "Mida õppisid — igal pühapäeva õhtul",
+      "streakAlerts": "Seeria hoiatused",
+      "streakAlertsHint": "Hoiatus enne, kui su seeria katkeb",
+      "permissionDenied": "Sinu brauser blokeerib WordAroundi teavitused. Luba need saidi seadetes, et meeldetuletused uuesti sisse lülitada.",
+      "unsupported": "See brauser ei oska teavitusi näidata.",
+      "backgroundNote": "Meeldetuletused töötavad seni, kuni WordAround on avatud kaardil või paigaldatud rakendusena. Teavitused suletud rakenduse korral tulevad hiljem.",
+      "dailyPushTitle": "Aeg harjutada",
+      "dailyPushBody": "Paar minutit WordAroundiga hoiab su seeria elus.",
+      "weeklyPushTitle": "Sinu nädal WordAroundis",
+      "weeklyPushBody": "Vaata, mida sel nädalal õppisid ja mida tasub üle korrata."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Vaade",
       "rows": "Loend",
       "grid": "Ruudustik"
-    }
+    },
+    "save": "Salvesta"
   },
   "practice": {
     "language": {

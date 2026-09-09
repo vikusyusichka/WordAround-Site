@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Arayüz dili",
     "password": {
       "title": "Bir şifre oluştur",
       "body": "Hesabın Google ile oluşturuldu, bu yüzden şifresi yok — e-posta ve şifre alanlarıyla giriş yapamazsın. Bir şifre ekle, iki yöntem de çalışsın.",
       "save": "Şifreyi kaydet",
       "saving": "Kaydediliyor...",
       "savedInfo": "Şifre oluşturuldu. Artık e-postanla da giriş yapabilirsin."
+    },
+    "subtitle": "Hesabınız ve uygulama ayarları",
+    "addName": "Adınızı ekleyin",
+    "stat": {
+      "minutes": "{{value}} dk",
+      "practiceTime": "Pratik süresi",
+      "memberSince": "Üyelik başlangıcı"
+    },
+    "section": {
+      "account": "Hesap",
+      "support": "Destek",
+      "danger": "Tehlikeli bölge"
+    },
+    "row": {
+      "language": "Dil",
+      "appearance": "Görünüm",
+      "notifications": "Bildirimler",
+      "privacy": "Gizlilik politikası",
+      "terms": "Kullanım koşulları",
+      "signOut": "Çıkış yap",
+      "deleteAccount": "Hesabı sil"
+    },
+    "edit": {
+      "button": "Düzenle",
+      "title": "Profili düzenle",
+      "avatarColor": "Avatar rengi",
+      "nameLabel": "Ad",
+      "namePlaceholder": "Size nasıl hitap edelim?",
+      "changePhoto": "Fotoğrafı değiştir",
+      "chooseAnother": "Başkasını seç",
+      "saving": "Kaydediliyor...",
+      "photoFailed": "Fotoğraf yüklenemedi. Adınız ve renginiz kaydedildi.",
+      "photoTimeout": "Fotoğraf yüklemesi çok uzun sürdü. Adınız ve renginiz kaydedildi.",
+      "saveFailed": "Profil kaydedilemedi. Lütfen tekrar deneyin."
+    },
+    "color": {
+      "blue": "Mavi",
+      "purple": "Mor",
+      "pink": "Pembe",
+      "orange": "Turuncu",
+      "green": "Yeşil",
+      "cyan": "Turkuaz"
+    },
+    "signOut": {
+      "title": "Çıkış yapılsın mı?",
+      "message": "Setlerinize ve ilerlemenize dönmek için yeniden giriş yapmanız gerekecek.",
+      "confirm": "Çıkış yap"
+    },
+    "delete": {
+      "title": "Hesabı sil",
+      "firstMessage": "Bu, hesabınızı kalıcı olarak siler. Setler, klasörler ve notlar sunucuda kalır ama onlara artık ulaşamazsınız.",
+      "continue": "Devam",
+      "secondMessage": "Bu işlem geri alınamaz. Hesabınızı temelli silmek istediğinizi onaylamak için aşağıya DELETE yazın.",
+      "confirmField": "Onaylamak için {{word}} yazın",
+      "confirmButton": "Hesabımı sil",
+      "deleting": "Siliniyor...",
+      "reauthNeeded": "Güvenlik için yeni bir giriş gerekiyor. Oturumunuz kapatıldı — yeniden giriş yapıp silmeyi tekrarlayın.",
+      "failed": "Hesap silinemedi. Lütfen tekrar deneyin."
+    },
+    "language": {
+      "title": "Dil",
+      "subtitle": "Arayüz dilini seçin",
+      "searchPlaceholder": "Dil ara",
+      "noResults": "“{{query}}” ile eşleşen dil yok.",
+      "note": "Arayüz hemen değişir. Setleriniz, notlarınız ve metinleriniz yazdığınız dilde kalır."
+    },
+    "appearance": {
+      "title": "Görünüm",
+      "subtitle": "WordAround’un nasıl görüneceğini seçin",
+      "system": "Sistem",
+      "systemHint": "Cihazınızın ayarını izler",
+      "light": "Açık",
+      "lightHint": "Her zaman açık tema",
+      "dark": "Koyu",
+      "darkHint": "Koyu tema yolda",
+      "comingSoon": "Yakında",
+      "note": "Koyu tema hazırlanıyor. Gelene kadar her iki seçenek de açık temayı gösterir."
+    },
+    "notifications": {
+      "title": "Bildirimler",
+      "subtitle": "Serinizi ayakta tutan hatırlatmalar",
+      "dailyReminder": "Günlük hatırlatma",
+      "dailyReminderHint": "Her gün pratik yapmanız için bir dürtme",
+      "reminderTime": "Hatırlatma saati",
+      "weeklySummary": "Haftalık özet",
+      "weeklySummaryHint": "Ne öğrendiğiniz — her pazar akşamı",
+      "streakAlerts": "Seri uyarıları",
+      "streakAlertsHint": "Seriniz kopmadan önce bir uyarı",
+      "permissionDenied": "Tarayıcınız WordAround bildirimlerini engelliyor. Hatırlatmaları yeniden açmak için site ayarlarından izin verin.",
+      "unsupported": "Bu tarayıcı bildirim gösteremiyor.",
+      "backgroundNote": "Hatırlatmalar WordAround bir sekmede ya da kurulu uygulama olarak açıkken çalışır. Uygulama kapalıyken gelen bildirimler daha sonra eklenecek.",
+      "dailyPushTitle": "Pratik zamanı",
+      "dailyPushBody": "WordAround ile birkaç dakika serinizi canlı tutar.",
+      "weeklyPushTitle": "WordAround’daki haftanız",
+      "weeklyPushBody": "Bu hafta ne öğrendiğinizi ve neyi tekrar etmeye değer olduğunu görün."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Görünüm",
       "rows": "Liste",
       "grid": "Izgara"
-    }
+    },
+    "save": "Kaydet"
   },
   "practice": {
     "language": {

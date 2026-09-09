@@ -1688,13 +1688,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Sąsajos kalba",
     "password": {
       "title": "Sukurkite slaptažodį",
       "body": "Jūsų paskyra sukurta su „Google“, todėl slaptažodžio neturi – el. pašto ir slaptažodžio laukai jūsų neprijungs. Nustatykite slaptažodį, ir veiks abu būdai.",
       "save": "Įrašyti slaptažodį",
       "saving": "Įrašoma...",
       "savedInfo": "Slaptažodis sukurtas. Dabar galite prisijungti ir su savo el. paštu."
+    },
+    "subtitle": "Jūsų paskyra ir programėlės nustatymai",
+    "addName": "Pridėkite savo vardą",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Praktikos laikas",
+      "memberSince": "Narys nuo"
+    },
+    "section": {
+      "account": "Paskyra",
+      "support": "Pagalba",
+      "danger": "Pavojinga zona"
+    },
+    "row": {
+      "language": "Kalba",
+      "appearance": "Išvaizda",
+      "notifications": "Pranešimai",
+      "privacy": "Privatumo politika",
+      "terms": "Naudojimo sąlygos",
+      "signOut": "Atsijungti",
+      "deleteAccount": "Ištrinti paskyrą"
+    },
+    "edit": {
+      "button": "Redaguoti",
+      "title": "Redaguoti profilį",
+      "avatarColor": "Avataro spalva",
+      "nameLabel": "Vardas",
+      "namePlaceholder": "Kaip jus vadinti?",
+      "changePhoto": "Keisti nuotrauką",
+      "chooseAnother": "Pasirinkti kitą",
+      "saving": "Įrašoma...",
+      "photoFailed": "Nuotraukos įkelti nepavyko. Vardas ir spalva išsaugoti.",
+      "photoTimeout": "Nuotraukos įkėlimas užtruko per ilgai. Vardas ir spalva išsaugoti.",
+      "saveFailed": "Profilio išsaugoti nepavyko. Bandykite dar kartą."
+    },
+    "color": {
+      "blue": "Mėlyna",
+      "purple": "Violetinė",
+      "pink": "Rožinė",
+      "orange": "Oranžinė",
+      "green": "Žalia",
+      "cyan": "Turkio"
+    },
+    "signOut": {
+      "title": "Atsijungti?",
+      "message": "Kad grįžtumėte prie savo rinkinių ir pažangos, teks prisijungti iš naujo.",
+      "confirm": "Atsijungti"
+    },
+    "delete": {
+      "title": "Ištrinti paskyrą",
+      "firstMessage": "Tai visam laikui ištrins jūsų paskyrą. Rinkiniai, aplankai ir užrašai liks serveryje, bet jų nebepasieksite.",
+      "continue": "Tęsti",
+      "secondMessage": "Šio veiksmo atšaukti negalima. Įrašykite žemiau DELETE, kad patvirtintumėte galutinį paskyros ištrynimą.",
+      "confirmField": "Patvirtinkite įrašydami {{word}}",
+      "confirmButton": "Ištrinti mano paskyrą",
+      "deleting": "Trinama...",
+      "reauthNeeded": "Saugumo sumetimais reikia šviežio prisijungimo. Jus atjungėme — prisijunkite iš naujo ir pakartokite trynimą.",
+      "failed": "Paskyros ištrinti nepavyko. Bandykite dar kartą."
+    },
+    "language": {
+      "title": "Kalba",
+      "subtitle": "Pasirinkite sąsajos kalbą",
+      "searchPlaceholder": "Ieškoti kalbos",
+      "noResults": "Nė viena kalba neatitinka „{{query}}“.",
+      "note": "Sąsaja persijungia iškart. Jūsų rinkiniai, užrašai ir tekstai lieka ta kalba, kuria juos parašėte."
+    },
+    "appearance": {
+      "title": "Išvaizda",
+      "subtitle": "Pasirinkite, kaip atrodo WordAround",
+      "system": "Sistemos",
+      "systemHint": "Seka jūsų įrenginio nustatymą",
+      "light": "Šviesi",
+      "lightHint": "Visada šviesi tema",
+      "dark": "Tamsi",
+      "darkHint": "Tamsi tema jau pakeliui",
+      "comingSoon": "Netrukus",
+      "note": "Tamsi tema dar kuriama. Kol jos nėra, abu variantai rodo šviesią."
+    },
+    "notifications": {
+      "title": "Pranešimai",
+      "subtitle": "Priminimai, kurie palaiko jūsų seriją",
+      "dailyReminder": "Kasdienis priminimas",
+      "dailyReminderHint": "Postūmis mokytis kiekvieną dieną",
+      "reminderTime": "Priminimo laikas",
+      "weeklySummary": "Savaitės apžvalga",
+      "weeklySummaryHint": "Ko išmokote — kiekvieną sekmadienio vakarą",
+      "streakAlerts": "Serijos įspėjimai",
+      "streakAlertsHint": "Įspėjimas, kol serija nenutrūko",
+      "permissionDenied": "Naršyklė blokuoja WordAround pranešimus. Leiskite juos svetainės nustatymuose, kad vėl įjungtumėte priminimus.",
+      "unsupported": "Ši naršyklė negali rodyti pranešimų.",
+      "backgroundNote": "Priminimai veikia, kol WordAround atidarytas kortelėje arba kaip įdiegta programėlė. Pranešimai uždarius programėlę atsiras vėliau.",
+      "dailyPushTitle": "Laikas mokytis",
+      "dailyPushBody": "Kelios minutės su WordAround – ir serija gyva.",
+      "weeklyPushTitle": "Jūsų savaitė su WordAround",
+      "weeklyPushBody": "Pažiūrėkite, ko išmokote šią savaitę ir ką verta pakartoti."
     }
   },
   "units": {
@@ -1735,7 +1829,8 @@
       "label": "Rodinys",
       "rows": "Sąrašas",
       "grid": "Tinklelis"
-    }
+    },
+    "save": "Įrašyti"
   },
   "practice": {
     "language": {

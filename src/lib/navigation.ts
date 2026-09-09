@@ -156,6 +156,10 @@ export const pageCopyForPath = (pathname: string): PageCopy => {
   if (pathname.startsWith('/folders')) return { titleKey: 'home.title.folders', subtitleKey: 'home.subtitle.folders' };
   if (pathname.startsWith('/sets')) return { titleKey: 'home.title.sets', subtitleKey: 'home.subtitle.sets' };
   if (pathname.startsWith('/notes')) return { titleKey: 'nav.notes', subtitleKey: 'writing.grammar.subtitle' };
-  if (pathname.startsWith('/profile')) return { titleKey: 'home.title.profile', subtitleKey: null };
+  /* The profile sub-screens keep the Profile header and put their own title
+     beside the back button, the way iOS ProfileSubScreenHeader does. */
+  if (pathname.startsWith('/profile')) {
+    return { titleKey: 'home.title.profile', subtitleKey: 'profile.subtitle' };
+  }
   return HOME_COPY;
 };

@@ -31,11 +31,12 @@ describe('pageCopyForPath', () => {
     expect(pageCopyForPath('/sets').titleKey).toBe('home.title.sets');
   });
 
-  it('profile has no subtitle key (email injected by caller)', () => {
-    expect(pageCopyForPath('/profile')).toEqual({
-      titleKey: 'home.title.profile',
-      subtitleKey: null,
-    });
+  it('keeps the profile header on the profile sub-screens', () => {
+    const expected = { titleKey: 'home.title.profile', subtitleKey: 'profile.subtitle' };
+    expect(pageCopyForPath('/profile')).toEqual(expected);
+    expect(pageCopyForPath('/profile/language')).toEqual(expected);
+    expect(pageCopyForPath('/profile/appearance')).toEqual(expected);
+    expect(pageCopyForPath('/profile/notifications')).toEqual(expected);
   });
 
   it('unknown path falls back to home copy', () => {

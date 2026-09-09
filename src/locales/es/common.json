@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Idioma de la interfaz",
     "password": {
       "title": "Crea una contraseña",
       "body": "Tu cuenta se creó con Google, así que no tiene contraseña: los campos de correo y contraseña no pueden iniciar tu sesión. Añade una y funcionarán ambas formas.",
       "save": "Guardar contraseña",
       "saving": "Guardando...",
       "savedInfo": "Contraseña creada. Ahora también puedes iniciar sesión con tu correo."
+    },
+    "subtitle": "Tu cuenta y los ajustes de la aplicación",
+    "addName": "Añade tu nombre",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Tiempo de práctica",
+      "memberSince": "Miembro desde"
+    },
+    "section": {
+      "account": "Cuenta",
+      "support": "Ayuda",
+      "danger": "Zona de riesgo"
+    },
+    "row": {
+      "language": "Idioma",
+      "appearance": "Apariencia",
+      "notifications": "Notificaciones",
+      "privacy": "Política de privacidad",
+      "terms": "Términos de uso",
+      "signOut": "Cerrar sesión",
+      "deleteAccount": "Eliminar cuenta"
+    },
+    "edit": {
+      "button": "Editar",
+      "title": "Editar perfil",
+      "avatarColor": "Color del avatar",
+      "nameLabel": "Nombre",
+      "namePlaceholder": "¿Cómo quieres que te llamemos?",
+      "changePhoto": "Cambiar foto",
+      "chooseAnother": "Elegir otra",
+      "saving": "Guardando...",
+      "photoFailed": "No se pudo subir la foto. Tu nombre y tu color sí se guardaron.",
+      "photoTimeout": "La subida de la foto tardó demasiado. Tu nombre y tu color sí se guardaron.",
+      "saveFailed": "No se pudo guardar el perfil. Inténtalo de nuevo."
+    },
+    "color": {
+      "blue": "Azul",
+      "purple": "Morado",
+      "pink": "Rosa",
+      "orange": "Naranja",
+      "green": "Verde",
+      "cyan": "Turquesa"
+    },
+    "signOut": {
+      "title": "¿Cerrar sesión?",
+      "message": "Tendrás que iniciar sesión de nuevo para volver a tus conjuntos y tu progreso.",
+      "confirm": "Cerrar sesión"
+    },
+    "delete": {
+      "title": "Eliminar cuenta",
+      "firstMessage": "Esto elimina tu cuenta de forma permanente. Tus conjuntos, carpetas y notas seguirán en el servidor, pero ya no podrás acceder a ellos.",
+      "continue": "Continuar",
+      "secondMessage": "Esto no se puede deshacer. Escribe DELETE abajo para confirmar que quieres eliminar tu cuenta definitivamente.",
+      "confirmField": "Escribe {{word}} para confirmar",
+      "confirmButton": "Eliminar mi cuenta",
+      "deleting": "Eliminando...",
+      "reauthNeeded": "Por seguridad hace falta un inicio de sesión reciente. Se ha cerrado tu sesión: vuelve a entrar y repite la eliminación.",
+      "failed": "No se pudo eliminar la cuenta. Inténtalo de nuevo."
+    },
+    "language": {
+      "title": "Idioma",
+      "subtitle": "Elige el idioma de la interfaz",
+      "searchPlaceholder": "Buscar idioma",
+      "noResults": "Ningún idioma coincide con «{{query}}».",
+      "note": "La interfaz cambia al instante. Tus conjuntos, notas y textos se quedan en el idioma en el que los escribiste."
+    },
+    "appearance": {
+      "title": "Apariencia",
+      "subtitle": "Elige cómo se ve WordAround",
+      "system": "Sistema",
+      "systemHint": "Sigue el ajuste de tu dispositivo",
+      "light": "Claro",
+      "lightHint": "Siempre el tema claro",
+      "dark": "Oscuro",
+      "darkHint": "El tema oscuro está en camino",
+      "comingSoon": "Pronto",
+      "note": "El tema oscuro se está construyendo. Hasta que llegue, ambas opciones muestran el claro."
+    },
+    "notifications": {
+      "title": "Notificaciones",
+      "subtitle": "Recordatorios que mantienen viva tu racha",
+      "dailyReminder": "Recordatorio diario",
+      "dailyReminderHint": "Un empujón para practicar cada día",
+      "reminderTime": "Hora del recordatorio",
+      "weeklySummary": "Resumen semanal",
+      "weeklySummaryHint": "Lo que has aprendido, cada domingo por la tarde",
+      "streakAlerts": "Avisos de racha",
+      "streakAlertsHint": "Un aviso antes de que se rompa tu racha",
+      "permissionDenied": "Tu navegador está bloqueando las notificaciones de WordAround. Permítelas en los ajustes del sitio para volver a activar los recordatorios.",
+      "unsupported": "Este navegador no puede mostrar notificaciones.",
+      "backgroundNote": "Los recordatorios funcionan mientras WordAround esté abierto en una pestaña o como aplicación instalada. Las notificaciones con la aplicación cerrada llegarán más adelante.",
+      "dailyPushTitle": "Hora de practicar",
+      "dailyPushBody": "Unos minutos con WordAround mantienen viva tu racha.",
+      "weeklyPushTitle": "Tu semana en WordAround",
+      "weeklyPushBody": "Mira lo que has aprendido esta semana y lo que conviene repasar."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Vista",
       "rows": "Lista",
       "grid": "Cuadrícula"
-    }
+    },
+    "save": "Guardar"
   },
   "practice": {
     "language": {

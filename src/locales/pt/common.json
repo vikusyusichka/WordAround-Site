@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Idioma da interface",
     "password": {
       "title": "Criar uma palavra-passe",
       "body": "A sua conta foi criada com o Google, por isso não tem palavra-passe — os campos de e-mail e palavra-passe não conseguem iniciar a sua sessão. Adicione uma e as duas formas passam a funcionar.",
       "save": "Guardar palavra-passe",
       "saving": "A guardar...",
       "savedInfo": "Palavra-passe criada. Agora também pode iniciar sessão com o seu e-mail."
+    },
+    "subtitle": "A sua conta e as definições da aplicação",
+    "addName": "Adicione o seu nome",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Tempo de prática",
+      "memberSince": "Membro desde"
+    },
+    "section": {
+      "account": "Conta",
+      "support": "Apoio",
+      "danger": "Zona de risco"
+    },
+    "row": {
+      "language": "Idioma",
+      "appearance": "Aspeto",
+      "notifications": "Notificações",
+      "privacy": "Política de privacidade",
+      "terms": "Termos de utilização",
+      "signOut": "Terminar sessão",
+      "deleteAccount": "Eliminar conta"
+    },
+    "edit": {
+      "button": "Editar",
+      "title": "Editar perfil",
+      "avatarColor": "Cor do avatar",
+      "nameLabel": "Nome",
+      "namePlaceholder": "Como devemos tratá-lo?",
+      "changePhoto": "Mudar foto",
+      "chooseAnother": "Escolher outra",
+      "saving": "A guardar...",
+      "photoFailed": "Não foi possível carregar a foto. O nome e a cor foram guardados.",
+      "photoTimeout": "O carregamento da foto demorou demasiado. O nome e a cor foram guardados.",
+      "saveFailed": "Não foi possível guardar o perfil. Tente novamente."
+    },
+    "color": {
+      "blue": "Azul",
+      "purple": "Roxo",
+      "pink": "Rosa",
+      "orange": "Laranja",
+      "green": "Verde",
+      "cyan": "Turquesa"
+    },
+    "signOut": {
+      "title": "Terminar sessão?",
+      "message": "Terá de iniciar sessão novamente para voltar aos seus conjuntos e ao seu progresso.",
+      "confirm": "Terminar sessão"
+    },
+    "delete": {
+      "title": "Eliminar conta",
+      "firstMessage": "Isto elimina a sua conta para sempre. Os conjuntos, pastas e notas ficam no servidor, mas deixará de conseguir chegar a eles.",
+      "continue": "Continuar",
+      "secondMessage": "Isto não pode ser desfeito. Escreva DELETE abaixo para confirmar que quer eliminar a sua conta definitivamente.",
+      "confirmField": "Escreva {{word}} para confirmar",
+      "confirmButton": "Eliminar a minha conta",
+      "deleting": "A eliminar...",
+      "reauthNeeded": "Por segurança, é preciso um início de sessão recente. A sua sessão foi terminada — inicie sessão outra vez e repita a eliminação.",
+      "failed": "Não foi possível eliminar a conta. Tente novamente."
+    },
+    "language": {
+      "title": "Idioma",
+      "subtitle": "Escolha o idioma da interface",
+      "searchPlaceholder": "Procurar idioma",
+      "noResults": "Nenhum idioma corresponde a «{{query}}».",
+      "note": "A interface muda de imediato. Os seus conjuntos, notas e textos mantêm-se no idioma em que os escreveu."
+    },
+    "appearance": {
+      "title": "Aspeto",
+      "subtitle": "Escolha o aspeto do WordAround",
+      "system": "Sistema",
+      "systemHint": "Segue a definição do seu dispositivo",
+      "light": "Claro",
+      "lightHint": "Sempre o tema claro",
+      "dark": "Escuro",
+      "darkHint": "O tema escuro está a caminho",
+      "comingSoon": "Em breve",
+      "note": "O tema escuro está a ser construído. Até chegar, ambas as opções mostram o claro."
+    },
+    "notifications": {
+      "title": "Notificações",
+      "subtitle": "Lembretes que mantêm a sua sequência viva",
+      "dailyReminder": "Lembrete diário",
+      "dailyReminderHint": "Um empurrão para praticar todos os dias",
+      "reminderTime": "Hora do lembrete",
+      "weeklySummary": "Resumo semanal",
+      "weeklySummaryHint": "O que aprendeu, todos os domingos à noite",
+      "streakAlerts": "Alertas de sequência",
+      "streakAlertsHint": "Um aviso antes de a sua sequência acabar",
+      "permissionDenied": "O navegador está a bloquear as notificações do WordAround. Permita-as nas definições do site para voltar a ligar os lembretes.",
+      "unsupported": "Este navegador não consegue mostrar notificações.",
+      "backgroundNote": "Os lembretes funcionam enquanto o WordAround estiver aberto num separador ou como aplicação instalada. As notificações com a aplicação fechada chegam mais tarde.",
+      "dailyPushTitle": "Hora de praticar",
+      "dailyPushBody": "Alguns minutos com o WordAround mantêm a sua sequência viva.",
+      "weeklyPushTitle": "A sua semana no WordAround",
+      "weeklyPushBody": "Veja o que aprendeu esta semana e o que vale a pena rever."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Vista",
       "rows": "Lista",
       "grid": "Grelha"
-    }
+    },
+    "save": "Guardar"
   },
   "practice": {
     "language": {

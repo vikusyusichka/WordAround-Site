@@ -1688,13 +1688,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Saskarnes valoda",
     "password": {
       "title": "Izveidojiet paroli",
       "body": "Jūsu konts izveidots ar Google, tāpēc tam nav paroles – ar e-pasta un paroles laukiem pieteikties nevar. Iestatiet paroli, un darbosies abi veidi.",
       "save": "Saglabāt paroli",
       "saving": "Saglabā...",
       "savedInfo": "Parole izveidota. Tagad varat pieteikties arī ar savu e-pastu."
+    },
+    "subtitle": "Jūsu konts un lietotnes iestatījumi",
+    "addName": "Pievienojiet savu vārdu",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Prakses laiks",
+      "memberSince": "Dalībnieks kopš"
+    },
+    "section": {
+      "account": "Konts",
+      "support": "Atbalsts",
+      "danger": "Riska zona"
+    },
+    "row": {
+      "language": "Valoda",
+      "appearance": "Izskats",
+      "notifications": "Paziņojumi",
+      "privacy": "Privātuma politika",
+      "terms": "Lietošanas noteikumi",
+      "signOut": "Iziet",
+      "deleteAccount": "Dzēst kontu"
+    },
+    "edit": {
+      "button": "Rediģēt",
+      "title": "Rediģēt profilu",
+      "avatarColor": "Avatara krāsa",
+      "nameLabel": "Vārds",
+      "namePlaceholder": "Kā lai jūs uzrunājam?",
+      "changePhoto": "Mainīt fotoattēlu",
+      "chooseAnother": "Izvēlēties citu",
+      "saving": "Saglabā...",
+      "photoFailed": "Fotoattēlu neizdevās augšupielādēt. Vārds un krāsa tika saglabāti.",
+      "photoTimeout": "Fotoattēla augšupielāde ilga pārāk ilgi. Vārds un krāsa tika saglabāti.",
+      "saveFailed": "Profilu neizdevās saglabāt. Mēģiniet vēlreiz."
+    },
+    "color": {
+      "blue": "Zila",
+      "purple": "Violeta",
+      "pink": "Rozā",
+      "orange": "Oranža",
+      "green": "Zaļa",
+      "cyan": "Tirkīza"
+    },
+    "signOut": {
+      "title": "Vai iziet?",
+      "message": "Lai atgrieztos pie savām kopām un progresa, būs jāpiesakās vēlreiz.",
+      "confirm": "Iziet"
+    },
+    "delete": {
+      "title": "Dzēst kontu",
+      "firstMessage": "Tas neatgriezeniski dzēš jūsu kontu. Kopas, mapes un piezīmes paliks serverī, bet jūs tām vairs nepiekļūsiet.",
+      "continue": "Turpināt",
+      "secondMessage": "To nevar atsaukt. Ierakstiet zemāk DELETE, lai apstiprinātu konta galīgo dzēšanu.",
+      "confirmField": "Ierakstiet {{word}}, lai apstiprinātu",
+      "confirmButton": "Dzēst manu kontu",
+      "deleting": "Dzēš...",
+      "reauthNeeded": "Drošības dēļ nepieciešama svaiga pieteikšanās. Jūs esat izrakstīts — piesakieties vēlreiz un atkārtojiet dzēšanu.",
+      "failed": "Kontu neizdevās izdzēst. Mēģiniet vēlreiz."
+    },
+    "language": {
+      "title": "Valoda",
+      "subtitle": "Izvēlieties saskarnes valodu",
+      "searchPlaceholder": "Meklēt valodu",
+      "noResults": "Neviena valoda neatbilst “{{query}}”.",
+      "note": "Saskarne pārslēdzas uzreiz. Jūsu kopas, piezīmes un teksti paliek valodā, kurā tos rakstījāt."
+    },
+    "appearance": {
+      "title": "Izskats",
+      "subtitle": "Izvēlieties, kā izskatās WordAround",
+      "system": "Sistēmas",
+      "systemHint": "Seko jūsu ierīces iestatījumam",
+      "light": "Gaišs",
+      "lightHint": "Vienmēr gaišā tēma",
+      "dark": "Tumšs",
+      "darkHint": "Tumšā tēma ir ceļā",
+      "comingSoon": "Drīz",
+      "note": "Tumšā tēma vēl top. Kamēr tās nav, abas iespējas rāda gaišo."
+    },
+    "notifications": {
+      "title": "Paziņojumi",
+      "subtitle": "Atgādinājumi, kas uztur jūsu sēriju",
+      "dailyReminder": "Ikdienas atgādinājums",
+      "dailyReminderHint": "Pamudinājums vingrināties katru dienu",
+      "reminderTime": "Atgādinājuma laiks",
+      "weeklySummary": "Nedēļas kopsavilkums",
+      "weeklySummaryHint": "Ko iemācījāties — katru svētdienas vakaru",
+      "streakAlerts": "Sērijas brīdinājumi",
+      "streakAlertsHint": "Brīdinājums, pirms sērija pārtrūkst",
+      "permissionDenied": "Pārlūks bloķē WordAround paziņojumus. Atļaujiet tos vietnes iestatījumos, lai atkal ieslēgtu atgādinājumus.",
+      "unsupported": "Šis pārlūks nevar rādīt paziņojumus.",
+      "backgroundNote": "Atgādinājumi darbojas, kamēr WordAround ir atvērts cilnē vai kā instalēta lietotne. Paziņojumi ar aizvērtu lietotni būs vēlāk.",
+      "dailyPushTitle": "Laiks vingrināties",
+      "dailyPushBody": "Dažas minūtes ar WordAround, un jūsu sērija turpinās.",
+      "weeklyPushTitle": "Jūsu nedēļa WordAround",
+      "weeklyPushBody": "Apskatiet, ko šonedēļ iemācījāties un ko ir vērts atkārtot."
     }
   },
   "units": {
@@ -1735,7 +1829,8 @@
       "label": "Skats",
       "rows": "Saraksts",
       "grid": "Režģis"
-    }
+    },
+    "save": "Saglabāt"
   },
   "practice": {
     "language": {

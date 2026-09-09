@@ -1711,13 +1711,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Jezik vmesnika",
     "password": {
       "title": "Ustvarite geslo",
       "body": "Vaš račun je bil ustvarjen z Googlom, zato nima gesla — s poljema za e-pošto in geslo se ne morete prijaviti. Nastavite geslo in delovala bosta oba načina.",
       "save": "Shrani geslo",
       "saving": "Shranjujemo...",
       "savedInfo": "Geslo je ustvarjeno. Zdaj se lahko prijavite tudi z e-pošto."
+    },
+    "subtitle": "Vaš račun in nastavitve aplikacije",
+    "addName": "Dodajte ime",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Čas vadbe",
+      "memberSince": "Član od"
+    },
+    "section": {
+      "account": "Račun",
+      "support": "Podpora",
+      "danger": "Tvegano območje"
+    },
+    "row": {
+      "language": "Jezik",
+      "appearance": "Videz",
+      "notifications": "Obvestila",
+      "privacy": "Pravilnik o zasebnosti",
+      "terms": "Pogoji uporabe",
+      "signOut": "Odjava",
+      "deleteAccount": "Izbriši račun"
+    },
+    "edit": {
+      "button": "Uredi",
+      "title": "Uredi profil",
+      "avatarColor": "Barva avatarja",
+      "nameLabel": "Ime",
+      "namePlaceholder": "Kako naj vas kličemo?",
+      "changePhoto": "Zamenjaj fotografijo",
+      "chooseAnother": "Izberi drugo",
+      "saving": "Shranjevanje...",
+      "photoFailed": "Fotografije ni bilo mogoče naložiti. Ime in barva sta shranjena.",
+      "photoTimeout": "Nalaganje fotografije je trajalo predolgo. Ime in barva sta shranjena.",
+      "saveFailed": "Profila ni bilo mogoče shraniti. Poskusite znova."
+    },
+    "color": {
+      "blue": "Modra",
+      "purple": "Vijolična",
+      "pink": "Roza",
+      "orange": "Oranžna",
+      "green": "Zelena",
+      "cyan": "Turkizna"
+    },
+    "signOut": {
+      "title": "Se želite odjaviti?",
+      "message": "Za vrnitev k svojim sklopom in napredku se boste morali znova prijaviti.",
+      "confirm": "Odjava"
+    },
+    "delete": {
+      "title": "Izbriši račun",
+      "firstMessage": "S tem trajno izbrišete svoj račun. Sklopi, mape in zapiski ostanejo na strežniku, vendar do njih ne boste več prišli.",
+      "continue": "Naprej",
+      "secondMessage": "Tega ni mogoče razveljaviti. Spodaj vpišite DELETE in potrdite trajni izbris računa.",
+      "confirmField": "Za potrditev vpišite {{word}}",
+      "confirmButton": "Izbriši moj račun",
+      "deleting": "Brisanje...",
+      "reauthNeeded": "Zaradi varnosti je potrebna sveža prijava. Odjavili smo vas — znova se prijavite in ponovite brisanje.",
+      "failed": "Računa ni bilo mogoče izbrisati. Poskusite znova."
+    },
+    "language": {
+      "title": "Jezik",
+      "subtitle": "Izberite jezik vmesnika",
+      "searchPlaceholder": "Iskanje jezika",
+      "noResults": "Nobenemu jeziku ne ustreza „{{query}}”.",
+      "note": "Vmesnik se preklopi takoj. Vaši sklopi, zapiski in besedila ostanejo v jeziku, v katerem ste jih napisali."
+    },
+    "appearance": {
+      "title": "Videz",
+      "subtitle": "Izberite, kako je videti WordAround",
+      "system": "Sistemski",
+      "systemHint": "Sledi nastavitvi vaše naprave",
+      "light": "Svetel",
+      "lightHint": "Vedno svetla tema",
+      "dark": "Temen",
+      "darkHint": "Temna tema je na poti",
+      "comingSoon": "Kmalu",
+      "note": "Temna tema nastaja. Dokler je ni, obe možnosti prikazujeta svetlo."
+    },
+    "notifications": {
+      "title": "Obvestila",
+      "subtitle": "Opomniki, ki ohranjajo vaš niz",
+      "dailyReminder": "Dnevni opomnik",
+      "dailyReminderHint": "Spodbuda za vsakodnevno vadbo",
+      "reminderTime": "Čas opomnika",
+      "weeklySummary": "Tedenski povzetek",
+      "weeklySummaryHint": "Kaj ste se naučili — vsako nedeljo zvečer",
+      "streakAlerts": "Opozorila o nizu",
+      "streakAlertsHint": "Opozorilo, preden se vaš niz pretrga",
+      "permissionDenied": "Brskalnik blokira obvestila za WordAround. Dovolite jih v nastavitvah spletnega mesta, da opomnike znova vklopite.",
+      "unsupported": "Ta brskalnik ne more prikazovati obvestil.",
+      "backgroundNote": "Opomniki delujejo, dokler je WordAround odprt v zavihku ali kot nameščena aplikacija. Obvestila ob zaprti aplikaciji pridejo pozneje.",
+      "dailyPushTitle": "Čas za vadbo",
+      "dailyPushBody": "Nekaj minut z WordAroundom in niz se nadaljuje.",
+      "weeklyPushTitle": "Vaš teden v WordAroundu",
+      "weeklyPushBody": "Poglejte, kaj ste se naučili ta teden in kaj je vredno ponoviti."
     }
   },
   "units": {
@@ -1758,7 +1852,8 @@
       "label": "Prikaz",
       "rows": "Seznam",
       "grid": "Mreža"
-    }
+    },
+    "save": "Shrani"
   },
   "practice": {
     "language": {

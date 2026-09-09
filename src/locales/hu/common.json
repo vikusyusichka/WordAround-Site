@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "A felület nyelve",
     "password": {
       "title": "Hozz létre jelszót",
       "body": "A fiókod Google-fiókkal jött létre, ezért nincs hozzá jelszó — az e-mail és jelszó mezőkkel nem tudsz bejelentkezni. Adj meg egyet, és mindkét mód működni fog.",
       "save": "Jelszó mentése",
       "saving": "Mentés...",
       "savedInfo": "A jelszó elkészült. Mostantól e-maillel is bejelentkezhetsz."
+    },
+    "subtitle": "A fiókod és az alkalmazás beállításai",
+    "addName": "Add meg a neved",
+    "stat": {
+      "minutes": "{{value}} perc",
+      "practiceTime": "Gyakorlási idő",
+      "memberSince": "Tag ekkortól"
+    },
+    "section": {
+      "account": "Fiók",
+      "support": "Támogatás",
+      "danger": "Veszélyzóna"
+    },
+    "row": {
+      "language": "Nyelv",
+      "appearance": "Megjelenés",
+      "notifications": "Értesítések",
+      "privacy": "Adatvédelmi szabályzat",
+      "terms": "Felhasználási feltételek",
+      "signOut": "Kijelentkezés",
+      "deleteAccount": "Fiók törlése"
+    },
+    "edit": {
+      "button": "Szerkesztés",
+      "title": "Profil szerkesztése",
+      "avatarColor": "Avatar színe",
+      "nameLabel": "Név",
+      "namePlaceholder": "Hogy szólítsunk?",
+      "changePhoto": "Fénykép cseréje",
+      "chooseAnother": "Másik választása",
+      "saving": "Mentés...",
+      "photoFailed": "A fényképet nem sikerült feltölteni. A neved és a színed elmentve.",
+      "photoTimeout": "A fénykép feltöltése túl sokáig tartott. A neved és a színed elmentve.",
+      "saveFailed": "A profilt nem sikerült menteni. Próbáld újra."
+    },
+    "color": {
+      "blue": "Kék",
+      "purple": "Lila",
+      "pink": "Rózsaszín",
+      "orange": "Narancs",
+      "green": "Zöld",
+      "cyan": "Türkiz"
+    },
+    "signOut": {
+      "title": "Kijelentkezel?",
+      "message": "Újra be kell jelentkezned, hogy elérd a szettjeidet és a haladásodat.",
+      "confirm": "Kijelentkezés"
+    },
+    "delete": {
+      "title": "Fiók törlése",
+      "firstMessage": "Ezzel véglegesen törlöd a fiókodat. A szettek, mappák és jegyzetek a kiszolgálón maradnak, de többé nem férsz hozzájuk.",
+      "continue": "Tovább",
+      "secondMessage": "Ezt nem lehet visszavonni. Írd be alul, hogy DELETE, ezzel megerősíted a fiókod végleges törlését.",
+      "confirmField": "Írd be: {{word}} a megerősítéshez",
+      "confirmButton": "A fiókom törlése",
+      "deleting": "Törlés...",
+      "reauthNeeded": "A biztonság kedvéért friss bejelentkezés kell. Kijelentkeztettünk — jelentkezz be újra, és ismételd meg a törlést.",
+      "failed": "A fiókot nem sikerült törölni. Próbáld újra."
+    },
+    "language": {
+      "title": "Nyelv",
+      "subtitle": "Válaszd ki a felület nyelvét",
+      "searchPlaceholder": "Nyelv keresése",
+      "noResults": "Egyik nyelv sem felel meg ennek: „{{query}}”.",
+      "note": "A felület azonnal átvált. A szettjeid, jegyzeteid és szövegeid azon a nyelven maradnak, amelyen írtad őket."
+    },
+    "appearance": {
+      "title": "Megjelenés",
+      "subtitle": "Válaszd ki, hogyan nézzen ki a WordAround",
+      "system": "Rendszer",
+      "systemHint": "Az eszközöd beállítását követi",
+      "light": "Világos",
+      "lightHint": "Mindig a világos téma",
+      "dark": "Sötét",
+      "darkHint": "A sötét téma úton van",
+      "comingSoon": "Hamarosan",
+      "note": "A sötét téma még készül. Amíg meg nem érkezik, mindkét lehetőség a világosat mutatja."
+    },
+    "notifications": {
+      "title": "Értesítések",
+      "subtitle": "Emlékeztetők, amelyek életben tartják a sorozatodat",
+      "dailyReminder": "Napi emlékeztető",
+      "dailyReminderHint": "Egy lökés, hogy minden nap gyakorolj",
+      "reminderTime": "Emlékeztető időpontja",
+      "weeklySummary": "Heti összefoglaló",
+      "weeklySummaryHint": "Amit tanultál — minden vasárnap este",
+      "streakAlerts": "Sorozatriasztások",
+      "streakAlertsHint": "Figyelmeztetés, mielőtt megszakad a sorozatod",
+      "permissionDenied": "A böngésződ blokkolja a WordAround értesítéseit. Engedélyezd őket a webhely beállításaiban, hogy újra bekapcsolhasd az emlékeztetőket.",
+      "unsupported": "Ez a böngésző nem tud értesítéseket megjeleníteni.",
+      "backgroundNote": "Az emlékeztetők addig működnek, amíg a WordAround nyitva van egy lapon vagy telepített alkalmazásként. A bezárt alkalmazás melletti értesítések később jönnek.",
+      "dailyPushTitle": "Ideje gyakorolni",
+      "dailyPushBody": "Néhány perc a WordArounddal, és él a sorozatod.",
+      "weeklyPushTitle": "A heted a WordAroundban",
+      "weeklyPushBody": "Nézd meg, mit tanultál ezen a héten, és mit érdemes átismételni."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Nézet",
       "rows": "Lista",
       "grid": "Rács"
-    }
+    },
+    "save": "Mentés"
   },
   "practice": {
     "language": {

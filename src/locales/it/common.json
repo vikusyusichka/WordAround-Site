@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Lingua dell'interfaccia",
     "password": {
       "title": "Crea una password",
       "body": "Il tuo account è stato creato con Google, quindi non ha una password: i campi e-mail e password non possono farti accedere. Aggiungine una e funzioneranno entrambi i modi.",
       "save": "Salva la password",
       "saving": "Salvataggio...",
       "savedInfo": "Password creata. Ora puoi accedere anche con la tua e-mail."
+    },
+    "subtitle": "Il tuo account e le impostazioni dell’app",
+    "addName": "Aggiungi il tuo nome",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Tempo di pratica",
+      "memberSince": "Membro dal"
+    },
+    "section": {
+      "account": "Account",
+      "support": "Supporto",
+      "danger": "Zona a rischio"
+    },
+    "row": {
+      "language": "Lingua",
+      "appearance": "Aspetto",
+      "notifications": "Notifiche",
+      "privacy": "Informativa sulla privacy",
+      "terms": "Termini di utilizzo",
+      "signOut": "Esci",
+      "deleteAccount": "Elimina account"
+    },
+    "edit": {
+      "button": "Modifica",
+      "title": "Modifica profilo",
+      "avatarColor": "Colore dell’avatar",
+      "nameLabel": "Nome",
+      "namePlaceholder": "Come dobbiamo chiamarti?",
+      "changePhoto": "Cambia foto",
+      "chooseAnother": "Scegline un’altra",
+      "saving": "Salvataggio...",
+      "photoFailed": "Non è stato possibile caricare la foto. Nome e colore sono stati salvati.",
+      "photoTimeout": "Il caricamento della foto ha richiesto troppo tempo. Nome e colore sono stati salvati.",
+      "saveFailed": "Non è stato possibile salvare il profilo. Riprova."
+    },
+    "color": {
+      "blue": "Blu",
+      "purple": "Viola",
+      "pink": "Rosa",
+      "orange": "Arancione",
+      "green": "Verde",
+      "cyan": "Turchese"
+    },
+    "signOut": {
+      "title": "Vuoi uscire?",
+      "message": "Dovrai accedere di nuovo per tornare ai tuoi set e ai tuoi progressi.",
+      "confirm": "Esci"
+    },
+    "delete": {
+      "title": "Elimina account",
+      "firstMessage": "Questo elimina definitivamente il tuo account. Set, cartelle e note restano sul server, ma non potrai più raggiungerli.",
+      "continue": "Continua",
+      "secondMessage": "Questa azione non si può annullare. Scrivi DELETE qui sotto per confermare l’eliminazione definitiva dell’account.",
+      "confirmField": "Scrivi {{word}} per confermare",
+      "confirmButton": "Elimina il mio account",
+      "deleting": "Eliminazione...",
+      "reauthNeeded": "Per sicurezza serve un accesso recente. Sei stato disconnesso: accedi di nuovo e ripeti l’eliminazione.",
+      "failed": "Non è stato possibile eliminare l’account. Riprova."
+    },
+    "language": {
+      "title": "Lingua",
+      "subtitle": "Scegli la lingua dell’interfaccia",
+      "searchPlaceholder": "Cerca una lingua",
+      "noResults": "Nessuna lingua corrisponde a «{{query}}».",
+      "note": "L’interfaccia cambia subito. I tuoi set, le note e i testi restano nella lingua in cui li hai scritti."
+    },
+    "appearance": {
+      "title": "Aspetto",
+      "subtitle": "Scegli come appare WordAround",
+      "system": "Sistema",
+      "systemHint": "Segue l’impostazione del dispositivo",
+      "light": "Chiaro",
+      "lightHint": "Sempre il tema chiaro",
+      "dark": "Scuro",
+      "darkHint": "Il tema scuro sta arrivando",
+      "comingSoon": "Presto",
+      "note": "Il tema scuro è in costruzione. Finché non arriva, entrambe le opzioni mostrano quello chiaro."
+    },
+    "notifications": {
+      "title": "Notifiche",
+      "subtitle": "Promemoria che tengono viva la tua serie",
+      "dailyReminder": "Promemoria giornaliero",
+      "dailyReminderHint": "Una spinta a esercitarti ogni giorno",
+      "reminderTime": "Ora del promemoria",
+      "weeklySummary": "Riepilogo settimanale",
+      "weeklySummaryHint": "Quello che hai imparato, ogni domenica sera",
+      "streakAlerts": "Avvisi sulla serie",
+      "streakAlertsHint": "Un avviso prima che la tua serie si interrompa",
+      "permissionDenied": "Il browser sta bloccando le notifiche di WordAround. Consentile nelle impostazioni del sito per riattivare i promemoria.",
+      "unsupported": "Questo browser non può mostrare notifiche.",
+      "backgroundNote": "I promemoria funzionano finché WordAround è aperto in una scheda o come app installata. Le notifiche ad app chiusa arriveranno più avanti.",
+      "dailyPushTitle": "È ora di esercitarsi",
+      "dailyPushBody": "Bastano pochi minuti con WordAround per non perdere la serie.",
+      "weeklyPushTitle": "La tua settimana in WordAround",
+      "weeklyPushBody": "Guarda che cosa hai imparato questa settimana e che cosa vale la pena ripassare."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Vista",
       "rows": "Elenco",
       "grid": "Griglia"
-    }
+    },
+    "save": "Salva"
   },
   "practice": {
     "language": {

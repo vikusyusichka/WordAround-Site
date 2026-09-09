@@ -6,12 +6,14 @@
    unknown names fall back to <Question /> so gaps fail visibly. */
 import {
   Airplane,
+  Alarm,
   ArrowDown,
   ArrowLeft,
   ArrowRight,
   ArrowsLeftRight,
   ArrowUp,
   Bell,
+  BellSlash,
   Book,
   BookmarkSimple,
   BookOpen,
@@ -26,6 +28,7 @@ import {
   ChatsCircle,
   Check,
   Circle,
+  CircleHalf,
   Confetti,
   DotsSixVertical,
 
@@ -37,8 +40,11 @@ import {
   Gear,
   Globe,
   GraduationCap,
+  HandPalm,
   Headphones,
   Heart,
+  Info,
+  SignOut,
   ArrowClockwise,
   ChatTeardropText,
   Cube,
@@ -362,6 +368,14 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'tag.fill': Tag,
   'paperplane.fill': PaperPlaneTilt,
   link: Link,
+  /* Profile */
+  'hand.raised.fill': HandPalm,
+  'rectangle.portrait.and.arrow.right': SignOut,
+  'trash.fill': Trash,
+  'circle.lefthalf.filled': CircleHalf,
+  'alarm.fill': Alarm,
+  'bell.slash.fill': BellSlash,
+  'info.circle.fill': Info,
 };
 
 export const iconForSFSymbol = (name: string): PhosphorIcon =>

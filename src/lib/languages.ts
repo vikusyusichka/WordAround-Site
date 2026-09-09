@@ -56,3 +56,18 @@ export const DEFAULT_LANGUAGE = 'en';
 
 export const languageByCode = (code: string | undefined): AppLanguage | undefined =>
   APP_LANGUAGES.find((l) => l.code === code);
+
+/** Search for the picker on /profile/language. Matches the native name, the
+    English name and the code, so "Ukrainian", "Українська" and "uk" all find
+    the same row — you should be able to find your language whichever of the
+    two you happen to be reading in. An empty query keeps the full list. */
+export const filterLanguages = (query: string): AppLanguage[] => {
+  const needle = query.trim().toLowerCase();
+  if (!needle) return APP_LANGUAGES;
+  return APP_LANGUAGES.filter(
+    (language) =>
+      language.nativeName.toLowerCase().includes(needle) ||
+      language.englishName.toLowerCase().includes(needle) ||
+      language.code.includes(needle),
+  );
+};

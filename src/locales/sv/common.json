@@ -1665,13 +1665,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Gränssnittsspråk",
     "password": {
       "title": "Skapa ett lösenord",
       "body": "Ditt konto skapades med Google och har därför inget lösenord — fälten för e-post och lösenord kan inte logga in dig. Lägg till ett så fungerar båda sätten.",
       "save": "Spara lösenord",
       "saving": "Sparar...",
       "savedInfo": "Lösenordet är skapat. Nu kan du logga in med din e-post också."
+    },
+    "subtitle": "Ditt konto och appens inställningar",
+    "addName": "Lägg till ditt namn",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Övningstid",
+      "memberSince": "Medlem sedan"
+    },
+    "section": {
+      "account": "Konto",
+      "support": "Support",
+      "danger": "Riskzon"
+    },
+    "row": {
+      "language": "Språk",
+      "appearance": "Utseende",
+      "notifications": "Aviseringar",
+      "privacy": "Integritetspolicy",
+      "terms": "Användarvillkor",
+      "signOut": "Logga ut",
+      "deleteAccount": "Radera konto"
+    },
+    "edit": {
+      "button": "Redigera",
+      "title": "Redigera profil",
+      "avatarColor": "Avatarfärg",
+      "nameLabel": "Namn",
+      "namePlaceholder": "Vad ska vi kalla dig?",
+      "changePhoto": "Byt bild",
+      "chooseAnother": "Välj en annan",
+      "saving": "Sparar...",
+      "photoFailed": "Bilden kunde inte laddas upp. Ditt namn och din färg sparades.",
+      "photoTimeout": "Uppladdningen av bilden tog för lång tid. Ditt namn och din färg sparades.",
+      "saveFailed": "Profilen kunde inte sparas. Försök igen."
+    },
+    "color": {
+      "blue": "Blå",
+      "purple": "Lila",
+      "pink": "Rosa",
+      "orange": "Orange",
+      "green": "Grön",
+      "cyan": "Turkos"
+    },
+    "signOut": {
+      "title": "Logga ut?",
+      "message": "Du behöver logga in igen för att komma åt dina set och dina framsteg.",
+      "confirm": "Logga ut"
+    },
+    "delete": {
+      "title": "Radera konto",
+      "firstMessage": "Detta raderar ditt konto permanent. Set, mappar och anteckningar ligger kvar på servern, men du kommer inte längre åt dem.",
+      "continue": "Fortsätt",
+      "secondMessage": "Detta går inte att ångra. Skriv DELETE nedan för att bekräfta att du vill radera ditt konto för gott.",
+      "confirmField": "Skriv {{word}} för att bekräfta",
+      "confirmButton": "Radera mitt konto",
+      "deleting": "Raderar...",
+      "reauthNeeded": "Av säkerhetsskäl krävs en färsk inloggning. Du har loggats ut — logga in igen och upprepa raderingen.",
+      "failed": "Kontot kunde inte raderas. Försök igen."
+    },
+    "language": {
+      "title": "Språk",
+      "subtitle": "Välj språk för gränssnittet",
+      "searchPlaceholder": "Sök språk",
+      "noResults": "Inget språk matchar ”{{query}}”.",
+      "note": "Gränssnittet byter direkt. Dina set, anteckningar och texter stannar på det språk du skrev dem på."
+    },
+    "appearance": {
+      "title": "Utseende",
+      "subtitle": "Välj hur WordAround ser ut",
+      "system": "System",
+      "systemHint": "Följer inställningen på din enhet",
+      "light": "Ljust",
+      "lightHint": "Alltid det ljusa temat",
+      "dark": "Mörkt",
+      "darkHint": "Ett mörkt tema är på väg",
+      "comingSoon": "Snart",
+      "note": "Det mörka temat byggs just nu. Tills det är klart visar båda alternativen det ljusa."
+    },
+    "notifications": {
+      "title": "Aviseringar",
+      "subtitle": "Påminnelser som håller din svit vid liv",
+      "dailyReminder": "Daglig påminnelse",
+      "dailyReminderHint": "En knuff att öva varje dag",
+      "reminderTime": "Tid för påminnelsen",
+      "weeklySummary": "Veckosammanfattning",
+      "weeklySummaryHint": "Vad du lärt dig — varje söndagskväll",
+      "streakAlerts": "Svitvarningar",
+      "streakAlertsHint": "En varning innan din svit bryts",
+      "permissionDenied": "Din webbläsare blockerar aviseringar för WordAround. Tillåt dem i webbplatsinställningarna för att slå på påminnelser igen.",
+      "unsupported": "Den här webbläsaren kan inte visa aviseringar.",
+      "backgroundNote": "Påminnelser fungerar så länge WordAround är öppet i en flik eller som installerad app. Aviseringar när appen är stängd kommer senare.",
+      "dailyPushTitle": "Dags att öva",
+      "dailyPushBody": "Några minuter med WordAround håller din svit vid liv.",
+      "weeklyPushTitle": "Din vecka i WordAround",
+      "weeklyPushBody": "Se vad du lärt dig den här veckan och vad som är värt att repetera."
     }
   },
   "units": {
@@ -1712,7 +1806,8 @@
       "label": "Vy",
       "rows": "Lista",
       "grid": "Rutnät"
-    }
+    },
+    "save": "Spara"
   },
   "practice": {
     "language": {

@@ -1688,13 +1688,107 @@
     }
   },
   "profile": {
-    "interfaceLanguage": "Jezik sučelja",
     "password": {
       "title": "Napravite lozinku",
       "body": "Vaš je račun otvoren Googleom pa nema lozinku — poljima e-pošte i lozinke ne možete se prijaviti. Postavite lozinku i radit će oba načina.",
       "save": "Spremi lozinku",
       "saving": "Spremamo...",
       "savedInfo": "Lozinka je napravljena. Sad se možete prijaviti i e-poštom."
+    },
+    "subtitle": "Vaš račun i postavke aplikacije",
+    "addName": "Dodajte ime",
+    "stat": {
+      "minutes": "{{value}} min",
+      "practiceTime": "Vrijeme vježbanja",
+      "memberSince": "Član od"
+    },
+    "section": {
+      "account": "Račun",
+      "support": "Podrška",
+      "danger": "Rizična zona"
+    },
+    "row": {
+      "language": "Jezik",
+      "appearance": "Izgled",
+      "notifications": "Obavijesti",
+      "privacy": "Pravila privatnosti",
+      "terms": "Uvjeti korištenja",
+      "signOut": "Odjava",
+      "deleteAccount": "Izbriši račun"
+    },
+    "edit": {
+      "button": "Uredi",
+      "title": "Uredi profil",
+      "avatarColor": "Boja avatara",
+      "nameLabel": "Ime",
+      "namePlaceholder": "Kako da vas zovemo?",
+      "changePhoto": "Promijeni fotografiju",
+      "chooseAnother": "Odaberi drugu",
+      "saving": "Spremanje...",
+      "photoFailed": "Fotografiju nije bilo moguće prenijeti. Ime i boja su spremljeni.",
+      "photoTimeout": "Prijenos fotografije trajao je predugo. Ime i boja su spremljeni.",
+      "saveFailed": "Profil nije bilo moguće spremiti. Pokušajte ponovno."
+    },
+    "color": {
+      "blue": "Plava",
+      "purple": "Ljubičasta",
+      "pink": "Ružičasta",
+      "orange": "Narančasta",
+      "green": "Zelena",
+      "cyan": "Tirkizna"
+    },
+    "signOut": {
+      "title": "Odjaviti se?",
+      "message": "Za povratak svojim setovima i napretku morat ćete se ponovno prijaviti.",
+      "confirm": "Odjava"
+    },
+    "delete": {
+      "title": "Izbriši račun",
+      "firstMessage": "Ovime trajno brišete svoj račun. Setovi, mape i bilješke ostaju na poslužitelju, ali im više nećete moći pristupiti.",
+      "continue": "Nastavi",
+      "secondMessage": "Ovo se ne može poništiti. Upišite DELETE ispod kako biste potvrdili trajno brisanje računa.",
+      "confirmField": "Upišite {{word}} za potvrdu",
+      "confirmButton": "Izbriši moj račun",
+      "deleting": "Brisanje...",
+      "reauthNeeded": "Radi sigurnosti potrebna je svježa prijava. Odjavili smo vas — prijavite se ponovno i ponovite brisanje.",
+      "failed": "Račun nije bilo moguće izbrisati. Pokušajte ponovno."
+    },
+    "language": {
+      "title": "Jezik",
+      "subtitle": "Odaberite jezik sučelja",
+      "searchPlaceholder": "Pretraži jezike",
+      "noResults": "Nijedan jezik ne odgovara upitu „{{query}}”.",
+      "note": "Sučelje se mijenja odmah. Vaši setovi, bilješke i tekstovi ostaju na jeziku na kojem ste ih napisali."
+    },
+    "appearance": {
+      "title": "Izgled",
+      "subtitle": "Odaberite kako WordAround izgleda",
+      "system": "Sustav",
+      "systemHint": "Prati postavku vašeg uređaja",
+      "light": "Svijetlo",
+      "lightHint": "Uvijek svijetla tema",
+      "dark": "Tamno",
+      "darkHint": "Tamna tema je na putu",
+      "comingSoon": "Uskoro",
+      "note": "Tamna tema se izrađuje. Dok ne stigne, obje opcije prikazuju svijetlu."
+    },
+    "notifications": {
+      "title": "Obavijesti",
+      "subtitle": "Podsjetnici koji održavaju vaš niz",
+      "dailyReminder": "Dnevni podsjetnik",
+      "dailyReminderHint": "Poticaj da vježbate svaki dan",
+      "reminderTime": "Vrijeme podsjetnika",
+      "weeklySummary": "Tjedni sažetak",
+      "weeklySummaryHint": "Što ste naučili — svake nedjelje navečer",
+      "streakAlerts": "Upozorenja o nizu",
+      "streakAlertsHint": "Upozorenje prije nego što vam niz prekine",
+      "permissionDenied": "Preglednik blokira obavijesti za WordAround. Dopustite ih u postavkama stranice kako biste ponovno uključili podsjetnike.",
+      "unsupported": "Ovaj preglednik ne može prikazivati obavijesti.",
+      "backgroundNote": "Podsjetnici rade dok je WordAround otvoren u kartici ili kao instalirana aplikacija. Obavijesti uz zatvorenu aplikaciju stižu kasnije.",
+      "dailyPushTitle": "Vrijeme za vježbu",
+      "dailyPushBody": "Nekoliko minuta s WordAroundom i niz se nastavlja.",
+      "weeklyPushTitle": "Vaš tjedan u WordAroundu",
+      "weeklyPushBody": "Pogledajte što ste naučili ovaj tjedan i što vrijedi ponoviti."
     }
   },
   "units": {
@@ -1735,7 +1829,8 @@
       "label": "Prikaz",
       "rows": "Popis",
       "grid": "Mreža"
-    }
+    },
+    "save": "Spremi"
   },
   "practice": {
     "language": {
