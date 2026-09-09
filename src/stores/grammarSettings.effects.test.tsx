@@ -14,7 +14,7 @@ import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import '@/lib/i18n';
-import { AddBlockMenu } from '@/components/grammar/AddBlockMenu';
+import { BlockToolbarTray } from '@/components/grammar/BlockToolbarTray';
 import { GrammarNoteRow } from '@/components/grammar/GrammarNoteRow';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
 import { QuickNoteSheet } from '@/components/grammar/QuickNoteSheet';
@@ -92,17 +92,22 @@ describe('showsMistakeHighlights', () => {
 });
 
 describe('allowQuickQuizzes', () => {
-  it('on: the block menu offers a quiz block', async () => {
+  /* The quiz block lives under "More" in the tray, so the menu has to be
+     opened before the setting's effect is visible either way. */
+  const openMore = async (user: ReturnType<typeof userEvent.setup>) =>
+    user.click(screen.getByRole('button', { name: /more/i }));
+
+  it('on: the block tray offers a quiz block', async () => {
     const user = userEvent.setup();
-    render(<AddBlockMenu allowsQuiz onAdd={vi.fn()} />);
-    await user.click(screen.getAllByRole('button')[0]);
+    render(<BlockToolbarTray allowsQuiz onAdd={vi.fn()} />);
+    await openMore(user);
     expect(screen.getByText('Quiz')).toBeInTheDocument();
   });
 
   it('off: the quiz block is gone', async () => {
     const user = userEvent.setup();
-    render(<AddBlockMenu allowsQuiz={false} onAdd={vi.fn()} />);
-    await user.click(screen.getAllByRole('button')[0]);
+    render(<BlockToolbarTray allowsQuiz={false} onAdd={vi.fn()} />);
+    await openMore(user);
     expect(screen.queryByText('Quiz')).not.toBeInTheDocument();
   });
 });

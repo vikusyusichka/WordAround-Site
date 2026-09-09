@@ -25,7 +25,7 @@ import { Icon } from '@/components/primitives/Icon';
 import { DeleteAccountDialog } from '@/components/profile/DeleteAccountDialog';
 import { EditProfileDialog } from '@/components/profile/EditProfileDialog';
 import { ProfileAvatar } from '@/components/profile/ProfileAvatar';
-import { ProfileCard } from '@/components/profile/ProfileCard';
+import { SurfaceCard } from '@/components/primitives/SurfaceCard';
 import { ProfileStatCard } from '@/components/profile/ProfileStatCard';
 import { SectionTitle } from '@/components/profile/SectionTitle';
 import { SettingsRow } from '@/components/profile/SettingsRow';
@@ -75,7 +75,7 @@ function ProfilePage() {
 
       <div className="flex max-w-[760px] flex-col gap-[18px]">
         {/* Identity */}
-        <ProfileCard>
+        <SurfaceCard>
           <div className="flex items-center gap-4 p-[18px]">
             <ProfileAvatar
               size={72}
@@ -108,7 +108,7 @@ function ProfilePage() {
               </button>
             </div>
           </div>
-        </ProfileCard>
+        </SurfaceCard>
 
         {/* Summary */}
         <div className="grid grid-cols-2 gap-3">
@@ -127,7 +127,7 @@ function ProfilePage() {
         {/* Account */}
         <section className="flex flex-col gap-2">
           <SectionTitle>{t('profile.section.account')}</SectionTitle>
-          <ProfileCard>
+          <SurfaceCard>
             <SettingsRow
               icon="globe"
               title={t('profile.row.language')}
@@ -148,7 +148,7 @@ function ProfilePage() {
               trailing={notificationCount === null ? null : String(notificationCount)}
               onClick={() => void navigate({ to: '/profile/notifications' })}
             />
-          </ProfileCard>
+          </SurfaceCard>
         </section>
 
         {!hasPassword && <SetPasswordCard />}
@@ -156,7 +156,7 @@ function ProfilePage() {
         {/* Support */}
         <section className="flex flex-col gap-2">
           <SectionTitle>{t('profile.section.support')}</SectionTitle>
-          <ProfileCard>
+          <SurfaceCard>
             <SettingsRow
               icon="hand.raised.fill"
               title={t('profile.row.privacy')}
@@ -164,13 +164,13 @@ function ProfilePage() {
               showsDivider
             />
             <SettingsRow icon="doc.text.fill" title={t('profile.row.terms')} href={TERMS_URL} />
-          </ProfileCard>
+          </SurfaceCard>
         </section>
 
         {/* Danger zone */}
         <section className="flex flex-col gap-2">
           <SectionTitle tone="danger">{t('profile.section.danger')}</SectionTitle>
-          <ProfileCard accent="var(--color-profile-danger)" blobOpacity={0.07}>
+          <SurfaceCard accent="var(--color-profile-danger)" blobOpacity={0.07}>
             <SettingsRow
               icon="rectangle.portrait.and.arrow.right"
               title={t('profile.row.signOut')}
@@ -184,7 +184,7 @@ function ProfilePage() {
               tone="danger"
               onClick={() => setIsConfirmingDelete(true)}
             />
-          </ProfileCard>
+          </SurfaceCard>
         </section>
       </div>
 
@@ -262,7 +262,7 @@ function SetPasswordCard() {
   });
 
   return (
-    <ProfileCard>
+    <SurfaceCard>
       <div className="flex flex-col gap-5 p-6">
         <div className="flex flex-col gap-2">
           <h2 className="text-[18px] font-bold text-(--color-primary-blue-dark)">
@@ -310,6 +310,6 @@ function SetPasswordCard() {
           </PrimaryButton>
         </form>
       </div>
-    </ProfileCard>
+    </SurfaceCard>
   );
 }

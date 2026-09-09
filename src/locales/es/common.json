@@ -656,7 +656,9 @@
         "imageAdd": "Añadir / reemplazar imagen",
         "imageUploading": "Subiendo…",
         "imageFailed": "No se pudo subir la imagen.",
-        "imageSaveFirst": "Inicia sesión para subir imágenes."
+        "imageSaveFirst": "Inicia sesión para subir imágenes.",
+        "more": "Más",
+        "trayLabel": "Insertar bloque"
       },
       "blockPlaceholder": {
         "heading": "Encabezado",
@@ -1089,7 +1091,10 @@
         "cards_other": "{{count}} tarjetas"
       },
       "topicsEmptyTip": "Un tema es una carpeta para notas: uno por idioma, o uno por aquello en lo que sigues fallando.",
-      "notesEmptyTip": "Cada nota que guardas entra en la cola de repaso, así que escribirla ya es empezar a practicarla."
+      "notesEmptyTip": "Cada nota que guardas entra en la cola de repaso, así que escribirla ya es empezar a practicarla.",
+      "quickActions": {
+        "label": "Acciones rápidas"
+      }
     }
   },
   "reading": {

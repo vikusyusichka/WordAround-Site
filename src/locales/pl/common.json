@@ -671,7 +671,9 @@
         "imageAdd": "Dodaj / zmień obraz",
         "imageUploading": "Wysyłanie…",
         "imageFailed": "Nie udało się wysłać obrazu.",
-        "imageSaveFirst": "Zaloguj się, aby wysyłać obrazy."
+        "imageSaveFirst": "Zaloguj się, aby wysyłać obrazy.",
+        "more": "Więcej",
+        "trayLabel": "Wstaw blok"
       },
       "blockPlaceholder": {
         "heading": "Nagłówek",
@@ -1127,6 +1129,9 @@
       },
       "topicsEmptyTip": "Temat to folder na notatki — jeden na język albo jeden na to, w czym ciągle się mylisz.",
       "notesEmptyTip": "Każda zapisana notatka trafia do kolejki powtórek, więc wystarczy ją zapisać, aby zacząć się jej uczyć.",
+      "quickActions": {
+        "label": "Szybkie akcje"
+      },
       "notesCount_few": "{{count}} notatki",
       "notesCount_many": "{{count}} notatek"
     }

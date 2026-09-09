@@ -656,7 +656,9 @@
         "imageAdd": "Engadir / substituír imaxe",
         "imageUploading": "Subindo…",
         "imageFailed": "Non se puido subir a imaxe.",
-        "imageSaveFirst": "Inicia sesión para subir imaxes."
+        "imageSaveFirst": "Inicia sesión para subir imaxes.",
+        "more": "Máis",
+        "trayLabel": "Inserir bloque"
       },
       "blockPlaceholder": {
         "heading": "Cabeceira",
@@ -1089,7 +1091,10 @@
         "cards_other": "{{count}} tarxetas"
       },
       "topicsEmptyTip": "Un tema é un cartafol para notas: un por idioma, ou un por cada cousa que segues fallando.",
-      "notesEmptyTip": "Cada nota que gardas entra na cola de repaso, así que escribila xa é comezar a practicala."
+      "notesEmptyTip": "Cada nota que gardas entra na cola de repaso, así que escribila xa é comezar a practicala.",
+      "quickActions": {
+        "label": "Accións rápidas"
+      }
     }
   },
   "reading": {

@@ -12,7 +12,7 @@ import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
 import { BackLink } from '@/components/shell/BackLink';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
-import { AddBlockMenu } from '@/components/grammar/AddBlockMenu';
+import { BlockToolbarTray } from '@/components/grammar/BlockToolbarTray';
 import { GrammarBlockEditor } from '@/components/grammar/GrammarBlockEditor';
 import { GrammarNoteTypePicker } from '@/components/grammar/GrammarNoteTypePicker';
 import { LanguageSelect } from '@/components/grammar/LanguageSelect';
@@ -295,7 +295,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
               onClick={() => dispatch({ type: 'TOGGLE_PINNED' })}
               aria-pressed={state.isPinned}
               aria-label={t(state.isPinned ? 'writing.grammar.unpin' : 'writing.grammar.pin')}
-              className={`grid size-11 place-items-center rounded-2xl border border-(--color-auth-field-border) bg-white transition-colors focus-visible:outline-none ${state.isPinned ? 'text-(--color-primary-blue)' : 'text-(--color-muted-text)'}`}
+              className={`grid size-[42px] place-items-center rounded-2xl border border-(--color-auth-field-border) bg-white transition-colors focus-visible:outline-none lg:size-[46px] ${state.isPinned ? 'text-(--color-primary-blue)' : 'text-(--color-muted-text)'}`}
             >
               <Icon name="pin.fill" className="size-[18px]" />
             </button>
@@ -306,7 +306,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
               aria-label={t(
                 state.isFavorite ? 'writing.grammar.unfavorite' : 'writing.grammar.favorite',
               )}
-              className={`grid size-11 place-items-center rounded-2xl border border-(--color-auth-field-border) bg-white transition-colors focus-visible:outline-none ${state.isFavorite ? 'text-[#F59E0B]' : 'text-(--color-muted-text)'}`}
+              className={`grid size-[42px] place-items-center rounded-2xl border border-(--color-auth-field-border) bg-white transition-colors focus-visible:outline-none lg:size-[46px] ${state.isFavorite ? 'text-[#F59E0B]' : 'text-(--color-muted-text)'}`}
             >
               <Icon name="star.fill" className="size-[18px]" />
             </button>
@@ -364,7 +364,8 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
         }
       />
 
-      <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
+      {/* iOS contentMaxWidth: 900 on a regular width, unconstrained below it. */}
+      <div className="mx-auto flex w-full max-w-2xl flex-col gap-5 lg:max-w-[900px]">
         <BackLink label={topic?.title ?? t('nav.notes')} onClick={goBack} />
 
         <input
@@ -372,7 +373,8 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
           onChange={(e) => dispatch({ type: 'SET_TITLE', value: e.target.value })}
           placeholder={t('writing.grammar.editor.titlePlaceholder')}
           autoFocus
-          className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[20px] font-bold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand)"
+          /* iOS titleFontSize: 21 on a phone, 26 on a regular width. */
+          className="w-full rounded-2xl border border-(--color-auth-field-border) bg-white px-4 py-3 text-[21px] font-bold text-(--color-primary-blue-dark) outline-none focus-visible:border-(--color-home-brand) lg:text-[26px]"
         />
 
         <GrammarNoteTypePicker
@@ -417,7 +419,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
           ))}
         </div>
 
-        <AddBlockMenu
+        <BlockToolbarTray
           allowsQuiz={allowQuickQuizzes}
           onAdd={(type) => dispatch({ type: 'ADD_BLOCK', blockType: type })}
         />

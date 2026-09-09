@@ -656,7 +656,9 @@
         "imageAdd": "Tilføj / erstat billede",
         "imageUploading": "Uploader…",
         "imageFailed": "Billedet kunne ikke uploades.",
-        "imageSaveFirst": "Log ind for at uploade billeder."
+        "imageSaveFirst": "Log ind for at uploade billeder.",
+        "more": "Mere",
+        "trayLabel": "Indsæt blok"
       },
       "blockPlaceholder": {
         "heading": "Overskrift",
@@ -1089,7 +1091,10 @@
         "cards_other": "{{count}} kort"
       },
       "topicsEmptyTip": "Et emne er en mappe til noter — ét pr. sprog, eller ét pr. ting, du bliver ved med at tage fejl af.",
-      "notesEmptyTip": "Hver note, du gemmer, ryger i repetitionskøen, så det at skrive den ned er allerede at begynde at træne den."
+      "notesEmptyTip": "Hver note, du gemmer, ryger i repetitionskøen, så det at skrive den ned er allerede at begynde at træne den.",
+      "quickActions": {
+        "label": "Hurtige handlinger"
+      }
     }
   },
   "reading": {

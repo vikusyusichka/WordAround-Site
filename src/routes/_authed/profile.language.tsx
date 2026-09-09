@@ -14,7 +14,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
-import { ProfileCard } from '@/components/profile/ProfileCard';
+import { SurfaceCard } from '@/components/primitives/SurfaceCard';
 import { ProfileSubScreenLayout } from '@/components/profile/ProfileSubScreenLayout';
 import { DEFAULT_LANGUAGE, LANGUAGE_CODES, filterLanguages } from '@/lib/languages';
 import { setAppLanguage } from '@/lib/i18n';
@@ -65,7 +65,7 @@ function LanguageScreen() {
             const isActive = language.code === active;
             return (
               <li key={language.code}>
-                <ProfileCard>
+                <SurfaceCard>
                   <button
                     type="button"
                     lang={language.code}
@@ -107,7 +107,7 @@ function LanguageScreen() {
                       )}
                     </span>
                   </button>
-                </ProfileCard>
+                </SurfaceCard>
               </li>
             );
           })}

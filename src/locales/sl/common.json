@@ -668,7 +668,9 @@
         "imageAdd": "Dodaj / zamenjaj sliko",
         "imageUploading": "Nalagamo…",
         "imageFailed": "Slike ni bilo mogoče naložiti.",
-        "imageSaveFirst": "Za nalaganje slik se prijavite."
+        "imageSaveFirst": "Za nalaganje slik se prijavite.",
+        "more": "Več",
+        "trayLabel": "Vstavi blok"
       },
       "blockPlaceholder": {
         "heading": "Naslov",
@@ -1124,6 +1126,9 @@
       },
       "topicsEmptyTip": "Tema je mapa za zapiske — ena na jezik ali ena na stvar, pri kateri se stalno motite.",
       "notesEmptyTip": "Vsak shranjen zapisek se uvrsti v vrsto za ponavljanje, zato ga zapisati že pomeni začeti ga vaditi.",
+      "quickActions": {
+        "label": "Hitra dejanja"
+      },
       "notesCount_two": "{{count}} zapiska",
       "notesCount_few": "{{count}} zapiski"
     }

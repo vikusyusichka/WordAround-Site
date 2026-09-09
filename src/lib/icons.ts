@@ -30,6 +30,7 @@ import {
   Circle,
   CircleHalf,
   Confetti,
+  Copy,
   DotsSixVertical,
 
   FileText,
@@ -199,6 +200,8 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'mic.fill': Microphone,
   photo: ImageIcon,
   'doc.text.fill': FileText,
+  /* Templates — a stack of documents. */
+  'doc.on.doc.fill': Copy,
   /* Stub flashcard-set icons (Phase 2 demo data; real icons come from
      set.icon in Phase 3). */
   airplane: Airplane,

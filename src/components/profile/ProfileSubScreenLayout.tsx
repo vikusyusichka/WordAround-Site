@@ -18,7 +18,7 @@ import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
-import { ProfileCard } from '@/components/profile/ProfileCard';
+import { SurfaceCard } from '@/components/primitives/SurfaceCard';
 import { ProfileSubScreenHeader } from '@/components/profile/ProfileSubScreenHeader';
 import { SectionTitle } from '@/components/profile/SectionTitle';
 import { SettingsRow } from '@/components/profile/SettingsRow';
@@ -51,17 +51,17 @@ export const ProfileSubScreenLayout = ({
           aria-label={t('home.title.profile')}
           className="hidden w-[280px] shrink-0 flex-col gap-5 lg:flex"
         >
-          <ProfileCard as="section">
+          <SurfaceCard as="section">
             <SettingsRow
               icon="person.fill"
               title={t('home.title.profile')}
               onClick={() => void navigate({ to: '/profile' })}
             />
-          </ProfileCard>
+          </SurfaceCard>
 
           <div className="flex flex-col gap-2">
             <SectionTitle>{t('profile.section.account')}</SectionTitle>
-            <ProfileCard as="section">
+            <SurfaceCard as="section">
               <SettingsRow
                 icon="globe"
                 title={t('profile.row.language')}
@@ -82,12 +82,12 @@ export const ProfileSubScreenLayout = ({
                 isActive={active === 'notifications'}
                 onClick={() => void navigate({ to: '/profile/notifications' })}
               />
-            </ProfileCard>
+            </SurfaceCard>
           </div>
 
           <div className="flex flex-col gap-2">
             <SectionTitle>{t('profile.section.support')}</SectionTitle>
-            <ProfileCard as="section">
+            <SurfaceCard as="section">
               <SettingsRow
                 icon="hand.raised.fill"
                 title={t('profile.row.privacy')}
@@ -95,7 +95,7 @@ export const ProfileSubScreenLayout = ({
                 showsDivider
               />
               <SettingsRow icon="doc.text.fill" title={t('profile.row.terms')} href={TERMS_URL} />
-            </ProfileCard>
+            </SurfaceCard>
           </div>
         </nav>
 

@@ -659,7 +659,9 @@
         "imageAdd": "Bild hinzufügen / ersetzen",
         "imageUploading": "Wird hochgeladen…",
         "imageFailed": "Das Bild konnte nicht hochgeladen werden.",
-        "imageSaveFirst": "Melde dich an, um Bilder hochzuladen."
+        "imageSaveFirst": "Melde dich an, um Bilder hochzuladen.",
+        "more": "Mehr",
+        "trayLabel": "Block einfügen"
       },
       "blockPlaceholder": {
         "heading": "Überschrift",
@@ -1092,7 +1094,10 @@
         "cards_other": "{{count}} Karten"
       },
       "topicsEmptyTip": "Ein Thema ist ein Ordner für Notizen — eines pro Sprache oder eines pro Sache, die dir immer wieder danebengeht.",
-      "notesEmptyTip": "Jede gespeicherte Notiz kommt in die Wiederholungsliste, es reicht also, sie aufzuschreiben, um mit dem Üben zu beginnen."
+      "notesEmptyTip": "Jede gespeicherte Notiz kommt in die Wiederholungsliste, es reicht also, sie aufzuschreiben, um mit dem Üben zu beginnen.",
+      "quickActions": {
+        "label": "Schnellaktionen"
+      }
     }
   },
   "reading": {

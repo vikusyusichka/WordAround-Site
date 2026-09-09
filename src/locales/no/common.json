@@ -656,7 +656,9 @@
         "imageAdd": "Legg til / bytt bilde",
         "imageUploading": "Laster opp…",
         "imageFailed": "Bildet kunne ikke lastes opp.",
-        "imageSaveFirst": "Logg inn for å laste opp bilder."
+        "imageSaveFirst": "Logg inn for å laste opp bilder.",
+        "more": "Mer",
+        "trayLabel": "Sett inn blokk"
       },
       "blockPlaceholder": {
         "heading": "Overskrift",
@@ -1089,7 +1091,10 @@
         "cards_other": "{{count}} kort"
       },
       "topicsEmptyTip": "Et tema er en mappe for notater — ett per språk, eller ett per ting du stadig gjør feil.",
-      "notesEmptyTip": "Hvert notat du lagrer, havner i repetisjonskøen, så det å skrive det ned er allerede å begynne å øve på det."
+      "notesEmptyTip": "Hvert notat du lagrer, havner i repetisjonskøen, så det å skrive det ned er allerede å begynne å øve på det.",
+      "quickActions": {
+        "label": "Hurtighandlinger"
+      }
     }
   },
   "reading": {

@@ -656,7 +656,9 @@
         "imageAdd": "Lisa / asenda pilt",
         "imageUploading": "Üleslaadimine…",
         "imageFailed": "Pilti ei õnnestunud üles laadida.",
-        "imageSaveFirst": "Piltide üleslaadimiseks logi sisse."
+        "imageSaveFirst": "Piltide üleslaadimiseks logi sisse.",
+        "more": "Rohkem",
+        "trayLabel": "Lisa plokk"
       },
       "blockPlaceholder": {
         "heading": "Pealkiri",
@@ -1089,7 +1091,10 @@
         "cards_other": "{{count}} kaarti"
       },
       "topicsEmptyTip": "Teema on kaust märkmete jaoks — üks iga keele kohta või üks iga asja kohta, milles pidevalt eksid.",
-      "notesEmptyTip": "Iga salvestatud märge läheb kordamisjärjekorda, nii et selle üleskirjutamine ongi juba harjutamise algus."
+      "notesEmptyTip": "Iga salvestatud märge läheb kordamisjärjekorda, nii et selle üleskirjutamine ongi juba harjutamise algus.",
+      "quickActions": {
+        "label": "Kiirtoimingud"
+      }
     }
   },
   "reading": {

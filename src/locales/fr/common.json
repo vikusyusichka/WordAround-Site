@@ -656,7 +656,9 @@
         "imageAdd": "Ajouter / remplacer l'image",
         "imageUploading": "Envoi…",
         "imageFailed": "Impossible d'envoyer l'image.",
-        "imageSaveFirst": "Connectez-vous pour envoyer des images."
+        "imageSaveFirst": "Connectez-vous pour envoyer des images.",
+        "more": "Plus",
+        "trayLabel": "Insérer un bloc"
       },
       "blockPlaceholder": {
         "heading": "Titre",
@@ -1089,7 +1091,10 @@
         "cards_other": "{{count}} cartes"
       },
       "topicsEmptyTip": "Un thème est un dossier de notes — un par langue, ou un par chose que vous ratez sans arrêt.",
-      "notesEmptyTip": "Chaque note enregistrée rejoint la file de révision : l'écrire, c'est déjà commencer à la travailler."
+      "notesEmptyTip": "Chaque note enregistrée rejoint la file de révision : l'écrire, c'est déjà commencer à la travailler.",
+      "quickActions": {
+        "label": "Actions rapides"
+      }
     }
   },
   "reading": {

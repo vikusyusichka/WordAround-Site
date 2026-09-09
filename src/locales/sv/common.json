@@ -656,7 +656,9 @@
         "imageAdd": "Lägg till / ersätt bild",
         "imageUploading": "Laddar upp…",
         "imageFailed": "Det gick inte att ladda upp bilden.",
-        "imageSaveFirst": "Logga in för att ladda upp bilder."
+        "imageSaveFirst": "Logga in för att ladda upp bilder.",
+        "more": "Mer",
+        "trayLabel": "Infoga block"
       },
       "blockPlaceholder": {
         "heading": "Rubrik",
@@ -1089,7 +1091,10 @@
         "cards_other": "{{count}} kort"
       },
       "topicsEmptyTip": "Ett ämne är en mapp för anteckningar — ett per språk, eller ett per sak du ständigt gör fel.",
-      "notesEmptyTip": "Varje anteckning du sparar hamnar i repetitionskön, så att skriva ner den är redan att börja öva på den."
+      "notesEmptyTip": "Varje anteckning du sparar hamnar i repetitionskön, så att skriva ner den är redan att börja öva på den.",
+      "quickActions": {
+        "label": "Snabbåtgärder"
+      }
     }
   },
   "reading": {

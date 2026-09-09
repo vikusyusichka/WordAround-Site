@@ -9,7 +9,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
-import { ProfileCard } from '@/components/profile/ProfileCard';
+import { SurfaceCard } from '@/components/primitives/SurfaceCard';
 import { ProfileSubScreenLayout } from '@/components/profile/ProfileSubScreenLayout';
 import { APPEARANCE_THEMES, type AppearanceTheme } from '@/lib/appearance';
 import { usePreferences } from '@/stores/preferencesStore';
@@ -43,7 +43,7 @@ function AppearanceScreen() {
 
           return (
             <li key={option}>
-              <ProfileCard className={isDisabled ? 'opacity-60' : ''}>
+              <SurfaceCard className={isDisabled ? 'opacity-60' : ''}>
                 <button
                   type="button"
                   disabled={isDisabled}
@@ -89,7 +89,7 @@ function AppearanceScreen() {
                     )}
                   </span>
                 </button>
-              </ProfileCard>
+              </SurfaceCard>
             </li>
           );
         })}

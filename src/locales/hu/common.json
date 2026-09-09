@@ -656,7 +656,9 @@
         "imageAdd": "Kép hozzáadása / cseréje",
         "imageUploading": "Feltöltés…",
         "imageFailed": "A képet nem sikerült feltölteni.",
-        "imageSaveFirst": "Jelentkezz be a képek feltöltéséhez."
+        "imageSaveFirst": "Jelentkezz be a képek feltöltéséhez.",
+        "more": "Több",
+        "trayLabel": "Blokk beszúrása"
       },
       "blockPlaceholder": {
         "heading": "Címsor",
@@ -1089,7 +1091,10 @@
         "cards_other": "{{count}} kártya"
       },
       "topicsEmptyTip": "A téma egy mappa a jegyzeteknek — egy nyelvenként, vagy egy minden olyan dologra, amit rendre elrontasz.",
-      "notesEmptyTip": "Minden mentett jegyzet bekerül az ismétlési sorba, így a leírásával már el is kezdted gyakorolni."
+      "notesEmptyTip": "Minden mentett jegyzet bekerül az ismétlési sorba, így a leírásával már el is kezdted gyakorolni.",
+      "quickActions": {
+        "label": "Gyors műveletek"
+      }
     }
   },
   "reading": {

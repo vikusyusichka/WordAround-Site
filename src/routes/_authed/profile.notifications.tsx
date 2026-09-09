@@ -12,7 +12,7 @@ import { createFileRoute } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
-import { ProfileCard } from '@/components/profile/ProfileCard';
+import { SurfaceCard } from '@/components/primitives/SurfaceCard';
 import { ProfileSubScreenLayout } from '@/components/profile/ProfileSubScreenLayout';
 import { ToggleSwitch } from '@/components/profile/ToggleSwitch';
 import {
@@ -82,7 +82,7 @@ function NotificationsScreen() {
       )}
 
       {/* Daily reminder — the only one with a time to pick. */}
-      <ProfileCard>
+      <SurfaceCard>
         <div className="flex flex-col gap-3.5 p-4">
           <div className="flex items-center gap-3.5">
             <span
@@ -145,7 +145,7 @@ function NotificationsScreen() {
             </>
           )}
         </div>
-      </ProfileCard>
+      </SurfaceCard>
 
       <ToggleCard
         icon="calendar.badge.clock"
@@ -187,7 +187,7 @@ interface ToggleCardProps {
 }
 
 const ToggleCard = ({ icon, title, hint, checked, disabled, onChange }: ToggleCardProps) => (
-  <ProfileCard>
+  <SurfaceCard>
     <div className="flex items-center gap-3.5 p-4">
       <span
         aria-hidden
@@ -208,5 +208,5 @@ const ToggleCard = ({ icon, title, hint, checked, disabled, onChange }: ToggleCa
         <ToggleSwitch checked={checked} disabled={disabled} label={title} onChange={onChange} />
       </span>
     </div>
-  </ProfileCard>
+  </SurfaceCard>
 );

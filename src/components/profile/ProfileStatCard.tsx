@@ -3,7 +3,7 @@
    weight, and a muted caption. Always two per row, with more breathing room
    from lg. */
 import { Icon } from '@/components/primitives/Icon';
-import { ProfileCard } from '@/components/profile/ProfileCard';
+import { SurfaceCard } from '@/components/primitives/SurfaceCard';
 
 interface ProfileStatCardProps {
   icon: string;
@@ -12,7 +12,7 @@ interface ProfileStatCardProps {
 }
 
 export const ProfileStatCard = ({ icon, value, label }: ProfileStatCardProps) => (
-  <ProfileCard className="min-w-0">
+  <SurfaceCard className="min-w-0">
     <div className="flex flex-col gap-3 p-4 lg:p-5">
       <span
         aria-hidden
@@ -31,5 +31,5 @@ export const ProfileStatCard = ({ icon, value, label }: ProfileStatCardProps) =>
         </span>
       </span>
     </div>
-  </ProfileCard>
+  </SurfaceCard>
 );

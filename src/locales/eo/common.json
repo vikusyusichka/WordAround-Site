@@ -656,7 +656,9 @@
         "imageAdd": "Aldoni / anstataŭigi bildon",
         "imageUploading": "Alŝutante…",
         "imageFailed": "Ne eblis alŝuti la bildon.",
-        "imageSaveFirst": "Ensalutu por alŝuti bildojn."
+        "imageSaveFirst": "Ensalutu por alŝuti bildojn.",
+        "more": "Pli",
+        "trayLabel": "Enmeti blokon"
       },
       "blockPlaceholder": {
         "heading": "Titolo",
@@ -1089,7 +1091,10 @@
         "cards_other": "{{count}} kartoj"
       },
       "topicsEmptyTip": "Temo estas dosierujo por notoj — unu por ĉiu lingvo, aŭ unu por ĉiu afero kiun vi daŭre eraras.",
-      "notesEmptyTip": "Ĉiu noto kiun vi konservas eniras la revizian atendovicon, do skribi ĝin jam sufiĉas por komenci ekzerci ĝin."
+      "notesEmptyTip": "Ĉiu noto kiun vi konservas eniras la revizian atendovicon, do skribi ĝin jam sufiĉas por komenci ekzerci ĝin.",
+      "quickActions": {
+        "label": "Rapidaj agoj"
+      }
     }
   },
   "reading": {
