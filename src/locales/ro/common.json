@@ -1790,9 +1790,8 @@
       "light": "Luminos",
       "lightHint": "Întotdeauna tema luminoasă",
       "dark": "Întunecat",
-      "darkHint": "Tema întunecată este pe drum",
-      "comingSoon": "În curând",
-      "note": "Tema întunecată se construiește. Până atunci, ambele opțiuni arată tema luminoasă."
+      "darkHint": "Mai odihnitor pentru ochi seara",
+      "note": "„Sistem” urmează dispozitivul tău și comută singur când comută și el."
     },
     "notifications": {
       "title": "Notificări",

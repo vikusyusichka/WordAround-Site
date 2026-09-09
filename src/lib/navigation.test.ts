@@ -1,6 +1,13 @@
 import { describe, expect, it } from 'vitest';
 
-import { isPracticeMode, pageCopyForPath, showsCreateFab, NAV_GROUPS, PROFILE_NAV } from './navigation';
+import {
+  allowsDarkTheme,
+  isPracticeMode,
+  pageCopyForPath,
+  showsCreateFab,
+  NAV_GROUPS,
+  PROFILE_NAV,
+} from './navigation';
 
 describe('isPracticeMode', () => {
   it.each(['speaking', 'listening', 'reading', 'writing'])('accepts %s', (m) => {
@@ -110,5 +117,30 @@ describe('nav config', () => {
       'notes',
     ]);
     expect(PROFILE_NAV.to).toBe('/profile');
+  });
+});
+
+describe('allowsDarkTheme', () => {
+  it('keeps the signed-out screens light, whatever the preference says', () => {
+    for (const path of ['/', '/onboarding', '/auth', '/auth/sign-in', '/auth/link', '/verify-email']) {
+      expect(allowsDarkTheme(path), path).toBe(false);
+    }
+  });
+
+  it('lets every signed-in screen take the dark theme', () => {
+    for (const path of ['/home', '/sets', '/sets/abc', '/notes', '/profile', '/practice/reading']) {
+      expect(allowsDarkTheme(path), path).toBe(true);
+    }
+  });
+
+  /* A deny-list, so a screen added later is dark-capable by default rather
+     than by someone remembering to list it. */
+  it('treats an unknown signed-in path as dark-capable', () => {
+    expect(allowsDarkTheme('/something/new')).toBe(true);
+  });
+
+  it('is not fooled by a trailing slash or a lookalike prefix', () => {
+    expect(allowsDarkTheme('/auth/')).toBe(false);
+    expect(allowsDarkTheme('/authors')).toBe(true);
   });
 });

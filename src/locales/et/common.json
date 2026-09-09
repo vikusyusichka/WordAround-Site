@@ -1764,9 +1764,8 @@
       "light": "Hele",
       "lightHint": "Alati hele teema",
       "dark": "Tume",
-      "darkHint": "Tume teema on tulekul",
-      "comingSoon": "Varsti",
-      "note": "Tumedat teemat alles ehitatakse. Seni näitavad mõlemad valikud heledat."
+      "darkHint": "Õhtul silmadele mõnusam",
+      "note": "„Süsteemne“ järgib sinu seadet ja lülitub ise ümber, kui seade seda teeb."
     },
     "notifications": {
       "title": "Teavitused",

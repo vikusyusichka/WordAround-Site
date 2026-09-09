@@ -1764,9 +1764,8 @@
       "light": "Világos",
       "lightHint": "Mindig a világos téma",
       "dark": "Sötét",
-      "darkHint": "A sötét téma úton van",
-      "comingSoon": "Hamarosan",
-      "note": "A sötét téma még készül. Amíg meg nem érkezik, mindkét lehetőség a világosat mutatja."
+      "darkHint": "Este kíméletesebb a szemnek",
+      "note": "A „Rendszer” az eszközödet követi, és magától vált, amikor az eszközöd vált."
     },
     "notifications": {
       "title": "Értesítések",

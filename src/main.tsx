@@ -14,8 +14,9 @@ import '@/lib/firebase';
 import '@/styles/index.css';
 
 /* The stored appearance choice has to reach the root element before the first
-   paint — it is what the browser reads for the scrollbars and form controls it
-   draws itself. */
+   paint, or a reader on the dark theme gets a white flash on every load. The
+   router keeps it in step afterwards (hooks/useAppliedTheme.ts), including the
+   signed-out screens, which stay light. */
 applyTheme(usePreferences.getState().theme);
 
 /* Kick off Firebase initialization eagerly — the SessionStore module already

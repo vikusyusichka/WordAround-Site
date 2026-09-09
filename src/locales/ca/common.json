@@ -1764,9 +1764,8 @@
       "light": "Clar",
       "lightHint": "Sempre el tema clar",
       "dark": "Fosc",
-      "darkHint": "El tema fosc està en camí",
-      "comingSoon": "Aviat",
-      "note": "El tema fosc s’està construint. Fins que arribi, totes dues opcions mostren el clar."
+      "darkHint": "Més suau per als ulls a la nit",
+      "note": "«Sistema» segueix el teu dispositiu i canvia sol quan aquest canvia."
     },
     "notifications": {
       "title": "Notificacions",

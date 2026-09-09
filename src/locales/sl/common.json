@@ -1810,9 +1810,8 @@
       "light": "Svetel",
       "lightHint": "Vedno svetla tema",
       "dark": "Temen",
-      "darkHint": "Temna tema je na poti",
-      "comingSoon": "Kmalu",
-      "note": "Temna tema nastaja. Dokler je ni, obe možnosti prikazujeta svetlo."
+      "darkHint": "Prijaznejše za oči zvečer",
+      "note": "»Sistemski« sledi vaši napravi in se sam preklopi, ko se preklopi ona."
     },
     "notifications": {
       "title": "Obvestila",

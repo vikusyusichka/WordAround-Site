@@ -1764,9 +1764,8 @@
       "light": "Ljust",
       "lightHint": "Alltid det ljusa temat",
       "dark": "Mörkt",
-      "darkHint": "Ett mörkt tema är på väg",
-      "comingSoon": "Snart",
-      "note": "Det mörka temat byggs just nu. Tills det är klart visar båda alternativen det ljusa."
+      "darkHint": "Skonsammare för ögonen på kvällen",
+      "note": "”System” följer din enhet och byter av sig själv när enheten byter."
     },
     "notifications": {
       "title": "Aviseringar",

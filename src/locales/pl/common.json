@@ -1813,9 +1813,8 @@
       "light": "Jasny",
       "lightHint": "Zawsze jasny motyw",
       "dark": "Ciemny",
-      "darkHint": "Ciemny motyw jest w drodze",
-      "comingSoon": "Wkrótce",
-      "note": "Ciemny motyw powstaje. Zanim będzie gotowy, obie opcje pokazują jasny."
+      "darkHint": "Łagodniejszy dla oczu wieczorem",
+      "note": "„Systemowy” podąża za Twoim urządzeniem i przełącza się sam, gdy przełącza się ono."
     },
     "notifications": {
       "title": "Powiadomienia",

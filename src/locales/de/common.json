@@ -1767,9 +1767,8 @@
       "light": "Hell",
       "lightHint": "Immer das helle Design",
       "dark": "Dunkel",
-      "darkHint": "Ein dunkles Design ist unterwegs",
-      "comingSoon": "Bald",
-      "note": "Das dunkle Design entsteht gerade. Bis dahin zeigen beide Optionen das helle."
+      "darkHint": "Abends angenehmer für die Augen",
+      "note": "„System“ folgt deinem Gerät und wechselt von selbst, sobald dein Gerät wechselt."
     },
     "notifications": {
       "title": "Mitteilungen",

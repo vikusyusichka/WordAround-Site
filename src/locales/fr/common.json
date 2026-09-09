@@ -1764,9 +1764,8 @@
       "light": "Clair",
       "lightHint": "Toujours le thème clair",
       "dark": "Sombre",
-      "darkHint": "Un thème sombre arrive bientôt",
-      "comingSoon": "Bientôt",
-      "note": "Le thème sombre est en cours de création. En attendant, les deux options affichent le thème clair."
+      "darkHint": "Plus reposant pour les yeux le soir",
+      "note": "« Système » suit votre appareil et bascule tout seul quand celui-ci bascule."
     },
     "notifications": {
       "title": "Notifications",

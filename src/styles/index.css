@@ -229,6 +229,158 @@
   --color-cs-green: #8cd19b;
   --color-cs-purple: #ba82e8;
   --color-cs-cyan: #6bc9d9;
+
+  /* The shared card surface (components/primitives/SurfaceCard.tsx). It was
+     written as bg-white/[0.88] + border-white/60, which stays almost white on a
+     dark ground — so it is a variable now, and the dark block below swaps it.
+     Kept in :root rather than @theme for the same reason as the swatches. */
+  --color-surface-card: rgba(255, 255, 255, 0.88);
+  --color-surface-border: rgba(255, 255, 255, 0.6);
+}
+
+/* ── Dark theme ───────────────────────────────────────────────────────────
+   Designed here, not ported: iOS has no dark palette at all (AppColors.swift
+   is 107 lines of fixed light values and there are no colorsets), so choosing
+   Dark on the phone only restyles system controls. This is a web-first
+   adaptation, per the project's guiding rule.
+
+   The ground is a soft blue-dark rather than neutral black, so the app still
+   reads as WordAround at night, and every accent is lightened: a hue tuned for
+   contrast against white is too dim against #0f1424.
+
+   One selector, not two. "System" is resolved in JS (lib/appearance.ts reads
+   prefers-color-scheme and writes the resulting theme onto the root, watching
+   for OS changes), so `data-theme` always holds the theme actually in force.
+   The alternative — a second copy of this block inside a media query — means
+   maintaining a hundred values twice, which is how the two copies drift.
+
+   Only existing variables are redefined; no dark-only variable is introduced,
+   because Tailwind drops @theme variables it cannot see used in source (that is
+   how --color-cs-yellow and --color-cs-purple once vanished) and a redefinition
+   in plain CSS does not count as a use. */
+:root[data-theme='dark'] {
+  color-scheme: dark;
+
+  /* Core */
+  --color-app-bg: #0f1424;
+  --color-primary-blue: #5b82ff;
+  /* Also the body text colour — the single most important swap here. */
+  --color-primary-blue-dark: #e8ecf7;
+  /* Both measured against the ground rather than eyeballed: #97a1bd came in at
+     4.07:1 on the sidebar labels, under the 4.5:1 body text needs. */
+  --color-text-secondary: #a3adc9;
+  --color-muted-text: #99a3c0;
+  --color-card-white: rgba(26, 33, 54, 0.95);
+
+  --color-surface-card: rgba(26, 33, 54, 0.92);
+  --color-surface-border: rgba(255, 255, 255, 0.08);
+
+  /* Home shell */
+  --color-home-brand: #5b82ff;
+  --color-home-nav-inactive: #7c86a3;
+  /* The selected nav pill. Deeper than it looks like it should be: the active
+     label is the brand blue, and against a lighter pill it measured 4.07:1. */
+  --color-home-nav-sel-bg: #141c36;
+  --color-home-side-ind-from: #6d90ff;
+  --color-home-side-ind-to: #4f74f0;
+  --color-home-side-icon-from: #7d9bff;
+  --color-home-side-icon-to: #5b82ff;
+  --color-home-side-icon-off-from: #79839c;
+  --color-home-side-icon-off-to: #6f7994;
+  --color-home-side-circle-to: #1a2440;
+  --color-home-side-text-sel: #9db4ff;
+  /* Measured, not guessed: at #8a94b2 the inactive sidebar labels came in at
+     4.07:1 against the dark ground, under the 4.5:1 they need at 15px. */
+  --color-home-side-text-off: #a3adc9;
+  --color-home-avatar-from: #4a5675;
+  --color-home-avatar-to: #303a54;
+  --color-home-stat1-accent: #b6a2ff;
+  --color-home-stat1-title: #c3b2ff;
+  --color-home-stat1-bg: #221d3a;
+  --color-home-stat1-blob: #38306b;
+  --color-home-stat2-accent: #7fd9bb;
+  --color-home-stat2-title: #8fe0c4;
+  --color-home-stat2-sub: #63d69b;
+  --color-home-stat2-bg: #12291f;
+  --color-home-stat2-blob: #1f4536;
+  --color-home-stat3-accent: #ffbf5c;
+  --color-home-stat3-title: #f5c37a;
+  --color-home-stat3-bg: #2b2114;
+  --color-home-stat3-blob: #4d3a1c;
+  --color-home-goal-blob: #26304f;
+  --color-home-goal-sparkle: #5b6a99;
+
+  /* Decorative blobs — the ambient background. On a dark ground these have to
+     be darker than the page, not lighter, or they read as spotlights. */
+  --color-blob-blue: #1b2647;
+  --color-blob-yellow: #33290f;
+  --color-blob-green: #16291f;
+  --color-blob-pink: #2e1c27;
+
+  /* Goal + category surfaces */
+  --color-goal-bg: #161d33;
+  --color-goal-progress-bg: #2a3355;
+  --color-food-accent: #ff8f91;
+  --color-food-bg: #2c1a1e;
+  --color-food-title: #ffb3bb;
+  --color-orange-accent: #ffb63d;
+  --color-orange-title: #f0bd7a;
+  --color-green-accent: #4dd184;
+  --color-green-title: #7fe0aa;
+  --color-green-soft-bg: #142a1e;
+
+  /* Create Set / detail chrome */
+  --color-cs-bg: #131a2e;
+  --color-cs-dark-red: #ff9aa2;
+  --color-cs-soft-red: #3a1f26;
+  --color-cs-text-muted: #98a2c0;
+  --color-cs-dark-text: #e8ecf7;
+  --color-cs-border: #2e3a58;
+  --color-cs-soft-border: #2a3450;
+  --color-cs-border-red: #5c3239;
+  --color-cs-preview-bg: #1b2237;
+  --color-cs-image-bg: #1a2136;
+
+  /* Flashcard detail */
+  --color-fc-title: #cddaff;
+  --color-fc-text: #a8b2d4;
+  --color-fc-muted: #98a2c0;
+  --color-fc-card-bg: #1a2136;
+  --color-fc-soft-blue: #2a3557;
+  --color-fc-divider: #2a3355;
+
+  /* Profile */
+  --color-profile-danger: #ff8a8a;
+  --color-profile-danger-soft: #3a2024;
+  --color-profile-danger-bg: #2a1a1e;
+  --color-profile-danger-border: #5a3236;
+  --color-profile-warn-bg: #33280f;
+  --color-profile-warn-border: #6b5520;
+  --color-profile-warn-icon: #f0b356;
+  --color-appearance-light: #ffbf4d;
+  --color-appearance-dark: #8f83e6;
+
+  /* Two auth-palette tokens leak into the signed-in shell: the sidebar
+     wordmark uses --color-auth-title (2.5:1 against this ground before this
+     override), and every form border in the signed-in area uses the field
+     border. Overriding them here is safe precisely because the auth screens
+     themselves are pinned to the light theme. */
+  --color-auth-title: #cdd8ff;
+  --color-auth-field-border: #2a3450;
+
+  /* Shadows have to bite harder against a dark ground to read at all. */
+  --shadow-color-card: rgba(0, 0, 0, 0.45);
+  --shadow-color-fc: rgba(0, 0, 0, 0.4);
+  --shadow-color-card-strong: rgba(0, 0, 0, 0.55);
+
+  /* Data colours (sets, folders, topics) muted: the light values are tuned
+     against white and ring against #0f1424. */
+  --color-cs-red: #e05f63;
+  --color-cs-blue: #7f92dd;
+  --color-cs-yellow: #dfae56;
+  --color-cs-green: #79b489;
+  --color-cs-purple: #a273cc;
+  --color-cs-cyan: #5fadbb;
 }
 
 /* CSS reset & app-wide defaults */

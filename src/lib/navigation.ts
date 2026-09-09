@@ -58,6 +58,23 @@ export const PROFILE_NAV: NavItem = {
   iconActive: 'person.fill',
 };
 
+/* The signed-out screens stay light whatever the preference says. They are a
+   drawn brand page — a hero illustration, gradients, a light panel — and the
+   reader arriving at them has not chosen a theme yet. Repainting that
+   illustration for dark is real design work with no one asking for it.
+
+   Deny-list rather than allow-list: a new signed-in screen should get the dark
+   theme without anyone remembering to add it here. */
+const LIGHT_ONLY_PREFIXES = ['/onboarding', '/auth', '/verify-email'];
+
+export const allowsDarkTheme = (pathname: string): boolean => {
+  const path = pathname.replace(/\/+$/, '') || '/';
+  if (path === '/') return false;
+  return !LIGHT_ONLY_PREFIXES.some(
+    (prefix) => path === prefix || path.startsWith(`${prefix}/`),
+  );
+};
+
 export type PracticeMode = 'speaking' | 'listening' | 'reading' | 'writing';
 
 export const PRACTICE_MODES: PracticeMode[] = ['speaking', 'listening', 'reading', 'writing'];

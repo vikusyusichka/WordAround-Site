@@ -1,30 +1,60 @@
 /* Appearance theme — web port of AppearanceTheme (UserPreferencesStore.swift).
 
-   The site has no dark palette yet (that is its own phase), so choosing
-   "System" or "Light" does not repaint the app. What it does do is set
-   `color-scheme` on the root element, which is what the BROWSER reads for the
-   chrome it draws itself: scrollbars, the caret, `<input type="time">` pickers,
-   the flash of background before paint. Getting that wired now means the dark
-   phase only has to add the palette, not the plumbing. */
+   iOS has three options but no dark palette of its own: AppColors.swift is a
+   fixed set of light values, so "Dark" there only restyles system controls.
+   The web has a real dark palette (see the dark block in styles/index.css),
+   designed rather than ported.
+
+   `data-theme` on the root element always holds the theme ACTUALLY IN FORCE,
+   never the preference: "System" is resolved here against
+   prefers-color-scheme. That keeps the CSS to a single dark block instead of a
+   second copy inside a media query, and it means anything reading the
+   attribute sees the truth. The preference itself lives in the preferences
+   store. */
 
 export type AppearanceTheme = 'system' | 'light' | 'dark';
+
+/** What is actually painted, once "system" has been resolved. */
+export type ResolvedTheme = 'light' | 'dark';
 
 export const APPEARANCE_THEMES: AppearanceTheme[] = ['system', 'light', 'dark'];
 
 export const isAppearanceTheme = (value: string): value is AppearanceTheme =>
   (APPEARANCE_THEMES as string[]).includes(value);
 
-/** `light dark` lets the browser follow the OS; `light` pins it.
+const darkQuery = (): MediaQueryList | null =>
+  typeof window !== 'undefined' && typeof window.matchMedia === 'function'
+    ? window.matchMedia('(prefers-color-scheme: dark)')
+    : null;
 
-    "Dark" is clamped to light on purpose: it is not selectable in the UI yet,
-    and honouring it would give a dark caret and dark scrollbars on a page that
-    is still painted light. The dark phase lifts this clamp. */
+export const prefersDark = (): boolean => darkQuery()?.matches ?? false;
+
+/** Which of the two palettes a preference means right now. */
+export const resolveTheme = (theme: AppearanceTheme, systemIsDark = prefersDark()): ResolvedTheme =>
+  theme === 'system' ? (systemIsDark ? 'dark' : 'light') : theme;
+
+/** `light dark` on "System" lets the browser style its own chrome from the OS;
+    an explicit choice pins it, so scrollbars and carets follow the app. */
 export const colorSchemeFor = (theme: AppearanceTheme): string =>
-  theme === 'system' ? 'light dark' : 'light';
+  theme === 'system' ? 'light dark' : theme;
 
-export const applyTheme = (theme: AppearanceTheme): void => {
+/** Writes the theme onto the root element.
+
+    `force` is how the signed-out screens stay light: they are a drawn brand
+    page, and the reader has not chosen a theme yet (see allowsDarkTheme in
+    lib/navigation.ts). */
+export const applyTheme = (theme: AppearanceTheme, force?: ResolvedTheme): void => {
   if (typeof document === 'undefined') return;
   const root = document.documentElement;
-  root.dataset.theme = theme;
-  root.style.colorScheme = colorSchemeFor(theme);
+  root.dataset.theme = force ?? resolveTheme(theme);
+  root.style.colorScheme = force ?? colorSchemeFor(theme);
+};
+
+/** Re-applies when the OS flips while the app is open — otherwise "System"
+    would only be honoured at load. Returns an unsubscribe function. */
+export const watchSystemTheme = (onChange: () => void): (() => void) => {
+  const query = darkQuery();
+  if (!query) return () => {};
+  query.addEventListener('change', onChange);
+  return () => query.removeEventListener('change', onChange);
 };

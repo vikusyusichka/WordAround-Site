@@ -1,10 +1,8 @@
 /* /profile/appearance — port of AppearanceView.swift.
 
    Three rows, each with a 44px tinted icon circle, a name, a one-line hint and
-   a checkmark. Dark is DISABLED with a "Coming soon" badge: the site has no
-   dark palette yet, and offering a switch that leaves everything white would
-   be worse than saying so. The setting itself is already stored and applied
-   (see src/lib/appearance.ts), so the dark phase only has to add colours. */
+   a checkmark. All three work: "System" follows the device and re-applies when
+   the device flips while the app is open (see hooks/useAppliedTheme.ts). */
 import { createFileRoute } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
@@ -39,17 +37,15 @@ function AppearanceScreen() {
         {APPEARANCE_THEMES.map((option) => {
           const meta = THEME_META[option];
           const isActive = theme === option;
-          const isDisabled = option === 'dark';
 
           return (
             <li key={option}>
-              <SurfaceCard className={isDisabled ? 'opacity-60' : ''}>
+              <SurfaceCard>
                 <button
                   type="button"
-                  disabled={isDisabled}
                   aria-pressed={isActive}
                   onClick={() => setTheme(option)}
-                  className="flex w-full items-center gap-3.5 px-4 py-3.5 text-left transition-colors enabled:hover:bg-(--color-primary-blue)/[0.04] disabled:cursor-not-allowed focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
+                  className="flex w-full items-center gap-3.5 px-4 py-3.5 text-left transition-colors hover:bg-(--color-primary-blue)/[0.04] focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:outline-none"
                 >
                   <span
                     aria-hidden
@@ -60,15 +56,8 @@ function AppearanceScreen() {
                   </span>
 
                   <span className="flex min-w-0 flex-col gap-1">
-                    <span className="flex flex-wrap items-center gap-2">
-                      <span className="text-[16px] font-bold text-(--color-primary-blue-dark)">
-                        {t(`profile.appearance.${option}`)}
-                      </span>
-                      {isDisabled && (
-                        <span className="rounded-full bg-(--color-primary-blue)/10 px-2 py-0.5 text-[10px] font-black tracking-[0.5px] uppercase text-(--color-primary-blue)">
-                          {t('profile.appearance.comingSoon')}
-                        </span>
-                      )}
+                    <span className="text-[16px] font-bold text-(--color-primary-blue-dark)">
+                      {t(`profile.appearance.${option}`)}
                     </span>
                     <span className="text-[12px] leading-[1.45] font-semibold text-(--color-text-secondary)">
                       {t(`profile.appearance.${option}Hint`)}

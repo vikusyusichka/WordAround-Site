@@ -1764,9 +1764,8 @@
       "light": "Açık",
       "lightHint": "Her zaman açık tema",
       "dark": "Koyu",
-      "darkHint": "Koyu tema yolda",
-      "comingSoon": "Yakında",
-      "note": "Koyu tema hazırlanıyor. Gelene kadar her iki seçenek de açık temayı gösterir."
+      "darkHint": "Geceleri gözleri daha az yorar",
+      "note": "“Sistem”, cihazınızı izler ve cihazınız değiştiğinde kendiliğinden değişir."
     },
     "notifications": {
       "title": "Bildirimler",

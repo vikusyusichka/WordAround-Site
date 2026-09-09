@@ -1764,9 +1764,8 @@
       "light": "Claro",
       "lightHint": "Sempre o tema claro",
       "dark": "Escuro",
-      "darkHint": "O tema escuro está a caminho",
-      "comingSoon": "Em breve",
-      "note": "O tema escuro está a ser construído. Até chegar, ambas as opções mostram o claro."
+      "darkHint": "Mais suave para os olhos à noite",
+      "note": "«Sistema» segue o seu dispositivo e muda sozinho quando este muda."
     },
     "notifications": {
       "title": "Notificações",

@@ -25,7 +25,9 @@ interface SurfaceCardProps {
   blobOpacity?: number;
   /** Tailwind radius classes. Profile uses 22; Grammar Notes 24, 28 from lg. */
   radiusClass?: string;
-  /** Ground. Profile is 88% white, Grammar Notes 84%. */
+  /** Ground. A token rather than a literal white, so the dark theme can swap
+      it — see --color-surface-card in styles/index.css. Grammar Notes passes a
+      slightly different one (GRAMMAR_SURFACE). */
   fillClass?: string;
   className?: string;
   /** Render as something other than a <div> (e.g. `section`). */
@@ -37,12 +39,12 @@ export const SurfaceCard = ({
   accent = 'var(--color-primary-blue)',
   blobOpacity = 0.09,
   radiusClass = 'rounded-[22px]',
-  fillClass = 'bg-white/[0.88]',
+  fillClass = 'bg-(--color-surface-card)',
   className = '',
   as: Tag = 'div',
 }: SurfaceCardProps) => (
   <Tag
-    className={`relative overflow-hidden border border-white/60 shadow-[0_10px_18px_rgba(0,0,0,0.045)] ${radiusClass} ${fillClass} ${className}`}
+    className={`relative overflow-hidden border border-(--color-surface-border) shadow-[0_10px_18px_var(--shadow-color-card)] ${radiusClass} ${fillClass} ${className}`}
   >
     {/* iOS: 110×90 offset (36, −28); 150×120 offset (48, −40) on iPad-like
         widths. The web's regular breakpoint is lg. */}
@@ -65,5 +67,5 @@ export const SurfaceCard = ({
    for its topic, note and review cards. */
 export const GRAMMAR_SURFACE = {
   radiusClass: 'rounded-[24px] lg:rounded-[28px]',
-  fillClass: 'bg-white/[0.84]',
+  fillClass: 'bg-(--color-surface-card)',
 } as const;

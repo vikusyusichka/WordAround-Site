@@ -1764,9 +1764,8 @@
       "light": "Lyst",
       "lightHint": "Altid det lyse tema",
       "dark": "Mørkt",
-      "darkHint": "Et mørkt tema er på vej",
-      "comingSoon": "Snart",
-      "note": "Det mørke tema er under opbygning. Indtil det lander, viser begge muligheder det lyse."
+      "darkHint": "Mildere for øjnene om aftenen",
+      "note": "“System” følger din enhed og skifter af sig selv, når enheden skifter."
     },
     "notifications": {
       "title": "Notifikationer",

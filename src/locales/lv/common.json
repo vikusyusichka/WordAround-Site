@@ -1787,9 +1787,8 @@
       "light": "Gaišs",
       "lightHint": "Vienmēr gaišā tēma",
       "dark": "Tumšs",
-      "darkHint": "Tumšā tēma ir ceļā",
-      "comingSoon": "Drīz",
-      "note": "Tumšā tēma vēl top. Kamēr tās nav, abas iespējas rāda gaišo."
+      "darkHint": "Vakarā acīm patīkamāk",
+      "note": "“Sistēmas” seko jūsu ierīcei un pārslēdzas pati, kad pārslēdzas tā."
     },
     "notifications": {
       "title": "Paziņojumi",

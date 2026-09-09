@@ -1764,9 +1764,8 @@
       "light": "Lys",
       "lightHint": "Alltid det lyse temaet",
       "dark": "Mørk",
-      "darkHint": "Et mørkt tema er på vei",
-      "comingSoon": "Snart",
-      "note": "Det mørke temaet bygges nå. Til det er klart, viser begge valgene det lyse."
+      "darkHint": "Skånsommere for øynene om kvelden",
+      "note": "«System» følger enheten din og bytter av seg selv når enheten bytter."
     },
     "notifications": {
       "title": "Varsler",

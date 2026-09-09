@@ -1790,9 +1790,8 @@
       "light": "Světlý",
       "lightHint": "Vždy světlý motiv",
       "dark": "Tmavý",
-      "darkHint": "Tmavý motiv je na cestě",
-      "comingSoon": "Brzy",
-      "note": "Tmavý motiv se teprve tvoří. Než bude hotový, obě možnosti ukazují světlý."
+      "darkHint": "Šetrnější k očím večer",
+      "note": "„Systémový“ se řídí vaším zařízením a přepne se sám, jakmile se přepne ono."
     },
     "notifications": {
       "title": "Oznámení",

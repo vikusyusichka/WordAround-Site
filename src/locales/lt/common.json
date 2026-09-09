@@ -1787,9 +1787,8 @@
       "light": "Šviesi",
       "lightHint": "Visada šviesi tema",
       "dark": "Tamsi",
-      "darkHint": "Tamsi tema jau pakeliui",
-      "comingSoon": "Netrukus",
-      "note": "Tamsi tema dar kuriama. Kol jos nėra, abu variantai rodo šviesią."
+      "darkHint": "Vakare akims lengviau",
+      "note": "„Sistemos“ seka jūsų įrenginį ir persijungia pati, kai persijungia jis."
     },
     "notifications": {
       "title": "Pranešimai",

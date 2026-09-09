@@ -1787,9 +1787,8 @@
       "light": "Svijetlo",
       "lightHint": "Uvijek svijetla tema",
       "dark": "Tamno",
-      "darkHint": "Tamna tema je na putu",
-      "comingSoon": "Uskoro",
-      "note": "Tamna tema se izrađuje. Dok ne stigne, obje opcije prikazuju svijetlu."
+      "darkHint": "Ugodnije za oči navečer",
+      "note": "„Sustav” prati vaš uređaj i sam se prebacuje kad se prebaci i on."
     },
     "notifications": {
       "title": "Obavijesti",

@@ -1,6 +1,8 @@
 import { createRootRoute, Outlet } from '@tanstack/react-router';
 import { Suspense, lazy } from 'react';
 
+import { useAppliedTheme } from '@/hooks/useAppliedTheme';
+
 /* Router devtools are dev-only — code-split so nothing ships to prod. */
 const TanStackRouterDevtools =
   import.meta.env.PROD
@@ -16,6 +18,8 @@ export const Route = createRootRoute({
 });
 
 function RootComponent() {
+  useAppliedTheme();
+
   return (
     <>
       <Outlet />

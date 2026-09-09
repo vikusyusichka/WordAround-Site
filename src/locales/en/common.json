@@ -1764,9 +1764,8 @@
       "light": "Light",
       "lightHint": "Always the light theme",
       "dark": "Dark",
-      "darkHint": "A dark theme is on the way",
-      "comingSoon": "Soon",
-      "note": "The dark theme is being built. Until it lands, both options show the light one."
+      "darkHint": "Easier on the eyes at night",
+      "note": "“System” follows your device and switches by itself when your device does."
     },
     "notifications": {
       "title": "Notifications",

@@ -1790,9 +1790,8 @@
       "light": "Svetlý",
       "lightHint": "Vždy svetlá téma",
       "dark": "Tmavý",
-      "darkHint": "Tmavá téma je na ceste",
-      "comingSoon": "Čoskoro",
-      "note": "Tmavá téma sa ešte tvorí. Kým bude hotová, obe možnosti ukazujú svetlú."
+      "darkHint": "Šetrnejší k očiam večer",
+      "note": "„Systémový“ sa riadi vaším zariadením a prepne sa sám, keď sa prepne ono."
     },
     "notifications": {
       "title": "Upozornenia",

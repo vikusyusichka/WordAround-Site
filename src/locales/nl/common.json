@@ -1764,9 +1764,8 @@
       "light": "Licht",
       "lightHint": "Altijd het lichte thema",
       "dark": "Donker",
-      "darkHint": "Een donker thema is onderweg",
-      "comingSoon": "Binnenkort",
-      "note": "Het donkere thema wordt gebouwd. Tot die tijd tonen beide opties het lichte."
+      "darkHint": "'s Avonds prettiger voor je ogen",
+      "note": "“Systeem” volgt je apparaat en wisselt vanzelf mee wanneer je apparaat wisselt."
     },
     "notifications": {
       "title": "Meldingen",

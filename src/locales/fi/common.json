@@ -1764,9 +1764,8 @@
       "light": "Vaalea",
       "lightHint": "Aina vaalea teema",
       "dark": "Tumma",
-      "darkHint": "Tumma teema on tulossa",
-      "comingSoon": "Pian",
-      "note": "Tummaa teemaa rakennetaan. Siihen asti molemmat vaihtoehdot näyttävät vaalean."
+      "darkHint": "Silmille ystävällisempi illalla",
+      "note": "”Järjestelmä” seuraa laitettasi ja vaihtuu itsestään, kun laitteesi vaihtuu."
     },
     "notifications": {
       "title": "Ilmoitukset",
