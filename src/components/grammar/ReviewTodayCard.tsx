@@ -11,7 +11,6 @@
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
-import { GRAMMAR_SURFACE, SurfaceCard } from '@/components/primitives/SurfaceCard';
 import type { GrammarReviewQueue } from '@/lib/grammarReviewQueue';
 
 interface ReviewTodayCardProps {
@@ -50,29 +49,20 @@ export const ReviewTodayCard = ({
           : t('writing.grammar.review.caughtUp');
 
   return (
-    <SurfaceCard
-      as="section"
-      accent='var(--color-accent-violet)'
-      className="flex flex-col gap-3 p-4 lg:p-5"
-      {...GRAMMAR_SURFACE}
-    >
-      {/* iOS GrammarReviewSummaryView.header: a 40/46 icon circle, the title in
-          the heaviest weight, and a subtitle of at most two lines. */}
-      <div className="flex items-start gap-3">
-        <span className="grid size-10 shrink-0 place-items-center rounded-full bg-(--color-accent-violet)/12 lg:size-[46px]">
+    <section className="flex flex-col gap-3 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
+      <div className="flex items-center gap-3">
+        <span className="grid size-10 shrink-0 place-items-center rounded-2xl bg-(--color-accent-violet)/12">
           <Icon name="brain.head.profile" className="size-[20px] text-(--color-accent-violet)" />
         </span>
-        <div className="flex min-w-0 flex-col gap-0.5">
-          <h2 className="text-[16px] font-black text-(--color-primary-blue-dark) lg:text-[18px]">
+        <div className="flex min-w-0 flex-col">
+          <h2 className="text-[16px] font-bold text-(--color-primary-blue-dark)">
             {t(
               canRefresh
                 ? 'writing.grammar.review.caughtUpTitle'
                 : 'writing.grammar.review.cardTitle',
             )}
           </h2>
-          <p className="line-clamp-2 text-[13px] leading-[1.45] font-semibold text-(--color-text-secondary)">
-            {subtitle}
-          </p>
+          <p className="text-[13px] font-medium text-(--color-text-secondary)">{subtitle}</p>
         </div>
       </div>
 
@@ -102,6 +92,6 @@ export const ReviewTodayCard = ({
           {t('writing.grammar.review.refreshStart')}
         </button>
       )}
-    </SurfaceCard>
+    </section>
   );
 };

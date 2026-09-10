@@ -19,9 +19,7 @@ import { GrammarTopicCard } from '@/components/grammar/GrammarTopicCard';
 import { ViewToggle } from '@/components/shell/ViewToggle';
 import { cardGridClass, useCardView } from '@/lib/cardView';
 import { GrammarTopicForm } from '@/components/grammar/GrammarTopicForm';
-import { GrammarSectionHeader } from '@/components/grammar/GrammarSectionHeader';
-import { NOTE_TYPE_META } from '@/lib/grammarMeta';
-import { QuickActionsGrid } from '@/components/grammar/QuickActionsGrid';
+import { QuickCaptureButtons } from '@/components/grammar/QuickCaptureButtons';
 import { QuickMistakeSheet } from '@/components/grammar/QuickMistakeSheet';
 import { QuickNoteSheet } from '@/components/grammar/QuickNoteSheet';
 import { ReviewHighlightsRow } from '@/components/grammar/ReviewHighlightsRow';
@@ -142,18 +140,32 @@ function GrammarHome() {
       <PageHeader
         title={t('nav.notes')}
         subtitle={t('writing.grammar.subtitle')}
-        /* Search and settings only, as iOS's toolbarRow does — the four ways
-           in moved down into the quick-actions grid, where they read as
-           openings rather than as header controls. */
         actions={
-          <button
-            type="button"
-            onClick={() => void navigate({ to: '/notes/settings' })}
-            aria-label={t('writing.grammar.settings.title')}
-            className="grid size-11 place-items-center rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none"
-          >
-            <Icon name="gearshape.fill" className="size-5" />
-          </button>
+          <div className="flex flex-wrap gap-2">
+            <button
+              type="button"
+              onClick={() => void navigate({ to: '/notes/settings' })}
+              aria-label={t('writing.grammar.settings.title')}
+              className="grid size-11 place-items-center rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none"
+            >
+              <Icon name="gearshape.fill" className="size-5" />
+            </button>
+            <QuickCaptureButtons
+              onQuickNote={() => setQuickNoteOpen(true)}
+              onQuickMistake={() => {
+                setQuickMistakeSession((n) => n + 1);
+                setQuickMistakeOpen(true);
+              }}
+            />
+            <button
+              type="button"
+              onClick={() => setFormOpen(true)}
+              className="flex h-11 items-center gap-2 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-4 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
+            >
+              <Plus size={18} weight="bold" />
+              {t('writing.grammar.newTopic')}
+            </button>
+          </div>
         }
       />
 
@@ -166,38 +178,6 @@ function GrammarHome() {
       </div>
 
       <div className="mb-5 flex flex-col gap-5">
-        <QuickActionsGrid
-          actions={[
-            {
-              id: 'quickNote',
-              icon: NOTE_TYPE_META.standard.icon,
-              label: t('writing.grammar.quickNote.button'),
-              onClick: () => setQuickNoteOpen(true),
-            },
-            {
-              id: 'quickMistake',
-              icon: NOTE_TYPE_META.mistake.icon,
-              label: t('writing.grammar.quickMistake.button'),
-              onClick: () => {
-                setQuickMistakeSession((n) => n + 1);
-                setQuickMistakeOpen(true);
-              },
-            },
-            {
-              id: 'newTopic',
-              icon: 'folder.badge.plus',
-              label: t('writing.grammar.newTopic'),
-              onClick: () => setFormOpen(true),
-            },
-            {
-              id: 'templates',
-              icon: 'doc.on.doc.fill',
-              label: t('writing.grammar.templates.button'),
-              onClick: () => setTemplatesOpen(true),
-            },
-          ]}
-        />
-
         <ReviewTodayCard
           queue={reviewQueue}
           isLoading={reviewLoading}
@@ -239,27 +219,19 @@ function GrammarHome() {
       </div>
 
       {topics && topics.length > 1 && (
-        <div className="mb-3">
-          <GrammarSectionHeader
-            title={t('writing.grammar.topicsTitle')}
-            actions={[
-              {
-                id: 'reorder',
-                label: t(
-                  isReordering ? 'writing.grammar.reorder.done' : 'writing.grammar.reorder.start',
-                ),
-                isActive: isReordering,
-                onClick: () => setReordering((v) => !v),
-              },
-              {
-                id: 'newTopic',
-                label: t('writing.grammar.newTopic'),
-                onClick: () => setFormOpen(true),
-              },
-            ]}
+        <div className="mb-3 flex items-center gap-2">
+          <h2 className="text-[15px] font-black text-(--color-primary-blue-dark) lg:text-[17px]">
+            {t('writing.grammar.topicsTitle')}
+          </h2>
+          <button
+            type="button"
+            onClick={() => setReordering((v) => !v)}
+            className="ml-auto flex h-9 items-center gap-1.5 rounded-full border border-(--color-auth-field-border) bg-(--color-surface) px-3 text-[13px] font-bold text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash) focus-visible:outline-none"
           >
-            <ViewToggle value={view} onChange={chooseView} />
-          </GrammarSectionHeader>
+            <Icon name="arrow.up.arrow.down" className="size-[13px]" />
+            {t(isReordering ? 'writing.grammar.reorder.done' : 'writing.grammar.reorder.start')}
+          </button>
+          <ViewToggle value={view} onChange={chooseView} />
         </div>
       )}
 

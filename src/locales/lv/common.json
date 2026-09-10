@@ -662,9 +662,7 @@
         "imageAdd": "Pievienot / aizstāt attēlu",
         "imageUploading": "Augšupielādē…",
         "imageFailed": "Neizdevās augšupielādēt attēlu.",
-        "imageSaveFirst": "Piesakieties, lai augšupielādētu attēlus.",
-        "more": "Vairāk",
-        "trayLabel": "Ievietot bloku"
+        "imageSaveFirst": "Piesakieties, lai augšupielādētu attēlus."
       },
       "blockPlaceholder": {
         "heading": "Virsraksts",
@@ -1109,9 +1107,6 @@
       },
       "topicsEmptyTip": "Tēma ir mape piezīmēm – viena katrai valodai vai viena katrai lietai, kurā pastāvīgi kļūdāties.",
       "notesEmptyTip": "Katra saglabātā piezīme nonāk atkārtošanas rindā, tāpēc to pierakstīt jau nozīmē sākt to trenēt.",
-      "quickActions": {
-        "label": "Ātrās darbības"
-      },
       "notesCount_zero": "{{count}} piezīmju"
     }
   },

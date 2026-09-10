@@ -662,9 +662,7 @@
         "imageAdd": "Dodaj / zamijeni sliku",
         "imageUploading": "Prenosimo…",
         "imageFailed": "Sliku nije bilo moguće prenijeti.",
-        "imageSaveFirst": "Prijavite se da biste prenosili slike.",
-        "more": "Više",
-        "trayLabel": "Umetni blok"
+        "imageSaveFirst": "Prijavite se da biste prenosili slike."
       },
       "blockPlaceholder": {
         "heading": "Naslov",
@@ -1109,9 +1107,6 @@
       },
       "topicsEmptyTip": "Tema je mapa za bilješke — jedna po jeziku ili jedna po stvari u kojoj stalno griješite.",
       "notesEmptyTip": "Svaka spremljena bilješka ulazi u red za ponavljanje, pa je zapisati je već znači početi je vježbati.",
-      "quickActions": {
-        "label": "Brze radnje"
-      },
       "notesCount_few": "{{count}} bilješke"
     }
   },

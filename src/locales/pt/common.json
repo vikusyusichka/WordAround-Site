@@ -656,9 +656,7 @@
         "imageAdd": "Adicionar / substituir imagem",
         "imageUploading": "A enviar…",
         "imageFailed": "Não foi possível enviar a imagem.",
-        "imageSaveFirst": "Inicie sessão para enviar imagens.",
-        "more": "Mais",
-        "trayLabel": "Inserir bloco"
+        "imageSaveFirst": "Inicie sessão para enviar imagens."
       },
       "blockPlaceholder": {
         "heading": "Cabeçalho",
@@ -1091,10 +1089,7 @@
         "cards_other": "{{count}} cartões"
       },
       "topicsEmptyTip": "Um tema é uma pasta para notas — um por idioma, ou um por aquilo em que continua a falhar.",
-      "notesEmptyTip": "Cada nota que guarda entra na fila de revisão, por isso escrevê-la já é começar a praticá-la.",
-      "quickActions": {
-        "label": "Ações rápidas"
-      }
+      "notesEmptyTip": "Cada nota que guarda entra na fila de revisão, por isso escrevê-la já é começar a praticá-la."
     }
   },
   "reading": {

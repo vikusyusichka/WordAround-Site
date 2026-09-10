@@ -665,9 +665,7 @@
         "imageAdd": "Adaugă / înlocuiește imaginea",
         "imageUploading": "Se încarcă…",
         "imageFailed": "Imaginea nu a putut fi încărcată.",
-        "imageSaveFirst": "Conectează-te ca să încarci imagini.",
-        "more": "Mai multe",
-        "trayLabel": "Inserează un bloc"
+        "imageSaveFirst": "Conectează-te ca să încarci imagini."
       },
       "blockPlaceholder": {
         "heading": "Titlu",
@@ -1112,9 +1110,6 @@
       },
       "topicsEmptyTip": "O temă e un folder pentru notițe — una pentru fiecare limbă sau una pentru fiecare lucru la care greșești mereu.",
       "notesEmptyTip": "Fiecare notiță salvată intră în coada de recapitulare, așa că a o scrie înseamnă deja a începe să o exersezi.",
-      "quickActions": {
-        "label": "Acțiuni rapide"
-      },
       "notesCount_few": "{{count}} notițe"
     }
   },

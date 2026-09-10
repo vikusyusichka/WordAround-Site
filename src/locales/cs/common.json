@@ -665,9 +665,7 @@
         "imageAdd": "Přidat / nahradit obrázek",
         "imageUploading": "Nahráváme…",
         "imageFailed": "Obrázek se nepodařilo nahrát.",
-        "imageSaveFirst": "Pro nahrávání obrázků se přihlaste.",
-        "more": "Více",
-        "trayLabel": "Vložit blok"
+        "imageSaveFirst": "Pro nahrávání obrázků se přihlaste."
       },
       "blockPlaceholder": {
         "heading": "Nadpis",
@@ -1112,9 +1110,6 @@
       },
       "topicsEmptyTip": "Téma je složka na poznámky — jedno na jazyk nebo jedno na věc, ve které pořád chybujete.",
       "notesEmptyTip": "Každá uložená poznámka se zařadí do fronty opakování, takže zapsat si ji už znamená začít ji procvičovat.",
-      "quickActions": {
-        "label": "Rychlé akce"
-      },
       "notesCount_few": "{{count}} poznámky"
     }
   },

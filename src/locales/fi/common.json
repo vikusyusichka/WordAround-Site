@@ -656,9 +656,7 @@
         "imageAdd": "Lisää / vaihda kuva",
         "imageUploading": "Ladataan…",
         "imageFailed": "Kuvan lataus ei onnistunut.",
-        "imageSaveFirst": "Kirjaudu sisään ladataksesi kuvia.",
-        "more": "Lisää",
-        "trayLabel": "Lisää lohko"
+        "imageSaveFirst": "Kirjaudu sisään ladataksesi kuvia."
       },
       "blockPlaceholder": {
         "heading": "Otsikko",
@@ -1091,10 +1089,7 @@
         "cards_other": "{{count}} korttia"
       },
       "topicsEmptyTip": "Aihe on kansio muistiinpanoille — yksi kutakin kieltä kohti tai yksi kutakin asiaa kohti, jossa toistuvasti erehdyt.",
-      "notesEmptyTip": "Jokainen tallentamasi muistiinpano menee kertausjonoon, joten sen kirjoittaminen on jo harjoittelun aloittamista.",
-      "quickActions": {
-        "label": "Pikatoiminnot"
-      }
+      "notesEmptyTip": "Jokainen tallentamasi muistiinpano menee kertausjonoon, joten sen kirjoittaminen on jo harjoittelun aloittamista."
     }
   },
   "reading": {

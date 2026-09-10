@@ -656,9 +656,7 @@
         "imageAdd": "Afbeelding toevoegen / vervangen",
         "imageUploading": "Bezig met uploaden…",
         "imageFailed": "De afbeelding kon niet worden geüpload.",
-        "imageSaveFirst": "Log in om afbeeldingen te uploaden.",
-        "more": "Meer",
-        "trayLabel": "Blok invoegen"
+        "imageSaveFirst": "Log in om afbeeldingen te uploaden."
       },
       "blockPlaceholder": {
         "heading": "Kop",
@@ -1091,10 +1089,7 @@
         "cards_other": "{{count}} kaarten"
       },
       "topicsEmptyTip": "Een onderwerp is een map voor notities — één per taal, of één per ding dat je steeds fout doet.",
-      "notesEmptyTip": "Elke notitie die je opslaat komt in de herhalingsrij, dus opschrijven is al beginnen met oefenen.",
-      "quickActions": {
-        "label": "Snelle acties"
-      }
+      "notesEmptyTip": "Elke notitie die je opslaat komt in de herhalingsrij, dus opschrijven is al beginnen met oefenen."
     }
   },
   "reading": {

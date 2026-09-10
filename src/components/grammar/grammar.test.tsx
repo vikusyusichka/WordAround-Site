@@ -8,9 +8,7 @@ import { GrammarTopicCard } from './GrammarTopicCard';
 import { NoteFilterChips } from './NoteFilterChips';
 import { GrammarNoteTypePicker } from './GrammarNoteTypePicker';
 import { GrammarBlockEditor } from './GrammarBlockEditor';
-import { BlockToolbarTray } from './BlockToolbarTray';
-import { GrammarSectionHeader } from './GrammarSectionHeader';
-import { QuickActionsGrid } from './QuickActionsGrid';
+import { AddBlockMenu } from './AddBlockMenu';
 import { QuizQuestionView } from './QuizQuestionView';
 import { QuizResultView } from './QuizResultView';
 import { ReviewTodayCard } from './ReviewTodayCard';
@@ -94,65 +92,15 @@ describe('GrammarBlockEditor', () => {
   });
 });
 
-describe('BlockToolbarTray', () => {
-  it('inserts an everyday block straight from the tray, with no menu to open', async () => {
+describe('AddBlockMenu', () => {
+  it('expands and dispatches the chosen block type', async () => {
     const user = userEvent.setup();
     const onAdd = vi.fn();
-    render(<BlockToolbarTray onAdd={onAdd} />);
-    await user.click(screen.getByRole('button', { name: 'Quote' }));
-    expect(onAdd).toHaveBeenCalledWith('quote');
-  });
-
-  it('keeps the rarer types under More, so none of the fifteen is lost', async () => {
-    const user = userEvent.setup();
-    const onAdd = vi.fn();
-    render(<BlockToolbarTray onAdd={onAdd} />);
-
-    expect(screen.queryByText('Example')).not.toBeInTheDocument();
-    await user.click(screen.getByRole('button', { name: /more/i }));
-    await user.click(screen.getByRole('menuitem', { name: 'Example' }));
+    render(<AddBlockMenu onAdd={onAdd} />);
+    await user.click(screen.getByRole('button', { name: /add block/i }));
+    // "Example" block type option
+    await user.click(screen.getByText('Example'));
     expect(onAdd).toHaveBeenCalledWith('example');
-  });
-});
-
-describe('QuickActionsGrid', () => {
-  it('renders the four ways in and fires the one that is pressed', async () => {
-    const user = userEvent.setup();
-    const onClick = vi.fn();
-    render(
-      <QuickActionsGrid
-        actions={[
-          { id: 'a', icon: 'note.text', label: 'Quick note', onClick: () => {} },
-          { id: 'b', icon: 'note.text', label: 'Quick mistake', onClick: () => {} },
-          { id: 'c', icon: 'folder.badge.plus', label: 'New topic', onClick },
-          { id: 'd', icon: 'doc.on.doc.fill', label: 'Templates', onClick: () => {} },
-        ]}
-      />,
-    );
-    expect(screen.getAllByRole('button')).toHaveLength(4);
-    await user.click(screen.getByRole('button', { name: 'New topic' }));
-    expect(onClick).toHaveBeenCalledOnce();
-  });
-});
-
-describe('GrammarSectionHeader', () => {
-  it('puts its actions beside the heading and marks the active one', async () => {
-    const user = userEvent.setup();
-    const onClick = vi.fn();
-    render(
-      <GrammarSectionHeader
-        title="My topics"
-        actions={[
-          { id: 'arrange', label: 'Done', isActive: true, onClick },
-          { id: 'new', label: 'New topic', onClick: () => {} },
-        ]}
-      />,
-    );
-    expect(screen.getByRole('heading', { name: 'My topics' })).toBeInTheDocument();
-    const done = screen.getByRole('button', { name: 'Done' });
-    expect(done).toHaveAttribute('aria-pressed', 'true');
-    await user.click(done);
-    expect(onClick).toHaveBeenCalledOnce();
   });
 });
 

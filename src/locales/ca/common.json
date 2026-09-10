@@ -656,9 +656,7 @@
         "imageAdd": "Afegeix / substitueix la imatge",
         "imageUploading": "Pujant…",
         "imageFailed": "No s'ha pogut pujar la imatge.",
-        "imageSaveFirst": "Inicia la sessió per pujar imatges.",
-        "more": "Més",
-        "trayLabel": "Insereix un bloc"
+        "imageSaveFirst": "Inicia la sessió per pujar imatges."
       },
       "blockPlaceholder": {
         "heading": "Encapçalament",
@@ -1091,10 +1089,7 @@
         "cards_other": "{{count}} targetes"
       },
       "topicsEmptyTip": "Un tema és una carpeta per a notes: un per idioma, o un per cada cosa que continues fallant.",
-      "notesEmptyTip": "Cada nota que deses entra a la cua de repàs, així que escriure-la ja és començar a practicar-la.",
-      "quickActions": {
-        "label": "Accions ràpides"
-      }
+      "notesEmptyTip": "Cada nota que deses entra a la cua de repàs, així que escriure-la ja és començar a practicar-la."
     }
   },
   "reading": {

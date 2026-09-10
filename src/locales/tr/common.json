@@ -656,9 +656,7 @@
         "imageAdd": "Görsel ekle / değiştir",
         "imageUploading": "Yükleniyor…",
         "imageFailed": "Görsel yüklenemedi.",
-        "imageSaveFirst": "Görsel yüklemek için giriş yap.",
-        "more": "Daha fazla",
-        "trayLabel": "Blok ekle"
+        "imageSaveFirst": "Görsel yüklemek için giriş yap."
       },
       "blockPlaceholder": {
         "heading": "Başlık",
@@ -1091,10 +1089,7 @@
         "cards_other": "{{count}} kart"
       },
       "topicsEmptyTip": "Konu, notlar için bir klasördür — her dile bir tane ya da sürekli yanlış yaptığın her şeye bir tane.",
-      "notesEmptyTip": "Kaydettiğin her not tekrar sırasına girer, yani yazmak zaten çalışmaya başlamak demektir.",
-      "quickActions": {
-        "label": "Hızlı işlemler"
-      }
+      "notesEmptyTip": "Kaydettiğin her not tekrar sırasına girer, yani yazmak zaten çalışmaya başlamak demektir."
     }
   },
   "reading": {

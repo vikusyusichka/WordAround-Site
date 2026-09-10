@@ -662,9 +662,7 @@
         "imageAdd": "Pridėti / pakeisti paveikslėlį",
         "imageUploading": "Įkeliama…",
         "imageFailed": "Nepavyko įkelti paveikslėlio.",
-        "imageSaveFirst": "Prisijunkite, kad galėtumėte įkelti paveikslėlius.",
-        "more": "Daugiau",
-        "trayLabel": "Įterpti bloką"
+        "imageSaveFirst": "Prisijunkite, kad galėtumėte įkelti paveikslėlius."
       },
       "blockPlaceholder": {
         "heading": "Antraštė",
@@ -1109,9 +1107,6 @@
       },
       "topicsEmptyTip": "Tema – tai aplankas užrašams: po vieną kalbai arba po vieną dalykui, kurį nuolat klystate.",
       "notesEmptyTip": "Kiekvienas įrašytas užrašas patenka į kartojimo eilę, tad jį užsirašyti jau reiškia pradėti jį mokytis.",
-      "quickActions": {
-        "label": "Greiti veiksmai"
-      },
       "notesCount_few": "{{count}} užrašai"
     }
   },

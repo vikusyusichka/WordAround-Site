@@ -1,17 +1,10 @@
 /* Topic row on the grammar-notes home — port of GrammarNoteTopicCardView:
-   a soft-accent icon circle, title (+ pin / Mistakes badge), description, a
-   "N notes" meta pill, a chevron, and an accent blob bleeding out of the
-   top-right corner.
-
-   The card sits on the shared SurfaceCard rather than on a fill in the topic's
-   own colour: iOS draws it white with only the corner blob carrying the colour,
-   which is what keeps a page of six differently-coloured topics calm. The
-   Mistakes topic gets a stronger blob (0.14 against 0.09) — its emphasis in
-   iOS too. */
+   a horizontal card themed by the topic colour, with a soft-accent icon circle,
+   title (+ pin / Mistakes badge), description, a "N notes" meta pill, a chevron,
+   and a soft-accent blob bleeding out of the top-right corner. */
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
-import { GRAMMAR_SURFACE, SurfaceCard } from '@/components/primitives/SurfaceCard';
 import { CardActions } from '@/components/shell/CardActions';
 import { themeForHex } from '@/lib/setColors';
 import type { GrammarNoteTopic } from '@/lib/models';
@@ -46,21 +39,27 @@ export const GrammarTopicCard = ({
 
   return (
     <div className="group relative">
-      <SurfaceCard
-        accent={theme.accent}
-        blobOpacity={topic.isMistakesTopic ? 0.14 : 0.09}
-        className="transition-transform hover:-translate-y-0.5"
-        {...GRAMMAR_SURFACE}
+      <button
+        type="button"
+        onClick={onOpen}
+        aria-label={topic.title}
+        className={`relative block w-full overflow-hidden rounded-[24px] border p-4 text-left transition-transform hover:-translate-y-0.5 focus-visible:outline-none ${
+          isTile ? 'h-[178px]' : 'pl-[18px]'
+        }`}
+        style={{
+          background: topic.isMistakesTopic ? theme.previewBackground : theme.sectionBackground,
+          borderColor: topic.isMistakesTopic ? theme.borderColor : theme.softBorderColor,
+          boxShadow: `0 10px 18px ${theme.shadowColor}`,
+        }}
       >
-        <button
-          type="button"
-          onClick={onOpen}
-          aria-label={topic.title}
-          className={`block w-full p-4 text-left focus-visible:outline-none ${
-            isTile ? 'h-[178px]' : 'pl-[18px]'
-          }`}
-        >
-          <div
+        {/* Corner blob. */}
+        <span
+          className="pointer-events-none absolute -top-[50px] right-[-46px] size-[112px] rounded-full"
+          style={{ background: theme.softAccent, opacity: topic.isMistakesTopic ? 1 : 0.55 }}
+          aria-hidden
+        />
+
+        <div
           className={
             isTile
               ? 'relative flex h-full flex-col justify-end gap-2.5'
@@ -91,7 +90,7 @@ export const GrammarTopicCard = ({
                   style={{
                     background: theme.softAccent,
                     borderColor: theme.softBorderColor,
-                    color: theme.accentText,
+                    color: theme.accent,
                   }}
                 >
                   {t('writing.grammar.mistakesBadge')}
@@ -143,9 +142,8 @@ export const GrammarTopicCard = ({
               style={{ color: theme.mutedTextColor, opacity: 0.78 }}
             />
           )}
-          </div>
-        </button>
-      </SurfaceCard>
+        </div>
+      </button>
 
       {isReordering ? (
         <div className="absolute top-3 right-3 flex gap-1">

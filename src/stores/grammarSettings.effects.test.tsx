@@ -14,7 +14,7 @@ import userEvent from '@testing-library/user-event';
 import { beforeEach, describe, expect, it, vi } from 'vitest';
 
 import '@/lib/i18n';
-import { BlockToolbarTray } from '@/components/grammar/BlockToolbarTray';
+import { AddBlockMenu } from '@/components/grammar/AddBlockMenu';
 import { GrammarNoteRow } from '@/components/grammar/GrammarNoteRow';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
 import { QuickNoteSheet } from '@/components/grammar/QuickNoteSheet';
@@ -75,12 +75,13 @@ describe('showsMistakeHighlights', () => {
   const mistake = note({ noteType: 'mistake', isMistakeNote: true });
 
   /* The warm tint is an inline style, since the colour comes from the note
-     type rather than from a class. Both branches are now color-mix over a
-     variable, so the assertion is on WHICH colour is being mixed: the note
-     type's own, or the plain card surface. */
+     type rather than from a class. */
   const backgroundOf = (title: string) =>
     screen.getByRole('button', { name: title }).style.background;
 
+  /* Both branches are color-mix over a variable now (the dark theme moved the
+     palette into CSS), so the assertion is on WHICH colour is being mixed:
+     the note type's own, or the plain card surface. */
   it('on: a mistake note is tinted', () => {
     render(<GrammarNoteRow note={mistake} {...rowProps} />);
     expect(backgroundOf('Note')).toContain('--color-accent-pink');
@@ -96,22 +97,17 @@ describe('showsMistakeHighlights', () => {
 });
 
 describe('allowQuickQuizzes', () => {
-  /* The quiz block lives under "More" in the tray, so the menu has to be
-     opened before the setting's effect is visible either way. */
-  const openMore = async (user: ReturnType<typeof userEvent.setup>) =>
-    user.click(screen.getByRole('button', { name: /more/i }));
-
-  it('on: the block tray offers a quiz block', async () => {
+  it('on: the block menu offers a quiz block', async () => {
     const user = userEvent.setup();
-    render(<BlockToolbarTray allowsQuiz onAdd={vi.fn()} />);
-    await openMore(user);
+    render(<AddBlockMenu allowsQuiz onAdd={vi.fn()} />);
+    await user.click(screen.getAllByRole('button')[0]);
     expect(screen.getByText('Quiz')).toBeInTheDocument();
   });
 
   it('off: the quiz block is gone', async () => {
     const user = userEvent.setup();
-    render(<BlockToolbarTray allowsQuiz={false} onAdd={vi.fn()} />);
-    await openMore(user);
+    render(<AddBlockMenu allowsQuiz={false} onAdd={vi.fn()} />);
+    await user.click(screen.getAllByRole('button')[0]);
     expect(screen.queryByText('Quiz')).not.toBeInTheDocument();
   });
 });

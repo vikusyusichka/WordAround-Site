@@ -656,9 +656,7 @@
         "imageAdd": "Add / replace image",
         "imageUploading": "Uploading…",
         "imageFailed": "Couldn't upload the image.",
-        "imageSaveFirst": "Sign in to upload images.",
-        "more": "More",
-        "trayLabel": "Insert a block"
+        "imageSaveFirst": "Sign in to upload images."
       },
       "blockPlaceholder": {
         "heading": "Heading",
@@ -1091,10 +1089,7 @@
         "cards_other": "{{count}} cards"
       },
       "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it.",
-      "quickActions": {
-        "label": "Quick actions"
-      }
+      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
     }
   },
   "reading": {

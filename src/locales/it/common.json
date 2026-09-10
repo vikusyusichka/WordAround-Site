@@ -656,9 +656,7 @@
         "imageAdd": "Aggiungi / sostituisci immagine",
         "imageUploading": "Caricamento…",
         "imageFailed": "Non è stato possibile caricare l'immagine.",
-        "imageSaveFirst": "Accedi per caricare immagini.",
-        "more": "Altro",
-        "trayLabel": "Inserisci un blocco"
+        "imageSaveFirst": "Accedi per caricare immagini."
       },
       "blockPlaceholder": {
         "heading": "Titolo",
@@ -1091,10 +1089,7 @@
         "cards_other": "{{count}} carte"
       },
       "topicsEmptyTip": "Un argomento è una cartella per le note: uno per lingua, o uno per ogni cosa che continui a sbagliare.",
-      "notesEmptyTip": "Ogni nota che salvi entra nella coda di ripasso, quindi scriverla basta per iniziare a esercitarti.",
-      "quickActions": {
-        "label": "Azioni rapide"
-      }
+      "notesEmptyTip": "Ogni nota che salvi entra nella coda di ripasso, quindi scriverla basta per iniziare a esercitarti."
     }
   },
   "reading": {
