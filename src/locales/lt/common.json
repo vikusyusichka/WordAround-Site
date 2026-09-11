@@ -274,14 +274,12 @@
       "left": "Liko {{count}} žodžių"
     },
     "stat": {
-      "learnedToday": "Išmokta šiandien",
-      "words": "žodžių",
-      "accuracy": "Tikslumas",
-      "greatJob": "Puikus darbas!",
       "streak": "Serija",
       "days": "d."
     },
     "continueLearning": "Tęsti mokymąsi",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Jūsų rinkiniai",
     "viewAll": "Rodyti visus",
     "review": "Kartoti",
@@ -1801,7 +1799,9 @@
       "dailyPushTitle": "Laikas mokytis",
       "dailyPushBody": "Kelios minutės su WordAround – ir serija gyva.",
       "weeklyPushTitle": "Jūsų savaitė su WordAround",
-      "weeklyPushBody": "Pažiūrėkite, ko išmokote šią savaitę ir ką verta pakartoti."
+      "weeklyPushBody": "Pažiūrėkite, ko išmokote šią savaitę ir ką verta pakartoti.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

@@ -272,14 +272,12 @@
       "left": "{{count}} ord igjen"
     },
     "stat": {
-      "learnedToday": "Lært i dag",
-      "words": "ord",
-      "accuracy": "Treffsikkerhet",
-      "greatJob": "Godt jobbet!",
       "streak": "Rekke",
       "days": "dager"
     },
     "continueLearning": "Fortsett å lære",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Settene dine",
     "viewAll": "Se alle",
     "review": "Repeter",
@@ -1778,7 +1776,9 @@
       "dailyPushTitle": "På tide å øve",
       "dailyPushBody": "Noen minutter med WordAround holder rekken din i live.",
       "weeklyPushTitle": "Uken din i WordAround",
-      "weeklyPushBody": "Se hva du har lært denne uken og hva som er verdt å repetere."
+      "weeklyPushBody": "Se hva du har lært denne uken og hva som er verdt å repetere.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

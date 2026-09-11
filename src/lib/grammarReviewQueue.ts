@@ -35,9 +35,11 @@ export interface GrammarReviewQueue {
 
 export const REVIEW_QUEUE_LIMIT = 20;
 
-/* iOS selectBestBlock priority (web subset — no comparison/exercise). */
+/* iOS selectBestBlock priority. `bulletList` is the web's own block, appended
+   last so it is picked only when nothing iOS knows about is available. */
 const BLOCK_PRIORITY: GrammarBlockType[] = [
-  'rule', 'warning', 'example', 'paragraph', 'quote', 'bulletList',
+  'quiz', 'rule', 'warning', 'comparison', 'example', 'paragraph', 'quote', 'exercise',
+  'bulletList',
 ];
 
 const selectBestBlock = (blocks: GrammarNoteBlock[]): GrammarNoteBlock | undefined => {
@@ -46,15 +48,60 @@ const selectBestBlock = (blocks: GrammarNoteBlock[]): GrammarNoteBlock | undefin
     const match = nonEmpty.find((b) => b.type === type);
     if (match) return match;
   }
-  return nonEmpty.find((b) => b.type !== 'heading' && b.type !== 'divider');
+  return nonEmpty.find(
+    (b) =>
+      b.type !== 'heading' &&
+      b.type !== 'subheading' &&
+      b.type !== 'divider' &&
+      b.type !== 'image',
+  );
 };
 
-/* iOS singleBlockQuestion heuristics (web subset). */
+/* The prompt a block type gets when nothing more specific fits (iOS
+   shortAnswerPrompt(for:)). */
+const SHORT_ANSWER_PROMPT: Partial<Record<GrammarBlockType, string>> = {
+  rule: 'Explain this grammar rule in your own words.',
+  warning: 'What should you avoid here?',
+  example: 'What does this example demonstrate?',
+  comparison: 'Explain the difference between these two forms.',
+  quote: 'What is the key idea of this quote?',
+  exercise: 'Describe how you would complete this exercise.',
+};
+
+const shortAnswerPrompt = (type: GrammarBlockType): string =>
+  SHORT_ANSWER_PROMPT[type] ?? 'What is the key idea of this note?';
+
+/* iOS singleBlockQuestion heuristics. A block type with no branch of its own
+   falls through to the generic tail, which is where the per-type prompt above
+   earns its keep. */
 const singleBlockQuestion = (block: GrammarNoteBlock): GrammarQuizQuestion | null => {
   const text = block.text.trim();
   const secondary = block.secondaryText?.trim() ?? '';
+  const explanation = secondary.length > 0 ? secondary : undefined;
   const base = { id: crypto.randomUUID(), options: [] as string[], order: 0 };
+  if (text.length === 0) return null;
 
+  if (block.type === 'quiz') {
+    const answer = secondary.length > 0 ? secondary : text;
+    if (answer.length === 0) return null;
+    return {
+      ...base,
+      type: 'shortAnswer',
+      questionText: text,
+      correctAnswer: answer.slice(0, 160),
+    };
+  }
+  if (block.type === 'comparison' && secondary.length > 0) {
+    const options = [text, secondary, 'Neither applies', 'Both are correct'].sort();
+    return {
+      ...base,
+      type: 'multipleChoice',
+      questionText: 'Which form is correct here?',
+      options: options.slice(0, 4),
+      correctAnswer: text,
+      explanation: `Compare: ${text} vs ${secondary}`,
+    };
+  }
   if (block.type === 'warning') {
     return {
       ...base,
@@ -62,7 +109,7 @@ const singleBlockQuestion = (block: GrammarNoteBlock): GrammarQuizQuestion | nul
       questionText: `True or False: "${text.slice(0, 100)}" is a common grammar mistake.`,
       options: ['True', 'False'],
       correctAnswer: 'True',
-      explanation: text,
+      explanation: explanation ?? text,
     };
   }
   if (block.type === 'rule') {
@@ -71,26 +118,28 @@ const singleBlockQuestion = (block: GrammarNoteBlock): GrammarQuizQuestion | nul
       type: 'shortAnswer',
       questionText:
         secondary.length > 0
-          ? `Explain this grammar rule: "${text.slice(0, 70)}"`
+          ? 'Explain this rule in your own words.'
           : 'What does this grammar rule state?',
       correctAnswer: (secondary.length > 0 ? secondary : text).slice(0, 160),
-      explanation: secondary.length > 0 ? secondary : undefined,
+      explanation,
     };
   }
   if (block.type === 'example' && secondary.length > 0) {
     return {
       ...base,
       type: 'shortAnswer',
-      questionText: `What does this example illustrate: "${text.slice(0, 70)}"?`,
+      questionText: 'What does this example illustrate?',
       correctAnswer: secondary.slice(0, 160),
+      explanation,
     };
   }
   if (text.length >= 4) {
     return {
       ...base,
       type: 'shortAnswer',
-      questionText: `Explain in your own words: "${text.slice(0, 80)}"`,
+      questionText: shortAnswerPrompt(block.type),
       correctAnswer: text.slice(0, 160),
+      explanation,
     };
   }
   return null;

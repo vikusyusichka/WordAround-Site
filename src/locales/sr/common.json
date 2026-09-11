@@ -274,14 +274,12 @@
       "left": "Остало још {{count}} речи"
     },
     "stat": {
-      "learnedToday": "Научено данас",
-      "words": "речи",
-      "accuracy": "Тачност",
-      "greatJob": "Одличан посао!",
       "streak": "Низ",
       "days": "дана"
     },
     "continueLearning": "Настави да учиш",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Ваши сетови",
     "viewAll": "Прикажи све",
     "review": "Понови",
@@ -1801,7 +1799,9 @@
       "dailyPushTitle": "Време је за вежбу",
       "dailyPushBody": "Неколико минута уз WordAround и низ се наставља.",
       "weeklyPushTitle": "Ваша недеља у WordAround-у",
-      "weeklyPushBody": "Погледајте шта сте научили ове недеље и шта вреди поновити."
+      "weeklyPushBody": "Погледајте шта сте научили ове недеље и шта вреди поновити.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

@@ -6,7 +6,30 @@ import '@/lib/i18n';
 import { StatCard } from './StatCard';
 import { ProgressCard } from './ProgressCard';
 import { SetItem } from './SetItem';
-import { STAT_CARDS, TODAY_GOAL, type HomeSetPreviewItem } from '@/lib/homeTypes';
+import { STREAK_CARD, type HomeSetPreviewItem, type StatCardItem } from '@/lib/homeTypes';
+
+/* Fixtures, not production constants — the home screen renders only the
+   streak card and real set data, so a test needs its own shapes. */
+const sampleStat: StatCardItem = { ...STREAK_CARD, value: '24' };
+
+const sampleGoal: HomeSetPreviewItem = {
+  id: 'goal',
+  title: '',
+  subtitle: '',
+  iconSystemName: 'book.closed',
+  currentValue: 24,
+  totalValue: 30,
+  unit: 'words',
+  progress: 0.8,
+  accentColor: 'var(--color-primary-blue)',
+  backgroundColor: 'var(--color-goal-bg)',
+  progressBackgroundColor: 'var(--color-goal-progress-bg)',
+  titleColor: 'var(--color-primary-blue-dark)',
+  valueColor: 'var(--color-primary-blue-dark)',
+  subtitleColor: 'var(--color-text-secondary)',
+  iconBackground: 'var(--color-card-white)',
+  blobColor: 'var(--color-home-goal-blob)',
+};
 
 const sampleSet: HomeSetPreviewItem = {
   id: 's1',
@@ -29,17 +52,17 @@ const sampleSet: HomeSetPreviewItem = {
 
 describe('StatCard', () => {
   it('renders value + translated title/subtitle', () => {
-    render(<StatCard item={STAT_CARDS[0]} />);
+    render(<StatCard item={sampleStat} />);
     expect(screen.getByText('24')).toBeInTheDocument();
-    expect(screen.getByText('Learned today')).toBeInTheDocument();
-    expect(screen.getByText('words')).toBeInTheDocument();
+    expect(screen.getByText('Streak')).toBeInTheDocument();
+    expect(screen.getByText('days')).toBeInTheDocument();
   });
 });
 
 describe('ProgressCard', () => {
   it('goal layout shows the value line', () => {
     render(
-      <ProgressCard item={TODAY_GOAL} layout="goal" title="Today's goal" subtitle="6 words left" />,
+      <ProgressCard item={sampleGoal} layout="goal" title="Today's goal" subtitle="6 words left" />,
     );
     expect(screen.getByText('24')).toBeInTheDocument();
     expect(screen.getByText(/\/ 30 words/)).toBeInTheDocument();

@@ -274,14 +274,12 @@
       "left": "Atlikuši {{count}} vārdi"
     },
     "stat": {
-      "learnedToday": "Iemācīts šodien",
-      "words": "vārdi",
-      "accuracy": "Precizitāte",
-      "greatJob": "Lielisks darbs!",
       "streak": "Sērija",
       "days": "dienas"
     },
     "continueLearning": "Turpināt mācīties",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Jūsu komplekti",
     "viewAll": "Skatīt visus",
     "review": "Atkārtot",
@@ -1801,7 +1799,9 @@
       "dailyPushTitle": "Laiks vingrināties",
       "dailyPushBody": "Dažas minūtes ar WordAround, un jūsu sērija turpinās.",
       "weeklyPushTitle": "Jūsu nedēļa WordAround",
-      "weeklyPushBody": "Apskatiet, ko šonedēļ iemācījāties un ko ir vērts atkārtot."
+      "weeklyPushBody": "Apskatiet, ko šonedēļ iemācījāties un ko ir vērts atkārtot.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

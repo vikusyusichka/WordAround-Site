@@ -226,3 +226,63 @@ describe('quiz-sourced cards', () => {
     expect(queue.cards[0].question.questionText).not.toBe('Which verb for origin?');
   });
 });
+
+describe('block selection', () => {
+  it('picks a comparison block over a paragraph, and reviews it as a comparison', () => {
+    const blocks: GrammarNote['contentBlocks'] = [
+      { id: 'b1', type: 'paragraph', text: 'Both verbs translate as "to be".', items: [], order: 0 },
+      {
+        id: 'b2', type: 'comparison', text: 'ser for identity',
+        secondaryText: 'estar for state', items: [], order: 1,
+      },
+    ];
+    const queue = buildReviewQueue({
+      manualItems: [item('n1')],
+      recentlyOpened: [],
+      recentlyEdited: [],
+      notesById: new Map([['n1', note('n1', blocks)]]),
+    });
+    expect(queue.cards[0].sourceBlockType).toBe('comparison');
+    expect(queue.cards[0].sourceText).toBe('ser for identity');
+    expect(queue.cards[0].sourceSecondaryText).toBe('estar for state');
+  });
+
+  /* A note built entirely out of comparisons used to select nothing the
+     generator understood, so the card fell through to the generic
+     "key idea of this note" question. */
+  it('asks a real question about a note made only of comparisons', () => {
+    const blocks: GrammarNote['contentBlocks'] = [
+      {
+        id: 'b1', type: 'comparison', text: 'por for cause',
+        secondaryText: 'para for purpose', items: [], order: 0,
+      },
+      {
+        id: 'b2', type: 'comparison', text: 'ser for identity',
+        secondaryText: 'estar for state', items: [], order: 1,
+      },
+    ];
+    const queue = buildReviewQueue({
+      manualItems: [item('n1')],
+      recentlyOpened: [],
+      recentlyEdited: [],
+      notesById: new Map([['n1', note('n1', blocks)]]),
+    });
+    expect(queue.cards[0].question.questionText).not.toBe('What is the key idea of this note?');
+    expect(queue.cards[0].question.questionText).toContain('por for cause');
+  });
+
+  it('skips subheading and image when nothing better is present', () => {
+    const blocks: GrammarNote['contentBlocks'] = [
+      { id: 'b1', type: 'subheading', text: 'Overview', items: [], order: 0 },
+      { id: 'b2', type: 'image', text: 'A diagram', items: [], order: 1 },
+      { id: 'b3', type: 'checklist', text: 'Check agreement in gender', items: [], order: 2 },
+    ];
+    const queue = buildReviewQueue({
+      manualItems: [item('n1')],
+      recentlyOpened: [],
+      recentlyEdited: [],
+      notesById: new Map([['n1', note('n1', blocks)]]),
+    });
+    expect(queue.cards[0].sourceBlockType).toBe('checklist');
+  });
+});

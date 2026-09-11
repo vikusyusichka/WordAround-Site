@@ -29,7 +29,7 @@ export const Route = createFileRoute('/_authed/home')({
 function HomeDashboard() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { data: sets } = useSetsQuery();
+  const { data: sets, isLoading, isError, refetch } = useSetsQuery();
   const streak = useStreak();
 
   /* Changing the goal changes what the progress cards count against; the
@@ -60,20 +60,43 @@ function HomeDashboard() {
 
         <SkillProgressGrid key={goalVersion} />
 
-        {(continuePreview || lastNote) && (
-          <div className={`grid gap-4 lg:gap-5 ${pickUpColumns}`}>
-            {continuePreview && continueSet && (
-              <ProgressCard
-                item={continuePreview}
-                layout="action"
-                title={t('home.continueLearning')}
-                subtitle={continuePreview.title}
-                actionSystemName="arrow.right"
-                onClick={() => void navigate({ to: '/sets/$id', params: { id: continueSet.id } })}
-              />
-            )}
-            {lastNote && <LastNoteCard note={lastNote} />}
+        {/* Only this row depends on Firestore — the goal, the streak and the
+            four progress cards read local data and stay up whatever the network
+            is doing. So the two states live here rather than over the page. */}
+        {isLoading ? (
+          <div
+            aria-hidden
+            className="h-[116px] animate-pulse rounded-3xl bg-(--color-surface)/70"
+          />
+        ) : isError ? (
+          <div className="flex flex-col items-start gap-3 rounded-3xl border border-(--color-surface)/80 bg-(--color-surface)/70 px-6 py-6">
+            <p role="alert" className="text-[15px] font-medium text-(--color-cs-red)">
+              {t('home.loadError')}
+            </p>
+            <button
+              type="button"
+              onClick={() => void refetch()}
+              className="rounded-full bg-(--color-primary-blue-solid) px-5 py-2 text-[14px] font-semibold text-white"
+            >
+              {t('home.retry')}
+            </button>
           </div>
+        ) : (
+          (continuePreview || lastNote) && (
+            <div className={`grid gap-4 lg:gap-5 ${pickUpColumns}`}>
+              {continuePreview && continueSet && (
+                <ProgressCard
+                  item={continuePreview}
+                  layout="action"
+                  title={t('home.continueLearning')}
+                  subtitle={continuePreview.title}
+                  actionSystemName="arrow.right"
+                  onClick={() => void navigate({ to: '/sets/$id', params: { id: continueSet.id } })}
+                />
+              )}
+              {lastNote && <LastNoteCard note={lastNote} />}
+            </div>
+          )
         )}
       </div>
     </ContentContainer>

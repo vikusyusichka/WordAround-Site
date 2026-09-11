@@ -272,14 +272,12 @@
       "left": "Απομένουν {{count}} λέξεις"
     },
     "stat": {
-      "learnedToday": "Έμαθες σήμερα",
-      "words": "λέξεις",
-      "accuracy": "Ακρίβεια",
-      "greatJob": "Μπράβο!",
       "streak": "Σερί",
       "days": "ημέρες"
     },
     "continueLearning": "Συνέχεια μάθησης",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Τα σετ σας",
     "viewAll": "Προβολή όλων",
     "review": "Επανάληψη",
@@ -1778,7 +1776,9 @@
       "dailyPushTitle": "Ώρα για εξάσκηση",
       "dailyPushBody": "Λίγα λεπτά με το WordAround κρατούν ζωντανό το σερί σας.",
       "weeklyPushTitle": "Η εβδομάδα σας στο WordAround",
-      "weeklyPushBody": "Δείτε τι μάθατε αυτή την εβδομάδα και τι αξίζει να επαναλάβετε."
+      "weeklyPushBody": "Δείτε τι μάθατε αυτή την εβδομάδα και τι αξίζει να επαναλάβετε.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

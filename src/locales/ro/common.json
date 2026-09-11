@@ -277,14 +277,12 @@
       "left_other": "Au mai rămas {{count}} de cuvinte"
     },
     "stat": {
-      "learnedToday": "Învățate azi",
-      "words": "cuvinte",
-      "accuracy": "Acuratețe",
-      "greatJob": "Bravo!",
       "streak": "Serie",
       "days": "zile"
     },
     "continueLearning": "Continuă să înveți",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Seturile tale",
     "viewAll": "Vezi toate",
     "review": "Recapitulare",
@@ -1804,7 +1802,9 @@
       "dailyPushTitle": "E timpul să exersezi",
       "dailyPushBody": "Câteva minute cu WordAround și seria ta continuă.",
       "weeklyPushTitle": "Săptămâna ta în WordAround",
-      "weeklyPushBody": "Vezi ce ai învățat săptămâna aceasta și ce merită repetat."
+      "weeklyPushBody": "Vezi ce ai învățat săptămâna aceasta și ce merită repetat.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

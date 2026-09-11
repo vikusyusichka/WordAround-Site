@@ -272,14 +272,12 @@
       "left": "{{count}} ord tilbage"
     },
     "stat": {
-      "learnedToday": "Lært i dag",
-      "words": "ord",
-      "accuracy": "Præcision",
-      "greatJob": "Flot arbejde!",
       "streak": "Stime",
       "days": "dage"
     },
     "continueLearning": "Fortsæt med at lære",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Dine sæt",
     "viewAll": "Se alle",
     "review": "Repetér",
@@ -1778,7 +1776,9 @@
       "dailyPushTitle": "Tid til at øve",
       "dailyPushBody": "Et par minutter med WordAround holder din stime i live.",
       "weeklyPushTitle": "Din uge i WordAround",
-      "weeklyPushBody": "Se, hvad du har lært i denne uge, og hvad der er værd at repetere."
+      "weeklyPushBody": "Se, hvad du har lært i denne uge, og hvad der er værd at repetere.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

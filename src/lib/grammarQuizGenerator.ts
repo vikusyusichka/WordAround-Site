@@ -1,7 +1,10 @@
 /* Deterministic "Smart Local" quiz generation — web port of the iOS
-   GrammarQuizGenerator (Domain/GrammarQuizGenerator.swift), adapted to the
-   8-block web subset (no comparison/exercise/subheading/image blocks). All
-   question texts, prefix caps and the stopword set match iOS verbatim. */
+   GrammarQuizGenerator (Domain/GrammarQuizGenerator.swift). All question texts,
+   prefix caps and the stopword set match iOS verbatim.
+
+   The web note model carries the same 15 block types the editor offers, so
+   every block type iOS quizzes from is quizzable here too. `bulletList` is the
+   one addition: iOS has no such block, and its items read like a paragraph. */
 import type {
   GrammarNoteBlock,
   GrammarQuizQuestion,
@@ -20,15 +23,25 @@ export class GrammarQuizGeneratorError extends Error {
 
 const trim = (s: string) => s.trim();
 
-/* Blocks that can seed a question; heading/divider carry no quizzable text. */
+/* Blocks that can seed a question. Headings, dividers and images carry no
+   quizzable text — counting them toward the "at least two usable blocks" gate
+   let a note through that then produced no questions at all, and the learner
+   got "no matching question types" when the honest answer was "not enough
+   content". */
 const isUsable = (b: GrammarNoteBlock) =>
-  trim(b.text).length > 0 && b.type !== 'divider' && b.type !== 'heading';
+  trim(b.text).length > 0 &&
+  b.type !== 'divider' &&
+  b.type !== 'heading' &&
+  b.type !== 'subheading' &&
+  b.type !== 'image';
 
-/* iOS priority map (subset — web has no comparison/exercise blocks). */
+/* iOS priority map. */
 const PRIORITY: Partial<Record<GrammarNoteBlock['type'], number>> = {
   rule: 0,
   warning: 1,
   example: 2,
+  comparison: 3,
+  exercise: 4,
   quote: 5,
   paragraph: 6,
 };
@@ -116,7 +129,10 @@ const ruleQuestion = (
   if (types.has('shortAnswer')) {
     const secondary = block.secondaryText ? trim(block.secondaryText) : '';
     const answer = secondary.length > 0 ? secondary : text;
-    const q = block.secondaryText !== undefined
+    /* iOS branches on secondaryText being nil. The web editor's makeBlock seeds
+       rule blocks with '', so "never filled in" is the empty string here —
+       testing for `undefined` made the second prompt unreachable. */
+    const q = secondary.length > 0
       ? `Explain this grammar rule: "${text.slice(0, 70)}"`
       : 'What does this grammar rule state?';
     return makeQuestion({
@@ -186,6 +202,44 @@ const exampleQuestion = (
   return null;
 };
 
+/* A comparison block holds two forms — `text` is the one that applies,
+   `secondaryText` the one it is set against. */
+const comparisonQuestion = (
+  block: GrammarNoteBlock,
+  types: Set<GrammarQuizQuestionType>,
+  order: number,
+): GrammarQuizQuestion | null => {
+  const text = trim(block.text);
+  const secondary = block.secondaryText ? trim(block.secondaryText) : '';
+
+  if (types.has('multipleChoice') && secondary.length > 0) {
+    const options = [text, secondary, 'Neither applies', 'Both are correct'].sort();
+    return makeQuestion({
+      type: 'multipleChoice',
+      questionText: `Which form is used for: "${text.slice(0, 60)}"?`,
+      options: options.slice(0, 4),
+      correctAnswer: text,
+      explanation: `Compare: ${text} vs ${secondary}`,
+      order,
+    });
+  }
+
+  if (types.has('shortAnswer')) {
+    const q =
+      secondary.length === 0
+        ? `When do you use: "${text.slice(0, 70)}"?`
+        : `What is the difference between "${text.slice(0, 40)}" and "${secondary.slice(0, 40)}"?`;
+    return makeQuestion({
+      type: 'shortAnswer',
+      questionText: q,
+      correctAnswer: secondary.length === 0 ? text : `${text} vs ${secondary}`,
+      order,
+    });
+  }
+
+  return null;
+};
+
 const paragraphQuestion = (
   block: GrammarNoteBlock,
   types: Set<GrammarQuizQuestionType>,
@@ -225,6 +279,11 @@ const questionFromBlock = (
       return warningQuestion(block, types, order);
     case 'example':
       return exampleQuestion(block, types, order);
+    case 'comparison':
+      return comparisonQuestion(block, types, order);
+    /* iOS puts exercise in the paragraph branch; bulletList is the web's own
+       block and reads the same way. */
+    case 'exercise':
     case 'quote':
     case 'paragraph':
     case 'bulletList':
@@ -244,7 +303,7 @@ export const generateLocalQuestions = (
   if (usable.length < 2) {
     throw new GrammarQuizGeneratorError(
       'notEnoughContent',
-      'Add more note content before creating a quiz. A quiz needs at least two usable blocks (rule, example, warning, paragraph or quote).',
+      'Add more note content before creating a quiz. A quiz needs at least two usable blocks (rule, example, comparison, warning, exercise, paragraph or quote).',
     );
   }
 

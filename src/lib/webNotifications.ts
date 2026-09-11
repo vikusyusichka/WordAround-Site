@@ -11,6 +11,7 @@
    The scheduling maths is pure and tested; only `startReminderScheduler` has
    timers in it. */
 import {
+  STREAK_ALERT_TIME,
   WEEKLY_SUMMARY_TIME,
   WEEKLY_SUMMARY_WEEKDAY,
   type Preferences,
@@ -74,6 +75,8 @@ export interface ReminderCopy {
   dailyBody: string;
   weeklyTitle: string;
   weeklyBody: string;
+  streakTitle: string;
+  streakBody: string;
 }
 
 /** Arms the enabled reminders and returns a cancel function. Each one re-arms
@@ -123,6 +126,15 @@ export const startReminderScheduler = (
       copy.weeklyTitle,
       copy.weeklyBody,
       () => msUntilNextWeekly(WEEKLY_SUMMARY_WEEKDAY, WEEKLY_SUMMARY_TIME),
+    );
+  }
+
+  if (prefs.streakAlertsEnabled) {
+    arm(
+      msUntilNextDaily(STREAK_ALERT_TIME),
+      copy.streakTitle,
+      copy.streakBody,
+      () => msUntilNextDaily(STREAK_ALERT_TIME),
     );
   }
 

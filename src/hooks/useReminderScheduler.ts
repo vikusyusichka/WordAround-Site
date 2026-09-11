@@ -36,6 +36,8 @@ export const useReminderScheduler = (): void => {
         dailyBody: t('profile.notifications.dailyPushBody'),
         weeklyTitle: t('profile.notifications.weeklyPushTitle'),
         weeklyBody: t('profile.notifications.weeklyPushBody'),
+        streakTitle: t('profile.notifications.streakPushTitle'),
+        streakBody: t('profile.notifications.streakPushBody'),
       },
     );
   }, [

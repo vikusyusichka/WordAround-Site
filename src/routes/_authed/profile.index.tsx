@@ -203,6 +203,11 @@ function ProfilePage() {
           confirmLabel={t('profile.signOut.confirm')}
           onConfirm={() => {
             setIsConfirmingSignOut(false);
+            /* iOS clears local state on the way out (ProfileViewModel.signOut →
+               cleanupLocalUserState). On a phone that is tidiness; on a shared
+               browser it is the difference between the next person seeing their
+               own theme and seeing yours. */
+            usePreferences.getState().resetToDefaults();
             void signOut();
           }}
           onCancel={() => setIsConfirmingSignOut(false)}

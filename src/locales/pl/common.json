@@ -278,14 +278,12 @@
       "left": "Pozostało {{count}} słów"
     },
     "stat": {
-      "learnedToday": "Nauczone dziś",
-      "words": "słów",
-      "accuracy": "Skuteczność",
-      "greatJob": "Świetna robota!",
       "streak": "Passa",
       "days": "dni"
     },
     "continueLearning": "Kontynuuj naukę",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Twoje zestawy",
     "viewAll": "Zobacz wszystkie",
     "review": "Powtórz",
@@ -1827,7 +1825,9 @@
       "dailyPushTitle": "Czas na ćwiczenia",
       "dailyPushBody": "Kilka minut z WordAround i seria trwa dalej.",
       "weeklyPushTitle": "Twój tydzień w WordAround",
-      "weeklyPushBody": "Zobacz, czego nauczyłeś się w tym tygodniu i co warto powtórzyć."
+      "weeklyPushBody": "Zobacz, czego nauczyłeś się w tym tygodniu i co warto powtórzyć.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

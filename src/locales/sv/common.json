@@ -272,14 +272,12 @@
       "left": "{{count}} ord kvar"
     },
     "stat": {
-      "learnedToday": "Lärt idag",
-      "words": "ord",
-      "accuracy": "Träffsäkerhet",
-      "greatJob": "Snyggt jobbat!",
       "streak": "Svit",
       "days": "dagar"
     },
     "continueLearning": "Fortsätt lära dig",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Dina set",
     "viewAll": "Visa alla",
     "review": "Repetera",
@@ -1778,7 +1776,9 @@
       "dailyPushTitle": "Dags att öva",
       "dailyPushBody": "Några minuter med WordAround håller din svit vid liv.",
       "weeklyPushTitle": "Din vecka i WordAround",
-      "weeklyPushBody": "Se vad du lärt dig den här veckan och vad som är värt att repetera."
+      "weeklyPushBody": "Se vad du lärt dig den här veckan och vad som är värt att repetera.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

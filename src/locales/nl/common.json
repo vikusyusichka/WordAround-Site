@@ -272,14 +272,12 @@
       "left": "Nog {{count}} woorden"
     },
     "stat": {
-      "learnedToday": "Vandaag geleerd",
-      "words": "woorden",
-      "accuracy": "Nauwkeurigheid",
-      "greatJob": "Goed bezig!",
       "streak": "Reeks",
       "days": "dagen"
     },
     "continueLearning": "Verder leren",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Jouw sets",
     "viewAll": "Alles bekijken",
     "review": "Herhalen",
@@ -1778,7 +1776,9 @@
       "dailyPushTitle": "Tijd om te oefenen",
       "dailyPushBody": "Een paar minuten met WordAround houdt je reeks in leven.",
       "weeklyPushTitle": "Jouw week in WordAround",
-      "weeklyPushBody": "Bekijk wat je deze week hebt geleerd en wat het herhalen waard is."
+      "weeklyPushBody": "Bekijk wat je deze week hebt geleerd en wat het herhalen waard is.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

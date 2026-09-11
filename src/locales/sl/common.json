@@ -276,14 +276,12 @@
       "left": "Ostane še {{count}} besed"
     },
     "stat": {
-      "learnedToday": "Naučeno danes",
-      "words": "besed",
-      "accuracy": "Natančnost",
-      "greatJob": "Odlično delo!",
       "streak": "Niz",
       "days": "dni"
     },
     "continueLearning": "Nadaljuj z učenjem",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Vaši kompleti",
     "viewAll": "Prikaži vse",
     "review": "Ponovi",
@@ -1824,7 +1822,9 @@
       "dailyPushTitle": "Čas za vadbo",
       "dailyPushBody": "Nekaj minut z WordAroundom in niz se nadaljuje.",
       "weeklyPushTitle": "Vaš teden v WordAroundu",
-      "weeklyPushBody": "Poglejte, kaj ste se naučili ta teden in kaj je vredno ponoviti."
+      "weeklyPushBody": "Poglejte, kaj ste se naučili ta teden in kaj je vredno ponoviti.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

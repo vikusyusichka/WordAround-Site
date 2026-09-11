@@ -272,14 +272,12 @@
       "left": "Jäänud {{count}} sõna"
     },
     "stat": {
-      "learnedToday": "Täna õpitud",
-      "words": "sõna",
-      "accuracy": "Täpsus",
-      "greatJob": "Tubli töö!",
       "streak": "Seeria",
       "days": "päeva"
     },
     "continueLearning": "Jätka õppimist",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Sinu komplektid",
     "viewAll": "Vaata kõiki",
     "review": "Korda",
@@ -1778,7 +1776,9 @@
       "dailyPushTitle": "Aeg harjutada",
       "dailyPushBody": "Paar minutit WordAroundiga hoiab su seeria elus.",
       "weeklyPushTitle": "Sinu nädal WordAroundis",
-      "weeklyPushBody": "Vaata, mida sel nädalal õppisid ja mida tasub üle korrata."
+      "weeklyPushBody": "Vaata, mida sel nädalal õppisid ja mida tasub üle korrata.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

@@ -278,14 +278,12 @@
       "left": "Осталось {{count}} слов"
     },
     "stat": {
-      "learnedToday": "Выучено сегодня",
-      "words": "слов",
-      "accuracy": "Точность",
-      "greatJob": "Отличная работа!",
       "streak": "Серия",
       "days": "дней"
     },
     "continueLearning": "Продолжить обучение",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Ваши наборы",
     "viewAll": "Показать все",
     "review": "Повторить",
@@ -1827,7 +1825,9 @@
       "dailyPushTitle": "Пора заниматься",
       "dailyPushBody": "Несколько минут с WordAround — и серия жива.",
       "weeklyPushTitle": "Ваша неделя в WordAround",
-      "weeklyPushBody": "Посмотрите, что вы выучили за неделю и что стоит повторить."
+      "weeklyPushBody": "Посмотрите, что вы выучили за неделю и что стоит повторить.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

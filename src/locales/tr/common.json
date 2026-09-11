@@ -272,14 +272,12 @@
       "left": "{{count}} kelime kaldı"
     },
     "stat": {
-      "learnedToday": "Bugün öğrenilen",
-      "words": "kelime",
-      "accuracy": "Doğruluk",
-      "greatJob": "Harika iş!",
       "streak": "Seri",
       "days": "gün"
     },
     "continueLearning": "Öğrenmeye devam et",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Setlerin",
     "viewAll": "Tümünü gör",
     "review": "Tekrar et",
@@ -1778,7 +1776,9 @@
       "dailyPushTitle": "Pratik zamanı",
       "dailyPushBody": "WordAround ile birkaç dakika serinizi canlı tutar.",
       "weeklyPushTitle": "WordAround’daki haftanız",
-      "weeklyPushBody": "Bu hafta ne öğrendiğinizi ve neyi tekrar etmeye değer olduğunu görün."
+      "weeklyPushBody": "Bu hafta ne öğrendiğinizi ve neyi tekrar etmeye değer olduğunu görün.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

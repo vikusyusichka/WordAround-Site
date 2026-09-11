@@ -1,4 +1,4 @@
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 
 import { PREFERENCES_DEFAULTS, type Preferences } from '@/stores/preferencesStore';
 import {
@@ -7,6 +7,7 @@ import {
   msUntilNextWeekly,
   reminderTimeFromInput,
   reminderTimeToInput,
+  startReminderScheduler,
 } from '@/lib/webNotifications';
 
 const MINUTE = 60 * 1000;
@@ -83,5 +84,61 @@ describe('reminder time <-> input value', () => {
     expect(reminderTimeFromInput('')).toBeNull();
     expect(reminderTimeFromInput('25:00')).toBeNull();
     expect(reminderTimeFromInput('09:75')).toBeNull();
+  });
+});
+
+/* The streak switch used to persist and count toward the profile row while
+   scheduling nothing at all — the one promise in this file that the code did
+   not keep. */
+describe('startReminderScheduler', () => {
+  const armAt = (hour: number, minute: number, overrides: Partial<Preferences>) => {
+    const fired: string[] = [];
+    class FakeNotification {
+      static permission = 'granted';
+      constructor(title: string) {
+        fired.push(title);
+      }
+    }
+    vi.stubGlobal('Notification', FakeNotification);
+    vi.useFakeTimers();
+    vi.setSystemTime(new Date(2026, 0, 5, hour, minute, 0));
+    const cancel = startReminderScheduler(prefs(overrides), {
+      dailyTitle: 'daily',
+      dailyBody: '',
+      weeklyTitle: 'weekly',
+      weeklyBody: '',
+      streakTitle: 'streak',
+      streakBody: '',
+    });
+    return { fired, cancel };
+  };
+
+  afterEach(() => {
+    vi.useRealTimers();
+    vi.unstubAllGlobals();
+  });
+
+  it('fires the streak alert at 21:30', () => {
+    const { fired, cancel } = armAt(20, 0, { streakAlertsEnabled: true });
+    vi.advanceTimersByTime(89 * MINUTE);
+    expect(fired).toEqual([]);
+    vi.advanceTimersByTime(2 * MINUTE);
+    expect(fired).toEqual(['streak']);
+    cancel();
+  });
+
+  it('re-arms itself for the next day', () => {
+    const { fired, cancel } = armAt(21, 29, { streakAlertsEnabled: true });
+    vi.advanceTimersByTime(MINUTE);
+    vi.advanceTimersByTime(DAY);
+    expect(fired).toEqual(['streak', 'streak']);
+    cancel();
+  });
+
+  it('stays silent while the switch is off', () => {
+    const { fired, cancel } = armAt(20, 0, { streakAlertsEnabled: false });
+    vi.advanceTimersByTime(2 * HOUR);
+    expect(fired).toEqual([]);
+    cancel();
   });
 });

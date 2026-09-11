@@ -78,12 +78,12 @@ export interface HomeSetPreviewItem {
   blobColor: string;
 }
 
-/* MARK: - Static placeholders (mirror HomeViewModel.staticStatCards / staticTodayGoal).
-   These stay static in iOS too — no real stats backend yet. */
+/* The streak card. `value` here is only the shape's placeholder — the home
+   screen always overrides it with currentStreak (see dailyPracticeStats).
 
-/* The streak card, split out because the home screen renders it on its own
-   with a live value (see currentStreak in dailyPracticeStats). `value` here is
-   only the shape's placeholder — the card always overrides it. */
+   The "learned today" / "accuracy" / "today's goal" placeholders that used to
+   sit beside it are gone: nothing rendered them any more, but they still read
+   like live data (24 words, 87%, a bar at 80%) to anyone opening this file. */
 export const STREAK_CARD: StatCardItem = {
   id: 'streak',
   titleKey: 'home.stat.streak',
@@ -96,56 +96,6 @@ export const STREAK_CARD: StatCardItem = {
   subtitleColor: 'var(--color-text-secondary)',
   backgroundColor: 'var(--color-home-stat3-bg)',
   blobColor: 'var(--color-home-stat3-blob)',
-};
-
-export const STAT_CARDS: StatCardItem[] = [
-  {
-    id: 'learned-today',
-    titleKey: 'home.stat.learnedToday',
-    value: '24',
-    subtitleKey: 'home.stat.words',
-    iconSystemName: 'chart.bar.fill',
-    accentColor: 'var(--color-home-stat1-accent)',
-    titleColor: 'var(--color-home-stat1-title)',
-    valueColor: 'var(--color-primary-blue-dark)',
-    subtitleColor: 'var(--color-text-secondary)',
-    backgroundColor: 'var(--color-home-stat1-bg)',
-    blobColor: 'var(--color-home-stat1-blob)',
-  },
-  {
-    id: 'accuracy',
-    titleKey: 'home.stat.accuracy',
-    value: '87%',
-    subtitleKey: 'home.stat.greatJob',
-    iconSystemName: 'target',
-    accentColor: 'var(--color-home-stat2-accent)',
-    titleColor: 'var(--color-home-stat2-title)',
-    valueColor: 'var(--color-primary-blue-dark)',
-    subtitleColor: 'var(--color-home-stat2-sub)',
-    backgroundColor: 'var(--color-home-stat2-bg)',
-    blobColor: 'var(--color-home-stat2-blob)',
-  },
-  STREAK_CARD,
-];
-
-/* Today's goal — layout `goal`. Static (matches HomeViewModel.staticTodayGoal). */
-export const TODAY_GOAL: HomeSetPreviewItem = {
-  id: 'today-goal',
-  title: '', // rendered via i18n in the card wrapper
-  subtitle: '', // "6 words left" via i18n
-  iconSystemName: 'book.closed',
-  currentValue: 24,
-  totalValue: 30,
-  unit: 'words',
-  progress: 0.8,
-  accentColor: 'var(--color-primary-blue)',
-  backgroundColor: 'var(--color-goal-bg)',
-  progressBackgroundColor: 'var(--color-goal-progress-bg)',
-  titleColor: 'var(--color-primary-blue-dark)',
-  valueColor: 'var(--color-primary-blue-dark)',
-  subtitleColor: 'var(--color-text-secondary)',
-  iconBackground: 'var(--color-card-white)',
-  blobColor: 'var(--color-home-goal-blob)',
 };
 
 /* Real "Your sets" / "Continue learning" data now comes from Firestore via

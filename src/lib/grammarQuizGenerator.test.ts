@@ -154,4 +154,99 @@ describe('generateLocalQuestions', () => {
     expect(qs).toHaveLength(2);
     expect(qs.map((q) => q.order)).toEqual([0, 1]);
   });
+
+  it('comparison with a second form → multipleChoice between the two', () => {
+    const qs = generateLocalQuestions(
+      [
+        block('comparison', 'ser for identity', { secondaryText: 'estar for state' }),
+        block('paragraph', 'Both verbs translate as "to be" in English'),
+      ],
+      5,
+      new Set<GrammarQuizQuestionType>(['multipleChoice']),
+    );
+    const mc = qs.find((q) => q.type === 'multipleChoice');
+    expect(mc).toBeDefined();
+    expect(mc!.questionText).toContain('Which form is used for');
+    expect(mc!.options).toEqual(
+      ['Both are correct', 'Neither applies', 'estar for state', 'ser for identity'],
+    );
+    expect(mc!.correctAnswer).toBe('ser for identity');
+    expect(mc!.explanation).toBe('Compare: ser for identity vs estar for state');
+  });
+
+  it('comparison falls back to shortAnswer, phrased by whether a second form exists', () => {
+    const withSecond = generateLocalQuestions(
+      [
+        block('comparison', 'por', { secondaryText: 'para' }),
+        block('comparison', 'ser', { secondaryText: 'estar' }),
+      ],
+      1,
+      new Set<GrammarQuizQuestionType>(['shortAnswer']),
+    );
+    expect(withSecond[0].questionText).toBe('What is the difference between "por" and "para"?');
+    expect(withSecond[0].correctAnswer).toBe('por vs para');
+
+    const alone = generateLocalQuestions(
+      [block('comparison', 'the subjunctive'), block('comparison', 'the indicative')],
+      1,
+      new Set<GrammarQuizQuestionType>(['shortAnswer']),
+    );
+    expect(alone[0].questionText).toBe('When do you use: "the subjunctive"?');
+    expect(alone[0].correctAnswer).toBe('the subjunctive');
+  });
+
+  it('exercise blocks are quizzable, like paragraphs', () => {
+    const qs = generateLocalQuestions(
+      [
+        block('exercise', 'Rewrite each sentence using the past continuous tense'),
+        block('exercise', 'Fill the gaps with the correct preposition of place'),
+      ],
+      2,
+      new Set<GrammarQuizQuestionType>(['shortAnswer']),
+    );
+    expect(qs).toHaveLength(2);
+    expect(qs[0].questionText).toContain('Explain in your own words');
+  });
+
+  /* The gate and the generator have to agree on what counts as content, or the
+     learner is told the wrong thing about a note that cannot be quizzed. */
+  it('subheading and image are not usable — reports notEnoughContent, not a type mismatch', () => {
+    try {
+      generateLocalQuestions(
+        [
+          block('rule', 'Use ser for identity and origin'),
+          block('subheading', 'When to use each one'),
+          block('image', 'A diagram of the two verbs'),
+        ],
+        5,
+        ALL,
+      );
+      expect.unreachable();
+    } catch (e) {
+      expect((e as GrammarQuizGeneratorError).code).toBe('notEnoughContent');
+    }
+  });
+
+  it('a rule with no detail asks what it states, not to explain it', () => {
+    const [q] = generateLocalQuestions(
+      [
+        block('rule', 'Adjectives agree with the noun in gender and number'),
+        block('quote', 'Agreement is the backbone of Spanish grammar'),
+      ],
+      1,
+      new Set<GrammarQuizQuestionType>(['shortAnswer']),
+    );
+    expect(q.questionText).toBe('What does this grammar rule state?');
+
+    const [detailed] = generateLocalQuestions(
+      [
+        block('rule', 'Adjectives agree with the noun', { secondaryText: 'in gender and number' }),
+        block('quote', 'Agreement is the backbone of Spanish grammar'),
+      ],
+      1,
+      new Set<GrammarQuizQuestionType>(['shortAnswer']),
+    );
+    expect(detailed.questionText).toContain('Explain this grammar rule');
+    expect(detailed.correctAnswer).toBe('in gender and number');
+  });
 });

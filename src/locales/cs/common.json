@@ -276,14 +276,12 @@
       "left": "Zbývá {{count}} slov"
     },
     "stat": {
-      "learnedToday": "Naučeno dnes",
-      "words": "slov",
-      "accuracy": "Přesnost",
-      "greatJob": "Skvělá práce!",
       "streak": "Série",
       "days": "dní"
     },
     "continueLearning": "Pokračovat v učení",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Vaše sady",
     "viewAll": "Zobrazit vše",
     "review": "Opakovat",
@@ -1804,7 +1802,9 @@
       "dailyPushTitle": "Čas na procvičování",
       "dailyPushBody": "Pár minut s WordAround a série pokračuje.",
       "weeklyPushTitle": "Váš týden ve WordAround",
-      "weeklyPushBody": "Podívejte se, co jste se tento týden naučili a co stojí za zopakování."
+      "weeklyPushBody": "Podívejte se, co jste se tento týden naučili a co stojí za zopakování.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

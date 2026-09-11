@@ -27,6 +27,9 @@ export const DEFAULT_REMINDER_TIME: ReminderTime = { hour: 9, minute: 0 };
 /** Sunday 19:00 — the weekly-summary slot iOS schedules. */
 export const WEEKLY_SUMMARY_WEEKDAY = 0;
 export const WEEKLY_SUMMARY_TIME: ReminderTime = { hour: 19, minute: 0 };
+/** 21:30 daily — the streak-alert slot iOS schedules. Late enough that the
+    nudge only lands if the day really is about to be missed. */
+export const STREAK_ALERT_TIME: ReminderTime = { hour: 21, minute: 30 };
 
 export interface Preferences {
   theme: AppearanceTheme;

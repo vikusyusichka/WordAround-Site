@@ -272,14 +272,12 @@
       "left": "{{count}} sanaa jäljellä"
     },
     "stat": {
-      "learnedToday": "Opittu tänään",
-      "words": "sanaa",
-      "accuracy": "Tarkkuus",
-      "greatJob": "Hienoa työtä!",
       "streak": "Putki",
       "days": "päivää"
     },
     "continueLearning": "Jatka oppimista",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Settisi",
     "viewAll": "Näytä kaikki",
     "review": "Kertaa",
@@ -1778,7 +1776,9 @@
       "dailyPushTitle": "Aika harjoitella",
       "dailyPushBody": "Muutama minuutti WordAroundin parissa pitää putkesi elossa.",
       "weeklyPushTitle": "Viikkosi WordAroundissa",
-      "weeklyPushBody": "Katso, mitä opit tällä viikolla ja mitä kannattaa kerrata."
+      "weeklyPushBody": "Katso, mitä opit tällä viikolla ja mitä kannattaa kerrata.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

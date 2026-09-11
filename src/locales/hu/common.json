@@ -272,14 +272,12 @@
       "left": "Még {{count}} szó van hátra"
     },
     "stat": {
-      "learnedToday": "Ma megtanult",
-      "words": "szó",
-      "accuracy": "Pontosság",
-      "greatJob": "Szép munka!",
       "streak": "Sorozat",
       "days": "nap"
     },
     "continueLearning": "Tanulás folytatása",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "A csomagjaid",
     "viewAll": "Összes megtekintése",
     "review": "Ismétlés",
@@ -1778,7 +1776,9 @@
       "dailyPushTitle": "Ideje gyakorolni",
       "dailyPushBody": "Néhány perc a WordArounddal, és él a sorozatod.",
       "weeklyPushTitle": "A heted a WordAroundban",
-      "weeklyPushBody": "Nézd meg, mit tanultál ezen a héten, és mit érdemes átismételni."
+      "weeklyPushBody": "Nézd meg, mit tanultál ezen a héten, és mit érdemes átismételni.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

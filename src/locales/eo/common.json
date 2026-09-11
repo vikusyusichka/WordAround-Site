@@ -272,14 +272,12 @@
       "left": "Restas {{count}} vortoj"
     },
     "stat": {
-      "learnedToday": "Lernitaj hodiaŭ",
-      "words": "vortoj",
-      "accuracy": "Precizeco",
-      "greatJob": "Bonega laboro!",
       "streak": "Serio",
       "days": "tagoj"
     },
     "continueLearning": "Daŭrigi la lernadon",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Viaj aroj",
     "viewAll": "Vidi ĉiujn",
     "review": "Revizii",
@@ -1778,7 +1776,9 @@
       "dailyPushTitle": "Tempo por ekzerci",
       "dailyPushBody": "Kelkaj minutoj kun WordAround tenas vian serion viva.",
       "weeklyPushTitle": "Via semajno en WordAround",
-      "weeklyPushBody": "Vidu, kion vi lernis ĉi-semajne kaj kion indas ripeti."
+      "weeklyPushBody": "Vidu, kion vi lernis ĉi-semajne kaj kion indas ripeti.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {

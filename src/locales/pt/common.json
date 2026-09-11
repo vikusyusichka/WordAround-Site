@@ -272,14 +272,12 @@
       "left": "Faltam {{count}} palavras"
     },
     "stat": {
-      "learnedToday": "Aprendidas hoje",
-      "words": "palavras",
-      "accuracy": "Precisão",
-      "greatJob": "Bom trabalho!",
       "streak": "Sequência",
       "days": "dias"
     },
     "continueLearning": "Continuar a aprender",
+    "loadError": "Couldn't load your sets. Check your connection and try again.",
+    "retry": "Try again",
     "yourSets": "Os seus conjuntos",
     "viewAll": "Ver todos",
     "review": "Rever",
@@ -1778,7 +1776,9 @@
       "dailyPushTitle": "Hora de praticar",
       "dailyPushBody": "Alguns minutos com o WordAround mantêm a sua sequência viva.",
       "weeklyPushTitle": "A sua semana no WordAround",
-      "weeklyPushBody": "Veja o que aprendeu esta semana e o que vale a pena rever."
+      "weeklyPushBody": "Veja o que aprendeu esta semana e o que vale a pena rever.",
+      "streakPushTitle": "Don't lose your streak",
+      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
     }
   },
   "units": {
