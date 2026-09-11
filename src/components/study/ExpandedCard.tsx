@@ -12,7 +12,7 @@
    the overlay. Swipes and the arrow keys go through the same actions the
    buttons on the small card use. */
 import { useCallback, useEffect, useState } from 'react';
-import { AnimatePresence, motion } from 'motion/react';
+import { motion, useAnimationControls } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { SpeakerHigh, X } from '@phosphor-icons/react';
 
@@ -39,6 +39,15 @@ export const ExpandedCard = ({ open, state, theme, dispatch, onClose }: Expanded
   /* Which way the card flew out, so the next one can spring in from the other
      side the way iOS does. */
   const [exitTo, setExitTo] = useState<'left' | 'right' | null>(null);
+
+  /* The slide-in is driven by animation controls rather than by remounting the
+     card under a new key. A keyed remount inside AnimatePresence breaks its
+     bookkeeping: after a single answer the overlay's exit animation never
+     completed, so closing left an invisible full-screen dialog in the DOM,
+     eating every click on the page behind it. Same effect, one element that
+     never unmounts. */
+  const slide = useAnimationControls();
+  const cardId = card?.id ?? 'empty';
 
   const answer = useCallback(
     (outcome: 'known' | 'unknown') => {
@@ -72,6 +81,17 @@ export const ExpandedCard = ({ open, state, theme, dispatch, onClose }: Expanded
     return () => document.removeEventListener('keydown', onKeyDown);
   }, [open, answer, dispatch, onClose]);
 
+  useEffect(() => {
+    if (!open) return;
+    const from = exitTo === 'right' ? -460 : exitTo === 'left' ? 460 : 0;
+    slide.set({ x: from });
+    void slide.start({ x: 0, transition: { type: 'spring', stiffness: 260, damping: 26 } });
+    /* `exitTo` is deliberately not a dependency: it is set in the same event as
+       the card change, and listing it would replay the slide when only the
+       direction changed. */
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [cardId, open, slide]);
+
   /* The page behind must not scroll while a full-screen overlay is up. */
   useEffect(() => {
     if (!open) return;
@@ -86,7 +106,10 @@ export const ExpandedCard = ({ open, state, theme, dispatch, onClose }: Expanded
 
   const faceStyle = {
     background: theme.previewBackground,
-    border: `6px solid rgba(255,255,255,0.9)`,
+    /* The card's own rim. A literal white here is a bright frame around a dark
+       card on a dark page — the one place the dark-theme sweep missed, because
+       it is an inline rgba rather than a bg-white class. */
+    border: `6px solid color-mix(in srgb, var(--color-surface) 90%, transparent)`,
     boxShadow: `0 16px 28px ${theme.shadowColor}`,
     backfaceVisibility: 'hidden' as const,
     WebkitBackfaceVisibility: 'hidden' as const,
@@ -149,101 +172,119 @@ export const ExpandedCard = ({ open, state, theme, dispatch, onClose }: Expanded
     </div>
   );
 
+  if (!open) return null;
+
   return (
-    <AnimatePresence>
-      {open && (
-        <motion.div
-          className="fixed inset-0 z-[70] flex flex-col overflow-hidden lg:items-center lg:justify-center lg:bg-black/35 lg:p-8 lg:backdrop-blur-sm"
-          style={{ background: theme.screenBackground }}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          role="dialog"
-          aria-modal="true"
-          aria-label={t('study.expandedTitle')}
-        >
-          {/* From lg the whole thing becomes a capped panel on a dimmed page,
-              rather than a phone screen stretched across a monitor. */}
-          {/* A definite height, not `auto`: the card below fills its share of
-              it, and without one the whole column collapses to the height of
-              the picture and swallows the word and the example. */}
-          <div
-            className="flex h-full w-full flex-col lg:h-[min(92dvh,780px)] lg:max-w-[900px] lg:rounded-[36px] lg:p-8"
-            style={{ background: theme.screenBackground }}
+    <motion.div
+      /* No AnimatePresence, and therefore no exit animation. That is a
+         deliberate trade, made after this screen shipped a bug: leaving
+         full screen stopped every button on the page behind it responding.
+
+         AnimatePresence waits for each motion child inside it to report its
+         exit before it removes the wrapper. Two things in here unmount
+         while the overlay is open — the card, when you answer one and the
+         next takes its place, and the whole card slot, when the round-end
+         summary replaces it. Either one left the wrapper waiting for a
+         child that no longer existed, so the exit never completed and the
+         overlay stayed in the DOM at opacity 0: invisible, full-screen and
+         swallowing every click.
+
+         Fading out on close is worth less than a dialog that always
+         closes. Opening still animates. */
+      className="fixed inset-0 z-[70] flex flex-col overflow-hidden lg:items-center lg:justify-center lg:bg-black/35 lg:p-8 lg:backdrop-blur-sm"
+      style={{ background: theme.screenBackground }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      role="dialog"
+      aria-modal="true"
+      aria-label={t('study.expandedTitle')}
+    >
+      {/* From lg the whole thing becomes a capped panel on a dimmed page,
+          rather than a phone screen stretched across a monitor. */}
+      {/* A definite height, not `auto`: the card below fills its share of
+          it, and without one the whole column collapses to the height of
+          the picture and swallows the word and the example. */}
+      <div
+        /* Narrower than it was: with a portrait card in the middle, a
+           900px panel left the progress bar stretching far past the card
+           it belongs to. */
+        className="flex h-full w-full flex-col lg:h-[min(92dvh,780px)] lg:max-w-[620px] lg:rounded-[36px] lg:p-8"
+        style={{ background: theme.screenBackground }}
+      >
+        <div className="flex shrink-0 items-center justify-between px-5 pt-4 lg:px-0 lg:pt-0">
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label={t('study.close')}
+            className="grid size-10 place-items-center rounded-full shadow-[0_5px_10px_rgba(0,0,0,0.06)] transition-transform hover:-translate-y-0.5 focus-visible:outline-none lg:size-12"
+            style={{ background: theme.fieldBackground, color: theme.titleColor }}
           >
-            <div className="flex shrink-0 items-center justify-between px-5 pt-4 lg:px-0 lg:pt-0">
-              <button
-                type="button"
-                onClick={onClose}
-                aria-label={t('study.close')}
-                className="grid size-10 place-items-center rounded-full shadow-[0_5px_10px_rgba(0,0,0,0.06)] transition-transform hover:-translate-y-0.5 focus-visible:outline-none lg:size-12"
-                style={{ background: theme.fieldBackground, color: theme.titleColor }}
+            <X size={16} weight="bold" />
+          </button>
+        </div>
+
+        {state.isShowingRoundFinish ? (
+          <div className="flex flex-1 items-center justify-center overflow-y-auto p-5">
+            <RoundFinish
+              known={stats.known}
+              total={stats.total}
+              learning={stats.learning}
+              accent={theme.accent}
+              onRepeatUnknown={() => dispatch({ type: 'REPEAT_UNKNOWN' })}
+              onRestart={() => dispatch({ type: 'RESTART' })}
+            />
+          </div>
+        ) : (
+          <>
+            <div className="flex min-h-0 flex-1 items-center justify-center px-5 py-4 lg:px-6">
+              <motion.div
+                /* On a phone the card fills the screen, which is portrait
+                   already. On a desktop it used to fill the panel's width
+                   too and came out wider than it was tall — a banner, not a
+                   flashcard. From lg the height leads and the ratio sets
+                   the width, so it keeps a card's proportions whatever the
+                   window does. */
+                className="relative h-full min-h-[340px] w-full cursor-pointer [perspective:1600px] lg:aspect-[3/4] lg:h-full lg:max-w-full lg:min-h-0 lg:w-auto"
+                drag="x"
+                dragSnapToOrigin
+                dragElastic={0.55}
+                onDragEnd={(_, info) => {
+                  const outcome = swipeOutcome({
+                    dx: info.offset.x,
+                    dy: info.offset.y,
+                  });
+                  if (outcome) answer(outcome);
+                }}
+                onClick={() => dispatch({ type: 'FLIP' })}
+                animate={slide}
               >
-                <X size={16} weight="bold" />
-              </button>
+                <motion.div
+                  className="relative h-full w-full [transform-style:preserve-3d]"
+                  animate={{ rotateY: isFlipped ? 180 : 0 }}
+                  transition={{ type: 'spring', stiffness: 220, damping: 26 }}
+                >
+                  {face(card?.word ?? '', t('study.cardSubWord'), 'en-US', !isFlipped)}
+                  <div className="absolute inset-0 [transform:rotateY(180deg)]">
+                    {face(
+                      card?.translation ?? '',
+                      t('study.cardSubTranslation'),
+                      'uk-UA',
+                      isFlipped,
+                    )}
+                  </div>
+                </motion.div>
+              </motion.div>
             </div>
 
-            {state.isShowingRoundFinish ? (
-              <div className="flex flex-1 items-center justify-center overflow-y-auto p-5">
-                <RoundFinish
-                  known={stats.known}
-                  total={stats.total}
-                  learning={stats.learning}
-                  accent={theme.accent}
-                  onRepeatUnknown={() => dispatch({ type: 'REPEAT_UNKNOWN' })}
-                  onRestart={() => dispatch({ type: 'RESTART' })}
-                />
+            {state.trackProgress && (
+              <div className="shrink-0 px-6 pt-2 pb-7 lg:px-16 lg:pb-4">
+                <ProgressSection stats={stats} theme={theme} />
               </div>
-            ) : (
-              <>
-                <div className="flex min-h-0 flex-1 items-center px-5 py-4 lg:px-6">
-                  <motion.div
-                    key={card?.id ?? 'empty'}
-                    className="relative h-full min-h-[340px] w-full cursor-pointer [perspective:1600px]"
-                    drag="x"
-                    dragSnapToOrigin
-                    dragElastic={0.55}
-                    onDragEnd={(_, info) => {
-                      const outcome = swipeOutcome({
-                        dx: info.offset.x,
-                        dy: info.offset.y,
-                      });
-                      if (outcome) answer(outcome);
-                    }}
-                    onClick={() => dispatch({ type: 'FLIP' })}
-                    initial={{ x: exitTo === 'right' ? -460 : exitTo === 'left' ? 460 : 0 }}
-                    animate={{ x: 0 }}
-                    transition={{ type: 'spring', stiffness: 260, damping: 26 }}
-                  >
-                    <motion.div
-                      className="relative h-full w-full [transform-style:preserve-3d]"
-                      animate={{ rotateY: isFlipped ? 180 : 0 }}
-                      transition={{ type: 'spring', stiffness: 220, damping: 26 }}
-                    >
-                      {face(card?.word ?? '', t('study.cardSubWord'), 'en-US', !isFlipped)}
-                      <div className="absolute inset-0 [transform:rotateY(180deg)]">
-                        {face(
-                          card?.translation ?? '',
-                          t('study.cardSubTranslation'),
-                          'uk-UA',
-                          isFlipped,
-                        )}
-                      </div>
-                    </motion.div>
-                  </motion.div>
-                </div>
-
-                {state.trackProgress && (
-                  <div className="shrink-0 px-6 pt-2 pb-7 lg:px-16 lg:pb-4">
-                    <ProgressSection stats={stats} theme={theme} />
-                  </div>
-                )}
-              </>
             )}
-          </div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+          </>
+        )}
+      </div>
+</motion.div>
   );
 };
 
@@ -307,7 +348,7 @@ const ProgressSection = ({
   const counter = (count: number, label: string) => (
     <span
       className="flex h-12 w-[72px] shrink-0 flex-col items-center justify-center rounded-full bg-(--color-surface)/95 shadow-[0_5px_10px_rgba(0,0,0,0.05)] lg:h-14 lg:w-[92px]"
-      style={{ border: '1px solid rgba(255,255,255,0.85)' }}
+      style={{ border: '1px solid color-mix(in srgb, var(--color-surface) 85%, transparent)' }}
     >
       <span
         className="text-[15px] font-bold tabular-nums lg:text-[18px]"

@@ -30,6 +30,53 @@ const renderExpanded = (overrides: Partial<StudyState> = {}, dispatch = vi.fn(),
 };
 
 describe('ExpandedCard', () => {
+
+  /* Regression. The overlay used to be wrapped in AnimatePresence, which waits
+     for every motion child inside it to report its exit before removing the
+     wrapper. The card unmounts while the overlay is open — a new one replaces
+     it on every answer, and the round-end summary replaces the slot entirely —
+     which left the wrapper waiting on a child that no longer existed. The exit
+     never finished, so closing left an invisible full-screen dialog in the DOM
+     that swallowed every click on the page behind it: "the buttons stopped
+     responding after I left full screen". */
+  it('leaves nothing behind when it closes, even after the card has changed', () => {
+    const state = initialStudyState(cards);
+    const { rerender } = render(
+      <ExpandedCard open state={state} theme={theme} dispatch={vi.fn()} onClose={vi.fn()} />,
+    );
+    expect(screen.getByRole('dialog')).toBeInTheDocument();
+
+    /* Answering advances to the next card — the unmount that used to poison
+       the exit. */
+    const answered: StudyState = {
+      ...state,
+      currentCardIndex: 1,
+      studiedCardIDs: new Set(['c1']),
+    };
+    rerender(
+      <ExpandedCard open state={answered} theme={theme} dispatch={vi.fn()} onClose={vi.fn()} />,
+    );
+    expect(screen.getByRole('dialog')).toBeInTheDocument();
+
+    rerender(
+      <ExpandedCard open={false} state={answered} theme={theme} dispatch={vi.fn()} onClose={vi.fn()} />,
+    );
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+  });
+
+  it('closes cleanly from the round-end summary too', () => {
+    const state = initialStudyState(cards);
+    const finished: StudyState = { ...state, isShowingRoundFinish: true };
+    const { rerender } = render(
+      <ExpandedCard open state={finished} theme={theme} dispatch={vi.fn()} onClose={vi.fn()} />,
+    );
+    expect(screen.getByRole('dialog')).toBeInTheDocument();
+
+    rerender(
+      <ExpandedCard open={false} state={finished} theme={theme} dispatch={vi.fn()} onClose={vi.fn()} />,
+    );
+    expect(screen.queryByRole('dialog')).not.toBeInTheDocument();
+  });
   it('shows the image and the example — the two things no other screen shows', () => {
     renderExpanded();
     /* Both faces are in the DOM at once (the flip is a CSS transform), so each
