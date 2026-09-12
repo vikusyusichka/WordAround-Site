@@ -10,11 +10,13 @@
    learning, the same directions the arrow keys use. The Known/Unknown buttons
    below stay regardless — there is no swipe on a desktop, and a beginner
    should not have to discover a gesture to use the app. */
-import { motion } from 'motion/react';
+import { useEffect } from 'react';
+import { motion, useAnimationControls, useReducedMotion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { ArrowsOut, Heart, SpeakerHigh } from '@phosphor-icons/react';
 
 import { Icon } from '@/components/primitives/Icon';
+import { dealMotion, type DealFrom } from '@/lib/cardDeal';
 import { swipeOutcome } from '@/lib/cardSwipe';
 import type { Flashcard } from '@/lib/models';
 import type { SetTheme } from '@/lib/setColors';
@@ -32,6 +34,9 @@ interface StudyCardProps {
   onSpeak: (text: string, lang: string) => void;
   /** Opens the full-screen card (iOS onExpand). */
   onExpand?: () => void;
+  /** Which side the next card is dealt in from — the caller knows, because it
+      is the caller that answers. Omitted for a static preview of this card. */
+  dealFrom?: DealFrom;
   onKnown?: () => void;
   onUnknown?: () => void;
 }
@@ -59,8 +64,23 @@ export const StudyCard = ({
   onExpand,
   onKnown,
   onUnknown,
+  dealFrom = null,
 }: StudyCardProps) => {
   const { t } = useTranslation();
+  const prefersReducedMotion = useReducedMotion();
+  const deal = useAnimationControls();
+
+  /* The card is dealt in whenever the word changes — the same arc the
+     full-screen view uses, so answering feels like one gesture wherever you
+     do it. Driven by controls on a wrapper that never unmounts, rather than by
+     remounting under a key: a keyed remount here would restart the flip and
+     the drag along with it. */
+  useEffect(() => {
+    void deal.start(dealMotion(dealFrom, prefersReducedMotion ?? false));
+    /* `dealFrom` is set in the same event as the card change; depending on it
+       would replay the deal when only the direction changed. */
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [card.id, deal, prefersReducedMotion]);
 
   // The face must be OPAQUE: iOS's flashcard is a solid card, and a translucent
   // fill let the reverse face show through when backface-visibility didn't cull
@@ -157,7 +177,10 @@ export const StudyCard = ({
   );
 
   return (
-    <div className="relative mx-auto h-[260px] w-full max-w-2xl [perspective:1600px] md:h-[320px]">
+    <motion.div
+      className="relative mx-auto h-[260px] w-full max-w-2xl [perspective:1600px] md:h-[320px]"
+      animate={deal}
+    >
       <motion.div
         className="relative h-full w-full cursor-pointer [transform-style:preserve-3d]"
         animate={{ rotateY: showTranslation ? 180 : 0 }}
@@ -215,6 +238,6 @@ export const StudyCard = ({
       >
         <Heart size={20} weight={isMastered ? 'fill' : 'bold'} />
       </button>
-    </div>
+    </motion.div>
   );
 };

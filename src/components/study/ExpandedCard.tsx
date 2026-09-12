@@ -12,12 +12,13 @@
    the overlay. Swipes and the arrow keys go through the same actions the
    buttons on the small card use. */
 import { useCallback, useEffect, useState } from 'react';
-import { motion, useAnimationControls } from 'motion/react';
+import { motion, useAnimationControls, useReducedMotion } from 'motion/react';
 import { useTranslation } from 'react-i18next';
 import { SpeakerHigh, X } from '@phosphor-icons/react';
 
 import { Icon } from '@/components/primitives/Icon';
 import { RoundFinish } from '@/components/study/RoundFinish';
+import { dealFromOutcome, dealMotion, type DealFrom } from '@/lib/cardDeal';
 import { swipeOutcome } from '@/lib/cardSwipe';
 import { speak } from '@/lib/speech';
 import { activeCard, roundStats, type StudyAction, type StudyState } from '@/lib/studySession';
@@ -36,9 +37,9 @@ export const ExpandedCard = ({ open, state, theme, dispatch, onClose }: Expanded
   const card = activeCard(state);
   const stats = roundStats(state);
 
-  /* Which way the card flew out, so the next one can spring in from the other
-     side the way iOS does. */
-  const [exitTo, setExitTo] = useState<'left' | 'right' | null>(null);
+  /* Which side the next card should be dealt in from. */
+  const [dealFrom, setDealFrom] = useState<DealFrom>(null);
+  const prefersReducedMotion = useReducedMotion();
 
   /* The slide-in is driven by animation controls rather than by remounting the
      card under a new key. A keyed remount inside AnimatePresence breaks its
@@ -52,7 +53,7 @@ export const ExpandedCard = ({ open, state, theme, dispatch, onClose }: Expanded
   const answer = useCallback(
     (outcome: 'known' | 'unknown') => {
       if (!card) return;
-      setExitTo(outcome === 'known' ? 'right' : 'left');
+      setDealFrom(dealFromOutcome(outcome));
       dispatch({ type: outcome === 'known' ? 'KNOWN' : 'UNKNOWN' });
     },
     [card, dispatch],
@@ -83,14 +84,12 @@ export const ExpandedCard = ({ open, state, theme, dispatch, onClose }: Expanded
 
   useEffect(() => {
     if (!open) return;
-    const from = exitTo === 'right' ? -460 : exitTo === 'left' ? 460 : 0;
-    slide.set({ x: from });
-    void slide.start({ x: 0, transition: { type: 'spring', stiffness: 260, damping: 26 } });
-    /* `exitTo` is deliberately not a dependency: it is set in the same event as
-       the card change, and listing it would replay the slide when only the
+    void slide.start(dealMotion(dealFrom, prefersReducedMotion ?? false));
+    /* `dealFrom` is deliberately not a dependency: it is set in the same event
+       as the card change, and listing it would replay the deal when only the
        direction changed. */
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [cardId, open, slide]);
+  }, [cardId, open, slide, prefersReducedMotion]);
 
   /* The page behind must not scroll while a full-screen overlay is up. */
   useEffect(() => {
@@ -129,13 +128,13 @@ export const ExpandedCard = ({ open, state, theme, dispatch, onClose }: Expanded
     >
       <div className="flex shrink-0 flex-col items-center gap-2">
         <span
-          className="line-clamp-3 text-center text-[34px] leading-tight font-bold lg:text-[46px]"
+          className="line-clamp-3 text-center text-[34px] leading-tight font-bold lg:text-[46px] xl:text-[56px]"
           style={{ color: theme.titleColor }}
         >
           {text || t('study.noTranslation')}
         </span>
         <span
-          className="text-[13px] font-semibold lg:text-[16px]"
+          className="text-[13px] font-semibold lg:text-[16px] xl:text-[18px]"
           style={{ color: theme.mutedTextColor }}
         >
           {sublabel}
@@ -205,10 +204,13 @@ export const ExpandedCard = ({ open, state, theme, dispatch, onClose }: Expanded
           it, and without one the whole column collapses to the height of
           the picture and swallows the word and the example. */}
       <div
-        /* Narrower than it was: with a portrait card in the middle, a
-           900px panel left the progress bar stretching far past the card
-           it belongs to. */
-        className="flex h-full w-full flex-col lg:h-[min(92dvh,780px)] lg:max-w-[620px] lg:rounded-[36px] lg:p-8"
+        /* The panel's height is what sizes the card — the card takes the
+           space left over and its 3:4 ratio turns that into a width. So the
+           ceiling here IS the card's ceiling, and at 780px it left a big
+           monitor mostly empty. It rises with the viewport now, and the width
+           cap rises with it so the panel still hugs the card rather than
+           stretching the progress bar past it. */
+        className="flex h-full w-full flex-col lg:h-[min(94dvh,1040px)] lg:max-w-[min(88vw,760px)] lg:rounded-[36px] lg:p-8"
         style={{ background: theme.screenBackground }}
       >
         <div className="flex shrink-0 items-center justify-between px-5 pt-4 lg:px-0 lg:pt-0">

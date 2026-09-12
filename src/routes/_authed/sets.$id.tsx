@@ -17,6 +17,7 @@ import { CardListRow } from '@/components/study/CardListRow';
 import { CardEditDialog } from '@/components/study/CardEditDialog';
 import { useDeleteSet, useSetsQuery } from '@/hooks/useSets';
 import { useStudySession } from '@/hooks/useStudySession';
+import { dealFromOutcome, type DealFrom } from '@/lib/cardDeal';
 import { activeCard, counts, filteredCards, roundStats } from '@/lib/studySession';
 import { recordOpenedSet } from '@/lib/recentSets';
 import { speak } from '@/lib/speech';
@@ -94,6 +95,13 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
   const [dialogCard, setDialogCard] = useState<Flashcard | null>(null);
   const [dialogOpen, setDialogOpen] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
+  /* Which side the next card gets dealt in from. Lives here because both the
+     card's own swipe and the buttons under it answer, and they must agree. */
+  const [dealFrom, setDealFrom] = useState<DealFrom>(null);
+  const answer = (outcome: 'known' | 'unknown') => {
+    setDealFrom(dealFromOutcome(outcome));
+    dispatch({ type: outcome === 'known' ? 'KNOWN' : 'UNKNOWN' });
+  };
   const [pendingCardDelete, setPendingCardDelete] = useState<Flashcard | null>(null);
   const [isConfirmingSetDelete, setIsConfirmingSetDelete] = useState(false);
 
@@ -131,18 +139,26 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
       {/* iOS repaints the whole detail screen in the set's color. */}
       <ThemedScreen background={theme.screenBackground} />
 
-      {/* Top bar — back on the left, session actions on the right (iOS TopBar). */}
-      <div className="mb-4 flex items-center justify-between gap-3">
+      {/* Header — back, the set's icon and title, and the set actions, all on
+          one line. iOS gives the title a line of its own, but iOS is working
+          with a phone's width; on a monitor that line left the title stranded
+          under a row that was otherwise empty.
+
+          Below sm the title drops to its own line anyway: back, the icon and
+          two buttons leave about a hundred pixels on a 390px screen, which is
+          a few characters of a name. */}
+      <div className="mb-6 flex flex-wrap items-center gap-x-3.5 gap-y-3">
         <button
           type="button"
           onClick={() => void navigate({ to: '/sets' })}
           aria-label={t('sets.backToSets')}
-          className={iconBtn}
+          className={`${iconBtn} order-1 shrink-0`}
           style={{ background: theme.fieldBackground, color: theme.titleColor }}
         >
           <CaretLeft size={18} weight="bold" />
         </button>
-        <div className="flex gap-2">
+
+        <div className="order-2 ml-auto flex shrink-0 gap-2 sm:order-4 sm:ml-0">
           <button
             type="button"
             onClick={onEdit}
@@ -162,17 +178,21 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
             <Trash size={18} weight="bold" />
           </button>
         </div>
-      </div>
 
-      {/* Header — big set title in the set's colour, its own line (iOS Header). */}
-      <div className="mb-6 flex items-center gap-3.5">
-        <span className="grid size-12 shrink-0 place-items-center rounded-2xl" style={{ background: theme.accent }}>
+        {/* A zero-height full-width item: the standard way to force a flex line
+            break, here only on a phone. */}
+        <div aria-hidden className="order-3 basis-full sm:hidden" />
+
+        <span
+          className="order-4 grid size-12 shrink-0 place-items-center rounded-2xl sm:order-2"
+          style={{ background: theme.accent }}
+        >
           <Icon
             name={set.icon.type === 'systemName' ? set.icon.value : 'rectangle.stack.fill'}
             className="size-6 text-white"
           />
         </span>
-        <div className="flex min-w-0 flex-col">
+        <div className="order-5 flex min-w-0 flex-1 flex-col sm:order-3">
           <h1 className="truncate text-[28px] font-bold lg:text-[32px]" style={{ color: theme.titleColor }}>
             {set.title}
           </h1>
@@ -214,12 +234,13 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
             onToggleMastered={() => dispatch({ type: 'TOGGLE_MASTERED', cardId: card.id })}
             onSpeak={speak}
             onExpand={() => setIsExpanded(true)}
-            onKnown={() => dispatch({ type: 'KNOWN' })}
-            onUnknown={() => dispatch({ type: 'UNKNOWN' })}
+            onKnown={() => answer('known')}
+            onUnknown={() => answer('unknown')}
+            dealFrom={dealFrom}
           />
           <StudyControls
-            onKnown={() => dispatch({ type: 'KNOWN' })}
-            onUnknown={() => dispatch({ type: 'UNKNOWN' })}
+            onKnown={() => answer('known')}
+            onUnknown={() => answer('unknown')}
             onFlip={() => dispatch({ type: 'FLIP' })}
             isSuspended={isExpanded}
           />
