@@ -24,11 +24,11 @@ import {
 } from '@/lib/speakingFreeSpeaking';
 import {
   CONVERSATION_LENGTH_MINUTES,
-  speakingLocaleFor,
   type ConversationLength,
   type SpeakingFeedback,
   type SpeakingState,
 } from '@/lib/speakingTypes';
+import { voiceLocaleFor } from '@/lib/voiceLocales';
 import { stopListeningSpeech } from '@/lib/speech';
 
 export interface DescribePictureSetup {
@@ -55,7 +55,7 @@ export const useDescribePicture = (setup: DescribePictureSetup) => {
   const [isGeneratingFeedback, setIsGeneratingFeedback] = useState(false);
   const [feedbackReason, setFeedbackReason] = useState<string | null>(null);
 
-  const locale = speakingLocaleFor(setup.languageId);
+  const locale = voiceLocaleFor(setup.languageId);
   const speechSupported = isSpeechRecognitionSupported();
 
   const recognizerRef = useRef<SpeechRecognizer | null>(null);

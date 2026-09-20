@@ -61,7 +61,7 @@ function NoteEditorRoute() {
   const { topicId, noteId } = Route.useParams();
   const isNew = noteId === 'new';
   const { data: topics } = useGrammarTopicsQuery();
-  const { data: notes, isLoading } = useGrammarNotesQuery(topicId);
+  const { data: notes, isLoading, isError } = useGrammarNotesQuery(topicId);
 
   const topic = topics?.find((tp) => tp.id === topicId);
   const existing = notes?.find((n) => n.id === noteId);
@@ -71,6 +71,16 @@ function NoteEditorRoute() {
       <ContentContainer fluid>
         <p className="py-16 text-center text-[15px] font-medium text-(--color-text-secondary)">
           {t('writing.grammar.loading')}
+        </p>
+      </ContentContainer>
+    );
+  }
+
+  if (!isNew && isError) {
+    return (
+      <ContentContainer fluid>
+        <p role="alert" className="py-16 text-center text-[15px] font-medium text-(--color-cs-red)">
+          {t('writing.grammar.loadError')}
         </p>
       </ContentContainer>
     );

@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <!-- The first paint, before applyTheme() runs. Both tags used to carry the
+         light value, so a dark-theme reader got a bright status bar. From here
+         on lib/appearance.ts rewrites these to the theme actually in force,
+         which is what an in-app theme choice needs. -->
     <meta name="theme-color" content="#F6F6FB" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#F6F6FB" />
+    <meta name="theme-color" content="#0F1424" media="(prefers-color-scheme: dark)" />
     <meta
       name="description"
       content="Learn languages actively — flashcards, writing, reading, listening and speaking practice."

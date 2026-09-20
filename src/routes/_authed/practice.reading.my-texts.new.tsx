@@ -139,7 +139,9 @@ function AddTextScreen() {
     setImportProgress(0);
     setImportError(null);
     try {
-      const text = await extractTextFromImage(file, (ratio) => setImportProgress(ratio));
+      const text = await extractTextFromImage(file, languageId, (ratio) =>
+        setImportProgress(ratio),
+      );
       applyImported(text, 'photo', { 'source.fileName': file.name });
     } catch {
       setImportError(t('reading.addText.import.imageError'));

@@ -20,6 +20,7 @@ import { ListeningResultView } from '@/components/listening/ListeningResultView'
 import { ListeningWordSheet } from '@/components/listening/ListeningWordSheet';
 import { useUid } from '@/hooks/useFolders';
 import { useSessionStore } from '@/stores/sessionStore';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import { findLanguage } from '@/lib/essayTypes';
 import {
   formatDuration,
@@ -225,6 +226,12 @@ function ImportVideoScreen() {
     });
     setResult(finalResult);
     persist({ status: 'completed', result: finalResult, progress: 1 });
+    recordPractice({
+      skill: 'listening',
+      value: elapsedSeconds,
+      sourceModeID: 'import-video',
+      sessionId: sessionIdRef.current,
+    });
     setScreen('result');
   };
 

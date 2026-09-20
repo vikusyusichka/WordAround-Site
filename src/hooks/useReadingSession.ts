@@ -147,8 +147,29 @@ export const useReadingSession = (item: ReadingLibraryItem) => {
     dispatch({ type: 'FINISH', wordCount: item.wordCount });
   }, [item.wordCount]);
 
-  /* Persist completion once the reducer has scored the session. */
+  /* Persist completion once the reducer has scored the session.
+
+     The failure used to go into a bare `catch {}`: the result screen appeared,
+     Firestore never heard about it, and the session came back unfinished on the
+     next reload with nothing having said so. Now the result screen carries the
+     bad news and the reader can retry. */
   const persistedRef = useRef(false);
+  const [saveFailed, setSaveFailed] = useState(false);
+
+  const persistCompletion = useCallback(() => {
+    if (!state.result) return;
+    setSaveFailed(false);
+    void markReadingCompleted(item.ownerUID, item.id, {
+      readingTimeSeconds: state.result.readingTimeSeconds,
+      comprehensionScore: state.result.comprehensionPercent / 100,
+    })
+      .then(() => qc.invalidateQueries({ queryKey: ['readingItems'] }))
+      .catch((error: unknown) => {
+        console.error('[useReadingSession] could not mark the text complete', error);
+        setSaveFailed(true);
+      });
+  }, [state.result, item.id, item.ownerUID, qc]);
+
   useEffect(() => {
     if (state.phase === 'completed' && state.result && !persistedRef.current) {
       persistedRef.current = true;
@@ -157,14 +178,9 @@ export const useReadingSession = (item: ReadingLibraryItem) => {
         value: state.result.readingTimeSeconds,
         sourceModeID: item.modeID,
       });
-      void markReadingCompleted(item.ownerUID, item.id, {
-        readingTimeSeconds: state.result.readingTimeSeconds,
-        comprehensionScore: state.result.comprehensionPercent / 100,
-      })
-        .then(() => qc.invalidateQueries({ queryKey: ['readingItems'] }))
-        .catch(() => {});
+      persistCompletion();
     }
-  }, [state.phase, state.result, item.id, item.ownerUID, item.modeID, qc]);
+  }, [state.phase, state.result, item.modeID, persistCompletion]);
 
   return {
     state,
@@ -177,5 +193,7 @@ export const useReadingSession = (item: ReadingLibraryItem) => {
     handleWordTap,
     selectTarget,
     finishSession,
+    saveFailed,
+    retrySave: persistCompletion,
   };
 };

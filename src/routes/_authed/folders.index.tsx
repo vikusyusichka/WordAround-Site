@@ -25,7 +25,8 @@ function FoldersPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { data: folders, isLoading, isError } = useFoldersQuery();
-  const { data: sets } = useSetsQuery();
+  /* A failed sets read must not be rendered as "0 sets" in every folder. */
+  const { data: sets, isError: setsFailed } = useSetsQuery();
   const deleteFolder = useDeleteFolder();
   const reorderFolders = useReorderFolders();
 
@@ -115,7 +116,7 @@ function FoldersPage() {
               <div className="min-w-0 flex-1 cursor-grab active:cursor-grabbing">
                 <FolderCard
                   folder={folder}
-                  setCount={setsPerFolder.get(folder.id) ?? 0}
+                  setCount={setsFailed ? null : (setsPerFolder.get(folder.id) ?? 0)}
                   variant="row"
                   interactive={false}
                   onOpen={() => {}}
@@ -131,7 +132,7 @@ function FoldersPage() {
             <FolderCard
               key={folder.id}
               folder={folder}
-              setCount={setsPerFolder.get(folder.id) ?? 0}
+              setCount={setsFailed ? null : (setsPerFolder.get(folder.id) ?? 0)}
               variant={view}
               onOpen={() => void navigate({ to: '/folders/$id', params: { id: folder.id } })}
               onEdit={() =>

@@ -13,7 +13,7 @@ import {
   type ShadowingError,
   type ShadowingPhrase,
 } from '@/lib/shadowing';
-import { speakingLocaleFor } from '@/lib/speakingTypes';
+import { voiceLocaleFor } from '@/lib/voiceLocales';
 import { speakListening, stopListeningSpeech } from '@/lib/speech';
 
 export interface ShadowingSetup {
@@ -32,7 +32,7 @@ export const useShadowing = (setup: ShadowingSetup) => {
   const [completedIds, setCompletedIds] = useState<string[]>([]);
 
   const recorder = useVoiceRecorder();
-  const locale = speakingLocaleFor(setup.languageId);
+  const locale = voiceLocaleFor(setup.languageId);
   const seededRef = useRef(false);
   const loadingRef = useRef(false);
   const sessionStartedAtRef = useRef<number | null>(null);

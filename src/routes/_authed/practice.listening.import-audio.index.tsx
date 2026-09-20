@@ -17,6 +17,7 @@ import { OptionPill, OptionPillGroup } from '@/components/practice/OptionPill';
 import { StartButton } from '@/components/practice/StartButton';
 import { ListeningQuestionList } from '@/components/listening/ListeningQuestionList';
 import { ListeningResultView } from '@/components/listening/ListeningResultView';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import { findLanguage } from '@/lib/essayTypes';
 import {
   formatDuration,
@@ -300,6 +301,12 @@ function ImportAudioScreen() {
     });
     setResult(finalResult);
     persist({ status: 'completed', result: finalResult, progress: 1 });
+    recordPractice({
+      skill: 'listening',
+      value: elapsedSeconds,
+      sourceModeID: 'import-audio',
+      sessionId: sessionIdRef.current,
+    });
     setScreen('result');
   };
 

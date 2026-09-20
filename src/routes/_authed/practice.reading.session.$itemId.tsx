@@ -30,7 +30,7 @@ export const Route = createFileRoute('/_authed/practice/reading/session/$itemId'
 function ReadingItemScreen() {
   const { t } = useTranslation();
   const { itemId } = Route.useParams();
-  const { data: items, isLoading } = useReadingItemsQuery();
+  const { data: items, isLoading, isError } = useReadingItemsQuery();
   const item = items?.find((i) => i.id === itemId);
   const [generation, setGeneration] = useState(0);
 
@@ -39,6 +39,18 @@ function ReadingItemScreen() {
       <ContentContainer fluid>
         <p className="py-16 text-center text-[15px] font-medium text-(--color-text-secondary)">
           {t('reading.loading')}
+        </p>
+      </ContentContainer>
+    );
+  }
+
+  /* "Not found" would tell the reader a story they are in the middle of was
+     deleted, when the network simply blinked. */
+  if (isError) {
+    return (
+      <ContentContainer fluid>
+        <p role="alert" className="py-16 text-center text-[15px] font-medium text-(--color-cs-red)">
+          {t('reading.loadError')}
         </p>
       </ContentContainer>
     );
@@ -82,6 +94,8 @@ function ReadingSessionScreen({ item, onReadAgain }: ReadingSessionScreenProps) 
     handleWordTap,
     selectTarget,
     finishSession,
+    saveFailed,
+    retrySave,
   } = useReadingSession(item);
 
   const isFromSets = item.modeID === 'reading-from-sets';
@@ -190,12 +204,31 @@ function ReadingSessionScreen({ item, onReadAgain }: ReadingSessionScreenProps) 
         )}
 
         {state.phase === 'completed' && state.result && (
-          <ReadingResultView
-            result={state.result}
-            title={item.title}
-            onReadAgain={onReadAgain}
-            onBack={goBack}
-          />
+          <>
+            {/* The score is real either way; what may have failed is recording
+                that this text is finished. Saying so beats letting the text
+                quietly reappear as unread. */}
+            {saveFailed && (
+              <div className="flex flex-col items-start gap-2 rounded-2xl border border-(--color-cs-red)/30 bg-(--color-cs-red)/5 px-4 py-3">
+                <p role="alert" className="text-[14px] font-semibold text-(--color-cs-red)">
+                  {t('reading.saveFailed')}
+                </p>
+                <button
+                  type="button"
+                  onClick={retrySave}
+                  className="text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
+                >
+                  {t('home.retry')}
+                </button>
+              </div>
+            )}
+            <ReadingResultView
+              result={state.result}
+              title={item.title}
+              onReadAgain={onReadAgain}
+              onBack={goBack}
+            />
+          </>
         )}
       </div>
     </ContentContainer>

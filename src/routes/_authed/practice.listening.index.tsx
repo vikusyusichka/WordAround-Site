@@ -1,8 +1,9 @@
-/* Listening landing — /practice/listening. Static file wins over
-   practice.$mode (Phase-4A precedent). The progress card is REAL — minutes
-   are computed from the local IndexedDB session store (iOS parity: completed
-   sessions updated today vs a 15-minute goal). */
-import { useEffect, useState } from 'react';
+/* Listening landing — /practice/listening.
+
+   The progress card reads the shared practice log, like the other three
+   landings. It used to read the listening session store directly and pin the
+   goal to a constant of its own, which meant the learner's chosen daily target
+   was honoured everywhere except here. */
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
@@ -10,7 +11,7 @@ import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { ProgressCard } from '@/components/home/ProgressCard';
 import { PracticeModeCard } from '@/components/practice/PracticeModeCard';
-import { DAILY_GOAL_MINUTES, minutesListenedToday } from '@/lib/listeningStore';
+import { useDailyProgress, withDailyProgress } from '@/hooks/useDailyProgress';
 import {
   LISTENING_MENU_ITEMS,
   LISTENING_TODAY_GOAL,
@@ -24,11 +25,7 @@ export const Route = createFileRoute('/_authed/practice/listening/')({
 function ListeningLanding() {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const [minutes, setMinutes] = useState(0);
-
-  useEffect(() => {
-    void minutesListenedToday().then(setMinutes).catch(() => {});
-  }, []);
+  const progress = useDailyProgress('listening');
 
   const handleSelect = (mode: ListeningModeId) => {
     if (mode === 'listen-from-text') void navigate({ to: '/practice/listening/from-text' });
@@ -43,13 +40,7 @@ function ListeningLanding() {
 
       <div className="flex flex-col gap-8">
         <ProgressCard
-          item={{
-            ...LISTENING_TODAY_GOAL,
-            currentValue: minutes,
-            totalValue: DAILY_GOAL_MINUTES,
-            unit: t('units.min'),
-            progress: Math.min(minutes / DAILY_GOAL_MINUTES, 1),
-          }}
+          item={withDailyProgress(LISTENING_TODAY_GOAL, progress, t('units.min'))}
           layout="goal"
           title={t('listening.today.title')}
           subtitle={t('listening.today.subtitle')}

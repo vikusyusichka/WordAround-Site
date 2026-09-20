@@ -38,6 +38,28 @@ export const resolveTheme = (theme: AppearanceTheme, systemIsDark = prefersDark(
 export const colorSchemeFor = (theme: AppearanceTheme): string =>
   theme === 'system' ? 'light dark' : theme;
 
+/* The browser paints its own chrome — an installed PWA's status bar, the tab
+   strip on some mobile browsers — from <meta name="theme-color">. The tag is
+   static in index.html, so before this the app could be fully dark with a
+   bright band across the top. A media-scoped tag would not be enough either:
+   the theme can be chosen inside the app against the system preference. */
+const THEME_COLORS: Record<ResolvedTheme, string> = {
+  light: '#f6f6fb',
+  dark: '#0f1424',
+};
+
+const applyThemeColor = (resolved: ResolvedTheme): void => {
+  const tags = document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]');
+  if (tags.length === 0) return;
+  /* index.html ships a media-scoped tag and a default one. Dropping the media
+     attribute is what makes the value apply — otherwise the browser keeps
+     matching it against the OS preference the app has just overridden. */
+  tags.forEach((tag) => {
+    tag.removeAttribute('media');
+    tag.content = THEME_COLORS[resolved];
+  });
+};
+
 /** Writes the theme onto the root element.
 
     `force` is how the signed-out screens stay light: they are a drawn brand
@@ -46,8 +68,10 @@ export const colorSchemeFor = (theme: AppearanceTheme): string =>
 export const applyTheme = (theme: AppearanceTheme, force?: ResolvedTheme): void => {
   if (typeof document === 'undefined') return;
   const root = document.documentElement;
-  root.dataset.theme = force ?? resolveTheme(theme);
+  const resolved = force ?? resolveTheme(theme);
+  root.dataset.theme = resolved;
   root.style.colorScheme = force ?? colorSchemeFor(theme);
+  applyThemeColor(resolved);
 };
 
 /** Re-applies when the OS flips while the app is open — otherwise "System"

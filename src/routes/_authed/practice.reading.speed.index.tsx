@@ -56,7 +56,11 @@ function SpeedReadingScreen() {
   const navigate = useNavigate();
   const uid = useUid();
   const saveItem = useSaveReadingItem();
-  const { data: savedItems } = useReadingItemsQuery('speed-reading');
+  const {
+    data: savedItems,
+    isLoading: savedLoading,
+    isError: savedFailed,
+  } = useReadingItemsQuery('speed-reading');
 
   const [config, setConfig] = useState<SpeedConfiguration>({
     target: 'balanced',
@@ -240,12 +244,24 @@ function SpeedReadingScreen() {
               onClick={() => void startSession()}
             />
 
-            {savedItems && savedItems.length > 0 && (
+            {/* The section used to vanish without a word when the read failed —
+                no spinner, no message, just one fewer thing on the page. */}
+            {(savedLoading || savedFailed || (savedItems && savedItems.length > 0)) && (
               <section className="flex flex-col gap-2">
                 <h2 className="text-[16px] font-bold text-(--color-primary-blue-dark)">
                   {t('reading.speed.recentTitle')}
                 </h2>
-                {savedItems.slice(0, 5).map((item) => (
+                {savedLoading && (
+                  <p className="text-[14px] font-medium text-(--color-text-secondary)">
+                    {t('reading.loading')}
+                  </p>
+                )}
+                {savedFailed && (
+                  <p role="alert" className="text-[14px] font-medium text-(--color-cs-red)">
+                    {t('reading.loadError')}
+                  </p>
+                )}
+                {(savedItems ?? []).slice(0, 5).map((item) => (
                   <div
                     key={item.id}
                     className="flex items-center justify-between rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 px-4 py-3 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"

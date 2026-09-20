@@ -10,8 +10,6 @@ import type { ListeningPersistedSession } from '@/lib/listeningTypes';
 const SESSIONS_KEY = 'wa.listening.sessions.v1';
 const MEDIA_PREFIX = 'wa.listening.media.';
 
-export const DAILY_GOAL_MINUTES = 15;
-
 const readAll = async (): Promise<ListeningPersistedSession[]> => {
   try {
     const raw = await get<ListeningPersistedSession[]>(SESSIONS_KEY);

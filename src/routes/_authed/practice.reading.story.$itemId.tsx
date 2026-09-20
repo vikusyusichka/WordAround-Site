@@ -36,7 +36,7 @@ function StorySessionScreen() {
   const navigate = useNavigate();
   const uid = useUid();
   const { itemId } = Route.useParams();
-  const { data: items, isLoading } = useReadingItemsQuery('story-mode');
+  const { data: items, isLoading, isError } = useReadingItemsQuery('story-mode');
   const item = items?.find((i) => i.id === itemId);
 
   if (isLoading) {
@@ -44,6 +44,17 @@ function StorySessionScreen() {
       <ContentContainer fluid>
         <p className="py-16 text-center text-[15px] font-medium text-(--color-text-secondary)">
           {t('reading.loading')}
+        </p>
+      </ContentContainer>
+    );
+  }
+  /* "Not found" would tell the reader a story they are in the middle of was
+     deleted, when the network simply blinked. */
+  if (isError) {
+    return (
+      <ContentContainer fluid>
+        <p role="alert" className="py-16 text-center text-[15px] font-medium text-(--color-cs-red)">
+          {t('reading.loadError')}
         </p>
       </ContentContainer>
     );

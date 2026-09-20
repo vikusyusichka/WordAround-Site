@@ -13,7 +13,7 @@ import {
   type PronunciationFocus,
   type PronunciationItem,
 } from '@/lib/pronunciationTrainer';
-import { speakingLocaleFor } from '@/lib/speakingTypes';
+import { voiceLocaleFor } from '@/lib/voiceLocales';
 import { speakListening, stopListeningSpeech } from '@/lib/speech';
 
 export interface PronunciationSetup {
@@ -35,7 +35,7 @@ export const usePronunciationTrainer = (setup: PronunciationSetup) => {
   const [scoringAvailable, setScoringAvailable] = useState<boolean | null>(null);
 
   const recorder = useVoiceRecorder();
-  const locale = speakingLocaleFor(setup.languageId);
+  const locale = voiceLocaleFor(setup.languageId);
   const seededRef = useRef(false);
   const loadingRef = useRef(false);
   const sessionStartedAtRef = useRef<number | null>(null);

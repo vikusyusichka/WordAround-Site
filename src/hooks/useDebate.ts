@@ -27,13 +27,13 @@ import { generateSpeakingFeedback } from '@/lib/speakingFeedback';
 import { generateConversationTopic } from '@/lib/speakingTopics';
 import {
   CONVERSATION_LENGTH_MINUTES,
-  speakingLocaleFor,
   type ConversationLength,
   type SpeakingContext,
   type SpeakingFeedback,
   type SpeakingMessage,
   type SpeakingState,
 } from '@/lib/speakingTypes';
+import { voiceLocaleFor } from '@/lib/voiceLocales';
 import { speakListening, stopListeningSpeech } from '@/lib/speech';
 
 export interface DebateSetup {
@@ -62,7 +62,7 @@ export const useDebate = (setup: DebateSetup) => {
   const [isGeneratingFeedback, setIsGeneratingFeedback] = useState(false);
   const [feedbackReason, setFeedbackReason] = useState<string | null>(null);
 
-  const locale = speakingLocaleFor(setup.languageId);
+  const locale = voiceLocaleFor(setup.languageId);
   const speechSupported = isSpeechRecognitionSupported();
 
   const recognizerRef = useRef<SpeechRecognizer | null>(null);

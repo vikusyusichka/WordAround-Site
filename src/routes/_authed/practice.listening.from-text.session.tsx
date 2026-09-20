@@ -11,16 +11,17 @@ import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { ListeningResultView } from '@/components/listening/ListeningResultView';
 import { Icon } from '@/components/primitives/Icon';
+import { recordPractice } from '@/lib/dailyPracticeStats';
 import { findLanguage } from '@/lib/essayTypes';
 import { generateListeningQuestions } from '@/lib/listeningQuestionGenerator';
 import { makeListeningResult } from '@/lib/listeningScoring';
 import { getListeningSession, saveListeningSession } from '@/lib/listeningStore';
 import {
-  listeningLocaleFor,
   VOICE_SPEED_META,
   type ListeningPersistedSession,
   type ListeningQuestionType,
 } from '@/lib/listeningTypes';
+import { voiceLocaleFor } from '@/lib/voiceLocales';
 import {
   pauseListeningSpeech,
   resumeListeningSpeech,
@@ -144,7 +145,7 @@ function ListenFromTextSession() {
     if (!session?.text) return;
     if (reset) setPlaybackElapsed(0);
     speakListening(session.text, {
-      locale: listeningLocaleFor(session.languageId),
+      locale: voiceLocaleFor(session.languageId),
       rate: VOICE_SPEED_META[session.voiceSpeed].ttsRate,
       voiceType: session.voiceType,
       onStart: () => setPlayback('playing'),
@@ -193,6 +194,12 @@ function ListenFromTextSession() {
       speedLabel: VOICE_SPEED_META[session.voiceSpeed].label,
     });
     persist({ status: 'completed', result, progress: 1 });
+    recordPractice({
+      skill: 'listening',
+      value: stateRef.current.elapsedSeconds,
+      sourceModeID: 'listen-from-text',
+      sessionId: sid,
+    });
     setShowResult(true);
   };
 

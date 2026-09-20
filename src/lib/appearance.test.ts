@@ -1,4 +1,4 @@
-import { afterEach, describe, expect, it, vi } from 'vitest';
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 
 import {
   APPEARANCE_THEMES,
@@ -65,5 +65,34 @@ describe('the theme list', () => {
   it('rejects anything else, so a hand-edited storage value cannot break a page', () => {
     expect(isAppearanceTheme('dark')).toBe(true);
     expect(isAppearanceTheme('sepia')).toBe(false);
+  });
+});
+
+describe('theme-color meta', () => {
+  const meta = () => document.querySelector<HTMLMetaElement>('meta[name="theme-color"]');
+
+  beforeEach(() => {
+    document.head.innerHTML =
+      '<meta name="theme-color" content="#F6F6FB" media="(prefers-color-scheme: light)" />';
+  });
+
+  /* The tag was static, so a dark app kept a bright status bar in an installed
+     PWA. The media attribute has to go with it — the theme can be chosen in
+     the app against the system preference. */
+  it('repaints the browser chrome dark and drops the media scope', () => {
+    applyTheme('dark');
+    expect(meta()?.content).toBe('#0f1424');
+    expect(meta()?.hasAttribute('media')).toBe(false);
+  });
+
+  it('repaints it light again', () => {
+    applyTheme('dark');
+    applyTheme('light');
+    expect(meta()?.content).toBe('#f6f6fb');
+  });
+
+  it('follows a forced theme, as the signed-out screens use', () => {
+    applyTheme('dark', 'light');
+    expect(meta()?.content).toBe('#f6f6fb');
   });
 });

@@ -7,12 +7,14 @@ import { initialsFrom, memberSinceLabel, practiceMinutes } from '@/lib/profileSt
 const entry = (
   skill: DailyPracticeEntry['skill'],
   value: number,
+  sessionId?: string,
 ): DailyPracticeEntry => ({
   id: `${skill}-${value}`,
   skill,
   date: 0,
   createdAt: 0,
   value,
+  ...(sessionId === undefined ? {} : { sessionId }),
 });
 
 const session = (
@@ -76,6 +78,20 @@ describe('practiceMinutes', () => {
 
   it('counts a repeated listening session id once', () => {
     expect(practiceMinutes([], [session('a', 120), session('a', 120)])).toBe(2);
+  });
+
+  it('counts listening from the log now that sessions record into it', () => {
+    expect(practiceMinutes([entry('listening', 120)], [])).toBe(2);
+  });
+
+  /* The log and the session store describe the same session once listening
+     started recording. Counting both would double every minute listened. */
+  it('does not count a session twice when the log already has it', () => {
+    expect(practiceMinutes([entry('listening', 120, 'a')], [session('a', 120)])).toBe(2);
+  });
+
+  it('still counts sessions finished before listening was logged', () => {
+    expect(practiceMinutes([entry('listening', 120, 'a')], [session('b', 60)])).toBe(3);
   });
 
   it('is zero with nothing recorded', () => {

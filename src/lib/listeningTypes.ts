@@ -185,22 +185,8 @@ export const listeningEstimatedMinutes = (wordCount: number): number =>
   Math.max(1, Math.floor(wordCount / LISTENING_WPM_ESTIMATE));
 
 /* BCP-47 speech locales for the web's 8-language subset. */
-export const LISTENING_LOCALES: Record<string, string> = {
-  english: 'en-US',
-  spanish: 'es-ES',
-  french: 'fr-FR',
-  german: 'de-DE',
-  italian: 'it-IT',
-  ukrainian: 'uk-UA',
-  polish: 'pl-PL',
-  russian: 'ru-RU',
-};
-
-export const listeningLocaleFor = (languageId: string): string =>
-  LISTENING_LOCALES[languageId] ?? 'en-US';
-
-/* Landing progress card scaffold (numbers filled at render from the local
-   store — this one is REAL, unlike the Writing/Reading stubs). */
+/* Landing progress card template — numbers come from the shared practice log
+   at render, via withDailyProgress. */
 export const LISTENING_TODAY_GOAL: HomeSetPreviewItem = {
   id: 'listening-today',
   title: '',

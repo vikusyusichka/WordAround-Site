@@ -28,7 +28,7 @@ function FolderDetailPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { id } = Route.useParams();
-  const { data: folders, isLoading } = useFoldersQuery();
+  const { data: folders, isLoading, isError } = useFoldersQuery();
   const updateFolder = useUpdateFolder();
   const deleteFolder = useDeleteFolder();
   const { edit } = Route.useSearch();
@@ -48,6 +48,24 @@ function FolderDetailPage() {
     return (
       <ContentContainer>
         <p className="text-[15px] font-medium text-(--color-text-secondary)">{t('folders.loading')}</p>
+      </ContentContainer>
+    );
+  }
+
+  /* "Not found" is a claim about the data; a failed read is a claim about the
+     network. Telling the reader their folder is gone when it is not is worse
+     than telling them to try again. */
+  if (isError) {
+    return (
+      <ContentContainer>
+        <PageHeader title={t('folders.loadError')} subtitle={t('folders.loadErrorBody')} />
+        <button
+          type="button"
+          onClick={() => void navigate({ to: '/folders' })}
+          className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-primary-blue) focus-visible:outline-none"
+        >
+          {t('folders.backToFolders')}
+        </button>
       </ContentContainer>
     );
   }
@@ -158,11 +176,30 @@ function FolderDetailPage() {
 function FolderSets({ folderId }: { folderId: string }) {
   const { t } = useTranslation();
   const navigate = useNavigate();
-  const { data: sets, isLoading } = useFolderSetsQuery(folderId);
+  const { data: sets, isLoading, isError, refetch } = useFolderSetsQuery(folderId);
 
   if (isLoading) {
     return (
       <p className="text-[15px] font-medium text-(--color-text-secondary)">{t('sets.loading')}</p>
+    );
+  }
+
+  /* Before this branch existed a failed read fell through to the empty state,
+     so a network blip told the reader their folder had nothing in it. */
+  if (isError) {
+    return (
+      <div className="flex flex-col items-start gap-3">
+        <p role="alert" className="text-[15px] font-medium text-(--color-cs-red)">
+          {t('sets.loadError')}
+        </p>
+        <button
+          type="button"
+          onClick={() => void refetch()}
+          className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-primary-blue) focus-visible:outline-none"
+        >
+          {t('home.retry')}
+        </button>
+      </div>
     );
   }
 

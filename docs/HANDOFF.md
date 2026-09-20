@@ -37,8 +37,8 @@ Vite + React 19 + TS, Tailwind v4 (tokens in `src/styles/index.css` `@theme` +
 `tokens.css` ≥700px), TanStack Router (file-based, `src/routes/`), TanStack Query
 (reads=useQuery, mutations=invalidate), Zustand (UI state only), Firebase Web SDK
 v11 (Auth+Firestore+Storage), react-hook-form+zod, Phosphor icons via `<Icon>`
-(`src/lib/icons.ts`), i18next (**en + uk fully translated**; pl/de = English scaffold, structurally
-in sync via `scripts/sync-locales.cjs`), Vitest +
+(`src/lib/icons.ts`), i18next (**all 30 locales are real translations**, kept
+structurally in sync via `scripts/sync-locales.cjs`), Vitest +
 Playwright. AI backend = Cloudflare Worker `VITE_AI_WORKER_URL`
 (`https://wordaround-gemini-proxy.vikusyusichka-ai.workers.dev`, CORS `*`,
 `POST /` `{prompt,task,responseMimeType?}` → `{text}`), no worker changes needed.
@@ -152,10 +152,12 @@ Commit messages end at the last body paragraph — no trailer.
   `src/components/study/CardEditDialog.tsx` (AnimatePresence + backdrop-blur +
   Esc/click-outside). Icons: extend the SF→Phosphor map in `src/lib/icons.ts`
   (`.fill` suffix auto-selects `weight="fill"`).
-- **i18n:** every user string via `t('ns.key')`; add keys to ALL 4
-  `src/locales/{en,uk,pl,de}/common.json`, then run
-  `node scripts/sync-locales.cjs` so no locale silently loses a key. English and
-  Ukrainian are real translations; pl/de still mirror English.
+- **i18n:** every user string via `t('ns.key')`. Add the key to
+  `src/locales/en/common.json`, run `node scripts/sync-locales.cjs` to seed the
+  other 29 from English, **then actually translate it in all 30**. All thirty
+  locales are real translations — leaving a key English in 29 of them is a
+  regression, not a scaffold. (This bullet used to say "add keys to ALL 4
+  `{en,uk,pl,de}`", which is how four English strings shipped to 28 languages.)
 
 ## Live-verify recipe (authed + Firestore/AI features)
 The gates can't exercise authed Firestore/AI. Verify in a **fresh browser tab**

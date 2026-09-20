@@ -62,6 +62,35 @@ describe('recordPractice', () => {
   });
 });
 
+describe('recordPractice with a sessionId', () => {
+  /* A listening session reports its running elapsed total, so finishing the
+     same session twice must leave the latest number, not the sum. */
+  it('supersedes an earlier entry for the same session', () => {
+    recordPractice({ skill: 'listening', value: 60, sessionId: 's1' });
+    recordPractice({ skill: 'listening', value: 150, sessionId: 's1' });
+    expect(totalToday('listening')).toBe(150);
+  });
+
+  it('keeps different sessions apart', () => {
+    recordPractice({ skill: 'listening', value: 60, sessionId: 's1' });
+    recordPractice({ skill: 'listening', value: 90, sessionId: 's2' });
+    expect(totalToday('listening')).toBe(150);
+  });
+
+  it('does not let one skill supersede another that shares an id', () => {
+    recordPractice({ skill: 'listening', value: 60, sessionId: 'shared' });
+    recordPractice({ skill: 'reading', value: 90, sessionId: 'shared' });
+    expect(totalToday('listening')).toBe(60);
+    expect(totalToday('reading')).toBe(90);
+  });
+
+  it('still appends when no sessionId is given', () => {
+    recordPractice({ skill: 'writing', value: 40 });
+    recordPractice({ skill: 'writing', value: 60 });
+    expect(totalToday('writing')).toBe(100);
+  });
+});
+
 describe('totalTodayDisplay', () => {
   it('floors seconds to whole minutes for time skills', () => {
     recordPractice({ skill: 'speaking', value: 59 });

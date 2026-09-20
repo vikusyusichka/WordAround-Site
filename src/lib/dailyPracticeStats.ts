@@ -66,7 +66,13 @@ const writeAll = (entries: DailyPracticeEntry[]): void => {
 export const fetchAllEntries = (): DailyPracticeEntry[] => readAll();
 
 /** Fire-and-forget. Non-positive values are dropped, so it is safe to call from
-    cleanup paths where the learner never actually practised (iOS parity). */
+    cleanup paths where the learner never actually practised (iOS parity).
+
+    Pass a `sessionId` when the value is a running total for one session rather
+    than an increment — finishing the same listening session twice should leave
+    one entry holding the latest elapsed time, not two entries that add up to
+    double. Without it every call appends, which is what the word-count and
+    per-round callers want. */
 export const recordPractice = (params: {
   skill: DailyPracticeSkill;
   value: number;
@@ -89,7 +95,17 @@ export const recordPractice = (params: {
   };
 
   const cutoff = startOfDay() - RETENTION_DAYS * 24 * 60 * 60 * 1000;
-  const kept = readAll().filter((e) => e.date >= cutoff);
+  const kept = readAll().filter(
+    (e) =>
+      e.date >= cutoff &&
+      /* Same session, same day, same skill → this call supersedes it. */
+      !(
+        params.sessionId !== undefined &&
+        e.sessionId === params.sessionId &&
+        e.skill === entry.skill &&
+        e.date === entry.date
+      ),
+  );
   kept.push(entry);
   writeAll(kept);
 };

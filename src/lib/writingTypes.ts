@@ -1,8 +1,8 @@
 /* Types + static config for Phase 4 Writing. WriteWordsExercise holds the raw
    card fields; the display direction (word→translation or translation→word)
-   is chosen by training mode at render/selector time (4B). Menu items +
-   progress-card stub are static — mirror WritingViewModel.menuItems /
-   WritingProgressSummaryCardView. */
+   is chosen by training mode at render/selector time (4B). Menu items mirror
+   WritingViewModel.menuItems; the progress card mirrors
+   WritingProgressSummaryCardView and is fed live numbers at render. */
 import type { HomeSetPreviewItem } from '@/lib/homeTypes';
 import type { Flashcard } from '@/lib/models';
 
@@ -81,15 +81,17 @@ export const WRITING_MENU_ITEMS: WritingMenuItemDef[] = [
   },
 ];
 
-/* Static "Today progress" stub — ports WritingProgressSummaryCardView numbers.
-   Real daily stats persistence is deferred to a later slice. */
+/* Landing progress card template — numbers come from the shared practice log
+   at render, via withDailyProgress. `totalValue` is the same default goal
+   dailyPracticeStats uses, so a consumer that forgets withDailyProgress still
+   shows a sane target rather than a made-up one. */
 export const WRITING_TODAY_GOAL: HomeSetPreviewItem = {
   id: 'writing-today',
   title: '',
   subtitle: '',
   iconSystemName: 'pencil',
   currentValue: 0,
-  totalValue: 30,
+  totalValue: 200,
   unit: 'words',
   progress: 0,
   accentColor: 'var(--color-primary-blue)',

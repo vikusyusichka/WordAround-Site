@@ -22,13 +22,13 @@ import {
 } from '@/lib/speakingTopics';
 import {
   CONVERSATION_LENGTH_MINUTES,
-  speakingLocaleFor,
   type ConversationLength,
   type GeneratedConversationTopic,
   type SpeakingContext,
   type SpeakingFeedback,
   type SpeakingState,
 } from '@/lib/speakingTypes';
+import { voiceLocaleFor } from '@/lib/voiceLocales';
 import { stopListeningSpeech } from '@/lib/speech';
 
 export interface FreeSpeakingSetup {
@@ -55,7 +55,7 @@ export const useFreeSpeaking = (setup: FreeSpeakingSetup) => {
   const [isGeneratingFeedback, setIsGeneratingFeedback] = useState(false);
   const [feedbackReason, setFeedbackReason] = useState<string | null>(null);
 
-  const locale = speakingLocaleFor(setup.languageId);
+  const locale = voiceLocaleFor(setup.languageId);
   const speechSupported = isSpeechRecognitionSupported();
 
   const recognizerRef = useRef<SpeechRecognizer | null>(null);

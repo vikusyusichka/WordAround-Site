@@ -102,10 +102,11 @@ function GrammarHome() {
      note was in before they could find it. */
   const isSearching = query.trim().length > 0;
   const topicIds = useMemo(() => (topics ?? []).map((tp) => tp.id), [topics]);
-  const { data: allNotes, isLoading: notesSearchLoading } = useAllNotesQuery(
-    topicIds,
-    isSearching,
-  );
+  const {
+    data: allNotes,
+    isLoading: notesSearchLoading,
+    isError: notesSearchFailed,
+  } = useAllNotesQuery(topicIds, isSearching);
   const { data: reviewItems } = useReviewItemsQuery();
 
   const matchingNotes = useMemo(() => {
@@ -284,6 +285,12 @@ function GrammarHome() {
           {notesSearchLoading ? (
             <p className="text-[15px] font-medium text-(--color-text-secondary)">
               {t('writing.grammar.loading')}
+            </p>
+          ) : notesSearchFailed ? (
+            /* Otherwise a search that failed reads as a search that found
+               nothing, and the reader concludes the note is gone. */
+            <p role="alert" className="text-[15px] font-medium text-(--color-cs-red)">
+              {t('writing.grammar.loadError')}
             </p>
           ) : matchingNotes.length === 0 ? (
             <p className="text-[15px] font-medium text-(--color-text-secondary)">

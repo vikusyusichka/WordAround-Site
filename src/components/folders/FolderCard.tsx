@@ -31,7 +31,9 @@ export type FolderCardVariant = 'row' | 'tile';
 
 interface FolderCardProps {
   folder: Folder;
-  setCount: number;
+  /** null when the sets query failed — the card says nothing rather than
+      claiming the folder is empty. */
+  setCount: number | null;
   onOpen: () => void;
   onDelete: () => void;
   onEdit?: () => void;
@@ -77,7 +79,9 @@ export const FolderCard = ({
     ? ({ type: 'button', onClick: onOpen, 'aria-label': folder.title } as const)
     : ({ 'aria-hidden': true } as const);
 
-  const subtitle = folder.description || t('folders.setCount', { count: setCount });
+  const subtitle =
+    folder.description ||
+    (setCount === null ? t('folders.setCountUnknown') : t('folders.setCount', { count: setCount }));
 
   return (
     <div ref={ref} className="group relative" style={{ height }}>

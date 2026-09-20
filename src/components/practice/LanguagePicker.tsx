@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 import { CaretDown, Check, MagnifyingGlass, Warning } from '@phosphor-icons/react';
 
 import { ESSAY_LANGUAGES } from '@/lib/essayTypes';
-import { hasVoiceForLanguage } from '@/lib/speakingTypes';
+import { hasVoiceForLanguage } from '@/lib/voiceLocales';
 
 interface LanguagePickerProps {
   value: string;

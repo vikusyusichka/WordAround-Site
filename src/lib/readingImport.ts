@@ -3,6 +3,49 @@
    heavy, so they load via dynamic import() only when actually used. The
    interface matches iOS: extract → plain text, throw on no text. */
 
+/* Tesseract traineddata names, keyed by the app's language ids. iOS lets Vision
+   pick the language and turns on language correction; here the model has to be
+   named up front, and asking for the wrong one is not a small penalty — an
+   English model on Ukrainian text returns transliterated noise.
+
+   Languages with no traineddata in the bundle fall back to English, which is
+   what the whole function used to do unconditionally. */
+const OCR_LANGUAGES: Record<string, string> = {
+  english: 'eng',
+  spanish: 'spa',
+  french: 'fra',
+  german: 'deu',
+  italian: 'ita',
+  portuguese: 'por',
+  dutch: 'nld',
+  catalan: 'cat',
+  galician: 'glg',
+  esperanto: 'epo',
+  polish: 'pol',
+  ukrainian: 'ukr',
+  russian: 'rus',
+  czech: 'ces',
+  slovak: 'slk',
+  croatian: 'hrv',
+  serbian: 'srp',
+  slovenian: 'slv',
+  bulgarian: 'bul',
+  romanian: 'ron',
+  hungarian: 'hun',
+  greek: 'ell',
+  turkish: 'tur',
+  swedish: 'swe',
+  danish: 'dan',
+  norwegian: 'nor',
+  finnish: 'fin',
+  lithuanian: 'lit',
+  latvian: 'lav',
+  estonian: 'est',
+};
+
+export const ocrLanguageFor = (languageId: string): string =>
+  OCR_LANGUAGES[languageId] ?? 'eng';
+
 export class ReadingImportError extends Error {
   code: 'invalidImage' | 'recognitionFailed' | 'noTextFound' | 'unsupported';
   constructor(code: ReadingImportError['code'], message: string) {
@@ -11,9 +54,11 @@ export class ReadingImportError extends Error {
   }
 }
 
-/** Photo → text via Tesseract.js (iOS: Vision accurate + language correction). */
+/** Photo → text via Tesseract.js (iOS: Vision accurate + language correction).
+    `languageId` is the language chosen on the import screen. */
 export const extractTextFromImage = async (
   file: File,
+  languageId: string,
   onProgress?: (ratio: number) => void,
 ): Promise<string> => {
   if (!file.type.startsWith('image/')) {
@@ -22,7 +67,7 @@ export const extractTextFromImage = async (
   let text: string;
   try {
     const { createWorker } = await import('tesseract.js');
-    const worker = await createWorker('eng', 1, {
+    const worker = await createWorker(ocrLanguageFor(languageId), 1, {
       logger: onProgress
         ? (m) => {
             if (m.status === 'recognizing text') onProgress(m.progress);
@@ -35,7 +80,10 @@ export const extractTextFromImage = async (
     } finally {
       await worker.terminate();
     }
-  } catch {
+  } catch (error) {
+    /* Without this a failed worker download and an unreadable photo are the
+       same message, to the reader and to whoever debugs it later. */
+    console.error('[readingImport] OCR failed', error);
     throw new ReadingImportError('recognitionFailed', 'Text recognition failed');
   }
   const cleaned = text.trim();
@@ -69,7 +117,8 @@ export const extractTextFromPDF = async (file: File): Promise<string> => {
         .trim();
       if (pageText.length > 0) pages.push(pageText);
     }
-  } catch {
+  } catch (error) {
+    console.error('[readingImport] PDF read failed', error);
     throw new ReadingImportError('unsupported', 'Could not read this PDF');
   }
   const joined = pages.join('\n\n').trim();

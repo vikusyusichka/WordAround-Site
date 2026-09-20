@@ -29,12 +29,25 @@ export const practiceMinutes = (
   listeningSessions: ListeningPersistedSession[],
 ): number => {
   const practiceSeconds = entries
-    .filter((entry) => entry.skill === 'speaking' || entry.skill === 'reading')
+    .filter(
+      (entry) =>
+        entry.skill === 'speaking' || entry.skill === 'reading' || entry.skill === 'listening',
+    )
     .reduce((total, entry) => total + entry.value, 0);
 
+  /* Listening now records into the practice log like the other skills, but
+     sessions completed before that landed exist only in the IndexedDB store.
+     Count those, and skip any session the log already accounts for — the log
+     entry carries the session's id, so the two never double up. */
+  const logged = new Set(
+    entries
+      .filter((entry) => entry.skill === 'listening' && entry.sessionId !== undefined)
+      .map((entry) => entry.sessionId),
+  );
   const seen = new Set<string>();
   const listeningSeconds = listeningSessions.reduce((total, session) => {
     if (session.status !== 'completed' || seen.has(session.id)) return total;
+    if (logged.has(session.id)) return total;
     seen.add(session.id);
     return total + session.elapsedSeconds;
   }, 0);

@@ -37,7 +37,7 @@ function SetDetailPage() {
   const { t } = useTranslation();
   const navigate = useNavigate();
   const { id } = Route.useParams();
-  const { data: sets, isLoading } = useSetsQuery();
+  const { data: sets, isLoading, isError } = useSetsQuery();
   const { edit } = Route.useSearch();
   const [isEditing, setIsEditing] = useState(edit === true);
 
@@ -53,6 +53,28 @@ function SetDetailPage() {
     return (
       <ContentContainer>
         <p className="text-[15px] font-medium text-(--color-text-secondary)">{t('sets.loading')}</p>
+      </ContentContainer>
+    );
+  }
+
+  /* A failed read is not a deleted set — saying so sends the reader off to
+     re-create something that is still there. */
+  if (isError) {
+    return (
+      <ContentContainer>
+        <h1 className="mb-2 text-[26px] font-bold text-(--color-primary-blue-dark)">
+          {t('sets.loadError')}
+        </h1>
+        <p className="mb-4 text-[15px] font-medium text-(--color-text-secondary)">
+          {t('folders.loadErrorBody')}
+        </p>
+        <button
+          type="button"
+          onClick={() => void navigate({ to: '/sets' })}
+          className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-5 text-[15px] font-semibold text-(--color-primary-blue) focus-visible:outline-none"
+        >
+          {t('sets.backToSets')}
+        </button>
       </ContentContainer>
     );
   }
