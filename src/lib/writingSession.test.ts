@@ -211,6 +211,30 @@ describe('difficulty — hints', () => {
     expect(s.hintsUsed).toBe(2);
   });
 
+  /* The revealed letters are an overlay behind the text field, so they only
+     show on an empty field. Without this, pressing Hint after typing anything
+     looked like it did nothing. */
+  it('REVEAL_HINT clears the field so the letters can be seen', () => {
+    const s = run(
+      init(),
+      { type: 'SET_TYPED', value: 'apricot' },
+      { type: 'REVEAL_HINT' },
+    );
+    expect(s.typedAnswer).toBe('');
+    expect(hintOverlayText(s)).toBe('a');
+  });
+
+  it('REVEAL_HINT drops a verdict left over from the cleared answer', () => {
+    const s = run(
+      init(),
+      { type: 'SET_TYPED', value: 'pear' },
+      { type: 'SUBMIT' },
+      { type: 'REVEAL_HINT' },
+    );
+    expect(s.validation).toBe('idle');
+    expect(s.typedAnswer).toBe('');
+  });
+
   it('hint is unavailable while correct (locked)', () => {
     const s = run(init(), { type: 'SET_TYPED', value: 'apple' }, { type: 'SUBMIT' });
     expect(isInteractionLocked(s)).toBe(true);

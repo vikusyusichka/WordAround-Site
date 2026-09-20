@@ -260,7 +260,21 @@ export const writingReducer = (s: WritingState, action: WritingAction): WritingS
 
     case 'REVEAL_HINT': {
       if (!isHintAvailable(s)) return s;
-      return { ...s, hintRevealed: s.hintRevealed + 1, hintsUsed: s.hintsUsed + 1 };
+      return {
+        ...s,
+        hintRevealed: s.hintRevealed + 1,
+        hintsUsed: s.hintsUsed + 1,
+        /* Clearing the field is what makes the hint visible at all: the
+           revealed letters are an overlay behind the text, so they only show
+           on an empty field. iOS leaves whatever you typed in place, which
+           means pressing Hint after typing anything appears to do nothing —
+           the letters are there, hidden under your own answer. You start the
+           word again from the letter you were given. */
+        typedAnswer: '',
+        /* A verdict on an answer that is no longer in the field would be
+           stranded. */
+        validation: s.validation === 'incorrect' ? 'idle' : s.validation,
+      };
     }
 
     case 'SKIP': {
