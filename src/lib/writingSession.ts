@@ -43,8 +43,8 @@ export interface WritingState {
 }
 
 export type WritingAction =
+  | { type: 'SEED'; exercises: WriteWordsExercise[] }
   | { type: 'SET_TYPED'; value: string }
-  | { type: 'CLEAR_INCORRECT' }
   | { type: 'SUBMIT' }
   | { type: 'REVEAL_HINT' }
   | { type: 'SKIP' }
@@ -221,15 +221,23 @@ const triggerGameOver = (
 
 export const writingReducer = (s: WritingState, action: WritingAction): WritingState => {
   switch (action.type) {
+    /* The set is fetched, so the first render has no cards to build a round
+       from — an empty round counts as finished, which is why arriving here
+       before the data did showed "Round complete" over zero words. The hook
+       seeds once the cards land. The chosen mode and difficulty survive: the
+       reader may have opened settings while the empty screen was up. */
+    case 'SEED':
+      return initialWritingState(action.exercises, {
+        trainingMode: s.trainingMode,
+        difficulty: s.difficulty,
+      });
+
     case 'SET_TYPED': {
       if (isInteractionLocked(s)) return s;
       // Typing after a wrong-answer flash clears the incorrect state.
       const validation = s.validation === 'incorrect' ? 'idle' : s.validation;
       return { ...s, typedAnswer: action.value, validation };
     }
-
-    case 'CLEAR_INCORRECT':
-      return s.validation === 'incorrect' ? { ...s, validation: 'idle' } : s;
 
     case 'SUBMIT': {
       if (isInteractionLocked(s)) return s;

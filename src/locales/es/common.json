@@ -133,7 +133,9 @@
     "optional": "(opcional)",
     "preview": "Vista previa",
     "previewPlaceholder": "Nueva carpeta",
-    "deleteConfirmTitle": "¿Eliminar esta carpeta?"
+    "deleteConfirmTitle": "¿Eliminar esta carpeta?",
+    "setCountUnknown": "Sets no disponibles",
+    "loadErrorBody": "Comprueba tu conexión e inténtalo de nuevo."
   },
   "sets": {
     "create": "Crear conjunto",
@@ -276,8 +278,8 @@
       "days": "días"
     },
     "continueLearning": "Seguir aprendiendo",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "No se han podido cargar tus sets. Comprueba tu conexión e inténtalo de nuevo.",
+    "retry": "Reintentar",
     "yourSets": "Tus conjuntos",
     "viewAll": "Ver todos",
     "review": "Repasar",
@@ -394,7 +396,6 @@
       "translateHint": "Traduce a tu idioma",
       "hint": "Pista",
       "skip": "Saltar",
-      "submit": "Comprobar",
       "inputPlaceholder": "Escribe aquí…",
       "loading": "Cargando el conjunto…",
       "loadError": "No pudimos cargar este conjunto.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Tu respuesta",
         "correctAnswer": "Respuesta correcta",
         "tryAgain": "Intentar de nuevo"
-      }
+      },
+      "next": "Siguiente",
+      "correct": "¡Correcto!",
+      "incorrect": "Casi"
     },
     "essays": {
       "title": "Redacciones",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Has terminado {{count}} capítulo. ¡Buena lectura!",
       "completeBody_other": "Has terminado {{count}} capítulos. ¡Buena lectura!",
       "backToStories": "Volver a las historias"
-    }
+    },
+    "saveFailed": "Tu puntuación está guardada, pero no hemos podido marcar este texto como terminado."
   },
   "listening": {
     "sectionTitle": "Modos de práctica",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Unos minutos con WordAround mantienen viva tu racha.",
       "weeklyPushTitle": "Tu semana en WordAround",
       "weeklyPushBody": "Mira lo que has aprendido esta semana y lo que conviene repasar.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "No pierdas tu racha",
+      "streakPushBody": "Aún no has practicado hoy: unos minutos ya cuentan."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Sin conexión. Tus conjuntos y notas se siguen abriendo, y los cambios se guardan y se envían cuando vuelvas a estar en línea."
+  },
+  "notFound": {
+    "title": "Página no encontrada",
+    "body": "Ese enlace no lleva a ninguna parte. Puede que se haya renombrado o que la dirección tenga una errata.",
+    "backHome": "Volver a WordAround"
   }
 }

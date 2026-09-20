@@ -1,7 +1,7 @@
 /* Wraps the pure WriteWords reducer with useReducer + timing side-effects.
    Timing lives here (not in the reducer): 700 ms auto-advance after a correct
-   answer, a 400 ms clear of the "incorrect" flash (easy/medium), and the
-   hard-mode per-word countdown that dispatches TIMER_EXPIRED at zero. */
+   answer, and the hard-mode per-word countdown that dispatches TIMER_EXPIRED
+   at zero. */
 import { useEffect, useMemo, useReducer, useRef, useState } from 'react';
 
 import { useSetsQuery } from '@/hooks/useSets';
@@ -23,7 +23,6 @@ import {
 } from '@/lib/writingTypes';
 
 const CORRECT_ADVANCE_MS = 700;
-const INCORRECT_CLEAR_MS = 400;
 const TIMER_TICK_MS = 50;
 
 export const useWriteWords = (setId: string) => {
@@ -44,6 +43,17 @@ export const useWriteWords = (setId: string) => {
     initialWritingState(ex),
   );
 
+  /* Seed when the cards arrive. useReducer's initialiser runs on the first
+     render only, and on that render the set is usually still being fetched —
+     so without this the round starts empty and reports itself complete.
+     Guarded on the round still being empty, so a background refetch never
+     wipes a round in progress. */
+  useEffect(() => {
+    if (state.exercises.length === 0 && seedExercises.length > 0) {
+      dispatch({ type: 'SEED', exercises: seedExercises });
+    }
+  }, [seedExercises, state.exercises.length]);
+
   /* Auto-advance after a correct submission. */
   useEffect(() => {
     if (state.validation !== 'correct') return;
@@ -51,14 +61,12 @@ export const useWriteWords = (setId: string) => {
     return () => window.clearTimeout(id);
   }, [state.validation, state.currentIndex]);
 
-  /* Clear the wrong-answer flash after a moment so the user can keep typing.
-     (In hard mode a wrong answer ends the round, so validation is locked and
-     this cleanly no-ops.) */
-  useEffect(() => {
-    if (state.validation !== 'incorrect' || state.gameOver) return;
-    const id = window.setTimeout(() => dispatch({ type: 'CLEAR_INCORRECT' }), INCORRECT_CLEAR_MS);
-    return () => window.clearTimeout(id);
-  }, [state.validation, state.currentIndex, state.gameOver]);
+  /* A wrong answer is NOT cleared on a timer. It used to vanish after 400ms,
+     which is faster than the eye travels from the field to the verdict — and
+     with no verdict rendered at all, the whole exchange read as a dead button.
+     It clears when you start correcting the word instead, which is what iOS
+     does (WriteWordsViewModel.validateAnswer) and what the reducer already
+     handles on SET_TYPED. */
 
   /* Hard-mode countdown. Restart on every new card; stop when locked. */
   const [timerProgress, setTimerProgress] = useState(1);

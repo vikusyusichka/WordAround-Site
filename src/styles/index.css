@@ -362,6 +362,11 @@
   --color-accent-coral-text: #ba5752;
   --color-accent-lavender: #8563ff;
   --color-accent-iris: #7363ff;
+  /* The far end of the WriteWords primary. iOS runs its gradient out to
+     #7363ff, where white text measures 4.24:1 — fine under a centred short
+     label, thin once a longer translation of "Next" reaches that end. A shade
+     deeper, same violet, and the whole button clears 4.5:1. */
+  --color-primary-gradient-end: #6a58f0;
   --color-accent-periwinkle: #5c94ff;
   --color-accent-gold: #c78c42;
   --color-blob-orchid: #ebd6f2;
@@ -374,6 +379,16 @@
   --color-soft-lavender: #edebff;
   /* The green ring a correctly typed word gets (WriteWords). */
   --color-valid-border: #a1e0ab;
+
+  /* The answer verdict in WriteWords (iOS WriteWordsExerciseCardView's
+     feedbackView). A pale capsule with a deep label — so in the dark theme
+     both halves invert, or the pill turns into a bright blob. */
+  --color-verdict-ok-bg: #e0f5e0;
+  /* Darker than the iOS green (#36914d), which lands at 3.45:1 on its own pale
+     capsule — under what 13px bold needs. Same hue, readable. */
+  --color-verdict-ok-text: #27703a;
+  --color-verdict-bad-bg: #ffe8e8;
+  --color-verdict-bad-text: #c7262e;
 
   /* What the other side says, in a practice conversation. */
   --color-chat-bubble: #edf2ff;
@@ -627,6 +642,8 @@
   --color-accent-indigo-text: #c0a3f5;
   --color-accent-turquoise-text: #7fd0dd;
   --color-accent-orchid: #c98ed4;
+  /* Lifts with the solid blue it runs from, so white still clears on it. */
+  --color-primary-gradient-end: #6a58f0;
   --color-accent-cyan-text: #7fd0de;
   --color-accent-teal-text: #6fcfc6;
   --color-accent-steel-text: #8cc2ec;
@@ -638,12 +655,41 @@
   --color-soft-peach: #33260f;
   --color-soft-lavender: #1f1d3d;
   --color-valid-border: #4d8f5c;
+  --color-verdict-ok-bg: #16301c;
+  --color-verdict-ok-text: #7fe0a4;
+  --color-verdict-bad-bg: #3a1c1f;
+  --color-verdict-bad-text: #ff9ea3;
   --color-blob-orchid: #2c1f33;
   --color-chat-bubble: #1b2440;
 
   --color-tone-mix: #ffffff;
   --color-chip-bg: rgba(255, 255, 255, 0.08);
   --color-hover-wash: rgba(255, 255, 255, 0.06);
+}
+
+/* The WriteWords verdict pops in. Deliberately a CSS animation rather than a
+   JS one: this pill is the whole feedback for an answer, and a JS animation
+   that stalls leaves it at opacity 0 — invisible, which is the exact bug it
+   was added to fix. A keyframe that never runs still leaves the element in
+   its normal, visible state.
+
+   Scale only, no opacity, for the same reason one step further: an animation
+   that is paused mid-flight holds whatever the current keyframe says, and a
+   pill that is briefly small is readable in a way that a pill that is briefly
+   transparent is not. */
+@keyframes verdict-pop {
+  from {
+    transform: scale(0.85);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .verdict-pop {
+    animation: none;
+  }
 }
 
 /* CSS reset & app-wide defaults */

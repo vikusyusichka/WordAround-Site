@@ -134,6 +134,8 @@
     "preview": "Previzualizare",
     "previewPlaceholder": "Folder nou",
     "deleteConfirmTitle": "Ștergi acest folder?",
+    "setCountUnknown": "Seturi indisponibile",
+    "loadErrorBody": "Verifică conexiunea și încearcă din nou.",
     "setCount_few": "{{count}} seturi"
   },
   "sets": {
@@ -281,8 +283,8 @@
       "days": "zile"
     },
     "continueLearning": "Continuă să înveți",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Nu am putut încărca seturile tale. Verifică conexiunea și încearcă din nou.",
+    "retry": "Încearcă din nou",
     "yourSets": "Seturile tale",
     "viewAll": "Vezi toate",
     "review": "Recapitulare",
@@ -400,7 +402,6 @@
       "translateHint": "Tradu în limba ta",
       "hint": "Indiciu",
       "skip": "Sari peste",
-      "submit": "Verifică",
       "inputPlaceholder": "Scrie aici…",
       "loading": "Se încarcă setul…",
       "loadError": "Nu am putut încărca acest set.",
@@ -456,6 +457,9 @@
         "correctAnswer": "Răspuns corect",
         "tryAgain": "Încearcă din nou"
       },
+      "next": "Înainte",
+      "correct": "Corect!",
+      "incorrect": "Nu chiar",
       "skipsLeft_few": "Au mai rămas {{count}} sărituri"
     },
     "essays": {
@@ -1388,7 +1392,8 @@
       "completeBody_other": "Ai terminat {{count}} de capitole. Lectură pe cinste!",
       "backToStories": "Înapoi la povești",
       "completeBody_few": "Ai terminat {{count}} capitole. Lectură pe cinste!"
-    }
+    },
+    "saveFailed": "Scorul tău este salvat, dar nu am putut marca acest text ca finalizat."
   },
   "listening": {
     "sectionTitle": "Moduri de exersare",
@@ -1803,8 +1808,8 @@
       "dailyPushBody": "Câteva minute cu WordAround și seria ta continuă.",
       "weeklyPushTitle": "Săptămâna ta în WordAround",
       "weeklyPushBody": "Vezi ce ai învățat săptămâna aceasta și ce merită repetat.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Nu-ți pierde seria",
+      "streakPushBody": "Astăzi încă nu ai exersat — și câteva minute contează."
     }
   },
   "units": {
@@ -1863,5 +1868,10 @@
   },
   "offline": {
     "banner": "Fără rețea. Seturile și notițele tale se deschid oricum, iar modificările se salvează și se trimit când revine conexiunea."
+  },
+  "notFound": {
+    "title": "Pagina nu a fost găsită",
+    "body": "Acest link nu duce nicăieri. Pagina ar fi putut fi redenumită sau adresa conține o greșeală.",
+    "backHome": "Înapoi la WordAround"
   }
 }

@@ -134,6 +134,8 @@
     "preview": "Priekšskatījums",
     "previewPlaceholder": "Jauna mape",
     "deleteConfirmTitle": "Dzēst šo mapi?",
+    "setCountUnknown": "Komplekti nav pieejami",
+    "loadErrorBody": "Pārbaudi savienojumu un mēģini vēlreiz.",
     "setCount_zero": "{{count}} komplektu"
   },
   "sets": {
@@ -278,8 +280,8 @@
       "days": "dienas"
     },
     "continueLearning": "Turpināt mācīties",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Neizdevās ielādēt tavus komplektus. Pārbaudi savienojumu un mēģini vēlreiz.",
+    "retry": "Mēģināt vēlreiz",
     "yourSets": "Jūsu komplekti",
     "viewAll": "Skatīt visus",
     "review": "Atkārtot",
@@ -397,7 +399,6 @@
       "translateHint": "Tulkojiet savā valodā",
       "hint": "Padoms",
       "skip": "Izlaist",
-      "submit": "Pārbaudīt",
       "inputPlaceholder": "Rakstiet šeit…",
       "loading": "Ielādē komplektu…",
       "loadError": "Neizdevās ielādēt šo komplektu.",
@@ -453,6 +454,9 @@
         "correctAnswer": "Pareizā atbilde",
         "tryAgain": "Mēģināt vēlreiz"
       },
+      "next": "Tālāk",
+      "correct": "Pareizi!",
+      "incorrect": "Ne gluži",
       "skipsLeft_zero": "Atlicis {{count}} izlaidumu"
     },
     "essays": {
@@ -1385,7 +1389,8 @@
       "completeBody_other": "Jūs izlasījāt {{count}} nodaļas. Lielisks lasījums!",
       "backToStories": "Atpakaļ uz stāstiem",
       "completeBody_zero": "Jūs izlasījāt {{count}} nodaļu. Lielisks lasījums!"
-    }
+    },
+    "saveFailed": "Tavs rezultāts ir saglabāts, bet tekstu neizdevās atzīmēt kā pabeigtu."
   },
   "listening": {
     "sectionTitle": "Prakses režīmi",
@@ -1800,8 +1805,8 @@
       "dailyPushBody": "Dažas minūtes ar WordAround, un jūsu sērija turpinās.",
       "weeklyPushTitle": "Jūsu nedēļa WordAround",
       "weeklyPushBody": "Apskatiet, ko šonedēļ iemācījāties un ko ir vērts atkārtot.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Nezaudē savu sēriju",
+      "streakPushBody": "Šodien vēl neesi mācījies — arī dažas minūtes skaitās."
     }
   },
   "units": {
@@ -1860,5 +1865,10 @@
   },
   "offline": {
     "banner": "Nav savienojuma. Jūsu kopas un piezīmes joprojām atveras, un izmaiņas tiek saglabātas un nosūtītas, kad savienojums atgriezīsies."
+  },
+  "notFound": {
+    "title": "Lapa nav atrasta",
+    "body": "Šī saite nekur neved. Lapa, iespējams, ir pārdēvēta vai adresē ir drukas kļūda.",
+    "backHome": "Atpakaļ uz WordAround"
   }
 }

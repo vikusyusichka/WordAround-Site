@@ -134,6 +134,8 @@
     "preview": "Predogled",
     "previewPlaceholder": "Nova mapa",
     "deleteConfirmTitle": "Izbrisati to mapo?",
+    "setCountUnknown": "Sklopi niso na voljo",
+    "loadErrorBody": "Preveri povezavo in poskusi znova.",
     "setCount_two": "{{count}} kompleta",
     "setCount_few": "{{count}} komplete"
   },
@@ -280,8 +282,8 @@
       "days": "dni"
     },
     "continueLearning": "Nadaljuj z učenjem",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Tvojih sklopov ni bilo mogoče naložiti. Preveri povezavo in poskusi znova.",
+    "retry": "Poskusi znova",
     "yourSets": "Vaši kompleti",
     "viewAll": "Prikaži vse",
     "review": "Ponovi",
@@ -400,7 +402,6 @@
       "translateHint": "Prevedite v svoj jezik",
       "hint": "Namig",
       "skip": "Preskoči",
-      "submit": "Preveri",
       "inputPlaceholder": "Pišite sem…",
       "loading": "Nalagamo komplet…",
       "loadError": "Tega kompleta nismo mogli naložiti.",
@@ -456,6 +457,9 @@
         "correctAnswer": "Pravilen odgovor",
         "tryAgain": "Poskusi znova"
       },
+      "next": "Naprej",
+      "correct": "Pravilno!",
+      "incorrect": "Ne čisto",
       "skipsLeft_two": "Ostaneta {{count}} preskoka",
       "skipsLeft_few": "Ostanejo {{count}} preskoki"
     },
@@ -1408,7 +1412,8 @@
       "backToStories": "Nazaj na zgodbe",
       "completeBody_two": "Prebrali ste {{count}} poglavji. Odlično branje!",
       "completeBody_few": "Prebrali ste {{count}} poglavja. Odlično branje!"
-    }
+    },
+    "saveFailed": "Tvoj rezultat je shranjen, vendar besedila nismo mogli označiti kot dokončano."
   },
   "listening": {
     "sectionTitle": "Načini vadbe",
@@ -1823,8 +1828,8 @@
       "dailyPushBody": "Nekaj minut z WordAroundom in niz se nadaljuje.",
       "weeklyPushTitle": "Vaš teden v WordAroundu",
       "weeklyPushBody": "Poglejte, kaj ste se naučili ta teden in kaj je vredno ponoviti.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Ne izgubi svojega niza",
+      "streakPushBody": "Danes še nisi vadil — tudi nekaj minut šteje."
     }
   },
   "units": {
@@ -1883,5 +1888,10 @@
   },
   "offline": {
     "banner": "Ni povezave. Vaši sklopi in zapiski se še vedno odprejo, spremembe pa se shranijo in pošljejo, ko se povezava vrne."
+  },
+  "notFound": {
+    "title": "Strani ni mogoče najti",
+    "body": "Ta povezava ne vodi nikamor. Stran je bila morda preimenovana ali pa je v naslovu tipkarska napaka.",
+    "backHome": "Nazaj na WordAround"
   }
 }

@@ -133,7 +133,9 @@
     "optional": "(nedeviga)",
     "preview": "Antaŭrigardo",
     "previewPlaceholder": "Nova dosierujo",
-    "deleteConfirmTitle": "Ĉu forigi ĉi tiun dosierujon?"
+    "deleteConfirmTitle": "Ĉu forigi ĉi tiun dosierujon?",
+    "setCountUnknown": "Aroj nedisponeblaj",
+    "loadErrorBody": "Kontrolu vian konekton kaj reprovu."
   },
   "sets": {
     "create": "Krei aron",
@@ -276,8 +278,8 @@
       "days": "tagoj"
     },
     "continueLearning": "Daŭrigi la lernadon",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Ne eblis ŝargi viajn arojn. Kontrolu vian konekton kaj reprovu.",
+    "retry": "Reprovi",
     "yourSets": "Viaj aroj",
     "viewAll": "Vidi ĉiujn",
     "review": "Revizii",
@@ -394,7 +396,6 @@
       "translateHint": "Traduku al via lingvo",
       "hint": "Helpindiko",
       "skip": "Preterlasi",
-      "submit": "Kontroli",
       "inputPlaceholder": "Tajpu ĉi tie…",
       "loading": "Ŝargante la aron…",
       "loadError": "Ni ne povis ŝargi ĉi tiun aron.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Via respondo",
         "correctAnswer": "Ĝusta respondo",
         "tryAgain": "Provi denove"
-      }
+      },
+      "next": "Sekva",
+      "correct": "Ĝuste!",
+      "incorrect": "Ne tute"
     },
     "essays": {
       "title": "Eseoj",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Vi finis {{count}} ĉapitron. Bona legado!",
       "completeBody_other": "Vi finis {{count}} ĉapitrojn. Bona legado!",
       "backToStories": "Reen al la rakontoj"
-    }
+    },
+    "saveFailed": "Via poentaro estas konservita, sed ni ne povis marki tiun tekston kiel finitan."
   },
   "listening": {
     "sectionTitle": "Ekzercaj reĝimoj",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Kelkaj minutoj kun WordAround tenas vian serion viva.",
       "weeklyPushTitle": "Via semajno en WordAround",
       "weeklyPushBody": "Vidu, kion vi lernis ĉi-semajne kaj kion indas ripeti.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Ne perdu vian serion",
+      "streakPushBody": "Vi ankoraŭ ne ekzercis hodiaŭ — kelkaj minutoj jam gravas."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Neniu reto. Viaj aroj kaj notoj plu malfermiĝas, kaj ŝanĝoj konserviĝas kaj sendiĝas kiam la konekto revenos."
+  },
+  "notFound": {
+    "title": "Paĝo ne trovita",
+    "body": "Tiu ligilo kondukas nenien. Eble la paĝo estis renomita, aŭ la adreso enhavas tajperaron.",
+    "backHome": "Reen al WordAround"
   }
 }

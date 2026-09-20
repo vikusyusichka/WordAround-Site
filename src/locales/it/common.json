@@ -133,7 +133,9 @@
     "optional": "(facoltativo)",
     "preview": "Anteprima",
     "previewPlaceholder": "Nuova cartella",
-    "deleteConfirmTitle": "Eliminare questa cartella?"
+    "deleteConfirmTitle": "Eliminare questa cartella?",
+    "setCountUnknown": "Set non disponibili",
+    "loadErrorBody": "Controlla la connessione e riprova."
   },
   "sets": {
     "create": "Crea set",
@@ -276,8 +278,8 @@
       "days": "giorni"
     },
     "continueLearning": "Continua a imparare",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Non è stato possibile caricare i tuoi set. Controlla la connessione e riprova.",
+    "retry": "Riprova",
     "yourSets": "I tuoi set",
     "viewAll": "Vedi tutti",
     "review": "Ripassa",
@@ -394,7 +396,6 @@
       "translateHint": "Traduci nella tua lingua",
       "hint": "Suggerimento",
       "skip": "Salta",
-      "submit": "Controlla",
       "inputPlaceholder": "Scrivi qui…",
       "loading": "Caricamento del set…",
       "loadError": "Non siamo riusciti a caricare questo set.",
@@ -449,7 +450,10 @@
         "yourAnswer": "La tua risposta",
         "correctAnswer": "Risposta corretta",
         "tryAgain": "Riprova"
-      }
+      },
+      "next": "Avanti",
+      "correct": "Corretto!",
+      "incorrect": "Non proprio"
     },
     "essays": {
       "title": "Temi",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Hai finito {{count}} capitolo. Bella lettura!",
       "completeBody_other": "Hai finito {{count}} capitoli. Bella lettura!",
       "backToStories": "Torna alle storie"
-    }
+    },
+    "saveFailed": "Il tuo punteggio è salvo, ma non siamo riusciti a segnare questo testo come completato."
   },
   "listening": {
     "sectionTitle": "Modalità di pratica",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Bastano pochi minuti con WordAround per non perdere la serie.",
       "weeklyPushTitle": "La tua settimana in WordAround",
       "weeklyPushBody": "Guarda che cosa hai imparato questa settimana e che cosa vale la pena ripassare.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Non perdere la tua serie",
+      "streakPushBody": "Oggi non ti sei ancora esercitato — anche pochi minuti contano."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Nessuna connessione. I tuoi set e le tue note si aprono comunque, e le modifiche vengono salvate e inviate al ritorno della rete."
+  },
+  "notFound": {
+    "title": "Pagina non trovata",
+    "body": "Questo link non porta da nessuna parte. Forse la pagina è stata rinominata o l'indirizzo contiene un errore.",
+    "backHome": "Torna a WordAround"
   }
 }

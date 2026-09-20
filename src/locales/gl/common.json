@@ -133,7 +133,9 @@
     "optional": "(opcional)",
     "preview": "Vista previa",
     "previewPlaceholder": "Novo cartafol",
-    "deleteConfirmTitle": "Eliminar este cartafol?"
+    "deleteConfirmTitle": "Eliminar este cartafol?",
+    "setCountUnknown": "Conxuntos non dispoñibles",
+    "loadErrorBody": "Comproba a conexión e téntao de novo."
   },
   "sets": {
     "create": "Crear conxunto",
@@ -276,8 +278,8 @@
       "days": "días"
     },
     "continueLearning": "Seguir aprendendo",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Non se puideron cargar os teus conxuntos. Comproba a conexión e téntao de novo.",
+    "retry": "Téntao de novo",
     "yourSets": "Os teus conxuntos",
     "viewAll": "Ver todos",
     "review": "Repasar",
@@ -394,7 +396,6 @@
       "translateHint": "Traduce ao teu idioma",
       "hint": "Pista",
       "skip": "Saltar",
-      "submit": "Comprobar",
       "inputPlaceholder": "Escribe aquí…",
       "loading": "Cargando o conxunto…",
       "loadError": "Non puidemos cargar este conxunto.",
@@ -449,7 +450,10 @@
         "yourAnswer": "A túa resposta",
         "correctAnswer": "Resposta correcta",
         "tryAgain": "Téntao de novo"
-      }
+      },
+      "next": "Seguinte",
+      "correct": "Correcto!",
+      "incorrect": "Case"
     },
     "essays": {
       "title": "Redaccións",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Remataches {{count}} capítulo. Boa lectura!",
       "completeBody_other": "Remataches {{count}} capítulos. Boa lectura!",
       "backToStories": "Volver ás historias"
-    }
+    },
+    "saveFailed": "A túa puntuación está gardada, pero non puidemos marcar este texto como rematado."
   },
   "listening": {
     "sectionTitle": "Modos de práctica",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Uns minutos con WordAround manteñen viva a túa racha.",
       "weeklyPushTitle": "A túa semana en WordAround",
       "weeklyPushBody": "Mira o que aprendiches esta semana e o que paga a pena repasar.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Non perdas a túa racha",
+      "streakPushBody": "Aínda non practicaches hoxe: uns minutos xa contan."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Sen conexión. Os teus conxuntos e notas ábrense igualmente, e os cambios gárdanse e envíanse cando volva a rede."
+  },
+  "notFound": {
+    "title": "Páxina non atopada",
+    "body": "Esta ligazón non leva a ningures. Quizais a páxina cambiou de nome ou o enderezo ten un erro.",
+    "backHome": "Volver a WordAround"
   }
 }

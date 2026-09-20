@@ -133,7 +133,9 @@
     "optional": "(προαιρετικό)",
     "preview": "Προεπισκόπηση",
     "previewPlaceholder": "Νέος φάκελος",
-    "deleteConfirmTitle": "Διαγραφή αυτού του φακέλου;"
+    "deleteConfirmTitle": "Διαγραφή αυτού του φακέλου;",
+    "setCountUnknown": "Τα σετ δεν είναι διαθέσιμα",
+    "loadErrorBody": "Έλεγξε τη σύνδεση και δοκίμασε ξανά."
   },
   "sets": {
     "create": "Νέο σετ",
@@ -276,8 +278,8 @@
       "days": "ημέρες"
     },
     "continueLearning": "Συνέχεια μάθησης",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Δεν ήταν δυνατή η φόρτωση των σετ σου. Έλεγξε τη σύνδεση και δοκίμασε ξανά.",
+    "retry": "Δοκίμασε ξανά",
     "yourSets": "Τα σετ σας",
     "viewAll": "Προβολή όλων",
     "review": "Επανάληψη",
@@ -394,7 +396,6 @@
       "translateHint": "Μεταφράστε στη γλώσσα σας",
       "hint": "Βοήθεια",
       "skip": "Παράλειψη",
-      "submit": "Έλεγχος",
       "inputPlaceholder": "Γράψτε εδώ…",
       "loading": "Φόρτωση σετ…",
       "loadError": "Δεν μπορέσαμε να φορτώσουμε αυτό το σετ.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Η απάντησή σας",
         "correctAnswer": "Σωστή απάντηση",
         "tryAgain": "Δοκιμάστε ξανά"
-      }
+      },
+      "next": "Επόμενο",
+      "correct": "Σωστά!",
+      "incorrect": "Όχι ακριβώς"
     },
     "essays": {
       "title": "Εκθέσεις",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Ολοκληρώσατε {{count}} κεφάλαιο. Ωραία ανάγνωση!",
       "completeBody_other": "Ολοκληρώσατε {{count}} κεφάλαια. Ωραία ανάγνωση!",
       "backToStories": "Πίσω στις ιστορίες"
-    }
+    },
+    "saveFailed": "Η βαθμολογία σου είναι ασφαλής, αλλά δεν μπορέσαμε να σημειώσουμε το κείμενο ως ολοκληρωμένο."
   },
   "listening": {
     "sectionTitle": "Τρόποι εξάσκησης",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Λίγα λεπτά με το WordAround κρατούν ζωντανό το σερί σας.",
       "weeklyPushTitle": "Η εβδομάδα σας στο WordAround",
       "weeklyPushBody": "Δείτε τι μάθατε αυτή την εβδομάδα και τι αξίζει να επαναλάβετε.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Μη χάσεις το σερί σου",
+      "streakPushBody": "Δεν έχεις εξασκηθεί ακόμη σήμερα — και λίγα λεπτά μετρούν."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Χωρίς σύνδεση. Τα σετ και οι σημειώσεις σας ανοίγουν κανονικά, και οι αλλαγές αποθηκεύονται και στέλνονται όταν επανέλθει η σύνδεση."
+  },
+  "notFound": {
+    "title": "Η σελίδα δεν βρέθηκε",
+    "body": "Αυτός ο σύνδεσμος δεν οδηγεί πουθενά. Ίσως η σελίδα μετονομάστηκε ή η διεύθυνση έχει τυπογραφικό λάθος.",
+    "backHome": "Πίσω στο WordAround"
   }
 }

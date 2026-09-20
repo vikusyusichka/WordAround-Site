@@ -134,6 +134,8 @@
     "preview": "Pregled",
     "previewPlaceholder": "Nova mapa",
     "deleteConfirmTitle": "Izbrisati ovu mapu?",
+    "setCountUnknown": "Setovi nisu dostupni",
+    "loadErrorBody": "Provjeri vezu i pokušaj ponovno.",
     "setCount_few": "{{count}} seta"
   },
   "sets": {
@@ -278,8 +280,8 @@
       "days": "dana"
     },
     "continueLearning": "Nastavi učiti",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Nije bilo moguće učitati tvoje setove. Provjeri vezu i pokušaj ponovno.",
+    "retry": "Pokušaj ponovno",
     "yourSets": "Vaši setovi",
     "viewAll": "Prikaži sve",
     "review": "Ponovi",
@@ -397,7 +399,6 @@
       "translateHint": "Prevedite na svoj jezik",
       "hint": "Pomoć",
       "skip": "Preskoči",
-      "submit": "Provjeri",
       "inputPlaceholder": "Pišite ovdje…",
       "loading": "Učitavamo set…",
       "loadError": "Nismo mogli učitati ovaj set.",
@@ -453,6 +454,9 @@
         "correctAnswer": "Točan odgovor",
         "tryAgain": "Pokušaj ponovno"
       },
+      "next": "Dalje",
+      "correct": "Točno!",
+      "incorrect": "Ne baš",
       "skipsLeft_few": "Preostalo {{count}} preskakanja"
     },
     "essays": {
@@ -1385,7 +1389,8 @@
       "completeBody_other": "Pročitali ste {{count}} poglavlja. Odlično čitanje!",
       "backToStories": "Natrag na priče",
       "completeBody_few": "Pročitali ste {{count}} poglavlja. Odlično čitanje!"
-    }
+    },
+    "saveFailed": "Tvoj rezultat je spremljen, ali tekst nismo mogli označiti kao dovršen."
   },
   "listening": {
     "sectionTitle": "Načini vježbanja",
@@ -1800,8 +1805,8 @@
       "dailyPushBody": "Nekoliko minuta s WordAroundom i niz se nastavlja.",
       "weeklyPushTitle": "Vaš tjedan u WordAroundu",
       "weeklyPushBody": "Pogledajte što ste naučili ovaj tjedan i što vrijedi ponoviti.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Ne izgubi svoj niz",
+      "streakPushBody": "Danas još nisi vježbao — i nekoliko minuta se računa."
     }
   },
   "units": {
@@ -1860,5 +1865,10 @@
   },
   "offline": {
     "banner": "Nema mreže. Vaši setovi i bilješke i dalje se otvaraju, a promjene se spremaju i šalju kad se veza vrati."
+  },
+  "notFound": {
+    "title": "Stranica nije pronađena",
+    "body": "Ta poveznica ne vodi nikamo. Stranica je možda preimenovana ili je u adresi tipfeler.",
+    "backHome": "Natrag na WordAround"
   }
 }

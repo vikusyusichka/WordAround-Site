@@ -133,7 +133,9 @@
     "optional": "(optioneel)",
     "preview": "Voorbeeld",
     "previewPlaceholder": "Nieuwe map",
-    "deleteConfirmTitle": "Deze map verwijderen?"
+    "deleteConfirmTitle": "Deze map verwijderen?",
+    "setCountUnknown": "Sets niet beschikbaar",
+    "loadErrorBody": "Controleer je verbinding en probeer het opnieuw."
   },
   "sets": {
     "create": "Set maken",
@@ -276,8 +278,8 @@
       "days": "dagen"
     },
     "continueLearning": "Verder leren",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Je sets konden niet worden geladen. Controleer je verbinding en probeer het opnieuw.",
+    "retry": "Opnieuw proberen",
     "yourSets": "Jouw sets",
     "viewAll": "Alles bekijken",
     "review": "Herhalen",
@@ -394,7 +396,6 @@
       "translateHint": "Vertaal naar je eigen taal",
       "hint": "Hint",
       "skip": "Overslaan",
-      "submit": "Controleren",
       "inputPlaceholder": "Typ hier…",
       "loading": "Set laden…",
       "loadError": "We konden deze set niet laden.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Jouw antwoord",
         "correctAnswer": "Juiste antwoord",
         "tryAgain": "Opnieuw proberen"
-      }
+      },
+      "next": "Volgende",
+      "correct": "Correct!",
+      "incorrect": "Net niet"
     },
     "essays": {
       "title": "Opstellen",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Je hebt {{count}} hoofdstuk afgerond. Goed gelezen!",
       "completeBody_other": "Je hebt {{count}} hoofdstukken afgerond. Goed gelezen!",
       "backToStories": "Terug naar verhalen"
-    }
+    },
+    "saveFailed": "Je score is bewaard, maar we konden deze tekst niet als afgerond markeren."
   },
   "listening": {
     "sectionTitle": "Oefenvormen",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Een paar minuten met WordAround houdt je reeks in leven.",
       "weeklyPushTitle": "Jouw week in WordAround",
       "weeklyPushBody": "Bekijk wat je deze week hebt geleerd en wat het herhalen waard is.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Verlies je reeks niet",
+      "streakPushBody": "Je hebt vandaag nog niet geoefend — een paar minuten tellen al."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Geen verbinding. Je sets en notities gaan gewoon open, en wijzigingen worden bewaard en verstuurd zodra je weer online bent."
+  },
+  "notFound": {
+    "title": "Pagina niet gevonden",
+    "body": "Deze link leidt nergens heen. Misschien is de pagina hernoemd of staat er een typfout in het adres.",
+    "backHome": "Terug naar WordAround"
   }
 }

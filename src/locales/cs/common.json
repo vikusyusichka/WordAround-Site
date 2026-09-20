@@ -134,6 +134,8 @@
     "preview": "Náhled",
     "previewPlaceholder": "Nová složka",
     "deleteConfirmTitle": "Smazat tuto složku?",
+    "setCountUnknown": "Sady nejsou dostupné",
+    "loadErrorBody": "Zkontrolujte připojení a zkuste to znovu.",
     "setCount_few": "{{count}} sady",
     "setCount_other": "{{count}} sad"
   },
@@ -280,8 +282,8 @@
       "days": "dní"
     },
     "continueLearning": "Pokračovat v učení",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Vaše sady se nepodařilo načíst. Zkontrolujte připojení a zkuste to znovu.",
+    "retry": "Zkusit znovu",
     "yourSets": "Vaše sady",
     "viewAll": "Zobrazit vše",
     "review": "Opakovat",
@@ -400,7 +402,6 @@
       "translateHint": "Přeložte do svého jazyka",
       "hint": "Nápověda",
       "skip": "Přeskočit",
-      "submit": "Zkontrolovat",
       "inputPlaceholder": "Pište sem…",
       "loading": "Načítáme sadu…",
       "loadError": "Nepodařilo se načíst tuto sadu.",
@@ -456,6 +457,9 @@
         "correctAnswer": "Správná odpověď",
         "tryAgain": "Zkusit znovu"
       },
+      "next": "Další",
+      "correct": "Správně!",
+      "incorrect": "Ne tak docela",
       "skipsLeft_few": "Zbývají {{count}} přeskoky"
     },
     "essays": {
@@ -1388,7 +1392,8 @@
       "completeBody_other": "Dočetli jste {{count}} kapitol. Skvělé čtení!",
       "backToStories": "Zpět na příběhy",
       "completeBody_few": "Dočetli jste {{count}} kapitoly. Skvělé čtení!"
-    }
+    },
+    "saveFailed": "Vaše skóre je uložené, ale text se nepodařilo označit jako dokončený."
   },
   "listening": {
     "sectionTitle": "Režimy procvičování",
@@ -1803,8 +1808,8 @@
       "dailyPushBody": "Pár minut s WordAround a série pokračuje.",
       "weeklyPushTitle": "Váš týden ve WordAround",
       "weeklyPushBody": "Podívejte se, co jste se tento týden naučili a co stojí za zopakování.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Nepřijďte o svou sérii",
+      "streakPushBody": "Dnes jste ještě necvičili — i pár minut se počítá."
     }
   },
   "units": {
@@ -1863,5 +1868,10 @@
   },
   "offline": {
     "banner": "Bez připojení. Vaše sady a poznámky se stále otevírají a změny se uloží a odešlou, jakmile se spojení vrátí."
+  },
+  "notFound": {
+    "title": "Stránka nenalezena",
+    "body": "Tento odkaz nikam nevede. Stránka mohla být přejmenována nebo je v adrese překlep.",
+    "backHome": "Zpět do WordAround"
   }
 }

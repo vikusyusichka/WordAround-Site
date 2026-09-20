@@ -133,7 +133,9 @@
     "optional": "(isteğe bağlı)",
     "preview": "Önizleme",
     "previewPlaceholder": "Yeni klasör",
-    "deleteConfirmTitle": "Bu klasör silinsin mi?"
+    "deleteConfirmTitle": "Bu klasör silinsin mi?",
+    "setCountUnknown": "Setler kullanılamıyor",
+    "loadErrorBody": "Bağlantını kontrol edip tekrar dene."
   },
   "sets": {
     "create": "Set oluştur",
@@ -276,8 +278,8 @@
       "days": "gün"
     },
     "continueLearning": "Öğrenmeye devam et",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Setlerin yüklenemedi. Bağlantını kontrol edip tekrar dene.",
+    "retry": "Tekrar dene",
     "yourSets": "Setlerin",
     "viewAll": "Tümünü gör",
     "review": "Tekrar et",
@@ -394,7 +396,6 @@
       "translateHint": "Kendi diline çevir",
       "hint": "İpucu",
       "skip": "Atla",
-      "submit": "Kontrol et",
       "inputPlaceholder": "Buraya yaz…",
       "loading": "Set yükleniyor…",
       "loadError": "Bu seti yükleyemedik.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Senin cevabın",
         "correctAnswer": "Doğru cevap",
         "tryAgain": "Tekrar dene"
-      }
+      },
+      "next": "İleri",
+      "correct": "Doğru!",
+      "incorrect": "Tam değil"
     },
     "essays": {
       "title": "Kompozisyonlar",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "{{count}} bölüm bitirdin. İyi okumalar!",
       "completeBody_other": "{{count}} bölüm bitirdin. İyi okumalar!",
       "backToStories": "Hikâyelere dön"
-    }
+    },
+    "saveFailed": "Puanın kayıtlı, ancak bu metni tamamlandı olarak işaretleyemedik."
   },
   "listening": {
     "sectionTitle": "Pratik modları",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "WordAround ile birkaç dakika serinizi canlı tutar.",
       "weeklyPushTitle": "WordAround’daki haftanız",
       "weeklyPushBody": "Bu hafta ne öğrendiğinizi ve neyi tekrar etmeye değer olduğunu görün.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Serini kaybetme",
+      "streakPushBody": "Bugün henüz çalışmadın — birkaç dakika bile sayılır."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Bağlantı yok. Setleriniz ve notlarınız yine de açılır; değişiklikler kaydedilir ve bağlantı dönünce gönderilir."
+  },
+  "notFound": {
+    "title": "Sayfa bulunamadı",
+    "body": "Bu bağlantı hiçbir yere gitmiyor. Sayfa yeniden adlandırılmış ya da adreste bir yazım hatası olabilir.",
+    "backHome": "WordAround'a dön"
   }
 }

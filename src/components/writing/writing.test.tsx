@@ -7,6 +7,7 @@ import '@/lib/i18n';
 import { WritingMenuGrid } from './WritingMenuGrid';
 import { WriteWordsCells } from './WriteWordsCells';
 import { WriteWordsControls } from './WriteWordsControls';
+import { WriteWordsFeedback } from './WriteWordsFeedback';
 import { WriteWordsResultScreen } from './WriteWordsResultScreen';
 import { WriteWordsSettingsSheet } from './WriteWordsSettingsSheet';
 import { SetSelectionModal } from './SetSelectionModal';
@@ -156,18 +157,18 @@ describe('WriteWordsControls', () => {
     onSubmit: () => {},
   };
 
-  it('shows Hint + Skip + Check when allowed', () => {
+  it('shows Hint + Skip + the primary when allowed', () => {
     render(<WriteWordsControls {...baseProps} showHint showSkip />);
     expect(screen.getByRole('button', { name: /hint/i })).toBeInTheDocument();
     expect(screen.getByRole('button', { name: /skip/i })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /check/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /next/i })).toBeInTheDocument();
   });
 
   it('hides Hint + Skip in hard mode (showHint/showSkip false)', () => {
     render(<WriteWordsControls {...baseProps} showHint={false} showSkip={false} />);
     expect(screen.queryByRole('button', { name: /hint/i })).not.toBeInTheDocument();
     expect(screen.queryByRole('button', { name: /skip/i })).not.toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /check/i })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /next/i })).toBeInTheDocument();
   });
 
   it('shows the medium "N skips left" caption', () => {
@@ -259,5 +260,25 @@ describe('WriteWordsSettingsSheet', () => {
 
     await user.click(screen.getByText('Hard'));
     expect(onSelectDifficulty).toHaveBeenCalledWith('hard');
+  });
+});
+
+describe('WriteWordsFeedback', () => {
+  /* Regression. A wrong answer sets the state and deliberately does not
+     advance — but nothing rendered that state, so the button looked broken:
+     you pressed Check, the word stayed, and the screen said nothing. */
+  it('says so when the answer is wrong', () => {
+    render(<WriteWordsFeedback validation="incorrect" />);
+    expect(screen.getByRole('status')).toHaveTextContent(/not quite/i);
+  });
+
+  it('says so when the answer is right', () => {
+    render(<WriteWordsFeedback validation="correct" />);
+    expect(screen.getByRole('status')).toHaveTextContent(/correct/i);
+  });
+
+  it('shows nothing before an answer is checked', () => {
+    render(<WriteWordsFeedback validation="idle" />);
+    expect(screen.queryByRole('status')).not.toBeInTheDocument();
   });
 });

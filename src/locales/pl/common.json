@@ -134,6 +134,8 @@
     "preview": "Podgląd",
     "previewPlaceholder": "Nowy folder",
     "deleteConfirmTitle": "Usunąć ten folder?",
+    "setCountUnknown": "Zestawy niedostępne",
+    "loadErrorBody": "Sprawdź połączenie i spróbuj ponownie.",
     "setCount_few": "{{count}} zestawy",
     "setCount_many": "{{count}} zestawów",
     "setCount_other": "{{count}} zestawów"
@@ -282,8 +284,8 @@
       "days": "dni"
     },
     "continueLearning": "Kontynuuj naukę",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Nie udało się wczytać twoich zestawów. Sprawdź połączenie i spróbuj ponownie.",
+    "retry": "Spróbuj ponownie",
     "yourSets": "Twoje zestawy",
     "viewAll": "Zobacz wszystkie",
     "review": "Powtórz",
@@ -403,7 +405,6 @@
       "translateHint": "Przetłumacz na swój język",
       "hint": "Podpowiedź",
       "skip": "Pomiń",
-      "submit": "Sprawdź",
       "inputPlaceholder": "Pisz tutaj…",
       "loading": "Wczytywanie zestawu…",
       "loadError": "Nie udało się wczytać tego zestawu.",
@@ -459,6 +460,9 @@
         "correctAnswer": "Poprawna odpowiedź",
         "tryAgain": "Spróbuj ponownie"
       },
+      "next": "Dalej",
+      "correct": "Poprawnie!",
+      "incorrect": "Nie do końca",
       "skipsLeft_few": "Zostały {{count}} pominięcia",
       "skipsLeft_many": "Zostało {{count}} pominięć"
     },
@@ -1411,7 +1415,8 @@
       "backToStories": "Powrót do opowieści",
       "completeBody_few": "Ukończyłeś {{count}} rozdziały. Świetne czytanie!",
       "completeBody_many": "Ukończyłeś {{count}} rozdziałów. Świetne czytanie!"
-    }
+    },
+    "saveFailed": "Twój wynik jest zapisany, ale nie udało się oznaczyć tekstu jako przeczytanego."
   },
   "listening": {
     "sectionTitle": "Tryby ćwiczeń",
@@ -1826,8 +1831,8 @@
       "dailyPushBody": "Kilka minut z WordAround i seria trwa dalej.",
       "weeklyPushTitle": "Twój tydzień w WordAround",
       "weeklyPushBody": "Zobacz, czego nauczyłeś się w tym tygodniu i co warto powtórzyć.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Nie strać swojej serii",
+      "streakPushBody": "Dziś jeszcze nie ćwiczyłeś — kilka minut też się liczy."
     }
   },
   "units": {
@@ -1886,5 +1891,10 @@
   },
   "offline": {
     "banner": "Brak sieci. Twoje zestawy i notatki nadal się otwierają, a zmiany zostaną zapisane i wysłane po powrocie połączenia."
+  },
+  "notFound": {
+    "title": "Nie znaleziono strony",
+    "body": "Ten link donikąd nie prowadzi. Strona mogła zmienić nazwę albo w adresie jest literówka.",
+    "backHome": "Wróć do WordAround"
   }
 }

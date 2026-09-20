@@ -134,6 +134,8 @@
     "preview": "Vorschau",
     "previewPlaceholder": "Neuer Ordner",
     "deleteConfirmTitle": "Diesen Ordner löschen?",
+    "setCountUnknown": "Sets nicht verfügbar",
+    "loadErrorBody": "Prüfe deine Verbindung und versuch es erneut.",
     "setCount_other": "{{count}} Sets"
   },
   "sets": {
@@ -278,8 +280,8 @@
       "days": "Tage"
     },
     "continueLearning": "Weiterlernen",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Deine Sets konnten nicht geladen werden. Prüfe deine Verbindung und versuch es erneut.",
+    "retry": "Erneut versuchen",
     "yourSets": "Deine Sets",
     "viewAll": "Alle ansehen",
     "review": "Wiederholen",
@@ -397,7 +399,6 @@
       "translateHint": "Übersetze in deine Sprache",
       "hint": "Tipp",
       "skip": "Überspringen",
-      "submit": "Prüfen",
       "inputPlaceholder": "Hier tippen…",
       "loading": "Set wird geladen…",
       "loadError": "Dieses Set konnte nicht geladen werden.",
@@ -452,7 +453,10 @@
         "yourAnswer": "Deine Antwort",
         "correctAnswer": "Richtige Antwort",
         "tryAgain": "Erneut versuchen"
-      }
+      },
+      "next": "Weiter",
+      "correct": "Richtig!",
+      "incorrect": "Nicht ganz"
     },
     "essays": {
       "title": "Aufsätze",
@@ -1365,7 +1369,8 @@
       "completeBody_one": "Du hast {{count}} Kapitel geschafft. Tolles Lesen!",
       "completeBody_other": "Du hast {{count}} Kapitel geschafft. Tolles Lesen!",
       "backToStories": "Zurück zu den Geschichten"
-    }
+    },
+    "saveFailed": "Dein Ergebnis ist gespeichert, aber wir konnten diesen Text nicht als abgeschlossen markieren."
   },
   "listening": {
     "sectionTitle": "Übungsmodi",
@@ -1780,8 +1785,8 @@
       "dailyPushBody": "Ein paar Minuten mit WordAround halten deine Serie am Leben.",
       "weeklyPushTitle": "Deine Woche in WordAround",
       "weeklyPushBody": "Sieh dir an, was du diese Woche gelernt hast und was sich zu wiederholen lohnt.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Verlier deine Serie nicht",
+      "streakPushBody": "Du hast heute noch nicht geübt — ein paar Minuten zählen schon."
     }
   },
   "units": {
@@ -1840,5 +1845,10 @@
   },
   "offline": {
     "banner": "Keine Verbindung. Deine Sets und Notizen lassen sich weiterhin öffnen, und Änderungen werden gespeichert und gesendet, sobald du wieder online bist."
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "body": "Dieser Link führt nirgendwohin. Vielleicht wurde die Seite umbenannt oder die Adresse enthält einen Tippfehler.",
+    "backHome": "Zurück zu WordAround"
   }
 }

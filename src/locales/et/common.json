@@ -133,7 +133,9 @@
     "optional": "(valikuline)",
     "preview": "Eelvaade",
     "previewPlaceholder": "Uus kaust",
-    "deleteConfirmTitle": "Kas kustutada see kaust?"
+    "deleteConfirmTitle": "Kas kustutada see kaust?",
+    "setCountUnknown": "Komplektid pole saadaval",
+    "loadErrorBody": "Kontrolli ühendust ja proovi uuesti."
   },
   "sets": {
     "create": "Loo komplekt",
@@ -276,8 +278,8 @@
       "days": "päeva"
     },
     "continueLearning": "Jätka õppimist",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Sinu komplekte ei õnnestunud laadida. Kontrolli ühendust ja proovi uuesti.",
+    "retry": "Proovi uuesti",
     "yourSets": "Sinu komplektid",
     "viewAll": "Vaata kõiki",
     "review": "Korda",
@@ -394,7 +396,6 @@
       "translateHint": "Tõlgi oma keelde",
       "hint": "Vihje",
       "skip": "Jäta vahele",
-      "submit": "Kontrolli",
       "inputPlaceholder": "Kirjuta siia…",
       "loading": "Komplekti laadimine…",
       "loadError": "Seda komplekti ei õnnestunud laadida.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Sinu vastus",
         "correctAnswer": "Õige vastus",
         "tryAgain": "Proovi uuesti"
-      }
+      },
+      "next": "Edasi",
+      "correct": "Õige!",
+      "incorrect": "Pole päris"
     },
     "essays": {
       "title": "Esseed",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Lugesid läbi {{count}} peatüki. Tubli lugemine!",
       "completeBody_other": "Lugesid läbi {{count}} peatükki. Tubli lugemine!",
       "backToStories": "Tagasi lugude juurde"
-    }
+    },
+    "saveFailed": "Sinu tulemus on salvestatud, kuid teksti ei õnnestunud lõpetatuks märkida."
   },
   "listening": {
     "sectionTitle": "Harjutusviisid",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Paar minutit WordAroundiga hoiab su seeria elus.",
       "weeklyPushTitle": "Sinu nädal WordAroundis",
       "weeklyPushBody": "Vaata, mida sel nädalal õppisid ja mida tasub üle korrata.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Ära kaota oma seeriat",
+      "streakPushBody": "Sa pole täna veel harjutanud — ka paar minutit loeb."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Võrguühendust pole. Sinu komplektid ja märkmed avanevad ikka ning muudatused salvestatakse ja saadetakse, kui ühendus taastub."
+  },
+  "notFound": {
+    "title": "Lehte ei leitud",
+    "body": "See link ei vii kuhugi. Leht võis saada uue nime või on aadressis kirjaviga.",
+    "backHome": "Tagasi WordAroundi"
   }
 }

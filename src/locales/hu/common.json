@@ -133,7 +133,9 @@
     "optional": "(nem kötelező)",
     "preview": "Előnézet",
     "previewPlaceholder": "Új mappa",
-    "deleteConfirmTitle": "Törlöd ezt a mappát?"
+    "deleteConfirmTitle": "Törlöd ezt a mappát?",
+    "setCountUnknown": "A készletek nem érhetők el",
+    "loadErrorBody": "Ellenőrizd a kapcsolatot, és próbáld újra."
   },
   "sets": {
     "create": "Új csomag",
@@ -276,8 +278,8 @@
       "days": "nap"
     },
     "continueLearning": "Tanulás folytatása",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Nem sikerült betölteni a készleteidet. Ellenőrizd a kapcsolatot, és próbáld újra.",
+    "retry": "Újra",
     "yourSets": "A csomagjaid",
     "viewAll": "Összes megtekintése",
     "review": "Ismétlés",
@@ -394,7 +396,6 @@
       "translateHint": "Fordítsd a saját nyelvedre",
       "hint": "Tipp",
       "skip": "Kihagyás",
-      "submit": "Ellenőrzés",
       "inputPlaceholder": "Írj ide…",
       "loading": "Csomag betöltése…",
       "loadError": "Nem sikerült betölteni ezt a csomagot.",
@@ -449,7 +450,10 @@
         "yourAnswer": "A te válaszod",
         "correctAnswer": "Helyes válasz",
         "tryAgain": "Újra"
-      }
+      },
+      "next": "Tovább",
+      "correct": "Helyes!",
+      "incorrect": "Nem egészen"
     },
     "essays": {
       "title": "Esszék",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Elolvastál {{count}} fejezetet. Szép olvasás!",
       "completeBody_other": "Elolvastál {{count}} fejezetet. Szép olvasás!",
       "backToStories": "Vissza a történetekhez"
-    }
+    },
+    "saveFailed": "Az eredményed megvan, de a szöveget nem tudtuk késznek jelölni."
   },
   "listening": {
     "sectionTitle": "Gyakorlómódok",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Néhány perc a WordArounddal, és él a sorozatod.",
       "weeklyPushTitle": "A heted a WordAroundban",
       "weeklyPushBody": "Nézd meg, mit tanultál ezen a héten, és mit érdemes átismételni.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Ne veszítsd el a sorozatod",
+      "streakPushBody": "Ma még nem gyakoroltál — pár perc is számít."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Nincs hálózat. A szettjeid és jegyzeteid továbbra is megnyílnak, a módosítások pedig mentődnek és elmennek, amint visszatér a kapcsolat."
+  },
+  "notFound": {
+    "title": "A lap nem található",
+    "body": "Ez a hivatkozás sehová sem vezet. Lehet, hogy a lapot átnevezték, vagy elgépelés van a címben.",
+    "backHome": "Vissza a WordAroundhoz"
   }
 }

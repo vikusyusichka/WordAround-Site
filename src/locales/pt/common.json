@@ -133,7 +133,9 @@
     "optional": "(opcional)",
     "preview": "Pré-visualização",
     "previewPlaceholder": "Nova pasta",
-    "deleteConfirmTitle": "Eliminar esta pasta?"
+    "deleteConfirmTitle": "Eliminar esta pasta?",
+    "setCountUnknown": "Conjuntos indisponíveis",
+    "loadErrorBody": "Verifica a ligação e tenta de novo."
   },
   "sets": {
     "create": "Criar conjunto",
@@ -276,8 +278,8 @@
       "days": "dias"
     },
     "continueLearning": "Continuar a aprender",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Não foi possível carregar os teus conjuntos. Verifica a ligação e tenta de novo.",
+    "retry": "Tentar de novo",
     "yourSets": "Os seus conjuntos",
     "viewAll": "Ver todos",
     "review": "Rever",
@@ -394,7 +396,6 @@
       "translateHint": "Traduza para o seu idioma",
       "hint": "Dica",
       "skip": "Saltar",
-      "submit": "Verificar",
       "inputPlaceholder": "Escreva aqui…",
       "loading": "A carregar o conjunto…",
       "loadError": "Não foi possível carregar este conjunto.",
@@ -449,7 +450,10 @@
         "yourAnswer": "A sua resposta",
         "correctAnswer": "Resposta correta",
         "tryAgain": "Tentar novamente"
-      }
+      },
+      "next": "Seguinte",
+      "correct": "Correto!",
+      "incorrect": "Quase lá"
     },
     "essays": {
       "title": "Redações",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Terminou {{count}} capítulo. Boa leitura!",
       "completeBody_other": "Terminou {{count}} capítulos. Boa leitura!",
       "backToStories": "Voltar às histórias"
-    }
+    },
+    "saveFailed": "A tua pontuação está guardada, mas não conseguimos marcar este texto como concluído."
   },
   "listening": {
     "sectionTitle": "Modos de prática",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Alguns minutos com o WordAround mantêm a sua sequência viva.",
       "weeklyPushTitle": "A sua semana no WordAround",
       "weeklyPushBody": "Veja o que aprendeu esta semana e o que vale a pena rever.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Não percas a tua sequência",
+      "streakPushBody": "Ainda não praticaste hoje — alguns minutos já contam."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Sem ligação. Os seus conjuntos e notas continuam a abrir, e as alterações são guardadas e enviadas quando voltar a ligação."
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "body": "Esta ligação não leva a lado nenhum. Talvez a página tenha mudado de nome ou o endereço tenha um erro.",
+    "backHome": "Voltar ao WordAround"
   }
 }

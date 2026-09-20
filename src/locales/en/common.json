@@ -133,7 +133,9 @@
     "optional": "(optional)",
     "preview": "Preview",
     "previewPlaceholder": "New folder",
-    "deleteConfirmTitle": "Delete this folder?"
+    "deleteConfirmTitle": "Delete this folder?",
+    "setCountUnknown": "Sets unavailable",
+    "loadErrorBody": "Check your connection and try again."
   },
   "sets": {
     "create": "Create set",
@@ -394,7 +396,6 @@
       "translateHint": "Translate to your language",
       "hint": "Hint",
       "skip": "Skip",
-      "submit": "Check",
       "inputPlaceholder": "Type here…",
       "loading": "Loading set…",
       "loadError": "Couldn't load this set.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Your answer",
         "correctAnswer": "Correct answer",
         "tryAgain": "Try again"
-      }
+      },
+      "next": "Next",
+      "correct": "Correct!",
+      "incorrect": "Not quite"
     },
     "essays": {
       "title": "Essays",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "You finished {{count}} chapter. Great reading!",
       "completeBody_other": "You finished {{count}} chapters. Great reading!",
       "backToStories": "Back to stories"
-    }
+    },
+    "saveFailed": "Your score is safe, but we couldn't mark this text as finished."
   },
   "listening": {
     "sectionTitle": "Practice modes",
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "You are offline. Your sets and notes still open, and changes are saved and sent when you are back."
+  },
+  "notFound": {
+    "title": "Page not found",
+    "body": "That link does not lead anywhere. It may have been renamed, or the address has a typo.",
+    "backHome": "Back to WordAround"
   }
 }

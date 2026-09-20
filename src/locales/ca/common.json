@@ -133,7 +133,9 @@
     "optional": "(opcional)",
     "preview": "Vista prèvia",
     "previewPlaceholder": "Carpeta nova",
-    "deleteConfirmTitle": "Vols eliminar aquesta carpeta?"
+    "deleteConfirmTitle": "Vols eliminar aquesta carpeta?",
+    "setCountUnknown": "Conjunts no disponibles",
+    "loadErrorBody": "Comprova la connexió i torna-ho a provar."
   },
   "sets": {
     "create": "Crea un conjunt",
@@ -276,8 +278,8 @@
       "days": "dies"
     },
     "continueLearning": "Continua aprenent",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "No s'han pogut carregar els teus conjunts. Comprova la connexió i torna-ho a provar.",
+    "retry": "Torna-ho a provar",
     "yourSets": "Els teus conjunts",
     "viewAll": "Mostra'ls tots",
     "review": "Repassa",
@@ -394,7 +396,6 @@
       "translateHint": "Tradueix al teu idioma",
       "hint": "Pista",
       "skip": "Salta",
-      "submit": "Comprova",
       "inputPlaceholder": "Escriu aquí…",
       "loading": "Carregant el conjunt…",
       "loadError": "No hem pogut carregar aquest conjunt.",
@@ -449,7 +450,10 @@
         "yourAnswer": "La teva resposta",
         "correctAnswer": "Resposta correcta",
         "tryAgain": "Torna-ho a provar"
-      }
+      },
+      "next": "Següent",
+      "correct": "Correcte!",
+      "incorrect": "Gairebé"
     },
     "essays": {
       "title": "Redaccions",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Has acabat {{count}} capítol. Bona lectura!",
       "completeBody_other": "Has acabat {{count}} capítols. Bona lectura!",
       "backToStories": "Torna a les històries"
-    }
+    },
+    "saveFailed": "La teva puntuació està desada, però no hem pogut marcar aquest text com a acabat."
   },
   "listening": {
     "sectionTitle": "Modes de pràctica",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Uns minuts amb WordAround mantenen viva la teva ratxa.",
       "weeklyPushTitle": "La teva setmana a WordAround",
       "weeklyPushBody": "Mira què has après aquesta setmana i què val la pena repassar.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "No perdis la teva ratxa",
+      "streakPushBody": "Encara no has practicat avui: uns quants minuts ja compten."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Sense connexió. Els teus conjunts i notes s’obren igualment, i els canvis es desen i s’envien quan tornis a tenir xarxa."
+  },
+  "notFound": {
+    "title": "Pàgina no trobada",
+    "body": "Aquest enllaç no porta enlloc. Potser la pàgina s'ha reanomenat o l'adreça té una errada.",
+    "backHome": "Torna a WordAround"
   }
 }

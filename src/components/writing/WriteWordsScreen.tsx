@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next';
 import { Icon } from '@/components/primitives/Icon';
 import { WriteWordsCard } from './WriteWordsCard';
 import { WriteWordsControls } from './WriteWordsControls';
+import { WriteWordsFeedback } from './WriteWordsFeedback';
 import { WriteWordsResultScreen } from './WriteWordsResultScreen';
 import { WriteWordsSettingsSheet } from './WriteWordsSettingsSheet';
 import { WriteWordsTimerBar } from './WriteWordsTimerBar';
@@ -178,6 +179,10 @@ export const WriteWordsScreen = ({ setId }: WriteWordsScreenProps) => {
               }}
             />
           </div>
+
+          {/* The verdict sits between the field and the button, as iOS has it —
+              right where the eye already is after typing. */}
+          <WriteWordsFeedback validation={state.validation} />
 
           <WriteWordsControls
             showHint={state.difficulty !== 'hard'}

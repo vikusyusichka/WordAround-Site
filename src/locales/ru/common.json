@@ -134,6 +134,8 @@
     "preview": "Предпросмотр",
     "previewPlaceholder": "Новая папка",
     "deleteConfirmTitle": "Удалить эту папку?",
+    "setCountUnknown": "Наборы недоступны",
+    "loadErrorBody": "Проверьте соединение и попробуйте снова.",
     "setCount_few": "{{count}} набора",
     "setCount_many": "{{count}} наборов",
     "setCount_other": "{{count}} набора"
@@ -282,8 +284,8 @@
       "days": "дней"
     },
     "continueLearning": "Продолжить обучение",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Не удалось загрузить ваши наборы. Проверьте соединение и попробуйте снова.",
+    "retry": "Попробовать снова",
     "yourSets": "Ваши наборы",
     "viewAll": "Показать все",
     "review": "Повторить",
@@ -403,7 +405,6 @@
       "translateHint": "Переведите на свой язык",
       "hint": "Подсказка",
       "skip": "Пропустить",
-      "submit": "Проверить",
       "inputPlaceholder": "Пишите здесь…",
       "loading": "Загружаем набор…",
       "loadError": "Не удалось загрузить этот набор.",
@@ -459,6 +460,9 @@
         "correctAnswer": "Правильный ответ",
         "tryAgain": "Попробовать снова"
       },
+      "next": "Далее",
+      "correct": "Правильно!",
+      "incorrect": "Не совсем",
       "skipsLeft_few": "Осталось {{count}} пропуска",
       "skipsLeft_many": "Осталось {{count}} пропусков"
     },
@@ -1411,7 +1415,8 @@
       "backToStories": "Назад к историям",
       "completeBody_few": "Вы прочитали {{count}} главы. Отличное чтение!",
       "completeBody_many": "Вы прочитали {{count}} глав. Отличное чтение!"
-    }
+    },
+    "saveFailed": "Результат сохранён, но отметить текст как прочитанный не удалось."
   },
   "listening": {
     "sectionTitle": "Режимы практики",
@@ -1826,8 +1831,8 @@
       "dailyPushBody": "Несколько минут с WordAround — и серия жива.",
       "weeklyPushTitle": "Ваша неделя в WordAround",
       "weeklyPushBody": "Посмотрите, что вы выучили за неделю и что стоит повторить.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Не теряйте серию",
+      "streakPushBody": "Сегодня вы ещё не занимались — несколько минут тоже считаются."
     }
   },
   "units": {
@@ -1886,5 +1891,10 @@
   },
   "offline": {
     "banner": "Нет сети. Ваши наборы и заметки всё равно открываются, а изменения сохранятся и отправятся, когда связь вернётся."
+  },
+  "notFound": {
+    "title": "Страница не найдена",
+    "body": "Эта ссылка никуда не ведёт. Возможно, страницу переименовали или в адресе опечатка.",
+    "backHome": "Вернуться в WordAround"
   }
 }

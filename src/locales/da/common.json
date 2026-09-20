@@ -133,7 +133,9 @@
     "optional": "(valgfrit)",
     "preview": "Forhåndsvisning",
     "previewPlaceholder": "Ny mappe",
-    "deleteConfirmTitle": "Slet denne mappe?"
+    "deleteConfirmTitle": "Slet denne mappe?",
+    "setCountUnknown": "Sæt er ikke tilgængelige",
+    "loadErrorBody": "Tjek din forbindelse, og prøv igen."
   },
   "sets": {
     "create": "Opret sæt",
@@ -276,8 +278,8 @@
       "days": "dage"
     },
     "continueLearning": "Fortsæt med at lære",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Dine sæt kunne ikke indlæses. Tjek din forbindelse, og prøv igen.",
+    "retry": "Prøv igen",
     "yourSets": "Dine sæt",
     "viewAll": "Se alle",
     "review": "Repetér",
@@ -394,7 +396,6 @@
       "translateHint": "Oversæt til dit eget sprog",
       "hint": "Hint",
       "skip": "Spring over",
-      "submit": "Tjek",
       "inputPlaceholder": "Skriv her…",
       "loading": "Indlæser sættet…",
       "loadError": "Vi kunne ikke indlæse dette sæt.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Dit svar",
         "correctAnswer": "Rigtigt svar",
         "tryAgain": "Prøv igen"
-      }
+      },
+      "next": "Næste",
+      "correct": "Rigtigt!",
+      "incorrect": "Ikke helt"
     },
     "essays": {
       "title": "Essays",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Du læste {{count}} kapitel. Flot læsning!",
       "completeBody_other": "Du læste {{count}} kapitler. Flot læsning!",
       "backToStories": "Tilbage til historierne"
-    }
+    },
+    "saveFailed": "Dit resultat er gemt, men vi kunne ikke markere teksten som færdig."
   },
   "listening": {
     "sectionTitle": "Træningsformer",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Et par minutter med WordAround holder din stime i live.",
       "weeklyPushTitle": "Din uge i WordAround",
       "weeklyPushBody": "Se, hvad du har lært i denne uge, og hvad der er værd at repetere.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Mist ikke din stime",
+      "streakPushBody": "Du har ikke øvet dig i dag endnu — et par minutter tæller også."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Ingen forbindelse. Dine sæt og noter åbner stadig, og ændringer gemmes og sendes, når forbindelsen er tilbage."
+  },
+  "notFound": {
+    "title": "Siden blev ikke fundet",
+    "body": "Det link fører ingen steder hen. Siden er måske omdøbt, eller adressen har en tastefejl.",
+    "backHome": "Tilbage til WordAround"
   }
 }

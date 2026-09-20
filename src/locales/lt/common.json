@@ -134,6 +134,8 @@
     "preview": "Peržiūra",
     "previewPlaceholder": "Naujas aplankas",
     "deleteConfirmTitle": "Ištrinti šį aplanką?",
+    "setCountUnknown": "Rinkiniai nepasiekiami",
+    "loadErrorBody": "Patikrink ryšį ir bandyk dar kartą.",
     "setCount_few": "{{count}} rinkiniai"
   },
   "sets": {
@@ -278,8 +280,8 @@
       "days": "d."
     },
     "continueLearning": "Tęsti mokymąsi",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Nepavyko įkelti tavo rinkinių. Patikrink ryšį ir bandyk dar kartą.",
+    "retry": "Bandyti dar kartą",
     "yourSets": "Jūsų rinkiniai",
     "viewAll": "Rodyti visus",
     "review": "Kartoti",
@@ -397,7 +399,6 @@
       "translateHint": "Išverskite į savo kalbą",
       "hint": "Užuomina",
       "skip": "Praleisti",
-      "submit": "Tikrinti",
       "inputPlaceholder": "Rašykite čia…",
       "loading": "Įkeliamas rinkinys…",
       "loadError": "Nepavyko įkelti šio rinkinio.",
@@ -453,6 +454,9 @@
         "correctAnswer": "Teisingas atsakymas",
         "tryAgain": "Bandyti dar kartą"
       },
+      "next": "Toliau",
+      "correct": "Teisingai!",
+      "incorrect": "Ne visai",
       "skipsLeft_few": "Liko {{count}} praleidimai"
     },
     "essays": {
@@ -1385,7 +1389,8 @@
       "completeBody_other": "Perskaitėte {{count}} skyrių. Puikus skaitymas!",
       "backToStories": "Atgal į istorijas",
       "completeBody_few": "Perskaitėte {{count}} skyrius. Puikus skaitymas!"
-    }
+    },
+    "saveFailed": "Tavo rezultatas išsaugotas, bet teksto nepavyko pažymėti kaip perskaityto."
   },
   "listening": {
     "sectionTitle": "Praktikos režimai",
@@ -1800,8 +1805,8 @@
       "dailyPushBody": "Kelios minutės su WordAround – ir serija gyva.",
       "weeklyPushTitle": "Jūsų savaitė su WordAround",
       "weeklyPushBody": "Pažiūrėkite, ko išmokote šią savaitę ir ką verta pakartoti.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Neprarask savo serijos",
+      "streakPushBody": "Šiandien dar nesimokei — net kelios minutės skaičiuojamos."
     }
   },
   "units": {
@@ -1860,5 +1865,10 @@
   },
   "offline": {
     "banner": "Nėra ryšio. Jūsų rinkiniai ir užrašai vis tiek atsidaro, o pakeitimai išsaugomi ir išsiunčiami grįžus ryšiui."
+  },
+  "notFound": {
+    "title": "Puslapis nerastas",
+    "body": "Ši nuoroda niekur neveda. Puslapis galėjo būti pervadintas arba adrese yra klaida.",
+    "backHome": "Grįžti į WordAround"
   }
 }

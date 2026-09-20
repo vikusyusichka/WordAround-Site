@@ -159,12 +159,12 @@ describe('SUBMIT', () => {
     expect(s.streak).toBe(0);
   });
 
-  it('CLEAR_INCORRECT resets an incorrect flash', () => {
+  it('typing clears an incorrect flash', () => {
     const s = run(
       init(),
       { type: 'SET_TYPED', value: 'pear' },
       { type: 'SUBMIT' },
-      { type: 'CLEAR_INCORRECT' },
+      { type: 'SET_TYPED', value: 'o' },
     );
     expect(s.validation).toBe('idle');
   });
@@ -365,5 +365,27 @@ describe('SET_DIFFICULTY / RESTART', () => {
     expect(s.completedWords).toBe(0);
     expect(s.streak).toBe(0);
     expect(resultType(s)).toBeNull();
+  });
+});
+
+describe('SEED', () => {
+  /* Regression. The set is fetched, so the first render has no cards; an empty
+     round counts as finished, and the screen showed "Round complete" over zero
+     words instead of the exercise. */
+  it('starts the round once the cards arrive', () => {
+    const empty = initialWritingState([]);
+    expect(empty.isRoundCompleted).toBe(true);
+
+    const seeded = writingReducer(empty, { type: 'SEED', exercises });
+    expect(seeded.isRoundCompleted).toBe(false);
+    expect(seeded.exercises).toHaveLength(exercises.length);
+    expect(seeded.currentIndex).toBe(0);
+  });
+
+  it('keeps the mode and difficulty chosen while the screen was empty', () => {
+    const empty = { ...initialWritingState([]), difficulty: 'hard' as const, trainingMode: 'translationToWord' as const };
+    const seeded = writingReducer(empty, { type: 'SEED', exercises });
+    expect(seeded.difficulty).toBe('hard');
+    expect(seeded.trainingMode).toBe('translationToWord');
   });
 });

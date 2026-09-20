@@ -133,7 +133,9 @@
     "optional": "(valfritt)",
     "preview": "Förhandsvisning",
     "previewPlaceholder": "Ny mapp",
-    "deleteConfirmTitle": "Ta bort den här mappen?"
+    "deleteConfirmTitle": "Ta bort den här mappen?",
+    "setCountUnknown": "Set är inte tillgängliga",
+    "loadErrorBody": "Kontrollera anslutningen och försök igen."
   },
   "sets": {
     "create": "Skapa set",
@@ -276,8 +278,8 @@
       "days": "dagar"
     },
     "continueLearning": "Fortsätt lära dig",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Dina set kunde inte laddas. Kontrollera anslutningen och försök igen.",
+    "retry": "Försök igen",
     "yourSets": "Dina set",
     "viewAll": "Visa alla",
     "review": "Repetera",
@@ -394,7 +396,6 @@
       "translateHint": "Översätt till ditt språk",
       "hint": "Ledtråd",
       "skip": "Hoppa över",
-      "submit": "Kontrollera",
       "inputPlaceholder": "Skriv här…",
       "loading": "Laddar setet…",
       "loadError": "Vi kunde inte ladda det här setet.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Ditt svar",
         "correctAnswer": "Rätt svar",
         "tryAgain": "Försök igen"
-      }
+      },
+      "next": "Nästa",
+      "correct": "Rätt!",
+      "incorrect": "Inte riktigt"
     },
     "essays": {
       "title": "Uppsatser",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Du läste {{count}} kapitel. Fin läsning!",
       "completeBody_other": "Du läste {{count}} kapitel. Fin läsning!",
       "backToStories": "Tillbaka till berättelserna"
-    }
+    },
+    "saveFailed": "Ditt resultat är sparat, men vi kunde inte markera texten som klar."
   },
   "listening": {
     "sectionTitle": "Övningslägen",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Några minuter med WordAround håller din svit vid liv.",
       "weeklyPushTitle": "Din vecka i WordAround",
       "weeklyPushBody": "Se vad du lärt dig den här veckan och vad som är värt att repetera.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Tappa inte din svit",
+      "streakPushBody": "Du har inte övat i dag än — några minuter räcker långt."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Ingen anslutning. Dina set och anteckningar öppnas ändå, och ändringar sparas och skickas när du är online igen."
+  },
+  "notFound": {
+    "title": "Sidan hittades inte",
+    "body": "Den länken leder ingenstans. Sidan kan ha bytt namn, eller så har adressen ett stavfel.",
+    "backHome": "Tillbaka till WordAround"
   }
 }

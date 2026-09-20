@@ -133,7 +133,9 @@
     "optional": "(facultatif)",
     "preview": "Aperçu",
     "previewPlaceholder": "Nouveau dossier",
-    "deleteConfirmTitle": "Supprimer ce dossier ?"
+    "deleteConfirmTitle": "Supprimer ce dossier ?",
+    "setCountUnknown": "Sets indisponibles",
+    "loadErrorBody": "Vérifie ta connexion et réessaie."
   },
   "sets": {
     "create": "Créer une liste",
@@ -276,8 +278,8 @@
       "days": "jours"
     },
     "continueLearning": "Continuer à apprendre",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Impossible de charger tes sets. Vérifie ta connexion et réessaie.",
+    "retry": "Réessayer",
     "yourSets": "Vos listes",
     "viewAll": "Tout voir",
     "review": "Réviser",
@@ -394,7 +396,6 @@
       "translateHint": "Traduisez dans votre langue",
       "hint": "Indice",
       "skip": "Passer",
-      "submit": "Vérifier",
       "inputPlaceholder": "Tapez ici…",
       "loading": "Chargement de la liste…",
       "loadError": "Impossible de charger cette liste.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Votre réponse",
         "correctAnswer": "Bonne réponse",
         "tryAgain": "Réessayer"
-      }
+      },
+      "next": "Suivant",
+      "correct": "Correct !",
+      "incorrect": "Pas tout à fait"
     },
     "essays": {
       "title": "Rédactions",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Vous avez terminé {{count}} chapitre. Belle lecture !",
       "completeBody_other": "Vous avez terminé {{count}} chapitres. Belle lecture !",
       "backToStories": "Retour aux histoires"
-    }
+    },
+    "saveFailed": "Ton score est enregistré, mais nous n'avons pas pu marquer ce texte comme terminé."
   },
   "listening": {
     "sectionTitle": "Modes de pratique",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Quelques minutes avec WordAround et votre série continue.",
       "weeklyPushTitle": "Votre semaine dans WordAround",
       "weeklyPushBody": "Voyez ce que vous avez appris cette semaine et ce qui mérite une révision.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Ne perds pas ta série",
+      "streakPushBody": "Tu n'as pas encore pratiqué aujourd'hui — quelques minutes comptent déjà."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Hors ligne. Vos listes et vos notes s’ouvrent toujours, et vos modifications sont enregistrées puis envoyées au retour de la connexion."
+  },
+  "notFound": {
+    "title": "Page introuvable",
+    "body": "Ce lien ne mène nulle part. La page a peut-être été renommée, ou l'adresse contient une faute.",
+    "backHome": "Retour à WordAround"
   }
 }

@@ -133,7 +133,9 @@
     "optional": "(valinnainen)",
     "preview": "Esikatselu",
     "previewPlaceholder": "Uusi kansio",
-    "deleteConfirmTitle": "Poistetaanko tämä kansio?"
+    "deleteConfirmTitle": "Poistetaanko tämä kansio?",
+    "setCountUnknown": "Setit eivät ole saatavilla",
+    "loadErrorBody": "Tarkista yhteys ja yritä uudelleen."
   },
   "sets": {
     "create": "Luo setti",
@@ -276,8 +278,8 @@
       "days": "päivää"
     },
     "continueLearning": "Jatka oppimista",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Settejäsi ei voitu ladata. Tarkista yhteys ja yritä uudelleen.",
+    "retry": "Yritä uudelleen",
     "yourSets": "Settisi",
     "viewAll": "Näytä kaikki",
     "review": "Kertaa",
@@ -394,7 +396,6 @@
       "translateHint": "Käännä omalle kielellesi",
       "hint": "Vihje",
       "skip": "Ohita",
-      "submit": "Tarkista",
       "inputPlaceholder": "Kirjoita tähän…",
       "loading": "Ladataan settiä…",
       "loadError": "Tämän setin lataus ei onnistunut.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Vastauksesi",
         "correctAnswer": "Oikea vastaus",
         "tryAgain": "Yritä uudelleen"
-      }
+      },
+      "next": "Seuraava",
+      "correct": "Oikein!",
+      "incorrect": "Ei aivan"
     },
     "essays": {
       "title": "Esseet",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Luit {{count}} luvun. Hienoa lukemista!",
       "completeBody_other": "Luit {{count}} lukua. Hienoa lukemista!",
       "backToStories": "Takaisin tarinoihin"
-    }
+    },
+    "saveFailed": "Tuloksesi on tallessa, mutta tekstiä ei voitu merkitä valmiiksi."
   },
   "listening": {
     "sectionTitle": "Harjoittelutavat",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Muutama minuutti WordAroundin parissa pitää putkesi elossa.",
       "weeklyPushTitle": "Viikkosi WordAroundissa",
       "weeklyPushBody": "Katso, mitä opit tällä viikolla ja mitä kannattaa kerrata.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Älä menetä putkeasi",
+      "streakPushBody": "Et ole vielä harjoitellut tänään — muutamakin minuutti riittää."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Ei verkkoyhteyttä. Settisi ja muistiinpanosi aukeavat silti, ja muutokset tallennetaan ja lähetetään, kun yhteys palaa."
+  },
+  "notFound": {
+    "title": "Sivua ei löytynyt",
+    "body": "Linkki ei johda mihinkään. Sivu on ehkä nimetty uudelleen tai osoitteessa on kirjoitusvirhe.",
+    "backHome": "Takaisin WordAroundiin"
   }
 }

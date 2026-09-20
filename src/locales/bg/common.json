@@ -133,7 +133,9 @@
     "optional": "(по избор)",
     "preview": "Преглед",
     "previewPlaceholder": "Нова папка",
-    "deleteConfirmTitle": "Да се изтрие ли тази папка?"
+    "deleteConfirmTitle": "Да се изтрие ли тази папка?",
+    "setCountUnknown": "Наборите не са достъпни",
+    "loadErrorBody": "Проверете връзката и опитайте отново."
   },
   "sets": {
     "create": "Нов комплект",
@@ -276,8 +278,8 @@
       "days": "дни"
     },
     "continueLearning": "Продължи ученето",
-    "loadError": "Couldn't load your sets. Check your connection and try again.",
-    "retry": "Try again",
+    "loadError": "Наборите ви не можаха да се заредят. Проверете връзката и опитайте отново.",
+    "retry": "Опитайте отново",
     "yourSets": "Вашите комплекти",
     "viewAll": "Виж всички",
     "review": "Преговор",
@@ -394,7 +396,6 @@
       "translateHint": "Преведете на своя език",
       "hint": "Подсказка",
       "skip": "Пропусни",
-      "submit": "Провери",
       "inputPlaceholder": "Пишете тук…",
       "loading": "Зареждаме комплекта…",
       "loadError": "Не успяхме да заредим този комплект.",
@@ -449,7 +450,10 @@
         "yourAnswer": "Вашият отговор",
         "correctAnswer": "Верен отговор",
         "tryAgain": "Опитай отново"
-      }
+      },
+      "next": "Напред",
+      "correct": "Правилно!",
+      "incorrect": "Не съвсем"
     },
     "essays": {
       "title": "Есета",
@@ -1362,7 +1366,8 @@
       "completeBody_one": "Прочетохте {{count}} глава. Отлично четене!",
       "completeBody_other": "Прочетохте {{count}} глави. Отлично четене!",
       "backToStories": "Назад към историите"
-    }
+    },
+    "saveFailed": "Резултатът ви е запазен, но текстът не можа да бъде отбелязан като завършен."
   },
   "listening": {
     "sectionTitle": "Режими за упражнение",
@@ -1777,8 +1782,8 @@
       "dailyPushBody": "Няколко минути с WordAround и серията ви продължава.",
       "weeklyPushTitle": "Вашата седмица в WordAround",
       "weeklyPushBody": "Вижте какво научихте тази седмица и какво си струва да повторите.",
-      "streakPushTitle": "Don't lose your streak",
-      "streakPushBody": "You haven't practised today yet — a few minutes still counts."
+      "streakPushTitle": "Не губете серията си",
+      "streakPushBody": "Днес още не сте упражнявали — и няколко минути се броят."
     }
   },
   "units": {
@@ -1837,5 +1842,10 @@
   },
   "offline": {
     "banner": "Няма мрежа. Наборите и бележките ви пак се отварят, а промените се запазват и изпращат, когато връзката се върне."
+  },
+  "notFound": {
+    "title": "Страницата не е намерена",
+    "body": "Тази връзка не води никъде. Страницата може да е преименувана или в адреса има грешка.",
+    "backHome": "Обратно към WordAround"
   }
 }
