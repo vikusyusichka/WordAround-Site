@@ -96,7 +96,8 @@
     "group": {
       "practice": "Практика",
       "library": "Бібліотека"
-    }
+    },
+    "exams": "Іспити"
   },
   "folders": {
     "create": "Створити теку",
@@ -1896,5 +1897,50 @@
     "title": "Сторінку не знайдено",
     "body": "Це посилання нікуди не веде. Можливо, сторінку перейменували або в адресі помилка.",
     "backHome": "Повернутися до WordAround"
+  },
+  "exams": {
+    "title": "Підготовка до іспитів",
+    "subtitle": "Пробні іспити у справжньому форматі, на час і з оцінкою",
+    "catalogTitle": "Оберіть іспит",
+    "cardSubtitle": "{{language}} · {{variants}}",
+    "moreSoon": "TOEFL, Cambridge, DELF, Goethe та інші вже на підході.",
+    "back": "Іспити",
+    "format": "Формат іспиту",
+    "totalTime": "Загальний час",
+    "sectionsCount": "Частини",
+    "scoring": "Оцінювання",
+    "scoreBand": "Бал 0–{{max}}, з кроком 0,5",
+    "scorePass": "Складено: {{total}}/{{max}}, по {{group}} у кожній групі",
+    "duration": {
+      "hours": "{{h}} год {{m}} хв",
+      "hoursOnly": "{{h}} год",
+      "minutes": "{{m}} хв"
+    },
+    "prep": "+ {{m}} хв на підготовку",
+    "tasks_one": "{{count}} завдання",
+    "tasks_few": "{{count}} завдання",
+    "tasks_many": "{{count}} завдань",
+    "tasks_other": "{{count}} завдання",
+    "items_one": "{{count}} питання",
+    "items_few": "{{count}} питання",
+    "items_many": "{{count}} питань",
+    "items_other": "{{count}} питання",
+    "rubricMarked": "Оцінюється за критеріями",
+    "playsOnce": "Аудіо звучить один раз",
+    "playsTwice": "Аудіо звучить двічі",
+    "wordsMin": "Від {{min}} слів",
+    "wordsRange": "{{min}}–{{max}} слів",
+    "speakFor": "Говорити близько {{m}} хв",
+    "mock": {
+      "title": "Повний пробний іспит",
+      "subtitle": "Усі частини, на час, з орієнтовним балом"
+    },
+    "practice": {
+      "title": "Тренувати одне завдання",
+      "subtitle": "Оберіть тип завдання й отримайте відгук"
+    },
+    "comingSoon": "Незабаром",
+    "disclaimer": "WordAround не пов’язаний з {{owner}}. Бали тут орієнтовні, а не офіційні результати.",
+    "officialSite": "Офіційний сайт"
   }
 }

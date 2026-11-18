@@ -37,6 +37,7 @@ export const NAV_GROUPS: NavGroup[] = [
       { id: 'listening', to: '/practice/listening', labelKey: 'nav.listening', icon: 'headphones' },
       { id: 'reading', to: '/practice/reading', labelKey: 'nav.reading', icon: 'book' },
       { id: 'writing', to: '/practice/writing', labelKey: 'nav.writing', icon: 'pencil.and.scribble' },
+      { id: 'exams', to: '/exams', labelKey: 'nav.exams', icon: 'graduationcap', iconActive: 'graduationcap.fill' },
     ],
   },
   {
@@ -170,6 +171,7 @@ export const pageCopyForPath = (pathname: string): PageCopy => {
     const mode = pathname.slice('/practice/'.length);
     if (isPracticeMode(mode)) return PRACTICE_COPY[mode];
   }
+  if (pathname.startsWith('/exams')) return { titleKey: 'exams.title', subtitleKey: 'exams.subtitle' };
   if (pathname.startsWith('/folders')) return { titleKey: 'home.title.folders', subtitleKey: 'home.subtitle.folders' };
   if (pathname.startsWith('/sets')) return { titleKey: 'home.title.sets', subtitleKey: 'home.subtitle.sets' };
   if (pathname.startsWith('/notes')) return { titleKey: 'nav.notes', subtitleKey: 'writing.grammar.subtitle' };

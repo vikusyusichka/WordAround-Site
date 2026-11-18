@@ -96,7 +96,8 @@
     "group": {
       "practice": "Практика",
       "library": "Библиотека"
-    }
+    },
+    "exams": "Экзамены"
   },
   "folders": {
     "create": "Создать папку",
@@ -1896,5 +1897,50 @@
     "title": "Страница не найдена",
     "body": "Эта ссылка никуда не ведёт. Возможно, страницу переименовали или в адресе опечатка.",
     "backHome": "Вернуться в WordAround"
+  },
+  "exams": {
+    "title": "Подготовка к экзаменам",
+    "subtitle": "Пробные экзамены в настоящем формате, на время и с оценкой",
+    "catalogTitle": "Выберите экзамен",
+    "cardSubtitle": "{{language}} · {{variants}}",
+    "moreSoon": "TOEFL, Cambridge, DELF, Goethe и другие уже на подходе.",
+    "back": "Экзамены",
+    "format": "Формат экзамена",
+    "totalTime": "Общее время",
+    "sectionsCount": "Части",
+    "scoring": "Оценивание",
+    "scoreBand": "Балл 0–{{max}}, с шагом 0,5",
+    "scorePass": "Сдано: {{total}}/{{max}}, по {{group}} в каждой группе",
+    "duration": {
+      "hours": "{{h}} ч {{m}} мин",
+      "hoursOnly": "{{h}} ч",
+      "minutes": "{{m}} мин"
+    },
+    "prep": "+ {{m}} мин на подготовку",
+    "tasks_one": "{{count}} задание",
+    "tasks_few": "{{count}} задания",
+    "tasks_many": "{{count}} заданий",
+    "tasks_other": "{{count}} задания",
+    "items_one": "{{count}} вопрос",
+    "items_few": "{{count}} вопроса",
+    "items_many": "{{count}} вопросов",
+    "items_other": "{{count}} вопроса",
+    "rubricMarked": "Оценивается по критериям",
+    "playsOnce": "Аудио звучит один раз",
+    "playsTwice": "Аудио звучит дважды",
+    "wordsMin": "От {{min}} слов",
+    "wordsRange": "{{min}}–{{max}} слов",
+    "speakFor": "Говорить около {{m}} мин",
+    "mock": {
+      "title": "Полный пробный экзамен",
+      "subtitle": "Все части, на время, с ориентировочным баллом"
+    },
+    "practice": {
+      "title": "Тренировать одно задание",
+      "subtitle": "Выберите тип задания и получите отзыв"
+    },
+    "comingSoon": "Скоро",
+    "disclaimer": "WordAround не связан с {{owner}}. Баллы здесь ориентировочные, а не официальные результаты.",
+    "officialSite": "Официальный сайт"
   }
 }

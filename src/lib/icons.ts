@@ -214,6 +214,7 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'book.fill': BookOpen,
   'text.book.closed.fill': BookOpen,
   'graduationcap.fill': GraduationCap,
+  graduationcap: GraduationCap,
   'brain.head.profile': Brain,
   'globe.europe.africa.fill': Globe,
   'star.fill': Star,

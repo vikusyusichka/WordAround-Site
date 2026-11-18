@@ -96,7 +96,8 @@
     "group": {
       "practice": "Ćwiczenia",
       "library": "Biblioteka"
-    }
+    },
+    "exams": "Egzaminy"
   },
   "folders": {
     "create": "Utwórz folder",
@@ -1896,5 +1897,50 @@
     "title": "Nie znaleziono strony",
     "body": "Ten link donikąd nie prowadzi. Strona mogła zmienić nazwę albo w adresie jest literówka.",
     "backHome": "Wróć do WordAround"
+  },
+  "exams": {
+    "title": "Przygotowanie do egzaminów",
+    "subtitle": "Egzaminy próbne w prawdziwym formacie, na czas i z oceną",
+    "catalogTitle": "Wybierz egzamin",
+    "cardSubtitle": "{{language}} · {{variants}}",
+    "moreSoon": "TOEFL, Cambridge, DELF, Goethe i inne już wkrótce.",
+    "back": "Egzaminy",
+    "format": "Format egzaminu",
+    "totalTime": "Łączny czas",
+    "sectionsCount": "Części",
+    "scoring": "Ocenianie",
+    "scoreBand": "Wynik 0–{{max}}, co 0,5",
+    "scorePass": "Zdany: {{total}}/{{max}}, po {{group}} w każdej grupie",
+    "duration": {
+      "hours": "{{h}} godz. {{m}} min",
+      "hoursOnly": "{{h}} godz.",
+      "minutes": "{{m}} min"
+    },
+    "prep": "+ {{m}} min na przygotowanie",
+    "tasks_one": "{{count}} zadanie",
+    "tasks_few": "{{count}} zadania",
+    "tasks_many": "{{count}} zadań",
+    "tasks_other": "{{count}} zadania",
+    "items_one": "{{count}} pytanie",
+    "items_few": "{{count}} pytania",
+    "items_many": "{{count}} pytań",
+    "items_other": "{{count}} pytania",
+    "rubricMarked": "Oceniane według kryteriów",
+    "playsOnce": "Nagranie odtwarzane raz",
+    "playsTwice": "Nagranie odtwarzane dwa razy",
+    "wordsMin": "Od {{min}} słów",
+    "wordsRange": "{{min}}–{{max}} słów",
+    "speakFor": "Mów około {{m}} min",
+    "mock": {
+      "title": "Pełny egzamin próbny",
+      "subtitle": "Wszystkie części, na czas, z szacowanym wynikiem"
+    },
+    "practice": {
+      "title": "Ćwicz jedno zadanie",
+      "subtitle": "Wybierz typ zadania i otrzymaj informację zwrotną"
+    },
+    "comingSoon": "Wkrótce",
+    "disclaimer": "WordAround nie jest powiązany z {{owner}}. Wyniki są szacunkowe, a nie oficjalne.",
+    "officialSite": "Oficjalna strona"
   }
 }

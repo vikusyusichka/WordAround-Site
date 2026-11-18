@@ -96,7 +96,8 @@
     "group": {
       "practice": "Práctica",
       "library": "Biblioteca"
-    }
+    },
+    "exams": "Exámenes"
   },
   "folders": {
     "create": "Crear carpeta",
@@ -1847,5 +1848,46 @@
     "title": "Página no encontrada",
     "body": "Ese enlace no lleva a ninguna parte. Puede que se haya renombrado o que la dirección tenga una errata.",
     "backHome": "Volver a WordAround"
+  },
+  "exams": {
+    "title": "Preparación de exámenes",
+    "subtitle": "Simulacros con el formato real, cronometrados y puntuados",
+    "catalogTitle": "Elige tu examen",
+    "cardSubtitle": "{{language}} · {{variants}}",
+    "moreSoon": "TOEFL, Cambridge, DELF, Goethe y más están en camino.",
+    "back": "Exámenes",
+    "format": "Formato del examen",
+    "totalTime": "Tiempo total",
+    "sectionsCount": "Pruebas",
+    "scoring": "Calificación",
+    "scoreBand": "Banda 0–{{max}}, en medias bandas",
+    "scorePass": "Apto: {{total}}/{{max}}, {{group}} en cada grupo",
+    "duration": {
+      "hours": "{{h}} h {{m}} min",
+      "hoursOnly": "{{h}} h",
+      "minutes": "{{m}} min"
+    },
+    "prep": "+ {{m}} min de preparación",
+    "tasks_one": "{{count}} tarea",
+    "tasks_other": "{{count}} tareas",
+    "items_one": "{{count}} pregunta",
+    "items_other": "{{count}} preguntas",
+    "rubricMarked": "Se califica con criterios",
+    "playsOnce": "El audio se escucha una vez",
+    "playsTwice": "El audio se escucha dos veces",
+    "wordsMin": "{{min}} palabras o más",
+    "wordsRange": "{{min}}–{{max}} palabras",
+    "speakFor": "Hablar unos {{m}} min",
+    "mock": {
+      "title": "Simulacro completo",
+      "subtitle": "Todas las pruebas, cronometradas, con puntuación estimada"
+    },
+    "practice": {
+      "title": "Practicar una tarea",
+      "subtitle": "Elige un tipo de tarea y recibe comentarios"
+    },
+    "comingSoon": "Próximamente",
+    "disclaimer": "WordAround no está afiliado a {{owner}}. Las puntuaciones son estimaciones, no resultados oficiales.",
+    "officialSite": "Sitio oficial"
   }
 }

@@ -38,6 +38,12 @@ describe('pageCopyForPath', () => {
     expect(pageCopyForPath('/sets').titleKey).toBe('home.title.sets');
   });
 
+  it('maps the exams catalog and every exam page', () => {
+    const expected = { titleKey: 'exams.title', subtitleKey: 'exams.subtitle' };
+    expect(pageCopyForPath('/exams')).toEqual(expected);
+    expect(pageCopyForPath('/exams/ielts')).toEqual(expected);
+  });
+
   it('keeps the profile header on the profile sub-screens', () => {
     const expected = { titleKey: 'home.title.profile', subtitleKey: 'profile.subtitle' };
     expect(pageCopyForPath('/profile')).toEqual(expected);
@@ -112,6 +118,7 @@ describe('nav config', () => {
       'listening',
       'reading',
       'writing',
+      'exams',
       'folders',
       'sets',
       'notes',

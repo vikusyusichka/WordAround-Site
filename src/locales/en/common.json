@@ -96,7 +96,8 @@
     "group": {
       "practice": "Practice",
       "library": "Library"
-    }
+    },
+    "exams": "Exams"
   },
   "folders": {
     "create": "Create folder",
@@ -1847,5 +1848,46 @@
     "title": "Page not found",
     "body": "That link does not lead anywhere. It may have been renamed, or the address has a typo.",
     "backHome": "Back to WordAround"
+  },
+  "exams": {
+    "title": "Exam prep",
+    "subtitle": "Mock exams in the real format, timed and scored",
+    "catalogTitle": "Choose your exam",
+    "cardSubtitle": "{{language}} · {{variants}}",
+    "moreSoon": "TOEFL, Cambridge, DELF, Goethe and more are on the way.",
+    "back": "Exams",
+    "format": "Exam format",
+    "totalTime": "Total time",
+    "sectionsCount": "Sections",
+    "scoring": "Scoring",
+    "scoreBand": "Band 0–{{max}}, in half bands",
+    "scorePass": "Pass: {{total}}/{{max}}, {{group}} in each part",
+    "duration": {
+      "hours": "{{h}} h {{m}} min",
+      "hoursOnly": "{{h}} h",
+      "minutes": "{{m}} min"
+    },
+    "prep": "+ {{m}} min prep",
+    "tasks_one": "{{count}} task",
+    "tasks_other": "{{count}} tasks",
+    "items_one": "{{count}} question",
+    "items_other": "{{count}} questions",
+    "rubricMarked": "Marked against the rubric",
+    "playsOnce": "Audio plays once",
+    "playsTwice": "Audio plays twice",
+    "wordsMin": "{{min}}+ words",
+    "wordsRange": "{{min}}–{{max}} words",
+    "speakFor": "Speak about {{m}} min",
+    "mock": {
+      "title": "Full mock exam",
+      "subtitle": "Every section, timed, with an estimated score"
+    },
+    "practice": {
+      "title": "Practise one task",
+      "subtitle": "Pick a task type and get feedback on it"
+    },
+    "comingSoon": "Coming soon",
+    "disclaimer": "WordAround is not affiliated with {{owner}}. Scores here are estimates, not official results.",
+    "officialSite": "Official site"
   }
 }

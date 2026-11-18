@@ -96,7 +96,8 @@
     "group": {
       "practice": "Üben",
       "library": "Bibliothek"
-    }
+    },
+    "exams": "Prüfungen"
   },
   "folders": {
     "create": "Ordner erstellen",
@@ -1850,5 +1851,46 @@
     "title": "Seite nicht gefunden",
     "body": "Dieser Link führt nirgendwohin. Vielleicht wurde die Seite umbenannt oder die Adresse enthält einen Tippfehler.",
     "backHome": "Zurück zu WordAround"
+  },
+  "exams": {
+    "title": "Prüfungsvorbereitung",
+    "subtitle": "Probeprüfungen im echten Format, mit Zeitlimit und Bewertung",
+    "catalogTitle": "Wähle deine Prüfung",
+    "cardSubtitle": "{{language}} · {{variants}}",
+    "moreSoon": "TOEFL, Cambridge, DELF, Goethe und weitere folgen.",
+    "back": "Prüfungen",
+    "format": "Prüfungsformat",
+    "totalTime": "Gesamtzeit",
+    "sectionsCount": "Teile",
+    "scoring": "Bewertung",
+    "scoreBand": "Band 0–{{max}}, in halben Schritten",
+    "scorePass": "Bestanden: {{total}}/{{max}}, je {{group}} pro Gruppe",
+    "duration": {
+      "hours": "{{h}} Std. {{m}} Min.",
+      "hoursOnly": "{{h}} Std.",
+      "minutes": "{{m}} Min."
+    },
+    "prep": "+ {{m}} Min. Vorbereitung",
+    "tasks_one": "{{count}} Aufgabe",
+    "tasks_other": "{{count}} Aufgaben",
+    "items_one": "{{count}} Frage",
+    "items_other": "{{count}} Fragen",
+    "rubricMarked": "Bewertet nach Kriterien",
+    "playsOnce": "Audio wird einmal abgespielt",
+    "playsTwice": "Audio wird zweimal abgespielt",
+    "wordsMin": "Ab {{min}} Wörtern",
+    "wordsRange": "{{min}}–{{max}} Wörter",
+    "speakFor": "Etwa {{m}} Min. sprechen",
+    "mock": {
+      "title": "Komplette Probeprüfung",
+      "subtitle": "Alle Teile, mit Zeitlimit und geschätztem Ergebnis"
+    },
+    "practice": {
+      "title": "Eine Aufgabe üben",
+      "subtitle": "Wähle einen Aufgabentyp und erhalte Feedback"
+    },
+    "comingSoon": "Demnächst",
+    "disclaimer": "WordAround steht in keiner Verbindung zu {{owner}}. Die Ergebnisse sind Schätzungen, keine offiziellen Resultate.",
+    "officialSite": "Offizielle Website"
   }
 }
