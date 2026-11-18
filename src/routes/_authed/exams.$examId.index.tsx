@@ -1,18 +1,21 @@
 /* One exam — /exams/$examId?variant=…. Shows the format the mock exam will
    follow: sections, timings, tasks and how the result is scored. The variant
    (IELTS Academic / General, a DELE level) lives in the URL so a reload or a
-   shared link lands on the same one. Starting a mock or a single task is not
-   built yet, so those cards are shown as coming soon. */
+   shared link lands on the same one. From here: the full mock exam, single
+   task practice, the learner's goal and their history. */
 import { createFileRoute, notFound, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
+import { ExamGoalCard, ExamHistoryCard } from '@/components/exams/ExamProgress';
 import { PracticeModeCard } from '@/components/practice/PracticeModeCard';
 import { OptionPillGroup } from '@/components/practice/OptionPill';
 import { Icon } from '@/components/primitives/Icon';
 import { BackLink } from '@/components/shell/BackLink';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
+import { useExamAccess } from '@/hooks/useExams';
 import { tint } from '@/lib/colorMix';
+import { canStartMock } from '@/lib/exams/access';
 import {
   examAccent,
   SKILL_ICONS,
@@ -42,7 +45,8 @@ function ExamPage() {
   const search = Route.useSearch();
   const exam = findExam(examId)!;
   const variant = exam.variants.find((v) => v.id === search.variant) ?? exam.variants[0];
-  const { accent } = examAccent(exam.id);
+  const { accent, blob } = examAccent(exam.id);
+  const access = useExamAccess();
 
   const duration = (total: number) => {
     const { hours, minutes } = splitMinutes(total);
@@ -84,6 +88,38 @@ function ExamPage() {
           <SummaryTile icon="trophy.fill" accent={accent} label={t('exams.scoring')} value={scoringLabel(variant, t)} />
         </div>
 
+        <section className="grid gap-(--spacing-mode-grid-gap) sm:grid-cols-2">
+          <PracticeModeCard
+            title={t('exams.mock.title')}
+            subtitle={canStartMock(access) ? t('exams.mock.subtitle') : t('exams.premium.mockLocked')}
+            iconSystemName={canStartMock(access) ? 'checkmark.seal.fill' : 'lock.fill'}
+            accentColor={accent}
+            blobColor={blob}
+            onClick={() =>
+              void navigate({
+                to: canStartMock(access) ? '/exams/$examId/mock' : '/premium',
+                params: { examId },
+                search: { variant: variant.id },
+              })
+            }
+          />
+          <PracticeModeCard
+            title={t('exams.practice.title')}
+            subtitle={t('exams.practice.subtitle')}
+            iconSystemName="target"
+            accentColor={accent}
+            blobColor={blob}
+            onClick={() =>
+              void navigate({ to: '/exams/$examId/practice', params: { examId }, search: { variant: variant.id } })
+            }
+          />
+        </section>
+
+        <div className="grid gap-4 lg:grid-cols-2">
+          <ExamGoalCard exam={exam} variant={variant} />
+          <ExamHistoryCard exam={exam} variant={variant} />
+        </div>
+
         <section className="flex flex-col gap-4">
           <h2 className="text-[21px] font-bold text-(--color-primary-blue-dark) lg:text-[26px]">
             {t('exams.format')}
@@ -93,27 +129,6 @@ function ExamPage() {
               <SectionCard key={section.id} section={section} accent={accent} duration={duration} />
             ))}
           </div>
-        </section>
-
-        <section className="grid gap-(--spacing-mode-grid-gap) sm:grid-cols-2">
-          <PracticeModeCard
-            title={t('exams.mock.title')}
-            subtitle={t('exams.mock.subtitle')}
-            iconSystemName="checkmark.seal.fill"
-            accentColor={accent}
-            blobColor={examAccent(exam.id).blob}
-            disabled
-            comingSoonLabel={t('exams.comingSoon')}
-          />
-          <PracticeModeCard
-            title={t('exams.practice.title')}
-            subtitle={t('exams.practice.subtitle')}
-            iconSystemName="target"
-            accentColor={accent}
-            blobColor={examAccent(exam.id).blob}
-            disabled
-            comingSoonLabel={t('exams.comingSoon')}
-          />
         </section>
 
         <p className="text-[13px] font-medium leading-relaxed text-(--color-muted-text)">

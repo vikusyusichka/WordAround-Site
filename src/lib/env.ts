@@ -26,4 +26,12 @@ export const env = {
       | undefined,
   },
   aiWorkerUrl: requireEnv('VITE_AI_WORKER_URL'),
+  /* Optional switches for the Exams section (see docs/EXAMS-SETUP.md). Both
+     default to off, so nothing changes until the backend for them is live. */
+  /** 'on' = mock exams and repeat practice need Premium. Off while there is no way to pay. */
+  examsPaywall: import.meta.env.VITE_EXAMS_PAYWALL === 'on',
+  /** 'on' = AI requests carry the Firebase ID token. Needs the Worker to allow the header. */
+  aiSendIdToken: import.meta.env.VITE_AI_SEND_ID_TOKEN === 'on',
+  /** Base URL of the billing endpoints (the AI Worker by default). */
+  billingUrl: (import.meta.env.VITE_BILLING_URL as string | undefined) || undefined,
 } as const;

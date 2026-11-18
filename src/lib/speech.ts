@@ -82,7 +82,7 @@ const FEMALE_HINTS = ['samantha', 'karen', 'moira', 'tessa', 'allison', 'ava', '
 
 export type SpeechVoiceType = 'default' | 'female' | 'male';
 
-const pickListeningVoice = (
+export const pickListeningVoice = (
   lang: string,
   voiceType: SpeechVoiceType,
 ): SpeechSynthesisVoice | undefined => {

@@ -44,6 +44,11 @@ rules_version = '2';
  * permission error — if a future feature adds a collection under users/{uid},
  * add a matching rule here and publish it.
  *
+ * ── 2026-11-18: exam prep ────────────────────────────────────────────────────
+ * Added users/{uid}/examAttempts, users/{uid}/examGoals and the top-level
+ * entitlements/{uid} (read-only for its owner). NOT live until published —
+ * see docs/EXAMS-SETUP.md, step 1.
+ *
  * To change these: see docs/SECURITY-RULES.md.
  */
 
@@ -131,6 +136,27 @@ service cloud.firestore {
     match /users/{userId}/readingItems/{itemId}/{document=**} {
       allow read, write: if request.auth != null
                            && request.auth.uid == userId;
+    }
+
+    // Exam prep (web, added 2026-11-18): finished practice tasks / mock exams
+    match /users/{userId}/examAttempts/{attemptId} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    // Exam prep: the learner's target score and exam date, one doc per exam
+    match /users/{userId}/examGoals/{examId} {
+      allow read, write: if request.auth != null
+                           && request.auth.uid == userId;
+    }
+
+    // Premium status. Readable by its owner only; written ONLY by the billing
+    // webhook through the Admin API (which bypasses these rules). Letting the
+    // client write here would let anyone give themselves Premium.
+    match /entitlements/{userId} {
+      allow read: if request.auth != null
+                    && request.auth.uid == userId;
+      allow write: if false;
     }
   }
 }

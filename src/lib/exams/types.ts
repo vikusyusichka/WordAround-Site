@@ -53,6 +53,8 @@ export interface ObjectiveTaskSpec extends TaskBase {
   questionTypes: ObjectiveQuestionType[];
   /** Listening only: how many times the recording plays. */
   plays?: 1 | 2;
+  /** Rough length of the text or recording script, in words — guides generation. */
+  stimulusWords: number;
 }
 
 export interface WritingTaskSpec extends TaskBase {
@@ -126,6 +128,8 @@ export interface ExamVariant {
   title: string;
   /** CEFR level the variant certifies, when the exam is level-specific. */
   level?: 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
+  /** How hard generated material should be, for exams with no single level. */
+  difficultyHint?: string;
   sections: SectionSpec[];
   overall: OverallScoring;
 }

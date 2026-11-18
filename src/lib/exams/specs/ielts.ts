@@ -135,6 +135,7 @@ const LISTENING: SectionSpec = {
       title: 'Part 1',
       description: 'A conversation between two people in an everyday social context (e.g. booking, enquiry).',
       items: 10,
+      stimulusWords: 400,
       questionTypes: ['formCompletion', 'sentenceCompletion', 'multipleChoice'],
       plays: 1,
     },
@@ -144,6 +145,7 @@ const LISTENING: SectionSpec = {
       title: 'Part 2',
       description: 'A monologue in an everyday social context (e.g. a talk about local facilities).',
       items: 10,
+      stimulusWords: 450,
       questionTypes: ['multipleChoice', 'matching', 'sentenceCompletion'],
       plays: 1,
     },
@@ -153,6 +155,7 @@ const LISTENING: SectionSpec = {
       title: 'Part 3',
       description: 'A conversation of up to four people in an educational or training context.',
       items: 10,
+      stimulusWords: 500,
       questionTypes: ['multipleChoice', 'matching', 'sentenceCompletion'],
       plays: 1,
     },
@@ -162,6 +165,7 @@ const LISTENING: SectionSpec = {
       title: 'Part 4',
       description: 'A monologue on an academic subject, such as a university lecture.',
       items: 10,
+      stimulusWords: 600,
       questionTypes: ['sentenceCompletion', 'formCompletion', 'multipleChoice'],
       plays: 1,
     },
@@ -262,6 +266,7 @@ const reading = (variant: 'academic' | 'general'): SectionSpec => ({
             title: 'Passage 1',
             description: 'A factual academic text for a non-specialist audience (books, journals, magazines).',
             items: 13,
+            stimulusWords: 750,
             questionTypes: ['trueFalseNotGiven', 'sentenceCompletion', 'multipleChoice'],
           },
           {
@@ -270,6 +275,7 @@ const reading = (variant: 'academic' | 'general'): SectionSpec => ({
             title: 'Passage 2',
             description: 'A discursive academic text with a clear line of argument.',
             items: 13,
+            stimulusWords: 800,
             questionTypes: ['matching', 'gapFill', 'multipleChoice'],
           },
           {
@@ -278,6 +284,7 @@ const reading = (variant: 'academic' | 'general'): SectionSpec => ({
             title: 'Passage 3',
             description: 'A longer, more complex argumentative academic text, possibly with views of the writer.',
             items: 14,
+            stimulusWords: 900,
             questionTypes: ['multipleChoice', 'trueFalseNotGiven', 'matching'],
           },
         ]
@@ -288,6 +295,7 @@ const reading = (variant: 'academic' | 'general'): SectionSpec => ({
             title: 'Section 1',
             description: 'Two or three short everyday texts such as notices and advertisements.',
             items: 14,
+            stimulusWords: 600,
             questionTypes: ['trueFalseNotGiven', 'matching', 'sentenceCompletion'],
           },
           {
@@ -296,6 +304,7 @@ const reading = (variant: 'academic' | 'general'): SectionSpec => ({
             title: 'Section 2',
             description: 'Two work-related texts such as job descriptions, contracts or staff training material.',
             items: 13,
+            stimulusWords: 650,
             questionTypes: ['sentenceCompletion', 'matching', 'gapFill'],
           },
           {
@@ -304,6 +313,7 @@ const reading = (variant: 'academic' | 'general'): SectionSpec => ({
             title: 'Section 3',
             description: 'One longer, more complex text on a topic of general interest.',
             items: 13,
+            stimulusWords: 800,
             questionTypes: ['multipleChoice', 'matching', 'trueFalseNotGiven'],
           },
         ],
@@ -312,6 +322,7 @@ const reading = (variant: 'academic' | 'general'): SectionSpec => ({
 const variant = (id: 'academic' | 'general', title: string): ExamVariant => ({
   id,
   title,
+  difficultyHint: 'mixed difficulty spread across IELTS bands 5 to 8 (roughly CEFR B1 to C1)',
   sections: [LISTENING, reading(id), writing(id === 'academic' ? 'chartReport' : 'letter'), SPEAKING],
   overall: { kind: 'bandMean', max: 9 },
 });

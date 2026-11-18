@@ -1880,14 +1880,138 @@
     "speakFor": "Hablar unos {{m}} min",
     "mock": {
       "title": "Simulacro completo",
-      "subtitle": "Todas las pruebas, cronometradas, con puntuación estimada"
+      "subtitle": "Todas las pruebas, cronometradas, con puntuación estimada",
+      "introTitle": "Antes de empezar",
+      "introBody": "El examen completo dura unas {{hours}} h {{minutes}} min, prueba por prueba, como el real.",
+      "introRuleTimer": "Cada prueba tiene su propio tiempo. Cuando se acaba, la prueba se entrega.",
+      "introRuleAudio": "Las grabaciones se escuchan las mismas veces que en el examen real.",
+      "introRuleResume": "Tu progreso se guarda en este dispositivo; puedes volver si se cierra la página.",
+      "introRuleMic": "La prueba oral necesita micrófono.",
+      "start": "Empezar el examen",
+      "sectionOf": "Prueba {{current}} de {{total}}",
+      "preparing": "Preparando «{{section}}»…",
+      "finishSection": "Entregar esta prueba",
+      "finishExam": "Entregar el examen",
+      "confirmTitle": "¿Entregar ahora?",
+      "confirmMessage": "Después no podrás volver a esta prueba.",
+      "confirmYes": "Entregar",
+      "prepIntro": "Lee las tareas y prepárate. Empezarás a hablar cuando acabe el tiempo o cuando estés listo.",
+      "endPrep": "Estoy listo",
+      "marking": "Corrigiendo tu examen… la expresión escrita y oral tardan un minuto.",
+      "markFailed_one": "No se pudo corregir {{count}} respuesta.",
+      "markFailed_other": "No se pudieron corregir {{count}} respuestas.",
+      "overall": "Resultado global",
+      "passed": "Apto",
+      "notPassed": "Todavía no apto",
+      "noAnswer": "Sin respuesta"
     },
     "practice": {
       "title": "Practicar una tarea",
-      "subtitle": "Elige un tipo de tarea y recibe comentarios"
+      "subtitle": "Elige un tipo de tarea y recibe comentarios",
+      "back": "Todas las tareas"
     },
-    "comingSoon": "Próximamente",
     "disclaimer": "WordAround no está afiliado a {{owner}}. Las puntuaciones son estimaciones, no resultados oficiales.",
-    "officialSite": "Sitio oficial"
+    "officialSite": "Sitio oficial",
+    "loading": "Cargando…",
+    "retry": "Reintentar",
+    "timer": {
+      "label": "Tiempo restante",
+      "over": "Fuera de tiempo: {{time}}"
+    },
+    "task": {
+      "generating": "Preparando tu tarea… tarda hasta un minuto.",
+      "generateFailed": "No se pudo crear la tarea.",
+      "marking": "El examinador está corrigiendo tu respuesta…",
+      "markFailed": "No se pudo corregir la respuesta.",
+      "submit": "Entregar",
+      "another": "Otra tarea",
+      "answer": "Tu respuesta",
+      "answerFor": "Respuesta a la pregunta {{number}}",
+      "writePlaceholder": "Escribe tu respuesta aquí…",
+      "wordCount": "{{count}} palabras · {{limit}}",
+      "maxWords_one": "No más de {{count}} palabra",
+      "maxWords_other": "No más de {{count}} palabras",
+      "play": "Escuchar la grabación",
+      "playing": "Reproduciendo…",
+      "stop": "Detener",
+      "playsLeft_one": "Queda {{count}} reproducción",
+      "playsLeft_other": "Quedan {{count}} reproducciones",
+      "showScript": "Ver la transcripción",
+      "correct": "Correcto",
+      "incorrect": "Incorrecto",
+      "rightAnswer": "Respuesta correcta: {{answer}}"
+    },
+    "speaking": {
+      "startPrep": "Empezar la preparación ({{time}})",
+      "prepTime": "Tiempo de preparación",
+      "startSpeaking": "Empezar a hablar",
+      "recordAgain": "Grabar de nuevo",
+      "finish": "Terminar",
+      "recording": "Grabando · {{time}}",
+      "aimFor": "Intenta hablar unos {{time}}",
+      "transcribing": "Pasando tu respuesta a texto…",
+      "transcribeFailed": "No se pudo transcribir la grabación.",
+      "micFailed": "No se pudo usar el micrófono.",
+      "transcript": "Lo que dijiste ({{time}})",
+      "typedAnswer": "Tu respuesta escrita",
+      "noMic": "Este navegador no puede grabar audio. Escribe lo que dirías; se evaluará como respuesta oral.",
+      "useTyped": "Usar esta respuesta",
+      "listenQuestion": "Escuchar la pregunta",
+      "photoBy": "Foto de",
+      "yourAnswer": "Tu respuesta"
+    },
+    "feedback": {
+      "criteria": "Notas del examinador",
+      "strengths": "Lo que salió bien",
+      "improvements": "Qué mejorar",
+      "corrections": "Correcciones",
+      "improvedVersion": "Tu respuesta a un nivel más alto"
+    },
+    "result": {
+      "estimate": "{{section}}: puntuación estimada",
+      "estimateNote": "Una estimación de la IA en la escala del examen, no un resultado oficial.",
+      "correctOf": "{{correct}} de {{total}} correctas",
+      "notSaved": "No se pudo guardar el resultado en tu historial."
+    },
+    "goal": {
+      "title": "Tu objetivo",
+      "target": "Puntuación objetivo",
+      "date": "Fecha del examen",
+      "save": "Guardar",
+      "daysLeft_one": "Falta {{count}} día para el examen",
+      "daysLeft_other": "Faltan {{count}} días para el examen",
+      "today": "¡El examen es hoy, suerte!",
+      "passed": "La fecha del examen ya pasó."
+    },
+    "history": {
+      "title": "Tu progreso",
+      "empty": "Aquí aparecerán tus simulacros y tareas practicadas.",
+      "mockTrend": "Resultados de los simulacros",
+      "unavailable": "Tu historial no está disponible ahora."
+    },
+    "premium": {
+      "title": "Premium",
+      "subtitle": "Todo lo que necesitas para preparar el examen",
+      "feature": {
+        "mock": "Simulacros completos ilimitados, cronometrados como el real",
+        "practice": "Práctica ilimitada de todos los tipos de tarea",
+        "feedback": "Corrección de la expresión escrita y oral con los criterios oficiales",
+        "progress": "Tu objetivo, cuenta atrás al examen e historial de puntuaciones"
+      },
+      "freeNowTitle": "Gratis durante el acceso anticipado",
+      "freeNowBody": "Por ahora la preparación de exámenes está abierta para todos.",
+      "toExams": "Ir a los exámenes",
+      "active": "Tienes Premium",
+      "manage": "Gestionar la suscripción",
+      "choosePlan": "Elige un plan",
+      "yearly": "Anual",
+      "monthly": "Mensual",
+      "stripeNote": "El pago se gestiona de forma segura con Stripe. Puedes cancelar cuando quieras.",
+      "lockedTitle": "Esto forma parte de Premium",
+      "locked": "Premium",
+      "cta": "Ver Premium",
+      "taskUsed": "Ya usaste el intento gratuito de esta tarea. Premium desbloquea la práctica ilimitada.",
+      "mockLocked": "Los simulacros completos forman parte de Premium."
+    }
   }
 }

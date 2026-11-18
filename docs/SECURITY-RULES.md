@@ -1,6 +1,12 @@
 # Firebase security rules
 
-## Current status: ✅ nothing to do
+## Current status: ⚠️ one publish pending (2026-11-18)
+
+`firestore.rules` gained three rules for the Exams section (`examAttempts`,
+`examGoals`, read-only `entitlements`). They are not live until published —
+see `docs/EXAMS-SETUP.md`, step 1. Everything below still holds.
+
+## Status before that: ✅ nothing to do
 
 The Firestore rules live on the project were reviewed on **2026-07-22** against
 every path used by the web app and the live iOS app. **They are correct and

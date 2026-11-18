@@ -1883,14 +1883,138 @@
     "speakFor": "Etwa {{m}} Min. sprechen",
     "mock": {
       "title": "Komplette Probeprüfung",
-      "subtitle": "Alle Teile, mit Zeitlimit und geschätztem Ergebnis"
+      "subtitle": "Alle Teile, mit Zeitlimit und geschätztem Ergebnis",
+      "introTitle": "Bevor du beginnst",
+      "introBody": "Die ganze Prüfung dauert etwa {{hours}} Std. {{minutes}} Min., Teil für Teil wie die echte.",
+      "introRuleTimer": "Jeder Teil hat seine eigene Zeit. Ist sie abgelaufen, wird der Teil abgegeben.",
+      "introRuleAudio": "Aufnahmen laufen so oft wie in der echten Prüfung.",
+      "introRuleResume": "Dein Fortschritt wird auf diesem Gerät gespeichert — du kannst zurückkehren, wenn die Seite schließt.",
+      "introRuleMic": "Für den mündlichen Teil brauchst du ein Mikrofon.",
+      "start": "Prüfung starten",
+      "sectionOf": "Teil {{current}} von {{total}}",
+      "preparing": "„{{section}}“ wird vorbereitet…",
+      "finishSection": "Diesen Teil abgeben",
+      "finishExam": "Prüfung abgeben",
+      "confirmTitle": "Jetzt abgeben?",
+      "confirmMessage": "Du kannst danach nicht mehr zu diesem Teil zurück.",
+      "confirmYes": "Abgeben",
+      "prepIntro": "Lies die Aufgaben und bereite dich vor. Du sprichst, wenn die Zeit abläuft oder du bereit bist.",
+      "endPrep": "Ich bin bereit",
+      "marking": "Deine Prüfung wird bewertet… Schreiben und Sprechen dauern eine Minute.",
+      "markFailed_one": "{{count}} Antwort konnte nicht bewertet werden.",
+      "markFailed_other": "{{count}} Antworten konnten nicht bewertet werden.",
+      "overall": "Gesamtergebnis",
+      "passed": "Bestanden",
+      "notPassed": "Noch nicht bestanden",
+      "noAnswer": "Keine Antwort"
     },
     "practice": {
       "title": "Eine Aufgabe üben",
-      "subtitle": "Wähle einen Aufgabentyp und erhalte Feedback"
+      "subtitle": "Wähle einen Aufgabentyp und erhalte Feedback",
+      "back": "Alle Aufgaben"
     },
-    "comingSoon": "Demnächst",
     "disclaimer": "WordAround steht in keiner Verbindung zu {{owner}}. Die Ergebnisse sind Schätzungen, keine offiziellen Resultate.",
-    "officialSite": "Offizielle Website"
+    "officialSite": "Offizielle Website",
+    "loading": "Wird geladen…",
+    "retry": "Erneut versuchen",
+    "timer": {
+      "label": "Verbleibende Zeit",
+      "over": "Überzogen: {{time}}"
+    },
+    "task": {
+      "generating": "Deine Aufgabe wird erstellt… das dauert bis zu einer Minute.",
+      "generateFailed": "Die Aufgabe konnte nicht erstellt werden.",
+      "marking": "Der Prüfer bewertet deine Antwort…",
+      "markFailed": "Die Antwort konnte nicht bewertet werden.",
+      "submit": "Abgeben",
+      "another": "Andere Aufgabe",
+      "answer": "Deine Antwort",
+      "answerFor": "Antwort auf Frage {{number}}",
+      "writePlaceholder": "Schreib deine Antwort hier…",
+      "wordCount": "{{count}} Wörter · {{limit}}",
+      "maxWords_one": "Höchstens {{count}} Wort",
+      "maxWords_other": "Höchstens {{count}} Wörter",
+      "play": "Aufnahme abspielen",
+      "playing": "Läuft…",
+      "stop": "Stopp",
+      "playsLeft_one": "Noch {{count}} Wiedergabe",
+      "playsLeft_other": "Noch {{count}} Wiedergaben",
+      "showScript": "Transkript der Aufnahme zeigen",
+      "correct": "Richtig",
+      "incorrect": "Falsch",
+      "rightAnswer": "Richtige Antwort: {{answer}}"
+    },
+    "speaking": {
+      "startPrep": "Vorbereitung starten ({{time}})",
+      "prepTime": "Vorbereitungszeit",
+      "startSpeaking": "Sprechen beginnen",
+      "recordAgain": "Neu aufnehmen",
+      "finish": "Fertig",
+      "recording": "Aufnahme · {{time}}",
+      "aimFor": "Ziel: etwa {{time}}",
+      "transcribing": "Deine Antwort wird in Text umgewandelt…",
+      "transcribeFailed": "Die Aufnahme konnte nicht transkribiert werden.",
+      "micFailed": "Das Mikrofon konnte nicht verwendet werden.",
+      "transcript": "Was du gesagt hast ({{time}})",
+      "typedAnswer": "Deine getippte Antwort",
+      "noMic": "Dieser Browser kann keinen Ton aufnehmen. Tipp ein, was du sagen würdest — es wird wie gesprochen bewertet.",
+      "useTyped": "Diese Antwort verwenden",
+      "listenQuestion": "Frage anhören",
+      "photoBy": "Foto von",
+      "yourAnswer": "Deine Antwort"
+    },
+    "feedback": {
+      "criteria": "Bewertung des Prüfers",
+      "strengths": "Was gut lief",
+      "improvements": "Woran du arbeiten solltest",
+      "corrections": "Korrekturen",
+      "improvedVersion": "Deine Antwort auf höherem Niveau"
+    },
+    "result": {
+      "estimate": "{{section}} — geschätztes Ergebnis",
+      "estimateNote": "Eine KI-Schätzung auf der Prüfungsskala, kein offizielles Ergebnis.",
+      "correctOf": "{{correct}} von {{total}} richtig",
+      "notSaved": "Das Ergebnis konnte nicht im Verlauf gespeichert werden."
+    },
+    "goal": {
+      "title": "Dein Ziel",
+      "target": "Zielergebnis",
+      "date": "Prüfungsdatum",
+      "save": "Speichern",
+      "daysLeft_one": "Noch {{count}} Tag bis zur Prüfung",
+      "daysLeft_other": "Noch {{count}} Tage bis zur Prüfung",
+      "today": "Die Prüfung ist heute — viel Erfolg!",
+      "passed": "Das Prüfungsdatum ist vorbei."
+    },
+    "history": {
+      "title": "Dein Fortschritt",
+      "empty": "Hier erscheinen deine Probeprüfungen und geübten Aufgaben.",
+      "mockTrend": "Ergebnisse der Probeprüfungen",
+      "unavailable": "Dein Verlauf ist gerade nicht verfügbar."
+    },
+    "premium": {
+      "title": "Premium",
+      "subtitle": "Alles, was du für die Prüfungsvorbereitung brauchst",
+      "feature": {
+        "mock": "Unbegrenzte komplette Probeprüfungen mit echtem Zeitlimit",
+        "practice": "Unbegrenztes Üben aller Aufgabentypen",
+        "feedback": "Bewertung von Schreiben und Sprechen nach den offiziellen Kriterien",
+        "progress": "Dein Ziel, Countdown zur Prüfung und Ergebnisverlauf"
+      },
+      "freeNowTitle": "Kostenlos im Early Access",
+      "freeNowBody": "Die Prüfungsvorbereitung ist vorerst für alle offen.",
+      "toExams": "Zu den Prüfungen",
+      "active": "Du hast Premium",
+      "manage": "Abo verwalten",
+      "choosePlan": "Wähle einen Plan",
+      "yearly": "Jährlich",
+      "monthly": "Monatlich",
+      "stripeNote": "Die Zahlung wird sicher über Stripe abgewickelt. Jederzeit kündbar.",
+      "lockedTitle": "Das ist Teil von Premium",
+      "locked": "Premium",
+      "cta": "Premium ansehen",
+      "taskUsed": "Du hast den kostenlosen Versuch dieser Aufgabe genutzt. Premium schaltet unbegrenztes Üben frei.",
+      "mockLocked": "Komplette Probeprüfungen sind Teil von Premium."
+    }
   }
 }

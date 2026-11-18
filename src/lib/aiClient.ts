@@ -7,6 +7,17 @@ import { cleanJSONText } from '@/lib/aiTextCleaner';
 
 const DEFAULT_TIMEOUT_MS = 45_000;
 
+/* The Firebase ID token, when the Worker is set up to check it (per-user
+   limits, Premium). Off until the Worker allows the Authorization header —
+   sending it earlier would fail every request at the CORS preflight.
+   Firebase is imported lazily so this module stays usable without it. */
+export const authHeaders = async (): Promise<Record<string, string>> => {
+  if (!env.aiSendIdToken) return {};
+  const { auth } = await import('@/lib/firebase');
+  const token = await auth.currentUser?.getIdToken();
+  return token ? { Authorization: `Bearer ${token}` } : {};
+};
+
 export interface WorkerRequest {
   prompt: string;
   /** Selects the provider chain server-side (e.g. `essay_generation` →
@@ -61,9 +72,10 @@ export const generateText = async (
   const controller = new AbortController();
   if (signal) signal.addEventListener('abort', () => controller.abort(), { once: true });
 
+  const extraHeaders = await authHeaders();
   const fetchPromise = fetch(env.aiWorkerUrl, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+    headers: { 'Content-Type': 'application/json', Accept: 'application/json', ...extraHeaders },
     body: JSON.stringify(req),
     signal: controller.signal,
   });

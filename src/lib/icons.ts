@@ -160,6 +160,9 @@ import {
   WifiSlash,
   Wine,
   type Icon as PhosphorIcon,
+  ChartLineUp,
+  Crown,
+  Lock,
 } from '@phosphor-icons/react';
 
 /* SF-Symbol name (as written in Swift source) → Phosphor component.
@@ -215,6 +218,10 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'text.book.closed.fill': BookOpen,
   'graduationcap.fill': GraduationCap,
   graduationcap: GraduationCap,
+  /* Exam prep */
+  'crown.fill': Crown,
+  'lock.fill': Lock,
+  'chart.line.uptrend.xyaxis': ChartLineUp,
   'brain.head.profile': Brain,
   'globe.europe.africa.fill': Globe,
   'star.fill': Star,
