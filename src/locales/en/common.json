@@ -361,7 +361,9 @@
     "noTranslation": "No translation",
     "learning": "Learning",
     "knownShort": "Known",
-    "deleteCardTitle": "Delete card?"
+    "deleteCardTitle": "Delete card?",
+    "imageUploading": "Uploading…",
+    "imageFailed": "The picture couldn't be uploaded. Try again, or remove it and save the text on its own."
   },
   "writing": {
     "today": {
@@ -1851,7 +1853,6 @@
   },
   "exams": {
     "title": "Exam prep",
-    "subtitle": "Mock exams in the real format, timed and scored",
     "catalogTitle": "Choose your exam",
     "cardSubtitle": "{{language}} · {{variants}}",
     "moreSoon": "TOEFL, Cambridge, DELF, Goethe and more are on the way.",
@@ -1878,101 +1879,7 @@
     "wordsMin": "{{min}}+ words",
     "wordsRange": "{{min}}–{{max}} words",
     "speakFor": "Speak about {{m}} min",
-    "mock": {
-      "title": "Full mock exam",
-      "subtitle": "Every section, timed, with an estimated score",
-      "introTitle": "Before you start",
-      "introBody": "The whole exam takes about {{hours}} h {{minutes}} min, section by section, like the real one.",
-      "introRuleTimer": "Each section has its own clock. When it runs out, the section is handed in.",
-      "introRuleAudio": "Recordings play only as many times as in the real exam.",
-      "introRuleResume": "Your progress is saved on this device — you can come back if the page closes.",
-      "introRuleMic": "The speaking section needs a microphone.",
-      "start": "Start the exam",
-      "sectionOf": "Section {{current}} of {{total}}",
-      "preparing": "Preparing {{section}}…",
-      "finishSection": "Hand in this section",
-      "finishExam": "Hand in the exam",
-      "confirmTitle": "Hand in now?",
-      "confirmMessage": "You can't come back to this section afterwards.",
-      "confirmYes": "Hand in",
-      "prepIntro": "Read the tasks and prepare. You will start speaking when the time is up or when you are ready.",
-      "endPrep": "I'm ready",
-      "marking": "Marking your exam… writing and speaking take a minute.",
-      "markFailed_one": "{{count}} answer couldn't be marked.",
-      "markFailed_other": "{{count}} answers couldn't be marked.",
-      "overall": "Overall result",
-      "passed": "Pass",
-      "notPassed": "Not passed yet",
-      "noAnswer": "No answer"
-    },
-    "practice": {
-      "title": "Practise one task",
-      "subtitle": "Pick a task type and get feedback on it",
-      "back": "All tasks"
-    },
-    "disclaimer": "WordAround is not affiliated with {{owner}}. Scores here are estimates, not official results.",
     "officialSite": "Official site",
-    "loading": "Loading…",
-    "retry": "Try again",
-    "timer": {
-      "label": "Time left",
-      "over": "Over by {{time}}"
-    },
-    "task": {
-      "generating": "Writing your task… this takes up to a minute.",
-      "generateFailed": "Couldn't create the task.",
-      "marking": "The examiner is marking your answer…",
-      "markFailed": "Couldn't mark the answer.",
-      "submit": "Hand in",
-      "another": "Another task",
-      "answer": "Your answer",
-      "answerFor": "Answer to question {{number}}",
-      "writePlaceholder": "Write your answer here…",
-      "wordCount": "{{count}} words · {{limit}}",
-      "maxWords_one": "No more than {{count}} word",
-      "maxWords_other": "No more than {{count}} words",
-      "play": "Play recording",
-      "playing": "Playing…",
-      "stop": "Stop",
-      "playsLeft_one": "{{count}} play left",
-      "playsLeft_other": "{{count}} plays left",
-      "showScript": "Show the recording script",
-      "correct": "Correct",
-      "incorrect": "Incorrect",
-      "rightAnswer": "Right answer: {{answer}}"
-    },
-    "speaking": {
-      "startPrep": "Start preparation ({{time}})",
-      "prepTime": "Preparation time",
-      "startSpeaking": "Start speaking",
-      "recordAgain": "Record again",
-      "finish": "Finish",
-      "recording": "Recording · {{time}}",
-      "aimFor": "Aim for about {{time}}",
-      "transcribing": "Turning your answer into text…",
-      "transcribeFailed": "Couldn't transcribe the recording.",
-      "micFailed": "Couldn't use the microphone.",
-      "transcript": "What you said ({{time}})",
-      "typedAnswer": "Your typed answer",
-      "noMic": "This browser cannot record audio. Type what you would say instead — it will be marked as speech.",
-      "useTyped": "Use this answer",
-      "listenQuestion": "Listen to the question",
-      "photoBy": "Photo by",
-      "yourAnswer": "Your answer"
-    },
-    "feedback": {
-      "criteria": "Examiner's marks",
-      "strengths": "What went well",
-      "improvements": "What to work on",
-      "corrections": "Corrections",
-      "improvedVersion": "Your answer at a higher level"
-    },
-    "result": {
-      "estimate": "{{section}} — estimated score",
-      "estimateNote": "An AI estimate on the exam scale, not an official result.",
-      "correctOf": "{{correct}} of {{total}} correct",
-      "notSaved": "This result couldn't be saved to your history."
-    },
     "goal": {
       "title": "Your goal",
       "target": "Target score",
@@ -1983,35 +1890,55 @@
       "today": "The exam is today — good luck!",
       "passed": "The exam date has passed."
     },
+    "subtitle": "Official practice tests and your progress",
+    "disclaimer": "WordAround is not affiliated with {{owner}}. The practice tests open on the official site; scores here are estimates, not official results.",
+    "official": {
+      "title": "Official practice tests",
+      "subtitle": "Free tests published by {{owner}}. They open on the official site.",
+      "fullTests": "Full practice tests",
+      "sampleTasks": "Sample tasks by question type",
+      "count_one": "{{count}} task",
+      "count_other": "{{count}} tasks",
+      "checked": "The list updates itself every week from the official site. Last checked: {{date}}.",
+      "source": "Official · {{owner}}",
+      "openSource": "Open the official site ({{owner}})",
+      "empty": {
+        "default": "No official practice tests are published right now. The list updates itself every week.",
+        "dele": "The Instituto Cervantes is rebuilding its exams website and has not republished its DELE model exams yet. As soon as they are back, they will appear here on their own — the list is checked every week."
+      },
+      "link": {
+        "online": "Take the test",
+        "pdf": "Open PDF",
+        "answers": "Answers",
+        "transcript": "Transcript",
+        "audio": "Audio",
+        "examples": "Model answers",
+        "page": "Open"
+      }
+    },
+    "entry": {
+      "title": "Enter your result",
+      "subtitle": "Did an official practice test? Enter what you got and we work out the score on the exam scale.",
+      "label": "Which test (optional)",
+      "labelPlaceholder": "e.g. ielts.org Listening test",
+      "correctHint": "correct answers out of {{max}}",
+      "scoreHint": "score from 0 to {{max}}",
+      "overallBand": "Overall band: {{score}}",
+      "overallGroups": "{{total}} / {{max}} — {{verdict}}",
+      "partial": "So far: {{sections}}. Fill in every section for the overall result.",
+      "save": "Save result",
+      "saved": "Saved to your progress."
+    },
+    "result": {
+      "passed": "Pass",
+      "notPassed": "Not passed yet"
+    },
     "history": {
       "title": "Your progress",
-      "empty": "Your mock exams and practised tasks will appear here.",
-      "mockTrend": "Mock exam results",
-      "unavailable": "Your history isn't available right now."
-    },
-    "premium": {
-      "title": "Premium",
-      "subtitle": "Everything you need to get ready for the exam",
-      "feature": {
-        "mock": "Unlimited full mock exams, timed like the real thing",
-        "practice": "Unlimited practice of every task type",
-        "feedback": "Examiner-style marking of writing and speaking against the official criteria",
-        "progress": "Your goal, exam countdown and score history"
-      },
-      "freeNowTitle": "Free during early access",
-      "freeNowBody": "Exam prep is open to everyone for now.",
-      "toExams": "Go to exams",
-      "active": "You have Premium",
-      "manage": "Manage subscription",
-      "choosePlan": "Choose a plan",
-      "yearly": "Yearly",
-      "monthly": "Monthly",
-      "stripeNote": "Payment is handled securely by Stripe. You can cancel at any time.",
-      "lockedTitle": "This is part of Premium",
-      "locked": "Premium",
-      "cta": "See Premium",
-      "taskUsed": "You've used the free try of this task. Premium unlocks unlimited practice.",
-      "mockLocked": "Full mock exams are part of Premium."
+      "empty": "Results you enter after official practice tests will appear here.",
+      "trend": "Overall results",
+      "unavailable": "Your history isn't available right now.",
+      "officialTest": "Official practice test"
     }
   }
 }

@@ -1,21 +1,20 @@
-/* One exam — /exams/$examId?variant=…. Shows the format the mock exam will
-   follow: sections, timings, tasks and how the result is scored. The variant
-   (IELTS Academic / General, a DELE level) lives in the URL so a reload or a
-   shared link lands on the same one. From here: the full mock exam, single
-   task practice, the learner's goal and their history. */
+/* One exam — /exams/$examId?variant=…. The official practice tests (found
+   on the exam owner's site, opened there), a form to enter what you scored
+   on one, your goal and history, and the exam's format. The variant (IELTS
+   Academic / General, a DELE level) lives in the URL so a reload or a shared
+   link lands on the same one. */
 import { createFileRoute, notFound, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { ExamGoalCard, ExamHistoryCard } from '@/components/exams/ExamProgress';
-import { PracticeModeCard } from '@/components/practice/PracticeModeCard';
+import { OfficialTests } from '@/components/exams/OfficialTests';
+import { ScoreEntryCard } from '@/components/exams/ScoreEntryCard';
 import { OptionPillGroup } from '@/components/practice/OptionPill';
 import { Icon } from '@/components/primitives/Icon';
 import { BackLink } from '@/components/shell/BackLink';
 import { ContentContainer } from '@/components/shell/ContentContainer';
 import { PageHeader } from '@/components/shell/PageHeader';
-import { useExamAccess } from '@/hooks/useExams';
 import { tint } from '@/lib/colorMix';
-import { canStartMock } from '@/lib/exams/access';
 import {
   examAccent,
   SKILL_ICONS,
@@ -45,8 +44,7 @@ function ExamPage() {
   const search = Route.useSearch();
   const exam = findExam(examId)!;
   const variant = exam.variants.find((v) => v.id === search.variant) ?? exam.variants[0];
-  const { accent, blob } = examAccent(exam.id);
-  const access = useExamAccess();
+  const { accent } = examAccent(exam.id);
 
   const duration = (total: number) => {
     const { hours, minutes } = splitMinutes(total);
@@ -88,32 +86,9 @@ function ExamPage() {
           <SummaryTile icon="trophy.fill" accent={accent} label={t('exams.scoring')} value={scoringLabel(variant, t)} />
         </div>
 
-        <section className="grid gap-(--spacing-mode-grid-gap) sm:grid-cols-2">
-          <PracticeModeCard
-            title={t('exams.mock.title')}
-            subtitle={canStartMock(access) ? t('exams.mock.subtitle') : t('exams.premium.mockLocked')}
-            iconSystemName={canStartMock(access) ? 'checkmark.seal.fill' : 'lock.fill'}
-            accentColor={accent}
-            blobColor={blob}
-            onClick={() =>
-              void navigate({
-                to: canStartMock(access) ? '/exams/$examId/mock' : '/premium',
-                params: { examId },
-                search: { variant: variant.id },
-              })
-            }
-          />
-          <PracticeModeCard
-            title={t('exams.practice.title')}
-            subtitle={t('exams.practice.subtitle')}
-            iconSystemName="target"
-            accentColor={accent}
-            blobColor={blob}
-            onClick={() =>
-              void navigate({ to: '/exams/$examId/practice', params: { examId }, search: { variant: variant.id } })
-            }
-          />
-        </section>
+        <OfficialTests exam={exam} variant={variant} accent={accent} />
+
+        <ScoreEntryCard key={variant.id} exam={exam} variant={variant} />
 
         <div className="grid gap-4 lg:grid-cols-2">
           <ExamGoalCard exam={exam} variant={variant} />

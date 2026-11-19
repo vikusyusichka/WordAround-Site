@@ -2,13 +2,9 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 import { useUid } from '@/hooks/useFolders';
-import { env } from '@/lib/env';
-import type { AccessContext } from '@/lib/exams/access';
 import {
   fetchAttempts,
-  fetchEntitlement,
   fetchGoal,
-  isEntitlementActive,
   saveAttempt,
   saveGoal,
   type ExamAttempt,
@@ -17,7 +13,6 @@ import {
 
 export const attemptsKey = (uid: string | null, examId: string) => ['examAttempts', uid, examId] as const;
 const goalKey = (uid: string | null, examId: string) => ['examGoal', uid, examId] as const;
-const entitlementKey = (uid: string | null) => ['entitlement', uid] as const;
 
 export const useExamAttempts = (examId: string) => {
   const uid = useUid();
@@ -57,22 +52,4 @@ export const useSaveGoal = () => {
     mutationFn: (goal: ExamGoal) => saveGoal(uid as string, goal),
     onSuccess: (_data, goal) => queryClient.setQueryData(goalKey(uid, goal.examId), goal),
   });
-};
-
-/** Premium status. Treated as "not premium" while loading or if it cannot be read. */
-export const useEntitlement = () => {
-  const uid = useUid();
-  const query = useQuery({
-    queryKey: entitlementKey(uid),
-    queryFn: () => fetchEntitlement(uid as string),
-    enabled: !!uid && env.examsPaywall,
-    retry: 1,
-    staleTime: 60_000,
-  });
-  return { premium: isEntitlementActive(query.data ?? null), isLoading: query.isLoading && env.examsPaywall };
-};
-
-export const useExamAccess = (): AccessContext & { isLoading: boolean } => {
-  const { premium, isLoading } = useEntitlement();
-  return { paywall: env.examsPaywall, premium, isLoading };
 };

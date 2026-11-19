@@ -347,6 +347,7 @@ function StudyScreen({ set, onEdit }: { set: FlashcardSet; onEdit: () => void })
       <CardEditDialog
         key={dialogCard?.id ?? 'new'}
         card={dialogCard}
+        setId={set.id}
         open={dialogOpen}
         onSave={handleSave}
         onClose={() => setDialogOpen(false)}

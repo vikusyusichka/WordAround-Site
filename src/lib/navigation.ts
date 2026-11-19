@@ -171,7 +171,6 @@ export const pageCopyForPath = (pathname: string): PageCopy => {
     const mode = pathname.slice('/practice/'.length);
     if (isPracticeMode(mode)) return PRACTICE_COPY[mode];
   }
-  if (pathname.startsWith('/premium')) return { titleKey: 'exams.premium.title', subtitleKey: 'exams.premium.subtitle' };
   if (pathname.startsWith('/exams')) return { titleKey: 'exams.title', subtitleKey: 'exams.subtitle' };
   if (pathname.startsWith('/folders')) return { titleKey: 'home.title.folders', subtitleKey: 'home.subtitle.folders' };
   if (pathname.startsWith('/sets')) return { titleKey: 'home.title.sets', subtitleKey: 'home.subtitle.sets' };

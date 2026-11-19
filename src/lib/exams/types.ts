@@ -6,9 +6,8 @@
    that this model cannot express is a reason to extend the model, not to
    special-case the exam in UI code.
 
-   Spec text (titles, task descriptions, rubric descriptors) is English on
-   purpose: it feeds AI prompts, which are always English-instruction (same
-   rule as ESSAY_LANGUAGES). User-facing copy goes through i18n. */
+   Spec text (titles, task descriptions, rubric descriptors) is English, like
+   ESSAY_LANGUAGES; the screens' own copy goes through i18n. */
 
 export type ExamSkill = 'reading' | 'listening' | 'writing' | 'speaking';
 
@@ -42,7 +41,7 @@ export interface RubricCriterion {
 interface TaskBase {
   id: string;
   title: string;
-  /** What the candidate meets in this task — drives AI generation. */
+  /** What the candidate meets in this task. */
   description: string;
 }
 
@@ -53,8 +52,6 @@ export interface ObjectiveTaskSpec extends TaskBase {
   questionTypes: ObjectiveQuestionType[];
   /** Listening only: how many times the recording plays. */
   plays?: 1 | 2;
-  /** Rough length of the text or recording script, in words — guides generation. */
-  stimulusWords: number;
 }
 
 export interface WritingTaskSpec extends TaskBase {
@@ -128,8 +125,6 @@ export interface ExamVariant {
   title: string;
   /** CEFR level the variant certifies, when the exam is level-specific. */
   level?: 'A1' | 'A2' | 'B1' | 'B2' | 'C1' | 'C2';
-  /** How hard generated material should be, for exams with no single level. */
-  difficultyHint?: string;
   sections: SectionSpec[];
   overall: OverallScoring;
 }

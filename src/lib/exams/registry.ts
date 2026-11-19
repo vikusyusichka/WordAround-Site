@@ -2,7 +2,6 @@
    spec is internally consistent. The check runs in tests over the whole
    registry, so a typo in a new spec fails CI instead of a mock exam. */
 
-import type { TaskRef } from './generation';
 import { objectiveItemCount } from './scoring';
 import { DELE } from './specs/dele';
 import { IELTS } from './specs/ielts';
@@ -15,21 +14,6 @@ export const findExam = (examId: string): ExamSpec | undefined =>
 
 export const findVariant = (exam: ExamSpec, variantId: string): ExamVariant | undefined =>
   exam.variants.find((variant) => variant.id === variantId);
-
-/** Everything a task screen needs, from the ids in its URL — or undefined. */
-export const findTaskRef = (
-  examId: string,
-  variantId: string | undefined,
-  sectionId: string,
-  taskId: string,
-): TaskRef | undefined => {
-  const exam = findExam(examId);
-  if (!exam) return undefined;
-  const variant = (variantId && findVariant(exam, variantId)) || exam.variants[0];
-  const section = variant.sections.find((s) => s.id === sectionId);
-  const task = section?.tasks.find((t) => t.id === taskId);
-  return section && task ? { exam, variant, section, task } : undefined;
-};
 
 export const examsForLanguage = (languageId: string): ExamSpec[] =>
   EXAMS.filter((exam) => exam.languageId === languageId);

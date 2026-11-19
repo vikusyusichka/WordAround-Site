@@ -1,14 +1,11 @@
 /* Exam prep — what is kept in Firestore:
 
-   users/{uid}/examAttempts/{id}   one finished practice task or mock exam
+   users/{uid}/examAttempts/{id}   a result the learner entered after doing an
+                                   official practice test
    users/{uid}/examGoals/{examId}  the learner's target score and exam date
-   entitlements/{uid}              Premium status — written ONLY by the server
-                                   (billing webhook); the client just reads it
 
-   Attempts store scores, not the generated material: the texts are large,
-   and the history only needs the numbers. These collections must be allowed
-   in firestore.rules (see docs/EXAMS-SETUP.md) — until the rules are
-   published, reads and writes fail and the screens say so instead of crashing. */
+   Both collections are allowed in firestore.rules; if they ever are not,
+   reads and writes fail and the screens say so instead of crashing. */
 import { collection, doc, getDoc, getDocs, query, setDoc, where } from 'firebase/firestore';
 
 import { db } from '@/lib/firebase';
@@ -16,7 +13,9 @@ import { millisToTs, tsToMillis } from '@/lib/firestore';
 
 import type { ExamResult } from './scoring';
 
-export type AttemptMode = 'task' | 'mock';
+/* 'official' is the only mode written now. 'task' and 'mock' come from the
+   short-lived AI practice (Nov 2026) and are still read so old rows show. */
+export type AttemptMode = 'official' | 'task' | 'mock';
 
 export interface ExamAttempt {
   id: string;
@@ -27,9 +26,11 @@ export interface ExamAttempt {
   durationSeconds: number;
   /** Section scores on each section's own scale (a task attempt has one). */
   sectionScores: Record<string, number>;
-  /** Mock only: the overall result. */
+  /** The overall result, when every section was entered. */
   result?: ExamResult;
-  /** Task only. */
+  /** Optional note, e.g. which official test it was. */
+  label?: string;
+  /** Legacy AI practice rows only. */
   sectionId?: string;
   taskId?: string;
   taskTitle?: string;
@@ -45,7 +46,6 @@ export interface ExamGoal {
 
 const attemptsCollection = (uid: string) => collection(db, 'users', uid, 'examAttempts');
 const goalDoc = (uid: string, examId: string) => doc(db, 'users', uid, 'examGoals', examId);
-const entitlementDoc = (uid: string) => doc(db, 'entitlements', uid);
 
 const numberRecord = (value: unknown): Record<string, number> => {
   const out: Record<string, number> = {};
@@ -59,7 +59,7 @@ export const attemptFromFirestore = (data: Record<string, unknown>, id: string):
   id,
   examId: String(data.examId ?? ''),
   variantId: String(data.variantId ?? ''),
-  mode: data.mode === 'mock' ? 'mock' : 'task',
+  mode: data.mode === 'mock' || data.mode === 'task' ? data.mode : 'official',
   createdAt: tsToMillis(data.createdAt),
   durationSeconds: typeof data.durationSeconds === 'number' ? data.durationSeconds : 0,
   sectionScores: numberRecord(data.sectionScores),
@@ -67,6 +67,7 @@ export const attemptFromFirestore = (data: Record<string, unknown>, id: string):
   ...(typeof data.sectionId === 'string' ? { sectionId: data.sectionId } : {}),
   ...(typeof data.taskId === 'string' ? { taskId: data.taskId } : {}),
   ...(typeof data.taskTitle === 'string' ? { taskTitle: data.taskTitle } : {}),
+  ...(typeof data.label === 'string' ? { label: data.label } : {}),
 });
 
 export const saveAttempt = async (uid: string, attempt: ExamAttempt): Promise<void> => {
@@ -99,23 +100,4 @@ export const fetchGoal = async (uid: string, examId: string): Promise<ExamGoal |
 
 export const saveGoal = async (uid: string, goal: ExamGoal): Promise<void> => {
   await setDoc(goalDoc(uid, goal.examId), { ...goal, userId: uid, updatedAt: millisToTs(Date.now()) });
-};
-
-export interface Entitlement {
-  premium: boolean;
-  /** Epoch millis the paid period ends, if the server set one. */
-  currentPeriodEnd: number | null;
-}
-
-export const isEntitlementActive = (entitlement: Entitlement | null, now = Date.now()): boolean =>
-  !!entitlement?.premium && (entitlement.currentPeriodEnd === null || entitlement.currentPeriodEnd > now);
-
-export const fetchEntitlement = async (uid: string): Promise<Entitlement | null> => {
-  const snapshot = await getDoc(entitlementDoc(uid));
-  if (!snapshot.exists()) return null;
-  const data = snapshot.data();
-  return {
-    premium: data.premium === true,
-    currentPeriodEnd: data.currentPeriodEnd ? tsToMillis(data.currentPeriodEnd) : null,
-  };
 };

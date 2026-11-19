@@ -96,7 +96,8 @@
     "group": {
       "practice": "Pratique",
       "library": "Bibliothèque"
-    }
+    },
+    "exams": "Exams"
   },
   "folders": {
     "create": "Créer un dossier",
@@ -360,7 +361,9 @@
     "noTranslation": "Pas de traduction",
     "learning": "En cours",
     "knownShort": "Su",
-    "deleteCardTitle": "Supprimer la carte ?"
+    "deleteCardTitle": "Supprimer la carte ?",
+    "imageUploading": "Envoi…",
+    "imageFailed": "L'image n'a pas pu être envoyée. Réessayez, ou retirez-la et enregistrez seulement le texte."
   },
   "writing": {
     "today": {
@@ -1847,5 +1850,95 @@
     "title": "Page introuvable",
     "body": "Ce lien ne mène nulle part. La page a peut-être été renommée, ou l'adresse contient une faute.",
     "backHome": "Retour à WordAround"
+  },
+  "exams": {
+    "title": "Exam prep",
+    "catalogTitle": "Choose your exam",
+    "cardSubtitle": "{{language}} · {{variants}}",
+    "moreSoon": "TOEFL, Cambridge, DELF, Goethe and more are on the way.",
+    "back": "Exams",
+    "format": "Exam format",
+    "totalTime": "Total time",
+    "sectionsCount": "Sections",
+    "scoring": "Scoring",
+    "scoreBand": "Band 0–{{max}}, in half bands",
+    "scorePass": "Pass: {{total}}/{{max}}, {{group}} in each part",
+    "duration": {
+      "hours": "{{h}} h {{m}} min",
+      "hoursOnly": "{{h}} h",
+      "minutes": "{{m}} min"
+    },
+    "prep": "+ {{m}} min prep",
+    "tasks_one": "{{count}} task",
+    "tasks_other": "{{count}} tasks",
+    "items_one": "{{count}} question",
+    "items_other": "{{count}} questions",
+    "rubricMarked": "Marked against the rubric",
+    "playsOnce": "Audio plays once",
+    "playsTwice": "Audio plays twice",
+    "wordsMin": "{{min}}+ words",
+    "wordsRange": "{{min}}–{{max}} words",
+    "speakFor": "Speak about {{m}} min",
+    "officialSite": "Official site",
+    "goal": {
+      "title": "Your goal",
+      "target": "Target score",
+      "date": "Exam date",
+      "save": "Save",
+      "daysLeft_one": "{{count}} day to the exam",
+      "daysLeft_other": "{{count}} days to the exam",
+      "today": "The exam is today — good luck!",
+      "passed": "The exam date has passed."
+    },
+    "subtitle": "Mock exams in the real format, timed and scored",
+    "disclaimer": "WordAround is not affiliated with {{owner}}. Scores here are estimates, not official results.",
+    "official": {
+      "title": "Official practice tests",
+      "subtitle": "Free tests published by {{owner}}. They open on the official site.",
+      "fullTests": "Full practice tests",
+      "sampleTasks": "Sample tasks by question type",
+      "count_one": "{{count}} task",
+      "count_other": "{{count}} tasks",
+      "checked": "The list updates itself every week from the official site. Last checked: {{date}}.",
+      "source": "Official · {{owner}}",
+      "openSource": "Open the official site ({{owner}})",
+      "empty": {
+        "default": "No official practice tests are published right now. The list updates itself every week.",
+        "dele": "The Instituto Cervantes is rebuilding its exams website and has not republished its DELE model exams yet. As soon as they are back, they will appear here on their own — the list is checked every week."
+      },
+      "link": {
+        "online": "Take the test",
+        "pdf": "Open PDF",
+        "answers": "Answers",
+        "transcript": "Transcript",
+        "audio": "Audio",
+        "examples": "Model answers",
+        "page": "Open"
+      }
+    },
+    "entry": {
+      "title": "Enter your result",
+      "subtitle": "Did an official practice test? Enter what you got and we work out the score on the exam scale.",
+      "label": "Which test (optional)",
+      "labelPlaceholder": "e.g. ielts.org Listening test",
+      "correctHint": "correct answers out of {{max}}",
+      "scoreHint": "score from 0 to {{max}}",
+      "overallBand": "Overall band: {{score}}",
+      "overallGroups": "{{total}} / {{max}} — {{verdict}}",
+      "partial": "So far: {{sections}}. Fill in every section for the overall result.",
+      "save": "Save result",
+      "saved": "Saved to your progress."
+    },
+    "result": {
+      "passed": "Pass",
+      "notPassed": "Not passed yet"
+    },
+    "history": {
+      "title": "Your progress",
+      "empty": "Your mock exams and practised tasks will appear here.",
+      "trend": "Overall results",
+      "unavailable": "Your history isn't available right now.",
+      "officialTest": "Official practice test"
+    }
   }
 }

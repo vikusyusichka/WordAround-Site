@@ -5,9 +5,8 @@ import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import { useExamAttempts, useExamGoal, useSaveGoal } from '@/hooks/useExams';
-import { daysUntil, formatSectionScore, mockScore } from '@/lib/exams/display';
+import { attemptScore, daysUntil, formatSectionScore } from '@/lib/exams/display';
 import type { ExamAttempt } from '@/lib/exams/examStorage';
-import { sectionMax } from '@/lib/exams/marking';
 import type { ExamSpec, ExamVariant } from '@/lib/exams/types';
 
 import { CARD, FIELD, SECONDARY_BUTTON, SECTION_TITLE } from './ui';
@@ -123,20 +122,22 @@ export const ExamHistoryCard = ({ exam, variant }: { exam: ExamSpec; variant: Ex
   const attempts = useExamAttempts(exam.id);
   const goal = useExamGoal(exam.id);
   const mine = (attempts.data ?? []).filter((a) => a.variantId === variant.id);
-  const mocks = mine.filter((a) => a.mode === 'mock' && a.result).reverse();
-  const values = mocks.map(mockScore).filter((v): v is number => v !== null);
+  const complete = mine.filter((a) => a.result).reverse();
+  const values = complete.map(attemptScore).filter((v): v is number => v !== null);
   const max = variant.overall.max;
   const dateFormat = new Intl.DateTimeFormat(i18n.language, { day: 'numeric', month: 'short' });
 
   const scoreLabel = (attempt: ExamAttempt): string => {
-    if (attempt.mode === 'mock' && attempt.result) {
+    if (attempt.result) {
       return attempt.result.kind === 'band'
         ? attempt.result.overall.toFixed(1)
-        : `${attempt.result.total} / ${max} · ${attempt.result.passed ? t('exams.mock.passed') : t('exams.mock.notPassed')}`;
+        : `${attempt.result.total} / ${max} · ${attempt.result.passed ? t('exams.result.passed') : t('exams.result.notPassed')}`;
     }
-    const section = variant.sections.find((s) => s.id === attempt.sectionId);
-    const score = attempt.sectionId ? attempt.sectionScores[attempt.sectionId] : undefined;
-    return section && score !== undefined ? `${formatSectionScore(section, score)} / ${sectionMax(section)}` : '—';
+    /* Only some sections entered: list them, e.g. "Listening 7.0 · Reading 6.5". */
+    const parts = variant.sections
+      .filter((s) => attempt.sectionScores[s.id] !== undefined)
+      .map((s) => `${s.title} ${formatSectionScore(s, attempt.sectionScores[s.id])}`);
+    return parts.length > 0 ? parts.join(' · ') : '—';
   };
 
   return (
@@ -153,7 +154,7 @@ export const ExamHistoryCard = ({ exam, variant }: { exam: ExamSpec; variant: Ex
         <>
           {values.length > 0 && (
             <div className="flex flex-col gap-1">
-              <span className="text-[13px] font-semibold text-(--color-muted-text)">{t('exams.history.mockTrend')}</span>
+              <span className="text-[13px] font-semibold text-(--color-muted-text)">{t('exams.history.trend')}</span>
               <Sparkline values={values} max={max} target={goal.data?.targetScore ?? null} />
             </div>
           )}
@@ -167,11 +168,12 @@ export const ExamHistoryCard = ({ exam, variant }: { exam: ExamSpec; variant: Ex
                   {dateFormat.format(attempt.createdAt)}
                 </span>
                 <span className="min-w-0 flex-1 truncate text-[14px] font-semibold text-(--color-primary-blue-dark)">
-                  {attempt.mode === 'mock'
-                    ? t('exams.mock.title')
-                    : `${variant.sections.find((s) => s.id === attempt.sectionId)?.title ?? ''} · ${attempt.taskTitle ?? ''}`}
+                  {attempt.label ||
+                    (attempt.mode === 'official'
+                      ? t('exams.history.officialTest')
+                      : `${variant.sections.find((s) => s.id === attempt.sectionId)?.title ?? ''} · ${attempt.taskTitle ?? ''}`)}
                 </span>
-                <span className="shrink-0 text-[14px] font-bold tabular-nums text-(--color-primary-blue)">
+                <span className="max-w-[55%] shrink-0 text-right text-[14px] font-bold tabular-nums text-(--color-primary-blue)">
                   {scoreLabel(attempt)}
                 </span>
               </li>
