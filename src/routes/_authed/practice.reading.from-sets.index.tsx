@@ -8,6 +8,7 @@ import { useTranslation } from 'react-i18next';
 import { Plus } from '@phosphor-icons/react';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { MobileBackButton } from '@/components/shell/MobileBackButton';
 import { ItemActionDialogs } from '@/components/shell/ItemActionDialogs';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { SetupSection } from '@/components/practice/SetupSection';
@@ -131,13 +132,7 @@ function FromSetsScreen() {
       />
 
       <div className="flex max-w-(--size-setup-max) flex-col gap-6">
-        <button
-          type="button"
-          onClick={() => void navigate({ to: '/practice/reading' })}
-          className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-        >
-          ← {t('nav.reading')}
-        </button>
+        <MobileBackButton label={t('nav.reading')} onClick={() => void navigate({ to: '/practice/reading' })} />
 
         {/* Creation card (after a set is picked) */}
         {selectedSet && (

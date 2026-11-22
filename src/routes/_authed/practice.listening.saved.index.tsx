@@ -8,6 +8,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { MobileBackButton } from '@/components/shell/MobileBackButton';
 import { ItemActionDialogs } from '@/components/shell/ItemActionDialogs';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { Icon } from '@/components/primitives/Icon';
@@ -70,13 +71,7 @@ function SavedPracticeScreen() {
       <ContentContainer accent={{ accent: 'var(--color-accent-rose)', accentDark: 'var(--color-accent-rose-text)' }} fluid>
         <PageHeader title={reviewSession.title} subtitle={t('listening.saved.title')} />
         <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-          <button
-            type="button"
-            onClick={() => setReviewSession(null)}
-            className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-          >
-            ← {t('listening.saved.title')}
-          </button>
+          <MobileBackButton label={t('listening.saved.title')} onClick={() => setReviewSession(null)} />
           <ListeningResultView
             result={reviewSession.result}
             subtitle={reviewSession.title}
@@ -98,13 +93,7 @@ function SavedPracticeScreen() {
       <PageHeader title={t('listening.saved.title')} subtitle={t('listening.saved.subtitle')} />
 
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-        <button
-          type="button"
-          onClick={() => void navigate({ to: '/practice/listening' })}
-          className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-        >
-          ← {t('nav.listening')}
-        </button>
+        <MobileBackButton label={t('nav.listening')} onClick={() => void navigate({ to: '/practice/listening' })} />
 
         {sessions === null && (
           <p className="py-10 text-center text-[15px] font-medium text-(--color-text-secondary)">

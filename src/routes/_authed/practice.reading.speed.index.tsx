@@ -7,6 +7,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { MobileBackButton } from '@/components/shell/MobileBackButton';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { SetupSection } from '@/components/practice/SetupSection';
 import { OptionPillGroup } from '@/components/practice/OptionPill';
@@ -186,15 +187,7 @@ function SpeedReadingScreen() {
       />
 
       <div className="flex w-full max-w-(--size-setup-max) flex-col gap-5">
-        <button
-          type="button"
-          onClick={() =>
-            screen === 'session' ? setScreen('setup') : void navigate({ to: '/practice/reading' })
-          }
-          className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-        >
-          ← {screen === 'session' ? t('reading.speed.title') : t('nav.reading')}
-        </button>
+        <MobileBackButton label={screen === 'session' ? t('reading.speed.title') : t('nav.reading')} onClick={() => screen === 'session' ? setScreen('setup') : void navigate({ to: '/practice/reading' })} />
 
         {screen === 'setup' && (
           <>

@@ -6,6 +6,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { MobileBackButton } from '@/components/shell/MobileBackButton';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { Icon } from '@/components/primitives/Icon';
 import { SpeakingInputBar } from '@/components/speaking/SpeakingInputBar';
@@ -77,13 +78,7 @@ function DebateSession({
       <ContentContainer fluid>
         <PageHeader title={t('speaking.debate.title')} subtitle={debate.session?.topic.title ?? ''} />
         <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-          <button
-            type="button"
-            onClick={onExit}
-            className="w-fit text-[13px] font-semibold text-(--color-accent-rose-text) hover:underline focus-visible:outline-none"
-          >
-            ← {t('nav.speaking')}
-          </button>
+          <MobileBackButton label={t('nav.speaking')} onClick={onExit} />
           {debate.isGeneratingFeedback || !debate.feedback ? (
             <p className="py-16 text-center text-[15px] font-medium text-(--color-text-secondary)">
               {t('speaking.result.generating')}
@@ -122,14 +117,8 @@ function DebateSession({
       />
 
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-4">
-        <div className="flex items-center justify-between">
-          <button
-            type="button"
-            onClick={onExit}
-            className="text-[13px] font-semibold text-(--color-accent-rose-text) hover:underline focus-visible:outline-none"
-          >
-            ← {t('nav.speaking')}
-          </button>
+        <div className="flex items-center justify-between sm:justify-end">
+          <MobileBackButton label={t('nav.speaking')} onClick={onExit} />
           <button
             type="button"
             onClick={debate.endDebate}

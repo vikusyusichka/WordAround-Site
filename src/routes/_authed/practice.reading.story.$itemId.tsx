@@ -7,6 +7,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { MobileBackButton } from '@/components/shell/MobileBackButton';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { ReadingQuestionSection } from '@/components/reading/ReadingQuestionSection';
 import { GrammarNotesEmptyState } from '@/components/grammar/GrammarNotesEmptyState';
@@ -214,13 +215,7 @@ function StorySession({
       />
 
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
-        <button
-          type="button"
-          onClick={onExit}
-          className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-        >
-          ← {t('reading.story.title')}
-        </button>
+        <MobileBackButton label={t('reading.story.title')} onClick={onExit} />
 
         {!chapter && (
           <GrammarNotesEmptyState title={t('reading.notFound')} body="" />

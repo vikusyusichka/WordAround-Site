@@ -6,6 +6,7 @@ import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
 import { ContentContainer } from '@/components/shell/ContentContainer';
+import { MobileBackButton } from '@/components/shell/MobileBackButton';
 import { PageHeader } from '@/components/shell/PageHeader';
 import { useSaveReadingItem } from '@/hooks/useReadingItems';
 import { useUid } from '@/hooks/useFolders';
@@ -277,13 +278,7 @@ function AddTextScreen() {
       />
 
       <div className="flex w-full max-w-(--size-setup-max) flex-col gap-5">
-        <button
-          type="button"
-          onClick={goBack}
-          className="w-fit text-[13px] font-semibold text-(--color-primary-blue) hover:underline focus-visible:outline-none"
-        >
-          ← {t('reading.myTexts.title')}
-        </button>
+        <MobileBackButton label={t('reading.myTexts.title')} onClick={goBack} />
 
         {/* Import source */}
         <div className="flex flex-wrap gap-1.5">
