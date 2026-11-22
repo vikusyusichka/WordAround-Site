@@ -187,6 +187,21 @@ function GrammarHome() {
           onStart={() => void navigate({ to: '/notes/review' })}
         />
 
+        <ReviewHighlightsRow
+          title={t('writing.grammar.highlights.quizzesTitle')}
+          subtitle={t('writing.grammar.highlights.quizzesSubtitle')}
+          accent='var(--color-accent-violet)'
+          items={quizHighlights ?? []}
+          onOpen={(item) =>
+            item.noteId
+              ? void navigate({
+                  to: '/notes/$topicId/$noteId/quiz',
+                  params: { topicId: item.topicId, noteId: item.noteId },
+                })
+              : openTopic(item.topicId)
+          }
+        />
+
         {showsMistakeHighlights && (
           <ReviewHighlightsRow
             title={t('writing.grammar.highlights.mistakesTitle')}
@@ -203,21 +218,6 @@ function GrammarHome() {
             }
           />
         )}
-
-        <ReviewHighlightsRow
-          title={t('writing.grammar.highlights.quizzesTitle')}
-          subtitle={t('writing.grammar.highlights.quizzesSubtitle')}
-          accent='var(--color-accent-violet)'
-          items={quizHighlights ?? []}
-          onOpen={(item) =>
-            item.noteId
-              ? void navigate({
-                  to: '/notes/$topicId/$noteId/quiz',
-                  params: { topicId: item.topicId, noteId: item.noteId },
-                })
-              : openTopic(item.topicId)
-          }
-        />
       </div>
 
       {topics && topics.length > 1 && (
