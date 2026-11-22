@@ -37,7 +37,7 @@ function DebateSetup() {
   const [side, setSide] = useState<DebateSide>('agree');
 
   return (
-    <ContentContainer fluid className="max-w-(--size-setup-max)">
+    <ContentContainer accent={{ accent: ACCENT, accentDark: ACCENT_DARK }} fluid className="max-w-(--size-setup-max)">
       <PageHeader title={t('speaking.debate.title')} subtitle={t('speaking.debate.subtitle')} />
 
       <div className="flex w-full max-w-(--size-setup-max) flex-col gap-6">

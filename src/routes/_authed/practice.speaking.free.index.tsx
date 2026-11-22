@@ -36,7 +36,7 @@ function FreeSpeakingSetup() {
   const [length, setLength] = useState<ConversationLength>('short');
 
   return (
-    <ContentContainer fluid className="max-w-(--size-setup-max)">
+    <ContentContainer accent={{ accent: ACCENT, accentDark: ACCENT_DARK }} fluid className="max-w-(--size-setup-max)">
       <PageHeader title={t('speaking.free.title')} subtitle={t('speaking.free.subtitle')} />
 
       <div className="flex w-full max-w-(--size-setup-max) flex-col gap-6">

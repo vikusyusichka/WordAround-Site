@@ -1,6 +1,6 @@
 /* Setup start button — ports iOS SpeakingSetupStartButton: full-width (capped
    to the setup column), height 52 / 58@lg, radius 18 / 22, bold 16 / 18 label with a leading
-   icon, an accent→accentDark gradient and an accent-30% drop shadow. */
+   icon, a solid accent fill (no gradient) and an accent-30% drop shadow. */
 import type { CSSProperties } from 'react';
 
 import { Icon } from '@/components/primitives/Icon';
@@ -9,6 +9,7 @@ interface StartButtonProps {
   label: string;
   icon: string;
   accent?: string;
+  /** Kept for callers; the button is a flat accent fill now. */
   accentDark?: string;
   disabled?: boolean;
   onClick: () => void;
@@ -21,15 +22,13 @@ export const StartButton = ({
   label,
   icon,
   accent,
-  accentDark,
   disabled,
   onClick,
 }: StartButtonProps) => {
   const a = accent ?? 'var(--color-primary-blue)';
-  const aDark = accentDark ?? 'var(--color-primary-blue-dark)';
 
   const style: CSSProperties = {
-    background: `linear-gradient(135deg, ${a}, ${aDark})`,
+    background: a,
     boxShadow: `0 8px 16px ${withAlpha(a, 30)}`,
   };
 

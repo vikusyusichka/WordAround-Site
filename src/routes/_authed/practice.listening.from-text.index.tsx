@@ -130,7 +130,7 @@ function ListenFromTextSetup() {
   };
 
   return (
-    <ContentContainer fluid className="max-w-(--size-setup-max)">
+    <ContentContainer accent={{ accent: ACCENT, accentDark: ACCENT_DARK }} fluid className="max-w-(--size-setup-max)">
       <PageHeader
         title={t('listening.fromText.title')}
         subtitle={t('listening.fromText.subtitle')}

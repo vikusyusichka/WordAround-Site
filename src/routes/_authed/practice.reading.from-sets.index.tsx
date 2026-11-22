@@ -114,7 +114,7 @@ function FromSetsScreen() {
     void navigate({ to: '/practice/reading/session/$itemId', params: { itemId: item.id } });
 
   return (
-    <ContentContainer fluid className="max-w-(--size-setup-max)">
+    <ContentContainer accent={{ accent: ACCENT, accentDark: ACCENT_DARK }} fluid className="max-w-(--size-setup-max)">
       <PageHeader
         title={t('reading.fromSets.title')}
         subtitle={t('reading.fromSets.subtitle')}

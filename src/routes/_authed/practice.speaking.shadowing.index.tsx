@@ -76,7 +76,7 @@ function ShadowingSetup({
   const { t } = useTranslation();
 
   return (
-    <ContentContainer fluid className="max-w-(--size-setup-max)">
+    <ContentContainer accent={{ accent: ACCENT, accentDark: ACCENT_DARK }} fluid className="max-w-(--size-setup-max)">
       <PageHeader title={t('speaking.shadowing.title')} subtitle={t('speaking.shadowing.subtitle')} />
 
       <div className="flex w-full max-w-(--size-setup-max) flex-col gap-6">
@@ -172,7 +172,7 @@ function ShadowingSession({
   const s = useShadowing({ languageId, level, category, count: PHRASE_COUNT });
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer accent={{ accent: ACCENT, accentDark: ACCENT_DARK }} fluid>
       <PageHeader
         title={t('speaking.shadowing.title')}
         subtitle={t('speaking.shadowing.subtitle')}

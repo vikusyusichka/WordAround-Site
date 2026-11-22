@@ -118,7 +118,7 @@ export const ProgressCard = ({
                 />
                 <span
                   className="text-[13px] font-medium @min-[300px]:text-[15px] @min-[420px]:text-[18px]"
-                  style={{ color: item.accentColor }}
+                  style={{ color: item.subtitleColor }}
                 >
                   {subtitle}
                 </span>

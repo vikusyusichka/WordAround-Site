@@ -55,7 +55,7 @@ function PronunciationScreen() {
   }
 
   return (
-    <ContentContainer fluid className="max-w-(--size-setup-max)">
+    <ContentContainer accent={{ accent: ACCENT, accentDark: ACCENT_DARK }} fluid className="max-w-(--size-setup-max)">
       <PageHeader title={t('speaking.pronunciation.title')} subtitle={t('speaking.pronunciation.subtitle')} />
       <PronunciationSetup
         languageId={languageId}
@@ -195,7 +195,7 @@ function PronunciationSession({
   const p = usePronunciationTrainer({ languageId, level, focus, difficulty, count: ITEM_COUNT });
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer accent={{ accent: ACCENT, accentDark: ACCENT_DARK }} fluid>
       <PageHeader
         title={t('speaking.pronunciation.title')}
         subtitle={t('speaking.pronunciation.subtitle')}
