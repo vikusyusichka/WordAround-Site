@@ -126,6 +126,14 @@ const ruleQuestion = (
     }
   }
 
+  /* A cloze on the rule itself makes the learner produce its key word —
+     recall rather than recognition. Also gives a rule a question when only
+     fill-gap is switched on, where it used to yield nothing. */
+  if (types.has('fillGap')) {
+    const q = fillGapQuestion(text, block.secondaryText, order);
+    if (q) return q;
+  }
+
   if (types.has('shortAnswer')) {
     const secondary = block.secondaryText ? trim(block.secondaryText) : '';
     const answer = secondary.length > 0 ? secondary : text;

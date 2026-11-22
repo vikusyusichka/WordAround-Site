@@ -354,3 +354,49 @@ describe('question rotation', () => {
     expect(at(2).sourceText).toBe(first.sourceText);
   });
 });
+
+describe('mistake notes', () => {
+  it('ask to correct the wrong sentence and never quiz the wrong form', () => {
+    const mistake = makeGrammarNote({
+      id: 'm1',
+      ownerUID: 'u',
+      topicId: 't',
+      title: 'He go home',
+      noteType: 'mistake',
+      previewText: 'He goes home',
+      contentBlocks: [
+        { id: 'h', type: 'heading', text: 'Mistake', items: [], order: 0 },
+        { id: 'q', type: 'quote', text: 'He go home every day after work', items: [], order: 1 },
+        { id: 'e', type: 'example', text: 'He goes home every day after work', items: [], order: 2 },
+        { id: 'p', type: 'paragraph', text: 'Third person singular takes -s.', items: [], order: 3 },
+      ],
+      now: 0,
+    });
+    const notesById = new Map([['m1', mistake]]);
+    for (const reviewCount of [0, 1, 2]) {
+      const card = buildReviewQueue({
+        manualItems: [item('m1', { reviewCount, lastReviewedAt: 0, stability: 1, dueAt: 0 })],
+        recentlyOpened: [],
+        recentlyEdited: [],
+        notesById,
+      }).cards[0];
+      expect(card.question.type).toBe('shortAnswer');
+      expect(card.question.questionText).toContain('He go home every day after work');
+      expect(card.question.correctAnswer).toBe('He goes home every day after work');
+      expect(card.question.explanation).toBe('Third person singular takes -s.');
+    }
+  });
+
+  it('review never asks true/false or multiple choice generated from a note', () => {
+    const notesById = new Map([['n1', note('n1', richBlocks)]]);
+    for (const reviewCount of [0, 1, 2, 3]) {
+      const card = buildReviewQueue({
+        manualItems: [item('n1', { reviewCount, lastReviewedAt: 0, stability: 1, dueAt: 0 })],
+        recentlyOpened: [],
+        recentlyEdited: [],
+        notesById,
+      }).cards[0];
+      expect(['fillGap', 'shortAnswer']).toContain(card.question.type);
+    }
+  });
+});

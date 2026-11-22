@@ -214,6 +214,11 @@ export const ReviewSessionScreen = ({
           <p className="text-[13px] font-bold uppercase tracking-wide text-(--color-muted-text)">
             {t('writing.grammar.review.compareTitle')}
           </p>
+          {lastAnswer?.correct && (
+            <p className="mt-1 text-[14px] font-bold text-(--color-accent-green-text)">
+              {t('writing.grammar.review.matches')}
+            </p>
+          )}
           {lastAnswer && lastAnswer.answer.trim().length > 0 && (
             <p className="mt-1.5 text-[14px] font-medium text-(--color-primary-blue-dark)">
               {t('writing.grammar.quiz.result.yourAnswer', { answer: lastAnswer.answer })}

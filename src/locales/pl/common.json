@@ -975,7 +975,8 @@
         "reviewTopic_many": "Powtórz temat · {{count}}",
         "reviewTopic_other": "Powtórz temat · {{count}}",
         "today": "Dziś",
-        "nextCardIn": "Teraz nie ma nic do powtórki. Następna karta za {{when}}."
+        "nextCardIn": "Teraz nie ma nic do powtórki. Następna karta za {{when}}.",
+        "matches": "Zgadza się z odpowiedzią."
       },
       "mistakesBadge": "Błędy",
       "topicsTitle": "Tematy",

@@ -924,7 +924,8 @@
         "reviewTopic_one": "Review topic · {{count}}",
         "reviewTopic_other": "Review topic · {{count}}",
         "today": "Today",
-        "nextCardIn": "Nothing due right now. Next card in {{when}}."
+        "nextCardIn": "Nothing due right now. Next card in {{when}}.",
+        "matches": "Matches the answer."
       },
       "mistakesBadge": "Mistakes",
       "topicsTitle": "Topics",

@@ -85,7 +85,7 @@ describe('generateLocalQuestions', () => {
       5,
       new Set<GrammarQuizQuestionType>(['fillGap']),
     );
-    const gap = qs.find((q) => q.type === 'fillGap');
+    const gap = qs.find((q) => q.type === 'fillGap' && q.questionText.includes('She'));
     expect(gap).toBeDefined();
     expect(gap!.questionText).toContain('_____');
     // first interior candidate: "has" is len 3 > 2 and not in stopwords? "has" not in the set → picked
@@ -99,7 +99,7 @@ describe('generateLocalQuestions', () => {
         [
           block('example', 'Soy alto'),
           block('example', 'Estoy cansado'),
-          block('rule', 'Ser vs estar distinction matters here'),
+          block('rule', 'Ser vs estar'),
         ],
         5,
         new Set<GrammarQuizQuestionType>(['fillGap']),
@@ -248,5 +248,17 @@ describe('generateLocalQuestions', () => {
     );
     expect(detailed.questionText).toContain('Explain this grammar rule');
     expect(detailed.correctAnswer).toBe('in gender and number');
+  });
+});
+
+describe('rules give recall questions', () => {
+  it('a rule becomes a fill-the-gap when fill-gap is allowed and multiple choice is not', () => {
+    const qs = generateLocalQuestions(
+      [block('rule', 'Use the present perfect for unfinished time periods'), block('example', 'I have lived here')],
+      1,
+      new Set<GrammarQuizQuestionType>(['fillGap', 'shortAnswer']),
+    );
+    expect(qs[0].type).toBe('fillGap');
+    expect(qs[0].questionText).toContain('_____');
   });
 });

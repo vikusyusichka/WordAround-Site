@@ -927,7 +927,8 @@
         "reviewTopic_one": "Thema wiederholen · {{count}}",
         "reviewTopic_other": "Thema wiederholen · {{count}}",
         "today": "Heute",
-        "nextCardIn": "Gerade ist nichts fällig. Nächste Karte in {{when}}."
+        "nextCardIn": "Gerade ist nichts fällig. Nächste Karte in {{when}}.",
+        "matches": "Stimmt mit der Antwort überein."
       },
       "mistakesBadge": "Fehler",
       "topicsTitle": "Themen",

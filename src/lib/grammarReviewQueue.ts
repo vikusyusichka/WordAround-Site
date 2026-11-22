@@ -98,25 +98,13 @@ const singleBlockQuestion = (block: GrammarNoteBlock): GrammarQuizQuestion | nul
       correctAnswer: answer.slice(0, 160),
     };
   }
+  /* Recall, not recognition — see REVIEW_QUESTION_TYPES. */
   if (block.type === 'comparison' && secondary.length > 0) {
-    const options = [text, secondary, 'Neither applies', 'Both are correct'].sort();
     return {
       ...base,
-      type: 'multipleChoice',
-      questionText: 'Which form is correct here?',
-      options: options.slice(0, 4),
-      correctAnswer: text,
-      explanation: `Compare: ${text} vs ${secondary}`,
-    };
-  }
-  if (block.type === 'warning') {
-    return {
-      ...base,
-      type: 'trueFalse',
-      questionText: `True or False: "${text.slice(0, 100)}" is a common grammar mistake.`,
-      options: ['True', 'False'],
-      correctAnswer: 'True',
-      explanation: explanation ?? text,
+      type: 'shortAnswer',
+      questionText: `What is the difference between "${text.slice(0, 40)}" and "${secondary.slice(0, 40)}"?`,
+      correctAnswer: `${text} vs ${secondary}`,
     };
   }
   if (block.type === 'rule') {
@@ -182,12 +170,42 @@ const questionFromQuiz = (
   return ordered[item.reviewCount % ordered.length];
 };
 
-const REVIEW_QUESTION_TYPES = new Set([
-  'multipleChoice',
-  'trueFalse',
-  'fillGap',
-  'shortAnswer',
-] as const);
+/* Review asks for recall — the learner types the answer — never for
+   recognition. Retrieval research finds recall tests give a clearly larger
+   memory benefit than recognition tests (Rowland 2014 meta-analysis), and
+   the recognition questions the generator can make from a note were weak
+   anyway: the warning true/false was always "True", and the comparison
+   multiple choice named the right form inside its own question. Saved quizzes
+   still play exactly as the learner wrote them. */
+const REVIEW_QUESTION_TYPES = new Set(['fillGap', 'shortAnswer'] as const);
+
+const isMistakeNote = (note: GrammarNote) => note.isMistakeNote || note.noteType === 'mistake';
+
+/* A saved mistake is reviewed the way an error log is: see the wrong
+   sentence, write it correctly, compare. The mistake recipe stores the wrong
+   sentence as a quote block and the fix as an example block. Letting the
+   generic generator loose on it could turn the WRONG sentence into a
+   fill-the-gap — drilling the very error the note exists to fix. */
+const correctionQuestion = (
+  note: GrammarNote,
+): { question: GrammarQuizQuestion; block: GrammarNoteBlock } | null => {
+  const wrong = note.contentBlocks.find((b) => b.type === 'quote' && b.text.trim().length > 0);
+  const fixed = note.contentBlocks.find((b) => b.type === 'example' && b.text.trim().length > 0);
+  if (!wrong || !fixed) return null;
+  const why = note.contentBlocks.find((b) => b.type === 'paragraph' && b.text.trim().length > 0);
+  return {
+    question: {
+      id: crypto.randomUUID(),
+      type: 'shortAnswer',
+      questionText: `Correct this sentence: "${wrong.text.trim()}"`,
+      options: [],
+      correctAnswer: fixed.text.trim(),
+      explanation: why?.text.trim(),
+      order: 0,
+    },
+    block: fixed,
+  };
+};
 
 /* The question and the block it is about, chosen together so the answer the
    card reveals is the part of the note it asked about. Rotates through the
@@ -196,6 +214,10 @@ const generateQuestion = (
   item: GrammarReviewItem,
   note: GrammarNote,
 ): { question: GrammarQuizQuestion; block: GrammarNoteBlock | undefined } => {
+  if (isMistakeNote(note)) {
+    const correction = correctionQuestion(note);
+    if (correction) return correction;
+  }
   const generated = generateQuestionForBlock(
     note.contentBlocks,
     item.reviewCount,

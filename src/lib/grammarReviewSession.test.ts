@@ -68,12 +68,19 @@ describe('reviewSessionReducer', () => {
     expect(suggestedRating(s.lastAnswer)).toBe('good');
   });
 
-  it('shortAnswer is never auto-graded and suggests nothing', () => {
-    const s = run(start(card('a', 'shortAnswer')), { type: 'SUBMIT_ANSWER', answer: 'Answer' });
+  it('shortAnswer is never auto-graded: a different wording suggests nothing', () => {
+    const s = run(start(card('a', 'shortAnswer')), { type: 'SUBMIT_ANSWER', answer: 'Something else' });
     expect(s.lastAnswer?.autoGraded).toBe(false);
     expect(s.correctAnswerCount).toBe(0);
     expect(s.incorrectAnswerCount).toBe(0);
     expect(suggestedRating(s.lastAnswer)).toBeNull();
+  });
+
+  it('shortAnswer typed exactly as the reference suggests Good without counting as graded', () => {
+    const s = run(start(card('a', 'shortAnswer')), { type: 'SUBMIT_ANSWER', answer: '  answer ' });
+    expect(s.lastAnswer).toEqual({ answer: '  answer ', correct: true, autoGraded: false });
+    expect(s.correctAnswerCount).toBe(0);
+    expect(suggestedRating(s.lastAnswer)).toBe('good');
   });
 
   it('a wrong auto-graded answer suggests Forgot', () => {

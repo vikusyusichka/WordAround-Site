@@ -250,7 +250,11 @@ const buildHighlights = async (
     if (orphan) void reviewService.deleteReviewItem(uid, item.id).catch(() => {});
     else live.push(item);
   }
-  return live.slice(0, max);
+  /* Error-log practice: work on the errors you make most often first.
+     Most-forgotten first, then the most overdue. */
+  return live
+    .sort((a, b) => b.mistakeCount - a.mistakeCount || a.dueAt - b.dueAt)
+    .slice(0, max);
 };
 
 export const useReviewHighlightsQuery = (sourceType: GrammarReviewSourceType, max = 5) => {

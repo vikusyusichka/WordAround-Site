@@ -23,6 +23,9 @@ export const MAX_RELEARN = 2;
 
 export interface ReviewAnswer {
   answer: string;
+  /** For a self-rated (shortAnswer) card: the typed answer matched the
+      reference exactly, give or take case and spacing. A mismatch proves
+      nothing there — wording differs — so only a match is acted on. */
   correct: boolean;
   autoGraded: boolean;
 }
@@ -103,9 +106,14 @@ export const isRelearnAttempt = (s: ReviewSessionState): boolean => {
 export const incorrectDisplayCount = (s: ReviewSessionState): number =>
   s.incorrectAnswerCount + s.forgotCountWithoutQuiz;
 
-/** The rating an auto-graded answer points to; null for self-rated cards. */
-export const suggestedRating = (answer: ReviewAnswer | null): GrammarReviewResult | null =>
-  answer?.autoGraded ? (answer.correct ? 'good' : 'forgot') : null;
+/** The rating an answer points to: auto-graded right → Good, wrong → Forgot;
+    a typed answer that matches the reference → Good; otherwise none (the
+    learner compares and decides). */
+export const suggestedRating = (answer: ReviewAnswer | null): GrammarReviewResult | null => {
+  if (!answer) return null;
+  if (answer.autoGraded) return answer.correct ? 'good' : 'forgot';
+  return answer.correct ? 'good' : null;
+};
 
 const advance = (s: ReviewSessionState): ReviewSessionState => {
   const nextIndex = s.currentIndex + 1;
@@ -130,7 +138,7 @@ export const reviewSessionReducer = (
       const card = currentCard(s);
       if (!card || s.phase !== 'question' || s.finished) return s;
       const autoGraded = card.question.type !== 'shortAnswer';
-      const correct = autoGraded && isAnswerCorrect(card.question, action.answer);
+      const correct = isAnswerCorrect(card.question, action.answer);
       return {
         ...s,
         phase: 'result',

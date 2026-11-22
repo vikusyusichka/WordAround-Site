@@ -975,7 +975,8 @@
         "reviewTopic_many": "Повторити тему · {{count}}",
         "reviewTopic_other": "Повторити тему · {{count}}",
         "today": "Сьогодні",
-        "nextCardIn": "Зараз повторювати нічого. Наступна картка через {{when}}."
+        "nextCardIn": "Зараз повторювати нічого. Наступна картка через {{when}}.",
+        "matches": "Збігається з відповіддю."
       },
       "mistakesBadge": "Помилки",
       "topicsTitle": "Теми",
