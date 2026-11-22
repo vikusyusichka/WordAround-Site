@@ -513,7 +513,9 @@
           "grammar": "Grammatik",
           "vocabulary": "Wortschatz",
           "structure": "Aufbau"
-        }
+        },
+        "modalTitle": "Schreibhinweis",
+        "gotIt": "Verstanden"
       },
       "check": {
         "button": "Meinen Aufsatz prüfen",
@@ -572,13 +574,16 @@
         "translate": "Übersetzen",
         "synonym": "Synonym",
         "remaining": "noch {{remaining}}",
-        "notAvailable": "Auf diesem Niveau nicht verfügbar"
+        "notAvailable": "Auf diesem Niveau nicht verfügbar",
+        "sets": "Sets",
+        "selected": "{{n}} ausgewählt"
       },
       "translate": {
         "title": "Übersetzen",
         "placeholder": "Gib ein Wort oder eine kurze Wendung ein",
         "submit": "Übersetzen",
-        "submitting": "Wird übersetzt..."
+        "submitting": "Wird übersetzt...",
+        "tooManyWords": "Höchstens {{n}} Wörter."
       },
       "synonym": {
         "title": "Synonyme",
@@ -613,6 +618,13 @@
       "difficultyOption": {
         "withTranslation": "Hinweise: {{n}} • Übersetzung",
         "noTranslation": "Hinweise: {{n}} • ohne Übersetzung"
+      },
+      "setHints": {
+        "back": "Zurück zu den Sets",
+        "done": "Fertig",
+        "emptyTitle": "Keine Wörter in diesem Set",
+        "emptySubtitle": "Füge zuerst Karten zu diesem Set hinzu.",
+        "remove": "{{word}} entfernen"
       }
     },
     "grammar": {

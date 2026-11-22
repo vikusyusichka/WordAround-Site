@@ -521,7 +521,9 @@
           "grammar": "Gramatyka",
           "vocabulary": "Słownictwo",
           "structure": "Struktura"
-        }
+        },
+        "modalTitle": "Podpowiedź do pisania",
+        "gotIt": "Rozumiem"
       },
       "check": {
         "button": "Sprawdź moje wypracowanie",
@@ -582,13 +584,16 @@
         "translate": "Przetłumacz",
         "synonym": "Synonim",
         "remaining": "zostało {{remaining}}",
-        "notAvailable": "Niedostępne na tym poziomie"
+        "notAvailable": "Niedostępne na tym poziomie",
+        "sets": "Zestawy",
+        "selected": "Wybrano: {{n}}"
       },
       "translate": {
         "title": "Tłumaczenie",
         "placeholder": "Wpisz słowo lub krótką frazę",
         "submit": "Przetłumacz",
-        "submitting": "Tłumaczenie..."
+        "submitting": "Tłumaczenie...",
+        "tooManyWords": "Maksymalnie {{n}} słów."
       },
       "synonym": {
         "title": "Synonimy",
@@ -625,6 +630,13 @@
       "difficultyOption": {
         "withTranslation": "Podpowiedzi: {{n}} • tłumaczenie",
         "noTranslation": "Podpowiedzi: {{n}} • bez tłumaczenia"
+      },
+      "setHints": {
+        "back": "Wróć do zestawów",
+        "done": "Gotowe",
+        "emptyTitle": "Brak słów w tym zestawie",
+        "emptySubtitle": "Najpierw dodaj karty do zestawu.",
+        "remove": "Usuń {{word}}"
       }
     },
     "grammar": {

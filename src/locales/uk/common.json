@@ -521,7 +521,9 @@
           "grammar": "Граматика",
           "vocabulary": "Лексика",
           "structure": "Структура"
-        }
+        },
+        "modalTitle": "Підказка до есе",
+        "gotIt": "Зрозуміло"
       },
       "check": {
         "button": "Перевірити есе",
@@ -582,13 +584,16 @@
         "translate": "Переклад",
         "synonym": "Синонім",
         "remaining": "залишилось {{remaining}}",
-        "notAvailable": "Недоступно на цьому рівні"
+        "notAvailable": "Недоступно на цьому рівні",
+        "sets": "Набори",
+        "selected": "Вибрано: {{n}}"
       },
       "translate": {
         "title": "Переклад",
         "placeholder": "Введіть слово або коротку фразу",
         "submit": "Перекласти",
-        "submitting": "Перекладаємо..."
+        "submitting": "Перекладаємо...",
+        "tooManyWords": "Не більше {{n}} слів."
       },
       "synonym": {
         "title": "Синоніми",
@@ -625,6 +630,13 @@
       "difficultyOption": {
         "withTranslation": "Підказок: {{n}} • переклад",
         "noTranslation": "Підказок: {{n}} • без перекладу"
+      },
+      "setHints": {
+        "back": "Назад до наборів",
+        "done": "Готово",
+        "emptyTitle": "У цьому наборі немає слів",
+        "emptySubtitle": "Спершу додайте картки до набору.",
+        "remove": "Прибрати {{word}}"
       }
     },
     "grammar": {

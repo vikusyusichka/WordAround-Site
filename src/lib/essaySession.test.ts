@@ -370,3 +370,47 @@ describe('autoSaveActionFor', () => {
     expect(call(true, true, 0)).toBe('ignore');
   });
 });
+
+describe('iOS button behaviour', () => {
+  const withTask = () => run(init(), { type: 'GENERATION_SUCCESS', task: task() });
+
+  it('changing the level starts every helper budget over', () => {
+    const s = run(
+      withTask(),
+      { type: 'HINT_SUCCESS', hint: { id: 'h', text: 'x', category: 'content' } },
+      { type: 'RECORD_TRANSLATION' },
+      { type: 'RECORD_SYNONYM' },
+      { type: 'SET_DIFFICULTY', difficulty: 'C1' },
+    );
+    expect(s.hintsUsedCount).toBe(0);
+    expect(s.hints).toEqual([]);
+    expect(s.usedTranslations).toBe(0);
+    expect(s.usedSynonyms).toBe(0);
+  });
+
+  it('Reset clears the text and the helper budgets', () => {
+    const s = run(
+      withTask(),
+      { type: 'SET_ESSAY_TEXT', text: 'one two three' },
+      { type: 'RECORD_TRANSLATION' },
+      { type: 'RESET_ESSAY' },
+    );
+    expect(s.essayText).toBe('');
+    expect(s.usedTranslations).toBe(0);
+  });
+
+  it('switching mode or editing the custom topic drops the task', () => {
+    expect(run(withTask(), { type: 'SET_TOPIC_MODE', mode: 'custom' }).task).toBeNull();
+    expect(run(withTask(), { type: 'SET_CUSTOM_TOPIC', text: 'x' }).task).toBeNull();
+  });
+
+  it('toggles and removes words picked from sets', () => {
+    const hint = { id: 'c1', word: 'casa', translation: 'house' };
+    let s = run(init(), { type: 'TOGGLE_SET_HINT', hint });
+    expect(s.setHints).toEqual([hint]);
+    s = run(s, { type: 'TOGGLE_SET_HINT', hint });
+    expect(s.setHints).toEqual([]);
+    s = run(s, { type: 'TOGGLE_SET_HINT', hint }, { type: 'REMOVE_SET_HINT', id: 'c1' });
+    expect(s.setHints).toEqual([]);
+  });
+});

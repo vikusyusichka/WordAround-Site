@@ -24,12 +24,23 @@ interface EssayAssistanceModalProps {
   type: AssistanceModalType;
   targetLanguage: GrammarLanguage;
   remaining: number;
+  /** Longest phrase translate accepts, in words (iOS translationWordLimit);
+      0 = no limit. */
+  wordLimit?: number;
   onRecord: () => void;
   onClose: () => void;
 }
 
-const firstSourceFor = (target: GrammarLanguage): GrammarLanguage =>
-  ESSAY_LANGUAGES.find((l) => l.id !== target.id) ?? ESSAY_LANGUAGES[0];
+/* iOS defaultSourceLanguage: you type in English, or in Spanish when the
+   essay itself is in English. */
+const firstSourceFor = (target: GrammarLanguage): GrammarLanguage => {
+  const preferred = target.id === 'english' ? 'spanish' : 'english';
+  return (
+    ESSAY_LANGUAGES.find((l) => l.id === preferred) ??
+    ESSAY_LANGUAGES.find((l) => l.id !== target.id) ??
+    ESSAY_LANGUAGES[0]
+  );
+};
 
 const messageForError = (e: unknown, t: (k: string) => string): string => {
   const code = (e as AssistanceError)?.code;
@@ -43,6 +54,7 @@ export const EssayAssistanceModal = ({
   type,
   targetLanguage,
   remaining,
+  wordLimit = 0,
   onRecord,
   onClose,
 }: EssayAssistanceModalProps) => {
@@ -86,6 +98,15 @@ export const EssayAssistanceModal = ({
     controllerRef.current?.abort();
     const controller = new AbortController();
     controllerRef.current = controller;
+
+    if (type === 'translate' && wordLimit > 0) {
+      const words = inputText.trim().split(/\s+/).filter(Boolean).length;
+      if (words > wordLimit) {
+        setResults([]);
+        setError(t('writing.essays.translate.tooManyWords', { n: wordLimit }));
+        return;
+      }
+    }
 
     setIsLoading(true);
     setError(null);

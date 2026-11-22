@@ -1,6 +1,6 @@
 /* Helper-toolbar row — port of iOS EssayHelperToolbarView: equal pale-blue
    tiles (icon, title, "N left"). The Hint tile is passed in as children so
-   it sits first, as on iOS; Translate + Synonym live here. A tile goes grey
+   it sits first, as on iOS; Translate + Synonym live here; Sets comes last via trailing. A tile goes grey
    at 0 (Native) or when its budget is spent. */
 import type { ReactNode } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -55,6 +55,8 @@ interface EssayHelperToolbarProps {
   onSynonym: () => void;
   /** Tiles placed before Translate / Synonym (the Hint tile). */
   children?: ReactNode;
+  /** Tiles placed after them (the Sets tile). */
+  trailing?: ReactNode;
 }
 
 export const EssayHelperToolbar = ({
@@ -64,6 +66,7 @@ export const EssayHelperToolbar = ({
   onTranslate,
   onSynonym,
   children,
+  trailing,
 }: EssayHelperToolbarProps) => {
   const { t } = useTranslation();
   const tiles = [
@@ -105,6 +108,7 @@ export const EssayHelperToolbar = ({
           />
         );
       })}
+      {trailing}
     </div>
   );
 };

@@ -12,10 +12,14 @@ import { EssayCustomTopicInput } from './EssayCustomTopicInput';
 import { EssayDifficultySelector } from './EssayDifficultySelector';
 import { EssayEditor } from './EssayEditor';
 import { EssayFeedbackSection } from './EssayFeedbackSection';
-import { EssayHelperToolbar } from './EssayHelperToolbar';
+import { EssayHelperToolbar, EssayToolTile } from './EssayHelperToolbar';
 import { EssayHintButton } from './EssayHintButton';
+import { EssayHintModal } from './EssayHintModal';
 import { EssayHintsList } from './EssayHintsList';
 import { EssayLanguageSelector } from './EssayLanguageSelector';
+import { EssaySetHintsModal } from './EssaySetHintsModal';
+import { SetSelectionModal } from './SetSelectionModal';
+import type { FlashcardSet } from '@/lib/models';
 import { EssayTopicCard, EssayTopicCardSkeleton } from './EssayTopicCard';
 import { EssayTopicModePicker } from './EssayTopicModePicker';
 import { autoSaveActionFor } from '@/lib/essaySession';
@@ -36,6 +40,11 @@ export const EssaysScreen = () => {
   const { t } = useTranslation();
   const { state, dispatch, generateTopic, requestHint, checkEssay } = useEssaySession();
   const [assistModal, setAssistModal] = useState<AssistanceModalType | null>(null);
+  /* Hint dialog (iOS assistance modal in .hint mode) and the two-step
+     Sets flow: pick a set, then pick words from it. */
+  const [hintModalOpen, setHintModalOpen] = useState(false);
+  const [setPickerOpen, setSetPickerOpen] = useState(false);
+  const [hintSet, setHintSet] = useState<FlashcardSet | null>(null);
   const saveMistake = useSaveMistake();
   /* Notes settings drive what happens to a grammar issue (iOS
      EssayPracticeViewModel.requestSaveGrammarIssue / auto-save). */
@@ -126,7 +135,12 @@ export const EssaysScreen = () => {
       <div className="flex flex-col gap-2.5 md:gap-3.5">
         <EssayTopicModePicker
           value={state.topicMode}
-          onChange={(mode) => dispatch({ type: 'SET_TOPIC_MODE', mode })}
+          onChange={(mode) => {
+            if (mode === state.topicMode) return;
+            dispatch({ type: 'SET_TOPIC_MODE', mode });
+            /* iOS selectTopicMode: back on Suggested, a new task is made. */
+            if (mode === 'suggested') void generateTopic('suggested');
+          }}
         />
 
         {state.topicMode === 'custom' && (
@@ -239,22 +253,53 @@ export const EssaysScreen = () => {
               usedSynonyms={state.usedSynonyms}
               onTranslate={() => setAssistModal('translate')}
               onSynonym={() => setAssistModal('synonym')}
+              trailing={
+                <EssayToolTile
+                  icon="shippingbox.fill"
+                  title={t('writing.essays.helper.sets')}
+                  subtitle={t('writing.essays.helper.selected', { n: state.setHints.length })}
+                  enabled
+                  onClick={() => setSetPickerOpen(true)}
+                />
+              }
             >
               <EssayHintButton
                 difficulty={state.selectedDifficulty}
                 hintsUsedCount={state.hintsUsedCount}
                 isRequestingHint={state.isRequestingHint}
-                onRequest={() => void requestHint()}
+                onRequest={() => {
+                  setHintModalOpen(true);
+                  void requestHint();
+                }}
               />
             </EssayHelperToolbar>
 
-            {state.hintError && (
-              <p role="alert" className="text-[13px] font-semibold text-(--color-cs-red)">
-                {state.hintError}
-              </p>
-            )}
+            <EssayHintsList hints={state.hints} level={state.selectedDifficulty} />
 
-            <EssayHintsList hints={state.hints} />
+            {/* Words picked from sets — iOS setHintItems rows with a remove
+                button. */}
+            {state.setHints.length > 0 && (
+              <ul className="flex flex-col gap-2 md:gap-2.5">
+                {state.setHints.map((hint) => (
+                  <li
+                    key={hint.id}
+                    className="flex items-center gap-2 rounded-2xl bg-(--color-surface)/82 py-[9px] pl-3 pr-2.5"
+                  >
+                    <span className="min-w-0 flex-1 truncate text-[12px] font-bold text-(--color-primary-blue-dark) md:text-[13px]">
+                      {hint.word} — {hint.translation}
+                    </span>
+                    <button
+                      type="button"
+                      onClick={() => dispatch({ type: 'REMOVE_SET_HINT', id: hint.id })}
+                      aria-label={t('writing.essays.setHints.remove', { word: hint.word })}
+                      className="grid size-[22px] shrink-0 place-items-center rounded-full bg-(--color-primary-blue)/8 text-(--color-primary-blue) hover:bg-(--color-primary-blue)/14"
+                    >
+                      <Icon name="xmark" weight="bold" className="size-[10px]" />
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
           </EssayEditor>
 
           {state.score && (
@@ -306,10 +351,37 @@ export const EssaysScreen = () => {
         type={assistModal ?? 'translate'}
         targetLanguage={state.selectedLanguage}
         remaining={remainingFor(assistModal ?? 'translate')}
+        wordLimit={TRANSLATION_LIMIT[state.selectedDifficulty]}
         onRecord={() =>
           dispatch({ type: assistModal === 'synonym' ? 'RECORD_SYNONYM' : 'RECORD_TRANSLATION' })
         }
         onClose={() => setAssistModal(null)}
+      />
+
+      <EssayHintModal
+        open={hintModalOpen}
+        isLoading={state.isRequestingHint}
+        hint={state.hints[state.hints.length - 1] ?? null}
+        error={state.hintError}
+        remaining={hintsLeft}
+        onClose={() => setHintModalOpen(false)}
+      />
+
+      {/* Sets: choose a set, then the words to use from it. */}
+      <SetSelectionModal
+        open={setPickerOpen}
+        onClose={() => setSetPickerOpen(false)}
+        onSelect={(set) => setHintSet(set)}
+      />
+      <EssaySetHintsModal
+        set={hintSet}
+        selected={state.setHints}
+        onToggle={(hint) => dispatch({ type: 'TOGGLE_SET_HINT', hint })}
+        onBack={() => {
+          setHintSet(null);
+          setSetPickerOpen(true);
+        }}
+        onDone={() => setHintSet(null)}
       />
     </div>
   );

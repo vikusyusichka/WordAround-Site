@@ -128,6 +128,7 @@ import {
   GlobeHemisphereWest,
   ArrowsClockwise,
   SlidersHorizontal,
+  Package,
   Guitar,
   Hamburger,
   HardDrives,
@@ -309,6 +310,7 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'slider.horizontal.3': SlidersHorizontal,
   'wand.and.stars.inverse': MagicWand,
   clock: Clock,
+  'shippingbox.fill': Package,
   'megaphone.fill': Megaphone,
   'list.bullet.rectangle.fill': ListChecks,
   /* Set-icon catalog (mirrors iOS SFSymbolCatalog) — Learning */

@@ -14,7 +14,7 @@ import {
   initialEssayState,
   type EssayAction,
 } from '@/lib/essaySession';
-import { HINTS_LIMIT } from '@/lib/essayTypes';
+import { HINTS_LIMIT, type EssayTopicMode } from '@/lib/essayTypes';
 
 export const useEssaySession = () => {
   const { t } = useTranslation();
@@ -33,12 +33,15 @@ export const useEssaySession = () => {
     [],
   );
 
-  const generateTopic = useCallback(async () => {
+  const generateTopic = useCallback(async (modeOverride?: EssayTopicMode) => {
+    /* The mode switch dispatches and generates in one click, before the new
+       mode reaches this closure — so the caller can name it. */
+    const mode = modeOverride ?? state.topicMode;
     topicControllerRef.current?.abort();
     const controller = new AbortController();
     topicControllerRef.current = controller;
 
-    if (state.topicMode === 'custom' && state.customTopicText.trim().length === 0) {
+    if (mode === 'custom' && state.customTopicText.trim().length === 0) {
       dispatch({ type: 'GENERATION_FAIL', error: t('writing.essays.error.emptyCustomTopic') });
       return;
     }
@@ -46,7 +49,7 @@ export const useEssaySession = () => {
     dispatch({ type: 'GENERATION_START' });
     try {
       const task =
-        state.topicMode === 'suggested'
+        mode === 'suggested'
           ? await essayService.generateSuggestedTask(
               state.selectedLanguage,
               state.usedTaskTitles,
@@ -127,9 +130,16 @@ export const useEssaySession = () => {
         usedSynonyms: state.usedSynonyms,
         difficulty: state.selectedDifficulty,
       });
-      dispatch({ type: 'CHECK_SUCCESS', issues, score });
-      /* Count the checked essay towards today's writing goal (words, once per check). */
-      recordPractice({ skill: 'writing', value: state.wordCount, sourceModeID: 'essays' });
+      /* Count only words not already counted by an earlier check of this
+         essay towards today's writing goal (iOS recordWritingPracticeStats). */
+      const delta = state.wordCount - state.lastRecordedWordCount;
+      dispatch({
+        type: 'CHECK_SUCCESS',
+        issues,
+        score,
+        recordedWordCount: delta > 0 ? state.wordCount : undefined,
+      });
+      if (delta > 0) recordPractice({ skill: 'writing', value: delta, sourceModeID: 'essays' });
     } catch (e) {
       if (controller.signal.aborted) return;
       const message =
@@ -139,7 +149,7 @@ export const useEssaySession = () => {
   }, [
     state.task, state.validation, state.isChecking, state.essayText,
     state.selectedLanguage, state.selectedDifficulty, state.hintsUsedCount,
-    state.usedTranslations, state.usedSynonyms, state.wordCount, t,
+    state.usedTranslations, state.usedSynonyms, state.wordCount, state.lastRecordedWordCount, t,
   ]);
 
   return {

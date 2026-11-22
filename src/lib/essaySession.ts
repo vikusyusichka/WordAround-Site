@@ -51,6 +51,21 @@ export interface EssayState {
   /* 4C3 — helper toolbar usage (feeds the independence sub-score). */
   usedTranslations: number;
   usedSynonyms: number;
+
+  /** Words picked from the learner's flashcard sets to use in the essay
+      (iOS selectedEssaySetHints). Kept across new topics, as on iOS. */
+  setHints: EssaySetHint[];
+  /** Word count already sent to the daily writing stats, so a re-check only
+      adds the new words (iOS lastRecordedWordCount). */
+  lastRecordedWordCount: number;
+}
+
+/** A card chosen from a flashcard set as a word to use (iOS EssaySetHintItem). */
+export interface EssaySetHint {
+  id: string;
+  word: string;
+  translation: string;
+  example?: string;
 }
 
 export type EssayAction =
@@ -68,12 +83,14 @@ export type EssayAction =
   | { type: 'HINT_SUCCESS'; hint: EssayGeneratedHint }
   | { type: 'HINT_FAIL'; error: string }
   | { type: 'CHECK_START' }
-  | { type: 'CHECK_SUCCESS'; issues: GrammarIssue[]; score: EssayScore }
+  | { type: 'CHECK_SUCCESS'; issues: GrammarIssue[]; score: EssayScore; recordedWordCount?: number }
   | { type: 'CHECK_FAIL'; error: string }
   | { type: 'CLEAR_FEEDBACK' }
   /* 4C3 */
   | { type: 'RECORD_TRANSLATION' }
-  | { type: 'RECORD_SYNONYM' };
+  | { type: 'RECORD_SYNONYM' }
+  | { type: 'TOGGLE_SET_HINT'; hint: EssaySetHint }
+  | { type: 'REMOVE_SET_HINT'; id: string };
 
 export const initialEssayState = (): EssayState => ({
   topicMode: 'suggested',
@@ -98,6 +115,8 @@ export const initialEssayState = (): EssayState => ({
   isChecking: false,
   checkError: null,
 
+  setHints: [],
+  lastRecordedWordCount: 0,
   usedTranslations: 0,
   usedSynonyms: 0,
 });
@@ -149,16 +168,29 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
   switch (action.type) {
     case 'SET_TOPIC_MODE':
       if (action.mode === s.topicMode) return s;
-      return { ...s, topicMode: action.mode, generationError: null };
+      /* iOS selectTopicMode: the old task goes; suggested mode then
+         generates a fresh one (the screen triggers that). */
+      return { ...s, topicMode: action.mode, task: null, generationError: null, ...clearedFeedback() };
 
     case 'SET_CUSTOM_TOPIC':
-      return { ...s, customTopicText: action.text, generationError: null };
+      /* iOS updateCustomTopic: editing the topic drops the task built from
+         the old text. */
+      return { ...s, customTopicText: action.text, task: null, generationError: null, ...clearedFeedback() };
 
     case 'SET_LANGUAGE':
-      return { ...s, selectedLanguage: action.language };
+      if (action.language.id === s.selectedLanguage.id) return s;
+      return { ...s, selectedLanguage: action.language, ...clearedFeedback() };
 
     case 'SET_DIFFICULTY':
-      return { ...s, selectedDifficulty: action.difficulty };
+      if (action.difficulty === s.selectedDifficulty) return s;
+      /* iOS: a new level brings new budgets — usage starts over. */
+      return {
+        ...s,
+        selectedDifficulty: action.difficulty,
+        ...clearedHints(),
+        ...clearedAssistance(),
+        ...clearedFeedback(),
+      };
 
     case 'SET_ESSAY_TEXT': {
       const wordCount = computeWordCount(action.text);
@@ -190,6 +222,7 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
         wordCount: 0,
         validation: 'empty',
         usedTaskTitles: nextTitles,
+        lastRecordedWordCount: 0,
         ...clearedFeedback(),
         ...clearedHints(),
         ...clearedAssistance(),
@@ -200,12 +233,16 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
       return { ...s, isGenerating: false, generationError: action.error };
 
     case 'RESET_ESSAY':
+      /* iOS resetEssay: text, score and every helper budget start over. */
       return {
         ...s,
         essayText: '',
         wordCount: 0,
         validation: 'empty',
+        lastRecordedWordCount: 0,
         ...clearedFeedback(),
+        ...clearedHints(),
+        ...clearedAssistance(),
       };
 
     /* 4C2 — Hints */
@@ -237,6 +274,7 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
         checkError: null,
         grammarIssues: action.issues,
         score: action.score,
+        lastRecordedWordCount: action.recordedWordCount ?? s.lastRecordedWordCount,
       };
 
     case 'CHECK_FAIL':
@@ -256,6 +294,19 @@ export const essayReducer = (s: EssayState, action: EssayAction): EssayState => 
       const usedSynonyms = s.usedSynonyms + 1;
       return { ...s, usedSynonyms, score: rescore(s, { usedSynonyms }) };
     }
+
+    case 'TOGGLE_SET_HINT': {
+      const exists = s.setHints.some((h) => h.id === action.hint.id);
+      return {
+        ...s,
+        setHints: exists
+          ? s.setHints.filter((h) => h.id !== action.hint.id)
+          : [...s.setHints, action.hint],
+      };
+    }
+
+    case 'REMOVE_SET_HINT':
+      return { ...s, setHints: s.setHints.filter((h) => h.id !== action.id) };
 
     default:
       return s;

@@ -1,47 +1,37 @@
-/* Chip list of previously requested AI hints. Each chip: category badge
-   + hint text. Empty when no hints have been requested yet. */
+/* The latest AI hint, shown inside the "Your essay" card — port of the
+   shownHintItems block in iOS EssayInputSectionView: category in bold, a
+   level capsule, then the hint text. iOS keeps only the newest hint on
+   screen (each new one replaces the last); earlier ones still count towards
+   the budget and are sent to the AI so it does not repeat itself. */
 import { useTranslation } from 'react-i18next';
 
-import type { EssayGeneratedHint, EssayHintCategory } from '@/lib/essayTypes';
-
-/* Category → accent color for the badge. Kept in-file rather than a token
-   map so the map lives next to the component that owns it. */
-const CATEGORY_COLOR: Record<EssayHintCategory, { bg: string; text: string }> = {
-  content:    { bg: 'var(--color-goal-bg)', text: 'var(--color-primary-blue-dark)' },
-  grammar:    { bg: 'var(--color-cs-soft-red)', text: 'var(--color-cs-dark-red)' },
-  vocabulary: { bg: 'var(--color-soft-amber)', text: 'var(--color-orange-title)' },
-  structure:  { bg: 'var(--color-green-soft-bg)', text: 'var(--color-green-title)' },
-};
+import type { EssayDifficulty, EssayGeneratedHint } from '@/lib/essayTypes';
 
 interface EssayHintsListProps {
   hints: EssayGeneratedHint[];
+  level?: EssayDifficulty;
 }
 
-export const EssayHintsList = ({ hints }: EssayHintsListProps) => {
+export const EssayHintsList = ({ hints, level }: EssayHintsListProps) => {
   const { t } = useTranslation();
-  if (hints.length === 0) return null;
+  const latest = hints[hints.length - 1];
+  if (!latest) return null;
 
   return (
-    <div className="flex flex-col gap-2 md:gap-2.5">
-      {hints.map((h) => {
-        const color = CATEGORY_COLOR[h.category];
-        return (
-          <div
-            key={h.id}
-            className="flex items-start gap-3 rounded-2xl bg-(--color-surface)/82 p-3 md:p-3.5"
-          >
-            <span
-              className="shrink-0 rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide md:text-[12px]"
-              style={{ background: color.bg, color: color.text }}
-            >
-              {t(`writing.essays.hint.category.${h.category}`)}
-            </span>
-            <span className="text-[14px] font-medium leading-snug text-(--color-primary-blue-dark) md:text-[15px]">
-              {h.text}
-            </span>
-          </div>
-        );
-      })}
+    <div className="flex flex-col gap-[5px] rounded-2xl bg-(--color-surface)/82 p-3 md:p-3.5">
+      <div className="flex items-center gap-2">
+        <span className="text-[14px] font-bold text-(--color-primary-blue-dark) md:text-[15px]">
+          {t(`writing.essays.hint.category.${latest.category}`)}
+        </span>
+        {level && (
+          <span className="rounded-full bg-(--color-primary-blue)/8 px-2 py-1 text-[11px] font-bold leading-none text-(--color-primary-blue) md:text-[12px]">
+            {level}
+          </span>
+        )}
+      </div>
+      <p className="text-[12px] font-medium leading-relaxed text-(--color-text-secondary) md:text-[13px]">
+        {latest.text}
+      </p>
     </div>
   );
 };

@@ -510,7 +510,9 @@
           "grammar": "Grammar",
           "vocabulary": "Vocabulary",
           "structure": "Structure"
-        }
+        },
+        "modalTitle": "Writing hint",
+        "gotIt": "Got it"
       },
       "check": {
         "button": "Check my essay",
@@ -569,13 +571,16 @@
         "translate": "Translate",
         "synonym": "Synonym",
         "remaining": "{{remaining}} left",
-        "notAvailable": "Not available at this level"
+        "notAvailable": "Not available at this level",
+        "sets": "Sets",
+        "selected": "{{n}} selected"
       },
       "translate": {
         "title": "Translate",
         "placeholder": "Enter a word or short phrase",
         "submit": "Translate",
-        "submitting": "Translating..."
+        "submitting": "Translating...",
+        "tooManyWords": "Use up to {{n}} words."
       },
       "synonym": {
         "title": "Synonyms",
@@ -610,6 +615,13 @@
       "difficultyOption": {
         "withTranslation": "Hints: {{n}} • translation",
         "noTranslation": "Hints: {{n}} • no translation"
+      },
+      "setHints": {
+        "back": "Back to sets",
+        "done": "Done",
+        "emptyTitle": "No words in this set",
+        "emptySubtitle": "Add cards to this set first.",
+        "remove": "Remove {{word}}"
       }
     },
     "grammar": {
