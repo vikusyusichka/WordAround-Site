@@ -969,11 +969,13 @@
         "moreWaiting_few": "czekają jeszcze {{count}}",
         "moreWaiting_many": "czeka jeszcze {{count}}",
         "moreWaiting_other": "czeka jeszcze {{count}}",
-        "forecastTitle": "Najbliższe 7 dni",
+        "forecastTitle": "Karty do powtórki · najbliższe 7 dni",
         "reviewTopic_one": "Powtórz temat · {{count}}",
         "reviewTopic_few": "Powtórz temat · {{count}}",
         "reviewTopic_many": "Powtórz temat · {{count}}",
-        "reviewTopic_other": "Powtórz temat · {{count}}"
+        "reviewTopic_other": "Powtórz temat · {{count}}",
+        "today": "Dziś",
+        "nextCardIn": "Teraz nie ma nic do powtórki. Następna karta za {{when}}."
       },
       "mistakesBadge": "Błędy",
       "topicsTitle": "Tematy",

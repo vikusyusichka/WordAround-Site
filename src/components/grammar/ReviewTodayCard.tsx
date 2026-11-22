@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
 import type { GrammarReviewQueue } from '@/lib/grammarReviewQueue';
-import { reviewForecast } from '@/lib/grammarReviewFormat';
+import { formatReviewInterval, reviewForecast } from '@/lib/grammarReviewFormat';
 import type { GrammarReviewItem } from '@/lib/models';
 
 interface ReviewTodayCardProps {
@@ -33,15 +33,27 @@ export const ReviewTodayCard = ({
   onStart,
 }: ReviewTodayCardProps) => {
   const { t, i18n } = useTranslation();
-  const forecast = items && items.size > 0 ? reviewForecast(items.values()) : null;
-  const peak = forecast ? Math.max(1, ...forecast) : 1;
-  const weekday = new Intl.DateTimeFormat(i18n.language, { weekday: 'narrow' });
+  const now = Date.now();
   const count = queue?.cards.length ?? 0;
   const hasCards = !isLoading && !isError && count > 0;
   /* Only the manual pool holds items whose dueAt has actually come. */
   const isDue = queue?.pool === 'manual';
   const ready = hasCards && isDue;
   const canRefresh = hasCards && !isDue;
+
+  /* Today's column = what the queue can serve now + what falls due later
+     today, so the strip never says "4 today" next to "all caught up". */
+  const forecast = items && items.size > 0 ? reviewForecast(items.values(), now) : null;
+  if (forecast && ready) forecast[0] += queue?.dueTotal ?? count;
+  const showForecast = !!forecast && forecast.some((n) => n > 0);
+  const peak = forecast ? Math.max(1, ...forecast) : 1;
+  const weekday = new Intl.DateTimeFormat(i18n.language, { weekday: 'short' });
+
+  /* When nothing is due yet, say when something will be. */
+  let nextDue: number | null = null;
+  for (const item of items?.values() ?? []) {
+    if (item.dueAt > now && (nextDue === null || item.dueAt < nextDue)) nextDue = item.dueAt;
+  }
 
   const subtitle = isLoading
     ? t('writing.grammar.loading')
@@ -62,7 +74,11 @@ export const ReviewTodayCard = ({
             .join(' · ')
         : canRefresh
           ? t('writing.grammar.review.refreshBody')
-          : t('writing.grammar.review.caughtUp');
+          : nextDue !== null
+            ? t('writing.grammar.review.nextCardIn', {
+                when: formatReviewInterval(nextDue - now, t),
+              })
+            : t('writing.grammar.review.caughtUp');
 
   return (
     <section className="flex flex-col gap-3 rounded-3xl border border-(--color-surface) bg-(--color-surface)/95 p-5 shadow-[0_4px_10px_rgba(0,0,0,0.045)]">
@@ -88,7 +104,7 @@ export const ReviewTodayCard = ({
         </span>
       )}
 
-      {forecast && (
+      {showForecast && forecast && (
         <div aria-label={t('writing.grammar.review.forecastTitle')} className="flex flex-col gap-1.5">
           <span className="text-[11px] font-bold uppercase tracking-wide text-(--color-muted-text)">
             {t('writing.grammar.review.forecastTitle')}
@@ -98,18 +114,22 @@ export const ReviewTodayCard = ({
               const date = new Date();
               date.setDate(date.getDate() + day);
               return (
-                <div key={day} className="flex flex-col items-center gap-1" title={String(n)}>
+                <div key={day} className="flex flex-col items-center gap-1">
                   <div className="flex h-10 w-full items-end overflow-hidden rounded-md bg-(--color-goal-bg)">
                     <div
                       className="w-full rounded-md bg-(--color-accent-violet)"
                       style={{ height: n === 0 ? 0 : `${Math.max(12, (n / peak) * 100)}%`, opacity: day === 0 ? 1 : 0.55 }}
                     />
                   </div>
-                  <span className="text-[10px] font-bold text-(--color-muted-text)">
-                    {n > 0 ? n : '·'}
+                  <span className="h-[14px] text-[11px] font-bold text-(--color-primary-blue-dark)">
+                    {n > 0 ? n : ''}
                   </span>
-                  <span className="text-[10px] font-semibold text-(--color-muted-text) uppercase">
-                    {weekday.format(date)}
+                  <span
+                    className={`text-[10px] font-semibold ${
+                      day === 0 ? 'text-(--color-accent-violet-text)' : 'text-(--color-muted-text)'
+                    }`}
+                  >
+                    {day === 0 ? t('writing.grammar.review.today') : weekday.format(date)}
                   </span>
                 </div>
               );

@@ -923,9 +923,11 @@
         "newCount_other": "{{count}} neu",
         "moreWaiting_one": "{{count}} weitere warten",
         "moreWaiting_other": "{{count}} weitere warten",
-        "forecastTitle": "Nächste 7 Tage",
+        "forecastTitle": "Karten zum Wiederholen · nächste 7 Tage",
         "reviewTopic_one": "Thema wiederholen · {{count}}",
-        "reviewTopic_other": "Thema wiederholen · {{count}}"
+        "reviewTopic_other": "Thema wiederholen · {{count}}",
+        "today": "Heute",
+        "nextCardIn": "Gerade ist nichts fällig. Nächste Karte in {{when}}."
       },
       "mistakesBadge": "Fehler",
       "topicsTitle": "Themen",

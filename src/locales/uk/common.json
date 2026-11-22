@@ -969,11 +969,13 @@
         "moreWaiting_few": "ще {{count}} чекають",
         "moreWaiting_many": "ще {{count}} чекають",
         "moreWaiting_other": "ще {{count}} чекає",
-        "forecastTitle": "Наступні 7 днів",
+        "forecastTitle": "Картки на повторення · наступні 7 днів",
         "reviewTopic_one": "Повторити тему · {{count}}",
         "reviewTopic_few": "Повторити тему · {{count}}",
         "reviewTopic_many": "Повторити тему · {{count}}",
-        "reviewTopic_other": "Повторити тему · {{count}}"
+        "reviewTopic_other": "Повторити тему · {{count}}",
+        "today": "Сьогодні",
+        "nextCardIn": "Зараз повторювати нічого. Наступна картка через {{when}}."
       },
       "mistakesBadge": "Помилки",
       "topicsTitle": "Теми",

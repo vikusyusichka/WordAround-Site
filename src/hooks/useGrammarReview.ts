@@ -31,17 +31,30 @@ import { useUid } from '@/hooks/useFolders';
 
 export const grammarReviewKey = (uid: string | null) => ['grammarReview', uid] as const;
 
+/** Notes of every topic the items come from, plus which topics actually
+    loaded — a topic whose read failed must not make its cards look orphaned. */
 const fetchNotesForItems = async (
   uid: string,
   items: GrammarReviewItem[],
-): Promise<Map<string, GrammarNote>> => {
+): Promise<{ notesById: Map<string, GrammarNote>; loadedTopics: Set<string> }> => {
   const topicIds = [...new Set(items.map((i) => i.topicId).filter((t) => t.length > 0))];
   const perTopic = await Promise.all(
-    topicIds.map((topicId) => noteService.fetchNotes(uid, topicId).catch(() => [])),
+    topicIds.map(async (topicId) => {
+      try {
+        return { topicId, notes: await noteService.fetchNotes(uid, topicId) };
+      } catch {
+        return { topicId, notes: null };
+      }
+    }),
   );
-  const byId = new Map<string, GrammarNote>();
-  for (const notes of perTopic) for (const n of notes) byId.set(n.id, n);
-  return byId;
+  const notesById = new Map<string, GrammarNote>();
+  const loadedTopics = new Set<string>();
+  for (const { topicId, notes } of perTopic) {
+    if (!notes) continue;
+    loadedTopics.add(topicId);
+    for (const n of notes) notesById.set(n.id, n);
+  }
+  return { notesById, loadedTopics };
 };
 
 /* Only quiz-sourced items need their quiz; a queue of plain notes does no
@@ -78,11 +91,29 @@ const fetchQuizzesForItems = async (
 /* Enough due items to order by urgency, not just the 30 longest-waiting. */
 const DUE_FETCH_LIMIT = 300;
 
-const buildQueue = async (uid: string, topicId?: string): Promise<GrammarReviewQueue> => {
+const buildQueue = async (
+  uid: string,
+  topicId?: string,
+  onOrphansRemoved?: () => void,
+): Promise<GrammarReviewQueue> => {
   const settings = grammarSettingsSnapshot();
   const now = Date.now();
   const inTopic = (i: GrammarReviewItem) => !topicId || i.topicId === topicId;
-  const allDue = (await reviewService.fetchDueReviewItems(uid, DUE_FETCH_LIMIT)).filter(inTopic);
+  const fetchedDue = (await reviewService.fetchDueReviewItems(uid, DUE_FETCH_LIMIT)).filter(inTopic);
+
+  /* Cards whose note is gone (deleted before deletion cleaned up after
+     itself) are removed here. Left in place they counted as due — the
+     forecast said "4 today" — while the queue, which cannot build a card
+     without its note, said "all caught up". */
+  const dueNotes = await fetchNotesForItems(uid, fetchedDue);
+  const isOrphan = (i: GrammarReviewItem) =>
+    dueNotes.loadedTopics.has(i.topicId) && (!i.noteId || !dueNotes.notesById.has(i.noteId));
+  const orphans = fetchedDue.filter(isOrphan);
+  if (orphans.length > 0) {
+    await Promise.all(orphans.map((i) => reviewService.deleteReviewItem(uid, i.id).catch(() => {})));
+    onOrphansRemoved?.();
+  }
+  const allDue = fetchedDue.filter((i) => !isOrphan(i));
   const recentlyOpened = recentlyOpenedNotes()
     .map((r) => recommendationToReviewItem(r, uid))
     .filter(inTopic);
@@ -99,7 +130,9 @@ const buildQueue = async (uid: string, topicId?: string): Promise<GrammarReviewQ
   const selected =
     manualItems.length > 0 ? manualItems : recentlyOpened.length > 0 ? recentlyOpened : recentlyEdited;
   const [notesById, quizzesById] = await Promise.all([
-    fetchNotesForItems(uid, selected),
+    manualItems.length > 0
+      ? dueNotes.notesById
+      : fetchNotesForItems(uid, selected).then((r) => r.notesById),
     fetchQuizzesForItems(uid, selected),
   ]);
 
@@ -123,9 +156,15 @@ const buildQueue = async (uid: string, topicId?: string): Promise<GrammarReviewQ
 
 export const useReviewQueueQuery = (topicId?: string) => {
   const uid = useUid();
+  const qc = useQueryClient();
   return useQuery({
     queryKey: [...grammarReviewKey(uid), topicId ?? 'all'],
-    queryFn: () => buildQueue(uid as string, topicId),
+    queryFn: () =>
+      buildQueue(uid as string, topicId, () => {
+        /* The forecast and the note pills read the full item list. */
+        void qc.invalidateQueries({ queryKey: ['grammarReviewItems'] });
+        void qc.invalidateQueries({ queryKey: ['grammarHighlights'] });
+      }),
     enabled: !!uid,
     /* The queue is time-sensitive: dueAt moves after every rating, and the
        recommendation pool changes the moment a note is opened or edited. Note

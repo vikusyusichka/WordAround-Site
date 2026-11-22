@@ -920,9 +920,11 @@
         "newCount_other": "{{count}} new",
         "moreWaiting_one": "{{count}} more waiting",
         "moreWaiting_other": "{{count}} more waiting",
-        "forecastTitle": "Next 7 days",
+        "forecastTitle": "Cards to review · next 7 days",
         "reviewTopic_one": "Review topic · {{count}}",
-        "reviewTopic_other": "Review topic · {{count}}"
+        "reviewTopic_other": "Review topic · {{count}}",
+        "today": "Today",
+        "nextCardIn": "Nothing due right now. Next card in {{when}}."
       },
       "mistakesBadge": "Mistakes",
       "topicsTitle": "Topics",

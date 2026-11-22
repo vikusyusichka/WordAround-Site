@@ -29,8 +29,10 @@ export const isTypingTarget = (el: EventTarget | null) =>
 
 const FORECAST_DAYS = 7;
 
-/** Cards falling due on each of the next seven days (today = what is due by
-    tonight, overdue included). */
+/** Cards falling due on each of the next seven days. Cards already due are
+    left out: the queue decides what can be reviewed now (it caps new cards
+    and drops cards whose note is gone), so the caller adds its own count to
+    today rather than this guessing at it. */
 export const reviewForecast = (
   items: Iterable<GrammarReviewItem>,
   now: number = Date.now(),
@@ -40,7 +42,7 @@ export const reviewForecast = (
   const counts = new Array<number>(FORECAST_DAYS).fill(0);
   for (const item of items) {
     const offset = Math.floor((item.dueAt - start.getTime()) / 86_400_000);
-    if (offset < FORECAST_DAYS) counts[Math.max(offset, 0)] += 1;
+    if (item.dueAt > now && offset < FORECAST_DAYS) counts[offset] += 1;
   }
   return counts;
 };
