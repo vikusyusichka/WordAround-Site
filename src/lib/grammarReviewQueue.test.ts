@@ -1,8 +1,8 @@
 import { describe, expect, it } from 'vitest';
 
 import { makeGrammarNote } from './grammarFactories';
-import { makeReviewItem } from './grammarReview';
-import { buildReviewQueue, REVIEW_QUEUE_LIMIT } from './grammarReviewQueue';
+import { DAY, makeReviewItem } from './grammarReview';
+import { buildReviewQueue, orderDueItems, REVIEW_QUEUE_LIMIT } from './grammarReviewQueue';
 import type { GrammarNote, GrammarNoteQuiz, GrammarReviewItem } from './models';
 
 const note = (id: string, blocks: GrammarNote['contentBlocks'] = []): GrammarNote =>
@@ -284,5 +284,66 @@ describe('block selection', () => {
       notesById: new Map([['n1', note('n1', blocks)]]),
     });
     expect(queue.cards[0].sourceBlockType).toBe('checklist');
+  });
+});
+
+describe('orderDueItems', () => {
+  const NOW = 100 * DAY;
+  /* Reviewed `ago` days back with stability `s`: lower s/ago ratio = lower R. */
+  const learned = (noteId: string, s: number, ago: number, extra?: Partial<GrammarReviewItem>) =>
+    item(noteId, {
+      id: `note_t_${noteId}_${s}_${ago}`,
+      reviewCount: 2,
+      lastReviewedAt: NOW - ago * DAY,
+      stability: s,
+      difficulty: 5,
+      dueAt: NOW - DAY,
+      ...extra,
+    });
+
+  it('lowest chance of remembering first, high priority ahead of the rest', () => {
+    const solid = learned('a', 30, 10);
+    const shaky = learned('b', 2, 10);
+    const mistake = learned('c', 20, 1, { priority: 'high' });
+    const out = orderDueItems([solid, shaky, mistake], { now: NOW, newAllowance: 10, limit: 20 });
+    expect(out.map((i) => i.noteId)).toEqual(['c', 'b', 'a']);
+  });
+
+  it('never-reviewed items come after reviews and are capped by the allowance', () => {
+    const fresh = ['n1', 'n2', 'n3'].map((n, k) => item(n, { createdAt: k }));
+    const old = learned('x', 3, 5);
+    const out = orderDueItems([...fresh, old], { now: NOW, newAllowance: 2, limit: 20 });
+    expect(out.map((i) => i.noteId)).toEqual(['x', 'n1', 'n2']);
+    expect(orderDueItems(fresh, { now: NOW, newAllowance: 0, limit: 20 })).toEqual([]);
+  });
+
+  it('avoids two cards from the same note in a row when it can', () => {
+    const out = orderDueItems(
+      [learned('a', 1, 10), learned('a', 2, 10), learned('b', 3, 10)],
+      { now: NOW, newAllowance: 0, limit: 20 },
+    );
+    expect(out.map((i) => i.noteId)).toEqual(['a', 'b', 'a']);
+  });
+
+  it('respects the session limit', () => {
+    const many = Array.from({ length: 30 }, (_, k) => learned(`n${k}`, 1 + k, 10));
+    expect(orderDueItems(many, { now: NOW, newAllowance: 0, limit: 10 })).toHaveLength(10);
+  });
+});
+
+describe('question rotation', () => {
+  it('asks about a different block as the review count grows, and reveals that block', () => {
+    const notesById = new Map([['n1', note('n1', richBlocks)]]);
+    const at = (reviewCount: number) =>
+      buildReviewQueue({
+        manualItems: [item('n1', { reviewCount, lastReviewedAt: 0, stability: 1, dueAt: 0 })],
+        recentlyOpened: [],
+        recentlyEdited: [],
+        notesById,
+      }).cards[0];
+    const first = at(0);
+    const second = at(1);
+    expect(first.sourceText).not.toBe(second.sourceText);
+    expect(at(2).sourceText).toBe(first.sourceText);
   });
 });

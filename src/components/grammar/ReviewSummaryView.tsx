@@ -1,30 +1,39 @@
 /* End-of-session summary — web port of GrammarReviewSessionSummaryView:
-   stats grid, rating breakdown pills, next-review hint, done button. */
+   stats grid, rating breakdown pills, when the next card returns, the notes
+   that gave the most trouble, and "review more" / done. */
 import { useTranslation } from 'react-i18next';
 
 import { Icon } from '@/components/primitives/Icon';
+import { formatReviewInterval } from '@/lib/grammarReviewFormat';
 import type { ReviewSessionState } from '@/lib/grammarReviewSession';
 import { incorrectDisplayCount } from '@/lib/grammarReviewSession';
 
 interface ReviewSummaryViewProps {
   session: ReviewSessionState;
   onDone: () => void;
+  onMore: () => void;
+  onOpenNote: (topicId: string, noteId: string) => void;
 }
 
-export const ReviewSummaryView = ({ session, onDone }: ReviewSummaryViewProps) => {
+const WEAK_LIMIT = 3;
+
+export const ReviewSummaryView = ({ session, onDone, onMore, onOpenNote }: ReviewSummaryViewProps) => {
   const { t } = useTranslation();
   const reviewed = session.totalReviewed;
   const incorrect = incorrectDisplayCount(session);
+  const now = Date.now();
 
-  /* iOS next-review hint keyed off which ratings occurred (soonest wins). */
-  const hintKey =
-    session.forgotCount > 0
-      ? 'hintForgot'
-      : session.hardCount > 0
-        ? 'hintHard'
-        : session.goodCount > 0
-          ? 'hintGood'
-          : 'hintEasy';
+  /* Unique cards of this session (repeats appear twice in `cards`). */
+  const uniqueCards = [...new Map(session.cards.map((c) => [c.id, c])).values()];
+
+  const rated = Object.values(session.ratedItems);
+  const soonest = rated.length > 0 ? Math.min(...rated.map((i) => i.dueAt)) : null;
+
+  /* Cards sent back for relearning, most-forgotten first. */
+  const weak = uniqueCards
+    .filter((c) => (session.relearnCounts[c.id] ?? 0) > 0 && c.reviewItem.noteId)
+    .sort((a, b) => (session.relearnCounts[b.id] ?? 0) - (session.relearnCounts[a.id] ?? 0))
+    .slice(0, WEAK_LIMIT);
 
   const stats: { label: string; value: number }[] = [
     { label: t('writing.grammar.review.summary.reviewed'), value: reviewed },
@@ -81,19 +90,52 @@ export const ReviewSummaryView = ({ session, onDone }: ReviewSummaryViewProps) =
         ))}
       </div>
 
-      {reviewed > 0 && (
+      {soonest !== null && (
         <p className="text-center text-[14px] font-medium text-(--color-text-secondary)">
-          {t(`writing.grammar.review.summary.${hintKey}`)}
+          {t('writing.grammar.review.summary.nextIn', {
+            when: formatReviewInterval(Math.max(soonest - now, 60_000), t),
+          })}
         </p>
       )}
 
-      <button
-        type="button"
-        onClick={onDone}
-        className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98]"
-      >
-        {t('writing.grammar.review.summary.done')}
-      </button>
+      {weak.length > 0 && (
+        <section className="flex w-full flex-col gap-2">
+          <h3 className="text-[13px] font-bold uppercase tracking-wide text-(--color-muted-text)">
+            {t('writing.grammar.review.summary.weakTitle')}
+          </h3>
+          {weak.map((c) => (
+            <button
+              key={c.id}
+              type="button"
+              onClick={() => onOpenNote(c.reviewItem.topicId, c.reviewItem.noteId as string)}
+              className="flex items-center gap-3 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 py-3 text-left transition-colors hover:bg-(--color-hover-wash)"
+            >
+              <Icon name="exclamationmark.triangle.fill" className="size-4 shrink-0 text-(--color-cs-red)" />
+              <span className="min-w-0 flex-1 truncate text-[14px] font-semibold text-(--color-primary-blue-dark)">
+                {c.note.title || t('writing.grammar.review.untitled')}
+              </span>
+              <Icon name="chevron.right" className="size-[13px] shrink-0 text-(--color-muted-text)" />
+            </button>
+          ))}
+        </section>
+      )}
+
+      <div className="flex w-full flex-col gap-2 sm:flex-row">
+        <button
+          type="button"
+          onClick={onMore}
+          className="h-12 flex-1 rounded-2xl border border-(--color-accent-violet)/35 bg-(--color-accent-violet)/8 text-[15px] font-semibold text-(--color-accent-violet-text) transition-colors hover:bg-(--color-accent-violet)/16"
+        >
+          {t('writing.grammar.review.summary.more')}
+        </button>
+        <button
+          type="button"
+          onClick={onDone}
+          className="h-12 flex-1 rounded-2xl bg-(--color-primary-blue-solid) text-[15px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98]"
+        >
+          {t('writing.grammar.review.summary.done')}
+        </button>
+      </div>
     </div>
   );
 };

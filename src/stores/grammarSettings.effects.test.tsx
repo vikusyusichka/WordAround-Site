@@ -183,7 +183,7 @@ describe('the settings snapshot', () => {
     for (const key of Object.keys(snapshot) as (keyof typeof snapshot)[]) {
       expect(snapshot[key]).toEqual(stored[key]);
     }
-    expect(Object.keys(snapshot)).toHaveLength(14);
+    expect(Object.keys(snapshot)).toHaveLength(17);
   });
 
   it('reflects a change immediately, so a service reads the current value', () => {

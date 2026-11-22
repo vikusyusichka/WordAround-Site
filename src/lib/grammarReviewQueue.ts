@@ -1,9 +1,11 @@
 /* Review-queue builder — web port of GrammarReviewQueueBuilder.swift, made
    fully pure: the caller passes pre-fetched notes (notesById) instead of the
    builder doing Firestore reads. Strict pool precedence (manual →
-   recentlyOpened → recentlyEdited), cap 20, order preserved, items whose
-   note is missing are dropped. Every card gets a question. */
-import { generateLocalQuestions } from '@/lib/grammarQuizGenerator';
+   recentlyOpened → recentlyEdited), items whose note is missing are dropped.
+   Due items are ordered by orderDueItems (urgent first, new cards capped);
+   recommendation pools keep their order. Every card gets a question. */
+import { generateQuestionForBlock } from '@/lib/grammarQuizGenerator';
+import { retrievabilityOf } from '@/lib/grammarReview';
 import type {
   GrammarBlockType,
   GrammarNote,
@@ -31,6 +33,11 @@ export interface GrammarReviewQueue {
   cards: GrammarReviewCard[];
   pool: GrammarReviewSourcePool | null;
   estimatedMinutes: number;
+  /** Due items waiting in total (beyond this session's cap), new ones counted
+      only up to today's allowance. Set by the data hook. */
+  dueTotal?: number;
+  /** Never-reviewed cards in this queue. Set by the data hook. */
+  newCount?: number;
 }
 
 export const REVIEW_QUEUE_LIMIT = 20;
@@ -175,26 +182,29 @@ const questionFromQuiz = (
   return ordered[item.reviewCount % ordered.length];
 };
 
+const REVIEW_QUESTION_TYPES = new Set([
+  'multipleChoice',
+  'trueFalse',
+  'fillGap',
+  'shortAnswer',
+] as const);
+
+/* The question and the block it is about, chosen together so the answer the
+   card reveals is the part of the note it asked about. Rotates through the
+   note's blocks by review count. */
 const generateQuestion = (
   item: GrammarReviewItem,
   note: GrammarNote,
-  block: GrammarNoteBlock | undefined,
-): GrammarQuizQuestion => {
-  try {
-    const generated = generateLocalQuestions(
-      note.contentBlocks,
-      1,
-      new Set(['multipleChoice', 'trueFalse', 'fillGap', 'shortAnswer']),
-    );
-    if (generated.length > 0) return generated[0];
-  } catch {
-    /* fall through to the per-block heuristic */
-  }
-  if (block) {
-    const single = singleBlockQuestion(block);
-    if (single) return single;
-  }
-  return ultimateFallbackQuestion(item, note);
+): { question: GrammarQuizQuestion; block: GrammarNoteBlock | undefined } => {
+  const generated = generateQuestionForBlock(
+    note.contentBlocks,
+    item.reviewCount,
+    new Set(REVIEW_QUESTION_TYPES),
+  );
+  if (generated) return generated;
+  const block = selectBestBlock(note.contentBlocks);
+  const single = block ? singleBlockQuestion(block) : null;
+  return { question: single ?? ultimateFallbackQuestion(item, note), block };
 };
 
 const pickSourceText = (
@@ -215,7 +225,10 @@ const buildCard = (
   if (!item.noteId || item.noteId.length === 0 || item.topicId.length === 0) return null;
   const note = notesById.get(item.noteId);
   if (!note) return null;
-  const block = selectBestBlock(note.contentBlocks);
+  const fromQuiz = questionFromQuiz(item, quizzesById);
+  const { question, block } = fromQuiz
+    ? { question: fromQuiz, block: selectBestBlock(note.contentBlocks) }
+    : generateQuestion(item, note);
   return {
     id: item.id,
     reviewItem: item,
@@ -224,8 +237,57 @@ const buildCard = (
     sourceText: pickSourceText(item, note, block),
     sourceSecondaryText: block?.secondaryText?.trim() || undefined,
     sourceBlockType: block?.type,
-    question: questionFromQuiz(item, quizzesById) ?? generateQuestion(item, note, block),
+    question,
   };
+};
+
+/** Due items in the order a session should meet them:
+    - high priority first (mistakes, failed quizzes), then the rest;
+    - within each, already-learned items by lowest chance of remembering —
+      the ones about to be lost — then never-reviewed items, oldest first;
+    - never-reviewed items capped at `newAllowance`, so enrolling forty notes
+      in one evening does not bury the next day under forty new cards;
+    - no two cards from the same note back to back where it can be helped. */
+export const orderDueItems = (
+  items: GrammarReviewItem[],
+  options: { now: number; newAllowance: number; limit: number },
+): GrammarReviewItem[] => {
+  const isNew = (i: GrammarReviewItem) => i.reviewCount === 0;
+  const rank = (i: GrammarReviewItem) => (i.priority === 'high' ? 0 : i.priority === 'low' ? 2 : 1);
+
+  const learned = items
+    .filter((i) => !isNew(i))
+    .map((i) => ({ i, r: retrievabilityOf(i, options.now) }))
+    .sort((a, b) => rank(a.i) - rank(b.i) || a.r - b.r)
+    .map(({ i }) => i);
+  const fresh = items
+    .filter(isNew)
+    .sort((a, b) => rank(a) - rank(b) || a.createdAt - b.createdAt)
+    .slice(0, Math.max(0, options.newAllowance));
+
+  /* High-priority new items (a mistake just made) go before ordinary
+     reviews; ordinary new items after them. */
+  const ordered = [
+    ...learned.filter((i) => rank(i) === 0),
+    ...fresh.filter((i) => rank(i) === 0),
+    ...learned.filter((i) => rank(i) !== 0),
+    ...fresh.filter((i) => rank(i) !== 0),
+  ].slice(0, options.limit);
+
+  return interleaveByNote(ordered);
+};
+
+/* Greedy: take the next item whose note differs from the last one placed;
+   if every remaining item shares it, take it anyway. */
+const interleaveByNote = (items: GrammarReviewItem[]): GrammarReviewItem[] => {
+  const rest = [...items];
+  const out: GrammarReviewItem[] = [];
+  while (rest.length > 0) {
+    const last = out[out.length - 1]?.noteId;
+    const idx = rest.findIndex((i) => i.noteId !== last);
+    out.push(...rest.splice(idx === -1 ? 0 : idx, 1));
+  }
+  return out;
 };
 
 export const buildReviewQueue = (params: {
@@ -236,14 +298,23 @@ export const buildReviewQueue = (params: {
   /** Saved quizzes, keyed by quiz id — only quiz-sourced items consult this. */
   quizzesById?: Map<string, GrammarNoteQuiz>;
   limit?: number;
+  /** Never-reviewed due items still allowed today (default: no cap). */
+  newAllowance?: number;
+  now?: number;
 }): GrammarReviewQueue => {
   const limit = params.limit ?? REVIEW_QUEUE_LIMIT;
+  const now = params.now ?? Date.now();
 
   /* Strict pool precedence — pools are mutually exclusive (iOS selectPool). */
   let selected: GrammarReviewItem[];
   let pool: GrammarReviewSourcePool | null;
-  if (params.manualItems.length > 0) {
-    selected = params.manualItems;
+  const due = orderDueItems(params.manualItems, {
+    now,
+    newAllowance: params.newAllowance ?? Number.POSITIVE_INFINITY,
+    limit,
+  });
+  if (due.length > 0) {
+    selected = due;
     pool = 'manual';
   } else if (params.recentlyOpened.length > 0) {
     selected = params.recentlyOpened;

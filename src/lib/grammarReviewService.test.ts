@@ -96,10 +96,12 @@ describe('grammarReviewService', () => {
   it('markReviewed persists the advanced schedule', async () => {
     const out = await markReviewed(item, 'good', 10_000);
     expect(out.reviewCount).toBe(1);
-    expect(out.dueAt).toBe(10_000 + 3 * 24 * 3600 * 1000);
+    /* FSRS: a first Good gives ~3.7 days of stability, rounded to 4. */
+    expect(out.dueAt).toBe(10_000 + 4 * 24 * 3600 * 1000);
     const [, data] = fs.setDoc.mock.calls[0];
     expect(data.dueAt.toMillis()).toBe(out.dueAt);
     expect(data.reviewCount).toBe(1);
+    expect(data.stability).toBeCloseTo(3.7145, 3);
   });
 
   it('fetchDueReviewItems queries dueAt <= now ordered asc with a limit', async () => {

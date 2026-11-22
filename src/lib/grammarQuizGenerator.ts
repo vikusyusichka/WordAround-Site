@@ -332,3 +332,34 @@ export const generateLocalQuestions = (
   }
   return questions;
 };
+
+/** One question about the `seed`-th usable block (in priority order, wrapping)
+    — what spaced review asks. Rotating by the item's review count means a note
+    reviewed five times is asked about five parts of itself, not the same rule
+    five times; returning the block lets the card reveal exactly that part.
+    Distractors still come from the whole note. Null when the note has no
+    usable block or none yields a question of the allowed types. */
+export const generateQuestionForBlock = (
+  blocks: GrammarNoteBlock[],
+  seed: number,
+  types: Set<GrammarQuizQuestionType>,
+): { question: GrammarQuizQuestion; block: GrammarNoteBlock } | null => {
+  const usable = [...blocks.filter(isUsable)].sort(
+    (a, b) => priorityOf(a.type) - priorityOf(b.type),
+  );
+  if (usable.length === 0) return null;
+  const allTexts = usable
+    .flatMap((b) => [
+      b.text,
+      ...(b.secondaryText && b.secondaryText.length > 0 ? [b.secondaryText] : []),
+      ...b.items.filter((i) => i.length > 0),
+    ])
+    .filter((t) => t.length > 0);
+  const start = ((seed % usable.length) + usable.length) % usable.length;
+  for (let k = 0; k < usable.length; k++) {
+    const block = usable[(start + k) % usable.length];
+    const question = questionFromBlock(block, allTexts, types, 0);
+    if (question) return { question, block };
+  }
+  return null;
+};

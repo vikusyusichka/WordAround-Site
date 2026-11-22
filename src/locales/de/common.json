@@ -700,7 +700,8 @@
         "unsavedTitle": "Ohne Speichern verlassen?",
         "unsavedBody": "Diese Notiz hat Änderungen, die noch nicht gespeichert sind.",
         "discard": "Änderungen verwerfen",
-        "saveAndLeave": "Speichern und verlassen"
+        "saveAndLeave": "Speichern und verlassen",
+        "memory": "Gedächtnis: zu {{percent}} % erinnerst du dich jetzt daran"
       },
       "quiz": {
         "title": "Quiz",
@@ -860,8 +861,6 @@
         "skip": "Überspringen",
         "itemOf": "Eintrag {{current}} von {{total}}",
         "untitled": "Grammatiknotiz",
-        "stats": "{{count}}-mal wiederholt · Serie {{streak}}",
-        "continueToQuestion": "Weiter zur Frage",
         "showAnswer": "Antwort zeigen",
         "compareTitle": "Vergleiche deine Antwort",
         "referenceAnswer": "Referenz: {{answer}}",
@@ -880,7 +879,6 @@
           "quiz": "Quiz"
         },
         "phase": {
-          "source": "Lernen",
           "question": "Antworten",
           "result": "Bewerten"
         },
@@ -891,10 +889,16 @@
           "easy": "Leicht"
         },
         "interval": {
-          "plus4h": "+4 Stunden",
-          "plus1d": "+1 Tag",
-          "plus3d": "+3 Tage",
-          "plus7d": "+7 Tage"
+          "minutes_one": "{{count}} Min.",
+          "minutes_other": "{{count}} Min.",
+          "hours_one": "{{count}} Stunde",
+          "hours_other": "{{count}} Stunden",
+          "days_one": "{{count}} Tag",
+          "days_other": "{{count}} Tage",
+          "months_one": "{{count}} Monat",
+          "months_other": "{{count}} Monate",
+          "years_one": "{{count}} Jahr",
+          "years_other": "{{count}} Jahre"
         },
         "summary": {
           "title": "Sitzung abgeschlossen",
@@ -902,15 +906,26 @@
           "reviewed": "Wiederholt",
           "correct": "Richtig",
           "incorrect": "Falsch",
-          "hintForgot": "Einige Einträge sind in 4 Stunden wieder fällig.",
-          "hintHard": "Schwere Einträge kommen morgen zurück.",
-          "hintGood": "Gute Einträge kommen in 3 Tagen zurück.",
-          "hintEasy": "Alle Einträge kommen in 7 Tagen zurück.",
-          "done": "Zurück zu den Grammatiknotizen"
+          "done": "Zurück zu den Grammatiknotizen",
+          "nextIn": "Die nächste Karte kommt in {{when}} wieder.",
+          "weakTitle": "Lohnt einen zweiten Blick",
+          "more": "Weiter wiederholen"
         },
         "loadError": "Deine Wiederholungsliste konnte nicht geladen werden.",
         "mistakeCount_one": "{{count}} Fehler",
-        "mistakeCount_other": "{{count}} Fehler"
+        "mistakeCount_other": "{{count}} Fehler",
+        "relearnBadge": "Noch ein Versuch",
+        "relearnPending_one": "{{count}} zum Wiederholen",
+        "relearnPending_other": "{{count}} zum Wiederholen",
+        "fromNote": "Aus deiner Notiz",
+        "suggested": "Empfohlen",
+        "newCount_one": "{{count}} neu",
+        "newCount_other": "{{count}} neu",
+        "moreWaiting_one": "{{count}} weitere warten",
+        "moreWaiting_other": "{{count}} weitere warten",
+        "forecastTitle": "Nächste 7 Tage",
+        "reviewTopic_one": "Thema wiederholen · {{count}}",
+        "reviewTopic_other": "Thema wiederholen · {{count}}"
       },
       "mistakesBadge": "Fehler",
       "topicsTitle": "Themen",
@@ -1080,6 +1095,20 @@
           "autoAddNotesToReview": {
             "title": "Neue Notizen zur Wiederholung hinzufügen",
             "subtitle": "Jede gespeicherte Notiz kommt in die Wiederholungsliste, fällig einen Tag später."
+          }
+        },
+        "choice": {
+          "reviewNewPerDay": {
+            "title": "Neue Karten pro Tag",
+            "subtitle": "Notizen, die zum ersten Mal drankommen. Weniger hält die tägliche Menge gleichmäßig."
+          },
+          "reviewSessionSize": {
+            "title": "Karten pro Sitzung",
+            "subtitle": "Wie viele Karten eine Wiederholung umfasst."
+          },
+          "reviewRetention": {
+            "title": "Ziel-Erinnerung",
+            "subtitle": "Höher heißt: du behältst mehr, wiederholst aber öfter."
           }
         }
       },

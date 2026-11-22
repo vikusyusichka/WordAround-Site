@@ -12,8 +12,14 @@ import {
   recentlyOpenedNotes,
   recommendationToReviewItem,
 } from '@/lib/grammarRecommendations';
-import { buildReviewQueue, type GrammarReviewQueue } from '@/lib/grammarReviewQueue';
+import {
+  buildReviewQueue,
+  orderDueItems,
+  type GrammarReviewQueue,
+} from '@/lib/grammarReviewQueue';
 import { makeReviewItem, reviewItemIdForNote } from '@/lib/grammarReview';
+import { newReviewedToday, recordNewReviewed } from '@/lib/grammarReviewDaily';
+import { grammarSettingsSnapshot } from '@/stores/grammarSettingsStore';
 import type {
   GrammarNote,
   GrammarNoteQuiz,
@@ -69,12 +75,27 @@ const fetchQuizzesForItems = async (
   return new Map(perNote.flat().map((quiz) => [quiz.id, quiz]));
 };
 
-const buildQueue = async (uid: string): Promise<GrammarReviewQueue> => {
-  const manualItems = await reviewService.fetchDueReviewItems(uid);
-  const recentlyOpened = recentlyOpenedNotes().map((r) => recommendationToReviewItem(r, uid));
-  const recentlyEdited = recentlyEditedNotes().map((r) => recommendationToReviewItem(r, uid));
+/* Enough due items to order by urgency, not just the 30 longest-waiting. */
+const DUE_FETCH_LIMIT = 300;
 
-  /* Only the winning pool's notes are needed (strict precedence). */
+const buildQueue = async (uid: string, topicId?: string): Promise<GrammarReviewQueue> => {
+  const settings = grammarSettingsSnapshot();
+  const now = Date.now();
+  const inTopic = (i: GrammarReviewItem) => !topicId || i.topicId === topicId;
+  const allDue = (await reviewService.fetchDueReviewItems(uid, DUE_FETCH_LIMIT)).filter(inTopic);
+  const recentlyOpened = recentlyOpenedNotes()
+    .map((r) => recommendationToReviewItem(r, uid))
+    .filter(inTopic);
+  const recentlyEdited = recentlyEditedNotes()
+    .map((r) => recommendationToReviewItem(r, uid))
+    .filter(inTopic);
+  const newAllowance = Math.max(0, settings.reviewNewPerDay - newReviewedToday(now));
+  const limit = settings.reviewSessionSize;
+
+  /* Only the winning pool's notes are needed (strict precedence). Ordering
+     happens again inside buildReviewQueue; doing it here as well keeps the
+     note reads to the cards that will actually be shown. */
+  const manualItems = orderDueItems(allDue, { now, newAllowance, limit });
   const selected =
     manualItems.length > 0 ? manualItems : recentlyOpened.length > 0 ? recentlyOpened : recentlyEdited;
   const [notesById, quizzesById] = await Promise.all([
@@ -82,20 +103,29 @@ const buildQueue = async (uid: string): Promise<GrammarReviewQueue> => {
     fetchQuizzesForItems(uid, selected),
   ]);
 
-  return buildReviewQueue({
+  const queue = buildReviewQueue({
     manualItems,
     recentlyOpened,
     recentlyEdited,
     notesById,
     quizzesById,
+    limit,
+    newAllowance,
+    now,
   });
+  const newWaiting = allDue.filter((i) => i.reviewCount === 0).length;
+  return {
+    ...queue,
+    dueTotal: allDue.length - Math.max(0, newWaiting - newAllowance),
+    newCount: queue.pool === 'manual' ? queue.cards.filter((c) => c.reviewItem.reviewCount === 0).length : 0,
+  };
 };
 
-export const useReviewQueueQuery = () => {
+export const useReviewQueueQuery = (topicId?: string) => {
   const uid = useUid();
   return useQuery({
-    queryKey: grammarReviewKey(uid),
-    queryFn: () => buildQueue(uid as string),
+    queryKey: [...grammarReviewKey(uid), topicId ?? 'all'],
+    queryFn: () => buildQueue(uid as string, topicId),
     enabled: !!uid,
     /* The queue is time-sensitive: dueAt moves after every rating, and the
        recommendation pool changes the moment a note is opened or edited. Note
@@ -178,16 +208,24 @@ export const useAddNoteToReview = () => {
   });
 };
 
+/** Persist a rating the session already applied (`updated` is the item after
+    applyReviewResult; `previous` is what it was, to tell a first review). The
+    session computes the state itself so a card coming back in the same
+    sitting is rated from where it now stands. */
 export const useMarkReviewed = () => {
   const qc = useQueryClient();
   return useMutation({
     mutationFn: async ({
-      item,
-      result,
+      previous,
+      updated,
     }: {
-      item: GrammarReviewItem;
+      previous: GrammarReviewItem;
+      updated: GrammarReviewItem;
       result: GrammarReviewResult;
-    }) => reviewService.markReviewed(item, result),
+    }) => {
+      if (previous.reviewCount === 0) recordNewReviewed();
+      return reviewService.saveReviewItem(updated);
+    },
     onSuccess: () => {
       /* One unit per reviewed card, as iOS does in the review session. */
       recordPractice({ skill: 'writing', value: 1, sourceModeID: 'grammar-notes' });

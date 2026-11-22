@@ -110,6 +110,18 @@ function GrammarTopicDetail() {
 
   const isFiltering = query.trim().length > 0 || filter !== 'all';
 
+  /* Due cards from this topic only — offered as a focused session so a
+     learner revising one subject does not have to wade through the rest. */
+  const dueInTopic = useMemo(() => {
+    if (!reviewItems) return 0;
+    const now = Date.now();
+    let n = 0;
+    for (const item of reviewItems.values()) {
+      if (item.topicId === topicId && item.dueAt <= now) n++;
+    }
+    return n;
+  }, [reviewItems, topicId]);
+
   return (
     <ContentContainer fluid>
       <PageHeader
@@ -117,6 +129,16 @@ function GrammarTopicDetail() {
         subtitle={topic?.description || undefined}
         actions={
           <div className="flex flex-wrap gap-2">
+            {dueInTopic > 0 && (
+              <button
+                type="button"
+                onClick={() => void navigate({ to: '/notes/review', search: { topic: topicId } })}
+                className="flex h-11 items-center gap-2 rounded-2xl border border-(--color-accent-violet)/35 bg-(--color-accent-violet)/8 px-4 text-[14px] font-semibold text-(--color-accent-violet-text) transition-colors hover:bg-(--color-accent-violet)/16 focus-visible:outline-none md:text-[15px]"
+              >
+                <Icon name="brain.head.profile" className="size-4" />
+                {t('writing.grammar.review.reviewTopic', { count: dueInTopic })}
+              </button>
+            )}
             <QuickCaptureButtons
               onQuickNote={() => setQuickNoteOpen(true)}
               onQuickMistake={() => {
@@ -127,7 +149,7 @@ function GrammarTopicDetail() {
             <button
               type="button"
               onClick={() => openNote('new')}
-              className="flex h-11 items-center gap-2 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-4 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
+              className="flex h-11 items-center gap-2 rounded-2xl bg-(--color-primary-blue-solid) px-4 text-[15px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
             >
               <Plus size={18} weight="bold" />
               {t('writing.grammar.newNote')}

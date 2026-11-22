@@ -279,6 +279,10 @@ export interface GrammarReviewItem {
   correctStreak: number;
   incorrectStreak: number;
   mistakeCount: number;
+  /** FSRS stability in days (web-only; absent on items never rated here). */
+  stability?: number;
+  /** FSRS difficulty, 1–10 (web-only). */
+  difficulty?: number;
   createdAt: number;
   updatedAt: number;
 }

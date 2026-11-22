@@ -38,6 +38,8 @@ const toFirestore = (item: GrammarReviewItem) => ({
   correctStreak: item.correctStreak,
   incorrectStreak: item.incorrectStreak,
   mistakeCount: item.mistakeCount,
+  stability: item.stability ?? null,
+  difficulty: item.difficulty ?? null,
   createdAt: millisToTs(item.createdAt),
   updatedAt: millisToTs(item.updatedAt),
 });
@@ -71,6 +73,8 @@ export const reviewItemFromFirestore = (
   correctStreak: typeof data.correctStreak === 'number' ? data.correctStreak : 0,
   incorrectStreak: typeof data.incorrectStreak === 'number' ? data.incorrectStreak : 0,
   mistakeCount: typeof data.mistakeCount === 'number' ? data.mistakeCount : 0,
+  stability: typeof data.stability === 'number' ? data.stability : undefined,
+  difficulty: typeof data.difficulty === 'number' ? data.difficulty : undefined,
   createdAt: tsToMillis(data.createdAt),
   updatedAt: tsToMillis(data.updatedAt),
 });
@@ -132,6 +136,8 @@ export const upsertReviewItem = async (item: GrammarReviewItem): Promise<Grammar
       correctStreak: prev.correctStreak,
       incorrectStreak: prev.incorrectStreak,
       mistakeCount: prev.mistakeCount,
+      stability: prev.stability,
+      difficulty: prev.difficulty,
       lastReviewedAt: prev.lastReviewedAt,
       nextReviewAt: prev.nextReviewAt,
       createdAt: prev.createdAt,
@@ -141,18 +147,23 @@ export const upsertReviewItem = async (item: GrammarReviewItem): Promise<Grammar
   return merged;
 };
 
+/** Persist an item whose schedule the caller already advanced — the review
+    session computes the next state itself, because a card that comes back in
+    the same sitting has to be rated from the state it was just given. */
+export const saveReviewItem = async (item: GrammarReviewItem): Promise<GrammarReviewItem> => {
+  await setDoc(grammarReviewItemDoc(item.ownerUID, item.id), toFirestore(item), {
+    merge: true,
+  });
+  return item;
+};
+
 /** Apply a rating and persist the advanced schedule. */
 export const markReviewed = async (
   item: GrammarReviewItem,
   result: GrammarReviewResult,
   now: number = Date.now(),
-): Promise<GrammarReviewItem> => {
-  const updated = applyReviewResult(item, result, now);
-  await setDoc(grammarReviewItemDoc(updated.ownerUID, updated.id), toFirestore(updated), {
-    merge: true,
-  });
-  return updated;
-};
+  retention?: number,
+): Promise<GrammarReviewItem> => saveReviewItem(applyReviewResult(item, result, now, retention));
 
 /* Keep a review card's wording in step with the note it came from, WITHOUT
    touching the schedule.

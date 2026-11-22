@@ -49,6 +49,7 @@ import {
   recordOpenedNote,
 } from '@/lib/grammarRecommendations';
 import { reviewItemForNote } from '@/lib/grammarFilters';
+import { retrievabilityOf } from '@/lib/grammarReview';
 import { useGrammarSettings } from '@/stores/grammarSettingsStore';
 import type { GrammarNote, GrammarNoteTopic } from '@/lib/models';
 
@@ -276,6 +277,15 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
     });
   };
 
+  /* "Memory 92%" — FSRS's current chance of recall, shown as the button's
+     tooltip once the note has been reviewed at least once. */
+  const memoryHint =
+    reviewItem && reviewItem.reviewCount > 0
+      ? t('writing.grammar.editor.memory', {
+          percent: Math.round(retrievabilityOf(reviewItem) * 100),
+        })
+      : undefined;
+
   const handleDelete = () => {
     if (isNew || !existing) {
       savedRef.current = true;
@@ -328,6 +338,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
               onClick={handleToggleReview}
               disabled={addToReview.isPending || removeFromReview.isPending || isNew}
               aria-pressed={reviewItem !== undefined}
+              title={memoryHint}
               className={reviewItem ? reviewButtonActive : secondaryButton}
             >
               {reviewButtonLabel()}
@@ -366,7 +377,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
               type="button"
               onClick={() => persist()}
               disabled={isSaving}
-              className="h-11 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-5 text-[14px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-70 focus-visible:outline-none md:text-[15px]"
+              className="h-11 rounded-2xl bg-(--color-primary-blue-solid) px-5 text-[14px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-70 focus-visible:outline-none md:text-[15px]"
             >
               {isSaving ? t('writing.grammar.editor.saving') : t('writing.grammar.editor.save')}
             </button>
@@ -569,7 +580,7 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
                 type="button"
                 onClick={() => persist(() => blocker.proceed())}
                 disabled={isSaving}
-                className="h-11 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-5 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform active:scale-[0.98] disabled:opacity-70 focus-visible:outline-none"
+                className="h-11 rounded-2xl bg-(--color-primary-blue-solid) px-5 text-[15px] font-semibold text-white transition-transform active:scale-[0.98] disabled:opacity-70 focus-visible:outline-none"
               >
                 {t('writing.grammar.editor.saveAndLeave')}
               </button>

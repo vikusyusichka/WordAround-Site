@@ -12,15 +12,25 @@ import { PageHeader } from '@/components/shell/PageHeader';
 import { NOTE_TYPES, NOTE_TYPE_META } from '@/lib/grammarMeta';
 import { tint } from '@/lib/colorMix';
 import {
+  NUMERIC_SETTING_OPTIONS,
   useGrammarSettings,
   type GrammarSettings,
+  type NumericSetting,
 } from '@/stores/grammarSettingsStore';
 
 export const Route = createFileRoute('/_authed/notes/settings')({
   component: NotesSettings,
 });
 
-type ToggleKey = keyof Omit<GrammarSettings, 'defaultNoteType'>;
+type ToggleKey = keyof Omit<GrammarSettings, 'defaultNoteType' | NumericSetting>;
+
+/* Review pacing: three small choices rather than free numbers — the defaults
+   suit nearly everyone, and a learner who wants more or less needs a step,
+   not a field to type into. */
+const REVIEW_CHOICES: NumericSetting[] = ['reviewNewPerDay', 'reviewSessionSize', 'reviewRetention'];
+
+const formatChoice = (key: NumericSetting, value: number) =>
+  key === 'reviewRetention' ? `${Math.round(value * 100)}%` : String(value);
 
 interface SectionDef {
   id: string;
@@ -161,6 +171,43 @@ function NotesSettings() {
                   />
                 </label>
               ))}
+              {section.id === 'review' &&
+                REVIEW_CHOICES.map((key) => (
+                  <div
+                    key={key}
+                    className="flex flex-wrap items-center gap-3 rounded-2xl border border-(--color-auth-field-border) px-4 py-3"
+                  >
+                    <span className="flex min-w-0 flex-1 flex-col">
+                      <span className="text-[14px] font-bold text-(--color-primary-blue-dark)">
+                        {t(`writing.grammar.settings.choice.${key}.title`)}
+                      </span>
+                      <span className="text-[12px] font-semibold text-(--color-text-secondary)">
+                        {t(`writing.grammar.settings.choice.${key}.subtitle`)}
+                      </span>
+                    </span>
+                    <div role="radiogroup" className="flex gap-1.5">
+                      {NUMERIC_SETTING_OPTIONS[key].map((value) => {
+                        const isActive = settings[key] === value;
+                        return (
+                          <button
+                            key={value}
+                            type="button"
+                            role="radio"
+                            aria-checked={isActive}
+                            onClick={() => settings.set(key, value)}
+                            className={`h-9 min-w-[52px] rounded-full border px-3 text-[13px] font-bold transition-colors focus-visible:outline-none ${
+                              isActive
+                                ? 'border-(--color-accent-violet) bg-(--color-accent-violet)/12 text-(--color-accent-violet-text)'
+                                : 'border-(--color-auth-field-border) bg-(--color-surface) text-(--color-text-secondary) hover:bg-(--color-hover-wash)'
+                            }`}
+                          >
+                            {formatChoice(key, value)}
+                          </button>
+                        );
+                      })}
+                    </div>
+                  </div>
+                ))}
             </div>
           </section>
         ))}

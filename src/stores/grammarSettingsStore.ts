@@ -35,7 +35,25 @@ export interface GrammarSettings {
   autoAddNotesToReview: boolean;
   /** Note type a new quick note starts with. */
   defaultNoteType: GrammarNoteType;
+  /** Review: never-reviewed cards let into sessions per day (web-only). */
+  reviewNewPerDay: number;
+  /** Review: cards per session (web-only). */
+  reviewSessionSize: number;
+  /** Review: target chance of remembering at the next review (web-only). */
+  reviewRetention: number;
 }
+
+export type NumericSetting = 'reviewNewPerDay' | 'reviewSessionSize' | 'reviewRetention';
+
+/** The choices the settings screen offers; a stored value outside them is
+    ignored so a hand-edited key cannot break scheduling. */
+export const NUMERIC_SETTING_OPTIONS: Record<NumericSetting, number[]> = {
+  reviewNewPerDay: [5, 10, 20],
+  reviewSessionSize: [10, 20, 40],
+  reviewRetention: [0.85, 0.9, 0.95],
+};
+
+const NUMERIC_KEYS = Object.keys(NUMERIC_SETTING_OPTIONS) as NumericSetting[];
 
 export const GRAMMAR_SETTINGS_DEFAULTS: GrammarSettings = {
   opensEditorAfterQuickSave: true,
@@ -52,6 +70,9 @@ export const GRAMMAR_SETTINGS_DEFAULTS: GrammarSettings = {
   showsHelperTips: true,
   autoAddNotesToReview: true,
   defaultNoteType: 'standard',
+  reviewNewPerDay: 10,
+  reviewSessionSize: 20,
+  reviewRetention: 0.9,
 };
 
 /** iOS UserDefaults keys — kept verbatim so the two stores stay comparable. */
@@ -71,6 +92,9 @@ const STORAGE_KEY: Record<keyof GrammarSettings, string> = {
   /* Web-only: iOS has no such key, because iOS never auto-enrols either. */
   autoAddNotesToReview: 'grammarNotes.autoAddNotesToReview',
   defaultNoteType: 'grammarNotes.defaultNoteType',
+  reviewNewPerDay: 'grammarNotes.reviewNewPerDay',
+  reviewSessionSize: 'grammarNotes.reviewSessionSize',
+  reviewRetention: 'grammarNotes.reviewRetention',
 };
 
 const NOTE_TYPES: GrammarNoteType[] = [
@@ -85,8 +109,13 @@ const readStored = (): GrammarSettings => {
       if (raw === null) continue;
       if (key === 'defaultNoteType') {
         if (NOTE_TYPES.includes(raw as GrammarNoteType)) next.defaultNoteType = raw as GrammarNoteType;
+      } else if (NUMERIC_KEYS.includes(key as NumericSetting)) {
+        const value = Number(raw);
+        if (NUMERIC_SETTING_OPTIONS[key as NumericSetting].includes(value)) {
+          next[key as NumericSetting] = value;
+        }
       } else {
-        next[key] = raw === 'true';
+        (next as unknown as Record<string, boolean>)[key] = raw === 'true';
       }
     }
   } catch {
@@ -105,7 +134,7 @@ const persist = <K extends keyof GrammarSettings>(key: K, value: GrammarSettings
 
 interface GrammarSettingsState extends GrammarSettings {
   set: <K extends keyof GrammarSettings>(key: K, value: GrammarSettings[K]) => void;
-  toggle: (key: keyof Omit<GrammarSettings, 'defaultNoteType'>) => void;
+  toggle: (key: keyof Omit<GrammarSettings, 'defaultNoteType' | NumericSetting>) => void;
   resetAll: () => void;
 }
 
@@ -146,5 +175,8 @@ export const grammarSettingsSnapshot = (): GrammarSettings => {
     showsHelperTips: state.showsHelperTips,
     autoAddNotesToReview: state.autoAddNotesToReview,
     defaultNoteType: state.defaultNoteType,
+    reviewNewPerDay: state.reviewNewPerDay,
+    reviewSessionSize: state.reviewSessionSize,
+    reviewRetention: state.reviewRetention,
   };
 };

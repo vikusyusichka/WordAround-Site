@@ -712,7 +712,8 @@
         "unsavedTitle": "Вийти без збереження?",
         "unsavedBody": "У цій нотатці є незбережені зміни.",
         "discard": "Відхилити зміни",
-        "saveAndLeave": "Зберегти і вийти"
+        "saveAndLeave": "Зберегти і вийти",
+        "memory": "Пам’ять: {{percent}}% імовірність, що ви це пам’ятаєте"
       },
       "quiz": {
         "title": "Тести",
@@ -880,8 +881,6 @@
         "skip": "Пропустити",
         "itemOf": "Елемент {{current}} з {{total}}",
         "untitled": "Нотатка з граматики",
-        "stats": "Повторень: {{count}} · серія {{streak}}",
-        "continueToQuestion": "Перейти до питання",
         "showAnswer": "Показати відповідь",
         "compareTitle": "Порівняйте свою відповідь",
         "referenceAnswer": "Еталон: {{answer}}",
@@ -906,7 +905,6 @@
           "quiz": "Тест"
         },
         "phase": {
-          "source": "Вивчення",
           "question": "Відповідь",
           "result": "Оцінка"
         },
@@ -917,10 +915,26 @@
           "easy": "Легко"
         },
         "interval": {
-          "plus4h": "+4 години",
-          "plus1d": "+1 день",
-          "plus3d": "+3 дні",
-          "plus7d": "+7 днів"
+          "minutes_one": "{{count}} хв",
+          "minutes_few": "{{count}} хв",
+          "minutes_many": "{{count}} хв",
+          "minutes_other": "{{count}} хв",
+          "hours_one": "{{count}} година",
+          "hours_few": "{{count}} години",
+          "hours_many": "{{count}} годин",
+          "hours_other": "{{count}} години",
+          "days_one": "{{count}} день",
+          "days_few": "{{count}} дні",
+          "days_many": "{{count}} днів",
+          "days_other": "{{count}} дня",
+          "months_one": "{{count}} місяць",
+          "months_few": "{{count}} місяці",
+          "months_many": "{{count}} місяців",
+          "months_other": "{{count}} місяця",
+          "years_one": "{{count}} рік",
+          "years_few": "{{count}} роки",
+          "years_many": "{{count}} років",
+          "years_other": "{{count}} року"
         },
         "summary": {
           "title": "Сесію завершено",
@@ -928,11 +942,10 @@
           "reviewed": "Повторено",
           "correct": "Правильно",
           "incorrect": "Неправильно",
-          "hintForgot": "Деякі елементи повернуться через 4 години.",
-          "hintHard": "Складні елементи повернуться завтра.",
-          "hintGood": "Добре засвоєні повернуться через 3 дні.",
-          "hintEasy": "Усі елементи повернуться через 7 днів.",
-          "done": "Назад до нотаток з граматики"
+          "done": "Назад до нотаток з граматики",
+          "nextIn": "Наступна картка повернеться через {{when}}.",
+          "weakTitle": "Варто переглянути",
+          "more": "Повторити ще"
         },
         "loadError": "Не вдалося завантажити чергу повторення.",
         "mistakeCount_one": "{{count}} помилка",
@@ -940,7 +953,27 @@
         "cardSubtitle_few": "{{count}} картки готові · ~{{minutes}} хв",
         "cardSubtitle_many": "{{count}} карток готово · ~{{minutes}} хв",
         "mistakeCount_few": "{{count}} помилки",
-        "mistakeCount_many": "{{count}} помилок"
+        "mistakeCount_many": "{{count}} помилок",
+        "relearnBadge": "Ще одна спроба",
+        "relearnPending_one": "{{count}} на повтор",
+        "relearnPending_few": "{{count}} на повтор",
+        "relearnPending_many": "{{count}} на повтор",
+        "relearnPending_other": "{{count}} на повтор",
+        "fromNote": "З вашої нотатки",
+        "suggested": "Рекомендовано",
+        "newCount_one": "{{count}} нова",
+        "newCount_few": "{{count}} нові",
+        "newCount_many": "{{count}} нових",
+        "newCount_other": "{{count}} нової",
+        "moreWaiting_one": "ще {{count}} чекає",
+        "moreWaiting_few": "ще {{count}} чекають",
+        "moreWaiting_many": "ще {{count}} чекають",
+        "moreWaiting_other": "ще {{count}} чекає",
+        "forecastTitle": "Наступні 7 днів",
+        "reviewTopic_one": "Повторити тему · {{count}}",
+        "reviewTopic_few": "Повторити тему · {{count}}",
+        "reviewTopic_many": "Повторити тему · {{count}}",
+        "reviewTopic_other": "Повторити тему · {{count}}"
       },
       "mistakesBadge": "Помилки",
       "topicsTitle": "Теми",
@@ -1112,6 +1145,20 @@
           "autoAddNotesToReview": {
             "title": "Додавати нові нотатки до повторення",
             "subtitle": "Кожна збережена нотатка йде в чергу повторення — за день після написання."
+          }
+        },
+        "choice": {
+          "reviewNewPerDay": {
+            "title": "Нових карток на день",
+            "subtitle": "Нотатки, які повторюються вперше. Менше означає рівніше щоденне навантаження."
+          },
+          "reviewSessionSize": {
+            "title": "Карток за сесію",
+            "subtitle": "Скільки карток в одній сесії повторення."
+          },
+          "reviewRetention": {
+            "title": "Цільова пам’ять",
+            "subtitle": "Вище означає, що ви пам’ятаєте більше, але повторення частіші."
           }
         }
       },

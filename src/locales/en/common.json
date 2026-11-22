@@ -697,7 +697,8 @@
         "unsavedTitle": "Leave without saving?",
         "unsavedBody": "This note has changes that have not been saved yet.",
         "discard": "Discard changes",
-        "saveAndLeave": "Save and leave"
+        "saveAndLeave": "Save and leave",
+        "memory": "Memory: {{percent}}% chance you remember it now"
       },
       "quiz": {
         "title": "Quizzes",
@@ -857,8 +858,6 @@
         "skip": "Skip",
         "itemOf": "Item {{current}} of {{total}}",
         "untitled": "Grammar note",
-        "stats": "Reviewed {{count}} times · streak {{streak}}",
-        "continueToQuestion": "Continue to question",
         "showAnswer": "Show answer",
         "compareTitle": "Compare your answer",
         "referenceAnswer": "Reference: {{answer}}",
@@ -877,7 +876,6 @@
           "quiz": "Quiz"
         },
         "phase": {
-          "source": "Study",
           "question": "Answer",
           "result": "Rate"
         },
@@ -888,10 +886,16 @@
           "easy": "Easy"
         },
         "interval": {
-          "plus4h": "+4 hours",
-          "plus1d": "+1 day",
-          "plus3d": "+3 days",
-          "plus7d": "+7 days"
+          "minutes_one": "{{count}} min",
+          "minutes_other": "{{count}} min",
+          "hours_one": "{{count}} hour",
+          "hours_other": "{{count}} hours",
+          "days_one": "{{count}} day",
+          "days_other": "{{count}} days",
+          "months_one": "{{count}} month",
+          "months_other": "{{count}} months",
+          "years_one": "{{count}} year",
+          "years_other": "{{count}} years"
         },
         "summary": {
           "title": "Session complete",
@@ -899,15 +903,26 @@
           "reviewed": "Reviewed",
           "correct": "Correct",
           "incorrect": "Incorrect",
-          "hintForgot": "Some items are due again in 4 hours.",
-          "hintHard": "Hard items return tomorrow.",
-          "hintGood": "Good items return in 3 days.",
-          "hintEasy": "All items return in 7 days.",
-          "done": "Back to Grammar notes"
+          "done": "Back to Grammar notes",
+          "nextIn": "The next card comes back in {{when}}.",
+          "weakTitle": "Worth another look",
+          "more": "Review more"
         },
         "loadError": "Couldn't load your review queue.",
         "mistakeCount_one": "{{count}} mistake",
-        "mistakeCount_other": "{{count}} mistakes"
+        "mistakeCount_other": "{{count}} mistakes",
+        "relearnBadge": "Another try",
+        "relearnPending_one": "{{count}} to retry",
+        "relearnPending_other": "{{count}} to retry",
+        "fromNote": "From your note",
+        "suggested": "Suggested",
+        "newCount_one": "{{count}} new",
+        "newCount_other": "{{count}} new",
+        "moreWaiting_one": "{{count}} more waiting",
+        "moreWaiting_other": "{{count}} more waiting",
+        "forecastTitle": "Next 7 days",
+        "reviewTopic_one": "Review topic · {{count}}",
+        "reviewTopic_other": "Review topic · {{count}}"
       },
       "mistakesBadge": "Mistakes",
       "topicsTitle": "Topics",
@@ -1077,6 +1092,20 @@
           "autoAddNotesToReview": {
             "title": "Add new notes to review",
             "subtitle": "Every note you save joins the review queue, due a day later."
+          }
+        },
+        "choice": {
+          "reviewNewPerDay": {
+            "title": "New cards per day",
+            "subtitle": "Notes reviewed for the first time. Fewer keeps the daily load steady."
+          },
+          "reviewSessionSize": {
+            "title": "Cards per session",
+            "subtitle": "How many cards one review session holds."
+          },
+          "reviewRetention": {
+            "title": "Target memory",
+            "subtitle": "Higher means you remember more, but reviews come more often."
           }
         }
       },

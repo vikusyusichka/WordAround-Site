@@ -1,13 +1,17 @@
 import { describe, expect, it } from 'vitest';
 
-import { makeReviewItem } from './grammarReview';
+import { applyReviewResult, makeReviewItem } from './grammarReview';
 import type { GrammarReviewCard } from './grammarReviewQueue';
 import {
   currentCard,
   incorrectDisplayCount,
   initialReviewSessionState,
+  isRelearnAttempt,
+  MAX_RELEARN,
   progressFraction,
+  relearnPendingCount,
   reviewSessionReducer,
+  suggestedRating,
   type ReviewSessionState,
 } from './grammarReviewSession';
 import { makeGrammarNote } from './grammarFactories';
@@ -45,91 +49,108 @@ const run = (
   ...actions: Parameters<typeof reviewSessionReducer>[1][]
 ) => actions.reduce(reviewSessionReducer, s);
 
+const start = (...cards: GrammarReviewCard[]) =>
+  run(initialReviewSessionState, { type: 'START', cards, pool: 'manual' });
+
 describe('reviewSessionReducer', () => {
-  it('START seeds cards at phase source', () => {
-    const s = run(initialReviewSessionState, {
-      type: 'START', cards: [card('a', 'trueFalse')], pool: 'manual',
-    });
-    expect(s.phase).toBe('source');
+  it('START opens on the question — the note is not shown first', () => {
+    const s = start(card('a', 'trueFalse'));
+    expect(s.phase).toBe('question');
     expect(currentCard(s)?.id).toBe('a');
     expect(progressFraction(s)).toBe(1);
   });
 
-  it('source → question → result with auto-grading (TF correct)', () => {
-    const s = run(
-      initialReviewSessionState,
-      { type: 'START', cards: [card('a', 'trueFalse')], pool: 'manual' },
-      { type: 'CONTINUE' },
-      { type: 'SUBMIT_ANSWER', answer: ' true ' },
-    );
+  it('question → result with auto-grading (TF correct) and a suggested rating', () => {
+    const s = run(start(card('a', 'trueFalse')), { type: 'SUBMIT_ANSWER', answer: ' true ' });
     expect(s.phase).toBe('result');
     expect(s.lastAnswer).toEqual({ answer: ' true ', correct: true, autoGraded: true });
     expect(s.correctAnswerCount).toBe(1);
-    expect(s.incorrectAnswerCount).toBe(0);
+    expect(suggestedRating(s.lastAnswer)).toBe('good');
   });
 
-  it('shortAnswer is never auto-graded', () => {
-    const s = run(
-      initialReviewSessionState,
-      { type: 'START', cards: [card('a', 'shortAnswer')], pool: 'manual' },
-      { type: 'CONTINUE' },
-      { type: 'SUBMIT_ANSWER', answer: 'Answer' },
-    );
+  it('shortAnswer is never auto-graded and suggests nothing', () => {
+    const s = run(start(card('a', 'shortAnswer')), { type: 'SUBMIT_ANSWER', answer: 'Answer' });
     expect(s.lastAnswer?.autoGraded).toBe(false);
     expect(s.correctAnswerCount).toBe(0);
     expect(s.incorrectAnswerCount).toBe(0);
+    expect(suggestedRating(s.lastAnswer)).toBeNull();
+  });
+
+  it('a wrong auto-graded answer suggests Forgot', () => {
+    const s = run(start(card('a', 'trueFalse')), { type: 'SUBMIT_ANSWER', answer: 'False' });
+    expect(suggestedRating(s.lastAnswer)).toBe('forgot');
   });
 
   it('RATE counts the rating, advances, and finishes at the end', () => {
     let s = run(
-      initialReviewSessionState,
-      { type: 'START', cards: [card('a', 'trueFalse'), card('b', 'shortAnswer')], pool: 'manual' },
-      { type: 'CONTINUE' },
+      start(card('a', 'trueFalse'), card('b', 'shortAnswer')),
       { type: 'SUBMIT_ANSWER', answer: 'False' },
       { type: 'RATE', result: 'hard' },
     );
     expect(s.currentIndex).toBe(1);
-    expect(s.phase).toBe('source');
+    expect(s.phase).toBe('question');
     expect(s.totalReviewed).toBe(1);
     expect(s.hardCount).toBe(1);
-    expect(s.incorrectAnswerCount).toBe(1); // auto-graded wrong
+    expect(s.incorrectAnswerCount).toBe(1);
 
-    s = run(
-      s,
-      { type: 'CONTINUE' },
-      { type: 'SUBMIT_ANSWER', answer: 'whatever' },
-      { type: 'RATE', result: 'forgot' },
-    );
+    s = run(s, { type: 'SUBMIT_ANSWER', answer: 'whatever' }, { type: 'RATE', result: 'good' });
     expect(s.finished).toBe(true);
-    expect(s.forgotCount).toBe(1);
-    // forgot on a NON-auto-graded card feeds the incorrect display count…
+    expect(s.goodCount).toBe(1);
+  });
+
+  it('forgot sends the card back with its updated schedule, at most MAX_RELEARN times', () => {
+    const a = card('a', 'shortAnswer');
+    const updated = applyReviewResult(a.reviewItem, 'forgot', 1_000);
+    let s = run(
+      start(a, card('b', 'shortAnswer')),
+      { type: 'SUBMIT_ANSWER', answer: 'x' },
+      { type: 'RATE', result: 'forgot', updated },
+    );
+    expect(s.cards.map((c) => c.id)).toEqual(['a', 'b', 'a']);
+    expect(s.cards[2].reviewItem).toBe(updated);
+    expect(s.ratedItems.a).toBe(updated);
+    expect(relearnPendingCount(s)).toBe(1);
     expect(s.forgotCountWithoutQuiz).toBe(1);
-    expect(incorrectDisplayCount(s)).toBe(2);
+    expect(incorrectDisplayCount(s)).toBe(1);
+
+    s = run(s, { type: 'SUBMIT_ANSWER', answer: 'x' }, { type: 'RATE', result: 'good' }); // b
+    expect(currentCard(s)?.id).toBe('a');
+    expect(isRelearnAttempt(s)).toBe(true);
+
+    for (let i = 1; i < MAX_RELEARN + 2; i++) {
+      if (s.finished) break;
+      s = run(s, { type: 'SUBMIT_ANSWER', answer: 'x' }, { type: 'RATE', result: 'forgot' });
+    }
+    expect(s.finished).toBe(true);
+    expect(s.relearnCounts.a).toBe(MAX_RELEARN);
+    expect(s.cards.filter((c) => c.id === 'a')).toHaveLength(MAX_RELEARN + 1);
   });
 
   it('forgot on an auto-graded card does NOT double count', () => {
     const s = run(
-      initialReviewSessionState,
-      { type: 'START', cards: [card('a', 'trueFalse')], pool: 'manual' },
-      { type: 'CONTINUE' },
-      { type: 'SUBMIT_ANSWER', answer: 'False' }, // wrong → incorrectAnswerCount 1
+      start(card('a', 'trueFalse')),
+      { type: 'SUBMIT_ANSWER', answer: 'False' },
       { type: 'RATE', result: 'forgot' },
     );
     expect(s.forgotCountWithoutQuiz).toBe(0);
     expect(incorrectDisplayCount(s)).toBe(1);
   });
 
-  it('SKIP advances without counting; RATE outside result phase is ignored', () => {
-    let s = run(
-      initialReviewSessionState,
-      { type: 'START', cards: [card('a', 'trueFalse'), card('b', 'trueFalse')], pool: 'manual' },
-      { type: 'RATE', result: 'good' }, // ignored — phase is source
-    );
+  it('SKIP defers a card to the end once, then drops it; RATE outside result is ignored', () => {
+    let s = run(start(card('a', 'trueFalse'), card('b', 'trueFalse')), {
+      type: 'RATE',
+      result: 'good',
+    });
     expect(s.totalReviewed).toBe(0);
     s = run(s, { type: 'SKIP' });
-    expect(s.currentIndex).toBe(1);
-    expect(s.totalReviewed).toBe(0);
+    expect(s.cards.map((c) => c.id)).toEqual(['a', 'b', 'a']);
+    expect(currentCard(s)?.id).toBe('b');
+    s = run(s, { type: 'SKIP' }); // b deferred too
+    expect(currentCard(s)?.id).toBe('a');
+    s = run(s, { type: 'SKIP' }); // a skipped twice → dropped
+    expect(currentCard(s)?.id).toBe('b');
     s = run(s, { type: 'SKIP' });
     expect(s.finished).toBe(true);
+    expect(s.totalReviewed).toBe(0);
   });
 });

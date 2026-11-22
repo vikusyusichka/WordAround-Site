@@ -712,7 +712,8 @@
         "unsavedTitle": "Wyjść bez zapisywania?",
         "unsavedBody": "Ta notatka ma zmiany, które nie zostały jeszcze zapisane.",
         "discard": "Odrzuć zmiany",
-        "saveAndLeave": "Zapisz i wyjdź"
+        "saveAndLeave": "Zapisz i wyjdź",
+        "memory": "Pamięć: {{percent}}% szans, że to pamiętasz"
       },
       "quiz": {
         "title": "Testy",
@@ -880,8 +881,6 @@
         "skip": "Pomiń",
         "itemOf": "Pozycja {{current}} z {{total}}",
         "untitled": "Notatka gramatyczna",
-        "stats": "Powtórzono {{count}} razy · passa {{streak}}",
-        "continueToQuestion": "Przejdź do pytania",
         "showAnswer": "Pokaż odpowiedź",
         "compareTitle": "Porównaj swoją odpowiedź",
         "referenceAnswer": "Wzorzec: {{answer}}",
@@ -906,7 +905,6 @@
           "quiz": "Test"
         },
         "phase": {
-          "source": "Nauka",
           "question": "Odpowiedź",
           "result": "Ocena"
         },
@@ -917,10 +915,26 @@
           "easy": "Łatwe"
         },
         "interval": {
-          "plus4h": "+4 godziny",
-          "plus1d": "+1 dzień",
-          "plus3d": "+3 dni",
-          "plus7d": "+7 dni"
+          "minutes_one": "{{count}} min",
+          "minutes_few": "{{count}} min",
+          "minutes_many": "{{count}} min",
+          "minutes_other": "{{count}} min",
+          "hours_one": "{{count}} godzina",
+          "hours_few": "{{count}} godziny",
+          "hours_many": "{{count}} godzin",
+          "hours_other": "{{count}} godziny",
+          "days_one": "{{count}} dzień",
+          "days_few": "{{count}} dni",
+          "days_many": "{{count}} dni",
+          "days_other": "{{count}} dnia",
+          "months_one": "{{count}} miesiąc",
+          "months_few": "{{count}} miesiące",
+          "months_many": "{{count}} miesięcy",
+          "months_other": "{{count}} miesiąca",
+          "years_one": "{{count}} rok",
+          "years_few": "{{count}} lata",
+          "years_many": "{{count}} lat",
+          "years_other": "{{count}} roku"
         },
         "summary": {
           "title": "Sesja ukończona",
@@ -928,11 +942,10 @@
           "reviewed": "Powtórzone",
           "correct": "Poprawne",
           "incorrect": "Niepoprawne",
-          "hintForgot": "Część pozycji wróci za 4 godziny.",
-          "hintHard": "Trudne pozycje wrócą jutro.",
-          "hintGood": "Dobre pozycje wrócą za 3 dni.",
-          "hintEasy": "Wszystkie pozycje wrócą za 7 dni.",
-          "done": "Powrót do notatek gramatycznych"
+          "done": "Powrót do notatek gramatycznych",
+          "nextIn": "Następna karta wróci za {{when}}.",
+          "weakTitle": "Warto zajrzeć ponownie",
+          "more": "Powtarzaj dalej"
         },
         "loadError": "Nie udało się wczytać kolejki powtórek.",
         "mistakeCount_one": "{{count}} błąd",
@@ -940,7 +953,27 @@
         "cardSubtitle_few": "{{count}} karty gotowe · ok. {{minutes}} min",
         "cardSubtitle_many": "{{count}} kart gotowych · ok. {{minutes}} min",
         "mistakeCount_few": "{{count}} błędy",
-        "mistakeCount_many": "{{count}} błędów"
+        "mistakeCount_many": "{{count}} błędów",
+        "relearnBadge": "Kolejna próba",
+        "relearnPending_one": "{{count}} do powtórki",
+        "relearnPending_few": "{{count}} do powtórki",
+        "relearnPending_many": "{{count}} do powtórki",
+        "relearnPending_other": "{{count}} do powtórki",
+        "fromNote": "Z twojej notatki",
+        "suggested": "Sugerowane",
+        "newCount_one": "{{count}} nowa",
+        "newCount_few": "{{count}} nowe",
+        "newCount_many": "{{count}} nowych",
+        "newCount_other": "{{count}} nowej",
+        "moreWaiting_one": "czeka jeszcze {{count}}",
+        "moreWaiting_few": "czekają jeszcze {{count}}",
+        "moreWaiting_many": "czeka jeszcze {{count}}",
+        "moreWaiting_other": "czeka jeszcze {{count}}",
+        "forecastTitle": "Najbliższe 7 dni",
+        "reviewTopic_one": "Powtórz temat · {{count}}",
+        "reviewTopic_few": "Powtórz temat · {{count}}",
+        "reviewTopic_many": "Powtórz temat · {{count}}",
+        "reviewTopic_other": "Powtórz temat · {{count}}"
       },
       "mistakesBadge": "Błędy",
       "topicsTitle": "Tematy",
@@ -1112,6 +1145,20 @@
           "autoAddNotesToReview": {
             "title": "Dodawaj nowe notatki do powtórek",
             "subtitle": "Każda zapisana notatka trafia do kolejki powtórek, dzień po zapisaniu."
+          }
+        },
+        "choice": {
+          "reviewNewPerDay": {
+            "title": "Nowe karty dziennie",
+            "subtitle": "Notatki powtarzane po raz pierwszy. Mniej to równiejsze dzienne obciążenie."
+          },
+          "reviewSessionSize": {
+            "title": "Karty na sesję",
+            "subtitle": "Ile kart obejmuje jedna sesja powtórek."
+          },
+          "reviewRetention": {
+            "title": "Docelowa pamięć",
+            "subtitle": "Wyżej oznacza, że pamiętasz więcej, ale powtórki są częstsze."
           }
         }
       },
