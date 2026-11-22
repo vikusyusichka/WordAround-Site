@@ -1183,7 +1183,26 @@
       "topicsEmptyTip": "Temat to folder na notatki — jeden na język albo jeden na to, w czym ciągle się mylisz.",
       "notesEmptyTip": "Każda zapisana notatka trafia do kolejki powtórek, więc wystarczy ją zapisać, aby zacząć się jej uczyć.",
       "notesCount_few": "{{count}} notatki",
-      "notesCount_many": "{{count}} notatek"
+      "notesCount_many": "{{count}} notatek",
+      "import": {
+        "button": "Importuj",
+        "reading": "Wczytywanie…",
+        "hint": "Importuj plik Word (.docx) lub Markdown (.md)",
+        "done_one": "Zaimportowano {{count}} blok",
+        "done_few": "Zaimportowano {{count}} bloki",
+        "done_many": "Zaimportowano {{count}} bloków",
+        "done_other": "Zaimportowano {{count}} bloku",
+        "appended_one": "Dodano {{count}} blok pod notatką",
+        "appended_few": "Dodano {{count}} bloki pod notatką",
+        "appended_many": "Dodano {{count}} bloków pod notatką",
+        "appended_other": "Dodano {{count}} bloku pod notatką",
+        "error": {
+          "unsupported": "Można importować tylko pliki Word (.docx) i Markdown (.md). Stary plik .doc zapisz najpierw jako .docx.",
+          "tooLarge": "Plik jest większy niż 10 MB.",
+          "empty": "W pliku nie znaleziono tekstu.",
+          "unreadable": "Nie udało się odczytać pliku."
+        }
+      }
     }
   },
   "reading": {

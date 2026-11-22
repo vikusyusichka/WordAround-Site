@@ -1126,7 +1126,22 @@
         "cards_other": "{{count}} cards"
       },
       "topicsEmptyTip": "A topic is a folder for notes — one per language, or one per thing you keep getting wrong.",
-      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it."
+      "notesEmptyTip": "Every note you save joins the review queue, so writing it down is enough to start practising it.",
+      "import": {
+        "button": "Import",
+        "reading": "Reading…",
+        "hint": "Import a Word (.docx) or Markdown (.md) file",
+        "done_one": "Imported {{count}} block",
+        "done_other": "Imported {{count}} blocks",
+        "appended_one": "Added {{count}} block below your note",
+        "appended_other": "Added {{count}} blocks below your note",
+        "error": {
+          "unsupported": "Only Word (.docx) and Markdown (.md) files can be imported. Save an old .doc as .docx first.",
+          "tooLarge": "That file is over 10 MB.",
+          "empty": "No text was found in that file.",
+          "unreadable": "Couldn't read that file."
+        }
+      }
     }
   },
   "reading": {

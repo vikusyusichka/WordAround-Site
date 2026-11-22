@@ -1129,7 +1129,22 @@
         "cards_other": "{{count}} Karten"
       },
       "topicsEmptyTip": "Ein Thema ist ein Ordner für Notizen — eines pro Sprache oder eines pro Sache, die dir immer wieder danebengeht.",
-      "notesEmptyTip": "Jede gespeicherte Notiz kommt in die Wiederholungsliste, es reicht also, sie aufzuschreiben, um mit dem Üben zu beginnen."
+      "notesEmptyTip": "Jede gespeicherte Notiz kommt in die Wiederholungsliste, es reicht also, sie aufzuschreiben, um mit dem Üben zu beginnen.",
+      "import": {
+        "button": "Importieren",
+        "reading": "Wird gelesen…",
+        "hint": "Word- (.docx) oder Markdown-Datei (.md) importieren",
+        "done_one": "{{count}} Block importiert",
+        "done_other": "{{count}} Blöcke importiert",
+        "appended_one": "{{count}} Block unter deiner Notiz hinzugefügt",
+        "appended_other": "{{count}} Blöcke unter deiner Notiz hinzugefügt",
+        "error": {
+          "unsupported": "Nur Word- (.docx) und Markdown-Dateien (.md) lassen sich importieren. Speichere eine alte .doc zuerst als .docx.",
+          "tooLarge": "Die Datei ist größer als 10 MB.",
+          "empty": "In der Datei wurde kein Text gefunden.",
+          "unreadable": "Die Datei konnte nicht gelesen werden."
+        }
+      }
     }
   },
   "reading": {

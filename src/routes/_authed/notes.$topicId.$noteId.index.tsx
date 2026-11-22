@@ -50,6 +50,7 @@ import {
 } from '@/lib/grammarRecommendations';
 import { reviewItemForNote } from '@/lib/grammarFilters';
 import { retrievabilityOf } from '@/lib/grammarReview';
+import { importNoteFile, NOTE_IMPORT_ACCEPT, NoteImportError } from '@/lib/noteImport';
 import { useGrammarSettings } from '@/stores/grammarSettingsStore';
 import type { GrammarNote, GrammarNoteTopic } from '@/lib/models';
 
@@ -203,6 +204,36 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
     else updateNote.mutate(note, options);
   };
 
+  /* Import a Word or Markdown file. A blank note becomes the document (and
+     takes its title); a note with content keeps it and gets the document
+     added below — nothing already written is ever replaced. */
+  const importInputRef = useRef<HTMLInputElement>(null);
+  const [importing, setImporting] = useState(false);
+  const handleImportFile = async (file: File) => {
+    setImporting(true);
+    try {
+      const imported = await importNoteFile(file);
+      const mode = isBlank(state) ? 'replace' : 'append';
+      dispatch({
+        type: 'APPLY_TEMPLATE',
+        blocks: imported.blocks,
+        noteType: state.noteType,
+        title: imported.title,
+        mode,
+      });
+      setReviewToast(
+        t(mode === 'replace' ? 'writing.grammar.import.done' : 'writing.grammar.import.appended', {
+          count: imported.blocks.length,
+        }),
+      );
+    } catch (e) {
+      const code = e instanceof NoteImportError ? e.code : 'unreadable';
+      setReviewToast(t(`writing.grammar.import.error.${code}`));
+    } finally {
+      setImporting(false);
+    }
+  };
+
   const applyTemplate = (tpl: GrammarNoteTemplate, mode: 'replace' | 'append') => {
     dispatch({
       type: 'APPLY_TEMPLATE',
@@ -343,6 +374,28 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
             <button type="button" onClick={() => setTemplatesOpen(true)} className={secondaryButton}>
               {t('writing.grammar.templates.button')}
             </button>
+            <button
+              type="button"
+              onClick={() => importInputRef.current?.click()}
+              disabled={importing}
+              title={t('writing.grammar.import.hint')}
+              className={`${secondaryButton} flex items-center gap-2`}
+            >
+              <Icon name="square.and.arrow.down" className="size-4" />
+              {importing ? t('writing.grammar.import.reading') : t('writing.grammar.import.button')}
+            </button>
+            <input
+              ref={importInputRef}
+              type="file"
+              accept={NOTE_IMPORT_ACCEPT}
+              className="hidden"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                /* Reset so picking the same file again still fires. */
+                e.target.value = '';
+                if (file) void handleImportFile(file);
+              }}
+            />
             <button
               type="button"
               onClick={handleToggleReview}

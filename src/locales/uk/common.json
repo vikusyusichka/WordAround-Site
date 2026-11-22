@@ -1183,7 +1183,26 @@
       "topicsEmptyTip": "Тема — це тека для нотаток: одна на мову або одна на те, у чому постійно плутаєтесь.",
       "notesEmptyTip": "Кожна збережена нотатка потрапляє в чергу повторення, тож досить її записати — і ви вже її вчите.",
       "notesCount_few": "{{count}} нотатки",
-      "notesCount_many": "{{count}} нотаток"
+      "notesCount_many": "{{count}} нотаток",
+      "import": {
+        "button": "Імпорт",
+        "reading": "Читаю…",
+        "hint": "Імпортувати файл Word (.docx) або Markdown (.md)",
+        "done_one": "Імпортовано {{count}} блок",
+        "done_few": "Імпортовано {{count}} блоки",
+        "done_many": "Імпортовано {{count}} блоків",
+        "done_other": "Імпортовано {{count}} блоку",
+        "appended_one": "Додано {{count}} блок під нотаткою",
+        "appended_few": "Додано {{count}} блоки під нотаткою",
+        "appended_many": "Додано {{count}} блоків під нотаткою",
+        "appended_other": "Додано {{count}} блоку під нотаткою",
+        "error": {
+          "unsupported": "Імпортувати можна лише файли Word (.docx) і Markdown (.md). Старий .doc спершу збережіть як .docx.",
+          "tooLarge": "Файл більший за 10 МБ.",
+          "empty": "У файлі не знайдено тексту.",
+          "unreadable": "Не вдалося прочитати файл."
+        }
+      }
     }
   },
   "reading": {
