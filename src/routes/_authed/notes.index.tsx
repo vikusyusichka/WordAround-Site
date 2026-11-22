@@ -127,6 +127,14 @@ function GrammarHome() {
   const openTopic = (topicId: string) =>
     void navigate({ to: '/notes/$topicId', params: { topicId } });
 
+  /* Pinned topics and Common Mistakes always sort first (sortTopics), so a
+     topic can only trade places with a neighbour from its own group — the
+     arrows that crossed a group did nothing. */
+  const sameOrderGroup = (other: GrammarNoteTopic | undefined, topic: GrammarNoteTopic) =>
+    other !== undefined &&
+    other.isPinned === topic.isPinned &&
+    Boolean(other.isMistakesTopic) === Boolean(topic.isMistakesTopic);
+
   const moveTopic = (index: number, dir: 'up' | 'down') => {
     if (!topics) return;
     const target = dir === 'up' ? index - 1 : index + 1;
@@ -266,8 +274,8 @@ function GrammarHome() {
               topic={topic}
               variant={view}
               isReordering={isReordering && query.length === 0}
-              isFirst={index === 0}
-              isLast={index === visibleTopics.length - 1}
+              isFirst={!sameOrderGroup(visibleTopics[index - 1], topic)}
+              isLast={!sameOrderGroup(visibleTopics[index + 1], topic)}
               onOpen={() => openTopic(topic.id)}
               onDelete={() => setPendingDelete(topic)}
               onEdit={() => setEditingTopic(topic)}

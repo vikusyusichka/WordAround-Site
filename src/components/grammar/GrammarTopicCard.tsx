@@ -146,25 +146,29 @@ export const GrammarTopicCard = ({
       </button>
 
       {isReordering ? (
+        /* Only the moves that can happen: a topic that cannot move at all
+           (alone in its group, like Common Mistakes) shows no arrows. */
         <div className="absolute top-3 right-3 flex gap-1">
-          <button
-            type="button"
-            onClick={() => onMove?.('up')}
-            disabled={isFirst}
-            aria-label={t('writing.grammar.reorder.up')}
-            className="grid size-8 place-items-center rounded-full bg-(--color-surface)/90 text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] disabled:opacity-30 focus-visible:outline-none"
-          >
-            <Icon name="arrow.up" className="size-4" />
-          </button>
-          <button
-            type="button"
-            onClick={() => onMove?.('down')}
-            disabled={isLast}
-            aria-label={t('writing.grammar.reorder.down')}
-            className="grid size-8 place-items-center rounded-full bg-(--color-surface)/90 text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] disabled:opacity-30 focus-visible:outline-none"
-          >
-            <Icon name="arrow.down" className="size-4" />
-          </button>
+          {!isFirst && (
+            <button
+              type="button"
+              onClick={() => onMove?.('up')}
+              aria-label={t('writing.grammar.reorder.up')}
+              className="grid size-8 place-items-center rounded-full bg-(--color-surface)/90 text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] focus-visible:outline-none"
+            >
+              <Icon name="arrow.up" className="size-4" />
+            </button>
+          )}
+          {!isLast && (
+            <button
+              type="button"
+              onClick={() => onMove?.('down')}
+              aria-label={t('writing.grammar.reorder.down')}
+              className="grid size-8 place-items-center rounded-full bg-(--color-surface)/90 text-(--color-primary-blue) shadow-[0_2px_6px_rgba(0,0,0,0.08)] focus-visible:outline-none"
+            >
+              <Icon name="arrow.down" className="size-4" />
+            </button>
+          )}
         </div>
       ) : (
         /* The Mistakes topic is created and maintained by the app, so it may
