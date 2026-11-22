@@ -33,7 +33,7 @@ export const GrammarNotesEmptyState = ({
       <button
         type="button"
         onClick={onAction}
-        className="mt-2 h-11 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-5 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
+        className="mt-2 h-11 rounded-2xl bg-(--color-primary-blue-solid) px-5 text-[15px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
       >
         {actionLabel}
       </button>

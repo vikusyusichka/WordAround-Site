@@ -230,7 +230,7 @@ export const QuickNoteSheet = ({
                 type="button"
                 onClick={handleSave}
                 disabled={isSaving || selectableTopics.length === 0}
-                className="h-11 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-5 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-70 focus-visible:outline-none"
+                className="h-11 rounded-2xl bg-(--color-primary-blue-solid) px-5 text-[15px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-70 focus-visible:outline-none"
               >
                 {isSaving
                   ? t('writing.grammar.quickNote.saving')

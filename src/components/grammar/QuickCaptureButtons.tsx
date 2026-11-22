@@ -3,8 +3,8 @@
 
    Each carries its note type's own colour and icon (NOTE_TYPE_META), so the
    button looks like the card it produces: blue for a standard note, the
-   mistake rose for a correction. Tinted rather than filled — the filled
-   gradient belongs to "New note", which is the primary action on both
+   mistake rose for a correction. Tinted rather than filled — the solid fill
+   belongs to "New note", which is the primary action on both
    screens, and three solid buttons in a row would have no primary at all.
 
    The label is a darkened mix of the same hue rather than the hue itself:

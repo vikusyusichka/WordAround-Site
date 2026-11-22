@@ -114,7 +114,7 @@ export const QuizQuestionView = ({ question, isLast, onSubmit, onAdvance }: Quiz
               type="button"
               onClick={() => submit(input)}
               disabled={input.trim().length === 0}
-              className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50"
+              className="h-12 w-full rounded-2xl bg-(--color-primary-blue-solid) text-[15px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50"
             >
               {t('writing.grammar.quiz.play.submit')}
             </button>
@@ -156,7 +156,7 @@ export const QuizQuestionView = ({ question, isLast, onSubmit, onAdvance }: Quiz
           <button
             type="button"
             onClick={onAdvance}
-            className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98]"
+            className="h-12 w-full rounded-2xl bg-(--color-primary-blue-solid) text-[15px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98]"
           >
             {isLast
               ? t('writing.grammar.quiz.play.finish')

@@ -49,7 +49,7 @@ export const GrammarTopicCard = ({
         style={{
           background: topic.isMistakesTopic ? theme.previewBackground : theme.sectionBackground,
           borderColor: topic.isMistakesTopic ? theme.borderColor : theme.softBorderColor,
-          boxShadow: `0 10px 18px ${theme.shadowColor}`,
+          boxShadow: '0 4px 10px rgba(0,0,0,0.045)',
         }}
       >
         {/* Corner blob. */}

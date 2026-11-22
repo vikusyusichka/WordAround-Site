@@ -44,7 +44,7 @@ export const QuizCard = ({ quiz, onStart, onDelete }: QuizCardProps) => {
         type="button"
         onClick={onStart}
         disabled={quiz.questions.length === 0}
-        className="flex h-11 w-full items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[14px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50"
+        className="flex h-11 w-full items-center justify-center gap-2 rounded-2xl bg-(--color-primary-blue-solid) text-[14px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50"
       >
         <Icon name="play.fill" className="size-[14px]" />
         {t('writing.grammar.quiz.start')}

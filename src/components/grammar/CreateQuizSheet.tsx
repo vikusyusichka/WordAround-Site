@@ -445,7 +445,7 @@ export const CreateQuizSheet = ({ open, note, isSaving, onSave, onClose }: Creat
               type="button"
               onClick={() => void handleSubmit()}
               disabled={!canSubmit}
-              className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50"
+              className="h-12 w-full rounded-2xl bg-(--color-primary-blue-solid) text-[15px] font-semibold text-white transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50"
             >
               {ctaLabel}
             </button>
