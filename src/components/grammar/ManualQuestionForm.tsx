@@ -18,11 +18,26 @@ import type { GrammarQuizQuestion } from '@/lib/models';
 interface ManualQuestionFormProps {
   order: number;
   onAdd: (question: GrammarQuizQuestion) => void;
+  /** Editing an existing question: the form starts from it and keeps its id. */
+  initial?: GrammarQuizQuestion;
+  submitLabel?: string;
+  onCancel?: () => void;
 }
 
-export const ManualQuestionForm = ({ order, onAdd }: ManualQuestionFormProps) => {
+const draftFrom = (question: GrammarQuizQuestion): ManualQuestionDraft => ({
+  type: question.type,
+  questionText: question.questionText,
+  options:
+    question.type === 'multipleChoice'
+      ? [...question.options, '', '', '', ''].slice(0, Math.max(4, question.options.length))
+      : ['', '', '', ''],
+  correctAnswer: question.correctAnswer,
+  explanation: question.explanation ?? '',
+});
+
+export const ManualQuestionForm = ({ order, onAdd, initial, submitLabel, onCancel }: ManualQuestionFormProps) => {
   const { t } = useTranslation();
-  const [draft, setDraft] = useState<ManualQuestionDraft>(EMPTY_MANUAL_DRAFT);
+  const [draft, setDraft] = useState<ManualQuestionDraft>(() => (initial ? draftFrom(initial) : EMPTY_MANUAL_DRAFT));
   const [showError, setShowError] = useState(false);
 
   const error = validateManualQuestion(draft);
@@ -129,21 +144,33 @@ export const ManualQuestionForm = ({ order, onAdd }: ManualQuestionFormProps) =>
         </p>
       )}
 
-      <button
-        type="button"
-        onClick={() => {
-          if (error) {
-            setShowError(true);
-            return;
-          }
-          onAdd(manualDraftToQuestion(draft, order));
-          setDraft(EMPTY_MANUAL_DRAFT);
-          setShowError(false);
-        }}
-        className="h-10 w-fit rounded-2xl bg-(--color-primary-blue-solid) px-4 text-[14px] font-semibold text-white transition-transform active:scale-[0.98] focus-visible:outline-none"
-      >
-        {t('writing.grammar.quiz.manual.add')}
-      </button>
+      <div className="flex flex-wrap gap-2">
+        <button
+          type="button"
+          onClick={() => {
+            if (error) {
+              setShowError(true);
+              return;
+            }
+            const question = manualDraftToQuestion(draft, order);
+            onAdd(initial ? { ...question, id: initial.id } : question);
+            setDraft(EMPTY_MANUAL_DRAFT);
+            setShowError(false);
+          }}
+          className="h-10 w-fit rounded-2xl bg-(--color-primary-blue-solid) px-4 text-[14px] font-semibold text-white transition-transform active:scale-[0.98] focus-visible:outline-none"
+        >
+          {submitLabel ?? t('writing.grammar.quiz.manual.add')}
+        </button>
+        {onCancel && (
+          <button
+            type="button"
+            onClick={onCancel}
+            className="h-10 w-fit rounded-2xl border border-(--color-auth-field-border) px-4 text-[14px] font-semibold text-(--color-text-secondary) transition-colors hover:bg-(--color-hover-wash)"
+          >
+            {t('common.cancel')}
+          </button>
+        )}
+      </div>
     </div>
   );
 };
