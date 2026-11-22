@@ -113,7 +113,7 @@ const buildQueue = async (uid: string, topicId?: string): Promise<GrammarReviewQ
     newAllowance,
     now,
   });
-  const newWaiting = allDue.filter((i) => i.reviewCount === 0).length;
+  const newWaiting = allDue.filter((i) => i.reviewCount === 0 && i.priority !== 'high').length;
   return {
     ...queue,
     dueTotal: allDue.length - Math.max(0, newWaiting - newAllowance),
@@ -173,11 +173,52 @@ export const useRemoveNoteFromReview = () => {
 export const grammarHighlightsKey = (uid: string | null, sourceType: GrammarReviewSourceType) =>
   ['grammarHighlights', uid, sourceType] as const;
 
+/* How far ahead a card still counts as "to fix": due now or within a day.
+   A mistake answered well a few times moves weeks out and drops off the row
+   instead of sitting there for ever. */
+const HIGHLIGHT_HORIZON_MS = 24 * 60 * 60 * 1000;
+
+const buildHighlights = async (
+  uid: string,
+  sourceType: GrammarReviewSourceType,
+  max: number,
+): Promise<GrammarReviewItem[]> => {
+  const horizon = Date.now() + HIGHLIGHT_HORIZON_MS;
+  const candidates = (await reviewService.fetchItemsBySource(uid, sourceType, max * 4)).filter(
+    (i) => i.dueAt <= horizon,
+  );
+  if (candidates.length === 0) return [];
+
+  /* Drop — and delete — cards whose note is gone. Notes deleted before the
+     cleanup on delete existed left such cards behind; they opened a "note
+     not found" page. A topic whose notes failed to load proves nothing, so
+     its cards are kept. */
+  const topicIds = [...new Set(candidates.map((i) => i.topicId).filter((t) => t.length > 0))];
+  const loaded = await Promise.all(
+    topicIds.map(async (topicId) => {
+      try {
+        return [topicId, new Set((await noteService.fetchNotes(uid, topicId)).map((n) => n.id))] as const;
+      } catch {
+        return [topicId, null] as const;
+      }
+    }),
+  );
+  const notesByTopic = new Map(loaded);
+  const live: GrammarReviewItem[] = [];
+  for (const item of candidates) {
+    const ids = notesByTopic.get(item.topicId);
+    const orphan = ids !== null && (!item.noteId || !ids?.has(item.noteId));
+    if (orphan) void reviewService.deleteReviewItem(uid, item.id).catch(() => {});
+    else live.push(item);
+  }
+  return live.slice(0, max);
+};
+
 export const useReviewHighlightsQuery = (sourceType: GrammarReviewSourceType, max = 5) => {
   const uid = useUid();
   return useQuery({
     queryKey: grammarHighlightsKey(uid, sourceType),
-    queryFn: () => reviewService.fetchItemsBySource(uid as string, sourceType, max),
+    queryFn: () => buildHighlights(uid as string, sourceType, max),
     enabled: !!uid,
   });
 };
@@ -223,7 +264,8 @@ export const useMarkReviewed = () => {
       updated: GrammarReviewItem;
       result: GrammarReviewResult;
     }) => {
-      if (previous.reviewCount === 0) recordNewReviewed();
+      /* High-priority cards bypass the new-card cap, so they do not use it up. */
+      if (previous.reviewCount === 0 && previous.priority !== 'high') recordNewReviewed();
       return reviewService.saveReviewItem(updated);
     },
     onSuccess: () => {

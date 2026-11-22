@@ -5,6 +5,8 @@ import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 import { makeGrammarTopic } from '@/lib/grammarFactories';
 import * as topicService from '@/lib/grammarTopicService';
 import * as noteService from '@/lib/grammarNoteService';
+import * as quizService from '@/lib/grammarQuizService';
+import * as reviewService from '@/lib/grammarReviewService';
 import {
   noteFromTemplate,
   topicFromTemplate,
@@ -112,8 +114,32 @@ export const useDeleteTopic = () => {
   const qc = useQueryClient();
   const uid = useUid();
   return useMutation({
-    mutationFn: (id: string) => topicService.deleteTopic(id, uid as string),
-    onSuccess: () => qc.invalidateQueries({ queryKey: ['grammarTopics'] }),
+    /* Firestore does not delete subcollections with their parent, so deleting
+       only the topic document left its notes (and their quizzes) stored for
+       ever and their review cards still in the queue and the highlight rows.
+       Children first, so a failure part-way leaves the topic visible and
+       deletable again rather than orphans nobody can reach. */
+    mutationFn: async (id: string) => {
+      const owner = uid as string;
+      const notes = await noteService.fetchNotes(owner, id);
+      await Promise.all(
+        notes.map(async (note) => {
+          const quizzes = await quizService.fetchQuizzes(owner, id, note.id).catch(() => []);
+          await Promise.all(quizzes.map((q) => quizService.deleteQuiz(owner, id, note.id, q.id)));
+          await noteService.deleteNote(owner, id, note.id);
+        }),
+      );
+      await reviewService.deleteReviewItemsForTopic(owner, id).catch(() => {});
+      await topicService.deleteTopic(id, owner);
+    },
+    onSuccess: () => {
+      qc.invalidateQueries({ queryKey: ['grammarTopics'] });
+      qc.invalidateQueries({ queryKey: ['grammarNotes'] });
+      qc.invalidateQueries({ queryKey: ['grammarAllNotes'] });
+      qc.invalidateQueries({ queryKey: ['grammarReview'] });
+      qc.invalidateQueries({ queryKey: ['grammarReviewItems'] });
+      qc.invalidateQueries({ queryKey: ['grammarHighlights'] });
+    },
   });
 };
 

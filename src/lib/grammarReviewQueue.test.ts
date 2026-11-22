@@ -317,6 +317,13 @@ describe('orderDueItems', () => {
     expect(orderDueItems(fresh, { now: NOW, newAllowance: 0, limit: 20 })).toEqual([]);
   });
 
+  it('a new high-priority card (fresh mistake, failed quiz) is not held back by the cap', () => {
+    const mistake = item('m', { priority: 'high', createdAt: 5 });
+    const plain = item('p', { createdAt: 1 });
+    const out = orderDueItems([plain, mistake], { now: NOW, newAllowance: 0, limit: 20 });
+    expect(out.map((i) => i.noteId)).toEqual(['m']);
+  });
+
   it('avoids two cards from the same note in a row when it can', () => {
     const out = orderDueItems(
       [learned('a', 1, 10), learned('a', 2, 10), learned('b', 3, 10)],

@@ -269,12 +269,22 @@ function NoteEditor({ topicId, topic, existing, isNew }: NoteEditorProps) {
   const reviewButtonLabel = (): string => {
     if (!reviewItem) return t('writing.grammar.editor.addToReview');
     if (reviewItem.dueAt <= Date.now()) return t('writing.grammar.editor.inReviewDue');
-    const days = Math.round((reviewItem.dueAt - Date.now()) / 86_400_000);
-    const hours = Math.round((reviewItem.dueAt - Date.now()) / 3_600_000);
+    const left = reviewItem.dueAt - Date.now();
+    const minutes = Math.max(1, Math.round(left / 60_000));
+    const hours = Math.round(left / 3_600_000);
+    const days = Math.round(left / 86_400_000);
     const rtf = new Intl.RelativeTimeFormat(i18n.language, { style: 'short' });
-    return t('writing.grammar.editor.inReview', {
-      when: Math.abs(hours) < 24 ? rtf.format(hours, 'hour') : rtf.format(days, 'day'),
-    });
+    /* A card rated "Forgot" is due again in ten minutes, which the hour
+       branch used to print as "in 0 hr". */
+    const when =
+      minutes < 60
+        ? rtf.format(minutes, 'minute')
+        : hours < 24
+          ? rtf.format(hours, 'hour')
+          : days < 60
+            ? rtf.format(days, 'day')
+            : rtf.format(Math.round(days / 30.4), 'month');
+    return t('writing.grammar.editor.inReview', { when });
   };
 
   /* "Memory 92%" — FSRS's current chance of recall, shown as the button's

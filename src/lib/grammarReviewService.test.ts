@@ -34,6 +34,8 @@ vi.mock('firebase/firestore', () => fs);
 
 import { makeReviewItem } from './grammarReview';
 import {
+  deleteReviewItemsForNote,
+  deleteReviewItemsForTopic,
   fetchDueReviewItems,
   markReviewed,
   reviewItemFromFirestore,
@@ -147,5 +149,24 @@ describe('grammarReviewService', () => {
     fs.getDoc.mockResolvedValue({ exists: () => false });
     await updateReviewItemMeta('u1', 'note_t_n', { title: 'New', previewText: 'p' });
     expect(fs.setDoc).not.toHaveBeenCalled();
+  });
+});
+
+describe('deleting every review item of a note or topic', () => {
+  beforeEach(() => vi.clearAllMocks());
+
+  it('a note: queries by noteId and deletes note, mistake and quiz items alike', async () => {
+    const refs = ['note_t_n', 'mistake_t_n', 'quiz_t_n_q'].map((id) => ({ path: id }));
+    fs.getDocs.mockResolvedValue({ docs: refs.map((ref) => ({ ref })) });
+    await deleteReviewItemsForNote('u1', 'n');
+    expect(fs.where).toHaveBeenCalledWith('noteId', '==', 'n');
+    expect(fs.deleteDoc.mock.calls.map(([ref]) => ref)).toEqual(refs);
+  });
+
+  it('a topic: queries by topicId', async () => {
+    fs.getDocs.mockResolvedValue({ docs: [] });
+    await deleteReviewItemsForTopic('u1', 't');
+    expect(fs.where).toHaveBeenCalledWith('topicId', '==', 't');
+    expect(fs.deleteDoc).not.toHaveBeenCalled();
   });
 });

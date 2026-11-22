@@ -53,7 +53,10 @@ const relativeUpdated = (millis: number, locale: string): string => {
   if (Math.abs(mins) < 60) return rtf.format(mins, 'minute');
   const hrs = Math.round(mins / 60);
   if (Math.abs(hrs) < 24) return rtf.format(hrs, 'hour');
-  return rtf.format(Math.round(hrs / 24), 'day');
+  const days = Math.round(hrs / 24);
+  /* Review intervals now run to months; "in 143 days" reads worse. */
+  if (Math.abs(days) < 60) return rtf.format(days, 'day');
+  return rtf.format(Math.round(days / 30.4), 'month');
 };
 
 export const GrammarNoteRow = ({

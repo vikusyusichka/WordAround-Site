@@ -4,6 +4,8 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 import * as quizService from '@/lib/grammarQuizService';
+import { reviewItemIdForQuiz } from '@/lib/grammarReview';
+import * as reviewService from '@/lib/grammarReviewService';
 import type { GrammarNoteQuiz } from '@/lib/models';
 import { useUid } from '@/hooks/useFolders';
 
@@ -22,6 +24,9 @@ export const useGrammarQuizzesQuery = (topicId: string, noteId: string) => {
 const invalidate = (qc: ReturnType<typeof useQueryClient>) => {
   qc.invalidateQueries({ queryKey: ['grammarQuizzes'] });
   qc.invalidateQueries({ queryKey: ['grammarNotes'] });
+  qc.invalidateQueries({ queryKey: ['grammarReview'] });
+  qc.invalidateQueries({ queryKey: ['grammarReviewItems'] });
+  qc.invalidateQueries({ queryKey: ['grammarHighlights'] });
 };
 
 export const useCreateQuiz = () => {
@@ -49,6 +54,11 @@ export const useDeleteQuiz = () => {
       id: string;
     }) => {
       await quizService.deleteQuiz(uid as string, topicId, noteId, id);
+      /* A failed quiz is in review; once the quiz is gone its card under
+         "Weak quiz areas" would open a quiz that no longer exists. */
+      await reviewService
+        .deleteReviewItem(uid as string, reviewItemIdForQuiz(topicId, noteId, id))
+        .catch(() => {});
     },
     onSuccess: () => invalidate(qc),
   });

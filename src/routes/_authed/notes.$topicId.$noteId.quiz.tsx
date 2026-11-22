@@ -3,6 +3,7 @@
    result. Quiz creation happens in CreateQuizSheet; play state lives in the
    pure quizSessionReducer. */
 import { useReducer, useState } from 'react';
+import { useQueryClient } from '@tanstack/react-query';
 import { createFileRoute, useNavigate } from '@tanstack/react-router';
 import { useTranslation } from 'react-i18next';
 
@@ -29,7 +30,7 @@ import {
   scorePercentage,
 } from '@/lib/grammarQuizSession';
 import { makeReviewItem, reviewItemIdForQuiz } from '@/lib/grammarReview';
-import { upsertReviewItem } from '@/lib/grammarReviewService';
+import { fetchReviewItem, markReviewed, upsertReviewItem } from '@/lib/grammarReviewService';
 import { useGrammarSettings } from '@/stores/grammarSettingsStore';
 import type { GrammarNoteQuiz, GrammarQuizQuestion } from '@/lib/models';
 
@@ -50,6 +51,7 @@ function QuizRoute() {
   const { data: quizzes, isLoading, isError } = useGrammarQuizzesQuery(topicId, noteId);
   const createQuiz = useCreateQuiz();
   const deleteQuiz = useDeleteQuiz();
+  const qc = useQueryClient();
 
   const [screen, setScreen] = useState<Screen>('list');
   const [sheetOpen, setSheetOpen] = useState(false);
@@ -127,11 +129,33 @@ function QuizRoute() {
             priority: 'high',
             dueAt: Date.now() + 60 * 60 * 1000,
           }),
-        ).catch(() => {});
+        )
+          .then(refreshReviewViews)
+          .catch(() => {});
+      } else if (quiz) {
+        /* Passing a quiz that was failed before is a successful review of
+           it. Without this its card stayed under "Weak quiz areas" for good,
+           however well the retake went. */
+        void passQuizReview(quiz.id);
       }
     } else {
       dispatch({ type: 'NEXT' });
     }
+  };
+
+  const refreshReviewViews = () => {
+    void qc.invalidateQueries({ queryKey: ['grammarHighlights'] });
+    void qc.invalidateQueries({ queryKey: ['grammarReview'] });
+    void qc.invalidateQueries({ queryKey: ['grammarReviewItems'] });
+  };
+
+  const passQuizReview = async (quizId: string) => {
+    const existing = await fetchReviewItem(uid as string, reviewItemIdForQuiz(topicId, noteId, quizId)).catch(
+      () => null,
+    );
+    if (!existing) return;
+    await markReviewed(existing, 'good').catch(() => {});
+    refreshReviewViews();
   };
 
   const handleDelete = (quiz: GrammarNoteQuiz) => setPendingDelete(quiz);

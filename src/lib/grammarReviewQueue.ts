@@ -246,7 +246,9 @@ const buildCard = (
     - within each, already-learned items by lowest chance of remembering —
       the ones about to be lost — then never-reviewed items, oldest first;
     - never-reviewed items capped at `newAllowance`, so enrolling forty notes
-      in one evening does not bury the next day under forty new cards;
+      in one evening does not bury the next day under forty new cards —
+      except high-priority ones: a mistake just made or a quiz just failed
+      is not "new material", and holding it back behind the cap hid it;
     - no two cards from the same note back to back where it can be helped. */
 export const orderDueItems = (
   items: GrammarReviewItem[],
@@ -260,10 +262,14 @@ export const orderDueItems = (
     .map((i) => ({ i, r: retrievabilityOf(i, options.now) }))
     .sort((a, b) => rank(a.i) - rank(b.i) || a.r - b.r)
     .map(({ i }) => i);
-  const fresh = items
-    .filter(isNew)
-    .sort((a, b) => rank(a) - rank(b) || a.createdAt - b.createdAt)
-    .slice(0, Math.max(0, options.newAllowance));
+  const byAge = (a: GrammarReviewItem, b: GrammarReviewItem) => a.createdAt - b.createdAt;
+  const fresh = [
+    ...items.filter((i) => isNew(i) && rank(i) === 0).sort(byAge),
+    ...items
+      .filter((i) => isNew(i) && rank(i) !== 0)
+      .sort((a, b) => rank(a) - rank(b) || byAge(a, b))
+      .slice(0, Math.max(0, options.newAllowance)),
+  ];
 
   /* High-priority new items (a mistake just made) go before ordinary
      reviews; ordinary new items after them. */

@@ -5,6 +5,7 @@
 import { useMutation, useQuery, useQueryClient } from '@tanstack/react-query';
 
 import * as noteService from '@/lib/grammarNoteService';
+import * as quizService from '@/lib/grammarQuizService';
 import * as reviewService from '@/lib/grammarReviewService';
 import * as topicService from '@/lib/grammarTopicService';
 import { saveQuickNote, type QuickNoteDraft } from '@/lib/grammarQuickNoteService';
@@ -68,6 +69,7 @@ const invalidate = (qc: ReturnType<typeof useQueryClient>) => {
   /* Opening/saving/deleting a note changes the review recommendation pool. */
   qc.invalidateQueries({ queryKey: ['grammarReview'] });
   qc.invalidateQueries({ queryKey: ['grammarReviewItems'] });
+  qc.invalidateQueries({ queryKey: ['grammarHighlights'] });
 };
 
 /* A note joins the review queue the moment it is written, unless the learner
@@ -143,13 +145,16 @@ export const useDeleteNote = () => {
   const uid = useUid();
   return useMutation({
     mutationFn: async ({ topicId, id }: { topicId: string; id: string }) => {
+      /* Quizzes are a subcollection, which Firestore keeps after the note. */
+      const quizzes = await quizService.fetchQuizzes(uid as string, topicId, id).catch(() => []);
+      await Promise.all(
+        quizzes.map((q) => quizService.deleteQuiz(uid as string, topicId, id, q.id).catch(() => {})),
+      );
       await noteService.deleteNote(uid as string, topicId, id);
       await syncNotesCount(uid as string, topicId);
       /* Otherwise the queue keeps serving a card for a note that is gone —
          buildCard drops it silently, so the learner just sees a short queue. */
-      await reviewService
-        .deleteReviewItem(uid as string, reviewItemIdForNote(topicId, id))
-        .catch(() => {});
+      await reviewService.deleteReviewItemsForNote(uid as string, id).catch(() => {});
     },
     onSuccess: () => invalidate(qc),
   });

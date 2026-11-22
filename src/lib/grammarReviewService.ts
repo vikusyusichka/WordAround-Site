@@ -191,3 +191,30 @@ export const updateReviewItemMeta = async (
 export const deleteReviewItem = async (uid: string, id: string): Promise<void> => {
   await deleteDoc(grammarReviewItemDoc(uid, id));
 };
+
+/** One review item, or null when it does not exist. */
+export const fetchReviewItem = async (
+  uid: string,
+  id: string,
+): Promise<GrammarReviewItem | null> => {
+  const snap = await getDoc(grammarReviewItemDoc(uid, id));
+  return snap.exists() ? reviewItemFromFirestore(snap.data() as Record<string, unknown>, snap.id) : null;
+};
+
+/* A note can own up to three kinds of review item — the note itself
+   (`note_…`), a saved mistake (`mistake_…`) and one per failed quiz
+   (`quiz_…`). Deleting by the note's id alone left the other two behind, and
+   they kept showing under "Mistakes to fix" / "Weak quiz areas", opening a
+   note that no longer existed. Equality on one field needs no index. */
+const deleteWhere = async (uid: string, field: 'noteId' | 'topicId', value: string) => {
+  const snapshot = await getDocs(query(grammarReviewItemsCollection(uid), where(field, '==', value)));
+  await Promise.all(snapshot.docs.map((d) => deleteDoc(d.ref)));
+};
+
+/** Every review item that points at this note, whatever its kind. */
+export const deleteReviewItemsForNote = (uid: string, noteId: string): Promise<void> =>
+  deleteWhere(uid, 'noteId', noteId);
+
+/** Every review item from this topic. */
+export const deleteReviewItemsForTopic = (uid: string, topicId: string): Promise<void> =>
+  deleteWhere(uid, 'topicId', topicId);
