@@ -85,7 +85,7 @@ function StorySetupScreen() {
     void navigate({ to: '/practice/reading/story/$itemId', params: { itemId: item.id } });
 
   return (
-    <ContentContainer fluid className="max-w-(--size-setup-max)">
+    <ContentContainer accent={{ accent: 'var(--color-accent-rose)', accentDark: 'var(--color-accent-rose-text)' }} fluid className="max-w-(--size-setup-max)">
       <PageHeader title={t('reading.story.title')} subtitle={t('reading.story.subtitle')} />
 
       <div className="flex w-full max-w-(--size-setup-max) flex-col gap-6">

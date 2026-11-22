@@ -16,7 +16,7 @@ export const Route = createFileRoute('/_authed/practice/writing/essays')({
 function EssaysPage() {
   const { t } = useTranslation();
   return (
-    <ContentContainer fluid>
+    <ContentContainer accent={{ accent: 'var(--color-accent-periwinkle)', accentDark: 'var(--color-accent-periwinkle-text)' }} fluid>
       <PageHeader
         title={t('writing.essays.title')}
         subtitle={t('writing.essays.subtitle')}

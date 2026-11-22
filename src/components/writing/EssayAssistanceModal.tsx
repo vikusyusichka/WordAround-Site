@@ -269,7 +269,7 @@ export const EssayAssistanceModal = ({
                 type="button"
                 onClick={() => void submit()}
                 disabled={!canSubmit}
-                className="h-11 flex-1 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-bold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-60 focus-visible:outline-none"
+                className="h-11 flex-1 rounded-2xl bg-(--color-primary-blue-solid) text-[15px] font-bold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-60 focus-visible:outline-none"
               >
                 {submitLabel}
               </button>

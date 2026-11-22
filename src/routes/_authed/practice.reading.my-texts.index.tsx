@@ -47,7 +47,7 @@ function MyTextsScreen() {
   };
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer accent={{ accent: 'var(--color-accent-cyan)', accentDark: 'var(--color-accent-cyan-text)' }} fluid>
       <PageHeader
         title={t('reading.myTexts.title')}
         subtitle={t('reading.myTexts.subtitle')}
@@ -55,7 +55,7 @@ function MyTextsScreen() {
           <button
             type="button"
             onClick={() => void navigate({ to: '/practice/reading/my-texts/new' })}
-            className="flex h-11 items-center gap-2 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-4 text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
+            className="flex h-11 items-center gap-2 rounded-2xl bg-(--color-primary-blue-solid) px-4 text-[15px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
           >
             <Plus size={18} weight="bold" />
             {t('reading.myTexts.addText')}

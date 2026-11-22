@@ -78,7 +78,7 @@ export const SpeakingInputBar = ({
           type="button"
           onClick={submit}
           disabled={disabled || isListening || text.trim().length === 0}
-          className="grid size-12 shrink-0 place-items-center rounded-full text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform active:scale-95 disabled:opacity-40"
+          className="grid size-12 shrink-0 place-items-center rounded-full text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform active:scale-95 disabled:opacity-40"
           style={{ background: accentColor }}
         >
           <Icon name="arrow.right" className="size-[18px]" />

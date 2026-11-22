@@ -207,7 +207,7 @@ function ListenFromTextSession() {
 
   if (notFound) {
     return (
-      <ContentContainer fluid>
+      <ContentContainer accent={{ accent: 'var(--color-accent-steel)', accentDark: 'var(--color-accent-steel-text)' }} fluid>
         <p role="alert" className="py-16 text-center text-[15px] font-medium text-(--color-cs-red)">
           {t('listening.notFound')}
         </p>
@@ -216,7 +216,7 @@ function ListenFromTextSession() {
   }
   if (!session) {
     return (
-      <ContentContainer fluid>
+      <ContentContainer accent={{ accent: 'var(--color-accent-steel)', accentDark: 'var(--color-accent-steel-text)' }} fluid>
         <p className="py-16 text-center text-[15px] font-medium text-(--color-text-secondary)">
           {t('reading.loading')}
         </p>
@@ -228,7 +228,7 @@ function ListenFromTextSession() {
   const mmss = (v: number) => `${Math.floor(v / 60)}:${String(Math.floor(v) % 60).padStart(2, '0')}`;
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer accent={{ accent: 'var(--color-accent-steel)', accentDark: 'var(--color-accent-steel-text)' }} fluid>
       <PageHeader
         title={session.title}
         subtitle={t('listening.fromText.title')}
@@ -390,7 +390,7 @@ function ListenFromTextSession() {
                   ? checkAnswers()
                   : finishPractice()
               }
-              className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98]"
+              className="h-12 w-full rounded-2xl bg-(--color-primary-blue-solid) text-[15px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98]"
             >
               {session.addQuestions && session.questions.length > 0 && !hasChecked
                 ? t('listening.session.checkAnswers')

@@ -55,7 +55,7 @@ export const ContinueReadingCard = ({ item, onContinue }: ContinueReadingCardPro
       <button
         type="button"
         onClick={onContinue}
-        className="h-11 w-fit rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-6 text-[14px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98]"
+        className="h-11 w-fit rounded-2xl bg-(--color-primary-blue-solid) px-6 text-[14px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98]"
       >
         {t('reading.continue.button')} →
       </button>

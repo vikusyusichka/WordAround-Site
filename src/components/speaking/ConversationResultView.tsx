@@ -197,7 +197,7 @@ export const ConversationResultView = ({
             onClick={onPracticeAgain}
             className="flex h-[52px] items-center justify-center rounded-[18px] text-[16px] font-bold text-white transition-transform hover:brightness-105 active:scale-[0.99]"
             style={{
-              background: `linear-gradient(135deg, ${accentColor}, color-mix(in srgb, ${accentColor} 70%, black))`,
+              background: accentColor,
               boxShadow: `0 8px 16px color-mix(in srgb, ${accentColor} 30%, transparent)`,
             }}
           >

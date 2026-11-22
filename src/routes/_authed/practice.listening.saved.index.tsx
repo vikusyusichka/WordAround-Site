@@ -67,7 +67,7 @@ function SavedPracticeScreen() {
 
   if (reviewSession?.result) {
     return (
-      <ContentContainer fluid>
+      <ContentContainer accent={{ accent: 'var(--color-accent-rose)', accentDark: 'var(--color-accent-rose-text)' }} fluid>
         <PageHeader title={reviewSession.title} subtitle={t('listening.saved.title')} />
         <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
           <button
@@ -94,7 +94,7 @@ function SavedPracticeScreen() {
   }
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer accent={{ accent: 'var(--color-accent-rose)', accentDark: 'var(--color-accent-rose-text)' }} fluid>
       <PageHeader title={t('listening.saved.title')} subtitle={t('listening.saved.subtitle')} />
 
       <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
@@ -151,7 +151,7 @@ function SavedPracticeScreen() {
             <button
               type="button"
               onClick={() => openSession(continueSession)}
-              className="h-11 w-fit rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-6 text-[14px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)]"
+              className="h-11 w-fit rounded-2xl bg-(--color-primary-blue-solid) px-6 text-[14px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)]"
             >
               {t('listening.saved.continue')} →
             </button>

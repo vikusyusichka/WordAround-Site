@@ -76,7 +76,7 @@ const sectionTitle = 'text-[15px] font-bold text-(--color-primary-blue-dark)';
 const pill = (selected: boolean) =>
   `h-11 rounded-[18px] border px-4 text-[14px] font-bold transition-all focus-visible:outline-none ${
     selected
-      ? 'border-transparent bg-(--color-primary-blue) text-white shadow-[0_4px_10px_rgba(43,92,250,0.22)]'
+      ? 'border-transparent bg-(--color-primary-blue) text-white shadow-[0_4px_10px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)]'
       : 'border-(--color-primary-blue)/22 bg-(--color-primary-blue)/10 text-(--color-primary-blue-dark) hover:brightness-[0.98]'
   }`;
 
@@ -270,7 +270,7 @@ function AddTextScreen() {
   };
 
   return (
-    <ContentContainer fluid className="max-w-(--size-setup-max)">
+    <ContentContainer accent={{ accent: 'var(--color-accent-cyan)', accentDark: 'var(--color-accent-cyan-text)' }} fluid className="max-w-(--size-setup-max)">
       <PageHeader
         title={t('reading.addText.title')}
         subtitle={t('reading.addText.subtitle')}
@@ -390,7 +390,7 @@ function AddTextScreen() {
               type="button"
               disabled={importBusy || genTopic.trim().length === 0}
               onClick={() => void (source === 'generate' ? handleGenerate() : handleExplore())}
-              className="h-11 w-fit rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-5 text-[14px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-60"
+              className="h-11 w-fit rounded-2xl bg-(--color-primary-blue-solid) px-5 text-[14px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-60"
             >
               {importBusy
                 ? t('reading.addText.import.working')
@@ -585,7 +585,7 @@ function AddTextScreen() {
             type="button"
             onClick={() => handleSave(true)}
             disabled={saveItem.isPending}
-            className="h-12 flex-1 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-60"
+            className="h-12 flex-1 rounded-2xl bg-(--color-primary-blue-solid) text-[15px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-60"
           >
             {saveItem.isPending ? t('reading.addText.saving') : t('reading.addText.saveAndStart')}
           </button>

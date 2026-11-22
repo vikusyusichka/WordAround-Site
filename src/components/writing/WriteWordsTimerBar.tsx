@@ -15,7 +15,7 @@ export const WriteWordsTimerBar = ({ progress, secondsRemaining }: WriteWordsTim
     <div className="flex items-center gap-3">
       <div className="h-1.5 flex-1 overflow-hidden rounded-full bg-(--color-surface)/72">
         <div
-          className="h-full rounded-full bg-linear-to-r from-(--color-primary-blue) to-(--color-accent-iris) transition-[width] duration-75 ease-linear"
+          className="h-full rounded-full bg-(--color-primary-blue) transition-[width] duration-75 ease-linear"
           style={{ width: `${clamped * 100}%` }}
         />
       </div>

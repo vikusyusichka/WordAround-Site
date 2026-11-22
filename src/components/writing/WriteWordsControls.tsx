@@ -50,7 +50,7 @@ export const WriteWordsControls = ({
         type="button"
         onClick={onSubmit}
         disabled={!canSubmit}
-        className="h-14 w-full rounded-2xl bg-linear-to-r from-(--color-primary-blue-solid) to-(--color-primary-gradient-end) text-[16px] font-bold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.99] disabled:opacity-[0.58] disabled:hover:brightness-100 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
+        className="h-14 w-full rounded-2xl bg-(--color-primary-blue-solid) text-[16px] font-bold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.99] disabled:opacity-[0.58] disabled:hover:brightness-100 focus-visible:ring-2 focus-visible:ring-(--color-home-brand) focus-visible:ring-offset-2 focus-visible:outline-none"
       >
         {t('writing.writeWords.next')}
       </button>

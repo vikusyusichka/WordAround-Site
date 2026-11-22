@@ -22,6 +22,8 @@ export const ContentContainer = ({
   const style = accent
     ? ({
         '--color-primary-blue': accent.accent,
+        '--color-primary-blue-solid': accent.accent,
+        '--color-home-brand': accent.accent,
         '--color-primary-blue-dark': accent.accentDark,
       } as CSSProperties)
     : undefined;

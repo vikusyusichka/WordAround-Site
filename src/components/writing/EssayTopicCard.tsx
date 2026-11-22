@@ -1,5 +1,5 @@
 /* Generated essay task card — port of EssayTopicCardView: plain white card,
-   header with a gradient level badge + title + "N min", a "Task" label + task
+   header with a level badge + title + "N min", a "Task" label + task
    text, a word-range pill, and light-purple tip chips. (The web regenerates a
    topic from the mode picker, so the in-card refresh button is omitted.) */
 import { useTranslation } from 'react-i18next';
@@ -15,9 +15,9 @@ export const EssayTopicCard = ({ task }: EssayTopicCardProps) => {
   const { t } = useTranslation();
   return (
     <div className="flex flex-col gap-4 rounded-[22px] bg-(--color-surface)/95 p-5 shadow-[0_8px_14px_rgba(0,0,0,0.055)] md:p-6">
-      {/* Header — gradient level badge + title + estimated minutes. */}
+      {/* Header — level badge + title + estimated minutes. */}
       <div className="flex items-start gap-3">
-        <span className="shrink-0 rounded-full bg-linear-to-br from-(--color-accent-lavender) to-(--color-accent-periwinkle) px-2.5 py-[7px] text-[12px] font-bold text-white">
+        <span className="shrink-0 rounded-full bg-(--color-primary-blue-solid) px-2.5 py-[7px] text-[12px] font-bold text-white">
           {task.detectedLevel}
         </span>
         <div className="flex min-w-0 flex-col gap-1">

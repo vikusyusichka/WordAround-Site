@@ -112,7 +112,7 @@ export const ReadingResultView = ({ result, title, onReadAgain, onBack }: Readin
           onClick={onReadAgain}
           className="flex h-[52px] items-center justify-center gap-2 rounded-[18px] text-[16px] font-bold text-white transition-transform hover:brightness-105 active:scale-[0.99]"
           style={{
-            background: `linear-gradient(135deg, ${ACCENT}, ${ACCENT_DARK})`,
+            background: ACCENT,
             boxShadow: `0 8px 16px color-mix(in srgb, ${ACCENT} 30%, transparent)`,
           }}
         >

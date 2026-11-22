@@ -36,7 +36,7 @@ function ReadingItemScreen() {
 
   if (isLoading) {
     return (
-      <ContentContainer fluid>
+      <ContentContainer accent={{ accent: 'var(--color-accent-cyan)', accentDark: 'var(--color-accent-cyan-text)' }} fluid>
         <p className="py-16 text-center text-[15px] font-medium text-(--color-text-secondary)">
           {t('reading.loading')}
         </p>
@@ -48,7 +48,7 @@ function ReadingItemScreen() {
      deleted, when the network simply blinked. */
   if (isError) {
     return (
-      <ContentContainer fluid>
+      <ContentContainer accent={{ accent: 'var(--color-accent-cyan)', accentDark: 'var(--color-accent-cyan-text)' }} fluid>
         <p role="alert" className="py-16 text-center text-[15px] font-medium text-(--color-cs-red)">
           {t('reading.loadError')}
         </p>
@@ -58,7 +58,7 @@ function ReadingItemScreen() {
 
   if (!item) {
     return (
-      <ContentContainer fluid>
+      <ContentContainer accent={{ accent: 'var(--color-accent-cyan)', accentDark: 'var(--color-accent-cyan-text)' }} fluid>
         <p role="alert" className="py-16 text-center text-[15px] font-medium text-(--color-cs-red)">
           {t('reading.notFound')}
         </p>
@@ -112,7 +112,7 @@ function ReadingSessionScreen({ item, onReadAgain }: ReadingSessionScreenProps) 
   const seconds = state.elapsedSeconds % 60;
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer accent={{ accent: 'var(--color-accent-cyan)', accentDark: 'var(--color-accent-cyan-text)' }} fluid>
       <PageHeader
         title={item.title}
         subtitle={libraryTitle}
@@ -167,7 +167,7 @@ function ReadingSessionScreen({ item, onReadAgain }: ReadingSessionScreenProps) 
                   ? dispatch({ type: 'START_QUESTIONS' })
                   : finishSession()
               }
-              className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98]"
+              className="h-12 w-full rounded-2xl bg-(--color-primary-blue-solid) text-[15px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98]"
             >
               {state.questions.length > 0
                 ? t('reading.session.startQuestions')
@@ -194,7 +194,7 @@ function ReadingSessionScreen({ item, onReadAgain }: ReadingSessionScreenProps) 
                   ? finishSession()
                   : dispatch({ type: 'NEXT_QUESTION' })
               }
-              className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50"
+              className="h-12 w-full rounded-2xl bg-(--color-primary-blue-solid) text-[15px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50"
             >
               {isLastReadingQuestion(state)
                 ? t('reading.session.finish')

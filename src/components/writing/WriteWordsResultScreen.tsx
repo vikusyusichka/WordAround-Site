@@ -68,7 +68,7 @@ export const WriteWordsResultScreen = ({
     <div className="mx-auto flex w-full max-w-lg flex-col items-center gap-6 rounded-3xl border border-(--color-surface)/80 bg-(--color-surface)/94 p-8 text-center shadow-[0_10px_30px_rgba(0,0,0,0.07)] md:p-10">
       {/* Header */}
       <div className="flex flex-col items-center gap-3">
-        <div className="grid size-[72px] place-items-center rounded-full bg-linear-to-br from-(--color-primary-blue)/18 to-(--color-accent-iris)/14">
+        <div className="grid size-[72px] place-items-center rounded-full bg-(--color-primary-blue)/16">
           <Icon name={RESULT_ICON[result]} className="size-[30px] text-(--color-primary-blue-dark)" />
         </div>
         <h2 className="text-[24px] font-bold text-(--color-primary-blue-dark) md:text-[28px]">
@@ -141,7 +141,7 @@ export const WriteWordsResultScreen = ({
         <button
           type="button"
           onClick={onTryAgain}
-          className="flex h-12 items-center justify-center gap-2 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-6 text-[15px] font-bold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
+          className="flex h-12 items-center justify-center gap-2 rounded-2xl bg-(--color-primary-blue-solid) px-6 text-[15px] font-bold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98] focus-visible:outline-none"
         >
           {t('writing.writeWords.result.tryAgain')}
         </button>

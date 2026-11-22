@@ -30,7 +30,7 @@ export const EssayTopicModePicker = ({ value, onChange }: EssayTopicModePickerPr
             onClick={() => onChange(mode)}
             className={`rounded-full px-4 py-2 text-[14px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-(--color-home-brand) md:text-[15px] ${
               active
-                ? 'bg-(--color-primary-blue-solid) text-white shadow-[0_4px_10px_rgba(43,92,250,0.22)]'
+                ? 'bg-(--color-primary-blue-solid) text-white shadow-[0_4px_10px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)]'
                 : 'text-(--color-cs-text-muted) hover:text-(--color-primary-blue-dark)'
             }`}
           >

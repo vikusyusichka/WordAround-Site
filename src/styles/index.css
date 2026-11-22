@@ -368,6 +368,8 @@
      deeper, same violet, and the whole button clears 4.5:1. */
   --color-primary-gradient-end: #6a58f0;
   --color-accent-periwinkle: #5c94ff;
+  /* Essays window headings and text: the periwinkle, deep enough to read. */
+  --color-accent-periwinkle-text: #2f62c9;
   --color-accent-gold: #c78c42;
   --color-blob-orchid: #ebd6f2;
 
@@ -631,6 +633,7 @@
   --color-accent-blue: #7b9cff;
   --color-accent-violet: #a78bff;
   --color-accent-violet-text: #c4b2ff;
+  --color-accent-periwinkle-text: #a9c4ff;
   --color-accent-green-text: #7fe0a4;
   --color-accent-amber-text: #f2b872;
 

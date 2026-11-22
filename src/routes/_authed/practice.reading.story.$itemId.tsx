@@ -41,7 +41,7 @@ function StorySessionScreen() {
 
   if (isLoading) {
     return (
-      <ContentContainer fluid>
+      <ContentContainer accent={{ accent: 'var(--color-accent-rose)', accentDark: 'var(--color-accent-rose-text)' }} fluid>
         <p className="py-16 text-center text-[15px] font-medium text-(--color-text-secondary)">
           {t('reading.loading')}
         </p>
@@ -52,7 +52,7 @@ function StorySessionScreen() {
      deleted, when the network simply blinked. */
   if (isError) {
     return (
-      <ContentContainer fluid>
+      <ContentContainer accent={{ accent: 'var(--color-accent-rose)', accentDark: 'var(--color-accent-rose-text)' }} fluid>
         <p role="alert" className="py-16 text-center text-[15px] font-medium text-(--color-cs-red)">
           {t('reading.loadError')}
         </p>
@@ -61,7 +61,7 @@ function StorySessionScreen() {
   }
   if (!item || !uid) {
     return (
-      <ContentContainer fluid>
+      <ContentContainer accent={{ accent: 'var(--color-accent-rose)', accentDark: 'var(--color-accent-rose-text)' }} fluid>
         <p role="alert" className="py-16 text-center text-[15px] font-medium text-(--color-cs-red)">
           {t('reading.notFound')}
         </p>
@@ -200,7 +200,7 @@ function StorySession({
   const isComplete = progress.isStoryComplete || storyEnded;
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer accent={{ accent: 'var(--color-accent-rose)', accentDark: 'var(--color-accent-rose-text)' }} fluid>
       <PageHeader
         title={itemSnapshot.title}
         subtitle={
@@ -247,7 +247,7 @@ function StorySession({
             <button
               type="button"
               onClick={onExit}
-              className="h-11 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-6 text-[14px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)]"
+              className="h-11 rounded-2xl bg-(--color-primary-blue-solid) px-6 text-[14px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)]"
             >
               {t('reading.story.backToStories')}
             </button>
@@ -269,7 +269,7 @@ function StorySession({
             <button
               type="button"
               onClick={startQuestions}
-              className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98]"
+              className="h-12 w-full rounded-2xl bg-(--color-primary-blue-solid) text-[15px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98]"
             >
               {t('reading.session.startQuestions')}
             </button>
@@ -292,7 +292,7 @@ function StorySession({
               onClick={() =>
                 isLastQuestion ? finishQuestions() : setQuestionIndex((i) => i + 1)
               }
-              className="h-12 w-full rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) text-[15px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50"
+              className="h-12 w-full rounded-2xl bg-(--color-primary-blue-solid) text-[15px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-50"
             >
               {isLastQuestion ? t('reading.session.finish') : t('reading.session.next')}
             </button>
@@ -357,7 +357,7 @@ function StorySession({
                 <button
                   type="button"
                   onClick={onExit}
-                  className="h-11 rounded-2xl bg-linear-to-r from-(--color-auth-grad-from) to-(--color-auth-grad-to) px-6 text-[14px] font-semibold text-white shadow-[0_8px_14px_rgba(43,92,250,0.22)]"
+                  className="h-11 rounded-2xl bg-(--color-primary-blue-solid) px-6 text-[14px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)]"
                 >
                   {t('reading.story.backToStories')}
                 </button>

@@ -17,7 +17,7 @@ function WriteWordsPage() {
   const { setId } = Route.useParams();
 
   return (
-    <ContentContainer fluid>
+    <ContentContainer accent={{ accent: 'var(--color-accent-lavender)', accentDark: 'var(--color-accent-violet-text)' }} fluid>
       <PageHeader
         title={t('writing.writeWords.title')}
         subtitle={t('writing.writeWords.subtitle')}
