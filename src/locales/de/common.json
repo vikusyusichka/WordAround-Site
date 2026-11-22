@@ -470,7 +470,8 @@
       },
       "custom": {
         "placeholder": "Schreibe dein eigenes Aufsatzthema...",
-        "generate": "Aufgabe erzeugen"
+        "generate": "Aufgabe erzeugen",
+        "title": "Dein Thema"
       },
       "suggested": {
         "generate": "Thema erzeugen",
@@ -492,7 +493,8 @@
           "aboveMaximum": "Du bist über dem Limit — versuche zu kürzen.",
           "valid": "Im Rahmen."
         },
-        "reset": "Zurücksetzen"
+        "reset": "Zurücksetzen",
+        "title": "Dein Aufsatz"
       },
       "error": {
         "emptyCustomTopic": "Gib zuerst ein Thema ein.",
@@ -596,7 +598,22 @@
       "saveMistakeConfirmBody": "Er wird als Fehlernotiz mit der Korrektur „{{correction}}“ gespeichert.",
       "autoSaveConfirmTitle": "Diese Fehler in deinen Notizen speichern?",
       "autoSaveConfirmBody_one": "Diese Prüfung hat {{count}} Fehler gefunden. Beim Speichern wird daraus eine Notiz, die zur Wiederholung zurückkommt.",
-      "autoSaveConfirmBody_other": "Diese Prüfung hat {{count}} Fehler gefunden. Beim Speichern werden daraus Notizen, die zur Wiederholung zurückkommen."
+      "autoSaveConfirmBody_other": "Diese Prüfung hat {{count}} Fehler gefunden. Beim Speichern werden daraus Notizen, die zur Wiederholung zurückkommen.",
+      "setup": {
+        "title": "Schreibeinstellungen",
+        "hintsLeft": "Verbleibende Hinweise: {{n}}",
+        "privacy": "Aufsätze werden sicher zur Grammatikprüfung an LanguageTool gesendet. Gib keine privaten Informationen ein."
+      },
+      "intensity": {
+        "guided": "Geführt",
+        "balanced": "Ausgewogen",
+        "limited": "Begrenzt",
+        "independent": "Eigenständig"
+      },
+      "difficultyOption": {
+        "withTranslation": "Hinweise: {{n}} • Übersetzung",
+        "noTranslation": "Hinweise: {{n}} • ohne Übersetzung"
+      }
     },
     "grammar": {
       "subtitle": "Ordne Grammatik nach Themen mit klaren, strukturierten Notizen.",

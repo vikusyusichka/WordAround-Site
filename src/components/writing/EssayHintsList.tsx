@@ -22,13 +22,13 @@ export const EssayHintsList = ({ hints }: EssayHintsListProps) => {
   if (hints.length === 0) return null;
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col gap-2 md:gap-2.5">
       {hints.map((h) => {
         const color = CATEGORY_COLOR[h.category];
         return (
           <div
             key={h.id}
-            className="flex items-start gap-3 rounded-2xl border border-(--color-surface) bg-(--color-surface)/95 px-4 py-3 shadow-[0_4px_10px_rgba(0,0,0,0.045)] md:px-5"
+            className="flex items-start gap-3 rounded-2xl bg-(--color-surface)/82 p-3 md:p-3.5"
           >
             <span
               className="shrink-0 rounded-full px-2.5 py-1 text-[11px] font-bold uppercase tracking-wide md:text-[12px]"

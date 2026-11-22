@@ -1,5 +1,7 @@
-/* Two pill buttons: Suggested / My topic. Web port of the mode chips at the
-   top of EssayPracticeView.topicSection. */
+/* Suggested / My topic segmented control. Port of
+   EssayPracticeView.topicModePicker: a full-width translucent tray with two
+   equal rounded-rectangle buttons — the active one solid blue, the other
+   white with blue text. */
 import { useTranslation } from 'react-i18next';
 
 import type { EssayTopicMode } from '@/lib/essayTypes';
@@ -17,7 +19,7 @@ export const EssayTopicModePicker = ({ value, onChange }: EssayTopicModePickerPr
     <div
       role="tablist"
       aria-label="Essay topic mode"
-      className="inline-flex gap-1.5 rounded-full bg-(--color-surface) p-1 shadow-[0_4px_10px_rgba(0,0,0,0.045)]"
+      className="flex w-full gap-2 rounded-[20px] bg-(--color-surface)/55 p-1.5 shadow-[0_6px_10px_rgba(0,0,0,0.03)]"
     >
       {modes.map((mode) => {
         const active = value === mode;
@@ -28,10 +30,10 @@ export const EssayTopicModePicker = ({ value, onChange }: EssayTopicModePickerPr
             role="tab"
             aria-selected={active}
             onClick={() => onChange(mode)}
-            className={`rounded-full px-4 py-2 text-[14px] font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-(--color-home-brand) md:text-[15px] ${
+            className={`flex-1 rounded-2xl py-2.5 text-[13px] font-bold transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-(--color-home-brand) md:py-3 md:text-[14px] ${
               active
-                ? 'bg-(--color-primary-blue-solid) text-white shadow-[0_4px_10px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)]'
-                : 'text-(--color-cs-text-muted) hover:text-(--color-primary-blue-dark)'
+                ? 'bg-(--color-primary-blue-solid) text-white'
+                : 'bg-(--color-surface)/78 text-(--color-primary-blue) hover:bg-(--color-surface)'
             }`}
           >
             {t(`writing.essays.mode.${mode}`)}

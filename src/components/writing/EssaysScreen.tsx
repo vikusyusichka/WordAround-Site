@@ -1,7 +1,7 @@
-/* Body of /practice/writing/essays. Composes topic-mode picker → topic
-   generation UI (suggested button or custom input) → task card → language +
-   difficulty selectors → editor → hint button + reset → hints list →
-   check button → feedback (score card + grammar issues). All state lives
+/* Body of /practice/writing/essays — laid out like iOS EssayPracticeView:
+   topic-mode picker → task card (with refresh) or custom-topic input →
+   "Writing setup" card (language + difficulty) → "Your essay" card
+   (helper tiles, hints, editor, Reset + Check) → feedback. All state lives
    in useEssaySession. */
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -16,14 +16,16 @@ import { EssayHelperToolbar } from './EssayHelperToolbar';
 import { EssayHintButton } from './EssayHintButton';
 import { EssayHintsList } from './EssayHintsList';
 import { EssayLanguageSelector } from './EssayLanguageSelector';
-import { EssayTopicCard } from './EssayTopicCard';
+import { EssayTopicCard, EssayTopicCardSkeleton } from './EssayTopicCard';
 import { EssayTopicModePicker } from './EssayTopicModePicker';
 import { autoSaveActionFor } from '@/lib/essaySession';
 import { useEssaySession } from '@/hooks/useEssaySession';
+import { Icon } from '@/components/primitives/Icon';
 import { useSaveMistake } from '@/hooks/useSaveMistake';
 import { ConfirmDialog } from '@/components/shell/ConfirmDialog';
 import { useGrammarSettings } from '@/stores/grammarSettingsStore';
 import {
+  HINTS_LIMIT,
   supportsGrammarCheck,
   SYNONYM_LIMIT,
   TRANSLATION_LIMIT,
@@ -97,8 +99,17 @@ export const EssaysScreen = () => {
     }
   }, [autoSaveMistakes, askBeforeSaving, state.grammarIssues, saveIssue]);
 
-  const hasTask = state.task !== null;
   const busy = state.isGenerating;
+  const hintsLeft = Math.max(HINTS_LIMIT[state.selectedDifficulty] - state.hintsUsedCount, 0);
+
+  /* iOS generates a suggested task as soon as the screen opens
+     (EssayPracticeView .task), so the page starts with a topic card rather
+     than an empty generate button. Mount-only on purpose; StrictMode's
+     remount aborts the first request and this effect starts a fresh one. */
+  useEffect(() => {
+    if (state.topicMode === 'suggested' && !state.task) void generateTopic();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const remainingFor = (type: AssistanceModalType): number => {
     const limit = type === 'translate'
@@ -109,60 +120,98 @@ export const EssaysScreen = () => {
   };
 
   return (
-    <div className="mx-auto flex w-full max-w-3xl flex-col gap-6">
-      {/* Topic mode picker */}
-      <EssayTopicModePicker
-        value={state.topicMode}
-        onChange={(mode) => dispatch({ type: 'SET_TOPIC_MODE', mode })}
-      />
-
-      {/* Generate UI — differs by mode */}
-      {state.topicMode === 'suggested' ? (
-        <button
-          type="button"
-          onClick={() => void generateTopic()}
-          disabled={busy}
-          className="flex h-12 items-center justify-center gap-2 rounded-2xl bg-(--color-primary-blue-solid) px-6 text-[15px] font-semibold text-white shadow-[0_8px_14px_color-mix(in_srgb,var(--color-primary-blue-solid)_22%,transparent)] transition-transform hover:brightness-105 active:scale-[0.98] disabled:opacity-60 focus-visible:outline-none md:text-[16px]"
-        >
-          {busy
-            ? t('writing.essays.generating')
-            : hasTask
-              ? t('writing.essays.suggested.regenerate')
-              : t('writing.essays.suggested.generate')}
-        </button>
-      ) : (
-        <EssayCustomTopicInput
-          value={state.customTopicText}
-          onChange={(text) => dispatch({ type: 'SET_CUSTOM_TOPIC', text })}
-          onGenerate={() => void generateTopic()}
-          isGenerating={busy}
+    <div className="mx-auto flex w-full max-w-[720px] flex-col gap-4 md:gap-[22px]">
+      {/* Topic — mode picker, then the task card (suggested) or the
+          "Your topic" input + generate button (custom). iOS topicSection. */}
+      <div className="flex flex-col gap-2.5 md:gap-3.5">
+        <EssayTopicModePicker
+          value={state.topicMode}
+          onChange={(mode) => dispatch({ type: 'SET_TOPIC_MODE', mode })}
         />
-      )}
 
-      {state.generationError && (
-        <p role="alert" className="text-[14px] font-semibold text-(--color-cs-red)">
-          {state.generationError}
-        </p>
-      )}
+        {state.topicMode === 'custom' && (
+          <EssayCustomTopicInput
+            value={state.customTopicText}
+            onChange={(text) => dispatch({ type: 'SET_CUSTOM_TOPIC', text })}
+            onGenerate={() => void generateTopic()}
+            isGenerating={busy}
+          />
+        )}
 
-      {/* Task card once we have one */}
-      {state.task && <EssayTopicCard task={state.task} />}
-
-      {/* Config row */}
-      <div className="grid gap-3 md:grid-cols-2 md:gap-4">
-        <EssayLanguageSelector
-          value={state.selectedLanguage}
-          onChange={(language) => dispatch({ type: 'SET_LANGUAGE', language })}
-          disabled={busy}
-        />
-        <EssayDifficultySelector
-          value={state.selectedDifficulty}
-          onChange={(difficulty) => dispatch({ type: 'SET_DIFFICULTY', difficulty })}
-          disabled={busy}
-        />
+        {state.task ? (
+          <EssayTopicCard
+            task={state.task}
+            onRefresh={() => void generateTopic()}
+            isRefreshing={busy}
+            errorMessage={state.generationError}
+          />
+        ) : state.topicMode === 'suggested' ? (
+          busy ? (
+            <EssayTopicCardSkeleton />
+          ) : (
+            <div className="flex flex-col items-start gap-3 rounded-3xl bg-(--color-surface)/72 p-[18px] md:p-[22px]">
+              {state.generationError && (
+                <p role="alert" className="text-[13px] font-semibold text-(--color-text-secondary)">
+                  {state.generationError}
+                </p>
+              )}
+              <button
+                type="button"
+                onClick={() => void generateTopic()}
+                className="flex w-full items-center justify-center gap-2 rounded-2xl bg-(--color-primary-blue-solid) py-[13px] text-[14px] font-bold text-white transition-[filter] hover:brightness-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-(--color-home-brand) md:py-3.5 md:text-[15px]"
+              >
+                <Icon name="sparkles" className="size-[14px]" />
+                {t('writing.essays.suggested.generate')}
+              </button>
+            </div>
+          )
+        ) : (
+          state.generationError && (
+            <p
+              role="alert"
+              className="rounded-3xl bg-(--color-surface)/72 p-[18px] text-[12px] font-semibold text-(--color-text-secondary) md:p-[22px] md:text-[13px]"
+            >
+              {state.generationError}
+            </p>
+          )
+        )}
       </div>
 
-      {/* Editor + action row (hint + reset) + hints list + check + feedback */}
+      {/* Writing setup — iOS configurationSection. */}
+      <section className="flex flex-col gap-2.5 rounded-3xl bg-(--color-surface)/58 p-[18px] shadow-[0_8px_14px_rgba(0,0,0,0.035)] md:gap-3 md:p-[22px]">
+        <div className="flex items-center gap-2">
+          <Icon
+            name="wand.and.stars.inverse"
+            className="size-[13px] text-(--color-primary-blue) md:size-[15px]"
+          />
+          <h2 className="text-[15px] font-bold text-(--color-primary-blue-dark) md:text-[16px]">
+            {t('writing.essays.setup.title')}
+          </h2>
+          <span className="ml-auto rounded-full bg-(--color-primary-blue)/8 px-2.5 py-1.5 text-[11px] font-bold leading-none text-(--color-primary-blue) md:text-[12px]">
+            {t('writing.essays.setup.hintsLeft', { n: hintsLeft })}
+          </span>
+        </div>
+
+        <div className="grid items-start gap-2.5 md:grid-cols-2 md:gap-3">
+          <EssayLanguageSelector
+            value={state.selectedLanguage}
+            onChange={(language) => dispatch({ type: 'SET_LANGUAGE', language })}
+            disabled={busy}
+          />
+          <EssayDifficultySelector
+            value={state.selectedDifficulty}
+            onChange={(difficulty) => dispatch({ type: 'SET_DIFFICULTY', difficulty })}
+            disabled={busy}
+          />
+        </div>
+
+        <p className="pt-0.5 text-[11px] font-medium leading-normal text-(--color-text-secondary) md:text-[12px]">
+          {t('writing.essays.setup.privacy')}
+        </p>
+      </section>
+
+      {/* Your essay — toolbar, hints, editor, Reset + Check. iOS
+          EssayInputSectionView. Then feedback. */}
       {state.task && (
         <>
           <EssayEditor
@@ -171,50 +220,42 @@ export const EssaysScreen = () => {
             wordCount={state.wordCount}
             validation={state.validation}
             onChange={(text) => dispatch({ type: 'SET_ESSAY_TEXT', text })}
-          />
-
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <EssayHintButton
+            footer={
+              <EssayCheckButton
+                validationValid={state.validation === 'valid'}
+                isChecking={state.isChecking}
+                languageUnsupported={!supportsGrammarCheck(state.selectedLanguage.id)}
+                languageName={state.selectedLanguage.title}
+                onCheck={() => void checkEssay()}
+                errorMessage={state.checkError}
+                onReset={() => dispatch({ type: 'RESET_ESSAY' })}
+                resetDisabled={state.wordCount === 0}
+              />
+            }
+          >
+            <EssayHelperToolbar
               difficulty={state.selectedDifficulty}
-              hintsUsedCount={state.hintsUsedCount}
-              isRequestingHint={state.isRequestingHint}
-              onRequest={() => void requestHint()}
-            />
-            <button
-              type="button"
-              onClick={() => dispatch({ type: 'RESET_ESSAY' })}
-              disabled={state.wordCount === 0}
-              className="h-11 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[14px] font-semibold text-(--color-cs-text-muted) transition-transform hover:-translate-y-0.5 disabled:opacity-60 focus-visible:outline-none md:h-12 md:px-5 md:text-[15px]"
+              usedTranslations={state.usedTranslations}
+              usedSynonyms={state.usedSynonyms}
+              onTranslate={() => setAssistModal('translate')}
+              onSynonym={() => setAssistModal('synonym')}
             >
-              {t('writing.essays.editor.reset')}
-            </button>
-          </div>
+              <EssayHintButton
+                difficulty={state.selectedDifficulty}
+                hintsUsedCount={state.hintsUsedCount}
+                isRequestingHint={state.isRequestingHint}
+                onRequest={() => void requestHint()}
+              />
+            </EssayHelperToolbar>
 
-          {state.hintError && (
-            <p role="alert" className="text-[13px] font-semibold text-(--color-cs-red)">
-              {state.hintError}
-            </p>
-          )}
+            {state.hintError && (
+              <p role="alert" className="text-[13px] font-semibold text-(--color-cs-red)">
+                {state.hintError}
+              </p>
+            )}
 
-          <EssayHintsList hints={state.hints} />
-
-          {/* Helper toolbar — translate + synonym */}
-          <EssayHelperToolbar
-            difficulty={state.selectedDifficulty}
-            usedTranslations={state.usedTranslations}
-            usedSynonyms={state.usedSynonyms}
-            onTranslate={() => setAssistModal('translate')}
-            onSynonym={() => setAssistModal('synonym')}
-          />
-
-          <EssayCheckButton
-            validationValid={state.validation === 'valid'}
-            isChecking={state.isChecking}
-            languageUnsupported={!supportsGrammarCheck(state.selectedLanguage.id)}
-            languageName={state.selectedLanguage.title}
-            onCheck={() => void checkEssay()}
-            errorMessage={state.checkError}
-          />
+            <EssayHintsList hints={state.hints} />
+          </EssayEditor>
 
           {state.score && (
             <EssayFeedbackSection

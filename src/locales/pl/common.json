@@ -478,7 +478,8 @@
       },
       "custom": {
         "placeholder": "Wpisz własny temat wypracowania...",
-        "generate": "Wygeneruj zadanie"
+        "generate": "Wygeneruj zadanie",
+        "title": "Twój temat"
       },
       "suggested": {
         "generate": "Wygeneruj temat",
@@ -500,7 +501,8 @@
           "aboveMaximum": "Przekroczyłeś limit — spróbuj to skrócić.",
           "valid": "W zakresie."
         },
-        "reset": "Wyczyść"
+        "reset": "Wyczyść",
+        "title": "Twoje wypracowanie"
       },
       "error": {
         "emptyCustomTopic": "Najpierw wpisz temat.",
@@ -608,7 +610,22 @@
       "autoSaveConfirmBody_one": "To sprawdzenie znalazło {{count}} błąd. Zapis zamieni go w notatkę, która wróci na powtórkę.",
       "autoSaveConfirmBody_other": "To sprawdzenie znalazło {{count}} błędów. Zapis zamieni je w notatki, które wrócą na powtórkę.",
       "autoSaveConfirmBody_few": "To sprawdzenie znalazło {{count}} błędy. Zapis zamieni je w notatki, które wrócą na powtórkę.",
-      "autoSaveConfirmBody_many": "To sprawdzenie znalazło {{count}} błędów. Zapis zamieni je w notatki, które wrócą na powtórkę."
+      "autoSaveConfirmBody_many": "To sprawdzenie znalazło {{count}} błędów. Zapis zamieni je w notatki, które wrócą na powtórkę.",
+      "setup": {
+        "title": "Ustawienia pisania",
+        "hintsLeft": "Pozostałe podpowiedzi: {{n}}",
+        "privacy": "Wypracowania są bezpiecznie wysyłane do LanguageTool w celu sprawdzenia gramatyki. Nie podawaj prywatnych informacji."
+      },
+      "intensity": {
+        "guided": "Z prowadzeniem",
+        "balanced": "Zrównoważony",
+        "limited": "Ograniczony",
+        "independent": "Samodzielny"
+      },
+      "difficultyOption": {
+        "withTranslation": "Podpowiedzi: {{n}} • tłumaczenie",
+        "noTranslation": "Podpowiedzi: {{n}} • bez tłumaczenia"
+      }
     },
     "grammar": {
       "subtitle": "Porządkuj gramatykę tematami dzięki jasnym, uporządkowanym notatkom.",

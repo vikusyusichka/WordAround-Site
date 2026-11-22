@@ -126,6 +126,8 @@ import {
   Drop,
   FirstAidKit,
   GlobeHemisphereWest,
+  ArrowsClockwise,
+  SlidersHorizontal,
   Guitar,
   Hamburger,
   HardDrives,
@@ -302,6 +304,11 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   'text.bubble.fill': ChatTeardropText,
   'photo.fill': ImageIcon,
   'arrow.clockwise': ArrowClockwise,
+  /* Essays (iOS EssayPracticeView) */
+  'arrow.triangle.2.circlepath': ArrowsClockwise,
+  'slider.horizontal.3': SlidersHorizontal,
+  'wand.and.stars.inverse': MagicWand,
+  clock: Clock,
   'megaphone.fill': Megaphone,
   'list.bullet.rectangle.fill': ListChecks,
   /* Set-icon catalog (mirrors iOS SFSymbolCatalog) — Learning */
