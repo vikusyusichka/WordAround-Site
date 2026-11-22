@@ -109,23 +109,9 @@ function ReviewRoute() {
       <PageHeader
         title={t('writing.grammar.review.title')}
         subtitle={t('writing.grammar.review.subtitle')}
-        actions={
-          !session.finished && card ? (
-            <button
-              type="button"
-              onClick={() => dispatch({ type: 'SKIP' })}
-              className="flex h-11 items-center gap-2 rounded-2xl border border-(--color-auth-field-border) bg-(--color-surface) px-4 text-[14px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash) md:text-[15px]"
-            >
-              {t('writing.grammar.review.skip')}
-              <kbd className="hidden rounded-md border border-(--color-auth-field-border) px-1.5 font-sans text-[10px] font-bold text-(--color-muted-text) md:inline">
-                S
-              </kbd>
-            </button>
-          ) : undefined
-        }
       />
 
-      <div className="mx-auto flex w-full max-w-2xl flex-col gap-5">
+      <div className="mx-auto flex w-full max-w-2xl flex-col gap-5 lg:max-w-4xl xl:max-w-5xl">
         <BackLink label={t('nav.notes')} onClick={goHome} />
 
         {isLoading && (
@@ -149,8 +135,8 @@ function ReviewRoute() {
         {!session.finished && card && intervals && (
           <>
             <div className="flex flex-col gap-1.5">
-              <div className="flex items-center justify-between gap-2">
-                <p className="text-[13px] font-semibold text-(--color-text-secondary)">
+              <div className="flex items-center gap-2">
+                <p className="text-[13px] font-semibold text-(--color-text-secondary) md:text-[15px]">
                   {t('writing.grammar.review.itemOf', {
                     current: session.currentIndex + 1,
                     total: session.cards.length,
@@ -161,8 +147,20 @@ function ReviewRoute() {
                 <span className="rounded-full bg-(--color-goal-bg) px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide text-(--color-text-secondary)">
                   {t(`writing.grammar.review.phase.${session.phase}`)}
                 </span>
+                {/* Skip sits with the progress it changes, not in the page
+                    header across the screen from the card. */}
+                <button
+                  type="button"
+                  onClick={() => dispatch({ type: 'SKIP' })}
+                  className="ml-auto flex h-9 items-center gap-2 rounded-xl border border-(--color-auth-field-border) bg-(--color-surface) px-3 text-[13px] font-semibold text-(--color-cs-text-muted) transition-colors hover:bg-(--color-hover-wash) md:h-10 md:px-4 md:text-[14px]"
+                >
+                  {t('writing.grammar.review.skip')}
+                  <kbd className="hidden rounded-md border border-(--color-auth-field-border) px-1.5 font-sans text-[10px] font-bold text-(--color-muted-text) md:inline">
+                    S
+                  </kbd>
+                </button>
               </div>
-              <div className="h-[5px] w-full overflow-hidden rounded-full bg-(--color-goal-bg)">
+              <div className="h-[5px] w-full overflow-hidden rounded-full bg-(--color-goal-bg) md:h-[6px]">
                 <div
                   className="h-full rounded-full bg-(--color-accent-violet) transition-[width]"
                   style={{ width: `${progressFraction(session) * 100}%` }}

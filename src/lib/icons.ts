@@ -35,6 +35,7 @@ import {
 
   FileText,
   Flame,
+  FileArrowDown,
   Folder,
   FolderPlus,
   ForkKnife,
@@ -262,6 +263,7 @@ const SF_TO_PHOSPHOR: Record<string, PhosphorIcon> = {
   minus: Minus,
   'arrow.up': ArrowUp,
   'arrow.down': ArrowDown,
+  'square.and.arrow.down': FileArrowDown,
   trash: Trash,
   'exclamationmark.triangle.fill': Warning,
   /* Phase 4D2 grammar quiz */
