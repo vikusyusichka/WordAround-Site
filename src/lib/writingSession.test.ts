@@ -6,7 +6,7 @@ import {
   canSkip,
   correctAnswer,
   displayWord,
-  hintOverlayText,
+  hintGhostText,
   initialWritingState,
   isHintAvailable,
   isInteractionLocked,
@@ -204,27 +204,62 @@ describe('difficulty — hints', () => {
     expect(r.hintRevealed).toBe(0);
   });
 
-  it('REVEAL_HINT reveals one letter at a time and counts (easy)', () => {
-    const s = run(init(), { type: 'REVEAL_HINT' }, { type: 'REVEAL_HINT' });
+  it('on an empty field the hint greys the first letter', () => {
+    const s = run(init(), { type: 'REVEAL_HINT' });
+    expect(s.typedAnswer).toBe('');
+    expect(hintGhostText(s)).toBe('a');
+    expect(s.hintsUsed).toBe(1);
+  });
+
+  it('the hint reads what is typed and greys the NEXT letter', () => {
+    const s = run(init(), { type: 'SET_TYPED', value: 'app' }, { type: 'REVEAL_HINT' });
+    expect(s.typedAnswer).toBe('app');
+    expect(hintGhostText(s)).toBe('l');
+  });
+
+  it('casing of what is typed does not matter', () => {
+    const s = run(init(), { type: 'SET_TYPED', value: 'APP' }, { type: 'REVEAL_HINT' });
+    expect(s.typedAnswer).toBe('APP');
+    expect(hintGhostText(s)).toBe('l');
+  });
+
+  it('pressing again takes the grey letter and greys the one after', () => {
+    const s = run(
+      init(),
+      { type: 'SET_TYPED', value: 'ap' },
+      { type: 'REVEAL_HINT' },
+      { type: 'REVEAL_HINT' },
+    );
+    expect(s.typedAnswer).toBe('app');
+    expect(hintGhostText(s)).toBe('l');
     expect(s.hintRevealed).toBe(2);
-    expect(hintOverlayText(s)).toBe('ap');
     expect(s.hintsUsed).toBe(2);
   });
 
-  /* The revealed letters are an overlay behind the text field, so they only
-     show on an empty field. Without this, pressing Hint after typing anything
-     looked like it did nothing. */
-  it('REVEAL_HINT clears the field so the letters can be seen', () => {
-    const s = run(
-      init(),
-      { type: 'SET_TYPED', value: 'apricot' },
-      { type: 'REVEAL_HINT' },
-    );
-    expect(s.typedAnswer).toBe('');
-    expect(hintOverlayText(s)).toBe('a');
+  it('a mistake is cut off from the first wrong letter', () => {
+    const s = run(init(), { type: 'SET_TYPED', value: 'apricot' }, { type: 'REVEAL_HINT' });
+    expect(s.typedAnswer).toBe('ap');
+    expect(hintGhostText(s)).toBe('p');
   });
 
-  it('REVEAL_HINT drops a verdict left over from the cleared answer', () => {
+  it('the grey letter goes away once the reader types', () => {
+    const shown = run(init(), { type: 'SET_TYPED', value: 'app' }, { type: 'REVEAL_HINT' });
+    expect(hintGhostText(writingReducer(shown, { type: 'SET_TYPED', value: 'appl' }))).toBe('');
+    expect(hintGhostText(writingReducer(shown, { type: 'SET_TYPED', value: 'apx' }))).toBe('');
+  });
+
+  it('before a space the hint greys the space and the next letter', () => {
+    const s = initialWritingState([exercise('m', 'yellow moon')]);
+    const r = run(s, { type: 'SET_TYPED', value: 'yellow' }, { type: 'REVEAL_HINT' });
+    expect(hintGhostText(r)).toBe(' m');
+  });
+
+  it('no hint once the whole answer is typed correctly', () => {
+    const s = run(init(), { type: 'SET_TYPED', value: 'apple' });
+    expect(isHintAvailable(s)).toBe(false);
+  });
+
+  it('REVEAL_HINT drops a verdict left over from a wrong answer', () => {
     const s = run(
       init(),
       { type: 'SET_TYPED', value: 'pear' },
@@ -233,6 +268,7 @@ describe('difficulty — hints', () => {
     );
     expect(s.validation).toBe('idle');
     expect(s.typedAnswer).toBe('');
+    expect(hintGhostText(s)).toBe('a');
   });
 
   it('hint is unavailable while correct (locked)', () => {

@@ -17,7 +17,7 @@ import { useWriteWords } from '@/hooks/useWriteWords';
 import {
   canSkip,
   displayWord,
-  hintOverlayText,
+  hintGhostText,
   isHintAvailable,
   isInteractionLocked,
   isTimed,
@@ -94,6 +94,7 @@ export const WriteWordsScreen = ({ setId }: WriteWordsScreenProps) => {
   }
 
   const timed = isTimed(state);
+  const ghost = hintGhostText(state);
   const canSubmit = state.typedAnswer.trim().length > 0 && !isInteractionLocked(state);
   const displayTitle =
     state.trainingMode === 'wordToTranslation'
@@ -150,9 +151,19 @@ export const WriteWordsScreen = ({ setId }: WriteWordsScreenProps) => {
           {/* iOS WriteWordsAnswerInputView — a single centred text field with a
               revealed-hint overlay; the border goes green on a correct answer. */}
           <div className="relative mx-auto w-full max-w-[420px]">
-            {state.typedAnswer.length === 0 && hintOverlayText(state) && (
-              <span className="pointer-events-none absolute inset-0 grid place-items-center text-[22px] font-bold text-(--color-primary-blue)/30">
-                {hintOverlayText(state)}
+            {/* The grey hint letter, drawn just after what is typed. The field
+                centres its text, so the overlay is padded with an invisible
+                copy of the letter on the left — that keeps the typed part in
+                exactly the same place as in the field. */}
+            {ghost && (
+              <span
+                aria-hidden
+                data-testid="write-words-hint"
+                className="pointer-events-none absolute inset-0 flex items-center justify-center overflow-hidden whitespace-pre border border-transparent px-4 text-[22px] font-bold"
+              >
+                <span className="invisible">{ghost}</span>
+                <span className="invisible">{state.typedAnswer}</span>
+                <span className="text-(--color-text-secondary) opacity-60">{ghost}</span>
               </span>
             )}
             <input
@@ -163,6 +174,10 @@ export const WriteWordsScreen = ({ setId }: WriteWordsScreenProps) => {
                 if (e.key === 'Enter') {
                   e.preventDefault();
                   actions.submit();
+                } else if (e.key === 'Tab' && ghost) {
+                  // Tab takes the grey letter, like autocomplete.
+                  e.preventDefault();
+                  actions.type(state.typedAnswer + ghost);
                 }
               }}
               autoComplete="off"

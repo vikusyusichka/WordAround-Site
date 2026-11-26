@@ -22,8 +22,12 @@ export interface WritingState {
   currentIndex: number;
   typedAnswer: string;
   validation: WriteWordsValidation;
-  /** Prefix-letter count revealed for the CURRENT card (resets on advance). */
+  /** Hint presses on the CURRENT card (resets on advance) — the per-card
+      budget medium mode caps at 1. */
   hintRevealed: number;
+  /** Where in the answer the grey hint letter sits, i.e. how many correct
+      letters were in the field when Hint was pressed. null = no hint shown. */
+  hintPosition: number | null;
   completedWords: number;
   skippedWords: number;
   /** Medium-only skip-budget tracker (distinct from skippedWords). */
@@ -68,6 +72,7 @@ export const initialWritingState = (
   typedAnswer: '',
   validation: 'idle',
   hintRevealed: 0,
+  hintPosition: null,
   completedWords: 0,
   skippedWords: 0,
   skippedCount: 0,
@@ -118,9 +123,35 @@ export const progress = (s: WritingState): number => {
   return (s.currentIndex + 1) / s.exercises.length;
 };
 
-/** Hint text = the first `hintRevealed` characters of the current answer. */
-export const hintOverlayText = (s: WritingState): string =>
-  s.hintRevealed > 0 ? correctAnswer(s).slice(0, s.hintRevealed) : '';
+/** How many leading characters of `typed` match the answer (case-insensitive). */
+export const matchedPrefixLength = (typed: string, answer: string): number => {
+  let i = 0;
+  while (i < typed.length && i < answer.length && typed[i].toLowerCase() === answer[i].toLowerCase()) {
+    i++;
+  }
+  return i;
+};
+
+/** End of the hint chunk starting at `pos`: the next letter, plus any spaces
+    in front of it — a grey space alone would look like nothing happened. */
+const hintChunkEnd = (answer: string, pos: number): number => {
+  let end = pos;
+  while (end < answer.length && answer[end] === ' ') end++;
+  return end < answer.length ? end + 1 : end;
+};
+
+/** The grey letter shown right after what is typed. It shows only while the
+    field still holds exactly the correct part it was given for — type the
+    letter (or anything else) and it goes away. */
+export const hintGhostText = (s: WritingState): string => {
+  if (s.hintPosition === null) return '';
+  const answer = correctAnswer(s);
+  if (s.typedAnswer.toLowerCase() !== answer.slice(0, s.hintPosition).toLowerCase()) return '';
+  return answer.slice(s.hintPosition, hintChunkEnd(answer, s.hintPosition));
+};
+
+/** What the field holds once the grey letter (if any) is taken as typed. */
+const typedWithGhost = (s: WritingState): string => s.typedAnswer.trimStart() + hintGhostText(s);
 
 /** Max prefix letters the hint can reveal, by difficulty (iOS maxHintLetters). */
 export const maxHintLetters = (s: WritingState): number => {
@@ -134,8 +165,13 @@ export const maxHintLetters = (s: WritingState): number => {
   }
 };
 
-export const isHintAvailable = (s: WritingState): boolean =>
-  s.difficulty !== 'hard' && !isInteractionLocked(s) && s.hintRevealed < maxHintLetters(s);
+export const isHintAvailable = (s: WritingState): boolean => {
+  if (s.difficulty === 'hard' || isInteractionLocked(s)) return false;
+  if (s.hintRevealed >= maxHintLetters(s)) return false;
+  // Nothing left to hint once the whole answer is already correct.
+  const answer = correctAnswer(s);
+  return matchedPrefixLength(typedWithGhost(s), answer) < answer.length;
+};
 
 /** Max skips allowed for the round, by difficulty (iOS maxSkipsAllowed). */
 export const maxSkipsAllowed = (s: WritingState): number => {
@@ -204,6 +240,7 @@ const resetForNextCard = (): Partial<WritingState> => ({
   typedAnswer: '',
   validation: 'idle',
   hintRevealed: 0,
+  hintPosition: null,
 });
 
 const triggerGameOver = (
@@ -260,17 +297,20 @@ export const writingReducer = (s: WritingState, action: WritingAction): WritingS
 
     case 'REVEAL_HINT': {
       if (!isHintAvailable(s)) return s;
+      /* The hint reads what is already typed and shows the NEXT letter in
+         grey right after it. Pressing again while a grey letter is showing
+         takes that letter as typed and greys the one after. If the field has
+         a mistake, everything from the first wrong letter is dropped, so the
+         grey letter always continues a correct start. */
+      const answer = correctAnswer(s);
+      const typed = typedWithGhost(s);
+      const keep = matchedPrefixLength(typed, answer);
       return {
         ...s,
         hintRevealed: s.hintRevealed + 1,
         hintsUsed: s.hintsUsed + 1,
-        /* Clearing the field is what makes the hint visible at all: the
-           revealed letters are an overlay behind the text, so they only show
-           on an empty field. iOS leaves whatever you typed in place, which
-           means pressing Hint after typing anything appears to do nothing —
-           the letters are there, hidden under your own answer. You start the
-           word again from the letter you were given. */
-        typedAnswer: '',
+        typedAnswer: typed.slice(0, keep),
+        hintPosition: keep,
         /* A verdict on an answer that is no longer in the field would be
            stranded. */
         validation: s.validation === 'incorrect' ? 'idle' : s.validation,
